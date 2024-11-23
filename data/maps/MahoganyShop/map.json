@@ -1,0 +1,41 @@
+{
+  "id": "MAP_MAHOGANY_SHOP",
+  "name": "MahoganyShop",
+  "layout": "LAYOUT_MAHOGANY_SHOP",
+  "music": "MUS_HG_ROCKET_TAKEOVER",
+  "region_map_section": "MAPSEC_MAHOGANY_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 5,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_MAHOGANYTOWN",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 8,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_ROCKET_HIDEOUT",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "MAP_BURNED_TOWER2",
+  "name": "BurnedTower2",
+  "layout": "LAYOUT_BURNED_TOWER2",
+  "music": "MUS_HG_BURNED_TOWER",
+  "region_map_section": "MAPSEC_BURNED_TOWER",
+  "requires_flash": true,
+  "weather": "WEATHER_FOG_DIAGONAL",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 19,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_BURNED_TOWER1",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "MAP_RUINS_OF_ALPH_OFFICE",
+  "name": "RuinsOfAlphOffice",
+  "layout": "LAYOUT_RUINS_OF_ALPH_OFFICE",
+  "music": "MUS_HG_RUINS_OF_ALPH",
+  "region_map_section": "MAPSEC_RUINS_OF_ALPH",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 2,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_RUINS_OF_ALPH",
+      "dest_warp_id": "4"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

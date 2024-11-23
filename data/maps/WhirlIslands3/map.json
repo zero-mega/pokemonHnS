@@ -1,0 +1,90 @@
+{
+  "id": "MAP_WHIRL_ISLANDS3",
+  "name": "WhirlIslands3",
+  "layout": "LAYOUT_WHIRL_ISLANDS3",
+  "music": "MUS_HG_UNION_CAVE",
+  "region_map_section": "MAPSEC_WHIRL_ISLANDS",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 5,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_WHIRL_ISLANDS1",
+      "dest_warp_id": "5"
+    },
+    {
+      "x": 29,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_WHIRL_ISLANDS1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 34,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_WHIRL_ISLANDS1",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 23,
+      "y": 32,
+      "elevation": 0,
+      "dest_map": "MAP_WHIRL_ISLANDS1",
+      "dest_warp_id": "7"
+    },
+    {
+      "x": 8,
+      "y": 31,
+      "elevation": 0,
+      "dest_map": "MAP_WHIRL_ISLANDS1",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 31,
+      "y": 31,
+      "elevation": 0,
+      "dest_map": "MAP_WHIRL_ISLANDS2",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 13,
+      "y": 28,
+      "elevation": 0,
+      "dest_map": "MAP_WHIRL_ISLANDS2",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 25,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_WHIRL_ISLANDS2",
+      "dest_warp_id": "5"
+    },
+    {
+      "x": 17,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_WHIRL_ISLANDS2",
+      "dest_warp_id": "6"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

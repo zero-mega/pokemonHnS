@@ -1,0 +1,108 @@
+{
+  "id": "MAP_OLIVINE_CITY",
+  "name": "OlivineCity",
+  "layout": "LAYOUT_OLIVINE_CITY",
+  "music": "MUS_HG_VIOLET",
+  "region_map_section": "MAPSEC_OLIVINE_CITY",
+  "requires_flash": false,
+  "weather": "WEATHER_RAIN",
+  "map_type": "MAP_TYPE_CITY",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROUTE40",
+      "offset": 30,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_OLIVINE_CITY_PORT",
+      "offset": 5,
+      "direction": "down"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 35,
+      "y": 38,
+      "elevation": 0,
+      "dest_map": "MAP_OLIVINE_LIGHTHOUSE1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 11,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_OLIVINE_GYM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 8,
+      "y": 33,
+      "elevation": 0,
+      "dest_map": "MAP_OLIVINE_CAFE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 25,
+      "y": 30,
+      "elevation": 0,
+      "dest_map": "MAP_OLIVINE_POKEMART",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 26,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_OLIVINE_HOUSE1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 31,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_OLIVINE_HOUSE2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 16,
+      "y": 25,
+      "elevation": 0,
+      "dest_map": "MAP_OLIVINE_HOUSE3",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 15,
+      "y": 33,
+      "elevation": 0,
+      "dest_map": "MAP_OLIVINE_POKECENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 19,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE39_OLIVINE_GATE",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 20,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE39_OLIVINE_GATE",
+      "dest_warp_id": "3"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

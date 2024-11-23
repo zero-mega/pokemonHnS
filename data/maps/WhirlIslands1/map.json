@@ -1,0 +1,118 @@
+{
+  "id": "MAP_WHIRL_ISLANDS1",
+  "name": "WhirlIslands1",
+  "layout": "LAYOUT_WHIRL_ISLANDS1",
+  "music": "MUS_HG_UNION_CAVE",
+  "region_map_section": "MAPSEC_WHIRL_ISLANDS",
+  "requires_flash": false,
+  "weather": "WEATHER_FOG_HORIZONTAL",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 13,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_WHIRL_ISLANDS3",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 3,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE41",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 17,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_WHIRL_ISLANDS3",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 50,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE41",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 48,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_WHIRL_ISLANDS3",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 64,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_WHIRL_ISLANDS3",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 64,
+      "y": 28,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE41",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 62,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_WHIRL_ISLANDS3",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 47,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_WHIRL_ISLANDS1",
+      "dest_warp_id": "9"
+    },
+    {
+      "x": 62,
+      "y": 36,
+      "elevation": 0,
+      "dest_map": "MAP_WHIRL_ISLANDS1",
+      "dest_warp_id": "8"
+    },
+    {
+      "x": 62,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_WHIRL_ISLANDS2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 12,
+      "y": 35,
+      "elevation": 0,
+      "dest_map": "MAP_WHIRL_ISLANDS2",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 66,
+      "y": 36,
+      "elevation": 0,
+      "dest_map": "MAP_WHIRL_ISLANDS2",
+      "dest_warp_id": "7"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

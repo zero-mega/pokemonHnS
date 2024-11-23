@@ -1,0 +1,41 @@
+{
+  "id": "MAP_TIN_TOWER2",
+  "name": "TinTower2",
+  "layout": "LAYOUT_TIN_TOWER2",
+  "music": "MUS_HG_BELL_TOWER",
+  "region_map_section": "MAPSEC_TIN_TOWER",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": false,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 9,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_TIN_TOWER1",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 9,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_TIN_TOWER3",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

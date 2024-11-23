@@ -1,0 +1,104 @@
+{
+  "id": "MAP_CERULEAN_CITY",
+  "name": "CeruleanCity",
+  "layout": "LAYOUT_CERULEAN_CITY",
+  "music": "MUS_HG_CERULEAN",
+  "region_map_section": "MAPSEC_CERULEAN_CITY",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_CITY",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROUTE4",
+      "offset": -4,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_ROUTE5",
+      "offset": 0,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_ROUTE9",
+      "offset": 15,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_ROUTE24",
+      "offset": 12,
+      "direction": "up"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 1,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_CERULEAN_CAVE_1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 10,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_CERULEAN_CITY_HOUSE1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 30,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_CERULEAN_CITY_HOUSE2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 17,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_CERULEAN_CITY_HOUSE3",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 22,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_CERULEAN_POKECENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 31,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_CERULEAN_CITY_GYM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 16,
+      "y": 28,
+      "elevation": 0,
+      "dest_map": "MAP_CERULEAN_CITY_BIKE_SHOP",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 27,
+      "y": 28,
+      "elevation": 0,
+      "dest_map": "MAP_CERULEAN_POKEMART",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

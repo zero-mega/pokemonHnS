@@ -1,0 +1,92 @@
+{
+  "id": "MAP_LAVENDER_TOWN",
+  "name": "LavenderTown",
+  "layout": "LAYOUT_LAVENDER_TOWN",
+  "music": "MUS_HG_LAVENDER",
+  "region_map_section": "MAPSEC_LAVENDER_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_TOWN",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROUTE10",
+      "offset": 0,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_ROUTE8",
+      "offset": 0,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_ROUTE12",
+      "offset": -1,
+      "direction": "down"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 2,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_LAVENDER_POKEMART",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_LAVENDER_POKECENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 18,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_LAVENDER_TOWN_RADIO_STATION",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 5,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_LAVENDER_TOWN_HOUSE1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 18,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_LAVENDER_TOWN_SOUL_HOUSE1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 5,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_LAVENDER_TOWN_HOUSE2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 10,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_LAVENDER_TOWN_HOUSE3",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "MAP_VICTORY_ROAD2",
+  "name": "VictoryRoad2",
+  "layout": "LAYOUT_VICTORY_ROAD2",
+  "music": "MUS_HG_VICTORY_ROAD",
+  "region_map_section": "MAPSEC_VICTORY_ROAD",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 3,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_VICTORY_ROAD1",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 15,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_VICTORY_ROAD3",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 19,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_VICTORY_ROAD3",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

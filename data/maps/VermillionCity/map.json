@@ -1,0 +1,99 @@
+{
+  "id": "MAP_VERMILLION_CITY",
+  "name": "VermillionCity",
+  "layout": "LAYOUT_VERMILLION_CITY",
+  "music": "MUS_HG_VERMILION",
+  "region_map_section": "MAPSEC_VERMILION_CITY",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_CITY",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROUTE11",
+      "offset": -6,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_ROUTE6",
+      "offset": 17,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_VERMILLION_CITY_PORT1",
+      "offset": 11,
+      "direction": "down"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 43,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_DIGGLETS_CAVE2",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 13,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_VERMILLION_CITY_HOUSE1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 18,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_VERMILLION_POKECENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 14,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_VERMILLION_CITY_FAN_CLUB",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 22,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_VERMILLION_CITY_HOUSE2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 30,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_VERMILLION_POKEMART",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 15,
+      "y": 25,
+      "elevation": 0,
+      "dest_map": "MAP_VERMILLION_CITY_GYM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 29,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_VERMILLION_CITY_HOUSE3",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

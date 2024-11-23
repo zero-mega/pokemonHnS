@@ -1,0 +1,131 @@
+{
+  "id": "MAP_ECRUTEAK_CITY",
+  "name": "EcruteakCity",
+  "layout": "LAYOUT_ECRUTEAK_CITY",
+  "music": "MUS_HG_ECRUTEAK",
+  "region_map_section": "MAPSEC_ECRUTEAK_CITY",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_CITY",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROUTE42",
+      "offset": 23,
+      "direction": "right"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 8,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_ECRUTEAK_38GATE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 43,
+      "y": 32,
+      "elevation": 0,
+      "dest_map": "MAP_ECRUTEAK_42GATE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 12,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_BURNED_TOWER1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 26,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_ECRUTEAK_SAGE_OFFICE1F",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 30,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_ECRUTEAK_SAGE_OFFICE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 45,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_TIN_TOWER1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 31,
+      "y": 27,
+      "elevation": 0,
+      "dest_map": "MAP_ECRUTEAK_THEATER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 25,
+      "y": 36,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE37",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 26,
+      "y": 36,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE37",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 13,
+      "y": 27,
+      "elevation": 0,
+      "dest_map": "MAP_ECRUTEAK_HOUSE1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 21,
+      "y": 33,
+      "elevation": 0,
+      "dest_map": "MAP_ECRUTEAK_HOUSE2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 31,
+      "y": 33,
+      "elevation": 0,
+      "dest_map": "MAP_ECRUTEAK_POKECENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 38,
+      "y": 27,
+      "elevation": 0,
+      "dest_map": "MAP_ECRUTEAK_POKEMART",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 14,
+      "y": 33,
+      "elevation": 0,
+      "dest_map": "MAP_ECRUTEAK_GYM",
+      "dest_warp_id": "78"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

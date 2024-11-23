@@ -1,0 +1,41 @@
+{
+  "id": "MAP_ROUTE36_RUINS_GATE",
+  "name": "Route36_RuinsGate",
+  "layout": "LAYOUT_ROUTE36_RUINS_GATE",
+  "music": "MUS_HG_ROUTE34",
+  "region_map_section": "MAPSEC_ROUTE_36",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 7,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE36",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_RUINS_OF_ALPH",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

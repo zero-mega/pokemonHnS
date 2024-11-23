@@ -1,0 +1,59 @@
+{
+  "id": "MAP_ROUTE27",
+  "name": "Route27",
+  "layout": "LAYOUT_ROUTE27",
+  "music": "MUS_HG_ROUTE26",
+  "region_map_section": "MAPSEC_ROUTE_27",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_NEW_BARK_TOWN",
+      "offset": 0,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_ROUTE26",
+      "offset": -90,
+      "direction": "right"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 26,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_TOJO_FALLS",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 36,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE27",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 33,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE27HOUSE",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "MAP_ROUTE10",
+  "name": "Route10",
+  "layout": "LAYOUT_ROUTE10",
+  "music": "MUS_RG_ROUTE3",
+  "region_map_section": "MAPSEC_ROUTE_10",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROUTE9",
+      "offset": -36,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_LAVENDER_TOWN",
+      "offset": 0,
+      "direction": "down"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 15,
+      "y": 0,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE9POKECENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 10,
+      "y": 25,
+      "elevation": 0,
+      "dest_map": "MAP_ROCK_TUNNEL1",
+      "dest_warp_id": "5"
+    },
+    {
+      "x": 10,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_POWER_PLANT2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 5,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_POWER_PLANT2",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

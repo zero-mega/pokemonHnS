@@ -1,0 +1,41 @@
+{
+  "id": "MAP_DARK_CAVE_2",
+  "name": "DarkCave_2",
+  "layout": "LAYOUT_DARK_CAVE_2",
+  "music": "MUS_HG_UNION_CAVE",
+  "region_map_section": "MAPSEC_DARK_CAVE",
+  "requires_flash": true,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 26,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE45",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 6,
+      "y": 28,
+      "elevation": 0,
+      "dest_map": "MAP_DARK_CAVE_1",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

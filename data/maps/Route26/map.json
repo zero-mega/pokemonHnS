@@ -1,0 +1,69 @@
+{
+  "id": "MAP_ROUTE26",
+  "name": "Route26",
+  "layout": "LAYOUT_ROUTE26",
+  "music": "MUS_HG_ROUTE26",
+  "region_map_section": "MAPSEC_ROUTE_26",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_CITY",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROUTE27",
+      "offset": 90,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_ROUTE22",
+      "offset": -19,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_ROUTE28",
+      "offset": -14,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_ROUTE23",
+      "offset": 1,
+      "direction": "up"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 12,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_INDIGO_JUNCTION",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 19,
+      "y": 58,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE26HOUSE1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 9,
+      "y": 72,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE26HOUSE2",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "MAP_AZALEA_TOWN",
+  "name": "AzaleaTown",
+  "layout": "LAYOUT_AZALEA_TOWN",
+  "music": "MUS_HG_AZALEA",
+  "region_map_section": "MAPSEC_AZALEA_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_TOWN",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROUTE33",
+      "offset": 2,
+      "direction": "right"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 37,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_SLOWPOKE_WELL",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 8,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_AZALEA_ILEX_GATE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 15,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_AZALEA_KURTS_HOUSE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 22,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_AZALEA_POKECENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 28,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_AZALEA_POKEMART",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 27,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_AZALEA_HOUSE1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 17,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_AZALEA_GYM",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}
