@@ -27,8 +27,8 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
-      "x": 17,
-      "y": 11,
+      "x": 20,
+      "y": 13,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -40,8 +40,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LASS",
-      "x": 4,
-      "y": 9,
+      "x": 8,
+      "y": 8,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
@@ -53,7 +53,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SILVER",
-      "x": 3,
+      "x": 7,
       "y": 3,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -67,38 +67,45 @@
   ],
   "warp_events": [
     {
-      "x": 7,
+      "x": 11,
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_NEW_BARK_TOWN_LAB",
       "dest_warp_id": "0"
     },
     {
-      "x": 14,
+      "x": 18,
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_PLAYERS_HOUSE1",
       "dest_warp_id": "0"
     },
     {
-      "x": 3,
+      "x": 7,
       "y": 13,
       "elevation": 0,
       "dest_map": "MAP_NEW_BARK_TOWN_HOUSE1",
       "dest_warp_id": "0"
     },
     {
-      "x": 11,
+      "x": 15,
       "y": 14,
       "elevation": 0,
       "dest_map": "MAP_NEW_BARK_TOWN_HOUSE2",
       "dest_warp_id": "0"
     },
     {
-      "x": 16,
+      "x": 20,
       "y": 8,
       "elevation": 0,
-      "dest_map": "MAP_WORLD_HUB",
+      "dest_map": "MAP_WHIRL_ISLANDS1",
+      "dest_warp_id": "11"
+    },
+    {
+      "x": 21,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_TIN_TOWER10",
       "dest_warp_id": "0"
     }
   ],

@@ -3531,6 +3531,16 @@ static const struct SpriteFrameImage sPicTable_Togetic[] = {
     overworld_frame(gObjectEventPic_Togetic, 4, 4, 4),
     overworld_frame(gObjectEventPic_Togetic, 4, 4, 5),
 };
+
+static const struct SpriteFrameImage sPicTable_ShinyGyarados[] = {
+    overworld_frame(gObjectEventPic_ShinyGyarados, 4, 4, 0),
+    overworld_frame(gObjectEventPic_ShinyGyarados, 4, 4, 1),
+    overworld_frame(gObjectEventPic_ShinyGyarados, 4, 4, 2),
+    overworld_frame(gObjectEventPic_ShinyGyarados, 4, 4, 3),
+    overworld_frame(gObjectEventPic_ShinyGyarados, 4, 4, 4),
+    overworld_frame(gObjectEventPic_ShinyGyarados, 4, 4, 5),
+};
+
 static const struct SpriteFrameImage sPicTable_Natu[] = {
     overworld_frame(gObjectEventPic_Natu, 4, 4, 0),
     overworld_frame(gObjectEventPic_Natu, 4, 4, 1),

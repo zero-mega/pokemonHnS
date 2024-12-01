@@ -521,6 +521,7 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_SAGE                  0x1142
 #define OBJ_EVENT_PAL_TAG_STEVEN                0x1143
 #define OBJ_EVENT_PAL_TAG_SCIENTIST_F           0x1144
+#define OBJ_EVENT_PAL_TAG_SHINY_GYARADOS        0x1145
 
 #if OW_MON_POKEBALLS
 // Vanilla
@@ -618,6 +619,8 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Red,               OBJ_EVENT_PAL_TAG_RED},
     {gObjectEventPal_Steven,               OBJ_EVENT_PAL_TAG_STEVEN},
     {gObjectEventPal_ScientistF,               OBJ_EVENT_PAL_TAG_SCIENTIST_F},
+    {gObjectEventPal_ShinyGyarados,               OBJ_EVENT_PAL_TAG_SHINY_GYARADOS},
+
     
 
 

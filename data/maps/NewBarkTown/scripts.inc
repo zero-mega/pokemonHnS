@@ -2,6 +2,9 @@ NewBarkTown_MapScripts::
 	.byte 0
 
 NewBarkTown_EventScript_FatMan::
+	@ STORY FLAGS:
+
+
 	setflag FLAG_RECEIVED_HM_FLY
 	setflag FLAG_BADGE01_GET
 	setflag FLAG_BADGE02_GET

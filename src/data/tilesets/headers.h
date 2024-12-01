@@ -1817,3 +1817,14 @@ const struct Tileset gTileset_JohtoRedrawn =
     .metatileAttributes = gMetatileAttributes_JohtoRedrawn,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_DragonsDenOuter =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_DragonsDenOuter,
+    .palettes = gTilesetPalettes_DragonsDenOuter,
+    .metatiles = gMetatiles_DragonsDenOuter,
+    .metatileAttributes = gMetatileAttributes_DragonsDenOuter,
+    .callback = NULL,
+};

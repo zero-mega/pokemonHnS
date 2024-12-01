@@ -95,7 +95,7 @@ const u16 gObjectEventPal_Firebreather[] = INCBIN_U16("graphics/object_events/pa
 const u16 gObjectEventPal_Sage[] = INCBIN_U16("graphics/object_events/palettes/sage.gbapal");
 const u16 gObjectEventPal_Steven[] = INCBIN_U16("graphics/object_events/palettes/steven.gbapal");
 const u16 gObjectEventPal_ScientistF[] = INCBIN_U16("graphics/object_events/palettes/scientist_f.gbapal");
-
+const u16 gObjectEventPal_ShinyGyarados[] = INCBIN_U16("graphics/object_events/palettes/shiny_gyarados.gbapal");
 
 const u16 gObjectEventPal_Npc1Reflection[] = INCBIN_U16("graphics/object_events/palettes/npc_white_reflection.gbapal");
 const u16 gObjectEventPal_Npc2Reflection[] = INCBIN_U16("graphics/object_events/palettes/npc_pink_reflection.gbapal");
@@ -562,6 +562,9 @@ const u32 gObjectEventPic_Cleffa[] = INCBIN_COMP("graphics/object_events/pics/po
 const u32 gObjectEventPic_Igglybuff[] = INCBIN_COMP("graphics/object_events/pics/pokemon/igglybuff.4bpp");
 const u32 gObjectEventPic_Togepi[] = INCBIN_COMP("graphics/object_events/pics/pokemon/togepi.4bpp");
 const u32 gObjectEventPic_Togetic[] = INCBIN_COMP("graphics/object_events/pics/pokemon/togetic.4bpp");
+
+const u32 gObjectEventPic_ShinyGyarados[] = INCBIN_U32("graphics/object_events/pics/pokemon/shiny_gyarados.4bpp");
+
 const u32 gObjectEventPic_Natu[] = INCBIN_COMP("graphics/object_events/pics/pokemon/natu.4bpp");
 const u32 gObjectEventPic_Xatu[] = INCBIN_COMP("graphics/object_events/pics/pokemon/xatu.4bpp");
 const u32 gObjectEventPic_Mareep[] = INCBIN_COMP("graphics/object_events/pics/pokemon/mareep.4bpp");

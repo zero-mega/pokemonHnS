@@ -77,7 +77,7 @@
 #define OBJ_EVENT_GFX_SURGE                     73
 #define OBJ_EVENT_GFX_JANINE                      74
 #define OBJ_EVENT_GFX_SABRINA                        75
-#define OBJ_EVENT_GFX_UNUSED_NATU_DOLL            76
+#define OBJ_EVENT_GFX_SHINY_GYARADOS            76
 #define OBJ_EVENT_GFX_UNUSED_MAGNEMITE_DOLL       77
 #define OBJ_EVENT_GFX_UNUSED_SQUIRTLE_DOLL        78
 #define OBJ_EVENT_GFX_UNUSED_WOOPER_DOLL          79

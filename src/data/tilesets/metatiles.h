@@ -471,3 +471,6 @@ const u16 gMetatileAttributes_SafariZoneJohto[] = INCBIN_U16("data/tilesets/seco
 
 const u16 gMetatiles_JohtoRedrawn[] = INCBIN_U16("data/tilesets/primary/johto_redrawn/metatiles.bin");
 const u16 gMetatileAttributes_JohtoRedrawn[] = INCBIN_U16("data/tilesets/primary/johto_redrawn/metatile_attributes.bin");
+
+const u16 gMetatiles_DragonsDenOuter[] = INCBIN_U16("data/tilesets/secondary/dragons_den_outer/metatiles.bin");
+const u16 gMetatileAttributes_DragonsDenOuter[] = INCBIN_U16("data/tilesets/secondary/dragons_den_outer/metatile_attributes.bin");

@@ -2,7 +2,7 @@
   "id": "MAP_MAHOGANY_SHOP",
   "name": "MahoganyShop",
   "layout": "LAYOUT_MAHOGANY_SHOP",
-  "music": "MUS_HG_ROCKET_TAKEOVER",
+  "music": "MUS_HG_AZALEA",
   "region_map_section": "MAPSEC_MAHOGANY_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

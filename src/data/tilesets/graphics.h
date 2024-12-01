@@ -3306,3 +3306,22 @@ const u16 gTilesetPalettes_JohtoRedrawn[][16] =
 };
 
 const u32 gTilesetTiles_JohtoRedrawn[] = INCBIN_U32("data/tilesets/primary/johto_redrawn/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_DragonsDenOuter[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/dragons_den_outer/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dragons_den_outer/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dragons_den_outer/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dragons_den_outer/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dragons_den_outer/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dragons_den_outer/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dragons_den_outer/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dragons_den_outer/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dragons_den_outer/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dragons_den_outer/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dragons_den_outer/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dragons_den_outer/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dragons_den_outer/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_DragonsDenOuter[] = INCBIN_U32("data/tilesets/secondary/dragons_den_outer/tiles.4bpp.lz");
