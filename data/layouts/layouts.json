@@ -4615,7 +4615,7 @@
       "id": "LAYOUT_CHERRYGROVE_CITY",
       "name": "CherrygroveCity_Layout",
       "width": 53,
-      "height": 26,
+      "height": 30,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Cherrygrove",
       "border_filepath": "data/layouts/CherrygroveCity/border.bin",
@@ -4634,8 +4634,8 @@
     {
       "id": "LAYOUT_NEW_BARK_TOWN",
       "name": "NewBarkTown_Layout",
-      "width": 26,
-      "height": 20,
+      "width": 28,
+      "height": 29,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_NewBarkTown",
       "border_filepath": "data/layouts/NewBarkTown/border.bin",
@@ -4956,7 +4956,7 @@
       "name": "Route33_Layout",
       "width": 24,
       "height": 20,
-      "primary_tileset": "gTileset_Johto_General",
+      "primary_tileset": "gTileset_Johto_General_2",
       "secondary_tileset": "gTileset_61_azalea",
       "border_filepath": "data/layouts/Route33/border.bin",
       "blockdata_filepath": "data/layouts/Route33/map.bin"
@@ -5106,7 +5106,7 @@
       "name": "AzaleaTown_Layout",
       "width": 46,
       "height": 24,
-      "primary_tileset": "gTileset_Johto_General",
+      "primary_tileset": "gTileset_Johto_General_2",
       "secondary_tileset": "gTileset_61_azalea",
       "border_filepath": "data/layouts/AzaleaTown/border.bin",
       "blockdata_filepath": "data/layouts/AzaleaTown/map.bin"
@@ -5124,8 +5124,8 @@
     {
       "id": "LAYOUT_ECRUTEAK_CITY",
       "name": "EcruteakCity_Layout",
-      "width": 52,
-      "height": 45,
+      "width": 60,
+      "height": 53,
       "primary_tileset": "gTileset_Johto_General_Fall",
       "secondary_tileset": "gTileset_Fall_Ecruteak",
       "border_filepath": "data/layouts/EcruteakCity/border.bin",
@@ -5177,7 +5177,7 @@
       "width": 26,
       "height": 20,
       "primary_tileset": "gTileset_Johto_General",
-      "secondary_tileset": "gTileset_NewBarkTown",
+      "secondary_tileset": "gTileset_PalletTown",
       "border_filepath": "data/layouts/PalletTown/border.bin",
       "blockdata_filepath": "data/layouts/PalletTown/map.bin"
     },
@@ -6584,7 +6584,7 @@
     {
       "id": "LAYOUT_NEW_BARK_TOWN_LAB",
       "name": "NewBarkTownLab_Layout",
-      "width": 13,
+      "width": 40,
       "height": 14,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",

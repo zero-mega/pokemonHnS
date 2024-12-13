@@ -148,13 +148,13 @@ static const u8 sDoorAnimTiles_TrainerHillRoofElevator[] = INCBIN_U8("graphics/d
 static const u16 sDoorNullPalette49[16] = {};
 static const u8 sDoorAnimTiles_Goldenrod[] = INCBIN_U8("graphics/door_anims/goldenrod.4bpp");
 static const u16 sDoorNullPalette50[16] = {};
-static const u8 sDoorAnimTiles_NewBarkTown_Door_Regular[] = INCBIN_U8("graphics/door_anims/NewBarkTown_Door_Regular.4bpp");
+static const u8 sDoorAnimTiles_NewBarkTown_Door_Yellow[] = INCBIN_U8("graphics/door_anims/NewBarkTown_Door_Yellow.4bpp");
 static const u16 sDoorNullPalette51[16] = {};
-static const u8 sDoorAnimTiles_NewBarkTown_Door_Green[] = INCBIN_U8("graphics/door_anims/NewBarkTown_Door_Green.4bpp");
+static const u8 sDoorAnimTiles_NewBarkTown_Door_Blue[] = INCBIN_U8("graphics/door_anims/Cerulean.4bpp");
 static const u16 sDoorNullPalette52[16] = {};
 static const u8 sDoorAnimTiles_NewBarkTown_Door_Red[] = INCBIN_U8("graphics/door_anims/NewBarkTown_Door_Red.4bpp");
 static const u16 sDoorNullPalette53[16] = {};
-static const u8 sDoorAnimTiles_Azalea[] = INCBIN_U8("graphics/door_anims/NewBarkTown_Door_Regular.4bpp");
+static const u8 sDoorAnimTiles_Azalea[] = INCBIN_U8("graphics/door_anims/NewBarkTown_Door_Yellow.4bpp");
 static const u16 sDoorNullPalette54[16] = {};
 static const u8 sDoorAnimTiles_Cianwood[] = INCBIN_U8("graphics/door_anims/Cianwood.4bpp");
 static const u16 sDoorNullPalette55[16] = {};
@@ -216,9 +216,8 @@ static const u8 sDoorAnimPalettes_General[] = {2, 2, 2, 2, 2, 2, 2, 2};
 static const u8 sDoorAnimPalettes_PokeCenter[] = {3, 3, 3, 3, 3, 3, 3, 3};
 static const u8 sDoorAnimPalettes_Goldenrod[] = {10, 10, 10, 10, 10, 10, 10, 10};
 static const u8 sDoorAnimPalettes_Gym[] = {3, 3, 3, 3, 3, 3, 3, 3};
-static const u8 sDoorAnimPalettes_NewBarkTown_Door_Regular[] = {10, 10, 10, 10, 10, 10, 10, 10};
-static const u8 sDoorAnimPalettes_NewBarkTown_Door_Green[] = {11, 11, 11, 11, 11, 11, 11, 11};
-static const u8 sDoorAnimPalettes_NewBarkTown_Door_Grey[] = {9, 9, 9, 9, 9, 9, 9, 9};
+static const u8 sDoorAnimPalettes_NewBarkTown_Door_Blue[] = {7, 7, 7, 7, 7, 7, 7, 7};
+static const u8 sDoorAnimPalettes_NewBarkTown_Door_Yellow[] = {5, 5, 5, 5, 5, 5, 5, 5};
 static const u8 sDoorAnimPalettes_SafariZoneJohto_Door[] = {9, 9, 9, 9, 9, 9, 9, 9};
 static const u8 sDoorAnimPalettes_NewBarkTown_Door_Red[] = {8, 8, 8, 8, 8, 8, 8, 8};
 static const u8 sDoorAnimPalettes_Azalea[] = {5, 5, 5, 5, 5, 5, 5, 5};
@@ -344,8 +343,7 @@ static const struct DoorGraphics sDoorGraphics[] =
     {METATILE_Johto_General_Door_Sliding,                   DOOR_SOUND_SLIDING, DOOR_SIZE_1x1, sDoorAnimTiles_PokeCenter, sDoorAnimPalettes_PokeCenter},
     {METATILE_Johto_General_Door_Gym,                       DOOR_SOUND_SLIDING, DOOR_SIZE_1x1, sDoorAnimTiles_Gym, sDoorAnimPalettes_Gym},
     {METATILE_Goldenrod_Goldenrod,                          DOOR_SOUND_NORMAL, DOOR_SIZE_1x1, sDoorAnimTiles_Goldenrod, sDoorAnimPalettes_Goldenrod},
-    {METATILE_NewBarkTown_Door_Regular,                     DOOR_SOUND_NORMAL, DOOR_SIZE_1x1, sDoorAnimTiles_NewBarkTown_Door_Regular, sDoorAnimPalettes_NewBarkTown_Door_Regular},
-    {METATILE_NewBarkTown_Door_Green,                       DOOR_SOUND_NORMAL, DOOR_SIZE_1x1, sDoorAnimTiles_NewBarkTown_Door_Green, sDoorAnimPalettes_NewBarkTown_Door_Green},
+    {METATILE_NewBarkTown_Door_Yellow,                       DOOR_SOUND_NORMAL, DOOR_SIZE_1x1, sDoorAnimTiles_NewBarkTown_Door_Yellow, sDoorAnimPalettes_NewBarkTown_Door_Yellow},
     {METATILE_NewBarkTown_Door_Red,                         DOOR_SOUND_NORMAL, DOOR_SIZE_1x1, sDoorAnimTiles_NewBarkTown_Door_Red, sDoorAnimPalettes_NewBarkTown_Door_Red},
     {METATILE_61_azalea_Azalea,                             DOOR_SOUND_NORMAL, DOOR_SIZE_1x1, sDoorAnimTiles_Azalea, sDoorAnimPalettes_Azalea},
     {METATILE_CianwoodSafariGate_Cianwood,                  DOOR_SOUND_NORMAL, DOOR_SIZE_1x1, sDoorAnimTiles_Cianwood, sDoorAnimPalettes_Cianwood},
@@ -356,7 +354,7 @@ static const struct DoorGraphics sDoorGraphics[] =
     {METATILE_LavenderTown_Lavender,                        DOOR_SOUND_NORMAL, DOOR_SIZE_1x1, sDoorAnimTiles_Lavender, sDoorAnimPalettes_Lavender},
     {METATILE_route34_11_Saffron,                           DOOR_SOUND_NORMAL, DOOR_SIZE_1x1, sDoorAnimTiles_Saffron, sDoorAnimPalettes_Saffron},
     {METATILE_Fuchsia_Fuchsia,                              DOOR_SOUND_NORMAL, DOOR_SIZE_1x1, sDoorAnimTiles_Fuchsia, sDoorAnimPalettes_Fuchsia},
-    {METATILE_NewBarkTown_Door_Grey,                        DOOR_SOUND_NORMAL, DOOR_SIZE_1x1, sDoorAnimTiles_NewBarkTown_Door_Grey, sDoorAnimPalettes_NewBarkTown_Door_Grey},
+    {METATILE_NewBarkTown_Door_Blue,                        DOOR_SOUND_NORMAL, DOOR_SIZE_1x1, sDoorAnimTiles_NewBarkTown_Door_Blue, sDoorAnimPalettes_NewBarkTown_Door_Blue},
     {METATILE_SafariZoneJohto_Safari,                        DOOR_SOUND_SLIDING, DOOR_SIZE_1x1, sDoorAnimTiles_JohtoSafariZone_Door, sDoorAnimPalettes_SafariZoneJohto_Door},
 
     {},

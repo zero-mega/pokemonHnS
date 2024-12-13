@@ -474,3 +474,6 @@ const u16 gMetatileAttributes_JohtoRedrawn[] = INCBIN_U16("data/tilesets/primary
 
 const u16 gMetatiles_DragonsDenOuter[] = INCBIN_U16("data/tilesets/secondary/dragons_den_outer/metatiles.bin");
 const u16 gMetatileAttributes_DragonsDenOuter[] = INCBIN_U16("data/tilesets/secondary/dragons_den_outer/metatile_attributes.bin");
+
+const u16 gMetatiles_Johto_General_2[] = INCBIN_U16("data/tilesets/primary/johto_general_2/metatiles.bin");
+const u16 gMetatileAttributes_Johto_General_2[] = INCBIN_U16("data/tilesets/primary/johto_general_2/metatile_attributes.bin");

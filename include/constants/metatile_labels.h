@@ -179,7 +179,7 @@
 #define METATILE_Facility_NewMauvilleDoor_Open_Tile0    0x2C3
 #define METATILE_Facility_NewMauvilleDoor_Open_Tile1    0x2C4
 #define METATILE_Facility_NewMauvilleDoor_Open_Tile2    0x2C5
-#define METATILE_Facility_NewMauvilleDoor_Open_Tile3    0x2CB
+#define METATILE_Facility_NewMauvilleDoor_Open_Tile3    0x042
 #define METATILE_Facility_NewMauvilleDoor_Open_Tile4    0x2CC
 #define METATILE_Facility_NewMauvilleDoor_Open_Tile5    0x2CD
 
@@ -402,10 +402,9 @@
 #define METATILE_MossdeepGym_YellowArrow_Right  0x250
 
 // gTileset_NewBarkTown
-#define METATILE_NewBarkTown_Door_Green    0x2AC
-#define METATILE_NewBarkTown_Door_Grey     0x324
-#define METATILE_NewBarkTown_Door_Red      0x2A3
-#define METATILE_NewBarkTown_Door_Regular  0x297
+#define METATILE_NewBarkTown_Door_Blue    0x2CB
+#define METATILE_NewBarkTown_Door_Red     0x2BD
+#define METATILE_NewBarkTown_Door_Yellow  0x29B
 
 // gTileset_Olivine_6
 #define METATILE_Olivine_6_Vermillion  0x29E
@@ -596,7 +595,7 @@
 #define METATILE_SecretBase_Ground                      0x20A
 #define METATILE_SecretBase_HardChair                   0x2CA
 #define METATILE_SecretBase_HardDesk_BottomLeft         0x2B7
-#define METATILE_SecretBase_HardDesk_BottomMid          0x2CB
+#define METATILE_SecretBase_HardDesk_BottomMid          0x014
 #define METATILE_SecretBase_HardDesk_BottomRight        0x2CC
 #define METATILE_SecretBase_HardDesk_Center             0x2C3
 #define METATILE_SecretBase_HardDesk_MidLeft            0x2AF
@@ -647,7 +646,7 @@
 #define METATILE_SecretBase_PrettyDesk_Center           0x2C6
 #define METATILE_SecretBase_PrettyDesk_MidLeft          0x2C5
 #define METATILE_SecretBase_PrettyDesk_MidRight         0x2C7
-#define METATILE_SecretBase_PrettyDesk_TopLeft          0x2BD
+#define METATILE_SecretBase_PrettyDesk_TopLeft          0x013
 #define METATILE_SecretBase_PrettyDesk_TopMid           0x2BE
 #define METATILE_SecretBase_PrettyDesk_TopRight         0x2BF
 #define METATILE_SecretBase_PrettyFlowers_Base1         0x2DC
@@ -655,7 +654,7 @@
 #define METATILE_SecretBase_PrettyFlowers_Top           0x2D4
 #define METATILE_SecretBase_PrettyFlowers_TopWall       0x2D5
 #define METATILE_SecretBase_RaggedChair                 0x2C2
-#define METATILE_SecretBase_RaggedDesk_BottomLeft       0x29B
+#define METATILE_SecretBase_RaggedDesk_BottomLeft       0x041
 #define METATILE_SecretBase_RaggedDesk_BottomMid        0x29C
 #define METATILE_SecretBase_RaggedDesk_BottomRight      0x29D
 #define METATILE_SecretBase_RaggedDesk_TopLeft          0x293

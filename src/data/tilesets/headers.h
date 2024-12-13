@@ -1828,3 +1828,14 @@ const struct Tileset gTileset_DragonsDenOuter =
     .metatileAttributes = gMetatileAttributes_DragonsDenOuter,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Johto_General_2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_Johto_General_2,
+    .palettes = gTilesetPalettes_Johto_General_2,
+    .metatiles = gMetatiles_Johto_General_2,
+    .metatileAttributes = gMetatileAttributes_Johto_General_2,
+    .callback = NULL,
+};

@@ -61,6 +61,13 @@
       "elevation": 0,
       "dest_map": "MAP_NEW_BARK_TOWN",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 25,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_NEW_BARK_TOWN",
+      "dest_warp_id": "6"
     }
   ],
   "coord_events": [

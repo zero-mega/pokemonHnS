@@ -84,14 +84,14 @@
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_ECRUTEAK_CITY",
-      "dest_warp_id": "8"
+      "dest_warp_id": "7"
     },
     {
       "x": 11,
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_ECRUTEAK_CITY",
-      "dest_warp_id": "7"
+      "dest_warp_id": "8"
     }
   ],
   "coord_events": [

@@ -15,15 +15,15 @@
   "connections": [
     {
       "map": "MAP_ROUTE42",
-      "offset": 23,
+      "offset": 29,
       "direction": "right"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_LASS",
-      "x": 28,
-      "y": 30,
+      "x": 31,
+      "y": 34,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -35,8 +35,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SAGE",
-      "x": 13,
-      "y": 34,
+      "x": 16,
+      "y": 40,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -48,8 +48,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SAGE",
-      "x": 41,
-      "y": 22,
+      "x": 43,
+      "y": 26,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
       "movement_range_x": 0,
@@ -61,8 +61,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SAGE",
-      "x": 28,
-      "y": 21,
+      "x": 31,
+      "y": 23,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
@@ -74,7 +74,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SAGE",
-      "x": 15,
+      "x": 17,
       "y": 12,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -87,8 +87,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
-      "x": 19,
-      "y": 27,
+      "x": 18,
+      "y": 33,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -100,8 +100,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_1",
-      "x": 10,
-      "y": 15,
+      "x": 15,
+      "y": 19,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
       "movement_range_x": 0,
@@ -113,8 +113,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY",
-      "x": 16,
-      "y": 22,
+      "x": 21,
+      "y": 26,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -126,7 +126,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 43,
+      "x": 51,
       "y": 11,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -141,98 +141,98 @@
   "warp_events": [
     {
       "x": 8,
-      "y": 24,
+      "y": 28,
       "elevation": 0,
       "dest_map": "MAP_ECRUTEAK_38GATE",
       "dest_warp_id": "0"
     },
     {
-      "x": 43,
-      "y": 32,
+      "x": 51,
+      "y": 38,
       "elevation": 0,
       "dest_map": "MAP_ECRUTEAK_42GATE",
       "dest_warp_id": "0"
     },
     {
-      "x": 12,
+      "x": 14,
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_BURNED_TOWER1",
       "dest_warp_id": "0"
     },
     {
-      "x": 26,
+      "x": 30,
       "y": 17,
       "elevation": 0,
       "dest_map": "MAP_ECRUTEAK_SAGE_OFFICE1F",
       "dest_warp_id": "0"
     },
     {
-      "x": 30,
+      "x": 34,
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_ECRUTEAK_SAGE_OFFICE",
       "dest_warp_id": "0"
     },
     {
-      "x": 45,
+      "x": 53,
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_TIN_TOWER1",
       "dest_warp_id": "0"
     },
     {
-      "x": 31,
-      "y": 27,
+      "x": 35,
+      "y": 31,
       "elevation": 0,
       "dest_map": "MAP_ECRUTEAK_THEATER",
       "dest_warp_id": "0"
     },
     {
-      "x": 25,
-      "y": 36,
+      "x": 29,
+      "y": 44,
       "elevation": 0,
       "dest_map": "MAP_ROUTE37",
       "dest_warp_id": "0"
     },
     {
-      "x": 26,
-      "y": 36,
+      "x": 30,
+      "y": 44,
       "elevation": 0,
       "dest_map": "MAP_ROUTE37",
-      "dest_warp_id": "0"
+      "dest_warp_id": "1"
     },
     {
-      "x": 13,
-      "y": 27,
+      "x": 15,
+      "y": 31,
       "elevation": 0,
       "dest_map": "MAP_ECRUTEAK_HOUSE1",
       "dest_warp_id": "0"
     },
     {
-      "x": 21,
-      "y": 33,
+      "x": 25,
+      "y": 39,
       "elevation": 0,
       "dest_map": "MAP_ECRUTEAK_HOUSE2",
       "dest_warp_id": "0"
     },
     {
-      "x": 31,
-      "y": 33,
+      "x": 35,
+      "y": 39,
       "elevation": 0,
       "dest_map": "MAP_ECRUTEAK_POKECENTER",
       "dest_warp_id": "0"
     },
     {
-      "x": 38,
-      "y": 27,
+      "x": 44,
+      "y": 31,
       "elevation": 0,
       "dest_map": "MAP_ECRUTEAK_POKEMART",
       "dest_warp_id": "0"
     },
     {
-      "x": 14,
-      "y": 33,
+      "x": 16,
+      "y": 39,
       "elevation": 0,
       "dest_map": "MAP_ECRUTEAK_GYM",
       "dest_warp_id": "49"
