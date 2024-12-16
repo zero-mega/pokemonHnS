@@ -4614,7 +4614,7 @@
     {
       "id": "LAYOUT_CHERRYGROVE_CITY",
       "name": "CherrygroveCity_Layout",
-      "width": 53,
+      "width": 65,
       "height": 30,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Cherrygrove",
@@ -4924,8 +4924,8 @@
     {
       "id": "LAYOUT_ROUTE30",
       "name": "Route30_Layout",
-      "width": 24,
-      "height": 54,
+      "width": 46,
+      "height": 58,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Cherrygrove",
       "border_filepath": "data/layouts/Route30/border.bin",
@@ -4934,8 +4934,8 @@
     {
       "id": "LAYOUT_ROUTE31",
       "name": "Route31_Layout",
-      "width": 46,
-      "height": 20,
+      "width": 60,
+      "height": 23,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Cherrygrove",
       "border_filepath": "data/layouts/Route31/border.bin",

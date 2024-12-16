@@ -182,5 +182,126 @@
         "elevation": 3
       }
     ]
+  },
+  {
+    "name": "",
+    "width": 4,
+    "height": 4,
+    "primary_tileset": "gTileset_Johto_General",
+    "secondary_tileset": "",
+    "metatiles": [
+      {
+        "x": 0,
+        "y": 0,
+        "metatile_id": 380,
+        "collision": 1,
+        "elevation": 0
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "metatile_id": 381,
+        "collision": 1,
+        "elevation": 0
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "metatile_id": 382,
+        "collision": 1,
+        "elevation": 0
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "metatile_id": 383,
+        "collision": 1,
+        "elevation": 0
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "metatile_id": 384,
+        "collision": 1,
+        "elevation": 0
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "metatile_id": 395,
+        "collision": 1,
+        "elevation": 0
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "metatile_id": 396,
+        "collision": 1,
+        "elevation": 0
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "metatile_id": 390,
+        "collision": 1,
+        "elevation": 0
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "metatile_id": 391,
+        "collision": 1,
+        "elevation": 0
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "metatile_id": 398,
+        "collision": 1,
+        "elevation": 0
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "metatile_id": 399,
+        "collision": 1,
+        "elevation": 0
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "metatile_id": 403,
+        "collision": 1,
+        "elevation": 0
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "metatile_id": 404,
+        "collision": 1,
+        "elevation": 0
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "metatile_id": 407,
+        "collision": 1,
+        "elevation": 0
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "metatile_id": 98,
+        "collision": 1,
+        "elevation": 0
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "metatile_id": 411,
+        "collision": 1,
+        "elevation": 0
+      }
+    ]
   }
 ]

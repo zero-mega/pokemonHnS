@@ -142,6 +142,9 @@
 // gTileset_CeruleanCity
 #define METATILE_CeruleanCity_Cerulean  0x298
 
+// gTileset_Cherrygrove
+#define METATILE_Cherrygrove_Door_Red  0x2EB
+
 // gTileset_CianwoodSafariGate
 #define METATILE_CianwoodSafariGate_Cianwood  0x29A
 
@@ -540,7 +543,7 @@
 #define METATILE_SecretBase_ColorfulPlant_BaseLeft1     0x2E8
 #define METATILE_SecretBase_ColorfulPlant_BaseLeft2     0x2EA
 #define METATILE_SecretBase_ColorfulPlant_BaseRight1    0x2E9
-#define METATILE_SecretBase_ColorfulPlant_BaseRight2    0x2EB
+#define METATILE_SecretBase_ColorfulPlant_BaseRight2    0x072
 #define METATILE_SecretBase_ColorfulPlant_TopLeft       0x2E0
 #define METATILE_SecretBase_ColorfulPlant_TopLeftWall   0x2E1
 #define METATILE_SecretBase_ColorfulPlant_TopRight      0x2E2
