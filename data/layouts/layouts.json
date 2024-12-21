@@ -4985,7 +4985,7 @@
       "id": "LAYOUT_ROUTE36",
       "name": "Route36_Layout",
       "width": 56,
-      "height": 18,
+      "height": 20,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_IlexForest_34",
       "border_filepath": "data/layouts/Route36/border.bin",

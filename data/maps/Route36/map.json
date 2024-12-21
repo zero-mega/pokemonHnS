@@ -20,7 +20,7 @@
     },
     {
       "map": "MAP_VIOLET_CITY",
-      "offset": -10,
+      "offset": -8,
       "direction": "right"
     },
     {
@@ -38,7 +38,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BATTLE_GIRL",
       "x": 47,
-      "y": 8,
+      "y": 10,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -51,7 +51,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY",
       "x": 44,
-      "y": 5,
+      "y": 8,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
@@ -63,8 +63,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
-      "x": 40,
-      "y": 7,
+      "x": 39,
+      "y": 12,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
       "movement_range_x": 0,
@@ -77,7 +77,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_PSYCHIC_M",
       "x": 21,
-      "y": 12,
+      "y": 14,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -90,7 +90,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY",
       "x": 25,
-      "y": 13,
+      "y": 15,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -103,7 +103,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_TWIN",
       "x": 30,
-      "y": 12,
+      "y": 14,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -116,10 +116,36 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SUDOWOODO",
       "x": 33,
-      "y": 9,
+      "y": 11,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_HOUNDOUR",
+      "x": 45,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_RIGHT_AND_LEFT",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_GROWLITHE",
+      "x": 48,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
@@ -130,28 +156,28 @@
   "warp_events": [
     {
       "x": 46,
-      "y": 13,
+      "y": 15,
       "elevation": 0,
       "dest_map": "MAP_ROUTE36_RUINS_GATE",
       "dest_warp_id": "0"
     },
     {
       "x": 45,
-      "y": 13,
+      "y": 15,
       "elevation": 0,
       "dest_map": "MAP_ROUTE36_RUINS_GATE",
       "dest_warp_id": "0"
     },
     {
       "x": 16,
-      "y": 8,
+      "y": 10,
       "elevation": 0,
       "dest_map": "MAP_NATIONAL_PARK_GATES",
       "dest_warp_id": "3"
     },
     {
       "x": 47,
-      "y": 13,
+      "y": 15,
       "elevation": 0,
       "dest_map": "MAP_ROUTE36_RUINS_GATE",
       "dest_warp_id": "0"
