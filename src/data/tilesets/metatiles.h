@@ -477,3 +477,6 @@ const u16 gMetatileAttributes_DragonsDenOuter[] = INCBIN_U16("data/tilesets/seco
 
 const u16 gMetatiles_Johto_General_2[] = INCBIN_U16("data/tilesets/primary/johto_general_2/metatiles.bin");
 const u16 gMetatileAttributes_Johto_General_2[] = INCBIN_U16("data/tilesets/primary/johto_general_2/metatile_attributes.bin");
+
+const u16 gMetatiles_VioletCity[] = INCBIN_U16("data/tilesets/secondary/violet_city/metatiles.bin");
+const u16 gMetatileAttributes_VioletCity[] = INCBIN_U16("data/tilesets/secondary/violet_city/metatile_attributes.bin");

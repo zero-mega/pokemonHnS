@@ -178,6 +178,8 @@ static const u8 sDoorAnimTiles_JohtoSafariZone_Door[] = INCBIN_U8("graphics/door
 static const u16 sDoorNullPalette64[16] = {};
 static const u8 sDoorAnimTiles_CherryGrove_Door[] = INCBIN_U8("graphics/door_anims/NewBarkTown_Door_Red.4bpp");
 static const u16 sDoorNullPalette65[16] = {};
+static const u8 sDoorAnimTiles_VioletCity_Dojo_Door[] = INCBIN_U8("graphics/door_anims/Dojo_door.4bpp");
+static const u16 sDoorNullPalette66[16] = {};
 
 #define CLOSED_DOOR_TILES_OFFSET 0xFFFF
 
@@ -231,7 +233,7 @@ static const u8 sDoorAnimPalettes_Lavender[] = {9, 9, 9, 9, 9, 9, 9, 9};
 static const u8 sDoorAnimPalettes_Saffron[] = {8, 8, 8, 8, 8, 8, 8, 8};
 static const u8 sDoorAnimPalettes_Fuchsia[] = {8, 8, 8, 8, 8, 8, 8, 8};
 static const u8 sDoorAnimPalettes_CherryGrove_Door_Red[] = {8, 8, 8, 8, 8, 8, 8, 8};
-
+static const u8 sDoorAnimPalettes_VioletCity_Dojo_Door[] = {12, 12, 12, 12, 12, 12, 12, 12};
 
 static const u8 sDoorAnimPalettes_PokeMart[] = {0, 0, 5, 5, 5, 5, 5, 5};
 static const u8 sDoorAnimPalettes_Littleroot[] = {10, 10, 6, 6, 6, 6, 6, 6};
@@ -358,6 +360,8 @@ static const struct DoorGraphics sDoorGraphics[] =
     {METATILE_NewBarkTown_Door_Blue,                        DOOR_SOUND_NORMAL, DOOR_SIZE_1x1, sDoorAnimTiles_NewBarkTown_Door_Blue, sDoorAnimPalettes_NewBarkTown_Door_Blue},
     {METATILE_SafariZoneJohto_Safari,                        DOOR_SOUND_SLIDING, DOOR_SIZE_1x1, sDoorAnimTiles_JohtoSafariZone_Door, sDoorAnimPalettes_SafariZoneJohto_Door},
     {METATILE_Cherrygrove_Door_Red,                         DOOR_SOUND_NORMAL, DOOR_SIZE_1x1, sDoorAnimTiles_NewBarkTown_Door_Red, sDoorAnimPalettes_CherryGrove_Door_Red},
+    {METATILE_VioletCity_Dojo_Door,                         DOOR_SOUND_SLIDING, DOOR_SIZE_1x1, sDoorAnimTiles_VioletCity_Dojo_Door, sDoorAnimPalettes_VioletCity_Dojo_Door},
+  
     {},
 };
 

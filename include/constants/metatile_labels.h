@@ -25,7 +25,7 @@
 #define METATILE_BattleFrontier_Elevator_Mid2            0x333
 #define METATILE_BattleFrontier_Elevator_Top0            0x329
 #define METATILE_BattleFrontier_Elevator_Top1            0x32A
-#define METATILE_BattleFrontier_Elevator_Top2            0x32B
+#define METATILE_BattleFrontier_Elevator_Top2            0x32A
 
 // gTileset_BattleFrontierOutsideEast
 #define METATILE_BattleFrontierOutsideEast_Door              0x3FC
@@ -521,8 +521,8 @@
 #define METATILE_SecretBase_BreakableDoor_TopClosed     0x237
 #define METATILE_SecretBase_BreakableDoor_TopOpen       0x26E
 #define METATILE_SecretBase_BrickChair                  0x2C8
-#define METATILE_SecretBase_BrickDesk_BottomLeft        0x2B0
-#define METATILE_SecretBase_BrickDesk_BottomMid         0x2B1
+#define METATILE_SecretBase_BrickDesk_BottomLeft        0x2B1
+#define METATILE_SecretBase_BrickDesk_BottomMid         0x2B0
 #define METATILE_SecretBase_BrickDesk_BottomRight       0x2B2
 #define METATILE_SecretBase_BrickDesk_Center            0x2A9
 #define METATILE_SecretBase_BrickDesk_MidLeft           0x2A8
@@ -829,6 +829,9 @@
 // gTileset_Underwater
 #define METATILE_Underwater_FloorShadow  0x228
 #define METATILE_Underwater_RockWall     0x21E
+
+// gTileset_VioletCity
+#define METATILE_VioletCity_Dojo_Door  0x32B
 
 // gTileset_Viridian_2
 #define METATILE_Viridian_2_Viridian  0x299

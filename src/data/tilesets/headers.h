@@ -1839,3 +1839,14 @@ const struct Tileset gTileset_Johto_General_2 =
     .metatileAttributes = gMetatileAttributes_Johto_General_2,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_VioletCity =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_VioletCity,
+    .palettes = gTilesetPalettes_VioletCity,
+    .metatiles = gMetatiles_VioletCity,
+    .metatileAttributes = gMetatileAttributes_VioletCity,
+    .callback = NULL,
+};
