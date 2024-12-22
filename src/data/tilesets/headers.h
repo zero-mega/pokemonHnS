@@ -1837,7 +1837,7 @@ const struct Tileset gTileset_Johto_General_2 =
     .palettes = gTilesetPalettes_Johto_General_2,
     .metatiles = gMetatiles_Johto_General_2,
     .metatileAttributes = gMetatileAttributes_Johto_General_2,
-    .callback = NULL,
+    .callback = InitTilesetAnim_General,
 };
 
 const struct Tileset gTileset_VioletCity =

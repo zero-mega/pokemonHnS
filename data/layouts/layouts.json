@@ -4954,8 +4954,8 @@
     {
       "id": "LAYOUT_ROUTE33",
       "name": "Route33_Layout",
-      "width": 24,
-      "height": 20,
+      "width": 44,
+      "height": 28,
       "primary_tileset": "gTileset_Johto_General_2",
       "secondary_tileset": "gTileset_61_azalea",
       "border_filepath": "data/layouts/Route33/border.bin",
