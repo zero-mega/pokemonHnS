@@ -480,3 +480,9 @@ const u16 gMetatileAttributes_Johto_General_2[] = INCBIN_U16("data/tilesets/prim
 
 const u16 gMetatiles_VioletCity[] = INCBIN_U16("data/tilesets/secondary/violet_city/metatiles.bin");
 const u16 gMetatileAttributes_VioletCity[] = INCBIN_U16("data/tilesets/secondary/violet_city/metatile_attributes.bin");
+
+const u16 gMetatiles_AzaleaTown[] = INCBIN_U16("data/tilesets/secondary/azalea_town/metatiles.bin");
+const u16 gMetatileAttributes_AzaleaTown[] = INCBIN_U16("data/tilesets/secondary/azalea_town/metatile_attributes.bin");
+
+const u16 gMetatiles_IlexForest[] = INCBIN_U16("data/tilesets/secondary/ilex_forest/metatiles.bin");
+const u16 gMetatileAttributes_IlexForest[] = INCBIN_U16("data/tilesets/secondary/ilex_forest/metatile_attributes.bin");

@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_ROUTE35",
-      "offset": -10,
+      "offset": -16,
       "direction": "down"
     },
     {
@@ -114,7 +114,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SUDOWOODO",
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_SUDOWOODO",
       "x": 33,
       "y": 11,
       "elevation": 0,

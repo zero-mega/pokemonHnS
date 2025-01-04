@@ -1850,3 +1850,25 @@ const struct Tileset gTileset_VioletCity =
     .metatileAttributes = gMetatileAttributes_VioletCity,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_AzaleaTown =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AzaleaTown,
+    .palettes = gTilesetPalettes_AzaleaTown,
+    .metatiles = gMetatiles_AzaleaTown,
+    .metatileAttributes = gMetatileAttributes_AzaleaTown,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_IlexForest =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_IlexForest,
+    .palettes = gTilesetPalettes_IlexForest,
+    .metatiles = gMetatiles_IlexForest,
+    .metatileAttributes = gMetatileAttributes_IlexForest,
+    .callback = NULL,
+};
