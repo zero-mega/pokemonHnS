@@ -1807,16 +1807,7 @@ const struct Tileset gTileset_SafariZoneJohto =
     .callback = NULL,
 };
 
-const struct Tileset gTileset_JohtoRedrawn =
-{
-    .isCompressed = TRUE,
-    .isSecondary = FALSE,
-    .tiles = gTilesetTiles_JohtoRedrawn,
-    .palettes = gTilesetPalettes_JohtoRedrawn,
-    .metatiles = gMetatiles_JohtoRedrawn,
-    .metatileAttributes = gMetatileAttributes_JohtoRedrawn,
-    .callback = NULL,
-};
+
 
 const struct Tileset gTileset_DragonsDenOuter =
 {
@@ -1829,14 +1820,14 @@ const struct Tileset gTileset_DragonsDenOuter =
     .callback = NULL,
 };
 
-const struct Tileset gTileset_Johto_General_2 =
+const struct Tileset gTileset_johto_south =
 {
     .isCompressed = TRUE,
     .isSecondary = FALSE,
-    .tiles = gTilesetTiles_Johto_General_2,
-    .palettes = gTilesetPalettes_Johto_General_2,
-    .metatiles = gMetatiles_Johto_General_2,
-    .metatileAttributes = gMetatileAttributes_Johto_General_2,
+    .tiles = gTilesetTiles_johto_south,
+    .palettes = gTilesetPalettes_johto_south,
+    .metatiles = gMetatiles_johto_south,
+    .metatileAttributes = gMetatileAttributes_johto_south,
     .callback = InitTilesetAnim_General,
 };
 
@@ -1870,5 +1861,38 @@ const struct Tileset gTileset_IlexForest =
     .palettes = gTilesetPalettes_IlexForest,
     .metatiles = gMetatiles_IlexForest,
     .metatileAttributes = gMetatileAttributes_IlexForest,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_Ecruteak_City =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Ecruteak_City,
+    .palettes = gTilesetPalettes_Ecruteak_City,
+    .metatiles = gMetatiles_Ecruteak_City,
+    .metatileAttributes = gMetatileAttributes_Ecruteak_City,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_Johto_NorthWest =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_Johto_NorthWest,
+    .palettes = gTilesetPalettes_Johto_NorthWest,
+    .metatiles = gMetatiles_Johto_NorthWest,
+    .metatileAttributes = gMetatileAttributes_Johto_NorthWest,
+    .callback = InitTilesetAnim_General,
+};
+
+const struct Tileset gTileset_BellchimeTrail =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_BellchimeTrail,
+    .palettes = gTilesetPalettes_BellchimeTrail,
+    .metatiles = gMetatiles_BellchimeTrail,
+    .metatileAttributes = gMetatileAttributes_BellchimeTrail,
     .callback = NULL,
 };

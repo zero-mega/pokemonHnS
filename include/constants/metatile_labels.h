@@ -22,7 +22,7 @@
 #define METATILE_BattleFrontier_Elevator_Bottom2         0x33B
 #define METATILE_BattleFrontier_Elevator_Mid0            0x331
 #define METATILE_BattleFrontier_Elevator_Mid1            0x332
-#define METATILE_BattleFrontier_Elevator_Mid2            0x333
+#define METATILE_BattleFrontier_Elevator_Mid2            0x015
 #define METATILE_BattleFrontier_Elevator_Top0            0x329
 #define METATILE_BattleFrontier_Elevator_Top1            0x32A
 #define METATILE_BattleFrontier_Elevator_Top2            0x32A
@@ -79,6 +79,9 @@
 
 // gTileset_BattleTent
 #define METATILE_BattleTent_Door  0x26B
+
+// gTileset_BellchimeTrail
+#define METATILE_BellchimeTrail_Door  0x32B
 
 // gTileset_BikeShop
 #define METATILE_BikeShop_Barrier_Blue_Bottom      0x2CF
@@ -157,6 +160,9 @@
 // gTileset_Dewford
 #define METATILE_Dewford_Door              0x225
 #define METATILE_Dewford_Door_BattleTower  0x25D
+
+// gTileset_Ecruteak_City
+#define METATILE_Ecruteak_City_Door  0x333
 
 // gTileset_EliteFour
 #define METATILE_EliteFour_EntryDoor_ClosedBottom    0x20E
@@ -506,7 +512,7 @@
 #define METATILE_SecretBase_BlueBalloon                 0x33C
 #define METATILE_SecretBase_BlueBrick_Bottom            0x22F
 #define METATILE_SecretBase_BlueBrick_Top               0x227
-#define METATILE_SecretBase_BluePoster                  0x333
+#define METATILE_SecretBase_BluePoster                  0x034
 #define METATILE_SecretBase_BlueTent_BottomLeft         0x258
 #define METATILE_SecretBase_BlueTent_BottomRight        0x269
 #define METATILE_SecretBase_BlueTent_Door               0x259

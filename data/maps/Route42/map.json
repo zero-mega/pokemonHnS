@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_ECRUTEAK_CITY",
-      "offset": -29,
+      "offset": -25,
       "direction": "left"
     },
     {

@@ -21,15 +21,15 @@
       "x": 7,
       "y": 3,
       "elevation": 0,
-      "dest_map": "MAP_ECRUTEAK_CITY",
-      "dest_warp_id": "4"
+      "dest_map": "MAP_ECRUTEAK_DUMMY",
+      "dest_warp_id": "0"
     },
     {
       "x": 7,
       "y": 4,
       "elevation": 0,
-      "dest_map": "MAP_ECRUTEAK_CITY",
-      "dest_warp_id": "4"
+      "dest_map": "MAP_ECRUTEAK_DUMMY",
+      "dest_warp_id": "0"
     },
     {
       "x": 4,

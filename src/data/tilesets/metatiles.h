@@ -469,14 +469,12 @@ const u16 gMetatileAttributes_Vermilion[] = INCBIN_U16("data/tilesets/secondary/
 const u16 gMetatiles_SafariZoneJohto[] = INCBIN_U16("data/tilesets/secondary/safari_zone_johto/metatiles.bin");
 const u16 gMetatileAttributes_SafariZoneJohto[] = INCBIN_U16("data/tilesets/secondary/safari_zone_johto/metatile_attributes.bin");
 
-const u16 gMetatiles_JohtoRedrawn[] = INCBIN_U16("data/tilesets/primary/johto_redrawn/metatiles.bin");
-const u16 gMetatileAttributes_JohtoRedrawn[] = INCBIN_U16("data/tilesets/primary/johto_redrawn/metatile_attributes.bin");
 
 const u16 gMetatiles_DragonsDenOuter[] = INCBIN_U16("data/tilesets/secondary/dragons_den_outer/metatiles.bin");
 const u16 gMetatileAttributes_DragonsDenOuter[] = INCBIN_U16("data/tilesets/secondary/dragons_den_outer/metatile_attributes.bin");
 
-const u16 gMetatiles_Johto_General_2[] = INCBIN_U16("data/tilesets/primary/johto_general_2/metatiles.bin");
-const u16 gMetatileAttributes_Johto_General_2[] = INCBIN_U16("data/tilesets/primary/johto_general_2/metatile_attributes.bin");
+const u16 gMetatiles_johto_south[] = INCBIN_U16("data/tilesets/primary/johto_south/metatiles.bin");
+const u16 gMetatileAttributes_johto_south[] = INCBIN_U16("data/tilesets/primary/johto_south/metatile_attributes.bin");
 
 const u16 gMetatiles_VioletCity[] = INCBIN_U16("data/tilesets/secondary/violet_city/metatiles.bin");
 const u16 gMetatileAttributes_VioletCity[] = INCBIN_U16("data/tilesets/secondary/violet_city/metatile_attributes.bin");
@@ -486,3 +484,12 @@ const u16 gMetatileAttributes_AzaleaTown[] = INCBIN_U16("data/tilesets/secondary
 
 const u16 gMetatiles_IlexForest[] = INCBIN_U16("data/tilesets/secondary/ilex_forest/metatiles.bin");
 const u16 gMetatileAttributes_IlexForest[] = INCBIN_U16("data/tilesets/secondary/ilex_forest/metatile_attributes.bin");
+
+const u16 gMetatiles_Ecruteak_City[] = INCBIN_U16("data/tilesets/secondary/ecruteak_city/metatiles.bin");
+const u16 gMetatileAttributes_Ecruteak_City[] = INCBIN_U16("data/tilesets/secondary/ecruteak_city/metatile_attributes.bin");
+
+const u16 gMetatiles_Johto_NorthWest[] = INCBIN_U16("data/tilesets/primary/johto_north_west/metatiles.bin");
+const u16 gMetatileAttributes_Johto_NorthWest[] = INCBIN_U16("data/tilesets/primary/johto_north_west/metatile_attributes.bin");
+
+const u16 gMetatiles_BellchimeTrail[] = INCBIN_U16("data/tilesets/secondary/bellchime_trail/metatiles.bin");
+const u16 gMetatileAttributes_BellchimeTrail[] = INCBIN_U16("data/tilesets/secondary/bellchime_trail/metatile_attributes.bin");

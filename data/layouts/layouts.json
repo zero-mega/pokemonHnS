@@ -4956,7 +4956,7 @@
       "name": "Route33_Layout",
       "width": 44,
       "height": 36,
-      "primary_tileset": "gTileset_Johto_General_2",
+      "primary_tileset": "gTileset_johto_south",
       "secondary_tileset": "gTileset_AzaleaTown",
       "border_filepath": "data/layouts/Route33/border.bin",
       "blockdata_filepath": "data/layouts/Route33/map.bin"
@@ -4995,9 +4995,9 @@
       "id": "LAYOUT_ROUTE37",
       "name": "Route37_Layout",
       "width": 28,
-      "height": 23,
+      "height": 29,
       "primary_tileset": "gTileset_Johto_General",
-      "secondary_tileset": "gTileset_Route37",
+      "secondary_tileset": "gTileset_Ecruteak_City",
       "border_filepath": "data/layouts/Route37/border.bin",
       "blockdata_filepath": "data/layouts/Route37/map.bin"
     },
@@ -5106,7 +5106,7 @@
       "name": "AzaleaTown_Layout",
       "width": 54,
       "height": 34,
-      "primary_tileset": "gTileset_Johto_General_2",
+      "primary_tileset": "gTileset_johto_south",
       "secondary_tileset": "gTileset_AzaleaTown",
       "border_filepath": "data/layouts/AzaleaTown/border.bin",
       "blockdata_filepath": "data/layouts/AzaleaTown/map.bin"
@@ -5125,9 +5125,9 @@
       "id": "LAYOUT_ECRUTEAK_CITY",
       "name": "EcruteakCity_Layout",
       "width": 60,
-      "height": 53,
-      "primary_tileset": "gTileset_Johto_General_Fall",
-      "secondary_tileset": "gTileset_Fall_Ecruteak",
+      "height": 49,
+      "primary_tileset": "gTileset_Johto_NorthWest",
+      "secondary_tileset": "gTileset_Ecruteak_City",
       "border_filepath": "data/layouts/EcruteakCity/border.bin",
       "blockdata_filepath": "data/layouts/EcruteakCity/map.bin"
     },
@@ -5406,7 +5406,7 @@
       "name": "IlexForest_Layout",
       "width": 62,
       "height": 73,
-      "primary_tileset": "gTileset_Johto_General_2",
+      "primary_tileset": "gTileset_johto_south",
       "secondary_tileset": "gTileset_IlexForest",
       "border_filepath": "data/layouts/IlexForest/border.bin",
       "blockdata_filepath": "data/layouts/IlexForest/map.bin"
@@ -5754,7 +5754,7 @@
     {
       "id": "LAYOUT_BURNED_TOWER1",
       "name": "BurnedTower1_Layout",
-      "width": 16,
+      "width": 22,
       "height": 22,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_BurnedTower_49",
@@ -5764,7 +5764,7 @@
     {
       "id": "LAYOUT_BURNED_TOWER2",
       "name": "BurnedTower2_Layout",
-      "width": 20,
+      "width": 24,
       "height": 18,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_BurnedTower_49",
@@ -7154,10 +7154,10 @@
     {
       "id": "LAYOUT_ECRUTEAK_DUMMY",
       "name": "Ecruteak_Dummy_Layout",
-      "width": 52,
-      "height": 41,
-      "primary_tileset": "gTileset_Johto_General_Fall",
-      "secondary_tileset": "gTileset_Fall_Ecruteak",
+      "width": 40,
+      "height": 29,
+      "primary_tileset": "gTileset_Johto_NorthWest",
+      "secondary_tileset": "gTileset_BellchimeTrail",
       "border_filepath": "data/layouts/Ecruteak_Dummy/border.bin",
       "blockdata_filepath": "data/layouts/Ecruteak_Dummy/map.bin"
     },
@@ -8496,7 +8496,7 @@
       "name": "SafariZone_Top_Left_Layout",
       "width": 22,
       "height": 20,
-      "primary_tileset": "gTileset_JohtoRedrawn",
+      "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/SafariZone_Top_Left/border.bin",
       "blockdata_filepath": "data/layouts/SafariZone_Top_Left/map.bin"

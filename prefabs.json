@@ -562,7 +562,7 @@
     "name": "PC",
     "width": 5,
     "height": 5,
-    "primary_tileset": "gTileset_Johto_General_2",
+    "primary_tileset": "gTileset_johto_south",
     "secondary_tileset": "gTileset_61_azalea",
     "metatiles": [
       {

@@ -46,8 +46,8 @@
       "x": 9,
       "y": 17,
       "elevation": 0,
-      "dest_map": "MAP_ECRUTEAK_CITY",
-      "dest_warp_id": "5"
+      "dest_map": "MAP_ECRUTEAK_DUMMY",
+      "dest_warp_id": "1"
     },
     {
       "x": 9,
