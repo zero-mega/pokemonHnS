@@ -5006,7 +5006,7 @@
       "name": "Route38_Layout",
       "width": 44,
       "height": 32,
-      "primary_tileset": "gTileset_Johto_General_Fall",
+      "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Route38Farm",
       "border_filepath": "data/layouts/Route38/border.bin",
       "blockdata_filepath": "data/layouts/Route38/map.bin"
@@ -5014,10 +5014,10 @@
     {
       "id": "LAYOUT_ROUTE39",
       "name": "Route39_Layout",
-      "width": 26,
-      "height": 46,
-      "primary_tileset": "gTileset_Johto_General_Fall",
-      "secondary_tileset": "gTileset_Fall_Ecruteak",
+      "width": 40,
+      "height": 50,
+      "primary_tileset": "gTileset_Johto_General",
+      "secondary_tileset": "gTileset_Route38Farm",
       "border_filepath": "data/layouts/Route39/border.bin",
       "blockdata_filepath": "data/layouts/Route39/map.bin"
     },
@@ -6697,7 +6697,7 @@
       "width": 20,
       "height": 20,
       "primary_tileset": "gTileset_Johto_General",
-      "secondary_tileset": "gTileset_Fall_Ecruteak",
+      "secondary_tileset": "gTileset_Route38Farm",
       "border_filepath": "data/layouts/Trees/border.bin",
       "blockdata_filepath": "data/layouts/Trees/map.bin"
     },
