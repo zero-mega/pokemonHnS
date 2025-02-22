@@ -5015,7 +5015,7 @@
       "id": "LAYOUT_ROUTE39",
       "name": "Route39_Layout",
       "width": 40,
-      "height": 50,
+      "height": 44,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Route38Farm",
       "border_filepath": "data/layouts/Route39/border.bin",
@@ -5134,8 +5134,8 @@
     {
       "id": "LAYOUT_OLIVINE_CITY",
       "name": "OlivineCity_Layout",
-      "width": 46,
-      "height": 60,
+      "width": 50,
+      "height": 72,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Olivine_6",
       "border_filepath": "data/layouts/OlivineCity/border.bin",
@@ -7777,7 +7777,7 @@
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_R26_21",
+      "secondary_tileset": "gTileset_Cafe_50",
       "border_filepath": "data/layouts/CeladonHouse1/border.bin",
       "blockdata_filepath": "data/layouts/CeladonHouse1/map.bin"
     },
@@ -7984,10 +7984,10 @@
     {
       "id": "LAYOUT_FUCHSIA_CITY_CAFE",
       "name": "FuchsiaCityCafe_Layout",
-      "width": 15,
-      "height": 11,
+      "width": 13,
+      "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_Cafe_50",
+      "secondary_tileset": "gTileset_R26_21",
       "border_filepath": "data/layouts/FuchsiaCityCafe/border.bin",
       "blockdata_filepath": "data/layouts/FuchsiaCityCafe/map.bin"
     },
@@ -8500,6 +8500,16 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/SafariZone_Top_Left/border.bin",
       "blockdata_filepath": "data/layouts/SafariZone_Top_Left/map.bin"
+    },
+    {
+      "id": "LAYOUT_CELADON_APARTMENTS5",
+      "name": "CeladonApartments5_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_Johto_Building",
+      "secondary_tileset": "gTileset_R26_21",
+      "border_filepath": "data/layouts/CeladonApartments5/border.bin",
+      "blockdata_filepath": "data/layouts/CeladonApartments5/map.bin"
     }
   ]
 }

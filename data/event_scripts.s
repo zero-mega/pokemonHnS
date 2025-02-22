@@ -1888,3 +1888,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/SaffronCityDojoVIP/scripts.inc"
 
 	.include "data/maps/SafariZone_Top_Left/scripts.inc"
+
+	.include "data/maps/CeladonApartments5/scripts.inc"

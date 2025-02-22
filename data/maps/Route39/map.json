@@ -17,6 +17,11 @@
       "map": "MAP_ROUTE38",
       "offset": -2,
       "direction": "right"
+    },
+    {
+      "map": "MAP_OLIVINE_CITY",
+      "offset": 6,
+      "direction": "down"
     }
   ],
   "object_events": [
@@ -204,20 +209,6 @@
       "elevation": 0,
       "dest_map": "MAP_ROUTE39BARN",
       "dest_warp_id": "0"
-    },
-    {
-      "x": 25,
-      "y": 41,
-      "elevation": 0,
-      "dest_map": "MAP_ROUTE39_OLIVINE_GATE",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 26,
-      "y": 41,
-      "elevation": 0,
-      "dest_map": "MAP_ROUTE39_OLIVINE_GATE",
-      "dest_warp_id": "1"
     },
     {
       "x": 16,

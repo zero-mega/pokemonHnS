@@ -416,6 +416,7 @@
 #define METATILE_NewBarkTown_Door_Yellow  0x29B
 
 // gTileset_Olivine_6
+#define METATILE_Olivine_6_Door        0x312
 #define METATILE_Olivine_6_Vermillion  0x29E
 
 // gTileset_Pacifidlog
@@ -641,7 +642,7 @@
 #define METATILE_SecretBase_PokemonDesk                 0x28F
 #define METATILE_SecretBase_PowderSnowMat_BottomLeft    0x310
 #define METATILE_SecretBase_PowderSnowMat_BottomMid     0x311
-#define METATILE_SecretBase_PowderSnowMat_BottomRight   0x312
+#define METATILE_SecretBase_PowderSnowMat_BottomRight   0x101
 #define METATILE_SecretBase_PowderSnowMat_Center        0x309
 #define METATILE_SecretBase_PowderSnowMat_MidLeft       0x308
 #define METATILE_SecretBase_PowderSnowMat_MidRight      0x30A
