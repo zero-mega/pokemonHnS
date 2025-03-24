@@ -263,14 +263,15 @@
 #define MAP_SAFFRON_CITY_DOJO_VIP (8 | (18 << 8))
 
 // gMapGroup_IndoorFuchsia
-#define MAP_FUCHSIA_POKECENTER  (0 | (19 << 8))
-#define MAP_FUCHSIA_POKEMART    (1 | (19 << 8))
-#define MAP_FUCHSIA_CITY_HOUSE2 (2 | (19 << 8))
-#define MAP_FUCHSIA_CITY_HOUSE3 (3 | (19 << 8))
-#define MAP_FUCHSIA_CITY_CAFE   (4 | (19 << 8))
-#define MAP_FUCHSIA_CITY_HOUSE4 (5 | (19 << 8))
-#define MAP_FUCHSIA_CITY_GYM    (6 | (19 << 8))
-#define MAP_FUCHSIA_ROUTE19GATE (7 | (19 << 8))
+#define MAP_FUCHSIA_POKECENTER           (0 | (19 << 8))
+#define MAP_FUCHSIA_POKEMART             (1 | (19 << 8))
+#define MAP_FUCHSIA_CITY_HOUSE2          (2 | (19 << 8))
+#define MAP_FUCHSIA_CITY_HOUSE3          (3 | (19 << 8))
+#define MAP_FUCHSIA_CITY_CAFE            (4 | (19 << 8))
+#define MAP_FUCHSIA_CITY_HOUSE4          (5 | (19 << 8))
+#define MAP_FUCHSIA_CITY_GYM             (6 | (19 << 8))
+#define MAP_FUCHSIA_ROUTE19GATE          (7 | (19 << 8))
+#define MAP_SAFARI_ZONE_ENTRANCE_FUCHSIA (8 | (19 << 8))
 
 // gMapGroup_IndoorCinnabar
 #define MAP_CINNABAR_POKECENTER (0 | (20 << 8))
@@ -998,6 +999,6 @@
 
 #define MAP_GROUPS_COUNT 32
 
-// static const u8 MAP_GROUP_COUNT[] = {69, 5, 5, 6, 5, 28, 8, 10, 6, 6, 7, 5, 5, 7, 6, 9, 7, 16, 9, 8, 4, 7, 27, 28, 71, 0, 28, 125, 113, 126, 74, 97, 0};
+// static const u8 MAP_GROUP_COUNT[] = {69, 5, 5, 6, 5, 28, 8, 10, 6, 6, 7, 5, 5, 7, 6, 9, 7, 16, 9, 9, 4, 7, 27, 28, 71, 0, 28, 125, 113, 126, 74, 97, 0};
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

@@ -4647,14 +4647,14 @@
       "width": 24,
       "height": 38,
       "primary_tileset": "gTileset_Johto_General",
-      "secondary_tileset": "gTileset_NewBarkTown",
+      "secondary_tileset": "gTileset_PalletTown",
       "border_filepath": "data/layouts/Route1/border.bin",
       "blockdata_filepath": "data/layouts/Route1/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE2",
       "name": "Route2_Layout",
-      "width": 22,
+      "width": 30,
       "height": 56,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Viridian_2",
@@ -4674,7 +4674,7 @@
     {
       "id": "LAYOUT_ROUTE4",
       "name": "Route4_Layout",
-      "width": 41,
+      "width": 47,
       "height": 32,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Cherrygrove",
@@ -4815,7 +4815,7 @@
       "id": "LAYOUT_ROUTE18",
       "name": "Route18_Layout",
       "width": 18,
-      "height": 20,
+      "height": 31,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Fuchsia",
       "border_filepath": "data/layouts/Route18/border.bin",
@@ -4924,7 +4924,7 @@
     {
       "id": "LAYOUT_ROUTE30",
       "name": "Route30_Layout",
-      "width": 46,
+      "width": 48,
       "height": 58,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Cherrygrove",
@@ -5024,7 +5024,7 @@
     {
       "id": "LAYOUT_ROUTE40",
       "name": "Route40_Layout",
-      "width": 28,
+      "width": 34,
       "height": 43,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Olivine_6",
@@ -5676,7 +5676,7 @@
       "name": "RuinsOfAlph_Layout",
       "width": 32,
       "height": 48,
-      "primary_tileset": "gTileset_Johto_General",
+      "primary_tileset": "gTileset_Johto_NorthWest",
       "secondary_tileset": "gTileset_CDRuinsOfAlph",
       "border_filepath": "data/layouts/RuinsOfAlph/border.bin",
       "blockdata_filepath": "data/layouts/RuinsOfAlph/map.bin"
@@ -8510,6 +8510,16 @@
       "secondary_tileset": "gTileset_R26_21",
       "border_filepath": "data/layouts/CeladonApartments5/border.bin",
       "blockdata_filepath": "data/layouts/CeladonApartments5/map.bin"
+    },
+    {
+      "id": "LAYOUT_SAFARI_ZONE_ENTRANCE_FUCHSIA",
+      "name": "SafariZoneEntrance_Fuchsia_Layout",
+      "width": 15,
+      "height": 15,
+      "primary_tileset": "gTileset_Johto_Building",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/SafariZoneEntrance_Fuchsia/border.bin",
+      "blockdata_filepath": "data/layouts/SafariZoneEntrance_Fuchsia/map.bin"
     }
   ]
 }

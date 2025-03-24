@@ -1890,3 +1890,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/SafariZone_Top_Left/scripts.inc"
 
 	.include "data/maps/CeladonApartments5/scripts.inc"
+
+	.include "data/maps/SafariZoneEntrance_Fuchsia/scripts.inc"

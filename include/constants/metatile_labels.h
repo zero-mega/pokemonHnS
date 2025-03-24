@@ -180,7 +180,7 @@
 // gTileset_Facility
 #define METATILE_Facility_DataPad                       0x3E4
 #define METATILE_Facility_NewMauvilleDoor_Closed_Tile0  0x314
-#define METATILE_Facility_NewMauvilleDoor_Closed_Tile1  0x315
+#define METATILE_Facility_NewMauvilleDoor_Closed_Tile1  0x034
 #define METATILE_Facility_NewMauvilleDoor_Closed_Tile2  0x316
 #define METATILE_Facility_NewMauvilleDoor_Closed_Tile3  0x31C
 #define METATILE_Facility_NewMauvilleDoor_Closed_Tile4  0x31D
@@ -226,7 +226,8 @@
 #define METATILE_Fortree_WoodBridge1_Top                   0x000
 
 // gTileset_Fuchsia
-#define METATILE_Fuchsia_Fuchsia  0x2BF
+#define METATILE_Fuchsia_Fuchsia   0x2BF
+#define METATILE_Fuchsia_Red_Door  0x315
 
 // gTileset_General
 #define METATILE_General_BlueCaveIndent        0x1B0
@@ -496,7 +497,7 @@
 // gTileset_SecretBase
 #define METATILE_SecretBase_AttractMat_BottomLeft       0x313
 #define METATILE_SecretBase_AttractMat_BottomMid        0x314
-#define METATILE_SecretBase_AttractMat_BottomRight      0x315
+#define METATILE_SecretBase_AttractMat_BottomRight      0x035
 #define METATILE_SecretBase_AttractMat_Center           0x30C
 #define METATILE_SecretBase_AttractMat_MidLeft          0x30B
 #define METATILE_SecretBase_AttractMat_MidRight         0x30D
