@@ -5676,7 +5676,7 @@
       "name": "RuinsOfAlph_Layout",
       "width": 32,
       "height": 48,
-      "primary_tileset": "gTileset_Johto_NorthWest",
+      "primary_tileset": "gTileset_Johto_NorthEast",
       "secondary_tileset": "gTileset_CDRuinsOfAlph",
       "border_filepath": "data/layouts/RuinsOfAlph/border.bin",
       "blockdata_filepath": "data/layouts/RuinsOfAlph/map.bin"
