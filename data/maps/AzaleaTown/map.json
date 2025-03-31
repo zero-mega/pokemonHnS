@@ -203,7 +203,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_EKANS",
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_HAUNTER",
       "x": 5,
       "y": 7,
       "elevation": 0,
@@ -213,7 +213,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_NIGHT_POKEMON"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_SLOWPOKE",

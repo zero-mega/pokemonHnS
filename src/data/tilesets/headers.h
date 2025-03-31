@@ -1896,3 +1896,14 @@ const struct Tileset gTileset_BellchimeTrail =
     .metatileAttributes = gMetatileAttributes_BellchimeTrail,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_whirl_islands =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_whirl_islands,
+    .palettes = gTilesetPalettes_whirl_islands,
+    .metatiles = gMetatiles_whirl_islands,
+    .metatileAttributes = gMetatileAttributes_whirl_islands,
+    .callback = NULL,
+};

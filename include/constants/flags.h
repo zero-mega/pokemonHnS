@@ -659,8 +659,8 @@
 #define FLAG_MET_FRONTIER_ELEMENTAL_MOVE_TUTOR  0x268
 #define FLAG_HIDE_WHIRL_ISLANDS_KIMONO_GIRLS  0x269 // Set after compelted legendary event
 #define FLAG_HIDE_TIN_TOWER_KIMONO_GIRLS  0x26A // Set after completing legendary event
-#define FLAG_UNUSED_0x26B  0x26B // Unused Flag
-#define FLAG_UNUSED_0x26C  0x26C // Unused Flag
+#define FLAG_NIGHT_POKEMON  0x26B // Set at day to hide nighttime overworld pokemon
+#define FLAG_DAY_POKEMON  0x26C // Set at night to hide daytime overworld pokemon
 #define FLAG_UNUSED_0x26D  0x26D // Unused Flag
 #define FLAG_UNUSED_0x26E  0x26E // Unused Flag
 #define FLAG_UNUSED_0x26F  0x26F // Unused Flag

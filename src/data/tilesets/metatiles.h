@@ -493,3 +493,6 @@ const u16 gMetatileAttributes_Johto_NorthWest[] = INCBIN_U16("data/tilesets/prim
 
 const u16 gMetatiles_BellchimeTrail[] = INCBIN_U16("data/tilesets/secondary/bellchime_trail/metatiles.bin");
 const u16 gMetatileAttributes_BellchimeTrail[] = INCBIN_U16("data/tilesets/secondary/bellchime_trail/metatile_attributes.bin");
+
+const u16 gMetatiles_whirl_islands[] = INCBIN_U16("data/tilesets/secondary/whirl_islands/metatiles.bin");
+const u16 gMetatileAttributes_whirl_islands[] = INCBIN_U16("data/tilesets/secondary/whirl_islands/metatile_attributes.bin");
