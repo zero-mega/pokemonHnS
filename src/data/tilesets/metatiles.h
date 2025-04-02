@@ -433,8 +433,8 @@ const u16 gMetatileAttributes_FuchsiaHouseBackdoor[] = INCBIN_U16("data/tilesets
 const u16 gMetatiles_FuchsiaCityGym[] = INCBIN_U16("data/tilesets/secondary/fuchsia_city_gym/metatiles.bin");
 const u16 gMetatileAttributes_FuchsiaCityGym[] = INCBIN_U16("data/tilesets/secondary/fuchsia_city_gym/metatile_attributes.bin");
 
-const u16 gMetatiles_VermillionGym[] = INCBIN_U16("data/tilesets/secondary/vermillion_gym/metatiles.bin");
-const u16 gMetatileAttributes_VermillionGym[] = INCBIN_U16("data/tilesets/secondary/vermillion_gym/metatile_attributes.bin");
+const u16 gMetatiles_VermilionGym[] = INCBIN_U16("data/tilesets/secondary/vermilion_gym/metatiles.bin");
+const u16 gMetatileAttributes_VermilionGym[] = INCBIN_U16("data/tilesets/secondary/vermilion_gym/metatile_attributes.bin");
 
 const u16 gMetatiles_CinnabarGym_31[] = INCBIN_U16("data/tilesets/secondary/cinnabar_gym_31/metatiles.bin");
 const u16 gMetatileAttributes_CinnabarGym_31[] = INCBIN_U16("data/tilesets/secondary/cinnabar_gym_31/metatile_attributes.bin");

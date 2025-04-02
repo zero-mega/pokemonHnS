@@ -4792,14 +4792,14 @@
       "blockdata_filepath": "data/layouts/Route15/map.bin"
     },
     {
-      "id": "LAYOUT_ROTUE16",
-      "name": "Rotue16_Layout",
+      "id": "LAYOUT_ROUTE16",
+      "name": "Route16_Layout",
       "width": 29,
       "height": 24,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_CeladonCity",
-      "border_filepath": "data/layouts/Rotue16/border.bin",
-      "blockdata_filepath": "data/layouts/Rotue16/map.bin"
+      "border_filepath": "data/layouts/Route16/border.bin",
+      "blockdata_filepath": "data/layouts/Route16/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE17",
@@ -5212,14 +5212,14 @@
       "blockdata_filepath": "data/layouts/CeruleanCity/map.bin"
     },
     {
-      "id": "LAYOUT_VERMILLION_CITY",
-      "name": "VermillionCity_Layout",
+      "id": "LAYOUT_VERMILION_CITY",
+      "name": "VermilionCity_Layout",
       "width": 53,
       "height": 36,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Vermilion",
-      "border_filepath": "data/layouts/VermillionCity/border.bin",
-      "blockdata_filepath": "data/layouts/VermillionCity/map.bin"
+      "border_filepath": "data/layouts/VermilionCity/border.bin",
+      "blockdata_filepath": "data/layouts/VermilionCity/map.bin"
     },
     {
       "id": "LAYOUT_LAVENDER_TOWN",
@@ -5322,34 +5322,34 @@
       "blockdata_filepath": "data/layouts/CeruleanCave_3/map.bin"
     },
     {
-      "id": "LAYOUT_DIGGLETS_CAVE1",
-      "name": "DiggletsCave1_Layout",
+      "id": "LAYOUT_DIGLETTS_CAVE1",
+      "name": "DiglettsCave1_Layout",
       "width": 10,
       "height": 8,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Cave2_37",
-      "border_filepath": "data/layouts/DiggletsCave1/border.bin",
-      "blockdata_filepath": "data/layouts/DiggletsCave1/map.bin"
+      "border_filepath": "data/layouts/DiglettsCave1/border.bin",
+      "blockdata_filepath": "data/layouts/DiglettsCave1/map.bin"
     },
     {
-      "id": "LAYOUT_DIGGLETS_CAVE2",
-      "name": "DiggletsCave2_Layout",
+      "id": "LAYOUT_DIGLETTS_CAVE2",
+      "name": "DiglettsCave2_Layout",
       "width": 10,
       "height": 8,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Cave2_37",
-      "border_filepath": "data/layouts/DiggletsCave2/border.bin",
-      "blockdata_filepath": "data/layouts/DiggletsCave2/map.bin"
+      "border_filepath": "data/layouts/DiglettsCave2/border.bin",
+      "blockdata_filepath": "data/layouts/DiglettsCave2/map.bin"
     },
     {
-      "id": "LAYOUT_DIGGLETS_CAVE3",
-      "name": "DiggletsCave3_Layout",
+      "id": "LAYOUT_DIGLETTS_CAVE3",
+      "name": "DiglettsCave3_Layout",
       "width": 20,
       "height": 36,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Cave2_37",
-      "border_filepath": "data/layouts/DiggletsCave3/border.bin",
-      "blockdata_filepath": "data/layouts/DiggletsCave3/map.bin"
+      "border_filepath": "data/layouts/DiglettsCave3/border.bin",
+      "blockdata_filepath": "data/layouts/DiglettsCave3/map.bin"
     },
     {
       "id": "LAYOUT_ICE_PATH1",
@@ -5682,14 +5682,14 @@
       "blockdata_filepath": "data/layouts/RuinsOfAlph/map.bin"
     },
     {
-      "id": "LAYOUT_TOJO_FALLS",
-      "name": "TojoFalls_Layout",
+      "id": "LAYOUT_TOHJO_FALLS",
+      "name": "TohjoFalls_Layout",
       "width": 48,
       "height": 30,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Cave1_15",
-      "border_filepath": "data/layouts/TojoFalls/border.bin",
-      "blockdata_filepath": "data/layouts/TojoFalls/map.bin"
+      "border_filepath": "data/layouts/TohjoFalls/border.bin",
+      "blockdata_filepath": "data/layouts/TohjoFalls/map.bin"
     },
     {
       "id": "LAYOUT_DRAGONS_DEN1",
@@ -6042,14 +6042,14 @@
       "blockdata_filepath": "data/layouts/CeruleanPokecenter/map.bin"
     },
     {
-      "id": "LAYOUT_VERMILLION_POKECENTER",
-      "name": "VermillionPokecenter_Layout",
+      "id": "LAYOUT_VERMILION_POKECENTER",
+      "name": "VermilionPokecenter_Layout",
       "width": 15,
       "height": 10,
       "primary_tileset": "gTileset_Kanto_Building",
       "secondary_tileset": "gTileset_Kanto_PokemonCenter",
-      "border_filepath": "data/layouts/VermillionPokecenter/border.bin",
-      "blockdata_filepath": "data/layouts/VermillionPokecenter/map.bin"
+      "border_filepath": "data/layouts/VermilionPokecenter/border.bin",
+      "blockdata_filepath": "data/layouts/VermilionPokecenter/map.bin"
     },
     {
       "id": "LAYOUT_LAVENDER_POKECENTER",
@@ -6542,14 +6542,14 @@
       "blockdata_filepath": "data/layouts/CeruleanPokemart/map.bin"
     },
     {
-      "id": "LAYOUT_VERMILLION_POKEMART",
-      "name": "VermillionPokemart_Layout",
+      "id": "LAYOUT_VERMILION_POKEMART",
+      "name": "VermilionPokemart_Layout",
       "width": 11,
       "height": 9,
       "primary_tileset": "gTileset_Kanto_Building",
       "secondary_tileset": "gTileset_Kanto_Mart",
-      "border_filepath": "data/layouts/VermillionPokemart/border.bin",
-      "blockdata_filepath": "data/layouts/VermillionPokemart/map.bin"
+      "border_filepath": "data/layouts/VermilionPokemart/border.bin",
+      "blockdata_filepath": "data/layouts/VermilionPokemart/map.bin"
     },
     {
       "id": "LAYOUT_LAVENDER_POKEMART",
@@ -8022,64 +8022,64 @@
       "blockdata_filepath": "data/layouts/Fuchsia_Route19Gate/map.bin"
     },
     {
-      "id": "LAYOUT_VERMILLION_CITY_FAN_CLUB",
-      "name": "VermillionCityFanClub_Layout",
+      "id": "LAYOUT_VERMILION_CITY_FAN_CLUB",
+      "name": "VermilionCityFanClub_Layout",
       "width": 12,
       "height": 12,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_PokemonDayCare",
-      "border_filepath": "data/layouts/VermillionCityFanClub/border.bin",
-      "blockdata_filepath": "data/layouts/VermillionCityFanClub/map.bin"
+      "border_filepath": "data/layouts/VermilionCityFanClub/border.bin",
+      "blockdata_filepath": "data/layouts/VermilionCityFanClub/map.bin"
     },
     {
-      "id": "LAYOUT_VERMILLION_CITY_HOUSE1",
-      "name": "VermillionCityHouse1_Layout",
+      "id": "LAYOUT_VERMILION_CITY_HOUSE1",
+      "name": "VermilionCityHouse1_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/VermillionCityHouse1/border.bin",
-      "blockdata_filepath": "data/layouts/VermillionCityHouse1/map.bin"
+      "border_filepath": "data/layouts/VermilionCityHouse1/border.bin",
+      "blockdata_filepath": "data/layouts/VermilionCityHouse1/map.bin"
     },
     {
-      "id": "LAYOUT_VERMILLION_CITY_HOUSE2",
-      "name": "VermillionCityHouse2_Layout",
+      "id": "LAYOUT_VERMILION_CITY_HOUSE2",
+      "name": "VermilionCityHouse2_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/VermillionCityHouse2/border.bin",
-      "blockdata_filepath": "data/layouts/VermillionCityHouse2/map.bin"
+      "border_filepath": "data/layouts/VermilionCityHouse2/border.bin",
+      "blockdata_filepath": "data/layouts/VermilionCityHouse2/map.bin"
     },
     {
-      "id": "LAYOUT_VERMILLION_CITY_HOUSE3",
-      "name": "VermillionCityHouse3_Layout",
+      "id": "LAYOUT_VERMILION_CITY_HOUSE3",
+      "name": "VermilionCityHouse3_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/VermillionCityHouse3/border.bin",
-      "blockdata_filepath": "data/layouts/VermillionCityHouse3/map.bin"
+      "border_filepath": "data/layouts/VermilionCityHouse3/border.bin",
+      "blockdata_filepath": "data/layouts/VermilionCityHouse3/map.bin"
     },
     {
-      "id": "LAYOUT_VERMILLION_CITY_PORT1",
-      "name": "VermillionCityPort1_Layout",
+      "id": "LAYOUT_VERMILION_CITY_PORT1",
+      "name": "VermilionCityPort1_Layout",
       "width": 32,
       "height": 23,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Marina_65",
-      "border_filepath": "data/layouts/VermillionCityPort1/border.bin",
-      "blockdata_filepath": "data/layouts/VermillionCityPort1/map.bin"
+      "border_filepath": "data/layouts/VermilionCityPort1/border.bin",
+      "blockdata_filepath": "data/layouts/VermilionCityPort1/map.bin"
     },
     {
-      "id": "LAYOUT_VERMILLION_CITY_PORT_INDOOR",
-      "name": "VermillionCityPortIndoor_Layout",
+      "id": "LAYOUT_VERMILION_CITY_PORT_INDOOR",
+      "name": "VermilionCityPortIndoor_Layout",
       "width": 18,
       "height": 14,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Marina_65",
-      "border_filepath": "data/layouts/VermillionCityPortIndoor/border.bin",
-      "blockdata_filepath": "data/layouts/VermillionCityPortIndoor/map.bin"
+      "border_filepath": "data/layouts/VermilionCityPortIndoor/border.bin",
+      "blockdata_filepath": "data/layouts/VermilionCityPortIndoor/map.bin"
     },
     {
       "id": "LAYOUT_OLIVINE_CITY_PORT",
@@ -8092,14 +8092,14 @@
       "blockdata_filepath": "data/layouts/OlivineCityPort/map.bin"
     },
     {
-      "id": "LAYOUT_VERMILLION_CITY_GYM",
-      "name": "VermillionCityGym_Layout",
+      "id": "LAYOUT_VERMILION_CITY_GYM",
+      "name": "VermilionCityGym_Layout",
       "width": 11,
       "height": 21,
       "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_VermillionGym",
-      "border_filepath": "data/layouts/VermillionCityGym/border.bin",
-      "blockdata_filepath": "data/layouts/VermillionCityGym/map.bin"
+      "secondary_tileset": "gTileset_VermilionGym",
+      "border_filepath": "data/layouts/VermilionCityGym/border.bin",
+      "blockdata_filepath": "data/layouts/VermilionCityGym/map.bin"
     },
     {
       "id": "LAYOUT_CINNABAR_VOLCANO1",
@@ -8520,6 +8520,26 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/SafariZoneEntrance_Fuchsia/border.bin",
       "blockdata_filepath": "data/layouts/SafariZoneEntrance_Fuchsia/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_SILVER4",
+      "name": "MtSilver4_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Johto_General",
+      "secondary_tileset": "gTileset_Cave2_37",
+      "border_filepath": "data/layouts/MtSilver4/border.bin",
+      "blockdata_filepath": "data/layouts/MtSilver4/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_SILVER5",
+      "name": "MtSilver5_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Johto_General",
+      "secondary_tileset": "gTileset_Cave2_37",
+      "border_filepath": "data/layouts/MtSilver5/border.bin",
+      "blockdata_filepath": "data/layouts/MtSilver5/map.bin"
     }
   ]
 }

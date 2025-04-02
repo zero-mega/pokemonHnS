@@ -164,7 +164,7 @@ static const u8 sDoorAnimTiles_Pewter[] = INCBIN_U8("graphics/door_anims/Pewter.
 static const u16 sDoorNullPalette57[16] = {};
 static const u8 sDoorAnimTiles_Cerulean[] = INCBIN_U8("graphics/door_anims/Cerulean.4bpp");
 static const u16 sDoorNullPalette58[16] = {};
-static const u8 sDoorAnimTiles_Vermillion[] = INCBIN_U8("graphics/door_anims/Vermillion.4bpp");
+static const u8 sDoorAnimTiles_Vermilion[] = INCBIN_U8("graphics/door_anims/Vermilion.4bpp");
 static const u16 sDoorNullPalette59[16] = {};
 static const u8 sDoorAnimTiles_Lavender[] = INCBIN_U8("graphics/door_anims/Lavender.4bpp");
 static const u16 sDoorNullPalette60[16] = {};
@@ -236,7 +236,7 @@ static const u8 sDoorAnimPalettes_Cianwood[] = {11, 11, 11, 11, 11, 11, 11, 11};
 static const u8 sDoorAnimPalettes_Viridian[] = {8, 8, 8, 8, 8, 8, 8, 8};
 static const u8 sDoorAnimPalettes_Pewter[] = {8, 8, 8, 8, 8, 8, 8, 8};
 static const u8 sDoorAnimPalettes_Cerulean[] = {12, 12, 12, 12, 12, 12, 12, 12};
-static const u8 sDoorAnimPalettes_Vermillion[] = {9, 9, 9, 9, 9, 9, 9, 9};
+static const u8 sDoorAnimPalettes_Vermilion[] = {9, 9, 9, 9, 9, 9, 9, 9};
 static const u8 sDoorAnimPalettes_Lavender[] = {9, 9, 9, 9, 9, 9, 9, 9};
 static const u8 sDoorAnimPalettes_Saffron[] = {8, 8, 8, 8, 8, 8, 8, 8};
 static const u8 sDoorAnimPalettes_Fuchsia[] = {8, 8, 8, 8, 8, 8, 8, 8};
@@ -364,7 +364,7 @@ static const struct DoorGraphics sDoorGraphics[] =
     {METATILE_Viridian_2_Viridian,                          DOOR_SOUND_NORMAL, DOOR_SIZE_1x1, sDoorAnimTiles_Viridian, sDoorAnimPalettes_Viridian},
     {METATILE_Pewter_Pewter,                                DOOR_SOUND_NORMAL, DOOR_SIZE_1x1, sDoorAnimTiles_Pewter, sDoorAnimPalettes_Pewter},
     {METATILE_CeruleanCity_Cerulean,                        DOOR_SOUND_NORMAL, DOOR_SIZE_1x1, sDoorAnimTiles_Cerulean, sDoorAnimPalettes_Cerulean},
-    {METATILE_Olivine_6_Vermillion,                         DOOR_SOUND_NORMAL, DOOR_SIZE_1x1, sDoorAnimTiles_Vermillion, sDoorAnimPalettes_Vermillion},
+    {METATILE_Olivine_6_Vermilion,                         DOOR_SOUND_NORMAL, DOOR_SIZE_1x1, sDoorAnimTiles_Vermilion, sDoorAnimPalettes_Vermilion},
     {METATILE_LavenderTown_Lavender,                        DOOR_SOUND_NORMAL, DOOR_SIZE_1x1, sDoorAnimTiles_Lavender, sDoorAnimPalettes_Lavender},
     {METATILE_route34_11_Saffron,                           DOOR_SOUND_NORMAL, DOOR_SIZE_1x1, sDoorAnimTiles_Saffron, sDoorAnimPalettes_Saffron},
     {METATILE_Fuchsia_Fuchsia,                              DOOR_SOUND_NORMAL, DOOR_SIZE_1x1, sDoorAnimTiles_Fuchsia, sDoorAnimPalettes_Fuchsia},

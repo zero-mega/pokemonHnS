@@ -3060,24 +3060,24 @@ const u16 gTilesetPalettes_FuchsiaCityGym[][16] =
 
 const u32 gTilesetTiles_FuchsiaCityGym[] = INCBIN_U32("data/tilesets/secondary/fuchsia_city_gym/tiles.4bpp.lz");
 
-const u16 gTilesetPalettes_VermillionGym[][16] =
+const u16 gTilesetPalettes_VermilionGym[][16] =
 {
-    INCBIN_U16("data/tilesets/secondary/vermillion_gym/palettes/00.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/vermillion_gym/palettes/01.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/vermillion_gym/palettes/02.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/vermillion_gym/palettes/03.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/vermillion_gym/palettes/04.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/vermillion_gym/palettes/05.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/vermillion_gym/palettes/06.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/vermillion_gym/palettes/07.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/vermillion_gym/palettes/08.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/vermillion_gym/palettes/09.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/vermillion_gym/palettes/10.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/vermillion_gym/palettes/11.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/vermillion_gym/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/vermilion_gym/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/vermilion_gym/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/vermilion_gym/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/vermilion_gym/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/vermilion_gym/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/vermilion_gym/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/vermilion_gym/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/vermilion_gym/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/vermilion_gym/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/vermilion_gym/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/vermilion_gym/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/vermilion_gym/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/vermilion_gym/palettes/12.gbapal"),
 };
 
-const u32 gTilesetTiles_VermillionGym[] = INCBIN_U32("data/tilesets/secondary/vermillion_gym/tiles.4bpp.lz");
+const u32 gTilesetTiles_VermilionGym[] = INCBIN_U32("data/tilesets/secondary/vermilion_gym/tiles.4bpp.lz");
 
 const u16 gTilesetPalettes_CinnabarGym_31[][16] =
 {

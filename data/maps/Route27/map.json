@@ -32,7 +32,7 @@
       "x": 26,
       "y": 6,
       "elevation": 0,
-      "dest_map": "MAP_TOJO_FALLS",
+      "dest_map": "MAP_DYNAMIC",
       "dest_warp_id": "0"
     },
     {

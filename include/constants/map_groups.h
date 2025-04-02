@@ -41,7 +41,7 @@
 #define MAP_VIRIDIAN_CITY    (32 | (0 << 8))
 #define MAP_PEWTER_CITY      (33 | (0 << 8))
 #define MAP_CERULEAN_CITY    (34 | (0 << 8))
-#define MAP_VERMILLION_CITY  (35 | (0 << 8))
+#define MAP_VERMILION_CITY  (35 | (0 << 8))
 #define MAP_LAVENDER_TOWN    (36 | (0 << 8))
 #define MAP_CELADON_CITY     (37 | (0 << 8))
 #define MAP_SAFFRON_CITY     (38 | (0 << 8))
@@ -62,7 +62,7 @@
 #define MAP_ROUTE13          (53 | (0 << 8))
 #define MAP_ROUTE14          (54 | (0 << 8))
 #define MAP_ROUTE15          (55 | (0 << 8))
-#define MAP_ROTUE16          (56 | (0 << 8))
+#define MAP_ROUTE16          (56 | (0 << 8))
 #define MAP_ROUTE17          (57 | (0 << 8))
 #define MAP_ROUTE18          (58 | (0 << 8))
 #define MAP_ROUTE19          (59 | (0 << 8))
@@ -213,16 +213,16 @@
 #define MAP_CERULEAN_CITY_BIKE_SHOP (4 | (14 << 8))
 #define MAP_CERULEAN_CITY_GYM       (5 | (14 << 8))
 
-// gMapGroup_IndoorVermillion
-#define MAP_VERMILLION_POKECENTER       (0 | (15 << 8))
-#define MAP_VERMILLION_POKEMART         (1 | (15 << 8))
-#define MAP_VERMILLION_CITY_PORT1       (2 | (15 << 8))
-#define MAP_VERMILLION_CITY_PORT_INDOOR (3 | (15 << 8))
-#define MAP_VERMILLION_CITY_GYM         (4 | (15 << 8))
-#define MAP_VERMILLION_CITY_FAN_CLUB    (5 | (15 << 8))
-#define MAP_VERMILLION_CITY_HOUSE1      (6 | (15 << 8))
-#define MAP_VERMILLION_CITY_HOUSE2      (7 | (15 << 8))
-#define MAP_VERMILLION_CITY_HOUSE3      (8 | (15 << 8))
+// gMapGroup_IndoorVermilion
+#define MAP_VERMILION_POKECENTER       (0 | (15 << 8))
+#define MAP_VERMILION_POKEMART         (1 | (15 << 8))
+#define MAP_VERMILION_CITY_PORT1       (2 | (15 << 8))
+#define MAP_VERMILION_CITY_PORT_INDOOR (3 | (15 << 8))
+#define MAP_VERMILION_CITY_GYM         (4 | (15 << 8))
+#define MAP_VERMILION_CITY_FAN_CLUB    (5 | (15 << 8))
+#define MAP_VERMILION_CITY_HOUSE1      (6 | (15 << 8))
+#define MAP_VERMILION_CITY_HOUSE2      (7 | (15 << 8))
+#define MAP_VERMILION_CITY_HOUSE3      (8 | (15 << 8))
 
 // gMapGroup_IndoorLavender
 #define MAP_LAVENDER_POKECENTER         (0 | (16 << 8))
@@ -391,7 +391,7 @@
 #define MAP_TIN_TOWER8       (40 | (24 << 8))
 #define MAP_TIN_TOWER9       (41 | (24 << 8))
 #define MAP_TIN_TOWER10      (42 | (24 << 8))
-#define MAP_TOJO_FALLS       (43 | (24 << 8))
+#define MAP_TOHJO_FALLS      (43 | (24 << 8))
 #define MAP_VICTORY_ROAD1    (44 | (24 << 8))
 #define MAP_VICTORY_ROAD2    (45 | (24 << 8))
 #define MAP_VICTORY_ROAD3    (46 | (24 << 8))
@@ -402,9 +402,9 @@
 #define MAP_CERULEAN_CAVE_1  (51 | (24 << 8))
 #define MAP_CERULEAN_CAVE_2  (52 | (24 << 8))
 #define MAP_CERULEAN_CAVE_3  (53 | (24 << 8))
-#define MAP_DIGGLETS_CAVE1   (54 | (24 << 8))
-#define MAP_DIGGLETS_CAVE2   (55 | (24 << 8))
-#define MAP_DIGGLETS_CAVE3   (56 | (24 << 8))
+#define MAP_DIGLETTS_CAVE1   (54 | (24 << 8))
+#define MAP_DIGLETTS_CAVE2   (55 | (24 << 8))
+#define MAP_DIGLETTS_CAVE3   (56 | (24 << 8))
 #define MAP_SEAFOAM_ISLANDS1 (57 | (24 << 8))
 #define MAP_SEAFOAM_ISLANDS2 (58 | (24 << 8))
 #define MAP_SEAFOAM_ISLANDS3 (59 | (24 << 8))
@@ -412,13 +412,15 @@
 #define MAP_MT_SILVER1       (61 | (24 << 8))
 #define MAP_MT_SILVER2       (62 | (24 << 8))
 #define MAP_MT_SILVER3       (63 | (24 << 8))
-#define MAP_CLIFF_EDGE_CAVE  (64 | (24 << 8))
-#define MAP_EMBEDDED_TOWER   (65 | (24 << 8))
-#define MAP_ROCKET_HIDEOUT   (66 | (24 << 8))
-#define MAP_ROCKET_HIDEOUT2  (67 | (24 << 8))
-#define MAP_ROCKET_HIDEOUT3  (68 | (24 << 8))
-#define MAP_MT_SILVER_BRUMAL (69 | (24 << 8))
-#define MAP_MT_SILVER_MEADOW (70 | (24 << 8))
+#define MAP_MT_SILVER4       (64 | (24 << 8))
+#define MAP_MT_SILVER5       (65 | (24 << 8))
+#define MAP_MT_SILVER_BRUMAL (66 | (24 << 8))
+#define MAP_MT_SILVER_MEADOW (67 | (24 << 8))
+#define MAP_CLIFF_EDGE_CAVE  (68 | (24 << 8))
+#define MAP_EMBEDDED_TOWER   (69 | (24 << 8))
+#define MAP_ROCKET_HIDEOUT   (70 | (24 << 8))
+#define MAP_ROCKET_HIDEOUT2  (71 | (24 << 8))
+#define MAP_ROCKET_HIDEOUT3  (72 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 
@@ -999,6 +1001,6 @@
 
 #define MAP_GROUPS_COUNT 32
 
-// static const u8 MAP_GROUP_COUNT[] = {69, 5, 5, 6, 5, 28, 8, 10, 6, 6, 7, 5, 5, 7, 6, 9, 7, 16, 9, 9, 4, 7, 27, 28, 71, 0, 28, 125, 113, 126, 74, 97, 0};
+// static const u8 MAP_GROUP_COUNT[] = {69, 5, 5, 6, 5, 28, 8, 10, 6, 6, 7, 5, 5, 7, 6, 9, 7, 16, 9, 9, 4, 7, 27, 28, 73, 0, 28, 125, 113, 126, 74, 97, 0};
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

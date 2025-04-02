@@ -481,7 +481,7 @@ gSongTable::
 	song mus_victory_trainer, 0, 0
 	song mus_victory_wild, 0, 0
 	song mus_victory_gym_leader, 0, 0
-	song mus_rg_vermillion, 0, 0
+	song mus_rg_vermilion, 0, 0
 	song mus_rg_pewter, 0, 0
 	song mus_rg_encounter_rival, 0, 0
 	song mus_rg_rival_exit, 0, 0

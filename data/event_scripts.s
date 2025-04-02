@@ -1147,7 +1147,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/Route15/scripts.inc"
 
-	.include "data/maps/Rotue16/scripts.inc"
+	.include "data/maps/Route16/scripts.inc"
 
 	.include "data/maps/Route17/scripts.inc"
 
@@ -1231,7 +1231,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/CeruleanCity/scripts.inc"
 
-	.include "data/maps/VermillionCity/scripts.inc"
+	.include "data/maps/VermilionCity/scripts.inc"
 
 	.include "data/maps/LavenderTown/scripts.inc"
 
@@ -1253,11 +1253,11 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/CeruleanCave_3/scripts.inc"
 
-	.include "data/maps/DiggletsCave1/scripts.inc"
+	.include "data/maps/DiglettsCave1/scripts.inc"
 
-	.include "data/maps/DiggletsCave2/scripts.inc"
+	.include "data/maps/DiglettsCave2/scripts.inc"
 
-	.include "data/maps/DiggletsCave3/scripts.inc"
+	.include "data/maps/DiglettsCave3/scripts.inc"
 
 	.include "data/maps/IcePath1/scripts.inc"
 
@@ -1325,7 +1325,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/RuinsOfAlph/scripts.inc"
 
-	.include "data/maps/TojoFalls/scripts.inc"
+	.include "data/maps/TohjoFalls/scripts.inc"
 
 	.include "data/maps/DragonsDen1/scripts.inc"
 
@@ -1397,7 +1397,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/CeruleanPokecenter/scripts.inc"
 
-	.include "data/maps/VermillionPokecenter/scripts.inc"
+	.include "data/maps/VermilionPokecenter/scripts.inc"
 
 	.include "data/maps/LavenderPokecenter/scripts.inc"
 
@@ -1497,7 +1497,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/CeruleanPokemart/scripts.inc"
 
-	.include "data/maps/VermillionPokemart/scripts.inc"
+	.include "data/maps/VermilionPokemart/scripts.inc"
 
 	.include "data/maps/LavenderPokemart/scripts.inc"
 
@@ -1793,21 +1793,21 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/Fuchsia_Route19Gate/scripts.inc"
 
-	.include "data/maps/VermillionCityFanClub/scripts.inc"
+	.include "data/maps/VermilionCityFanClub/scripts.inc"
 
-	.include "data/maps/VermillionCityHouse1/scripts.inc"
+	.include "data/maps/VermilionCityHouse1/scripts.inc"
 
-	.include "data/maps/VermillionCityHouse2/scripts.inc"
+	.include "data/maps/VermilionCityHouse2/scripts.inc"
 
-	.include "data/maps/VermillionCityHouse3/scripts.inc"
+	.include "data/maps/VermilionCityHouse3/scripts.inc"
 
-	.include "data/maps/VermillionCityPort1/scripts.inc"
+	.include "data/maps/VermilionCityPort1/scripts.inc"
 
-	.include "data/maps/VermillionCityPortIndoor/scripts.inc"
+	.include "data/maps/VermilionCityPortIndoor/scripts.inc"
 
 	.include "data/maps/OlivineCityPort/scripts.inc"
 
-	.include "data/maps/VermillionCityGym/scripts.inc"
+	.include "data/maps/VermilionCityGym/scripts.inc"
 
 	.include "data/maps/CinnabarVolcano1/scripts.inc"
 
@@ -1892,3 +1892,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/CeladonApartments5/scripts.inc"
 
 	.include "data/maps/SafariZoneEntrance_Fuchsia/scripts.inc"
+
+	.include "data/maps/MtSilver4/scripts.inc"
+
+	.include "data/maps/MtSilver5/scripts.inc"

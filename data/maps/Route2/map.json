@@ -197,7 +197,7 @@
       "x": 20,
       "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_DIGGLETS_CAVE1",
+      "dest_map": "MAP_DYNAMIC",
       "dest_warp_id": "0"
     }
   ],

@@ -1675,14 +1675,14 @@ const struct Tileset gTileset_FuchsiaCityGym =
     .callback = NULL,
 };
 
-const struct Tileset gTileset_VermillionGym =
+const struct Tileset gTileset_VermilionGym =
 {
     .isCompressed = TRUE,
     .isSecondary = TRUE,
-    .tiles = gTilesetTiles_VermillionGym,
-    .palettes = gTilesetPalettes_VermillionGym,
-    .metatiles = gMetatiles_VermillionGym,
-    .metatileAttributes = gMetatileAttributes_VermillionGym,
+    .tiles = gTilesetTiles_VermilionGym,
+    .palettes = gTilesetPalettes_VermilionGym,
+    .metatiles = gMetatiles_VermilionGym,
+    .metatileAttributes = gMetatileAttributes_VermilionGym,
     .callback = NULL,
 };
 

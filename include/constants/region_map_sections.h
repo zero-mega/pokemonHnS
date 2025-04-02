@@ -53,7 +53,7 @@
 #define MAPSEC_ROUTE_27                    0x2E //11
 #define MAPSEC_ICE_PATH                    0x2F
 #define MAPSEC_ROUTE_28                    0x30 //12
-#define MAPSEC_TOJO_FALLS                    0x31
+#define MAPSEC_TOHJO_FALLS                    0x31
 #define MAPSEC_SPROUT_TOWER               0x32
 #define MAPSEC_SLOWPOKE_WELL               0x33
 #define MAPSEC_BURNED_TOWER               0x34

@@ -418,7 +418,7 @@
 
 // gTileset_Olivine_6
 #define METATILE_Olivine_6_Door        0x312
-#define METATILE_Olivine_6_Vermillion  0x29E
+#define METATILE_Olivine_6_Vermilion  0x29E
 
 // gTileset_Pacifidlog
 #define METATILE_Pacifidlog_Door                               0x21A

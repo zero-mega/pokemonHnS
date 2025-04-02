@@ -501,7 +501,7 @@
 #define MUS_RG_VICTORY_TRAINER            477 // MUS_RG_WIN_TRE (Identical to MUS_VICTORY_TRAINER)
 #define MUS_RG_VICTORY_WILD               478 // MUS_RG_WIN_YASEI (Identical to MUS_VICTORY_WILD)
 #define MUS_RG_VICTORY_GYM_LEADER         479 // MUS_RG_WIN_GYM (Identical to MUS_VICTORY_GYM_LEADER)
-#define MUS_RG_VERMILLION                 480 // MUS_RG_KUCHIBA
+#define MUS_RG_VERMILION                 480 // MUS_RG_KUCHIBA
 #define MUS_RG_PEWTER                     481 // MUS_RG_NIBI
 #define MUS_RG_ENCOUNTER_RIVAL            482 // MUS_RG_RIVAL1
 #define MUS_RG_RIVAL_EXIT                 483 // MUS_RG_RIVAL2

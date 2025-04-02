@@ -4180,7 +4180,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_RG_VICTORY_TRAINER          , "MUS-RG-VICTORY-TRAINER"          ) \
     X(MUS_RG_VICTORY_WILD             , "MUS-RG-VICTORY-WILD"             ) \
     X(MUS_RG_VICTORY_GYM_LEADER       , "MUS-RG-VICTORY-GYM-LEADER"       ) \
-    X(MUS_RG_VERMILLION               , "MUS-RG-VERMILLION"               ) \
+    X(MUS_RG_VERMILION               , "MUS-RG-VERMILION"               ) \
     X(MUS_RG_PEWTER                   , "MUS-RG-PEWTER"                   ) \
     X(MUS_RG_ENCOUNTER_RIVAL          , "MUS-RG-ENCOUNTER-RIVAL"          ) \
     X(MUS_RG_RIVAL_EXIT               , "MUS-RG-RIVAL-EXIT"               ) \
