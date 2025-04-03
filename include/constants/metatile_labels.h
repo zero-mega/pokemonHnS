@@ -417,7 +417,7 @@
 #define METATILE_NewBarkTown_Door_Yellow  0x29B
 
 // gTileset_Olivine_6
-#define METATILE_Olivine_6_Door        0x312
+#define METATILE_Olivine_6_Door       0x312
 #define METATILE_Olivine_6_Vermilion  0x29E
 
 // gTileset_Pacifidlog

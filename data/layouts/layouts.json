@@ -4794,7 +4794,7 @@
     {
       "id": "LAYOUT_ROUTE16",
       "name": "Route16_Layout",
-      "width": 29,
+      "width": 35,
       "height": 24,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_CeladonCity",
@@ -8494,10 +8494,10 @@
     {
       "id": "LAYOUT_SAFARI_ZONE_TOP_LEFT",
       "name": "SafariZone_Top_Left_Layout",
-      "width": 22,
-      "height": 20,
-      "primary_tileset": "gTileset_Johto_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_Johto_NorthEast",
+      "secondary_tileset": "gTileset_SafariZoneJohto",
       "border_filepath": "data/layouts/SafariZone_Top_Left/border.bin",
       "blockdata_filepath": "data/layouts/SafariZone_Top_Left/map.bin"
     },
@@ -8540,6 +8540,46 @@
       "secondary_tileset": "gTileset_Cave2_37",
       "border_filepath": "data/layouts/MtSilver5/border.bin",
       "blockdata_filepath": "data/layouts/MtSilver5/map.bin"
+    },
+    {
+      "id": "LAYOUT_SAFARI_ZONE_LOW_MID",
+      "name": "SafariZone_Low_Mid_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_Johto_NorthEast",
+      "secondary_tileset": "gTileset_whirl_islands",
+      "border_filepath": "data/layouts/SafariZone_Low_Mid/border.bin",
+      "blockdata_filepath": "data/layouts/SafariZone_Low_Mid/map.bin"
+    },
+    {
+      "id": "LAYOUT_SAFARI_ZONE_ENTERANCE",
+      "name": "SafariZone_Enterance_Layout",
+      "width": 30,
+      "height": 16,
+      "primary_tileset": "gTileset_Johto_NorthEast",
+      "secondary_tileset": "gTileset_SafariZoneJohto",
+      "border_filepath": "data/layouts/SafariZone_Enterance/border.bin",
+      "blockdata_filepath": "data/layouts/SafariZone_Enterance/map.bin"
+    },
+    {
+      "id": "LAYOUT_SAFARI_ZONE_LOW_LEFT",
+      "name": "SafariZone_Low_Left_Layout",
+      "width": 30,
+      "height": 32,
+      "primary_tileset": "gTileset_Johto_NorthEast",
+      "secondary_tileset": "gTileset_SafariZoneJohto",
+      "border_filepath": "data/layouts/SafariZone_Low_Left/border.bin",
+      "blockdata_filepath": "data/layouts/SafariZone_Low_Left/map.bin"
+    },
+    {
+      "id": "LAYOUT_SAFARI_ZONE_LOW_RIGHT",
+      "name": "SafariZone_Low_Right_Layout",
+      "width": 30,
+      "height": 32,
+      "primary_tileset": "gTileset_Johto_NorthEast",
+      "secondary_tileset": "gTileset_whirl_islands",
+      "border_filepath": "data/layouts/SafariZone_Low_Right/border.bin",
+      "blockdata_filepath": "data/layouts/SafariZone_Low_Right/map.bin"
     }
   ]
 }

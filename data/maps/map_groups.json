@@ -481,7 +481,11 @@
     "SSAqua9",
     "SSAqua10",
     "WorldHub2",
-    "SafariZone_Top_Left"
+    "SafariZone_Top_Left",
+    "SafariZone_Low_Mid",
+    "SafariZone_Enterance",
+    "SafariZone_Low_Left",
+    "SafariZone_Low_Right"
   ],
   "gMapGroup_Emerald1": [
     "PetalburgCity",

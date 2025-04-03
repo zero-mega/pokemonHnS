@@ -496,3 +496,6 @@ const u16 gMetatileAttributes_BellchimeTrail[] = INCBIN_U16("data/tilesets/secon
 
 const u16 gMetatiles_whirl_islands[] = INCBIN_U16("data/tilesets/secondary/whirl_islands/metatiles.bin");
 const u16 gMetatileAttributes_whirl_islands[] = INCBIN_U16("data/tilesets/secondary/whirl_islands/metatile_attributes.bin");
+
+const u16 gMetatiles_SafariZone2[] = INCBIN_U16("data/tilesets/secondary/safari_zone_2/metatiles.bin");
+const u16 gMetatileAttributes_SafariZone2[] = INCBIN_U16("data/tilesets/secondary/safari_zone_2/metatile_attributes.bin");

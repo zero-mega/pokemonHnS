@@ -1907,3 +1907,14 @@ const struct Tileset gTileset_whirl_islands =
     .metatileAttributes = gMetatileAttributes_whirl_islands,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_SafariZone2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_SafariZone2,
+    .palettes = gTilesetPalettes_SafariZone2,
+    .metatiles = gMetatiles_SafariZone2,
+    .metatileAttributes = gMetatileAttributes_SafariZone2,
+    .callback = NULL,
+};
