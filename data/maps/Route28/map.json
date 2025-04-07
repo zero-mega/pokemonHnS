@@ -15,12 +15,12 @@
   "connections": [
     {
       "map": "MAP_ROUTE26",
-      "offset": 14,
+      "offset": 5,
       "direction": "right"
     },
     {
       "map": "MAP_MT_SILVER",
-      "offset": -15,
+      "offset": -6,
       "direction": "left"
     }
   ],
@@ -29,15 +29,15 @@
   ],
   "warp_events": [
     {
-      "x": 32,
-      "y": 7,
+      "x": 53,
+      "y": 12,
       "elevation": 0,
       "dest_map": "MAP_INDIGO_JUNCTION",
       "dest_warp_id": "3"
     },
     {
-      "x": 7,
-      "y": 6,
+      "x": 20,
+      "y": 9,
       "elevation": 0,
       "dest_map": "MAP_MT_SILVER_HOUSE",
       "dest_warp_id": "0"

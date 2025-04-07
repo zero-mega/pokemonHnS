@@ -28,7 +28,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_CAMPER",
       "x": 14,
-      "y": 42,
+      "y": 40,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -52,22 +52,9 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
-      "x": 4,
-      "y": 28,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
       "graphics_id": "OBJ_EVENT_GFX_ROCKER",
       "x": 16,
-      "y": 18,
+      "y": 16,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
@@ -79,8 +66,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_FISHER",
-      "x": 6,
-      "y": 16,
+      "x": 7,
+      "y": 15,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
@@ -92,8 +79,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 14,
-      "y": 33,
+      "x": 16,
+      "y": 32,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -105,8 +92,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 2,
-      "y": 25,
+      "x": 4,
+      "y": 23,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -133,21 +120,21 @@
       "dest_warp_id": "1"
     },
     {
-      "x": 19,
+      "x": 22,
       "y": 36,
       "elevation": 0,
       "dest_map": "MAP_GATE",
       "dest_warp_id": "0"
     },
     {
-      "x": 19,
+      "x": 22,
       "y": 30,
       "elevation": 0,
       "dest_map": "MAP_GATE",
       "dest_warp_id": "1"
     },
     {
-      "x": 20,
+      "x": 23,
       "y": 30,
       "elevation": 0,
       "dest_map": "MAP_GATE",

@@ -421,6 +421,9 @@
 #define MAP_ROCKET_HIDEOUT   (70 | (24 << 8))
 #define MAP_ROCKET_HIDEOUT2  (71 | (24 << 8))
 #define MAP_ROCKET_HIDEOUT3  (72 | (24 << 8))
+#define MAP_MT_SILVER6       (73 | (24 << 8))
+#define MAP_MT_SILVER7       (74 | (24 << 8))
+#define MAP_MT_SILVER8       (75 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 
@@ -457,6 +460,8 @@
 #define MAP_SAFARI_ZONE_ENTERANCE (29 | (26 << 8))
 #define MAP_SAFARI_ZONE_LOW_LEFT  (30 | (26 << 8))
 #define MAP_SAFARI_ZONE_LOW_RIGHT (31 | (26 << 8))
+#define MAP_SAFARI_ZONE_TOP_MID   (32 | (26 << 8))
+#define MAP_SAFARI_ZONE_TOP_RIGHT (33 | (26 << 8))
 
 // gMapGroup_Emerald1
 #define MAP_PETALBURG_CITY                          (0 | (27 << 8))
@@ -1005,6 +1010,6 @@
 
 #define MAP_GROUPS_COUNT 32
 
-// static const u8 MAP_GROUP_COUNT[] = {69, 5, 5, 6, 5, 28, 8, 10, 6, 6, 7, 5, 5, 7, 6, 9, 7, 16, 9, 9, 4, 7, 27, 28, 73, 0, 32, 125, 113, 126, 74, 97, 0};
+// static const u8 MAP_GROUP_COUNT[] = {69, 5, 5, 6, 5, 28, 8, 10, 6, 6, 7, 5, 5, 7, 6, 9, 7, 16, 9, 9, 4, 7, 27, 28, 76, 0, 34, 125, 113, 126, 74, 97, 0};
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

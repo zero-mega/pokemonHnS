@@ -20,15 +20,15 @@
     },
     {
       "map": "MAP_ROUTE45",
-      "offset": 2,
+      "offset": -8,
       "direction": "down"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
-      "x": 13,
-      "y": 17,
+      "x": 12,
+      "y": 33,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
@@ -40,8 +40,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY",
-      "x": 21,
-      "y": 15,
+      "x": 14,
+      "y": 28,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_LEFT_AND_RIGHT",
       "movement_range_x": 0,
@@ -53,8 +53,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
-      "x": 24,
-      "y": 22,
+      "x": 22,
+      "y": 36,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
       "movement_range_x": 0,
@@ -66,8 +66,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LASS",
-      "x": 37,
-      "y": 22,
+      "x": 40,
+      "y": 31,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -79,8 +79,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BATTLE_GIRL",
-      "x": 10,
-      "y": 27,
+      "x": 12,
+      "y": 39,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
@@ -92,8 +92,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
-      "x": 24,
-      "y": 35,
+      "x": 33,
+      "y": 42,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
@@ -105,8 +105,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SAGE",
-      "x": 22,
-      "y": 4,
+      "x": 23,
+      "y": 13,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
@@ -119,57 +119,57 @@
   ],
   "warp_events": [
     {
-      "x": 37,
-      "y": 11,
+      "x": 38,
+      "y": 22,
       "elevation": 0,
       "dest_map": "MAP_ICE_PATH1",
       "dest_warp_id": "3"
     },
     {
-      "x": 22,
-      "y": 3,
+      "x": 23,
+      "y": 12,
       "elevation": 0,
       "dest_map": "MAP_DRAGONS_DEN1",
       "dest_warp_id": "0"
     },
     {
-      "x": 20,
-      "y": 14,
+      "x": 21,
+      "y": 25,
       "elevation": 0,
       "dest_map": "MAP_BLACKTHORN_GYM1",
       "dest_warp_id": "2"
     },
     {
-      "x": 15,
-      "y": 24,
+      "x": 17,
+      "y": 36,
       "elevation": 0,
       "dest_map": "MAP_BLACKTHORN_HOUSE1",
       "dest_warp_id": "0"
     },
     {
-      "x": 31,
-      "y": 26,
+      "x": 32,
+      "y": 37,
       "elevation": 0,
       "dest_map": "MAP_BLACKTHORN_HOUSE2",
       "dest_warp_id": "0"
     },
     {
       "x": 14,
-      "y": 31,
+      "y": 44,
       "elevation": 0,
       "dest_map": "MAP_BLACKTHORN_POKEMART",
       "dest_warp_id": "0"
     },
     {
-      "x": 24,
-      "y": 31,
+      "x": 25,
+      "y": 44,
       "elevation": 0,
       "dest_map": "MAP_BLACKTHORN_POKECENTER",
       "dest_warp_id": "0"
     },
     {
       "x": 8,
-      "y": 34,
+      "y": 45,
       "elevation": 0,
       "dest_map": "MAP_BLACKTHORN_HOUSE3",
       "dest_warp_id": "0"

@@ -448,7 +448,10 @@
     "EmbeddedTower",
     "RocketHideout",
     "RocketHideout2",
-    "RocketHideout3"
+    "RocketHideout3",
+    "MtSilver6",
+    "MtSilver7",
+    "MtSilver8"
   ],
   "gMapGroup_IndoorDynamic": [
 
@@ -485,7 +488,9 @@
     "SafariZone_Low_Mid",
     "SafariZone_Enterance",
     "SafariZone_Low_Left",
-    "SafariZone_Low_Right"
+    "SafariZone_Low_Right",
+    "SafariZone_Top_Mid",
+    "SafariZone_Top_Right"
   ],
   "gMapGroup_Emerald1": [
     "PetalburgCity",

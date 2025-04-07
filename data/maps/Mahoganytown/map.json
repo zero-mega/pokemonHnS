@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_ROUTE42",
-      "offset": 2,
+      "offset": 1,
       "direction": "left"
     },
     {
@@ -25,15 +25,15 @@
     },
     {
       "map": "MAP_ROUTE44",
-      "offset": 1,
+      "offset": -2,
       "direction": "right"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_1",
-      "x": 8,
-      "y": 12,
+      "x": 11,
+      "y": 9,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
@@ -45,7 +45,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_1",
-      "x": 17,
+      "x": 18,
       "y": 11,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_LEFT_AND_RIGHT",
@@ -58,7 +58,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BALDING_MAN",
-      "x": 26,
+      "x": 30,
       "y": 11,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -72,7 +72,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
       "x": 10,
-      "y": 18,
+      "y": 20,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -99,7 +99,7 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 25,
+      "x": 27,
       "y": 10,
       "elevation": 0,
       "dest_map": "MAP_MAHOGANY_HOUSE1",
@@ -107,14 +107,14 @@
     },
     {
       "x": 10,
-      "y": 17,
+      "y": 19,
       "elevation": 0,
       "dest_map": "MAP_MAHOGANY_GYM",
       "dest_warp_id": "0"
     },
     {
       "x": 21,
-      "y": 17,
+      "y": 19,
       "elevation": 0,
       "dest_map": "MAP_MAHOGANY_POKECENTER",
       "dest_warp_id": "0"

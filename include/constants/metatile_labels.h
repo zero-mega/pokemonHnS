@@ -29,7 +29,7 @@
 
 // gTileset_BattleFrontierOutsideEast
 #define METATILE_BattleFrontierOutsideEast_Door              0x3FC
-#define METATILE_BattleFrontierOutsideEast_Door_BattleArena  0x291
+#define METATILE_BattleFrontierOutsideEast_Door_BattleArena  0x292
 #define METATILE_BattleFrontierOutsideEast_Door_BattleTower  0x329
 #define METATILE_BattleFrontierOutsideEast_Door_Sliding      0x396
 
@@ -108,6 +108,9 @@
 #define METATILE_BikeShop_Generator_Off_Tile7      0x2F7
 #define METATILE_BikeShop_Wall_Edge_Top            0x281
 
+// gTileset_Blackthorn
+#define METATILE_Blackthorn_Door  0x291
+
 // gTileset_BlackthornGym
 #define METATILE_BlackthornGym_LavaField  0x390
 
@@ -141,6 +144,9 @@
 #define METATILE_Cave_ShoalCave_BlueStone_Small          0x35B
 #define METATILE_Cave_ShoalCave_DirtPile_Large           0x358
 #define METATILE_Cave_ShoalCave_DirtPile_Small           0x35A
+
+// gTileset_Cave5
+#define METATILE_Cave5_Door  0x2FF
 
 // gTileset_CeruleanCity
 #define METATILE_CeruleanCity_Cerulean  0x298
@@ -320,7 +326,7 @@
 #define METATILE_Lilycove_Door_Wooden      0x28E
 #define METATILE_Lilycove_Wailmer0         0x290
 #define METATILE_Lilycove_Wailmer0_Alt     0x000
-#define METATILE_Lilycove_Wailmer1         0x291
+#define METATILE_Lilycove_Wailmer1         0x292
 #define METATILE_Lilycove_Wailmer1_Alt     0x000
 #define METATILE_Lilycove_Wailmer2         0x2A0
 #define METATILE_Lilycove_Wailmer3         0x2A1
@@ -506,7 +512,7 @@
 #define METATILE_SecretBase_AttractMat_TopRight         0x305
 #define METATILE_SecretBase_BallPoster                  0x330
 #define METATILE_SecretBase_BigPlant_BaseLeft1          0x006
-#define METATILE_SecretBase_BigPlant_BaseLeft2          0x2EE
+#define METATILE_SecretBase_BigPlant_BaseLeft2          0x023
 #define METATILE_SecretBase_BigPlant_BaseRight1         0x2ED
 #define METATILE_SecretBase_BigPlant_BaseRight2         0x2EF
 #define METATILE_SecretBase_BigPlant_TopLeft            0x2E4
@@ -619,7 +625,7 @@
 #define METATILE_SecretBase_HeavyDesk_BottomMid         0x000
 #define METATILE_SecretBase_HeavyDesk_BottomRight       0x001
 #define METATILE_SecretBase_HeavyDesk_TopLeft           0x290
-#define METATILE_SecretBase_HeavyDesk_TopMid            0x291
+#define METATILE_SecretBase_HeavyDesk_TopMid            0x292
 #define METATILE_SecretBase_HeavyDesk_TopRight          0x292
 #define METATILE_SecretBase_JumpMat                     0x261
 #define METATILE_SecretBase_KissPoster_Left             0x32C

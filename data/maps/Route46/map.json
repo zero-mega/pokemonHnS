@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_ROUTE45",
-      "offset": -70,
+      "offset": -75,
       "direction": "right"
     }
   ],
@@ -23,7 +23,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_SPEAROW",
       "x": 7,
-      "y": 20,
+      "y": 24,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 2,
@@ -36,7 +36,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_GEODUDE",
       "x": 13,
-      "y": 20,
+      "y": 24,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 2,
@@ -49,7 +49,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_PHANPY",
       "x": 24,
-      "y": 30,
+      "y": 34,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 2,
@@ -62,7 +62,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
       "x": 2,
-      "y": 17,
+      "y": 21,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -74,8 +74,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CAMPER",
-      "x": 5,
-      "y": 15,
+      "x": 6,
+      "y": 18,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
@@ -87,8 +87,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
-      "x": 3,
-      "y": 15,
+      "x": 4,
+      "y": 18,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
@@ -101,7 +101,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_HIKER",
       "x": 19,
-      "y": 21,
+      "y": 25,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
       "movement_range_x": 1,
@@ -114,7 +114,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_PHANPY",
       "x": 22,
-      "y": 31,
+      "y": 35,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 2,
@@ -127,7 +127,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_RATTATA",
       "x": 1,
-      "y": 27,
+      "y": 31,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 2,
@@ -141,21 +141,21 @@
   "warp_events": [
     {
       "x": 9,
-      "y": 36,
+      "y": 40,
       "elevation": 0,
       "dest_map": "MAP_ROUTE29_46GATE",
       "dest_warp_id": "0"
     },
     {
       "x": 10,
-      "y": 36,
+      "y": 40,
       "elevation": 0,
       "dest_map": "MAP_ROUTE29_46GATE",
       "dest_warp_id": "0"
     },
     {
       "x": 20,
-      "y": 7,
+      "y": 11,
       "elevation": 0,
       "dest_map": "MAP_DARK_CAVE_1",
       "dest_warp_id": "2"

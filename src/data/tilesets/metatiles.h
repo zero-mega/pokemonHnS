@@ -499,3 +499,9 @@ const u16 gMetatileAttributes_whirl_islands[] = INCBIN_U16("data/tilesets/second
 
 const u16 gMetatiles_SafariZone2[] = INCBIN_U16("data/tilesets/secondary/safari_zone_2/metatiles.bin");
 const u16 gMetatileAttributes_SafariZone2[] = INCBIN_U16("data/tilesets/secondary/safari_zone_2/metatile_attributes.bin");
+
+const u16 gMetatiles_Cave5[] = INCBIN_U16("data/tilesets/secondary/cave_5/metatiles.bin");
+const u16 gMetatileAttributes_Cave5[] = INCBIN_U16("data/tilesets/secondary/cave_5/metatile_attributes.bin");
+
+const u16 gMetatiles_Route32[] = INCBIN_U16("data/tilesets/secondary/route_32/metatiles.bin");
+const u16 gMetatileAttributes_Route32[] = INCBIN_U16("data/tilesets/secondary/route_32/metatile_attributes.bin");

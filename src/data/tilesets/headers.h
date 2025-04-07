@@ -1918,3 +1918,25 @@ const struct Tileset gTileset_SafariZone2 =
     .metatileAttributes = gMetatileAttributes_SafariZone2,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Cave5 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Cave5,
+    .palettes = gTilesetPalettes_Cave5,
+    .metatiles = gMetatiles_Cave5,
+    .metatileAttributes = gMetatileAttributes_Cave5,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_Route32 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Route32,
+    .palettes = gTilesetPalettes_Route32,
+    .metatiles = gMetatiles_Route32,
+    .metatileAttributes = gMetatileAttributes_Route32,
+    .callback = NULL,
+};

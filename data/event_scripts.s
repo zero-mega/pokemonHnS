@@ -1904,3 +1904,13 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/SafariZone_Low_Left/scripts.inc"
 
 	.include "data/maps/SafariZone_Low_Right/scripts.inc"
+
+	.include "data/maps/SafariZone_Top_Mid/scripts.inc"
+
+	.include "data/maps/SafariZone_Top_Right/scripts.inc"
+
+	.include "data/maps/MtSilver6/scripts.inc"
+
+	.include "data/maps/MtSilver7/scripts.inc"
+
+	.include "data/maps/MtSilver8/scripts.inc"
