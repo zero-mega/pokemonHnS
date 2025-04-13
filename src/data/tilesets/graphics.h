@@ -3516,3 +3516,41 @@ const u16 gTilesetPalettes_Route32[][16] =
 };
 
 const u32 gTilesetTiles_Route32[] = INCBIN_U32("data/tilesets/secondary/route_32/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_Lighthouse[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/lighthouse/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/lighthouse/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/lighthouse/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/lighthouse/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/lighthouse/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/lighthouse/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/lighthouse/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/lighthouse/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/lighthouse/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/lighthouse/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/lighthouse/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/lighthouse/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/lighthouse/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_Lighthouse[] = INCBIN_U32("data/tilesets/secondary/lighthouse/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_BurnedTower[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/burned_tower/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/burned_tower/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/burned_tower/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/burned_tower/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/burned_tower/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/burned_tower/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/burned_tower/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/burned_tower/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/burned_tower/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/burned_tower/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/burned_tower/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/burned_tower/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/burned_tower/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_BurnedTower[] = INCBIN_U32("data/tilesets/secondary/burned_tower/tiles.4bpp.lz");

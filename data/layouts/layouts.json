@@ -5574,7 +5574,7 @@
     {
       "id": "LAYOUT_MT_MORTAR1",
       "name": "MtMortar1_Layout",
-      "width": 52,
+      "width": 72,
       "height": 54,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Cave4_36",
@@ -5754,10 +5754,10 @@
     {
       "id": "LAYOUT_BURNED_TOWER1",
       "name": "BurnedTower1_Layout",
-      "width": 22,
-      "height": 22,
+      "width": 27,
+      "height": 25,
       "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_BurnedTower_49",
+      "secondary_tileset": "gTileset_BurnedTower",
       "border_filepath": "data/layouts/BurnedTower1/border.bin",
       "blockdata_filepath": "data/layouts/BurnedTower1/map.bin"
     },
@@ -5765,9 +5765,9 @@
       "id": "LAYOUT_BURNED_TOWER2",
       "name": "BurnedTower2_Layout",
       "width": 24,
-      "height": 18,
+      "height": 19,
       "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_BurnedTower_49",
+      "secondary_tileset": "gTileset_BurnedTower",
       "border_filepath": "data/layouts/BurnedTower2/border.bin",
       "blockdata_filepath": "data/layouts/BurnedTower2/map.bin"
     },
@@ -5874,8 +5874,8 @@
     {
       "id": "LAYOUT_SPROUT_TOWER1",
       "name": "SproutTower1_Layout",
-      "width": 19,
-      "height": 17,
+      "width": 25,
+      "height": 25,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_PowerPlant_43",
       "border_filepath": "data/layouts/SproutTower1/border.bin",
@@ -5884,8 +5884,8 @@
     {
       "id": "LAYOUT_SPROUT_TOWER2",
       "name": "SproutTower2_Layout",
-      "width": 19,
-      "height": 17,
+      "width": 25,
+      "height": 25,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_PowerPlant_43",
       "border_filepath": "data/layouts/SproutTower2/border.bin",
@@ -5894,8 +5894,8 @@
     {
       "id": "LAYOUT_SPROUT_TOWER3",
       "name": "SproutTower3_Layout",
-      "width": 21,
-      "height": 19,
+      "width": 25,
+      "height": 25,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_PowerPlant_43",
       "border_filepath": "data/layouts/SproutTower3/border.bin",
@@ -6104,7 +6104,7 @@
     {
       "id": "LAYOUT_SEAFOAM_ISLANDS1",
       "name": "SeafoamIslands1_Layout",
-      "width": 36,
+      "width": 66,
       "height": 56,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_IceCave_38",
@@ -6114,10 +6114,10 @@
     {
       "id": "LAYOUT_SEAFOAM_ISLANDS2",
       "name": "SeafoamIslands2_Layout",
-      "width": 29,
-      "height": 27,
+      "width": 39,
+      "height": 39,
       "primary_tileset": "gTileset_Johto_General",
-      "secondary_tileset": "gTileset_IceCave_38",
+      "secondary_tileset": "gTileset_Cave5",
       "border_filepath": "data/layouts/SeafoamIslands2/border.bin",
       "blockdata_filepath": "data/layouts/SeafoamIslands2/map.bin"
     },
@@ -6377,14 +6377,14 @@
       "width": 170,
       "height": 20,
       "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_Lighthouse_47",
+      "secondary_tileset": "gTileset_Lighthouse",
       "border_filepath": "data/layouts/OlivineLighthouse1/border.bin",
       "blockdata_filepath": "data/layouts/OlivineLighthouse1/map.bin"
     },
     {
       "id": "LAYOUT_OLIVINE_GYM",
       "name": "OlivineGym_Layout",
-      "width": 11,
+      "width": 17,
       "height": 22,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Theater_26",
@@ -6684,7 +6684,7 @@
     {
       "id": "LAYOUT_ECRUTEAK_GYM",
       "name": "EcruteakGym_Layout",
-      "width": 15,
+      "width": 40,
       "height": 24,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_EcruteakGym_54",
@@ -6774,7 +6774,7 @@
     {
       "id": "LAYOUT_VIOLET_CITY_GYM",
       "name": "VioletCityGym_Layout",
-      "width": 15,
+      "width": 19,
       "height": 21,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Theater_26",
@@ -7164,8 +7164,8 @@
     {
       "id": "LAYOUT_MAHOGANY_GYM",
       "name": "MahoganyGym_Layout",
-      "width": 27,
-      "height": 26,
+      "width": 25,
+      "height": 29,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_IceCave_38",
       "border_filepath": "data/layouts/MahoganyGym/border.bin",
@@ -7214,8 +7214,8 @@
     {
       "id": "LAYOUT_BLACKTHORN_GYM1",
       "name": "BlackthornGym1_Layout",
-      "width": 24,
-      "height": 28,
+      "width": 35,
+      "height": 38,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_BlackthornGym",
       "border_filepath": "data/layouts/BlackthornGym1/border.bin",
@@ -7224,9 +7224,9 @@
     {
       "id": "LAYOUT_BLACKTHORN_GYM2",
       "name": "BlackthornGym2_Layout",
-      "width": 13,
-      "height": 20,
-      "primary_tileset": "gTileset_Johto_Building",
+      "width": 35,
+      "height": 38,
+      "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_BlackthornGym",
       "border_filepath": "data/layouts/BlackthornGym2/border.bin",
       "blockdata_filepath": "data/layouts/BlackthornGym2/map.bin"
@@ -8224,10 +8224,10 @@
     {
       "id": "LAYOUT_EMBEDDED_TOWER",
       "name": "EmbeddedTower_Layout",
-      "width": 20,
-      "height": 21,
+      "width": 23,
+      "height": 31,
       "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_BurnedTower_49",
+      "secondary_tileset": "gTileset_BurnedTower",
       "border_filepath": "data/layouts/EmbeddedTower/border.bin",
       "blockdata_filepath": "data/layouts/EmbeddedTower/map.bin"
     },
@@ -8630,6 +8630,16 @@
       "secondary_tileset": "gTileset_Cave4_36",
       "border_filepath": "data/layouts/MtSilver8/border.bin",
       "blockdata_filepath": "data/layouts/MtSilver8/map.bin"
+    },
+    {
+      "id": "LAYOUT_VIOLET_CITY_GYM2",
+      "name": "VioletCityGym2_Layout",
+      "width": 14,
+      "height": 11,
+      "primary_tileset": "gTileset_Johto_Building",
+      "secondary_tileset": "gTileset_Theater_26",
+      "border_filepath": "data/layouts/VioletCityGym2/border.bin",
+      "blockdata_filepath": "data/layouts/VioletCityGym2/map.bin"
     }
   ]
 }

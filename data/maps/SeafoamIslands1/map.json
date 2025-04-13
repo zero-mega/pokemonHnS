@@ -25,18 +25,25 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 7,
-      "y": 9,
+      "x": 50,
+      "y": 39,
       "elevation": 0,
       "dest_map": "MAP_SEAFOAM_ISLANDS2",
       "dest_warp_id": "0"
     },
     {
-      "x": 24,
-      "y": 8,
+      "x": 7,
+      "y": 9,
       "elevation": 0,
       "dest_map": "MAP_SEAFOAM_ISLANDS3",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 49,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE20",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

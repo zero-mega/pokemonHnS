@@ -1914,3 +1914,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/MtSilver7/scripts.inc"
 
 	.include "data/maps/MtSilver8/scripts.inc"
+
+	.include "data/maps/VioletCityGym2/scripts.inc"

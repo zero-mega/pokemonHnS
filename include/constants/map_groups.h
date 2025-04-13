@@ -97,6 +97,7 @@
 #define MAP_VIOLET_CITY_HOUSE1         (3 | (3 << 8))
 #define MAP_VIOLET_CITY_HOUSE2         (4 | (3 << 8))
 #define MAP_VIOLET_CITY_GYM            (5 | (3 << 8))
+#define MAP_VIOLET_CITY_GYM2           (6 | (3 << 8))
 
 // gMapGroup_IndoorAzalea
 #define MAP_AZALEA_POKECENTER  (0 | (4 << 8))
@@ -1010,6 +1011,6 @@
 
 #define MAP_GROUPS_COUNT 32
 
-// static const u8 MAP_GROUP_COUNT[] = {69, 5, 5, 6, 5, 28, 8, 10, 6, 6, 7, 5, 5, 7, 6, 9, 7, 16, 9, 9, 4, 7, 27, 28, 76, 0, 34, 125, 113, 126, 74, 97, 0};
+// static const u8 MAP_GROUP_COUNT[] = {69, 5, 5, 7, 5, 28, 8, 10, 6, 6, 7, 5, 5, 7, 6, 9, 7, 16, 9, 9, 4, 7, 27, 28, 76, 0, 34, 125, 113, 126, 74, 97, 0};
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

@@ -29,8 +29,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SAGE",
-      "x": 12,
-      "y": 4,
+      "x": 14,
+      "y": 2,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -68,7 +68,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_BELLSPROUT",
-      "x": 7,
+      "x": 8,
       "y": 7,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -81,8 +81,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_RATTATA",
-      "x": 15,
-      "y": 14,
+      "x": 18,
+      "y": 15,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
@@ -102,22 +102,22 @@
       "dest_warp_id": "2"
     },
     {
-      "x": 5,
+      "x": 6,
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_SPROUT_TOWER1",
       "dest_warp_id": "1"
     },
     {
-      "x": 17,
+      "x": 19,
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_SPROUT_TOWER1",
       "dest_warp_id": "3"
     },
     {
-      "x": 9,
-      "y": 15,
+      "x": 10,
+      "y": 16,
       "elevation": 0,
       "dest_map": "MAP_SPROUT_TOWER3",
       "dest_warp_id": "0"

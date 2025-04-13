@@ -16,7 +16,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 30,
+      "x": 41,
       "y": 33,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -29,7 +29,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 13,
+      "x": 24,
       "y": 33,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -43,63 +43,63 @@
   ],
   "warp_events": [
     {
-      "x": 5,
+      "x": 16,
       "y": 50,
       "elevation": 0,
       "dest_map": "MAP_ROUTE42",
       "dest_warp_id": "1"
     },
     {
-      "x": 19,
+      "x": 30,
       "y": 50,
       "elevation": 0,
       "dest_map": "MAP_ROUTE42",
       "dest_warp_id": "2"
     },
     {
-      "x": 39,
+      "x": 50,
       "y": 50,
       "elevation": 0,
       "dest_map": "MAP_ROUTE42",
       "dest_warp_id": "3"
     },
     {
-      "x": 13,
+      "x": 24,
       "y": 38,
       "elevation": 0,
       "dest_map": "MAP_MT_MORTAR2",
       "dest_warp_id": "0"
     },
     {
-      "x": 30,
+      "x": 41,
       "y": 38,
       "elevation": 0,
       "dest_map": "MAP_MT_MORTAR2",
       "dest_warp_id": "1"
     },
     {
-      "x": 19,
+      "x": 30,
       "y": 23,
       "elevation": 0,
       "dest_map": "MAP_MT_MORTAR3",
       "dest_warp_id": "0"
     },
     {
-      "x": 35,
+      "x": 46,
       "y": 31,
       "elevation": 0,
       "dest_map": "MAP_MT_MORTAR2",
       "dest_warp_id": "4"
     },
     {
-      "x": 8,
+      "x": 19,
       "y": 33,
       "elevation": 0,
       "dest_map": "MAP_MT_MORTAR2",
       "dest_warp_id": "3"
     },
     {
-      "x": 19,
+      "x": 30,
       "y": 46,
       "elevation": 0,
       "dest_map": "MAP_MT_MORTAR4",
