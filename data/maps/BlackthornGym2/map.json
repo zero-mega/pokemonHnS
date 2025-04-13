@@ -16,10 +16,10 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_F",
-      "x": 4,
+      "x": 6,
       "y": 28,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -32,7 +32,7 @@
       "x": 28,
       "y": 27,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -225,15 +225,15 @@
   ],
   "warp_events": [
     {
-      "x": 17,
-      "y": 34,
+      "x": 18,
+      "y": 35,
       "elevation": 0,
       "dest_map": "MAP_BLACKTHORN_GYM2",
       "dest_warp_id": "2"
     },
     {
-      "x": 16,
-      "y": 34,
+      "x": 17,
+      "y": 35,
       "elevation": 0,
       "dest_map": "MAP_BLACKTHORN_GYM2",
       "dest_warp_id": "3"

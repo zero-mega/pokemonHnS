@@ -78,6 +78,11 @@ static void QueueAnimTiles_NationalPark_LargeFountain(u16);
 static void QueueAnimTiles_NationalPark_SmallFountain(u16);
 static void QueueAnimTiles_NationalPark_RedFlower(u16);
 static void QueueAnimTiles_NationalPark_YellowFlower(u16);
+static void TilesetAnim_Theater_26(u16);
+static void QueueAnimTiles_OlivineCity_Gym_Flower(u16);
+static void TilesetAnim_AzaleaGym_29(u16);
+static void QueueAnimTiles_AzaleaGym_Flower(u16);
+
 
 static const u16 gTilesetAnims_General_Flower_Frame0[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/flower/0.4bpp");
 static const u16 gTilesetAnims_General_Flower_Frame1[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/flower/1.4bpp");
@@ -234,6 +239,32 @@ const u16 *const gTilesetAnims_NationalPark_YellowFlower[] = {
     gTilesetAnims_NationalPark_YellowFlower_Frame1,
     gTilesetAnims_NationalPark_YellowFlower_Frame0,
     gTilesetAnims_NationalPark_YellowFlower_Frame1
+};
+
+static const u16 sTilesetAnims_OlivineCity_Gym_Flower_Frame0[] = INCBIN_U16("data/tilesets/secondary/theater_26/anim/flower/0.4bpp");
+static const u16 sTilesetAnims_OlivineCity_Gym_Flower_Frame1[] = INCBIN_U16("data/tilesets/secondary/theater_26/anim/flower/1.4bpp");
+static const u16 sTilesetAnims_OlivineCity_Gym_Flower_Frame2[] = INCBIN_U16("data/tilesets/secondary/theater_26/anim/flower/2.4bpp");
+static const u16 sTilesetAnims_OlivineCity_Gym_Flower_Frame3[] = INCBIN_U16("data/tilesets/secondary/theater_26/anim/flower/3.4bpp");
+static const u16 sTilesetAnims_OlivineCity_Gym_Flower_Frame4[] = INCBIN_U16("data/tilesets/secondary/theater_26/anim/flower/4.4bpp");
+static const u16 sTilesetAnims_OlivineCity_Gym_Flower_Empty[16] = {};
+
+static const u16 *const gTilesetAnims_OlivineCity_Gym_Flower[] = {
+    sTilesetAnims_OlivineCity_Gym_Flower_Frame0,
+    sTilesetAnims_OlivineCity_Gym_Flower_Frame1,
+    sTilesetAnims_OlivineCity_Gym_Flower_Frame2,
+    sTilesetAnims_OlivineCity_Gym_Flower_Frame3,
+    sTilesetAnims_OlivineCity_Gym_Flower_Frame4
+};
+
+const u16 gTilesetAnims_AzaleaGym_Flower_Frame0[] = INCBIN_U16("data/tilesets/secondary/national_park/anim/red_flower/0.4bpp");
+const u16 gTilesetAnims_AzaleaGym_Flower_Frame1[] = INCBIN_U16("data/tilesets/secondary/national_park/anim/red_flower/1.4bpp");
+const u16 gTilesetAnims_AzaleaGym_Flower_Frame2[] = INCBIN_U16("data/tilesets/secondary/national_park/anim/red_flower/2.4bpp");
+
+const u16 *const gTilesetAnims_AzaleaGym_Flower[] = {
+    gTilesetAnims_AzaleaGym_Flower_Frame0,
+    gTilesetAnims_AzaleaGym_Flower_Frame1,
+    gTilesetAnims_AzaleaGym_Flower_Frame2,
+    gTilesetAnims_AzaleaGym_Flower_Frame1
 };
 
 /*====================================================================================================================================*/
@@ -855,11 +886,41 @@ static void QueueAnimTiles_NationalPark_YellowFlower(u16 timer)
     AppendTilesetAnimToBuffer(gTilesetAnims_NationalPark_YellowFlower[timer % ARRAY_COUNT(gTilesetAnims_NationalPark_YellowFlower)], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 100)), 0x80);
 }
 
+void InitTilesetAnim_Theater_26(void)
+{
+    sSecondaryTilesetAnimCounter = 0;
+    sSecondaryTilesetAnimCounterMax = 960;
+    sSecondaryTilesetAnimCallback = TilesetAnim_Theater_26;
+}
+
+static void TilesetAnim_Theater_26(u16 timer)
+{
+    if (timer % 10 == 0)
+        QueueAnimTiles_OlivineCity_Gym_Flower(timer / 10);
+}
 
 
+static void QueueAnimTiles_OlivineCity_Gym_Flower(u16 timer)
+{
+    AppendTilesetAnimToBuffer(gTilesetAnims_OlivineCity_Gym_Flower[timer % ARRAY_COUNT(gTilesetAnims_OlivineCity_Gym_Flower)], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 104)), 0x80);
+}
 
 
-
+void InitTilesetAnim_AzaleaGym_29(void)
+{
+    sSecondaryTilesetAnimCounter = 0;
+    sSecondaryTilesetAnimCounterMax = 960;
+    sSecondaryTilesetAnimCallback = TilesetAnim_AzaleaGym_29;
+}
+static void TilesetAnim_AzaleaGym_29(u16 timer)
+{
+    if (timer % 10 == 0)
+        QueueAnimTiles_AzaleaGym_Flower(timer / 10);
+}
+static void QueueAnimTiles_AzaleaGym_Flower(u16 timer)
+{
+    AppendTilesetAnimToBuffer(gTilesetAnims_AzaleaGym_Flower[timer % ARRAY_COUNT(gTilesetAnims_AzaleaGym_Flower)], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 99)), 0x80);
+}
 
 
 
