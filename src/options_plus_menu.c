@@ -371,6 +371,7 @@ static const u8 *const sOptionMenuItemsNamesSound[MENUITEM_SOUND_COUNT] =
     [MENUITEM_SOUND_EFFECTS]                         = sText_OptionSoundEffects,
 };
 
+/* REPLACED TO LIMIT SOUND OPTIONS
 static const u8 *const OptionTextRight(u8 menuItem)
 {
     switch (sOptions->submenu)
@@ -380,6 +381,28 @@ static const u8 *const OptionTextRight(u8 menuItem)
     case MENU_SOUND:    return sOptionMenuItemsNamesSound[menuItem];
     }
 }
+*/
+static const u8 *const OptionTextRight(u8 menuItem)
+{
+    static const u8 sText_Empty[] = _("");
+    switch (sOptions->submenu)
+    {
+    case MENU_MAIN:
+        if (menuItem < MENUITEM_MAIN_COUNT)
+            return sOptionMenuItemsNamesMain[menuItem];
+        break;
+    case MENU_CUSTOM:
+        if (menuItem < MENUITEM_BATTLE_COUNT)
+            return sOptionMenuItemsNamesCustom[menuItem];
+        break;
+    case MENU_SOUND:
+        if (menuItem < 2) // 
+            return sOptionMenuItemsNamesSound[menuItem];
+        break;
+    }
+    return sText_Empty;
+}
+
 
 // Menu left side text conditions
 static bool8 CheckConditions(int selection)
@@ -420,6 +443,7 @@ static bool8 CheckConditions(int selection)
         case MENUITEM_BATTLE_COUNT:           return TRUE;
         case MENUITEM_BATTLE_NEW_BACKGROUNDS: return TRUE;
         }
+    /* REPLACED TO LIMIT SOUND OPTIONS   
     case MENU_SOUND:
         switch(selection)
         {
@@ -432,6 +456,18 @@ static bool8 CheckConditions(int selection)
         case MENUITEM_SOUND_BATTLE_FRONTIER_TRAINER_MUSIC:    return TRUE;
         case MENUITEM_SOUND_EFFECTS:                          return TRUE;
         }
+    */
+    case MENU_SOUND:
+        switch(selection)
+        {
+        case MENUITEM_SOUND_SOUND:
+        case MENUITEM_SOUND_MUSIC:
+            return TRUE;
+        default:
+            return FALSE; // hide others
+        }
+
+
     }
 }
 
@@ -627,6 +663,8 @@ static const u8 *const OptionTextDescription(void)
     }
 }
 
+
+/* REPLACED TO LIMIT SOUND OPTIONS 
 static u8 MenuItemCount(void)
 {
     switch (sOptions->submenu)
@@ -635,7 +673,18 @@ static u8 MenuItemCount(void)
     case MENU_CUSTOM:   return MENUITEM_BATTLE_COUNT;
     case MENU_SOUND:    return MENUITEM_SOUND_COUNT;
     }
+}*/
+
+static u8 MenuItemCount(void)
+{
+    switch (sOptions->submenu)
+    {
+    case MENU_MAIN:     return MENUITEM_MAIN_COUNT;
+    case MENU_CUSTOM:   return MENUITEM_BATTLE_COUNT;
+    case MENU_SOUND:    return MENUITEM_SOUND_BATTLE_TRAINER_MUSIC; // only show up to MUSIC
+    }
 }
+
 
 // Main code
 static void MainCB2(void)
@@ -766,10 +815,21 @@ static void DrawChoices(u32 id, int y) //right side draw function
             if (sItemFunctionsCustom[id].drawChoices != NULL)
                 sItemFunctionsCustom[id].drawChoices(sOptions->sel_battle[id], y);
             break;
+
+        /*REPLACED TO LIMIT SOUND OPTIONS
         case MENU_SOUND:
             if (sItemFunctionsSound[id].drawChoices != NULL)
                 sItemFunctionsSound[id].drawChoices(sOptions->sel_sound[id], y);
             break;
+        */
+       case MENU_SOUND:
+            if (id >= 2) // skip hidden ones
+                return;
+            if (sItemFunctionsSound[id].drawChoices != NULL)
+                sItemFunctionsSound[id].drawChoices(sOptions->sel_sound[id], y);
+            break;
+
+        
     }
 }
 
@@ -1105,6 +1165,15 @@ static void Task_OptionMenuSave(u8 taskId)
     gSaveBlock2Ptr->optionsTrainerBattleMusic  = sOptions->sel_sound[MENUITEM_SOUND_BATTLE_TRAINER_MUSIC];
     gSaveBlock2Ptr->optionsFrontierTrainerBattleMusic  = sOptions->sel_sound[MENUITEM_SOUND_BATTLE_FRONTIER_TRAINER_MUSIC];
     gSaveBlock2Ptr->optionsSoundEffects  = sOptions->sel_sound[MENUITEM_SOUND_EFFECTS];
+
+    //ADDED TO SET THESE TO DEFAULTS SINCE THEY WERE REMOVED
+    gSaveBlock2Ptr->optionsBikeMusic = 0;
+    gSaveBlock2Ptr->optionsSurfMusic = 0;
+    gSaveBlock2Ptr->optionsWildBattleMusic = 0;
+    gSaveBlock2Ptr->optionsTrainerBattleMusic = 0;
+    gSaveBlock2Ptr->optionsFrontierTrainerBattleMusic = 0;
+    gSaveBlock2Ptr->optionsSoundEffects = 0;
+
 
     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 0x10, RGB_BLACK);
     gTasks[taskId].func = Task_OptionMenuFadeOut;
