@@ -8477,7 +8477,7 @@
       "width": 11,
       "height": 13,
       "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_PokeCenter_14",
+      "secondary_tileset": "gTileset_HallOfFame",
       "border_filepath": "data/layouts/HallOfFame/border.bin",
       "blockdata_filepath": "data/layouts/HallOfFame/map.bin"
     },

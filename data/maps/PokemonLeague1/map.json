@@ -22,14 +22,14 @@
       "y": 12,
       "elevation": 0,
       "dest_map": "MAP_INDIGO_PLATEAU_POKE_CENTER",
-      "dest_warp_id": "0"
+      "dest_warp_id": "1"
     },
     {
       "x": 6,
       "y": 2,
       "elevation": 0,
       "dest_map": "MAP_POKEMON_LEAGUE2",
-      "dest_warp_id": "0"
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

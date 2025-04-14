@@ -511,3 +511,6 @@ const u16 gMetatileAttributes_Lighthouse[] = INCBIN_U16("data/tilesets/secondary
 
 const u16 gMetatiles_BurnedTower[] = INCBIN_U16("data/tilesets/secondary/burned_tower/metatiles.bin");
 const u16 gMetatileAttributes_BurnedTower[] = INCBIN_U16("data/tilesets/secondary/burned_tower/metatile_attributes.bin");
+
+const u16 gMetatiles_HallOfFame[] = INCBIN_U16("data/tilesets/secondary/hall_of_fame/metatiles.bin");
+const u16 gMetatileAttributes_HallOfFame[] = INCBIN_U16("data/tilesets/secondary/hall_of_fame/metatile_attributes.bin");

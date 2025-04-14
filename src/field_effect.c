@@ -3011,12 +3011,15 @@ u8 FldEff_UseSurf(void)
 {
     u8 taskId = CreateTask(Task_SurfFieldEffect, 0xff);
     gTasks[taskId].tMonId = gFieldEffectArguments[0];
+    /* REMOVED SURF MUSIC
     Overworld_ClearSavedMusic();
     if (gSaveBlock2Ptr->optionsSurfMusic == 0)
     {
         Overworld_ChangeMusicTo(MUS_SURF);
     }
-    return FALSE;
+    */
+   return FALSE;
+    
 }
 
 static void (*const sSurfFieldEffectFuncs[])(struct Task *) = {

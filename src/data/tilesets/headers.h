@@ -1962,3 +1962,14 @@ const struct Tileset gTileset_BurnedTower =
     .metatileAttributes = gMetatileAttributes_BurnedTower,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_HallOfFame =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_HallOfFame,
+    .palettes = gTilesetPalettes_HallOfFame,
+    .metatiles = gMetatiles_HallOfFame,
+    .metatileAttributes = gMetatileAttributes_HallOfFame,
+    .callback = NULL,
+};
