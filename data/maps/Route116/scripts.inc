@@ -252,10 +252,10 @@ Route116_EventScript_Jose::
 	end
 
 Route116_EventScript_Jerry::
-	trainerbattle_single TRAINER_JERRY_1, Route116_Text_JerryIntro, Route116_Text_JerryDefeat, Route116_EventScript_TryRegisterJerryAfterBattle
+	trainerbattle_single TRAINER_ARCHER_3, Route116_Text_JerryIntro, Route116_Text_JerryDefeat, Route116_EventScript_TryRegisterJerryAfterBattle
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route116_EventScript_RematchJerry
-	setvar VAR_0x8004, TRAINER_JERRY_1
+	setvar VAR_0x8004, TRAINER_ARCHER_3
 	specialvar VAR_RESULT, IsTrainerRegistered
 	goto_if_eq VAR_RESULT, FALSE, Route116_EventScript_TryRegisterJerry
 	msgbox Route116_Text_JerryPostBattle, MSGBOX_DEFAULT
@@ -271,7 +271,7 @@ Route116_EventScript_RegisterJerryAfterBattle::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
 	msgbox Route116_Text_JerryRegister2, MSGBOX_DEFAULT
-	register_matchcall TRAINER_JERRY_1
+	register_matchcall TRAINER_ARCHER_3
 	release
 	end
 
@@ -283,12 +283,12 @@ Route116_EventScript_TryRegisterJerry::
 
 Route116_EventScript_RegisterJerry::
 	msgbox Route116_Text_JerryRegister1, MSGBOX_DEFAULT
-	register_matchcall TRAINER_JERRY_1
+	register_matchcall TRAINER_ARCHER_3
 	release
 	end
 
 Route116_EventScript_RematchJerry::
-	trainerbattle_rematch TRAINER_JERRY_1, Route116_Text_JerryRematchIntro, Route116_Text_JerryRematchDefeat
+	trainerbattle_rematch TRAINER_ARCHER_3, Route116_Text_JerryRematchIntro, Route116_Text_JerryRematchDefeat
 	msgbox Route116_Text_JerryPostRematch, MSGBOX_AUTOCLOSE
 	end
 
@@ -298,7 +298,7 @@ Route116_EventScript_Clark::
 	end
 
 Route116_EventScript_Janice::
-	trainerbattle_single TRAINER_JANICE, Route116_Text_JaniceIntro, Route116_Text_JaniceDefeat
+	trainerbattle_single TRAINER_RIVAL_TOTODILE_1, Route116_Text_JaniceIntro, Route116_Text_JaniceDefeat
 	msgbox Route116_Text_JanicePostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -349,12 +349,12 @@ Route116_EventScript_Sarah::
 	end
 
 Route116_EventScript_Dawson::
-	trainerbattle_single TRAINER_DAWSON, Route116_Text_DawsonIntro, Route116_Text_DawsonDefeat
+	trainerbattle_single TRAINER_JOEL, Route116_Text_DawsonIntro, Route116_Text_DawsonDefeat
 	msgbox Route116_Text_DawsonPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route116_EventScript_Devan::
-	trainerbattle_single TRAINER_DEVAN, Route116_Text_DevanIntro, Route116_Text_DevanDefeat
+	trainerbattle_single TRAINER_KATE, Route116_Text_DevanIntro, Route116_Text_DevanDefeat
 	msgbox Route116_Text_DevanPostBattle, MSGBOX_AUTOCLOSE
 	end
 

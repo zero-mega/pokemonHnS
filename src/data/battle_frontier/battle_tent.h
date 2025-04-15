@@ -549,7 +549,7 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_
         .speechLose = {EC_WORD_NO, EC_WORD_EXCL, -1, EC_WORD_I, EC_WORD_WASN_T, EC_WORD_SERIOUS},
         .monSet = gSlateportBattleTentTrainerMons_Glenda
     },
-    [SLATEPORT_TENT_TRAINER_HELENA] = {
+    [SLATEPORT_TENT_TRAINER_JASMINE_2A] = {
         .facilityClass = FACILITY_CLASS_BEAUTY,
         .trainerName = _("HELENA"),
         .speechBefore = {EC_WORD_DOES, EC_WORD_MY, EC_WORD_BEAUTY, EC_WORD_INTIMIDATE, EC_WORD_YOU, EC_WORD_QUES},

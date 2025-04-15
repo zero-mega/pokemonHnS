@@ -21237,7 +21237,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Rival_Totodile1[] = { //
     .species = SPECIES_TOTODILE,
     },
 };
-static const struct TrainerMonNoItemDefaultMoves sParty_Rival_totodile2[] = { //RivalGroup
+static const struct TrainerMonNoItemDefaultMoves sParty_Rival_Totodile2[] = { //RivalGroup
     {
     .iv = 0,
     .lvl = 15,

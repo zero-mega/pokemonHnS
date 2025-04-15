@@ -2104,7 +2104,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
         .speechLose = {EC_WORD_SO, EC_WORD_MUCH, EC_WORD_FOR, EC_WORD_MY, EC_WORD_INVINCIBLE, EC_WORD_ATTACK},
         .monSet = gBattleFrontierTrainerMons_Alana
     },
-    [FRONTIER_TRAINER_ALEXAS] = {
+    [FRONTIER_TRAINER_BAILEYS] = {
         .facilityClass = FACILITY_CLASS_EXPERT_M,
         .trainerName = _("ALEXAS"),
         .speechBefore = {EC_WORD_GOOD, EC_WORD_TO, EC_WORD_MEET_YOU, EC_WORD_YOUNG, EC_WORD_TRAINER, EC_WORD_EXCL},

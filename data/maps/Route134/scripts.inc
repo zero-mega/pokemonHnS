@@ -29,12 +29,12 @@ Route134_EventScript_Aaron::
 	end
 
 Route134_EventScript_Hitoshi::
-	trainerbattle_single TRAINER_HITOSHI, Route134_Text_HitoshiIntro, Route134_Text_HitoshiDefeat
+	trainerbattle_single TRAINER_JASMINE_1_3, Route134_Text_HitoshiIntro, Route134_Text_HitoshiDefeat
 	msgbox Route134_Text_HitoshiPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route134_EventScript_Hudson::
-	trainerbattle_single TRAINER_HUDSON, Route134_Text_HudsonIntro, Route134_Text_HudsonDefeat
+	trainerbattle_single TRAINER_CHUCK_1, Route134_Text_HudsonIntro, Route134_Text_HudsonDefeat
 	msgbox Route134_Text_HudsonPostBattle, MSGBOX_AUTOCLOSE
 	end
 

@@ -89,7 +89,7 @@ Route117_EventScript_DayCareSign::
 	end
 
 Route117_EventScript_Isaac::
-	trainerbattle_single TRAINER_ISAAC_1, Route117_Text_IsaacIntro, Route117_Text_IsaacDefeat, Route117_EventScript_RegisterIsaac
+	trainerbattle_single TRAINER_CHUCK_1_3, Route117_Text_IsaacIntro, Route117_Text_IsaacDefeat, Route117_EventScript_RegisterIsaac
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchIsaac
 	msgbox Route117_Text_IsaacPostBattle, MSGBOX_DEFAULT
@@ -100,12 +100,12 @@ Route117_EventScript_RegisterIsaac::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
 	msgbox Route117_Text_IsaacRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_ISAAC_1
+	register_matchcall TRAINER_CHUCK_1_3
 	release
 	end
 
 Route117_EventScript_RematchIsaac::
-	trainerbattle_rematch TRAINER_ISAAC_1, Route117_Text_IsaacRematchIntro, Route117_Text_IsaacRematchDefeat
+	trainerbattle_rematch TRAINER_CHUCK_1_3, Route117_Text_IsaacRematchIntro, Route117_Text_IsaacRematchDefeat
 	msgbox Route117_Text_IsaacPostRematch, MSGBOX_AUTOCLOSE
 	end
 
@@ -131,7 +131,7 @@ Route117_EventScript_RematchLydia::
 	end
 
 Route117_EventScript_Dylan::
-	trainerbattle_single TRAINER_DYLAN_1, Route117_Text_DylanIntro, Route117_Text_DylanDefeat, Route117_EventScript_RegisterDylan
+	trainerbattle_single TRAINER_LEWIS, Route117_Text_DylanIntro, Route117_Text_DylanDefeat, Route117_EventScript_RegisterDylan
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchDylan
 	msgbox Route117_Text_DylanPostBattle, MSGBOX_DEFAULT
@@ -142,12 +142,12 @@ Route117_EventScript_RegisterDylan::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
 	msgbox Route117_Text_DylanRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_DYLAN_1
+	register_matchcall TRAINER_LEWIS
 	release
 	end
 
 Route117_EventScript_RematchDylan::
-	trainerbattle_rematch TRAINER_DYLAN_1, Route117_Text_DylanRematchIntro, Route117_Text_DylanRematchDefeat
+	trainerbattle_rematch TRAINER_LEWIS, Route117_Text_DylanRematchIntro, Route117_Text_DylanRematchDefeat
 	msgbox Route117_Text_DylanPostRematch, MSGBOX_AUTOCLOSE
 	end
 
@@ -226,7 +226,7 @@ Route117_EventScript_Brandi::
 	end
 
 Route117_EventScript_Aisha::
-	trainerbattle_single TRAINER_AISHA, Route117_Text_AishaIntro, Route117_Text_AishaDefeat
+	trainerbattle_single TRAINER_ARNIE, Route117_Text_AishaIntro, Route117_Text_AishaDefeat
 	msgbox Route117_Text_AishaPostBattle, MSGBOX_AUTOCLOSE
 	end
 

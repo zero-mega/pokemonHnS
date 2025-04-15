@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "battle_frontier_trainers.h": "c",
+        "opponents.h": "c",
+        "trainer_class_names.h": "c"
+    }
+}

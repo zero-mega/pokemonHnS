@@ -81,7 +81,7 @@ Route115_EventScript_RematchNob::
 	end
 
 Route115_EventScript_Cyndy::
-	trainerbattle_single TRAINER_CYNDY_1, Route115_Text_CyndyIntro, Route115_Text_CyndyDefeat, Route115_EventScript_RegisterCyndy
+	trainerbattle_single TRAINER_JAMIE, Route115_Text_CyndyIntro, Route115_Text_CyndyDefeat, Route115_EventScript_RegisterCyndy
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route115_EventScript_RematchCyndy
 	msgbox Route115_Text_CyndyPostBattle, MSGBOX_DEFAULT
@@ -92,17 +92,17 @@ Route115_EventScript_RegisterCyndy::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
 	msgbox Route115_Text_CyndyRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_CYNDY_1
+	register_matchcall TRAINER_JAMIE
 	release
 	end
 
 Route115_EventScript_RematchCyndy::
-	trainerbattle_rematch TRAINER_CYNDY_1, Route115_Text_CyndyRematchIntro, Route115_Text_CyndyRematchDefeat
+	trainerbattle_rematch TRAINER_JAMIE, Route115_Text_CyndyRematchIntro, Route115_Text_CyndyRematchDefeat
 	msgbox Route115_Text_CyndyPostRematch, MSGBOX_AUTOCLOSE
 	end
 
 Route115_EventScript_Hector::
-	trainerbattle_single TRAINER_HECTOR, Route115_Text_HectorIntro, Route115_Text_HectorDefeat
+	trainerbattle_single TRAINER_JASMINE_1, Route115_Text_HectorIntro, Route115_Text_HectorDefeat
 	msgbox Route115_Text_HectorPostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -112,12 +112,12 @@ Route115_EventScript_Kyra::
 	end
 
 Route115_EventScript_Jaiden::
-	trainerbattle_single TRAINER_JAIDEN, Route115_Text_JaidenIntro, Route115_Text_JaidenDefeat
+	trainerbattle_single TRAINER_RIVAL_CYNDAQUIL_3, Route115_Text_JaidenIntro, Route115_Text_JaidenDefeat
 	msgbox Route115_Text_JaidenPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route115_EventScript_Alix::
-	trainerbattle_single TRAINER_ALIX, Route115_Text_AlixIntro, Route115_Text_AlixDefeat
+	trainerbattle_single TRAINER_BILL, Route115_Text_AlixIntro, Route115_Text_AlixDefeat
 	msgbox Route115_Text_AlixPostBattle, MSGBOX_AUTOCLOSE
 	end
 

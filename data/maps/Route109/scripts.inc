@@ -439,7 +439,7 @@ Route109_EventScript_LolaRematch::
 	end
 
 Route109_EventScript_Austina::
-	trainerbattle_single TRAINER_AUSTINA, Route109_Text_AustinaIntro, Route109_Text_AustinaDefeated
+	trainerbattle_single TRAINER_CODY, Route109_Text_AustinaIntro, Route109_Text_AustinaDefeated
 	msgbox Route109_Text_AustinaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -464,17 +464,17 @@ Route109_EventScript_Mel::
 	end
 
 Route109_EventScript_Chandler::
-	trainerbattle_single TRAINER_CHANDLER, Route109_Text_ChandlerIntro, Route109_Text_ChandlerDefeated
+	trainerbattle_single TRAINER_GRUNT_11, Route109_Text_ChandlerIntro, Route109_Text_ChandlerDefeated
 	msgbox Route109_Text_ChandlerPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route109_EventScript_Hailey::
-	trainerbattle_single TRAINER_HAILEY, Route109_Text_HaileyIntro, Route109_Text_HaileyDefeated
+	trainerbattle_single TRAINER_BUGSY_2, Route109_Text_HaileyIntro, Route109_Text_HaileyDefeated
 	msgbox Route109_Text_HaileyPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route109_EventScript_Elijah::
-	trainerbattle_single TRAINER_ELIJAH, Route109_Text_ElijahIntro, Route109_Text_ElijahDefeated
+	trainerbattle_single TRAINER_MARVIN, Route109_Text_ElijahIntro, Route109_Text_ElijahDefeated
 	msgbox Route109_Text_ElijahPostBattle, MSGBOX_AUTOCLOSE
 	end
 
