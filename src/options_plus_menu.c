@@ -34,7 +34,6 @@ enum
 {
     MENUITEM_MAIN_TEXTSPEED,
     MENUITEM_MAIN_BATTLESCENE,
-    MENUITEM_MAIN_DIFFICULTY,
     MENUITEM_MAIN_BATTLESTYLE,
     MENUITEM_MAIN_BUTTONMODE,
     MENUITEM_MAIN_FOLLOWER,
@@ -48,6 +47,7 @@ enum
     MENUITEM_MAIN_UNIT_TYPE,
     MENUITEM_MAIN_SKIP_INTRO,
     MENUITEM_MAIN_FRAMETYPE,
+    MENUITEM_MAIN_DIFFICULTY,
     MENUITEM_MAIN_COUNT,
 };
 
@@ -388,7 +388,7 @@ static const u8 *const OptionTextRight(u8 menuItem)
     switch (sOptions->submenu)
     {
     case MENU_MAIN:
-        if (menuItem < MENUITEM_MAIN_COUNT)
+        if (menuItem < MENUITEM_MAIN_DIFFICULTY)
             return sOptionMenuItemsNamesMain[menuItem];
         break;
     case MENU_CUSTOM:
@@ -679,7 +679,7 @@ static u8 MenuItemCount(void)
 {
     switch (sOptions->submenu)
     {
-    case MENU_MAIN:     return MENUITEM_MAIN_COUNT;
+    case MENU_MAIN:     return MENUITEM_MAIN_DIFFICULTY;
     case MENU_CUSTOM:   return MENUITEM_BATTLE_COUNT;
     case MENU_SOUND:    return MENUITEM_SOUND_BATTLE_TRAINER_MUSIC; // only show up to MUSIC
     }

@@ -95,7 +95,7 @@
 #define FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA_STILL  0x50
 #define FLAG_SET_WALL_CLOCK                      0x51
 #define FLAG_RESCUED_BIRCH                       0x52
-#define FLAG_LEGENDARIES_IN_SOOTOPOLIS           0x53
+#define FLAG_GARBAGEFLAG           0x53 //used to store calls of removed flags
 
 #define FLAG_LIMIT_TO_50                     0x54
 #define FLAG_UNLOCK_DOGS                     0x55
@@ -912,16 +912,16 @@
 #define FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_ALT_2           0x361
 #define FLAG_HIDE_PETALBURG_GYM_WALLY                               0x362
 #define FLAG_UNKNOWN_0x363                                          0x363 // Set, however has no purpose.
-#define FLAG_HIDE_LITTLEROOT_TOWN_FAT_MAN                           0x364
-#define FLAG_HIDE_SLATEPORT_CITY_STERNS_SHIPYARD_MR_BRINEY          0x365
-#define FLAG_HIDE_BillS_HOUSE_Bill                            0x366
-#define FLAG_HIDE_FALLORBOR_POKEMON_CENTER_Bill                  0x367
-#define FLAG_HIDE_TRICK_HOUSE_ENTRANCE_MAN                          0x368
-#define FLAG_HIDE_LILYCOVE_CONTEST_HALL_BLEND_MASTER_REPLACEMENT    0x369
-#define FLAG_HIDE_DESERT_UNDERPASS_FOSSIL                           0x36A
-#define FLAG_HIDE_ROUTE_111_PLAYER_DESCENT                          0x36B
-#define FLAG_HIDE_ROUTE_111_DESERT_FOSSIL                           0x36C
-#define FLAG_HIDE_MT_CHIMNEY_TRAINERS                               0x36D
+#define FLAG_HIDE_MOMS_FRIEND                                        0x364 //START OF CRYSTAL FLAGS
+#define FLAG_MOM_VISITED                                              0x365 //mom gives good luck speech
+#define FLAG_HIDE_SILVER_NEWBARKTOWN                                   0x366 //for beginning
+#define FLAG_HIDE_CHIKORITABALL                                           0x367 // hide starters after leaving the lab the first time
+#define FLAG_HIDE_CYNDAQUILBALL                                             0x368
+#define FLAG_HIDE_TOTODILEBALL                                          0x369
+#define FLAG_RECEIVED_FIRST_POTION                           0x36A
+#define FLAG_RECEIVED_FIRST_BALLS                        0x36B
+#define FLAG_HIDE_LAB_POLICEMAN                           0x36C
+#define FLAG_HIDE_MOMS_FRIEND2                             0x36D
 #define FLAG_HIDE_RUSTURF_TUNNEL_AQUA_GRUNT                         0x36E
 #define FLAG_HIDE_RUSTURF_TUNNEL_BRINEY                             0x36F
 #define FLAG_HIDE_RUSTURF_TUNNEL_PEEKO                              0x370

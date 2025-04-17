@@ -154,7 +154,7 @@ static void ClearFrontierRecord(void)
 static void WarpToTruck(void)
 {
     SaveData_TxRandomizerAndChallenges();
-    SetWarpDestination(MAP_GROUP(PLAYERS_HOUSE2), MAP_NUM(PLAYERS_HOUSE2), WARP_ID_NONE, -1, -1);
+    SetWarpDestination(MAP_GROUP(PLAYERS_HOUSE2), MAP_NUM(PLAYERS_HOUSE2), 1, 0, 0);
     WarpIntoMap();
 }
 

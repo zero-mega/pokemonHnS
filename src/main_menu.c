@@ -1593,14 +1593,16 @@ static void Task_NewGameBirchSpeech_ChooseGender(u8 taskId)
             gSaveBlock2Ptr->playerGender = gender;
             NewGameBirchSpeech_ClearGenderWindow(1, 1);
             //gTasks[taskId].func = Task_NewGameBirchSpeech_Difficulty;
-            gTasks[taskId].func = Task_NewGameBirchSpeech_WhatsYourName;
+            gSaveBlock2Ptr->optionsDifficulty = 1; //manually set difficulty normal
+            gTasks[taskId].func = Task_NewGameBirchSpeech_Challenge;
             break;
         case FEMALE:
             PlaySE(SE_SELECT);
             gSaveBlock2Ptr->playerGender = gender;
             NewGameBirchSpeech_ClearGenderWindow(1, 1);
             //gTasks[taskId].func = Task_NewGameBirchSpeech_Difficulty;
-            gTasks[taskId].func = Task_NewGameBirchSpeech_WhatsYourName;
+            gSaveBlock2Ptr->optionsDifficulty = 1; //manually set difficulty normal
+            gTasks[taskId].func = Task_NewGameBirchSpeech_Challenge;
             break;
     }
     gender2 = Menu_GetCursorPos();
@@ -1740,8 +1742,8 @@ static void Task_NewGameBirchSpeech_WhatsYourName(u8 taskId)
 static void Task_NewGameBirchSpeech_WaitForWhatsYourNameToPrint(u8 taskId)
 {
     if (!RunTextPrintersAndIsPrinter0Active())
-        gTasks[taskId].func = Task_NewGameBirchSpeech_WaitPressBeforeNameChoice;
-        //gTasks[taskId].func = Task_NewGameBirchSpeech_StartNamingScreen;
+        //gTasks[taskId].func = Task_NewGameBirchSpeech_WaitPressBeforeNameChoice;
+        gTasks[taskId].func = Task_NewGameBirchSpeech_StartNamingScreen;
 }
 
 static void Task_NewGameBirchSpeech_WaitPressBeforeNameChoice(u8 taskId)

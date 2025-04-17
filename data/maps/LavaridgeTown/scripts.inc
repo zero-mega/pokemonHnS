@@ -33,7 +33,7 @@ LavaridgeTown_EventScript_SetRivalPos::
 	return
 
 LavaridgeTown_EventScript_ShowMtChimneyTrainers::
-	clearflag FLAG_HIDE_MT_CHIMNEY_TRAINERS
+	clearflag FLAG_GARBAGEFLAG
 	return
 
 LavaridgeTown_EventScript_HideMapNamePopup::

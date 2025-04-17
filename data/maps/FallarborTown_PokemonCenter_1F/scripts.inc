@@ -52,7 +52,7 @@ FallarborTown_PokemonCenter_1F_EventScript_BillExitWest::
 FallarborTown_PokemonCenter_1F_EventScript_BillExited::
 	playse SE_SLIDING_DOOR
 	removeobject LOCALID_Bill
-	clearflag FLAG_HIDE_BillS_HOUSE_Bill
+	clearflag FLAG_GARBAGEFLAG
 	release
 	end
 

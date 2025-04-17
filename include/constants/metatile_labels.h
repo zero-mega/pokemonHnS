@@ -490,6 +490,9 @@
 #define METATILE_PokemonCenter_Floor_ShadowTop           0x21E
 #define METATILE_PokemonCenter_Floor_ShadowTop_Alt       0x2DC
 
+// gTileset_R26_21
+#define METATILE_R26_21_Broken_Window  0x32B
+
 // gTileset_Route38Farm
 #define METATILE_Route38Farm_Grass  0x2E4
 
