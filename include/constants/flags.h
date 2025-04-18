@@ -925,8 +925,8 @@
 #define FLAG_COMPLETED_KABUTO_PUZZLE                         0x36E
 #define FLAG_COMPLETED_HOOH_PUZZLE                             0x36F
 #define FLAG_COMPLETED_OMANYTE_PUZZLE                              0x370
-#define FLAG_COMPLETED_AERODACTYL_PUZZLE                               0x371
-#define FLAG_HIDE_SLATEPORT_CITY_TEAM_AQUA                          0x372
+#define FLAG_COMPLETED_AERODACTYL_PUZZLE                               0x371 //headbutt
+#define FLAG_GET_HEADBUTT                          0x372
 #define FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_AQUA_GRUNTS         0x373
 #define FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_AQUA_GRUNT_1     0x374
 #define FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_AQUA_GRUNT_2     0x375
