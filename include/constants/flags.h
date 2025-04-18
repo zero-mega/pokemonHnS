@@ -915,17 +915,17 @@
 #define FLAG_HIDE_MOMS_FRIEND                                        0x364 //START OF CRYSTAL FLAGS
 #define FLAG_MOM_VISITED                                              0x365 //mom gives good luck speech
 #define FLAG_HIDE_SILVER_NEWBARKTOWN                                   0x366 //for beginning
-#define FLAG_HIDE_CHIKORITABALL                                           0x367 // hide starters after leaving the lab the first time
+#define FLAG_HIDE_CHIKORITABALL                                           0x367 
 #define FLAG_HIDE_CYNDAQUILBALL                                             0x368
 #define FLAG_HIDE_TOTODILEBALL                                          0x369
 #define FLAG_RECEIVED_FIRST_POTION                           0x36A
 #define FLAG_RECEIVED_FIRST_BALLS                        0x36B
 #define FLAG_HIDE_LAB_POLICEMAN                           0x36C
 #define FLAG_HIDE_MOMS_FRIEND2                             0x36D
-#define FLAG_HIDE_RUSTURF_TUNNEL_AQUA_GRUNT                         0x36E
-#define FLAG_HIDE_RUSTURF_TUNNEL_BRINEY                             0x36F
-#define FLAG_HIDE_RUSTURF_TUNNEL_PEEKO                              0x370
-#define FLAG_HIDE_BRINEYS_HOUSE_PEEKO                               0x371
+#define FLAG_COMPLETED_KABUTO_PUZZLE                         0x36E
+#define FLAG_COMPLETED_HOOH_PUZZLE                             0x36F
+#define FLAG_COMPLETED_OMANYTE_PUZZLE                              0x370
+#define FLAG_COMPLETED_AERODACTYL_PUZZLE                               0x371
 #define FLAG_HIDE_SLATEPORT_CITY_TEAM_AQUA                          0x372
 #define FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_AQUA_GRUNTS         0x373
 #define FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_AQUA_GRUNT_1     0x374

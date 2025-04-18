@@ -30,6 +30,30 @@ extern const u32 gBallGfx_Luxury[];
 extern const u32 gBallPal_Luxury[];
 extern const u32 gBallGfx_Premier[];
 extern const u32 gBallPal_Premier[];
+
+extern const u32 gBallGfx_Love[];
+extern const u32 gBallPal_Love[];
+
+extern const u32 gBallGfx_Lure[];
+extern const u32 gBallPal_Lure[];
+
+extern const u32 gBallGfx_Friend[];
+extern const u32 gBallPal_Friend[];
+
+extern const u32 gBallGfx_Heavy[];
+extern const u32 gBallPal_Heavy[];
+
+extern const u32 gBallGfx_Moon[];
+extern const u32 gBallPal_Moon[];
+
+extern const u32 gBallGfx_Level[];
+extern const u32 gBallPal_Level[];
+
+extern const u32 gBallGfx_Fast[];
+extern const u32 gBallPal_Fast[];
+
+extern const u32 gBallGfx_GS[];
+extern const u32 gBallPal_GS[];
 extern const u32 gOpenPokeballGfx[];
 
 // Pokémon gfx
@@ -3849,6 +3873,24 @@ extern const u32 gItemIcon_TimerBall[];
 extern const u32 gItemIcon_LuxuryBall[];
 extern const u32 gItemIconPalette_LuxuryBall[];
 extern const u32 gItemIcon_PremierBall[];
+
+extern const u32 gItemIcon_LoveBall[];
+extern const u32 gItemIconPalette_LoveBall[];
+extern const u32 gItemIcon_LureBall[];
+extern const u32 gItemIconPalette_LureBall[];
+extern const u32 gItemIcon_FriendBall[];
+extern const u32 gItemIconPalette_FriendBall[];
+extern const u32 gItemIcon_HeavyBall[];
+extern const u32 gItemIconPalette_HeavyBall[];
+extern const u32 gItemIcon_MoonBall[];
+extern const u32 gItemIconPalette_MoonBall[];
+extern const u32 gItemIcon_LevelBall[];
+extern const u32 gItemIconPalette_LevelBall[];
+extern const u32 gItemIcon_FastBall[];
+extern const u32 gItemIconPalette_FastBall[];
+extern const u32 gItemIcon_GSBall[];
+extern const u32 gItemIconPalette_GSBall[];
+
 // Medicine
 extern const u32 gItemIcon_Potion[];
 extern const u32 gItemIconPalette_Potion[];

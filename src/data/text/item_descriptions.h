@@ -62,6 +62,49 @@ static const u8 sPremierBallDesc[] = _(
     "in commemoration\n"
     "of some event.");
 
+
+//gsc balls
+static const u8 sLoveBallDesc[] = _(
+    "A BALL that works\n"
+    "well on FAIRY and\n"
+    "PSYCHIC POKéMON.");
+
+static const u8 sLureBallDesc[] = _(
+    "A BALL that works\n"
+    "well on WATER and\n"
+    "DRAGON POKéMON.");
+
+static const u8 sFriendBallDesc[] = _(
+    "A BALL that works\n"
+    "well on BUG and\n"
+    "GRASS POKéMON.");
+
+static const u8 sHeavyBallDesc[] = _(
+    "Works well on\n"
+    "ROCK, GROUND and\n"
+    "STEEL POKéMON.");
+
+static const u8 sMoonBallDesc[] = _(
+    "Works well on\n"
+    "DARK, GHOST and\n"
+    "POISON POKéMON.");
+
+static const u8 sLevelBallDesc[] = _(
+    "Works well on\n"
+    "ELECTRIC, FIGHTING\n"
+    "and FIRE POKéMON.");
+
+static const u8 sFastBallDesc[] = _(
+    "Works well on\n"
+    "NORMAL, FLYING\n"
+    "and ICE POKéMON.");
+
+static const u8 sGSBallDesc[] = _(
+    "A mysterious ball.\n"
+    "Likely to catch,\n"
+    "but not guaranteed.");
+
+
 // Medicine
 static const u8 sPotionDesc[] = _(
     "Restores the HP of\n"

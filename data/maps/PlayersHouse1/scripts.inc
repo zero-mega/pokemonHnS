@@ -15,7 +15,13 @@ PlayersHouse1_SetMomStandingAtTable::
 	setobjectxyperm LOCALID_MOM, 8, 4
 	setobjectmovementtype LOCALID_MOM, MOVEMENT_TYPE_FACE_LEFT
 	clearflag FLAG_HIDE_MOMS_FRIEND
-	setflag FLAG_HIDE_MOMS_FRIEND2
+	setflag FLAG_HIDE_MOMS_FRIEND2 @FLAGHEAP 
+
+
+	clearflag FLAG_COMPLETED_AERODACTYL_PUZZLE
+	clearflag FLAG_COMPLETED_HOOH_PUZZLE
+	clearflag FLAG_COMPLETED_KABUTO_PUZZLE
+	clearflag FLAG_COMPLETED_OMANYTE_PUZZLE
 	return
 
 PlayersHouse1_EventScript_Mom::

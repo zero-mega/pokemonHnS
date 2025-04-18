@@ -10407,6 +10407,51 @@ static void Cmd_handleballthrow(void)
         {
             switch (gLastUsedItem)
             {
+            case ITEM_LOVE_BALL:
+                if (IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_FAIRY) || IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_PSYCHIC ))
+                    ballMultiplier = 30;
+                else
+                    ballMultiplier = 10;
+                break;
+            case ITEM_LURE_BALL:
+                if (IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_WATER) || IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_DRAGON))
+                    ballMultiplier = 30;
+                else
+                    ballMultiplier = 10;
+                break;
+            case ITEM_FRIEND_BALL:
+                if (IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_BUG) || IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_GRASS))
+                    ballMultiplier = 30;
+                else
+                    ballMultiplier = 10;
+                break;
+            case ITEM_HEAVY_BALL:
+                if (IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_ROCK) || IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_GROUND) || IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_STEEL))
+                    ballMultiplier = 30;
+                else
+                    ballMultiplier = 10;
+                break;
+            case ITEM_MOON_BALL:
+                if (IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_DARK) || IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_GHOST)|| IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_POISON))
+                    ballMultiplier = 30;
+                else
+                    ballMultiplier = 10;
+                break;
+            case ITEM_FAST_BALL:
+                if (IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_ELECTRIC) || IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_FIGHTING) || IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_FIRE) )
+                    ballMultiplier = 30;
+                else
+                    ballMultiplier = 10;
+                break;
+            case ITEM_LEVEL_BALL:
+                if (IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_NORMAL) || IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_FLYING) || IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_ICE))
+                    ballMultiplier = 30;
+                else
+                    ballMultiplier = 10;
+                break;
+            case ITEM_GS_BALL:
+                ballMultiplier = 255;
+                break;
             case ITEM_NET_BALL:
                 if (IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_WATER) || IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_BUG))
                     ballMultiplier = 30;
@@ -10444,7 +10489,7 @@ static void Cmd_handleballthrow(void)
                 break;
             case ITEM_LUXURY_BALL:
             case ITEM_PREMIER_BALL:
-                ballMultiplier = 10;
+                ballMultiplier = 20;
                 break;
             }
         }

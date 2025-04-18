@@ -550,7 +550,7 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_BALL_LOVE               0x1164
 #define OBJ_EVENT_PAL_TAG_BALL_FRIEND             0x1165
 #define OBJ_EVENT_PAL_TAG_BALL_MOON               0x1166
-#define OBJ_EVENT_PAL_TAG_BALL_SPORT              0x1167
+#define OBJ_EVENT_PAL_TAG_BALL_GS              0x1167
 // Gen V
 #define OBJ_EVENT_PAL_TAG_BALL_DREAM              0x1168
 // Gen VII
@@ -691,7 +691,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_LoveBall,              OBJ_EVENT_PAL_TAG_BALL_LOVE},
     {gObjectEventPal_FriendBall,            OBJ_EVENT_PAL_TAG_BALL_FRIEND},
     {gObjectEventPal_MoonBall,              OBJ_EVENT_PAL_TAG_BALL_MOON},
-    {gObjectEventPal_SportBall,             OBJ_EVENT_PAL_TAG_BALL_SPORT},
+    {gObjectEventPal_GSBall,             OBJ_EVENT_PAL_TAG_BALL_GS},
     #endif
     // Gen V
     #ifdef ITEM_DREAM_BALL

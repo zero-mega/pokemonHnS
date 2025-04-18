@@ -5545,7 +5545,7 @@
       "id": "LAYOUT_RUINS_OF_ALPH2",
       "name": "RuinsOfAlph2_Layout",
       "width": 26,
-      "height": 28,
+      "height": 68,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_TanobyRuins_69",
       "border_filepath": "data/layouts/RuinsOfAlph2/border.bin",

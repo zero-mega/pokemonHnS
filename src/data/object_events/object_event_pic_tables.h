@@ -2087,8 +2087,8 @@ static const struct SpriteFrameImage sPicTable_Ball_FRIEND[] = {
 static const struct SpriteFrameImage sPicTable_Ball_MOON[] = {
     POKEBALL_PIC_FRAMES(Moon),
 };
-static const struct SpriteFrameImage sPicTable_Ball_SPORT[] = {
-    POKEBALL_PIC_FRAMES(Sport),
+static const struct SpriteFrameImage sPicTable_Ball_GS[] = {
+    POKEBALL_PIC_FRAMES(GS),
 };
 #endif
 

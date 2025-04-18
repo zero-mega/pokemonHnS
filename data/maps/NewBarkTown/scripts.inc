@@ -145,6 +145,12 @@ NewBarkTown_EventScript_Silver::
 
 
 NewBarkTown_EventScript_TestMan1::
+		clearflag FLAG_COMPLETED_AERODACTYL_PUZZLE
+	clearflag FLAG_COMPLETED_HOOH_PUZZLE
+	clearflag FLAG_COMPLETED_KABUTO_PUZZLE
+	clearflag FLAG_COMPLETED_OMANYTE_PUZZLE
+
+	
 	setvar VAR_NEWBARKTOWN_LABSTATE, 4
 	setflag FLAG_HIDE_SILVER_NEWBARKTOWN
 	setflag FLAG_SYS_POKEDEX_GET
@@ -188,6 +194,11 @@ NewBarkTown_EventScript_TestMan2::
 
 NewBarkTown_EventScript_TestMan3::
 	setvar VAR_NEWBARK_TOWN_STATE, 5
+	
+	clearflag FLAG_COMPLETED_AERODACTYL_PUZZLE
+	clearflag FLAG_COMPLETED_HOOH_PUZZLE
+	clearflag FLAG_COMPLETED_KABUTO_PUZZLE
+	clearflag FLAG_COMPLETED_OMANYTE_PUZZLE
 	end
 
 NewBarkTown_Movement_SilverPushesPlayer:

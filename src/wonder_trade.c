@@ -56,14 +56,6 @@ struct WonderTrade {
 // Feel free to delete it and remove the check that uses it,
 // if you use the pokeemerald-expansion.
 static const u16 sIsInvalidItem[] = {
-    [ITEM_035]            = TRUE,
-    [ITEM_036]            = TRUE,
-    [ITEM_037]            = TRUE,
-    [ITEM_038]            = TRUE,
-    [ITEM_039]            = TRUE,
-    [ITEM_03A]            = TRUE,
-    [ITEM_03B]            = TRUE,
-    [ITEM_03C]            = TRUE,
     [ITEM_03D]            = TRUE,
     [ITEM_03E]            = TRUE,
     [ITEM_048]            = TRUE,

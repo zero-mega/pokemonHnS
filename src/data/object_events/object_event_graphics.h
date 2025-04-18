@@ -914,7 +914,7 @@ const u32 gObjectEventPic_HeavyBall[] = INCBIN_U32("graphics/object_events/pics/
 const u32 gObjectEventPic_LoveBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_love.4bpp");
 const u32 gObjectEventPic_FriendBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_friend.4bpp");
 const u32 gObjectEventPic_MoonBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_moon.4bpp");
-const u32 gObjectEventPic_SportBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_sport.4bpp");
+const u32 gObjectEventPic_GSBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_gs.4bpp");
 #endif
 // Gen V
 #ifdef ITEM_DREAM_BALL
@@ -958,7 +958,7 @@ const u16 gObjectEventPal_HeavyBall[] = INCBIN_U16("graphics/object_events/pics/
 const u16 gObjectEventPal_LoveBall[] = INCBIN_U16("graphics/object_events/pics/misc/ball_love.gbapal");
 const u16 gObjectEventPal_FriendBall[] = INCBIN_U16("graphics/object_events/pics/misc/ball_friend.gbapal");
 const u16 gObjectEventPal_MoonBall[] = INCBIN_U16("graphics/object_events/pics/misc/ball_moon.gbapal");
-const u16 gObjectEventPal_SportBall[] = INCBIN_U16("graphics/object_events/pics/misc/ball_sport.gbapal");
+const u16 gObjectEventPal_GSBall[] = INCBIN_U16("graphics/object_events/pics/misc/ball_gs.gbapal");
 // Gen V
 const u16 gObjectEventPal_DreamBall[] = INCBIN_U16("graphics/object_events/pics/misc/ball_dream.gbapal");
 // Gen VII

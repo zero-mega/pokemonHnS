@@ -24,6 +24,58 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
+      "script": "RuinsOfAlph2_EventScript_Receptionist",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 4,
+      "y": 40,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 20,
+      "y": 40,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 4,
+      "y": 57,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 20,
+      "y": 57,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "0"
     }
@@ -56,12 +108,423 @@
       "elevation": 0,
       "dest_map": "MAP_RUINS_OF_ALPH",
       "dest_warp_id": "6"
+    },
+    {
+      "x": 4,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_RUINS_OF_ALPH1",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 20,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_RUINS_OF_ALPH1",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 4,
+      "y": 59,
+      "elevation": 0,
+      "dest_map": "MAP_RUINS_OF_ALPH1",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 20,
+      "y": 59,
+      "elevation": 0,
+      "dest_map": "MAP_RUINS_OF_ALPH1",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 21,
+      "y": 59,
+      "elevation": 0,
+      "dest_map": "MAP_RUINS_OF_ALPH1",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 5,
+      "y": 59,
+      "elevation": 0,
+      "dest_map": "MAP_RUINS_OF_ALPH1",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 21,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_RUINS_OF_ALPH1",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 5,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_RUINS_OF_ALPH1",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 5,
+      "y": 40,
+      "elevation": 0,
+      "dest_map": "MAP_RUINS_OF_ALPH1",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 21,
+      "y": 40,
+      "elevation": 0,
+      "dest_map": "MAP_RUINS_OF_ALPH1",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 5,
+      "y": 57,
+      "elevation": 0,
+      "dest_map": "MAP_RUINS_OF_ALPH1",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 21,
+      "y": 57,
+      "elevation": 0,
+      "dest_map": "MAP_RUINS_OF_ALPH1",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_RUINS_OF_ALPH2",
+      "dest_warp_id": "12"
+    },
+    {
+      "x": 20,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_RUINS_OF_ALPH2",
+      "dest_warp_id": "13"
+    },
+    {
+      "x": 4,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_RUINS_OF_ALPH2",
+      "dest_warp_id": "14"
+    },
+    {
+      "x": 20,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_RUINS_OF_ALPH2",
+      "dest_warp_id": "15"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_RUINS_OF_ALPH2",
+      "dest_warp_id": "12"
+    },
+    {
+      "x": 21,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_RUINS_OF_ALPH2",
+      "dest_warp_id": "13"
+    },
+    {
+      "x": 5,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_RUINS_OF_ALPH2",
+      "dest_warp_id": "14"
+    },
+    {
+      "x": 21,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_RUINS_OF_ALPH2",
+      "dest_warp_id": "15"
     }
   ],
   "coord_events": [
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 4,
+      "y": 3,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_HoohDescription"
+    },
+    {
+      "type": "sign",
+      "x": 20,
+      "y": 3,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_KabutoDescripton"
+    },
+    {
+      "type": "sign",
+      "x": 4,
+      "y": 20,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_OmanyteDescription"
+    },
+    {
+      "type": "sign",
+      "x": 20,
+      "y": 20,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_AerodactylDescription"
+    },
+    {
+      "type": "sign",
+      "x": 5,
+      "y": 3,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_EventScript_HooHPuzzle"
+    },
+    {
+      "type": "sign",
+      "x": 21,
+      "y": 3,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_EventScript_KabutoPuzzle"
+    },
+    {
+      "type": "sign",
+      "x": 5,
+      "y": 20,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_EventScript_OmanytePuzzle"
+    },
+    {
+      "type": "sign",
+      "x": 21,
+      "y": 20,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_EventScript_AerodactylPuzzle"
+    },
+    {
+      "type": "sign",
+      "x": 19,
+      "y": 4,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_StatueDescription"
+    },
+    {
+      "type": "sign",
+      "x": 22,
+      "y": 4,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_StatueDescription"
+    },
+    {
+      "type": "sign",
+      "x": 22,
+      "y": 21,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_StatueDescription"
+    },
+    {
+      "type": "sign",
+      "x": 19,
+      "y": 21,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_StatueDescription"
+    },
+    {
+      "type": "sign",
+      "x": 6,
+      "y": 21,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_StatueDescription"
+    },
+    {
+      "type": "sign",
+      "x": 3,
+      "y": 21,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_StatueDescription"
+    },
+    {
+      "type": "sign",
+      "x": 3,
+      "y": 4,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_StatueDescription"
+    },
+    {
+      "type": "sign",
+      "x": 6,
+      "y": 4,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_StatueDescription"
+    },
+    {
+      "type": "sign",
+      "x": 3,
+      "y": 39,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_UnownText"
+    },
+    {
+      "type": "sign",
+      "x": 4,
+      "y": 39,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_UnownText"
+    },
+    {
+      "type": "sign",
+      "x": 5,
+      "y": 39,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_UnownText"
+    },
+    {
+      "type": "sign",
+      "x": 19,
+      "y": 39,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_UnownText"
+    },
+    {
+      "type": "sign",
+      "x": 20,
+      "y": 39,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_UnownText"
+    },
+    {
+      "type": "sign",
+      "x": 21,
+      "y": 39,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_UnownText"
+    },
+    {
+      "type": "sign",
+      "x": 22,
+      "y": 39,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_UnownText"
+    },
+    {
+      "type": "sign",
+      "x": 23,
+      "y": 39,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_UnownText"
+    },
+    {
+      "type": "sign",
+      "x": 3,
+      "y": 56,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_UnownText"
+    },
+    {
+      "type": "sign",
+      "x": 4,
+      "y": 56,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_UnownText"
+    },
+    {
+      "type": "sign",
+      "x": 5,
+      "y": 56,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_UnownText"
+    },
+    {
+      "type": "sign",
+      "x": 6,
+      "y": 56,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_UnownText"
+    },
+    {
+      "type": "sign",
+      "x": 18,
+      "y": 56,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_UnownText"
+    },
+    {
+      "type": "sign",
+      "x": 19,
+      "y": 56,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_UnownText"
+    },
+    {
+      "type": "sign",
+      "x": 20,
+      "y": 56,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_UnownText"
+    },
+    {
+      "type": "sign",
+      "x": 21,
+      "y": 56,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_UnownText"
+    },
+    {
+      "type": "sign",
+      "x": 22,
+      "y": 56,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_UnownText"
+    },
+    {
+      "type": "sign",
+      "x": 23,
+      "y": 56,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_UnownText"
+    }
   ]
 }
