@@ -7,7 +7,8 @@ callfunc ScrFunc_IsFollowerFieldMoveUser
 EventScript_CutTree::
 	lockall
 	goto_if_unset FLAG_BADGE01_GET, EventScript_CheckTreeCantCut
-	checkpartymove MOVE_CUT
+	@checkpartymove MOVE_CUT
+	setvar VAR_RESULT, 0
 	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CheckTreeCantCut
 	@setfieldeffectargument 0, VAR_RESULT
 	bufferpartymonnick STR_VAR_1, VAR_RESULT
@@ -71,7 +72,8 @@ EventScript_UseRockSmash::
 EventScript_RockSmash::
 	lockall
 	goto_if_unset FLAG_BADGE03_GET, EventScript_CantSmashRock
-	checkpartymove MOVE_ROCK_SMASH
+	@checkpartymove MOVE_ROCK_SMASH
+	setvar VAR_RESULT, 0
 	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantSmashRock
 	@setfieldeffectargument 0, VAR_RESULT
 	bufferpartymonnick STR_VAR_1, VAR_RESULT
@@ -100,6 +102,66 @@ EventScript_SmashRock:: @ fallthrough
 	waitstate
 	releaseall
 	end
+
+
+
+
+@ Interact with headbutt tree
+EventScript_Headbutt::
+	lockall
+	goto_if_unset FLAG_GET_HEADBUTT, EventScript_CantHeadbuttTree
+	setvar VAR_RESULT, 0
+	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantHeadbuttTree
+	@setfieldeffectargument 0, VAR_RESULT
+	bufferpartymonnick STR_VAR_1, VAR_RESULT
+	buffermovename STR_VAR_2, MOVE_ROCK_SMASH
+	@msgbox Text_WantToHeadbutt, MSGBOX_YESNO
+	@goto_if_eq VAR_RESULT, NO, EventScript_CancelHeadbutt
+	msgbox Text_MonUsedHeadbutt, MSGBOX_DEFAULT
+	closemessage
+EventScript_HeadbuttCommon:
+	@ check if follower should use the field move
+	IsFollowerFieldMoveUser VAR_0x8004
+	@setfieldeffectargument 3, VAR_0x8004 @ skip pose if so
+	@dofieldeffect FLDEFF_USE_ROCK_SMASH
+	@waitstate
+EventScript_HeadbuttTree:: @ fallthrough
+	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
+	call_if_eq VAR_0x8004, TRUE, EventScript_FollowerFieldMove
+	applymovement VAR_LAST_TALKED, Movement_HeadbuttTree
+	playse SE_M_HEADBUTT
+	waitmovement 0
+	special RockSmashWildEncounter
+	goto EventScript_EndSmash
+	waitstate
+	releaseall
+	end
+
+
+
+
+Movement_HeadbuttTree:
+	rock_smash_break
+	step_end
+
+EventScript_CantHeadbuttTree::
+	msgbox Text_CantHeadbutt, MSGBOX_DEFAULT
+	releaseall
+	end
+
+EventScript_CancelHeadbutt::
+	closemessage
+	releaseall
+	end
+
+Text_MonUsedHeadbutt::
+	.string "{STR_VAR_1} used HEADBUTT!$"
+
+
+
+
+
+
 
 EventScript_FollowerFieldMove:
 	callfunc ScrFunc_GetDirectionToFace
@@ -237,11 +299,20 @@ Text_CantSmash:
 	.string "It's a rugged rock, but a POKéMON\n"
 	.string "may be able to smash it.$"
 
+Text_WantToHeadbutt:
+	.string "This tree may house POKéMON.\n"
+	.string "Would you like to use HEADBUTT?$"
+
+Text_CantHeadbutt:
+	.string "It's a small tree, but a wild\n"
+	.string "POKéMON may be living within.$"
+
 EventScript_StrengthBoulder::
 	lockall
 	goto_if_unset FLAG_BADGE04_GET, EventScript_CantStrength
 	goto_if_set FLAG_SYS_USE_STRENGTH, EventScript_CheckActivatedBoulder
-	checkpartymove MOVE_STRENGTH
+	@checkpartymove MOVE_STRENGTH
+	setvar VAR_RESULT, 0
 	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantStrength
 	setfieldeffectargument 0, VAR_RESULT
 	bufferpartymonnick STR_VAR_1, VAR_RESULT
@@ -299,7 +370,8 @@ Text_StrengthActivated:
 
 EventScript_UseWaterfall::
 	lockall
-	checkpartymove MOVE_WATERFALL
+	@checkpartymove MOVE_WATERFALL
+	setvar VAR_RESULT, 0
 	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantWaterfall
 	bufferpartymonnick STR_VAR_1, VAR_RESULT
 	setfieldeffectargument 0, VAR_RESULT

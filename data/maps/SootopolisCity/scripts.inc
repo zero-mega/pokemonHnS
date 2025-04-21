@@ -894,6 +894,8 @@ EventScript_ClosedSootopolisDoor::
 	msgbox SootopolisCity_Text_DoorIsClosed, MSGBOX_SIGN
 	end
 
+
+
 SootopolisCity_EventScript_Steven::
 	lockall
 	applymovement LOCALID_STEVEN, Common_Movement_FacePlayer

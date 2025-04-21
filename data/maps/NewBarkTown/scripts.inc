@@ -145,10 +145,7 @@ NewBarkTown_EventScript_Silver::
 
 
 NewBarkTown_EventScript_TestMan1::
-		clearflag FLAG_COMPLETED_AERODACTYL_PUZZLE
-	clearflag FLAG_COMPLETED_HOOH_PUZZLE
-	clearflag FLAG_COMPLETED_KABUTO_PUZZLE
-	clearflag FLAG_COMPLETED_OMANYTE_PUZZLE
+	setflag FLAG_GET_HEADBUTT
 
 	
 	setvar VAR_NEWBARKTOWN_LABSTATE, 4
