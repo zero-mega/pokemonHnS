@@ -34953,7 +34953,7 @@
           "map": "MAP_DARK_CAVE_1",
           "base_label": "gDarkCave_1",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 2,
@@ -35107,7 +35107,7 @@
           "map": "MAP_SPROUT_TOWER2",
           "base_label": "gSproutTower_2",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 3,
@@ -35176,7 +35176,7 @@
           "map": "MAP_SPROUT_TOWER2",
           "base_label": "gSproutTower_2_Night",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 3,
@@ -35245,7 +35245,7 @@
           "map": "MAP_SPROUT_TOWER3",
           "base_label": "gSproutTower_3",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 3,
@@ -35314,7 +35314,7 @@
           "map": "MAP_SPROUT_TOWER3",
           "base_label": "gSproutTower_3_Night",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 3,
@@ -35581,7 +35581,7 @@
           "map": "MAP_RUINS_OF_ALPH1",
           "base_label": "gRuinsOfAlph_1",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 5,
@@ -36326,7 +36326,7 @@
           "map": "MAP_UNION_CAVE1",
           "base_label": "gUnionCave1",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 8,
@@ -36480,7 +36480,7 @@
           "map": "MAP_UNION_CAVE2",
           "base_label": "gUnionCave2",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 8,
@@ -36634,7 +36634,7 @@
           "map": "MAP_UNION_CAVE3",
           "base_label": "gUnionCave3",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 22,
@@ -36986,7 +36986,7 @@
           "map": "MAP_SLOWPOKE_WELL",
           "base_label": "gSlowpokeWell",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 5,
@@ -37140,7 +37140,7 @@
           "map": "MAP_SLOWPOKE_WELL2",
           "base_label": "gSlowpokeWell2",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 19,
@@ -37294,7 +37294,7 @@
           "map": "MAP_ILEX_FOREST",
           "base_label": "gIlexForest",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 8,
@@ -37478,7 +37478,7 @@
           "map": "MAP_ILEX_FOREST",
           "base_label": "gIlexForest_Night",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 12,
@@ -38619,7 +38619,7 @@
           "map": "MAP_BURNED_TOWER1",
           "base_label": "gBurnedTower1",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 13,
@@ -38688,7 +38688,7 @@
           "map": "MAP_BURNED_TOWER1",
           "base_label": "gBurnedTower1_Night",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 13,
@@ -38757,7 +38757,7 @@
           "map": "MAP_BURNED_TOWER2",
           "base_label": "gBurnedTower2",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 16,
@@ -38826,7 +38826,7 @@
           "map": "MAP_BURNED_TOWER2",
           "base_label": "gBurnedTower2_Night",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 16,
@@ -39469,7 +39469,7 @@
           "map": "MAP_WHIRL_ISLANDS1",
           "base_label": "gWhirlIslands1",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 26,
@@ -39623,7 +39623,7 @@
           "map": "MAP_WHIRL_ISLANDS1",
           "base_label": "gWhirlIslands1_Night",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 27,
@@ -39777,7 +39777,7 @@
           "map": "MAP_WHIRL_ISLANDS2",
           "base_label": "gWhirlIslands2",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 26,
@@ -39931,7 +39931,7 @@
           "map": "MAP_WHIRL_ISLANDS2",
           "base_label": "gWhirlIslands2_Night",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 27,
@@ -40085,7 +40085,7 @@
           "map": "MAP_WHIRL_ISLANDS3",
           "base_label": "gWhirlIslands3",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 28,
@@ -40239,7 +40239,7 @@
           "map": "MAP_WHIRL_ISLANDS3",
           "base_label": "gWhirlIslands3_Night",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 26,
@@ -40710,7 +40710,7 @@
           "map": "MAP_CLIFF_EDGE_CAVE",
           "base_label": "gCliffEdgeCave",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 23,
@@ -41177,7 +41177,7 @@
           "map": "MAP_MT_MORTAR1",
           "base_label": "gMtMortar1",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 20,
@@ -41331,7 +41331,7 @@
           "map": "MAP_MT_MORTAR1",
           "base_label": "gMtMortar1_Night",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 20,
@@ -41485,7 +41485,7 @@
           "map": "MAP_MT_MORTAR2",
           "base_label": "gMtMortar2",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 20,
@@ -41639,7 +41639,7 @@
           "map": "MAP_MT_MORTAR2",
           "base_label": "gMtMortar2_Night",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 20,
@@ -41793,7 +41793,7 @@
           "map": "MAP_MT_MORTAR4",
           "base_label": "gMtMortar4",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 20,
@@ -41947,7 +41947,7 @@
           "map": "MAP_MT_MORTAR4",
           "base_label": "gMtMortar4_Night",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 20,
@@ -42101,7 +42101,7 @@
           "map": "MAP_MT_MORTAR3",
           "base_label": "gMtMortar3",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 31,
@@ -42255,7 +42255,7 @@
           "map": "MAP_MT_MORTAR3",
           "base_label": "gMtMortar3_Night",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 31,
@@ -43299,7 +43299,7 @@
           "map": "MAP_ICE_PATH1",
           "base_label": "gIcePath1",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 21,
@@ -43368,7 +43368,7 @@
           "map": "MAP_ICE_PATH1",
           "base_label": "gIcePath1_Night",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 21,
@@ -43437,7 +43437,7 @@
           "map": "MAP_ICE_PATH2",
           "base_label": "gIcePath2",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 32,
@@ -43506,7 +43506,7 @@
           "map": "MAP_ICE_PATH2",
           "base_label": "gIcePath2_Night",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 32,
@@ -43575,7 +43575,7 @@
           "map": "MAP_ICE_PATH3",
           "base_label": "gIcePath3",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 32,
@@ -43644,7 +43644,7 @@
           "map": "MAP_ICE_PATH3",
           "base_label": "gIcePath3_Night",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 32,
@@ -43713,7 +43713,7 @@
           "map": "MAP_ICE_PATH4",
           "base_label": "gIcePath4",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 32,
@@ -43782,7 +43782,7 @@
           "map": "MAP_ICE_PATH4",
           "base_label": "gIcePath4_Night",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 32,
@@ -43851,7 +43851,7 @@
           "map": "MAP_ICE_PATH5",
           "base_label": "gIcePath5",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 32,
@@ -43920,7 +43920,7 @@
           "map": "MAP_ICE_PATH5",
           "base_label": "gIcePath5_Night",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 32,
@@ -44386,7 +44386,7 @@
           "map": "MAP_DARK_CAVE_2",
           "base_label": "gDarkCave2",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 33,
@@ -44540,7 +44540,7 @@
           "map": "MAP_DARK_CAVE_2",
           "base_label": "gDarkCave2_Night",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 33,
@@ -44694,7 +44694,7 @@
           "map": "MAP_MT_SILVER",
           "base_label": "gMtSilver",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 50,
@@ -45062,7 +45062,7 @@
           "map": "MAP_MT_SILVER1",
           "base_label": "gMtSilver1",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 63,
@@ -45216,7 +45216,7 @@
           "map": "MAP_MT_SILVER1",
           "base_label": "gMtSilver1_Night",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 62,
@@ -45370,7 +45370,7 @@
           "map": "MAP_MT_SILVER4",
           "base_label": "gMtSilver4",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 63,
@@ -45524,7 +45524,7 @@
           "map": "MAP_MT_SILVER4",
           "base_label": "gMtSilver4_Night",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 66,
@@ -45678,7 +45678,7 @@
           "map": "MAP_MT_SILVER2",
           "base_label": "gMtSilver2",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 63,
@@ -45832,7 +45832,7 @@
           "map": "MAP_MT_SILVER2",
           "base_label": "gMtSilver2_Night",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 63,
@@ -46269,7 +46269,7 @@
           "map": "MAP_TOHJO_FALLS",
           "base_label": "gTohjoFalls",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 30,
@@ -46423,7 +46423,7 @@
           "map": "MAP_TOHJO_FALLS",
           "base_label": "gTohjoFalls_Night",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 30,
@@ -47283,7 +47283,7 @@
           "map": "MAP_VICTORY_ROAD1",
           "base_label": "gVictoryRoad1",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 44,
@@ -47437,7 +47437,7 @@
           "map": "MAP_VICTORY_ROAD2",
           "base_label": "gVictoryRoad2",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 44,
@@ -47591,7 +47591,7 @@
           "map": "MAP_VICTORY_ROAD3",
           "base_label": "gVictoryRoad3",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 44,
@@ -50236,7 +50236,7 @@
           "map": "MAP_ROCK_TUNNEL1",
           "base_label": "gRockTunnel1",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 42,
@@ -50390,7 +50390,7 @@
           "map": "MAP_ROCK_TUNNEL1",
           "base_label": "gRockTunnel1_Night",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 44,
@@ -50544,7 +50544,7 @@
           "map": "MAP_ROCK_TUNNEL2",
           "base_label": "gRockTunnel2",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 42,
@@ -50698,7 +50698,7 @@
           "map": "MAP_ROCK_TUNNEL2",
           "base_label": "gRockTunnel2_Night",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 42,
@@ -54287,7 +54287,7 @@
           "map": "MAP_DIGLETTS_CAVE3",
           "base_label": "gDiglettsCave3",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 2,
@@ -55799,7 +55799,7 @@
           "map": "MAP_MT_MOON1",
           "base_label": "gMtMoon1",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 8,
@@ -55953,7 +55953,7 @@
           "map": "MAP_MT_MOON1",
           "base_label": "gMtMoon1_Night",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 8,
@@ -63532,7 +63532,7 @@
           "map": "MAP_VIRIDIAN_FOREST",
           "base_label": "gViridianForest",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 5,
@@ -63670,7 +63670,7 @@
           "map": "MAP_MT_SILVER6",
           "base_label": "gMtSilver6",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 63,
@@ -63962,7 +63962,7 @@
           "map": "MAP_MT_SILVER8",
           "base_label": "gMtSilver8",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 63,
@@ -64036,17 +64036,17 @@
               {
                 "min_level": 15,
                 "max_level": 15,
+                "species": "SPECIES_AIPOM"
+              },
+              {
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_AIPOM"
+              },
+              {
+                "min_level": 15,
+                "max_level": 15,
                 "species": "SPECIES_PINECO"
-              },
-              {
-                "min_level": 15,
-                "max_level": 15,
-                "species": "SPECIES_AIPOM"
-              },
-              {
-                "min_level": 15,
-                "max_level": 15,
-                "species": "SPECIES_AIPOM"
               },
               {
                 "min_level": 15,
@@ -64678,6 +64678,558 @@
                 "min_level": 67,
                 "max_level": 67,
                 "species": "SPECIES_SLOWKING"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_TIN_TOWER3",
+          "base_label": "gTinTower3",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_TIN_TOWER4",
+          "base_label": "gTinTower4",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_TIN_TOWER5",
+          "base_label": "gTinTower5",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_TIN_TOWER6",
+          "base_label": "gTinTower6",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_TIN_TOWER7",
+          "base_label": "gTinTower7",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_TIN_TOWER8",
+          "base_label": "gTinTower8",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_TIN_TOWER9",
+          "base_label": "gTinTower9",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_TIN_TOWER10",
+          "base_label": "gTinTower10",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
               }
             ]
           }
