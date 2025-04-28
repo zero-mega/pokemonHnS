@@ -22,6 +22,7 @@ PlayersHouse1_SetMomStandingAtTable::
 	clearflag FLAG_COMPLETED_HOOH_PUZZLE
 	clearflag FLAG_COMPLETED_KABUTO_PUZZLE
 	clearflag FLAG_COMPLETED_OMANYTE_PUZZLE
+	clearflag FLAG_MET_TUSCANY
 	return
 
 PlayersHouse1_EventScript_Mom::

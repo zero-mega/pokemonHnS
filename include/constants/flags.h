@@ -774,19 +774,19 @@
 
 #define FLAG_UNUSED_0x2D9                                           0x2D9 // Unused Flag
 
-#define FLAG_HIDE_LILYCOVE_FAN_CLUB_INTERVIEWER                     0x2DA
-#define FLAG_HIDE_RUSTBORO_CITY_AQUA_GRUNT                          0x2DB
-#define FLAG_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1                    0x2DC
-#define FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_KYOGRE_ASLEEP              0x2DD
-#define FLAG_HIDE_PLAYERS_HOUSE_DAD                                 0x2DE
-#define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_SIBLING      0x2DF
-#define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_SIBLING          0x2E0
-#define FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_MAGMA_NOTE             0x2E1
-#define FLAG_HIDE_ROUTE_104_MR_BRINEY                               0x2E2
-#define FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY                           0x2E3
-#define FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN                            0x2E4
+#define FLAG_MET_TUSCANY                     0x2DA //RANDOM CRYSTAL FLAGS, NOT STRICTLY STORY //weekday siblings
+#define FLAG_GARBAGEFLAG2                          0x2DB
+#define FLAG_GARBAGEFLAG3                    0x2DC
+#define FLAG_GARBAGEFLAG4              0x2DD
+#define FLAG_GARBAGEFLAG5                                 0x2DE
+#define FLAG_GARBAGEFLAG6      0x2DF
+#define FLAG_GARBAGEFLAG7          0x2E0
+#define FLAG_GARBAGEFLAG8             0x2E1
+#define FLAG_GARBAGEFLAG9                               0x2E2
+#define FLAG_GARBAGEFLAG10                           0x2E3
+#define FLAG_GARBAGEFLAG11                            0x2E4
 #define FLAG_HIDE_ROUTE_109_MR_BRINEY                               0x2E5
-#define FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT                          0x2E6
+#define FLAG_GARBAGEFLAG_BOAT                          0x2E6
 #define FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN                       0x2E7
 #define FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT                          0x2E8
 #define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_BRENDAN            0x2E9

@@ -263,6 +263,7 @@ NewBarkTownLab_EventScript_TriggerAideGivePotion::
 	msgbox NewBarkTownLab_Text_AideGivePotion, MSGBOX_DEFAULT
 	closemessage
 	giveitem ITEM_POTION
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_FIRST_POTION
 	setvar VAR_NEWBARKTOWN_LABSTATE, 3
 	applymovement LOCALID_AIDE1, NewBarkTownLab_Movement_Aide1LeavePlayer
@@ -350,6 +351,7 @@ NewBarkTownLab_EventScript_TriggerAideGiveBalls::
 	msgbox NewBarkTownLab_Text_AideGiveBalls, MSGBOX_DEFAULT
 	closemessage
 	giveitem ITEM_POKE_BALL, 5
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_FIRST_BALLS
 	setvar VAR_NEWBARKTOWN_LABSTATE, 6
 	applymovement LOCALID_AIDE1, NewBarkTownLab_Movement_Aide1LeavePlayer
@@ -614,9 +616,8 @@ NewBarkTownLab_Text_ElmAfterTheft4:
 	.string "Th-that's incredible!\p"
 	.string "He is superb at seeing the\n"
 	.string "potential of people as trainers.\p"
-	.string "Wow, {PLAYER}. You may have\n"
-	.string "what it takes to become the\p"
-	.string "CHAMPION.\p"
+	.string "Wow, {PLAYER}. You may have what\n"
+	.string "it takes to become the CHAMPION.\p"
 	.string "You seem to be getting on\n"
 	.string "great with POKéMON too.\p"
 	.string "You should take the POKéMON\n"
