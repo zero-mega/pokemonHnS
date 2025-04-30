@@ -17,12 +17,19 @@ CherryGroveCity_EventScript_Fisherman2::
 	end
 
 CherryGroveCity_EventScript_Lass::
+	lock
+	faceplayer
+	@ goto_if_set 
+	msgbox CherrygroveCity_Text_TeacherNoMapCard MSGBOX_DEFAULT
+	closemessage
+	release
+	end
 
 CherryGroveCity_EventScript_Boy::
 	lock
 	faceplayer
-	msgbox
-	closemessage
+	@ msgbox
+	@ closemessage
 	release
 	end
 
