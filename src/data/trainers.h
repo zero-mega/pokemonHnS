@@ -5613,10 +5613,10 @@ const struct Trainer gTrainers[] = {
     [TRAINER_RIVAL_CHIKORITA_1] =
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SILVER,
         .trainerPic = TRAINER_PIC_SILVER,
-        .trainerName = _("SILVER"),
-        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
+        .trainerName = _("???"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Rival_Chikorita1),
@@ -5626,7 +5626,7 @@ const struct Trainer gTrainers[] = {
     [TRAINER_RIVAL_CHIKORITA_2] =
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SILVER,
         .trainerPic = TRAINER_PIC_SILVER,
         .trainerName = _("SILVER"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
@@ -5639,7 +5639,7 @@ const struct Trainer gTrainers[] = {
     [TRAINER_RIVAL_CHIKORITA_3] =
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SILVER,
         .trainerPic = TRAINER_PIC_SILVER,
         .trainerName = _("SILVER"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
@@ -5652,7 +5652,7 @@ const struct Trainer gTrainers[] = {
     [TRAINER_RIVAL_CHIKORITA_4] =
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SILVER,
         .trainerPic = TRAINER_PIC_SILVER,
         .trainerName = _("SILVER"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
@@ -5665,7 +5665,7 @@ const struct Trainer gTrainers[] = {
     [TRAINER_RIVAL_CHIKORITA_5] =
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SILVER,
         .trainerPic = TRAINER_PIC_SILVER,
         .trainerName = _("SILVER"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
@@ -5678,7 +5678,7 @@ const struct Trainer gTrainers[] = {
     [TRAINER_RIVAL_CHIKORITA_6] =
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SILVER,
         .trainerPic = TRAINER_PIC_SILVER,
         .trainerName = _("SILVER"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
@@ -5691,7 +5691,7 @@ const struct Trainer gTrainers[] = {
     [TRAINER_RIVAL_CHIKORITA_7] =
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SILVER,
         .trainerPic = TRAINER_PIC_SILVER,
         .trainerName = _("SILVER"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
@@ -5704,10 +5704,10 @@ const struct Trainer gTrainers[] = {
     [TRAINER_RIVAL_CYNDAQUIL_1] =
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SILVER,
         .trainerPic = TRAINER_PIC_SILVER,
-        .trainerName = _("SILVER"),
-        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
+        .trainerName = _("???"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Rival_Cyndaquil1),
@@ -5717,7 +5717,7 @@ const struct Trainer gTrainers[] = {
     [TRAINER_RIVAL_CYNDAQUIL_2] =
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SILVER,
         .trainerPic = TRAINER_PIC_SILVER,
         .trainerName = _("SILVER"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
@@ -5730,7 +5730,7 @@ const struct Trainer gTrainers[] = {
     [TRAINER_RIVAL_CYNDAQUIL_3] =
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SILVER,
         .trainerPic = TRAINER_PIC_SILVER,
         .trainerName = _("SILVER"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
@@ -5743,7 +5743,7 @@ const struct Trainer gTrainers[] = {
     [TRAINER_RIVAL_CYNDAQUIL_4] =
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SILVER,
         .trainerPic = TRAINER_PIC_SILVER,
         .trainerName = _("SILVER"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
@@ -5756,7 +5756,7 @@ const struct Trainer gTrainers[] = {
     [TRAINER_RIVAL_CYNDAQUIL_5] =
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SILVER,
         .trainerPic = TRAINER_PIC_SILVER,
         .trainerName = _("SILVER"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
@@ -5769,7 +5769,7 @@ const struct Trainer gTrainers[] = {
     [TRAINER_RIVAL_CYNDAQUIL_6] =
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SILVER,
         .trainerPic = TRAINER_PIC_SILVER,
         .trainerName = _("SILVER"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
@@ -5782,7 +5782,7 @@ const struct Trainer gTrainers[] = {
     [TRAINER_RIVAL_CYNDAQUIL_7] =
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SILVER,
         .trainerPic = TRAINER_PIC_SILVER,
         .trainerName = _("SILVER"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
@@ -5795,10 +5795,10 @@ const struct Trainer gTrainers[] = {
     [TRAINER_RIVAL_TOTODILE_1] =
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SILVER,
         .trainerPic = TRAINER_PIC_SILVER,
-        .trainerName = _("SILVER"),
-        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
+        .trainerName = _("???"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Rival_Totodile1),
@@ -5808,7 +5808,7 @@ const struct Trainer gTrainers[] = {
     [TRAINER_RIVAL_TOTODILE_2] =
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SILVER,
         .trainerPic = TRAINER_PIC_SILVER,
         .trainerName = _("SILVER"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
@@ -5821,7 +5821,7 @@ const struct Trainer gTrainers[] = {
     [TRAINER_RIVAL_TOTODILE_3] =
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SILVER,
         .trainerPic = TRAINER_PIC_SILVER,
         .trainerName = _("SILVER"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
@@ -5834,7 +5834,7 @@ const struct Trainer gTrainers[] = {
     [TRAINER_RIVAL_TOTODILE_4] =
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SILVER,
         .trainerPic = TRAINER_PIC_SILVER,
         .trainerName = _("SILVER"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
@@ -5847,7 +5847,7 @@ const struct Trainer gTrainers[] = {
     [TRAINER_RIVAL_TOTODILE_5] =
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SILVER,
         .trainerPic = TRAINER_PIC_SILVER,
         .trainerName = _("SILVER"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
@@ -5860,7 +5860,7 @@ const struct Trainer gTrainers[] = {
     [TRAINER_RIVAL_TOTODILE_6] =
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SILVER,
         .trainerPic = TRAINER_PIC_SILVER,
         .trainerName = _("SILVER"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
@@ -5873,7 +5873,7 @@ const struct Trainer gTrainers[] = {
     [TRAINER_RIVAL_TOTODILE_7] =
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SILVER,
         .trainerPic = TRAINER_PIC_SILVER,
         .trainerName = _("SILVER"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},

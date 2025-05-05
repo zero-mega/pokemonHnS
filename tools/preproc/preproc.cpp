@@ -61,6 +61,9 @@ void PreprocAsmFile(std::string filename)
                 stack.top().OutputLocation();
         }
 
+        //stack.top().OutputLocation();
+
+
         Directive directive = stack.top().GetDirective();
 
         switch (directive)

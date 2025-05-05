@@ -255,17 +255,20 @@
 #define ITEM_STICK 225
 #define ITEM_INFINITE_REPEL 226
 #define ITEM_INFINITE_RARE_CANDIES 227
-#define ITEM_0E4 228
-#define ITEM_0E5 229
-#define ITEM_0E6 230
-#define ITEM_0E7 231
-#define ITEM_0E8 232
-#define ITEM_0E9 233
-#define ITEM_0EA 234
-#define ITEM_0EB 235
-#define ITEM_0EC 236
-#define ITEM_0ED 237
-#define ITEM_0EE 238
+
+//Crystal johto key items
+
+#define ITEM_CLEAR_BELL 228
+#define ITEM_LOST_ITEM 229
+#define ITEM_MACHINE_PART 230
+#define ITEM_MYSTERY_EGG 231
+#define ITEM_PASS 232
+#define ITEM_RAINBOW_WING 233
+#define ITEM_RED_SCALE 234
+#define ITEM_SECRET_POTION 235
+#define ITEM_SILVER_WING 236
+#define ITEM_RAGE_CANDY_BAR 237
+#define ITEM_TIDAL_BELL 238
 #define ITEM_0EF 239
 #define ITEM_0F0 240
 #define ITEM_0F1 241

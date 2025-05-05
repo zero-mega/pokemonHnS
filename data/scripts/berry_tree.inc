@@ -126,7 +126,7 @@ BerryTree_EventScript_PickBerry::
 	message BerryTree_Text_PickedTheBerry
 	playfanfare MUS_OBTAIN_BERRY
 
-	@ added:
+	@ added to crystal:
 	special ObjectEventInteractionPlantBerryTree
 	incrementgamestat GAME_STAT_PLANTED_BERRIES
 	special IncrementDailyPlantedBerries

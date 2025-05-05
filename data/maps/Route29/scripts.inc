@@ -101,6 +101,10 @@ Route29_EventScript_Sign::
 	release
 	end
 
+Route29_EventScript_ItemPotion::
+	finditem ITEM_POTION
+	end
+
 Route29_Text_OldMan1:
 	.string "POKéMON hide in the grass.\n"
 	.string "Who knows when they'll pop out…$"

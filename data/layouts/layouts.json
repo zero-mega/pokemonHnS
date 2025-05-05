@@ -4605,7 +4605,7 @@
       "id": "LAYOUT_WORLD_HUB",
       "name": "WorldHub_Layout",
       "width": 20,
-      "height": 20,
+      "height": 50,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/WorldHub/border.bin",
@@ -6016,7 +6016,7 @@
       "name": "ViridianPokecenter_Layout",
       "width": 15,
       "height": 10,
-      "primary_tileset": "gTileset_Kanto_Building",
+      "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Kanto_PokemonCenter",
       "border_filepath": "data/layouts/ViridianPokecenter/border.bin",
       "blockdata_filepath": "data/layouts/ViridianPokecenter/map.bin"
@@ -6026,7 +6026,7 @@
       "name": "PewterPokecenter_Layout",
       "width": 15,
       "height": 10,
-      "primary_tileset": "gTileset_Kanto_Building",
+      "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Kanto_PokemonCenter",
       "border_filepath": "data/layouts/PewterPokecenter/border.bin",
       "blockdata_filepath": "data/layouts/PewterPokecenter/map.bin"
@@ -6036,7 +6036,7 @@
       "name": "CeruleanPokecenter_Layout",
       "width": 15,
       "height": 10,
-      "primary_tileset": "gTileset_Kanto_Building",
+      "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Kanto_PokemonCenter",
       "border_filepath": "data/layouts/CeruleanPokecenter/border.bin",
       "blockdata_filepath": "data/layouts/CeruleanPokecenter/map.bin"
@@ -6046,7 +6046,7 @@
       "name": "VermilionPokecenter_Layout",
       "width": 15,
       "height": 10,
-      "primary_tileset": "gTileset_Kanto_Building",
+      "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Kanto_PokemonCenter",
       "border_filepath": "data/layouts/VermilionPokecenter/border.bin",
       "blockdata_filepath": "data/layouts/VermilionPokecenter/map.bin"
@@ -6056,7 +6056,7 @@
       "name": "LavenderPokecenter_Layout",
       "width": 15,
       "height": 10,
-      "primary_tileset": "gTileset_Kanto_Building",
+      "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Kanto_PokemonCenter",
       "border_filepath": "data/layouts/LavenderPokecenter/border.bin",
       "blockdata_filepath": "data/layouts/LavenderPokecenter/map.bin"
@@ -6066,7 +6066,7 @@
       "name": "CeladonPokecenter_Layout",
       "width": 15,
       "height": 10,
-      "primary_tileset": "gTileset_Kanto_Building",
+      "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Kanto_PokemonCenter",
       "border_filepath": "data/layouts/CeladonPokecenter/border.bin",
       "blockdata_filepath": "data/layouts/CeladonPokecenter/map.bin"
@@ -6076,7 +6076,7 @@
       "name": "SaffronPokecenter_Layout",
       "width": 15,
       "height": 10,
-      "primary_tileset": "gTileset_Kanto_Building",
+      "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Kanto_PokemonCenter",
       "border_filepath": "data/layouts/SaffronPokecenter/border.bin",
       "blockdata_filepath": "data/layouts/SaffronPokecenter/map.bin"
@@ -6086,7 +6086,7 @@
       "name": "FuchsiaPokecenter_Layout",
       "width": 15,
       "height": 10,
-      "primary_tileset": "gTileset_Kanto_Building",
+      "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Kanto_PokemonCenter",
       "border_filepath": "data/layouts/FuchsiaPokecenter/border.bin",
       "blockdata_filepath": "data/layouts/FuchsiaPokecenter/map.bin"
@@ -6096,7 +6096,7 @@
       "name": "CinnabarPokecenter_Layout",
       "width": 15,
       "height": 10,
-      "primary_tileset": "gTileset_Kanto_Building",
+      "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Kanto_PokemonCenter",
       "border_filepath": "data/layouts/CinnabarPokecenter/border.bin",
       "blockdata_filepath": "data/layouts/CinnabarPokecenter/map.bin"
@@ -7647,7 +7647,7 @@
       "width": 16,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_PokeCenter_14",
+      "secondary_tileset": "gTileset_Kanto_PokemonCenter",
       "border_filepath": "data/layouts/Route9Pokecenter/border.bin",
       "blockdata_filepath": "data/layouts/Route9Pokecenter/map.bin"
     },

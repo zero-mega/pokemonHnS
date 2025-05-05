@@ -4289,24 +4289,19 @@ bool8 MovementType_BerryTreeGrowth_SparkleStart(struct ObjectEvent *objectEvent,
 // BERRYTREEFUNC_SPARKLE
 bool8 MovementType_BerryTreeGrowth_Sparkle(struct ObjectEvent *objectEvent, struct Sprite *sprite)
 {
-    sprite->sTimer++;
-    objectEvent->invisible = (sprite->sTimer & 2) >> 1;
-    sprite->animPaused = TRUE;
-    if (sprite->sTimer > 64)
-    {
-        get_berry_tree_graphics(objectEvent, sprite);
-        sprite->sTypeFuncId = BERRYTREEFUNC_SPARKLE_END;
-        sprite->sTimer = 0;
-        return TRUE;
-    }
-    return FALSE;
+   //crystal removed if statement to remove berry growth disappear and reapper/flicker
+    get_berry_tree_graphics(objectEvent, sprite);
+    sprite->sTypeFuncId = BERRYTREEFUNC_SPARKLE_END;
+    sprite->sTimer = 0;
+    return TRUE;
+
 }
 
 // BERRYTREEFUNC_SPARKLE_END
 bool8 MovementType_BerryTreeGrowth_SparkleEnd(struct ObjectEvent *objectEvent, struct Sprite *sprite)
 {
     sprite->sTimer++;
-    objectEvent->invisible = (sprite->sTimer & 2) >> 1;
+    //objectEvent->invisible = (sprite->sTimer & 2) >> 1;
     sprite->animPaused = TRUE;
     if (sprite->sTimer > 64)
     {

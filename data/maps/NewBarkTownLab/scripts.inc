@@ -95,7 +95,7 @@ NewBarkTownLab_EventScript_ElmAccepted::
 	msgbox NewBarkTownLab_Text_ElmAccepted, MSGBOX_DEFAULT
 	msgbox NewBarkTownLab_Text_ElmResearchAmbitions, MSGBOX_DEFAULT
 	playse SE_PIN
-	applymovement LOCALID_ELM, Common_Movement_ExclamationMark
+	applymovement LOCALID_ELM, Common_Movement_QuestionMark
 	waitmovement 0 
 	delay 50
 	applymovement LOCALID_ELM, NewBarkTownLab_Movement_CheckEmail
@@ -330,6 +330,7 @@ NewBarkTownLab_EventScript_PoliceYes::
 	setflag FLAG_HIDE_MOMS_FRIEND
 	clearflag FLAG_HIDE_MOMS_FRIEND2
 	setflag FLAG_ADVENTURE_STARTED
+	removeitem ITEM_MYSTERY_EGG
 	end
 
 NewBarkTownLab_EventScript_ElmState5::

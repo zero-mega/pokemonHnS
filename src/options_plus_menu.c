@@ -1169,10 +1169,10 @@ static void Task_OptionMenuSave(u8 taskId)
     //ADDED TO SET THESE TO DEFAULTS SINCE THEY WERE REMOVED
     gSaveBlock2Ptr->optionsBikeMusic = 0;
     gSaveBlock2Ptr->optionsSurfMusic = 0;
-    gSaveBlock2Ptr->optionsWildBattleMusic = 0;
-    gSaveBlock2Ptr->optionsTrainerBattleMusic = 0;
-    gSaveBlock2Ptr->optionsFrontierTrainerBattleMusic = 0;
-    gSaveBlock2Ptr->optionsSoundEffects = 0;
+    gSaveBlock2Ptr->optionsWildBattleMusic = 3;
+    gSaveBlock2Ptr->optionsTrainerBattleMusic = 3;
+    gSaveBlock2Ptr->optionsFrontierTrainerBattleMusic = 3;
+    gSaveBlock2Ptr->optionsSoundEffects = 2;
 
 
     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 0x10, RGB_BLACK);

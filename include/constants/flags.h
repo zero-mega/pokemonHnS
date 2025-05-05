@@ -132,7 +132,7 @@
 #define FLAG_FINITE_TMS                      0x71
 #define FLAG_SCOTT_CALL_BATTLE_FRONTIER      0x72 // Used in order to activate a phone call from Scott, inviting the player to the SS Tidal.
 #define FLAG_RECEIVED_METEORITE              0x73
-#define FLAG_ADVENTURE_STARTED               0x74 // RECEIVED Pokédex.
+#define FLAG_ADVENTURE_STARTED               0x74 // elivered egg to professor ELM
 #define FLAG_DEFEATED_MAGMA_SPACE_CENTER     0x75 // Set when Team Magma is defeated at Mossdeep's Space Center.
 #define FLAG_MET_HIDDEN_POWER_GIVER          0x76
 
@@ -774,12 +774,12 @@
 
 #define FLAG_UNUSED_0x2D9                                           0x2D9 // Unused Flag
 
-#define FLAG_MET_TUSCANY                     0x2DA //RANDOM CRYSTAL FLAGS, NOT STRICTLY STORY //weekday siblings
-#define FLAG_GARBAGEFLAG2                          0x2DB
-#define FLAG_GARBAGEFLAG3                    0x2DC
-#define FLAG_GARBAGEFLAG4              0x2DD
-#define FLAG_GARBAGEFLAG5                                 0x2DE
-#define FLAG_GARBAGEFLAG6      0x2DF
+#define FLAG_MET_TUSCANY                     0x2DA //CRYSTALRANDOMFLAGS, NOT STRICTLY STORY //weekday siblings
+#define FLAG_GOT_MYSTICWATER                          0x2DB
+#define FLAG_GOT_BERRY_ROUTE_30_HOUSE                    0x2DC
+#define FLAG_HIDE_VIOLET_CITY_EARL              0x2DD
+#define FLAG_HIDE_TRAINER_SCHOOL_EARL                                 0x2DE
+#define FLAG_VIOLET_NPC_TRADE_COMPLETED      0x2DF
 #define FLAG_GARBAGEFLAG7          0x2E0
 #define FLAG_GARBAGEFLAG8             0x2E1
 #define FLAG_GARBAGEFLAG9                               0x2E2
@@ -912,7 +912,7 @@
 #define FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_ALT_2           0x361
 #define FLAG_HIDE_PETALBURG_GYM_WALLY                               0x362
 #define FLAG_UNKNOWN_0x363                                          0x363 // Set, however has no purpose.
-#define FLAG_HIDE_MOMS_FRIEND                                        0x364 //START OF CRYSTAL FLAGS
+#define FLAG_HIDE_MOMS_FRIEND                                        0x364 //START OF CRYSTALSTORYFLAGS
 #define FLAG_MOM_VISITED                                              0x365 //mom gives good luck speech
 #define FLAG_HIDE_SILVER_NEWBARKTOWN                                   0x366 //for beginning
 #define FLAG_HIDE_CHIKORITABALL                                           0x367 
@@ -928,14 +928,14 @@
 #define FLAG_COMPLETED_AERODACTYL_PUZZLE                               0x371 //headbutt
 #define FLAG_GET_HEADBUTT                          0x372
 #define FLAG_HIDE_SILVER_CHERRYGROVE         0x373
-#define FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_AQUA_GRUNT_1     0x374
-#define FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_AQUA_GRUNT_2     0x375
-#define FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_ARCHIE           0x376
-#define FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_CAPTAIN_STERN    0x377
+#define FLAG_HIDE_GUIDE_GENT_CHERRYGROVE     0x374
+#define FLAG_HIDE_ROUTE_30_NPCS     0x375
+#define FLAG_DELIVERED_EGG           0x376
+#define FLAG_HIDE_MRPOKEMON    0x377
 #define FLAG_HIDE_BATTLE_TOWER_OPPONENT                             0x378
-#define FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_RIVAL                  0x379
-#define FLAG_HIDE_ROUTE_119_TEAM_AQUA                               0x37A
-#define FLAG_HIDE_ROUTE_116_MR_BRINEY                               0x37B
+#define FLAG_RECEIVED_TOGEPI_EGG                  0x379
+#define FLAG_HIDE_VIOLET_CITY_AIDE                               0x37A
+#define FLAG_HIDE_SPROUT_TOWER_SILVER                               0x37B
 #define FLAG_HIDE_WEATHER_INSTITUTE_1F_WORKERS                      0x37C
 #define FLAG_HIDE_WEATHER_INSTITUTE_2F_WORKERS                      0x37D
 #define FLAG_HIDE_ROUTE_116_WANDAS_BOYFRIEND                        0x37E
@@ -1045,8 +1045,8 @@
 #define FLAG_HIDE_SOOTOPOLIS_CITY_GROUDON                           0x3E6
 #define FLAG_HIDE_RUSTBORO_CITY_POKEMON_SCHOOL_SCOTT                0x3E7
 
-// Item Ball Flags
-#define FLAG_ITEM_ROUTE_102_POTION                                  0x3E8
+// Item Ball Flags 
+#define FLAG_ITEM_GARBAGEFLAG                                  0x3E8    //backup CRYSTALITEMFLAGS
 #define FLAG_ITEM_ROUTE_116_X_SPECIAL                               0x3E9
 #define FLAG_ITEM_ROUTE_104_PP_UP                                   0x3EA
 #define FLAG_ITEM_ROUTE_105_IRON                                    0x3EB
@@ -1232,17 +1232,17 @@
 #define FLAG_SUICUNE_BATTLE_2                                       0x49E
 #define FLAG_NO_SLOW_STAIR_MOVEMENT                                 0x49F // Used to temporaly remove slow stair movement, as it glitches things 
                                                                           // like Steven in Sootopolis leading to Origin Cave.
-#define FLAG_UNUSED_0x4A0                                           0x4A0 // Unused Flag
-#define FLAG_UNUSED_0x4A1                                           0x4A1 // Unused Flag
-#define FLAG_UNUSED_0x4A2                                           0x4A2 // Unused Flag
-#define FLAG_UNUSED_0x4A3                                           0x4A3 // Unused Flag
-#define FLAG_UNUSED_0x4A4                                           0x4A4 // Unused Flag
-#define FLAG_UNUSED_0x4A5                                           0x4A5 // Unused Flag
-#define FLAG_EXP_SHARE                                              0x4A6
-#define FLAG_UNUSED_0x4A7                                           0x4A7 // Unused Flag
-#define FLAG_UNUSED_0x4A8                                           0x4A8 // Unused Flag
-#define FLAG_UNUSED_0x4A9                                           0x4A9 // Unused Flag
-#define FLAG_UNUSED_0x4AA                                           0x4AA // Unused Flag
+#define FLAG_ITEM_ROUTE_29_POTION                                        0x4A0 //STARTING CRYSTALITEMFLAGS
+#define FLAG_ITEM_ROUTE_31_ANTIDOE                                           0x4A1 
+#define FLAG_ITEM_ROUTE_31_POKEBALL                                           0x4A2 
+#define FLAG_ITEM_VIOLET_CITY_PECHA_BERRY                                           0x4A3 // Unused Flag
+#define FLAG_ITEM_VIOLET_CITY_RARE_CANDY                                           0x4A4 // Unused Flag
+#define FLAG_ITEM_VIOLET_CITY_HYPER_POTION                                           0x4A5 // Unused Flag
+#define FLAG_EXP_SHARE                                              0x4A6 //EXP SHARE
+#define FLAG_ITEM_SPROUT_TOWER_PARALYZE_HEAL                                           0x4A7 // Unused Flag
+#define FLAG_ITEM_SPROUT_TOWER_X_DEFEND                                           0x4A8 // Unused Flag
+#define FLAG_ITEM_SPROUT_TOWER_POTION                                          0x4A9 // Unused Flag
+#define FLAG_ITEM_SPROUT_TOWER_ESCAPE_ROPE                                        0x4AA // Unused Flag
 #define FLAG_UNUSED_0x4AB                                           0x4AB // Unused Flag
 #define FLAG_UNUSED_0x4AC                                           0x4AC // Unused Flag
 #define FLAG_UNUSED_0x4AD                                           0x4AD // Unused Flag

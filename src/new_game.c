@@ -112,10 +112,10 @@ static void SetDefaultOptions(void)
     gSaveBlock2Ptr->optionsBikeMusic = 0;
     gSaveBlock2Ptr->optionsEvenFasterJoy = 1;
     gSaveBlock2Ptr->optionsSurfMusic = 0;
-    gSaveBlock2Ptr->optionsWildBattleMusic = 0;
-    gSaveBlock2Ptr->optionsTrainerBattleMusic = 0;
-    gSaveBlock2Ptr->optionsFrontierTrainerBattleMusic = 0;
-    gSaveBlock2Ptr->optionsSoundEffects = 0;
+    gSaveBlock2Ptr->optionsWildBattleMusic = 3;
+    gSaveBlock2Ptr->optionsTrainerBattleMusic = 3; //JOHTO ONLY BB
+    gSaveBlock2Ptr->optionsFrontierTrainerBattleMusic = 3; //JOHTO ONLY BB
+    gSaveBlock2Ptr->optionsSoundEffects = 2; //JOHTO ONLY BB
     gSaveBlock2Ptr->optionsSkipIntro = 1;
     gSaveBlock2Ptr->optionsLRtoRun = 0;
     gSaveBlock2Ptr->optionsBallPrompt = 1;

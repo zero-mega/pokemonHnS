@@ -3715,19 +3715,19 @@ static void Cmd_getexp(void)
                 {
                     BattleStopLowHpSound();
                     if ((gSaveBlock2Ptr->optionsWildBattleMusic == 0) || (gSaveBlock2Ptr->optionsWildBattleMusic == 1))
-                        PlayBGM(MUS_VICTORY_WILD);
+                        PlayBGM(MUS_HG_VICTORY_WILD);
                     else if (gSaveBlock2Ptr->optionsWildBattleMusic == 2)
-                        PlayBGM(MUS_DP_VICTORY_WILD); 
+                        PlayBGM(MUS_HG_VICTORY_WILD); 
                     else if((gSaveBlock2Ptr->optionsWildBattleMusic == 3) || (gSaveBlock2Ptr->optionsWildBattleMusic == 4))
                         PlayBGM(MUS_HG_VICTORY_WILD); 
                     else if (gSaveBlock2Ptr->optionsWildBattleMusic == 5)
                     {
                         if((Random() % 3) == 1)
-                            PlayBGM(MUS_DP_VICTORY_WILD); 
+                            PlayBGM(MUS_HG_VICTORY_WILD); 
                         if((Random() % 3) == 2)
                             PlayBGM(MUS_HG_VICTORY_WILD); 
                         else
-                            PlayBGM(MUS_VICTORY_WILD); 
+                            PlayBGM(MUS_HG_VICTORY_WILD); 
                     }
                     gBattleStruct->wildVictorySong++;
                 }
@@ -6947,7 +6947,7 @@ static void Cmd_various(void)
             gBattleOutcome = B_OUTCOME_MON_TELEPORTED;
         break;
     case VARIOUS_PLAY_TRAINER_DEFEATED_MUSIC:
-        BtlController_EmitPlayFanfareOrBGM(BUFFER_A, MUS_VICTORY_TRAINER, TRUE);
+        BtlController_EmitPlayFanfareOrBGM(BUFFER_A, MUS_HG_VICTORY_TRAINER, TRUE);
         MarkBattlerForControllerExec(gActiveBattler);
         break;
     case VARIOUS_GIVE_DROPPED_ITEMS:

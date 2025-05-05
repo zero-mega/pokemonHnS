@@ -2853,127 +2853,6 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_InfiniteRareCandies,
     },
 
-    [ITEM_0E4] =
-    {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
-        .price = 0,
-        .description = sDummyDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-    },
-
-    [ITEM_0E5] =
-    {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
-        .price = 0,
-        .description = sDummyDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-    },
-
-    [ITEM_0E6] =
-    {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
-        .price = 0,
-        .description = sDummyDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-    },
-
-    [ITEM_0E7] =
-    {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
-        .price = 0,
-        .description = sDummyDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-    },
-
-    [ITEM_0E8] =
-    {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
-        .price = 0,
-        .description = sDummyDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-    },
-
-    [ITEM_0E9] =
-    {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
-        .price = 0,
-        .description = sDummyDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-    },
-
-    [ITEM_0EA] =
-    {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
-        .price = 0,
-        .description = sDummyDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-    },
-
-    [ITEM_0EB] =
-    {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
-        .price = 0,
-        .description = sDummyDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-    },
-
-    [ITEM_0EC] =
-    {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
-        .price = 0,
-        .description = sDummyDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-    },
-
-    [ITEM_0ED] =
-    {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
-        .price = 0,
-        .description = sDummyDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-    },
-
-    [ITEM_0EE] =
-    {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
-        .price = 0,
-        .description = sDummyDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-    },
-
     [ITEM_0EF] =
     {
         .name = _("????????"),
@@ -3314,7 +3193,7 @@ const struct Item gItems[] =
 
     [ITEM_WAILMER_PAIL] =
     {
-        .name = _("WAILMER PAIL"),
+        .name = _("SQUIRTBOTTLE"),
         .itemId = ITEM_WAILMER_PAIL,
         .price = 0,
         .description = sWailmerPailDesc,
@@ -4616,6 +4495,118 @@ const struct Item gItems[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
+
+//Crystal Johto key items
+
+[ITEM_CLEAR_BELL] = {    
+    .name = _("CLEAR BELL"),
+    .itemId = ITEM_CLEAR_BELL,
+    .price = 0,
+    .description = sClearBellDesc,
+    .importance = 1,
+    .pocket = POCKET_KEY_ITEMS,
+    .type = ITEM_USE_BAG_MENU,
+    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,},
+
+[ITEM_LOST_ITEM] = {    
+    .name = _("LOST ITEM"),
+    .itemId = ITEM_LOST_ITEM,
+    .price = 0,
+    .description = sLostItemDesc,
+    .importance = 1,
+    .pocket = POCKET_KEY_ITEMS,
+    .type = ITEM_USE_BAG_MENU,
+    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,},
+
+[ITEM_MACHINE_PART] = {    
+    .name = _("MACHINE PART"),
+    .itemId = ITEM_MACHINE_PART,
+    .price = 0,
+    .description = sMachinePartDesc,
+    .importance = 1,
+    .pocket = POCKET_KEY_ITEMS,
+    .type = ITEM_USE_BAG_MENU,
+    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,},
+
+[ITEM_MYSTERY_EGG] = {    
+    .name = _("MYSTERY EGG"),
+    .itemId = ITEM_MYSTERY_EGG,
+    .price = 0,
+    .description = sMysteryEggDesc,
+    .importance = 1,
+    .pocket = POCKET_KEY_ITEMS,
+    .type = ITEM_USE_BAG_MENU,
+    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,},
+
+[ITEM_PASS] = {    
+    .name = _("PASS"),
+    .itemId = ITEM_PASS,
+    .price = 0,
+    .description = sPassDesc,
+    .importance = 1,
+    .pocket = POCKET_KEY_ITEMS,
+    .type = ITEM_USE_BAG_MENU,
+    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,},
+
+[ITEM_RAINBOW_WING] = {    
+    .name = _("RAINBOW WING"),
+    .itemId = ITEM_RAINBOW_WING,
+    .price = 0,
+    .description = sRainbowWingDesc,
+    .importance = 1,
+    .pocket = POCKET_KEY_ITEMS,
+    .type = ITEM_USE_BAG_MENU,
+    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,},
+
+[ITEM_RED_SCALE] = {    
+    .name = _("RED SCALE"),
+    .itemId = ITEM_RED_SCALE,
+    .price = 0,
+    .description = sRedScaleDesc,
+    .importance = 1,
+    .pocket = POCKET_KEY_ITEMS,
+    .type = ITEM_USE_BAG_MENU,
+    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,},
+
+[ITEM_SECRET_POTION] = {    
+    .name = _("SECRET POTION"),
+    .itemId = ITEM_SECRET_POTION,
+    .price = 0,
+    .description = sSecretPotionDesc,
+    .importance = 1,
+    .pocket = POCKET_KEY_ITEMS,
+    .type = ITEM_USE_BAG_MENU,
+    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,},
+
+[ITEM_SILVER_WING] = {    
+    .name = _("SILVER WING"),
+    .itemId = ITEM_SILVER_WING,
+    .price = 0,
+    .description = sSilverWingDesc,
+    .importance = 1,
+    .pocket = POCKET_KEY_ITEMS,
+    .type = ITEM_USE_BAG_MENU,
+    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,},
+
+[ITEM_RAGE_CANDY_BAR] = {    
+    .name = _("RAGECANDYBAR"),
+    .itemId = ITEM_RAGE_CANDY_BAR,
+    .price = 0,
+    .description = sRageCandyBarDesc,
+    .importance = 1,
+    .pocket = POCKET_KEY_ITEMS,
+    .type = ITEM_USE_BAG_MENU,
+    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,},
+
+[ITEM_TIDAL_BELL] = {    
+    .name = _("TIDAL BELL"),
+    .itemId = ITEM_TIDAL_BELL,
+    .price = 0,
+    .description = sTidalBellDesc,
+    .importance = 1,
+    .pocket = POCKET_KEY_ITEMS,
+    .type = ITEM_USE_BAG_MENU,
+    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,},    
 
 // Emerald-specific key items
 
@@ -7733,126 +7724,6 @@ const struct Item gItems2[] =
         .fieldUseFunc = ItemUseOutOfBattle_InfiniteRareCandies,
     },
 
-    [ITEM_0E4] =
-    {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
-        .price = 0,
-        .description = sDummyDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-    },
-
-    [ITEM_0E5] =
-    {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
-        .price = 0,
-        .description = sDummyDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-    },
-
-    [ITEM_0E6] =
-    {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
-        .price = 0,
-        .description = sDummyDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-    },
-
-    [ITEM_0E7] =
-    {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
-        .price = 0,
-        .description = sDummyDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-    },
-
-    [ITEM_0E8] =
-    {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
-        .price = 0,
-        .description = sDummyDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-    },
-
-    [ITEM_0E9] =
-    {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
-        .price = 0,
-        .description = sDummyDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-    },
-
-    [ITEM_0EA] =
-    {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
-        .price = 0,
-        .description = sDummyDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-    },
-
-    [ITEM_0EB] =
-    {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
-        .price = 0,
-        .description = sDummyDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-    },
-
-    [ITEM_0EC] =
-    {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
-        .price = 0,
-        .description = sDummyDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-    },
-
-    [ITEM_0ED] =
-    {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
-        .price = 0,
-        .description = sDummyDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-    },
-
-    [ITEM_0EE] =
-    {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
-        .price = 0,
-        .description = sDummyDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-    },
 
     [ITEM_0EF] =
     {

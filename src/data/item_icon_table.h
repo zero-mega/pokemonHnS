@@ -246,17 +246,6 @@ const u32 *const gItemIconTable[ITEMS_COUNT + 1][2] =
     // ????????
     [ITEM_INFINITE_REPEL] = {gItemIcon_Repel, gItemIconPalette_MaxRepel},
     [ITEM_INFINITE_RARE_CANDIES] = {gItemIcon_RareCandy, gItemIconPalette_RareCandy},
-    [ITEM_0E4] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
-    [ITEM_0E5] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
-    [ITEM_0E6] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
-    [ITEM_0E7] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
-    [ITEM_0E8] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
-    [ITEM_0E9] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
-    [ITEM_0EA] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
-    [ITEM_0EB] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
-    [ITEM_0EC] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
-    [ITEM_0ED] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
-    [ITEM_0EE] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
     [ITEM_0EF] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
     [ITEM_0F0] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
     [ITEM_0F1] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
@@ -309,6 +298,31 @@ const u32 *const gItemIconTable[ITEMS_COUNT + 1][2] =
     [ITEM_ROOT_FOSSIL] = {gItemIcon_RootFossil, gItemIconPalette_HoennFossil},
     [ITEM_CLAW_FOSSIL] = {gItemIcon_ClawFossil, gItemIconPalette_HoennFossil},
     [ITEM_DEVON_SCOPE] = {gItemIcon_DevonScope, gItemIconPalette_DevonScope},
+//CRYSTAL JOHTO START
+
+    [ITEM_CLEAR_BELL] = {gItemIcon_ClearBell, gItemIcon_Palette_ClearBell},
+
+    [ITEM_LOST_ITEM] = {gItemIcon_LostItem, gItemIcon_Palette_LostItem},
+
+    [ITEM_MACHINE_PART] = {gItemIcon_MachinePart, gItemIcon_Palette_MachinePart},
+
+    [ITEM_MYSTERY_EGG] = {gItemIcon_MysteryEgg, gItemIcon_Palette_MysteryEgg},
+
+    [ITEM_PASS] = {gItemIcon_Pass, gItemIcon_Palette_Pass},
+
+    [ITEM_RAINBOW_WING] = {gItemIcon_RainbowWing, gItemIcon_Palette_RainbowWing},
+
+    [ITEM_RED_SCALE] = {gItemIcon_RedScale, gItemIcon_Palette_RedScale},
+
+    [ITEM_SECRET_POTION] = {gItemIcon_SecretPotion, gItemIcon_Palette_SecretPotion},
+
+    [ITEM_SILVER_WING] = {gItemIcon_SilverWing, gItemIcon_Palette_SilverWing},
+
+    [ITEM_RAGE_CANDY_BAR] = {gItemIcon_RageCandyBar, gItemIcon_Palette_RageCandyBar},    
+    
+    [ITEM_TIDAL_BELL] = {gItemIcon_TidalBell, gItemIcon_Palette_TidalBell},    
+    
+
     // TMs / HMs
     [ITEM_TM01] = {gItemIcon_TM, gItemIconPalette_FightingTMHM},
     [ITEM_TM02] = {gItemIcon_TM, gItemIconPalette_DragonTMHM},

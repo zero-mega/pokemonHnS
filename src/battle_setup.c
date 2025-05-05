@@ -1678,8 +1678,8 @@ void PlayTrainerEncounterMusic(void)
         case TRAINER_ENCOUNTER_MUSIC_HIKER:
             music = MUS_ENCOUNTER_HIKER;
             break;
-        case TRAINER_ENCOUNTER_MUSIC_INTERVIEWER:
-            music = MUS_ENCOUNTER_INTERVIEWER;
+        case TRAINER_ENCOUNTER_MUSIC_SILVER:
+            music = MUS_HG_ENCOUNTER_RIVAL;
             break;
         case TRAINER_ENCOUNTER_MUSIC_RICH:
             music = MUS_ENCOUNTER_RICH;

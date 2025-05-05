@@ -1056,7 +1056,7 @@ static bool16 ShouldLegendaryMusicPlayAtLocation(struct WarpData *warp)
         case MAP_NUM(ROUTE128):
             return TRUE;
         default:
-            if (VarGet(VAR_SOOTOPOLIS_CITY_STATE) < 4)
+            if (VarGet(VAR_GARBAGEVAR) < 4)
                 return FALSE;
             switch (warp->mapNum)
             {
@@ -1097,9 +1097,9 @@ static bool16 IsInfiltratedWeatherInstitute(struct WarpData *warp)
 
 static bool16 IsInflitratedSpaceCenter(struct WarpData *warp)
 {
-    if (VarGet(VAR_MOSSDEEP_CITY_STATE) == 0)
+    if (VarGet(VAR_GARBAGEVAR) == 0)
         return FALSE;
-    else if (VarGet(VAR_MOSSDEEP_CITY_STATE) > 2)
+    else if (VarGet(VAR_GARBAGEVAR) > 2)
         return FALSE;
     else if (warp->mapGroup != MAP_GROUP(MOSSDEEP_CITY_SPACE_CENTER_1F))
         return FALSE;

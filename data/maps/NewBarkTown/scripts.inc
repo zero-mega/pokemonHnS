@@ -67,11 +67,11 @@ NewBarkTown_EventScript_LassState4::
 NewBarkTown_EventScript_Wooper::
 	lock
 	faceplayer
-	msgbox NewBarkTown_Text_Wooper, MSGBOX_DEFAULT
+	waitse
 	playmoncry SPECIES_WOOPER, CRY_MODE_NORMAL
-	delay 40
+	msgbox NewBarkTown_Text_Wooper, MSGBOX_DEFAULT
 	waitmoncry
-	closemessage
+	release
 	end
 
 NewBarkTown_EventScript_LeaveTrigger::
@@ -148,10 +148,6 @@ NewBarkTown_EventScript_TestMan1::
 	setflag FLAG_GET_HEADBUTT
 
 	
-	setvar VAR_NEWBARKTOWN_LABSTATE, 4
-	setflag FLAG_HIDE_SILVER_NEWBARKTOWN
-	setflag FLAG_SYS_POKEDEX_GET
-	clearflag FLAG_HIDE_LAB_POLICEMAN
 
 	setflag FLAG_RECEIVED_HM_FLY
 	setflag FLAG_BADGE01_GET
@@ -180,7 +176,9 @@ NewBarkTown_EventScript_TestMan1::
 	setflag FLAG_ENABLE_PROF_BIRCH_MATCH_CALL
 	end
 
-
+@Route31_EventScript_ItemPokeBall::
+	@finditem ITEM_POKE_BALL
+	@end
 
 NewBarkTown_EventScript_TestMan2::
 	setvar VAR_NEWBARK_TOWN_STATE, 4
@@ -232,7 +230,7 @@ NewBarkTown_Movement_FaceDown:
 
 
 NewBarkTown_Text_Wooper:
-	.string "Woooop$"
+	.string "WOOPER: Woooooop$"
 
 NewBarkTown_Text_FatManState2:
 	.string "Wow, your POKéGEAR is impressive!\n"

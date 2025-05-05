@@ -24,12 +24,12 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Route31_VioletGate_EventScript_Policeman",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BATTLE_GIRL",
-      "x": 3,
+      "x": 8,
       "y": 4,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
@@ -37,7 +37,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Route31_VioletGate_EventScript_CooltrainerF",
       "flag": "0"
     }
   ],
@@ -58,7 +58,15 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 1,
+      "y": 5,
+      "elevation": 0,
+      "var": "VAR_VIOLET_CITY_STATE",
+      "var_value": "0",
+      "script": "VioletCity_EventScript_Trigger"
+    }
   ],
   "bg_events": [
 

@@ -1096,9 +1096,9 @@ static const u8 sSootSackDesc[] = _(
     "volcanic ash.");
 
 static const u8 sBasementKeyDesc[] = _(
-    "The key for NEW\n"
-    "MAUVILLE beneath\n"
-    "MAUVILLE CITY.");
+    "The key for\n"
+    "GOLDENROD\n"
+    "UNDERGROUND.");
 
 static const u8 sAcroBikeDesc[] = _(
     "A folding bicycle\n"
@@ -1183,6 +1183,63 @@ static const u8 sDevonScopeDesc[] = _(
     "A device by DEVON\n"
     "that signals any\n"
     "unseeable POKéMON.");
+
+//crystal JOHTO ITEMS START
+
+static const u8 sClearBellDesc[] = _(
+    "Old fashioned bell\n"
+    "that makes a\n"
+    "gentle ringing.");
+
+static const u8 sLostItemDesc[] = _(
+    "The POKéDOLL lost\n"
+    "by the copycat.");
+
+static const u8 sMachinePartDesc[] = _(
+    "Important machine\n"
+    "part stolen from\n"
+    "the POWER PLANT.");
+
+static const u8 sMysteryEggDesc[] = _(
+    "Obtained from MR.\n"
+    "POKéMON. Who knows\n"
+    "what's inside?");
+
+static const u8 sPassDesc[] = _(
+    "A ticket for\n"
+    "riding the Magnet\n"
+    "Train.");
+
+static const u8 sRainbowWingDesc[] = _(
+    "A mystical\n"
+    "rainbow feather\n"
+    "that sparkles.");
+
+static const u8 sRedScaleDesc[] = _(
+    "A scale from the\n"
+    "red GYARADOS.\n"
+    "It glows red.");
+
+static const u8 sSecretPotionDesc[] = _(
+    "A fantastic\n"
+    "medicine from the\n"
+    "Cianwood pharmacy.");
+
+static const u8 sSilverWingDesc[] = _(
+    "A strange silvery\n"
+    "feather that\n"
+    "sparkles.");
+
+static const u8 sRageCandyBarDesc[] = _(
+    "A famous candy in\n"
+    "Mahogany Town");
+
+static const u8 sTidalBellDesc[] = _(
+    "Old-fashioned bell\n"
+    "with a gentle,\n"
+    "soothing sound.");
+
+
 
 // TMs/HMs
 static const u8 sTM01Desc[] = _(
@@ -1509,8 +1566,8 @@ static const u8 sOldAmberDesc[] = _(
 
 static const u8 sCardKeyDesc[] = _(
     "A card-type door\n"
-    "key used in SILPH\n"
-    "CO's office.");
+    "key used in the\n"
+    "RADIO TOWER.");
 
 static const u8 sLiftKeyDesc[] = _(
     "An elevator key\n"

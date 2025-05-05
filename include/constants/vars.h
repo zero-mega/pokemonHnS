@@ -100,32 +100,32 @@
 #define VAR_NEWBARK_TOWN_STATE                        0x4050 //START VARS FOR CRYSTAL HERE. 0 = havent set clock, 1 = convo with mom, 2 = talk to elm, 3 = go to mr pokemon, 4 = go to mom again, 5 = done
 #define VAR_STARTER_SPECIES                            0x4051 //152 = CHIKO, 155 = CYNDA, 158 = TOTOD
 #define VAR_NEWBARKTOWN_LABSTATE                           0x4052 // 0 = talk to elm first time, 1 = choose starter, 2 = chosen starter, 3=received potion 4 = police! 5 = receive balls, 6=done
-#define VAR_LAVARIDGE_TOWN_STATE                         0x4053
-#define VAR_CURRENT_SECRET_BASE                          0x4054 // was probably allocated for VAR_FALLARBOR_TOWN_STATE at one point
+#define VAR_CHERRYGROVE_CITY_STATE                         0x4053 //0 = guidegent, 1= goto mrpokemon, 2= phonecall, 3=silver, 4=done
+#define VAR_GARBAGEVAR2                          0x4054 // was probably allocated for VAR_FALLARBOR_TOWN_STATE at one point
 #define VAR_COMPLETED_LUGIA                             0x4055 // Lugia trigger
 #define VAR_COMPLETED_HO_OH                             0x4056 // Ho-oh trigger
-#define VAR_PETALBURG_CITY_STATE                         0x4057
-#define VAR_SLATEPORT_CITY_STATE                         0x4058
-#define VAR_MAUVILLE_CITY_STATE                          0x4059 // Unused Var
-#define VAR_RUSTBORO_CITY_STATE                          0x405A
-#define VAR_FORTREE_CITY_STATE                           0x405B // Unused Var
-#define VAR_LILYCOVE_CITY_STATE                          0x405C // Unused Var
-#define VAR_MOSSDEEP_CITY_STATE                          0x405D
-#define VAR_SOOTOPOLIS_CITY_STATE                        0x405E
-#define VAR_EVER_GRANDE_CITY_STATE                       0x405F // Unused Var
-#define VAR_ROUTE101_STATE                               0x4060
-#define VAR_ROUTE102_STATE                               0x4061 // Unused Var
-#define VAR_ROUTE103_STATE                               0x4062 // Unused Var
-#define VAR_ROUTE104_STATE                               0x4063
-#define VAR_ROUTE105_STATE                               0x4064 // Unused Var
-#define VAR_ROUTE106_STATE                               0x4065 // Unused Var
-#define VAR_ROUTE107_STATE                               0x4066 // Unused Var
-#define VAR_ROUTE108_STATE                               0x4067 // Unused Var
-#define VAR_ROUTE109_STATE                               0x4068 // Unused Var
-#define VAR_ROUTE110_STATE                               0x4069
-#define VAR_ROUTE111_STATE                               0x406A // Unused Var
-#define VAR_ROUTE112_STATE                               0x406B // Unused Var
-#define VAR_ROUTE113_STATE                               0x406C // Unused Var
+#define VAR_VIOLET_CITY_STATE                         0x4057 //0 on trigger, 1 when done
+#define VAR_AZALEA_TOWN_STATE                        0x4058
+#define VAR_GOLDENROD_CITY_STATE                          0x4059 
+#define VAR_ECRUTEAK_CITY_STATE                          0x405A
+#define VAR_MAHOGANY_TOWN_STATE                           0x405B 
+#define VAR_OLIVINE_CITY_STATE                          0x405C 
+#define VAR_CIANWOOD_CITY_STATE                         0x405D
+#define VAR_SAFARI_ZONE_GATE_STATE                        0x405E
+#define VAR_BLACKTHORN_CITY_STATE                       0x405F 
+#define VAR_PALLET_TOWN_STATE                               0x4060
+#define VAR_VIRIDIAN_CITY_STATE                              0x4061 
+#define VAR_PEWTER_CITY_STATE                               0x4062 
+#define VAR_CERULEAN_CITY_STATE                              0x4063
+#define VAR_VERMILION_CITY_STATE                               0x4064 
+#define VAR_LAVENDER_TOWN_STATE                               0x4065 
+#define VAR_CELADON_CITY_STATE                               0x4066 
+#define VAR_SAFFRON_CITY_STATE                               0x4067 
+#define VAR_FUCHSIA_CITY_STATE                               0x4068 
+#define VAR_GARBAGEVAR3                               0x4069
+#define VAR_GARBAGEVAR4                               0x406A // Unused Var
+#define VAR_GARBAGEVAR5                               0x406B // Unused Var
+#define VAR_GARBAGEVAR6                               0x406C // Unused Var
 #define VAR_ROUTE114_STATE                               0x406D // Unused Var
 #define VAR_ROUTE115_STATE                               0x406E // Unused Var
 #define VAR_ROUTE116_STATE                               0x406F

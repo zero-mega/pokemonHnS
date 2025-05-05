@@ -4285,6 +4285,41 @@ extern const u32 gItemIconPalette_HoennFossil[];
 extern const u32 gItemIcon_ClawFossil[];
 extern const u32 gItemIcon_DevonScope[];
 extern const u32 gItemIconPalette_DevonScope[];
+//crystal johto items
+
+extern const u32 gItemIcon_ClearBell[];
+extern const u32 gItemIcon_Palette_ClearBell[];
+
+extern const u32 gItemIcon_LostItem[];
+extern const u32 gItemIcon_Palette_LostItem[];
+
+extern const u32 gItemIcon_MachinePart[];
+extern const u32 gItemIcon_Palette_MachinePart[];
+
+extern const u32 gItemIcon_MysteryEgg[];
+extern const u32 gItemIcon_Palette_MysteryEgg[];
+
+extern const u32 gItemIcon_Pass[];
+extern const u32 gItemIcon_Palette_Pass[];
+
+extern const u32 gItemIcon_RainbowWing[];
+extern const u32 gItemIcon_Palette_RainbowWing[];
+
+extern const u32 gItemIcon_RedScale[];
+extern const u32 gItemIcon_Palette_RedScale[];
+
+extern const u32 gItemIcon_SecretPotion[];
+extern const u32 gItemIcon_Palette_SecretPotion[];
+
+extern const u32 gItemIcon_SilverWing[];
+extern const u32 gItemIcon_Palette_SilverWing[];
+
+extern const u32 gItemIcon_RageCandyBar[];
+extern const u32 gItemIcon_Palette_RageCandyBar[];
+
+extern const u32 gItemIcon_TidalBell[];
+extern const u32 gItemIcon_Palette_TidalBell[];
+
 // TMs/HMs
 extern const u32 gItemIcon_TM[];
 extern const u32 gItemIconPalette_FightingTMHM[];

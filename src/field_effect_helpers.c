@@ -1459,6 +1459,7 @@ void UpdateBubblesFieldEffect(struct Sprite *sprite)
 
 u32 FldEff_BerryTreeGrowthSparkle(void)
 {
+    /*
     u8 spriteId;
 
     SetSpritePosToOffsetMapCoords((s16 *)&gFieldEffectArguments[0], (s16 *)&gFieldEffectArguments[1], 8, 4);
@@ -1471,6 +1472,7 @@ u32 FldEff_BerryTreeGrowthSparkle(void)
         UpdateSpritePaletteByTemplate(gFieldEffectObjectTemplatePointers[FLDEFFOBJ_SPARKLE], sprite);
         sprite->sWaitFldEff = FLDEFF_BERRY_TREE_GROWTH_SPARKLE;
     }
+        */
     return 0;
 }
 
