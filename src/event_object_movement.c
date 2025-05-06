@@ -320,6 +320,7 @@ static void (*const sMovementTypeCallbacks[])(struct Sprite *) =
     [MOVEMENT_TYPE_WALK_SLOWLY_IN_PLACE_UP] = MovementType_WalkSlowlyInPlace,
     [MOVEMENT_TYPE_WALK_SLOWLY_IN_PLACE_LEFT] = MovementType_WalkSlowlyInPlace,
     [MOVEMENT_TYPE_WALK_SLOWLY_IN_PLACE_RIGHT] = MovementType_WalkSlowlyInPlace,
+    [MOVEMENT_TYPE_TOWER_BEAM] = MovementType_TowerBeam,
     [MOVEMENT_TYPE_FOLLOW_PLAYER] = MovementType_FollowPlayer,
 };
 
@@ -522,6 +523,9 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_STEVEN                0x1143
 #define OBJ_EVENT_PAL_TAG_SCIENTIST_F           0x1144
 #define OBJ_EVENT_PAL_TAG_SHINY_GYARADOS        0x1145
+#define OBJ_EVENT_PAL_TAG_TOWER_BEAM            0x1146
+#define OBJ_EVENT_PAL_TAG_SNORLAX               0x1147
+#define OBJ_EVENT_PAL_TAG_SLOWPOKE              0x1148
 
 #if OW_MON_POKEBALLS
 // Vanilla
@@ -620,7 +624,9 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Steven,               OBJ_EVENT_PAL_TAG_STEVEN},
     {gObjectEventPal_ScientistF,               OBJ_EVENT_PAL_TAG_SCIENTIST_F},
     {gObjectEventPal_ShinyGyarados,               OBJ_EVENT_PAL_TAG_SHINY_GYARADOS},
-
+    {gObjectEventPal_TowerBeam,               OBJ_EVENT_PAL_TAG_TOWER_BEAM},
+    {gObjectEventPal_Snorlax,                   OBJ_EVENT_PAL_TAG_SNORLAX},
+    {gObjectEventPal_Slowpoke,                   OBJ_EVENT_PAL_TAG_SLOWPOKE},
     
 
 
@@ -4851,6 +4857,68 @@ bool8 MovementType_RotateCounterclockwise_Step3(struct ObjectEvent *objectEvent,
     sprite->sTypeFuncId = 0;
     return TRUE;
 }
+
+//crystal tower beam movement 
+#define TOWER_BEAM_ANIM_COUNT 4
+
+movement_type_def(MovementType_TowerBeam, gMovementTypeFuncs_TowerBeam)
+
+static const u8 sTowerBeamAnimActions[TOWER_BEAM_ANIM_COUNT] = {
+    MOVEMENT_ACTION_WALK_IN_PLACE_FAST_LEFT,
+    MOVEMENT_ACTION_WALK_IN_PLACE_FAST_LEFT,
+    MOVEMENT_ACTION_WALK_IN_PLACE_FAST_RIGHT,
+    MOVEMENT_ACTION_WALK_IN_PLACE_FAST_DOWN,
+};
+bool8 MovementType_TowerBeam_Step0(struct ObjectEvent *objectEvent, struct Sprite *sprite)
+{
+    ClearObjectEventMovement(objectEvent, sprite);
+    ObjectEventSetSingleMovement(objectEvent, sprite, MOVEMENT_ACTION_WALK_IN_PLACE_FAST_LEFT);
+    sprite->sTypeFuncId = 1;
+    return TRUE;
+}
+
+bool8 MovementType_TowerBeam_Step1(struct ObjectEvent *objectEvent, struct Sprite *sprite)
+{
+    if (ObjectEventExecSingleMovementAction(objectEvent, sprite))
+    {
+        ObjectEventSetSingleMovement(objectEvent, sprite, MOVEMENT_ACTION_WALK_IN_PLACE_NORMAL_LEFT);
+        sprite->sTypeFuncId = 2;
+    }
+    return FALSE;
+}
+
+bool8 MovementType_TowerBeam_Step2(struct ObjectEvent *objectEvent, struct Sprite *sprite)
+{
+    if (ObjectEventExecSingleMovementAction(objectEvent, sprite))
+    {
+        ObjectEventSetSingleMovement(objectEvent, sprite, MOVEMENT_ACTION_WALK_IN_PLACE_NORMAL_RIGHT);
+        sprite->sTypeFuncId = 3;
+    }
+    return FALSE;
+}
+
+bool8 MovementType_TowerBeam_Step3(struct ObjectEvent *objectEvent, struct Sprite *sprite)
+{
+    if (ObjectEventExecSingleMovementAction(objectEvent, sprite))
+    {
+        ObjectEventSetSingleMovement(objectEvent, sprite, MOVEMENT_ACTION_WALK_IN_PLACE_NORMAL_DOWN);
+        sprite->sTypeFuncId = 4;
+    }
+    return FALSE;
+}
+
+bool8 MovementType_TowerBeam_Step4(struct ObjectEvent *objectEvent, struct Sprite *sprite)
+{
+    if (ObjectEventExecSingleMovementAction(objectEvent, sprite))
+    {
+        sprite->sTypeFuncId = 0; // Loop back to beginning
+    }
+    return FALSE;
+}
+
+
+
+
 
 movement_type_def(MovementType_RotateClockwise, gMovementTypeFuncs_RotateClockwise)
 

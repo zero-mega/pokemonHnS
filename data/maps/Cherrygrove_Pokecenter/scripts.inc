@@ -35,8 +35,8 @@ CherryGrove_Pokecenter_EventScript_Lass::
 CherryGrove_Pokecenter_Chansey::
 	lock
 	faceplayer
-	msgbox CherryGrove_Pokecenter_Text_Chansey, MSGBOX_DEFAULT
 	playmoncry SPECIES_CHANSEY, CRY_MODE_NORMAL
+	msgbox CherryGrove_Pokecenter_Text_Chansey, MSGBOX_DEFAULT
 	delay 40
 	waitmoncry
 	closemessage

@@ -462,7 +462,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_ZIGZAGOON_2] =              &gObjectEventGraphicsInfo_Zigzagoon,
     [OBJ_EVENT_GFX_PIKACHU] =                  &gObjectEventGraphicsInfo_Pikachu,
     [OBJ_EVENT_GFX_AZUMARILL] =                &gObjectEventGraphicsInfo_Azumarill,
-    [OBJ_EVENT_GFX_WINGULL] =                  &gObjectEventGraphicsInfo_Wingull,
+    [OBJ_EVENT_GFX_SLOWPOKE_NO_TAIL] =                  &gObjectEventGraphicsInfo_Wingull,
     [OBJ_EVENT_GFX_KECLEON_BRIDGE_SHADOW] =    &gObjectEventGraphicsInfo_KecleonBridgeShadow,
     [OBJ_EVENT_GFX_TUBER_M_WATER] =         &gObjectEventGraphicsInfo_TuberMSwimming,
     [OBJ_EVENT_GFX_AZURILL] =                  &gObjectEventGraphicsInfo_Azurill,

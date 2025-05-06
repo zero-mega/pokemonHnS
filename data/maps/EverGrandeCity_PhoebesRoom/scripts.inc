@@ -24,7 +24,7 @@ EverGrandeCity_PhoebesRoom_EventScript_WalkInCloseDoor::
 	end
 
 EverGrandeCity_PhoebesRoom_OnLoad:
-	call_if_set FLAG_DEFEATED_ELITE_4_PHOEBE, EverGrandeCity_PhoebesRoom_EventScript_ResetAdvanceToNextRoom
+	call_if_set FLAG_DEFEATED_ELITE_4_KOGA, EverGrandeCity_PhoebesRoom_EventScript_ResetAdvanceToNextRoom
 	call_if_eq VAR_ELITE_4_STATE, 2, EverGrandeCity_PhoebesRoom_EventScript_CloseDoor
 	end
 
@@ -39,7 +39,7 @@ EverGrandeCity_PhoebesRoom_EventScript_CloseDoor::
 EverGrandeCity_PhoebesRoom_EventScript_Phoebe::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_ELITE_4_PHOEBE, EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech
+	goto_if_set FLAG_DEFEATED_ELITE_4_KOGA, EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech
 	goto_if_set FLAG_PHOEBE_REMATCH, EverGrandeCity_PhoebesRoom_EventScript_PhoebeRematch
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 	msgbox EverGrandeCity_PhoebesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
@@ -60,7 +60,7 @@ EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech::
 	end
 
 EverGrandeCity_PhoebesRoom_EventScript_Defeated::
-	setflag FLAG_DEFEATED_ELITE_4_PHOEBE
+	setflag FLAG_DEFEATED_ELITE_4_KOGA
 	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
 	msgbox EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
 	release

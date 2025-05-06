@@ -212,7 +212,7 @@
 #define OBJ_EVENT_GFX_ZIGZAGOON_2                208
 #define OBJ_EVENT_GFX_PIKACHU                    209
 #define OBJ_EVENT_GFX_AZUMARILL                  210
-#define OBJ_EVENT_GFX_WINGULL                    211
+#define OBJ_EVENT_GFX_SLOWPOKE_NO_TAIL                    211
 #define OBJ_EVENT_GFX_KECLEON_BRIDGE_SHADOW      212
 #define OBJ_EVENT_GFX_TUBER_M_WATER           213
 #define OBJ_EVENT_GFX_AZURILL                    214

@@ -24,8 +24,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "VioletCityGym_EventScript_Falkner",
+      "flag": "FLAG_HIDE_JOHTO_GYM_LEADERS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ROCKER",
@@ -37,7 +37,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "VioletCityGym_EventScript_Abe",
       "flag": "0"
     },
     {
@@ -50,7 +50,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "VioletCityGym_EventScript_Rod",
       "flag": "0"
     },
     {
@@ -63,303 +63,38 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "VioletCityGym_EventScript_GymGuy",
       "flag": "0"
     }
   ],
   "warp_events": [
-    {
-      "x": 3,
-      "y": 18,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 15,
-      "y": 18,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "1"
-    },
     {
       "x": 9,
       "y": 19,
       "elevation": 0,
       "dest_map": "MAP_VIOLET_CITY",
       "dest_warp_id": "7"
-    },
-    {
-      "x": 5,
-      "y": 7,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "2"
-    },
-    {
-      "x": 6,
-      "y": 7,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "2"
-    },
-    {
-      "x": 7,
-      "y": 7,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "2"
-    },
-    {
-      "x": 7,
-      "y": 8,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "2"
-    },
-    {
-      "x": 6,
-      "y": 8,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "2"
-    },
-    {
-      "x": 5,
-      "y": 9,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "2"
-    },
-    {
-      "x": 5,
-      "y": 10,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "2"
-    },
-    {
-      "x": 5,
-      "y": 11,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "2"
-    },
-    {
-      "x": 6,
-      "y": 12,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "2"
-    },
-    {
-      "x": 7,
-      "y": 12,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "2"
-    },
-    {
-      "x": 8,
-      "y": 12,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "2"
-    },
-    {
-      "x": 9,
-      "y": 12,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "2"
-    },
-    {
-      "x": 10,
-      "y": 12,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "2"
-    },
-    {
-      "x": 5,
-      "y": 13,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "2"
-    },
-    {
-      "x": 6,
-      "y": 14,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "2"
-    },
-    {
-      "x": 7,
-      "y": 14,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "2"
-    },
-    {
-      "x": 7,
-      "y": 15,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "2"
-    },
-    {
-      "x": 6,
-      "y": 15,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "2"
-    },
-    {
-      "x": 5,
-      "y": 15,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "2"
-    },
-    {
-      "x": 13,
-      "y": 7,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "3"
-    },
-    {
-      "x": 12,
-      "y": 7,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "3"
-    },
-    {
-      "x": 11,
-      "y": 7,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "3"
-    },
-    {
-      "x": 11,
-      "y": 8,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "3"
-    },
-    {
-      "x": 12,
-      "y": 8,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "3"
-    },
-    {
-      "x": 13,
-      "y": 9,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "3"
-    },
-    {
-      "x": 12,
-      "y": 10,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "3"
-    },
-    {
-      "x": 11,
-      "y": 10,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "3"
-    },
-    {
-      "x": 10,
-      "y": 10,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "3"
-    },
-    {
-      "x": 9,
-      "y": 10,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "3"
-    },
-    {
-      "x": 8,
-      "y": 10,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "3"
-    },
-    {
-      "x": 13,
-      "y": 11,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "3"
-    },
-    {
-      "x": 13,
-      "y": 12,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "3"
-    },
-    {
-      "x": 13,
-      "y": 13,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "3"
-    },
-    {
-      "x": 12,
-      "y": 14,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "3"
-    },
-    {
-      "x": 11,
-      "y": 14,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "3"
-    },
-    {
-      "x": 11,
-      "y": 15,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "3"
-    },
-    {
-      "x": 12,
-      "y": 15,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "3"
-    },
-    {
-      "x": 13,
-      "y": 15,
-      "elevation": 0,
-      "dest_map": "MAP_VIOLET_CITY_GYM2",
-      "dest_warp_id": "3"
     }
   ],
   "coord_events": [
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 6,
+      "y": 17,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "VioletCityGym_EventScript_Statue"
+    },
+    {
+      "type": "sign",
+      "x": 12,
+      "y": 17,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "VioletCityGym_EventScript_Statue"
+    }
   ]
 }

@@ -656,19 +656,19 @@
 #define FLAG_EXTRA_LEGENDARIES  0x265
 #define FLAG_OLD_MAN_AND_DUSCLOPS  0x266
 #define FLAG_CERULEAN_CAVE_LUCKY_EGG  0x267
-#define FLAG_MET_FRONTIER_ELEMENTAL_MOVE_TUTOR  0x268
+#define FLAG_MET_FRONTIER_ELEMENTAL_MOVE_TUTOR  0x268 //CRYSTALFLAGS SPILLOVER
 #define FLAG_HIDE_WHIRL_ISLANDS_KIMONO_GIRLS  0x269 // Set after compelted legendary event
 #define FLAG_HIDE_TIN_TOWER_KIMONO_GIRLS  0x26A // Set after completing legendary event
 #define FLAG_NIGHT_POKEMON  0x26B // Set at day to hide nighttime overworld pokemon
 #define FLAG_DAY_POKEMON  0x26C // Set at night to hide daytime overworld pokemon
-#define FLAG_UNUSED_0x26D  0x26D // Unused Flag
-#define FLAG_UNUSED_0x26E  0x26E // Unused Flag
-#define FLAG_UNUSED_0x26F  0x26F // Unused Flag
-#define FLAG_UNUSED_0x270  0x270 // Unused Flag
-#define FLAG_UNUSED_0x271  0x271 // Unused Flag
-#define FLAG_UNUSED_0x272  0x272 // Unused Flag
-#define FLAG_UNUSED_0x273  0x273 // Unused Flag
-#define FLAG_UNUSED_0x274  0x274 // Unused Flag
+#define FLAG_DEFEATED_PEWTER_GYM  0x26D // KANTO GYM LEADER FLAGS
+#define FLAG_DEFEATED_CERULEAN_GYM  0x26E 
+#define FLAG_DEFEATED_VERMILION_GYM  0x26F 
+#define FLAG_DEFEATED_CELADON_GYM  0x270 
+#define FLAG_DEFEATED_SAFFRON_GYM  0x271 
+#define FLAG_DEFEATED_FUCHSIA_GYM  0x272 
+#define FLAG_DEFEATED_CINNABAR_GYM  0x273 
+#define FLAG_DEFEATED_VIRIDIAN_GYM  0x274 
 #define FLAG_UNUSED_0x275  0x275 // Unused Flag
 #define FLAG_UNUSED_0x276  0x276 // Unused Flag
 #define FLAG_UNUSED_0x277  0x277 // Unused Flag
@@ -936,7 +936,7 @@
 #define FLAG_RECEIVED_TOGEPI_EGG                  0x379
 #define FLAG_HIDE_VIOLET_CITY_AIDE                               0x37A
 #define FLAG_HIDE_SPROUT_TOWER_SILVER                               0x37B
-#define FLAG_HIDE_WEATHER_INSTITUTE_1F_WORKERS                      0x37C
+#define FLAG_HIDE_JOHTO_GYM_LEADERS                      0x37C
 #define FLAG_HIDE_WEATHER_INSTITUTE_2F_WORKERS                      0x37D
 #define FLAG_HIDE_ROUTE_116_WANDAS_BOYFRIEND                        0x37E
 #define FLAG_HIDE_LILYCOVE_CONTEST_HALL_CONTEST_ATTENDANT_2         0x37F
@@ -1313,23 +1313,23 @@
 #define FLAG_UNUSED_0x4EE                                           0x4EE // Unused Flag
 #define FLAG_UNUSED_0x4EF                                           0x4EF // Unused Flag
 
-#define FLAG_DEFEATED_RUSTBORO_GYM                                  0x4F0
-#define FLAG_DEFEATED_DEWFORD_GYM                                   0x4F1
-#define FLAG_DEFEATED_MAUVILLE_GYM                                  0x4F2
-#define FLAG_DEFEATED_LAVARIDGE_GYM                                 0x4F3
-#define FLAG_DEFEATED_PETALBURG_GYM                                 0x4F4
-#define FLAG_DEFEATED_FORTREE_GYM                                   0x4F5
-#define FLAG_DEFEATED_MOSSDEEP_GYM                                  0x4F6
-#define FLAG_DEFEATED_SOOTOPOLIS_GYM                                0x4F7
-#define FLAG_DEFEATED_METEOR_FALLS_STEVEN                           0x4F8
+#define FLAG_DEFEATED_VIOLET_GYM                                  0x4F0
+#define FLAG_DEFEATED_AZALEA_GYM                                   0x4F1
+#define FLAG_DEFEATED_GOLDENROD_GYM                                  0x4F2
+#define FLAG_DEFEATED_ECRUTEAK_GYM                                 0x4F3
+#define FLAG_DEFEATED_CIANWOOD_GYM                                 0x4F4
+#define FLAG_DEFEATED_OLIVINE_GYM                                   0x4F5
+#define FLAG_DEFEATED_MAHOGANY_GYM                                  0x4F6
+#define FLAG_DEFEATED_BLACKTHORN_GYM                                0x4F7
+#define FLAG_DEFEATED_RED                           0x4F8
 
 #define FLAG_UNUSED_0x4F9                                           0x4F9 // Unused Flag
 #define FLAG_UNUSED_0x4FA                                           0x4FA // Unused Flag
 
-#define FLAG_DEFEATED_ELITE_4_SIDNEY                                0x4FB
-#define FLAG_DEFEATED_ELITE_4_PHOEBE                                0x4FC
-#define FLAG_DEFEATED_ELITE_4_GLACIA                                0x4FD
-#define FLAG_DEFEATED_ELITE_4_DRAKE                                 0x4FE
+#define FLAG_DEFEATED_ELITE_4_WILL                                0x4FB
+#define FLAG_DEFEATED_ELITE_4_KOGA                                0x4FC
+#define FLAG_DEFEATED_ELITE_4_BRUNO                                0x4FD
+#define FLAG_DEFEATED_ELITE_4_KAREN                                 0x4FE
 
 #define FLAG_UNUSED_0x4FF                                           0x4FF // Unused Flag
 

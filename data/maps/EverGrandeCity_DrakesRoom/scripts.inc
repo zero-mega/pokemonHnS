@@ -25,7 +25,7 @@ EverGrandeCity_DrakesRoom_EventScript_WalkInCloseDoor::
 	end
 
 EverGrandeCity_DrakesRoom_OnLoad:
-	call_if_set FLAG_DEFEATED_ELITE_4_DRAKE, EverGrandeCity_DrakesRoom_EventScript_ResetAdvanceToNextRoom
+	call_if_set FLAG_DEFEATED_ELITE_4_KAREN, EverGrandeCity_DrakesRoom_EventScript_ResetAdvanceToNextRoom
 	call_if_eq VAR_ELITE_4_STATE, 4, EverGrandeCity_DrakesRoom_EventScript_CloseDoor
 	end
 
@@ -40,7 +40,7 @@ EverGrandeCity_DrakesRoom_EventScript_CloseDoor::
 EverGrandeCity_DrakesRoom_EventScript_Drake::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_ELITE_4_DRAKE, EverGrandeCity_DrakesRoom_EventScript_PostBattleSpeech
+	goto_if_set FLAG_DEFEATED_ELITE_4_KAREN, EverGrandeCity_DrakesRoom_EventScript_PostBattleSpeech
 	goto_if_set FLAG_DRAKE_REMATCH, EverGrandeCity_DrakesRoom_EventScript_DrakeRematch
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 	msgbox EverGrandeCity_DrakesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
@@ -63,7 +63,7 @@ EverGrandeCity_DrakesRoom_EventScript_PostBattleSpeech::
 EverGrandeCity_DrakesRoom_EventScript_Defeated::
 	setvar VAR_0x8004, FANCOUNTER_DEFEATED_DRAKE
 	special Script_TryGainNewFanFromCounter
-	setflag FLAG_DEFEATED_ELITE_4_DRAKE
+	setflag FLAG_DEFEATED_ELITE_4_KAREN
 	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
 	msgbox EverGrandeCity_DrakesRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
 	release

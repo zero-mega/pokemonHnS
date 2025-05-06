@@ -3,7 +3,7 @@ MauvilleCity_Gym_MapScripts::
 	.byte 0
 
 MauvilleCity_Gym_OnLoad:
-	goto_if_set FLAG_DEFEATED_MAUVILLE_GYM, MauvilleCity_Gym_EventScript_DeactivatePuzzle
+	goto_if_set FLAG_DEFEATED_GOLDENROD_GYM, MauvilleCity_Gym_EventScript_DeactivatePuzzle
 	switch VAR_MAUVILLE_GYM_STATE
 	case 0, MauvilleCity_Gym_EventScript_UpdateBarriers
 	case 1, MauvilleCity_Gym_EventScript_Switch1Pressed
@@ -90,7 +90,7 @@ MauvilleCity_Gym_EventScript_WattsonDefeated::
 	msgbox MauvilleCity_Gym_Text_ExplainDynamoBadgeTakeThis, MSGBOX_DEFAULT
 	setvar VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE, 3
 	clearflag FLAG_HIDE_VERDANTURF_TOWN_SCOTT
-	setflag FLAG_DEFEATED_MAUVILLE_GYM
+	setflag FLAG_DEFEATED_GOLDENROD_GYM
 	setflag FLAG_BADGE03_GET
 	addvar VAR_PETALBURG_GYM_STATE, 1
 	call_if_eq VAR_PETALBURG_GYM_STATE, 6, Common_EventScript_ReadyPetalburgGymForBattle
@@ -138,7 +138,7 @@ MauvilleCity_Gym_EventScript_WattsonRematch::
 
 MauvilleCity_Gym_EventScript_Switch1::
 	lockall
-	goto_if_set FLAG_DEFEATED_MAUVILLE_GYM, MauvilleCity_Gym_EventScript_SwitchDoNothing
+	goto_if_set FLAG_DEFEATED_GOLDENROD_GYM, MauvilleCity_Gym_EventScript_SwitchDoNothing
 	goto_if_eq VAR_MAUVILLE_GYM_STATE, 1, MauvilleCity_Gym_EventScript_SwitchDoNothing
 	setvar VAR_MAUVILLE_GYM_STATE, 1
 	setvar VAR_0x8004, 0
@@ -147,7 +147,7 @@ MauvilleCity_Gym_EventScript_Switch1::
 
 MauvilleCity_Gym_EventScript_Switch2::
 	lockall
-	goto_if_set FLAG_DEFEATED_MAUVILLE_GYM, MauvilleCity_Gym_EventScript_SwitchDoNothing
+	goto_if_set FLAG_DEFEATED_GOLDENROD_GYM, MauvilleCity_Gym_EventScript_SwitchDoNothing
 	goto_if_eq VAR_MAUVILLE_GYM_STATE, 2, MauvilleCity_Gym_EventScript_SwitchDoNothing
 	setvar VAR_MAUVILLE_GYM_STATE, 2
 	setvar VAR_0x8004, 1
@@ -156,7 +156,7 @@ MauvilleCity_Gym_EventScript_Switch2::
 
 MauvilleCity_Gym_EventScript_Switch3::
 	lockall
-	goto_if_set FLAG_DEFEATED_MAUVILLE_GYM, MauvilleCity_Gym_EventScript_SwitchDoNothing
+	goto_if_set FLAG_DEFEATED_GOLDENROD_GYM, MauvilleCity_Gym_EventScript_SwitchDoNothing
 	goto_if_eq VAR_MAUVILLE_GYM_STATE, 3, MauvilleCity_Gym_EventScript_SwitchDoNothing
 	setvar VAR_MAUVILLE_GYM_STATE, 3
 	setvar VAR_0x8004, 2
@@ -165,7 +165,7 @@ MauvilleCity_Gym_EventScript_Switch3::
 
 MauvilleCity_Gym_EventScript_Switch4::
 	lockall
-	goto_if_set FLAG_DEFEATED_MAUVILLE_GYM, MauvilleCity_Gym_EventScript_SwitchDoNothing
+	goto_if_set FLAG_DEFEATED_GOLDENROD_GYM, MauvilleCity_Gym_EventScript_SwitchDoNothing
 	goto_if_eq VAR_MAUVILLE_GYM_STATE, 4, MauvilleCity_Gym_EventScript_SwitchDoNothing
 	setvar VAR_MAUVILLE_GYM_STATE, 4
 	setvar VAR_0x8004, 3
@@ -224,7 +224,7 @@ MauvilleCity_Gym_EventScript_Angelo::
 MauvilleCity_Gym_EventScript_GymGuide::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_MAUVILLE_GYM, MauvilleCity_Gym_EventScript_GymGuidePostVictory
+	goto_if_set FLAG_DEFEATED_GOLDENROD_GYM, MauvilleCity_Gym_EventScript_GymGuidePostVictory
 	msgbox MauvilleCity_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT
 	release
 	end

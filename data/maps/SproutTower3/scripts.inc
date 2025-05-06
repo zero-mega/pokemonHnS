@@ -74,9 +74,9 @@ SproutTower3_EventScript_TriggerSceneRight::
 	delay 60
 	applymovement LOCALID_SPROUT_TOWER_SILVER, SproutTower3_Movement_SilverRight
 	waitmovement 0
+	waitmovement 0
 	msgbox SproutTower_Text_RivalOnlyCaresStrong, MSGBOX_DEFAULT
-	waitmessage
-	message SproutTower_Text_RivalUsedEscapeRope
+	msgbox SproutTower_Text_RivalUsedEscapeRope, MSGBOX_DEFAULT
 	closemessage
 	fadescreen FADE_TO_BLACK
 	setflag FLAG_HIDE_SPROUT_TOWER_SILVER
