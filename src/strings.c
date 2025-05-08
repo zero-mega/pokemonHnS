@@ -1268,6 +1268,22 @@ const u8 gText_Easy[] = _("EASY");
 const u8 gText_Hard[] = _("HARD");
 const u8 gText_Modern[] = _("MODERN");
 const u8 gText_Classic[] = _("CLASSIC");
+//crystal texts
+const u8 gText_Sunday[] = _("SUNDAY");
+const u8 gText_Monday[] = _("MONDAY");
+const u8 gText_Tuesday[] = _("TUESDAY");
+const u8 gText_Wednesday[] = _("WEDNESDAY");
+const u8 gText_Thursday[] = _("THURSDAY");
+const u8 gText_Friday[] = _("FRIDAY");
+const u8 gText_Saturday[] = _("SATURDAY");
+
+const u8 gText_LoveBall[] = _("LOVE");
+const u8 gText_Lure[] = _("LURE");
+const u8 gText_FriendBall[] = _("FRIEND");
+const u8 gText_Heavy[] = _("HEAVY");
+const u8 gText_Moon[] = _("MOON");
+const u8 gText_Fast[] = _("FAST");
+const u8 gText_LevelBall[] = _("LEVEL");
 
 ALIGNED(4) const u8 gText_FacilitySingle[] = _("{STR_VAR_1} SINGLE");
 ALIGNED(4) const u8 gText_FacilityDouble[] = _("{STR_VAR_1} DOUBLE");

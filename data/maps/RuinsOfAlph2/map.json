@@ -29,55 +29,55 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 4,
-      "y": 40,
+      "x": 2,
+      "y": 41,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "RuinsOfAlph2_EventScript_GSBALL",
+      "flag": "FLAG_ITEM_GS_BALL"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 20,
-      "y": 40,
+      "graphics_id": "OBJ_EVENT_GFX_FOSSIL",
+      "x": 18,
+      "y": 41,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "RuinsOfAlph2_EventScript_DomeFossil",
+      "flag": "FLAG_ITEM_DOME_FOSSIL"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 4,
-      "y": 57,
+      "graphics_id": "OBJ_EVENT_GFX_FOSSIL",
+      "x": 2,
+      "y": 58,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "RuinsOfAlph2_EventScript_HelixFossil",
+      "flag": "FLAG_ITEM_HELIX_FOSSIL"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 20,
-      "y": 57,
+      "graphics_id": "OBJ_EVENT_GFX_FOSSIL",
+      "x": 18,
+      "y": 58,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "RuinsOfAlph2_EventScript_OldAmber",
+      "flag": "FLAG_ITEM_OLD_AMBER"
     }
   ],
   "warp_events": [
@@ -388,7 +388,7 @@
       "y": 39,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RuinsOfAlph2_MapScript_UnownText"
+      "script": "RuinsOfAlph2_EventScript_CheckHooh"
     },
     {
       "type": "sign",
@@ -396,7 +396,7 @@
       "y": 39,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RuinsOfAlph2_MapScript_UnownText"
+      "script": "RuinsOfAlph2_EventScript_CheckHooh"
     },
     {
       "type": "sign",
@@ -404,7 +404,7 @@
       "y": 39,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RuinsOfAlph2_MapScript_UnownText"
+      "script": "RuinsOfAlph2_EventScript_CheckHooh"
     },
     {
       "type": "sign",
@@ -412,7 +412,7 @@
       "y": 39,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RuinsOfAlph2_MapScript_UnownText"
+      "script": "RuinsOfAlph2_EventScript_CheckKabuto"
     },
     {
       "type": "sign",
@@ -420,7 +420,7 @@
       "y": 39,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RuinsOfAlph2_MapScript_UnownText"
+      "script": "RuinsOfAlph2_EventScript_CheckKabuto"
     },
     {
       "type": "sign",
@@ -428,23 +428,7 @@
       "y": 39,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RuinsOfAlph2_MapScript_UnownText"
-    },
-    {
-      "type": "sign",
-      "x": 22,
-      "y": 39,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RuinsOfAlph2_MapScript_UnownText"
-    },
-    {
-      "type": "sign",
-      "x": 23,
-      "y": 39,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RuinsOfAlph2_MapScript_UnownText"
+      "script": "RuinsOfAlph2_EventScript_CheckKabuto"
     },
     {
       "type": "sign",
@@ -452,7 +436,7 @@
       "y": 56,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RuinsOfAlph2_MapScript_UnownText"
+      "script": "RuinsOfAlph2_EventScript_CheckOmanyte"
     },
     {
       "type": "sign",
@@ -460,7 +444,7 @@
       "y": 56,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RuinsOfAlph2_MapScript_UnownText"
+      "script": "RuinsOfAlph2_EventScript_CheckOmanyte"
     },
     {
       "type": "sign",
@@ -468,23 +452,7 @@
       "y": 56,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RuinsOfAlph2_MapScript_UnownText"
-    },
-    {
-      "type": "sign",
-      "x": 6,
-      "y": 56,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RuinsOfAlph2_MapScript_UnownText"
-    },
-    {
-      "type": "sign",
-      "x": 18,
-      "y": 56,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RuinsOfAlph2_MapScript_UnownText"
+      "script": "RuinsOfAlph2_EventScript_CheckOmanyte"
     },
     {
       "type": "sign",
@@ -492,7 +460,7 @@
       "y": 56,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RuinsOfAlph2_MapScript_UnownText"
+      "script": "RuinsOfAlph2_EventScript_CheckAerodactyl"
     },
     {
       "type": "sign",
@@ -500,7 +468,7 @@
       "y": 56,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RuinsOfAlph2_MapScript_UnownText"
+      "script": "RuinsOfAlph2_EventScript_CheckAerodactyl"
     },
     {
       "type": "sign",
@@ -508,23 +476,7 @@
       "y": 56,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RuinsOfAlph2_MapScript_UnownText"
-    },
-    {
-      "type": "sign",
-      "x": 22,
-      "y": 56,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RuinsOfAlph2_MapScript_UnownText"
-    },
-    {
-      "type": "sign",
-      "x": 23,
-      "y": 56,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RuinsOfAlph2_MapScript_UnownText"
+      "script": "RuinsOfAlph2_EventScript_CheckAerodactyl"
     }
   ]
 }

@@ -3191,10 +3191,10 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
 
-    [ITEM_WAILMER_PAIL] =
+    [ITEM_SQUIRT_BOTTLE] =
     {
         .name = _("SQUIRTBOTTLE"),
-        .itemId = ITEM_WAILMER_PAIL,
+        .itemId = ITEM_SQUIRT_BOTTLE,
         .price = 0,
         .description = sWailmerPailDesc,
         .importance = 1,
@@ -8063,10 +8063,10 @@ const struct Item gItems2[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
 
-    [ITEM_WAILMER_PAIL] =
+    [ITEM_SQUIRT_BOTTLE] =
     {
         .name = _("WAILMER PAIL"),
-        .itemId = ITEM_WAILMER_PAIL,
+        .itemId = ITEM_SQUIRT_BOTTLE,
         .price = 0,
         .description = sWailmerPailDesc,
         .importance = 1,

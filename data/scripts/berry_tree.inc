@@ -50,7 +50,7 @@ BerryTree_EventScript_CancelPlanting::
 BerryTree_EventScript_CheckBerryStage1::
 	lockall
 	special ObjectEventInteractionGetBerryCountString
-	checkitem ITEM_WAILMER_PAIL, 1
+	checkitem ITEM_SQUIRT_BOTTLE, 1
 	compare VAR_RESULT, 0
 	goto_if_eq BerryTree_EventScript_DontWater
 	msgbox BerryTree_Text_BerryGrowthStage1, MSGBOX_YESNO
@@ -62,7 +62,7 @@ BerryTree_EventScript_CheckBerryStage1::
 BerryTree_EventScript_CheckBerryStage2::
 	lockall
 	special ObjectEventInteractionGetBerryName
-	checkitem ITEM_WAILMER_PAIL, 1
+	checkitem ITEM_SQUIRT_BOTTLE, 1
 	compare VAR_RESULT, 0
 	goto_if_eq BerryTree_EventScript_DontWater
 	msgbox BerryTree_Text_BerryGrowthStage2, MSGBOX_YESNO
@@ -74,7 +74,7 @@ BerryTree_EventScript_CheckBerryStage2::
 BerryTree_EventScript_CheckBerryStage3::
 	lockall
 	special ObjectEventInteractionGetBerryName
-	checkitem ITEM_WAILMER_PAIL, 1
+	checkitem ITEM_SQUIRT_BOTTLE, 1
 	compare VAR_RESULT, 0
 	goto_if_eq BerryTree_EventScript_DontWater
 	msgbox BerryTree_Text_BerryGrowthStage3, MSGBOX_YESNO
@@ -86,7 +86,7 @@ BerryTree_EventScript_CheckBerryStage3::
 BerryTree_EventScript_CheckBerryStage4::
 	call BerryTree_EventScript_GetCareAdverb
 	lockall
-	checkitem ITEM_WAILMER_PAIL, 1
+	checkitem ITEM_SQUIRT_BOTTLE, 1
 	compare VAR_RESULT, 0
 	goto_if_eq BerryTree_EventScript_DontWater
 	msgbox BerryTree_Text_BerryGrowthStage4, MSGBOX_YESNO

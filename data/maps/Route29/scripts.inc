@@ -47,28 +47,50 @@ Route29_EventScript_Youngster::
 	release
 	end
 
+
 Route29_EventScript_Tuscany::
 	lock
 	faceplayer
-	goto_if_set FLAG_MET_TUSCANY, Route29_EventScript_Tuscany2
-	msgbox Route29_Text_Tuscany1, MSGBOX_DEFAULT
-	waitmessage
-	msgbox Route29_Text_Tuscany_Gift1, MSGBOX_DEFAULT
-	waitmessage
+	goto_if_set FLAG_GOT_SILK_SCARF, Route29_EventScript_TuscanyCompleted
+	msgbox Route29_Text_MeetTuscany, MSGBOX_DEFAULT
+	closemessage
+	multichoice 20, 0, MULTI_DAYS_OF_WEEK, FALSE
+	switch VAR_RESULT
+	case 0, Route29_EventScript_TuscanyNope
+	case 1, Route29_EventScript_TuscanyNope
+	case 2, Route29_EventScript_TuscanyYes
+	case 3, Route29_EventScript_TuscanyNope
+	case 4, Route29_EventScript_TuscanyNope
+	case 5, Route29_EventScript_TuscanyNope
+	case 6, Route29_EventScript_TuscanyNope
+	case MULTI_B_PRESSED, Route29_EventScript_TuscanyCancel
+	closemessage
+	release
+	end
+Route29_EventScript_TuscanyYes::
+	msgbox Route29_Text_TuscanyGivesGift, MSGBOX_DEFAULT
 	giveitem ITEM_SILK_SCARF
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	msgbox Route29_Text_Tuscany_Gift2, MSGBOX_DEFAULT
-	closemessage
-	setflag FLAG_MET_TUSCANY
-	release
-	end
-
-
-Route29_EventScript_Tuscany2::
-	msgbox Route29_Text_Tuscany_AfterGift, MSGBOX_DEFAULT
+	setflag FLAG_GOT_SILK_SCARF
+	msgbox Route29_Text_TuscanyGaveGift, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
+Route29_EventScript_TuscanyNope::
+	msgbox Route29_Text_TuscanyNope, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+Route29_EventScript_TuscanyCancel::
+	closemessage
+	release
+	end
+Route29_EventScript_TuscanyCompleted::
+	msgbox Route29_Text_TuscanyTuesday, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
 
 
 Route29_EventScript_Girl::
@@ -159,30 +181,33 @@ Route29_Text_Boy_WaitingForNight:
 	.string "I'm waiting for POKéMON that\n"
 	.string "appear only at night.$"
 
-Route29_Text_Tuscany1:
+Route29_Text_MeetTuscany:
 	.string "TUSCANY: I do believe that this\n"
 	.string "is the first time we've met?\p"
-	.string "Please allow me to introduce\n"
-	.string "myself.\p"
-	.string "I am TUSCANY.$"
+	.string "I'm TUSCANY of the WEEKDAY FAMILY.\p"
+	.string "If you can guess my favorite day,\n"
+	.string "I'll give you a reward.$"
 
-Route29_Text_Tuscany_Gift1:
-	.string "By way of introduction,\n"
-	.string "please accept this gift,\n"
-	.string "a SILK SCARF.$"
+Route29_Text_TuscanyNope:
+	.string "Not quite!$"
 
-Route29_Text_Tuscany_Gift2:
+Route29_Text_TuscanyGivesGift:
+	.string "Yes! By way of introduction,\n"
+	.string "please accept this gift, a SILK\p"
+	.string "SCARF.$"
+
+Route29_Text_TuscanyGaveGift:
 	.string "TUSCANY: Wouldn't you agree\n"
 	.string "that it is most adorable?\p"
 	.string "It strengthens NORMAL-type\n"
 	.string "moves.\p"
 	.string "I am certain it will be of use.$"
 
-Route29_Text_Tuscany_AfterGift:
+Route29_Text_TuscanyTuesday:
 	.string "TUSCANY: Have you met MONICA,\n"
 	.string "my older sister?\p"
 	.string "Or my younger brother, WESLEY?\p"
-	.string "I am the second of seven\n"
+	.string "I am the third of seven\n"
 	.string "children.$"
 
 Route29_Text_Sign1:

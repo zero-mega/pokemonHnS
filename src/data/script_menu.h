@@ -795,6 +795,30 @@ static const struct MenuAction MultichoiceList_TagGamemode[] =
     {gText_Modern},
 };
 
+static const struct MenuAction MultichoiceList_DaysOfWeek[] =
+{
+    {gText_Sunday},
+    {gText_Monday},
+    {gText_Tuesday},
+    {gText_Wednesday},
+    {gText_Thursday},
+    {gText_Friday},
+    {gText_Saturday},
+    {gText_Exit},
+};
+
+static const struct MenuAction MultichoiceList_KurtsBalls[] =
+{
+    {gText_LoveBall},
+    {gText_Lure},
+    {gText_FriendBall},
+    {gText_Heavy},
+    {gText_Moon},
+    {gText_Fast},
+    {gText_LevelBall},
+    {gText_Exit},
+};
+
 static const struct MenuAction MultichoiceList_Exit[] =
 {
     {gText_Exit},
@@ -923,6 +947,8 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_FALLARBOR_TENT_RULES]       = MULTICHOICE(MultichoiceList_FallarborTentRules),
     [MULTI_TAG_MATCH_TYPE]             = MULTICHOICE(MultichoiceList_TagMatchType),
     [MULTI_GAME_CORNER_DOLLS2]          = MULTICHOICE(MultichoiceList_GameCornerDolls2),
+    [MULTI_DAYS_OF_WEEK]                 = MULTICHOICE(MultichoiceList_DaysOfWeek),
+    [MULTI_KURT_BALLS]                 = MULTICHOICE(MultichoiceList_KurtsBalls),
 };
 
 const u8 *const gStdStrings[] =

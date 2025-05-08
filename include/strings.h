@@ -1458,6 +1458,23 @@ extern const u8 gText_TrainerHill1F[];
 extern const u8 gText_TrainerHill2F[];
 extern const u8 gText_TrainerHill3F[];
 extern const u8 gText_TrainerHill4F[];
+extern const u8 gText_Sunday[];
+extern const u8 gText_Monday[];
+extern const u8 gText_Tuesday[];
+extern const u8 gText_Wednesday[];
+extern const u8 gText_Thursday[];
+extern const u8 gText_Friday[];
+extern const u8 gText_Saturday[];
+
+extern const u8 gText_LoveBall[];
+extern const u8 gText_Lure[];
+extern const u8 gText_FriendBall[];
+extern const u8 gText_Moon[];
+extern const u8 gText_Heavy[];
+extern const u8 gText_Fast[];
+extern const u8 gText_LevelBall[];
+
+
 
 // Cable Club multichoice text
 extern const u8 CableClub_Text_TradeUsingLinkCable[];

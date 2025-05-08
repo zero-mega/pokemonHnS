@@ -1555,6 +1555,7 @@ u8 UpdateTimeOfDay(void) {
         FlagClear(FLAG_NIGHT_POKEMON); //Show night pokemon
         FlagSet(FLAG_DAY_POKEMON); //Hide day pokemon
 
+
     } else if (hours < 7) { // night->twilight
         currentTimeBlend.time0 = TIME_OF_DAY_NIGHT;
         currentTimeBlend.time1 = TIME_OF_DAY_TWILIGHT;
@@ -1564,6 +1565,7 @@ u8 UpdateTimeOfDay(void) {
 
         FlagClear(FLAG_NIGHT_POKEMON); //Show night pokemon
         FlagSet(FLAG_DAY_POKEMON); //Hide day pokemon
+
 
     } else if (hours < 10) { // twilight->day
         currentTimeBlend.time0 = TIME_OF_DAY_TWILIGHT;
@@ -1575,12 +1577,16 @@ u8 UpdateTimeOfDay(void) {
         FlagSet(FLAG_NIGHT_POKEMON); //Hide night pokemon
         FlagClear(FLAG_DAY_POKEMON); //Show day pokemon
 
+        FlagSet(FLAG_HIDE_UNION_CAVE_LAPRAS);//Hide lapras at day
+
     } else if (hours < 18) { // day
         currentTimeBlend.weight = currentTimeBlend.altWeight = 256;
         gTimeOfDay = currentTimeBlend.time0 = currentTimeBlend.time1 = TIME_OF_DAY_DAY;
 
         FlagSet(FLAG_NIGHT_POKEMON); //Hide night pokemon
         FlagClear(FLAG_DAY_POKEMON); //Show day pokemon
+
+        
 
     } else if (hours < 20) { // day->twilight
         currentTimeBlend.time0 = TIME_OF_DAY_DAY;
@@ -1601,6 +1607,8 @@ u8 UpdateTimeOfDay(void) {
 
         FlagClear(FLAG_NIGHT_POKEMON); //Show night pokemon
         FlagSet(FLAG_DAY_POKEMON); //Hide day pokemon
+
+        FlagClear(FLAG_HIDE_UNION_CAVE_LAPRAS);//Show lapras at night
 
     } else { // 22-24, night
         currentTimeBlend.weight = 256;

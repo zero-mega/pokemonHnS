@@ -568,3 +568,7 @@ gSpecials::
 	def_special SetSpAtkStat
 	def_special SetSpDefStat
 	def_special BufferUnitSystemText
+	def_special CheckHooh
+	def_special CheckAerodactyl
+	def_special CheckKabuto
+	def_special CheckOmanyte

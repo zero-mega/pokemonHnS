@@ -122,8 +122,8 @@
 #define VAR_CELADON_CITY_STATE                               0x4066 
 #define VAR_SAFFRON_CITY_STATE                               0x4067 
 #define VAR_FUCHSIA_CITY_STATE                               0x4068 
-#define VAR_GARBAGEVAR3                               0x4069
-#define VAR_GARBAGEVAR4                               0x406A // Unused Var
+#define VAR_SPROUT_TOWER                               0x4069
+#define VAR_SLOWPOKE_TAIL                               0x406A // Unused Var
 #define VAR_GARBAGEVAR5                               0x406B // Unused Var
 #define VAR_GARBAGEVAR6                               0x406C // Unused Var
 #define VAR_ROUTE114_STATE                               0x406D // Unused Var

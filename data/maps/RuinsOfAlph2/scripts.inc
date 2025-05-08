@@ -162,6 +162,159 @@ RuinsOfAlph2_MapScript_HoohSuccess::
 	special DrawWholeMapView
 	end
 
+RuinsOfAlph2_EventScript_CheckHooh::
+	lock
+	goto_if_set FLAG_HOOH_BROUGHT, RuinsOfAlph2_EventScript_RewardGotten
+	specialvar VAR_RESULT, CheckHooh
+	goto_if_eq VAR_RESULT, TRUE, RuinsOfAlph2_EventScript_RewardHooh
+	msgbox RuinsOfAlph2_Text_Mon, MSGBOX_SIGN
+	closemessage
+	release
+	end
+RuinsOfAlph2_EventScript_RewardHooh::
+	setvar VAR_0x8006, 4  @ num shakes
+	setvar VAR_0x8007, 2  @ shake delay
+	special ShakeCamera
+	delay 30
+	waitse
+	msgbox RuinsOfAlph2_Text_Reward, MSGBOX_DEFAULT
+	closemessage
+	giveitem ITEM_LUM_BERRY
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_HOOH_BROUGHT
+	giveitem ITEM_CHARCOAL
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	giveitem ITEM_MAX_REVIVE
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	giveitem ITEM_SITRUS_BERRY
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_HOOH_BROUGHT
+	release
+	end
+
+RuinsOfAlph2_EventScript_CheckAerodactyl::
+	lock
+	goto_if_set FLAG_AERODACTYL_BROUGHT, RuinsOfAlph2_EventScript_RewardGotten
+	specialvar VAR_RESULT, CheckAerodactyl
+	goto_if_eq VAR_RESULT, TRUE, RuinsOfAlph2_EventScript_RewardAerodactyl
+	msgbox RuinsOfAlph2_Text_Mon, MSGBOX_SIGN
+	closemessage
+	release
+	end
+RuinsOfAlph2_EventScript_RewardAerodactyl::
+	setvar VAR_0x8006, 4  @ num shakes
+	setvar VAR_0x8007, 2  @ shake delay
+	special ShakeCamera
+	delay 30
+	waitse
+	msgbox RuinsOfAlph2_Text_Reward, MSGBOX_DEFAULT
+	closemessage
+	giveitem ITEM_HEAL_POWDER
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_AERODACTYL_BROUGHT
+	giveitem ITEM_ENERGY_ROOT
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	giveitem ITEM_SITRUS_BERRY
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	giveitem ITEM_MOON_STONE
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_AERODACTYL_BROUGHT
+	release
+	end
+
+RuinsOfAlph2_EventScript_CheckKabuto::
+	lock
+	goto_if_set FLAG_KABUTO_BROUGHT, RuinsOfAlph2_EventScript_RewardGotten
+	specialvar VAR_RESULT, CheckKabuto
+	goto_if_eq VAR_RESULT, TRUE, RuinsOfAlph2_EventScript_RewardKabuto
+	msgbox RuinsOfAlph2_Text_Mon, MSGBOX_SIGN
+	closemessage
+	release
+	end
+RuinsOfAlph2_EventScript_RewardKabuto::
+	setvar VAR_0x8006, 4  @ num shakes
+	setvar VAR_0x8007, 2  @ shake delay
+	special ShakeCamera
+	delay 30
+	waitse
+	msgbox RuinsOfAlph2_Text_Reward, MSGBOX_DEFAULT
+	closemessage
+	giveitem ITEM_HEAL_POWDER
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_KABUTO_BROUGHT
+	giveitem ITEM_ENERGY_POWDER
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	giveitem ITEM_ORAN_BERRY
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	giveitem ITEM_PECHA_BERRY
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_KABUTO_BROUGHT
+	release
+	end
+
+RuinsOfAlph2_EventScript_CheckOmanyte::
+	lock
+	goto_if_set FLAG_OMANYTE_BROUGHT, RuinsOfAlph2_EventScript_RewardGotten
+	specialvar VAR_RESULT, CheckOmanyte
+	goto_if_eq VAR_RESULT, TRUE, RuinsOfAlph2_EventScript_RewardOmanyte
+	msgbox RuinsOfAlph2_Text_Mon, MSGBOX_SIGN
+	closemessage
+	release
+	end
+RuinsOfAlph2_EventScript_RewardOmanyte::
+	setvar VAR_0x8006, 4  @ num shakes
+	setvar VAR_0x8007, 2  @ shake delay
+	special ShakeCamera
+	delay 30
+	waitse
+	msgbox RuinsOfAlph2_Text_Reward, MSGBOX_DEFAULT
+	closemessage
+	giveitem ITEM_STARDUST
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_OMANYTE_BROUGHT
+	giveitem ITEM_STAR_PIECE
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	giveitem ITEM_LUM_BERRY
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	giveitem ITEM_WATER_STONE
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_OMANYTE_BROUGHT
+	release
+	end
+
+RuinsOfAlph2_EventScript_RewardGotten::
+	msgbox RuinsOfAlph2_Text_Solved, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+RuinsOfAlph2_EventScript_HelixFossil::
+	finditem ITEM_HELIX_FOSSIL
+	end
+
+RuinsOfAlph2_EventScript_DomeFossil::
+	finditem ITEM_DOME_FOSSIL
+	end
+
+RuinsOfAlph2_EventScript_OldAmber::
+	finditem ITEM_OLD_AMBER
+	end
+
+RuinsOfAlph2_EventScript_GSBALL::
+	finditem ITEM_GS_BALL
+	end
+
+RuinsOfAlph2_Text_Reward:
+	.string "The chamber reacts!\n"
+	.string "Ancient ITEMS fall at your feet.$"
+
+RuinsOfAlph2_Text_Mon:
+	.string "This seems important...\n"
+	.string "What could it mean?$"
+
+RuinsOfAlph2_Text_Solved:
+	.string "You solved this mystery already.$"
+
 RuinsOfAlph2_Text_Receptionist1:
 	.string "Welcome to this chamber.\p"
 	.string "There are sliding panels that depict\n"
@@ -170,9 +323,8 @@ RuinsOfAlph2_Text_Receptionist1:
 	.string "the picture.\p"
 	.string "To the right is a description of\n"
 	.string "the POKéMON.\p"
-	.string "Scientists in the lab are\n"
-	.string "examining some newly found\p"
-	.string "patterns.$"
+	.string "Scientists in the lab are examin-\n"
+	.string "-ing some newly found patterns.$"
 
 RuinsOfAlph2_Text_Receptionist2:
 	.string "A hole just opened up in the floor!\n"

@@ -23,5 +23,4 @@ RuinsOfAlphOffice_Text_Scientist2:
 	.string "There are odd patterns drawn on\n"
 	.string "on the walls of the RUINS.\p"
 	.string "They must be the keys for\n"
-	.string "unraveling the mystery of the\p"
-	.string "RUINS.$"
+	.string "unraveling the RUINS' mystery.$"

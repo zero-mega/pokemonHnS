@@ -594,34 +594,34 @@ EventScript_ResetMrBriney::
 
 EventScript_MoveMrBrineyToHouse::
 	setflag FLAG_GARBAGEFLAG
-	setflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN
-	setflag FLAG_HIDE_ROUTE_109_MR_BRINEY
-	setflag FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT
-	clearflag FLAG_GARBAGEFLAG_BOAT
+	setflag FLAG_GARBAGEFLAG
+	setflag FLAG_GARBAGEFLAG
+	setflag FLAG_GARBAGEFLAG
+	clearflag FLAG_GARBAGEFLAG
 	clearflag FLAG_GARBAGEFLAG
 	clearflag FLAG_GARBAGEFLAG
 	end
 
 EventScript_MoveMrBrineyToDewford::
-	setflag FLAG_HIDE_ROUTE_109_MR_BRINEY
-	setflag FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT
 	setflag FLAG_GARBAGEFLAG
-	setflag FLAG_GARBAGEFLAG_BOAT
+	setflag FLAG_GARBAGEFLAG
+	setflag FLAG_GARBAGEFLAG
+	setflag FLAG_GARBAGEFLAG
 	setflag FLAG_GARBAGEFLAG
 	setflag FLAG_GARBAGEFLAG
 	clearflag FLAG_GARBAGEFLAG
-	clearflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN
+	clearflag FLAG_GARBAGEFLAG
 	end
 
 EventScript_MoveMrBrineyToRoute109::
 	setflag FLAG_GARBAGEFLAG
-	setflag FLAG_GARBAGEFLAG_BOAT
 	setflag FLAG_GARBAGEFLAG
 	setflag FLAG_GARBAGEFLAG
 	setflag FLAG_GARBAGEFLAG
-	setflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN
-	clearflag FLAG_HIDE_ROUTE_109_MR_BRINEY
-	clearflag FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT
+	setflag FLAG_GARBAGEFLAG
+	setflag FLAG_GARBAGEFLAG
+	clearflag FLAG_GARBAGEFLAG
+	clearflag FLAG_GARBAGEFLAG
 	end
 
 EverGrandeCity_HallOfFame_EventScript_ResetEliteFour::
@@ -635,9 +635,9 @@ EverGrandeCity_HallOfFame_EventScript_ResetEliteFour::
 Common_EventScript_UpdateBrineyLocation::
 	goto_if_unset FLAG_RECEIVED_POKENAV, Common_EventScript_NopReturn
 	goto_if_set FLAG_DEFEATED_CIANWOOD_GYM, Common_EventScript_NopReturn
-	goto_if_unset FLAG_GARBAGEFLAG_BOAT, EventScript_SetBrineyLocation_House
+	goto_if_unset FLAG_GARBAGEFLAG, EventScript_SetBrineyLocation_House
 	goto_if_unset FLAG_GARBAGEFLAG, EventScript_SetBrineyLocation_Dewford
-	goto_if_unset FLAG_HIDE_ROUTE_109_MR_BRINEY, EventScript_SetBrineyLocation_Route109
+	goto_if_unset FLAG_GARBAGEFLAG, EventScript_SetBrineyLocation_Route109
 	return
 
 EventScript_SetBrineyLocation_House::
@@ -768,11 +768,11 @@ Movement_FerryDepart:
 
 EventScript_HideMrBriney::
 	setflag FLAG_GARBAGEFLAG
-	setflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN
-	setflag FLAG_HIDE_ROUTE_109_MR_BRINEY
-	setflag FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT
 	setflag FLAG_GARBAGEFLAG
-	setflag FLAG_GARBAGEFLAG_BOAT
+	setflag FLAG_GARBAGEFLAG
+	setflag FLAG_GARBAGEFLAG
+	setflag FLAG_GARBAGEFLAG
+	setflag FLAG_GARBAGEFLAG
 	setflag FLAG_GARBAGEFLAG
 	setflag FLAG_GARBAGEFLAG
 	setvar VAR_BRINEY_LOCATION, 0

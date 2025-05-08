@@ -92,13 +92,54 @@ void DoBrailleDigEffect(void)
 
 bool8 CheckRelicanthWailord(void)
 {
-    // First comes Magnezone
-    if (GetMonData(&gPlayerParty[0], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_MAGNEZONE)
+ 
+    // First comes Wailord
+    if (GetMonData(&gPlayerParty[0], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_WAILORD)
     {
         CalculatePlayerPartyCount();
-        // Last comes Vibrava
-        if (GetMonData(&gPlayerParty[gPlayerPartyCount - 1], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_VIBRAVA)
+        // Last comes Relicanth
+        if (GetMonData(&gPlayerParty[gPlayerPartyCount - 1], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_RELICANTH)
             return TRUE;
+    }
+    return FALSE;
+}
+
+bool8 CheckHooh(void)
+{
+ 
+    if (GetMonData(&gPlayerParty[0], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_HO_OH)
+    {
+        return TRUE;
+    }
+    return FALSE;
+}
+
+bool8 CheckAerodactyl(void)
+{
+ 
+    if (GetMonData(&gPlayerParty[0], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_AERODACTYL)
+    {
+        return TRUE;
+    }
+    return FALSE;
+}
+
+bool8 CheckKabuto(void)
+{
+ 
+    if (GetMonData(&gPlayerParty[0], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_KABUTO)
+    {
+        return TRUE;
+    }
+    return FALSE;
+}
+
+bool8 CheckOmanyte(void)
+{
+ 
+    if (GetMonData(&gPlayerParty[0], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_OMANYTE)
+    {
+        return TRUE;
     }
     return FALSE;
 }

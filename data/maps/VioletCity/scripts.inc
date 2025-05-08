@@ -4,20 +4,25 @@ VioletCity_MapScripts::
 	.byte 0
 
 VioletCity_EventScript_Trigger::
+	@LOCAL FLAGHEAP
 	clearflag FLAG_RECEIVED_TOGEPI_EGG
 	clearflag FLAG_VIOLET_NPC_TRADE_COMPLETED
 	clearflag FLAG_HIDE_SPROUT_TOWER_SILVER
 	clearflag FLAG_HIDE_JOHTO_GYM_LEADERS
+	clearflag FLAG_HOOH_BROUGHT
+	clearflag FLAG_OMANYTE_BROUGHT
+	clearflag FLAG_AERODACTYL_BROUGHT
+	clearflag FLAG_KABUTO_BROUGHT
+	clearflag FLAG_HIDE_SUDOWOODO
+	clearflag FLAG_GOT_HARD_STONE
+	clearflag FLAG_GOT_POISON_BARB
+	setvar VAR_SLOWPOKE_TAIL, 0
+	
 
 	setflag FLAG_HIDE_TRAINER_SCHOOL_EARL
 	setflag FLAG_HIDE_VIOLET_CITY_AIDE
 	
-	
-
-
-	@clearflag FLAG_HIDE_VIOLET_CITY_AIDE @MOVE TO BEAT FALKNER
-	
-
+	setvar VAR_SPROUT_TOWER, 0
 	setvar VAR_VIOLET_CITY_STATE, 1
 	end
 
@@ -147,6 +152,15 @@ VioletCity_EventScript_Rattata::
 	playmoncry SPECIES_RATTATA, CRY_MODE_NORMAL
 	msgbox VioletCity_Text_Rattata, MSGBOX_DEFAULT
 	waitmoncry
+	release
+	end
+
+VioletCity_EventScript_ElmCall_Trigger::
+	lock
+	pokenavcall VioletCity_Text_Elm_Call
+	waitmessage
+	delay 30
+	setvar VAR_VIOLET_CITY_STATE, 4
 	release
 	end
 
@@ -324,3 +338,10 @@ VioletCity_Text_Bellsprout:
 
 VioletCity_Text_Rattata:
 	.string "RATTATA: RATTATARATTA!$"
+
+VioletCity_Text_Elm_Call:
+	.string "ELM: Hello, {PLAYER}? We\n"
+	.string "discovered something about the EGG!\p"
+	.string "My assistant is at the POKéMON\n"
+	.string "CENTER in VIOLET CITY.\p"
+	.string "Could you talk to him?$"

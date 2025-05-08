@@ -101,8 +101,8 @@ static const u8 sFastBallDesc[] = _(
 
 static const u8 sGSBallDesc[] = _(
     "A mysterious ball.\n"
-    "Likely to catch,\n"
-    "but not guaranteed.");
+    "Maybe Kurt can\n"
+    "identify it.");
 
 
 // Medicine

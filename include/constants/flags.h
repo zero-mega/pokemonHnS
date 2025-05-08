@@ -774,21 +774,21 @@
 
 #define FLAG_UNUSED_0x2D9                                           0x2D9 // Unused Flag
 
-#define FLAG_MET_TUSCANY                     0x2DA //CRYSTALRANDOMFLAGS, NOT STRICTLY STORY //weekday siblings
+#define FLAG_GOT_SILK_SCARF                     0x2DA //CRYSTALRANDOMFLAGS, NOT STRICTLY STORY //weekday siblings
 #define FLAG_GOT_MYSTICWATER                          0x2DB
 #define FLAG_GOT_BERRY_ROUTE_30_HOUSE                    0x2DC
 #define FLAG_HIDE_VIOLET_CITY_EARL              0x2DD
 #define FLAG_HIDE_TRAINER_SCHOOL_EARL                                 0x2DE
 #define FLAG_VIOLET_NPC_TRADE_COMPLETED      0x2DF
-#define FLAG_GARBAGEFLAG7          0x2E0
-#define FLAG_GARBAGEFLAG8             0x2E1
-#define FLAG_GARBAGEFLAG9                               0x2E2
-#define FLAG_GARBAGEFLAG10                           0x2E3
-#define FLAG_GARBAGEFLAG11                            0x2E4
-#define FLAG_HIDE_ROUTE_109_MR_BRINEY                               0x2E5
-#define FLAG_GARBAGEFLAG_BOAT                          0x2E6
-#define FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN                       0x2E7
-#define FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT                          0x2E8
+#define FLAG_HOOH_BROUGHT          0x2E0
+#define FLAG_AERODACTYL_BROUGHT             0x2E1
+#define FLAG_KABUTO_BROUGHT                               0x2E2
+#define FLAG_OMANYTE_BROUGHT                           0x2E3
+#define FLAG_GOT_HARD_STONE                           0x2E4
+#define FLAG_GOT_POISON_BARB                               0x2E5
+#define FLAG_HIDE_SUDOWOODO                          0x2E6
+#define FLAG_HIDE_UNION_CAVE_LAPRAS                       0x2E7
+#define FLAG_GARBAGEFLAG2                          0x2E8
 #define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_BRENDAN            0x2E9
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_MAY                    0x2EA
 #define FLAG_HIDE_SAFARI_ZONE_SOUTH_EAST_EXPANSION                  0x2EB
@@ -1243,24 +1243,24 @@
 #define FLAG_ITEM_SPROUT_TOWER_X_DEFEND                                           0x4A8 // Unused Flag
 #define FLAG_ITEM_SPROUT_TOWER_POTION                                          0x4A9 // Unused Flag
 #define FLAG_ITEM_SPROUT_TOWER_ESCAPE_ROPE                                        0x4AA // Unused Flag
-#define FLAG_UNUSED_0x4AB                                           0x4AB // Unused Flag
-#define FLAG_UNUSED_0x4AC                                           0x4AC // Unused Flag
-#define FLAG_UNUSED_0x4AD                                           0x4AD // Unused Flag
-#define FLAG_UNUSED_0x4AE                                           0x4AE // Unused Flag
-#define FLAG_UNUSED_0x4AF                                           0x4AF // Unused Flag
-#define FLAG_UNUSED_0x4B0                                           0x4B0 // Unused Flag
-#define FLAG_UNUSED_0x4B1                                           0x4B1 // Unused Flag
-#define FLAG_UNUSED_0x4B2                                           0x4B2 // Unused Flag
-#define FLAG_UNUSED_0x4B3                                           0x4B3 // Unused Flag
-#define FLAG_UNUSED_0x4B4                                           0x4B4 // Unused Flag
-#define FLAG_UNUSED_0x4B5                                           0x4B5 // Unused Flag
-#define FLAG_UNUSED_0x4B6                                           0x4B6 // Unused Flag
-#define FLAG_UNUSED_0x4B7                                           0x4B7 // Unused Flag
-#define FLAG_UNUSED_0x4B8                                           0x4B8 // Unused Flag
-#define FLAG_UNUSED_0x4B9                                           0x4B9 // Unused Flag
-#define FLAG_UNUSED_0x4BA                                           0x4BA // Unused Flag
-#define FLAG_UNUSED_0x4BB                                           0x4BB // Unused Flag
-#define FLAG_UNUSED_0x4BC                                           0x4BC // Unused Flag
+#define FLAG_ITEM_HELIX_FOSSIL                                           0x4AB // Unused Flag
+#define FLAG_ITEM_DOME_FOSSIL                                           0x4AC // Unused Flag
+#define FLAG_ITEM_OLD_AMBER                                           0x4AD // Unused Flag
+#define FLAG_ITEM_GS_BALL                                           0x4AE // Unused Flag
+#define FLAG_GARBAGEFLAG3                                         0x4AF // Unused Flag
+#define FLAG_ITEM_ROUTE_32_GREATBALL                                           0x4B0 // Unused Flag
+#define FLAG_ITEM_ROUTE_32_GREATBALL2                                           0x4B1 // Unused Flag
+#define FLAG_ITEM_ROUTE_32_POTION                                           0x4B2 // Unused Flag
+#define FLAG_ITEM_ROUTE_32_SUPERPOTION                                           0x4B3 // Unused Flag
+#define FLAG_ITEM_UNION_CAVE_POTION                                           0x4B4 // Unused Flag
+#define FLAG_ITEM_UNION_CAVE_GREAT_BALL                                           0x4B5 // Unused Flag
+#define FLAG_ITEM_UNION_CAVE_X_ATTACK                                           0x4B6 // Unused Flag
+#define FLAG_ITEM_UNION_CAVE_AWAKENING                                           0x4B7 // Unused Flag
+#define FLAG_ITEM_UNION_CAVE_SECRET_POWER                                           0x4B8 // Unused Flag
+#define FLAG_ITEM_UNION_CAVE_X_DEFEND                                          0x4B9 // Unused Flag
+#define FLAG_ITEM_UNION_CAVE_ETHER                                           0x4BA // Unused Flag
+#define FLAG_ITEM_UNION_CAVE_HYPERPOTION                                           0x4BB // Unused Flag
+#define FLAG_ITEM_UNION_CAVE_MAXREVIVE                                           0x4BC // Unused Flag
 #define FLAG_UNUSED_0x4BD                                           0x4BD // Unused Flag
 #define FLAG_UNUSED_0x4BE                                           0x4BE // Unused Flag
 #define FLAG_UNUSED_0x4BF                                           0x4BF // Unused Flag

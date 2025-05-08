@@ -53,12 +53,16 @@ SproutTower3_EventScript_TriggerSceneLeft::
 	applymovement LOCALID_SPROUT_TOWER_SILVER, SproutTower3_Movement_SilverLeft
 	waitmovement 0
 	msgbox SproutTower_Text_RivalOnlyCaresStrong, MSGBOX_DEFAULT
+	msgbox SproutTower_Text_RivalUsedEscapeRope, MSGBOX_DEFAULT
 	closemessage
+	fadescreen FADE_TO_BLACK
 	setflag FLAG_HIDE_SPROUT_TOWER_SILVER
 	removeobject LOCALID_SPROUT_TOWER_SILVER
+	delay 55
+	fadescreen FADE_FROM_BLACK
 	special DrawWholeMapView
 	fadedefaultbgm
-	setvar VAR_VIOLET_CITY_STATE, 2
+	setvar VAR_SPROUT_TOWER, 1
 	release
 	end
 
@@ -85,7 +89,7 @@ SproutTower3_EventScript_TriggerSceneRight::
 	fadescreen FADE_FROM_BLACK
 	special DrawWholeMapView
 	fadedefaultbgm
-	setvar VAR_VIOLET_CITY_STATE, 2
+	setvar VAR_SPROUT_TOWER, 1
 	release
 	end
 
