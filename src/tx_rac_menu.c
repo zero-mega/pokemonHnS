@@ -719,7 +719,7 @@ static const u8 sText_Description_Mode_Gamemode_Modern[]          = _("Choose yo
 static const u8 sText_Description_Mode_Gamemode_Custom[]          = _("Choose your own rules.");
 static const u8 sText_Description_Mode_AlternateSpawns_Off[]      = _("{COLOR 7}{COLOR 8}This feature is not currently\nsupported for this game.");
 static const u8 sText_Description_Mode_AlternateSpawns_On[]       = _("{COLOR 7}{COLOR 8}This feature is not currently\nsupported for this game.");
-static const u8 sText_Description_Mode_InfiniteTMs_On[]           = _("TMs are reusable.\nModern Emerald recommended.");
+static const u8 sText_Description_Mode_InfiniteTMs_On[]           = _("TMs are reusable.\nRecommended.");
 static const u8 sText_Description_Mode_InfiniteTMs_Off[]          = _("TMs are not reusable.\nLike in the original.");
 static const u8 sText_Description_Mode_SurvivePoison_On[]         = _("Your {PKMN} will survive the POISON\nstatus with 1HP.");
 static const u8 sText_Description_Mode_SurvivePoison_Off[]        = _("Your {PKMN} will faint if they are\nPOISONED.");
@@ -2183,7 +2183,7 @@ static void DrawChoices_Mode_Classic_Modern_Selector(int selection, int y)
         gSaveBlock1Ptr->tx_Mode_AlternateSpawns = 0;
         sOptions->sel_mode[MENUITEM_MODE_INFINITE_TMS]              = !TX_MODE_INFINITE_TMS;
         gSaveBlock1Ptr->tx_Mode_InfiniteTMs = 1;
-        FlagSet (FLAG_FINITE_TMS);
+        FlagClear (FLAG_FINITE_TMS);
         sOptions->sel_mode[MENUITEM_MODE_SURVIVE_POISON]            = TX_MODE_SURVIVE_POISON;
         gSaveBlock1Ptr->tx_Mode_PoisonSurvive = 0;
         sOptions->sel_mode[MENUITEM_MODE_SYNCHRONIZE]               = !TX_MODE_NEW_SYNCHRONIZE;

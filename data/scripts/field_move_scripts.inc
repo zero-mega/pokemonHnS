@@ -6,7 +6,7 @@ callfunc ScrFunc_IsFollowerFieldMoveUser
 @ Interact with cuttable tree
 EventScript_CutTree::
 	lockall
-	goto_if_unset FLAG_BADGE01_GET, EventScript_CheckTreeCantCut
+	goto_if_unset FLAG_BADGE02_GET, EventScript_CheckTreeCantCut
 	@checkpartymove MOVE_CUT
 	setvar VAR_RESULT, 0
 	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CheckTreeCantCut
@@ -309,7 +309,7 @@ Text_CantHeadbutt:
 
 EventScript_StrengthBoulder::
 	lockall
-	goto_if_unset FLAG_BADGE04_GET, EventScript_CantStrength
+	goto_if_unset FLAG_BADGE03_GET, EventScript_CantStrength
 	goto_if_set FLAG_SYS_USE_STRENGTH, EventScript_CheckActivatedBoulder
 	@checkpartymove MOVE_STRENGTH
 	setvar VAR_RESULT, 0

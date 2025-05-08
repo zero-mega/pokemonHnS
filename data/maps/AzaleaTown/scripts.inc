@@ -2,8 +2,58 @@ AzaleaTown_MapScripts::
 	.byte 0
 
 AzaleaTown_EventScript_Trigger::
+	setflag FLAG_VISITED_AZALEA_TOWN
+	removeitem ITEM_HM_SURF
 
 	setvar VAR_AZALEA_TOWN_STATE, 1
+	end
+
+AzaleaTown_EventScript_Rocket1::
+	lock
+	faceplayer
+	msgbox AzaleaTown_Text_Rocket1, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+AzaleaTown_EventScript_Rocket2::
+	lock
+	faceplayer
+	msgbox AzaleaTown_Text_Rocket2, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+AzaleaTown_EventScript_Gramps::
+	lock
+	faceplayer
+	msgbox AzaleaTown_Text_GrampsBefore, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+AzaleaTown_EventScript_Lass::
+	lock
+	faceplayer
+	msgbox AzaleaTown_Text_Teacher, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+AzaleaTown_EventScript_Youngster::
+	lock
+	faceplayer
+	msgbox AzaleaTown_Text_Youngster, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+AzaleaTown_EventScript_Slowpoke::
+	lock
+	faceplayer
+	msgbox AzaleaTown_Text_Slowpoke1, MSGBOX_DEFAULT
+	closemessage
+	release
 	end
 
 AzaleaTown_Text_RivalBefore:
@@ -73,15 +123,9 @@ AzaleaTown_Text_Youngster:
 	.string "can CUT down trees.$"
 
 AzaleaTown_Text_Slowpoke1:
-	.string "SLOWPOKE: …\p"
-	.string "<……> <……> <……>$"
-
-AzaleaTown_Text_Slowpoke2:
-	.string "<……> <……>Yawn?$"
-
-AzaleaTown_Text_Wooster:
-	.string "WOOSTER: Gugyoo…$"
-
+	.string "SLOWPOKE:..........\p"
+	.string "...............YAWN?$"
+	
 AzaleaTown_Text_Kurt1:
 	.string "ILEX FOREST is restless!\p"
 	.string "What is going on?$"

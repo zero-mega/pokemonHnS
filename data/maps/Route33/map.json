@@ -184,9 +184,9 @@
       "x": 0,
       "y": 23,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "VAR_AZALEA_TOWN_STATE",
       "var_value": "0",
-      "script": "NULL"
+      "script": "AzaleaTown_EventScript_Trigger"
     },
     {
       "type": "trigger",
@@ -195,7 +195,7 @@
       "elevation": 0,
       "var": "VAR_AZALEA_TOWN_STATE",
       "var_value": "0",
-      "script": "NULL"
+      "script": "AzaleaTown_EventScript_Trigger"
     }
   ],
   "bg_events": [

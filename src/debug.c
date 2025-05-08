@@ -1145,6 +1145,7 @@ static u8 Debug_CheckToggleFlags(u8 id)
             break;
         case DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_LOCATIONS:
             result = FlagGet(FLAG_VISITED_NEWBARK_TOWN) &&
+                FlagGet(FLAG_VISITED_CHERRYGROVE_CITY) &&
                 FlagGet(FLAG_VISITED_VIOLET_CITY) &&
                 FlagGet(FLAG_VISITED_AZALEA_TOWN) &&
                 FlagGet(FLAG_VISITED_GOLDENROD_CITY) &&
@@ -1153,24 +1154,20 @@ static u8 Debug_CheckToggleFlags(u8 id)
                 FlagGet(FLAG_VISITED_CIANWOOD_CITY) &&
                 FlagGet(FLAG_VISITED_SAFARI_ZONE_GATE) &&
                 FlagGet(FLAG_VISITED_MAHOGANY_TOWN) &&
+                FlagGet(FLAG_VISITED_LAKE_OF_RAGE) &&
                 FlagGet(FLAG_VISITED_BLACKTHORN_CITY) &&
-                FlagGet(FLAG_VISITED_CHERRYGROVE_CITY) &&
                 FlagGet(FLAG_VISITED_INDIGO_PLATEAU) &&
-                FlagGet(FLAG_LANDMARK_POKEMON_LEAGUE) &&
-                /*
                 FlagGet(FLAG_VISITED_PALLET_TOWN) &&
                 FlagGet(FLAG_VISITED_VIRIDIAN_CITY) &&
                 FlagGet(FLAG_VISITED_PEWTER_CITY) &&
                 FlagGet(FLAG_VISITED_CERULEAN_CITY) &&
                 FlagGet(FLAG_VISITED_VERMILION_CITY) &&
                 FlagGet(FLAG_VISITED_LAVENDAR_TOWN) &&
+                FlagGet(FLAG_VISITED_FUCHSIA_CITY) &&
                 FlagGet(FLAG_VISITED_CELADON_CITY) &&
                 FlagGet(FLAG_VISITED_SAFFRON_CITY) &&
                 FlagGet(FLAG_VISITED_CINNABAR_ISLAND) &&
-                FlagGet(FLAG_VISITED_LAKE_OF_RAGE) &&
-                FlagGet(FLAG_VISITED_MT_SILVER) &&
-                */
-                FlagGet(FLAG_VISITED_FUCHSIA_CITY);
+                FlagGet(FLAG_VISITED_MT_SILVER);
             break;
         case DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_BADGES_ALL:
             result = FlagGet(FLAG_BADGE01_GET) &&
@@ -1721,7 +1718,9 @@ static void DebugAction_Util_HealParty(u8 taskId)
 }
 static void DebugAction_Util_Fly(u8 taskId)
 {
+
     FlagSet(FLAG_VISITED_NEWBARK_TOWN);
+    FlagSet(FLAG_VISITED_CHERRYGROVE_CITY);
     FlagSet(FLAG_VISITED_VIOLET_CITY);
     FlagSet(FLAG_VISITED_AZALEA_TOWN);
     FlagSet(FLAG_VISITED_GOLDENROD_CITY);
@@ -1730,15 +1729,20 @@ static void DebugAction_Util_Fly(u8 taskId)
     FlagSet(FLAG_VISITED_CIANWOOD_CITY);
     FlagSet(FLAG_VISITED_SAFARI_ZONE_GATE);
     FlagSet(FLAG_VISITED_MAHOGANY_TOWN);
+    FlagSet(FLAG_VISITED_LAKE_OF_RAGE);
     FlagSet(FLAG_VISITED_BLACKTHORN_CITY);
-    FlagSet(FLAG_VISITED_CHERRYGROVE_CITY);
-    FlagSet(FLAG_VISITED_VIRIDIAN_CITY);
-    FlagSet(FLAG_VISITED_SAFFRON_CITY);
-    FlagSet(FLAG_VISITED_CELADON_CITY);
-    FlagSet(FLAG_VISITED_LAVENDAR_TOWN);
     FlagSet(FLAG_VISITED_INDIGO_PLATEAU);
-    FlagSet(FLAG_LANDMARK_POKEMON_LEAGUE);
+    FlagSet(FLAG_VISITED_PALLET_TOWN);
+    FlagSet(FLAG_VISITED_VIRIDIAN_CITY);
+    FlagSet(FLAG_VISITED_PEWTER_CITY);
+    FlagSet(FLAG_VISITED_CERULEAN_CITY);
+    FlagSet(FLAG_VISITED_VERMILION_CITY);
+    FlagSet(FLAG_VISITED_LAVENDAR_TOWN);
     FlagSet(FLAG_VISITED_FUCHSIA_CITY);
+    FlagSet(FLAG_VISITED_CELADON_CITY);
+    FlagSet(FLAG_VISITED_SAFFRON_CITY);
+    FlagSet(FLAG_VISITED_CINNABAR_ISLAND);
+    FlagSet(FLAG_VISITED_MT_SILVER);
     Debug_DestroyMenu_Full(taskId);
     SetMainCallback2(CB2_OpenFlyMap);
 }
@@ -2546,6 +2550,7 @@ static void DebugAction_FlagsVars_ToggleFlyFlags(u8 taskId)
         PlaySE(SE_PC_OFF);
 
         FlagClear(FLAG_VISITED_NEWBARK_TOWN);
+        FlagClear(FLAG_VISITED_CHERRYGROVE_CITY);
         FlagClear(FLAG_VISITED_VIOLET_CITY);
         FlagClear(FLAG_VISITED_AZALEA_TOWN);
         FlagClear(FLAG_VISITED_GOLDENROD_CITY);
@@ -2554,21 +2559,27 @@ static void DebugAction_FlagsVars_ToggleFlyFlags(u8 taskId)
         FlagClear(FLAG_VISITED_CIANWOOD_CITY);
         FlagClear(FLAG_VISITED_SAFARI_ZONE_GATE);
         FlagClear(FLAG_VISITED_MAHOGANY_TOWN);
+        FlagClear(FLAG_VISITED_LAKE_OF_RAGE);
         FlagClear(FLAG_VISITED_BLACKTHORN_CITY);
-        FlagClear(FLAG_VISITED_CHERRYGROVE_CITY);
-        FlagClear(FLAG_VISITED_VIRIDIAN_CITY);
-        FlagClear(FLAG_VISITED_SAFFRON_CITY);
-        FlagClear(FLAG_VISITED_CELADON_CITY);
-        FlagClear(FLAG_VISITED_LAVENDAR_TOWN);
         FlagClear(FLAG_VISITED_INDIGO_PLATEAU);
-        FlagClear(FLAG_LANDMARK_POKEMON_LEAGUE);
+        FlagClear(FLAG_VISITED_PALLET_TOWN);
+        FlagClear(FLAG_VISITED_VIRIDIAN_CITY);
+        FlagClear(FLAG_VISITED_PEWTER_CITY);
+        FlagClear(FLAG_VISITED_CERULEAN_CITY);
+        FlagClear(FLAG_VISITED_VERMILION_CITY);
+        FlagClear(FLAG_VISITED_LAVENDAR_TOWN);
         FlagClear(FLAG_VISITED_FUCHSIA_CITY);
+        FlagClear(FLAG_VISITED_CELADON_CITY);
+        FlagClear(FLAG_VISITED_SAFFRON_CITY);
+        FlagClear(FLAG_VISITED_CINNABAR_ISLAND);
+        FlagClear(FLAG_VISITED_MT_SILVER);
     }
     else
     {
         PlaySE(SE_PC_LOGIN);
-    
+
         FlagSet(FLAG_VISITED_NEWBARK_TOWN);
+        FlagSet(FLAG_VISITED_CHERRYGROVE_CITY);
         FlagSet(FLAG_VISITED_VIOLET_CITY);
         FlagSet(FLAG_VISITED_AZALEA_TOWN);
         FlagSet(FLAG_VISITED_GOLDENROD_CITY);
@@ -2577,15 +2588,20 @@ static void DebugAction_FlagsVars_ToggleFlyFlags(u8 taskId)
         FlagSet(FLAG_VISITED_CIANWOOD_CITY);
         FlagSet(FLAG_VISITED_SAFARI_ZONE_GATE);
         FlagSet(FLAG_VISITED_MAHOGANY_TOWN);
+        FlagSet(FLAG_VISITED_LAKE_OF_RAGE);
         FlagSet(FLAG_VISITED_BLACKTHORN_CITY);
-        FlagSet(FLAG_VISITED_CHERRYGROVE_CITY);
-        FlagSet(FLAG_VISITED_VIRIDIAN_CITY);
-        FlagSet(FLAG_VISITED_SAFFRON_CITY);
-        FlagSet(FLAG_VISITED_CELADON_CITY);
-        FlagSet(FLAG_VISITED_LAVENDAR_TOWN);
         FlagSet(FLAG_VISITED_INDIGO_PLATEAU);
-        FlagSet(FLAG_LANDMARK_POKEMON_LEAGUE);
+        FlagSet(FLAG_VISITED_PALLET_TOWN);
+        FlagSet(FLAG_VISITED_VIRIDIAN_CITY);
+        FlagSet(FLAG_VISITED_PEWTER_CITY);
+        FlagSet(FLAG_VISITED_CERULEAN_CITY);
+        FlagSet(FLAG_VISITED_VERMILION_CITY);
+        FlagSet(FLAG_VISITED_LAVENDAR_TOWN);
         FlagSet(FLAG_VISITED_FUCHSIA_CITY);
+        FlagSet(FLAG_VISITED_CELADON_CITY);
+        FlagSet(FLAG_VISITED_SAFFRON_CITY);
+        FlagSet(FLAG_VISITED_CINNABAR_ISLAND);
+        FlagSet(FLAG_VISITED_MT_SILVER);
     }
 }
 static void DebugAction_FlagsVars_ToggleBadgeFlags(u8 taskId)

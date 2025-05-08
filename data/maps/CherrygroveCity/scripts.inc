@@ -6,6 +6,7 @@ CherrygroveCity_MapScripts::
 
 CherryGroveCity_EventScript_TriggerGent_Top::
 	lock
+	setflag FLAG_VISITED_CHERRYGROVE_CITY
 	playse SE_PIN
 	applymovement LOCALID_GUIDE_GENT, Common_Movement_ExclamationMark
 	delay 60
@@ -25,6 +26,7 @@ CherryGroveCity_EventScript_TriggerGent_Top::
 
 CherryGroveCity_EventScript_TriggerGent_Mid::
 	lock
+	setflag FLAG_VISITED_CHERRYGROVE_CITY
 	playse SE_PIN
 	applymovement LOCALID_GUIDE_GENT, Common_Movement_ExclamationMark
 	delay 60
@@ -43,6 +45,7 @@ CherryGroveCity_EventScript_TriggerGent_Mid::
 
 CherryGroveCity_EventScript_TriggerGent_Bottom::
 	lock
+	setflag FLAG_VISITED_CHERRYGROVE_CITY
 	playse SE_PIN
 	applymovement LOCALID_GUIDE_GENT, Common_Movement_ExclamationMark
 	delay 60

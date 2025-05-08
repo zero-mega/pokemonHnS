@@ -16285,15 +16285,15 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Vincent[] = { //HikerGro
 
 static const struct TrainerMonNoItemDefaultMoves sParty_Anthony[] = { //HikerGroup
     {
-    .iv = 0,
-    .lvl = 25,
-    .species = SPECIES_GRAVELER,
-    },
-    {
-    .iv = 0,
-    .lvl = 25,
-    .species = SPECIES_MACHOKE,
-    },
+        .iv = 0,
+        .lvl = 11,
+        .species = SPECIES_GEODUDE,
+        },
+        {
+        .iv = 0,
+        .lvl = 11,
+        .species = SPECIES_MACHOP,
+        },
 };
 
 
@@ -16347,13 +16347,13 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Leonard[] = { //HikerGro
 static const struct TrainerMonNoItemDefaultMoves sParty_Anthony2[] = { //HikerGroup
     {
     .iv = 0,
-    .lvl = 11,
-    .species = SPECIES_GEODUDE,
+    .lvl = 25,
+    .species = SPECIES_GRAVELER,
     },
     {
     .iv = 0,
-    .lvl = 11,
-    .species = SPECIES_MACHOP,
+    .lvl = 25,
+    .species = SPECIES_MACHOKE,
     },
 };
 

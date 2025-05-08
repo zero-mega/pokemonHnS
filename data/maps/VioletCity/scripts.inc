@@ -22,6 +22,7 @@ VioletCity_EventScript_Trigger::
 
 	setflag FLAG_HIDE_TRAINER_SCHOOL_EARL
 	setflag FLAG_HIDE_VIOLET_CITY_AIDE
+	setflag FLAG_VISITED_VIOLET_CITY
 	
 	setvar VAR_SPROUT_TOWER, 0
 	setvar VAR_VIOLET_CITY_STATE, 1
