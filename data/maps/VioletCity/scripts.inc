@@ -16,6 +16,7 @@ VioletCity_EventScript_Trigger::
 	clearflag FLAG_HIDE_SUDOWOODO
 	clearflag FLAG_GOT_HARD_STONE
 	clearflag FLAG_GOT_POISON_BARB
+	clearflag FLAG_HIDE_UNION_CAVE_LAPRAS
 	setvar VAR_SLOWPOKE_TAIL, 0
 	
 

@@ -119,23 +119,23 @@ enum {
 // In CursorCb_FieldMove, field moves <= FIELD_MOVE_WATERFALL are assumed to line up with the badge flags.
 // Badge flag names are commented here for people searching for references to remove the badge requirement.
 enum {
-    FIELD_MOVE_FLASH,  // FLAG_BADGE01_GET
-    FIELD_MOVE_CUT,    // FLAG_BADGE02_GET
-    FIELD_MOVE_STRENGTH,    // FLAG_BADGE03_GET
-    FIELD_MOVE_SURF,   // FLAG_BADGE04_GET 
-    FIELD_MOVE_FLY,     // FLAG_BADGE05_GET
-    FIELD_MOVE_NONE,         // FLAG_BADGE06_GET //CRYSTAL
-    FIELD_MOVE_DIVE,       // FLAG_BADGE07_GET
+    FIELD_MOVE_CUT,         // FLAG_BADGE01_GET
+    FIELD_MOVE_FLASH,       // FLAG_BADGE02_GET
+    FIELD_MOVE_ROCK_SMASH,  // FLAG_BADGE03_GET
+    FIELD_MOVE_STRENGTH,    // FLAG_BADGE04_GET
+    FIELD_MOVE_SURF,        // FLAG_BADGE05_GET
+    FIELD_MOVE_FLY,         // FLAG_BADGE06_GET
+    FIELD_MOVE_DIVE,        // FLAG_BADGE07_GET
     FIELD_MOVE_WATERFALL,   // FLAG_BADGE08_GET
     FIELD_MOVE_TELEPORT,
     FIELD_MOVE_DIG,
-    FIELD_MOVE_ROCK_SMASH,
     FIELD_MOVE_SECRET_POWER,
     FIELD_MOVE_MILK_DRINK,
     FIELD_MOVE_SOFT_BOILED,
     FIELD_MOVE_SWEET_SCENT,
     FIELD_MOVES_COUNT
 };
+
 
 enum {
     PARTY_BOX_LEFT_COLUMN,
@@ -3790,64 +3790,102 @@ static void CursorCb_FieldMove(u8 taskId)
 
         gTasks[taskId].func = Task_CancelAfterAorBPress;
     }
-    else
-    {
-        // All field moves before WATERFALL are HMs.
-        if (fieldMove <= FIELD_MOVE_WATERFALL && FlagGet(FLAG_BADGE01_GET + fieldMove) != TRUE)
-        {
-            DisplayPartyMenuMessage(gText_CantUseUntilNewBadge, TRUE);
-            gTasks[taskId].func = Task_ReturnToChooseMonAfterText;
-        }
-        else if (sFieldMoveCursorCallbacks[fieldMove].fieldMoveFunc() == TRUE)
-        {
-            switch (fieldMove)
-            {
-            case FIELD_MOVE_MILK_DRINK:
-            case FIELD_MOVE_SOFT_BOILED:
-                ChooseMonForSoftboiled(taskId);
-                break;
-            case FIELD_MOVE_TELEPORT:
-                mapHeader = Overworld_GetMapHeaderByGroupAndId(gSaveBlock1Ptr->lastHealLocation.mapGroup, gSaveBlock1Ptr->lastHealLocation.mapNum);
-                GetMapNameGeneric(gStringVar1, mapHeader->regionMapSectionId);
-                StringExpandPlaceholders(gStringVar4, gText_ReturnToHealingSpot);
-                DisplayFieldMoveExitAreaMessage(taskId);
-                sPartyMenuInternal->data[0] = fieldMove;
-                break;
-            case FIELD_MOVE_DIG:
-                mapHeader = Overworld_GetMapHeaderByGroupAndId(gSaveBlock1Ptr->escapeWarp.mapGroup, gSaveBlock1Ptr->escapeWarp.mapNum);
-                GetMapNameGeneric(gStringVar1, mapHeader->regionMapSectionId);
-                StringExpandPlaceholders(gStringVar4, gText_EscapeFromHere);
-                DisplayFieldMoveExitAreaMessage(taskId);
-                sPartyMenuInternal->data[0] = fieldMove;
-                break;
-            case FIELD_MOVE_FLY:
-                gPartyMenu.exitCallback = CB2_OpenFlyMap;
-                Task_ClosePartyMenu(taskId);
-                break;
-            default:
-                gPartyMenu.exitCallback = CB2_ReturnToField;
-                Task_ClosePartyMenu(taskId);
-                break;
-            }
-        }
-        // Cant use Field Move
         else
         {
-            switch (fieldMove)
+            if (fieldMove <= FIELD_MOVE_WATERFALL)
             {
-            case FIELD_MOVE_SURF:
-                DisplayCantUseSurfMessage();
-                break;
-            case FIELD_MOVE_FLASH:
-                DisplayCantUseFlashMessage();
-                break;
-            default:
-                DisplayPartyMenuStdMessage(sFieldMoveCursorCallbacks[fieldMove].msgId);
-                break;
+                bool8 hasBadge = FALSE;
+
+                switch (fieldMove)
+                {
+                case FIELD_MOVE_ROCK_SMASH:
+                    hasBadge = FlagGet(FLAG_BADGE01_GET);
+                    break;
+                case FIELD_MOVE_FLASH:
+                    hasBadge = FlagGet(FLAG_BADGE01_GET);
+                    break;    
+                case FIELD_MOVE_CUT:
+                    hasBadge = FlagGet(FLAG_BADGE02_GET);
+                    break;
+                case FIELD_MOVE_STRENGTH:
+                    hasBadge = FlagGet(FLAG_BADGE03_GET);
+                    break;
+                case FIELD_MOVE_SURF:
+                    hasBadge = FlagGet(FLAG_BADGE04_GET);
+                    break;
+                case FIELD_MOVE_FLY:
+                    hasBadge = FlagGet(FLAG_BADGE05_GET);
+                    break;
+                case FIELD_MOVE_DIVE:
+                    hasBadge = FlagGet(FLAG_BADGE07_GET);
+                    break;
+                case FIELD_MOVE_WATERFALL:
+                    hasBadge = FlagGet(FLAG_BADGE08_GET);
+                    break;
+                default:
+                    hasBadge = FALSE;
+                    break;
+                }
+
+                if (!hasBadge)
+                {
+                    DisplayPartyMenuMessage(gText_CantUseUntilNewBadge, TRUE);
+                    gTasks[taskId].func = Task_ReturnToChooseMonAfterText;
+                    return;
+                }
             }
-            gTasks[taskId].func = Task_CancelAfterAorBPress;
-        }
+
+            // Now process the move if the badge check (if any) passed
+            if (sFieldMoveCursorCallbacks[fieldMove].fieldMoveFunc() == TRUE)
+            {
+                switch (fieldMove)
+                {
+                case FIELD_MOVE_MILK_DRINK:
+                case FIELD_MOVE_SOFT_BOILED:
+                    ChooseMonForSoftboiled(taskId);
+                    break;
+                case FIELD_MOVE_TELEPORT:
+                    mapHeader = Overworld_GetMapHeaderByGroupAndId(gSaveBlock1Ptr->lastHealLocation.mapGroup, gSaveBlock1Ptr->lastHealLocation.mapNum);
+                    GetMapNameGeneric(gStringVar1, mapHeader->regionMapSectionId);
+                    StringExpandPlaceholders(gStringVar4, gText_ReturnToHealingSpot);
+                    DisplayFieldMoveExitAreaMessage(taskId);
+                    sPartyMenuInternal->data[0] = fieldMove;
+                    break;
+                case FIELD_MOVE_DIG:
+                    mapHeader = Overworld_GetMapHeaderByGroupAndId(gSaveBlock1Ptr->escapeWarp.mapGroup, gSaveBlock1Ptr->escapeWarp.mapNum);
+                    GetMapNameGeneric(gStringVar1, mapHeader->regionMapSectionId);
+                    StringExpandPlaceholders(gStringVar4, gText_EscapeFromHere);
+                    DisplayFieldMoveExitAreaMessage(taskId);
+                    sPartyMenuInternal->data[0] = fieldMove;
+                    break;
+                case FIELD_MOVE_FLY:
+                    gPartyMenu.exitCallback = CB2_OpenFlyMap;
+                    Task_ClosePartyMenu(taskId);
+                    break;
+                default:
+                    gPartyMenu.exitCallback = CB2_ReturnToField;
+                    Task_ClosePartyMenu(taskId);
+                    break;
+                }
+            }
+            else
+            {
+                switch (fieldMove)
+                {
+                case FIELD_MOVE_SURF:
+                    DisplayCantUseSurfMessage();
+                    break;
+                case FIELD_MOVE_FLASH:
+                    DisplayCantUseFlashMessage();
+                    break;
+                default:
+                    DisplayPartyMenuStdMessage(sFieldMoveCursorCallbacks[fieldMove].msgId);
+                    break;
+                }
+                gTasks[taskId].func = Task_CancelAfterAorBPress;
+            }
     }
+
 }
 
 static void DisplayFieldMoveExitAreaMessage(u8 taskId)

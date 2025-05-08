@@ -1,6 +1,11 @@
 AzaleaTown_MapScripts::
 	.byte 0
 
+AzaleaTown_EventScript_Trigger::
+
+	setvar VAR_AZALEA_TOWN_STATE, 1
+	end
+
 AzaleaTown_Text_RivalBefore:
 	.string "…Tell me something.\p"
 	.string "Is it true that TEAM ROCKET\n"

@@ -76,5 +76,4 @@ VioletCityHouse1_Text_PokefanM:
 	.string "A POKéMON you get in a trade\n"
 	.string "grows quickly.\p"
 	.string "But if you don't have the right\n"
-	.string "GYM BADGE, they may disobey\n"
-	.string "you.$"
+	.string "GYM BADGE, they may disobey you.$"
