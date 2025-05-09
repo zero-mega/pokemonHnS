@@ -57,6 +57,7 @@ Route36_EventScript_Arthur::
 	case 4, Route36_EventScript_ArthurYes
 	case 5, Route36_EventScript_ArthurNope
 	case 6, Route36_EventScript_ArthurNope
+	case 7, Route36_EventScript_ArthurCancel
 	case MULTI_B_PRESSED, Route36_EventScript_ArthurCancel
 	closemessage
 	release

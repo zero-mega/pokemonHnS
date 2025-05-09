@@ -1,3 +1,14 @@
+gBirchDexRatingText_GoFindMrPokemon::
+	.string "PROF. ELM: Ah, {PLAYER}{KUN}!\p"
+	.string "Have you found MR. POKéMON's\n"
+	.string "home yet? It is on ROUTE 30,\p"
+	.string "you can't miss it!$"
+
+gBirchDexRatingText_Robbery::
+	.string "PROF. ELM: {PLAYER}{KUN}!\p"
+	.string "Get here quick! Something\n"
+	.string "awful has happened!$"
+
 gBirchDexRatingText_AreYouCurious::
 	.string "PROF. ELM: Ah, {PLAYER}{KUN}!\p"
 	.string "Are you curious about how your\n"

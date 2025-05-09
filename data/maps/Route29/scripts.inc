@@ -63,6 +63,7 @@ Route29_EventScript_Tuscany::
 	case 4, Route29_EventScript_TuscanyNope
 	case 5, Route29_EventScript_TuscanyNope
 	case 6, Route29_EventScript_TuscanyNope
+	case 7 Route29_EventScript_TuscanyCancel
 	case MULTI_B_PRESSED, Route29_EventScript_TuscanyCancel
 	closemessage
 	release

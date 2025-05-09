@@ -66,6 +66,7 @@ MrPokemonHouse_EventScript_GiveEgg::
 	setrespawn HEAL_LOCATION_CHERRYGROVE_CITY
 	clearflag FLAG_HIDE_SILVER_CHERRYGROVE
 	setflag FLAG_HIDE_GUIDE_GENT_CHERRYGROVE
+	clearflag FLAG_HIDE_CHERRYGROVE_GUIDE_GENT_HOUSE
 
 	release
 	end

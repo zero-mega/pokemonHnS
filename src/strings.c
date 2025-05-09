@@ -1277,13 +1277,13 @@ const u8 gText_Thursday[] = _("THURSDAY");
 const u8 gText_Friday[] = _("FRIDAY");
 const u8 gText_Saturday[] = _("SATURDAY");
 
-const u8 gText_LoveBall[] = _("LOVE");
-const u8 gText_Lure[] = _("LURE");
-const u8 gText_FriendBall[] = _("FRIEND");
-const u8 gText_Heavy[] = _("HEAVY");
-const u8 gText_Moon[] = _("MOON");
-const u8 gText_Fast[] = _("FAST");
-const u8 gText_LevelBall[] = _("LEVEL");
+const u8 gText_LoveBall[] =     _("LOVE    / PECHA  / (FRY/PSY)");
+const u8 gText_Lure[] =         _("LURE    / RAWST  / (WTR/DRG)");
+const u8 gText_FriendBall[] =   _("FRIEND / CHERI  / (BUG/GRS)");
+const u8 gText_Heavy[] =        _("HEAVY   / ORAN   / (RCK/GND/STL)");
+const u8 gText_Moon[] =         _("MOON    / CHESTO / (DRK/GST/PSN)");
+const u8 gText_Fast[] =         _("FAST    / ASPEAR / (ELC/FIG/FIR)");
+const u8 gText_LevelBall[] =    _("LEVEL  / PERSIM / (NRM/FLY/ICE)");
 
 ALIGNED(4) const u8 gText_FacilitySingle[] = _("{STR_VAR_1} SINGLE");
 ALIGNED(4) const u8 gText_FacilityDouble[] = _("{STR_VAR_1} DOUBLE");

@@ -105,7 +105,7 @@
 #define VAR_COMPLETED_LUGIA                             0x4055 // Lugia trigger
 #define VAR_COMPLETED_HO_OH                             0x4056 // Ho-oh trigger
 #define VAR_VIOLET_CITY_STATE                         0x4057 //0 on trigger, 1 when done
-#define VAR_AZALEA_TOWN_STATE                        0x4058
+#define VAR_AZALEA_TOWN_STATE                        0x4058 //0 on trigger, 1 = talk to kurt, 2 = goto well, 3 = goto kurt well, 4 = goto gym, 5 = fight silver, 6 = find farfetchd, 7 = bringGSBall, 8 = GoOutside, 9 = Celebi, 10 = done
 #define VAR_GOLDENROD_CITY_STATE                          0x4059 
 #define VAR_ECRUTEAK_CITY_STATE                          0x405A
 #define VAR_MAHOGANY_TOWN_STATE                           0x405B 
@@ -123,8 +123,8 @@
 #define VAR_SAFFRON_CITY_STATE                               0x4067 
 #define VAR_FUCHSIA_CITY_STATE                               0x4068 
 #define VAR_SPROUT_TOWER                               0x4069
-#define VAR_SLOWPOKE_TAIL                               0x406A // Unused Var
-#define VAR_GARBAGEVAR5                               0x406B // Unused Var
+#define VAR_VIOLET_CITY_KIMONO_GIRL                               0x406A // Unused Var
+#define VAR_SLOWPOKE_TAIL                               0x406B // Unused Var
 #define VAR_GARBAGEVAR6                               0x406C // Unused Var
 #define VAR_ROUTE114_STATE                               0x406D // Unused Var
 #define VAR_ROUTE115_STATE                               0x406E // Unused Var

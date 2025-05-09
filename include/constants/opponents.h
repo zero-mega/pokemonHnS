@@ -863,7 +863,7 @@
 #define TRAINER_CHANSEY5                    859 //85B
 #define TRAINER_SIDNEY2                     860 //85C
 #define TRAINER_PHOEBE2                     861 //85D
-#define TRAINER_GLACIA2                     862 //85E
+#define TRAINER_PROTON_1                     862 //85E
 #define TRAINER_KIP2                      863 //85F
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows

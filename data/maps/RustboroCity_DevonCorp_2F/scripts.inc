@@ -441,7 +441,7 @@ RustboroCity_DevonCorp_2F_EventScript_FinishReceivingOmanyte::
 
 RustboroCity_DevonCorp_2F_EventScript_ReceiveKabuto::
 	setvar VAR_TEMP_1, SPECIES_KABUTO
-	givemon SPECIES_KABUTO, 20
+	givemon SPECIES_KABUTO, 5
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, RustboroCity_DevonCorp_2F_EventScript_ReceiveKabutoParty
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, RustboroCity_DevonCorp_2F_EventScript_ReceiveKabutoPC
 	goto Common_EventScript_NoMoreRoomForPokemon

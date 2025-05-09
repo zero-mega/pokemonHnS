@@ -742,7 +742,7 @@
 #define FLAG_UNUSED_0x2BB  0x2BB // Unused Flag
 
 // Event Flags
-#define FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG                      0x2BC
+#define FLAG_GARBAGEFLAG_STARTERS_BAG                      0x2BC
 #define FLAG_HIDE_APPRENTICE                                        0x2BD
 #define FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN                0x2BE
 #define FLAG_HIDE_UNION_ROOM_PLAYER_1                               0x2BF
@@ -762,7 +762,7 @@
 #define FLAG_HIDE_SAFARI_ZONE_SOUTH_CONSTRUCTION_WORKERS            0x2CD
 #define FLAG_HIDE_MEW                                               0x2CE
 #define FLAG_HIDE_ROUTE_104_RIVAL                                   0x2CF
-#define FLAG_HIDE_ROUTE_101_BIRCH_ZIGZAGOON_BATTLE                  0x2D0
+#define FLAG_GARBAGEFLAG_ZIGZAGOON_BATTLE                  0x2D0
 #define FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_BIRCH                  0x2D1
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_BEDROOM          0x2D2
 #define FLAG_HIDE_ROUTE_103_RIVAL                                   0x2D3
@@ -937,19 +937,19 @@
 #define FLAG_HIDE_VIOLET_CITY_AIDE                               0x37A
 #define FLAG_HIDE_SPROUT_TOWER_SILVER                               0x37B
 #define FLAG_HIDE_JOHTO_GYM_LEADERS                      0x37C
-#define FLAG_HIDE_WEATHER_INSTITUTE_2F_WORKERS                      0x37D
-#define FLAG_HIDE_ROUTE_116_WANDAS_BOYFRIEND                        0x37E
-#define FLAG_HIDE_LILYCOVE_CONTEST_HALL_CONTEST_ATTENDANT_2         0x37F
-#define FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_UNKNOWN_0x380          0x380
-#define FLAG_HIDE_ROUTE_101_BIRCH                                   0x381
-#define FLAG_HIDE_ROUTE_103_BIRCH                                   0x382
-#define FLAG_HIDE_TRICK_HOUSE_END_MAN                               0x383
-#define FLAG_HIDE_ROUTE_110_TEAM_AQUA                               0x384
-#define FLAG_HIDE_ROUTE_118_GABBY_AND_TY_2                          0x385
-#define FLAG_HIDE_ROUTE_120_GABBY_AND_TY_2                          0x386
-#define FLAG_HIDE_ROUTE_111_GABBY_AND_TY_2                          0x387
-#define FLAG_HIDE_ROUTE_118_GABBY_AND_TY_3                          0x388
-#define FLAG_HIDE_SLATEPORT_CITY_HARBOR_PATRONS                     0x389
+#define FLAG_HIDE_AZALEA_TOWN_ROCKETS                      0x37D
+#define FLAG_HIDE_AZALEA_TOWN_SLOWPOKE                        0x37E
+#define FLAG_HIDE_AZALEA_TOWN_SILVER         0x37F
+#define FLAG_HIDE_AZALEA_TOWN_FARFETCHD          0x380
+#define FLAG_HIDE_ILEX_FOREST_FARFETCHD                                   0x381
+#define FLAG_HIDE_KURT_1                                   0x382
+#define FLAG_HIDE_KURT_2                               0x383
+#define FLAG_HIDE_AZALEA_TOWN_WELL_ROCKET                               0x384
+#define FLAG_HIDE_VIOLET_CITY_KIMONO_GIRL                          0x385
+#define FLAG_HIDE_CHERRYGROVE_GUIDE_GENT_HOUSE                          0x386
+#define FLAG_UNLOCKED_KURT_BALLS                          0x387
+#define FLAG_HIDE_AZALEA_TOWN_KURT                          0x388
+#define FLAG_HIDE_SLOWPOKE_WELL_KURT                     0x389
 #define FLAG_HIDE_ROUTE_104_WHITE_HERB_FLORIST                      0x38A
 #define FLAG_HIDE_FALLARBOR_AZURILL                                 0x38B
 #define FLAG_HIDE_LILYCOVE_HARBOR_FERRY_ATTENDANT                   0x38C
@@ -1261,12 +1261,12 @@
 #define FLAG_ITEM_UNION_CAVE_ETHER                                           0x4BA // Unused Flag
 #define FLAG_ITEM_UNION_CAVE_HYPERPOTION                                           0x4BB // Unused Flag
 #define FLAG_ITEM_UNION_CAVE_MAXREVIVE                                           0x4BC // Unused Flag
-#define FLAG_UNUSED_0x4BD                                           0x4BD // Unused Flag
-#define FLAG_UNUSED_0x4BE                                           0x4BE // Unused Flag
-#define FLAG_UNUSED_0x4BF                                           0x4BF // Unused Flag
-#define FLAG_UNUSED_0x4C0                                           0x4C0 // Unused Flag
-#define FLAG_UNUSED_0x4C1                                           0x4C1 // Unused Flag
-#define FLAG_UNUSED_0x4C2                                           0x4C2 // Unused Flag
+#define FLAG_ITEM_SLOWPOKE_WELL_SUPER_POTION                                           0x4BD // Unused Flag
+#define FLAG_ITEM_SLOWPOKE_WELL_SUPER_POTION2                                           0x4BE // Unused Flag
+#define FLAG_ITEM_SLOWPOKE_WELL_GREAT_BALL                                           0x4BF // Unused Flag
+#define FLAG_ITEM_SLOWPOKE_WELL_FULL_HEAL                                           0x4C0 // Unused Flag
+#define FLAG_ITEM_SLOWPOKE_WELL_KINGS_ROCK                                           0x4C1 // Unused Flag
+#define FLAG_ITEM_SLOWPOKE_WELL_RAIN_DANCE                                          0x4C2 // Unused Flag
 #define FLAG_UNUSED_0x4C3                                           0x4C3 // Unused Flag
 #define FLAG_UNUSED_0x4C4                                           0x4C4 // Unused Flag
 #define FLAG_UNUSED_0x4C5                                           0x4C5 // Unused Flag

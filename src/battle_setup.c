@@ -1002,7 +1002,7 @@ static u8 GetTrainerBattleTransition(void)
             return B_TRANSITION_SIDNEY;
         if (gTrainerBattleOpponent_A == TRAINER_PHOEBE2)
             return B_TRANSITION_PHOEBE;
-        if (gTrainerBattleOpponent_A == TRAINER_GLACIA2)
+        if (gTrainerBattleOpponent_A == TRAINER_PHOEBE2)
             return B_TRANSITION_GLACIA;
         if (gTrainerBattleOpponent_A == TRAINER_KIP2)
             return B_TRANSITION_DRAKE;
@@ -1660,8 +1660,8 @@ void PlayTrainerEncounterMusic(void)
         case TRAINER_ENCOUNTER_MUSIC_COOL:
             music = MUS_ENCOUNTER_COOL;
             break;
-        case TRAINER_ENCOUNTER_MUSIC_AQUA:
-            music = MUS_ENCOUNTER_AQUA;
+        case TRAINER_ENCOUNTER_MUSIC_ROCKET:
+            music = MUS_HG_ENCOUNTER_ROCKET;
             break;
         case TRAINER_ENCOUNTER_MUSIC_MAGMA:
             music = MUS_ENCOUNTER_MAGMA;

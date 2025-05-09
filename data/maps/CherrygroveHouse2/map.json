@@ -25,7 +25,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "CherrygroveCity_House2_EventScript_GuideGent",
-      "flag": "0"
+      "flag": "FLAG_HIDE_CHERRYGROVE_GUIDE_GENT_HOUSE"
     }
   ],
   "warp_events": [

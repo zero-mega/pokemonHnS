@@ -1025,6 +1025,8 @@ static const struct MatchCallText *const sMatchCallGeneralTopics[] =
 extern const u8 gBirchDexRatingText_AreYouCurious[];
 extern const u8 gBirchDexRatingText_SoYouveSeenAndCaught[];
 extern const u8 gBirchDexRatingText_OnANationwideBasis[];
+extern const u8 gBirchDexRatingText_GoFindMrPokemon[];
+extern const u8 gBirchDexRatingText_Robbery[];
 
 void InitMatchCallCounters(void)
 {
@@ -2069,6 +2071,19 @@ void BufferPokedexRatingForMatchCall(u8 *destStr)
     u8 *str;
     u8 dexRatingLevel;
 
+    //crystal Check if lab state is 3 — show Mr. Pokémon message only
+    if (VarGet(VAR_NEWBARKTOWN_LABSTATE) == 3)
+    {
+        StringCopy(destStr, gBirchDexRatingText_GoFindMrPokemon);
+        return;
+    }
+
+    if (VarGet(VAR_NEWBARKTOWN_LABSTATE) == 4)
+    {
+        StringCopy(destStr, gBirchDexRatingText_Robbery);
+        return;
+    }
+
     u8 *buffer = Alloc(sizeof(gStringVar4));
     if (!buffer)
     {
@@ -2100,6 +2115,7 @@ void BufferPokedexRatingForMatchCall(u8 *destStr)
 
     Free(buffer);
 }
+
 
 void LoadMatchCallWindowGfx(u32 windowId, u32 destOffset, u32 paletteId)
 {

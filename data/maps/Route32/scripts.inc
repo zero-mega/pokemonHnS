@@ -148,6 +148,7 @@ Route32_EventScript_Frieda::
 	case 4, Route32_EventScript_FriedaNope
 	case 5, Route32_EventScript_FriedaYes
 	case 6, Route32_EventScript_FriedaNope
+	case 7, Route32_EventScript_FriedaCancel
 	case MULTI_B_PRESSED, Route32_EventScript_FriedaCancel
 	closemessage
 	release

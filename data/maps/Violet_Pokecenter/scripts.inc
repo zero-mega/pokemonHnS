@@ -37,6 +37,8 @@ Violet_Pokecenter_EventScript_Aide_Accepted::
 	giveegg SPECIES_TOGEPI
 	setflag FLAG_RECEIVED_TOGEPI_EGG
 	setflag FLAG_HIDE_VIOLET_CITY_AIDE
+	setvar VAR_VIOLET_CITY_KIMONO_GIRL, 1
+	clearflag FLAG_HIDE_VIOLET_CITY_KIMONO_GIRL
 	release
 	end
 

@@ -6454,10 +6454,10 @@
     {
       "id": "LAYOUT_AZALEA_KURTS_HOUSE",
       "name": "AzaleaKurtsHouse_Layout",
-      "width": 17,
+      "width": 25,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_BikeShop",
+      "secondary_tileset": "gTileset_KurtsHouse",
       "border_filepath": "data/layouts/AzaleaKurtsHouse/border.bin",
       "blockdata_filepath": "data/layouts/AzaleaKurtsHouse/map.bin"
     },
@@ -6807,7 +6807,7 @@
       "width": 11,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_R26_21",
+      "secondary_tileset": "gTileset_Barn",
       "border_filepath": "data/layouts/AzaleaHouse1/border.bin",
       "blockdata_filepath": "data/layouts/AzaleaHouse1/map.bin"
     },

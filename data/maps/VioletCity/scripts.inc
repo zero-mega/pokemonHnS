@@ -1,7 +1,13 @@
 .set LOCALID_VIOLETCITY_EARL, 4
+.set LOCALID_VIOLET_KIMONO, 31
 
 VioletCity_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, VioletCity_OnFrame
 	.byte 0
+
+VioletCity_OnFrame::
+	map_script_2 VAR_VIOLET_CITY_KIMONO_GIRL, 1, VioletCity_EventScript_Kimono_Girl
+	.2byte 0
 
 VioletCity_EventScript_Trigger::
 	@LOCAL FLAGHEAP
@@ -18,11 +24,14 @@ VioletCity_EventScript_Trigger::
 	clearflag FLAG_GOT_POISON_BARB
 	clearflag FLAG_HIDE_UNION_CAVE_LAPRAS
 	setvar VAR_SLOWPOKE_TAIL, 0
+	setvar VAR_VIOLET_CITY_KIMONO_GIRL, 0
+
 	
 
 	setflag FLAG_HIDE_TRAINER_SCHOOL_EARL
 	setflag FLAG_HIDE_VIOLET_CITY_AIDE
 	setflag FLAG_VISITED_VIOLET_CITY
+	setflag FLAG_HIDE_VIOLET_CITY_KIMONO_GIRL
 	
 	setvar VAR_SPROUT_TOWER, 0
 	setvar VAR_VIOLET_CITY_STATE, 1
@@ -81,7 +90,7 @@ VioletCity_EventScript_EarlTrainerSchoolTransition:
 	turnobject LOCALID_VIOLETCITY_EARL, DIR_WEST
 	msgbox VioletCity_Text_HereTeacherIAm, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_VIOLETCITY_EARL, VioletCityMovement_Earl_Walk_Inside
+	applymovement LOCALID_VIOLETCITY_EARL, VioletCity_Movement_Earl_Walk_Inside
 	delay 20
 	opendoor 39, 36
 	waitdooranim
@@ -165,6 +174,39 @@ VioletCity_EventScript_ElmCall_Trigger::
 	setvar VAR_VIOLET_CITY_STATE, 4
 	release
 	end
+
+VioletCity_EventScript_Kimono_Girl::
+	lock
+	playbgm MUS_HG_KIMONO_GIRL, TRUE
+	playse SE_PIN
+	applymovement LOCALID_VIOLET_KIMONO, Common_Movement_ExclamationMark
+	delay 60
+	applymovement LOCALID_VIOLET_KIMONO, VioletCity_Movement_Kimono_Girl_1
+	waitmovement 0
+	msgbox VioletCity_Text_Kimono_Girl1, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_VIOLET_KIMONO, VioletCity_Movement_Kimono_Girl_2
+	waitmovement 0
+	msgbox VioletCity_Text_Kimono_Girl2, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_VIOLET_KIMONO, VioletCity_Movement_Kimono_Girl_3
+	waitmovement 0
+	msgbox VioletCity_Text_Kimono_Girl3, MSGBOX_DEFAULT
+	closemessage
+	playse SE_M_PETAL_DANCE
+	applymovement LOCALID_VIOLET_KIMONO, VioletCity_Movement_Kimono_Girl_4
+	waitmovement 0
+	msgbox VioletCity_Text_Kimono_Girl4, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_VIOLET_KIMONO, VioletCity_Movement_Kimono_Girl_5
+	waitmovement 0
+	fadedefaultbgm
+	setvar VAR_VIOLET_CITY_KIMONO_GIRL, 2
+	setflag FLAG_HIDE_VIOLET_CITY_KIMONO_GIRL
+	removeobject LOCALID_VIOLET_KIMONO
+	release
+	end
+
 
 VioletCity_EventScript_ItemRareCandy::
 	finditem ITEM_RARE_CANDY
@@ -268,10 +310,65 @@ VioletCity_Movement_Walk_To_School_Player:
 	walk_right
 	step_end
 
-VioletCityMovement_Earl_Walk_Inside:
+VioletCity_Movement_Earl_Walk_Inside:
 	walk_up
 	walk_up
 	step_end
+
+VioletCity_Movement_Kimono_Girl_1:
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	face_up
+	step_end
+
+VioletCity_Movement_Kimono_Girl_2:
+	walk_up
+	step_end
+
+VioletCity_Movement_Kimono_Girl_3:
+	lock_facing_direction
+	walk_down
+	unlock_facing_direction
+	step_end
+
+VioletCity_Movement_Kimono_Girl_4:
+	face_right
+	delay_8
+	face_down
+	delay_8
+	face_left
+	delay_8
+	face_up
+	delay_8
+	face_right
+	delay_8
+	face_down
+	delay_8
+	face_left
+	delay_8
+	face_up
+	delay_8
+	step_end
+
+VioletCity_Movement_Kimono_Girl_5:
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	step_end	
+
 
 VioletCity_Text_EarlAsksIfYouBeatFalkner:
 	.string "Hello!\n"
@@ -347,3 +444,24 @@ VioletCity_Text_Elm_Call:
 	.string "My assistant is at the POKéMON\n"
 	.string "CENTER in VIOLET CITY.\p"
 	.string "Could you talk to him?$"
+
+VioletCity_Text_Kimono_Girl1:
+.string "Me oh my...\n"
+.string "That Egg must be...!$"
+
+VioletCity_Text_Kimono_Girl2:
+.string "I see...\p"
+.string "So it was handed from Mr. Pokémon\n"
+.string "to Professor Elm, then from \p"
+.string "Professor Elm to you.\p"
+.string "Now I get it...$"
+
+VioletCity_Text_Kimono_Girl3:
+.string "That Egg is truly an important Egg.\p"
+.string "Please do take good care of it\n"
+.string "for me. Is that understood?$"
+
+VioletCity_Text_Kimono_Girl4:
+.string "I am counting on you.$"
+
+

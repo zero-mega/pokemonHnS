@@ -56,6 +56,7 @@ SproutTower3_EventScript_TriggerSceneLeft::
 	msgbox SproutTower_Text_RivalUsedEscapeRope, MSGBOX_DEFAULT
 	closemessage
 	fadescreen FADE_TO_BLACK
+	playse SE_EXIT
 	setflag FLAG_HIDE_SPROUT_TOWER_SILVER
 	removeobject LOCALID_SPROUT_TOWER_SILVER
 	delay 55
@@ -83,6 +84,7 @@ SproutTower3_EventScript_TriggerSceneRight::
 	msgbox SproutTower_Text_RivalUsedEscapeRope, MSGBOX_DEFAULT
 	closemessage
 	fadescreen FADE_TO_BLACK
+	playse SE_EXIT
 	setflag FLAG_HIDE_SPROUT_TOWER_SILVER
 	removeobject LOCALID_SPROUT_TOWER_SILVER
 	delay 55

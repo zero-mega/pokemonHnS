@@ -14368,12 +14368,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Grunt20[] = { //TeamRock
 static const struct TrainerMonNoItemDefaultMoves sParty_Grunt21[] = { //TeamRocketGroup
     {
     .iv = 0,
-    .lvl = 15,
+    .lvl = 9,
     .species = SPECIES_RATTATA,
     },
     {
     .iv = 0,
-    .lvl = 15,
+    .lvl = 11,
     .species = SPECIES_RATTATA,
     },
 };

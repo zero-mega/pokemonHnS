@@ -30,20 +30,20 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "AzaleaTown_EventScript_Rocket1",
+      "flag": "FLAG_HIDE_AZALEA_TOWN_WELL_ROCKET"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_1",
       "x": 35,
       "y": 14,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_WANDER_RIGHT_AND_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "AzaleaTown_EventScript_Gramps",
       "flag": "0"
     },
     {
@@ -56,47 +56,47 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "AzaleaTown_EventScript_Rocket2",
+      "flag": "FLAG_HIDE_AZALEA_TOWN_ROCKETS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
-      "x": 13,
-      "y": 15,
+      "x": 12,
+      "y": 21,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "AzaleaTown_EventScript_Youngster",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LASS",
-      "x": 22,
-      "y": 16,
+      "x": 23,
+      "y": 20,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "AzaleaTown_EventScript_Lass",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SILVER",
-      "x": 21,
+      "x": 19,
       "y": 16,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HIDE_AZALEA_TOWN_SILVER"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_EKANS",
@@ -134,8 +134,8 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "AzaleaTown_EventScript_Slowpoke",
+      "flag": "FLAG_HIDE_AZALEA_TOWN_SLOWPOKE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SLOWPOKE_NO_TAIL",
@@ -147,8 +147,8 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "AzaleaTown_EventScript_Slowpoke",
+      "flag": "FLAG_HIDE_AZALEA_TOWN_SLOWPOKE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SLOWPOKE_NO_TAIL",
@@ -160,8 +160,8 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "AzaleaTown_EventScript_Slowpoke",
+      "flag": "FLAG_HIDE_AZALEA_TOWN_SLOWPOKE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SLOWPOKE_NO_TAIL",
@@ -173,8 +173,8 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "AzaleaTown_EventScript_Slowpoke",
+      "flag": "FLAG_HIDE_AZALEA_TOWN_SLOWPOKE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_SCYTHER",
@@ -220,13 +220,13 @@
       "x": 36,
       "y": 14,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_type": "MOVEMENT_TYPE_WANDER_RIGHT_AND_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "AzaleaTown_EventScript_Slowpoke",
+      "flag": "FLAG_HIDE_AZALEA_TOWN_SLOWPOKE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
@@ -240,6 +240,19 @@
       "trainer_sight_or_berry_tree_id": "BERRY_TREE_PECHA_2",
       "script": "BerryTreeScript",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_KURT",
+      "x": 15,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_AZALEA_TOWN_KURT"
     }
   ],
   "warp_events": [
@@ -294,9 +307,73 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_AZALEA_TOWN_STATE",
+      "var_value": "5",
+      "script": "AzaleaTown_EventScript_SilverTriggerTop"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 17,
+      "elevation": 0,
+      "var": "VAR_AZALEA_TOWN_STATE",
+      "var_value": "5",
+      "script": "AzaleaTown_EventScript_SilverTriggerBot"
+    }
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 20,
+      "y": 23,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "AzaleaTown_EventScript_GymSign"
+    },
+    {
+      "type": "sign",
+      "x": 13,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "AzaleaTown_EventScript_KurtSign"
+    },
+    {
+      "type": "sign",
+      "x": 9,
+      "y": 15,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "AzaleaTown_EventScript_IlexSign"
+    },
+    {
+      "type": "sign",
+      "x": 27,
+      "y": 21,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "AzaleaTown_EventScript_KilnSign"
+    },
+    {
+      "type": "sign",
+      "x": 47,
+      "y": 12,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "AzaleaTown_EventScript_WellSign"
+    },
+    {
+      "type": "sign",
+      "x": 42,
+      "y": 21,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "AzaleaTown_EventScript_AzaleaSign"
+    }
   ]
 }

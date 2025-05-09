@@ -7,6 +7,7 @@ CherrygroveCity_MapScripts::
 CherryGroveCity_EventScript_TriggerGent_Top::
 	lock
 	setflag FLAG_VISITED_CHERRYGROVE_CITY
+	setflag FLAG_HIDE_CHERRYGROVE_GUIDE_GENT_HOUSE
 	playse SE_PIN
 	applymovement LOCALID_GUIDE_GENT, Common_Movement_ExclamationMark
 	delay 60
@@ -27,6 +28,7 @@ CherryGroveCity_EventScript_TriggerGent_Top::
 CherryGroveCity_EventScript_TriggerGent_Mid::
 	lock
 	setflag FLAG_VISITED_CHERRYGROVE_CITY
+	setflag FLAG_HIDE_CHERRYGROVE_GUIDE_GENT_HOUSE
 	playse SE_PIN
 	applymovement LOCALID_GUIDE_GENT, Common_Movement_ExclamationMark
 	delay 60
@@ -46,6 +48,7 @@ CherryGroveCity_EventScript_TriggerGent_Mid::
 CherryGroveCity_EventScript_TriggerGent_Bottom::
 	lock
 	setflag FLAG_VISITED_CHERRYGROVE_CITY
+	setflag FLAG_HIDE_CHERRYGROVE_GUIDE_GENT_HOUSE
 	playse SE_PIN
 	applymovement LOCALID_GUIDE_GENT, Common_Movement_ExclamationMark
 	delay 60
@@ -113,7 +116,8 @@ CherryGroveCity_EventScript_GentTour::
 	removeobject LOCALID_GUIDE_GENT
 	closedoor 42, 14
 	waitdooranim
-
+	
+	clearflag FLAG_HIDE_CHERRYGROVE_GUIDE_GENT_HOUSE
 	setflag FLAG_HIDE_GUIDE_GENT_CHERRYGROVE
 	setvar VAR_CHERRYGROVE_CITY_STATE, 1
 	fadedefaultbgm

@@ -1973,3 +1973,14 @@ const struct Tileset gTileset_HallOfFame =
     .metatileAttributes = gMetatileAttributes_HallOfFame,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_KurtsHouse =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_KurtsHouse,
+    .palettes = gTilesetPalettes_KurtsHouse,
+    .metatiles = gMetatiles_KurtsHouse,
+    .metatileAttributes = gMetatileAttributes_KurtsHouse,
+    .callback = NULL,
+};
