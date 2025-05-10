@@ -291,7 +291,6 @@ AzaleaKurtsHouse_EventScript_Kurt_Level::
 	release
 	end
 
-
 AzaleaKurtsHouse_EventScript_DontHaveBerry::
 	msgbox KurtsHouse_Text_KurtThatsALetdown, MSGBOX_DEFAULT
 	closemessage
@@ -349,7 +348,7 @@ AzaleaKurtsHouse_EventScript_CelebiStatue::
 	msgbox KurtsHouse_Text_CelebiStatue, MSGBOX_SIGN
 	closemessage
 	end
-	
+
 AzaleaTownKurt_Movement_Look_Around:
 	face_left
 	delay_8

@@ -276,7 +276,7 @@
 #define FLAG_RECEIVED_DURIN_BERRY            0xFB
 #define FLAG_RECEIVED_BELUE_BERRY            0xFC
 #define FLAG_ENABLE_RIVAL_MATCH_CALL         0xFD
-#define FLAG_RECEIVED_CHARCOAL               0xFE
+#define FLAG_GARBAGEFLAG4               0xFE
 #define FLAG_LATIOS_OR_LATIAS_ROAMING        0xFF
 #define FLAG_RECEIVED_REPEAT_BALL            0x100
 #define FLAG_RECEIVED_OLD_ROD                0x101
@@ -788,7 +788,7 @@
 #define FLAG_GOT_POISON_BARB                               0x2E5
 #define FLAG_HIDE_SUDOWOODO                          0x2E6
 #define FLAG_HIDE_UNION_CAVE_LAPRAS                       0x2E7
-#define FLAG_GARBAGEFLAG2                          0x2E8
+#define FLAG_GOT_CHARCOAL                          0x2E8
 #define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_BRENDAN            0x2E9
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_MAY                    0x2EA
 #define FLAG_HIDE_SAFARI_ZONE_SOUTH_EAST_EXPANSION                  0x2EB
@@ -950,12 +950,12 @@
 #define FLAG_UNLOCKED_KURT_BALLS                          0x387
 #define FLAG_HIDE_AZALEA_TOWN_KURT                          0x388
 #define FLAG_HIDE_SLOWPOKE_WELL_KURT                     0x389
-#define FLAG_HIDE_ROUTE_104_WHITE_HERB_FLORIST                      0x38A
-#define FLAG_HIDE_FALLARBOR_AZURILL                                 0x38B
-#define FLAG_HIDE_LILYCOVE_HARBOR_FERRY_ATTENDANT                   0x38C
-#define FLAG_HIDE_LILYCOVE_HARBOR_FERRY_SAILOR                      0x38D
-#define FLAG_HIDE_SOUTHERN_ISLAND_EON_STONE                         0x38E
-#define FLAG_HIDE_SOUTHERN_ISLAND_UNCHOSEN_EON_DUO_MON              0x38F
+#define FLAG_HIDE_ILEX_FOREST_FARFETCHD_1                      0x38A
+#define FLAG_HIDE_ILEX_FOREST_FARFETCHD_2                               0x38B
+#define FLAG_HIDE_ILEX_FOREST_FARFETCHD_3                   0x38C
+#define FLAG_HIDE_ILEX_FOREST_FARFETCHD_4                      0x38D
+#define FLAG_HIDE_ILEX_FOREST_APPRENTICE                         0x38E
+#define FLAG_HIDE_ILEX_FOREST_MASTER              0x38F
 #define FLAG_HIDE_MAUVILLE_CITY_WATTSON                             0x390
 #define FLAG_HIDE_MAUVILLE_GYM_WATTSON                              0x391
 #define FLAG_HIDE_ROUTE_121_TEAM_AQUA_GRUNTS                        0x392

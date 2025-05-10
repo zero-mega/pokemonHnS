@@ -7,6 +7,7 @@ callfunc ScrFunc_IsFollowerFieldMoveUser
 EventScript_CutTree::
 	lockall
 	goto_if_unset FLAG_BADGE02_GET, EventScript_CheckTreeCantCut
+	goto_if_unset FLAG_RECEIVED_HM_CUT, EventScript_CheckTreeCantCut
 	@checkpartymove MOVE_CUT
 	setvar VAR_RESULT, 0
 	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CheckTreeCantCut

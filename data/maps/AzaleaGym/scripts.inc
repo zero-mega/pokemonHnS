@@ -59,10 +59,13 @@ AzaleaGym_EventScript_Bugsy::
 	setflag FLAG_DEFEATED_AZALEA_GYM
 	setvar VAR_0x8008, 2
 	call Common_EventScript_SetGymTrainers
-	giveitem ITEM_TM_DOUBLE_TEAM
+	giveitem ITEM_TM_BULLET_SEED
 	msgbox AzaleaGym_Text_FuryCutterSpeech, MSGBOX_DEFAULT
 	setvar VAR_AZALEA_TOWN_STATE, 5
 	closemessage
+	setflag FLAG_HIDE_AZALEA_TOWN_FARFETCHD
+	clearflag FLAG_HIDE_ILEX_FOREST_APPRENTICE
+	clearflag FLAG_HIDE_ILEX_FOREST_FARFETCHD_1
 	release
 	end
 
@@ -73,16 +76,15 @@ AzaleaGym_EventScript_Bugsy_Defeated::
 	end
 
 AzaleaGym_Text_BugsyIntro:
-	.string "I'm BUGSY!\n"
+	.string "I'm BUGSY!\p"
 	.string "I never lose when it comes\n"
 	.string "to bug POKéMON.\p"
-	.string "My research is going to\n"
-	.string "make me the authority on\n"
-	.string "bug POKéMON!\p"
+	.string "My research is going to make me the\n"
+	.string "authority on bug POKéMON!\p"
 	.string "For example, did you know\n"
-	.string "that the move CUT is\n"
-	.string "actually a BUG-type move?\p"
-	.string "Let me demonstrate all I've\n"
+	.string "that the move CUT is\p"
+	.string "actually a BUG-type move?\n"
+	.string "Let me demonstrate all I've\p"
 	.string "learned from my studies.$"
 
 AzaleaGym_Text_BugsyBeaten:
@@ -102,18 +104,17 @@ AzaleaGym_Text_HiveBadgeSpeech:
 	.string "If you have it, POKéMON up\n"
 	.string "to L30 will obey you,\n"
 	.string "even traded ones.\p"
-	.string "POKéMON that know CUT will\n"
-	.string "be able to use it outside\n"
-	.string "of battle too.\p"
+	.string "POKéMON that know CUT will be able\n"
+	.string "to use it outside of battle too.\p"
 	.string "Here, I also want you to\n"
 	.string "have this.$"
 
 AzaleaGym_Text_FuryCutterSpeech:
-	.string "TM49 contains FURY CUTTER.\p"
-	.string "If you don't miss, it gets\n"
-	.string "stronger every turn.\p"
-	.string "The longer your battle goes,\n"
-	.string "the better it gets.\p"
+	.string "TM09 contains BULLET SEED.\p"
+	.string "It shoots a torrent of seeds\n"
+	.string "between 2 and 5 times every turn.\p"
+	.string "So even though the power is 20, it\n"
+	.string "is really between 40 and 100 power!\p"
 	.string "Isn't that great?\n"
 	.string "I discovered it!$"
 
@@ -218,7 +219,7 @@ AzaleaGym_Text_GymGuide:
 
 AzaleaGym_Text_GymGuideWin:
 	.string "Well done! That was a great\n"
-	.string "clash of talented young\n"
+	.string "clash of talented young\p"
 	.string "trainers.\p"
 	.string "With people like you, the\n"
 	.string "future of POKéMON is bright!$"

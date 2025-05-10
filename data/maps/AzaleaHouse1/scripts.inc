@@ -4,6 +4,9 @@ AzaleaHouse1_MapScripts::
 AzaleaHouse1_EventScript_Boss::
 	lock
 	faceplayer
+	goto_if_eq VAR_AZALEA_TOWN_STATE, 5, AzaleaHouse1_EventScript_Boss3
+	goto_if_eq VAR_AZALEA_TOWN_STATE, 6, AzaleaHouse1_EventScript_Boss3
+	goto_if_eq VAR_AZALEA_TOWN_STATE, 7, AzaleaHouse1_EventScript_Boss4
 	goto_if_set FLAG_HIDE_AZALEA_TOWN_ROCKETS, AzaleaHouse1_EventScript_Boss2
 	msgbox CharcoalKiln_Text_Boss1, MSGBOX_DEFAULT
 	closemessage
@@ -16,9 +19,22 @@ AzaleaHouse1_EventScript_Boss2::
 	release
 	end
 
+AzaleaHouse1_EventScript_Boss3::
+	msgbox CharcoalKiln_Text_Boss3, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+AzaleaHouse1_EventScript_Boss4::
+	msgbox CharcoalKiln_Text_Boss4, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
 AzaleaHouse1_EventScript_Apprentice::
 	lock
 	faceplayer
+	goto_if_eq VAR_AZALEA_TOWN_STATE, 7, AzaleaHouse1_EventScript_Apprentice3
 	goto_if_set FLAG_HIDE_AZALEA_TOWN_ROCKETS, AzaleaHouse1_EventScript_Apprentice2
 	msgbox CharcoalKiln_Text_Apprentice1, MSGBOX_DEFAULT
 	closemessage
@@ -30,6 +46,22 @@ AzaleaHouse1_EventScript_Apprentice2::
 	closemessage
 	release
 	end
+
+AzaleaHouse1_EventScript_Apprentice3::
+	goto_if_unset FLAG_GOT_CHARCOAL, AzaleaHouse1_EventScript_Apprentice4
+	msgbox CharcoalKiln_Text_Apprentice3, MSGBOX_DEFAULT
+	giveitem ITEM_CHARCOAL 
+	setflag FLAG_GOT_CHARCOAL
+	closemessage
+	release
+	end
+
+AzaleaHouse1_EventScript_Apprentice4::
+	msgbox CharcoalKiln_Text_Apprentice4, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
 
 AzaleaHouse1_EventScript_Farfetchd::
 	lock
