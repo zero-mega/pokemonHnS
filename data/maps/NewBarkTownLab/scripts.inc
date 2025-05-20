@@ -71,6 +71,9 @@ NewBarkTown_EventScript_Aide2Testimony::
 NewBarkTownLab_EventScript_Elm::
 	lock
 	faceplayer
+	goto_if_set FLAG_SHOWN_ELM_TOGEPI, NewBarkTownLab_EventScript_Elm_CallMe
+	call_if_unset FLAG_SHOWN_ELM_TOGEPI, NewBarkTownLab_EventScript_Elm_Check_Togepi
+	goto_if_ge VAR_GOLDENROD_CITY_STATE, 1, NewBarkTownLab_EventScript_Elm_Check_WhereIsEgg
 	goto_if_eq VAR_NEWBARKTOWN_LABSTATE, 5, NewBarkTownLab_EventScript_ElmState5
 	goto_if_eq VAR_NEWBARKTOWN_LABSTATE, 6, NewBarkTownLab_EventScript_ElmState5
 	goto_if_eq VAR_NEWBARKTOWN_LABSTATE, 2, CopNewBarkTownLab_EventScript_ElmState2
@@ -361,6 +364,40 @@ NewBarkTownLab_EventScript_TriggerAideGiveBalls::
 	release
 	end
 
+
+NewBarkTownLab_EventScript_Elm_Check_WhereIsEgg::
+	msgbox NewBarkTownLab_Text_ElmWaitingEggHatch, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+NewBarkTownLab_EventScript_Elm_Check_Togepi::
+	specialvar VAR_RESULT, CheckTogepi
+	goto_if_eq VAR_RESULT, TRUE, NewBarkTownLab_EventScript_Elm_Togepi_Seen
+	return
+
+NewBarkTownLab_EventScript_Elm_Togepi_Seen::
+	msgbox NewBarkTownLab_Text_ShowTogepi1, MSGBOX_DEFAULT
+	waitmessage
+	msgbox NewBarkTownLab_Text_ShowTogepi2, MSGBOX_DEFAULT
+	waitmessage
+	msgbox NewBarkTownLab_Text_ShowTogepi3, MSGBOX_DEFAULT
+	waitmessage
+	msgbox NewBarkTownLab_Text_ElmGiveEverstone1, MSGBOX_DEFAULT
+	waitmessage
+	giveitem ITEM_EVERSTONE
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	msgbox NewBarkTownLab_Text_ElmGiveEverstone2, MSGBOX_DEFAULT
+	closemessage
+	setflag FLAG_SHOWN_ELM_TOGEPI
+	release
+	end
+
+NewBarkTownLab_EventScript_Elm_CallMe::
+	msgbox NewBarkTownLab_Text_Elm_CallMe, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
 
 NewBarkTownLab_Movement_WalkRight:
 	walk_right
@@ -788,3 +825,9 @@ NewBarkTownLab_Text_Officer2:
 
 NewBarkTownLab_Text_OfficerNo:
 	.string "Surely you got his name?!$"
+
+NewBarkTownLab_Text_Elm_CallMe:
+	.string "Ah, {PLAYER}!\p"
+	.string "How's your POKéDEX coming along?\n"
+	.string "I'm busy now, but call me sometime\l"
+	.string "and I can check your progress!$"

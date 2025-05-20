@@ -101,6 +101,7 @@ PlayersHouse1_EventScript_MomsIntro::
 	clearflag FLAG_HIDE_GUIDE_GENT_CHERRYGROVE
 	clearflag FLAG_ADVENTURE_STARTED
 	clearflag FLAG_DELIVERED_EGG
+	clearflag FLAG_SHOWN_ELM_TOGEPI
 	
 
 	setvar VAR_VIOLET_CITY_STATE, 0 @CITY STATES

@@ -104,7 +104,7 @@ SlowpokeWell_Text_KurtAfter:
 
 SlowpokeWell_Text_GruntM29Seen:
 	.string "Darn! I was standing guard up\n"
-	.string "top when some old coot yelled\n"
+	.string "top when some old coot yelled\l"
 	.string "at me.\p"
 	.string "He startled me so much that\n"
 	.string "I fell down here.\p"
@@ -116,7 +116,7 @@ SlowpokeWell_Text_GruntM29Beaten:
 
 SlowpokeWell_Text_GruntM29After:
 	.string "Sure, we've been hacking the\n"
-	.string "tails off SLOWPOKE and selling\n"
+	.string "tails off SLOWPOKE and selling\l"
 	.string "them.\p"
 	.string "Everything we do is for profit.\p"
 	.string "That's right! We're TEAM ROCKET,\n"
@@ -135,7 +135,7 @@ SlowpokeWell_Text_ProtonAfter:
 	.string "Yeah, TEAM ROCKET was broken up\n"
 	.string "three years ago.\p"
 	.string "The boss went into hiding.\p"
-	.string "But we continued our activities\n"
+	.string "But we continued our activities\l"
 	.string "underground!\p"
 	.string "A small obstacle like you won't be\n"
 	.string "much of a problem for our mission.\p"
@@ -146,9 +146,8 @@ SlowpokeWell_Text_GruntM2Seen:
 	.string "Hyuck-hyuck-hyuck!\n"
 	.string "Quit taking SLOWPOKETAILS?\p"
 	.string "You're nuts!\n"
-	.string "If we obeyed you,\n"
-	.string "TEAM ROCKET's rep would be\n"
-	.string "ruined!$"
+	.string "If we obeyed you, TEAM ROCKET's\l"
+	.string "rep would be ruined!$"
 
 SlowpokeWell_Text_GruntM2Beaten:
 	.string "Hyuck…\n"

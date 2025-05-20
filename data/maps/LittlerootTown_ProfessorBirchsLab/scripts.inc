@@ -639,7 +639,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ReceivePokedexAltered::
 	setflag FLAG_SYS_NATIONAL_DEX
 	special EnableNationalPokedex
 	setflag FLAG_HIDE_SAFARI_ZONE_SOUTH_CONSTRUCTION_WORKERS
-	clearflag FLAG_HIDE_SAFARI_ZONE_SOUTH_EAST_EXPANSION
+	clearflag FLAG_GARBAGEFLAG
 	return
 
 LittlerootTown_ProfessorBirchsLab_EventScript_PokemonAwait::

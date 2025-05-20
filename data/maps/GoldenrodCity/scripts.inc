@@ -1,2 +1,274 @@
 GoldenrodCity_MapScripts::
 	.byte 0
+
+GoldenrodCity_EventScript_Trigger:: @flagheap
+	call_if_unset FLAG_SHOWN_ELM_TOGEPI, GoldenrodCity_Elm_Togepi_Call
+	
+	setvar VAR_GOLDENROD_CITY_STATE, 1
+	release
+	end
+
+GoldenrodCity_Elm_Togepi_Call::
+	lock
+	pokenavcall GoldenrodCity_Text_ElmCall
+	waitmessage
+	delay 30
+	release
+	return
+
+GoldenrodCity_EventScript_PokefanM::
+	lock
+	faceplayer
+	msgbox GoldenrodCity_Text_PokefanM, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+GoldenrodCity_EventScript_Youngster::
+	lock
+	faceplayer
+	goto_if_set FLAG_RECEIVED_BIKE, GoldenrodCity_EventScript_Youngster2
+	msgbox GoldenrodCity_Text_Youngster1, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+GoldenrodCity_EventScript_Youngster2::
+	msgbox GoldenrodCity_Text_CooltrainerF1, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+GoldenrodCity_EventScript_CooltrainerF::
+	lock
+	faceplayer
+	msgbox GoldenrodCity_Text_CooltrainerF2, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+GoldenrodCity_EventScript_Lass::
+	lock
+	faceplayer
+	@msgbox , MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+GoldenrodCity_EventScript_Gramps::
+	lock
+	faceplayer
+	@msgbox , MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+GoldenrodCity_EventScript_RocketScout::
+	lock
+	faceplayer
+	@msgbox , MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+GoldenrodCity_EventScript_Rocket1::
+	lock
+	faceplayer
+	@msgbox , MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+GoldenrodCity_EventScript_Rocket2::
+	lock
+	faceplayer
+	@msgbox , MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+GoldenrodCity_EventScript_Rocket3::
+	lock
+	faceplayer
+	@msgbox , MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+GoldenrodCity_EventScript_Rocket4::
+	lock
+	faceplayer
+	@msgbox , MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+GoldenrodCity_EventScript_Rocket5::
+	lock
+	faceplayer
+	@msgbox , MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+GoldenrodCity_EventScript_Rocket6::
+	lock
+	faceplayer
+	@msgbox , MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+GoldenrodCity_Text_ElmCall:
+	.string "ELM: Hello, {PLAYER}?\n"
+	.string "Has that egg hatched yet?\p"
+	.string "Once it hatches, don't forget to\n"
+	.string "bring it by the lab! I need to\l"
+	.string "see it!$"
+
+GoldenrodCity_Text_PokefanM:
+	.string "They built the new RADIO TOWER\n"
+	.string "to replace the old creaky one.$"
+
+GoldenrodCity_Text_Youngster1:
+	.string "I know there's a new BIKE SHOP,\n"
+	.string "but I can't find it anywhere.$"
+
+GoldenrodCity_Text_CooltrainerF1:
+	.string "Is that man in black dressed up\n"
+	.string "like a TEAM ROCKET member?\p"
+	.string "How silly!$"
+
+GoldenrodCity_Text_CooltrainerF1_Cleared:
+	.string "Was that man in black really part\n"
+	.string "of TEAM ROCKET? I can't believe it!$"
+
+GoldenrodCity_Text_CooltrainerF2:
+	.string "The RADIO TOWER in GOLDENROD CITY\n"
+	.string "is quite the landmark.\p"
+	.string "They're running a campaign now.\p"
+	.string "They'll update your POKéGEAR so\n"
+	.string "it can serve as a radio too.$"
+
+GoldenrodCity_Text_CooltrainerF2_GotCard:
+	.string "Oh, your POKéGEAR already works\n"
+	.string "as a radio!$"
+
+GoldenrodCity_Text_Youngster2:
+	.string "E-he-he-he…\p"
+	.string "I got in trouble for playing in\n"
+	.string "the DEPT.STORE basement.$"
+
+GoldenrodCity_Text_Lass:
+	.string "That man inside rates your\n"
+	.string "POKéMON nicknames.\p"
+	.string "He can even rename them.$"
+
+GoldenrodCity_Text_Gramps:
+	.string "Whew! This town is so big,\n"
+	.string "I can't find anything at all.$"
+
+GoldenrodCity_Text_RocketScout1:
+	.string "So this is the RADIO TOWER…$"
+
+GoldenrodCity_Text_RocketScout2:
+	.string "What do you want, pest?\n"
+	.string "Scram already!$"
+
+GoldenrodCity_Text_Rocket1:
+	.string "Stay out of the way!\n"
+	.string "Beat it, kid!$"
+
+GoldenrodCity_Text_Rocket2:
+	.string "Take over the RADIO TOWER…\p"
+	.string "What? It's none of your business!$"
+
+GoldenrodCity_Text_Rocket3:
+	.string "POKéMON? They're just tools\n"
+	.string "we use to make money!$"
+
+GoldenrodCity_Text_Rocket4:
+	.string "Our dream will soon come true…\p"
+	.string "It was a long, hard struggle…$"
+
+GoldenrodCity_Text_Rocket5:
+	.string "Hey, brat! You don't belong here!\n"
+	.string "Get lost already!$"
+
+GoldenrodCity_Text_Rocket6:
+	.string "Come and taste the terror of\n"
+	.string "TEAM ROCKET!$"
+
+GoldenrodCity_Text_StationSign:
+	.string "GOLDENROD CITY STATION$"
+
+GoldenrodCity_Text_RadioTowerSign:
+	.string "GOLDENROD CITY RADIO TOWER$"
+
+GoldenrodCity_Text_DeptStoreSign:
+	.string "Full Selection of POKéMON Goods!\p"
+	.string "GOLDENROD CITY DEPT.STORE$"
+
+GoldenrodCity_Text_GymSign:
+	.string "GOLDENROD CITY POKéMON GYM\n"
+	.string "LEADER: WHITNEY\p"
+	.string "The Incredibly Pretty Girl!$"
+
+GoldenrodCity_Text_CitySign:
+	.string "GOLDENROD CITY\p"
+	.string "The Festive City of Opulent Charm$"
+
+GoldenrodCity_Text_BikeShopSign:
+	.string "The World is a Cycle Path!\n"
+	.string "BIKE SHOP$"
+
+GoldenrodCity_Text_GameCornerSign:
+	.string "Your Playground!\p"
+	.string "GOLDENROD CITY GAME CORNER$"
+
+GoldenrodCity_Text_NameRaterSign:
+	.string "NAME RATER\p"
+	.string "Get Your POKéMON Nicknames Rated$"
+
+GoldenrodCity_Text_UndergroundNorthSign:
+	.string "UNDERGROUND ENTRANCE$"
+
+GoldenrodCity_Text_UndergroundSouthSign:
+	.string "UNDERGROUND ENTRANCE$"
+
+
+GoldenrodCity_Text_FlowerShopSign:
+	.string "Blooming Beautiful FLOWER SHOP$"
+
+GoldenrodCity_Text_MoveTutorAsk:
+	.string "I can teach your POKéMON some\n"
+	.string "amazing moves!\p"
+	.string "Should I teach one?$"
+
+GoldenrodCity_Text_MoveTutorCost:
+	.string "It'll cost you 1000 coins.\n"
+	.string "Okay?$"
+
+GoldenrodCity_Text_MoveTutorDecline:
+	.string "Aww… But these moves are great!$"
+
+GoldenrodCity_Text_MoveTutorWhich:
+	.string "Wahahah! You won't regret it!\p"
+	.string "Which move should I teach?$"
+
+GoldenrodCity_Text_MoveTutorNoCash:
+	.string "Too bad. Guess I'll need to\n"
+	.string "get some cash from home…$"
+
+GoldenrodCity_Text_MoveTutorUnderstand:
+	.string "If you understand this move,\n"
+	.string "you've made it as a trainer.$"
+
+GoldenrodCity_Text_MoveTutorFarewell:
+	.string "Wahahah! Farewell, kid!$"
+
+GoldenrodCity_Text_MoveTutorBut:
+	.string "B-but…$"
+
+GoldenrodCity_Text_MoveTutorNotEnoughCoins:
+	.string "…You don't have enough coins…$"

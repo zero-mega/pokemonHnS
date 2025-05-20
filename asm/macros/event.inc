@@ -603,6 +603,22 @@
 		.endif
 	.endm
 
+
+	@crystal applymovement but doesnt remove follower. 
+	.macro applymovement2 localId:req, movements:req, map
+		.ifb \map
+			.byte 0xe8
+			.2byte \localId
+			.4byte \movements
+		.else
+			@ Really only useful if the object has followed from one map to another (e.g. Wally during the catching event).
+			.byte 0x50
+			.2byte \localId
+			.4byte \movements
+			map \map
+		.endif
+	.endm
+
 	@ Blocks script execution until the movements being applied to the specified (localId) object finish.
 	@ If localId is 0, then the id of the last-moved object will be used instead. If the specified object
 	@ is not currently being manipulated with applymovement, then this command does nothing.

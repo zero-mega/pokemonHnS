@@ -236,9 +236,9 @@ Route101_EventScript_BirchsBag::
 	waitmovement 0
 	msgbox Route101_Text_YouSavedMe, MSGBOX_DEFAULT
 	special HealPlayerParty
-	setflag FLAG_GARBAGEFLAG_ZIGZAGOON_BATTLE
+	setflag FLAG_GARBAGEFLAG
 	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_BIRCH
-	setflag FLAG_GARBAGEFLAG_STARTERS_BAG
+	setflag FLAG_GARBAGEFLAG
 	setvar VAR_BIRCH_LAB_STATE, 2
 	setvar VAR_GARBAGEVAR, 3
 	clearflag FLAG_HIDE_MAP_NAME_POPUP

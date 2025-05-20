@@ -94,12 +94,12 @@ static void SetDefaultOptions(void)
     gSaveBlock2Ptr->optionsTextSpeed = OPTIONS_TEXT_SPEED_FAST;
     gSaveBlock2Ptr->optionsWindowFrameType = 0;
     gSaveBlock2Ptr->optionsSound = OPTIONS_SOUND_STEREO;
-    gSaveBlock2Ptr->optionsBattleStyle = OPTIONS_BATTLE_STYLE_SET;
+    gSaveBlock2Ptr->optionsBattleStyle = OPTIONS_BATTLE_STYLE_SHIFT; //CRYSTAL
     gSaveBlock2Ptr->optionsBattleSceneOff = FALSE;
     gSaveBlock2Ptr->regionMapZoom = FALSE;
     gSaveBlock2Ptr->optionsDifficulty = 1;
     gSaveBlock2Ptr->optionsfollowerEnable = 0;
-    gSaveBlock2Ptr->optionsfollowerLargeEnable = 1;
+    gSaveBlock2Ptr->optionsfollowerLargeEnable = 0;
     gSaveBlock2Ptr->optionsautoRun = 1;
     gSaveBlock2Ptr->optionsAutorunDive = 1;
     gSaveBlock2Ptr->optionsAutorunSurf = 1;
@@ -108,7 +108,7 @@ static void SetDefaultOptions(void)
     gSaveBlock2Ptr->optionTypeEffective = 0;
     gSaveBlock2Ptr->optionsFishing = 1;
     gSaveBlock2Ptr->optionsFastIntro = 1;
-    gSaveBlock2Ptr->optionsFastBattle = 1;
+    gSaveBlock2Ptr->optionsFastBattle = 0; //crystal
     gSaveBlock2Ptr->optionsBikeMusic = 0;
     gSaveBlock2Ptr->optionsEvenFasterJoy = 1;
     gSaveBlock2Ptr->optionsSurfMusic = 0;
@@ -118,10 +118,10 @@ static void SetDefaultOptions(void)
     gSaveBlock2Ptr->optionsSoundEffects = 2; //JOHTO ONLY BB
     gSaveBlock2Ptr->optionsSkipIntro = 1;
     gSaveBlock2Ptr->optionsLRtoRun = 0;
-    gSaveBlock2Ptr->optionsBallPrompt = 1;
+    gSaveBlock2Ptr->optionsBallPrompt = 0; //crystal
     gSaveBlock2Ptr->optionsUnitSystem = 0;
     gSaveBlock2Ptr->optionsMusicOnOff = 0;
-    gSaveBlock2Ptr->optionsNewBackgrounds = 0;
+    gSaveBlock2Ptr->optionsNewBackgrounds = 1; //CRYSTAL
     gSaveBlock2Ptr->optionsRunType = 1;
 }
 

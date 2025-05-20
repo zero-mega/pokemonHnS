@@ -37,7 +37,7 @@ ProfBirch_EventScript_RatePokedexOrRegister::
 	faceplayer
 	goto_if_eq VAR_NEWBARKTOWN_LABSTATE, 3, ProfBirch_EventScript_GoFindMrPokemon
 	goto_if_eq VAR_NEWBARKTOWN_LABSTATE, 4, ProfBirch_EventScript_Robbery
-	@goto_if_unset FLAG_HAS_MATCH_CALL, ProfBirch_EventScript_AskRatePokedex
+	goto ProfBirch_EventScript_AskRatePokedex
 	@goto_if_unset FLAG_ENABLE_PROF_BIRCH_MATCH_CALL, EventScript_RegisterProfBirch
 	release
 	end
@@ -54,8 +54,7 @@ ProfBirch_EventScript_Robbery::
 
 
 ProfBirch_EventScript_AskRatePokedex::
-
-	@msgbox gBirchDexRatingText_AreYouCurious, MSGBOX_YESNO
+	msgbox gBirchDexRatingText_AreYouCurious, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, ProfBirch_EventScript_DeclineRating
 	call ProfBirch_EventScript_RatePokedex
 	release

@@ -19,7 +19,7 @@
 #define TUTOR_MOVE_DOUBLE_EDGE     4
 #define TUTOR_MOVE_COUNTER         5
 #define TUTOR_MOVE_SEISMIC_TOSS    6
-#define TUTOR_MOVE_MIMIC           7
+#define TUTOR_MOVE_MIMIC           33 //removed
 #define TUTOR_MOVE_METRONOME       8
 #define TUTOR_MOVE_SOFT_BOILED     9
 #define TUTOR_MOVE_DREAM_EATER     10
@@ -45,7 +45,8 @@
 #define TUTOR_MOVE_FRENZY_PLANT    30
 #define TUTOR_MOVE_BLAST_BURN      31
 #define TUTOR_MOVE_HYDRO_CANNON    32
-#define TUTOR_MOVE_COUNT           33
+#define TUTOR_MOVE_HEADBUTT        7
+#define TUTOR_MOVE_COUNT           34
 
 #define PARTY_LAYOUT_SINGLE          0
 #define PARTY_LAYOUT_DOUBLE          1

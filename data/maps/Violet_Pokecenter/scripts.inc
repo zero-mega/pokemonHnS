@@ -85,7 +85,7 @@ VioletCity_PokeCenter_Text_ElmsAideGiveEgg:
 	.string "active POKéMON to hatch.\p"
 	.string "{PLAYER}, you're the only person\n"
 	.string "we can rely on.\p"
-	.string "Please call PROF.ELM when that\n"
+	.string "Please call PROF.ELM when that\l"
 	.string "EGG hatches!$"
 
 VioletCity_PokeCenter_Text_ElmsAideFullParty:

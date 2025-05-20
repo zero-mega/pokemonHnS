@@ -572,3 +572,4 @@ gSpecials::
 	def_special CheckAerodactyl
 	def_special CheckKabuto
 	def_special CheckOmanyte
+	def_special CheckTogepi

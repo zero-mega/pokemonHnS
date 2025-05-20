@@ -742,7 +742,7 @@
 #define FLAG_UNUSED_0x2BB  0x2BB // Unused Flag
 
 // Event Flags
-#define FLAG_GARBAGEFLAG_STARTERS_BAG                      0x2BC
+#define FLAG_GARBAGEFLAG6                      0x2BC
 #define FLAG_HIDE_APPRENTICE                                        0x2BD
 #define FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN                0x2BE
 #define FLAG_HIDE_UNION_ROOM_PLAYER_1                               0x2BF
@@ -762,7 +762,7 @@
 #define FLAG_HIDE_SAFARI_ZONE_SOUTH_CONSTRUCTION_WORKERS            0x2CD
 #define FLAG_HIDE_MEW                                               0x2CE
 #define FLAG_HIDE_ROUTE_104_RIVAL                                   0x2CF
-#define FLAG_GARBAGEFLAG_ZIGZAGOON_BATTLE                  0x2D0
+#define FLAG_GARBAGEFLAG5                  0x2D0
 #define FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_BIRCH                  0x2D1
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_BEDROOM          0x2D2
 #define FLAG_HIDE_ROUTE_103_RIVAL                                   0x2D3
@@ -789,12 +789,12 @@
 #define FLAG_HIDE_SUDOWOODO                          0x2E6
 #define FLAG_HIDE_UNION_CAVE_LAPRAS                       0x2E7
 #define FLAG_GOT_CHARCOAL                          0x2E8
-#define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_BRENDAN            0x2E9
-#define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_MAY                    0x2EA
-#define FLAG_HIDE_SAFARI_ZONE_SOUTH_EAST_EXPANSION                  0x2EB
-#define FLAG_HIDE_LILYCOVE_HARBOR_EVENT_TICKET_TAKER                0x2EC
-#define FLAG_HIDE_SLATEPORT_CITY_SCOTT                              0x2ED
-#define FLAG_HIDE_ROUTE_101_ZIGZAGOON                               0x2EE
+#define FLAG_HIDE_CELEBI            0x2E9
+#define FLAG_HIDE_ILEX_FOREST_KURT                    0x2EA
+#define FLAG_MOVE_TUTOR_TAUGHT_HEADBUTT                  0x2EB
+#define FLAG_GOLDENROD_CITY_AIDE_VISITED                0x2EC
+#define FLAG_SHOWN_ELM_TOGEPI                           0x2ED
+#define FLAG_GARBAGEFLAG2                               0x2EE
 #define FLAG_HIDE_VICTORY_ROAD_EXIT_WALLY                           0x2EF
 #define FLAG_HIDE_LITTLEROOT_TOWN_MOM_OUTSIDE                       0x2F0
 #define FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_STEVEN              0x2F1
@@ -956,9 +956,9 @@
 #define FLAG_HIDE_ILEX_FOREST_FARFETCHD_4                      0x38D
 #define FLAG_HIDE_ILEX_FOREST_APPRENTICE                         0x38E
 #define FLAG_HIDE_ILEX_FOREST_MASTER              0x38F
-#define FLAG_HIDE_MAUVILLE_CITY_WATTSON                             0x390
-#define FLAG_HIDE_MAUVILLE_GYM_WATTSON                              0x391
-#define FLAG_HIDE_ROUTE_121_TEAM_AQUA_GRUNTS                        0x392
+#define FLAG_HIDE_ILEX_FOREST_KIMONO                             0x390
+#define FLAG_HIDE_GOLDENROD_ROCKET_SCOUT                              0x391
+#define FLAG_HIDE_GOLDENROD_ROCKETS                        0x392
 #define FLAG_UNKNOWN_0x393                                          0x393 // Set, however has no purpose.
 #define FLAG_HIDE_MT_PYRE_SUMMIT_ARCHIE                             0x394
 #define FLAG_HIDE_MT_PYRE_SUMMIT_TEAM_AQUA                          0x395
@@ -1267,13 +1267,13 @@
 #define FLAG_ITEM_SLOWPOKE_WELL_FULL_HEAL                                           0x4C0 // Unused Flag
 #define FLAG_ITEM_SLOWPOKE_WELL_KINGS_ROCK                                           0x4C1 // Unused Flag
 #define FLAG_ITEM_SLOWPOKE_WELL_RAIN_DANCE                                          0x4C2 // Unused Flag
-#define FLAG_UNUSED_0x4C3                                           0x4C3 // Unused Flag
-#define FLAG_UNUSED_0x4C4                                           0x4C4 // Unused Flag
-#define FLAG_UNUSED_0x4C5                                           0x4C5 // Unused Flag
-#define FLAG_UNUSED_0x4C6                                           0x4C6 // Unused Flag
-#define FLAG_UNUSED_0x4C7                                           0x4C7 // Unused Flag
-#define FLAG_UNUSED_0x4C8                                           0x4C8 // Unused Flag
-#define FLAG_UNUSED_0x4C9                                           0x4C9 // Unused Flag
+#define FLAG_ITEM_ILEX_FOREST_ETHER                                           0x4C3 // Unused Flag
+#define FLAG_ITEM_ILEX_FOREST_SUPER_POTION                                          0x4C4 // Unused Flag
+#define FLAG_ITEM_ILEX_FOREST_FULL_HEAL                                          0x4C5 // Unused Flag
+#define FLAG_ITEM_ILEX_FOREST_TM_SUNNY_DAY                                           0x4C6 // Unused Flag
+#define FLAG_ITEM_ROUTE34_SUPERPOTION                                           0x4C7 // Unused Flag
+#define FLAG_ITEM_ROUTE34_RARECANDY                                           0x4C8 // Unused Flag
+#define FLAG_ITEM_ROUTE34_SOFTSAND                                           0x4C9 // Unused Flag
 #define FLAG_UNUSED_0x4CA                                           0x4CA // Unused Flag
 #define FLAG_UNUSED_0x4CB                                           0x4CB // Unused Flag
 #define FLAG_UNUSED_0x4CC                                           0x4CC // Unused Flag

@@ -1,5 +1,5 @@
 MoveTutor_Text_ThisMoveCanOnlyBeLearnedOnce:
-	.string "Are you ready to learn this move?\n"
+	.string "Are you ready to learn this move?$"
 	.string "It will cost you 5.000¥.$"
 
 MoveTutor_Text_ThisMoveCanOnlyBeLearnedOnceFinite:

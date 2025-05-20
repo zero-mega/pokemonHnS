@@ -2,12 +2,22 @@
 .set LOCALID_AZALEA_TOWN_SILVER, 6
 
 AzaleaTown_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, AzaleaTown_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, AzaleaTown_OnFrame
 	.byte 0
 
+AzaleaTown_OnTransition::
+	goto_if_eq VAR_AZALEA_TOWN_STATE, 5, AzaleaTown_MapScript_Hide_Silver
+	end
+	
 AzaleaTown_OnFrame::
 	map_script_2 VAR_AZALEA_TOWN_STATE, 8, AzaleaTown_EventScript_GSBall
 	.2byte 0
+
+AzaleaTown_MapScript_Hide_Silver:
+	setflag FLAG_HIDE_AZALEA_TOWN_SILVER
+	removeobject LOCALID_AZALEA_TOWN_SILVER
+	end
 
 AzaleaTown_EventScript_Trigger:: @flagheap
 	setflag FLAG_VISITED_AZALEA_TOWN
@@ -20,15 +30,19 @@ AzaleaTown_EventScript_Trigger:: @flagheap
 	setflag FLAG_HIDE_ILEX_FOREST_FARFETCHD_3
 	setflag FLAG_HIDE_ILEX_FOREST_FARFETCHD_2
 	setflag FLAG_HIDE_ILEX_FOREST_FARFETCHD_1
+	setflag FLAG_HIDE_CELEBI
+	setflag FLAG_HIDE_ILEX_FOREST_KURT
+	setflag FLAG_HIDE_AZALEA_TOWN_KURT
 	
 
-
+	clearflag FLAG_HIDE_ILEX_FOREST_KIMONO
 	clearflag FLAG_ITEM_SLOWPOKE_WELL_RAIN_DANCE
 	clearflag FLAG_HIDE_AZALEA_TOWN_ROCKETS
 	clearflag FLAG_HIDE_AZALEA_TOWN_WELL_ROCKET
 	clearflag FLAG_HIDE_KURT_1
 	clearflag FLAG_GOT_CHARCOAL
 	clearflag FLAG_HIDE_AZALEA_TOWN_FARFETCHD
+	clearflag FLAG_MOVE_TUTOR_TAUGHT_HEADBUTT
 
 	removeitem ITEM_HM_SURF
 	setvar VAR_AZALEA_TOWN_STATE, 1

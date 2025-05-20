@@ -1,15 +1,26 @@
 .set LOCALID_ILEX_FOREST_FARFETCHD_1, 3
-.set LOCALID_ILEX_FOREST_FARFETCHD_2, 33
-.set LOCALID_ILEX_FOREST_FARFETCHD_3, 35
-.set LOCALID_ILEX_FOREST_FARFETCHD_4, 34
+.set LOCALID_ILEX_FOREST_FARFETCHD_2, 31
+.set LOCALID_ILEX_FOREST_FARFETCHD_3, 33
+.set LOCALID_ILEX_FOREST_FARFETCHD_4, 32
+.set LOCALID_ILEX_FOREST_CELEBI, 7
+.set LOCALID_ILEX_FOREST_KURT, 34
+.set LOCALID_ILEX_FOREST_KIMONO, 36
+.set LOCALID_ILEX_FOREST_BUTTERFREE, 37
 
 IlexForest_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, IlexForest_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
 	.byte 0
-	
+
+IlexForest_OnTransition: 
+	callnative SetTimeBasedEncounters
+	end	
+
 IlexForest_EventScript_Apprentice::
 	lock
 	faceplayer
 	goto_if_eq VAR_ILEX_FOREST_FARFETCHD, 2, IlexForest_EventScript_Apprentice2
+	goto_if_eq VAR_ILEX_FOREST_FARFETCHD, 3, IlexForest_EventScript_Apprentice2
 	msgbox IlexForest_Text_ApprenticeIntro, MSGBOX_DEFAULT
 	closemessage
 	release
@@ -146,6 +157,7 @@ IlexForest_EventScript_Farfetchd_Leave::
 	applymovement LOCALID_ILEX_FOREST_FARFETCHD_1, IlexForest_Movement_Farfetchd_Leave
 	waitmovement 0
 	setvar VAR_ILEX_FOREST_FARFETCHD, 2
+	clearflag FLAG_HIDE_ILEX_FOREST_KIMONO
 	clearflag FLAG_HIDE_AZALEA_TOWN_FARFETCHD
 	clearflag FLAG_HIDE_ILEX_FOREST_MASTER
 	addobject 1
@@ -160,8 +172,6 @@ IlexForest_EventScript_Farfetchd_Return::
 IlexForest_EventScript_Farfetchd_Done::
 	release
 	end
-
-
 
 IlexForest_EventScript_TriggerBot::
 	lock
@@ -184,6 +194,266 @@ IlexForest_EventScript_Trigger::
 	closemessage
 	release
 	end
+
+IlexForest_EventScript_Picnicker::
+	lock
+	faceplayer
+	msgbox IlexForest_Text_Lass, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+IlexForest_EventScript_BugcatcherWayne::
+	trainerbattle_single TRAINER_WAYNE IlexForest_Text_BugCatcherWayneSeen, IlexForest_Text_BugCatcherWayneBeaten
+	msgbox IlexForest_Text_BugCatcherWayneAfter, MSGBOX_AUTOCLOSE
+	end
+
+IlexForest_EventScript_HeadbuttMoveTutor::
+	lock
+	faceplayer
+	goto_if_set FLAG_FINITE_TMS, IlexForest_EventScript_HeadbuttTutorFinite
+	clearflag FLAG_MOVE_TUTOR_TAUGHT_HEADBUTT
+	msgbox MoveTutor_Text_HeadbuttTeach, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_HeadbuttDeclined
+	msgbox MoveTutor_Text_HeadbuttWhichMon, MSGBOX_DEFAULT
+	setvar VAR_0x8005, TUTOR_MOVE_HEADBUTT
+	call MoveTutor_EventScript_OpenPartyMenu
+	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_HeadbuttDeclined
+	goto MoveTutor_EventScript_HeadbuttTaught
+	end
+
+IlexForest_EventScript_HeadbuttTutorFinite::
+	lock
+	faceplayer
+	goto_if_set FLAG_MOVE_TUTOR_TAUGHT_HEADBUTT, MoveTutor_EventScript_HeadbuttTaught
+	msgbox MoveTutor_Text_HeadbuttTeach, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_HeadbuttDeclined
+	call MoveTutor_EventScript_CanOnlyBeLearnedOnceFinite
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_HeadbuttDeclined
+	msgbox MoveTutor_Text_HeadbuttWhichMon, MSGBOX_DEFAULT
+	setvar VAR_0x8005, TUTOR_MOVE_HEADBUTT
+	call MoveTutor_EventScript_OpenPartyMenu
+	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_HeadbuttDeclined
+	setflag FLAG_MOVE_TUTOR_TAUGHT_HEADBUTT
+	goto MoveTutor_EventScript_HeadbuttTaught
+	end
+
+MoveTutor_EventScript_HeadbuttDeclined::
+	msgbox MoveTutor_Text_HeadbuttDeclined, MSGBOX_DEFAULT
+	release
+	end
+
+MoveTutor_EventScript_HeadbuttTaught::
+	setflag FLAG_GET_HEADBUTT
+	msgbox MoveTutor_Text_HeadbuttTaught, MSGBOX_DEFAULT
+	release
+	end
+
+
+IlexForest_EventScript_Shrine::
+	lock
+	goto_if_eq VAR_AZALEA_TOWN_STATE, 9, IlexForest_EventScript_Celebi_Event
+	msgbox IlexForest_Text_Shrine, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+IlexForest_EventScript_Celebi_Event::
+	msgbox IlexForest_Text_ShrineCelebiEvent, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, FALSE, IlexForest_EventScript_Shrine_Cancel
+	msgbox IlexForest_Text_InsertGSBall, MSGBOX_DEFAULT
+	removeitem ITEM_GS_BALL
+	clearflag FLAG_HIDE_CELEBI
+	addobject LOCALID_ILEX_FOREST_CELEBI
+	playse SE_M_PETAL_DANCE
+	applymovement LOCALID_ILEX_FOREST_CELEBI, IlexForest_Movement_Celebi1
+	waitmovement 0
+	playse SE_M_PETAL_DANCE
+	applymovement LOCALID_ILEX_FOREST_CELEBI, IlexForest_Movement_Celebi2
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_SOUTH
+	waitmovement 0
+	playse SE_M_PETAL_DANCE
+	applymovement LOCALID_ILEX_FOREST_CELEBI, IlexForest_Movement_Celebi3
+	waitmovement 0
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_WEST
+	playmoncry SPECIES_CELEBI, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setvar VAR_LAST_TALKED, LOCALID_ILEX_FOREST_CELEBI
+	setwildbattle SPECIES_CELEBI, 40
+	dowildbattle
+	setflag FLAG_HIDE_CELEBI
+	removeobject LOCALID_ILEX_FOREST_CELEBI
+IlexForest_EventScript_Kurt::
+	clearflag FLAG_HIDE_ILEX_FOREST_KURT
+	addobject LOCALID_ILEX_FOREST_KURT
+	applymovement LOCALID_ILEX_FOREST_KURT, IlexForest_Movement_Kurt1
+	waitmovement 0
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_SOUTH
+	msgbox IlexForest_Text_KurtCaughtCelebi, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_ILEX_FOREST_KURT, IlexForest_Movement_Kurt2
+	waitmovement 0
+	setflag FLAG_HIDE_ILEX_FOREST_KURT
+	removeobject LOCALID_ILEX_FOREST_KURT
+	setvar VAR_AZALEA_TOWN_STATE, 10
+	release
+	end
+
+IlexForest_EventScript_Shrine_Cancel::
+	closemessage
+	release
+	end
+
+IlexForest_EventScript_Sign::
+	lock
+	msgbox IlexForest_Text_Signpost MSGBOX_SIGN
+	closemessage
+	release
+	end
+
+IlexForest_EventScript_Kimono::
+	lock
+	playbgm MUS_HG_KIMONO_GIRL, TRUE
+	playse SE_PIN
+	turnobject OBJ_EVENT_ID_FOLLOWER, DIR_NORTH
+	applymovement2 LOCALID_ILEX_FOREST_KIMONO, Common_Movement_ExclamationMark
+	delay 60
+	applymovement2 LOCALID_ILEX_FOREST_KIMONO, IlexForest_Movement_Kimono_Girl1
+	waitmovement 0
+	msgbox IlexForest_Text_Kimono_Girl1, MSGBOX_DEFAULT
+	closemessage
+	playse SE_M_PETAL_DANCE
+	applymovement2 LOCALID_ILEX_FOREST_KIMONO, IlexForest_Movement_Kimono_Girl_Spin
+	waitmovement 0
+	turnobject LOCALID_ILEX_FOREST_KIMONO, DIR_SOUTH
+	msgbox IlexForest_Text_Kimono_Girl2, MSGBOX_YESNO
+	closemessage
+	msgbox IlexForest_Text_Kimono_Girl3, MSGBOX_DEFAULT
+	closemessage
+	playfirstmoncry
+	applymovement2 OBJ_EVENT_ID_FOLLOWER, IlexForest_Movement_Follower1
+	waitmovement 0
+	playfirstmoncry
+	turnobject LOCALID_ILEX_FOREST_KIMONO DIR_WEST
+	msgbox IlexForest_Text_Kimono_Girl4, MSGBOX_DEFAULT
+	closemessage 
+	turnobject LOCALID_ILEX_FOREST_KIMONO DIR_SOUTH
+	delay 16
+	msgbox IlexForest_Text_Kimono_Girl5, MSGBOX_DEFAULT
+	closemessage
+	delay 16
+	playfirstmoncry
+	applymovement2 OBJ_EVENT_ID_FOLLOWER, IlexForest_Movement_Follower2
+	applymovement2 LOCALID_ILEX_FOREST_KIMONO, IlexForest_Movement_Kimono_Girl2
+	waitmovement 0
+	waitmovement 0
+	fadedefaultbgm
+	setvar VAR_ILEX_FOREST_FARFETCHD, 4
+	setflag FLAG_HIDE_ILEX_FOREST_KIMONO
+	removeobject LOCALID_ILEX_FOREST_KIMONO
+	playfirstmoncry
+	applymovement OBJ_EVENT_ID_FOLLOWER, IlexForest_Movement_Follower3
+	waitmovement 0
+	playfirstmoncry
+	release
+	end
+
+IlexForest_EventScript_SuperPotion::
+	finditem ITEM_SUPER_POTION
+	end
+
+IlexForest_EventScript_Ether::
+	finditem ITEM_ETHER
+	end
+
+IlexForest_EventScript_FullHeal::
+	finditem ITEM_FULL_HEAL
+	end
+
+IlexForest_EventScript_SunnyDay::
+	finditem ITEM_TM_SUNNY_DAY
+	end
+
+IlexForest_Movement_Kimono_Girl1:
+	walk_right
+	face_down
+	step_end
+
+IlexForest_Movement_Kimono_Girl_Spin:
+	face_left
+	delay_8
+	face_up
+	delay_8
+	face_right
+	delay_8
+	face_down
+	delay_8
+	face_left
+	delay_8
+	face_up
+	delay_8
+	face_right
+	delay_8
+	face_down
+	step_end
+
+IlexForest_Movement_Follower1:
+	walk_left
+	jump_2_up
+	walk_up
+	face_right
+	jump_in_place_right
+	delay 16
+	face_left
+	jump_in_place_left
+	delay 16
+	face_right
+	step_end
+
+IlexForest_Movement_Follower2:
+	face_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+IlexForest_Movement_Kimono_Girl2:
+	face_left
+	delay_16
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+IlexForest_Movement_Follower3:
+	delay 16
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_down
+	jump_2_down
+	walk_right
+	face_up
+	step_end
+
 
 IlexForest_Movement_Farfetchd_1A:
 	walk_fast_up
@@ -302,6 +572,82 @@ IlexForest_Movement_Farfetchd_Return:
 	walk_fast_up	
 	step_end
 
+IlexForest_Movement_Celebi1:
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	step_end
+
+IlexForest_Movement_Celebi2:
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_up
+	step_end
+
+IlexForest_Movement_Celebi3:
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	step_end
+
+IlexForest_Movement_Kurt1:
+	walk_right
+	walk_right
+	walk_right
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	step_end
+
+IlexForest_Movement_Kurt2:
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
 IlexForest_Text_ApprenticeIntro:
 	.string "Oh, man… My boss is going to be\n"
 	.string "steaming…\p"
@@ -344,12 +690,23 @@ IlexForest_Text_CharcoalMasterTalkAfter:
 	.string "charcoal maker with me?\p"
 	.string "You'll be first-rate in ten years!$"
 
-IlexForest_Text_HeadbuttIntro:
+MoveTutor_Text_HeadbuttTeach:
 	.string "What am I doing?\p"
 	.string "I'm shaking trees using HEADBUTT.\p"
-	.string "It's fun. Here, you try it too!$"
+	.string "Do you think your POKéMON will\n"
+	.string "want to HEADBUTT, too?\p"
+	.string "I can teach one the move HEADBUTT\n"
+	.string "if you'd like. It's fun!$"
+	
+MoveTutor_Text_HeadbuttWhichMon:
+	.string "Ehehe, sure thing! It'd be great if\n"
+	.string "the POKéMON looked like me.$"
 
-IlexForest_Text_HeadbuttOutro:
+MoveTutor_Text_HeadbuttDeclined:
+	.string "You don't need to be shy about it.\n"
+	.string "Let's butt heads!$"
+
+MoveTutor_Text_HeadbuttTaught:
 	.string "Rattle trees with HEADBUTT.\n"
 	.string "Sometimes, sleeping POKéMON fall out.$"
 
@@ -403,3 +760,26 @@ IlexForest_Text_BugCatcherWayneAfter:
 	.string "HEADBUTT.\p"
 	.string "I ought to use HEADBUTT in other\n"
 	.string "places too.$"
+
+IlexForest_Text_Kimono_Girl1:
+	.string "Kimono Girl, Kimono Girl, and all\n"
+	.string "alone. Poor girl lost in the dark\l"
+	.string "ILEX FOREST.$"
+
+IlexForest_Text_Kimono_Girl2:
+	.string "You remember me from VIOLET CITY?\n"
+	.string "You must be imagining.\p"
+	.string "Anyway, will you show me how to\n"
+	.string "get out of this forest?$"
+
+IlexForest_Text_Kimono_Girl3:
+	.string "Me oh my... You are lost yourself,\n"
+	.string "aren't you?$"
+
+IlexForest_Text_Kimono_Girl4:
+	.string "Wow! Are you going to show me how\n"
+	.string "to get out?\p"
+	.string "You are such a smart POKéMON!$"
+
+IlexForest_Text_Kimono_Girl5:
+	.string "See you.$"
