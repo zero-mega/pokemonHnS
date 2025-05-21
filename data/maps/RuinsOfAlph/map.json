@@ -15,17 +15,17 @@
   "connections": [
     {
       "map": "MAP_ROUTE36",
-      "offset": -42,
+      "offset": -36,
       "direction": "up"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_PSYCHIC_M",
-      "x": 13,
-      "y": 41,
+      "x": 12,
+      "y": 37,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP_AND_LEFT",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 8,
       "movement_range_y": 8,
       "trainer_type": "TRAINER_TYPE_NORMAL",
@@ -35,8 +35,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SUPER_NERD",
-      "x": 7,
-      "y": 26,
+      "x": 9,
+      "y": 23,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 4,
@@ -48,7 +48,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_UNOWN",
-      "x": 12,
+      "x": 19,
       "y": 17,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -61,8 +61,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_UNOWN",
-      "x": 23,
-      "y": 9,
+      "x": 25,
+      "y": 8,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -74,8 +74,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_UNOWN",
-      "x": 14,
-      "y": 31,
+      "x": 21,
+      "y": 32,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -87,7 +87,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_UNOWN",
-      "x": 26,
+      "x": 35,
       "y": 21,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -100,8 +100,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_UNOWN",
-      "x": 3,
-      "y": 36,
+      "x": 13,
+      "y": 33,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -113,7 +113,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_NATU",
-      "x": 10,
+      "x": 15,
       "y": 22,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -126,8 +126,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_NATU",
-      "x": 12,
-      "y": 34,
+      "x": 14,
+      "y": 6,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -139,10 +139,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_SMEARGLE",
-      "x": 18,
-      "y": 4,
+      "x": 4,
+      "y": 37,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -152,7 +152,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_WOOPER",
-      "x": 5,
+      "x": 4,
       "y": 8,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -165,7 +165,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_QUAGSIRE",
-      "x": 4,
+      "x": 5,
       "y": 9,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -178,8 +178,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
-      "x": 19,
-      "y": 18,
+      "x": 25,
+      "y": 21,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
@@ -191,7 +191,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_FISHER",
-      "x": 19,
+      "x": 28,
       "y": 32,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -204,7 +204,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_FISHER",
-      "x": 20,
+      "x": 29,
       "y": 32,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -217,8 +217,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GBA_KID",
-      "x": 19,
-      "y": 17,
+      "x": 25,
+      "y": 20,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -243,8 +243,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_SMEARGLE",
-      "x": 13,
-      "y": 47,
+      "x": 39,
+      "y": 45,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -253,60 +253,73 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_DAY_POKEMON"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_NATU",
+      "x": 35,
+      "y": 36,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
     }
   ],
   "warp_events": [
     {
-      "x": 22,
+      "x": 34,
       "y": 27,
       "elevation": 0,
       "dest_map": "MAP_ROUTE32_RUINS_GATE",
       "dest_warp_id": "1"
     },
     {
-      "x": 14,
+      "x": 20,
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_ROUTE36_RUINS_GATE",
       "dest_warp_id": "1"
     },
     {
-      "x": 9,
+      "x": 13,
       "y": 25,
       "elevation": 0,
       "dest_map": "MAP_UNION_CAVE2",
       "dest_warp_id": "4"
     },
     {
-      "x": 9,
+      "x": 14,
       "y": 36,
       "elevation": 0,
       "dest_map": "MAP_UNION_CAVE2",
       "dest_warp_id": "3"
     },
     {
-      "x": 26,
+      "x": 36,
       "y": 16,
       "elevation": 0,
       "dest_map": "MAP_RUINS_OF_ALPH_OFFICE",
       "dest_warp_id": "0"
     },
     {
-      "x": 15,
-      "y": 19,
+      "x": 21,
+      "y": 21,
       "elevation": 0,
       "dest_map": "MAP_RUINS_OF_ALPH1",
       "dest_warp_id": "0"
     },
     {
-      "x": 22,
+      "x": 34,
       "y": 42,
       "elevation": 0,
       "dest_map": "MAP_RUINS_OF_ALPH2",
       "dest_warp_id": "3"
     },
     {
-      "x": 5,
+      "x": 7,
       "y": 40,
       "elevation": 0,
       "dest_map": "MAP_RUINS_OF_ALPH2",
@@ -320,7 +333,7 @@
       "dest_warp_id": "1"
     },
     {
-      "x": 20,
+      "x": 28,
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_RUINS_OF_ALPH2",
@@ -333,7 +346,7 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 19,
+      "x": 31,
       "y": 24,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -341,7 +354,7 @@
     },
     {
       "type": "sign",
-      "x": 28,
+      "x": 38,
       "y": 16,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -349,7 +362,7 @@
     },
     {
       "type": "sign",
-      "x": 27,
+      "x": 37,
       "y": 16,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -357,7 +370,7 @@
     },
     {
       "type": "sign",
-      "x": 22,
+      "x": 30,
       "y": 11,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
