@@ -15,20 +15,20 @@
   "connections": [
     {
       "map": "MAP_ROUTE34",
-      "offset": 3,
+      "offset": 15,
       "direction": "down"
     },
     {
       "map": "MAP_ROUTE35",
-      "offset": 10,
+      "offset": 28,
       "direction": "up"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_LASS",
-      "x": 22,
-      "y": 35,
+      "x": 38,
+      "y": 45,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
@@ -40,8 +40,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
-      "x": 3,
-      "y": 34,
+      "x": 22,
+      "y": 40,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 2,
@@ -53,8 +53,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_HIKER",
-      "x": 10,
-      "y": 30,
+      "x": 33,
+      "y": 34,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 2,
@@ -66,8 +66,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_F",
-      "x": 18,
-      "y": 30,
+      "x": 36,
+      "y": 34,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 2,
@@ -79,8 +79,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_1",
-      "x": 7,
-      "y": 36,
+      "x": 28,
+      "y": 39,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
@@ -92,8 +92,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
-      "x": 33,
-      "y": 26,
+      "x": 51,
+      "y": 31,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 2,
@@ -105,8 +105,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
-      "x": 34,
-      "y": 26,
+      "x": 52,
+      "y": 31,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 2,
@@ -118,10 +118,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY",
-      "x": 29,
-      "y": 22,
+      "x": 47,
+      "y": 23,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 2,
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -131,8 +131,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
-      "x": 20,
-      "y": 21,
+      "x": 57,
+      "y": 36,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 2,
@@ -144,8 +144,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BATTLE_GIRL",
-      "x": 9,
-      "y": 25,
+      "x": 37,
+      "y": 23,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 2,
@@ -157,8 +157,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
-      "x": 14,
-      "y": 22,
+      "x": 32,
+      "y": 24,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 2,
@@ -170,8 +170,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
-      "x": 2,
-      "y": 22,
+      "x": 21,
+      "y": 24,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 2,
@@ -183,7 +183,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
-      "x": 2,
+      "x": 15,
       "y": 25,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
@@ -196,8 +196,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
-      "x": 34,
-      "y": 12,
+      "x": 47,
+      "y": 14,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 2,
@@ -209,8 +209,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
-      "x": 38,
-      "y": 16,
+      "x": 52,
+      "y": 12,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 2,
@@ -222,8 +222,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
-      "x": 14,
-      "y": 14,
+      "x": 33,
+      "y": 13,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 2,
@@ -235,8 +235,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_SNUBBULL",
-      "x": 25,
-      "y": 32,
+      "x": 43,
+      "y": 38,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_UP_AND_DOWN",
       "movement_range_x": 4,
@@ -248,8 +248,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_PIDGEY",
-      "x": 12,
-      "y": 27,
+      "x": 31,
+      "y": 31,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
@@ -261,8 +261,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_PIDGEY",
-      "x": 35,
-      "y": 32,
+      "x": 53,
+      "y": 38,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
@@ -274,8 +274,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_PIDGEY",
-      "x": 32,
-      "y": 19,
+      "x": 50,
+      "y": 21,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
@@ -287,7 +287,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_CLEFAIRY",
-      "x": 31,
+      "x": 50,
       "y": 13,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -300,8 +300,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_HOOTHOOT",
-      "x": 19,
-      "y": 33,
+      "x": 37,
+      "y": 39,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -313,8 +313,21 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_GRIMER",
-      "x": 8,
-      "y": 44,
+      "x": 26,
+      "y": 50,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_GRIMER",
+      "x": 46,
+      "y": 51,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 0,
@@ -326,8 +339,34 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_GRIMER",
-      "x": 44,
-      "y": 39,
+      "x": 47,
+      "y": 51,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_GRIMER",
+      "x": 47,
+      "y": 52,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_GRIMER",
+      "x": 58,
+      "y": 23,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 0,
@@ -339,47 +378,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_GRIMER",
-      "x": 43,
-      "y": 24,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_GRIMER",
-      "x": 35,
-      "y": 44,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_GRIMER",
-      "x": 42,
-      "y": 16,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_GRIMER",
-      "x": 40,
-      "y": 21,
+      "x": 46,
+      "y": 52,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 0,
@@ -391,8 +391,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_SPEAROW",
-      "x": 19,
-      "y": 33,
+      "x": 37,
+      "y": 39,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -405,113 +405,113 @@
   ],
   "warp_events": [
     {
-      "x": 23,
+      "x": 41,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_GOLDENROD_35GATE",
       "dest_warp_id": "0"
     },
     {
-      "x": 24,
+      "x": 42,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_GOLDENROD_35GATE",
       "dest_warp_id": "0"
     },
     {
-      "x": 10,
+      "x": 28,
       "y": 12,
       "elevation": 0,
       "dest_map": "MAP_GOLDEN_ROD_UNDERGROUND1",
       "dest_warp_id": "2"
     },
     {
-      "x": 19,
+      "x": 37,
       "y": 13,
       "elevation": 0,
       "dest_map": "MAP_GOLDENROD_HOUSE1",
       "dest_warp_id": "0"
     },
     {
-      "x": 29,
+      "x": 47,
       "y": 13,
       "elevation": 0,
       "dest_map": "MAP_GOLDENROD_GYM",
       "dest_warp_id": "0"
     },
     {
-      "x": 34,
+      "x": 52,
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_GOLDENROD_FLOWER_SHOP",
       "dest_warp_id": "0"
     },
     {
-      "x": 38,
+      "x": 56,
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_GOLDENROD_HOUSE2",
       "dest_warp_id": "0"
     },
     {
-      "x": 6,
-      "y": 22,
+      "x": 24,
+      "y": 24,
       "elevation": 0,
       "dest_map": "MAP_GOLDENROD_RADIO_TOWER1",
       "dest_warp_id": "0"
     },
     {
-      "x": 14,
-      "y": 21,
+      "x": 32,
+      "y": 23,
       "elevation": 0,
       "dest_map": "MAP_GOLDENROD_STATION",
       "dest_warp_id": "0"
     },
     {
-      "x": 36,
-      "y": 28,
+      "x": 59,
+      "y": 41,
       "elevation": 0,
       "dest_map": "MAP_GOLDENROD_HOUSE3",
       "dest_warp_id": "0"
     },
     {
-      "x": 18,
-      "y": 29,
+      "x": 36,
+      "y": 33,
       "elevation": 0,
       "dest_map": "MAP_GOLDENROD_GAME_CORNER",
       "dest_warp_id": "0"
     },
     {
-      "x": 4,
-      "y": 33,
+      "x": 22,
+      "y": 39,
       "elevation": 0,
       "dest_map": "MAP_GOLDENROD_BILLS_HOUSE",
       "dest_warp_id": "0"
     },
     {
-      "x": 18,
-      "y": 36,
+      "x": 36,
+      "y": 42,
       "elevation": 0,
       "dest_map": "MAP_GOLDENROD_POKECENTER",
       "dest_warp_id": "0"
     },
     {
-      "x": 29,
-      "y": 36,
+      "x": 47,
+      "y": 42,
       "elevation": 0,
       "dest_map": "MAP_GOLDENROD_DEPARTMENT_STORE1",
       "dest_warp_id": "0"
     },
     {
-      "x": 34,
-      "y": 38,
+      "x": 52,
+      "y": 44,
       "elevation": 0,
       "dest_map": "MAP_GOLDENROD_BIKE_SHOP",
       "dest_warp_id": "0"
     },
     {
-      "x": 11,
-      "y": 38,
+      "x": 29,
+      "y": 44,
       "elevation": 0,
       "dest_map": "MAP_GOLDEN_ROD_UNDERGROUND1",
       "dest_warp_id": "3"

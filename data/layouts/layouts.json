@@ -4964,7 +4964,7 @@
     {
       "id": "LAYOUT_ROUTE34",
       "name": "Route34_Layout",
-      "width": 54,
+      "width": 60,
       "height": 90,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Goldenrod",
@@ -4994,7 +4994,7 @@
     {
       "id": "LAYOUT_ROUTE37",
       "name": "Route37_Layout",
-      "width": 30,
+      "width": 36,
       "height": 35,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Ecruteak_City",
@@ -5114,8 +5114,8 @@
     {
       "id": "LAYOUT_GOLDENROD_CITY",
       "name": "GoldenrodCity_Layout",
-      "width": 48,
-      "height": 46,
+      "width": 86,
+      "height": 52,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Goldenrod",
       "border_filepath": "data/layouts/GoldenrodCity/border.bin",
@@ -5144,8 +5144,8 @@
     {
       "id": "LAYOUT_CIANWOOD_CITY",
       "name": "CianwoodCity_Layout",
-      "width": 37,
-      "height": 61,
+      "width": 47,
+      "height": 71,
       "primary_tileset": "gTileset_Johto_NorthEast",
       "secondary_tileset": "gTileset_CianwoodSafariGate",
       "border_filepath": "data/layouts/CianwoodCity/border.bin",
@@ -6154,8 +6154,8 @@
     {
       "id": "LAYOUT_SAFARI_ZONE_GATE",
       "name": "SafariZoneGate_Layout",
-      "width": 20,
-      "height": 23,
+      "width": 40,
+      "height": 33,
       "primary_tileset": "gTileset_Johto_NorthEast",
       "secondary_tileset": "gTileset_SafariZoneJohto",
       "border_filepath": "data/layouts/SafariZoneGate/border.bin",
