@@ -506,8 +506,8 @@ NewBarkTownLab_Text_ElmIntro:
 	.string "ELM: {PLAYER}! There you are!\p"
 	.string "I needed to ask you a favor.\p"
 	.string "I'm conducting new POKéMON\n"
-	.string "research right now. I was\p"
-	.string "wondering if you could help\n"
+	.string "research right now. I was\l"
+	.string "wondering if you could help\l"
 	.string "me with it, {PLAYER}.\p"
 	.string "You see…\p"
 	.string "I'm writing a paper that I\n"
@@ -544,11 +544,11 @@ NewBarkTownLab_Text_ElmMissionFromMrPokemon:
 	.string "I have an acquaintance called\n"
 	.string "MR. POKéMON.\p"
 	.string "He keeps finding weird things and\n"
-	.string "raving about his discoveries\p"
+	.string "raving about his discoveries.\p"
 	.string "Anyway, I just got an e-mail\n"
-	.string "from him saying that this\p"
-	.string "time it's real.\n"
-	.string "It is intriguing, but we're\p"
+	.string "from him saying that this\l"
+	.string "time it's real.\p"
+	.string "It is intriguing, but we're\n"
 	.string "busy with our POKéMON research...\p"
 	.string "Wait!\n"
 	.string "I know!\p"
@@ -595,12 +595,12 @@ NewBarkTownLab_Text_Nickname:
 
 NewBarkTownLab_Text_ElmDirections1:
 	.string "MR. POKéMON lives a little bit\n"
-	.string "beyond CHERRYGROVE, the next\p"
+	.string "beyond CHERRYGROVE, the next\l"
 	.string "city over.\p"
 	.string "It's almost a direct route\n"
 	.string "there, so you can't miss it.\p"
 	.string "But just in case, you have my\n"
-	.string "phone number. Call me if\p"
+	.string "phone number. Call me if\l"
 	.string "anything comes up!$"
 
 
@@ -612,8 +612,8 @@ NewBarkTownLab_Text_ElmDirections2:
 	.string "If a wild POKéMON appears, let\n"
 	.string "your POKéMON battle it!\p"
 	.string "If your POKéMON is hurt, you\n"
-	.string "should heal it with the machine\p"
-	.string "to my right, or at the POKéCENTER.\n"
+	.string "should heal it with the machine\l"
+	.string "to my right, or at the POKéCENTER.\p"
 	.string "I'm counting on you!.$"
 
 NewBarkTownLab_Text_GotElmsNumber:

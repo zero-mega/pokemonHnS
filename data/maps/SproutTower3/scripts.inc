@@ -54,6 +54,8 @@ SproutTower3_EventScript_TriggerSceneLeft::
 	waitmovement 0
 	msgbox SproutTower_Text_RivalOnlyCaresStrong, MSGBOX_DEFAULT
 	msgbox SproutTower_Text_RivalUsedEscapeRope, MSGBOX_DEFAULT
+	applymovement LOCALID_SPROUT_TOWER_SILVER SproutTower3_Movement_EscapeRope
+	waitmovement 0
 	closemessage
 	fadescreen FADE_TO_BLACK
 	playse SE_EXIT
@@ -82,6 +84,8 @@ SproutTower3_EventScript_TriggerSceneRight::
 	waitmovement 0
 	msgbox SproutTower_Text_RivalOnlyCaresStrong, MSGBOX_DEFAULT
 	msgbox SproutTower_Text_RivalUsedEscapeRope, MSGBOX_DEFAULT
+	applymovement LOCALID_SPROUT_TOWER_SILVER SproutTower3_Movement_EscapeRope
+	waitmovement 0
 	closemessage
 	fadescreen FADE_TO_BLACK
 	playse SE_EXIT
@@ -138,6 +142,21 @@ SproutTower3_Movement_SilverRight:
 	walk_right
 	walk_down
 	walk_down
+	step_end
+
+SproutTower3_Movement_EscapeRope:
+	face_right
+	face_up
+	face_left
+	face_down
+	face_right
+	face_up
+	face_left
+	face_down
+	face_right
+	face_up
+	face_left
+	face_down
 	step_end
 
 SproutTower_Text_ElderLecturesRival:

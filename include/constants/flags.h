@@ -794,9 +794,9 @@
 #define FLAG_MOVE_TUTOR_TAUGHT_HEADBUTT                  0x2EB
 #define FLAG_GOLDENROD_CITY_AIDE_VISITED                0x2EC
 #define FLAG_SHOWN_ELM_TOGEPI                           0x2ED
-#define FLAG_GARBAGEFLAG2                               0x2EE
-#define FLAG_HIDE_VICTORY_ROAD_EXIT_WALLY                           0x2EF
-#define FLAG_HIDE_LITTLEROOT_TOWN_MOM_OUTSIDE                       0x2F0
+#define FLAG_HIDE_AZALEA_ARIADOS_LEFT                               0x2EE
+#define FLAG_HIDE_AZALEA_ARIADOS_MID                           0x2EF
+#define FLAG_HIDE_AZALEA_ARIADOS_RIGHT                       0x2F0
 #define FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_STEVEN              0x2F1
 #define FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_VIGOROTH_1          0x2F2
 #define FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_VIGOROTH_2          0x2F3

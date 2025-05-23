@@ -198,7 +198,7 @@ PlayersHouse1_Text_ElmsLookingForYou:
 	.string "He said he wanted you to do\n"
 	.string "something for him.\p"
 	.string "Oh! I almost forgot! Your POKéGEAR\n"
-	.string "is back from the repair shop\n"
+	.string "is back from the repair shop.\p"
 	.string "Here you go!$"
 
 PlayersHouse1_Text_ObtainedPokeGear:

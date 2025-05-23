@@ -6815,7 +6815,7 @@
       "id": "LAYOUT_AZALEA_GYM",
       "name": "AzaleaGym_Layout",
       "width": 24,
-      "height": 20,
+      "height": 60,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_AzaleaGym_29",
       "border_filepath": "data/layouts/AzaleaGym/border.bin",
