@@ -215,8 +215,7 @@ NewBarkTown_Movement_PlayerPushedBySilver:
 	walk_fast_down
 	face_up
 	lock_facing_direction
-	jump_down
-	jump_down
+	jump_2_down
 	unlock_facing_direction
 	face_down
 	step_end

@@ -543,8 +543,8 @@
       "x": 16,
       "y": 36,
       "elevation": 0,
-      "dest_map": "MAP_ECRUTEAK_GYM",
-      "dest_warp_id": "49"
+      "dest_map": "MAP_ECRUTEAK_GYM_TEST",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

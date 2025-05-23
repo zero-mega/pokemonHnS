@@ -517,3 +517,15 @@ const u16 gMetatileAttributes_HallOfFame[] = INCBIN_U16("data/tilesets/secondary
 
 const u16 gMetatiles_KurtsHouse[] = INCBIN_U16("data/tilesets/secondary/kurts_house/metatiles.bin");
 const u16 gMetatileAttributes_KurtsHouse[] = INCBIN_U16("data/tilesets/secondary/kurts_house/metatile_attributes.bin");
+
+const u16 gMetatiles_Observatory[] = INCBIN_U16("data/tilesets/secondary/observatory/metatiles.bin");
+const u16 gMetatileAttributes_Observatory[] = INCBIN_U16("data/tilesets/secondary/observatory/metatile_attributes.bin");
+
+const u16 gMetatiles_CianwoodGymNew[] = INCBIN_U16("data/tilesets/secondary/cianwood_gym_new/metatiles.bin");
+const u16 gMetatileAttributes_CianwoodGymNew[] = INCBIN_U16("data/tilesets/secondary/cianwood_gym_new/metatile_attributes.bin");
+
+const u16 gMetatiles_EcruteakGymNew[] = INCBIN_U16("data/tilesets/secondary/ecruteak_gym_new/metatiles.bin");
+const u16 gMetatileAttributes_EcruteakGymNew[] = INCBIN_U16("data/tilesets/secondary/ecruteak_gym_new/metatile_attributes.bin");
+
+const u16 gMetatiles_MtSilverSnow[] = INCBIN_U16("data/tilesets/secondary/mt_silver_snow/metatiles.bin");
+const u16 gMetatileAttributes_MtSilverSnow[] = INCBIN_U16("data/tilesets/secondary/mt_silver_snow/metatile_attributes.bin");

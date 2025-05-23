@@ -46,8 +46,8 @@
       "x": 2,
       "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_MT_MOON1",
-      "dest_warp_id": "10"
+      "dest_map": "MAP_MT_MOON_TEST",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

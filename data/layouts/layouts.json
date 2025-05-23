@@ -5114,7 +5114,7 @@
     {
       "id": "LAYOUT_GOLDENROD_CITY",
       "name": "GoldenrodCity_Layout",
-      "width": 48,
+      "width": 58,
       "height": 46,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Goldenrod",
@@ -8640,6 +8640,66 @@
       "secondary_tileset": "gTileset_Theater_26",
       "border_filepath": "data/layouts/VioletCityGym2/border.bin",
       "blockdata_filepath": "data/layouts/VioletCityGym2/map.bin"
+    },
+    {
+      "id": "LAYOUT_LIGHTHOUSE_TOP_TEST",
+      "name": "LighthouseTopTest_Layout",
+      "width": 16,
+      "height": 14,
+      "primary_tileset": "gTileset_Johto_Building",
+      "secondary_tileset": "gTileset_Observatory",
+      "border_filepath": "data/layouts/LighthouseTopTest/border.bin",
+      "blockdata_filepath": "data/layouts/LighthouseTopTest/map.bin"
+    },
+    {
+      "id": "LAYOUT_CIANWOOD_GYM_TEST",
+      "name": "CianwoodGymTest_Layout",
+      "width": 21,
+      "height": 17,
+      "primary_tileset": "gTileset_Johto_Building",
+      "secondary_tileset": "gTileset_CianwoodGymNew",
+      "border_filepath": "data/layouts/CianwoodGymTest/border.bin",
+      "blockdata_filepath": "data/layouts/CianwoodGymTest/map.bin"
+    },
+    {
+      "id": "LAYOUT_ECRUTEAK_GYM_TEST",
+      "name": "EcruteakGymTest_Layout",
+      "width": 17,
+      "height": 48,
+      "primary_tileset": "gTileset_Johto_Building",
+      "secondary_tileset": "gTileset_EcruteakGymNew",
+      "border_filepath": "data/layouts/EcruteakGymTest/border.bin",
+      "blockdata_filepath": "data/layouts/EcruteakGymTest/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_MOON_TEST",
+      "name": "MtMoonTest_Layout",
+      "width": 49,
+      "height": 29,
+      "primary_tileset": "gTileset_Johto_General",
+      "secondary_tileset": "gTileset_Barn",
+      "border_filepath": "data/layouts/MtMoonTest/border.bin",
+      "blockdata_filepath": "data/layouts/MtMoonTest/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_SILVER_SIDE_TEST",
+      "name": "MtSilverSideTest_Layout",
+      "width": 55,
+      "height": 64,
+      "primary_tileset": "gTileset_Johto_General",
+      "secondary_tileset": "gTileset_MtSilverSnow",
+      "border_filepath": "data/layouts/MtSilverSideTest/border.bin",
+      "blockdata_filepath": "data/layouts/MtSilverSideTest/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_SILVER_SUMMIT_TEST",
+      "name": "MtSilverSummitTest_Layout",
+      "width": 21,
+      "height": 27,
+      "primary_tileset": "gTileset_Johto_General",
+      "secondary_tileset": "gTileset_MtSilverSnow",
+      "border_filepath": "data/layouts/MtSilverSummitTest/border.bin",
+      "blockdata_filepath": "data/layouts/MtSilverSummitTest/map.bin"
     }
   ]
 }

@@ -1917,3 +1917,15 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/MtSilver8/scripts.inc"
 
 	.include "data/maps/VioletCityGym2/scripts.inc"
+
+	.include "data/maps/LighthouseTopTest/scripts.inc"
+
+	.include "data/maps/CianwoodGymTest/scripts.inc"
+
+	.include "data/maps/EcruteakGymTest/scripts.inc"
+
+	.include "data/maps/MtMoonTest/scripts.inc"
+
+	.include "data/maps/MtSilverSideTest/scripts.inc"
+
+	.include "data/maps/MtSilverSummitTest/scripts.inc"

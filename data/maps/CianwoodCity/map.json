@@ -236,7 +236,7 @@
       "x": 15,
       "y": 46,
       "elevation": 0,
-      "dest_map": "MAP_CIANWOOD_GYM",
+      "dest_map": "MAP_CIANWOOD_GYM_TEST",
       "dest_warp_id": "0"
     },
     {

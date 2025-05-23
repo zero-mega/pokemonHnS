@@ -491,7 +491,13 @@
     "SafariZone_Low_Left",
     "SafariZone_Low_Right",
     "SafariZone_Top_Mid",
-    "SafariZone_Top_Right"
+    "SafariZone_Top_Right",
+    "LighthouseTopTest",
+    "CianwoodGymTest",
+    "EcruteakGymTest",
+    "MtMoonTest",
+    "MtSilverSideTest",
+    "MtSilverSummitTest"
   ],
   "gMapGroup_Emerald1": [
     "PetalburgCity",
