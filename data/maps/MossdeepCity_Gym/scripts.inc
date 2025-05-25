@@ -71,7 +71,7 @@ MossdeepCity_Gym_EventScript_TateAndLizaDefeated::
 	setflag FLAG_BADGE07_GET
 	setflag FLAG_HIDE_AQUA_HIDEOUT_GRUNTS
 	clearflag FLAG_GARBAGEFLAG
-	clearflag FLAG_UNKNOWN_0x393
+	clearflag FLAG_GARBAGEFLAG
 	setvar VAR_0x8008, 7
 	call Common_EventScript_SetGymTrainers
 	clearflag FLAG_GARBAGEFLAG
@@ -80,7 +80,7 @@ MossdeepCity_Gym_EventScript_TateAndLizaDefeated::
 	clearflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_2F_TEAM_MAGMA
 	clearflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_2F_STEVEN
 	setvar VAR_GARBAGEVAR, 1
-	setflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_STEVEN
+	setflag FLAG_GARBAGEFLAG
 	setvar VAR_MOSSDEEP_SPACE_CENTER_STATE, 1
 	call MossdeepCity_Gym_EventScript_GiveCalmMind
 	closemessage

@@ -1,9 +1,19 @@
+.set LOCALID_GOLDENROD_ROCKET_SCOUT, 12
+
 GoldenrodCity_MapScripts::
 	.byte 0
 
 GoldenrodCity_EventScript_Trigger:: @flagheap
 	call_if_unset FLAG_SHOWN_ELM_TOGEPI, GoldenrodCity_Elm_Togepi_Call
 	
+	setflag FLAG_HIDE_GOLDENROD_ROCKETS
+
+	clearflag FLAG_HIDE_GOLDENROD_ROCKET_SCOUT
+	clearflag FLAG_HIDE_GOLDENROD_NPCS
+	clearflag FLAG_GOT_RETURN
+	clearflag FLAG_GOT_FRUSTRATION
+
+	setvar VAR_ELEVATOR, 0
 	setvar VAR_GOLDENROD_CITY_STATE, 1
 	release
 	end
@@ -50,7 +60,7 @@ GoldenrodCity_EventScript_CooltrainerF::
 GoldenrodCity_EventScript_Lass::
 	lock
 	faceplayer
-	@msgbox , MSGBOX_DEFAULT
+	msgbox GoldenrodCity_Text_Lass, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
@@ -58,23 +68,29 @@ GoldenrodCity_EventScript_Lass::
 GoldenrodCity_EventScript_Gramps::
 	lock
 	faceplayer
-	@msgbox , MSGBOX_DEFAULT
+	msgbox GoldenrodCity_Text_Gramps, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
 
 GoldenrodCity_EventScript_RocketScout::
 	lock
-	faceplayer
-	@msgbox , MSGBOX_DEFAULT
+	msgbox GoldenrodCity_Text_RocketScout1, MSGBOX_DEFAULT
 	closemessage
+	PLAYSE SE_PIN
+	applymovement LOCALID_GOLDENROD_ROCKET_SCOUT, Common_Movement_ExclamationMark
+	delay 20
+	faceplayer
+	msgbox GoldenrodCity_Text_RocketScout2, MSGBOX_DEFAULT
+	closemessage
+	turnobject LOCALID_GOLDENROD_ROCKET_SCOUT, DIR_NORTH
 	release
 	end
 
 GoldenrodCity_EventScript_Rocket1::
 	lock
 	faceplayer
-	@msgbox , MSGBOX_DEFAULT
+	msgbox GoldenrodCity_Text_Rocket1, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
@@ -82,7 +98,7 @@ GoldenrodCity_EventScript_Rocket1::
 GoldenrodCity_EventScript_Rocket2::
 	lock
 	faceplayer
-	@msgbox , MSGBOX_DEFAULT
+	msgbox GoldenrodCity_Text_Rocket2, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
@@ -90,7 +106,7 @@ GoldenrodCity_EventScript_Rocket2::
 GoldenrodCity_EventScript_Rocket3::
 	lock
 	faceplayer
-	@msgbox , MSGBOX_DEFAULT
+	msgbox GoldenrodCity_Text_Rocket3, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
@@ -98,7 +114,7 @@ GoldenrodCity_EventScript_Rocket3::
 GoldenrodCity_EventScript_Rocket4::
 	lock
 	faceplayer
-	@msgbox , MSGBOX_DEFAULT
+	msgbox GoldenrodCity_Text_Rocket4, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
@@ -106,7 +122,7 @@ GoldenrodCity_EventScript_Rocket4::
 GoldenrodCity_EventScript_Rocket5::
 	lock
 	faceplayer
-	@msgbox , MSGBOX_DEFAULT
+	msgbox GoldenrodCity_Text_Rocket5, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
@@ -114,10 +130,111 @@ GoldenrodCity_EventScript_Rocket5::
 GoldenrodCity_EventScript_Rocket6::
 	lock
 	faceplayer
-	@msgbox , MSGBOX_DEFAULT
+	msgbox GoldenrodCity_Text_Rocket6, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
+
+GoldenrodCity_EventScript_Woman::
+	lock
+	faceplayer
+	msgbox GoldenrodCity_Text_Woman, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+GoldenrodCity_EventScript_Hiker::
+	lock
+	faceplayer
+	msgbox GoldenrodCity_Text_Hiker, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+GoldenrodCity_EventScript_Snubbull::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_SNUBBULL, CRY_MODE_NORMAL
+	msgbox GoldenrodCity_Text_Snubbull, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+GoldenrodCity_EventScript_Mime::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MR_MIME, CRY_MODE_NORMAL
+	msgbox GoldenrodCity_Text_MrMime, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+GoldenrodCity_EventScript_SignUnderground::
+	lock
+	msgbox GoldenrodCity_Text_UndergroundSouthSign, MSGBOX_SIGN
+	closemessage
+	release
+	end
+GoldenrodCity_EventScript_SignDept::
+	lock
+	msgbox GoldenrodCity_Text_DeptStoreSign, MSGBOX_SIGN
+	closemessage
+	release
+	end
+GoldenrodCity_EventScript_SignBike::
+	lock
+	msgbox GoldenrodCity_Text_BikeShopSign, MSGBOX_SIGN
+	closemessage
+	release
+	end
+GoldenrodCity_EventScript_SignTrain::
+	lock
+	msgbox GoldenrodCity_Text_StationSign, MSGBOX_SIGN
+	closemessage
+	release
+	end
+GoldenrodCity_EventScript_SignGym::
+	lock
+	msgbox GoldenrodCity_Text_GymSign, MSGBOX_SIGN
+	closemessage
+	release
+	end
+GoldenrodCity_EventScript_SignFlower::
+	lock
+	msgbox GoldenrodCity_Text_FlowerShopSign, MSGBOX_SIGN
+	closemessage
+	release
+	end
+GoldenrodCity_EventScript_SignRadio::
+	lock
+	msgbox GoldenrodCity_Text_RadioTowerSign, MSGBOX_SIGN
+	closemessage
+	release
+	end
+GoldenrodCity_EventScript_SignGameCorner::
+	lock
+	msgbox GoldenrodCity_Text_GameCornerSign, MSGBOX_SIGN
+	closemessage
+	release
+	end
+
+GoldenrodCity_Text_Woman:
+	.string "I used to train in WHITNEY's GYM,\n"
+	.string "but all her crying gave me a\l"
+	.string "headache so I quit.$"
+
+GoldenrodCity_Text_Hiker:
+	.string "When I went into the game corner\n"
+	.string "it was Friday... How long was I\l"
+	.string "in there?!$"
+
+GoldenrodCity_Text_Snubbull:
+	.string "SNUBBULL: SNUUUBUUUULL$"
+
+GoldenrodCity_Text_MrMime:
+	.string "............................$"
 
 GoldenrodCity_Text_ElmCall:
 	.string "ELM: Hello, {PLAYER}?\n"

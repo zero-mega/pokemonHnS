@@ -2028,3 +2028,14 @@ const struct Tileset gTileset_MtSilverSnow =
     .metatileAttributes = gMetatileAttributes_MtSilverSnow,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_ShopRooftop =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_ShopRooftop,
+    .palettes = gTilesetPalettes_ShopRooftop,
+    .metatiles = gMetatiles_ShopRooftop,
+    .metatileAttributes = gMetatileAttributes_ShopRooftop,
+    .callback = NULL,
+};

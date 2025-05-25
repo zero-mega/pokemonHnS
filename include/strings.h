@@ -1474,6 +1474,11 @@ extern const u8 gText_Heavy[];
 extern const u8 gText_Fast[];
 extern const u8 gText_LevelBall[];
 
+extern const u8 gText_Abra[];
+extern const u8 gText_Clefairy[];
+extern const u8 gText_Munchlax[];
+extern const u8 gText_Dratini[];
+extern const u8 gText_Porygon[];
 
 
 // Cable Club multichoice text

@@ -1929,3 +1929,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/MtSilverSideTest/scripts.inc"
 
 	.include "data/maps/MtSilverSummitTest/scripts.inc"
+
+	.include "data/maps/GoldenrodDepartmentStore7Night/scripts.inc"

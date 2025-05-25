@@ -3668,3 +3668,22 @@ const u16 gTilesetPalettes_MtSilverSnow[][16] =
 };
 
 const u32 gTilesetTiles_MtSilverSnow[] = INCBIN_U32("data/tilesets/secondary/mt_silver_snow/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_ShopRooftop[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/shop_rooftop/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/shop_rooftop/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/shop_rooftop/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/shop_rooftop/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/shop_rooftop/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/shop_rooftop/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/shop_rooftop/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/shop_rooftop/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/shop_rooftop/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/shop_rooftop/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/shop_rooftop/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/shop_rooftop/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/shop_rooftop/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_ShopRooftop[] = INCBIN_U32("data/tilesets/secondary/shop_rooftop/tiles.4bpp.lz");

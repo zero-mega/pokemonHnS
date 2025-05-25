@@ -7087,7 +7087,7 @@
       "width": 32,
       "height": 19,
       "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_JohtoShop",
+      "secondary_tileset": "gTileset_ShopRooftop",
       "border_filepath": "data/layouts/GoldenrodDepartmentStore7/border.bin",
       "blockdata_filepath": "data/layouts/GoldenrodDepartmentStore7/map.bin"
     },
@@ -8700,6 +8700,16 @@
       "secondary_tileset": "gTileset_MtSilverSnow",
       "border_filepath": "data/layouts/MtSilverSummitTest/border.bin",
       "blockdata_filepath": "data/layouts/MtSilverSummitTest/map.bin"
+    },
+    {
+      "id": "LAYOUT_GOLDENROD_DEPARTMENT_STORE7NIGHT",
+      "name": "GoldenrodDepartmentStore7Night_Layout",
+      "width": 32,
+      "height": 19,
+      "primary_tileset": "gTileset_Johto_Building",
+      "secondary_tileset": "gTileset_ShopRooftop",
+      "border_filepath": "data/layouts/GoldenrodDepartmentStore7Night/border.bin",
+      "blockdata_filepath": "data/layouts/GoldenrodDepartmentStore7Night/map.bin"
     }
   ]
 }

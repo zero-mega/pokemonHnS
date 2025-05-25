@@ -124,7 +124,9 @@
 #define MULTI_TAG_MATCH_TYPE               113
 #define MULTI_GAME_CORNER_DOLLS2           114
 #define MULTI_DAYS_OF_WEEK                 115
-#define MULTI_KURT_BALLS                 116
+#define MULTI_KURT_BALLS                   116
+#define MULTI_PRIZE_MONS                   117
+#define MULTI_6FLOORS                      118
 
 
 // Lilycove SS Tidal Multichoice Selections

@@ -797,8 +797,8 @@
 #define FLAG_HIDE_AZALEA_ARIADOS_LEFT                               0x2EE
 #define FLAG_HIDE_AZALEA_ARIADOS_MID                           0x2EF
 #define FLAG_HIDE_AZALEA_ARIADOS_RIGHT                       0x2F0
-#define FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_STEVEN              0x2F1
-#define FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_VIGOROTH_1          0x2F2
+#define FLAG_GOT_RETURN              0x2F1
+#define FLAG_GOT_FRUSTRATION          0x2F2
 #define FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_VIGOROTH_2          0x2F3
 #define FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_TEAM_MAGMA          0x2F4
 #define FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_BEDROOM_MOM               0x2F5
@@ -959,7 +959,7 @@
 #define FLAG_HIDE_ILEX_FOREST_KIMONO                             0x390
 #define FLAG_HIDE_GOLDENROD_ROCKET_SCOUT                              0x391
 #define FLAG_HIDE_GOLDENROD_ROCKETS                        0x392
-#define FLAG_UNKNOWN_0x393                                          0x393 // Set, however has no purpose.
+#define FLAG_HIDE_GOLDENROD_NPCS                                          0x393 // Set, however has no purpose.
 #define FLAG_HIDE_MT_PYRE_SUMMIT_ARCHIE                             0x394
 #define FLAG_HIDE_MT_PYRE_SUMMIT_TEAM_AQUA                          0x395
 #define FLAG_HIDE_BATTLE_TOWER_REPORTER                             0x396

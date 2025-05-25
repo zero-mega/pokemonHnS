@@ -1285,6 +1285,12 @@ const u8 gText_Moon[] =         _("MOON    / CHESTO / (DRK/GST/PSN)");
 const u8 gText_Fast[] =         _("FAST    / ASPEAR / (ELC/FIG/FIR)");
 const u8 gText_LevelBall[] =    _("LEVEL  / PERSIM / (NRM/FLY/ICE)");
 
+const u8 gText_Abra[] = _("ABRA 120 COINS");
+const u8 gText_Clefairy[] = _("CLEFAIRY 500 COINS");
+const u8 gText_Munchlax[] = _("MUNCHLAX 2800 COINS");
+const u8 gText_Dratini[] = _("DRATINI 5500 COINS");
+const u8 gText_Porygon[] = _("PORYGON 6500 COINS");
+
 ALIGNED(4) const u8 gText_FacilitySingle[] = _("{STR_VAR_1} SINGLE");
 ALIGNED(4) const u8 gText_FacilityDouble[] = _("{STR_VAR_1} DOUBLE");
 ALIGNED(4) const u8 gText_FacilityMulti[] = _("{STR_VAR_1} MULTI");
