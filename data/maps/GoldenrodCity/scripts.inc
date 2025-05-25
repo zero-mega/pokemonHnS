@@ -12,7 +12,9 @@ GoldenrodCity_EventScript_Trigger:: @flagheap
 	clearflag FLAG_HIDE_GOLDENROD_NPCS
 	clearflag FLAG_GOT_RETURN
 	clearflag FLAG_GOT_FRUSTRATION
+	clearflag FLAG_RECEIVED_BIKE
 
+	
 	setvar VAR_ELEVATOR, 0
 	setvar VAR_GOLDENROD_CITY_STATE, 1
 	release

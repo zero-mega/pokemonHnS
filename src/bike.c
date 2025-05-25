@@ -292,11 +292,30 @@ static void MovePlayerOnAcroBike(u8 newDirection, u16 newKeys, u16 heldKeys)
 {
     sAcroBikeTransitions[CheckMovementInputAcroBike(&newDirection, newKeys, heldKeys)](newDirection);
 }
+static u8 CheckMovementInputAcroBike(u8 *newDirection, u16 newKeys, u16 heldKeys)
+{
+    u8 direction = GetPlayerMovementDirection(); // Get last real direction
 
+    if (*newDirection == DIR_NONE)
+    {
+        *newDirection = direction;  // Maintain facing direction when idle
+        gPlayerAvatar.runningState = NOT_MOVING;
+        gPlayerAvatar.acroBikeState = ACRO_STATE_NORMAL;
+        return ACRO_TRANS_FACE_DIRECTION;
+    }
+
+    gPlayerAvatar.runningState = MOVING;
+    gPlayerAvatar.acroBikeState = ACRO_STATE_NORMAL;
+    return ACRO_TRANS_MOVING;
+}
+
+
+/* //crystal
 static u8 CheckMovementInputAcroBike(u8 *newDirection, u16 newKeys, u16 heldKeys)
 {
     return sAcroBikeInputHandlers[gPlayerAvatar.acroBikeState](newDirection, newKeys, heldKeys);
 }
+*/
 
 static u8 AcroBikeHandleInputNormal(u8 *newDirection, u16 newKeys, u16 heldKeys)
 {
@@ -777,13 +796,14 @@ static void AcroBikeTransition_WheelieLoweringMoving(u8 direction)
 
     PlayerEndWheelieWhileMoving(direction);
 }
-
+void Bike_TryAcroBikeHistoryUpdate(u16 newKeys, u16 heldKeys) {} //crystal
+/*
 void Bike_TryAcroBikeHistoryUpdate(u16 newKeys, u16 heldKeys)
 {
     if (gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_ACRO_BIKE)
         AcroBike_TryHistoryUpdate(newKeys, heldKeys);
 }
-
+*/
 static void AcroBike_TryHistoryUpdate(u16 newKeys, u16 heldKeys) // newKeys is unused
 {
     u8 direction = Bike_DPadToDirection(heldKeys);
