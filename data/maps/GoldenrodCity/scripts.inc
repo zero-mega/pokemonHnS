@@ -7,14 +7,19 @@ GoldenrodCity_EventScript_Trigger:: @flagheap
 	call_if_unset FLAG_SHOWN_ELM_TOGEPI, GoldenrodCity_Elm_Togepi_Call
 	
 	setflag FLAG_HIDE_GOLDENROD_ROCKETS
+	setflag FLAG_HIDE_GOLDENROD_BILL
 
 	clearflag FLAG_HIDE_GOLDENROD_ROCKET_SCOUT
 	clearflag FLAG_HIDE_GOLDENROD_NPCS
 	clearflag FLAG_GOT_RETURN
 	clearflag FLAG_GOT_FRUSTRATION
 	clearflag FLAG_RECEIVED_BIKE
-
+	clearflag FLAG_RECEIVED_SQUIRTBOTTLE
+	clearflag FLAG_GOT_EEVEE
+	clearflag FLAG_SYS_PC_BILL
+	clearflag FLAG_FIXED_TRAIN
 	
+	setvar VAR_TRAIN, 0
 	setvar VAR_ELEVATOR, 0
 	setvar VAR_GOLDENROD_CITY_STATE, 1
 	release

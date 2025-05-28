@@ -34,8 +34,8 @@ EventScript_AccessPlayersPC::
 
 EventScript_AccessPokemonStorage::
 	playse SE_PC_LOGIN
-	call_if_unset FLAG_SYS_PC_Bill, EventScript_AccessSomeonesPC
-	call_if_set FLAG_SYS_PC_Bill, EventScript_AccessBillsPC
+	call_if_unset FLAG_SYS_PC_BILL, EventScript_AccessSomeonesPC
+	call_if_set FLAG_SYS_PC_BILL, EventScript_AccessBillsPC
 	msgbox gText_StorageSystemOpened, MSGBOX_DEFAULT
 	special ShowPokemonStorageSystemPC
 	waitstate

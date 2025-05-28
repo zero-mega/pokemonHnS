@@ -10583,7 +10583,7 @@ static void Cmd_givecaughtmon(void)
         }
 
         // Change to B_MSG_SENT_BillS_PC or B_MSG_BillS_BOX_FULL
-        if (FlagGet(FLAG_SYS_PC_Bill))
+        if (FlagGet(FLAG_SYS_PC_BILL))
             gBattleCommunication[MULTISTRING_CHOOSER]++;
     }
 

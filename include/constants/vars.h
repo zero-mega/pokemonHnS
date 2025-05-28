@@ -127,7 +127,7 @@
 #define VAR_SLOWPOKE_TAIL                               0x406B 
 #define VAR_ILEX_FOREST_FARFETCHD                               0x406C //0 = CHASING, 1// start going right way, 2 = done
 #define VAR_ELEVATOR                               0x406D 
-#define VAR_ROUTE115_STATE                               0x406E // Unused Var
+#define VAR_TRAIN                               0x406E 
 #define VAR_ROUTE116_STATE                               0x406F
 #define VAR_ROUTE117_STATE                               0x4070 // Unused Var
 #define VAR_ROUTE118_STATE                               0x4071

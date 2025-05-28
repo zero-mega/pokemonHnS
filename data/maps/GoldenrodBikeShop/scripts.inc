@@ -28,6 +28,7 @@ GoldenrodBikeShop_EventScript_Clerk_BikeReceived::
 
 GoldenrodBikeShop_EventScript_Clerk2::
 	lock
+	faceplayer
 	msgbox GoldenrodBikeShop_Text_Clerk2, MSGBOX_DEFAULT
 	closemessage
 	release

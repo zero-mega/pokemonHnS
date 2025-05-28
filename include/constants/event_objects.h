@@ -115,7 +115,7 @@
 #define OBJ_EVENT_GFX_BRENDAN_UNDERWATER         111
 #define OBJ_EVENT_GFX_MAY_UNDERWATER             112
 #define OBJ_EVENT_GFX_MOVING_BOX                 113
-#define OBJ_EVENT_GFX_CABLE_CAR                  114
+#define OBJ_EVENT_GFX_TRAIN_FRONT                  114
 #define OBJ_EVENT_GFX_SCIENTIST_F                115
 #define OBJ_EVENT_GFX_KIMONO_GIRL             116
 #define OBJ_EVENT_GFX_ROCKET_M              117
@@ -201,9 +201,9 @@
 #define OBJ_EVENT_GFX_KYOGRE_FRONT               197
 #define OBJ_EVENT_GFX_GROUDON_FRONT              198
 #define OBJ_EVENT_GFX_FOSSIL                     199
-#define OBJ_EVENT_GFX_REGIROCK                   200
+#define OBJ_EVENT_GFX_TRAIN_MID                   200
 #define OBJ_EVENT_GFX_REGICE                     201
-#define OBJ_EVENT_GFX_REGISTEEL                  202
+#define OBJ_EVENT_GFX_TRAIN_BACK                  202
 #define OBJ_EVENT_GFX_SKITTY                     203
 #define OBJ_EVENT_GFX_KECLEON                    204
 #define OBJ_EVENT_GFX_KYOGRE_ASLEEP              205

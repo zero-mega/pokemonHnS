@@ -102,8 +102,7 @@
     "Route25",
     "Route26",
     "Route27",
-    "Route28",
-    "GoldenrodDepartmentStore7Night"
+    "Route28"
   ],
   "gMapGroup_IndoorNewBark": [
     "NewBarkTownLab",
@@ -163,6 +162,7 @@
     "GoldenrodDepartmentStore5",
     "GoldenrodDepartmentStore6",
     "GoldenrodDepartmentStore7",
+    "GoldenrodDepartmentStore7Night",
     "GoldenrodDepartmentStoreElevator"
   ],
   "gMapGroup_IndoorEcruteak": [

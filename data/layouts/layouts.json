@@ -6964,7 +6964,7 @@
     {
       "id": "LAYOUT_GOLDENROD_STATION",
       "name": "GoldenrodStation_Layout",
-      "width": 54,
+      "width": 154,
       "height": 28,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_GoldenrodStation",
@@ -7714,7 +7714,7 @@
     {
       "id": "LAYOUT_SAFFRON_TRAIN_STATION",
       "name": "SaffronTrainStation_Layout",
-      "width": 54,
+      "width": 154,
       "height": 28,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_GoldenrodStation",

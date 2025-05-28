@@ -977,6 +977,37 @@ EventScript_SelectWithoutRegisteredLongItem::
 Common_EventScript_NopReturn::
 	return
 
+
+Common_EventScript_GiftMon::
+	call_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, Common_EventScript_RecieveMonParty
+	call_if_eq VAR_RESULT, MON_GIVEN_TO_PC, Common_EventScript_ReceiveMonPC
+	return
+
+Common_EventScript_ReceiveMonPC::
+	playfanfare MUS_OBTAIN_ITEM
+	message Common_Text_ReceivedMon
+	waitmessage
+	waitfanfare
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	call_if_eq VAR_RESULT, TRUE, Common_EventScript_NameReceivedBoxMon
+	call Common_EventScript_TransferredToPC
+	return
+	
+Common_EventScript_RecieveMonParty::
+	playfanfare MUS_OBTAIN_ITEM
+	message Common_Text_ReceivedMon
+	waitmessage
+	waitfanfare
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	call_if_eq VAR_RESULT, TRUE, Common_EventScript_NameReceivedPartyMonFull
+	return
+
+Common_EventScript_NameReceivedPartyMonFull::
+	call Common_EventScript_GetGiftMonPartySlot
+	call Common_EventScript_NameReceivedPartyMon
+	return
+
+
 @ Unused
 EventScript_CableClub_SetVarResult1::
 	setvar VAR_RESULT, 1

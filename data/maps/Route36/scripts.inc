@@ -131,15 +131,6 @@ Route36_EventScript_Defeated_Sudowoodo::
 	goto Common_EventScript_RemoveStaticPokemon
 	end
 
-
-Route36_EventScript_Floria::
-	lock
-	faceplayer
-	msgbox Route36_Text_Floria1, MSGBOX_DEFAULT
-	closemessage
-	release
-	end
-
 Route36_EventScript_Mark::
 	trainerbattle_single TRAINER_MARK Route36_Text_PsychicMarkSeen, Route36_Text_PsychicMarkBeaten
 	msgbox Route36_Text_PsychicMarkAfter, MSGBOX_AUTOCLOSE
@@ -192,23 +183,6 @@ Route36_Text_SudowoodoAttacked:
 	.string "The weird tree doesn't like the\n"
 	.string "SQUIRTBOTTLE!\p"
 	.string "The weird tree attacked!$"
-
-Route36_Text_Floria1:
-	.string "I'm the FLOWER SHOP's FLORIA!\p"
-	.string "Listen, listen!\p"
-	.string "When I sprinkled water on that\n"
-	.string "wiggly tree, it jumped right up!\p"
-	.string "It just has to be a POKéMON.\p"
-	.string "I bet it would be shocked out of\n"
-	.string "its disguise if you soaked it!\p"
-	.string "I know! I'll tell my sis and\n"
-	.string "borrow her water bottle!$"
-
-Route36_Text_Floria2:
-	.string "When I told my sis about the jigg-\n"
-	.string "-ly tree, she said it's dangerous.\p"
-	.string "If I beat WHITNEY, I wonder if\n"
-	.string "she'll lend me her water bottle…$"
 
 Route36_Text_RockSmashGuy1:
 	.string "Wa-hey!\p"

@@ -10,7 +10,7 @@ Route114_LanettesHouse_EventScript_Bill::
 	lock
 	faceplayer
 	goto_if_set FLAG_RECEIVED_DOLL_Bill, Route114_LanettesHouse_EventScript_OfferAdvice
-	setflag FLAG_SYS_PC_Bill
+	setflag FLAG_SYS_PC_BILL
 	msgbox Route114_LanettesHouse_Text_EverythingClutteredKeepThis, MSGBOX_DEFAULT
 	givedecoration DECOR_LOTAD_DOLL
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowNoRoomForDecor

@@ -1091,6 +1091,14 @@ static const struct SpriteFrameImage sPicTable_CableCar[] = {
     obj_frame_tiles(gObjectEventPic_CableCar),
 };
 
+static const struct SpriteFrameImage sPicTable_TrainMid[] = {
+    obj_frame_tiles(gObjectEventPic_TrainMid),
+};
+
+static const struct SpriteFrameImage sPicTable_TrainBack[] = {
+    obj_frame_tiles(gObjectEventPic_TrainBack),
+};
+
 static const struct SpriteFrameImage sPicTable_Scientist2[] = {
     overworld_frame(gObjectEventPic_Scientist2, 2, 4, 0),
     overworld_frame(gObjectEventPic_Scientist2, 2, 4, 1),

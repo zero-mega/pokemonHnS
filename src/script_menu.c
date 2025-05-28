@@ -364,7 +364,7 @@ static void CreatePCMultichoice(void)
     }
 
     // Change PC name if player has met Bill
-    if (FlagGet(FLAG_SYS_PC_Bill))
+    if (FlagGet(FLAG_SYS_PC_BILL))
         AddTextPrinterParameterized(windowId, FONT_NORMAL, gText_BillsPC, x, 1, TEXT_SKIP_DRAW, NULL);
     else
         AddTextPrinterParameterized(windowId, FONT_NORMAL, gText_SomeonesPC, x, 1, TEXT_SKIP_DRAW, NULL);

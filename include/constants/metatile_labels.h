@@ -298,6 +298,9 @@
 #define METATILE_InsideShip_IntactDoor_Bottom_Locked    0x233
 #define METATILE_InsideShip_IntactDoor_Bottom_Unlocked  0x22B
 
+// gTileset_JohtoShop
+#define METATILE_JohtoShop_Door  0x28D
+
 // gTileset_Johto_General
 #define METATILE_Johto_General_CalmWater       0x12B
 #define METATILE_Johto_General_Door            0x03D

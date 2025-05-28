@@ -1,6 +1,7 @@
 .set LOCALID_ROUTE32_BALDINGMAN, 1
 .set LOCALID_SLOWPOKETAIL_MAN, 14
 
+
 Route32_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route32_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
@@ -11,6 +12,7 @@ Route32_OnTransition:
 	end
 
 @fisher justin, fisher ralph, fisher henry, youngster albert, youngster gordon, camper roland, picnicker liz, birdkeeper peter, roar, frieda 
+
 
 Route32_EventScript_FisherJustin::
 	trainerbattle_single TRAINER_JUSTIN Route32_Text_FisherJustin_Seen, Route32_Text_FisherJustin_Beaten
