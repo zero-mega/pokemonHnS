@@ -56,7 +56,7 @@ MtPyre_Summit_EventScript_TeamAquaExits::
 	removeobject LOCALID_GRUNT_3
 	removeobject LOCALID_GRUNT_4
 	setflag FLAG_GARBAGEFLAG
-	setflag FLAG_HIDE_MT_PYRE_SUMMIT_TEAM_AQUA
+	setflag FLAG_GARBAGEFLAG
 	fadedefaultbgm
 	fadescreenswapbuffers FADE_FROM_BLACK
 	delay 20

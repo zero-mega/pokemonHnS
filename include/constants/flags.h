@@ -961,7 +961,7 @@
 #define FLAG_HIDE_GOLDENROD_ROCKETS                        0x392
 #define FLAG_HIDE_GOLDENROD_NPCS                                          0x393 // Set, however has no purpose.
 #define FLAG_RECEIVED_SQUIRTBOTTLE                             0x394
-#define FLAG_HIDE_MT_PYRE_SUMMIT_TEAM_AQUA                          0x395
+#define FLAG_UNLOCKED_GOLDENROD_UNDERGROUND_DOOR                          0x395
 #define FLAG_HIDE_BATTLE_TOWER_REPORTER                             0x396
 #define FLAG_HIDE_ROUTE_110_RIVAL                                   0x397
 #define FLAG_HIDE_CHAMPIONS_ROOM_RIVAL                              0x398
@@ -1572,9 +1572,9 @@
 #define FLAG_UNUSED_0x920                           (DAILY_FLAGS_START + 0x0)  // Unused Flag
 #define FLAG_DAILY_CONTEST_LOBBY_RECEIVED_BERRY     (DAILY_FLAGS_START + 0x1)
 #define FLAG_DAILY_SECRET_BASE                      (DAILY_FLAGS_START + 0x2)
-#define FLAG_UNUSED_0x923                           (DAILY_FLAGS_START + 0x3)  // Sudo2
-#define FLAG_UNUSED_0x924                           (DAILY_FLAGS_START + 0x4)  // Sudo3
-#define FLAG_UNUSED_0x925                           (DAILY_FLAGS_START + 0x5)  // Unused Flag
+#define FLAG_DAILY_HAIRCUT1_RECEIVED                           (DAILY_FLAGS_START + 0x3)  // Sudo2
+#define FLAG_DAILY_HAIRCUT2_RECEIVED                           (DAILY_FLAGS_START + 0x4)  // Sudo3
+#define FLAG_DAILY_BUG_CONTEST_COMPLETED                           (DAILY_FLAGS_START + 0x5)  // Unused Flag
 #define FLAG_WONDERTRADE1                           (DAILY_FLAGS_START + 0x6)  // WondertradeFlag (1)
 #define FLAG_WONDERTRADE2                           (DAILY_FLAGS_START + 0x7)  // WondertradeFlag (2)
 #define FLAG_WONDERTRADE3                           (DAILY_FLAGS_START + 0x8)  // WondertradeFlag (3)

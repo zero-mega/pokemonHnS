@@ -18,7 +18,8 @@ GoldenrodCity_EventScript_Trigger:: @flagheap
 	clearflag FLAG_GOT_EEVEE
 	clearflag FLAG_SYS_PC_BILL
 	clearflag FLAG_FIXED_TRAIN
-	
+	clearflag FLAG_UNLOCKED_GOLDENROD_UNDERGROUND_DOOR
+
 	setvar VAR_TRAIN, 0
 	setvar VAR_ELEVATOR, 0
 	setvar VAR_GOLDENROD_CITY_STATE, 1

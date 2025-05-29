@@ -4964,7 +4964,7 @@
     {
       "id": "LAYOUT_ROUTE34",
       "name": "Route34_Layout",
-      "width": 54,
+      "width": 60,
       "height": 90,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Goldenrod",

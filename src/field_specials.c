@@ -4555,3 +4555,14 @@ void SetSpDefStat(void)
     u16 SpDefStat = gSpecialVar_0x8006;
     SetMonData(&gEnemyParty[0], MON_DATA_SPDEF, &SpDefStat);
 }
+
+//crystal haircut
+void HaircutBrother1(void)
+{
+    AdjustFriendship(&gPlayerParty[gSpecialVar_0x8004], FRIENDSHIP_EVENT_HAIRCUT1);
+}
+
+void HaircutBrother2(void)
+{
+    AdjustFriendship(&gPlayerParty[gSpecialVar_0x8004], FRIENDSHIP_EVENT_HAIRCUT2);
+}

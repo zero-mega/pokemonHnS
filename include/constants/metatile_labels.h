@@ -283,6 +283,12 @@
 // gTileset_Goldenrod
 #define METATILE_Goldenrod_Goldenrod  0x284
 
+// gTileset_GoldenrodUndergroundRocket
+#define METATILE_GoldenrodUndergroundRocket_RocketBarrier_BotLeft   0x3B8
+#define METATILE_GoldenrodUndergroundRocket_RocketBarrier_BotRight  0x3B9
+#define METATILE_GoldenrodUndergroundRocket_RocketBarrier_TopLeft   0x3B0
+#define METATILE_GoldenrodUndergroundRocket_RocketBarrier_TopRight  0x3B1
+
 // gTileset_InsideOfTruck
 #define METATILE_InsideOfTruck_DoorClosedFloor_Bottom  0x21D
 #define METATILE_InsideOfTruck_DoorClosedFloor_Mid     0x215
