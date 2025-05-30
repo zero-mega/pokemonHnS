@@ -8,6 +8,8 @@ GoldenrodDeptElevator_OnFrame::
 
 GoldenrodDeptElevator_EventScript_Exit::
 	opendoor 9, 4
+	opendoor 10, 6
+	waitdooranim
 	waitdooranim
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown1
 	waitmovement 0
@@ -16,6 +18,8 @@ GoldenrodDeptElevator_EventScript_Exit::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown1
 	waitmovement 0	
 	closedoor 9, 4
+	closedoor 10, 6
+	waitdooranim
 	waitdooranim
 	setvar VAR_ELEVATOR, 0
 	release
@@ -26,14 +30,18 @@ GoldenrodDeptElevator_EventScript_Elevator::
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
 	delay 8
 	opendoor 9, 4
+	opendoor 10, 6
+	waitdooranim
 	waitdooranim
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp1
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp1
 	waitmovement 0
 	closedoor 9, 4
+	closedoor 10, 6
 	waitdooranim
-	multichoice 20, 0, MULTI_6FLOORS, FALSE
+	waitdooranim
+	multichoice 20, 0, MULTI_7FLOORS, FALSE
 	switch VAR_RESULT
 	case 0, GoldenrodDeptElevator_EventScript_F6
 	case 1, GoldenrodDeptElevator_EventScript_F5
@@ -41,11 +49,20 @@ GoldenrodDeptElevator_EventScript_Elevator::
 	case 3, GoldenrodDeptElevator_EventScript_F3
 	case 4, GoldenrodDeptElevator_EventScript_F2
 	case 5, GoldenrodDeptElevator_EventScript_F1
-	case 6, GoldenrodDeptElevator_EventScript_Cancel
+	case 6, GoldenrodDeptElevator_EventScript_F0
+	case 7, GoldenrodDeptElevator_EventScript_Cancel
 	case MULTI_B_PRESSED, GoldenrodDeptElevator_EventScript_Cancel
 	closemessage
 	end
 
+GoldenrodDeptElevator_EventScript_F0::
+	fadescreen FADE_TO_BLACK
+	playse SE_SUCCESS
+	setvar VAR_ELEVATOR, 1
+	waitse
+	warp MAP_GOLDENROD_UNDERGROUND_ROCKET3, 10, 5
+	delay 60
+	end
 GoldenrodDeptElevator_EventScript_F1::
 	fadescreen FADE_TO_BLACK
 	playse SE_SUCCESS
@@ -54,7 +71,6 @@ GoldenrodDeptElevator_EventScript_F1::
 	warp MAP_GOLDENROD_DEPARTMENT_STORE1, 9, 3
 	delay 60
 	end
-
 GoldenrodDeptElevator_EventScript_F2::
 	fadescreen FADE_TO_BLACK
 	playse SE_SUCCESS
@@ -99,6 +115,8 @@ GoldenrodDeptElevator_EventScript_F6::
 GoldenrodDeptElevator_EventScript_Cancel::
 	closemessage
 	opendoor 9, 4
+	opendoor 10, 6
+	waitdooranim
 	waitdooranim
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown1
 	waitmovement 0
@@ -107,6 +125,8 @@ GoldenrodDeptElevator_EventScript_Cancel::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown1
 	waitmovement 0	
 	closedoor 9, 4
+	closedoor 10, 6
+	waitdooranim
 	waitdooranim
 	release
 	end

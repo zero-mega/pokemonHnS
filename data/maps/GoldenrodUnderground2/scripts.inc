@@ -1,3 +1,5 @@
+.set LOCALID_GOLDENROD_UNDERGROUND_KIMONO, 12
+
 GoldenrodUnderground2_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, GoldenrodUnderground2_OnLoad
 	.byte 0
@@ -6,6 +8,118 @@ GoldenrodUnderground2_OnLoad::
 	goto GoldenrodUnderground2_MapScript_TryOpenDoor
 	end
 
+GoldenrodUnderground2_EventScript_KimonoTriggerBot::
+	lock
+	playbgm MUS_HG_KIMONO_GIRL, TRUE
+	applymovement LOCALID_GOLDENROD_UNDERGROUND_KIMONO, GoldenrodUnderground2_Movement_Kimono_WalkToPlayerBot
+	waitmovement 0
+	msgbox GoldenrodUnderground2_Text_Kimono1, MSGBOX_DEFAULT
+	closemessage
+	playse SE_PIN
+	applymovement LOCALID_GOLDENROD_UNDERGROUND_KIMONO, Common_Movement_ExclamationMark
+	delay 60
+	msgbox GoldenrodUnderground2_Text_Kimono2, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_GOLDENROD_UNDERGROUND_KIMONO, Common_Movement_WalkUp1
+	waitmovement 0
+	applymovement LOCALID_GOLDENROD_UNDERGROUND_KIMONO, GoldenrodUnderground2_Movement_Kimono_Leave1
+	waitmovement 0
+	playse SE_M_PETAL_DANCE
+	applymovement LOCALID_GOLDENROD_UNDERGROUND_KIMONO, GoldenrodUnderground2_Movement_Kimono_Spin
+	waitmovement 0
+	applymovement LOCALID_GOLDENROD_UNDERGROUND_KIMONO, GoldenrodUnderground2_Movement_Kimono_Leave2
+	waitmovement 0
+	setflag FLAG_HIDE_GOLDENROD_UNDERGROUND_KIMONO
+	removeobject LOCALID_GOLDENROD_UNDERGROUND_KIMONO
+	fadedefaultbgm
+	setvar VAR_GOLDENROD_CITY_STATE, 1 @CHANGE LATER
+	end
+
+GoldenrodUnderground2_EventScript_KimonoTriggerTop::
+	lock
+	playbgm MUS_HG_KIMONO_GIRL, TRUE
+	applymovement LOCALID_GOLDENROD_UNDERGROUND_KIMONO, GoldenrodUnderground2_Movement_Kimono_WalkToPlayerTop
+	waitmovement 0
+	msgbox GoldenrodUnderground2_Text_Kimono1, MSGBOX_DEFAULT
+	closemessage
+	playse SE_PIN
+	applymovement LOCALID_GOLDENROD_UNDERGROUND_KIMONO, Common_Movement_ExclamationMark
+	delay 60
+	msgbox GoldenrodUnderground2_Text_Kimono2, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_GOLDENROD_UNDERGROUND_KIMONO, Common_Movement_WalkDown1
+	waitmovement 0
+	applymovement LOCALID_GOLDENROD_UNDERGROUND_KIMONO, GoldenrodUnderground2_Movement_Kimono_Leave1
+	waitmovement 0
+	playse SE_M_PETAL_DANCE
+	applymovement LOCALID_GOLDENROD_UNDERGROUND_KIMONO, GoldenrodUnderground2_Movement_Kimono_Spin
+	waitmovement 0
+	applymovement LOCALID_GOLDENROD_UNDERGROUND_KIMONO, GoldenrodUnderground2_Movement_Kimono_Leave2
+	waitmovement 0
+	setflag FLAG_HIDE_GOLDENROD_UNDERGROUND_KIMONO
+	removeobject LOCALID_GOLDENROD_UNDERGROUND_KIMONO
+	fadedefaultbgm
+	setvar VAR_GOLDENROD_CITY_STATE, 1 @CHANGE LATER
+	end
+
+
+GoldenrodUnderground2_Movement_Kimono_WalkToPlayerBot:
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+GoldenrodUnderground2_Movement_Kimono_WalkToPlayerTop:
+	walk_up
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+GoldenrodUnderground2_Movement_Kimono_Leave1:
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+GoldenrodUnderground2_Movement_Kimono_Spin:
+	face_down
+	face_right
+	face_up
+	face_left
+	face_down
+	face_right
+	face_up
+	step_end
+
+GoldenrodUnderground2_Movement_Kimono_Leave2:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	step_end
+
+
+GoldenrodUnderground2_Text_Kimono1:
+	.string "Team Rocket members in black suits\n"
+	.string "have been running around...\p"
+	.string "I was wondering what was going on.\n"
+	.string "So, you took on Team Rocket?\l"
+	.string "You are impressive!\p"
+	.string "You may be able to face the\n"
+	.string "legendary POKé...$"
+
+GoldenrodUnderground2_Text_Kimono2:
+	.string "Hahaha! Never mind.\n"
+	.string "I must go now.$"
 
 GoldenrodUnderground_EventScript_Eric::
 	trainerbattle_single TRAINER_ERIC GoldenrodUnderground_Text_SupernerdEricSeen, GoldenrodUnderground_Text_SupernerdEricBeaten
@@ -109,9 +223,9 @@ GoldenrodUnderground_EventScript_Haircut2::
 	goto_if_ge VAR_0x8004, PARTY_SIZE, GoldenrodUnderground_EventScript_Declined_Haircut2
 	specialvar VAR_RESULT, ScriptGetPartyMonSpecies
 	goto_if_eq VAR_RESULT, SPECIES_EGG, GoldenrodUnderground_EventScript_Declined_Haircut2
-	checkmoney 500, 0
+	checkmoney 300, 0
 	goto_if_eq VAR_RESULT, FALSE, GoldenrodUnderground_EventScript_NotEnough_Haircut2
-	removemoney 500
+	removemoney 300
 	updatemoneybox 0
 	msgbox GoldenrodUnderground_Text_YoungerBrotherLookCool
 	closemessage
@@ -183,6 +297,24 @@ GoldenrodUnderground2_EventScript_DoorAlreadyOpened::
 	closemessage
 	release
 	end
+
+
+GoldenrodUnderground2_EventScript_Item_CoinCase::
+	finditem ITEM_COIN_CASE
+	end
+
+GoldenrodUnderground2_EventScript_Item_SuperPotion::
+	finditem ITEM_SUPER_POTION
+	end
+
+GoldenrodUnderground2_EventScript_Item_ParalyzeHeal::
+	finditem ITEM_PARALYZE_HEAL
+	end
+
+GoldenrodUnderground2_EventScript_Item_Antidote::
+	finditem ITEM_ANTIDOTE
+	end
+
 
 GoldenrodUnderground_Text_YoungerBrotherOffer:
     .string "Welcome to the POKéMON SALON!\p"

@@ -255,7 +255,7 @@ Route101_EventScript_HideMayInBedroom::
 	return
 
 Route101_EventScript_HideBrendanInBedroom::
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_BEDROOM
+	setflag FLAG_GARBAGEFLAG
 	return
 
 Route101_Movement_BirchApproachPlayer:

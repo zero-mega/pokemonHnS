@@ -779,8 +779,8 @@
 #define TRAINER_DON                    775
 #define TRAINER_DORIS                    776
 #define TRAINER_EDNA                    777
-#define TRAINER_WATTSON_2                   778
-#define TRAINER_WATTSON_3                   779
+#define TRAINER_ETO_2                   778
+#define TRAINER_ETO_3                   779
 #define TRAINER_WATTSON_4                   780
 #define TRAINER_WATTSON_5                   781
 #define TRAINER_QUENTIN                  782

@@ -126,7 +126,7 @@
 #define MULTI_DAYS_OF_WEEK                 115
 #define MULTI_KURT_BALLS                   116
 #define MULTI_PRIZE_MONS                   117
-#define MULTI_6FLOORS                      118
+#define MULTI_7FLOORS                      118
 
 
 // Lilycove SS Tidal Multichoice Selections

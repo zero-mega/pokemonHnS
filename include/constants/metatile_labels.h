@@ -65,7 +65,7 @@
 #define METATILE_BattlePike_Curtain_Stage2_Tile4  0x219
 #define METATILE_BattlePike_Curtain_Stage2_Tile5  0x21A
 #define METATILE_BattlePike_Curtain_Stage2_Tile6  0x21B
-#define METATILE_BattlePike_Curtain_Stage3_Tile0  0x2AB
+#define METATILE_BattlePike_Curtain_Stage3_Tile0  0x011
 #define METATILE_BattlePike_Curtain_Stage3_Tile1  0x2B2
 #define METATILE_BattlePike_Curtain_Stage3_Tile2  0x2B3
 #define METATILE_BattlePike_Curtain_Stage3_Tile3  0x2B4
@@ -284,10 +284,24 @@
 #define METATILE_Goldenrod_Goldenrod  0x284
 
 // gTileset_GoldenrodUndergroundRocket
+#define METATILE_GoldenrodUndergroundRocket_NoBarrier1              0x378
+#define METATILE_GoldenrodUndergroundRocket_NoBarrier2              0x379
+#define METATILE_GoldenrodUndergroundRocket_NoBarrier3              0x37A
+#define METATILE_GoldenrodUndergroundRocket_NoBarrier4              0x380
+#define METATILE_GoldenrodUndergroundRocket_NoBarrier5              0x381
+#define METATILE_GoldenrodUndergroundRocket_NoBarrier6              0x382
+#define METATILE_GoldenrodUndergroundRocket_RocketBarrier1          0x399
+#define METATILE_GoldenrodUndergroundRocket_RocketBarrier2          0x39A
+#define METATILE_GoldenrodUndergroundRocket_RocketBarrier3          0x39B
+#define METATILE_GoldenrodUndergroundRocket_RocketBarrier4          0x3A1
+#define METATILE_GoldenrodUndergroundRocket_RocketBarrier5          0x3A2
+#define METATILE_GoldenrodUndergroundRocket_RocketBarrier6          0x3A3
 #define METATILE_GoldenrodUndergroundRocket_RocketBarrier_BotLeft   0x3B8
 #define METATILE_GoldenrodUndergroundRocket_RocketBarrier_BotRight  0x3B9
 #define METATILE_GoldenrodUndergroundRocket_RocketBarrier_TopLeft   0x3B0
-#define METATILE_GoldenrodUndergroundRocket_RocketBarrier_TopRight  0x3B1
+
+// gTileset_GreenHouses
+#define METATILE_GreenHouses_Elevator  0x2AB
 
 // gTileset_InsideOfTruck
 #define METATILE_InsideOfTruck_DoorClosedFloor_Bottom  0x21D
@@ -577,7 +591,7 @@
 #define METATILE_SecretBase_ComfortChair                0x2C1
 #define METATILE_SecretBase_ComfortDesk_BottomLeft      0x005
 #define METATILE_SecretBase_ComfortDesk_BottomMid       0x29F
-#define METATILE_SecretBase_ComfortDesk_BottomRight     0x2AB
+#define METATILE_SecretBase_ComfortDesk_BottomRight     0x011
 #define METATILE_SecretBase_ComfortDesk_TopLeft         0x296
 #define METATILE_SecretBase_ComfortDesk_TopMid          0x000
 #define METATILE_SecretBase_ComfortDesk_TopRight        0x000

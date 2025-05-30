@@ -190,7 +190,8 @@ static const u8 sDoorAnimTiles_BlackthornCity_Door[] = INCBIN_U8("graphics/door_
 static const u16 sDoorNullPalette70[16] = {};
 static const u8 sDoorAnimTiles_DeptStoreElevator[] = INCBIN_U8("graphics/door_anims/dept_store_elevator.4bpp");
 static const u16 sDoorNullPalette71[16] = {};
-
+static const u8 sDoorAnimTiles_RocketElevator[] = INCBIN_U8("graphics/door_anims/rocket_elevator.4bpp");
+static const u16 sDoorNullPalette72[16] = {};
 
 
 
@@ -252,6 +253,8 @@ static const u8 sDoorAnimPalettes_OlivineCity_Door[] = {11, 11, 11, 11, 11, 11, 
 static const u8 sDoorAnimPalettes_Fuchsia_Red_Door[] = {9, 9, 9, 9, 9, 9, 9, 9, 9};
 static const u8 sDoorAnimPalettes_BlackthornCity_Door[] = {7, 7, 7, 7, 7, 7, 7, 7,};
 static const u8 sDoorAnimPalettes_DeptStore_Door[] = {8, 8, 8, 8, 8, 8, 8, 8,};
+static const u8 sDoorAnimPalettes_Rocket_Door[] = {2, 2, 2, 2, 2, 2, 2, 2,};
+
 
 static const u8 sDoorAnimPalettes_PokeMart[] = {0, 0, 5, 5, 5, 5, 5, 5};
 static const u8 sDoorAnimPalettes_Littleroot[] = {10, 10, 6, 6, 6, 6, 6, 6};
@@ -385,6 +388,7 @@ static const struct DoorGraphics sDoorGraphics[] =
     {METATILE_Cave5_Door,                                 DOOR_SOUND_NORMAL, DOOR_SIZE_1x1, sDoorAnimTiles_VioletCity_Dojo_Door, sDoorAnimPalettes_VioletCity_Dojo_Door},
     {METATILE_Blackthorn_Door,                              DOOR_SOUND_NORMAL, DOOR_SIZE_1x1, sDoorAnimTiles_BlackthornCity_Door, sDoorAnimPalettes_BlackthornCity_Door},
     {METATILE_JohtoShop_Door,                              DOOR_SOUND_SLIDING, DOOR_SIZE_1x1, sDoorAnimTiles_DeptStoreElevator, sDoorAnimPalettes_DeptStore_Door},
+    {METATILE_GreenHouses_Elevator,                              DOOR_SOUND_SLIDING, DOOR_SIZE_1x1, sDoorAnimTiles_RocketElevator, sDoorAnimPalettes_Rocket_Door},
 
     {},
 };

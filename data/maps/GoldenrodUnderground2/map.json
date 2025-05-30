@@ -25,7 +25,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "GoldenrodUnderground_EventScript_Issac",
-      "flag": "0"
+      "flag": "FLAG_HIDE_GOLDENROD_NPCS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_OLD_WOMAN",
@@ -38,7 +38,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "LavaridgeTown_HerbShop_EventScript_Clerk",
-      "flag": "0"
+      "flag": "FLAG_HIDE_GOLDENROD_NPCS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WORKER_M",
@@ -77,7 +77,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "GoldenrodUnderground_EventScript_Teru",
-      "flag": "0"
+      "flag": "FLAG_HIDE_GOLDENROD_NPCS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SUPER_NERD",
@@ -90,7 +90,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "GoldenrodUnderground_EventScript_Eric",
-      "flag": "0"
+      "flag": "FLAG_HIDE_GOLDENROD_NPCS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SUPER_NERD",
@@ -103,7 +103,72 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "GoldenrodUnderground_EventScript_Donald",
-      "flag": "0"
+      "flag": "FLAG_HIDE_GOLDENROD_NPCS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 13,
+      "y": 13,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "GoldenrodUnderground2_EventScript_Item_CoinCase",
+      "flag": "FLAG_ITEM_GOLDENROD_UNDERGROUND_COIN_CASE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 1,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "GoldenrodUnderground2_EventScript_Item_ParalyzeHeal",
+      "flag": "FLAG_ITEM_GOLDENROD_UNDERGROUND_PARALYZE_HEAL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 1,
+      "y": 23,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "GoldenrodUnderground2_EventScript_Item_Antidote",
+      "flag": "FLAG_ITEM_GOLDENROD_UNDERGROUND_ANTIDOTE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 5,
+      "y": 26,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "GoldenrodUnderground2_EventScript_Item_SuperPotion",
+      "flag": "FLAG_ITEM_GOLDENROD_UNDERGROUND_SUPER_POTION"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_KIMONO_GIRL",
+      "x": 13,
+      "y": 12,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_GOLDENROD_UNDERGROUND_KIMONO"
     }
   ],
   "warp_events": [
@@ -130,7 +195,24 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_GOLDENROD_CITY_STATE",
+      "var_value": "0",
+      "script": "GoldenrodUnderground2_EventScript_KimonoTriggerTop"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_GOLDENROD_CITY_STATE",
+      "var_value": "0",
+      "script": "GoldenrodUnderground2_EventScript_KimonoTriggerBot"
+    }
   ],
   "bg_events": [
     {

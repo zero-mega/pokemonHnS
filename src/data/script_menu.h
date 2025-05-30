@@ -828,7 +828,7 @@ static const struct MenuAction MultichoiceList_PrizeMons[] =
     {gText_Porygon},
     {gText_Exit},
 };
-static const struct MenuAction MultichoiceList_6Floors[] = 
+static const struct MenuAction MultichoiceList_7Floors[] = 
 {
     {gText_Floor6},
     {gText_Floor5},
@@ -836,6 +836,7 @@ static const struct MenuAction MultichoiceList_6Floors[] =
     {gText_Floor3},
     {gText_Floor2},
     {gText_Floor1},
+    {gText_Floor0},
     {gText_Exit},
 };
 
@@ -970,7 +971,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_DAYS_OF_WEEK]                 = MULTICHOICE(MultichoiceList_DaysOfWeek),
     [MULTI_KURT_BALLS]                 = MULTICHOICE(MultichoiceList_KurtsBalls),
     [MULTI_PRIZE_MONS]                  = MULTICHOICE(MultichoiceList_PrizeMons),
-    [MULTI_6FLOORS]                  = MULTICHOICE(MultichoiceList_6Floors),
+    [MULTI_7FLOORS]                  = MULTICHOICE(MultichoiceList_7Floors),
 };
 
 const u8 *const gStdStrings[] =
