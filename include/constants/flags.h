@@ -964,12 +964,12 @@
 #define FLAG_UNLOCKED_GOLDENROD_UNDERGROUND_DOOR                          0x395
 #define FLAG_HIDE_BATTLE_TOWER_REPORTER                             0x396
 #define FLAG_HIDE_GOLDENROD_UNDERGROUND_KIMONO                                   0x397
-#define FLAG_HIDE_CHAMPIONS_ROOM_RIVAL                              0x398
-#define FLAG_HIDE_CHAMPIONS_ROOM_BIRCH                              0x399
-#define FLAG_GARBAGEFLAG9                           0x39A
-#define FLAG_HIDE_ROUTE_119_RIVAL_ON_BIKE                           0x39B
-#define FLAG_HIDE_AQUA_HIDEOUT_GRUNTS                               0x39C
-#define FLAG_HIDE_LILYCOVE_MOTEL_GAME_DESIGNERS                     0x39D
+#define FLAG_HIDE_GOLDENROD_UNDERGROUND_SILVER                              0x398
+#define FLAG_GOLDENROD_SWITCH_1                              0x399
+#define FLAG_GOLDENROD_SWITCH_2                           0x39A
+#define FLAG_GOLDENROD_SWITCH_3                           0x39B
+#define FLAG_GOLDENROD_SWITCH_ORDER                               0x39C
+#define FLAG_COMPLETED_SWITCHES                     0x39D
 #define FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA                              0x39E
 #define FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA                             0x39F
 #define FLAG_HIDE_FALLARBOR_HOUSE_PROF_COZMO                        0x3A0
@@ -1285,9 +1285,9 @@
 #define FLAG_ITEM_GOLDENROD_UNDERGROUND_ULTRA_BALL2                                           0x4D2 // Unused Flag
 #define FLAG_ITEM_GOLDENROD_UNDERGROUND_TM_CALM_MIND                                           0x4D3 // Unused Flag
 #define FLAG_ITEM_GOLDENROD_UNDERGROUND_MAX_ETHER                                           0x4D4 // Unused Flag
-#define FLAG_UNUSED_0x4D5                                           0x4D5 // Unused Flag
-#define FLAG_UNUSED_0x4D6                                           0x4D6 // Unused Flag
-#define FLAG_UNUSED_0x4D7                                           0x4D7 // Unused Flag
+#define FLAG_ITEM_GOLDENROD_UNDERGROUND_MAX_POTION                                          0x4D5 // Unused Flag
+#define FLAG_ITEM_GOLDENROD_UNDERGROUND_REVIVE                                           0x4D6 // Unused Flag
+#define FLAG_ITEM_GOLDENROD_UNDERGROUND_SMOKE_BALL                                           0x4D7 // Unused Flag
 #define FLAG_UNUSED_0x4D8                                           0x4D8 // Unused Flag
 #define FLAG_UNUSED_0x4D9                                           0x4D9 // Unused Flag
 #define FLAG_UNUSED_0x4DA                                           0x4DA // Unused Flag

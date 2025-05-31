@@ -6,7 +6,7 @@
   "region_map_section": "MAPSEC_GOLDENROD_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
   "allow_cycling": false,
   "allow_escaping": false,
   "allow_running": false,
@@ -16,68 +16,68 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
-      "x": 7,
-      "y": 4,
+      "x": 6,
+      "y": 3,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "movement_range_x": 4,
+      "movement_range_y": 4,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "GoldenrodUndergroundRocket1_EventScript_Grunt11",
       "flag": "FLAG_HIDE_GOLDENROD_ROCKETS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
-      "x": 16,
-      "y": 4,
+      "x": 15,
+      "y": 3,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "movement_range_x": 4,
+      "movement_range_y": 4,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "GoldenrodUndergroundRocket1_EventScript_Grunt20",
       "flag": "FLAG_HIDE_GOLDENROD_ROCKETS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
-      "x": 25,
-      "y": 4,
+      "x": 20,
+      "y": 3,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "movement_range_x": 4,
+      "movement_range_y": 4,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "GoldenrodUndergroundRocket1_EventScript_Grunt10",
       "flag": "FLAG_HIDE_GOLDENROD_ROCKETS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_F",
+      "graphics_id": "OBJ_EVENT_GFX_BURGLAR",
       "x": 3,
       "y": 9,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "FLAG_HIDE_GOLDENROD_ROCKETS"
+      "movement_range_x": 4,
+      "movement_range_y": 4,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "GoldenrodUndergroundRocket1_EventScript_Duncan",
+      "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_M",
+      "graphics_id": "OBJ_EVENT_GFX_BURGLAR",
       "x": 11,
       "y": 13,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "FLAG_HIDE_GOLDENROD_ROCKETS"
+      "movement_range_x": 9,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "9",
+      "script": "GoldenrodUndergroundRocket1_EventScript_Eddie",
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_F",
@@ -85,11 +85,11 @@
       "y": 13,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "GoldenrodUndergroundRocket1_EventScript_Grunt27",
       "flag": "FLAG_HIDE_GOLDENROD_ROCKETS"
     },
     {
@@ -103,7 +103,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HIDE_GOLDENROD_UNDERGROUND_SILVER"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
@@ -115,12 +115,12 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "GoldenrodUndergroundRocket1_EventScript_Item_Revive",
+      "flag": "FLAG_ITEM_GOLDENROD_UNDERGROUND_REVIVE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 3,
+      "x": 20,
       "y": 13,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -128,8 +128,21 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "GoldenrodUndergroundRocket1_EventScript_Item_MaxPotion",
+      "flag": "FLAG_ITEM_GOLDENROD_UNDERGROUND_MAX_POTION"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 3,
+      "y": 13,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "GoldenrodUndergroundRocket1_EventScript_Item_SmokeBall",
+      "flag": "FLAG_ITEM_GOLDENROD_UNDERGROUND_SMOKE_BALL"
     }
   ],
   "warp_events": [
@@ -149,9 +162,49 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 26,
+      "y": 5,
+      "elevation": 0,
+      "var": "VAR_GOLDENROD_CITY_STATE",
+      "var_value": "0",
+      "script": "GoldenrodUndergroundRocket1_EventScript_SilverTriggerTop"
+    },
+    {
+      "type": "trigger",
+      "x": 26,
+      "y": 6,
+      "elevation": 0,
+      "var": "VAR_GOLDENROD_CITY_STATE",
+      "var_value": "0",
+      "script": "GoldenrodUndergroundRocket1_EventScript_SilverTriggerBot"
+    }
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 22,
+      "y": 1,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "GoldenrodUndergroundRocket1_EventScript_Panel1"
+    },
+    {
+      "type": "sign",
+      "x": 13,
+      "y": 1,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "GoldenrodUndergroundRocket1_EventScript_Panel2"
+    },
+    {
+      "type": "sign",
+      "x": 5,
+      "y": 1,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "GoldenrodUndergroundRocket1_EventScript_Panel3"
+    }
   ]
 }

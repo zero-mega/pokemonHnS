@@ -8,6 +8,8 @@ GoldenrodCity_EventScript_Trigger:: @flagheap
 	
 	setflag FLAG_HIDE_GOLDENROD_ROCKETS
 	setflag FLAG_HIDE_GOLDENROD_BILL
+	setflag FLAG_HIDE_GOLDENROD_UNDERGROUND_KIMONO
+	setflag FLAG_HIDE_GOLDENROD_UNDERGROUND_SILVER
 
 	clearflag FLAG_HIDE_GOLDENROD_ROCKET_SCOUT
 	clearflag FLAG_HIDE_GOLDENROD_NPCS
@@ -22,6 +24,7 @@ GoldenrodCity_EventScript_Trigger:: @flagheap
 	clearflag FLAG_GOLDENROD_MACHOKE_1
 	clearflag FLAG_GOLDENROD_MACHOKE_2
 	clearflag FLAG_GOLDENROD_MACHOKE_3
+	clearflag FLAG_COMPLETED_SWITCHES
 
 	setvar VAR_TRAIN, 0
 	setvar VAR_ELEVATOR, 0
