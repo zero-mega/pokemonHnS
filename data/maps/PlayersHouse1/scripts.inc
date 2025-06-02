@@ -102,6 +102,7 @@ PlayersHouse1_EventScript_MomsIntro::
 	clearflag FLAG_ADVENTURE_STARTED
 	clearflag FLAG_DELIVERED_EGG
 	clearflag FLAG_SHOWN_ELM_TOGEPI
+	clearflag FLAG_ENABLE_RADIO
 	
 
 	setvar VAR_VIOLET_CITY_STATE, 0 @CITY STATES

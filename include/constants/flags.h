@@ -970,8 +970,8 @@
 #define FLAG_GOLDENROD_SWITCH_3                           0x39B
 #define FLAG_GOLDENROD_SWITCH_ORDER                               0x39C
 #define FLAG_COMPLETED_SWITCHES                     0x39D
-#define FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA                              0x39E
-#define FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA                             0x39F
+#define FLAG_HIDE_GOLDENROD_BEAUTY                              0x39E
+#define FLAG_ENABLE_RADIO                             0x39F
 #define FLAG_HIDE_FALLARBOR_HOUSE_PROF_COZMO                        0x3A0
 #define FLAG_HIDE_LAVARIDGE_TOWN_RIVAL                              0x3A1
 #define FLAG_HIDE_LAVARIDGE_TOWN_RIVAL_ON_BIKE                      0x3A2

@@ -603,6 +603,28 @@ AzaleaGym_Movement_Player_Left:
 	unlock_facing_direction
 	step_end
 
+AzaleaGym_EventScript_Statue::
+	lock
+	goto_if_set FLAG_DEFEATED_AZALEA_GYM, AzaleaGym_EventScript_Statue2
+	msgbox AzaleaGym_Text_GymStatue, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+AzaleaGym_EventScript_Statue2::
+	msgbox AzaleaGym_Text_GymStatueCertified, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+AzaleaGym_Text_GymStatue:
+	.string "AZALEA POKéMON GYM$"
+
+AzaleaGym_Text_GymStatueCertified:
+	.string "AZALEA TOWN POKéMON GYM\p"
+	.string "BUGSY'S CERTIFIED TRAINERS:\n"
+	.string "{PLAYER}$"
+
 AzaleaGym_Text_BugsyIntro:
 	.string "I'm BUGSY!\p"
 	.string "I never lose when it comes\n"

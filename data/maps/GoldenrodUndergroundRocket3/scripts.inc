@@ -40,16 +40,7 @@ GoldenrodUndergroundRocket3_TryMachoke3::
 
 GoldenrodUndergroundRocket3_EventScript_BlackBelt1::
 	lock
-	goto_if_unset FLAG_GOLDENROD_MACHOKE_1, GoldenrodUndergroundRocket3_EventScript_BlackBelt1_Mid
-	faceplayer
-	msgbox GoldenrodDeptStore_Text_B1FBlackBelt1, MSGBOX_DEFAULT
-	closemessage
-	release
-	end
-
-GoldenrodUndergroundRocket3_EventScript_BlackBelt1_Mid::
-	checkitem ITEM_CARD_KEY
-	goto_if_eq VAR_RESULT, TRUE, GoldenrodUndergroundRocket3_EventScript_MachokeMoveBoulder1
+	goto_if_unset FLAG_GOLDENROD_MACHOKE_1, GoldenrodUndergroundRocket3_EventScript_MachokeMoveBoulder1
 	faceplayer
 	msgbox GoldenrodDeptStore_Text_B1FBlackBelt1, MSGBOX_DEFAULT
 	closemessage
@@ -75,22 +66,13 @@ GoldenrodUndergroundRocket3_EventScript_BlackBelt2_Mid::
 
 GoldenrodUndergroundRocket3_EventScript_BlackBelt3::
 	lock
-	goto_if_unset FLAG_GOLDENROD_MACHOKE_3, GoldenrodUndergroundRocket3_EventScript_BlackBelt3_Mid
+	goto_if_unset FLAG_GOLDENROD_MACHOKE_3, GoldenrodUndergroundRocket3_EventScript_MachokeMoveBoulder3
 	faceplayer
 	msgbox GoldenrodDeptStore_Text_B1FBlackBelt3After, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
-
-GoldenrodUndergroundRocket3_EventScript_BlackBelt3_Mid::
-	checkitem ITEM_CARD_KEY
-	goto_if_eq VAR_RESULT, TRUE, GoldenrodUndergroundRocket3_EventScript_MachokeMoveBoulder3
-	faceplayer
-	msgbox GoldenrodDeptStore_Text_B1FBlackBelt3, MSGBOX_DEFAULT
-	closemessage
-	release
-	end
-
+	
 GoldenrodUndergroundRocket3_EventScript_Machoke::
 	lock
 	faceplayer

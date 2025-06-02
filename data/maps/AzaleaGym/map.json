@@ -304,6 +304,21 @@
     }
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 9,
+      "y": 42,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "AzaleaGym_EventScript_Statue"
+    },
+    {
+      "type": "sign",
+      "x": 13,
+      "y": 42,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "AzaleaGym_EventScript_Statue"
+    }
   ]
 }

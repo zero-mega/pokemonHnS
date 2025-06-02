@@ -1,4 +1,4 @@
-.set LOCALID_GOLDENROD_ROCKET_SCOUT, 12
+.set LOCALID_GOLDENROD_ROCKET_SCOUT, 11
 
 GoldenrodCity_MapScripts::
 	.byte 0
@@ -11,6 +11,7 @@ GoldenrodCity_EventScript_Trigger:: @flagheap
 	setflag FLAG_HIDE_GOLDENROD_UNDERGROUND_KIMONO
 	setflag FLAG_HIDE_GOLDENROD_UNDERGROUND_SILVER
 
+	clearflag FLAG_HIDE_GOLDENROD_BEAUTY
 	clearflag FLAG_HIDE_GOLDENROD_ROCKET_SCOUT
 	clearflag FLAG_HIDE_GOLDENROD_NPCS
 	clearflag FLAG_GOT_RETURN
@@ -25,6 +26,7 @@ GoldenrodCity_EventScript_Trigger:: @flagheap
 	clearflag FLAG_GOLDENROD_MACHOKE_2
 	clearflag FLAG_GOLDENROD_MACHOKE_3
 	clearflag FLAG_COMPLETED_SWITCHES
+	clearflag FLAG_ENABLE_RADIO
 
 	setvar VAR_TRAIN, 0
 	setvar VAR_ELEVATOR, 0
@@ -160,7 +162,14 @@ GoldenrodCity_EventScript_Woman::
 GoldenrodCity_EventScript_Hiker::
 	lock
 	faceplayer
-	msgbox GoldenrodCity_Text_Hiker, MSGBOX_DEFAULT
+	goto_if_set FLAG_NIGHT_POKEMON, GoldenrodCity_EventScript_Hiker2
+	msgbox GoldenrodCity_Text_HikerDay, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+GoldenrodCity_EventScript_Hiker2::
+	msgbox GoldenrodCity_Text_HikerNight, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
@@ -234,14 +243,33 @@ GoldenrodCity_EventScript_SignGameCorner::
 	release
 	end
 
+GoldenrodCity_EventScript_Beauty::
+	lock
+	faceplayer
+	msgbox GoldenrodCity_Text_Beauty, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+GoldenrodCity_Text_Beauty:
+	.string "This is the GOLDENROD GYM!\p"
+	.string "Our leader WHITNEY is not here\n"
+	.string "right now. She might be at the\l"
+	.string "RADIO TOWER.$"
+
 GoldenrodCity_Text_Woman:
 	.string "I used to train in WHITNEY's GYM,\n"
 	.string "but all her crying gave me a\l"
-	.string "headache so I quit.$"
+	.string "headache.$"
 
-GoldenrodCity_Text_Hiker:
+GoldenrodCity_Text_HikerDay:
 	.string "When I went into the game corner\n"
-	.string "it was Friday... How long was I\l"
+	.string "it was night time... How long was I\l"
+	.string "in there?!$"
+
+GoldenrodCity_Text_HikerNight:
+	.string "When I went into the game corner\n"
+	.string "it was day time... How long was I\l"
 	.string "in there?!$"
 
 GoldenrodCity_Text_Snubbull:
