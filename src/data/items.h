@@ -2853,7 +2853,7 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_InfiniteRareCandies,
     },
 
-    [ITEM_0EF] =
+    [ITEM_0F0] =
     {
         .name = _("????????"),
         .itemId = ITEM_NONE,
@@ -3112,6 +3112,19 @@ const struct Item gItems[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_Itemfinder,
+    },
+
+    [ITEM_RADIO] =
+    {
+        .name = _("RADIO"),
+        .itemId = ITEM_RADIO,
+        .price = 0,
+        .description = sRadioDesc,
+        .importance = 1,
+        .registrability = TRUE,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_Radio,
     },
 
     [ITEM_OLD_ROD] =
@@ -7725,7 +7738,7 @@ const struct Item gItems2[] =
     },
 
 
-    [ITEM_0EF] =
+    [ITEM_0F0] =
     {
         .name = _("????????"),
         .itemId = ITEM_NONE,

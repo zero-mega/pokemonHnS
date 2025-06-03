@@ -1070,6 +1070,21 @@ extern const u8 gText_Roy[];
 extern const u8 gText_Gabby[];
 extern const u8 gText_Anna[];
 
+extern const u8 gText_OakTalk_Clefairy[];
+extern const u8 gText_OakTalk_Lapras[];
+extern const u8 gText_OakTalk_Ampharos[];
+extern const u8 gText_OakTalk_Sudowoodo[];
+extern const u8 gText_OakTalk_RedGyarados[];
+extern const u8 gText_OakTalk_Unown[];
+extern const u8 gText_OakTalk_Snubbull[];
+extern const u8 gText_OakTalk_Slowpoke[];
+extern const u8 gText_OakTalk_LavenderTower[];
+extern const u8 gText_OakTalk_TentacruelWhirl[];
+
+
+extern const u8 gText_RocketRadio[];
+extern const u8 gText_RadioNoSignal[];
+
 extern const u8 gText_DadsAdvice[];
 extern const u8 gText_CantDismountBike[];
 extern const u8 gText_ItemFinderNothing[];
@@ -3146,7 +3161,7 @@ extern const u8 gText_Cancel6[];
 extern const u8 gText_CheckMapOfHoenn[];
 extern const u8 gText_CheckPokemonInDetail[];
 extern const u8 gText_CallRegisteredTrainer[];
-extern const u8 gText_CheckObtainedRibbons[];
+extern const u8 gText_CheckObtainedRadio[];
 extern const u8 gText_PutAwayPokenav[];
 extern const u8 gText_CheckPartyPokemonInDetail[];
 extern const u8 gText_CheckAllPokemonInDetail[];

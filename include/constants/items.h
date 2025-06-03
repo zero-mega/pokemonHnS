@@ -269,7 +269,7 @@
 #define ITEM_SILVER_WING 236
 #define ITEM_RAGE_CANDY_BAR 237
 #define ITEM_TIDAL_BELL 238
-#define ITEM_0EF 239
+#define ITEM_RADIO 239
 #define ITEM_0F0 240
 #define ITEM_0F1 241
 #define ITEM_0F2 242

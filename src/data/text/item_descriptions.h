@@ -1054,6 +1054,10 @@ static const u8 sItemfinderDesc[] = _(
     "signals an invisible\n"
     "item by sound.");
 
+static const u8 sRadioDesc[] = _(
+    "A shiny new radio\n"
+    "that plays music.");
+
 static const u8 sOldRodDesc[] = _(
     "Use by any body of\n"
     "water to fish for\n"

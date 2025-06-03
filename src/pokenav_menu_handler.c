@@ -4,6 +4,24 @@
 #include "main.h"
 #include "sound.h"
 #include "constants/songs.h"
+#include "random.h"
+#include "text.h"
+#include "window.h"
+#include "graphics.h"
+#include "palette.h"
+#include "trig.h"
+#include "gpu_regs.h"
+#include "menu.h"
+#include "window.h"
+#include "pokenav.h"
+#include "graphics.h"
+#include "sound.h"
+#include "gym_leader_rematch.h"
+#include "window.h"
+#include "strings.h"
+#include "scanline_effect.h"
+#include "constants/songs.h"
+#include "constants/rgb.h"
 
 struct Pokenav_Menu
 {
@@ -14,6 +32,8 @@ struct Pokenav_Menu
     u32 menuId;
     u32 (*callback)(struct Pokenav_Menu *);
 };
+
+void PrintRandomRibbonMessage(void);
 
 static bool32 UpdateMenuCursorPos(struct Pokenav_Menu *);
 static void ReturnToConditionMenu(struct Pokenav_Menu *);
@@ -31,12 +51,16 @@ static u32 HandleMainMenuInput(struct Pokenav_Menu *);
 static u32 (*GetMainMenuInputHandler(void))(struct Pokenav_Menu *);
 static void SetMenuInputHandler(struct Pokenav_Menu *);
 
+
+
+
 // Number of entries - 1 for that menu type
 static const u8 sLastCursorPositions[] =
 {
-    [POKENAV_MENU_TYPE_DEFAULT]           = 2,
-    [POKENAV_MENU_TYPE_UNLOCK_MC]         = 3,
-    [POKENAV_MENU_TYPE_UNLOCK_MC_RIBBONS] = 4,
+    [POKENAV_MENU_TYPE_DEFAULT]           = 1,
+    [POKENAV_MENU_TYPE_UNLOCK_MC]         = 2,
+    [POKENAV_MENU_TYPE_UNLOCK_MC_RIBBONS] = 3,
+    //below are unused
     [POKENAV_MENU_TYPE_CONDITION]         = 2,
     [POKENAV_MENU_TYPE_CONDITION_SEARCH]  = 5
 };
@@ -47,22 +71,22 @@ static const u8 sMenuItems[][MAX_POKENAV_MENUITEMS] =
     {
         POKENAV_MENUITEM_MAP,
         //POKENAV_MENUITEM_CONDITION,
-        [2 ... MAX_POKENAV_MENUITEMS - 1] = POKENAV_MENUITEM_SWITCH_OFF
+        POKENAV_MENUITEM_SWITCH_OFF
     },
     [POKENAV_MENU_TYPE_UNLOCK_MC] =
     {
         POKENAV_MENUITEM_MAP,
         //POKENAV_MENUITEM_CONDITION,
         POKENAV_MENUITEM_MATCH_CALL,
-        [3 ... MAX_POKENAV_MENUITEMS - 1] = POKENAV_MENUITEM_SWITCH_OFF
+        POKENAV_MENUITEM_SWITCH_OFF
     },
     [POKENAV_MENU_TYPE_UNLOCK_MC_RIBBONS] =
     {
         POKENAV_MENUITEM_MAP,
         //POKENAV_MENUITEM_CONDITION,
         POKENAV_MENUITEM_MATCH_CALL,
-        //POKENAV_MENUITEM_RIBBONS,
-        [4 ... MAX_POKENAV_MENUITEMS - 1] = POKENAV_MENUITEM_SWITCH_OFF
+        POKENAV_MENUITEM_RIBBONS,
+        POKENAV_MENUITEM_SWITCH_OFF
     },
     [POKENAV_MENU_TYPE_CONDITION] =
     {
@@ -90,12 +114,11 @@ static u8 GetPokenavMainMenuType(void)
     {
         menuType = POKENAV_MENU_TYPE_UNLOCK_MC;
 
-        if (FlagGet(FLAG_SYS_RIBBON_GET))
-            menuType = POKENAV_MENU_TYPE_UNLOCK_MC_RIBBONS;
-    }
+     }
 
     return menuType;
 }
+
 
 bool32 PokenavCallback_Init_MainMenuCursorOnMap(void)
 {
@@ -234,18 +257,12 @@ static u32 HandleMainMenuInput(struct Pokenav_Menu *menu)
             menu->helpBarIndex = HELPBAR_MC_TRAINER_LIST;
             SetMenuIdAndCB(menu, POKENAV_MATCH_CALL);
             return POKENAV_MENU_FUNC_OPEN_FEATURE;
+            
         case POKENAV_MENUITEM_RIBBONS:
-            if (CanViewRibbonsMenu())
-            {
-                menu->helpBarIndex = HELPBAR_RIBBONS_MON_LIST;
-                SetMenuIdAndCB(menu, POKENAV_RIBBONS_MON_LIST);
-                return POKENAV_MENU_FUNC_OPEN_FEATURE;
-            }
-            else
-            {
-                menu->callback = HandleCantOpenRibbonsInput;
-                return POKENAV_MENU_FUNC_NO_RIBBON_WINNERS;
-            }
+            //crystal
+            PrintRandomRibbonMessage();
+            return POKENAV_MENU_FUNC_NONE;
+
         case POKENAV_MENUITEM_SWITCH_OFF:
             return POKENAV_MENU_FUNC_EXIT;
         }

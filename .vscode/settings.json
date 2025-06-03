@@ -6,6 +6,21 @@
         "field_effects.h": "c",
         "battle_setup.h": "c",
         "object_event_graphics_info_followers.h": "c",
-        "complex": "c"
+        "complex": "c",
+        "random.h": "c",
+        "event_data.h": "c",
+        "decompress.h": "c",
+        "window.h": "c",
+        "gpu_regs.h": "c",
+        "rgb.h": "c",
+        "pokenav.h": "c",
+        "gym_leader_rematch.h": "c",
+        "scanline_effect.h": "c",
+        "songs.h": "c",
+        "array": "c",
+        "string": "c",
+        "string_view": "c",
+        "vector": "c",
+        "span": "c"
     }
 }

@@ -16,6 +16,28 @@
 #include "scanline_effect.h"
 #include "constants/songs.h"
 #include "constants/rgb.h"
+//crystal
+#include "random.h"
+#include "field_message_box.h"  // If ShowPokenavFieldMessage is here
+
+static const u8 gPokenavCallMsg1[] = _("DJ Ben here! Up next is\nPokémon Lullaby.");
+static const u8 gPokenavCallMsg2[] = _("Professor Oak’s talk:\n“Don’t forget to save!”");
+static const u8 gPokenavCallMsg3[] = _("Lucky Channel! Call now\nfor your prize number!");
+static const u8 gPokenavCallMsg4[] = _("This is Buena’s Password!\nToday’s password is 'Lapras'.");
+static const u8 gPokenavCallMsg5[] = _("Pokémon Music Channel:\nTime for the Poké Flute.");
+
+static const u8 *const sPokenavCallMessages[] =
+{
+    gPokenavCallMsg1,
+    gPokenavCallMsg2,
+    gPokenavCallMsg3,
+    gPokenavCallMsg4,
+    gPokenavCallMsg5,
+};
+
+#define NUM_POKENAV_CALL_MSGS ARRAY_COUNT(sPokenavCallMessages)
+
+
 
 #define GFXTAG_BLUE_LIGHT 1
 #define GFXTAG_OPTIONS    3
@@ -34,6 +56,7 @@
 #define OPTION_DEFAULT_X   140
 #define OPTION_SELECTED_X  130
 #define OPTION_EXIT_X      (DISPLAY_WIDTH + 16)
+
 
 struct Pokenav_MenuGfx
 {
@@ -226,7 +249,7 @@ struct
             sOptionsLabelGfx_RegionMap,
             //sOptionsLabelGfx_Condition,
             sOptionsLabelGfx_MatchCall,
-            //sOptionsLabelGfx_Ribbons,
+            sOptionsLabelGfx_Ribbons,
             sOptionsLabelGfx_SwitchOff
         }
     },
@@ -271,7 +294,7 @@ static const u8 *const sPageDescriptions[] =
     [POKENAV_MENUITEM_MAP]                     = gText_CheckMapOfHoenn,
     [POKENAV_MENUITEM_CONDITION]               = gText_CheckPokemonInDetail,
     [POKENAV_MENUITEM_MATCH_CALL]              = gText_CallRegisteredTrainer,
-    [POKENAV_MENUITEM_RIBBONS]                 = gText_CheckObtainedRibbons,
+    [POKENAV_MENUITEM_RIBBONS]                 = gText_CheckObtainedRadio,
     [POKENAV_MENUITEM_SWITCH_OFF]              = gText_PutAwayPokenav,
     [POKENAV_MENUITEM_CONDITION_PARTY]         = gText_CheckPartyPokemonInDetail,
     [POKENAV_MENUITEM_CONDITION_SEARCH]        = gText_CheckAllPokemonInDetail,
@@ -286,6 +309,13 @@ static const u8 *const sPageDescriptions[] =
 
 static const u8 sOptionDescTextColors[]  = {TEXT_COLOR_GREEN, TEXT_COLOR_BLUE, TEXT_COLOR_LIGHT_GREEN};
 static const u8 sOptionDescTextColors2[] = {TEXT_COLOR_GREEN, TEXT_COLOR_BLUE, TEXT_COLOR_LIGHT_GREEN};
+
+//crystal added
+void PrintRandomRibbonMessage(void)
+{
+    const u8 *msg = sPokenavCallMessages[Random() % NUM_POKENAV_CALL_MSGS];
+    ShowPokenavFieldMessage(msg);
+}
 
 static const struct OamData sOamData_MenuOption =
 {

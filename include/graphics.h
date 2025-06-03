@@ -4320,6 +4320,8 @@ extern const u32 gItemIcon_Palette_RageCandyBar[];
 extern const u32 gItemIcon_TidalBell[];
 extern const u32 gItemIcon_Palette_TidalBell[];
 
+extern const u32 gItemIcon_Radio[];
+
 // TMs/HMs
 extern const u32 gItemIcon_TM[];
 extern const u32 gItemIconPalette_FightingTMHM[];

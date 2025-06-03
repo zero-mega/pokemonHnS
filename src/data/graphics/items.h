@@ -673,6 +673,8 @@ const u32 gItemIcon_Palette_RageCandyBar[] = INCBIN_U32("graphics/items/icon_pal
 const u32 gItemIcon_TidalBell[] = INCBIN_U32("graphics/items/icons/tidalbell.4bpp.lz");
 const u32 gItemIcon_Palette_TidalBell[] = INCBIN_U32("graphics/items/icon_palettes/tidalbell.gbapal.lz");
 
+const u32 gItemIcon_Radio[] = INCBIN_U32("graphics/items/icons/radio.4bpp.lz");
+
 
 // TMs/HMs
 

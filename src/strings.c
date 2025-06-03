@@ -237,6 +237,151 @@ const u8 gText_TooImportantToToss[] = _("That's much too\nimportant to toss\nout
 const u8 gText_TossHowManyVar1s[] = _("Toss out how many\n{STR_VAR_1}(s)?");
 const u8 gText_ThrewAwayVar2Var1s[] = _("Threw away {STR_VAR_2}\n{STR_VAR_1}(s).");
 const u8 gText_ConfirmTossItems[] = _("Is it okay to\nthrow away {STR_VAR_2}\n{STR_VAR_1}(s)?");
+
+const u8 gText_OakTalk_Clefairy[] = _(
+    "MARY: Tonight on POKéMON TALK,\n"
+    "a rare moonlight moment!\l"
+    "OAK: We're spotlighting the\l"
+    "mystical CLEFAIRY!\l"
+    "Trainers say they gather at\l"
+    "MT. MOON under full moons.\l"
+    "MARY: They DANCE in circles!\l"
+    "So adorably weird!\l"
+    "OAK: A timeless mystery\l"
+    "and a sight to behold!\l"
+    "MARY: Don't miss the chance!\l"
+    "Bring a camera!{PAUSE_UNTIL_PRESS}");
+
+const u8 gText_OakTalk_Lapras[] = _(
+    "MARY: A gentle giant takes the\n"
+    "stage on today's show!\l"
+    "OAK: It's the ocean ferry,\l"
+    "our beloved LAPRAS!\l"
+    "Seen in UNION CAVE, but only\l"
+    "on Evenings. How curious!\l"
+    "MARY: So rare and peaceful!\l"
+    "And it sings, too!\l"
+    "OAK: Some say its songs calm\l"
+    "the soul of the sea.\l"
+    "MARY: We love you, LAPRAS!\l"
+    "Don't ever change!{PAUSE_UNTIL_PRESS}");
+
+const u8 gText_OakTalk_Ampharos[] = _(
+    "MARY: Welcome back, everyone!\n"
+    "Time for POKéMON TALK!\l"
+    "OAK: Let's shine a light on\l"
+    "our friend AMPHAROS!\l"
+    "Its bright tail glows through\l"
+    "fog to guide lost folks.\l"
+    "MARY: It's powerful, elegant,\l"
+    "and undeniably friendly!\l"
+    "OAK: And it's a key part of\l"
+    "many lighthouse stories!\l"
+    "MARY: More tales soon!\l"
+    "Don't touch that dial!{PAUSE_UNTIL_PRESS}");
+
+const u8 gText_OakTalk_Sudowoodo[] = _(
+    "MARY: Up next is a real oddball\n"
+    "on ROUTE 36...\l"
+    "OAK: SUDOWOODO! Looks like a\l"
+    "tree, but isn't one!\l"
+    "It blocks the road and won't\l"
+    "budge without water.\l"
+    "MARY: Trainers report it reacts\l"
+    "only to a SQUIRTBOTTLE!\l"
+    "OAK: That's no bush it's a\l"
+    "rock - type in disguise!\l"
+    "MARY: Don't be fooled!\l"
+    "Give it a splash!{PAUSE_UNTIL_PRESS}");
+
+const u8 gText_OakTalk_RedGyarados[] = _(
+    "MARY: Today's story is a\n"
+    "shocking one from JOHTO!\l"
+    "OAK: Trainers spotted a RED\l"
+    "GYARADOS at LAKE OF RAGE!\l"
+    "Unlike the usual blue ones,\l"
+    "this one's bright crimson!\l"
+    "MARY: People say it's linked to\l"
+    "some strange radio waves!\l"
+    "OAK: A mysterious evolution...\l"
+    "Possibly unnatural.\l"
+    "MARY: Whatever the cause,\l"
+    "it's making waves!{PAUSE_UNTIL_PRESS}");
+
+const u8 gText_OakTalk_Unown[] = _(
+    "MARY: Ever visited the RUINS\n"
+    "OF ALPH? Spooky stuff!\l"
+    "OAK: Strange symbols line the\l"
+    "walls - like ancient runes.\l"
+    "Inside, you'll find UNOWN...\l"
+    "each shaped like letters!\l"
+    "MARY: They spell things, maybe?\l"
+    "Or just freak us out!\l"
+    "OAK: A true puzzle of nature,\l"
+    "still unsolved to this day.\l"
+    "MARY: Let us know what you\l"
+    "think they mean!{PAUSE_UNTIL_PRESS}");
+
+const u8 gText_OakTalk_Snubbull[] = _(
+    "MARY: GOLDENROD residents are\n"
+    "searching high and low!\l"
+    "OAK: A SNUBBULL has gone rogue\l"
+    "and is on the run!\l"
+    "Usually shy and fussy, it's\l"
+    "been seen near the station.\l"
+    "MARY: Maybe it's chasing love...\l"
+    "or just adventure!\l"
+    "OAK: Either way, keep your eyes\l"
+    "peeled - and your leash ready.\l"
+    "MARY: SNUBBULL, come home!\l"
+    "We miss you!{PAUSE_UNTIL_PRESS}");
+
+const u8 gText_OakTalk_Slowpoke[] = _(
+    "MARY: Big news from AZALEA\l"
+    "TOWN this week!\l"
+    "OAK: SLOWPOKE have returned to\l"
+    "their well after a crisis!\l"
+    "Team ROCKET had been cutting\l"
+    "off their tails - horrible!\l"
+    "MARY: But a brave young trainer\l"
+    "shut them down!\l"
+    "OAK: The SLOWPOKE are safe now\l"
+    "and happily dozing again.\l"
+    "MARY: Justice served and nap\l"
+    "time restored!{PAUSE_UNTIL_PRESS}");
+
+const u8 gText_OakTalk_LavenderTower[] = _(
+    "MARY: LAVENDER TOWN's tower\l"
+    "has changed tunes!\l"
+    "OAK: The old ghost tower is\l"
+    "now a RADIO STATION!\l"
+    "Some locals say it still\l"
+    "feels... spooky.\l"
+    "MARY: I swear I saw a GASTLY\l"
+    "near the mic booth!\l"
+    "OAK: Might be static... or\l"
+    "specters!\l"
+    "MARY: Either way, great music!\l"
+    "Probably. Eep!{PAUSE_UNTIL_PRESS}");
+
+const u8 gText_OakTalk_TentacruelWhirl[] = _(
+    "MARY: Weird news from the\n"
+    "WHIRL ISLANDS today!\l"
+    "OAK: TENTACRUEL have been seen\l"
+    "surrounding cave entrances!\l"
+    "They're massive - and acting\l"
+    "almost territorial.\l"
+    "MARY: Trainers say they block\l"
+    "the way without attacking...\l"
+    "OAK: As if guarding something\l"
+    "deep beneath the waves.\l"
+    "MARY: What are they hiding?\l"
+    "Or protecting?{PAUSE_UNTIL_PRESS}");
+
+
+const u8 gText_RocketRadio[] = _("... ... Ahem, we are\nTEAM ROCKET!\lAfter three years of preparation,\lwe have risen again from the ashes!\lGIOVANNI! Can you hear us?\lWe did it!\lWhere is our boss?\lIs he listening?{PAUSE_UNTIL_PRESS}");
+const u8 gText_RadioNoSignal[] = _("There's no signal here, try\n somewhere else{PAUSE_UNTIL_PRESS}");
+
 const u8 gText_DadsAdvice[] = _("ELM's advice…\n{PLAYER}, there's a time and place for\leverything!{PAUSE_UNTIL_PRESS}");
 const u8 gText_CantDismountBike[] = _("You can't dismount your BIKE here.{PAUSE_UNTIL_PRESS}");
 const u8 gText_ItemFinderNearby[] = _("Huh?\nThe ITEMFINDER's responding!\pThere's an item buried around here!{PAUSE_UNTIL_PRESS}");
@@ -833,7 +978,7 @@ const u8 gText_PyramidPokemon[] = _("PYRAMID: POKéMON");
 const u8 gText_PyramidTrainers[] = _("PYRAMID: TRAINERS");
 const u8 gText_PyramidMaze[] = _("PYRAMID: MAZE");
 const u8 gText_BattleBag2[] = _("BATTLE BAG");
-const u8 gText_PokenavAndBag[] = _("POKéNAV AND BAG");
+const u8 gText_PokenavAndBag[] = _("POKéGEAR AND BAG");
 const u8 gText_HeldItems[] = _("HELD ITEMS");
 const u8 gText_PokemonOrder[] = _("POKéMON ORDER");
 const u8 gText_BattlePokemon[] = _("BATTLE POKéMON");
@@ -983,13 +1128,13 @@ const u8 gText_Box[] = _("BOX");
 const u8 gText_CheckMapOfHoenn[] = _("Check the map of the JOHTO region.");
 const u8 gText_CheckPokemonInDetail[] = _("Check POKéMON in detail.");
 const u8 gText_CallRegisteredTrainer[] = _("Call a registered TRAINER.");
-const u8 gText_CheckObtainedRibbons[] = _("Check obtained RIBBONS.");
-const u8 gText_PutAwayPokenav[] = _("Put away the POKéNAV.");
+const u8 gText_CheckObtainedRadio[] = _("Tune into the RADIO.");
+const u8 gText_PutAwayPokenav[] = _("Put away the POKéGEAR.");
 const u8 gText_NoRibbonWinners[] = _("There are no RIBBON winners.");
 const u8 gText_NoTrainersRegistered[] = _("No TRAINERS are registered."); // Unused
 const u8 gText_CheckPartyPokemonInDetail[] = _("Check party POKéMON in detail.");
 const u8 gText_CheckAllPokemonInDetail[] = _("Check all POKéMON in detail.");
-const u8 gText_ReturnToPokenavMenu[] = _("Return to the POKéNAV menu.");
+const u8 gText_ReturnToPokenavMenu[] = _("Return to the POKéGEAR menu.");
 const u8 gText_FindCoolPokemon[] = _("Find cool POKéMON.");
 const u8 gText_FindBeautifulPokemon[] = _("Find beautiful POKéMON.");
 const u8 gText_FindCutePokemon[] = _("Find cute POKéMON.");
@@ -1588,7 +1733,7 @@ const u8 gText_UpdatedTime[] = _("Updated time"); // Unused
 const u8 gText_MenuPokedex[] = _("POKéDEX");
 const u8 gText_MenuPokemon[] = _("POKéMON");
 const u8 gText_MenuBag[] = _("BAG");
-const u8 gText_MenuPokenav[] = _("POKéNAV");
+const u8 gText_MenuPokenav[] = _("POKéGEAR");
 const u8 gText_MenuPlayer[] = _("{PLAYER}");
 const u8 gText_MenuSave[] = _("SAVE");
 const u8 gText_MenuOption[] = _("OPTION");

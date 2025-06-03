@@ -246,7 +246,7 @@ const u32 *const gItemIconTable[ITEMS_COUNT + 1][2] =
     // ????????
     [ITEM_INFINITE_REPEL] = {gItemIcon_Repel, gItemIconPalette_MaxRepel},
     [ITEM_INFINITE_RARE_CANDIES] = {gItemIcon_RareCandy, gItemIconPalette_RareCandy},
-    [ITEM_0EF] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
+    [ITEM_0F0] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
     [ITEM_0F0] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
     [ITEM_0F1] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
     [ITEM_0F2] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
@@ -322,6 +322,7 @@ const u32 *const gItemIconTable[ITEMS_COUNT + 1][2] =
     
     [ITEM_TIDAL_BELL] = {gItemIcon_TidalBell, gItemIcon_Palette_TidalBell},    
     
+    [ITEM_RADIO] = {gItemIcon_Radio, gItemIconPalette_DevonGoods},
 
     // TMs / HMs
     [ITEM_TM01] = {gItemIcon_TM, gItemIconPalette_FightingTMHM},

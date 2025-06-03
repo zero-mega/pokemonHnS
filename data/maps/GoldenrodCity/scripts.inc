@@ -27,6 +27,7 @@ GoldenrodCity_EventScript_Trigger:: @flagheap
 	clearflag FLAG_GOLDENROD_MACHOKE_3
 	clearflag FLAG_COMPLETED_SWITCHES
 	clearflag FLAG_ENABLE_RADIO
+	clearflag FLAG_KANTO_RADIO_GOT
 
 	setvar VAR_TRAIN, 0
 	setvar VAR_ELEVATOR, 0

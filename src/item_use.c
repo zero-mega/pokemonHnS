@@ -42,6 +42,7 @@
 #include "constants/item_effects.h"
 #include "constants/items.h"
 #include "constants/songs.h"
+#include "random.h"
 
 #include "tx_randomizer_and_challenges.h"
 #include "battle_setup.h" //tx_randomizer_and_challenges
@@ -161,6 +162,37 @@ static void DisplayDadsAdviceCannotUseItemMessage(u8 taskId, bool8 isUsingRegist
     DisplayCannotUseItemMessage(taskId, isUsingRegisteredKeyItemOnField, gText_DadsAdvice);
 }
 
+
+static void DisplayRadioMessage(u8 taskId, bool8 isUsingRegisteredKeyItemOnField) //crystal radio logic
+{
+    if (!Overworld_MapTypeAllowsTeleportAndFly(gMapHeader.mapType))
+        DisplayCannotUseItemMessage(taskId, isUsingRegisteredKeyItemOnField, gText_RadioNoSignal);
+    else
+    {
+        if(FlagGet(FLAG_HIDE_GOLDENROD_ROCKETS) == FALSE)
+            DisplayCannotUseItemMessage(taskId, isUsingRegisteredKeyItemOnField, gText_RocketRadio);
+        else
+        {
+            static const u8 *const sOakRadioMessages[] =
+            {
+                gText_OakTalk_Clefairy,
+                gText_OakTalk_Lapras,
+                gText_OakTalk_Ampharos,
+                gText_OakTalk_Sudowoodo,
+                gText_OakTalk_RedGyarados,
+                gText_OakTalk_Unown,
+                gText_OakTalk_Snubbull,
+                gText_OakTalk_Slowpoke,
+                gText_OakTalk_LavenderTower,
+                gText_OakTalk_TentacruelWhirl,
+            };
+            SeedRng(gMain.vblankCounter1);  
+            const u8 *selectedMsg = sOakRadioMessages[Random() % ARRAY_COUNT(sOakRadioMessages)];
+            DisplayCannotUseItemMessage(taskId, isUsingRegisteredKeyItemOnField, selectedMsg);
+        }
+    }
+}
+
 static void DisplayCannotDismountBikeMessage(u8 taskId, bool8 isUsingRegisteredKeyItemOnField)
 {
     DisplayCannotUseItemMessage(taskId, isUsingRegisteredKeyItemOnField, gText_CantDismountBike);
@@ -219,6 +251,12 @@ void ItemUseOutOfBattle_ExpShare(u8 taskId)
         else
             DisplayItemMessage(taskId, 1, gText_ExpShareOff, CloseItemMessage);
     }
+}
+
+void ItemUseOutOfBattle_Radio(u8 taskId)
+{
+    s16 *data = gTasks[taskId].data;
+    DisplayRadioMessage(taskId, tUsingRegisteredKeyItem);
 }
 
 void ItemUseOutOfBattle_Bike(u8 taskId)
