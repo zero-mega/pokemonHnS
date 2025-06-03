@@ -1,7 +1,27 @@
 .set LOCALID_GOLDENROD_RADIOTOWER_WHITNEY, 6
+.set LOCALID_GOLDENROD_RADIOTOWER_GRUNT, 3
 
 GoldenrodRadioTower1_MapScripts::
 	.byte 0
+
+RadioTower1F_EventScript_Grunt::
+	lock
+	faceplayer
+	msgbox RadioTower1F_Text_GruntM3Seen, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_GRUNT_2,  RadioTower1F_Text_GruntM3Beaten
+	msgbox RadioTower1F_Text_GruntM3After, MSGBOX_AUTOCLOSE
+	turnobject LOCALID_GOLDENROD_RADIOTOWER_GRUNT, DIR_EAST
+	applymovement2 LOCALID_GOLDENROD_RADIOTOWER_GRUNT, RadioTower1F_Movement_Rocket
+	waitmovement 0
+	playse SE_EXIT
+	removeobject LOCALID_GOLDENROD_RADIOTOWER_GRUNT
+	setflag FLAG_HIDE_ROCKET_GOLDENROD_RADIOTOWER_1
+	release
+	end
+
+RadioTower1F_Movement_Rocket::
+	walk_in_place_right
+	step_end
 
 RadioTower1F_EventScript_Lass::
 	lock

@@ -805,7 +805,7 @@
 #define FLAG_GOLDENROD_MACHOKE_1                0x2F6
 #define FLAG_GOLDENROD_MACHOKE_2                    0x2F7
 #define FLAG_GOLDENROD_MACHOKE_3      0x2F8
-#define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_TRUCK              0x2F9
+#define FLAG_GOLDENROD_NPC_TRADE_COMPLETED              0x2F9
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_TRUCK                  0x2FA
 #define FLAG_HIDE_DEOXYS                                            0x2FB
 #define FLAG_HIDE_BIRTH_ISLAND_DEOXYS_TRIANGLE                      0x2FC
@@ -974,7 +974,7 @@
 #define FLAG_ENABLE_RADIO                             0x39F
 #define FLAG_KANTO_RADIO_GOT                        0x3A0
 #define FLAG_HIDE_LAVARIDGE_TOWN_RIVAL                              0x3A1
-#define FLAG_HIDE_LAVARIDGE_TOWN_RIVAL_ON_BIKE                      0x3A2
+#define FLAG_HIDE_ROCKET_GOLDENROD_RADIOTOWER_1                      0x3A2
 #define FLAG_HIDE_RUSTURF_TUNNEL_ROCK_1                             0x3A3
 #define FLAG_HIDE_RUSTURF_TUNNEL_ROCK_2                             0x3A4
 #define FLAG_HIDE_FORTREE_CITY_HOUSE_4_WINGULL                      0x3A5

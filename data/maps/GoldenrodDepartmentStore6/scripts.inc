@@ -14,6 +14,74 @@ GoldenrodDeptStore6_EventScript_SetWarpDay::
 	release
 	end
 
+
+GoldenrodDepartmentStore6_EventScript_Jose::
+	lock
+	faceplayer
+	goto_if_set FLAG_GOLDENROD_NPC_TRADE_COMPLETED, GoldenrodDepartmentStore6_EventScript_TradeCompleted
+	setvar VAR_0x8008, INGAME_TRADE_MACHOP
+	copyvar VAR_0x8004, VAR_0x8008
+	specialvar VAR_RESULT, GetInGameTradeSpeciesInfo
+	copyvar VAR_0x8009, VAR_RESULT
+	msgbox GoldenrodDepartmentStore6_Text_YouWillTradeWontYou, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, GoldenrodDepartmentStore6_EventScript_DeclineTrade
+	special ChoosePartyMon
+	waitstate
+	copyvar VAR_0x800A, VAR_0x8004
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, GoldenrodDepartmentStore6_EventScript_DeclineTrade
+	copyvar VAR_0x8005, VAR_0x800A
+	specialvar VAR_RESULT, GetTradeSpecies
+	copyvar VAR_0x800B, VAR_RESULT
+	goto_if_ne VAR_RESULT, VAR_0x8009, GoldenrodDepartmentStore6_EventScript_NotRequestedMon
+	copyvar VAR_0x8004, VAR_0x8008
+	copyvar VAR_0x8005, VAR_0x800A
+	special CreateInGameTradePokemon
+	special DoInGameTradeScene
+	waitstate
+	bufferspeciesname STR_VAR_1, VAR_0x8009
+	msgbox GoldenrodDepartmentStore6_Text_MonYouTakeCare, MSGBOX_DEFAULT
+	closemessage
+	setflag FLAG_GOLDENROD_NPC_TRADE_COMPLETED
+	release
+	end
+
+GoldenrodDepartmentStore6_EventScript_DeclineTrade::
+	msgbox GoldenrodDepartmentStore6_Text_YouWontTradeMe, MSGBOX_DEFAULT
+	release
+	end
+
+GoldenrodDepartmentStore6_EventScript_NotRequestedMon::
+	bufferspeciesname STR_VAR_1, VAR_0x8009
+	msgbox GoldenrodDepartmentStore6_Text_ThisIsntAMon, MSGBOX_DEFAULT
+	release
+	end
+
+GoldenrodDepartmentStore6_EventScript_TradeCompleted::
+	msgbox GoldenrodDepartmentStore6_Text_After, MSGBOX_DEFAULT
+	release
+	end
+
+GoldenrodDepartmentStore6_Text_YouWillTradeWontYou:
+	.string "I collect POKéMON!\n"
+	.string "Do you have a {STR_VAR_1}?\p"
+	.string "Want to trade it for my\n"
+	.string "{STR_VAR_2}?$"
+
+GoldenrodDepartmentStore6_Text_MonYouTakeCare:
+	.string "Yay! I got myself {STR_VAR_1}!\p"
+	.string "{STR_VAR_2}, you take care!$"
+
+GoldenrodDepartmentStore6_Text_ThisIsntAMon:
+	.string "Uh, no, I don't think so.\n"
+	.string "That isn't a {STR_VAR_1}.$"
+
+GoldenrodDepartmentStore6_Text_YouWontTradeMe:
+	.string "You don't want to trade? Aww...$"
+
+GoldenrodDepartmentStore6_Text_After:
+	.string "Hi, how's my old MACHOP doing?$"
+
+
 GoldenrodDeptStore6_EventScript_Lass::
 	lock
 	faceplayer

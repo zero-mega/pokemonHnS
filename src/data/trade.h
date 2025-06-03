@@ -1052,6 +1052,23 @@ static const struct InGameTrade sIngameTrades[] =
         .sheen = 10,
         .requestedSpecies = SPECIES_SKITTY
     },
+    [INGAME_TRADE_MACHOP] =
+    {
+        .nickname = _("MUSCLE"),
+        .species = SPECIES_MACHOP,
+        .ivs31 = {31, 31, 31, 31, 31, 31},
+        .ivs = {4, 4, 4, 5, 5, 4},
+        .abilityNum = 0,
+        .otId = 44312,
+        .conditions = {5, 5, 30, 5, 5},
+        .personality = 0x96,
+        .heldItem = ITEM_MACHO_BRACE,
+        .mailNum = 0,
+        .otName = _("JOSE"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_DROWZEE
+    },
 };
 
 static const u16 sIngameTradeMail[][MAIL_WORDS_COUNT + 1] =

@@ -51,7 +51,7 @@ VioletCityHouse1_EventScript_NotRequestedMon::
 	end
 
 VioletCityHouse1_EventScript_TradeCompleted::
-	msgbox VioletCityHouse1_Text_MonYouTakeCare, MSGBOX_DEFAULT
+	msgbox VioletCityHouse1_Text_After, MSGBOX_DEFAULT
 	release
 	end
 
@@ -71,6 +71,9 @@ VioletCityHouse1_Text_ThisIsntAMon:
 
 VioletCityHouse1_Text_YouWontTradeMe:
 	.string "You don't want to trade? Aww...$"
+
+VioletCityHouse1_Text_After:
+	.string "Hi, how's my old ONIX doing?$"
 
 VioletCityHouse1_Text_PokefanM:
 	.string "A POKéMON you get in a trade\n"
