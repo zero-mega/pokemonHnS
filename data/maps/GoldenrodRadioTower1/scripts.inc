@@ -158,6 +158,13 @@ GoldenrodRadioTower_Movement_WhitneyLeave:
 	walk_in_place_down
 	step_end
 
+GoldenrodRadioTower1_EventScript_Sign::
+	lock
+	msgbox RadioTower1F_Text_Directory, MSGBOX_SIGN
+	closemessage
+	release
+	end
+
 RadioTower1F_Text_ReceptionistWelcome:
     .string "Welcome!$"
 

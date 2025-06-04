@@ -16,7 +16,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_GENTLEMAN",
-      "x": 9,
+      "x": 11,
       "y": 9,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -29,21 +29,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GENTLEMAN",
-      "x": 11,
-      "y": 10,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_GENTLEMAN",
-      "x": 17,
-      "y": 10,
+      "x": 20,
+      "y": 12,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -55,8 +42,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GIOVANNI",
-      "x": 23,
-      "y": 1,
+      "x": 24,
+      "y": 5,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -68,8 +55,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ARCHER",
-      "x": 23,
-      "y": 10,
+      "x": 25,
+      "y": 13,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -81,8 +68,21 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_F",
-      "x": 24,
+      "x": 27,
       "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ARIANA",
+      "x": 13,
+      "y": 7,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -95,14 +95,14 @@
   ],
   "warp_events": [
     {
-      "x": 9,
+      "x": 11,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_GOLDENROD_RADIO_TOWER",
       "dest_warp_id": "0"
     },
     {
-      "x": 21,
+      "x": 24,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_GOLDENROD_RADIO_TOWER",

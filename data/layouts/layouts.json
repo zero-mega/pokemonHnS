@@ -7014,7 +7014,7 @@
     {
       "id": "LAYOUT_GOLDENROD_RADIO_TOWER5",
       "name": "GoldenrodRadioTower5_Layout",
-      "width": 32,
+      "width": 34,
       "height": 16,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_GoldenrodUndergroundRocket",

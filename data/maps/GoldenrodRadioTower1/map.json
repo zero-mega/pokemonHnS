@@ -113,6 +113,21 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 20,
+      "y": 4,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "GoldenrodRadioTower1_EventScript_Sign"
+    },
+    {
+      "type": "sign",
+      "x": 10,
+      "y": 4,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "GoldenrodRadioTower1_EventScript_Sign"
+    }
   ]
 }
