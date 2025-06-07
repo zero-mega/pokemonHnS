@@ -137,7 +137,24 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 28,
+      "y": 5,
+      "elevation": 0,
+      "var": "VAR_GOLDENROD_CITY_STATE",
+      "var_value": "10",
+      "script": "GoldenrodRadioTower5_EventScript_Trigger_NPCS"
+    },
+    {
+      "type": "trigger",
+      "x": 29,
+      "y": 6,
+      "elevation": 0,
+      "var": "VAR_GOLDENROD_CITY_STATE",
+      "var_value": "10",
+      "script": "GoldenrodRadioTower5_EventScript_Trigger_NPCS"
+    }
   ],
   "bg_events": [
     {

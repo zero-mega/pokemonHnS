@@ -106,7 +106,7 @@
 #define VAR_COMPLETED_HO_OH                             0x4056 // Ho-oh trigger
 #define VAR_VIOLET_CITY_STATE                         0x4057 //0 on trigger, 1 when done
 #define VAR_AZALEA_TOWN_STATE                        0x4058 //0 on trigger, 1 = talk to kurt, 2 = goto well, 3 = goto kurt well, 4 = goto gym, 5 = fight silver, 6 = find farfetchd, 7 = bringGSBall, 8 = GoOutside, 9 = Celebi, 10 = done
-#define VAR_GOLDENROD_CITY_STATE                          0x4059  //0 on trigger, 1 = get radio, 2 = fight whitney, 3 = whitney crying, 4 = whitney give badge, 5 = complete before rocket. 6 = fight petrel, 7 = meet kimono, 8 = silver, 9 = director-archer, 10 = done.
+#define VAR_GOLDENROD_CITY_STATE                          0x4059  //0 on trigger, 1 = get radio, 2 = fight whitney, 3 = whitney crying, 4 = whitney give badge, 5 = complete before rocket. 6 = fight petrel, 7 = meet kimono, 8 = silver, 9 = director-archer, 10 = return NPCS, 11 = done
 #define VAR_ECRUTEAK_CITY_STATE                          0x405A
 #define VAR_MAHOGANY_TOWN_STATE                           0x405B 
 #define VAR_OLIVINE_CITY_STATE                          0x405C 
@@ -128,7 +128,7 @@
 #define VAR_ILEX_FOREST_FARFETCHD                               0x406C //0 = CHASING, 1// start going right way, 2 = done
 #define VAR_ELEVATOR                               0x406D 
 #define VAR_TRAIN                               0x406E 
-#define VAR_ROUTE116_STATE                               0x406F
+#define VAR_LUGIA_OR_HOOH                               0x406F // 0 = lugia, 1 = ho-oh
 #define VAR_ROUTE117_STATE                               0x4070 // Unused Var
 #define VAR_ROUTE118_STATE                               0x4071
 #define VAR_ROUTE119_STATE                               0x4072

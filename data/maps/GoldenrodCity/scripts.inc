@@ -37,6 +37,8 @@ GoldenrodCity_EventScript_Trigger:: @flagheap
 	clearflag FLAG_HIDE_RADIOTOWER_GATE
 	clearflag FLAG_HIDE_GOLDENROD_RADIOTOWER_DIRECTOR
 
+	
+	setvar VAR_LUGIA_OR_HOOH, 0
 	setvar VAR_TRAIN, 0
 	setvar VAR_ELEVATOR, 0
 	setvar VAR_GOLDENROD_CITY_STATE, 1

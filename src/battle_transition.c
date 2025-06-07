@@ -116,6 +116,27 @@ static void Task_Archer(u8);
 static void Task_Proton(u8);
 static void Task_Petrel(u8);
 static void Task_Giovanni(u8);
+
+static void Task_Falkner(u8);
+static void Task_Bugsy(u8);
+static void Task_Whitney(u8);
+static void Task_Morty(u8);
+static void Task_Chuck(u8);
+static void Task_Jasmine(u8);
+static void Task_Pryce(u8);
+static void Task_Clair(u8);
+
+static void Task_Brock(u8);
+static void Task_Misty(u8);
+static void Task_Surge(u8);
+static void Task_Erika(u8);
+static void Task_Sabrina(u8);
+static void Task_Janine(u8);
+static void Task_Blaine(u8);
+static void Task_Blue(u8);
+
+static void Task_Silver(u8);
+
 static void Task_Champion(u8);
 static void Task_Aqua(u8);
 static void Task_Magma(u8);
@@ -398,6 +419,26 @@ static const TaskFunc sTasks_Main[B_TRANSITION_COUNT] =
     [B_TRANSITION_PETREL] = Task_Petrel,
     [B_TRANSITION_PROTON] = Task_Proton,
     [B_TRANSITION_GIOVANNI] = Task_Giovanni,
+
+    [B_TRANSITION_FALKNER] = Task_Falkner,
+    [B_TRANSITION_BUGSY] = Task_Bugsy,
+    [B_TRANSITION_WHITNEY] = Task_Whitney,
+    [B_TRANSITION_MORTY] = Task_Morty,
+    [B_TRANSITION_CHUCK] = Task_Chuck,
+    [B_TRANSITION_JASMINE] = Task_Jasmine,
+    [B_TRANSITION_PRYCE] = Task_Pryce,
+    [B_TRANSITION_CLAIR] = Task_Clair,
+
+    [B_TRANSITION_BROCK] = Task_Brock,
+    [B_TRANSITION_MISTY] = Task_Misty,
+    [B_TRANSITION_SURGE] = Task_Surge,
+    [B_TRANSITION_ERIKA] = Task_Erika,
+    [B_TRANSITION_SABRINA] = Task_Sabrina,
+    [B_TRANSITION_JANINE] = Task_Janine,
+    [B_TRANSITION_BLAINE] = Task_Blaine,
+    [B_TRANSITION_BLUE] = Task_Blue,
+
+    [B_TRANSITION_SILVER] = Task_Silver,
 };
 
 static const TransitionStateFunc sTaskHandlers[] =
@@ -563,6 +604,27 @@ static const u8 sMugshotsTrainerPicIDsTable[MUGSHOTS_COUNT] =
     [MUGSHOT_PROTON] = TRAINER_PIC_PROTON,
     [MUGSHOT_PETREL] = TRAINER_PIC_PETREL,
     [MUGSHOT_GIOVANNI] = TRAINER_PIC_GIOVANNI,
+
+    [MUGSHOT_FALKNER] = TRAINER_PIC_LEADER_FALKNER,
+    [MUGSHOT_BUGSY] = TRAINER_PIC_LEADER_BUGSY,
+    [MUGSHOT_WHITNEY] = TRAINER_PIC_LEADER_WHITNEY,
+    [MUGSHOT_MORTY] = TRAINER_PIC_LEADER_MORTY,
+    [MUGSHOT_CHUCK] = TRAINER_PIC_LEADER_CHUCK,
+    [MUGSHOT_JASMINE] = TRAINER_PIC_LEADER_JASMINE,
+    [MUGSHOT_PRYCE] = TRAINER_PIC_LEADER_PRYCE,
+    [MUGSHOT_CLAIR] = TRAINER_PIC_LEADER_CLAIR,
+
+    [MUGSHOT_BROCK] = TRAINER_PIC_LEADER_BROCK,
+    [MUGSHOT_MISTY] = TRAINER_PIC_LEADER_MISTY,
+    [MUGSHOT_SURGE] = TRAINER_PIC_LEADER_SURGE,
+    [MUGSHOT_ERIKA] = TRAINER_PIC_LEADER_ERIKA,
+    [MUGSHOT_SABRINA] = TRAINER_PIC_LEADER_SABRINA,
+    [MUGSHOT_JANINE] = TRAINER_PIC_LEADER_JANINE,
+    [MUGSHOT_BLAINE] = TRAINER_PIC_LEADER_BLAINE,
+    [MUGSHOT_BLUE] = TRAINER_PIC_LEADER_BLUE,
+
+    [MUGSHOT_SILVER] = TRAINER_PIC_SILVER,
+    
 };
 static const s16 sMugshotsOpponentRotationScales[MUGSHOTS_COUNT][2] =
 {
@@ -576,6 +638,26 @@ static const s16 sMugshotsOpponentRotationScales[MUGSHOTS_COUNT][2] =
     [MUGSHOT_PROTON] = {0x188, 0x188},
     [MUGSHOT_PETREL] = {0x188, 0x188},
     [MUGSHOT_GIOVANNI] = {0x188, 0x188},
+
+    [MUGSHOT_FALKNER] = {0x200, 0x200},
+    [MUGSHOT_BUGSY] = {0x200, 0x200},
+    [MUGSHOT_WHITNEY] = {0x200, 0x200},
+    [MUGSHOT_MORTY] = {0x200, 0x200},
+    [MUGSHOT_CHUCK] = {0x200, 0x200},
+    [MUGSHOT_JASMINE] = {0x200, 0x200},
+    [MUGSHOT_PRYCE] = {0x200, 0x200},
+    [MUGSHOT_CLAIR] = {0x200, 0x200},
+
+    [MUGSHOT_BROCK] = {0x200, 0x200},
+    [MUGSHOT_MISTY] = {0x200, 0x200},
+    [MUGSHOT_SURGE] = {0x200, 0x200},
+    [MUGSHOT_ERIKA] = {0x200, 0x200},
+    [MUGSHOT_SABRINA] = {0x200, 0x200},
+    [MUGSHOT_JANINE] = {0x200, 0x200},
+    [MUGSHOT_BLAINE] = {0x200, 0x200},
+    [MUGSHOT_BLUE] = {0x200, 0x200},
+
+    [MUGSHOT_SILVER] = {0x200, 0x200},
 };
 static const s16 sMugshotsOpponentCoords[MUGSHOTS_COUNT][2] =
 {
@@ -589,6 +671,26 @@ static const s16 sMugshotsOpponentCoords[MUGSHOTS_COUNT][2] =
     [MUGSHOT_PROTON] = { 0,  5},
     [MUGSHOT_PETREL] = { 0,  5},
     [MUGSHOT_GIOVANNI] = { 0,  5},
+
+    [MUGSHOT_FALKNER] = { 0,  -5},
+    [MUGSHOT_BUGSY] = { 0,  5},
+    [MUGSHOT_WHITNEY] = { 0,  5},
+    [MUGSHOT_MORTY] = { 0,  5},
+    [MUGSHOT_CHUCK] = { 0,  5},
+    [MUGSHOT_JASMINE] = { 0,  5},
+    [MUGSHOT_PRYCE] = { 0,  5},
+    [MUGSHOT_CLAIR] = { 0,  5},
+
+    [MUGSHOT_BROCK] = { 0,  5},
+    [MUGSHOT_MISTY] = { 0,  5},
+    [MUGSHOT_SURGE] = { 0,  5},
+    [MUGSHOT_ERIKA] = { 0,  5},
+    [MUGSHOT_SABRINA] = { 0,  5},
+    [MUGSHOT_JANINE] = { 0,  5},
+    [MUGSHOT_BLAINE] = { 0,  5},
+    [MUGSHOT_BLUE] = { 0,  5},
+
+    [MUGSHOT_SILVER] = { 0,  5},
 };
 
 static const TransitionSpriteCallback sMugshotTrainerPicFuncs[] =
@@ -919,13 +1021,14 @@ const struct SpritePalette gSpritePalette_Pokeball = {sFieldEffectPal_Pokeball, 
 //rocket = red
 //brendan = light blue
 //may = pink
-static const u16 SMugshotPal_Purple[] = INCBIN_U16("graphics/battle_transitions/sidney_bg.gbapal");
-static const u16 SMugshotPal_Green[] = INCBIN_U16("graphics/battle_transitions/phoebe_bg.gbapal");
-static const u16 SMugshotPal_Pink[] = INCBIN_U16("graphics/battle_transitions/glacia_bg.gbapal");
-static const u16 SMugshotPal_DarkBlue[] = INCBIN_U16("graphics/battle_transitions/drake_bg.gbapal");
-static const u16 SMugshotPal_Yellow[] = INCBIN_U16("graphics/battle_transitions/wallace_bg.gbapal");
-static const u16 SMugshotPal_DarkRed[] = INCBIN_U16("graphics/battle_transitions/rocket.gbapal");
+static const u16 sMugshotPal_Purple[] = INCBIN_U16("graphics/battle_transitions/sidney_bg.gbapal");
+static const u16 sMugshotPal_Green[] = INCBIN_U16("graphics/battle_transitions/phoebe_bg.gbapal");
+static const u16 sMugshotPal_Pink[] = INCBIN_U16("graphics/battle_transitions/glacia_bg.gbapal");
+static const u16 sMugshotPal_DarkBlue[] = INCBIN_U16("graphics/battle_transitions/drake_bg.gbapal");
+static const u16 sMugshotPal_Yellow[] = INCBIN_U16("graphics/battle_transitions/wallace_bg.gbapal");
+static const u16 sMugshotPal_DarkRed[] = INCBIN_U16("graphics/battle_transitions/rocket.gbapal");
 static const u16 sMugshotPal_Orange[] = INCBIN_U16("graphics/battle_transitions/orange.gbapal");
+static const u16 sMugshotPal_LightBlue[] = INCBIN_U16("graphics/battle_transitions/light_blue.gbapal");
 static const u16 sMugshotPal_Brendan[] = INCBIN_U16("graphics/battle_transitions/brendan_bg.gbapal");
 static const u16 sMugshotPal_May[] = INCBIN_U16("graphics/battle_transitions/may_bg.gbapal");
 
@@ -934,16 +1037,37 @@ static const u16 sMugshotPal_May[] = INCBIN_U16("graphics/battle_transitions/may
 //altered
 static const u16 *const sOpponentMugshotsPals[MUGSHOTS_COUNT] =
 {
-    [MUGSHOT_WILL] = SMugshotPal_Pink,
-    [MUGSHOT_KOGA] = SMugshotPal_Purple,
+    [MUGSHOT_WILL] = sMugshotPal_Pink,
+    [MUGSHOT_KOGA] = sMugshotPal_Purple,
     [MUGSHOT_BRUNO] = sMugshotPal_Orange,
-    [MUGSHOT_KAREN] = SMugshotPal_Yellow,
-    [MUGSHOT_CHAMPION] = SMugshotPal_DarkBlue,
-    [MUGSHOT_ARCHER] = SMugshotPal_DarkRed,
-    [MUGSHOT_ARIANA] = SMugshotPal_DarkRed,
-    [MUGSHOT_PETREL] = SMugshotPal_DarkRed,
-    [MUGSHOT_PROTON] = SMugshotPal_DarkRed,
-    [MUGSHOT_GIOVANNI] = SMugshotPal_DarkRed
+    [MUGSHOT_KAREN] = sMugshotPal_Yellow,
+    [MUGSHOT_CHAMPION] = sMugshotPal_DarkBlue,
+    [MUGSHOT_ARCHER] = sMugshotPal_DarkRed,
+    [MUGSHOT_ARIANA] = sMugshotPal_DarkRed,
+    [MUGSHOT_PETREL] = sMugshotPal_DarkRed,
+    [MUGSHOT_PROTON] = sMugshotPal_DarkRed,
+    [MUGSHOT_GIOVANNI] = sMugshotPal_DarkRed,
+    
+    [MUGSHOT_FALKNER] = sMugshotPal_LightBlue,
+    [MUGSHOT_BUGSY] = sMugshotPal_Green,
+    [MUGSHOT_WHITNEY] = sMugshotPal_Pink,
+    [MUGSHOT_MORTY] = sMugshotPal_Purple,
+    [MUGSHOT_CHUCK] = sMugshotPal_Orange,
+    [MUGSHOT_JASMINE] = sMugshotPal_Yellow,
+    [MUGSHOT_PRYCE] = sMugshotPal_LightBlue,
+    [MUGSHOT_CLAIR] = sMugshotPal_DarkBlue,
+
+    [MUGSHOT_BROCK] = sMugshotPal_Orange,
+    [MUGSHOT_MISTY] = sMugshotPal_LightBlue,
+    [MUGSHOT_SURGE] = sMugshotPal_Yellow,
+    [MUGSHOT_ERIKA] = sMugshotPal_Green,
+    [MUGSHOT_SABRINA] = sMugshotPal_Pink,
+    [MUGSHOT_JANINE] = sMugshotPal_Purple,
+    [MUGSHOT_BLAINE] = sMugshotPal_DarkRed,
+    [MUGSHOT_BLUE] = sMugshotPal_DarkBlue,
+
+    [MUGSHOT_SILVER] = sMugshotPal_DarkRed
+
 };
 
 static const u16 *const sPlayerMugshotsPals[GENDER_COUNT] =
@@ -2369,6 +2493,93 @@ static void Task_Petrel(u8 taskId)
 static void Task_Giovanni(u8 taskId)
 {
     gTasks[taskId].tMugshotId = MUGSHOT_GIOVANNI;
+    DoMugshotTransition(taskId);
+}
+
+static void Task_Falkner(u8 taskId)
+{
+    gTasks[taskId].tMugshotId = MUGSHOT_FALKNER;
+    DoMugshotTransition(taskId);
+}
+static void Task_Bugsy(u8 taskId)
+{
+    gTasks[taskId].tMugshotId = MUGSHOT_BUGSY;
+    DoMugshotTransition(taskId);
+}
+static void Task_Whitney(u8 taskId)
+{
+    gTasks[taskId].tMugshotId = MUGSHOT_WHITNEY;
+    DoMugshotTransition(taskId);
+}
+static void Task_Morty(u8 taskId)
+{
+    gTasks[taskId].tMugshotId = MUGSHOT_MORTY;
+    DoMugshotTransition(taskId);
+}
+static void Task_Chuck(u8 taskId)
+{
+    gTasks[taskId].tMugshotId = MUGSHOT_CHUCK;
+    DoMugshotTransition(taskId);
+}
+static void Task_Jasmine(u8 taskId)
+{
+    gTasks[taskId].tMugshotId = MUGSHOT_JASMINE;
+    DoMugshotTransition(taskId);
+}
+static void Task_Pryce(u8 taskId)
+{
+    gTasks[taskId].tMugshotId = MUGSHOT_PRYCE;
+    DoMugshotTransition(taskId);
+}
+static void Task_Clair(u8 taskId)
+{
+    gTasks[taskId].tMugshotId = MUGSHOT_CLAIR;
+    DoMugshotTransition(taskId);
+}
+
+static void Task_Brock(u8 taskId)
+{
+    gTasks[taskId].tMugshotId = MUGSHOT_BROCK;
+    DoMugshotTransition(taskId);
+}
+static void Task_Misty(u8 taskId)
+{
+    gTasks[taskId].tMugshotId = MUGSHOT_MISTY;
+    DoMugshotTransition(taskId);
+}
+static void Task_Surge(u8 taskId)
+{
+    gTasks[taskId].tMugshotId = MUGSHOT_SURGE;
+    DoMugshotTransition(taskId);
+}
+static void Task_Erika(u8 taskId)
+{
+    gTasks[taskId].tMugshotId = MUGSHOT_ERIKA;
+    DoMugshotTransition(taskId);
+}
+static void Task_Sabrina(u8 taskId)
+{
+    gTasks[taskId].tMugshotId = MUGSHOT_SABRINA;
+    DoMugshotTransition(taskId);
+}
+static void Task_Janine(u8 taskId)
+{
+    gTasks[taskId].tMugshotId = MUGSHOT_JANINE;
+    DoMugshotTransition(taskId);
+}
+static void Task_Blaine(u8 taskId)
+{
+    gTasks[taskId].tMugshotId = MUGSHOT_BLAINE;
+    DoMugshotTransition(taskId);
+}
+static void Task_Blue(u8 taskId)
+{
+    gTasks[taskId].tMugshotId = MUGSHOT_BLUE;
+    DoMugshotTransition(taskId);
+}
+static void Task_Silver(u8 taskId)
+{
+    gTasks[taskId].tMugshotId = MUGSHOT_SILVER;
     DoMugshotTransition(taskId);
 }
 
