@@ -1,2 +1,249 @@
+.set LOCALID_DIRECTOR_OFFICE, 1
+.set LOCALID_PETREL_OFFICE, 4
+
 GoldenrodRadioTower5_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, GoldenrodRadioTower5_OnLoad
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, GoldenrodRadioTower5_OnFrame
 	.byte 0
+
+GoldenrodRadioTower5_OnLoad::
+	end
+
+GoldenrodRadioTower5_OnFrame::
+	map_script_2 VAR_TEMP_0, 0, GoldenrodRadioTower_EventScript_TryMusic
+	.2byte 0
+
+GoldenrodRadioTower_EventScript_TryMusic::
+	goto_if_eq VAR_GOLDENROD_CITY_STATE, 6, GoldenrodRadioTower_EventScript_Music
+	goto_if_eq VAR_GOLDENROD_CITY_STATE, 7, GoldenrodRadioTower_EventScript_Music
+	goto_if_eq VAR_GOLDENROD_CITY_STATE, 8, GoldenrodRadioTower_EventScript_Music
+	setvar VAR_TEMP_0, 1
+	end
+
+GoldenrodRadioTower_EventScript_Music::
+	playbgm MUS_HG_ROCKET_TAKEOVER, TRUE
+	setvar VAR_TEMP_0, 1
+	end
+
+@=======[OFFICE]==============================================================================================================================
+
+GoldenrodRadioTower5_EventScript_Petrel::
+	lock
+	goto_if_ge VAR_GOLDENROD_CITY_STATE, 9, GoldenrodRadioTower5_EventScript_Director
+	goto_if_eq VAR_FACING, DIR_SOUTH, GoldenrodRadioTower5_EventScript_PetrelNorth
+	faceplayer
+	msgbox GoldenrodRadioTower5_Text_FakeDirector1, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_DIRECTOR_OFFICE, GoldenrodRadioTower5_Movement_Spin
+	waitmovement 0
+	setflag FLAG_HIDE_GOLDENROD_RADIOTOWER_DIRECTOR
+	removeobject LOCALID_DIRECTOR_OFFICE
+	clearflag FLAG_HIDE_GOLDENROD_RADIOTOWER_PETREL
+	addobject LOCALID_PETREL_OFFICE
+	applymovement LOCALID_PETREL_OFFICE, GoldenrodRadioTower5_Movement_Spin2
+	waitmovement 0
+	msgbox GoldenrodRadioTower5_Text_FakeDirector2, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_PETREL, GoldenrodRadioTower5_Text_FakeDirectorWin
+	msgbox GoldenrodRadioTower5_Text_FakeDirectorAfter, MSGBOX_DEFAULT
+	giveitem ITEM_BASEMENT_KEY
+	setvar VAR_GOLDENROD_CITY_STATE, 7
+	closemessage
+	release
+	end
+
+GoldenrodRadioTower5_EventScript_PetrelNorth::
+	end
+
+GoldenrodRadioTower5_EventScript_Petrel2::
+	lock
+	faceplayer
+	msgbox GoldenrodRadioTower5_Text_FakeDirectorAfter2, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+GoldenrodRadioTower5_EventScript_Director::
+	lock
+	faceplayer
+	msgbox GoldenrodRadioTower5_Text_DirectorIntro, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+GoldenrodRadioTower5_Movement_Spin:
+	face_right
+	delay_8
+	face_up
+	delay_8
+	face_left
+	delay_8
+	face_down
+	delay_8
+	face_right
+	delay_4
+	face_up
+	delay_4
+	face_left
+	delay_4
+	face_down
+	delay_4
+	face_right
+	delay_2
+	face_up
+	delay_2
+	face_left
+	delay_2
+	face_down
+	step_end
+
+
+GoldenrodRadioTower5_Movement_Spin2:
+	face_right
+	delay_2
+	face_up
+	delay_2
+	face_left
+	delay_2
+	face_down
+	step_end
+
+
+@=======[STUDIO]==============================================================================================================================
+
+GoldenrodRadioTower5_EventScript_Ben::
+	lock
+	faceplayer
+	msgbox GoldenrodRadioTower5_Text_Ben, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+GoldenrodRaidoTower4_EventScript_ARIANA::
+	trainerbattle_single TRAINER_ARIANA_2 GoldenrodRadioTower5_Text_ExecutiveF1Seen, GoldenrodRadioTower5_Text_ExecutiveF1Beaten
+	msgbox GoldenrodRadioTower5_Text_ExecutiveF1After, MSGBOX_AUTOCLOSE
+	end
+
+
+
+
+GoldenrodRadioTower5_Text_FakeDirector1:
+	.string "Y-you! You came to rescue me?$"
+
+GoldenrodRadioTower5_Text_FakeDirector2:
+	.string "Is that what you were expecting?\p"
+	.string "Wrong! I'm an imposter!\p"
+	.string "I pretended to be the real thing to\n"
+	.string "prepare for our takeover.\p"
+	.string "Do you want to know where we hid\n"
+	.string "the real DIRECTOR?\p"
+	.string "Sure, I'll tell you. But only if you\n"
+	.string "can beat me!$"
+
+GoldenrodRadioTower5_Text_FakeDirectorWin:
+	.string "OK, OK. I'll tell you where he is.$"
+
+GoldenrodRadioTower5_Text_FakeDirectorAfter:
+	.string "The boss stashed the DIRECTOR in\n"
+	.string "the UNDERGROUND WAREHOUSE.\p"
+	.string "It's at the far end of the UNDER-\n"
+	.string "GROUND.\p"
+	.string "I am a nice guy, I will give you\n"
+	.string "the BASEMENT KEY to get to the\l"
+	.string "UNDERGROUND WAREHOUSE.\p"
+	.string "But I doubt you'll get that far.$"
+
+GoldenrodRadioTower5_Text_FakeDirectorAfter2:
+	.string "The boss stashed the DIRECTOR in\n"
+	.string "the UNDERGROUND WAREHOUSE.\p"
+	.string "It's at the far end of the UNDER-\n"
+	.string "GROUND.\p"
+	.string "You can use the BASEMENT KEY to\n"
+	.string "get to the UNDERGROUND WAREHOUSE.\p"
+	.string "But I doubt you'll get that far.$"
+
+GoldenrodRadioTower5_Text_ExecutiveF1Seen:
+	.string "Remember me from the HIDEOUT in\n"
+	.string "MAHOGANY TOWN?\p"
+	.string "My boss scolded me but I'm stronger.\p"
+	.string "I lost then, but I won't this time.$"
+
+GoldenrodRadioTower5_Text_ExecutiveF1Beaten:
+	.string "This can't be happening!\p"
+	.string "I fought hard, but I still lost…\p"
+	.string "I'm so sorry GIOVANNI…$"
+
+GoldenrodRadioTower5_Text_ExecutiveF1After:
+	.string "{PLAYER}, isn't it?\p"
+	.string "A brat like you won't appreciate\n"
+	.string "the magnificence of TEAM ROCKET.\p"
+	.string "That's too bad. I really admire\n"
+	.string "your power.$"
+
+GoldenrodRadioTower5_Text_RocketBossSeen:
+	.string "Oh? You managed to get this far?\p"
+	.string "You must be quite the trainer.\p"
+	.string "We intend to take over this RADIO\n"
+	.string "STATION and announce our comeback.\p"
+	.string "That should bring our boss GIOVANNI\n"
+	.string "back from his solo training.\p"
+	.string "We are going to regain our former\n"
+	.string "glory.\p"
+	.string "I won't allow you to interfere with\n"
+	.string "our plans.$"
+
+GoldenrodRadioTower5_Text_RocketBossBeaten:
+	.string "No! Forgive me, GIOVANNI!$"
+
+GoldenrodRadioTower5_Text_RocketBossAfter:
+	.string "How could this be?\p"
+	.string "Our dreams have come to naught.\p"
+	.string "I wasn't up to the task after all.\p"
+	.string "Like GIOVANNI did before me, I will\n"
+	.string "disband TEAM ROCKET here today.\p"
+	.string "Farewell.$"
+
+GoldenrodRadioTower5_Text_DirectorThanks:
+	.string "DIRECTOR: {PLAYER}, thank you!\p"
+	.string "Your courageous actions have saved\n"
+	.string "POKéMON nationwide.\p"
+	.string "I know it's not much, but please\n"
+	.string "take this.$"
+
+GoldenrodRadioTower5_Text_DirectorBellExplanation:
+	.string "There used to be a tower right here\n"
+	.string "in GOLDENROD CITY.\p"
+	.string "But it was old and creaky.\p"
+	.string "So we replaced it with our RADIO\n"
+	.string "TOWER.\p"
+	.string "We dug up that bell during\n"
+	.string "construction.\p"
+	.string "I heard that all sorts of POKéMON\n"
+	.string "lived in GOLDENROD in the past.\p"
+	.string "Perhaps…\p"
+	.string "That bell has some connection to the\n"
+	.string "TIN TOWER in ECRUTEAK CITY…\p"
+	.string "Ah!\p"
+	.string "That reminds me…\p"
+	.string "I overheard TEAM ROCKET whispering.\p"
+	.string "Apparently, something is going on at\n"
+	.string "the TIN TOWER.\p"
+	.string "I have no idea what is happening,\p"
+	.string "but you might look into it.\p"
+	.string "OK, I better go to my OFFICE.$"
+
+GoldenrodRadioTower5_Text_DirectorIntro:
+	.string "DIRECTOR: Hello, {PLAYER}!\p"
+	.string "You know, I love POKéMON.\p"
+	.string "I built this RADIO TOWER so I could\n"
+	.string "express my love of POKéMON.\p"
+	.string "It would be nice if people enjoyed\n"
+	.string "our programs.$"
+
+GoldenrodRadioTower5_Text_Ben:
+	.string "BEN: Do you listen to our music?$"
+
+GoldenrodRadioTower5_Text_DirectorOfficeSign:
+	.string "5F DIRECTOR'S   OFFICE$"
+
+GoldenrodRadioTower5_Text_Studio1Sign:
+	.string "5F STUDIO 1$"

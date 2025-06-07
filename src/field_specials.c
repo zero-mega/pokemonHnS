@@ -1405,12 +1405,12 @@ u8 TryUpdateRusturfTunnelState(void)
         && gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(RUSTURF_TUNNEL)
         && gSaveBlock1Ptr->location.mapNum == MAP_NUM(RUSTURF_TUNNEL))
     {
-        if (FlagGet(FLAG_HIDE_RUSTURF_TUNNEL_ROCK_1))
+        if (FlagGet(FLAG_GARBAGEFLAG))
         {
             VarSet(VAR_RUSTURF_TUNNEL_STATE, 4);
             return TRUE;
         }
-        else if (FlagGet(FLAG_HIDE_RUSTURF_TUNNEL_ROCK_2))
+        else if (FlagGet(FLAG_GARBAGEFLAG))
         {
             VarSet(VAR_RUSTURF_TUNNEL_STATE, 5);
             return TRUE;

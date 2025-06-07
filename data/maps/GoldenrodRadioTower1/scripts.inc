@@ -2,6 +2,7 @@
 .set LOCALID_GOLDENROD_RADIOTOWER_GRUNT, 3
 
 GoldenrodRadioTower1_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, GoldenrodRadioTower5_OnFrame
 	.byte 0
 
 RadioTower1F_EventScript_Grunt::

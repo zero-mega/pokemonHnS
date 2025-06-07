@@ -1,5 +1,23 @@
 GoldenrodRadioTower2_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, GoldenrodRadioTower5_OnFrame
 	.byte 0
+
+GoldenrodRaidoTower2_EventScript_Grunt3::
+	trainerbattle_single TRAINER_GRUNT_3 GoldenrodRadioTower2_Text_GruntM4Seen, GoldenrodRadioTower2_Text_GruntM4Beaten
+	msgbox GoldenrodRadioTower2_Text_GruntM4After, MSGBOX_AUTOCLOSE
+	end
+GoldenrodRaidoTower2_EventScript_Grunt4::
+	trainerbattle_single TRAINER_GRUNT_4 GoldenrodRadioTower2_Text_GruntM5Seen, GoldenrodRadioTower2_Text_GruntM5Beaten
+	msgbox GoldenrodRadioTower2_Text_GruntM5After, MSGBOX_AUTOCLOSE
+	end
+GoldenrodRaidoTower2_EventScript_Grunt5::
+	trainerbattle_single TRAINER_GRUNT_5 GoldenrodRadioTower2_Text_GruntM6Seen, GoldenrodRadioTower2_Text_GruntM6Beaten
+	msgbox GoldenrodRadioTower2_Text_GruntM6After, MSGBOX_AUTOCLOSE
+	end
+GoldenrodRaidoTower2_EventScript_GruntF2::
+	trainerbattle_single TRAINER_GRUNT_26 GoldenrodRadioTower2_Text_GruntF2Seen, GoldenrodRadioTower2_Text_GruntF2Beaten
+	msgbox GoldenrodRadioTower2_Text_GruntF2After, MSGBOX_AUTOCLOSE
+	end
 
 GoldenrodRadioTower2_EventScript_Sign1::
 	lock
@@ -23,10 +41,18 @@ GoldenrodRadioTower2_EventScript_Boy::
 	release
 	end
 
+GoldenrodRadioTower2_EventScript_Policeman::
+	lock
+	faceplayer
+	msgbox GoldenrodRadioTower2_Text_Policeman, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
 GoldenrodRadioTower2_EventScript_Buena::
 	lock
 	faceplayer
-	goto_if_eq VAR_GOLDENROD_CITY_STATE, 6, GoldenrodRadioTower2_EventScript_Buena2
+	goto_if_ge VAR_GOLDENROD_CITY_STATE, 6, GoldenrodRadioTower2_EventScript_Buena2 @CHANGELATER
 	msgbox GoldenrodRadioTower2_Text_BuenaShowPromo, MSGBOX_DEFAULT
 	closemessage
 	release
@@ -42,7 +68,7 @@ GoldenrodRadioTower2_EventScript_Buena2::
 GoldenrodRadioTower2_EventScript_Teacher::
 	lock
 	faceplayer
-	goto_if_eq VAR_GOLDENROD_CITY_STATE, 6, GoldenrodRadioTower2_EventScript_Teacher2
+	goto_if_eq VAR_GOLDENROD_CITY_STATE, 6, GoldenrodRadioTower2_EventScript_Teacher2 @CHANGELATER
 	msgbox GoldenrodRadioTower2_Text_Teacher, MSGBOX_DEFAULT
 	closemessage
 	release
@@ -71,6 +97,10 @@ RadioTower2FBuenaPasswordIsHelpText:
 GoldenrodRadioTower2_Text_SuperNerd:
 	.string "You can listen to the radio\n"
 	.string "anywhere. Tune in!$"
+
+GoldenrodRadioTower2_Text_Policeman:
+	.string "Restricted access beyond this\n"
+	.string "point.$"
 
 GoldenrodRadioTower2_Text_Teacher:
 	.string "Lullabies on the radio may make\n"

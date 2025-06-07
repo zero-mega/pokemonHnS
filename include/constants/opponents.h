@@ -279,8 +279,8 @@
 #define TRAINER_PAUL                        275
 #define TRAINER_ARCHER_4                     276
 #define TRAINER_ARCHER_5                     277
-#define TRAINER_EXECUTIVE_5                     278
-#define TRAINER_EXECUTIVE_6                     279
+#define TRAINER_PETREL                     278
+#define TRAINER_PROTON_2                     279
 #define TRAINER_UNUSEDNAME_2                     280
 #define TRAINER_GEORGIA                     281
 #define TRAINER_BLUE_2                     282
@@ -450,7 +450,7 @@
 #define TRAINER_TARA                        446
 #define TRAINER_MISSY                       447
 #define TRAINER_ALICE                       448
-#define TRAINER_EXECUTIVE_2                     449
+#define TRAINER_GRUNT_30                     449
 #define TRAINER_GRACE                       450
 #define TRAINER_TANYA                       451
 #define TRAINER_SHARON                      452
@@ -466,8 +466,8 @@
 #define TRAINER_KAYLEE                      462
 #define TRAINER_LAUREL                      463
 #define TRAINER_GRUNT                      464
-#define TRAINER_EXECUTIVE_3                     465
-#define TRAINER_EXECUTIVE_4                     466
+#define TRAINER_GRUNT_31                     465
+#define TRAINER_GRUNT_32                     466
 #define TRAINER_ARCHER_1                     467
 #define TRAINER_ARCHER_2                     468
 #define TRAINER_HEIDI                       469

@@ -1923,6 +1923,44 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Grunt29),
     },
 
+    [TRAINER_GRUNT_30] =
+    {
+        .trainerClass = TRAINER_CLASS_ROCKET_ADMIN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
+        .trainerName = _("GRUNT"),
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Grunt30),
+    },
+
+
+    [TRAINER_GRUNT_31] =
+    {
+        .trainerClass = TRAINER_CLASS_ROCKET_ADMIN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
+        .trainerName = _("GRUNT"),
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Grunt31),
+    },
+
+
+    [TRAINER_GRUNT_32] =
+    {
+        .trainerClass = TRAINER_CLASS_ROCKET_ADMIN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
+        .trainerName = _("GRUNT"),
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Grunt32),
+    },
+
 
     [TRAINER_ETO] =
     {
@@ -5954,45 +5992,19 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Grunt),
     },
+    
 
-    [TRAINER_EXECUTIVE_2] =
+    [TRAINER_PROTON_2] =
     {
         .trainerClass = TRAINER_CLASS_ROCKET_ADMIN,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .trainerPic = TRAINER_PIC_PETREL,
-        .trainerName = _("EXECUTIVE"),
+        .trainerName = _("PROTON"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Executive2),
+        .party = NO_ITEM_CUSTOM_MOVES(sParty_Proton2),
     },
-
-
-    [TRAINER_EXECUTIVE_3] =
-    {
-        .trainerClass = TRAINER_CLASS_ROCKET_ADMIN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
-        .trainerPic = TRAINER_PIC_PETREL,
-        .trainerName = _("EXECUTIVE"),
-        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
-        .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Executive3),
-    },
-
-
-    [TRAINER_EXECUTIVE_4] =
-    {
-        .trainerClass = TRAINER_CLASS_ROCKET_ADMIN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
-        .trainerPic = TRAINER_PIC_PETREL,
-        .trainerName = _("EXECUTIVE"),
-        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
-        .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Executive4),
-    },
-
 
     [TRAINER_ARCHER_1] =
     {
@@ -6003,7 +6015,7 @@ const struct Trainer gTrainers[] = {
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Archer),
+        .party = NO_ITEM_CUSTOM_MOVES(sParty_Archer1),
     },
 
 
@@ -6029,7 +6041,7 @@ const struct Trainer gTrainers[] = {
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .party = NO_ITEM_CUSTOM_MOVES(sParty_Archer3),
+        .party = NO_ITEM_CUSTOM_MOVES(sParty_Archer2),
     },
 
 
@@ -6042,7 +6054,7 @@ const struct Trainer gTrainers[] = {
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .party = NO_ITEM_CUSTOM_MOVES(sParty_Archer4),
+        .party = NO_ITEM_CUSTOM_MOVES(sParty_Archer2),
     },
 
 
@@ -6055,34 +6067,22 @@ const struct Trainer gTrainers[] = {
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .party = NO_ITEM_CUSTOM_MOVES(sParty_Archer5),
+        .party = NO_ITEM_CUSTOM_MOVES(sParty_Archer2),
     },
 
 
-    [TRAINER_EXECUTIVE_5] =
+    [TRAINER_PETREL] =
     {
         .trainerClass = TRAINER_CLASS_ROCKET_ADMIN,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .trainerPic = TRAINER_PIC_PETREL,
-        .trainerName = _("EXECUTIVE"),
+        .trainerName = _("PETREL"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Petrel),
     },
 
-
-    [TRAINER_EXECUTIVE_6] =
-    {
-        .trainerClass = TRAINER_CLASS_ROCKET_ADMIN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
-        .trainerPic = TRAINER_PIC_PETREL,
-        .trainerName = _("EXECUTIVE"),
-        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
-        .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .party = NO_ITEM_CUSTOM_MOVES(sParty_Proton2),
-    },
 
 
     [TRAINER_ARIANA_1] =

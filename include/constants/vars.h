@@ -106,7 +106,7 @@
 #define VAR_COMPLETED_HO_OH                             0x4056 // Ho-oh trigger
 #define VAR_VIOLET_CITY_STATE                         0x4057 //0 on trigger, 1 when done
 #define VAR_AZALEA_TOWN_STATE                        0x4058 //0 on trigger, 1 = talk to kurt, 2 = goto well, 3 = goto kurt well, 4 = goto gym, 5 = fight silver, 6 = find farfetchd, 7 = bringGSBall, 8 = GoOutside, 9 = Celebi, 10 = done
-#define VAR_GOLDENROD_CITY_STATE                          0x4059  //0 on trigger, 1 = get radio, 2 = fight whitney, 3 = whitney crying, 4 = whitney give badge, 5 = complete before rocket. 
+#define VAR_GOLDENROD_CITY_STATE                          0x4059  //0 on trigger, 1 = get radio, 2 = fight whitney, 3 = whitney crying, 4 = whitney give badge, 5 = complete before rocket. 6 = fight petrel, 7 = meet kimono, 8 = director-archer, 9 = done.
 #define VAR_ECRUTEAK_CITY_STATE                          0x405A
 #define VAR_MAHOGANY_TOWN_STATE                           0x405B 
 #define VAR_OLIVINE_CITY_STATE                          0x405C 

@@ -29,7 +29,7 @@ LavaridgeTown_EventScript_SetRivalPos::
 	setobjectxyperm LOCALID_RIVAL, 11, 9
 	setobjectxyperm LOCALID_RIVAL_ON_BIKE, 9, 8
 	setobjectmovementtype LOCALID_RIVAL_ON_BIKE, MOVEMENT_TYPE_FACE_UP
-	clearflag FLAG_HIDE_LAVARIDGE_TOWN_RIVAL
+	clearflag FLAG_GARBAGEFLAG
 	return
 
 LavaridgeTown_EventScript_ShowMtChimneyTrainers::

@@ -15,17 +15,17 @@
   "connections": 0,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_F",
-      "x": 9,
-      "y": 11,
+      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_M",
+      "x": 12,
+      "y": 13,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 4,
+      "movement_range_y": 4,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "GoldenrodRadioTower4_EventScript_Scientist",
+      "flag": "FLAG_HIDE_GOLDENROD_ROCKETS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
@@ -33,37 +33,37 @@
       "y": 8,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "movement_range_x": 4,
+      "movement_range_y": 4,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "GoldenrodRaidoTower4_EventScript_Grunt9",
+      "flag": "FLAG_HIDE_GOLDENROD_ROCKETS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
-      "x": 14,
-      "y": 11,
+      "x": 17,
+      "y": 10,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "GoldenrodRadioTower4_EventScript_Fisher",
+      "flag": "FLAG_HIDE_GOLDENROD_NPCS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GIRL_1",
       "x": 28,
-      "y": 13,
+      "y": 12,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_LEFT_AND_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "GoldenrodRadioTower4_EventScript_Mary",
       "flag": "0"
     },
     {
@@ -72,30 +72,43 @@
       "y": 5,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "movement_range_x": 4,
+      "movement_range_y": 4,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "GoldenrodRaidoTower4_EventScript_Grunt28",
+      "flag": "FLAG_HIDE_GOLDENROD_ROCKETS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
+      "graphics_id": "OBJ_EVENT_GFX_PROTON",
       "x": 28,
       "y": 9,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP_AND_LEFT",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "GoldenrodRaidoTower4_EventScript_Proton",
+      "flag": "FLAG_HIDE_GOLDENROD_ROCKETS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_MEOWTH",
+      "x": 26,
+      "y": 13,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "GoldenrodRadioTower4_EventScript_Meowth",
       "flag": "0"
     }
   ],
   "warp_events": [
     {
-      "x": 9,
+      "x": 19,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_GOLDENROD_RADIO_TOWER5",
@@ -109,7 +122,7 @@
       "dest_warp_id": "1"
     },
     {
-      "x": 19,
+      "x": 9,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_GOLDENROD_RADIO_TOWER3",
@@ -127,6 +140,21 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 11,
+      "y": 4,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "GoldenrodRadioTower4_EventScript_Sign2"
+    },
+    {
+      "type": "sign",
+      "x": 28,
+      "y": 4,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "GoldenrodRadioTower4_EventScript_Sign1"
+    }
   ]
 }

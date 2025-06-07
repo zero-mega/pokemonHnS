@@ -23,7 +23,7 @@ Route124_EventScript_Roland::
 	end
 
 Route124_EventScript_Jenny::
-	trainerbattle_single TRAINER_EXECUTIVE_2, Route124_Text_JennyIntro, Route124_Text_JennyDefeat, Route124_EventScript_RegisterJenny
+	trainerbattle_single TRAINER_PROTON_1, Route124_Text_JennyIntro, Route124_Text_JennyDefeat, Route124_EventScript_RegisterJenny
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route124_EventScript_RematchJenny
 	msgbox Route124_Text_JennyPostBattle, MSGBOX_DEFAULT
@@ -34,12 +34,12 @@ Route124_EventScript_RegisterJenny::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
 	msgbox Route124_Text_JennyRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_EXECUTIVE_2
+	register_matchcall TRAINER_PROTON_1
 	release
 	end
 
 Route124_EventScript_RematchJenny::
-	trainerbattle_rematch TRAINER_EXECUTIVE_2, Route124_Text_JennyRematchIntro, Route124_Text_JennyRematchDefeat
+	trainerbattle_rematch TRAINER_PROTON_1, Route124_Text_JennyRematchIntro, Route124_Text_JennyRematchDefeat
 	msgbox Route124_Text_JennyPostRematch, MSGBOX_AUTOCLOSE
 	end
 

@@ -1,6 +1,7 @@
 .set LOCALID_GOLDENROD_ROCKET_SCOUT, 11
 
 GoldenrodCity_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, GoldenrodRadioTower5_OnFrame
 	.byte 0
 
 GoldenrodCity_EventScript_Trigger:: @flagheap
@@ -11,6 +12,8 @@ GoldenrodCity_EventScript_Trigger:: @flagheap
 	setflag FLAG_HIDE_GOLDENROD_UNDERGROUND_KIMONO
 	setflag FLAG_HIDE_GOLDENROD_UNDERGROUND_SILVER
 	setflag FLAG_HIDE_ROCKET_GOLDENROD_RADIOTOWER_1
+	setflag FLAG_HIDE_GOLDENROD_RADIOTOWER_PETREL
+	setflag FLAG_HIDE_GOLDENROD_RADIOTOWER_DIRECTOR_2
 	
 	clearflag FLAG_HIDE_GOLDENROD_BEAUTY
 	clearflag FLAG_HIDE_GOLDENROD_ROCKET_SCOUT
@@ -30,6 +33,9 @@ GoldenrodCity_EventScript_Trigger:: @flagheap
 	clearflag FLAG_ENABLE_RADIO
 	clearflag FLAG_KANTO_RADIO_GOT
 	clearflag FLAG_GOLDENROD_NPC_TRADE_COMPLETED
+	clearflag FLAG_GOT_SKILL_SWAP
+	clearflag FLAG_HIDE_RADIOTOWER_GATE
+	clearflag FLAG_HIDE_GOLDENROD_RADIOTOWER_DIRECTOR
 
 	setvar VAR_TRAIN, 0
 	setvar VAR_ELEVATOR, 0
