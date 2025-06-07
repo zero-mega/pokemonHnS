@@ -3,6 +3,7 @@
 
 GoldenrodRadioTower1_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, GoldenrodRadioTower5_OnFrame
+	map_script MAP_SCRIPT_ON_RESUME, GoldenrodRadioTower5_OnResume
 	.byte 0
 
 RadioTower1F_EventScript_Grunt::
@@ -10,6 +11,7 @@ RadioTower1F_EventScript_Grunt::
 	faceplayer
 	msgbox RadioTower1F_Text_GruntM3Seen, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_GRUNT_2,  RadioTower1F_Text_GruntM3Beaten
+	playbgm MUS_HG_ROCKET_TAKEOVER, TRUE
 	msgbox RadioTower1F_Text_GruntM3After, MSGBOX_AUTOCLOSE
 	turnobject LOCALID_GOLDENROD_RADIOTOWER_GRUNT, DIR_EAST
 	applymovement2 LOCALID_GOLDENROD_RADIOTOWER_GRUNT, RadioTower1F_Movement_Rocket
