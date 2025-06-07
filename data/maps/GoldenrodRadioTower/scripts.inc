@@ -49,7 +49,10 @@ GoldenrodRadioTower4_EventScript_Scientist::
 GoldenrodRadioTower4_EventScript_Mary::
 	lock
 	faceplayer
-	goto_if_ge VAR_GOLDENROD_CITY_STATE, 6, GoldenrodRadioTower4_EventScript_Mary2 @CHANGELATER
+	goto_if_eq VAR_GOLDENROD_CITY_STATE, 6, GoldenrodRadioTower4_EventScript_Mary2
+	goto_if_eq VAR_GOLDENROD_CITY_STATE, 7, GoldenrodRadioTower4_EventScript_Mary2
+	goto_if_eq VAR_GOLDENROD_CITY_STATE, 8, GoldenrodRadioTower4_EventScript_Mary2
+	goto_if_eq VAR_GOLDENROD_CITY_STATE, 9, GoldenrodRadioTower4_EventScript_Mary2
 	msgbox GoldenrodRadioTower4_Text_DJMaryAfter, MSGBOX_DEFAULT
 	closemessage
 	release
@@ -89,7 +92,7 @@ GoldenrodRadioTower4_Text_Proton_Beaten:
 GoldenrodRadioTower4_Text_Proton_After:
 	.string "PROTON: You may have won this\n"
 	.string "time... But all you did was make\p"
-	.string "TEAM ROCKET's wrath grow."
+	.string "TEAM ROCKET's wrath grow.$"
 
 GoldenrodRadioTower4_Text_Fisher:
 	.string "I listened to the radio while I was\n"
@@ -110,7 +113,7 @@ GoldenrodRadioTower4_Text_DJMaryPinkBow:
 	.string "that know normal-type moves.$"
 
 GoldenrodRadioTower4_Text_DJMaryAfter:
-	.string "MARY: Please tune into me on PROF.\p"
+	.string "MARY: Please tune into me on PROF.\n"
 	.string "OAK'S POKéMON TALK show.$"
 
 GoldenrodRadioTower4_Text_Meowth:

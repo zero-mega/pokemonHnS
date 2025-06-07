@@ -201,7 +201,7 @@
       "y": 11,
       "elevation": 0,
       "var": "VAR_GOLDENROD_CITY_STATE",
-      "var_value": "0",
+      "var_value": "7",
       "script": "GoldenrodUnderground2_EventScript_KimonoTriggerTop"
     },
     {
@@ -210,7 +210,7 @@
       "y": 12,
       "elevation": 0,
       "var": "VAR_GOLDENROD_CITY_STATE",
-      "var_value": "0",
+      "var_value": "7",
       "script": "GoldenrodUnderground2_EventScript_KimonoTriggerBot"
     }
   ],

@@ -32,7 +32,7 @@ GoldenrodUnderground2_EventScript_KimonoTriggerBot::
 	setflag FLAG_HIDE_GOLDENROD_UNDERGROUND_KIMONO
 	removeobject LOCALID_GOLDENROD_UNDERGROUND_KIMONO
 	fadedefaultbgm
-	setvar VAR_GOLDENROD_CITY_STATE, 1 @CHANGE LATER
+	setvar VAR_GOLDENROD_CITY_STATE, 8
 	end
 
 GoldenrodUnderground2_EventScript_KimonoTriggerTop::
@@ -59,7 +59,7 @@ GoldenrodUnderground2_EventScript_KimonoTriggerTop::
 	setflag FLAG_HIDE_GOLDENROD_UNDERGROUND_KIMONO
 	removeobject LOCALID_GOLDENROD_UNDERGROUND_KIMONO
 	fadedefaultbgm
-	setvar VAR_GOLDENROD_CITY_STATE, 1 @CHANGE LATER
+	setvar VAR_GOLDENROD_CITY_STATE, 8
 	end
 
 

@@ -7,6 +7,7 @@ GoldenrodRadioTower5_MapScripts::
 	.byte 0
 
 GoldenrodRadioTower5_OnLoad::
+	clearflag FLAG_HIDE_GOLDENROD_ROCKETS
 	end
 
 GoldenrodRadioTower5_OnFrame::
@@ -17,6 +18,7 @@ GoldenrodRadioTower_EventScript_TryMusic::
 	goto_if_eq VAR_GOLDENROD_CITY_STATE, 6, GoldenrodRadioTower_EventScript_Music
 	goto_if_eq VAR_GOLDENROD_CITY_STATE, 7, GoldenrodRadioTower_EventScript_Music
 	goto_if_eq VAR_GOLDENROD_CITY_STATE, 8, GoldenrodRadioTower_EventScript_Music
+	goto_if_eq VAR_GOLDENROD_CITY_STATE, 9, GoldenrodRadioTower_EventScript_Music
 	setvar VAR_TEMP_0, 1
 	end
 
@@ -29,7 +31,7 @@ GoldenrodRadioTower_EventScript_Music::
 
 GoldenrodRadioTower5_EventScript_Petrel::
 	lock
-	goto_if_ge VAR_GOLDENROD_CITY_STATE, 9, GoldenrodRadioTower5_EventScript_Director
+	goto_if_ge VAR_GOLDENROD_CITY_STATE, 10, GoldenrodRadioTower5_EventScript_Director
 	goto_if_eq VAR_FACING, DIR_SOUTH, GoldenrodRadioTower5_EventScript_PetrelNorth
 	faceplayer
 	msgbox GoldenrodRadioTower5_Text_FakeDirector1, MSGBOX_DEFAULT
@@ -108,24 +110,6 @@ GoldenrodRadioTower5_Movement_Spin2:
 	step_end
 
 
-@=======[STUDIO]==============================================================================================================================
-
-GoldenrodRadioTower5_EventScript_Ben::
-	lock
-	faceplayer
-	msgbox GoldenrodRadioTower5_Text_Ben, MSGBOX_DEFAULT
-	closemessage
-	release
-	end
-
-GoldenrodRaidoTower4_EventScript_ARIANA::
-	trainerbattle_single TRAINER_ARIANA_2 GoldenrodRadioTower5_Text_ExecutiveF1Seen, GoldenrodRadioTower5_Text_ExecutiveF1Beaten
-	msgbox GoldenrodRadioTower5_Text_ExecutiveF1After, MSGBOX_AUTOCLOSE
-	end
-
-
-
-
 GoldenrodRadioTower5_Text_FakeDirector1:
 	.string "Y-you! You came to rescue me?$"
 
@@ -161,6 +145,33 @@ GoldenrodRadioTower5_Text_FakeDirectorAfter2:
 	.string "get to the UNDERGROUND WAREHOUSE.\p"
 	.string "But I doubt you'll get that far.$"
 
+@=======[STUDIO]==============================================================================================================================
+
+GoldenrodRadioTower5_EventScript_Ben::
+	lock
+	faceplayer
+	msgbox GoldenrodRadioTower5_Text_Ben, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+GoldenrodRaidoTower4_EventScript_ARIANA::
+	trainerbattle_single TRAINER_ARIANA_2 GoldenrodRadioTower5_Text_ExecutiveF1Seen, GoldenrodRadioTower5_Text_ExecutiveF1Beaten
+	msgbox GoldenrodRadioTower5_Text_ExecutiveF1After, MSGBOX_AUTOCLOSE
+	end
+
+GoldenrodRadioTower5_EventScript_Archer::
+	lock
+	faceplayer
+	msgbox GoldenrodRadioTower5_Text_RocketBossSeen, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_ARCHER_2, GoldenrodRadioTower5_Text_RocketBossBeaten
+	msgbox GoldenrodRadioTower5_Text_RocketBossAfter, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+
+
 GoldenrodRadioTower5_Text_ExecutiveF1Seen:
 	.string "Remember me from the HIDEOUT in\n"
 	.string "MAHOGANY TOWN?\p"
@@ -185,11 +196,11 @@ GoldenrodRadioTower5_Text_RocketBossSeen:
 	.string "We intend to take over this RADIO\n"
 	.string "STATION and announce our comeback.\p"
 	.string "That should bring our boss GIOVANNI\n"
-	.string "back from his solo training.\p"
+	.string "back from his solitary training.\p"
 	.string "We are going to regain our former\n"
-	.string "glory.\p"
+	.string "glory...\p"
 	.string "I won't allow you to interfere with\n"
-	.string "our plans.$"
+	.string "our meticulous plans!$"
 
 GoldenrodRadioTower5_Text_RocketBossBeaten:
 	.string "No! Forgive me, GIOVANNI!$"

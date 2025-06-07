@@ -52,7 +52,10 @@ GoldenrodRadioTower2_EventScript_Policeman::
 GoldenrodRadioTower2_EventScript_Buena::
 	lock
 	faceplayer
-	goto_if_ge VAR_GOLDENROD_CITY_STATE, 6, GoldenrodRadioTower2_EventScript_Buena2 @CHANGELATER
+	goto_if_eq VAR_GOLDENROD_CITY_STATE, 6, GoldenrodRadioTower2_EventScript_Buena2
+	goto_if_eq VAR_GOLDENROD_CITY_STATE, 7, GoldenrodRadioTower2_EventScript_Buena2
+	goto_if_eq VAR_GOLDENROD_CITY_STATE, 8, GoldenrodRadioTower2_EventScript_Buena2
+	goto_if_eq VAR_GOLDENROD_CITY_STATE, 9, GoldenrodRadioTower2_EventScript_Buena2
 	msgbox GoldenrodRadioTower2_Text_BuenaShowPromo, MSGBOX_DEFAULT
 	closemessage
 	release
@@ -68,7 +71,10 @@ GoldenrodRadioTower2_EventScript_Buena2::
 GoldenrodRadioTower2_EventScript_Teacher::
 	lock
 	faceplayer
-	goto_if_eq VAR_GOLDENROD_CITY_STATE, 6, GoldenrodRadioTower2_EventScript_Teacher2 @CHANGELATER
+	goto_if_eq VAR_GOLDENROD_CITY_STATE, 6, GoldenrodRadioTower2_EventScript_Teacher2
+	goto_if_eq VAR_GOLDENROD_CITY_STATE, 7, GoldenrodRadioTower2_EventScript_Teacher2 
+	goto_if_eq VAR_GOLDENROD_CITY_STATE, 8, GoldenrodRadioTower2_EventScript_Teacher2 
+	goto_if_eq VAR_GOLDENROD_CITY_STATE, 9, GoldenrodRadioTower2_EventScript_Teacher2 
 	msgbox GoldenrodRadioTower2_Text_Teacher, MSGBOX_DEFAULT
 	closemessage
 	release

@@ -337,7 +337,7 @@ GoldenrodUndergroundRocket1_EventScript_SilverTriggerTop::
 	setflag FLAG_HIDE_GOLDENROD_UNDERGROUND_SILVER
 	removeobject LOCALID_GOLDENROD_UNDERGROUND_SILVER
 	fadedefaultbgm
-	setvar VAR_GOLDENROD_CITY_STATE, 1 @CHANGE LATER
+	setvar VAR_GOLDENROD_CITY_STATE, 9
 	release
 	end
 
@@ -370,7 +370,7 @@ GoldenrodUndergroundRocket1_EventScript_SilverTriggerBot::
 	setflag FLAG_HIDE_GOLDENROD_UNDERGROUND_SILVER
 	removeobject LOCALID_GOLDENROD_UNDERGROUND_SILVER
 	fadedefaultbgm
-	setvar VAR_GOLDENROD_CITY_STATE, 1 @CHANGE LATER
+	setvar VAR_GOLDENROD_CITY_STATE, 9
 	release
 	end
 

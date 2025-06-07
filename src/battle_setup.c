@@ -990,23 +990,51 @@ static u8 GetTrainerBattleTransition(void)
 
     if (gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_ELITE_FOUR)
     {
-        if (gTrainerBattleOpponent_A == TRAINER_SIDNEY)
+        if (gTrainerBattleOpponent_A == TRAINER_WILL_1)
             return B_TRANSITION_SIDNEY;
-        if (gTrainerBattleOpponent_A == TRAINER_PHOEBE)
+        if (gTrainerBattleOpponent_A == TRAINER_KOGA_1)
             return B_TRANSITION_PHOEBE;
-        if (gTrainerBattleOpponent_A == TRAINER_GLACIA)
+        if (gTrainerBattleOpponent_A == TRAINER_BRUNO_1)
             return B_TRANSITION_GLACIA;
-        if (gTrainerBattleOpponent_A == TRAINER_KIP)
+        if (gTrainerBattleOpponent_A == TRAINER_KAREN_1)
             return B_TRANSITION_DRAKE;
-        if (gTrainerBattleOpponent_A == TRAINER_SIDNEY2)
+        if (gTrainerBattleOpponent_A == TRAINER_WILL_2)
             return B_TRANSITION_SIDNEY;
-        if (gTrainerBattleOpponent_A == TRAINER_PHOEBE2)
+        if (gTrainerBattleOpponent_A == TRAINER_KOGA_2)
             return B_TRANSITION_PHOEBE;
-        if (gTrainerBattleOpponent_A == TRAINER_PHOEBE2)
+        if (gTrainerBattleOpponent_A == TRAINER_BRUNO_2)
             return B_TRANSITION_GLACIA;
-        if (gTrainerBattleOpponent_A == TRAINER_KIP2)
+        if (gTrainerBattleOpponent_A == TRAINER_KAREN_2)
             return B_TRANSITION_DRAKE;
         return B_TRANSITION_CHAMPION;
+    }
+
+    if (gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_LEADER)
+        return B_TRANSITION_BIG_POKEBALL;
+
+    if (gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_PKMN_TRAINER_1)
+        return B_TRANSITION_BIG_POKEBALL;
+
+
+        if (gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_ROCKET_ADMIN)
+    {
+        if (gTrainerBattleOpponent_A == TRAINER_PROTON_1)
+            return B_TRANSITION_PROTON;
+        if (gTrainerBattleOpponent_A == TRAINER_ARCHER_1)
+            return B_TRANSITION_ARCHER;
+        if (gTrainerBattleOpponent_A == TRAINER_ARIANA_1)
+            return B_TRANSITION_ARIANA;
+        if (gTrainerBattleOpponent_A == TRAINER_PETREL)
+            return B_TRANSITION_PETREL;
+        if (gTrainerBattleOpponent_A == TRAINER_PROTON_2)
+            return B_TRANSITION_PROTON;
+        if (gTrainerBattleOpponent_A == TRAINER_ARIANA_2)
+            return B_TRANSITION_ARIANA;
+        if (gTrainerBattleOpponent_A == TRAINER_ARCHER_2)
+            return B_TRANSITION_ARCHER;
+        if (gTrainerBattleOpponent_A == TRAINER_GIOVANNI)
+            return B_TRANSITION_GIOVANNI;
+        return B_TRANSITION_ROCKET;
     }
 
     if (gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_CHAMPION)

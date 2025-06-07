@@ -56,7 +56,8 @@ GoldenrodRadioTower3_EventScript_Cooltrainer::
 	lock
 	faceplayer
 	goto_if_set FLAG_GOT_SKILL_SWAP, GoldenrodRadioTower3_EventScript_Cooltrainer3
-	goto_if_eq VAR_GOLDENROD_CITY_STATE, 6, GoldenrodRadioTower3_EventScript_Cooltrainer2	@CHANGELATER
+	goto_if_eq VAR_GOLDENROD_CITY_STATE, 10, GoldenrodRadioTower3_EventScript_Cooltrainer2
+
 	msgbox GoldenrodRadioTower3_Text_CooltrainerFPleaseSave, MSGBOX_DEFAULT
 	closemessage
 	release
