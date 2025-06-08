@@ -43,7 +43,7 @@ Route31_EventScript_SleepyMan_GiveKenya::
 	msgbox Route31_Text_HandOverMailMon, MSGBOX_DEFAULT
 	delay 55
 	msgbox Route31_Text_ReadingMail, MSGBOX_DEFAULT
-	giveitem ITEM_SUPER_POTION
+	giveitem ITEM_TM_TORMENT
 	msgbox Route31_Text_DescribeNightmare, MSGBOX_DEFAULT
 	closemessage
 	setvar VAR_KENYA, 2
@@ -137,13 +137,11 @@ Route31_Text_ReadingMail:
 	.string "this!$"
 
 Route31_Text_DescribeNightmare:
-	.string "TM50 is NIGHTMARE.\p"
+	.string "That TM contains TORMENT.\p"
 	.string "It's a wicked move that\n"
-	.string "steadily cuts the HP of a\n"
-	.string "sleeping enemy.\p"
-	.string "Ooooh… That's scary…\p"
-	.string "I don't want to have bad\n"
-	.string "dreams.$"
+	.string "makes the enemy super nervous and\n"
+	.string "stops them from using the same\p"
+	.string "move multiple times in a row.$"
 
 Route31_Text_WrongMail:
 	.string "This MAIL isn't for me.$"
