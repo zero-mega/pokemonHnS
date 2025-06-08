@@ -306,3 +306,7 @@ PlayersHouse_2F_Text_ItsAGameCube:
 
 Common_Text_ReceivedMon:
 	.string "{PLAYER} received {STR_VAR_1}!$"
+
+Common_Text_PartyIsFull:
+	.string "Whoa, wait. You can't carry any\n"
+	.string "more POKéMON.$"	

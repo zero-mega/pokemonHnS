@@ -12,12 +12,12 @@ Goldenrod_35Gate_EventScript_Randy::
 	closemessage
 
 	msgbox Route35GoldenrodGate_Text_RandyThanks, MSGBOX_DEFAULT
-	@crystal gift pokemon setup
+
+	@crystal named gift pokemon setup
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_SPEAROW
 	bufferspeciesname STR_VAR_1, SPECIES_SPEAROW
-	givemon SPECIES_SPEAROW, 20, ITEM_WOOD_MAIL
-	call Common_EventScript_GiftMon
-	msgbox Route35GoldenrodGate_Text_RandyWeirdTree, MSGBOX_DEFAULT
+	givenamedmon 1
+	call Common_EventScript_GiftMonNamed
 
 	setvar VAR_KENYA, 1
 	release

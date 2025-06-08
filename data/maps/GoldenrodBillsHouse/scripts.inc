@@ -38,11 +38,13 @@ GoldenrodBillsHouse_EventScript_Bill_Eevee::
 	goto_if_eq VAR_RESULT, FALSE, GoldenrodBillsHouse_EventScript_Bill_Refused
 	msgbox BillHouse_Text_CountingOnYou, MSGBOX_DEFAULT
 
-	@crystal gift pokemon setup
+	@crystal named gift pokemon setup
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_EEVEE
 	bufferspeciesname STR_VAR_1, SPECIES_EEVEE
-	givemon SPECIES_EEVEE, 25
-	call Common_EventScript_GiftMon
+	givenamedmon 3
+	call Common_EventScript_GiftMonNamed
+
+    
 
 	setflag FLAG_GOT_EEVEE
 	msgbox BillHouse_Text_EeveeMayEvolve, MSGBOX_DEFAULT

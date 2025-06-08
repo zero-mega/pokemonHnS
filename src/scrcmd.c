@@ -53,6 +53,13 @@
 #include "constants/event_objects.h"
 #include "tx_randomizer_and_challenges.h"
 #include "constants/items.h"
+#include "global.h"
+#include "script.h"
+#include "pokemon.h"
+#include "item.h"
+#include "pokedex.h"
+#include "mail.h"
+#include "player_pc.h"
 
 typedef u16 (*SpecialFunc)(void);
 typedef void (*NativeFunc)(void);
@@ -1789,6 +1796,96 @@ bool8 ScrCmd_givemon(struct ScriptContext *ctx)
     gSpecialVar_Result = ScriptGiveMon(species, level, item, unkParam1, unkParam2, unkParam3);
     return FALSE;
 }
+
+//crystal
+bool8 ScrCmd_givenamedmon(struct ScriptContext *ctx)
+{
+    u16 giftId = ScriptReadHalfword(ctx);
+    struct Pokemon *mon;
+    u16 species;
+    u8 level;
+    u16 item;
+    u32 personality = 0x12345678; // can vary per-mon if needed
+    u32 otId;
+    const u8 *nickname;
+    const u8 *otName;
+    u8 heldItem[2];
+    u32 mail = MAIL_NONE;
+
+    // Name/OT strings — using _() macro exactly as you confirmed works
+    static const u8 sKenyaNickname[]   = _("KENYA");
+    static const u8 sKenyaOtName[]     = _("RUDY");
+
+    static const u8 sShuckieNickname[] = _("SHUCKIE");
+    static const u8 sShuckieOtName[]   = _("KIRK");
+
+    static const u8 sEeveeOtName[]     = _("BILL");
+
+    switch (giftId)
+    {
+    case 1: // KENYA
+        species = SPECIES_SPEAROW;
+        level = 20;
+        item = ITEM_WOOD_MAIL;
+        nickname = sKenyaNickname;
+        otName = sKenyaOtName;
+        otId = 61225;
+        break;
+    case 2: // SHUCKIE
+        species = SPECIES_SHUCKLE;
+        level = 20;
+        item = ITEM_BERRY_JUICE;
+        nickname = sShuckieNickname;
+        otName = sShuckieOtName;
+        otId = 4336;
+        break;
+    case 3: // EEVEE
+        species = SPECIES_EEVEE;
+        level = 20;
+        item = ITEM_NONE;
+        nickname = NULL; // use species name
+        otName = sEeveeOtName;
+        otId = 5231;
+        break;
+    default:
+        gSpecialVar_Result = MON_CANT_GIVE;
+        return FALSE;
+    }
+
+    heldItem[0] = item & 0xFF;
+    heldItem[1] = item >> 8;
+
+    for (u8 i = 0; i < PARTY_SIZE; i++)
+    {
+        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) == SPECIES_NONE)
+        {
+            mon = &gPlayerParty[i];
+            ZeroMonData(mon);
+            CreateBoxMon(&mon->box, species, level, USE_RANDOM_IVS, TRUE, personality, OT_ID_PRESET, otId);
+
+            if (nickname != NULL)
+                SetMonData(mon, MON_DATA_NICKNAME, nickname);
+            SetMonData(mon, MON_DATA_OT_NAME, otName);
+            SetMonData(mon, MON_DATA_HELD_ITEM, heldItem);
+            SetMonData(mon, MON_DATA_MAIL, &mail);
+            CalculateMonStats(mon);
+
+            u16 dexNum = SpeciesToNationalPokedexNum(species);
+            HandleSetPokedexFlag(dexNum, FLAG_SET_SEEN, personality);
+            HandleSetPokedexFlag(dexNum, FLAG_SET_CAUGHT, personality);
+
+            gSpecialVar_Result = MON_GIVEN_TO_PARTY;
+            return FALSE;
+        }
+    }
+
+    gSpecialVar_Result = MON_CANT_GIVE;
+    return FALSE;
+}
+
+
+
+
 
 bool8 ScrCmd_giveegg(struct ScriptContext *ctx)
 {
