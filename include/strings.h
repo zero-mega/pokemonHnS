@@ -1084,6 +1084,7 @@ extern const u8 gText_OakTalk_TentacruelWhirl[];
 
 extern const u8 gText_RocketRadio[];
 extern const u8 gText_RadioNoSignal[];
+extern const u8 gText_UnownMessage[];
 
 extern const u8 gText_DadsAdvice[];
 extern const u8 gText_CantDismountBike[];

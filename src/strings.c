@@ -337,7 +337,7 @@ const u8 gText_OakTalk_Snubbull[] = _(
     "We miss you!{PAUSE_UNTIL_PRESS}");
 
 const u8 gText_OakTalk_Slowpoke[] = _(
-    "MARY: Big news from AZALEA\l"
+    "MARY: Big news from AZALEA\n"
     "TOWN this week!\l"
     "OAK: SLOWPOKE have returned to\l"
     "their well after a crisis!\l"
@@ -351,7 +351,7 @@ const u8 gText_OakTalk_Slowpoke[] = _(
     "time restored!{PAUSE_UNTIL_PRESS}");
 
 const u8 gText_OakTalk_LavenderTower[] = _(
-    "MARY: LAVENDER TOWN's tower\l"
+    "MARY: LAVENDER TOWN's tower\n"
     "has changed tunes!\l"
     "OAK: The old ghost tower is\l"
     "now a RADIO STATION!\l"
@@ -381,6 +381,7 @@ const u8 gText_OakTalk_TentacruelWhirl[] = _(
 
 const u8 gText_RocketRadio[] = _("... ... Ahem, we are\nTEAM ROCKET!\lAfter three years of preparation,\lwe have risen again from the ashes!\lGIOVANNI! Can you hear us?\lWe did it!\lWhere is our boss?\lIs he listening?{PAUSE_UNTIL_PRESS}");
 const u8 gText_RadioNoSignal[] = _("There's no signal here, try\n somewhere else{PAUSE_UNTIL_PRESS}");
+const u8 gText_UnownMessage[] = _("??????????????????????????????????\l??????????????????????????????????\l??????????????????????????????????\l??????????????????????????????????{PAUSE_UNTIL_PRESS}");
 
 const u8 gText_DadsAdvice[] = _("ELM's advice…\n{PLAYER}, there's a time and place for\leverything!{PAUSE_UNTIL_PRESS}");
 const u8 gText_CantDismountBike[] = _("You can't dismount your BIKE here.{PAUSE_UNTIL_PRESS}");

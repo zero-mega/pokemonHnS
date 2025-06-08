@@ -11,15 +11,15 @@ Goldenrod_35Gate_EventScript_Randy::
 	goto_if_eq VAR_RESULT, FALSE, Goldenrod_35Gate_EventScript_RandyCancel
 	closemessage
 
+	msgbox Route35GoldenrodGate_Text_RandyThanks, MSGBOX_DEFAULT
 	@crystal gift pokemon setup
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_SPEAROW
 	bufferspeciesname STR_VAR_1, SPECIES_SPEAROW
 	givemon SPECIES_SPEAROW, 20, ITEM_WOOD_MAIL
 	call Common_EventScript_GiftMon
+	msgbox Route35GoldenrodGate_Text_RandyWeirdTree, MSGBOX_DEFAULT
+
 	setvar VAR_KENYA, 1
-	closemessage
-
-
 	release
 	end
 
@@ -55,14 +55,14 @@ Goldenrod_35Gate_EventScript_RandyPostKenya::
 Goldenrod_35Gate_EventScript_Lady::
 	lock
 	faceplayer
-	goto_if_set FLAG_HIDE_SUDOWOODO, 
+	goto_if_set FLAG_HIDE_SUDOWOODO, Goldenrod_35Gate_EventScript_Lady2
 	msgbox Route35GoldenrodGate_Text_PokefanF_TreeBlocking, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
 
 Goldenrod_35Gate_EventScript_Lady2::
-	msbgox Route35GoldenrodGate_Text_PokefanF_Lullaby, MSGBOX_DEFAULT
+	msgbox Route35GoldenrodGate_Text_PokefanF_Lullaby, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
@@ -92,7 +92,8 @@ Route35GoldenrodGate_Text_ReceivedMonWithMail:
 	.string "{PLAYER} received a POKéMON with MAIL.$"
 
 Route35GoldenrodGate_Text_RandyWeirdTree:
-	.string "You can read it, but don't lose it!\n"
+	.string "Make sure to put it at the front of\n"
+	.string "your team when you find my friend!\p"
 	.string "ROUTE 31!\p"
 	.string "Oh, yeah. There was a weird tree\n"
 	.string "blocking the road.\p"

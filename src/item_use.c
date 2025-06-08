@@ -43,6 +43,7 @@
 #include "constants/items.h"
 #include "constants/songs.h"
 #include "random.h"
+#include "constants/region_map_sections.h"
 
 #include "tx_randomizer_and_challenges.h"
 #include "battle_setup.h" //tx_randomizer_and_challenges
@@ -167,10 +168,16 @@ static void DisplayRadioMessage(u8 taskId, bool8 isUsingRegisteredKeyItemOnField
 {
     if (!Overworld_MapTypeAllowsTeleportAndFly(gMapHeader.mapType))
         DisplayCannotUseItemMessage(taskId, isUsingRegisteredKeyItemOnField, gText_RadioNoSignal);
+    else if (gMapHeader.regionMapSectionId == MAPSEC_RUINS_OF_ALPH) // <-- Add this condition
+    {
+        DisplayCannotUseItemMessage(taskId, isUsingRegisteredKeyItemOnField, gText_UnownMessage);
+        PlayBGM(MUS_HG_RADIO_UNOWN);
+    }
     else
     {
-        if(FlagGet(FLAG_HIDE_GOLDENROD_ROCKETS) == FALSE)
+        if(FlagGet(FLAG_HIDE_GOLDENROD_ROCKETS) == FALSE){
             DisplayCannotUseItemMessage(taskId, isUsingRegisteredKeyItemOnField, gText_RocketRadio);
+            PlayBGM(MUS_HG_RADIO_ROCKET);}
         else
         {
             static const u8 *const sOakRadioMessages[] =
@@ -189,6 +196,7 @@ static void DisplayRadioMessage(u8 taskId, bool8 isUsingRegisteredKeyItemOnField
             SeedRng(gMain.vblankCounter1);  
             const u8 *selectedMsg = sOakRadioMessages[Random() % ARRAY_COUNT(sOakRadioMessages)];
             DisplayCannotUseItemMessage(taskId, isUsingRegisteredKeyItemOnField, selectedMsg);
+            PlayBGM(MUS_HG_RADIO_OAK);
         }
     }
 }
