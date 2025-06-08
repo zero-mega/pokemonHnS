@@ -60,6 +60,7 @@
 #include "pokedex.h"
 #include "mail.h"
 #include "player_pc.h"
+#include "easy_chat.h"
 
 typedef u16 (*SpecialFunc)(void);
 typedef void (*NativeFunc)(void);
@@ -1805,28 +1806,39 @@ bool8 ScrCmd_givenamedmon(struct ScriptContext *ctx)
     u16 species;
     u8 level;
     u16 item;
-    u32 personality = 0x12345678; // can vary per-mon if needed
+    u32 personality = 0x12345678;
     u32 otId;
     const u8 *nickname;
     const u8 *otName;
     u8 heldItem[2];
-    u32 mail = MAIL_NONE;
+    u8 mailIndex = 0;
 
-    // Name/OT strings — using _() macro exactly as you confirmed works
-    static const u8 sKenyaNickname[]   = _("KENYA");
-    static const u8 sKenyaOtName[]     = _("RUDY");
-
+    static const u8 sKenyaNickname[] = _("KENYA");
+    static const u8 sKenyaOtName[]   = _("RUDY");
     static const u8 sShuckieNickname[] = _("SHUCKIE");
     static const u8 sShuckieOtName[]   = _("KIRK");
-
     static const u8 sEeveeOtName[]     = _("BILL");
+
+    // Use actual Easy Chat word constants
+    static const u16 sKenyaMailWords[MAIL_WORDS_COUNT] = {
+        EC_WORD_YUP,
+        EC_WORD_MAIL,
+        EC_WORD_TIME,
+        EC_WORD_TAKE,
+        EC_WORD_THIS,
+
+        EC_WORD_POKEMON,
+        EC_WORD_DON_T,
+        EC_WORD_LOSE,
+        EC_WORD_IT
+    };
 
     switch (giftId)
     {
     case 1: // KENYA
         species = SPECIES_SPEAROW;
         level = 20;
-        item = ITEM_WOOD_MAIL;
+        item = ITEM_RETRO_MAIL;
         nickname = sKenyaNickname;
         otName = sKenyaOtName;
         otId = 61225;
@@ -1843,7 +1855,7 @@ bool8 ScrCmd_givenamedmon(struct ScriptContext *ctx)
         species = SPECIES_EEVEE;
         level = 20;
         item = ITEM_NONE;
-        nickname = NULL; // use species name
+        nickname = NULL;
         otName = sEeveeOtName;
         otId = 5231;
         break;
@@ -1867,7 +1879,30 @@ bool8 ScrCmd_givenamedmon(struct ScriptContext *ctx)
                 SetMonData(mon, MON_DATA_NICKNAME, nickname);
             SetMonData(mon, MON_DATA_OT_NAME, otName);
             SetMonData(mon, MON_DATA_HELD_ITEM, heldItem);
-            SetMonData(mon, MON_DATA_MAIL, &mail);
+
+            if (giftId == 1)
+            {
+                struct Mail *mailPtr = &gSaveBlock1Ptr->mail[mailIndex];
+                memset(mailPtr, 0, sizeof(*mailPtr));
+
+                // Easy Chat words (u16s)
+                memcpy(mailPtr->words, sKenyaMailWords, sizeof(sKenyaMailWords));
+
+                // OT name
+                StringCopy(mailPtr->playerName, sKenyaOtName);
+
+                // trainer ID (split otId into bytes)
+                mailPtr->trainerId[0] = (otId >> 0) & 0xFF;
+                mailPtr->trainerId[1] = (otId >> 8) & 0xFF;
+                mailPtr->trainerId[2] = (otId >> 16) & 0xFF;
+                mailPtr->trainerId[3] = (otId >> 24) & 0xFF;
+
+                mailPtr->species = species;
+                mailPtr->itemId = item;
+
+                SetMonData(mon, MON_DATA_MAIL, &mailIndex);
+            }
+
             CalculateMonStats(mon);
 
             u16 dexNum = SpeciesToNationalPokedexNum(species);
@@ -1882,6 +1917,9 @@ bool8 ScrCmd_givenamedmon(struct ScriptContext *ctx)
     gSpecialVar_Result = MON_CANT_GIVE;
     return FALSE;
 }
+
+
+
 
 
 
