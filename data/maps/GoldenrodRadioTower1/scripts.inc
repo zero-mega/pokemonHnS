@@ -55,7 +55,7 @@ RadioTower1F_Text_Whitney1::
 	.string "WHITNEY: Hi!\p"
 	.string "My name is WHITNEY!\p"
 	.string "I heard about the Quiz to win a\n"
-	.string "RADIO CARD, so I came here to get\l"
+	.string "RADIO, so I came here to get\l"
 	.string "one...\p"
 	.string "But this Quiz is so hard!$"
 
@@ -179,7 +179,7 @@ RadioTower1F_Text_RadioCardWomanOfferQuiz:
     .string "We have a special quiz campaign on\n"
     .string "right now.\p"
     .string "Answer five questions correctly to\n"
-    .string "win a RADIO CARD.\p"
+    .string "win a RADIO.\p"
     .string "Slide it into your POKéGEAR to play\n"
     .string "the radio anytime, anywhere.\p"
     .string "Would you like to take the quiz?$"
@@ -216,7 +216,7 @@ RadioTower1F_Text_QuizQuestion5:
 RadioTower1F_Text_QuizWin:
     .string "Bingo! You got it!\n"
     .string "Congratulations!\p"
-    .string "Here's your prize, a RADIO CARD!$"
+    .string "Here's your prize, a RADIO!$"
 
 RadioTower1F_Text_PokegearRadio:
     .string "{PLAYER}'s POKéGEAR can now double as\n"

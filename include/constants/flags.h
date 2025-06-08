@@ -1288,9 +1288,9 @@
 #define FLAG_ITEM_GOLDENROD_UNDERGROUND_MAX_POTION                                          0x4D5 // Unused Flag
 #define FLAG_ITEM_GOLDENROD_UNDERGROUND_REVIVE                                           0x4D6 // Unused Flag
 #define FLAG_ITEM_GOLDENROD_UNDERGROUND_SMOKE_BALL                                           0x4D7 // Unused Flag
-#define FLAG_UNUSED_0x4D8                                           0x4D8 // Unused Flag
-#define FLAG_UNUSED_0x4D9                                           0x4D9 // Unused Flag
-#define FLAG_UNUSED_0x4DA                                           0x4DA // Unused Flag
+#define FLAG_ITEM_ROUTE35_ROCK_TOMB                                           0x4D8 // Unused Flag
+#define FLAG_ITEM_ROUTE35_PARALYZE_HEAL                                           0x4D9 // Unused Flag
+#define FLAG_ITEM_ROUTE35_BIG_NUGGET                                           0x4DA // Unused Flag
 #define FLAG_UNUSED_0x4DB                                           0x4DB // Unused Flag
 #define FLAG_UNUSED_0x4DC                                           0x4DC // Unused Flag
 #define FLAG_UNUSED_0x4DD                                           0x4DD // Unused Flag
