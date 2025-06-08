@@ -234,6 +234,7 @@ gScriptCmdTable::
 	.4byte ScrCmd_callfunc                          @ 0xe7
 	.4byte ScrCmd_applymovement2					@0xe8
 	.4byte ScrCmd_givenamedmon						@0xe9
+	.4byte ScrCmd_removenamedmon					@0xea
 
 gScriptCmdTableEnd::
 	.4byte ScrCmd_nop

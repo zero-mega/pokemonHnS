@@ -626,6 +626,12 @@
 	.2byte \number
 	.endm
 
+	@ Removes Pokémon from player's party. 1 = KENYA, 2 = SHUCKIE
+	@ VAR_RESULT will be set to MON_GIVEN_TO_PARTY, MON_CANT_GIVE depending on the outcome.
+	.macro removenamedmon number:req
+	.byte 0xea
+	.2byte \number
+	.endm
 
 	@ Blocks script execution until the movements being applied to the specified (localId) object finish.
 	@ If localId is 0, then the id of the last-moved object will be used instead. If the specified object

@@ -1919,7 +1919,68 @@ bool8 ScrCmd_givenamedmon(struct ScriptContext *ctx)
 }
 
 
+bool8 ScrCmd_removenamedmon(struct ScriptContext *ctx)
+{
+    u16 giftId = ScriptReadHalfword(ctx);
+    const u8 *targetNickname;
 
+    static const u8 sKenyaNickname[]   = _("KENYA");
+    static const u8 sShuckieNickname[] = _("SHUCKIE");
+
+    switch (giftId)
+    {
+    case 1:
+        targetNickname = sKenyaNickname;
+        break;
+    case 2:
+        targetNickname = sShuckieNickname;
+        break;
+    default:
+        gSpecialVar_Result = MON_CANT_GIVE;
+        return FALSE;
+    }
+
+    u8 partyCount = 0;
+    for (u8 i = 0; i < PARTY_SIZE; i++)
+    {
+        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) != SPECIES_NONE)
+            partyCount++;
+    }
+
+    if (partyCount <= 1)
+    {
+        gSpecialVar_Result = MON_CANT_GIVE;
+        return FALSE;
+    }
+
+    for (u8 i = 0; i < PARTY_SIZE; i++)
+    {
+        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) != SPECIES_NONE)
+        {
+            u8 nickname[POKEMON_NAME_LENGTH + 1];
+            GetMonData(&gPlayerParty[i], MON_DATA_NICKNAME, nickname);
+
+            if (StringCompare(nickname, targetNickname) == 0)
+            {
+                u16 heldItem = GetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM);
+
+                if (giftId == 1 && !ItemIsMail(heldItem)) // Only Kenya must hold mail
+                {
+                    gSpecialVar_Result = MON_CANT_GIVE;
+                    return FALSE;
+                }
+
+                ZeroMonData(&gPlayerParty[i]);
+                CompactPartySlots();
+                gSpecialVar_Result = MON_GIVEN_TO_PARTY;
+                return FALSE;
+            }
+        }
+    }
+
+    gSpecialVar_Result = MON_CANT_GIVE;
+    return FALSE;
+}
 
 
 

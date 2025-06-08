@@ -23,10 +23,38 @@ Route31_EventScript_Youngster::
 Route31_EventScript_SleepyMan::
 	lock
 	faceplayer
+	goto_if_eq VAR_KENYA, 1, Route31_EventScript_SleepyMan_AskForKenya
 	msgbox Route31_Text_SleepyMan, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
+
+Route31_EventScript_SleepyMan_AskForKenya::
+	msgbox Route31_Text_SleepyManGotMail MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, TRUE, Route31_EventScript_SleepyMan_GiveKenya
+	msgbox Route31_Text_SleepyManFail, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+Route31_EventScript_SleepyMan_GiveKenya::
+	removenamedmon 1
+	goto_if_eq VAR_RESULT, MON_CANT_GIVE, Route31_EventScript_SleepyMan_Fail
+	msgbox Route31_Text_HandOverMailMon, MSGBOX_DEFAULT
+	delay 55
+	msgbox Route31_Text_ReadingMail, MSGBOX_DEFAULT
+	giveitem ITEM_SUPER_POTION
+	msgbox Route31_Text_DescribeNightmare, MSGBOX_DEFAULT
+	closemessage
+	setvar VAR_KENYA, 2
+	release
+	end
+
+Route31_EventScript_SleepyMan_Fail::
+	msgbox Route31_Text_SleepyManFail, MSGBOX_DEFAULT
+	release
+	end
+
 
 Route31_EventScript_Boy::
 	lock
@@ -90,15 +118,15 @@ Route31_Text_SleepyManGotMail:
 	.string "What's that? You have MAIL\n"
 	.string "for me?$"
 
+Route31_Text_SleepyManFail:
+	.string "…Zzzz…$"
+
 Route31_Text_HandOverMailMon:
 	.string "{PLAYER} handed over the\n"
 	.string "POKéMON holding the MAIL.$"
 
 Route31_Text_ReadingMail:
 	.string "Let's see…\p"
-	.string "…DARK CAVE leads to another\n"
-	.string "road…\p"
-	.string "That's good to know.\p"
 	.string "Thanks for bringing this to\n"
 	.string "me.\p"
 	.string "My friend's a good guy, and\n"
