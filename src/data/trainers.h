@@ -4912,9 +4912,9 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_ALLAN] =
     {
-        .trainerClass = TRAINER_CLASS_KIMONO_GIRL,
+        .trainerClass = TRAINER_CLASS_POKEFAN,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_KIMONO_GIRL,
+        .trainerPic = TRAINER_PIC_POKEFAN_M,
         .trainerName = _("ALLAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4932,7 +4932,7 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Naoko),
+        .party = NO_ITEM_CUSTOM_MOVES(sParty_Naoko),
     },
 
 
@@ -4945,7 +4945,7 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Sayo),
+        .party = NO_ITEM_CUSTOM_MOVES(sParty_Sayo),
     },
 
 
@@ -4958,7 +4958,7 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Zuki),
+        .party = NO_ITEM_CUSTOM_MOVES(sParty_Zuki),
     },
 
 
@@ -4971,7 +4971,7 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Kuni),
+        .party = NO_ITEM_CUSTOM_MOVES(sParty_Kuni),
     },
 
 
@@ -4984,7 +4984,7 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Miki),
+        .party = NO_ITEM_CUSTOM_MOVES(sParty_Miki),
     },
 
 

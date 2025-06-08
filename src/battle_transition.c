@@ -137,6 +137,13 @@ static void Task_Blue(u8);
 
 static void Task_Silver(u8);
 
+static void Task_Naoko(u8);
+static void Task_Sayo(u8);
+static void Task_Zuki(u8);
+static void Task_Kuni(u8);
+static void Task_Miki(u8);
+static void Task_Eusine(u8);
+
 static void Task_Champion(u8);
 static void Task_Aqua(u8);
 static void Task_Magma(u8);
@@ -439,6 +446,13 @@ static const TaskFunc sTasks_Main[B_TRANSITION_COUNT] =
     [B_TRANSITION_BLUE] = Task_Blue,
 
     [B_TRANSITION_SILVER] = Task_Silver,
+
+    [B_TRANSITION_NAOKO] = Task_Naoko,
+    [B_TRANSITION_SAYO] = Task_Sayo,
+    [B_TRANSITION_ZUKI] = Task_Zuki,
+    [B_TRANSITION_KUNI] = Task_Kuni,
+    [B_TRANSITION_MIKI] = Task_Miki,
+    [B_TRANSITION_EUSINE] = Task_Eusine,
 };
 
 static const TransitionStateFunc sTaskHandlers[] =
@@ -625,7 +639,14 @@ static const u8 sMugshotsTrainerPicIDsTable[MUGSHOTS_COUNT] =
 
     [MUGSHOT_SILVER] = TRAINER_PIC_SILVER,
     
+    [MUGSHOT_NAOKO] = TRAINER_PIC_KIMONO_GIRL,
+    [MUGSHOT_SAYO] = TRAINER_PIC_KIMONO_GIRL,
+    [MUGSHOT_ZUKI] = TRAINER_PIC_KIMONO_GIRL,
+    [MUGSHOT_KUNI] = TRAINER_PIC_KIMONO_GIRL,
+    [MUGSHOT_MIKI] = TRAINER_PIC_KIMONO_GIRL,
+    [MUGSHOT_EUSINE] = TRAINER_PIC_EUSINE,
 };
+
 static const s16 sMugshotsOpponentRotationScales[MUGSHOTS_COUNT][2] =
 {
     [MUGSHOT_WILL] =   {0x200, 0x200},
@@ -658,6 +679,13 @@ static const s16 sMugshotsOpponentRotationScales[MUGSHOTS_COUNT][2] =
     [MUGSHOT_BLUE] = {0x200, 0x200},
 
     [MUGSHOT_SILVER] = {0x200, 0x200},
+
+    [MUGSHOT_NAOKO] = {0x200, 0x200},
+    [MUGSHOT_SAYO] = {0x200, 0x200},
+    [MUGSHOT_ZUKI] = {0x200, 0x200},
+    [MUGSHOT_KUNI] = {0x200, 0x200},
+    [MUGSHOT_MIKI] = {0x200, 0x200},
+    [MUGSHOT_EUSINE] = {0x200, 0x200},
 };
 static const s16 sMugshotsOpponentCoords[MUGSHOTS_COUNT][2] =
 {
@@ -691,6 +719,13 @@ static const s16 sMugshotsOpponentCoords[MUGSHOTS_COUNT][2] =
     [MUGSHOT_BLUE] = { 0,  5},
 
     [MUGSHOT_SILVER] = { 0,  5},
+
+    [MUGSHOT_NAOKO] = { 0,  5},
+    [MUGSHOT_SAYO] = { 0,  5},
+    [MUGSHOT_ZUKI] = { 0,  5},
+    [MUGSHOT_KUNI] = { 0,  5},
+    [MUGSHOT_MIKI] = { 0,  5},
+    [MUGSHOT_EUSINE] = { 0,  5},
 };
 
 static const TransitionSpriteCallback sMugshotTrainerPicFuncs[] =
@@ -1066,7 +1101,14 @@ static const u16 *const sOpponentMugshotsPals[MUGSHOTS_COUNT] =
     [MUGSHOT_BLAINE] = sMugshotPal_DarkRed,
     [MUGSHOT_BLUE] = sMugshotPal_DarkBlue,
 
-    [MUGSHOT_SILVER] = sMugshotPal_DarkRed
+    [MUGSHOT_SILVER] = sMugshotPal_DarkRed,
+
+    [MUGSHOT_NAOKO] = sMugshotPal_Pink,
+    [MUGSHOT_SAYO] = sMugshotPal_Yellow,
+    [MUGSHOT_ZUKI] = sMugshotPal_Purple,
+    [MUGSHOT_KUNI] = sMugshotPal_LightBlue,
+    [MUGSHOT_MIKI] = sMugshotPal_DarkRed,
+    [MUGSHOT_EUSINE] = sMugshotPal_Yellow
 
 };
 
@@ -2580,6 +2622,43 @@ static void Task_Blue(u8 taskId)
 static void Task_Silver(u8 taskId)
 {
     gTasks[taskId].tMugshotId = MUGSHOT_SILVER;
+    DoMugshotTransition(taskId);
+}
+
+
+static void Task_Naoko(u8 taskId)
+{
+    gTasks[taskId].tMugshotId = MUGSHOT_NAOKO;
+    DoMugshotTransition(taskId);
+}
+
+static void Task_Sayo(u8 taskId)
+{
+    gTasks[taskId].tMugshotId = MUGSHOT_SAYO;
+    DoMugshotTransition(taskId);
+}
+
+static void Task_Zuki(u8 taskId)
+{
+    gTasks[taskId].tMugshotId = MUGSHOT_ZUKI;
+    DoMugshotTransition(taskId);
+}
+
+static void Task_Kuni(u8 taskId)
+{
+    gTasks[taskId].tMugshotId = MUGSHOT_KUNI;
+    DoMugshotTransition(taskId);
+}
+
+static void Task_Miki(u8 taskId)
+{
+    gTasks[taskId].tMugshotId = MUGSHOT_MIKI;
+    DoMugshotTransition(taskId);
+}
+
+static void Task_Eusine(u8 taskId)
+{
+    gTasks[taskId].tMugshotId = MUGSHOT_EUSINE;
     DoMugshotTransition(taskId);
 }
 

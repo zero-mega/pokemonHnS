@@ -54,6 +54,7 @@ GoldenrodRadioTower4_EventScript_Mary::
 	goto_if_eq VAR_GOLDENROD_CITY_STATE, 7, GoldenrodRadioTower4_EventScript_Mary2
 	goto_if_eq VAR_GOLDENROD_CITY_STATE, 8, GoldenrodRadioTower4_EventScript_Mary2
 	goto_if_eq VAR_GOLDENROD_CITY_STATE, 9, GoldenrodRadioTower4_EventScript_Mary2
+	goto_if_unset FLAG_GOT_MARY_BRIGHT_POWDER, GoldenrodRadioTower4_EventScript_Mary3
 	msgbox GoldenrodRadioTower4_Text_DJMaryAfter, MSGBOX_DEFAULT
 	closemessage
 	release
@@ -61,6 +62,18 @@ GoldenrodRadioTower4_EventScript_Mary::
 
 GoldenrodRadioTower4_EventScript_Mary2::
 	msgbox GoldenrodRadioTower4_Text_DJMary, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+GoldenrodRadioTower4_EventScript_Mary3::
+	msgbox GoldenrodRadioTower4_Text_DJMaryCleared, MSGBOX_DEFAULT
+	closemessage
+	giveitem ITEM_BRIGHT_POWDER
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
+	msgbox GoldenrodRadioTower4_Text_DJMaryPinkBow, MSGBOX_DEFAULT
+	closemessage
+	setflag FLAG_GOT_MARY_BRIGHT_POWDER
 	closemessage
 	release
 	end
@@ -110,12 +123,12 @@ GoldenrodRadioTower4_Text_DJMaryCleared:
 	.string "Will you take this as my thanks?$"
 
 GoldenrodRadioTower4_Text_DJMaryPinkBow:
-	.string "MARY: It's just right for POKéMON\n"
-	.string "that know normal-type moves.$"
+	.string "MARY: It's good for dodging the"
+	.string "enemy's attacks.$"
 
 GoldenrodRadioTower4_Text_DJMaryAfter:
 	.string "MARY: Please tune into me on PROF.\n"
-	.string "OAK'S POKéMON TALK show.$"
+	.string "OAK'S POKéMON TALK show!$"
 
 GoldenrodRadioTower4_Text_Meowth:
 	.string "MEOWTH: Meowth…$"

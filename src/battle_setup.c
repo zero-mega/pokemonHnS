@@ -1070,6 +1070,25 @@ static u8 GetTrainerBattleTransition(void)
         return B_TRANSITION_SILVER;
     }
 
+    if (gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_KIMONO_GIRL)
+    {
+        if(gTrainerBattleOpponent_A == TRAINER_NAOKO)
+            return B_TRANSITION_NAOKO;
+        if(gTrainerBattleOpponent_A == TRAINER_SAYO)
+            return B_TRANSITION_SAYO;
+        if(gTrainerBattleOpponent_A == TRAINER_ZUKI)
+            return B_TRANSITION_ZUKI;
+        if(gTrainerBattleOpponent_A == TRAINER_KUNI)
+            return B_TRANSITION_KUNI;
+        if(gTrainerBattleOpponent_A == TRAINER_MIKI){
+            return B_TRANSITION_MIKI;
+        }
+    }
+        
+
+    if (gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_MYSTERY_MAN){
+        return B_TRANSITION_EUSINE;
+    }
 
     if (gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_ROCKET_ADMIN)
     {

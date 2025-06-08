@@ -18711,66 +18711,64 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Allan[] = { //KimonoGirl
 };
 
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Naoko[] = { //KimonoGirlGroup
+static const struct TrainerMonNoItemCustomMoves sParty_Naoko[] = { //KimonoGirlGroup
     {
     .iv = 255,
-    .lvl = 20,
-    .species = SPECIES_SKIPLOOM,
-    },
-    {
-    .iv = 255,
-    .lvl = 20,
-    .species = SPECIES_VULPIX,
-    },
-    {
-    .iv = 255,
-    .lvl = 18,
-    .species = SPECIES_SKIPLOOM,
-    },
-};
-
-
-static const struct TrainerMonNoItemDefaultMoves sParty_Naoko2[] = { //KimonoGirlGroup
-    {
-    .iv = 255,
-    .lvl = 21,
-    .species = SPECIES_FLAREON,
-    },
-};
-
-
-static const struct TrainerMonNoItemDefaultMoves sParty_Sayo[] = { //KimonoGirlGroup
-    {
-    .iv = 255,
-    .lvl = 21,
+    .lvl = 38,
     .species = SPECIES_ESPEON,
+    .moves = {MOVE_PSYCHIC, MOVE_PSYCH_UP, MOVE_SWIFT, MOVE_ENDEAVOR}
     },
 };
 
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Zuki[] = { //KimonoGirlGroup
+
+static const struct TrainerMonNoItemCustomMoves sParty_Sayo[] = { //KimonoGirlGroup
     {
     .iv = 255,
-    .lvl = 21,
-    .species = SPECIES_UMBREON,
-    },
-};
-
-
-static const struct TrainerMonNoItemDefaultMoves sParty_Kuni[] = { //KimonoGirlGroup
-    {
-    .iv = 255,
-    .lvl = 21,
-    .species = SPECIES_VAPOREON,
-    },
-};
-
-
-static const struct TrainerMonNoItemDefaultMoves sParty_Miki[] = { //TwinsGroup
-    {
-    .iv = 0,
-    .lvl = 21,
+    .lvl = 38,
     .species = SPECIES_JOLTEON,
+    .moves = {MOVE_THUNDERBOLT, MOVE_DOUBLE_TEAM, MOVE_THUNDER_WAVE, MOVE_ENDEAVOR}
+    },
+};
+
+
+static const struct TrainerMonNoItemCustomMoves sParty_Zuki[] = { //KimonoGirlGroup
+    {
+    .iv = 255,
+    .lvl = 38,
+    .species = SPECIES_UMBREON,
+    .moves = {MOVE_DARK_PULSE, MOVE_CONFUSE_RAY, MOVE_SHADOW_BALL, MOVE_ENDEAVOR}
+    },
+};
+
+
+static const struct TrainerMonNoItemCustomMoves sParty_Kuni[] = { //KimonoGirlGroup
+    {
+    .iv = 255,
+    .lvl = 38,
+    .species = SPECIES_VAPOREON,
+    .moves = {MOVE_SURF, MOVE_QUICK_ATTACK, MOVE_AURORA_BEAM, MOVE_ENDEAVOR}
+    },
+};
+
+
+static const struct TrainerMonNoItemCustomMoves sParty_Miki[] = { //KimonoGirlGroup
+    {
+    .iv = 255,
+    .lvl = 38,
+    .species = SPECIES_FLAREON,
+    .moves = {MOVE_FIRE_BLAST, MOVE_QUICK_ATTACK, MOVE_WILL_O_WISP, MOVE_ENDEAVOR}
+    },
+};
+
+
+//UNUSED
+static const struct TrainerMonNoItemCustomMoves sParty_Naoko2[] = { //KimonoGirlGroup
+    {
+    .iv = 255,
+    .lvl = 38,
+    .species = SPECIES_FLAREON,
+    .moves = {MOVE_FIRE_BLAST, MOVE_QUICK_ATTACK, MOVE_WILL_O_WISP, MOVE_ENDEAVOR}
     },
 };
 
