@@ -473,6 +473,10 @@ Discarded input sections
  .comment       0x00000000       0x24 src/braille_puzzles.o
  .ARM.attributes
                 0x00000000       0x1a src/braille_puzzles.o
+ .data          0x00000000        0x0 src/bug_contest.o
+ .comment       0x00000000       0x24 src/bug_contest.o
+ .ARM.attributes
+                0x00000000       0x1a src/bug_contest.o
  .data          0x00000000        0x0 src/cable_car.o
  .comment       0x00000000       0x24 src/cable_car.o
  .ARM.attributes
@@ -6746,6 +6750,7 @@ iwram           0x03000000     0x6694
  .bss           0x030023f8        0x0 src/birch_pc.o
  .bss           0x030023f8        0x0 src/braille.o
  .bss           0x030023f8        0x0 src/braille_puzzles.o
+ .bss           0x030023f8        0x0 src/bug_contest.o
  .bss           0x030023f8        0x0 src/cable_car.o
  .bss           0x030023f8        0x0 src/cable_club.o
  .bss           0x030023f8        0x0 src/clear_save_data_screen.o
@@ -8630,6 +8635,7 @@ iwram           0x03000000     0x6694
                 0x080b812c                UseRegisteelHm_Callback
                 0x080b81b4                FldEff_UsePuzzleEffect
                 0x080b81fc                ShouldDoBrailleRegicePuzzle
+ .text          0x080b8318        0x0 src/bug_contest.o
  .text          0x080b8318     0x1520 src/cable_car.o
                 0x080b8340                CableCar
  .text          0x080b9838     0x19dc src/cable_club.o
@@ -49320,6 +49326,7 @@ LOAD src/bike.o
 LOAD src/birch_pc.o
 LOAD src/braille.o
 LOAD src/braille_puzzles.o
+LOAD src/bug_contest.o
 LOAD src/cable_car.o
 LOAD src/cable_club.o
 LOAD src/clear_save_data_screen.o

@@ -1,0 +1,3 @@
+#ifndef GUARD_BUG_CONTEST_H
+#define GUARD_BUG_CONTEST_H
+
