@@ -130,7 +130,7 @@
 #define VAR_TRAIN                               0x406E 
 #define VAR_LUGIA_OR_HOOH                               0x406F // 0 = lugia, 1 = ho-oh
 #define VAR_KENYA                               0x4070 // 0 = take, 1 = deliver, 2 = delivered, 3 = informed of delivery
-#define VAR_ROUTE118_STATE                               0x4071
+#define VAR_BUG_CONTEST_STATE                               0x4071
 #define VAR_ROUTE119_STATE                               0x4072
 #define VAR_ROUTE120_STATE                               0x4073 // Unused Var
 #define VAR_ROUTE121_STATE                               0x4074

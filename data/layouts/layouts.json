@@ -8710,6 +8710,16 @@
       "secondary_tileset": "gTileset_ShopRooftop",
       "border_filepath": "data/layouts/GoldenrodDepartmentStore7Night/border.bin",
       "blockdata_filepath": "data/layouts/GoldenrodDepartmentStore7Night/map.bin"
+    },
+    {
+      "id": "LAYOUT_NATIONAL_PARK2",
+      "name": "NationalPark2_Layout",
+      "width": 48,
+      "height": 56,
+      "primary_tileset": "gTileset_Kanto_General",
+      "secondary_tileset": "gTileset_NationalPark",
+      "border_filepath": "data/layouts/NationalPark2/border.bin",
+      "blockdata_filepath": "data/layouts/NationalPark2/map.bin"
     }
   ]
 }

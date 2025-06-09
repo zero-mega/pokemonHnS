@@ -1,6 +1,90 @@
 NationalParkGates_MapScripts::
 	.byte 0
 
+NationalParkGates_EventScript_Attendant::
+	lock
+	faceplayer
+	goto_if_eq VAR_BUG_CONTEST_STATE, 1, NationalParkGates_EventScript_AttendantExit @removelater
+	goto_if_set FLAG_DAILY_BUG_CONTEST_COMPLETED, NationalParkGates_EventScript_AttendantAlreadyPlayed
+	msgbox Route35NationalParkGate_Text_OfficerAskToParticipate, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, TRUE, NationalParkGates_EventScript_AttendantStart
+	msgbox Route35NationalParkGate_Text_TakePartInFuture, MSGBOX_DEFAULT
+	release
+	end
+
+NationalParkGates_EventScript_AttendantStart::
+	msgbox Route35NationalParkGate_Text_OfficerAskToUseFirstMon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, FALSE, NationalParkGates_EventScript_AttendantCancel
+	msgbox Route35NationalParkGate_Text_OfficerHoldYourMon, MSGBOX_DEFAULT
+	closemessage
+	special SavePlayerParty
+	remove5mons
+	goto_if_eq VAR_RESULT, MON_CANT_GIVE, NationalParkGates_EventScript_AttendantFaint
+	playfanfare MUS_OBTAIN_ITEM
+	message Route35NationalParkGate_Text_MonLeftWithHelper
+	waitfanfare
+	closemessage
+	msgbox Route35NationalParkGate_Text_OfficerGiveParkBalls, MSGBOX_DEFAULT
+	closemessage
+	playfanfare MUS_OBTAIN_ITEM
+	message Route35NationalParkGate_Text_ReceivedParkBalls
+	waitfanfare
+	closemessage
+	msgbox Route35NationalParkGate_Text_OfficerExplainRules, MSGBOX_DEFAULT
+	closemessage
+	call_if_eq VAR_FACING, DIR_WEST, NationalParkGates_EventScript_AttendantEnterTop
+	call_if_eq VAR_FACING, DIR_NORTH, NationalParkGates_EventScript_AttendantEnterBot
+	playse SE_EXIT
+	warp MAP_NATIONAL_PARK2, 1
+	setvar VAR_BUG_CONTEST_STATE, 1
+	release
+	end
+
+NationalParkGates_EventScript_AttendantEnterTop::
+	applymovement OBJ_EVENT_ID_PLAYER, NationalParkGates_Movement_Player_EnterParkTop
+	waitmovement 0
+	return
+
+NationalParkGates_EventScript_AttendantEnterBot::
+	applymovement OBJ_EVENT_ID_PLAYER, NationalParkGates_Movement_Player_EnterParkBot
+	waitmovement 0
+	return
+
+
+NationalParkGates_EventScript_AttendantFaint::	
+	msgbox Route35NationalParkGate_Text_FirstMonCantBattle, MSGBOX_DEFAULT
+	release
+	end	
+
+NationalParkGates_EventScript_AttendantCancel::	
+	msgbox Route35NationalParkGate_Text_TakePartInFuture, MSGBOX_DEFAULT
+	release
+	end
+
+NationalParkGates_EventScript_AttendantAlreadyPlayed::
+	msgbox Route35NationalParkGate_Text_ContestIsOver, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+NationalParkGates_EventScript_AttendantExit::
+	special LoadPlayerParty
+	setvar VAR_BUG_CONTEST_STATE, 0
+	release
+	end
+
+NationalParkGates_Movement_Player_EnterParkTop:
+	walk_right
+	walk_up
+	step_end
+
+NationalParkGates_Movement_Player_EnterParkBot:
+	walk_right
+	walk_right
+	walk_up
+	walk_up
+	step_end
+
 Route35NationalParkGate_Text_OfficerAskToParticipate:
 	.string "Hello Trainer! The Bug-Catching\n"
 	.string "Contest is on today.\p"
@@ -10,21 +94,20 @@ Route35NationalParkGate_Text_OfficerAskToParticipate:
 	.string "Would you like to give it a try?$"
 
 Route35NationalParkGate_Text_OfficerGiveParkBalls:
-	.string "Here are the PARK BALLS for the\n"
+	.string "Here are the SAFARI BALLS for the\n"
 	.string "Contest.$"
 
 Route35NationalParkGate_Text_ReceivedParkBalls:
-	.string "{PLAYER} received SAFARI BALLS\n"
-	.string "PARK BALLS.$"
+	.string "{PLAYER} received SAFARI BALLS.$"
 
 Route35NationalParkGate_Text_OfficerExplainRules:
 	.string "The person who gets the strongest\n"
 	.string "bug POKéMON is the winner.\p"
-	.string "You have minutes.\p"
-	.string "If you run out of PARK BALLS, you're\n"
-	.string "done.\p"
-	.string "You can keep the last POKéMON you\n"
-	.string "catch as your own.\p"
+	.string "If you run out of SAFARI BALLS,\n"
+	.string "you're done.\p"
+	.string "You can catch up to 5 POKéMON. The\n"
+	.string "last one caught will be the only\l"
+	.string "one kept and placed in the contest.\p"
 	.string "Go out and catch the strongest bug\n"
 	.string "POKéMON you can find!$"
 

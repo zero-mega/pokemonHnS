@@ -1,5 +1,11 @@
 Route35_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Route35_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
 	.byte 0
+
+Route35_OnTransition: 
+	callnative SetTimeBasedEncounters
+	end	
 
 Route35_EventScript_CamperIvan::
 	trainerbattle_single TRAINER_IVAN Route35_Text_CamperIvanSeen, Route35_Text_CamperIvanBeaten
