@@ -23,7 +23,6 @@
         "vector": "c",
         "span": "c",
         "metatile_behavior.h": "c",
-        "pokedex.h": "c",
-        "field_screen_effect.h": "c"
+        "pokedex.h": "c"
     }
 }
