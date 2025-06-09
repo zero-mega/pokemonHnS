@@ -35,6 +35,7 @@ NationalParkGates_EventScript_AttendantStart::
 	call_if_eq VAR_FACING, DIR_WEST, NationalParkGates_EventScript_AttendantEnterTop
 	call_if_eq VAR_FACING, DIR_NORTH, NationalParkGates_EventScript_AttendantEnterBot
 	playse SE_EXIT
+	special EnterBugContestMode
 	warp MAP_NATIONAL_PARK2, 1
 	setvar VAR_BUG_CONTEST_STATE, 1
 	release
@@ -53,11 +54,13 @@ NationalParkGates_EventScript_AttendantEnterBot::
 
 NationalParkGates_EventScript_AttendantFaint::	
 	msgbox Route35NationalParkGate_Text_FirstMonCantBattle, MSGBOX_DEFAULT
+	closemessage
 	release
 	end	
 
 NationalParkGates_EventScript_AttendantCancel::	
 	msgbox Route35NationalParkGate_Text_TakePartInFuture, MSGBOX_DEFAULT
+	closemessage
 	release
 	end
 

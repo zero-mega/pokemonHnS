@@ -36,6 +36,7 @@
 #include "constants/songs.h"
 #include "constants/trainer_hill.h"
 #include "constants/items.h"
+#include "bug_contest.h"
 
 static EWRAM_DATA u8 sWildEncounterImmunitySteps = 0;
 static EWRAM_DATA u16 sPrevMetatileBehavior = 0;
@@ -685,6 +686,8 @@ static bool8 TryStartStepCountScript(u16 metatileBehavior)
     }
 
     if (SafariZoneTakeStep() == TRUE)
+        return TRUE;
+    if (BugContestCheckTimeLimit() == TRUE)
         return TRUE;
     if (CountSSTidalStep(1) == TRUE)
     {

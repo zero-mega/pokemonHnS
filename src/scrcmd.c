@@ -1982,43 +1982,38 @@ bool8 ScrCmd_removenamedmon(struct ScriptContext *ctx)
     return FALSE;
 }
 
+
 bool8 ScrCmd_remove5mons(struct ScriptContext *ctx)
 {
-    (void)ScriptReadHalfword(ctx); // Unused, but consumed for macro compatibility
+    // Remove all Pokémon from slots 2 to 6 (party indices 1 to 5)
+    u8 removedCount = 0;
 
-    u8 partyCount = 0;
-    for (u8 i = 0; i < PARTY_SIZE; i++)
-    {
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) != SPECIES_NONE)
-            partyCount++;
-    }
 
-    if (partyCount <= 1)
-    {
-        gSpecialVar_Result = MON_CANT_GIVE;
-        return FALSE;
-    }
-
-    // Check if first mon is fainted
     if (GetMonData(&gPlayerParty[0], MON_DATA_HP) == 0)
     {
         gSpecialVar_Result = MON_CANT_GIVE;
         return FALSE;
     }
 
-    // Clear party slots 1–5 (indexes 1 to 5)
     for (u8 i = 1; i < PARTY_SIZE; i++)
     {
         if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) != SPECIES_NONE)
+        {
             ZeroMonData(&gPlayerParty[i]);
+            removedCount++;
+        }
     }
 
-    CompactPartySlots();
+
+    if (removedCount > 0)
+    {
+        CompactPartySlots();
+    }
+
+
     gSpecialVar_Result = MON_GIVEN_TO_PARTY;
     return FALSE;
 }
-
-
 
 
 

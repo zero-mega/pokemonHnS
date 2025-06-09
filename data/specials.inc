@@ -575,3 +575,5 @@ gSpecials::
 	def_special CheckTogepi
 	def_special HaircutBrother1
 	def_special HaircutBrother2
+	def_special EnterBugContestMode
+	def_special ExitBugContestMode
