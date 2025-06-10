@@ -26,6 +26,10 @@
         "pokedex.h": "c",
         "string_util.h": "c",
         "safari_zone.h": "c",
-        "easy_chat.h": "c"
+        "easy_chat.h": "c",
+        "species_info.h": "c",
+        "species.h": "c",
+        "player_pc.h": "c",
+        "pokemon_storage_system.h": "c"
     }
 }

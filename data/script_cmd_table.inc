@@ -236,7 +236,6 @@ gScriptCmdTable::
 	.4byte ScrCmd_givenamedmon						@0xe9
 	.4byte ScrCmd_removenamedmon					@0xea
 	.4byte ScrCmd_remove5mons						@0xeb
-	.4byte transferbugcontestmon					@0xec
 
 gScriptCmdTableEnd::
 	.4byte ScrCmd_nop

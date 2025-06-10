@@ -9,6 +9,8 @@ void EnterBugContestMode(void);
 void ExitBugContestMode(void);
 bool8 BugContestCheckTimeLimit(void);
 bool32 GetBugContestFlag(void);
+bool8 JudgeBugContestMon(void);
+bool8 TransferBugContestMon(void);
 
 void BugContestRetirePrompt(void);
 

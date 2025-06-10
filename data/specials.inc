@@ -577,3 +577,5 @@ gSpecials::
 	def_special HaircutBrother2
 	def_special EnterBugContestMode
 	def_special ExitBugContestMode
+	def_special TransferBugContestMon
+	def_special JudgeBugContestMon

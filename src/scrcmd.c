@@ -61,7 +61,10 @@
 #include "mail.h"
 #include "player_pc.h"
 #include "easy_chat.h"
-#include "pokemon_storage_system.h"
+
+
+
+
 #define MON_BOX_FULL 0xFF
 
 typedef u16 (*SpecialFunc)(void);
@@ -2016,29 +2019,6 @@ bool8 ScrCmd_remove5mons(struct ScriptContext *ctx)
     gSpecialVar_Result = MON_GIVEN_TO_PARTY;
     return FALSE;
 }
-
-bool8 transferbugcontestmon(struct ScriptContext *ctx)
-{
-    u8 monIndex = VarGet(VAR_0x8004);
-    struct Pokemon *mon = &gPlayerParty[monIndex];
-    struct BoxPokemon *boxMon = &mon->box;
-    u8 boxId, boxPos;
-
-    if (StorePokemonInBox(boxMon, &boxId, &boxPos) != -1)
-    {
-        ZeroMonData(mon);  // Remove mon from party after storing
-        CompactPartySlots();
-        gSpecialVar_Result = MON_GIVEN_TO_PC;
-    }
-    else
-    {
-        gSpecialVar_Result = MON_CANT_GIVE;
-    }
-
-    return FALSE;
-}
-
-
 
 
 

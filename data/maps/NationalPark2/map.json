@@ -1,7 +1,7 @@
 {
   "id": "MAP_NATIONAL_PARK2",
   "name": "NationalPark2",
-  "layout": "LAYOUT_NATIONAL_PARK",
+  "layout": "LAYOUT_NATIONAL_PARK2",
   "music": "MUS_HG_NATIONAL_PARK",
   "region_map_section": "MAPSEC_NATIONAL_PARK",
   "requires_flash": false,
