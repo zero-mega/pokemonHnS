@@ -903,6 +903,36 @@ static const struct WindowTemplate sWindowTemplate_MainMenu =
     .paletteNum = 15,
     .baseBlock = 0x1,
 };
+//crystal
+s32 StorePokemonInBox(struct BoxPokemon *src, u8 *boxId, u8 *position)
+{
+    u8 boxIdTemp = StorageGetCurrentBox();
+    u32 boxPosition;
+
+    while (boxIdTemp < TOTAL_BOXES_COUNT)
+    {
+        for (boxPosition = 0; boxPosition < IN_BOX_COUNT; boxPosition++)
+        {
+            if (GetBoxMonDataAt(boxIdTemp, boxPosition, MON_DATA_SPECIES) == SPECIES_NONE)
+            {
+                // Copy mon to box
+                gPokemonStoragePtr->boxes[boxIdTemp][boxPosition] = *src;
+
+                if (boxId != NULL)
+                    *boxId = boxIdTemp;
+                if (position != NULL)
+                    *position = boxPosition;
+
+                return 0; // success
+            }
+        }
+
+        boxIdTemp++;
+    }
+
+    return -1; // all boxes full
+}
+
 
 static const union AnimCmd sAnim_ChooseBoxMenu_TopLeft[] =
 {

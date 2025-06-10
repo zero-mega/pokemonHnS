@@ -25,6 +25,7 @@
         "metatile_behavior.h": "c",
         "pokedex.h": "c",
         "string_util.h": "c",
-        "safari_zone.h": "c"
+        "safari_zone.h": "c",
+        "easy_chat.h": "c"
     }
 }

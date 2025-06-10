@@ -25,6 +25,8 @@ struct PokemonStorage
 };
 
 extern struct PokemonStorage *gPokemonStoragePtr;
+//crystal
+s32 StorePokemonInBox(struct BoxPokemon *src, u8 *boxId, u8 *position);
 
 void DrawTextWindowAndBufferTiles(const u8 *string, void *dst, u8 zero1, u8 zero2, s32 bytesToBuffer);
 u8 CountMonsInBox(u8 boxId);
