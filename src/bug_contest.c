@@ -13,8 +13,10 @@
 #include "pokemon.h"
 #include "constants/species.h"
 #include "item.h"
+#include "battle.h"
+#include "field_screen_effect.h"
 extern const struct SpeciesInfo gSpeciesInfo[];
-
+static bool32 IsPlayerDefeated(u32 battleOutcome);
 static u32 sBugContestStartTime;
 static bool8 sBugContestTimerActive;
 
@@ -146,6 +148,67 @@ bool8 JudgeBugContestMon(void)
         VarSet(VAR_0x8005, ITEM_NONE);
         break;
     }
+
+    return FALSE;
+}
+
+
+static bool32 IsPlayerDefeated(u32 battleOutcome)
+{
+    switch (battleOutcome)
+    {
+    case B_OUTCOME_LOST:
+    case B_OUTCOME_DREW:
+        return TRUE;
+    case B_OUTCOME_WON:
+    case B_OUTCOME_RAN:
+    case B_OUTCOME_PLAYER_TELEPORTED:
+    case B_OUTCOME_MON_FLED:
+    case B_OUTCOME_CAUGHT:
+        return FALSE;
+    default:
+        return FALSE;
+    }
+}
+
+void CB2_EndBugContestBattle(void)
+{
+    CpuFill16(0, (void *)(BG_PLTT), BG_PLTT_SIZE);
+    ResetOamRange(0, 128);
+    u8 partyCount = 0;
+    for (u8 i = 0; i < PARTY_SIZE; i++)
+    {
+        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) != SPECIES_NONE)
+            partyCount++;
+    }
+
+    if (IsPlayerDefeated(gBattleOutcome) == TRUE)
+    {
+        SetMainCallback2(CB2_BugContestWhiteOut);
+    }
+    else if (gBattleOutcome == B_OUTCOME_CAUGHT)
+    {
+
+        if (partyCount == PARTY_SIZE)
+        {
+            ScriptContext_SetupScript(BugContest_EventScript_TimesUp); //change
+        }
+        SetMainCallback2(CB2_ReturnToField);
+        gFieldCallback = FieldCB_ReturnToFieldNoScriptCheckMusic;
+    }
+    else
+    {
+        SetMainCallback2(CB2_ReturnToField);
+        gFieldCallback = FieldCB_ReturnToFieldNoScriptCheckMusic;
+    }
+}
+
+bool8 RemoveSafariBalls(void)
+{
+    u16 count = CountTotalItemQuantityInBag(ITEM_SAFARI_BALL);
+
+    if (count > 0)
+        RemoveBagItem(ITEM_SAFARI_BALL, count);
 
     return FALSE;
 }

@@ -71,6 +71,7 @@
 #include "pokemon_storage_system.h" //tx_randomizer_and_challenges
 #include "item.h"
 #include "constants/items.h"
+#include "bug_contest.h"
 
 struct CableClubPlayer
 {
@@ -1812,6 +1813,33 @@ void CB2_WhiteOut(void)
         SetFieldVBlankCallback();
         SetMainCallback1(CB1_Overworld);
         SetMainCallback2(CB2_Overworld);
+    }
+}
+
+void CB2_BugContestWhiteOut(void){
+    u8 state;
+
+    if (++gMain.state >= 120)
+    {
+        FieldClearVBlankHBlankCallbacks();
+        StopMapMusic();
+        if (gSaveBlock1Ptr->tx_Challenges_NuzlockeHardcore && !FlagGet(FLAG_IS_CHAMPION)) //tx_randomizer_and_challenges
+        {
+            ClearSaveData();
+            DoSoftReset();
+        }
+        ResetSafariZoneFlag_();
+
+        ResetInitialPlayerAvatarState();
+        ScriptContext_Init();
+        UnlockPlayerFieldControls();
+        gFieldCallback = FieldCB_WarpExitFadeFromBlack;
+        state = 0;
+        DoMapLoadLoop(&state);
+        SetFieldVBlankCallback();
+        SetMainCallback1(CB1_Overworld);
+        SetMainCallback2(CB2_Overworld);
+        ScriptContext_SetupScript(BugContest_EventScript_WhiteOut);
     }
 }
 

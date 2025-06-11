@@ -26,9 +26,7 @@ NationalParkGates_EventScript_AttendantStart::
 	closemessage
 	msgbox Route35NationalParkGate_Text_OfficerGiveParkBalls, MSGBOX_DEFAULT
 	closemessage
-	playfanfare MUS_OBTAIN_ITEM
-	message Route35NationalParkGate_Text_ReceivedParkBalls
-	waitfanfare
+	giveitem ITEM_SAFARI_BALL, 30
 	closemessage
 	msgbox Route35NationalParkGate_Text_OfficerExplainRules, MSGBOX_DEFAULT
 	closemessage

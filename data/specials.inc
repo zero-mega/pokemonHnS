@@ -579,3 +579,4 @@ gSpecials::
 	def_special ExitBugContestMode
 	def_special TransferBugContestMon
 	def_special JudgeBugContestMon
+	def_special RemoveSafariBalls

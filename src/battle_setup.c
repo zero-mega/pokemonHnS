@@ -50,6 +50,7 @@
 #include "pokedex.h" //tx_randomizer_and_challenges
 #include "constants/region_map_sections.h" //tx_randomizer_and_challenges
 #include "debug.h"
+#include "bug_contest.h"
 
 
 enum {
@@ -78,6 +79,7 @@ struct TrainerBattleParameter
 // this file's functions
 static void DoBattlePikeWildBattle(void);
 static void DoSafariBattle(void);
+static void DoBugContestBattle(void);
 static void DoStandardWildBattle(void);
 static void CB2_EndWildBattle(void);
 static void CB2_EndScriptedWildBattle(void);
@@ -434,6 +436,8 @@ void BattleSetup_StartWildBattle(void)
     SetNuzlockeChecks(); //tx_randomizer_and_challenges
     if (GetSafariZoneFlag())
         DoSafariBattle();
+    else if (GetBugContestFlag())
+        DoBugContestBattle();
     else
         DoStandardWildBattle();
 }
@@ -503,6 +507,25 @@ static void DoSafariBattle(void)
     gMain.savedCallback = CB2_EndSafariBattle;
     gBattleTypeFlags = BATTLE_TYPE_SAFARI;
     CreateBattleStartTask(GetWildBattleTransition(), 0);
+}
+
+static void DoBugContestBattle(void)
+{
+    LockPlayerFieldControls();
+    FreezeObjectEvents();
+    StopPlayerAvatar();
+    gMain.savedCallback = CB2_EndBugContestBattle;
+    gBattleTypeFlags = 0;
+    if (InBattlePyramid())
+    {
+        VarSet(VAR_TEMP_PLAYING_PYRAMID_MUSIC, 0);
+        gBattleTypeFlags |= BATTLE_TYPE_PYRAMID;
+    }
+    CreateBattleStartTask(GetWildBattleTransition(), 0);
+    IncrementGameStat(GAME_STAT_TOTAL_BATTLES);
+    IncrementGameStat(GAME_STAT_WILD_BATTLES);
+    IncrementDailyWildBattles();
+    TryUpdateGymLeaderRematchFromWild();
 }
 
 static void DoBattlePikeWildBattle(void)

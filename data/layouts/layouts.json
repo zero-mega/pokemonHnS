@@ -6244,8 +6244,8 @@
     {
       "id": "LAYOUT_NATIONAL_PARK_GATES",
       "name": "NationalParkGates_Layout",
-      "width": 30,
-      "height": 12,
+      "width": 50,
+      "height": 18,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Gates_42",
       "border_filepath": "data/layouts/NationalParkGates/border.bin",
