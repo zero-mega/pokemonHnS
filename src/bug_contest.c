@@ -15,6 +15,8 @@
 #include "item.h"
 #include "battle.h"
 #include "field_screen_effect.h"
+#include "pokemon.h"
+#include "string_util.h"
 extern const struct SpeciesInfo gSpeciesInfo[];
 static bool32 IsPlayerDefeated(u32 battleOutcome);
 static u32 sBugContestStartTime;
@@ -213,3 +215,50 @@ bool8 RemoveSafariBalls(void)
     return FALSE;
 }
 
+bool8 ShowBugContestChosenMon(void)
+{
+    u16 monIndex = VarGet(VAR_0x8004);
+    u16 species = GetMonData(&gPlayerParty[monIndex], MON_DATA_SPECIES);
+
+    // Set species name into STR_VAR_1 properly
+    GetSpeciesName(gStringVar1, species);
+
+    switch (species)
+    {
+    case SPECIES_CATERPIE:
+        gSpecialVar_Result = 22;
+        break;
+    case SPECIES_WEEDLE:
+        gSpecialVar_Result = 23;
+        break;
+    case SPECIES_METAPOD:
+        gSpecialVar_Result = 24;
+        break;
+    case SPECIES_KAKUNA:
+        gSpecialVar_Result = 25;
+        break;
+    case SPECIES_PARAS:
+        gSpecialVar_Result = 26;
+        break;
+    case SPECIES_VENONAT:
+        gSpecialVar_Result = 27;
+        break;
+    case SPECIES_BUTTERFREE:
+        gSpecialVar_Result = 28;
+        break;
+    case SPECIES_BEEDRILL:
+        gSpecialVar_Result = 29;
+        break;
+    case SPECIES_SCYTHER:
+        gSpecialVar_Result = 30;
+        break;
+    case SPECIES_PINSIR:
+        gSpecialVar_Result = 31;
+        break;
+    default:
+        gSpecialVar_Result = 0; // fallback if invalid species
+        break;
+    }
+
+    return FALSE;
+}

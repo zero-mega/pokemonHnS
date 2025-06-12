@@ -580,3 +580,4 @@ gSpecials::
 	def_special TransferBugContestMon
 	def_special JudgeBugContestMon
 	def_special RemoveSafariBalls
+	def_special ShowBugContestChosenMon

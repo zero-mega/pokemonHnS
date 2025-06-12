@@ -3,19 +3,54 @@
 .set LOCALID_BUGCONTEST_BC1, 1
 .set LOCALID_BUGCONTEST_BC2, 2
 .set LOCALID_BUGCONTEST_BOY, 12
+.set LOCALID_BUGCONTEST_BUG1, 18
+.set LOCALID_BUGCONTEST_BUG2, 19
+.set LOCALID_BUGCONTEST_BUG3, 20
+.set LOCALID_BUGCONTEST_BUG4, 21
+
 
 NationalPark2_MapScripts::
-	@map_script MAP_SCRIPT_ON_TRANSITION, NationalPark2_OnTransition
+	map_script MAP_SCRIPT_ON_TRANSITION, NationalPark2_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, NationalPark2_OnFrame
 	.byte 0
 
-@NationalPark2_OnTransition::
-@	goto_if_eq VAR_BUG_CONTEST_STATE, 1, NationalPark2_EventScript_Enter
-@	end
+NationalPark2_OnTransition::
+	goto_if_eq VAR_BUG_CONTEST_STATE, 3, NationalPark2_EventScript_JudgeScene
+	end
 	
 NationalPark2_OnFrame::
 	map_script_2 VAR_BUG_CONTEST_STATE, 1, NationalPark2_EventScript_Enter
+	map_script_2 VAR_BUG_CONTEST_STATE, 3, NationalPark2_EventScript_JudgeSceneActivate
 	.2byte 0
+
+NationalPark2_EventScript_JudgeScene::
+	special ShowBugContestChosenMon
+	setobjectxyperm VAR_RESULT, 20, 29
+	setobjectxyperm LOCALID_BUGCONTEST_BUG1, 24, 29
+	setobjectxyperm LOCALID_BUGCONTEST_BUG2, 22, 29
+	setobjectxyperm LOCALID_BUGCONTEST_BUG3, 18, 29
+	setobjectxyperm LOCALID_BUGCONTEST_BUG4, 16, 29
+
+	setobjectxyperm LOCALID_BUGCONTEST_GIRL, 18, 28
+	setobjectxyperm LOCALID_BUGCONTEST_BC1, 22, 28
+	setobjectxyperm LOCALID_BUGCONTEST_BC2, 24, 28
+	setobjectxyperm LOCALID_BUGCONTEST_BOY, 16, 28
+	setobjectxyperm LOCALID_BUGCONTEST_ATTENDANT, 20, 26
+
+	setobjectmovementtype OBJ_EVENT_ID_PLAYER, MOVEMENT_TYPE_FACE_UP
+	setobjectmovementtype LOCALID_BUGCONTEST_GIRL, MOVEMENT_TYPE_FACE_UP
+	setobjectmovementtype LOCALID_BUGCONTEST_BC1, MOVEMENT_TYPE_FACE_UP
+	setobjectmovementtype LOCALID_BUGCONTEST_BC2, MOVEMENT_TYPE_FACE_UP
+	setobjectmovementtype LOCALID_BUGCONTEST_BOY, MOVEMENT_TYPE_FACE_UP
+	setobjectmovementtype LOCALID_BUGCONTEST_ATTENDANT, MOVEMENT_TYPE_FACE_DOWN
+	end
+
+NationalPark2_EventScript_JudgeSceneActivate::
+	lockall
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	goto BugContestEventScript_Judging
+	end
+
 
 NationalPark2_EventScript_Enter::
 	lock

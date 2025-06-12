@@ -75,11 +75,17 @@ NationalParkGates_EventScript_AttendantExit::
 	end
 
 NationalParkGates_Movement_Player_EnterParkTop:
+	walk_down
 	walk_right
+	walk_right
+	walk_right
+	walk_up
 	walk_up
 	step_end
 
 NationalParkGates_Movement_Player_EnterParkBot:
+	walk_right
+	walk_right
 	walk_right
 	walk_right
 	walk_up
