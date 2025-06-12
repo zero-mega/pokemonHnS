@@ -197,9 +197,10 @@ Route104_PrettyPetalFlowerShop_Text_ImGrowingFlowers:
 	.string "It's for you!$"
 
 Route104_PrettyPetalFlowerShop_Text_MachineMixesBerries:
-	.string "You can plant a BERRY and grow it big,\n"
+	.string "A POKéMON can eat a BERRY to heal,\n"
 	.string "or you can make a POKéMON hold it.\p"
-	.string "But now they have a machine that mixes\n"
+	.string "In a faraway region I visited,\n"
+	.string "they had a machine that mixes\l"
 	.string "up different BERRIES and makes candies\l"
 	.string "for POKéMON.\p"
 	.string "I want some candy, too.$"

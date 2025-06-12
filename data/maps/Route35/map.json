@@ -35,7 +35,7 @@
       "movement_range_y": 5,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
-      "script": "Route35_EventScript_PicnickerBrooke",
+      "script": "Route35_EventScript_PicnickerKim",
       "flag": "0"
     },
     {
@@ -61,7 +61,7 @@
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "Route35_EventScript_PicnickerKim",
+      "script": "Route35_EventScript_PicnickerBrooke",
       "flag": "0"
     },
     {

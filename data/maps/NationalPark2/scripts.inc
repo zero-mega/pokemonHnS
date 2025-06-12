@@ -7,6 +7,7 @@
 .set LOCALID_BUGCONTEST_BUG2, 19
 .set LOCALID_BUGCONTEST_BUG3, 20
 .set LOCALID_BUGCONTEST_BUG4, 21
+.set LOCALID_BUGCONTEST_ATTENDANT_SIDE, 17
 
 
 NationalPark2_MapScripts::
@@ -20,6 +21,7 @@ NationalPark2_OnTransition::
 	
 NationalPark2_OnFrame::
 	map_script_2 VAR_BUG_CONTEST_STATE, 1, NationalPark2_EventScript_Enter
+	map_script_2 VAR_BUG_CONTEST_STATE, 5, NationalPark2_EventScript_EnterSide
 	map_script_2 VAR_BUG_CONTEST_STATE, 3, NationalPark2_EventScript_JudgeSceneActivate
 	.2byte 0
 
@@ -62,6 +64,22 @@ NationalPark2_EventScript_Enter::
 	release
 	end
 
+NationalPark2_EventScript_EnterSide::
+	lock
+	msgbox NationlParkBugContest_Text_EnjoyTheContest, MSGBOX_DEFAULT
+	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft1
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft1
+	waitmovement 0
+	delay 20
+	clearflag FLAG_HIDE_BUG_CONTEST_ATTENDANT_SIDE
+	addobject LOCALID_BUGCONTEST_ATTENDANT_SIDE
+	setvar VAR_TEMP_1, 1
+	setvar VAR_BUG_CONTEST_STATE, 2
+	release
+	end
+
 NationalPark2_EventScript_Trigger::
 	lock
 	turnobject LOCALID_BUGCONTEST_ATTENDANT, DIR_EAST
@@ -69,6 +87,13 @@ NationalPark2_EventScript_Trigger::
 NationalPark2_EventScript_Attendant::
 	lock
 	faceplayer
+	msgbox NationalParkBugContest_Text_Attendant, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, TRUE, BugContest_EventScript_TimesUp
+	msgbox NationlParkBugContest_Text_EnjoyTheContest, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
 NationalPark2_EventScript_RetireChoice::
 	msgbox NationalParkBugContest_Text_Attendant, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, TRUE, BugContest_EventScript_TimesUp
@@ -78,6 +103,11 @@ NationalPark2_EventScript_RetireChoice::
 	waitmovement 0
 	release
 	end
+
+NationalPark2_Movement_AttendantSide:
+	walk_in_place_left
+	step_end
+
 
 NationlParkBugContest_Text_EnjoyTheContest:
 	.string "ATTENDANT: Enjoy the contest!$"

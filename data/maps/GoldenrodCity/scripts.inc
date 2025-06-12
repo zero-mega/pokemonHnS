@@ -65,18 +65,18 @@ GoldenrodCity_EventScript_PokefanM::
 	end
 
 GoldenrodCity_EventScript_Youngster::
-	lock
+	lockall
 	faceplayer
 	goto_if_set FLAG_RECEIVED_BIKE, GoldenrodCity_EventScript_Youngster2
 	msgbox GoldenrodCity_Text_Youngster1, MSGBOX_DEFAULT
 	closemessage
-	release
+	releaseall
 	end
 
 GoldenrodCity_EventScript_Youngster2::
 	msgbox GoldenrodCity_Text_CooltrainerF1, MSGBOX_DEFAULT
 	closemessage
-	release
+	releaseall
 	end
 
 GoldenrodCity_EventScript_CooltrainerF::
@@ -320,8 +320,8 @@ GoldenrodCity_Text_CooltrainerF2:
 	.string "The RADIO TOWER in GOLDENROD CITY\n"
 	.string "is quite the landmark.\p"
 	.string "They're running a campaign now.\p"
-	.string "They'll update your POKéGEAR so\n"
-	.string "it can serve as a radio too.$"
+	.string "They'll give you a shiny new\n"
+	.string "RADIO if you can pass their quiz.$"
 
 GoldenrodCity_Text_CooltrainerF2_GotCard:
 	.string "Oh, your POKéGEAR already works\n"

@@ -10,6 +10,14 @@
 #define INGAME_TRADE_HORSEA 2
 #define INGAME_TRADE_MEOWTH 3
 #define INGAME_TRADE_MACHOP 4
+#define INGAME_TRADE_VOLTORB 5
+#define INGAME_TRADE_MR_MIME 6
+#define INGAME_TRADE_MAGNETON 7
+#define INGAME_TRADE_HAUNTER 8
+#define INGAME_TRADE_PIKACHU 9
+#define INGAME_TRADE_BELDUM 10
+#define INGAME_TRADE_BONSLY 11
+#define INGAME_TRADE_STEELIX 12
 
 // Return values for CanTradeSelectedMon and CanSpinTradeMon
 #define CAN_TRADE_MON              0

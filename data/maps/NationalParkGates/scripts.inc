@@ -33,6 +33,7 @@ NationalParkGates_EventScript_AttendantStart::
 	call_if_eq VAR_FACING, DIR_WEST, NationalParkGates_EventScript_AttendantEnterTop
 	call_if_eq VAR_FACING, DIR_NORTH, NationalParkGates_EventScript_AttendantEnterBot
 	playse SE_EXIT
+	clearflag FLAG_HIDE_BUG_CONTEST_ATTENDANT_SIDE
 	special EnterBugContestMode
 	warp MAP_NATIONAL_PARK2, 1
 	setvar VAR_BUG_CONTEST_STATE, 1
@@ -90,6 +91,82 @@ NationalParkGates_Movement_Player_EnterParkBot:
 	walk_right
 	walk_up
 	walk_up
+	step_end
+
+
+
+NationalParkGates_EventScript_BAttendant::
+	lock
+	faceplayer
+	goto_if_eq VAR_BUG_CONTEST_STATE, 1, NationalParkGates_EventScript_AttendantExit @removelater
+	goto_if_set FLAG_DAILY_BUG_CONTEST_COMPLETED, NationalParkGates_EventScript_AttendantAlreadyPlayed
+	msgbox Route35NationalParkGate_Text_OfficerAskToParticipate, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, TRUE, NationalParkGates_EventScript_BAttendantStart
+	msgbox Route35NationalParkGate_Text_TakePartInFuture, MSGBOX_DEFAULT
+	release
+	end
+
+NationalParkGates_EventScript_BAttendantStart::
+	msgbox Route35NationalParkGate_Text_OfficerAskToUseFirstMon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, FALSE, NationalParkGates_EventScript_AttendantCancel
+	msgbox Route35NationalParkGate_Text_OfficerHoldYourMon, MSGBOX_DEFAULT
+	closemessage
+	special SavePlayerParty
+	remove5mons
+	goto_if_eq VAR_RESULT, MON_CANT_GIVE, NationalParkGates_EventScript_AttendantFaint
+	playfanfare MUS_OBTAIN_ITEM
+	message Route35NationalParkGate_Text_MonLeftWithHelper
+	waitfanfare
+	closemessage
+	msgbox Route35NationalParkGate_Text_OfficerGiveParkBalls, MSGBOX_DEFAULT
+	closemessage
+	giveitem ITEM_SAFARI_BALL, 30
+	closemessage
+	msgbox Route35NationalParkGate_Text_OfficerExplainRules, MSGBOX_DEFAULT
+	closemessage
+	call_if_eq VAR_FACING, DIR_EAST, NationalParkGates_EventScript_AttendantBEnterTop
+	call_if_eq VAR_FACING, DIR_NORTH, NationalParkGates_EventScript_AttendantBEnterBot
+	playse SE_EXIT
+	special EnterBugContestMode
+	setflag FLAG_HIDE_BUG_CONTEST_ATTENDANT_SIDE
+	warp MAP_NATIONAL_PARK2, 2
+	setvar VAR_BUG_CONTEST_STATE, 5
+	release
+	end
+
+
+NationalParkGates_EventScript_AttendantBEnterTop::
+	applymovement OBJ_EVENT_ID_PLAYER, NationalParkGates_Movement_Player_EnterParkTopB
+	waitmovement 0
+	return
+
+NationalParkGates_EventScript_AttendantBEnterBot::
+	applymovement OBJ_EVENT_ID_PLAYER, NationalParkGates_Movement_Player_EnterParkBotB
+	waitmovement 0
+	return
+
+NationalParkGates_Movement_Player_EnterParkTopB:
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_left
+	walk_left
+	walk_left
+	walk_in_place_left
+	step_end
+
+NationalParkGates_Movement_Player_EnterParkBotB:
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_in_place_left
 	step_end
 
 Route35NationalParkGate_Text_OfficerAskToParticipate:

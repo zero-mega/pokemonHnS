@@ -811,7 +811,7 @@
 #define FLAG_HIDE_BIRTH_ISLAND_DEOXYS_TRIANGLE                      0x2FC
 #define FLAG_GOT_MARY_BRIGHT_POWDER                               0x2FD
 #define FLAG_HIDE_BUG_CONTEST_BUGS                             0x2FE
-#define FLAG_GARBAGEFLAG8                  0x2FF
+#define FLAG_HIDE_BUG_CONTEST_ATTENDANT_SIDE                  0x2FF
 #define FLAG_HIDE_ROUTE_111_VICTOR_WINSTRATE                        0x300
 #define FLAG_HIDE_ROUTE_111_VICTORIA_WINSTRATE                      0x301
 #define FLAG_HIDE_ROUTE_111_VIVI_WINSTRATE                          0x302

@@ -12491,7 +12491,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Carrie[] = { //LassGroup
     {
     .iv = 0,
     .lvl = 18,
-    .species = SPECIES_SNUBBULL,
+    .species = SPECIES_HAPPINY,
     },
 };
 
@@ -12505,7 +12505,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Bridget[] = { //LassGrou
     {
     .iv = 0,
     .lvl = 16,
-    .species = SPECIES_TOGEPI,
+    .species = SPECIES_MUNCHLAX,
     },
 };
 
@@ -19273,14 +19273,14 @@ static const struct TrainerMonItemCustomMoves sParty_Whitney[] = { //LeaderGroup
     .lvl = 20,
     .species = SPECIES_CLEFAIRY,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_HEADBUTT, MOVE_CHARM, MOVE_ICE_PUNCH, MOVE_METRONOME}
+    .moves = {MOVE_HEADBUTT, MOVE_CHARM, MOVE_SWEET_KISS, MOVE_METRONOME}
     },
     {
     .iv = 100,
     .lvl = 20,
     .species = SPECIES_TEDDIURSA,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_HEADBUTT, MOVE_METAL_CLAW, MOVE_LICK, MOVE_MUD_SLAP}
+    .moves = {MOVE_FURY_SWIPES, MOVE_FAKE_TEARS, MOVE_LICK, MOVE_MUD_SLAP}
     },
     {
     .iv = 100,
