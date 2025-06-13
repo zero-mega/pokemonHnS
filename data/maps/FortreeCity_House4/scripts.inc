@@ -15,7 +15,7 @@ FortreeCity_House4_EventScript_Boy::
 	msgbox FortreeCity_House4_Text_GoBirdPokemon, MSGBOX_DEFAULT
 	closemessage
 	setflag FLAG_WINGULL_SENT_ON_ERRAND
-	clearflag FLAG_HIDE_MOSSDEEP_CITY_HOUSE_2_WINGULL
+	clearflag FLAG_GARBAGEFLAG
 	applymovement LOCALID_WINGULL, FortreeCity_House4_Movement_WingullExit
 	waitmovement 0
 	removeobject LOCALID_WINGULL

@@ -1,4 +1,4 @@
-.set LOCALID_ROUTE36_SUDOWOODO, 7
+.set LOCALID_ROUTE36_SUDOWOODO, 6
 
 Route36_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route36_OnTransition
@@ -117,19 +117,24 @@ Route36_EventScript_SudoWoodoWater::
 	delay 40
 	waitmoncry
 	setvar VAR_LAST_TALKED, LOCALID_ROUTE36_SUDOWOODO
-	setwildbattle SPECIES_SUDOWOODO, 40
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	setwildbattle SPECIES_SUDOWOODO, 20
+	@setflag FLAG_SYS_CTRL_OBJ_DELETE
 	dowildbattle
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	@clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, BattleFrontier_OutsideEast_EventScript_DefeatedSudowoodo
-	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, BattleFrontier_OutsideEast_EventScript_DefeatedSudowoodo
-	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, BattleFrontier_OutsideEast_EventScript_DefeatedSudowoodo
-	release
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, BattleFrontier_OutsideEast_EventScript_RanSudowoodo
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, BattleFrontier_OutsideEast_EventScript_RanSudowoodo
 Route36_EventScript_Defeated_Sudowoodo::
 	setflag FLAG_HIDE_SUDOWOODO
-	goto Common_EventScript_RemoveStaticPokemon
+	removeobject LOCALID_ROUTE36_SUDOWOODO
 	end
+
+BattleFrontier_OutsideEast_EventScript_RanSudowoodo::
+	turnobject LOCALID_ROUTE36_SUDOWOODO, DIR_NORTH
+	release
+	end
+
 
 Route36_EventScript_Mark::
 	trainerbattle_single TRAINER_MARK Route36_Text_PsychicMarkSeen, Route36_Text_PsychicMarkBeaten
@@ -269,7 +274,7 @@ Route36_Text_Sign_RuinsNorth:
 
 Route36_Text_Tips1:
 	.string "TRAINER TIPS\n"
-	.string "POKéMON stats vary--even within\n"
+	.string "POKéMON stats vary--even within\l"
 	.string "the same species.\p"
 	.string "Their stats may be similar at first.\p"
 	.string "However, differences will become\n"

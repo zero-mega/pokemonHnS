@@ -978,11 +978,11 @@
 #define FLAG_HIDE_GOLDENROD_RADIOTOWER_DIRECTOR                             0x3A3
 #define FLAG_HIDE_GOLDENROD_RADIOTOWER_PETREL                             0x3A4
 #define FLAG_HIDE_GOLDENROD_RADIOTOWER_DIRECTOR_2                      0x3A5
-#define FLAG_HIDE_MOSSDEEP_CITY_HOUSE_2_WINGULL                     0x3A6
+#define FLAG_RELEASED_BEASTS                     0x3A6
 #define FLAG_HIDE_REGIROCK                                          0x3A7
 #define FLAG_HIDE_REGICE                                            0x3A8
 #define FLAG_HIDE_REGISTEEL                                         0x3A9
-#define FLAG_HIDE_METEOR_FALLS_TEAM_AQUA                            0x3AA
+#define FLAG_AMPHAROS_HEALED                            0x3AA
 #define FLAG_HIDE_METEOR_FALLS_TEAM_MAGMA                           0x3AB
 #define FLAG_HIDE_DEWFORD_HALL_SLUDGE_BOMB_MAN                      0x3AC
 #define FLAG_HIDE_SEAFLOOR_CAVERN_ENTRANCE_AQUA_GRUNT               0x3AD

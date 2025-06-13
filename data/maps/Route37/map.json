@@ -238,7 +238,24 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_ECRUTEAK_CITY_STATE",
+      "var_value": "0",
+      "script": "EcruteakCity_EventScript_Trigger"
+    },
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_ECRUTEAK_CITY_STATE",
+      "var_value": "0",
+      "script": "EcruteakCity_EventScript_Trigger"
+    }
   ],
   "bg_events": [
     {

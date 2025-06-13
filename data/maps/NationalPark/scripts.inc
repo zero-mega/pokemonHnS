@@ -36,6 +36,11 @@ NationalPark_EventScript_Teacher2::
 	faceplayer
 	msgbox NationalPark_Text_Teacher2, MSGBOX_DEFAULT
 	closemessage
+	fadescreen FADE_TO_BLACK
+	playse MUS_HEAL
+	special HealPlayerParty
+	waitse
+	fadescreen FADE_FROM_BLACK
 	release
 	end
 
@@ -98,7 +103,9 @@ NationalPark_Text_Youngster2:
 NationalPark_Text_Teacher2:
 	.string "I take walks in the PARK, but I\n"
 	.string "never go into the grass.\p"
-	.string "Trainers always want to battle…$"
+	.string "Trainers always want to battle…\p"
+	.string "You must have been in many battles.\n"
+	.string "Let me heal your POKéMON for you.$"
 
 NationalPark_Text_Persian:
 	.string "PERSIAN: Fufushaa!$"

@@ -139,7 +139,7 @@ Route31_Text_ReadingMail:
 Route31_Text_DescribeNightmare:
 	.string "That TM contains TORMENT.\p"
 	.string "It's a wicked move that\n"
-	.string "makes the enemy super nervous and\n"
+	.string "makes the enemy super nervous and\l"
 	.string "stops them from using the same\p"
 	.string "move multiple times in a row.$"
 

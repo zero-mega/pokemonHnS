@@ -39,6 +39,7 @@ GoldenrodCity_EventScript_Trigger:: @flagheap
 	clearflag FLAG_HIDE_GOLDENROD_RADIOTOWER_DIRECTOR
 	clearflag FLAG_GOT_MARY_BRIGHT_POWDER
 	clearflag FLAG_GOT_QUICK_CLAW
+	clearflag FLAG_GOT_MAGNET
 
 	setvar VAR_BUG_CONTEST_STATE, 0
 	setvar VAR_KENYA, 0

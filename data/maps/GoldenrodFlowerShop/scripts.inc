@@ -17,6 +17,7 @@ GoldenrodFlowerShop_EventScript_GiveSquirtBottle::
 	faceplayer
 	msgbox GoldenrodFlowerShop_Text_Owner2, MSGBOX_DEFAULT
 	giveitem ITEM_SQUIRT_BOTTLE
+	setflag FLAG_RECEIVED_SQUIRTBOTTLE
 	closemessage
 	release
 	end
@@ -40,6 +41,7 @@ GoldenrodFlowerShop_EventScript_Normal::
 GoldenrodFlowerShop_EventScript_Floria1::
 	lock
 	faceplayer
+	goto_if_set FLAG_HIDE_SUDOWOODO, GoldenrodFlowerShop_EventScript_Floria3
 	goto_if_set FLAG_BADGE03_GET, GoldenrodFlowerShop_EventScript_Floria2
 	msgbox GoldenrodFlowerShop_Text_Floria, MSGBOX_DEFAULT
 	closemessage
@@ -48,6 +50,12 @@ GoldenrodFlowerShop_EventScript_Floria1::
 	
 GoldenrodFlowerShop_EventScript_Floria2::
 	msgbox GoldenrodFlowerShop_Text_FloriaYouBeatWhitney, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+GoldenrodFlowerShop_EventScript_Floria3::
+	msgbox GoldenrodFlowerShop_Text_FloriaItWasAMon, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
@@ -82,7 +90,7 @@ GoldenrodFlowerShop_Text_Owner2:
 .string "Did you defeat WHITNEY?!\p"
 .string "Well, then there's nothing to worry\n"
 .string "about, is there?\p"
-.string "I'll  let you use this SQUIRTBOTTLE\n"
+.string "I'll let you use this SQUIRTBOTTLE\n"
 .string "for a while then.. Oh never mind,\l"
 .string "Keep it!$"
 
