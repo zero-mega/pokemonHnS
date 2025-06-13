@@ -812,8 +812,8 @@
 #define FLAG_GOT_MARY_BRIGHT_POWDER                               0x2FD
 #define FLAG_HIDE_BUG_CONTEST_BUGS                             0x2FE
 #define FLAG_HIDE_BUG_CONTEST_ATTENDANT_SIDE                  0x2FF
-#define FLAG_HIDE_ROUTE_111_VICTOR_WINSTRATE                        0x300
-#define FLAG_HIDE_ROUTE_111_VICTORIA_WINSTRATE                      0x301
+#define FLAG_GOT_QUICK_CLAW                        0x300
+#define FLAG_GOT_MAGNET                      0x301
 #define FLAG_HIDE_ROUTE_111_VIVI_WINSTRATE                          0x302
 #define FLAG_HIDE_ROUTE_111_VICKY_WINSTRATE                         0x303
 #define FLAG_HIDE_PETALBURG_GYM_NORMAN                              0x304
@@ -1291,8 +1291,8 @@
 #define FLAG_ITEM_ROUTE35_ROCK_TOMB                                           0x4D8 // Unused Flag
 #define FLAG_ITEM_ROUTE35_PARALYZE_HEAL                                           0x4D9 // Unused Flag
 #define FLAG_ITEM_ROUTE35_BIG_NUGGET                                           0x4DA // Unused Flag
-#define FLAG_UNUSED_0x4DB                                           0x4DB // Unused Flag
-#define FLAG_UNUSED_0x4DC                                           0x4DC // Unused Flag
+#define FLAG_ITEM_NATIONAL_PARK_SOOTHE_BELL                                           0x4DB // Unused Flag
+#define FLAG_ITEM_NATIONAL_PARK_TM_DIG                                           0x4DC // Unused Flag
 #define FLAG_UNUSED_0x4DD                                           0x4DD // Unused Flag
 #define FLAG_UNUSED_0x4DE                                           0x4DE // Unused Flag
 #define FLAG_UNUSED_0x4DF                                           0x4DF // Unused Flag

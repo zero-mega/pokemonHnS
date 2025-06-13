@@ -25,7 +25,7 @@
     },
     {
       "map": "MAP_ROUTE37",
-      "offset": 26,
+      "offset": 22,
       "direction": "up"
     },
     {
@@ -82,7 +82,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
       "movement_range_x": 4,
       "movement_range_y": 4,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Route36_EventScript_Mark",
       "flag": "0"
@@ -105,7 +105,7 @@
       "x": 39,
       "y": 19,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_UP",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",

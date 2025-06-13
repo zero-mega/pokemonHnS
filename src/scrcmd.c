@@ -2000,6 +2000,13 @@ bool8 ScrCmd_remove5mons(struct ScriptContext *ctx)
         return FALSE;
     }
 
+    if (GetMonData(&gPlayerParty[0], MON_DATA_SPECIES_OR_EGG) == SPECIES_EGG)
+    {
+        gSpecialVar_Result = MON_CANT_GIVE;
+        return FALSE;
+    } 
+
+
     for (u8 i = 1; i < PARTY_SIZE; i++)
     {
         if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) != SPECIES_NONE)

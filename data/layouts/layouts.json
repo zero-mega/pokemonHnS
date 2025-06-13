@@ -4994,8 +4994,8 @@
     {
       "id": "LAYOUT_ROUTE37",
       "name": "Route37_Layout",
-      "width": 30,
-      "height": 35,
+      "width": 44,
+      "height": 41,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Ecruteak_City",
       "border_filepath": "data/layouts/Route37/border.bin",

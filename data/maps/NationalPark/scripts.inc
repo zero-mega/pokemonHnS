@@ -1,5 +1,68 @@
 NationalPark_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, NationalPark_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
 	.byte 0
+
+NationalPark_OnTransition: 
+	callnative SetTimeBasedEncounters
+	end
+
+NationalPark_EventScript_Lass::
+	lock
+	faceplayer
+	msgbox NationalPark_Text_Lass, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+NationalPark_EventScript_Youngster1::
+	lock
+	faceplayer
+	msgbox NationalPark_Text_Youngster1, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+NationalPark_EventScript_Youngster2::
+	lock
+	faceplayer
+	msgbox NationalPark_Text_Youngster2, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+NationalPark_EventScript_Teacher2::
+	lock
+	faceplayer
+	msgbox NationalPark_Text_Teacher2, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+NationalPark_EventScript_TeacherQuickclaw::
+	lock
+	faceplayer
+	goto_if_set FLAG_GOT_QUICK_CLAW, NationalPark_EventScript_TeacherQuickclaw2
+	msgbox NationalPark_Text_Teacher1, MSGBOX_DEFAULT
+	giveitem ITEM_QUICK_CLAW
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
+	setflag FLAG_GOT_QUICK_CLAW
+NationalPark_EventScript_TeacherQuickclaw2::
+	msgbox NationalPark_Text_Teacher1_QuickClaw, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+NationalPark_EventScript_Persian::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_PERSIAN, CRY_MODE_NORMAL
+	msgbox NationalPark_Text_Persian, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
 
 
 NationalPark_Text_Lass:
@@ -40,10 +103,33 @@ NationalPark_Text_Teacher2:
 NationalPark_Text_Persian:
 	.string "PERSIAN: Fufushaa!$"
 
-NationalPark_Text_GameboyKid:
-	.string "I'm printing out my POKéDEX.\p"
-	.string "You can also print out stuff like\n"
-	.string "MAIL and your PC BOXES.$"
+NationalPark_EventScript_Jack::
+	trainerbattle_single TRAINER_JACK NationalPark_Text_SchoolboyJack1_Seen, NationalPark_Text_SchoolboyJack1_Beaten
+	msgbox NationalPark_Text_SchoolboyJack_After, MSGBOX_AUTOCLOSE
+	end
+
+NationalPark_EventScript_Beverly::
+	trainerbattle_single TRAINER_BEVERLY NationalPark_Text_PokefanFBeverly1_Seen, NationalPark_Text_PokefanFBeverly1_Beaten
+	msgbox NationalPark_Text_PokefanFBeverly_After, MSGBOX_AUTOCLOSE
+	end
+
+NationalPark_EventScript_William::
+	trainerbattle_single TRAINER_WILLIAM NationalPark_Text_PokefanmWilliam_Seen, NationalPark_Text_PokefanmWilliam_Beaten
+	msgbox NationalPark_Text_PokefanmWilliam_After, MSGBOX_AUTOCLOSE
+	end
+
+NationalPark_EventScript_Krise::
+	trainerbattle_single TRAINER_KRISE NationalPark_Text_LassKrise_Seen, NationalPark_Text_LassKrise_Beaten
+	msgbox NationalPark_Text_LassKrise_After, MSGBOX_AUTOCLOSE
+	end
+
+NationalPark_EventScript_TM_Dig::
+	finditem ITEM_TM_DIG
+	end
+
+NationalPark_EventScript_Item_Soothe_Bell::
+	finditem ITEM_SOOTHE_BELL
+	end
 
 NationalPark_Text_SchoolboyJack1_Seen:
 	.string "The world of POKéMON is deep.\p"
@@ -54,7 +140,7 @@ NationalPark_Text_SchoolboyJack1_Seen:
 NationalPark_Text_SchoolboyJack1_Beaten:
 	.string "Wha-wha-what?$"
 
-NationalPark_Text_SchoolboyJack_TradeMon:
+NationalPark_Text_SchoolboyJack_After:
 	.string "There is a lot to learn.\p"
 	.string "For example…\p"
 	.string "There are 50 kinds of TMs.\p"
@@ -68,7 +154,7 @@ NationalPark_Text_PokefanFBeverly1_Seen:
 NationalPark_Text_PokefanFBeverly1_Beaten:
 	.string "I can beat you in pride, but…$"
 
-NationalPark_Text_PokefanFBeverly_CuteMon:
+NationalPark_Text_PokefanFBeverly_After:
 	.string "I must say, your POKéMON are quite\n"
 	.string "cute, too.$"
 
@@ -83,11 +169,6 @@ NationalPark_Text_PokefanmWilliam_Beaten:
 NationalPark_Text_PokefanmWilliam_After:
 	.string "I lost the battle, but my POKéMON win\n"
 	.string "the prize for being most lovely.$"
-
-NationalPark_Text_PokefanFBeverly_Marill:
-	.string "My friend keeps a MARILL!\p"
-	.string "I find them very endearing.\p"
-	.string "Oh, I wish for a MARILL of my own…$"
 
 NationalPark_Text_LassKrise_Seen:
 	.string "Hello? Why are you staring at me?\p"

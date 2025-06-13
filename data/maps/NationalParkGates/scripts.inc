@@ -238,22 +238,60 @@ Route35NationalParkGate_Text_EggAsFirstMon:
 	.string "Please switch it with the POKéMON\n"
 	.string "you want to use, then come see me.$"
 
-Route35NationalParkGate_Text_WantToFinish:
-	.string "You still have minute(s)\n"
-	.string "left.\p"
-	.string "Do you want to finish now?$"
-
-Route35NationalParkGate_Text_WaitAtNorthGate:
-	.string "OK. Please wait at the North Gate for\n"
-	.string "the announcement of the winners.$"
-
-Route35NationalParkGate_Text_OkGoFinish:
-	.string "OK. Please get back outside and\n"
-	.string "finish up.$"
-
 Route35NationalParkGate_Text_ContestIsOver:
 	.string "Today's Contest is over. We hope you\n"
 	.string "will participate in the future.$"
+
+Route35NationalParkGate_EventScript_Policeman::
+	lock
+	faceplayer
+	msgbox Route35NationalParkGate_Text_WeHoldContests, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+Route35NationalParkGate_EventScript_BC1::
+	lock
+	faceplayer
+	msgbox Route35NationalParkGate_Text_YoungsterWonders, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+Route35NationalParkGate_EventScript_BC2::
+	lock
+	faceplayer
+	msgbox Route35NationalParkGate_Text_BC2, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+Route35NationalParkGate_EventScript_Rocker::
+	lock
+	faceplayer
+	msgbox Route35NationalParkGate_Text_Rocker, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+Route35NationalParkGate_EventScript_Beauty::
+	lock
+	faceplayer
+	msgbox Route35NationalParkGate_Text_Beauty, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+Route35NationalParkGate_Text_Rocker:
+	.string "I love bird POKéMON! I found a\n"
+	.string "DARK-TYPE bird in the park\l"
+	.string "last night!$"
+
+Route35NationalParkGate_Text_BC2:
+	.string "I caught a whopping SCYTHER!$"
+
+Route35NationalParkGate_Text_Beauty:
+	.string "He always wins these contests!$"
 
 Route35NationalParkGate_Text_WeHoldContests:
 	.string "We hold Contests regularly in the\n"

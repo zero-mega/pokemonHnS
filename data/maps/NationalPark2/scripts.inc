@@ -25,6 +25,67 @@ NationalPark2_OnFrame::
 	map_script_2 VAR_BUG_CONTEST_STATE, 3, NationalPark2_EventScript_JudgeSceneActivate
 	.2byte 0
 
+
+NationalPark2_EventScript_BC1::
+	lock
+	faceplayer
+	msgbox NationalParkBugContest_Text_ContestantShaun, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+NationalPark2_EventScript_BC2::
+	lock
+	faceplayer
+	msgbox NationalParkBugContest_Text_Contestant2A, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+NationalPark2_EventScript_Belinda::
+	lock
+	faceplayer
+	msgbox NationalParkBugContest_Text_ContestantBelinda, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+NationalPark2_EventScript_Boy::
+	lock
+	faceplayer
+	msgbox NationalParkBugContest_Text_Contestant6A, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+NationalPark2_EventScript_RelaxationSquare::
+	lock
+	msgbox NationalParkBugContest_Text_Sign_RelaxationSquare, MSGBOX_SIGN
+	closemessage
+	release
+	end
+
+NationalPark2_EventScript_BattleSign::
+	lock
+	msgbox NationalParkBugContest_Text_Sign_BattleNotice, MSGBOX_SIGN
+	closemessage
+	release
+	end
+
+NationalPark2_EventScript_TrainerTips::
+	lock
+	msgbox NationalParkBugContest_Text_TrainerTips, MSGBOX_SIGN
+	closemessage
+	release
+	end
+
+NationalPark2_EventScript_Trash::
+	lock
+	msgbox NationalPark2_Text_Trash, MSGBOX_SIGN
+	closemessage
+	release
+	end
+
 NationalPark2_EventScript_JudgeScene::
 	special ShowBugContestChosenMon
 	setobjectxyperm VAR_RESULT, 20, 29
@@ -108,6 +169,8 @@ NationalPark2_Movement_AttendantSide:
 	walk_in_place_left
 	step_end
 
+NationalPark2_Text_Trash:
+	.string "Nothing here.$"
 
 NationlParkBugContest_Text_EnjoyTheContest:
 	.string "ATTENDANT: Enjoy the contest!$"
@@ -116,27 +179,18 @@ NationalParkBugContest_Text_Attendant:
 	.string "ATTENDANT: Would you like to end\n"
 	.string "the contest?$"
 
-NationalParkBugContest_Text_Contestant1A:
-	.string "DON: I'm going to win!\n"
+NationalParkBugContest_Text_ContestantBelinda:
+	.string "BELINDA: I'm going to win!\n"
 	.string "Don't bother me.$"
 
 NationalParkBugContest_Text_Contestant2A:
 	.string "ED: My PARASECT puts POKéMON to\n"
 	.string "sleep with SPORE.$"
 
-NationalParkBugContest_Text_Contestant3A:
-	.string "NICK: I'm raising fast POKéMON for\n"
-	.string "battles.$"
-
-NationalParkBugContest_Text_Contestant4A:
-	.string "WILLIAM: I'm not concerned about\n"
+NationalParkBugContest_Text_ContestantShaun:
+	.string "SHAUN: I'm not concerned about\n"
 	.string "winning.\p"
 	.string "I'm just looking for rare POKéMON.$"
-
-NationalParkBugContest_Text_Contestant5A:
-	.string "BENNY: Ssh! You'll scare off\n"
-	.string "SCYTHER.\p"
-	.string "I'll talk to you later.$"
 
 NationalParkBugContest_Text_Contestant6A:
 	.string "BARRY: You should weaken bug\n"
@@ -171,6 +225,7 @@ NationalParkBugContest_Text_Sign_BattleNotice:
 	.string "NATIONAL PARK WARDEN'S OFFICE$"
 
 NationalParkBugContest_Text_TrainerTips:
-	.string "TRAINER TIPS\p"
-	.string "Print out MAIL by opening it then\n"
-	.string "pressing START.$"
+	.string "The NATIONAL PARK has different\p"
+	.string "POKéMON during the BUG-CATCHING\l"
+	.string "CONTEST.$"
+
