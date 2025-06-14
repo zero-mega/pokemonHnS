@@ -36,11 +36,11 @@ NationalPark_EventScript_Teacher2::
 	faceplayer
 	msgbox NationalPark_Text_Teacher2, MSGBOX_DEFAULT
 	closemessage
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	playse MUS_HEAL
 	special HealPlayerParty
 	waitse
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 	release
 	end
 

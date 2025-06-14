@@ -983,7 +983,7 @@
 #define FLAG_HIDE_REGICE                                            0x3A8
 #define FLAG_HIDE_REGISTEEL                                         0x3A9
 #define FLAG_AMPHAROS_HEALED                            0x3AA
-#define FLAG_HIDE_METEOR_FALLS_TEAM_MAGMA                           0x3AB
+#define FLAG_HIDE_ECRUTEAK_BILL                           0x3AB
 #define FLAG_HIDE_DEWFORD_HALL_SLUDGE_BOMB_MAN                      0x3AC
 #define FLAG_HIDE_SEAFLOOR_CAVERN_ENTRANCE_AQUA_GRUNT               0x3AD
 #define FLAG_HIDE_METEOR_FALLS_1F_1R_COZMO                          0x3AE
@@ -1293,7 +1293,7 @@
 #define FLAG_ITEM_ROUTE35_BIG_NUGGET                                           0x4DA // Unused Flag
 #define FLAG_ITEM_NATIONAL_PARK_SOOTHE_BELL                                           0x4DB // Unused Flag
 #define FLAG_ITEM_NATIONAL_PARK_TM_DIG                                           0x4DC // Unused Flag
-#define FLAG_UNUSED_0x4DD                                           0x4DD // Unused Flag
+#define FLAG_ITEM_ECRUTEAK_RARE_CANDY                                           0x4DD // Unused Flag
 #define FLAG_UNUSED_0x4DE                                           0x4DE // Unused Flag
 #define FLAG_UNUSED_0x4DF                                           0x4DF // Unused Flag
 #define FLAG_UNUSED_0x4E0                                           0x4E0 // Unused Flag

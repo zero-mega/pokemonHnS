@@ -5,7 +5,17 @@ EcruteakCity_MapScripts::
 
 EcruteakCity_EventScript_Trigger::
 	@flagheap
+	clearflag FLAG_RELEASED_BEASTS
+	clearflag FLAG_AMPHAROS_HEALED
+	clearflag FLAG_HIDE_ECRUTEAK_BILL
+	clearflag FLAG_DEFEATED_HO_OH
+	clearflag FLAG_CAUGHT_HO_OH
+	clearflag FLAG_DEFEATED_LUGIA
+	clearflag FLAG_CAUGHT_LUGIA
 
+	setflag FLAG_HIDE_HO_OH
+	setflag FLAG_HIDE_LUGIA
+	
 	setvar VAR_ECRUTEAK_CITY_STATE, 1
 	end
 
@@ -63,7 +73,7 @@ EcruteakCity_EventScript_Youngster::
 	release
 	end
 
-EcruteakCity_EventScript_Sage_Right::
+EcruteakCity_EventScript_SageRight::
 	lock
 	faceplayer
 	msgbox EcruteakCity_Text_Gramps2, MSGBOX_DEFAULT
@@ -79,8 +89,79 @@ EcruteakCity_EventScript_SageTower::
 	release
 	end
 
-EcruteakCity_EventScript_Sign::
+EcruteakCity_EventScript_SageGym::
+	lock
+	faceplayer
+	msgbox EcruteakCity_Text_SageGym, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+EcruteakCity_EventScript_TheaterSign::
+	lock
+	msgbox EcruteakCity_Text_DanceTheaterSign, MSGBOX_SIGN
+	closemessage
+	release
 	end	
+
+EcruteakCity_EventScript_OfficeSign::
+	lock
+	msgbox EcruteakCity_Text_OfficeSign, MSGBOX_SIGN
+	closemessage
+	release
+	end	
+
+EcruteakCity_EventScript_BurnedSign::
+	lock
+	msgbox EcruteakCity_Text_BurnedTowerSign, MSGBOX_SIGN
+	closemessage
+	release
+	end	
+
+EcruteakCity_EventScript_CitySign::
+	lock
+	msgbox EcruteakCity_Text_Sign, MSGBOX_SIGN
+	closemessage
+	release
+	end	
+
+EcruteakCity_EventScript_GymSign::
+	lock
+	msgbox EcruteakCity_Text_GymSign, MSGBOX_SIGN
+	closemessage
+	release
+	end
+
+EcruteakCity_EventScript_Eevee::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_EEVEE, CRY_MODE_NORMAL
+	msgbox EcruteakCity_Text_Eevee, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+EcruteakCity_EventScript_Vulpix::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_VULPIX, CRY_MODE_NORMAL
+	msgbox EcruteakCity_Text_Vulpix, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+EcruteakCity_EventScript_Item_RareCandy::
+	finditem ITEM_RARE_CANDY
+	end
+
+EcruteakCity_Text_Eevee:
+	.string "EEVEE: Veee!$"
+
+EcruteakCity_Text_Vulpix:
+	.string "VULPIX: VullllPix!$"
+
 
 EcruteakCity_Text_UnusedMissingDaughter:
 	.string "Oh, no. Oh, no…\p"
@@ -145,6 +226,11 @@ EcruteakCity_Text_Gramps3:
 	.string "I was a trainer way back when.\n"
 	.string "Hohoho!$"
 
+EcruteakCity_Text_SageGym:
+	.string "Gym Leader MORTY is not here right\n"
+	.string "now. You may find him at the\l"
+	.string "BURNED TOWER.$"
+
 EcruteakCity_Text_Sign:
 	.string "ECRUTEAK CITY\n"
 	.string "A Historical City\p"
@@ -154,6 +240,10 @@ EcruteakCity_Text_TinTowerSign:
 	.string "TIN TOWER\p"
 	.string "A legendary POKéMON is said to\n"
 	.string "roost here.$"
+
+EcruteakCity_Text_OfficeSign:
+	.string "Barrier Station to TIN TOWER\p"
+	.string "No Tresspassing by the Unworthy.$"
 
 EcruteakCity_Text_GymSign:
 	.string "ECRUTEAK CITY POKéMON GYM\n"

@@ -191,61 +191,61 @@ GoldenrodRadioTower5_EventScript_Archer::
 	playbgm MUS_HG_GOLDENROD, TRUE
 	delay 120
 	fadescreen FADE_FROM_BLACK
-	goto_if_eq VAR_FACING, DIR_SOUTH, GoldenrodRadioTower5_EventScript_BellTop
-	goto_if_eq VAR_FACING, DIR_WEST, GoldenrodRadioTower5_EventScript_BellMid
-	goto_if_eq VAR_FACING, DIR_NORTH, GoldenrodRadioTower5_EventScript_BellBot
+	goto_if_eq VAR_FACING, DIR_SOUTH, GoldenrodRadioTower5_EventScript_WingTop
+	goto_if_eq VAR_FACING, DIR_WEST, GoldenrodRadioTower5_EventScript_WingMid
+	goto_if_eq VAR_FACING, DIR_NORTH, GoldenrodRadioTower5_EventScript_WingBot
 	release
 	end
 
-GoldenrodRadioTower5_EventScript_BellTop::
+GoldenrodRadioTower5_EventScript_WingTop::
 	applymovement LOCALID_DIRECTOR_STUDIO, GoldenrodRadioTower5_Movement_WalkToPlayerTop
 	waitmovement 0
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_EAST
 	msgbox GoldenrodRadioTower5_Text_DirectorThanks, MSGBOX_DEFAULT
 	closemessage
-	call_if_eq VAR_LUGIA_OR_HOOH, 0,  GoldenrodRadioTower5_EventScript_GiveTidalBell
-	call_if_eq VAR_LUGIA_OR_HOOH, 1, GoldenrodRadioTower5_EventScript_GiveClearBell
+	call_if_eq VAR_LUGIA_OR_HOOH, 0,  GoldenrodRadioTower5_EventScript_GiveTidalWing
+	call_if_eq VAR_LUGIA_OR_HOOH, 1, GoldenrodRadioTower5_EventScript_GiveClearWing
 	applymovement LOCALID_DIRECTOR_STUDIO, GoldenrodRadioTower5_Movement_LeaveTop
 	waitmovement 0
 	goto GoldenrodRadioTower5_Fakeout
 	end
 
-GoldenrodRadioTower5_EventScript_BellMid::
+GoldenrodRadioTower5_EventScript_WingMid::
 	applymovement LOCALID_DIRECTOR_STUDIO, GoldenrodRadioTower5_Movement_WalkToPlayerMid
 	waitmovement 0
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_EAST
 	msgbox GoldenrodRadioTower5_Text_DirectorThanks, MSGBOX_DEFAULT
 	closemessage
-	call_if_eq VAR_LUGIA_OR_HOOH, 0,  GoldenrodRadioTower5_EventScript_GiveTidalBell
-	call_if_eq VAR_LUGIA_OR_HOOH, 1, GoldenrodRadioTower5_EventScript_GiveClearBell
+	call_if_eq VAR_LUGIA_OR_HOOH, 0,  GoldenrodRadioTower5_EventScript_GiveTidalWing
+	call_if_eq VAR_LUGIA_OR_HOOH, 1, GoldenrodRadioTower5_EventScript_GiveClearWing
 	applymovement LOCALID_DIRECTOR_STUDIO, GoldenrodRadioTower5_Movement_LeaveMid
 	waitmovement 0
 	goto GoldenrodRadioTower5_Fakeout
 	end
 
-GoldenrodRadioTower5_EventScript_BellBot::
+GoldenrodRadioTower5_EventScript_WingBot::
 	applymovement LOCALID_DIRECTOR_STUDIO, GoldenrodRadioTower5_Movement_WalkToPlayerBot
 	waitmovement 0
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_EAST
 	msgbox GoldenrodRadioTower5_Text_DirectorThanks, MSGBOX_DEFAULT
 	closemessage
-	call_if_eq VAR_LUGIA_OR_HOOH, 0,  GoldenrodRadioTower5_EventScript_GiveTidalBell
-	call_if_eq VAR_LUGIA_OR_HOOH, 1, GoldenrodRadioTower5_EventScript_GiveClearBell
+	call_if_eq VAR_LUGIA_OR_HOOH, 0,  GoldenrodRadioTower5_EventScript_GiveTidalWing
+	call_if_eq VAR_LUGIA_OR_HOOH, 1, GoldenrodRadioTower5_EventScript_GiveClearWing
 	applymovement LOCALID_DIRECTOR_STUDIO, GoldenrodRadioTower5_Movement_LeaveBot
 	waitmovement 0
 	goto GoldenrodRadioTower5_Fakeout
 	end
 
-GoldenrodRadioTower5_EventScript_GiveTidalBell::
-	giveitem ITEM_TIDAL_BELL
-	msgbox GoldenrodRadioTower5_Text_DirectorTidalBellExplanation, MSGBOX_DEFAULT
+GoldenrodRadioTower5_EventScript_GiveTidalWing::
+	giveitem ITEM_SILVER_WING
+	msgbox GoldenrodRadioTower5_Text_DirectorTidalWingExplanation, MSGBOX_DEFAULT
 	closemessage
 	release
 	return
 
-GoldenrodRadioTower5_EventScript_GiveClearBell::
-	giveitem ITEM_CLEAR_BELL
-	msgbox GoldenrodRadioTower5_Text_DirectorClearBellExplanation, MSGBOX_DEFAULT
+GoldenrodRadioTower5_EventScript_GiveClearWing::
+	giveitem ITEM_RAINBOW_WING
+	msgbox GoldenrodRadioTower5_Text_DirectorClearWingExplanation, MSGBOX_DEFAULT
 	closemessage
 	release
 	return
@@ -393,44 +393,44 @@ GoldenrodRadioTower5_Text_DirectorThanks:
 	.string "I know it's not much, but please\n"
 	.string "take this.$"
 
-GoldenrodRadioTower5_Text_DirectorClearBellExplanation:
+GoldenrodRadioTower5_Text_DirectorClearWingExplanation:
 	.string "There used to be a tower right here\n"
 	.string "in GOLDENROD CITY.\p"
 	.string "But it was old and creaky.\p"
 	.string "So we replaced it with our RADIO\n"
 	.string "TOWER.\p"
-	.string "We dug up that bell during\n"
+	.string "We dug up that wing during\n"
 	.string "construction.\p"
 	.string "I heard that all sorts of POKéMON\n"
 	.string "lived in GOLDENROD in the past.\p"
 	.string "Perhaps…\p"
-	.string "That bell has some connection to the\n"
+	.string "That wing has some connection to the\n"
 	.string "TIN TOWER in ECRUTEAK CITY…\p"
 	.string "OK, I better go to my OFFICE.$"
 
-GoldenrodRadioTower5_Text_DirectorTidalBellExplanation:
+GoldenrodRadioTower5_Text_DirectorTidalWingExplanation:
 	.string "There used to be a tower right here\n"
 	.string "in GOLDENROD CITY.\p"
 	.string "But it was old and creaky.\p"
 	.string "So we replaced it with our RADIO\n"
 	.string "TOWER.\p"
-	.string "We dug up that bell during\n"
+	.string "We dug up that wing during\n"
 	.string "construction.\p"
 	.string "I heard that all sorts of POKéMON\n"
 	.string "lived in GOLDENROD in the past.\p"
 	.string "Perhaps…\p"
-	.string "That bell has some connection to the\n"
+	.string "That wing has some connection to the\n"
 	.string "WHIRL ISLANDS near CIANWOOD CITY…\p"
 	.string "OK, I better go to my OFFICE.$"
 
 GoldenrodRadioTower5_Text_DirectorLegendary:
 	.string "Ah!\p"
 	.string "That reminds me…\p"
-	.string "That bell I gave you... I think\n"
+	.string "That wing I gave you... I think\n"
 	.string "it's related to the LEGENDARY\l"
 	.string "POKéMON.\p"
 	.string "But! The LEGENDARY POKéMON won't\n"
-	.string "appear with just that bell...\p"
+	.string "appear with just that wing...\p"
 	.string "Apparently there is something else\n"
 	.string "you need... Or something like that.\p"
 	.string "I wonder what it was...\p"

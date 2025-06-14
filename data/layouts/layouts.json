@@ -6334,7 +6334,7 @@
     {
       "id": "LAYOUT_ECRUTEAK_SAGE_OFFICE",
       "name": "EcruteakSageOffice_Layout",
-      "width": 9,
+      "width": 10,
       "height": 17,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Theater_26",
@@ -6344,7 +6344,7 @@
     {
       "id": "LAYOUT_ECRUTEAK_SAGE_OFFICE1F",
       "name": "EcruteakSageOffice1F_Layout",
-      "width": 17,
+      "width": 19,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Theater_26",
