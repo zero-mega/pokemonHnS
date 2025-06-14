@@ -43,7 +43,7 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 28,
+      "x": 29,
       "y": 12,
       "elevation": 0,
       "dest_map": "MAP_TIN_TOWER1",
@@ -51,7 +51,15 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 28,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "EcruteakBellchimeTrail_EventScript_DoorTrigger"
+    }
   ],
   "bg_events": [
 
