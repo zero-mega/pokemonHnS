@@ -7154,8 +7154,8 @@
     {
       "id": "LAYOUT_ECRUTEAK_DUMMY",
       "name": "Ecruteak_Dummy_Layout",
-      "width": 40,
-      "height": 29,
+      "width": 70,
+      "height": 69,
       "primary_tileset": "gTileset_Johto_NorthWest",
       "secondary_tileset": "gTileset_BellchimeTrail",
       "border_filepath": "data/layouts/Ecruteak_Dummy/border.bin",

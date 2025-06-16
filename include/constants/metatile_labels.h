@@ -81,7 +81,7 @@
 #define METATILE_BattleTent_Door  0x26B
 
 // gTileset_BellchimeTrail
-#define METATILE_BellchimeTrail_Door  0x32B
+#define METATILE_BellchimeTrail_Door  0x333
 
 // gTileset_BikeShop
 #define METATILE_BikeShop_Barrier_Blue_Bottom      0x2CF
