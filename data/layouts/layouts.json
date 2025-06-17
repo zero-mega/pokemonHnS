@@ -8720,6 +8720,16 @@
       "secondary_tileset": "gTileset_NationalPark",
       "border_filepath": "data/layouts/NationalPark2/border.bin",
       "blockdata_filepath": "data/layouts/NationalPark2/map.bin"
+    },
+    {
+      "id": "LAYOUT_TIN_TOWER10NIGHT",
+      "name": "TinTower10Night_Layout",
+      "width": 23,
+      "height": 21,
+      "primary_tileset": "gTileset_Johto_Building",
+      "secondary_tileset": "gTileset_PowerPlant_43",
+      "border_filepath": "data/layouts/TinTower10Night/border.bin",
+      "blockdata_filepath": "data/layouts/TinTower10Night/map.bin"
     }
   ]
 }

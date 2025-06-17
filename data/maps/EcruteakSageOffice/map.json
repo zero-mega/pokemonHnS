@@ -36,6 +36,45 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 7,
+      "y": 10,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_StatueDescription"
+    },
+    {
+      "type": "sign",
+      "x": 7,
+      "y": 14,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_StatueDescription"
+    },
+    {
+      "type": "sign",
+      "x": 1,
+      "y": 14,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_StatueDescription"
+    },
+    {
+      "type": "sign",
+      "x": 1,
+      "y": 10,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_StatueDescription"
+    },
+    {
+      "type": "sign",
+      "x": 1,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_StatueDescription"
+    }
   ]
 }

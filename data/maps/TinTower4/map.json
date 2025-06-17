@@ -24,8 +24,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "TinTower4_EventScript_Item_MaxPotion",
+      "flag": "FLAG_ITEM_TIN_TOWER4_MAX_POTION"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
@@ -37,8 +37,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "TinTower4_EventScript_Item_EscapeRope",
+      "flag": "FLAG_ITEM_TIN_TOWER4_ESCAPE_ROPE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
@@ -50,8 +50,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "TinTower4_EventScript_Item_UltraBall",
+      "flag": "FLAG_ITEM_TIN_TOWER4_ULTRA_BALL"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_RAYQUAZA",
@@ -101,6 +101,37 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 11,
+      "y": 3,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_StatueDescription"
+    },
+    {
+      "type": "sign",
+      "x": 16,
+      "y": 3,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_StatueDescription"
+    },
+    {
+      "type": "sign",
+      "x": 6,
+      "y": 3,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_StatueDescription"
+    },
+    {
+      "type": "sign",
+      "x": 1,
+      "y": 3,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinsOfAlph2_MapScript_StatueDescription"
+    }
   ]
 }

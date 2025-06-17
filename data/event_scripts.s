@@ -1981,3 +1981,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/GoldenrodDepartmentStore7Night/scripts.inc"
 
 	.include "data/maps/NationalPark2/scripts.inc"
+
+	.include "data/maps/TinTower10Night/scripts.inc"

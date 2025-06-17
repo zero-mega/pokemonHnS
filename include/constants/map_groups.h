@@ -75,6 +75,7 @@
 #define MAP_ROUTE26          (66 | (0 << 8))
 #define MAP_ROUTE27          (67 | (0 << 8))
 #define MAP_ROUTE28          (68 | (0 << 8))
+#define MAP_TIN_TOWER10NIGHT (69 | (0 << 8))
 
 // gMapGroup_IndoorNewBark
 #define MAP_NEW_BARK_TOWN_LAB    (0 | (1 << 8))
@@ -1018,5 +1019,7 @@
 #define MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE          (96 | (31 << 8))
 
 #define MAP_GROUPS_COUNT 32
+
+// static const u8 MAP_GROUP_COUNT[] = {70, 5, 5, 7, 5, 29, 8, 10, 6, 6, 7, 5, 5, 7, 6, 9, 7, 16, 9, 9, 4, 7, 27, 28, 76, 0, 41, 125, 113, 126, 74, 97, 0};
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

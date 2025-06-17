@@ -25,6 +25,7 @@ TinTower10_EventScript_TryShowHoOh::
 	goto_if_set FLAG_DEFEATED_HO_OH, Common_EventScript_NopReturn
 	setvar VAR_TEMP_1, 0
 	clearflag FLAG_HIDE_HO_OH
+	setobjectxyperm LOCALID_HO_OH, 10, 6
 	return
 
 TinTower10_OnResume:
@@ -75,7 +76,6 @@ TinTower10_EventScript_HoOh::
 	setflag FLAG_CAUGHT_HO_OH
 	setvar VAR_COMPLETED_HO_OH, 1
 	applymovement LOCALID_KIMONO_MID, TinTower10_Movement_Kimono_Dance_Shift_Right
-	call_if_set FLAG_EXTRA_LEGENDARIES, TinTower10_Enable_Kanto_Legendaries
 	releaseall
 	end
 
@@ -233,48 +233,44 @@ TinTower10_EventScript_TalkToHoOh::
 	special BattleSetup_StartLegendaryBattle
 	waitstate
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-	setflag FLAG_HIDE_TIN_TOWER_KIMONO_GIRLS
-	applymovement LOCALID_KIMONO_MID, TinTower10_Movement_Kimono_Dance_Shift_Right2
-	waitmovement 0
+
 	setvar VAR_LAST_TALKED, LOCALID_HO_OH
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, TinTower10_EventScript_DefeatedHoOh
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, TinTower10_EventScript_RanFromHoOh
 	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, TinTower10_EventScript_RanFromHoOh
+	setflag FLAG_HIDE_TIN_TOWER_KIMONO_GIRLS
+	applymovement LOCALID_KIMONO_MID, TinTower10_Movement_Kimono_Dance_Shift_Right2
+	waitmovement 0
 	setflag FLAG_CAUGHT_HO_OH
 	setvar VAR_COMPLETED_HO_OH, 1
-	call_if_set FLAG_EXTRA_LEGENDARIES, TinTower10_Enable_Kanto_Legendaries
+	setvar VAR_ECRUTEAK_CITY_STATE, 12
 	releaseall
 	end
 
-TinTower10_Enable_Kanto_Legendaries::
-	setflag FLAG_UNLOCK_BIRDS
-	playmoncry SPECIES_ARTICUNO, CRY_MODE_NORMAL
-	waitmoncry
-	playmoncry SPECIES_ZAPDOS, CRY_MODE_NORMAL
-	waitmoncry
-	playmoncry SPECIES_MOLTRES, CRY_MODE_NORMAL
-	waitmoncry
-	return
-
 TinTower10_EventScript_DefeatedHoOh::
 	setflag FLAG_DEFEATED_HO_OH
-	call_if_set FLAG_EXTRA_LEGENDARIES, TinTower10_Enable_Kanto_Legendaries
 	setvar VAR_0x8004, SPECIES_HO_OH
 	setvar VAR_COMPLETED_HO_OH, 1
+	setvar VAR_ECRUTEAK_CITY_STATE, 12
+	setflag FLAG_HIDE_TIN_TOWER_KIMONO_GIRLS
+	applymovement LOCALID_KIMONO_MID, TinTower10_Movement_Kimono_Dance_Shift_Right2
+	waitmovement 0
 	goto Common_EventScript_LegendaryFlewAway
 	end
 
 TinTower10_EventScript_RanFromHoOh::
-	setflag FLAG_DEFEATED_HO_OH
-	setvar VAR_0x8004, SPECIES_HO_OH
-	setvar VAR_COMPLETED_HO_OH, 1
-	goto Common_EventScript_LegendaryFlewAway
+	@setflag FLAG_DEFEATED_HO_OH
+	@setvar VAR_0x8004, SPECIES_HO_OH
+	@setvar VAR_COMPLETED_HO_OH, 1
+	@goto Common_EventScript_LegendaryFlewAway
+	releaseall
 	end
 
 TinTower10_EventScript_Kimono::
 	lock
 	faceplayer
+	goto_if_set FLAG_CAUGHT_HO_OH, TinTower10_EventScript_Kimono_AfterCaught
 	goto_if_eq VAR_COMPLETED_HO_OH, 1, TinTower10_EventScript_Kimono_After
 	msgbox TinTower10_Text_Kimono_Before, MSGBOX_DEFAULT 
 	closemessage
@@ -288,6 +284,19 @@ TinTower10_EventScript_Kimono_After::
 	release
 	end
 
+TinTower10_EventScript_Kimono_AfterCaught::
+	msgbox TinTower10_Text_Kimono_AfterCaught, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+TinTower10_Text_Kimono_AfterCaught:
+	.string "You have not only made HO-OH\n"
+	.string "appear, but you have also caught\l"
+	.string "it...\p"
+	.string "There is nothing more for us to\n"
+	.string "say. Take care of yourself in your\l"
+	.string "journey...$"
 
 TinTower10_Movement_CameraPanUp:
 	walk_up
@@ -568,5 +577,5 @@ TinTower10_Text_Kimono_Closing1::
 	.string "Wouldn't you agree? $"
 
 TinTower10_Text_Kimono_After::
-	.string "KIMONO GIRL: You've proven yourself\n"
-	.string "today, {PLAYER}.$"
+	.string "You have done a great job.\n"
+	.string "Say hello to PROF. ELM for us.$"

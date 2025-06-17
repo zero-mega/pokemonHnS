@@ -8,7 +8,7 @@
   "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_ROUTE",
   "allow_cycling": false,
-  "allow_escaping": true,
+  "allow_escaping": false,
   "allow_running": true,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
@@ -125,7 +125,7 @@
       "y": 14,
       "elevation": 0,
       "dest_map": "MAP_TIN_TOWER8",
-      "dest_warp_id": "4"
+      "dest_warp_id": "7"
     }
   ],
   "coord_events": [
@@ -134,8 +134,8 @@
       "x": 10,
       "y": 13,
       "elevation": 0,
-      "var": "VAR_COMPLETED_HO_OH",
-      "var_value": "0",
+      "var": "VAR_ECRUTEAK_CITY_STATE",
+      "var_value": "11",
       "script": "TinTower10_eventScript_TalkToKimono"
     }
   ],

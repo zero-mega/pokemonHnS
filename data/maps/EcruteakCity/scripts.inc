@@ -15,7 +15,9 @@ EcruteakCity_EventScript_Trigger::
 
 	setflag FLAG_HIDE_HO_OH
 	setflag FLAG_HIDE_LUGIA
-	
+	setflag FLAG_HIDE_HO_OH
+	setflag FLAG_HIDE_TIN_TOWER_KIMONO_GIRLS
+
 	setvar VAR_ECRUTEAK_CITY_STATE, 1
 	end
 

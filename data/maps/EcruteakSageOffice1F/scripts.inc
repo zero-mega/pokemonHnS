@@ -38,6 +38,10 @@ EcruteakSageOffice_EventScript_SageA2::
 	waitmovement 0
 	setobjectxyperm LOCALID_SAGEOFFICE_SAGE, 15, 2
 	setvar VAR_ECRUTEAK_CITY_STATE, 11
+
+	clearflag FLAG_HIDE_HO_OH
+	clearflag FLAG_HIDE_TIN_TOWER_KIMONO_GIRLS
+
 	release
 	end
 
