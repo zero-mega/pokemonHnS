@@ -6354,8 +6354,8 @@
     {
       "id": "LAYOUT_ECRUTEAK_THEATER",
       "name": "EcruteakTheater_Layout",
-      "width": 12,
-      "height": 18,
+      "width": 21,
+      "height": 19,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Theater_26",
       "border_filepath": "data/layouts/EcruteakTheater/border.bin",
