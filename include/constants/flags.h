@@ -984,12 +984,12 @@
 #define FLAG_HIDE_REGISTEEL                                         0x3A9
 #define FLAG_AMPHAROS_HEALED                            0x3AA
 #define FLAG_HIDE_ECRUTEAK_BILL                           0x3AB
-#define FLAG_HIDE_DEWFORD_HALL_SLUDGE_BOMB_MAN                      0x3AC
-#define FLAG_HIDE_SEAFLOOR_CAVERN_ENTRANCE_AQUA_GRUNT               0x3AD
-#define FLAG_HIDE_METEOR_FALLS_1F_1R_COZMO                          0x3AE
-#define FLAG_HIDE_AQUA_HIDEOUT_B2F_SUBMARINE_SHADOW                 0x3AF
-#define FLAG_HIDE_ROUTE_128_ARCHIE                                  0x3B0
-#define FLAG_HIDE_ROUTE_128_MAXIE                                   0x3B1
+#define FLAG_HIDE_ECRUTEAK_ROCKET                      0x3AC
+#define FLAG_HIDE_ECRUTEAK_THEATER_KIMONOS               0x3AD
+#define FLAG_HIDE_BURNED_TOWER_NPCS                          0x3AE
+#define FLAG_HIDE_BURNED_TOWER_BEASTS                 0x3AF
+#define FLAG_HIDE_BURNED_TOWER2_EUSINE                                  0x3B0
+#define FLAG_HIDE_ECRUTEAK_CITY_SAGE                                   0x3B1
 #define FLAG_HIDE_SEAFLOOR_CAVERN_AQUA_GRUNTS                       0x3B2
 #define FLAG_HIDE_ROUTE_116_DEVON_EMPLOYEE                          0x3B3
 #define FLAG_HIDE_SLATEPORT_CITY_TM_SALESMAN                        0x3B4
@@ -1306,10 +1306,10 @@
 #define FLAG_ITEM_TIN_TOWER8_FULL_RESTORE                                           0x4E7 // Unused Flag
 #define FLAG_ITEM_TIN_TOWER8_MAX_ELIXIR                                          0x4E8 // Unused Flag
 #define FLAG_ITEM_TIN_TOWER8_BIG_NUGGET                                          0x4E9 // Unused Flag
-#define FLAG_UNUSED_0x4EA                                           0x4EA // Unused Flag
-#define FLAG_UNUSED_0x4EB                                           0x4EB // Unused Flag
-#define FLAG_UNUSED_0x4EC                                           0x4EC // Unused Flag
-#define FLAG_UNUSED_0x4ED                                           0x4ED // Unused Flag
+#define FLAG_ITEM_BURNED_TOWER1_HP_UP                                           0x4EA // Unused Flag
+#define FLAG_ITEM_BURNED_TOWER1_ETHER                                           0x4EB // Unused Flag
+#define FLAG_ITEM_BURNED_TOWER2_TM_TAUNT                                           0x4EC // Unused Flag
+#define FLAG_ITEM_BURNED_TOWER2_ULTRA_BALL                                           0x4ED // Unused Flag
 #define FLAG_UNUSED_0x4EE                                           0x4EE // Unused Flag
 #define FLAG_UNUSED_0x4EF                                           0x4EF // Unused Flag
 

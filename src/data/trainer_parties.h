@@ -16821,6 +16821,27 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Eddie[] = { //BurglarGro
 };
 
 
+static const struct TrainerMonNoItemDefaultMoves sParty_Richardo[] = { //Burgular
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_KOFFING,
+    },
+    {
+    .iv = 0,
+    .lvl = 19,
+    .species = SPECIES_GROWLITHE,
+    },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_Nard[] = { //Firebreather
+    {
+    .iv = 0,
+    .lvl = 21,
+    .species = SPECIES_CHARMELEON,
+    },
+};
+
 static const struct TrainerMonNoItemDefaultMoves sParty_Corey[] = { //FirebreatherGroup
     {
     .iv = 0,

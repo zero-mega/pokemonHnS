@@ -491,7 +491,7 @@ PetalburgCity_Gym_EventScript_NormanBattle::
 	clearflag FLAG_GARBAGEFLAG
 	setvar VAR_0x8008, 5
 	call Common_EventScript_SetGymTrainers
-	clearflag FLAG_HIDE_DEWFORD_HALL_SLUDGE_BOMB_MAN
+	clearflag FLAG_GARBAGEFLAG
 	call PetalburgCity_Gym_EventScript_UnlockAllDoors
 	special DrawWholeMapView
 	call PetalburgCity_Gym_EventScript_GiveFacade

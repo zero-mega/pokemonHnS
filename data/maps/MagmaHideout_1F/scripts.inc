@@ -22,7 +22,7 @@ MagmaHideout_1F_EventScript_Grunt1::
 	end
 
 MagmaHideout_1F_EventScript_Grunt2::
-	trainerbattle_single TRAINER_GRUNT_MAGMA_HIDEOUT_2, MagmaHideout_1F_Text_Grunt2Intro, MagmaHideout_1F_Text_Grunt2Defeat
+	trainerbattle_single TRAINER_RICHARDO, MagmaHideout_1F_Text_Grunt2Intro, MagmaHideout_1F_Text_Grunt2Defeat
 	msgbox MagmaHideout_1F_Text_Grunt2PostBattle, MSGBOX_AUTOCLOSE
 	end
 

@@ -75,7 +75,13 @@ NewBarkTownLab_EventScript_Elm::
 	call_if_unset FLAG_SHOWN_ELM_TOGEPI, NewBarkTownLab_EventScript_Elm_Check_Togepi
 	goto_if_ge VAR_GOLDENROD_CITY_STATE, 1, NewBarkTownLab_EventScript_Elm_Check_WhereIsEgg
 	goto_if_eq VAR_NEWBARKTOWN_LABSTATE, 5, NewBarkTownLab_EventScript_ElmState5
-	goto_if_eq VAR_NEWBARKTOWN_LABSTATE, 6, NewBarkTownLab_EventScript_ElmState5
+
+	goto_if_eq VAR_NEWBARKTOWN_LABSTATE, 7, NewBarkTownLab_EventScript_ElmMasterBall
+	goto_if_eq VAR_NEWBARKTOWN_LABSTATE, 8, NewBarkTownLab_EventScript_ElmKimono
+	goto_if_eq VAR_NEWBARKTOWN_LABSTATE, 9, NewBarkTownLab_EventScript_ElmLeague
+	goto_if_eq VAR_NEWBARKTOWN_LABSTATE, 10, NewBarkTownLab_EventScript_ElmSSTicket
+
+	goto_if_ge VAR_NEWBARKTOWN_LABSTATE, 6, NewBarkTownLab_EventScript_ElmState5
 	goto_if_eq VAR_NEWBARKTOWN_LABSTATE, 2, CopNewBarkTownLab_EventScript_ElmState2
 	goto_if_eq VAR_NEWBARKTOWN_LABSTATE, 3, CopNewBarkTownLab_EventScript_ElmState2
 	goto_if_set FLAG_SYS_POKEMON_GET, NewBarkTownLab_EventScript_MrPokemon
@@ -345,7 +351,48 @@ NewBarkTownLab_EventScript_ElmState5::
 	release
 	end
 	
+NewBarkTownLab_EventScript_ElmMasterBall::
+	lock
+	faceplayer
+	msgbox NewBarkTownLab_Text_ElmGiveMasterBall1, MSGBOX_DEFAULT
+	giveitem ITEM_MASTER_BALL
+	msgbox NewBarkTownLab_Text_ElmGiveMasterBall2, MSGBOX_DEFAULT
+	closemessage
+	delay 55
+	playse SE_PIN
+	applymovement LOCALID_ELM, Common_Movement_ExclamationMark
+	delay 60
+	msgbox NewBarkTownLab_Text_KimonoGirls, MSGBOX_DEFAULT
+	closemessage
+	setvar VAR_NEWBARKTOWN_LABSTATE, 7
+	clearflag FLAG_HIDE_ECRUTEAK_THEATER_KIMONOS
+	release
+	end
 
+NewBarkTownLab_EventScript_ElmKimono::
+	lock
+	faceplayer
+	msgbox NewBarkTownLab_Text_KimonoWaiting, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+NewBarkTownLab_EventScript_ElmLeague::
+	lock
+	faceplayer
+	msgbox NewBarkTownLab_Text_League, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+NewBarkTownLab_EventScript_ElmSSTicket::
+	msgbox NewBarkTownLab_Text_ElmGiveTicket1, MSGBOX_DEFAULT
+	giveitem ITEM_SS_TICKET
+	msgbox NewBarkTownLab_Text_ElmGiveTicket2, MSGBOX_DEFAULT
+	closemessage
+	setvar VAR_NEWBARKTOWN_LABSTATE, 10
+	release
+	end
 
 NewBarkTownLab_EventScript_TriggerAideGiveBalls::
 	lock
@@ -667,7 +714,6 @@ NewBarkTownLab_Text_ElmAfterTheft4:
 	.string "Before you leave, make sure\n"
 	.string "that you talk to your mom.$"
 
-
 NewBarkTownLab_Text_ElmStudyingEgg:
 	.string "ELM: Don't give up!\n"
 	.string "I'll call if I learn anything\p"
@@ -745,6 +791,42 @@ NewBarkTownLab_Text_ElmGiveMasterBall2:
 	.string "POKéMON researchers.\p"
 	.string "I think you can make much better\n"
 	.string "use of it than I can, {PLAYER}!$"
+
+NewBarkTownLab_Text_KimonoGirls:
+	.string "By the way...\n"
+	.string "A group of beautiful Kimono\n"
+	.string "Girls were looking for you.\p"
+	.string "They told me they\n"
+	.string "are waiting for you at the\n"
+	.string "Ecruteak Dance Theater.\p"
+	.string "I know you've gone through many\n"
+	.string "things since that Egg got you\l"
+	.string "involved in all this...\p"
+	.string "I hope you'll carry through it.$"
+
+NewBarkTownLab_Text_KimonoWaiting:
+	.string "Professor Elm: The Kimono\n"
+	.string "Girls are waiting for you at\l"
+	.string "the Ecruteak Dance Theater.$"
+
+NewBarkTownLab_Text_League:
+	.string "Professor Elm: Hahaha...\n"
+	.string "Good job!\p"
+	.string "That rare Egg has brought you\n"
+	.string "a lot of trouble, huh?\p"
+	.string "The Kimono Girls said something\n"
+	.string "about me?\p"
+	.string "I have nothing to do with it.\p"
+	.string "You made your decision and went\n"
+	.string "through with it.\p"
+	.string "Having done so much, you should\n"
+	.string "be able to face the League now!\p"
+	.string "You should head for Indigo\n"
+	.string "Plateau!\p"
+	.string "Do you know how to get there?\n"
+	.string "Follow Route 27 to Route 26.\p"
+	.string "Once there, go straight north!$"
+
 
 NewBarkTownLab_Text_ElmGiveTicket1:
 	.string "ELM: {PLAYER}! There you are!\p"

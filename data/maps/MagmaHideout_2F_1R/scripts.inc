@@ -7,7 +7,7 @@ MagmaHideout_2F_1R_EventScript_Grunt14::
 	end
 
 MagmaHideout_2F_1R_EventScript_Grunt3::
-	trainerbattle_single TRAINER_GRUNT_MAGMA_HIDEOUT_3, MagmaHideout_2F_1R_Text_Grunt3Intro, MagmaHideout_2F_1R_Text_Grunt3Defeat
+	trainerbattle_single TRAINER_NARD, MagmaHideout_2F_1R_Text_Grunt3Intro, MagmaHideout_2F_1R_Text_Grunt3Defeat
 	msgbox MagmaHideout_2F_1R_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE
 	end
 

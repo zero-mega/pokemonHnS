@@ -3675,6 +3675,32 @@ const struct Trainer gTrainers[] = {
     },
 
 
+    [TRAINER_RICHARDO] =
+    {
+        .trainerClass = TRAINER_CLASS_BURGLAR,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_BURGLAR,
+        .trainerName = _("RICHARDO"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Richardo),
+    },
+
+
+    [TRAINER_NARD] =
+    {
+        .trainerClass = TRAINER_CLASS_FIREBREATHER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_FIREBREATHER,
+        .trainerName = _("NARD"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Nard),
+    },
+
+
     [TRAINER_COREY] =
     {
         .trainerClass = TRAINER_CLASS_FIREBREATHER,

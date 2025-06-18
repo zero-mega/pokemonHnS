@@ -5764,7 +5764,7 @@
     {
       "id": "LAYOUT_BURNED_TOWER2",
       "name": "BurnedTower2_Layout",
-      "width": 24,
+      "width": 28,
       "height": 19,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_BurnedTower",

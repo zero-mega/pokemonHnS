@@ -99,7 +99,7 @@
 #define VAR_LOTAD_SIZE_RECORD                            0x404F
 #define VAR_NEWBARK_TOWN_STATE                        0x4050 //START VARS FOR CRYSTAL HERE. 0 = havent set clock, 1 = convo with mom, 2 = talk to elm, 3 = go to mr pokemon, 4 = go to mom again, 5 = done
 #define VAR_STARTER_SPECIES                            0x4051 //152 = CHIKO, 155 = CYNDA, 158 = TOTOD
-#define VAR_NEWBARKTOWN_LABSTATE                           0x4052 // 0 = talk to elm first time, 1 = choose starter, 2 = chosen starter, 3=received potion 4 = police! 5 = receive balls, 6=done
+#define VAR_NEWBARKTOWN_LABSTATE                           0x4052 // 0 = talk to elm first time, 1 = choose starter, 2 = chosen starter, 3=received potion 4 = police! 5 = receive balls, 6 = get masterball, 7 = gotokimono, 8 = goto league, 9 = get SS ticket, 10 = done
 #define VAR_CHERRYGROVE_CITY_STATE                         0x4053 //0 = guidegent, 1= goto mrpokemon, 2= phonecall, 3=silver, 4=done
 #define VAR_GARBAGEVAR2                          0x4054 // was probably allocated for VAR_FALLARBOR_TOWN_STATE at one point
 #define VAR_COMPLETED_LUGIA                             0x4055 // Lugia trigger
@@ -107,7 +107,7 @@
 #define VAR_VIOLET_CITY_STATE                         0x4057 //0 on trigger, 1 when done
 #define VAR_AZALEA_TOWN_STATE                        0x4058 //0 on trigger, 1 = talk to kurt, 2 = goto well, 3 = goto kurt well, 4 = goto gym, 5 = fight silver, 6 = find farfetchd, 7 = bringGSBall, 8 = GoOutside, 9 = Celebi, 10 = done
 #define VAR_GOLDENROD_CITY_STATE                          0x4059  //0 on trigger, 1 = get radio, 2 = fight whitney, 3 = whitney crying, 4 = whitney give badge, 5 = complete before rocket. 6 = fight petrel, 7 = meet kimono, 8 = silver, 9 = director-archer, 10 = return NPCS, 11 = done
-#define VAR_ECRUTEAK_CITY_STATE                          0x405A //10 goto sage office, 11 goto ho-oh, 12 ho-oh done.
+#define VAR_ECRUTEAK_CITY_STATE                          0x405A //1 = goto burnedtower, 2 = goto silver, 3 = release the beasts, 5 = done. 10 goto sage office, 11 goto ho-oh, 12 ho-oh done.
 #define VAR_MAHOGANY_TOWN_STATE                           0x405B 
 #define VAR_OLIVINE_CITY_STATE                          0x405C 
 #define VAR_CIANWOOD_CITY_STATE                         0x405D
@@ -131,7 +131,7 @@
 #define VAR_LUGIA_OR_HOOH                               0x406F // 0 = lugia, 1 = ho-oh
 #define VAR_KENYA                               0x4070 // 0 = take, 1 = deliver, 2 = delivered, 3 = informed of delivery
 #define VAR_BUG_CONTEST_STATE                               0x4071
-#define VAR_ROUTE119_STATE                               0x4072
+#define VAR_ECRUTEAK_THEATER                               0x4072 //0 = goto theater, 1 = talk to rocket, 2 = get surf, 3 = wait until 8th badge elm visit. 4 = talktosilver, 5 = fightkimono, 6 = goto legendary, 7 = done legendary.
 #define VAR_ROUTE120_STATE                               0x4073 // Unused Var
 #define VAR_ROUTE121_STATE                               0x4074
 #define VAR_ROUTE122_STATE                               0x4075 // Unused Var

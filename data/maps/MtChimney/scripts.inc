@@ -75,7 +75,7 @@ MtChimney_EventScript_Maxie::
 	setflag FLAG_GARBAGEFLAG
 	setflag FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY
 	clearflag FLAG_GARBAGEFLAG
-	setflag FLAG_HIDE_METEOR_FALLS_1F_1R_COZMO
+	setflag FLAG_GARBAGEFLAG
 	clearflag FLAG_HIDE_MT_CHIMNEY_LAVA_COOKIE_LADY
 	releaseall
 	end
