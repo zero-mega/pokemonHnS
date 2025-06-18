@@ -51,6 +51,7 @@
 #include "constants/region_map_sections.h" //tx_randomizer_and_challenges
 #include "debug.h"
 #include "bug_contest.h"
+#include "roamer.h"
 
 
 enum {
@@ -723,7 +724,39 @@ static void CB2_EndWildBattle(void)
         SetMainCallback2(CB2_WhiteOut);
     }
     else
-    {
+    {      //if caught roamer, setflag caught
+        if (gBattleOutcome == B_OUTCOME_CAUGHT){
+            switch (GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL))
+            {
+            case SPECIES_ENTEI:
+                FlagSet(FLAG_CAUGHT_ENTEI);
+                break;
+            case SPECIES_RAIKOU:
+                FlagSet(FLAG_CAUGHT_RAIKOU);
+                break;
+            }
+        }
+
+        //if won or beat roamer, if not already caught other roamer, create them
+        if (gBattleOutcome == B_OUTCOME_CAUGHT || gBattleOutcome == B_OUTCOME_WON){
+            switch (GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL))
+            {
+            case SPECIES_ENTEI:
+                if(!(FlagGet(FLAG_CAUGHT_RAIKOU)))
+                {
+                    gSpecialVar_0x8004 = 0;
+                    InitRoamer();
+                    break;
+                }
+            case SPECIES_RAIKOU:
+                if(!(FlagGet(FLAG_CAUGHT_ENTEI)))
+                {
+                    gSpecialVar_0x8004 = 1;
+                    InitRoamer();
+                    break;
+                }
+            }
+        }
         SetMainCallback2(CB2_ReturnToField);
         gFieldCallback = FieldCB_ReturnToFieldNoScriptCheckMusic;
     }

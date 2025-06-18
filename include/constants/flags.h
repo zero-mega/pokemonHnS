@@ -990,8 +990,8 @@
 #define FLAG_HIDE_BURNED_TOWER_BEASTS                 0x3AF
 #define FLAG_HIDE_BURNED_TOWER2_EUSINE                                  0x3B0
 #define FLAG_HIDE_ECRUTEAK_CITY_SAGE                                   0x3B1
-#define FLAG_HIDE_SEAFLOOR_CAVERN_AQUA_GRUNTS                       0x3B2
-#define FLAG_HIDE_ROUTE_116_DEVON_EMPLOYEE                          0x3B3
+#define FLAG_CAUGHT_ENTEI                       0x3B2
+#define FLAG_CAUGHT_RAIKOU                          0x3B3
 #define FLAG_HIDE_SLATEPORT_CITY_TM_SALESMAN                        0x3B4
 #define FLAG_HIDE_RUSTBORO_CITY_DEVON_CORP_3F_EMPLOYEE              0x3B5
 #define FLAG_HIDE_SS_TIDAL_CORRIDOR_MR_BRINEY                       0x3B6

@@ -1816,6 +1816,10 @@ void CB2_WhiteOut(void)
     }
 }
 
+void CB2_EndRoamerBattle(void){
+    
+}
+
 void CB2_BugContestWhiteOut(void){
     u8 state;
 

@@ -4,7 +4,6 @@ NationalParkGates_MapScripts::
 NationalParkGates_EventScript_Attendant::
 	lock
 	faceplayer
-	goto_if_eq VAR_BUG_CONTEST_STATE, 1, NationalParkGates_EventScript_AttendantExit @removelater
 	goto_if_set FLAG_DAILY_BUG_CONTEST_COMPLETED, NationalParkGates_EventScript_AttendantAlreadyPlayed
 	msgbox Route35NationalParkGate_Text_OfficerAskToParticipate, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, TRUE, NationalParkGates_EventScript_AttendantStart
@@ -93,12 +92,9 @@ NationalParkGates_Movement_Player_EnterParkBot:
 	walk_up
 	step_end
 
-
-
 NationalParkGates_EventScript_BAttendant::
 	lock
 	faceplayer
-	goto_if_eq VAR_BUG_CONTEST_STATE, 1, NationalParkGates_EventScript_AttendantExit @removelater
 	goto_if_set FLAG_DAILY_BUG_CONTEST_COMPLETED, NationalParkGates_EventScript_AttendantAlreadyPlayed
 	msgbox Route35NationalParkGate_Text_OfficerAskToParticipate, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, TRUE, NationalParkGates_EventScript_BAttendantStart

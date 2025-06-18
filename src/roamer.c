@@ -33,28 +33,24 @@ EWRAM_DATA static u8 sRoamerLocation[2] = {0};
 //         map in the location table there is not a location set that starts with
 //         that map then the roamer will be significantly less likely to move away
 //         from that map when it lands there.
-static const u8 sRoamerLocations[][6] =
+static const u8 sRoamerLocations[][6] = 
 {
-    { MAP_NUM(ROUTE110), MAP_NUM(ROUTE111), MAP_NUM(ROUTE117), MAP_NUM(ROUTE118), MAP_NUM(ROUTE134), ___ },
-    { MAP_NUM(ROUTE111), MAP_NUM(ROUTE110), MAP_NUM(ROUTE117), MAP_NUM(ROUTE118), ___, ___ },
-    { MAP_NUM(ROUTE117), MAP_NUM(ROUTE111), MAP_NUM(ROUTE110), MAP_NUM(ROUTE118), ___, ___ },
-    { MAP_NUM(ROUTE118), MAP_NUM(ROUTE117), MAP_NUM(ROUTE110), MAP_NUM(ROUTE111), MAP_NUM(ROUTE119), MAP_NUM(ROUTE123) },
-    { MAP_NUM(ROUTE119), MAP_NUM(ROUTE118), MAP_NUM(ROUTE120), ___, ___, ___ },
-    { MAP_NUM(ROUTE120), MAP_NUM(ROUTE119), MAP_NUM(ROUTE121), ___, ___, ___ },
-    { MAP_NUM(ROUTE121), MAP_NUM(ROUTE120), MAP_NUM(ROUTE122), MAP_NUM(ROUTE123), ___, ___ },
-    { MAP_NUM(ROUTE122), MAP_NUM(ROUTE121), MAP_NUM(ROUTE123), ___, ___, ___ },
-    { MAP_NUM(ROUTE123), MAP_NUM(ROUTE122), MAP_NUM(ROUTE118), ___, ___, ___ },
-    { MAP_NUM(ROUTE124), MAP_NUM(ROUTE121), MAP_NUM(ROUTE125), MAP_NUM(ROUTE126), ___, ___ },
-    { MAP_NUM(ROUTE125), MAP_NUM(ROUTE124), MAP_NUM(ROUTE127), ___, ___, ___ },
-    { MAP_NUM(ROUTE126), MAP_NUM(ROUTE124), MAP_NUM(ROUTE127), ___, ___, ___ },
-    { MAP_NUM(ROUTE127), MAP_NUM(ROUTE125), MAP_NUM(ROUTE126), MAP_NUM(ROUTE128), ___, ___ },
-    { MAP_NUM(ROUTE128), MAP_NUM(ROUTE127), MAP_NUM(ROUTE129), ___, ___, ___ },
-    { MAP_NUM(ROUTE129), MAP_NUM(ROUTE128), MAP_NUM(ROUTE130), ___, ___, ___ },
-    { MAP_NUM(ROUTE130), MAP_NUM(ROUTE129), MAP_NUM(ROUTE131), ___, ___, ___ },
-    { MAP_NUM(ROUTE131), MAP_NUM(ROUTE130), MAP_NUM(ROUTE132), ___, ___, ___ },
-    { MAP_NUM(ROUTE132), MAP_NUM(ROUTE131), MAP_NUM(ROUTE133), ___, ___, ___ },
-    { MAP_NUM(ROUTE133), MAP_NUM(ROUTE132), MAP_NUM(ROUTE134), ___, ___, ___ },
-    { MAP_NUM(ROUTE134), MAP_NUM(ROUTE133), MAP_NUM(ROUTE110), ___, ___, ___ },
+    { MAP_NUM(ROUTE29), MAP_NUM(ROUTE30), MAP_NUM(ROUTE46), ___, ___, ___ },
+    { MAP_NUM(ROUTE30), MAP_NUM(ROUTE29), MAP_NUM(ROUTE31), ___, ___, ___ },
+    { MAP_NUM(ROUTE31), MAP_NUM(ROUTE30), MAP_NUM(ROUTE29), ___, ___, ___ },
+    { MAP_NUM(ROUTE32), MAP_NUM(ROUTE31), MAP_NUM(ROUTE33), ___, ___, ___ },
+    { MAP_NUM(ROUTE33), MAP_NUM(ROUTE32), MAP_NUM(ROUTE34), ___, ___, ___ },
+    { MAP_NUM(ROUTE34), MAP_NUM(ROUTE33), MAP_NUM(ROUTE35), ___, ___, ___ },
+    { MAP_NUM(ROUTE35), MAP_NUM(ROUTE34), MAP_NUM(ROUTE36), ___, ___, ___ },
+    { MAP_NUM(ROUTE36), MAP_NUM(ROUTE31), MAP_NUM(ROUTE32), MAP_NUM(ROUTE35), MAP_NUM(ROUTE37), ___ },
+    { MAP_NUM(ROUTE37), MAP_NUM(ROUTE36), MAP_NUM(ROUTE38), MAP_NUM(ROUTE42), ___, ___ },
+    { MAP_NUM(ROUTE38), MAP_NUM(ROUTE37), MAP_NUM(ROUTE39), ___, ___, ___ },
+    { MAP_NUM(ROUTE39), MAP_NUM(ROUTE48), MAP_NUM(ROUTE35), ___, ___, ___ },
+    { MAP_NUM(ROUTE42), MAP_NUM(ROUTE37), MAP_NUM(ROUTE38), MAP_NUM(ROUTE43), MAP_NUM(ROUTE44), ___ },
+    { MAP_NUM(ROUTE43), MAP_NUM(ROUTE42), MAP_NUM(ROUTE44), ___, ___, ___ },
+    { MAP_NUM(ROUTE44), MAP_NUM(ROUTE42), MAP_NUM(ROUTE45), ___, ___, ___ },
+    { MAP_NUM(ROUTE45), MAP_NUM(ROUTE44), MAP_NUM(ROUTE46), ___, ___, ___ },
+    { MAP_NUM(ROUTE46), MAP_NUM(ROUTE45), MAP_NUM(ROUTE29), ___, ___, ___ },
     { ___, ___, ___, ___, ___, ___ },
 };
 
@@ -65,7 +61,7 @@ static const u8 sRoamerLocations[][6] =
 void ClearRoamerData(void)
 {
     memset(ROAMER, 0, sizeof(*ROAMER));
-    ROAMER->species = SPECIES_LATIAS;
+    ROAMER->species = SPECIES_RAIKOU;
 }
 
 void ClearRoamerLocationData(void)
@@ -82,12 +78,12 @@ void ClearRoamerLocationData(void)
     sRoamerLocation[MAP_NUM] = 0;
 }
 
-static void CreateInitialRoamerMon(bool16 createLatios)
+static void CreateInitialRoamerMon(bool16 createEntei)
 {
-    if (!createLatios)
-        ROAMER->species = SPECIES_LATIAS;
+    if (!createEntei)
+        ROAMER->species = SPECIES_RAIKOU;
     else
-        ROAMER->species = SPECIES_LATIOS;
+        ROAMER->species = SPECIES_ENTEI;
 
     CreateMon(&gEnemyParty[0], ROAMER->species, 60, USE_RANDOM_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
     ROAMER->level = 40;

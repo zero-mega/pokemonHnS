@@ -17,6 +17,8 @@ EcruteakCity_EventScript_Trigger::
 	clearflag FLAG_HIDE_BURNED_TOWER_BEASTS
 	clearflag FLAG_HIDE_BURNED_TOWER2_EUSINE
 	clearflag FLAG_HIDE_ECRUTEAK_CITY_SAGE
+	clearflag FLAG_CAUGHT_ENTEI
+	clearflag FLAG_CAUGHT_RAIKOU
 
 	setflag FLAG_HIDE_HO_OH
 	setflag FLAG_HIDE_LUGIA

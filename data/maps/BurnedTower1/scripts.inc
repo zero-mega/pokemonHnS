@@ -14,7 +14,6 @@ BurnedTower1_MapScript_CreateHole::
 	setmetatile 16, 12, 0x37E, FALSE
 	end
 
-
 BurnedTower1_OnFrame::
 	map_script_2 VAR_ECRUTEAK_CITY_STATE, 1, BurnedTower1_EventScript_MeetEusine
 	.2byte 0
