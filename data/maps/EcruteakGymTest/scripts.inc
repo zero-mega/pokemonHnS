@@ -37,15 +37,15 @@ EcruteakGym_EventScript_Grace::
 EcruteakGym_EventScript_Morty::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_VIOLET_GYM, EcruteakGym_EventScript_Morty_Defeated
+	goto_if_set FLAG_DEFEATED_ECRUTEAK_GYM, EcruteakGym_EventScript_Morty_Defeated
 	msgbox MortyIntroText, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_FALKNER_1, MortyWinLossText
+	trainerbattle_no_intro TRAINER_MORTY_1, MortyWinLossText
 	message Text_ReceivedFogBadge
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
 	msgbox MortyText_FogBadgeSpeech, MSGBOX_DEFAULT
 	setflag FLAG_BADGE04_GET
-	setflag FLAG_DEFEATED_VIOLET_GYM
+	setflag FLAG_DEFEATED_ECRUTEAK_GYM
 	setvar VAR_0x8008, 4
 	call Common_EventScript_SetGymTrainers
 	giveitem ITEM_TM_SHADOW_BALL

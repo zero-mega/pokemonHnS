@@ -70,6 +70,7 @@ BurnedTower2_EventScript_ReleaseBeasts::
 	setflag FLAG_HIDE_ECRUTEAK_CITY_SAGE
 	setvar VAR_0x8004, 1
 	special InitRoamer
+	setflag FLAG_RELEASED_BEASTS
 	setvar VAR_ECRUTEAK_CITY_STATE, 4
 	release
 	end

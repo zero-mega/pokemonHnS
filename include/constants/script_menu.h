@@ -127,6 +127,7 @@
 #define MULTI_KURT_BALLS                   116
 #define MULTI_PRIZE_MONS                   117
 #define MULTI_7FLOORS                      118
+#define MULTI_GOLDSILVER                   119
 
 
 // Lilycove SS Tidal Multichoice Selections

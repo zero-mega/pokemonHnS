@@ -25,7 +25,7 @@ TinTower10_EventScript_TryShowHoOh::
 	goto_if_set FLAG_DEFEATED_HO_OH, Common_EventScript_NopReturn
 	setvar VAR_TEMP_1, 0
 	clearflag FLAG_HIDE_HO_OH
-	goto_if_eq VAR_LUGIA_OR_HOOH, 0, Common_EventScript_NopReturn
+	goto_if_eq VAR_LUGIA_OR_HOOH, 1, Common_EventScript_NopReturn
 	setobjectxyperm LOCALID_HO_OH, 10, 6
 	return
 

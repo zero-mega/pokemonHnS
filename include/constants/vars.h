@@ -128,7 +128,7 @@
 #define VAR_ILEX_FOREST_FARFETCHD                               0x406C //0 = CHASING, 1// start going right way, 2 = done
 #define VAR_ELEVATOR                               0x406D 
 #define VAR_TRAIN                               0x406E 
-#define VAR_LUGIA_OR_HOOH                               0x406F // 0 = lugia, 1 = ho-oh
+#define VAR_LUGIA_OR_HOOH                               0x406F // 0 = unset, 1 = lugia, 2 = ho-oh
 #define VAR_KENYA                               0x4070 // 0 = take, 1 = deliver, 2 = delivered, 3 = informed of delivery
 #define VAR_BUG_CONTEST_STATE                               0x4071
 #define VAR_ECRUTEAK_THEATER                               0x4072 //0 = goto theater, 1 = talk to rocket, 2 = get surf, 3 = wait until 8th badge elm visit. 4 = talktosilver, 5 = fightkimono, 6 = goto legendary, 7 = done legendary.

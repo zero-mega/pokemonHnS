@@ -992,7 +992,7 @@
 #define FLAG_HIDE_ECRUTEAK_CITY_SAGE                                   0x3B1
 #define FLAG_CAUGHT_ENTEI                       0x3B2
 #define FLAG_CAUGHT_RAIKOU                          0x3B3
-#define FLAG_HIDE_SLATEPORT_CITY_TM_SALESMAN                        0x3B4
+#define FLAG_HIDE_ROUTE39_SHADOW                        0x3B4
 #define FLAG_HIDE_RUSTBORO_CITY_DEVON_CORP_3F_EMPLOYEE              0x3B5
 #define FLAG_HIDE_SS_TIDAL_CORRIDOR_MR_BRINEY                       0x3B6
 #define FLAG_HIDE_SS_TIDAL_ROOMS_SNATCH_GIVER                       0x3B7
@@ -1047,7 +1047,7 @@
 
 // Item Ball Flags 
 #define FLAG_ITEM_GARBAGEFLAG                                  0x3E8    //backup CRYSTALITEMFLAGS
-#define FLAG_ITEM_ROUTE_116_X_SPECIAL                               0x3E9
+#define FLAG_ITEM_ROUTE39_NUGGET                               0x3E9
 #define FLAG_ITEM_ROUTE_104_PP_UP                                   0x3EA
 #define FLAG_ITEM_ROUTE_105_IRON                                    0x3EB
 #define FLAG_ITEM_ROUTE_106_PROTEIN                                 0x3EC
@@ -1310,8 +1310,8 @@
 #define FLAG_ITEM_BURNED_TOWER1_ETHER                                           0x4EB // Unused Flag
 #define FLAG_ITEM_BURNED_TOWER2_TM_TAUNT                                           0x4EC // Unused Flag
 #define FLAG_ITEM_BURNED_TOWER2_ULTRA_BALL                                           0x4ED // Unused Flag
-#define FLAG_UNUSED_0x4EE                                           0x4EE // Unused Flag
-#define FLAG_UNUSED_0x4EF                                           0x4EF // Unused Flag
+#define FLAG_ITEM_ROUTE38_LAX_INCENSE                                           0x4EE // Unused Flag
+#define FLAG_ITEM_ROUTE39_TM_BRICK_BREAK                                           0x4EF // Unused Flag
 
 #define FLAG_DEFEATED_VIOLET_GYM                                  0x4F0
 #define FLAG_DEFEATED_AZALEA_GYM                                   0x4F1

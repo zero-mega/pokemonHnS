@@ -122,6 +122,7 @@ BurnedTower1_EventScript_Silver::
 	delay 60
 	special SpawnCameraObject
 	removeobject OBJ_EVENT_ID_PLAYER
+	playse SE_FALL
 	delay 60
 	msgbox BurnedTowerSilver_AfterText2, MSGBOX_AUTOCLOSE
 	waitmessage
