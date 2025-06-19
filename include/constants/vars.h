@@ -132,7 +132,7 @@
 #define VAR_KENYA                               0x4070 // 0 = take, 1 = deliver, 2 = delivered, 3 = informed of delivery
 #define VAR_BUG_CONTEST_STATE                               0x4071
 #define VAR_ECRUTEAK_THEATER                               0x4072 //0 = goto theater, 1 = talk to rocket, 2 = get surf, 3 = wait until 8th badge elm visit. 4 = talktosilver, 5 = fightkimono, 6 = goto legendary, 7 = done legendary.
-#define VAR_ROUTE120_STATE                               0x4073 // Unused Var
+#define VAR_ROUTE39_BARN                               0x4073 // 0 = give 5 berries. 1 = give 4 berries. 2 = give 3 berries, 3 = give 2 berries, 4 = give 1 berry, 5 = healed, can buy milk.
 #define VAR_ROUTE121_STATE                               0x4074
 #define VAR_ROUTE122_STATE                               0x4075 // Unused Var
 #define VAR_ROUTE123_STATE                               0x4076 // Unused Var

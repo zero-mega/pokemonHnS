@@ -814,7 +814,7 @@
 #define FLAG_HIDE_BUG_CONTEST_ATTENDANT_SIDE                  0x2FF
 #define FLAG_GOT_QUICK_CLAW                        0x300
 #define FLAG_GOT_MAGNET                      0x301
-#define FLAG_HIDE_ROUTE_111_VIVI_WINSTRATE                          0x302
+#define FLAG_GOT_TM_SNATCH                          0x302
 #define FLAG_HIDE_ROUTE_111_VICKY_WINSTRATE                         0x303
 #define FLAG_HIDE_PETALBURG_GYM_NORMAN                              0x304
 #define FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA                           0x305

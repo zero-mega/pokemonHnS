@@ -19,6 +19,7 @@ EcruteakCity_EventScript_Trigger::
 	clearflag FLAG_HIDE_ECRUTEAK_CITY_SAGE
 	clearflag FLAG_CAUGHT_ENTEI
 	clearflag FLAG_CAUGHT_RAIKOU
+	clearflag FLAG_GOT_TM_SNATCH
 
 	setflag FLAG_HIDE_HO_OH
 	setflag FLAG_HIDE_LUGIA

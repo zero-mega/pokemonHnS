@@ -89,7 +89,7 @@ Route111_EventScript_EndCheckSetSandstorm::
 Route111_EventScript_SetWinstratesNotDefeated::
 	clearflag FLAG_GARBAGEFLAG
 	setflag FLAG_GARBAGEFLAG
-	setflag FLAG_HIDE_ROUTE_111_VIVI_WINSTRATE
+	setflag FLAG_GARBAGEFLAG
 	setflag FLAG_HIDE_ROUTE_111_VICKY_WINSTRATE
 	cleartrainerflag TRAINER_VICTOR
 	cleartrainerflag TRAINER_VICTORIA
