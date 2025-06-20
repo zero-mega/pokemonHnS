@@ -6154,8 +6154,8 @@
     {
       "id": "LAYOUT_SAFARI_ZONE_GATE",
       "name": "SafariZoneGate_Layout",
-      "width": 20,
-      "height": 23,
+      "width": 26,
+      "height": 29,
       "primary_tileset": "gTileset_Johto_NorthEast",
       "secondary_tileset": "gTileset_SafariZoneJohto",
       "border_filepath": "data/layouts/SafariZoneGate/border.bin",
@@ -8194,8 +8194,8 @@
     {
       "id": "LAYOUT_SAFARI_ZONE_ENTRANCE",
       "name": "SafariZoneEntrance_Layout",
-      "width": 13,
-      "height": 11,
+      "width": 19,
+      "height": 15,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_CianwoodGym_48",
       "border_filepath": "data/layouts/SafariZoneEntrance/border.bin",
@@ -8544,7 +8544,7 @@
     {
       "id": "LAYOUT_SAFARI_ZONE_LOW_MID",
       "name": "SafariZone_Low_Mid_Layout",
-      "width": 30,
+      "width": 38,
       "height": 30,
       "primary_tileset": "gTileset_Johto_NorthEast",
       "secondary_tileset": "gTileset_whirl_islands",
@@ -8554,7 +8554,7 @@
     {
       "id": "LAYOUT_SAFARI_ZONE_ENTERANCE",
       "name": "SafariZone_Enterance_Layout",
-      "width": 30,
+      "width": 36,
       "height": 16,
       "primary_tileset": "gTileset_Johto_NorthEast",
       "secondary_tileset": "gTileset_SafariZoneJohto",
@@ -8564,7 +8564,7 @@
     {
       "id": "LAYOUT_SAFARI_ZONE_LOW_LEFT",
       "name": "SafariZone_Low_Left_Layout",
-      "width": 30,
+      "width": 36,
       "height": 32,
       "primary_tileset": "gTileset_Johto_NorthEast",
       "secondary_tileset": "gTileset_SafariZoneJohto",
@@ -8574,7 +8574,7 @@
     {
       "id": "LAYOUT_SAFARI_ZONE_LOW_RIGHT",
       "name": "SafariZone_Low_Right_Layout",
-      "width": 30,
+      "width": 34,
       "height": 38,
       "primary_tileset": "gTileset_Johto_NorthEast",
       "secondary_tileset": "gTileset_whirl_islands",
@@ -8584,7 +8584,7 @@
     {
       "id": "LAYOUT_SAFARI_ZONE_TOP_MID",
       "name": "SafariZone_Top_Mid_Layout",
-      "width": 30,
+      "width": 38,
       "height": 30,
       "primary_tileset": "gTileset_Johto_NorthEast",
       "secondary_tileset": "gTileset_SafariZoneJohto",

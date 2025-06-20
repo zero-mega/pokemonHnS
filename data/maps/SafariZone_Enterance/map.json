@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_SAFARI_ZONE_LOW_MID",
-      "offset": 0,
+      "offset": -4,
       "direction": "up"
     }
   ],
