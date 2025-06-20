@@ -1,3 +1,6 @@
+.set LOCALID_LIGHTHOUSE_JASMINE, 2
+.set LOCALID_LIGHTHOUSE_AMPHAROS, 1
+
 OlivineLighthouse1_MapScripts::
 	.byte 0
 
@@ -221,6 +224,46 @@ OlivineLighthouse_Text_BirdKeeperDenisAfter:
 
 @6th floor==============================================================================================================================
 
+OlivineLighthouse_EventScript_Jasmine::
+	lock
+	faceplayer
+	goto_if_eq VAR_OLIVINE_CITY_STATE, 3, OlivineLighthouse_EventScript_JasmineGoGetPotion
+	goto_if_eq VAR_OLIVINE_CITY_STATE, 4, OlivineLighthouse_EventScript_JasmineDeliverPotion
+	msgbox OlivineLighthouse_Text_JasmineCianwoodPharmacy, MSGBOX_DEFAULT
+	msgbox OlivineLighthouse_Text_JasmineGetMedicine, MSGBOX_DEFAULT
+	closemessage
+	setvar VAR_OLIVINE_CITY_STATE, 3
+	release
+	end
+OlivineLighthouse_EventScript_JasmineGoGetPotion::
+	msgbox OlivineLighthouse_Text_JasmineGetMedicine2, MSGBOX_DEFAULT
+	release
+	end
+
+
+OlivineLighthouse_EventScript_Ampharos::
+	lock
+	faceplayer
+	goto_if_lt VAR_OLIVINE_CITY_STATE, 5, OlivineLighthouse_EventScript_AmpharosSick
+	fadescreen FADE_TO_WHITE
+	playse SE_M_THUNDERBOLT2
+	waitse
+	fadescreen FADE_FROM_WHITE
+	playmoncry SPECIES_AMPHAROS, CRY_MODE_NORMAL
+	msgbox OlivineLighthouse_Text_AmphyPaluPalulu, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+OlivineLighthouse_EventScript_AmpharosSick::
+	playmoncry SPECIES_AMPHAROS, CRY_MODE_NORMAL
+	msgbox OlivineLighthouse_Text_AmphyPalPaloo, MSGBOX_DEFAULT
+	waitmoncry
+	msgbox OlivineLighthouse_Text_AmphyBreathingLabored, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
 OlivineLighthouse_Text_JasmineCianwoodPharmacy:
 	.string "JASMINE: …This POKéMON always kept\n"
 	.string "the sea lit at night.\p"
@@ -235,9 +278,80 @@ OlivineLighthouse_Text_JasmineGetMedicine:
 	.string "…May I ask you to get some medicine\n"
 	.string "for me? Please?$"
 
+OlivineLighthouse_Text_JasmineGetMedicine2:
+	.string "There is a wonderful PHARMACY\n"
+	.string "in CIANWOOD…\p"
+	.string "But that's across the sea…\n"
+	.string "And I can't leave AMPHY unattended…\p"
+	.string "…May I ask you to get some medicine\n"
+	.string "for me? Please?$"
+
 OlivineLighthouse_Text_JasmineCureAmphy:
 	.string "JASMINE: …Will that medicine cure\n"
 	.string "AMPHY?$"
+
+
+OlivineLighthouse_EventScript_JasmineDeliverPotion::
+	msgbox OlivineLighthouse_Text_JasmineCureAmphy, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, FALSE, OlivineLighthouse_EventScript_JasmineRefuse
+	playse SE_USE_ITEM
+	removeitem ITEM_SECRET_POTION
+	msgbox OlivineLighthouse_Text_PlayerHandedSecretpotion, MSGBOX_DEFAULT
+	waitse
+	msgbox OlivineLighthouse_Text_JasmineDontBeOffended, MSGBOX_DEFAULT
+	closemessage
+	turnobject LOCALID_LIGHTHOUSE_JASMINE, DIR_NORTH
+	delay 20
+	turnobject LOCALID_LIGHTHOUSE_AMPHAROS, DIR_SOUTH
+	playse MUS_HEAL
+	waitse
+	msgbox OlivineLighthouse_Text_JasmineAmphyHowFeeling, MSGBOX_DEFAULT
+	fadescreen FADE_TO_WHITE
+	playse SE_M_THUNDERBOLT2
+	waitse
+	fadescreen FADE_FROM_WHITE
+	playmoncry SPECIES_AMPHAROS, CRY_MODE_NORMAL
+	msgbox OlivineLighthouse_Text_AmphyPaluPalulu, MSGBOX_DEFAULT
+	waitmoncry
+	closemessage
+	applymovement LOCALID_LIGHTHOUSE_AMPHAROS, OlivineLighthouse_Movement_Amphy
+	waitmovement 0
+	applymovement LOCALID_LIGHTHOUSE_JASMINE, OlivineLighthouse_Movement_Jasmine
+	msgbox OlivineLighthouse_Text_JasmineThankYou, MSGBOX_DEFAULT
+	closemessage
+
+	fadescreen FADE_TO_BLACK
+	playse SE_EXIT
+	setflag FLAG_HIDE_LIGHTHOUSE_JASMINE
+	removeobject LOCALID_LIGHTHOUSE_JASMINE
+	waitse
+	delay 50
+	fadescreen FADE_FROM_BLACK
+
+	setvar VAR_OLIVINE_CITY_STATE, 5
+	clearflag FLAG_HIDE_OLIVINE_GYM_JASMINE
+	release
+	end
+
+OlivineLighthouse_Movement_Jasmine:
+	face_player
+	step_end
+
+OlivineLighthouse_Movement_Amphy:
+	walk_up
+	jump_in_place_down
+	jump_in_place_left
+	jump_in_place_right
+	jump_in_place_up
+	face_down
+	step_end
+
+
+OlivineLighthouse_EventScript_JasmineRefuse::
+	msgbox OlivineLighthouse_Text_JasmineISee, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
 
 OlivineLighthouse_Text_PlayerHandedSecretpotion:
 	.string "{PLAYER} handed the SECRETPOTION to\n"
@@ -262,9 +376,7 @@ OlivineLighthouse_Text_JasmineThankYou:
 	.string "are powerful.$"
 
 OlivineLighthouse_Text_JasmineISee:
-	.string "JASMINE: …I see…$"
-
-OlivineLighthouse_Text_JasmineAmphyHangOn:
+	.string "JASMINE: …I see…\n"
 	.string "…AMPHY, hang on!$"
 
 OlivineLighthouse_Text_AmphyPalPaloo:
