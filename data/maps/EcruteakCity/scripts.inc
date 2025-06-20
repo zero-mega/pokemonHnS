@@ -20,7 +20,11 @@ EcruteakCity_EventScript_Trigger::
 	clearflag FLAG_CAUGHT_ENTEI
 	clearflag FLAG_CAUGHT_RAIKOU
 	clearflag FLAG_GOT_TM_SNATCH
+	clearflag FLAG_HIDE_ROUTE42_SUICUNE
+	clearflag FLAG_GOT_TYROGUE
+	clearflag FLAG_BEAT_KIYO
 
+	setflag FLAG_HIDE_ROUTE42_EUSINE
 	setflag FLAG_HIDE_HO_OH
 	setflag FLAG_HIDE_LUGIA
 	setflag FLAG_HIDE_HO_OH

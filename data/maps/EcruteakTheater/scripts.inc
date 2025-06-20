@@ -377,6 +377,7 @@ EcruteakTheater_EventScript_TriggerSurfGuy::
 	lock
 	applymovement LOCALID_SURF_GUY, EcruteakTheater_Movement_SurfGuy1
 	waitmovement 0
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
 	msgbox EcruteakTheater_Text_SurfGuyGiveSurf, MSGBOX_DEFAULT
 	giveitem ITEM_HM_SURF
 	setflag FLAG_RECEIVED_HM_SURF
@@ -563,3 +564,15 @@ EcruteakTheater_Text_Girl:
 
 EcruteakTheater_Text_GirlBefore:
 	.string "I like that funny dance!$"
+
+EcruteakTheater_EventScript_FancyPanel::
+	lock
+	msgbox EcruteakTheater_Text_FancyPanel, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+EcruteakTheater_Text_FancyPanel:
+	.string "It's a fancy panel that's\n"
+	.string "decorated with flowers.$"
+

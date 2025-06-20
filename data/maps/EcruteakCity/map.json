@@ -545,6 +545,13 @@
       "elevation": 0,
       "dest_map": "MAP_ECRUTEAK_GYM_TEST",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 39,
+      "y": 47,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_FRONTIER_BATTLE_TOWER_LOBBY",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

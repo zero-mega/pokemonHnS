@@ -1,6 +1,11 @@
 Mahoganytown_MapScripts::
 	.byte 0
 
+MahoganyTown_EventScript_TownTrigger::
+
+	setvar VAR_MAHOGANY_TOWN_STATE, 1
+	end
+
 Mahoganytown_EventScript_RocketTrigger::
 	lock
 	setvar VAR_GOLDENROD_CITY_STATE, 6

@@ -6,7 +6,7 @@ EverGrandeCity_HallOfFame_EventScript_SetGameClearFlags::
 	clearflag FLAG_GARBAGEFLAG
 	call EverGrandeCity_HallOfFame_EventScript_ResetEliteFour
 	setflag FLAG_GARBAGEFLAG
-	clearflag FLAG_HIDE_SS_TIDAL_CORRIDOR_MR_BRINEY
+	clearflag FLAG_GARBAGEFLAG
 	clearflag FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_INVISIBLE_NINJA_BOY
 	setvar VAR_STEVENS_HOUSE_STATE, 2
 	setflag FLAG_HIDE_VICTORY_ROAD_ENTRANCE_WALLY
