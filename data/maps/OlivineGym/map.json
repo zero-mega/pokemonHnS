@@ -10,7 +10,7 @@
   "allow_cycling": false,
   "allow_escaping": false,
   "allow_running": true,
-  "show_map_name": true,
+  "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
   "object_events": [
@@ -24,33 +24,20 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "FLAG_HIDE_OLIVINE_GYM_JASMINE"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_GENTLEMAN",
-      "x": 12,
-      "y": 10,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "OlivineGym_EventScript_Jasmine",
       "flag": "FLAG_HIDE_OLIVINE_GYM_JASMINE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_F",
       "x": 5,
-      "y": 12,
+      "y": 10,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "OlivineGym_EventScript_Lass",
       "flag": "FLAG_HIDE_OLIVINE_GYM_JASMINE"
     },
     {
@@ -63,7 +50,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "OlivineGym_EventScript_Gent",
       "flag": "FLAG_HIDE_OLIVINE_GYM_JASMINE"
     },
     {
@@ -76,8 +63,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "FLAG_HIDE_OLIVINE_GYM_JASMINE"
+      "script": "OlivineGym_EventScript_GymGuide",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -90,9 +77,113 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_OLIVINE_CITY_STATE",
+      "var_value": "5",
+      "script": "OlivineGym_TriggerRow1"
+    },
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_OLIVINE_CITY_STATE",
+      "var_value": "6",
+      "script": "OlivineGym_TriggerRow2"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_OLIVINE_CITY_STATE",
+      "var_value": "5",
+      "script": "OlivineGym_TriggerRow1"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_OLIVINE_CITY_STATE",
+      "var_value": "5",
+      "script": "OlivineGym_TriggerRow1"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_OLIVINE_CITY_STATE",
+      "var_value": "5",
+      "script": "OlivineGym_TriggerRow1"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_OLIVINE_CITY_STATE",
+      "var_value": "5",
+      "script": "OlivineGym_TriggerRow1"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_OLIVINE_CITY_STATE",
+      "var_value": "6",
+      "script": "OlivineGym_TriggerRow2"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_OLIVINE_CITY_STATE",
+      "var_value": "6",
+      "script": "OlivineGym_TriggerRow2"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_OLIVINE_CITY_STATE",
+      "var_value": "6",
+      "script": "OlivineGym_TriggerRow2"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_OLIVINE_CITY_STATE",
+      "var_value": "6",
+      "script": "OlivineGym_TriggerRow2"
+    }
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 11,
+      "y": 18,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "OlivineGym_EventScript_Statue"
+    },
+    {
+      "type": "sign",
+      "x": 5,
+      "y": 18,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "OlivineGym_EventScript_Statue"
+    }
   ]
 }

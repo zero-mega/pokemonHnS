@@ -109,7 +109,7 @@
 #define VAR_GOLDENROD_CITY_STATE                          0x4059  //0 on trigger, 1 = get radio, 2 = fight whitney, 3 = whitney crying, 4 = whitney give badge, 5 = complete before rocket. 6 = fight petrel, 7 = meet kimono, 8 = silver, 9 = director-archer, 10 = return NPCS, 11 = done
 #define VAR_ECRUTEAK_CITY_STATE                          0x405A //1 = goto burnedtower, 2 = goto silver, 3 = release the beasts, 4 = beat Morty, 5 = done. 10 goto sage office, 11 goto ho-oh, 12 ho-oh done.
 #define VAR_MAHOGANY_TOWN_STATE                           0x405B 
-#define VAR_OLIVINE_CITY_STATE                          0x405C  //1 = trigger silver, 2 = climb lighthouse, 3 = get potion, 4 = deliver potion, 5 = goto gym, 6 = done.
+#define VAR_OLIVINE_CITY_STATE                          0x405C  //1 = trigger silver, 2 = climb lighthouse, 3 = get potion, 4 = deliver potion, 5 = goto gym row1, 6 = gymrow2, 7 = jasmine, 8 = done
 #define VAR_CIANWOOD_CITY_STATE                         0x405D 
 #define VAR_SAFARI_ZONE_GATE_STATE                        0x405E
 #define VAR_BLACKTHORN_CITY_STATE                       0x405F 

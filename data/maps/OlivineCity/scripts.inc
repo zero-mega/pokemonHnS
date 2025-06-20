@@ -5,7 +5,7 @@ OlivineCity_MapScripts::
 	.byte 0
 
 OlivineCity_MapScript_OnTransition::
-	goto_if_eq VAR_OLIVINE_CITY_STATE, 5, OlivineCity_MapScript_ClearWeather @CHANGELATER
+	goto_if_ge VAR_OLIVINE_CITY_STATE, 5, OlivineCity_MapScript_ClearWeather @CHANGELATER
 	end
 
 OlivineCity_MapScript_ClearWeather::
