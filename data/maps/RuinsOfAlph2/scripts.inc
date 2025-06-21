@@ -7,23 +7,42 @@ RuinsOfAlph2_OnLoad::
 	call_if_set FLAG_COMPLETED_OMANYTE_PUZZLE, RuinsOfAlph2_MapScript_OmanyteHole
 	call_if_set FLAG_COMPLETED_AERODACTYL_PUZZLE, RuinsOfAlph2_MapScript_AerodactylHole
 	call_if_set FLAG_COMPLETED_HOOH_PUZZLE, RuinsOfAlph2_MapScript_HoohHole
+
+	call_if_set FLAG_KABUTO_BROUGHT, RuinsOfAlph2_MapScript_KabutoDoor
+	call_if_set FLAG_OMANYTE_BROUGHT, RuinsOfAlph2_MapScript_OmanyteDoor
+	call_if_set FLAG_AERODACTYL_BROUGHT, RuinsOfAlph2_MapScript_AerodactylDoor
+	call_if_set FLAG_HOOH_BROUGHT, RuinsOfAlph2_MapScript_HoohDoor
 	end
 
 RuinsOfAlph2_MapScript_KabutoHole::
-	setmetatile 20, 6, METATILE_TanobyRuins_69_Floor_Hole, FALSE
-	setmetatile 21, 6, METATILE_TanobyRuins_69_Floor_Hole, FALSE
+	setmetatile 20, 5, 0x302, FALSE
+	setmetatile 21, 5, 0x303, FALSE
 	return
 RuinsOfAlph2_MapScript_OmanyteHole::
-	setmetatile 4, 23, METATILE_TanobyRuins_69_Floor_Hole, FALSE
-	setmetatile 5, 23, METATILE_TanobyRuins_69_Floor_Hole, FALSE
+	setmetatile 4, 22, 0x302, FALSE
+	setmetatile 5, 22, 0x303, FALSE
 	return
 RuinsOfAlph2_MapScript_AerodactylHole::
-	setmetatile 20, 23, METATILE_TanobyRuins_69_Floor_Hole, FALSE
-	setmetatile 21, 23, METATILE_TanobyRuins_69_Floor_Hole, FALSE
+	setmetatile 20, 22, 0x302, FALSE
+	setmetatile 21, 22, 0x303, FALSE
 	return
 RuinsOfAlph2_MapScript_HoohHole::
-	setmetatile 4, 6, METATILE_TanobyRuins_69_Floor_Hole, FALSE
-	setmetatile 5, 6, METATILE_TanobyRuins_69_Floor_Hole, FALSE
+	setmetatile 4, 5, 0x302, FALSE
+	setmetatile 5, 5, 0x303, FALSE
+	return
+
+
+RuinsOfAlph2_MapScript_KabutoDoor::
+	setmetatile 21, 1, 0x308, FALSE 
+	return
+RuinsOfAlph2_MapScript_OmanyteDoor::
+	setmetatile 5, 18, 0x308, FALSE 
+	return
+RuinsOfAlph2_MapScript_AerodactylDoor::
+	setmetatile 21, 18, 0x308, FALSE 
+	return
+RuinsOfAlph2_MapScript_HoohDoor::
+	setmetatile 5, 1, 0x308, FALSE 
 	return
 
 
@@ -61,15 +80,22 @@ RuinsOfAlph2_MapScript_UnownText::
 RuinsOfAlph2_EventScript_Receptionist::
 	lock
 	faceplayer
+	goto_if_set FLAG_KABUTO_BROUGHT, RuinsOfAlph2_EventScript_Receptionist3
 	goto_if_set FLAG_COMPLETED_KABUTO_PUZZLE, RuinsOfAlph2_EventScript_Receptionist2
 	msgbox RuinsOfAlph2_Text_Receptionist1, MSGBOX_DEFAULT
+	closemessage
 	release
 	end
 RuinsOfAlph2_EventScript_Receptionist2::
 	msgbox RuinsOfAlph2_Text_Receptionist2, MSGBOX_DEFAULT
+	closemessage
 	release
 	end
-
+RuinsOfAlph2_EventScript_Receptionist3::
+	msgbox RuinsOfAlph2_Text_Receptionist3, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
 
 RuinsOfAlph2_EventScript_KabutoPuzzle::
 	fadescreen FADE_TO_BLACK
@@ -87,12 +113,35 @@ RuinsOfAlph2_EventScript_KabutoPuzzleCompleted::
 	end
 RuinsOfAlph2_MapScript_KabutoSuccess::
 	setflag FLAG_COMPLETED_KABUTO_PUZZLE
-	setmetatile 20, 6, METATILE_TanobyRuins_69_Floor_Hole, FALSE
-	setmetatile 21, 6, METATILE_TanobyRuins_69_Floor_Hole, FALSE
+	setvar VAR_0x8004, 1  @ vertical pan
+	setvar VAR_0x8005, 1  @ horizontal pan
+	setvar VAR_0x8006, 20  @ num shakes
+	setvar VAR_0x8007, 6  @ shake delay
+	special ShakeCamera
+	waitstate
+	setmetatile 20, 5, 0x302, FALSE
+	setmetatile 21, 5, 0x303, FALSE
 	playse SE_CLICK
 	special DrawWholeMapView
+	delay 30
+	clearflag FLAG_ITEM_DOME_FOSSIL
+	setvar VAR_RUINSOFALPH_STATE, 1
+	applymovement OBJ_EVENT_ID_PLAYER, RuinsOfAlph2_Movement_Fall
+	delay 30
+	special SpawnCameraObject
+	removeobject OBJ_EVENT_ID_PLAYER
+	playse SE_FALL
+	delay 60
+	warphole MAP_RUINS_OF_ALPH1
+	release
 	end
 
+
+RuinsOfAlph2_Movement_Fall:
+	walk_in_place_fast_up
+	walk_in_place_fast_up
+	walk_in_place_fast_up
+	step_end
 
 RuinsOfAlph2_EventScript_OmanytePuzzle::
 	fadescreen FADE_TO_BLACK
@@ -110,10 +159,26 @@ RuinsOfAlph2_EventScript_OmanytePuzzleCompleted::
 	end
 RuinsOfAlph2_MapScript_OmanyteSuccess::
 	setflag FLAG_COMPLETED_OMANYTE_PUZZLE
-	setmetatile 4, 23, METATILE_TanobyRuins_69_Floor_Hole, FALSE
-	setmetatile 5, 23, METATILE_TanobyRuins_69_Floor_Hole, FALSE
+	setvar VAR_0x8004, 1  @ vertical pan
+	setvar VAR_0x8005, 1  @ horizontal pan
+	setvar VAR_0x8006, 20  @ num shakes
+	setvar VAR_0x8007, 6  @ shake delay
+	special ShakeCamera
+	waitstate
+	setmetatile 4, 22, 0x302, FALSE
+	setmetatile 5, 22, 0x303, FALSE
 	playse SE_CLICK
 	special DrawWholeMapView
+	delay 30
+	clearflag ITEM_HELIX_FOSSIL
+	applymovement OBJ_EVENT_ID_PLAYER, RuinsOfAlph2_Movement_Fall
+	delay 30
+	special SpawnCameraObject
+	removeobject OBJ_EVENT_ID_PLAYER
+	playse SE_FALL
+	delay 60
+	warphole MAP_RUINS_OF_ALPH1
+	release
 	end
 
 
@@ -133,10 +198,26 @@ RuinsOfAlph2_EventScript_AerodactylPuzzleCompleted::
 	end
 RuinsOfAlph2_MapScript_AerodactylSuccess::
 	setflag FLAG_COMPLETED_AERODACTYL_PUZZLE
-	setmetatile 20, 23, METATILE_TanobyRuins_69_Floor_Hole, FALSE
-	setmetatile 21, 23, METATILE_TanobyRuins_69_Floor_Hole, FALSE
+	setvar VAR_0x8004, 1  @ vertical pan
+	setvar VAR_0x8005, 1  @ horizontal pan
+	setvar VAR_0x8006, 20  @ num shakes
+	setvar VAR_0x8007, 6  @ shake delay
+	special ShakeCamera
+	waitstate
+	setmetatile 20, 22, 0x302, FALSE
+	setmetatile 21, 22, 0x303, FALSE
 	playse SE_CLICK
 	special DrawWholeMapView
+	delay 30
+	clearflag ITEM_OLD_AMBER
+	applymovement OBJ_EVENT_ID_PLAYER, RuinsOfAlph2_Movement_Fall
+	delay 30
+	special SpawnCameraObject
+	removeobject OBJ_EVENT_ID_PLAYER
+	playse SE_FALL
+	delay 60
+	warphole MAP_RUINS_OF_ALPH1
+	release
 	end
 
 
@@ -156,10 +237,26 @@ RuinsOfAlph2_EventScript_HoohPuzzleCompleted::
 	end
 RuinsOfAlph2_MapScript_HoohSuccess::
 	setflag FLAG_COMPLETED_HOOH_PUZZLE
-	setmetatile 4, 6, METATILE_TanobyRuins_69_Floor_Hole, FALSE
-	setmetatile 5, 6, METATILE_TanobyRuins_69_Floor_Hole, FALSE
+	setvar VAR_0x8004, 1  @ vertical pan
+	setvar VAR_0x8005, 1  @ horizontal pan
+	setvar VAR_0x8006, 20  @ num shakes
+	setvar VAR_0x8007, 6  @ shake delay
+	special ShakeCamera
+	waitstate
+	setmetatile 4, 5, 0x302, FALSE
+	setmetatile 5, 5, 0x303, FALSE
 	playse SE_CLICK
 	special DrawWholeMapView
+	delay 30
+	clearflag ITEM_GS_BALL
+	applymovement OBJ_EVENT_ID_PLAYER, RuinsOfAlph2_Movement_Fall
+	delay 30
+	special SpawnCameraObject
+	removeobject OBJ_EVENT_ID_PLAYER
+	playse SE_FALL
+	delay 60
+	warphole MAP_RUINS_OF_ALPH1
+	release
 	end
 
 RuinsOfAlph2_EventScript_CheckHooh::
@@ -172,22 +269,17 @@ RuinsOfAlph2_EventScript_CheckHooh::
 	release
 	end
 RuinsOfAlph2_EventScript_RewardHooh::
-	setvar VAR_0x8006, 4  @ num shakes
-	setvar VAR_0x8007, 2  @ shake delay
+	setvar VAR_0x8004, 1  @ vertical pan
+	setvar VAR_0x8005, 1  @ horizontal pan
+	setvar VAR_0x8006, 20  @ num shakes
+	setvar VAR_0x8007, 6  @ shake delay
 	special ShakeCamera
-	delay 30
-	waitse
+	waitstate
 	msgbox RuinsOfAlph2_Text_Reward, MSGBOX_DEFAULT
 	closemessage
-	giveitem ITEM_LUM_BERRY
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	setflag FLAG_HOOH_BROUGHT
-	giveitem ITEM_CHARCOAL
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	giveitem ITEM_MAX_REVIVE
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	giveitem ITEM_SITRUS_BERRY
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	playse SE_CLICK
+	setmetatile 5, 1, 0x308, FALSE 
+	special DrawWholeMapView
 	setflag FLAG_HOOH_BROUGHT
 	release
 	end
@@ -202,22 +294,17 @@ RuinsOfAlph2_EventScript_CheckAerodactyl::
 	release
 	end
 RuinsOfAlph2_EventScript_RewardAerodactyl::
-	setvar VAR_0x8006, 4  @ num shakes
-	setvar VAR_0x8007, 2  @ shake delay
+	setvar VAR_0x8004, 1  @ vertical pan
+	setvar VAR_0x8005, 1  @ horizontal pan
+	setvar VAR_0x8006, 20  @ num shakes
+	setvar VAR_0x8007, 6  @ shake delay
 	special ShakeCamera
-	delay 30
-	waitse
+	waitstate
 	msgbox RuinsOfAlph2_Text_Reward, MSGBOX_DEFAULT
 	closemessage
-	giveitem ITEM_HEAL_POWDER
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	setflag FLAG_AERODACTYL_BROUGHT
-	giveitem ITEM_ENERGY_ROOT
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	giveitem ITEM_SITRUS_BERRY
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	giveitem ITEM_MOON_STONE
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	playse SE_CLICK
+	setmetatile 21, 18, 0x308, FALSE 
+	special DrawWholeMapView
 	setflag FLAG_AERODACTYL_BROUGHT
 	release
 	end
@@ -232,22 +319,17 @@ RuinsOfAlph2_EventScript_CheckKabuto::
 	release
 	end
 RuinsOfAlph2_EventScript_RewardKabuto::
-	setvar VAR_0x8006, 4  @ num shakes
-	setvar VAR_0x8007, 2  @ shake delay
+	setvar VAR_0x8004, 1  @ vertical pan
+	setvar VAR_0x8005, 1  @ horizontal pan
+	setvar VAR_0x8006, 20  @ num shakes
+	setvar VAR_0x8007, 6  @ shake delay
 	special ShakeCamera
-	delay 30
-	waitse
+	waitstate
 	msgbox RuinsOfAlph2_Text_Reward, MSGBOX_DEFAULT
 	closemessage
-	giveitem ITEM_HEAL_POWDER
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	setflag FLAG_KABUTO_BROUGHT
-	giveitem ITEM_ENERGY_POWDER
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	giveitem ITEM_ORAN_BERRY
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	giveitem ITEM_PECHA_BERRY
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	playse SE_CLICK
+	setmetatile 21, 1, 0x308, FALSE 
+	special DrawWholeMapView
 	setflag FLAG_KABUTO_BROUGHT
 	release
 	end
@@ -262,22 +344,17 @@ RuinsOfAlph2_EventScript_CheckOmanyte::
 	release
 	end
 RuinsOfAlph2_EventScript_RewardOmanyte::
-	setvar VAR_0x8006, 4  @ num shakes
-	setvar VAR_0x8007, 2  @ shake delay
+	setvar VAR_0x8004, 1  @ vertical pan
+	setvar VAR_0x8005, 1  @ horizontal pan
+	setvar VAR_0x8006, 20  @ num shakes
+	setvar VAR_0x8007, 6  @ shake delay
 	special ShakeCamera
-	delay 30
-	waitse
+	waitstate
 	msgbox RuinsOfAlph2_Text_Reward, MSGBOX_DEFAULT
 	closemessage
-	giveitem ITEM_STARDUST
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	setflag FLAG_OMANYTE_BROUGHT
-	giveitem ITEM_STAR_PIECE
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	giveitem ITEM_LUM_BERRY
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	giveitem ITEM_WATER_STONE
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	playse SE_CLICK
+	setmetatile 5, 18, 0x308, FALSE 
+	special DrawWholeMapView
 	setflag FLAG_OMANYTE_BROUGHT
 	release
 	end
@@ -288,32 +365,16 @@ RuinsOfAlph2_EventScript_RewardGotten::
 	release
 	end
 
-RuinsOfAlph2_EventScript_HelixFossil::
-	finditem ITEM_HELIX_FOSSIL
-	end
-
-RuinsOfAlph2_EventScript_DomeFossil::
-	finditem ITEM_DOME_FOSSIL
-	end
-
-RuinsOfAlph2_EventScript_OldAmber::
-	finditem ITEM_OLD_AMBER
-	end
-
-RuinsOfAlph2_EventScript_GSBALL::
-	finditem ITEM_GS_BALL
-	end
-
 RuinsOfAlph2_Text_Reward:
 	.string "The chamber reacts!\n"
-	.string "Ancient ITEMS fall at your feet.$"
+	.string "The way is open.$"
 
 RuinsOfAlph2_Text_Mon:
-	.string "This seems important...\n"
-	.string "What could it mean?$"
+	.string "Some kind of ancient sensor.\n"
+	.string "What is it looking for?$"
 
 RuinsOfAlph2_Text_Solved:
-	.string "You solved this mystery already.$"
+	.string "The way is open.$"
 
 RuinsOfAlph2_Text_Receptionist1:
 	.string "Welcome to this chamber.\p"
@@ -329,6 +390,11 @@ RuinsOfAlph2_Text_Receptionist1:
 RuinsOfAlph2_Text_Receptionist2:
 	.string "A hole just opened up in the floor!\n"
 	.string "I'd better tell the others.$"
+
+RuinsOfAlph2_Text_Receptionist3:
+	.string "Now a hole in the wall too?!\n"
+	.string "This is getting spooky.$"
+
 
 RuinsOfAlph2_Text_Kabuto:
 	.string "A POKéMON that hid on the sea floor\n"
@@ -352,3 +418,72 @@ RuinsOfAlph2_Text_Omanyte:
 RuinsOfAlph2_Text_Hooh:
 	.string "A POKéMON that flew gracefully on\n"
 	.string "rainbow-colored wings.$"
+
+@==========================================================================================================================================================
+@ Hooh
+RuinsOfAlph_EventScript_Item_LumBerry1::
+	finditem ITEM_LUM_BERRY
+	end
+
+RuinsOfAlph_EventScript_Item_Charcoal::
+	finditem ITEM_CHARCOAL
+	end
+
+RuinsOfAlph_EventScript_Item_MaxRevive1::
+	finditem ITEM_MAX_REVIVE
+	end
+
+RuinsOfAlph_EventScript_Item_SitrusBerry1::
+	finditem ITEM_SITRUS_BERRY
+	end
+
+@ Aero
+RuinsOfAlph_EventScript_Item_HealPowder1::
+	finditem ITEM_HEAL_POWDER
+	end
+
+RuinsOfAlph_EventScript_Item_EnergyRoot::
+	finditem ITEM_ENERGY_ROOT
+	end
+
+RuinsOfAlph_EventScript_Item_SitrusBerry2::
+	finditem ITEM_SITRUS_BERRY
+	end
+
+RuinsOfAlph_EventScript_Item_MoonStone::
+	finditem ITEM_MOON_STONE
+	end
+
+@ Kabuto
+RuinsOfAlph_EventScript_Item_HealPowder2::
+	finditem ITEM_HEAL_POWDER
+	end
+
+RuinsOfAlph_EventScript_Item_EnergyPowder::
+	finditem ITEM_ENERGY_POWDER
+	end
+
+RuinsOfAlph_EventScript_Item_OranBerry::
+	finditem ITEM_ORAN_BERRY
+	end
+
+RuinsOfAlph_EventScript_Item_PechaBerry::
+	finditem ITEM_PECHA_BERRY
+	end
+
+@ Omanyte
+RuinsOfAlph_EventScript_Item_Stardust::
+	finditem ITEM_STARDUST
+	end
+
+RuinsOfAlph_EventScript_Item_StarPiece::
+	finditem ITEM_STAR_PIECE
+	end
+
+RuinsOfAlph_EventScript_Item_LumBerry2::
+	finditem ITEM_LUM_BERRY
+	end
+
+RuinsOfAlph_EventScript_Item_WaterStone::
+	finditem ITEM_WATER_STONE
+	end

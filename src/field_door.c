@@ -1,6 +1,5 @@
 #include "global.h"
 #include "event_data.h"
-#include "field_1.h"
 #include "field_camera.h"
 #include "fieldmap.h"
 #include "metatile_behavior.h"

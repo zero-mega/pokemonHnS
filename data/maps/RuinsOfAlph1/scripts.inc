@@ -1,5 +1,19 @@
 RuinsOfAlph1_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, RuinsOfAlph1_OnFrame
 	.byte 0
+
+RuinsOfAlph1_OnFrame::
+	map_script_2 VAR_RUINSOFALPH_STATE, 1, RuinsOfAlph1_EventScript_Presence
+	.2byte 0
+
+RuinsOfAlph1_EventScript_Presence::
+	lock
+	msgbox RuinsOfAlph1_Text_Presence, MSGBOX_DEFAULT
+	closemessage
+	setvar VAR_RUINSOFALPH_STATE, 0
+	release
+	end
+
 
 RuinsOfAlph1_EventScript_Teacher::
 	lock
@@ -22,6 +36,24 @@ RuinsOfAlph1_EventScript_Gramps::
 	release
 	end
 
+RuinsOfAlph2_EventScript_HelixFossil::
+	finditem ITEM_HELIX_FOSSIL
+	end
+
+RuinsOfAlph2_EventScript_DomeFossil::
+	finditem ITEM_DOME_FOSSIL
+	end
+
+RuinsOfAlph2_EventScript_OldAmber::
+	finditem ITEM_OLD_AMBER
+	end
+
+RuinsOfAlph2_EventScript_GSBALL::
+	finditem ITEM_GS_BALL
+	end
+
+RuinsOfAlph1_Text_Presence:
+	.string "There is a strange presence here.$"
 
 RuinsOfAlph1_Text_Hiker:
 	.string "This is a big room, but there's\n"

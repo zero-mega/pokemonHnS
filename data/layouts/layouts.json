@@ -5534,7 +5534,7 @@
     {
       "id": "LAYOUT_RUINS_OF_ALPH1",
       "name": "RuinsOfAlph1_Layout",
-      "width": 21,
+      "width": 29,
       "height": 32,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_TanobyRuins_69",

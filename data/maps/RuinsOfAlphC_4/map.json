@@ -17,7 +17,20 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 17,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_RUINS_OF_ALPH1",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_RUINS_OF_ALPH2",
+      "dest_warp_id": "22"
+    }
   ],
   "coord_events": [
 

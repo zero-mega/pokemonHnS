@@ -346,7 +346,7 @@
       "x": 11,
       "y": 13,
       "elevation": 0,
-      "dest_map": "MAP_ROUTE40",
+      "dest_map": "MAP_ROUTE40_BATTLE_TOWER_GATE",
       "dest_warp_id": "0"
     },
     {

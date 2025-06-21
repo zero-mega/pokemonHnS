@@ -30,6 +30,10 @@
         "species_info.h": "c",
         "species.h": "c",
         "player_pc.h": "c",
-        "pokemon_storage_system.h": "c"
-    }
+        "pokemon_storage_system.h": "c",
+        "field_camera.h": "c",
+        "metatile_labels.h": "c",
+        "battle_tent.h": "c"
+    },
+    "git.ignoreLimitWarning": true
 }
