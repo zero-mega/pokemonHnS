@@ -5025,7 +5025,7 @@
       "id": "LAYOUT_ROUTE40",
       "name": "Route40_Layout",
       "width": 34,
-      "height": 51,
+      "height": 71,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Olivine_6",
       "border_filepath": "data/layouts/Route40/border.bin",

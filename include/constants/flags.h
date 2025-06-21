@@ -92,7 +92,7 @@
 #define FLAG_RASH_MINT_METEOR_FALLS    0x4F
 
 // Scripts
-#define FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA_STILL  0x50
+#define FLAG_GARBAGEFLAG_STILL  0x50
 #define FLAG_SET_WALL_CLOCK                      0x51
 #define FLAG_RESCUED_BIRCH                       0x52
 #define FLAG_GARBAGEFLAG           0x53 //used to store calls of removed flags
@@ -815,9 +815,9 @@
 #define FLAG_GOT_QUICK_CLAW                        0x300
 #define FLAG_GOT_MAGNET                      0x301
 #define FLAG_GOT_TM_SNATCH                          0x302
-#define FLAG_HIDE_ROUTE_111_VICKY_WINSTRATE                         0x303
-#define FLAG_HIDE_PETALBURG_GYM_NORMAN                              0x304
-#define FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA                           0x305
+#define FLAG_HIDE_BATTLEFRONTIER_ENGINEER                         0x303
+#define FLAG_GOT_SHARP_BEAK                              0x304
+#define FLAG_HIDE_WHIRL_ISLANDS_TENTACRUEL                           0x305
 #define FLAG_HIDE_LILYCOVE_CONTEST_HALL_CONTEST_ATTENDANT_1         0x306
 #define FLAG_HIDE_LILYCOVE_MUSEUM_CURATOR                           0x307
 #define FLAG_HIDE_LILYCOVE_MUSEUM_PATRON_1                          0x308
@@ -1076,6 +1076,7 @@
 #define FLAG_ITEM_LIGHTHOUSE_BULK_UP                                0x403
 #define FLAG_ITEM_LIGHTHOUSE_HYPER_POTION                           0x404
 #define FLAG_ITEM_LIGHTHOUSE_PROTEIN                                0x405
+
 #define FLAG_ITEM_RUINSOFALPH_LUM_BERRY_1                           0x406
 #define FLAG_ITEM_RUINSOFALPH_CHARCOAL                              0x407
 #define FLAG_ITEM_RUINSOFALPH_MAX_REVIVE_1                          0x408
@@ -1092,6 +1093,7 @@
 #define FLAG_ITEM_RUINSOFALPH_STAR_PIECE                            0x413
 #define FLAG_ITEM_RUINSOFALPH_LUM_BERRY_2                           0x414
 #define FLAG_ITEM_RUINSOFALPH_WATER_STONE                           0x415
+
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_MOON_STONE                     0x416
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_PP_UP                          0x417
 #define FLAG_ITEM_RUSTURF_TUNNEL_POKE_BALL                          0x418
