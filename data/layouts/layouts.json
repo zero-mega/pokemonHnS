@@ -2635,9 +2635,9 @@
       "id": "LAYOUT_BATTLE_FRONTIER_BATTLE_TOWER_LOBBY",
       "name": "BattleFrontier_BattleTowerLobby_Layout",
       "width": 25,
-      "height": 10,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BattleFrontier",
+      "height": 11,
+      "primary_tileset": "gTileset_Johto_Building",
+      "secondary_tileset": "gTileset_BattleTowerInner",
       "border_filepath": "data/layouts/BattleFrontier_BattleTowerLobby/border.bin",
       "blockdata_filepath": "data/layouts/BattleFrontier_BattleTowerLobby/map.bin"
     },
@@ -2656,8 +2656,8 @@
       "name": "BattleElevator_Layout",
       "width": 5,
       "height": 7,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BattleFrontier",
+      "primary_tileset": "gTileset_Johto_Building",
+      "secondary_tileset": "gTileset_GoldenrodUndergroundRocket",
       "border_filepath": "data/layouts/BattleElevator/border.bin",
       "blockdata_filepath": "data/layouts/BattleElevator/map.bin"
     },
@@ -2666,8 +2666,8 @@
       "name": "BattleFrontier_BattleTowerCorridor_Layout",
       "width": 17,
       "height": 5,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BattleFrontier",
+      "primary_tileset": "gTileset_Johto_Building",
+      "secondary_tileset": "gTileset_BattleTowerInner",
       "border_filepath": "data/layouts/BattleFrontier_BattleTowerCorridor/border.bin",
       "blockdata_filepath": "data/layouts/BattleFrontier_BattleTowerCorridor/map.bin"
     },
@@ -2676,8 +2676,8 @@
       "name": "BattleFrontier_BattleTowerBattleRoom_Layout",
       "width": 10,
       "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BattleFrontier",
+      "primary_tileset": "gTileset_Johto_Building",
+      "secondary_tileset": "gTileset_BattleTowerInner",
       "border_filepath": "data/layouts/BattleFrontier_BattleTowerBattleRoom/border.bin",
       "blockdata_filepath": "data/layouts/BattleFrontier_BattleTowerBattleRoom/map.bin"
     },
@@ -3896,8 +3896,8 @@
       "name": "BattleFrontier_BattleTowerMultiPartnerRoom_Layout",
       "width": 21,
       "height": 15,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BattleFrontier",
+      "primary_tileset": "gTileset_Johto_Building",
+      "secondary_tileset": "gTileset_BattleTowerInner",
       "border_filepath": "data/layouts/BattleFrontier_BattleTowerMultiPartnerRoom/border.bin",
       "blockdata_filepath": "data/layouts/BattleFrontier_BattleTowerMultiPartnerRoom/map.bin"
     },
@@ -3906,8 +3906,8 @@
       "name": "BattleFrontier_BattleTowerMultiCorridor_Layout",
       "width": 17,
       "height": 5,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BattleFrontier",
+      "primary_tileset": "gTileset_Johto_Building",
+      "secondary_tileset": "gTileset_BattleTowerInner",
       "border_filepath": "data/layouts/BattleFrontier_BattleTowerMultiCorridor/border.bin",
       "blockdata_filepath": "data/layouts/BattleFrontier_BattleTowerMultiCorridor/map.bin"
     },
@@ -5547,7 +5547,7 @@
       "width": 26,
       "height": 68,
       "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_TanobyRuins_69",
+      "secondary_tileset": "gTileset_RuinsOfAlphWriting",
       "border_filepath": "data/layouts/RuinsOfAlph2/border.bin",
       "blockdata_filepath": "data/layouts/RuinsOfAlph2/map.bin"
     },
@@ -8730,6 +8730,66 @@
       "secondary_tileset": "gTileset_PowerPlant_43",
       "border_filepath": "data/layouts/TinTower10Night/border.bin",
       "blockdata_filepath": "data/layouts/TinTower10Night/map.bin"
+    },
+    {
+      "id": "LAYOUT_BATTLE_TOWER_OUTER",
+      "name": "BattleTowerOuter_Layout",
+      "width": 33,
+      "height": 30,
+      "primary_tileset": "gTileset_Johto_General",
+      "secondary_tileset": "gTileset_BattleTowerOuter",
+      "border_filepath": "data/layouts/BattleTowerOuter/border.bin",
+      "blockdata_filepath": "data/layouts/BattleTowerOuter/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE40_BATTLE_TOWER_GATE",
+      "name": "Route40_BattleTowerGate_Layout",
+      "width": 15,
+      "height": 12,
+      "primary_tileset": "gTileset_Johto_Building",
+      "secondary_tileset": "gTileset_Gates_42",
+      "border_filepath": "data/layouts/Route40_BattleTowerGate/border.bin",
+      "blockdata_filepath": "data/layouts/Route40_BattleTowerGate/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUINS_OF_ALPH_C_1",
+      "name": "RuinsOfAlphC_1_Layout",
+      "width": 20,
+      "height": 17,
+      "primary_tileset": "gTileset_Johto_Building",
+      "secondary_tileset": "gTileset_RuinsOfAlphWriting",
+      "border_filepath": "data/layouts/RuinsOfAlphC_1/border.bin",
+      "blockdata_filepath": "data/layouts/RuinsOfAlphC_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUINS_OF_ALPH_C_2",
+      "name": "RuinsOfAlphC_2_Layout",
+      "width": 20,
+      "height": 13,
+      "primary_tileset": "gTileset_Johto_Building",
+      "secondary_tileset": "gTileset_RuinsOfAlphWriting",
+      "border_filepath": "data/layouts/RuinsOfAlphC_2/border.bin",
+      "blockdata_filepath": "data/layouts/RuinsOfAlphC_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUINS_OF_ALPH_C_3",
+      "name": "RuinsOfAlphC_3_Layout",
+      "width": 20,
+      "height": 13,
+      "primary_tileset": "gTileset_Johto_Building",
+      "secondary_tileset": "gTileset_RuinsOfAlphWriting",
+      "border_filepath": "data/layouts/RuinsOfAlphC_3/border.bin",
+      "blockdata_filepath": "data/layouts/RuinsOfAlphC_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUINS_OF_ALPH_C_4",
+      "name": "RuinsOfAlphC_4_Layout",
+      "width": 20,
+      "height": 13,
+      "primary_tileset": "gTileset_Johto_Building",
+      "secondary_tileset": "gTileset_RuinsOfAlphWriting",
+      "border_filepath": "data/layouts/RuinsOfAlphC_4/border.bin",
+      "blockdata_filepath": "data/layouts/RuinsOfAlphC_4/map.bin"
     }
   ]
 }

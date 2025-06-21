@@ -1983,3 +1983,15 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/NationalPark2/scripts.inc"
 
 	.include "data/maps/TinTower10Night/scripts.inc"
+
+	.include "data/maps/BattleTowerOuter/scripts.inc"
+
+	.include "data/maps/Route40_BattleTowerGate/scripts.inc"
+
+	.include "data/maps/RuinsOfAlphC_1/scripts.inc"
+
+	.include "data/maps/RuinsOfAlphC_2/scripts.inc"
+
+	.include "data/maps/RuinsOfAlphC_3/scripts.inc"
+
+	.include "data/maps/RuinsOfAlphC_4/scripts.inc"

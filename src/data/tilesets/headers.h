@@ -2039,3 +2039,36 @@ const struct Tileset gTileset_ShopRooftop =
     .metatileAttributes = gMetatileAttributes_ShopRooftop,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_BattleTowerOuter =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_BattleTowerOuter,
+    .palettes = gTilesetPalettes_BattleTowerOuter,
+    .metatiles = gMetatiles_BattleTowerOuter,
+    .metatileAttributes = gMetatileAttributes_BattleTowerOuter,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_BattleTowerInner =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_BattleTowerInner,
+    .palettes = gTilesetPalettes_BattleTowerInner,
+    .metatiles = gMetatiles_BattleTowerInner,
+    .metatileAttributes = gMetatileAttributes_BattleTowerInner,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_RuinsOfAlphWriting =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_RuinsOfAlphWriting,
+    .palettes = gTilesetPalettes_RuinsOfAlphWriting,
+    .metatiles = gMetatiles_RuinsOfAlphWriting,
+    .metatileAttributes = gMetatileAttributes_RuinsOfAlphWriting,
+    .callback = NULL,
+};

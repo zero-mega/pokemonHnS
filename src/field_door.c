@@ -1,6 +1,6 @@
 #include "global.h"
 #include "event_data.h"
-#include "field_door.h"
+#include "field_1.h"
 #include "field_camera.h"
 #include "fieldmap.h"
 #include "metatile_behavior.h"
@@ -192,6 +192,7 @@ static const u8 sDoorAnimTiles_DeptStoreElevator[] = INCBIN_U8("graphics/door_an
 static const u16 sDoorNullPalette71[16] = {};
 static const u8 sDoorAnimTiles_RocketElevator[] = INCBIN_U8("graphics/door_anims/rocket_elevator.4bpp");
 static const u16 sDoorNullPalette72[16] = {};
+
 
 
 
@@ -389,6 +390,7 @@ static const struct DoorGraphics sDoorGraphics[] =
     {METATILE_Blackthorn_Door,                              DOOR_SOUND_NORMAL, DOOR_SIZE_1x1, sDoorAnimTiles_BlackthornCity_Door, sDoorAnimPalettes_BlackthornCity_Door},
     {METATILE_JohtoShop_Door,                              DOOR_SOUND_SLIDING, DOOR_SIZE_1x1, sDoorAnimTiles_DeptStoreElevator, sDoorAnimPalettes_DeptStore_Door},
     {METATILE_GreenHouses_Elevator,                              DOOR_SOUND_SLIDING, DOOR_SIZE_1x1, sDoorAnimTiles_RocketElevator, sDoorAnimPalettes_Rocket_Door},
+    {METATILE_BattleTowerInner_Door,                              DOOR_SOUND_SLIDING, DOOR_SIZE_1x1, sDoorAnimTiles_RocketElevator, sDoorAnimPalettes_Rocket_Door},
 
     {},
 };

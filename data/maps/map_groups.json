@@ -103,7 +103,8 @@
     "Route26",
     "Route27",
     "Route28",
-    "TinTower10Night"
+    "TinTower10Night",
+    "BattleTowerOuter"
   ],
   "gMapGroup_IndoorNewBark": [
     "NewBarkTownLab",
@@ -346,7 +347,8 @@
     "Route34DayCare",
     "MtSilverHouse",
     "SafariZoneGatePokecenter",
-    "Route27House"
+    "Route27House",
+    "Route40_BattleTowerGate"
   ],
   "gMapGroup_IndoorKantoRoutes": [
     "Route26House1",
@@ -454,7 +456,11 @@
     "RocketHideout3",
     "MtSilver6",
     "MtSilver7",
-    "MtSilver8"
+    "MtSilver8",
+    "RuinsOfAlphC_1",
+    "RuinsOfAlphC_2",
+    "RuinsOfAlphC_3",
+    "RuinsOfAlphC_4"
   ],
   "gMapGroup_IndoorDynamic": [
 
