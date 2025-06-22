@@ -75,8 +75,8 @@ Route41_Text_SwimmermKirkAfter:
 	.string "The currents keep me from\n"
 	.string "reaching that island.$"
 
-Route41_EventScript_Matthew::
-	trainerbattle_single TRAINER_MATTHEW, Route41_Text_SwimmermMathewSeen, Route41_Text_SwimmermMathewBeaten
+Route41_EventScript_Mathew::
+	trainerbattle_single TRAINER_MATHEW, Route41_Text_SwimmermMathewSeen, Route41_Text_SwimmermMathewBeaten
 	msgbox Route41_Text_SwimmermMathewAfter, MSGBOX_AUTOCLOSE
 	end
 
