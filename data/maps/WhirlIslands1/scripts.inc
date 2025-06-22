@@ -82,6 +82,7 @@ WhirlIslands1_EventScript_Lugia::
 WhirlIslands1_eventScript_TalkToKimono::
 	lockall
 	playbgm MUS_HG_KIMONO_GIRL_DANCE, TRUE
+	savebgm MUS_HG_KIMONO_GIRL_DANCE
 	msgbox WhirlIslands1_Text_Kimono_Opening, MSGBOX_DEFAULT
 	closemessage
 
@@ -213,6 +214,20 @@ WhirlIslands1_eventScript_TalkToKimono::
 	waitmovement 0
 	msgbox WhirlIslands1_Text_Kimono_Closing1, MSGBOX_DEFAULT
 	waitmessage
+	setobjectxyperm LOCALID_LUGIA, 32, 32
+
+	setobjectxyperm LOCALID_KIMONO_1, 30, 38
+	setobjectxyperm LOCALID_KIMONO_2, 31, 39
+	setobjectxyperm LOCALID_KIMONO_3, 32, 40
+	setobjectxyperm LOCALID_KIMONO_4, 33, 39
+	setobjectxyperm LOCALID_KIMONO_MID, 34, 38
+	 
+	setobjectmovementtype LOCALID_KIMONO_1, MOVEMENT_TYPE_FACE_UP
+	setobjectmovementtype LOCALID_KIMONO_2, MOVEMENT_TYPE_FACE_UP
+	setobjectmovementtype LOCALID_KIMONO_3, MOVEMENT_TYPE_FACE_UP
+	setobjectmovementtype LOCALID_KIMONO_4, MOVEMENT_TYPE_FACE_UP
+	setobjectmovementtype LOCALID_KIMONO_MID, MOVEMENT_TYPE_FACE_UP
+
 	closemessage
 
 
@@ -294,11 +309,15 @@ WhirlIslands1_Movement_CameraPanUp:
 	walk_up
 	walk_up
 	walk_up
+	walk_up
+	walk_up
 	step_end
 
 WhirlIslands1_Movement_CameraPanDown:
 	delay_16
 	delay_16
+	walk_down
+	walk_down
 	walk_down
 	walk_down
 	walk_down

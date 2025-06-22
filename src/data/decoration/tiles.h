@@ -543,7 +543,7 @@ const u16 DecorGfx_AZURILL_DOLL[] = {
 };
 
 const u16 DecorGfx_SKITTY_DOLL[] = {
-    OBJ_EVENT_GFX_SKITTY_DOLL
+    OBJ_EVENT_GFX_KECLEON_DOLL
 };
 
 const u16 DecorGfx_SWABLU_DOLL[] = {

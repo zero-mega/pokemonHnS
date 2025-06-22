@@ -1,6 +1,6 @@
 Route41_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, OlivineCity_MapScript_OnTransition
 	.byte 0
-
 
 Route41_EventScript_Charlie::
 	trainerbattle_single TRAINER_CHARLIE, Route41_Text_SwimmermCharlieSeen, Route41_Text_SwimmermCharlieBeaten

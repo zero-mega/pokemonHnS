@@ -97,9 +97,9 @@ const u16 gObjectEventPal_Steven[] = INCBIN_U16("graphics/object_events/palettes
 const u16 gObjectEventPal_ScientistF[] = INCBIN_U16("graphics/object_events/palettes/scientist_f.gbapal");
 const u16 gObjectEventPal_ShinyGyarados[] = INCBIN_U16("graphics/object_events/palettes/shiny_gyarados.gbapal");
 const u16 gObjectEventPal_TowerBeam[] = INCBIN_U16("graphics/object_events/palettes/tower_beam.gbapal");
+const u16 gObjectEventPal_Whirlpool[] = INCBIN_U16("graphics/object_events/palettes/whirlpool.gbapal");
 const u16 gObjectEventPal_Snorlax[] = INCBIN_U16("graphics/object_events/palettes/snorlax.gbapal");
 const u16 gObjectEventPal_Slowpoke[] = INCBIN_U16("graphics/object_events/palettes/slowpoke.gbapal");
-
 
 const u16 gObjectEventPal_Npc1Reflection[] = INCBIN_U16("graphics/object_events/palettes/npc_white_reflection.gbapal");
 const u16 gObjectEventPal_Npc2Reflection[] = INCBIN_U16("graphics/object_events/palettes/npc_pink_reflection.gbapal");
@@ -879,6 +879,8 @@ const u32 gObjectEventPic_KyogreOld[] = INCBIN_U32("graphics/object_events/pics/
 const u32 gObjectEventPic_VigorothMover[] = INCBIN_U32("graphics/object_events/pics/pokemon/vigoroth_mover.4bpp");
 const u32 gObjectEventPic_SudowoodoTree[] = INCBIN_U32("graphics/object_events/pics/pokemon/sudowoodo_tree.4bpp");
 const u32 gObjectEventPic_RayquazaCutscene[] = INCBIN_U32("graphics/object_events/pics/pokemon/rayquaza_cutscene.4bpp");
+
+const u32 gObjectEventPic_Whirlpool[] = INCBIN_U32("graphics/object_events/pics/misc/whirlpool.4bpp");
 
 const u16 gObjectEventPal_HoOh[] = INCBIN_U16("graphics/object_events/palettes/ho_oh.gbapal");
 const u16 gObjectEventPal_Lugia[] = INCBIN_U16("graphics/object_events/palettes/lugia.gbapal");

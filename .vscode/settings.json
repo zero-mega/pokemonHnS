@@ -33,7 +33,11 @@
         "pokemon_storage_system.h": "c",
         "field_camera.h": "c",
         "metatile_labels.h": "c",
-        "battle_tent.h": "c"
+        "battle_tent.h": "c",
+        "bug_contest.h": "c",
+        "items.h": "c",
+        "trainer_hill.h": "c",
+        "event_objects.h": "c"
     },
     "git.ignoreLimitWarning": true
 }

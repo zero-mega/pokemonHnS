@@ -33,10 +33,12 @@
 #include "constants/event_objects.h"
 #include "constants/field_poison.h"
 #include "constants/map_types.h"
+#include "constants/map_groups.h"
 #include "constants/songs.h"
 #include "constants/trainer_hill.h"
 #include "constants/items.h"
 #include "bug_contest.h"
+#include "constants/event_object_movement.h"
 
 static EWRAM_DATA u8 sWildEncounterImmunitySteps = 0;
 static EWRAM_DATA u16 sPrevMetatileBehavior = 0;
@@ -683,6 +685,17 @@ static bool8 TryStartStepCountScript(u16 metatileBehavior)
             ScriptContext_SetupScript(MossdeepCity_SpaceCenter_2F_EventScript_RivalRayquazaCall);
             return TRUE;
         }
+    }
+    //whirlpools appear below player
+    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE41) &&
+        gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE41))
+    {
+        SetObjectSubpriority(34, MAP_NUM(ROUTE41), MAP_GROUP(ROUTE41), (99+83));
+        SetObjectSubpriority(35, MAP_NUM(ROUTE41), MAP_GROUP(ROUTE41), (99+83));
+        SetObjectSubpriority(36, MAP_NUM(ROUTE41), MAP_GROUP(ROUTE41), (99+83));
+        SetObjectSubpriority(37, MAP_NUM(ROUTE41), MAP_GROUP(ROUTE41), (99+83));
+        SetObjectSubpriority(38, MAP_NUM(ROUTE41), MAP_GROUP(ROUTE41), (99+83));
+        SetObjectSubpriority(39, MAP_NUM(ROUTE41), MAP_GROUP(ROUTE41), (99+83));
     }
 
     if (SafariZoneTakeStep() == TRUE)

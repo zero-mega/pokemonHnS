@@ -526,6 +526,7 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_TOWER_BEAM            0x1146
 #define OBJ_EVENT_PAL_TAG_SNORLAX               0x1147
 #define OBJ_EVENT_PAL_TAG_SLOWPOKE              0x1148
+#define OBJ_EVENT_PAL_TAG_WHIRLPOOL             0x1149
 
 #if OW_MON_POKEBALLS
 // Vanilla
@@ -625,6 +626,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_ScientistF,               OBJ_EVENT_PAL_TAG_SCIENTIST_F},
     {gObjectEventPal_ShinyGyarados,               OBJ_EVENT_PAL_TAG_SHINY_GYARADOS},
     {gObjectEventPal_TowerBeam,               OBJ_EVENT_PAL_TAG_TOWER_BEAM},
+    {gObjectEventPal_Whirlpool,                OBJ_EVENT_PAL_TAG_WHIRLPOOL},
     {gObjectEventPal_Snorlax,                   OBJ_EVENT_PAL_TAG_SNORLAX},
     {gObjectEventPal_Slowpoke,                   OBJ_EVENT_PAL_TAG_SLOWPOKE},
     
