@@ -21830,3 +21830,62 @@ static const struct TrainerMonNoItemCustomMoves sParty_Ariana2[] = { //RocketAdm
     .moves = {MOVE_PURSUIT, MOVE_TOXIC, MOVE_FAINT_ATTACK, MOVE_FLY}
     },
 };
+
+//Westward expansion
+
+static const struct TrainerMonNoItemDefaultMoves sParty_Devin[] = { //HikerGroup
+    {
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_DUNSPARCE,
+    },
+    {
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_DUNSPARCE,
+    },
+    {
+    .iv = 0,
+    .lvl = 27,
+    .species = SPECIES_DUDUNSPARCE,
+    },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_Grant[] = { //CamperGroup
+    {
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_SKIPLOOM,
+    },
+    {
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_MARILL,
+    },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_ThomAndKae[] = { //YoungCouple
+    {
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_ELECTABUZZ,
+    },
+    {
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_MAGMAR,
+    },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_DuffAndEda[] = { //YoungCouple
+    {
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_ONIX,
+    },
+    {
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_CLOYSTER,
+    },
+};

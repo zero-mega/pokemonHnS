@@ -33,8 +33,8 @@
 #define TRAINER_REBECCA                     29
 #define TRAINER_MATT                         30
 #define TRAINER_ZANDER                       31
-#define TRAINER_SHELLY_WEATHER_INSTITUTE     32
-#define TRAINER_SHELLY_SEAFLOOR_CAVERN       33
+#define TRAINER_DEVIN     32
+#define TRAINER_GRANT       33
 #define TRAINER_CASSIE                       34
 #define TRAINER_LEAH                         35
 #define TRAINER_JEFFREY                        36
@@ -521,8 +521,8 @@
 #define TRAINER_MARKUS                     517
 #define TRAINER_MARTIN                     518
 #define TRAINER_WALLY_VR_1                  519
-#define TRAINER_BRENDAN_ROUTE_103_MUDKIP    520
-#define TRAINER_BRENDAN_ROUTE_110_MUDKIP    521
+#define TRAINER_THOM_AND_KAE    520
+#define TRAINER_DUFF_AND_EDA    521
 #define TRAINER_BRENDAN_ROUTE_119_MUDKIP    522
 #define TRAINER_BRENDAN_ROUTE_103_TREECKO   523
 #define TRAINER_BRENDAN_ROUTE_110_TREECKO   524
