@@ -8224,7 +8224,7 @@
     {
       "id": "LAYOUT_EMBEDDED_TOWER",
       "name": "EmbeddedTower_Layout",
-      "width": 23,
+      "width": 29,
       "height": 31,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_BurnedTower",

@@ -257,9 +257,26 @@ CianwoodCity_Text_PharmacySign:
 	.string "CIANWOOD CITY PHARMACY\p"
 	.string "We Await Your Medicinal Queries$"
 
-CianwoodCity_Text_PhotoStudioSign:
-	.string "CIANWOOD CITY PHOTO STUDIO\p"
-	.string "Take a Snapshot as a Keepsake!$"
+CianwoodCity_EventScript_CaveSign::
+	lock
+	msgbox CianwoodCity_Text_Safari, MSGBOX_SIGN
+	closemessage
+	release
+	end
 
-CianwoodCity_Text_SeerSign:
-	.string "THE POKé SEER AHEAD$"
+CianwoodCity_EventScript_Engineer::
+	lock
+	faceplayer
+	msgbox CianwoodCity_Text_Engineer, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+CianwoodCity_Text_Safari:
+	.string "CLIFF EDGE CAVE\n"
+	.string "Road to the SAFARI ZONE.$"
+
+CianwoodCity_Text_Engineer:
+	.string "This path is under construction.\n"
+	.string "We're getting the new SAFARI ZONE\l"
+	.string "up and running!$"
