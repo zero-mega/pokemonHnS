@@ -1,7 +1,14 @@
 .set LOCALID_R39_SHADOW, 17
 .set LOCALID_R39_WOMAN, 2
+
 Route39_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Route39_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
 	.byte 0
+
+Route39_OnTransition: 
+	callnative SetTimeBasedEncounters
+	end
 
 Route39_EventScript_Item_TM::
 	finditem ITEM_TM_BRICK_BREAK

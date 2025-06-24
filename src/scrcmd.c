@@ -1923,7 +1923,6 @@ bool8 ScrCmd_givenamedmon(struct ScriptContext *ctx)
     return FALSE;
 }
 
-
 bool8 ScrCmd_removenamedmon(struct ScriptContext *ctx)
 {
     u16 giftId = ScriptReadHalfword(ctx);
@@ -1975,6 +1974,16 @@ bool8 ScrCmd_removenamedmon(struct ScriptContext *ctx)
                     return FALSE;
                 }
 
+                if (giftId == 2)
+                {
+                    u8 friendship = GetMonData(&gPlayerParty[i], MON_DATA_FRIENDSHIP);
+                    if (friendship > 200)
+                    {
+                        gSpecialVar_Result = 3;
+                        return FALSE;
+                    }
+                }
+
                 ZeroMonData(&gPlayerParty[i]);
                 CompactPartySlots();
                 gSpecialVar_Result = MON_GIVEN_TO_PARTY;
@@ -1986,6 +1995,7 @@ bool8 ScrCmd_removenamedmon(struct ScriptContext *ctx)
     gSpecialVar_Result = MON_CANT_GIVE;
     return FALSE;
 }
+
 
 
 bool8 ScrCmd_remove5mons(struct ScriptContext *ctx)

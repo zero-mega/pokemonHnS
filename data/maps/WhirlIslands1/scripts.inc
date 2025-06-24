@@ -37,6 +37,23 @@ WhirlIslands1_EventScript_TryRemoveLugia::
 	removeobject LOCALID_LUGIA
 	return
 
+WhirlIslands1_EventScript_Item_Ultra_Ball::
+	finditem ITEM_ULTRA_BALL
+	end
+
+WhirlIslands1_EventScript_Item_Rare_Candy::
+	finditem ITEM_RARE_CANDY
+	end
+
+WhirlIslands1_EventScript_Item_Full_Restore::
+	finditem ITEM_FULL_RESTORE
+	end
+
+WhirlIslands1_EventScript_Item_Guard_Spec::
+	finditem ITEM_GUARD_SPEC
+	end
+
+
 WhirlIslands1_EventScript_Lugia::
 	lockall
 	setvar VAR_TEMP_1, 1

@@ -1,5 +1,11 @@
 MtMortar2_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, MtMortar2_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
 	.byte 0
+
+MtMortar2_OnTransition: 
+	callnative SetTimeBasedEncounters
+	end
 
 MtMortar2_EventScript_Item_MaxRepel::
     finditem ITEM_MAX_REPEL

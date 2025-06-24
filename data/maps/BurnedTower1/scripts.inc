@@ -4,7 +4,13 @@
 BurnedTower1_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, BurnedTower1_OnLoad
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, BurnedTower1_OnFrame
+	map_script MAP_SCRIPT_ON_TRANSITION, BurnedTower1_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
 	.byte 0
+
+BurnedTower1_OnTransition: 
+	callnative SetTimeBasedEncounters
+	end
 
 BurnedTower1_OnLoad::
 	goto_if_ge VAR_ECRUTEAK_CITY_STATE, 4, BurnedTower1_MapScript_CreateHole

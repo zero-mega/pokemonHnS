@@ -1,5 +1,11 @@
 Route38_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Route38_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
 	.byte 0
+
+Route38_OnTransition: 
+	callnative SetTimeBasedEncounters
+	end
 
 Route38_EventScript_Toby::
 	trainerbattle_single TRAINER_TOBY, Route38_Text_BirdKeeperTobySeen, Route38_Text_BirdKeeperTobyBeaten

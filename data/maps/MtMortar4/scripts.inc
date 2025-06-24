@@ -1,5 +1,11 @@
 MtMortar4_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, MtMortar4_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
 	.byte 0
+
+MtMortar4_OnTransition: 
+	callnative SetTimeBasedEncounters
+	end
 
 MtMortar4_EventScript_Item_HyperPotion::
     finditem ITEM_HYPER_POTION

@@ -5,7 +5,13 @@
 
 BurnedTower2_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE,BurnedTower2_OnFrame
+	map_script MAP_SCRIPT_ON_TRANSITION, BurnedTower2_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
 	.byte 0
+
+BurnedTower2_OnTransition: 
+	callnative SetTimeBasedEncounters
+	end
 
 BurnedTower2_OnFrame::
 	map_script_2 VAR_ECRUTEAK_CITY_STATE, 3, BurnedTower2_EventScript_ReleaseBeasts

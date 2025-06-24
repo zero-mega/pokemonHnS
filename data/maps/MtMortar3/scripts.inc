@@ -1,5 +1,11 @@
 MtMortar3_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, MtMortar3_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
 	.byte 0
+
+MtMortar3_OnTransition: 
+	callnative SetTimeBasedEncounters
+	end
 
 MtMortar3_EventScript_Item_Iron::
     finditem ITEM_IRON

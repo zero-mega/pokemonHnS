@@ -1,7 +1,14 @@
 WhirlIslands2_MapScripts::
 	.byte 0
 
-WhirlIslands2_EventScriptTriggerTest::
-	clearflag FLAG_HIDE_WHIRL_ISLANDS_KIMONO_GIRLS
-	setvar VAR_TEMP_0, 1
+WhirlIslands2_EventScript_Item_Max_Revive::
+	finditem ITEM_MAX_REVIVE
+	end
+
+WhirlIslands2_EventScript_Item_Full_Restore::
+	finditem ITEM_FULL_RESTORE
+	end
+
+WhirlIslands2_EventScript_Item_PP_Max::
+	finditem ITEM_PP_MAX
 	end

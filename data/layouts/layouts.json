@@ -7144,10 +7144,10 @@
     {
       "id": "LAYOUT_CIANWOOD_GYM",
       "name": "CianwoodGym_Layout",
-      "width": 13,
-      "height": 26,
-      "primary_tileset": "gTileset_Johto_General",
-      "secondary_tileset": "gTileset_CianwoodGym_48",
+      "width": 21,
+      "height": 17,
+      "primary_tileset": "gTileset_Johto_Building",
+      "secondary_tileset": "gTileset_CianwoodGymNew",
       "border_filepath": "data/layouts/CianwoodGym/border.bin",
       "blockdata_filepath": "data/layouts/CianwoodGym/map.bin"
     },
