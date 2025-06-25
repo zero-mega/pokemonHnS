@@ -21,7 +21,7 @@ CliffEdgeGate_Text_IntroOpen:
 	.string "Did you know? There's a SAFARI ZONE\n"
 	.string "just around the corner.\p"
 	.string "It's really fun!\n"
-	.string "You will see many different kinds of\n"
+	.string "You will see many different kinds of\l"
 	.string "POKéMON, and it's all you can catch!\p"
 	.string "There is no reason not to go, right?\n"
 	.string "Just around the corner.$"
@@ -42,6 +42,6 @@ CliffEdgeGate_EventScript_CaveSign::
 
 CliffEdgeGate_Text_SignOpen:
 	.string "Everything Is Thrilling!\n"
-	.string "Explore to Find Wild POKéMON!\n"
-	.string "Warden BAOBA's SAFARI ZONE\n"
+	.string "Explore to Find Wild POKéMON!\l"
+	.string "Warden BAOBA's SAFARI ZONE\l"
 	.string "Up and Running!$"

@@ -1,2 +1,81 @@
 SafariZoneEntrance_MapScripts::
 	.byte 0
+
+SafariZoneEntrance_EventScript_Baoba::
+	giveitem ITEM_POKEBLOCK_CASE
+	closemessage
+	end
+
+SafariZoneEntrance_EventScript_EntranceCounterTrigger::
+	lockall
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_EAST
+	showmoneybox 0, 0
+	msgbox Route121_SafariZoneEntrance_Text_WouldYouLikeToPlay, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, SafariZoneEntrance_EventScript_TryEnterSafariZone
+	msgbox Route121_SafariZoneEntrance_Text_PlayAnotherTime, MSGBOX_DEFAULT
+	goto SafariZoneEntrance_EventScript_MovePlayerBackFromCounter
+	end
+
+SafariZoneEntrance_EventScript_TryEnterSafariZone::
+	checkitem ITEM_POKEBLOCK_CASE
+	goto_if_eq VAR_RESULT, 0, SafariZoneEntrance_EventScript_NoPokeblockCase
+	call SafariZoneEntrance_EventScript_CheckHasRoomForPokemon
+	checkmoney 500
+	goto_if_eq VAR_RESULT, 0, SafariZoneEntrance_EventScript_NotEnoughMoney
+	playse SE_SHOP
+	msgbox Route121_SafariZoneEntrance_Text_ThatWillBe500Please, MSGBOX_DEFAULT
+	removemoney 500
+	updatemoneybox
+	msgbox Route121_SafariZoneEntrance_Text_HereAreYourSafariBalls, MSGBOX_DEFAULT
+	playfanfare MUS_OBTAIN_ITEM
+	message Route121_SafariZoneEntrance_Text_Received30SafariBalls
+	waitfanfare
+	msgbox Route121_SafariZoneEntrance_Text_PleaseEnjoyYourself, MSGBOX_DEFAULT
+	closemessage
+	hidemoneybox
+	applymovement OBJ_EVENT_ID_PLAYER, SafariZoneEntrance_Movement_EnterSafariZone
+	waitmovement 0
+	special EnterSafariMode
+	setvar VAR_SAFARI_ZONE_STATE, 2
+	clearflag FLAG_GOOD_LUCK_SAFARI_ZONE
+	warp MAP_SAFARI_ZONE_ENTERANCE, 0
+	waitstate
+	end
+
+SafariZoneEntrance_EventScript_CheckHasRoomForPokemon::
+	getpartysize
+	goto_if_ne VAR_RESULT, PARTY_SIZE, SafariZoneEntrance_EventScript_HasRoomForPokemon
+	specialvar VAR_RESULT, ScriptCheckFreePokemonStorageSpace
+	goto_if_eq VAR_RESULT, 1, SafariZoneEntrance_EventScript_HasRoomForPokemon
+	msgbox Route121_SafariZoneEntrance_Text_PCIsFull, MSGBOX_DEFAULT
+	goto SafariZoneEntrance_EventScript_MovePlayerBackFromCounter
+	end
+
+SafariZoneEntrance_EventScript_HasRoomForPokemon::
+	return
+
+SafariZoneEntrance_EventScript_NoPokeblockCase::
+	msgbox Route121_SafariZoneEntrance_Text_YouNeedPokeblockCase, MSGBOX_DEFAULT
+	goto SafariZoneEntrance_EventScript_MovePlayerBackFromCounter
+	end
+
+SafariZoneEntrance_EventScript_NotEnoughMoney::
+	msgbox Route121_SafariZoneEntrance_Text_NotEnoughMoney, MSGBOX_DEFAULT
+	goto SafariZoneEntrance_EventScript_MovePlayerBackFromCounter
+	end
+
+SafariZoneEntrance_EventScript_MovePlayerBackFromCounter::
+	closemessage
+	hidemoneybox
+	applymovement OBJ_EVENT_ID_PLAYER, SafariZoneEntrance_Movement_BackAwayFromCounter
+	waitmovement 0
+	releaseall
+	end
+
+SafariZoneEntrance_Movement_BackAwayFromCounter:
+	walk_down
+	step_end
+
+SafariZoneEntrance_Movement_EnterSafariZone:
+	walk_up
+	step_end

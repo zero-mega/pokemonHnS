@@ -166,6 +166,16 @@ CherryGroveCity_EventScript_Boy2::
 	release
 	end
 
+CherryGroveCity_EventScript_Staryu::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_STARYU, CRY_MODE_NORMAL
+	msgbox CherryGroveCity_Text_Staryu, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
 CherryGroveCity_EventScript_Corsola::
 	lock
 	faceplayer
@@ -365,6 +375,9 @@ CherrygroveCity_Text_CitySign:
 
 CherrygroveCity_Text_GuideGentsHouseSign:
 	.string "GUIDE GENT'S HOUSE$"
+
+CherryGroveCity_Text_Staryu:
+	.string "STARYU: Yuuuuuuuu.$"
 
 CherryGroveCity_Text_Corsola:
 	.string "CORSOLA: Corsola! La!$"

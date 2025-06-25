@@ -141,3 +141,16 @@ Route47_EventScript_Item_WhiteFlute::
 Route47_EventScript_Item_Stardust::
 	finditem ITEM_STARDUST
 	end
+
+Route47_EventScript_Chinchou::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_CHINCHOU, CRY_MODE_NORMAL
+	msgbox Route47_Text_Chinchou, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route47_Text_Chinchou:
+	.string "CHINCHOU: Chou!$"

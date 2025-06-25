@@ -6155,7 +6155,7 @@
       "id": "LAYOUT_SAFARI_ZONE_GATE",
       "name": "SafariZoneGate_Layout",
       "width": 26,
-      "height": 29,
+      "height": 31,
       "primary_tileset": "gTileset_Johto_NorthEast",
       "secondary_tileset": "gTileset_SafariZoneJohto",
       "border_filepath": "data/layouts/SafariZoneGate/border.bin",
