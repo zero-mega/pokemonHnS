@@ -1539,7 +1539,7 @@ const struct Trainer gTrainers[] = {
     {
         .trainerClass = TRAINER_CLASS_POKEMANIAC,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
+        .trainerPic = TRAINER_PIC_POKEMANIAC,
         .trainerName = _("MILLER"),
         .items = {},
         .doubleBattle = FALSE,

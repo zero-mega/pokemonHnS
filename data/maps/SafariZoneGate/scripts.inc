@@ -1,6 +1,13 @@
 SafariZoneGate_MapScripts::
 	.byte 0
 
+SafariZoneGate_EventScript_Trigger::
+	clearflag FLAG_SAFARI_ZONE_WEST_EXPANSION
+	clearflag FLAG_SAFARI_ZONE_EAST_EXPANSION
+	
+	setvar VAR_SAFARI_ZONE_GATE_STATE, 3
+	end
+
 SafariZoneGate_EventScript_WorkerM::
 	lock
 	faceplayer

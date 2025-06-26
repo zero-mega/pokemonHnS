@@ -1,5 +1,6 @@
 .set LOCALID_CIANWOOD_SUICUNE, 1
 .set LOCALID_CIANWOOD_EUSINE, 2
+.set LOCALID_CIANWOOD_CHUCKSWIFE, 6
 
 CianwoodCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, OlivineCity_MapScript_OnTransition
@@ -8,6 +9,7 @@ CianwoodCity_MapScripts::
 
 CianwoodCity_OnFrame::
 	map_script_2 VAR_CIANWOOD_CITY_STATE, 0, CianwoodCity_EventScript_CityEnter
+	map_script_2 VAR_GETFLY, 1, CianwoodCity_EventScript_Flytrigger
 	.2byte 0
 
 CianwoodCity_EventScript_CityEnter::
@@ -15,6 +17,30 @@ CianwoodCity_EventScript_CityEnter::
 	setflag FLAG_HIDE_CIANWOOD_EUSINE
 	setvar VAR_CIANWOOD_CITY_STATE, 1
 	end
+
+CianwoodCity_EventScript_Flytrigger::
+	lock
+	playse SE_PIN
+	applymovement LOCALID_CIANWOOD_CHUCKSWIFE, Common_Movement_ExclamationMark
+	delay 60
+	applymovement LOCALID_CIANWOOD_CHUCKSWIFE, CianwoodCity_Movement_ChucksWife
+	waitmovement 0
+	msgbox CianwoodCity_Text_ChucksWifeGiveHM, MSGBOX_DEFAULT
+	giveitem ITEM_HM_FLY
+	msgbox CianwoodCity_Text_ChucksWifeFlySpeech, MSGBOX_DEFAULT
+	closemessage
+	setvar VAR_GETFLY, 2
+	release
+	end
+
+CianwoodCity_Movement_ChucksWife:
+	walk_left
+	walk_left
+	walk_up
+	walk_left
+	face_up
+	step_end
+
 
 CianwoodCity_EventScript_ChucksWife::
 	lock

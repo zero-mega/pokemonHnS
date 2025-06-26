@@ -234,6 +234,23 @@ static const struct MatchCallStructNPC sMomMatchCallHeader =
     .textData = sMomTextScripts
 };
 
+static const match_call_text_data_t sBaobaTextScripts[] = {
+    { MatchCall_Text_Baoba1, 0xFFFF,                    0xFFFF },
+    { MatchCall_Text_Baoba2, FLAG_AMPHAROS_HEALED,      0xFFFF },
+    { MatchCall_Text_Baoba2, FLAG_AMPHAROS_HEALED,      0xFFFF },
+    { NULL,                0xFFFF,                      0xFFFF }
+};
+
+static const struct MatchCallStructNPC sBaobaMatchCallHeader =
+{
+    .type = MC_TYPE_NPC,
+    .mapSec = MAPSEC_SAFARI_ZONE_GATE,
+    .flag = FLAG_ENABLE_BAOBA_MATCH_CALL,
+    .desc = gText_BaobaMatchCallDesc,
+    .name = gText_BaobaMatchCallName,
+    .textData = sBaobaTextScripts
+};
+
 static const match_call_text_data_t sStevenTextScripts[] = {
     { MatchCall_Text_Steven1, 0xFFFF,                              0xFFFF },
     { MatchCall_Text_Steven2, FLAG_RUSTURF_TUNNEL_OPENED,          0xFFFF },
@@ -585,6 +602,7 @@ static const match_call_t sMatchCallHeaders[] = {
     [MC_HEADER_WALLY]      = {.wally  = &sWallyMatchCallHeader},
     [MC_HEADER_NORMAN]     = {.leader = &sNormanMatchCallHeader},
     [MC_HEADER_MOM]        = {.npc    = &sMomMatchCallHeader},
+    [MC_HEADER_BAOBA]      = {.npc    = &sBaobaMatchCallHeader},
     [MC_HEADER_STEVEN]     = {.npc    = &sStevenMatchCallHeader},
     [MC_HEADER_SCOTT]      = {.npc    = &sScottMatchCallHeader},
     [MC_HEADER_ROXANNE]    = {.leader = &sRoxanneMatchCallHeader},

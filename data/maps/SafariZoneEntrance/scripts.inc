@@ -1,9 +1,63 @@
+.set LOCALID_SAFARIZONEGATE_BAOBA, 1
+
 SafariZoneEntrance_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, SafariZoneEntrance_OnFrame
 	.byte 0
 
-SafariZoneEntrance_EventScript_Baoba::
+SafariZoneEntrance_OnFrame::
+	map_script_2 VAR_SAFARI_ZONE_GATE_STATE, 3, SafariZoneEntrance_MeetBaoba
+	map_script_2 VAR_SAFARI_ZONE_STATE, 2, SafariZoneEntrance_EventScript_ExitSafari
+	.2byte 0
+
+SafariZoneEntrance_EventScript_ExitSafari::
+	lock
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_EAST
+	msgbox SafariZone_Text_WouldYouLikeToExit, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, FALSE, SafariZoneEntrance_EventScript_ReenterSafari
+	special ExitSafariMode
+	setvar VAR_SAFARI_ZONE_STATE, 1
+	setflag FLAG_GOOD_LUCK_SAFARI_ZONE
+	msgbox SafariZone_South_Text_ExitEarlyThankYouForPlaying
+	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown1
+	waitmovement 0
+	release
+	end
+
+SafariZoneEntrance_EventScript_ReenterSafari::
+	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, SafariZoneEntrance_Movement_EnterSafariZone
+	waitmovement 0
+	warp MAP_SAFARI_ZONE_ENTERANCE, 0
+	delay 120
+	end
+
+SafariZoneEntrance_MeetBaoba::
+	lock
+	playse SE_PIN
+	applymovement LOCALID_SAFARIZONEGATE_BAOBA, Common_Movement_ExclamationMark
+	delay 60
+	applymovement LOCALID_SAFARIZONEGATE_BAOBA, SafariZoneEntrance_Movement_WalkToPlayer
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp1
+	waitmovement LOCALID_SAFARIZONEGATE_BAOBA
+	msgbox SafariZoneEntrance_Text_BaobaWelcome, MSGBOX_DEFAULT
+	closemessage
+	msgbox SafariZoneEntrance_Text_BaobaPokeblocks, MSGBOX_DEFAULT
+	closemessage
 	giveitem ITEM_POKEBLOCK_CASE
 	closemessage
+	applymovement LOCALID_SAFARIZONEGATE_BAOBA, SafariZoneEntrance_Movement_ReturnToTable
+	waitmovement 0
+	setvar VAR_SAFARI_ZONE_GATE_STATE, 4
+	release
+	end
+
+SafariZoneEntrance_EventScript_Baoba::
+	lock
+	faceplayer
+	msgbox SafariZoneEntrance_Text_Baoba, MSGBOX_DEFAULT 
+	closemessage
+	release
 	end
 
 SafariZoneEntrance_EventScript_EntranceCounterTrigger::
@@ -72,6 +126,22 @@ SafariZoneEntrance_EventScript_MovePlayerBackFromCounter::
 	releaseall
 	end
 
+SafariZoneEntrance_EventScript_Boy::
+	lock
+	faceplayer
+	msgbox SafariZoneEntrance_Text_Boy, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+SafariZoneEntrance_EventScript_Engineer::
+	lock
+	faceplayer
+	msgbox SafariZoneEntrance_Text_Engineer, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
 SafariZoneEntrance_Movement_BackAwayFromCounter:
 	walk_down
 	step_end
@@ -79,3 +149,52 @@ SafariZoneEntrance_Movement_BackAwayFromCounter:
 SafariZoneEntrance_Movement_EnterSafariZone:
 	walk_up
 	step_end
+
+SafariZoneEntrance_Movement_WalkToPlayer:
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_down
+	step_end
+
+SafariZoneEntrance_Movement_ReturnToTable:
+	walk_up
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+SafariZoneEntrance_Text_BaobaWelcome:
+	.string "Hi {PLAYER}!\n"
+	.string "I've been waiting for you.\n"
+	.string "What do you think?\p"
+	.string "This is a brand new SAFARI ZONE\n"
+	.string "by the way...\p"
+	.string "And it's still expanding!\p"
+	.string "So far, we have two zones open\n"
+	.string "and 4 more on the way!\p"
+	.string "Enjoy the SAFARI ZONE! I'll\n"
+	.string "call you when the other zones\l"
+	.string "are ready!$"
+
+SafariZoneEntrance_Text_BaobaPokeblocks:
+	.string "Oh! I almost forgot.\p"
+	.string "POKéBLOCKS are an essential\n"
+	.string "feature of my SAFARI ZONE, so\l"
+	.string "you'd better have one of these!$"
+
+SafariZoneEntrance_Text_Baoba:
+	.string "Hi {PLAYER}!\p"
+	.string "How are you enjoying the SAFARI\n"
+	.string "ZONE?$"
+
+SafariZoneEntrance_Text_Boy:
+	.string "I heard the new zone they\n"
+	.string "are working on has dragons!$"
+
+SafariZoneEntrance_Text_Engineer:
+	.string "Sorry Trainer, this area is still\n"
+	.string "under construction. Check back\l"
+	.string "later!$"

@@ -41207,7 +41207,7 @@
           "map": "MAP_MT_MORTAR1",
           "base_label": "gMtMortar1",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 5,
             "mons": [
               {
                 "min_level": 20,
@@ -41515,7 +41515,7 @@
           "map": "MAP_MT_MORTAR2",
           "base_label": "gMtMortar2",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 5,
             "mons": [
               {
                 "min_level": 20,
@@ -41823,7 +41823,7 @@
           "map": "MAP_MT_MORTAR4",
           "base_label": "gMtMortar4",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 5,
             "mons": [
               {
                 "min_level": 20,
@@ -42131,7 +42131,7 @@
           "map": "MAP_MT_MORTAR3",
           "base_label": "gMtMortar3",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 5,
             "mons": [
               {
                 "min_level": 31,

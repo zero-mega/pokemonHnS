@@ -34,7 +34,7 @@ LilycoveCity_ContestLobby_OnFrame:
 	.2byte 0
 
 LilycoveCity_ContestLobby_EventScript_TryDoContestArtist::
-	goto_if_set FLAG_HIDE_LILYCOVE_MUSEUM_CURATOR, LilycoveCity_ContestLobby_EventScript_ContestArtist
+	goto_if_set FLAG_GARBAGEFLAG, LilycoveCity_ContestLobby_EventScript_ContestArtist
 	setvar VAR_LILYCOVE_CONTEST_LOBBY_STATE, 0
 	end
 
@@ -113,7 +113,7 @@ LilycoveCity_ContestLobby_EventScript_UpdateMuseumPatrons::
 	return
 
 LilycoveCity_ContestLobby_EventScript_ShowPatron1::
-	clearflag FLAG_HIDE_LILYCOVE_MUSEUM_PATRON_1
+	clearflag FLAG_GARBAGEFLAG
 	return
 
 LilycoveCity_ContestLobby_EventScript_ShowPatron2::
@@ -204,7 +204,7 @@ LilycoveCity_ContestLobby_Movement_ArtistReturnToPlayer:
 	step_end
 
 LilycoveCity_ContestLobby_EventScript_TryDoLinkContestArtist::
-	goto_if_set FLAG_HIDE_LILYCOVE_MUSEUM_CURATOR, LilycoveCity_ContestLobby_EventScript_LinkContestArtist
+	goto_if_set FLAG_GARBAGEFLAG, LilycoveCity_ContestLobby_EventScript_LinkContestArtist
 	setvar VAR_LILYCOVE_CONTEST_LOBBY_STATE, 0
 	end
 
@@ -354,7 +354,7 @@ LilycoveCity_ContestLobby_EventScript_SetMasterContestType::
 
 @ Functionally unused
 LilycoveCity_ContestLobby_EventScript_SetDebug::
-	setflag FLAG_HIDE_LILYCOVE_MUSEUM_CURATOR
+	setflag FLAG_GARBAGEFLAG
 	copyvar VAR_LILYCOVE_MUSEUM_2F_STATE, 1
 	additem ITEM_CONTEST_PASS
 	setvar VAR_0x800B, 8

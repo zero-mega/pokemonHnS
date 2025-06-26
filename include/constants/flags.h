@@ -818,9 +818,9 @@
 #define FLAG_HIDE_BATTLEFRONTIER_ENGINEER                         0x303
 #define FLAG_GOT_SHARP_BEAK                              0x304
 #define FLAG_HIDE_WHIRL_ISLANDS_TENTACRUEL                           0x305
-#define FLAG_HIDE_LILYCOVE_CONTEST_HALL_CONTEST_ATTENDANT_1         0x306
-#define FLAG_HIDE_LILYCOVE_MUSEUM_CURATOR                           0x307
-#define FLAG_HIDE_LILYCOVE_MUSEUM_PATRON_1                          0x308
+#define FLAG_ENABLE_BAOBA_MATCH_CALL         0x306
+#define FLAG_SAFARI_ZONE_WEST_EXPANSION                           0x307
+#define FLAG_SAFARI_ZONE_EAST_EXPANSION                          0x308
 #define FLAG_HIDE_LILYCOVE_MUSEUM_PATRON_2                          0x309
 #define FLAG_HIDE_LILYCOVE_MUSEUM_PATRON_3                          0x30A
 #define FLAG_HIDE_LILYCOVE_MUSEUM_PATRON_4                          0x30B

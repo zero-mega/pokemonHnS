@@ -11,17 +11,12 @@ EcruteakPokecenter_OnTransition::
 
 EcruteakPokecenter_EventScript_Bill::
 	lock
+	delay 30
+	playse SE_PC_OFF
+	delay 55
 	faceplayer
 	msgbox EcruteakPokecenter1F_Text_Bill1, MSGBOX_DEFAULT
-	closemessage
-	turnobject LOCALID_ECRUTEAK_BILL, DIR_NORTH
-	delay 55
-	playse SE_PC_OFF
-	waitse
-	delay 55
-	call_if_eq VAR_FACING, DIR_NORTH, EcruteakPokecenter_EventScript_BillFaceDown
-	call_if_eq VAR_FACING, DIR_WEST, EcruteakPokecenter_EventScript_BillFaceRight
-	msgbox EcruteakPokecenter1F_Text_Bill2
+	msgbox EcruteakPokecenter1F_Text_Bill2, MSGBOX_DEFAULT
 	closemessage
 	call_if_eq VAR_FACING, DIR_NORTH, EcruteakPokecenter_EventScript_BillLeaveBot
 	call_if_eq VAR_FACING, DIR_WEST, EcruteakPokecenter_EventScript_BillLeaveTop

@@ -63,7 +63,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "SafariZoneEntrance_EventScript_Boy",
       "flag": "0"
     },
     {
@@ -142,7 +142,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "LilycoveCity_ContestLobby_EventScript_BlendMaster",
-      "flag": "FLAG_HIDE_LILYCOVE_CONTEST_HALL_BLEND_MASTER"
+      "flag": "0"
     }
   ],
   "warp_events": [

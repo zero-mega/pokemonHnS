@@ -65,6 +65,7 @@ CianwoodGym_EventScript_ChuckVictory::
 	call Common_EventScript_SetGymTrainers
 	giveitem ITEM_TM_FOCUS_PUNCH
 	msgbox CianwoodGym_Text_ChuckTMSpeech, MSGBOX_DEFAULT
+	setvar VAR_GETFLY, 1
 	closemessage
 	release
 	end

@@ -21583,8 +21583,8 @@ static const struct TrainerMonNoItemCustomMoves sParty_Eusine[] = { //MysteryMan
     {
     .iv = 255,
     .lvl = 27,
-    .species = SPECIES_FLAAFFY,
-    .moves = {MOVE_THUNDER_WAVE, MOVE_THUNDER_SHOCK, MOVE_BODY_SLAM, MOVE_THUNDER_PUNCH}
+    .species = SPECIES_ELECTRODE,
+    .moves = {MOVE_THUNDER_WAVE, MOVE_SONIC_BOOM, MOVE_BODY_SLAM, MOVE_THUNDERBOLT}
     },
 };
 

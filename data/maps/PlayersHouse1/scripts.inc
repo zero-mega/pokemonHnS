@@ -103,6 +103,7 @@ PlayersHouse1_EventScript_MomsIntro::
 	clearflag FLAG_DELIVERED_EGG
 	clearflag FLAG_SHOWN_ELM_TOGEPI
 	clearflag FLAG_ENABLE_RADIO
+	clearflag FLAG_ENABLE_BAOBA_MATCH_CALL
 	
 
 	setvar VAR_VIOLET_CITY_STATE, 0 @CITY STATES

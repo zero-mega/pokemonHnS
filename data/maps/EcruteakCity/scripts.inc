@@ -23,6 +23,7 @@ EcruteakCity_EventScript_Trigger::
 	clearflag FLAG_HIDE_ROUTE42_SUICUNE
 	clearflag FLAG_GOT_TYROGUE
 	clearflag FLAG_BEAT_KIYO
+	clearflag FLAG_ENABLE_BAOBA_MATCH_CALL
 
 	setflag FLAG_HIDE_ROUTE42_EUSINE
 	setflag FLAG_HIDE_HO_OH

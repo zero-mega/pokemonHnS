@@ -3,6 +3,7 @@
 OlivineCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, OlivineCity_MapScript_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, OlivineCity_OnFrame
 	.byte 0
 
 OlivineCity_MapScript_OnTransition::
@@ -14,6 +15,34 @@ OlivineCity_MapScript_ClearWeather::
 	setweather WEATHER_NONE
 	end
 
+OlivineCity_OnFrame::
+	map_script_2 VAR_SAFARI_ZONE_GATE_STATE, 1, OlivineCity_EventScript_BaobaCall
+	.2byte 0
+
+OlivineCity_EventScript_BaobaCall::
+	lock
+	pokenavcall OlivineCity_Text_Baoba
+	waitmessage
+	delay 30
+	setvar VAR_SAFARI_ZONE_GATE_STATE, 2
+	release
+	end
+
+OlivineCity_Text_Baoba:
+	.string "{PLAYER}!\p"
+	.string "This is WARDEN BAOBA.\p"
+	.string "Sorry to have kept you waiting.\n"
+	.string "We've finally opened the SAFARI\l"
+	.string "ZONE!\p"
+	.string "Do you know where it is?\p"
+	.string "You know the GATE inside the cavern\n"
+	.string "in CIANWOOD CITY?\p"
+	.string "If you go through there and walk for\n"
+	.string "a short while, you should soon see\l"
+	.string "the SAFARI ZONE!\p"
+	.string "We're a little out of the way, but\n"
+	.string "please come visit!$"
+
 OlivineCity_EventScript_CityTrigger:: @FLAGHEAP
 	setflag FLAG_HIDE_OLIVINE_GYM_JASMINE
 	setflag FLAG_HIDE_OLIVINE_SILVER
@@ -21,6 +50,7 @@ OlivineCity_EventScript_CityTrigger:: @FLAGHEAP
 	clearflag FLAG_HIDE_BATTLEFRONTIER_ENGINEER
 	clearflag FLAG_HIDE_LIGHTHOUSE_JASMINE
 	clearflag FLAG_HIDE_WHIRL_ISLANDS_TENTACRUEL
+	setvar VAR_GETFLY, 0
 
 	setvar VAR_OLIVINE_CITY_STATE, 1
 	end

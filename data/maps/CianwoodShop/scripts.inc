@@ -9,6 +9,8 @@ CianwoodShop_EventScriptMan::
 CianwoodCity_EventScript_Pharmacist::
 	lock
 	faceplayer
+	checkitem ITEM_SECRET_POTION
+	goto_if_eq VAR_RESULT, TRUE, CianwoodCity_EventScript_PharmacistAfter
 	goto_if_ge VAR_OLIVINE_CITY_STATE, 5, CianwoodCity_EventScript_PharmacistAfter
 	msgbox CianwoodCity_Text_PharmacistGivePotion, MSGBOX_DEFAULT
 	giveitem ITEM_SECRET_POTION
@@ -39,4 +41,4 @@ CianwoodCity_Text_ReceivedSecretpotion:
 CianwoodCity_Text_PharmacistDescribePotion:
 	.string "My SECRETPOTION is a tad too\n"
 	.string "strong, so I only offer it in an\l"
-	.string "emergency. "
+	.string "emergency.$"

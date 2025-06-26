@@ -252,6 +252,7 @@ OlivineLighthouse_EventScript_Ampharos::
 	playmoncry SPECIES_AMPHAROS, CRY_MODE_NORMAL
 	msgbox OlivineLighthouse_Text_AmphyPaluPalulu, MSGBOX_DEFAULT
 	waitmoncry
+	setflag FLAG_AMPHAROS_HEALED
 	release
 	end
 
@@ -327,8 +328,9 @@ OlivineLighthouse_EventScript_JasmineDeliverPotion::
 	waitse
 	delay 50
 	fadescreen FADE_FROM_BLACK
-
+	setvar VAR_SAFARI_ZONE_GATE_STATE, 1
 	setvar VAR_OLIVINE_CITY_STATE, 5
+	setflag FLAG_AMPHAROS_HEALED
 	clearflag FLAG_HIDE_OLIVINE_GYM_JASMINE
 	release
 	end

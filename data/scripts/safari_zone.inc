@@ -96,7 +96,7 @@ SafariZone_Text_PokeblockWasPlaced:
 Route121_SafariZoneEntrance_Text_WelcomeToSafariZone:
 	.string "Welcome to the SAFARI ZONE!\p"
 	.string "Here, you may witness many kinds of\n"
-	.string "POKéMON rarely seen in HOENN.\p"
+	.string "POKéMON rarely seen in JOHTO.\p"
 	.string "And, you'll see them in their wild,\n"
 	.string "untamed state in natural habitats.\p"
 	.string "What's more, we've thrown open the\n"

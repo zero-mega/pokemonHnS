@@ -135,7 +135,7 @@
 #define VAR_ROUTE39_BARN                               0x4073 // 0 = give 5 berries. 1 = give 4 berries. 2 = give 3 berries, 3 = give 2 berries, 4 = give 1 berry, 5 = healed, can buy milk.
 #define VAR_RUINSOFALPH_STATE                               0x4074
 #define VAR_SHUCKIE                               0x4075 // 0 = unset, 1 = given, 2 = returnable, 3 = returned
-#define VAR_ROUTE123_STATE                               0x4076 // Unused Var
+#define VAR_GETFLY                               0x4076 // Unused Var
 #define VAR_ROUTE124_STATE                               0x4077 // Unused Var
 #define VAR_ROUTE125_STATE                               0x4078 // Unused Var
 #define VAR_ROUTE126_STATE                               0x4079 // Unused Var
