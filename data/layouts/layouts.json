@@ -5734,8 +5734,8 @@
     {
       "id": "LAYOUT_LAKE_OF_RAGE",
       "name": "LakeOfRage_Layout",
-      "width": 56,
-      "height": 37,
+      "width": 64,
+      "height": 47,
       "primary_tileset": "gTileset_Johto_NorthEast",
       "secondary_tileset": "gTileset_61_azalea",
       "border_filepath": "data/layouts/LakeOfRage/border.bin",
