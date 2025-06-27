@@ -22,6 +22,11 @@
       "map": "MAP_LAKE_OF_RAGE",
       "offset": -16,
       "direction": "up"
+    },
+    {
+      "map": "MAP_LAKE_OF_RAGE_LOW_TIDE",
+      "offset": -16,
+      "direction": "up"
     }
   ],
   "object_events": [

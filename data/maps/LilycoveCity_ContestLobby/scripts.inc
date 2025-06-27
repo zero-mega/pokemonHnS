@@ -117,11 +117,11 @@ LilycoveCity_ContestLobby_EventScript_ShowPatron1::
 	return
 
 LilycoveCity_ContestLobby_EventScript_ShowPatron2::
-	clearflag FLAG_HIDE_LILYCOVE_MUSEUM_PATRON_2
+	clearflag FLAG_GARBAGEFLAG
 	return
 
 LilycoveCity_ContestLobby_EventScript_ShowPatron3::
-	clearflag FLAG_HIDE_LILYCOVE_MUSEUM_PATRON_3
+	clearflag FLAG_GARBAGEFLAG
 	return
 
 LilycoveCity_ContestLobby_EventScript_ShowPatron4::

@@ -8790,6 +8790,16 @@
       "secondary_tileset": "gTileset_RuinsOfAlphWriting",
       "border_filepath": "data/layouts/RuinsOfAlphC_4/border.bin",
       "blockdata_filepath": "data/layouts/RuinsOfAlphC_4/map.bin"
+    },
+    {
+      "id": "LAYOUT_LAKE_OF_RAGE_LOW_TIDE",
+      "name": "LakeOfRageLowTide_Layout",
+      "width": 64,
+      "height": 47,
+      "primary_tileset": "gTileset_Johto_NorthEast",
+      "secondary_tileset": "gTileset_61_azalea",
+      "border_filepath": "data/layouts/LakeOfRageLowTide/border.bin",
+      "blockdata_filepath": "data/layouts/LakeOfRageLowTide/map.bin"
     }
   ]
 }

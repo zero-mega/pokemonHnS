@@ -821,8 +821,8 @@
 #define FLAG_ENABLE_BAOBA_MATCH_CALL         0x306
 #define FLAG_SAFARI_ZONE_WEST_EXPANSION                           0x307
 #define FLAG_SAFARI_ZONE_EAST_EXPANSION                          0x308
-#define FLAG_HIDE_LILYCOVE_MUSEUM_PATRON_2                          0x309
-#define FLAG_HIDE_LILYCOVE_MUSEUM_PATRON_3                          0x30A
+#define FLAG_LAKE_OF_RAGE_GYARADOS                          0x309
+#define FLAG_LAKE_OF_RAGE_LANCE                          0x30A
 #define FLAG_HIDE_LILYCOVE_MUSEUM_PATRON_4                          0x30B
 #define FLAG_HIDE_LILYCOVE_MUSEUM_TOURISTS                          0x30C
 #define FLAG_HIDE_PETALBURG_GYM_GREETER                             0x30D

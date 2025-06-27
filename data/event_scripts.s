@@ -1995,3 +1995,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/RuinsOfAlphC_3/scripts.inc"
 
 	.include "data/maps/RuinsOfAlphC_4/scripts.inc"
+
+	.include "data/maps/LakeOfRageLowTide/scripts.inc"
