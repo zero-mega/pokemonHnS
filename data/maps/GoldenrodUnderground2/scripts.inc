@@ -177,6 +177,7 @@ GoldenrodUnderground_EventScript_Haircut1::
 	fadescreen FADE_FROM_BLACK
 	special BufferMonNickname
 	msgbox GoldenrodUnderground_Text_OlderBrotherAllDone
+	hidemoneybox
 	release
 	setflag FLAG_DAILY_HAIRCUT1_RECEIVED
 	release

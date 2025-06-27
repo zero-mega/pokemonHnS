@@ -3,7 +3,7 @@ LakeOfRage_MapScripts::
 	.byte 0
 
 LakeOfRage_OnTransition:
-	goto_if_set FLAG_LAKE_OF_RAGE_LANCE, LakeOfRage_EventScript_SetLowTide
+	goto_if_set FLAG_HIDE_LAKE_OF_RAGE_LANCE, LakeOfRage_EventScript_SetLowTide
 	goto LakeOfRage_EventScript_SetHighTide
 
 LakeOfRage_EventScript_SetLowTide::
@@ -17,9 +17,9 @@ LakeOfRage_EventScript_SetHighTide::
 	end
 
 LakeOfRage_EventScript_Lance::
-	setflag FLAG_LAKE_OF_RAGE_LANCE
+	setflag FLAG_HIDE_LAKE_OF_RAGE_LANCE
 	end
 
 LakeOfRage_EventScript_Lass::
-	clearflag FLAG_LAKE_OF_RAGE_LANCE
+	clearflag FLAG_HIDE_LAKE_OF_RAGE_LANCE
 	end
