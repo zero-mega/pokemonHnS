@@ -122,15 +122,15 @@ Route36_EventScript_SudoWoodoWater::
 	dowildbattle
 	@clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	specialvar VAR_RESULT, GetBattleOutcome
-	goto_if_eq VAR_RESULT, B_OUTCOME_WON, BattleFrontier_OutsideEast_EventScript_DefeatedSudowoodo
-	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, BattleFrontier_OutsideEast_EventScript_RanSudowoodo
-	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, BattleFrontier_OutsideEast_EventScript_RanSudowoodo
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, Route36_EventScript_Defeated_Sudowoodo
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, Route36_EventScript_RanSudowoodo
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Route36_EventScript_RanSudowoodo
 Route36_EventScript_Defeated_Sudowoodo::
 	setflag FLAG_HIDE_SUDOWOODO
 	removeobject LOCALID_ROUTE36_SUDOWOODO
 	end
 
-BattleFrontier_OutsideEast_EventScript_RanSudowoodo::
+Route36_EventScript_RanSudowoodo::
 	turnobject LOCALID_ROUTE36_SUDOWOODO, DIR_NORTH
 	release
 	end

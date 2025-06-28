@@ -817,9 +817,9 @@ static const u8 sChoiceBandDesc[] = _(
     "only that move.");
 
 static const u8 sKingsRockDesc[] = _(
-    "A hold item that\n"
-    "may cause flinching\n"
-    "when the foe is hit.");
+    "Makes foe flinch.\n"
+    "Evolves SLOWPOKE,\n"
+    "POLIWHIRL, RHYDON.");
 
 static const u8 sSilverPowderDesc[] = _(
     "A hold item that\n"
@@ -877,9 +877,9 @@ static const u8 sScopeLensDesc[] = _(
     "critical-hit rate.");
 
 static const u8 sMetalCoatDesc[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "STEEL-type moves.");
+    "Boosts STEEL.\n"
+    "Evolves ONIX,\n"
+    "SCYTHER, MAGNETON");
 
 static const u8 sLeftoversDesc[] = _(
     "A hold item that\n"
@@ -887,9 +887,8 @@ static const u8 sLeftoversDesc[] = _(
     "HP in battle.");
 
 static const u8 sDragonScaleDesc[] = _(
-    "A strange scale\n"
-    "held by DRAGON-\n"
-    "type POKéMON.");
+    "Evolves a\n"
+    "SEA-DRAGON POKéMON");
 
 static const u8 sLightBallDesc[] = _(
     "A hold item that\n"
@@ -947,14 +946,13 @@ static const u8 sPoisonBarbDesc[] = _(
     "POISON-type moves.");
 
 static const u8 sNeverMeltIceDesc[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "ICE-type moves.");
+    "Boosts ICE-type.\n"
+    "Evolves EEVEE.");
 
 static const u8 sSpellTagDesc[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "GHOST-type moves.");
+    "Boosts GHOST-type.\n"
+    "Evolves a mischievous\n"
+    "POKéMON.");
 
 static const u8 sTwistedSpoonDesc[] = _(
     "A hold item that\n"
@@ -978,7 +976,8 @@ static const u8 sSilkScarfDesc[] = _(
 
 static const u8 sUpGradeDesc[] = _(
     "A peculiar box made\n"
-    "by SILPH CO.");
+    "by SILPH CO. Evolves\n"
+    "a computer POKéMON.");
 
 static const u8 sShellBellDesc[] = _(
     "A hold item that\n"

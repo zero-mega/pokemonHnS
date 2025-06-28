@@ -129,7 +129,7 @@ LilycoveCity_ContestLobby_EventScript_ShowPatron4::
 	return
 
 LilycoveCity_ContestLobby_EventScript_ShowTourists::
-	clearflag FLAG_HIDE_LILYCOVE_MUSEUM_TOURISTS
+	clearflag FLAG_GARBAGEFLAG
 	return
 
 LilycoveCity_ContestLobby_EventScript_SetPaintingFlag::

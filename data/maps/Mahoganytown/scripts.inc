@@ -4,9 +4,15 @@ Mahoganytown_MapScripts::
 	.byte 0
 
 MahoganyTown_EventScript_TownTrigger::
-	clearflag FLAG_HIDE_LAKE_OF_RAGE_LANCE
 	clearflag FLAG_HIDE_LAKE_OF_RAGE_GYARADOS
 	clearflag FLAG_HIDE_MAHOGANY_TOWN_FATMAN
+	clearflag FLAG_HIDE_MAHOGANY_ROCKETS
+	clearflag FLAG_GOT_TM_FROM_MAHOGANY_COP
+	clearflag FLAG_GOT_BLACK_BELT
+
+	setflag FLAG_HIDE_LAKE_OF_RAGE_LANCE
+	setflag FLAG_HIDE_MAHOGANY_SHOP_NPCS
+	setflag FLAG_HIDE_MAHOGANY_COP
 
 	setvar VAR_MAHOGANY_TOWN_STATE, 1
 	end
@@ -18,7 +24,7 @@ Mahoganytown_EventScript_RocketTrigger::
 	setflag FLAG_HIDE_GOLDENROD_ROCKET_SCOUT
 	setflag FLAG_HIDE_GOLDENROD_NPCS
 	clearflag FLAG_HIDE_ROCKET_GOLDENROD_RADIOTOWER_1
-	setvar VAR_TEMP_0, 1
+	setvar VAR_TEMP_0, 1 @CHANGELATER
 	release
 	end
 
@@ -39,6 +45,7 @@ MahoganyTown_EventScript_MerchantTrigger::
 	goto_if_eq VAR_RESULT, FALSE, MahoganyTown_EventScript_MerchantBroke
 	removemoney 300
 	updatemoneybox 0
+	playse SE_SHOP
 	msgbox MahoganyTown_Text_RageCandyBarMerchantSavorIt, MSGBOX_DEFAULT
 	giveitem ITEM_RAGE_CANDY_BAR
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull

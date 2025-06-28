@@ -142,6 +142,7 @@ GoldenrodGameCorner_PrizeRoom_EventScript_NotEnoughCoins::
 
 GoldenrodGameCorner_PrizeRoom_EventScript_ReceivedMonParty::
 	removecoins VAR_TEMP_2
+	playse SE_SHOP
 	updatecoinsbox 1, 1
 	bufferspeciesname STR_VAR_1, VAR_TEMP_1
 	playfanfare MUS_LEVEL_UP
@@ -155,6 +156,7 @@ GoldenrodGameCorner_PrizeRoom_EventScript_ReceivedMonParty::
 
 GoldenrodGameCorner_PrizeRoom_EventScript_ReceivedMonPC::
 	removecoins VAR_TEMP_2
+	playse SE_SHOP
 	updatecoinsbox 1, 1
 	bufferspeciesname STR_VAR_1, VAR_TEMP_1
 	playfanfare MUS_LEVEL_UP

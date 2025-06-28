@@ -2340,7 +2340,7 @@ const struct Item gItems[] =
     {
         .name = _("KING'S ROCK"),
         .itemId = ITEM_KINGS_ROCK,
-        .price = 100,
+        .price = 20000,
         .holdEffect = HOLD_EFFECT_FLINCH,
         .holdEffectParam = 10,
         .description = sKingsRockDesc,
@@ -2488,7 +2488,7 @@ const struct Item gItems[] =
     {
         .name = _("METAL COAT"),
         .itemId = ITEM_METAL_COAT,
-        .price = 100,
+        .price = 20000,
         .holdEffect = HOLD_EFFECT_STEEL_POWER,
         .holdEffectParam = 10,
         .description = sMetalCoatDesc,
@@ -2514,7 +2514,7 @@ const struct Item gItems[] =
     {
         .name = _("DRAGON SCALE"),
         .itemId = ITEM_DRAGON_SCALE,
-        .price = 2100,
+        .price = 20000,
         .holdEffect = HOLD_EFFECT_DRAGON_SCALE,
         .holdEffectParam = 10,
         .description = sDragonScaleDesc,
@@ -2656,7 +2656,7 @@ const struct Item gItems[] =
     {
         .name = _("NEVERMELTICE"),
         .itemId = ITEM_NEVER_MELT_ICE,
-        .price = 100,
+        .price = 20000,
         .holdEffect = HOLD_EFFECT_ICE_POWER,
         .holdEffectParam = 10,
         .description = sNeverMeltIceDesc,
@@ -2669,7 +2669,7 @@ const struct Item gItems[] =
     {
         .name = _("SPELL TAG"),
         .itemId = ITEM_SPELL_TAG,
-        .price = 100,
+        .price = 20000,
         .holdEffect = HOLD_EFFECT_GHOST_POWER,
         .holdEffectParam = 10,
         .description = sSpellTagDesc,
@@ -2734,7 +2734,7 @@ const struct Item gItems[] =
     {
         .name = _("UP-GRADE"),
         .itemId = ITEM_UP_GRADE,
-        .price = 2100,
+        .price = 20000,
         .holdEffect = HOLD_EFFECT_UP_GRADE,
         .description = sUpGradeDesc,
         .pocket = POCKET_ITEMS,
@@ -7226,7 +7226,7 @@ const struct Item gItems2[] =
     {
         .name = _("KING'S ROCK"),
         .itemId = ITEM_KINGS_ROCK,
-        .price = 100,
+        .price = 20000,
         .holdEffect = HOLD_EFFECT_FLINCH,
         .holdEffectParam = 10,
         .description = sKingsRockDesc,
@@ -7374,7 +7374,7 @@ const struct Item gItems2[] =
     {
         .name = _("METAL COAT"),
         .itemId = ITEM_METAL_COAT,
-        .price = 100,
+        .price = 20000,
         .holdEffect = HOLD_EFFECT_STEEL_POWER,
         .holdEffectParam = 10,
         .description = sMetalCoatDesc,
@@ -7400,7 +7400,7 @@ const struct Item gItems2[] =
     {
         .name = _("DRAGON SCALE"),
         .itemId = ITEM_DRAGON_SCALE,
-        .price = 2100,
+        .price = 20000,
         .holdEffect = HOLD_EFFECT_DRAGON_SCALE,
         .holdEffectParam = 10,
         .description = sDragonScaleDesc,
@@ -7542,7 +7542,7 @@ const struct Item gItems2[] =
     {
         .name = _("NEVERMELTICE"),
         .itemId = ITEM_NEVER_MELT_ICE,
-        .price = 100,
+        .price = 20000,
         .holdEffect = HOLD_EFFECT_ICE_POWER,
         .holdEffectParam = 10,
         .description = sNeverMeltIceDesc,
@@ -7555,7 +7555,7 @@ const struct Item gItems2[] =
     {
         .name = _("SPELL TAG"),
         .itemId = ITEM_SPELL_TAG,
-        .price = 100,
+        .price = 20000,
         .holdEffect = HOLD_EFFECT_GHOST_POWER,
         .holdEffectParam = 10,
         .description = sSpellTagDesc,
@@ -7620,7 +7620,7 @@ const struct Item gItems2[] =
     {
         .name = _("UP-GRADE"),
         .itemId = ITEM_UP_GRADE,
-        .price = 2100,
+        .price = 20000,
         .holdEffect = HOLD_EFFECT_UP_GRADE,
         .description = sUpGradeDesc,
         .pocket = POCKET_ITEMS,

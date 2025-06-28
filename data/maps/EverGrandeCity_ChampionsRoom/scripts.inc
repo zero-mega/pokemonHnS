@@ -84,7 +84,7 @@ EverGrandeCity_ChampionsRoom_EventScript_Defeated2::
 	applymovement LOCALID_WALLACE, EverGrandeCity_ChampionsRoom_Movement_WallaceExit2
 	applymovement OBJ_EVENT_ID_PLAYER, EverGrandeCity_ChampionsRoom_Movement_PlayerExit2
 	waitmovement 0
-	setflag FLAG_HIDE_PETALBURG_GYM_GREETER
+	setflag FLAG_GARBAGEFLAG
 	setflag FLAG_STEVEN_REMATCH
 	warp MAP_EVER_GRANDE_CITY_HALL_OF_FAME, 7, 16
 	waitstate
@@ -159,7 +159,7 @@ EverGrandeCity_ChampionsRoom_EventScript_BirchArrivesExitForHoF::
 	applymovement LOCALID_WALLACE, EverGrandeCity_ChampionsRoom_Movement_WallaceExit
 	applymovement OBJ_EVENT_ID_PLAYER, EverGrandeCity_ChampionsRoom_Movement_PlayerExit
 	waitmovement 0
-	setflag FLAG_HIDE_PETALBURG_GYM_GREETER
+	setflag FLAG_GARBAGEFLAG
 	warp MAP_EVER_GRANDE_CITY_HALL_OF_FAME, 7, 16
 	waitstate
 	releaseall

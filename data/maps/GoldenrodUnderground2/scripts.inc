@@ -168,6 +168,7 @@ GoldenrodUnderground_EventScript_Haircut1::
 	goto_if_eq VAR_RESULT, FALSE, GoldenrodUnderground_EventScript_NotEnough_Haircut1
 	removemoney 500
 	updatemoneybox 0
+	playse SE_SHOP
 	msgbox GoldenrodUnderground_Text_OlderBrotherWatchItBeautiful
 	closemessage
 	fadescreen FADE_TO_BLACK
@@ -230,6 +231,7 @@ GoldenrodUnderground_EventScript_Haircut2::
 	goto_if_eq VAR_RESULT, FALSE, GoldenrodUnderground_EventScript_NotEnough_Haircut2
 	removemoney 300
 	updatemoneybox 0
+	playse SE_SHOP
 	msgbox GoldenrodUnderground_Text_YoungerBrotherLookCool
 	closemessage
 	fadescreen FADE_TO_BLACK

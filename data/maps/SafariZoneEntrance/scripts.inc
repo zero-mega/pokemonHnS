@@ -79,6 +79,7 @@ SafariZoneEntrance_EventScript_TryEnterSafariZone::
 	playse SE_SHOP
 	msgbox Route121_SafariZoneEntrance_Text_ThatWillBe500Please, MSGBOX_DEFAULT
 	removemoney 500
+	playse SE_SHOP
 	updatemoneybox
 	msgbox Route121_SafariZoneEntrance_Text_HereAreYourSafariBalls, MSGBOX_DEFAULT
 	playfanfare MUS_OBTAIN_ITEM
