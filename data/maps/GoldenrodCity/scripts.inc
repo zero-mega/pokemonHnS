@@ -76,9 +76,11 @@ GoldenrodCity_EventScript_Youngster::
 	end
 
 GoldenrodCity_EventScript_Youngster2::
+	lock
+	faceplayer
 	msgbox GoldenrodCity_Text_CooltrainerF1, MSGBOX_DEFAULT
 	closemessage
-	releaseall
+	release
 	end
 
 GoldenrodCity_EventScript_CooltrainerF::

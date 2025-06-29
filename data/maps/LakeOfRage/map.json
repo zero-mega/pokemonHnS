@@ -23,7 +23,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_LASS",
       "x": 37,
-      "y": 42,
+      "y": 36,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
@@ -35,8 +35,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_FISHER",
-      "x": 26,
-      "y": 39,
+      "x": 25,
+      "y": 38,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
@@ -49,7 +49,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_LANCE",
       "x": 30,
-      "y": 38,
+      "y": 37,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
@@ -61,7 +61,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_1",
-      "x": 38,
+      "x": 32,
       "y": 35,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
@@ -204,8 +204,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SUPER_NERD",
-      "x": 43,
-      "y": 34,
+      "x": 46,
+      "y": 32,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
@@ -217,21 +217,21 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_DRAGONITE",
-      "x": 30,
-      "y": 39,
+      "x": 31,
+      "y": 37,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_type": "MOVEMENT_TYPE_WALK_SLOWLY_IN_PLACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LakeOfRage_EventScript_Lance",
+      "script": "LakeOfRage_EventScript_Dragonite",
       "flag": "FLAG_HIDE_LAKE_OF_RAGE_LANCE"
     }
   ],
   "warp_events": [
     {
-      "x": 43,
+      "x": 39,
       "y": 41,
       "elevation": 0,
       "dest_map": "MAP_LAKE_OF_RAGE_HOUSE2",
@@ -251,15 +251,15 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 34,
-      "y": 38,
+      "x": 30,
+      "y": 36,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "LakeOfRage_EventScript_Sign1"
     },
     {
       "type": "sign",
-      "x": 41,
+      "x": 37,
       "y": 41,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",

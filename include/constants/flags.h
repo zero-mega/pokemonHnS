@@ -1416,7 +1416,7 @@
 #define FLAG_SYS_CAVE_SHIP                          (SYSTEM_FLAGS + 0x37) // Unused Flag, leftover from R/S debug, presumably used by Emerald's debug too
 #define FLAG_LANDMARK_CAVE_OF_SHOCK                 (SYSTEM_FLAGS + 0x38) 
 #define UNUSED_SYSTEM_FLAG_0x39                     (SYSTEM_FLAGS + 0x39) // Unused Flag
-#define FLAG_SYS_SHOAL_TIDE                         (SYSTEM_FLAGS + 0x3A)
+#define FLAG_SYS_LAKE_OF_RAGE_TIDE                         (SYSTEM_FLAGS + 0x3A)
 #define FLAG_SYS_RIBBON_GET                         (SYSTEM_FLAGS + 0x3B)
 
 #define FLAG_LANDMARK_FLOWER_SHOP                   (SYSTEM_FLAGS + 0x3C)

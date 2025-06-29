@@ -4,7 +4,7 @@ ShoalCave_LowTideEntranceRoom_MapScripts::
 
 ShoalCave_LowTideEntranceRoom_OnTransition:
 	special UpdateShoalTideFlag
-	goto_if_set FLAG_SYS_SHOAL_TIDE, ShoalCave_LowTideEntranceRoom_EventScript_SetHighTide
+	goto_if_set FLAG_SYS_LAKE_OF_RAGE_TIDE, ShoalCave_LowTideEntranceRoom_EventScript_SetHighTide
 	goto ShoalCave_LowTideEntranceRoom_EventScript_SetLowTide
 
 ShoalCave_LowTideEntranceRoom_EventScript_SetHighTide::

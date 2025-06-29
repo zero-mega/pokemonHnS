@@ -8,8 +8,10 @@ LakeOfRage_MapScripts::
 	.byte 0
 
 LakeOfRage_OnTransition::
-	goto_if_ge VAR_MAHOGANY_TOWN_STATE, 5, LakeOfRage_EventScript_SetLowTide @CHANGELATER
-	goto LakeOfRage_EventScript_SetHighTide
+	goto_if_lt VAR_MAHOGANY_TOWN_STATE, 4, LakeOfRage_EventScript_SetHighTide @CHANGELATER
+	special UpdateShoalTideFlag
+	goto_if_set FLAG_SYS_LAKE_OF_RAGE_TIDE, LakeOfRage_EventScript_SetHighTide
+	goto LakeOfRage_EventScript_SetLowTide
 
 LakeOfRage_EventScript_SetLowTide::
 	setweather WEATHER_NONE
@@ -22,7 +24,7 @@ LakeOfRage_EventScript_SetHighTide::
 	end
 
 LakeOfRage_EventScript_Gramps::
-	goto_if_ge VAR_MAHOGANY_TOWN_STATE, 5, LakeOfRage_EventScript_Gramps2 @CHANGELATER
+	goto_if_ge VAR_MAHOGANY_TOWN_STATE, 4, LakeOfRage_EventScript_Gramps2
 	msgbox LakeOfRage_Text_Gramps, MSGBOX_NPC
 	end
 
@@ -96,6 +98,16 @@ LakeOfRage_EventScript_Item_Red_Flute::
 	finditem ITEM_RED_FLUTE
 	end
 
+LakeOfRage_EventScript_Dragonite::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_DRAGONITE, CRY_MODE_NORMAL
+	msgbox LakeOfRage_Text_Dragonite, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
 LakeOfRage_EventScript_Lance::
 	lock
 	goto_if_eq VAR_MAHOGANY_TOWN_STATE, 3, LakeOfRage_EventScript_Lance_Return
@@ -103,19 +115,24 @@ LakeOfRage_EventScript_Lance::
 	closemessage
 	delay 20
 	faceplayer
+	turnobject LOCALID_LAKEOFRAGE_OLDMAN, DIR_SOUTH
 	msgbox LakeOfRage_Text_LanceIntro2, MSGBOX_DEFAULT
-	turnobject LOCALID_LAKEOFRAGE_LANCE, DIR_EAST
-	delay 55
-	turnobject LOCALID_LAKEOFRAGE_LANCE, DIR_WEST
 	setvar VAR_MAHOGANY_TOWN_STATE, 3
 	msgbox LakeOfRage_Text_LanceIntro3, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, FALSE, LakeOfRage_EventScript_LancDeclined
 LakeOfRage_EventScript_LanceAccept::
+	lock
 	msgbox LakeOfRage_Text_LanceRadioSignal, MSGBOX_DEFAULT
 	closemessage
-	@RESUME applymovement LOCALID_LAKEOFRAGE_LANCE, 
-	@RESUME applymovement LOCALID_LAKEOFRAGE_DRAGONITE,
+	goto_if_eq VAR_FACING, DIR_NORTH, LakeOfRage_EventScript_LanceDragoniteLeaveNorth
+	applymovement LOCALID_LAKEOFRAGE_LANCE, LakeOfRage_Movement_LanceLeave
+	applymovement LOCALID_LAKEOFRAGE_DRAGONITE, LakeOfRage_Movement_DragoniteLeave
+	waitmovement LOCALID_LAKEOFRAGE_LANCE
+	waitmovement LOCALID_LAKEOFRAGE_DRAGONITE
 	setflag FLAG_HIDE_LAKE_OF_RAGE_LANCE
+	removeobject LOCALID_LAKEOFRAGE_LANCE
+	removeobject LOCALID_LAKEOFRAGE_DRAGONITE
+	setvar VAR_MAHOGANY_TOWN_STATE, 4
 	release
 	end
 
@@ -132,6 +149,69 @@ LakeOfRage_EventScript_LancDeclined::
 	release
 	end
 
+
+LakeOfRage_EventScript_LanceDragoniteLeaveNorth::
+	applymovement LOCALID_LAKEOFRAGE_LANCE, LakeOfRage_Movement_LanceLeaveNorth
+	applymovement LOCALID_LAKEOFRAGE_DRAGONITE, LakeOfRage_Movement_DragoniteLeaveNorth
+	waitmovement LOCALID_LAKEOFRAGE_LANCE
+	waitmovement LOCALID_LAKEOFRAGE_DRAGONITE
+	setflag FLAG_HIDE_LAKE_OF_RAGE_LANCE
+	removeobject LOCALID_LAKEOFRAGE_LANCE
+	removeobject LOCALID_LAKEOFRAGE_DRAGONITE
+	setvar VAR_MAHOGANY_TOWN_STATE, 4
+	release
+	end
+	return
+
+LakeOfRage_Movement_LanceLeaveNorth:
+	walk_left
+	walk_down
+	delay_8
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
+LakeOfRage_Movement_DragoniteLeaveNorth:
+	walk_left
+	walk_left
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
+LakeOfRage_Movement_LanceLeave:
+	walk_down
+	delay_8
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
+LakeOfRage_Movement_DragoniteLeave:
+	walk_left
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
+LakeOfRage_Text_Dragonite:
+	.string "DRAGONITE: Gyafooha!$"
 
 LakeOfRage_Text_LanceForcedToEvolve:
     .string "This lake is full of GYARADOS\n"
