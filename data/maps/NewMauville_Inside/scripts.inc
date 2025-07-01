@@ -35,15 +35,15 @@ NewMauville_Inside_SwitchToModern::
 	end
 
 NewMauville_Inside_EventScript_ShowVoltorb1::
-	clearflag FLAG_HIDE_NEW_MAUVILLE_VOLTORB_1
+	clearflag FLAG_GARBAGEFLAG
 	return
 
 NewMauville_Inside_EventScript_ShowVoltorb2::
-	clearflag FLAG_HIDE_NEW_MAUVILLE_VOLTORB_2
+	clearflag FLAG_GARBAGEFLAG
 	return
 
 NewMauville_Inside_EventScript_ShowVoltorb3::
-	clearflag FLAG_HIDE_NEW_MAUVILLE_VOLTORB_3
+	clearflag FLAG_GARBAGEFLAG
 	return
 
 NewMauville_Inside_OnLoad:

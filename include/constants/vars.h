@@ -108,7 +108,7 @@
 #define VAR_AZALEA_TOWN_STATE                        0x4058 //0 on trigger, 1 = talk to kurt, 2 = goto well, 3 = goto kurt well, 4 = goto gym, 5 = fight silver, 6 = find farfetchd, 7 = bringGSBall, 8 = GoOutside, 9 = Celebi, 10 = done
 #define VAR_GOLDENROD_CITY_STATE                          0x4059  //0 on trigger, 1 = get radio, 2 = fight whitney, 3 = whitney crying, 4 = whitney give badge, 5 = complete before rocket. 6 = fight petrel, 7 = meet kimono, 8 = silver, 9 = director-archer, 10 = return NPCS, 11 = done
 #define VAR_ECRUTEAK_CITY_STATE                          0x405A //1 = goto burnedtower, 2 = goto silver, 3 = release the beasts, 4 = beat Morty, 5 = done. 10 goto sage office, 11 goto ho-oh, 12 ho-oh done.
-#define VAR_MAHOGANY_TOWN_STATE                           0x405B //1 = fight gyarados, 2 = talk to lance, 3 = agree with lance, 4 = goto shop, 5 = goto B2F hideout,  6 = goto B3F, 7 = silver at the door, 8 = petrel, 9 = 
+#define VAR_MAHOGANY_TOWN_STATE                           0x405B //1 = fight gyarados, 2 = talk to lance, 3 = agree with lance, 4 = goto shop, 5 = goto B2F hideout,  6 = goto B3F, 7 = silver at the door, 8 = petrel, 9 = murkrow1, 10 = murkrow2, 11 = murkrow3, 12 = fight ariana
 #define VAR_OLIVINE_CITY_STATE                          0x405C  //1 = trigger silver, 2 = climb lighthouse, 3 = get potion, 4 = deliver potion, 5 = goto gym row1, 6 = gymrow2, 7 = jasmine, 8 = done
 #define VAR_CIANWOOD_CITY_STATE                         0x405D 
 #define VAR_SAFARI_ZONE_GATE_STATE                        0x405E

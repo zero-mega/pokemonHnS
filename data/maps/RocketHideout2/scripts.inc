@@ -1,5 +1,7 @@
 .set LOCALID_ROCKETHIDEOUT2_LANCE, 7
 .set LOCALID_ROCKETHIDEOUT2_DRAGONITE, 8
+.set LOCALID_ROCKETHIDEOUT2_MURKROWSTAIRS, 15
+.set LOCALID_ROCKETHIDEOUT2_MURKROWGATE, 16
 
 RocketHideout2_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, RocketHideout2_OnLoad
@@ -8,7 +10,7 @@ RocketHideout2_MapScripts::
 RocketHideout2_OnLoad::
 	call_if_set FLAG_HIDE_ROCKETHIDEOUT2_GATE, RocketHideout2_HideGate
 	end
-	
+
 RocketHideout2_HideGate::
 	setmetatile 14, 19, 0x378, FALSE
 	setmetatile 14, 20, 0x380, FALSE
@@ -17,6 +19,78 @@ RocketHideout2_HideGate::
 	setmetatile 16, 19, 0x379, FALSE
 	setmetatile 16, 20, 0x379, FALSE
 	return
+
+RocketHideout2_Trigger_MurkrowStairs::
+	lock
+	applymovement LOCALID_ROCKETHIDEOUT2_MURKROWSTAIRS, RocketHideout2_Movement_MurkrowStairs1
+	waitmovement 0
+	playmoncry SPECIES_MURKROW, CRY_MODE_NORMAL
+	msgbox RocketHideout3_Text_MurkrowSpeak1, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_ROCKETHIDEOUT2_MURKROWSTAIRS, RocketHideout2_Movement_MurkrowStairs2
+	waitmovement 0
+	setflag FLAG_HIDE_ROCKETHIDEOUT2_MURKROWSTAIRS
+	removeobject LOCALID_ROCKETHIDEOUT2_MURKROWSTAIRS
+	clearflag FLAG_HIDE_ROCKETHIDEOUT3_MURKROWSTAIRS
+	setvar VAR_MAHOGANY_TOWN_STATE, 10
+	release
+	end
+
+RocketHideout2_Movement_MurkrowStairs1:
+	jump_in_place_left
+	jump_in_place_left
+	step_end
+
+RocketHideout2_Movement_MurkrowStairs2:
+	jump_in_place_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	step_end
+
+
+RocketHideout3_Trigger_MurkrowGate::
+	lock
+	applymovement LOCALID_ROCKETHIDEOUT3_MURKROWGATE, RocketHideout3_Movement_MurkrowStairs1
+	waitmovement 0
+	playmoncry SPECIES_MURKROW, CRY_MODE_NORMAL
+	msgbox RocketHideout3_Text_MurkrowSpeak1, MSGBOX_DEFAULT
+	closemessage
+
+
+
+
+	@RESUME
+	applymovement LOCALID_ROCKETHIDEOUT3_MURKROWGATE, RocketHideout3_Movement_MurkrowGate2
+	waitmovement 0
+	setflag FLAG_HIDE_ROCKETHIDEOUT3_MURKROWGATE
+	removeobject LOCALID_ROCKETHIDEOUT3_MURKROWGATE
+	setvar VAR_MAHOGANY_TOWN_STATE, 12
+	release
+	end
+
+RocketHideout3_Movement_MurkrowGate2:
+	jump_in_place_right
+	walk_fast_down
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	step_end
 
 RocketHideout_EventScript_Item_Thief::
 	finditem ITEM_TM_THIEF

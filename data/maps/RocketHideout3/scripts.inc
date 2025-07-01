@@ -1,6 +1,10 @@
 .set LOCALID_ROCKETHIDEOUT3_LANCE, 3
 .set LOCALID_ROCKETHIDEOUT3_DRAGONITE, 2
 .set LOCALID_ROCKETHIDEOUT3_SILVER, 5
+.set LOCALID_ROCKETHIDEOUT3_GIOVANNI, 16
+.set LOCALID_ROCKETHIDEOUT3_PETREL, 15
+.set LOCALID_ROCKETHIDEOUT3_MURKROW, 14
+.set LOCALID_ROCKETHIDEOUT3_MURKROWSTAIRS, 17
 
 RocketHideout3_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, RocketHideout3_OnFrame
@@ -23,7 +27,6 @@ RocketHideout3_HideGate::
 RocketHideout3_OnFrame::
 	map_script_2 VAR_MAHOGANY_TOWN_STATE, 6, RocketHideout3_EventScript_LancePassword
 	.2byte 0
-
 
 RocketHideout3_EventScript_LancePassword::
 	lock
@@ -99,6 +102,46 @@ RocketHideout3_EventScript_RocketKO::
 RocketHideout3_Text_B3FRocket:
     .string "Urrggh… The guy in the cape is\n"
     .string "incredibly tough…$"
+
+
+RocketHideout3_Trigger_MurkrowStairs::
+	lock
+	applymovement LOCALID_ROCKETHIDEOUT3_MURKROWSTAIRS, RocketHideout3_Movement_MurkrowStairs1
+	waitmovement 0
+	playmoncry SPECIES_MURKROW, CRY_MODE_NORMAL
+	msgbox RocketHideout3_Text_MurkrowSpeak1, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_ROCKETHIDEOUT3_MURKROWSTAIRS, RocketHideout3_Movement_MurkrowStairs2
+	waitmovement 0
+	setflag FLAG_HIDE_ROCKETHIDEOUT3_MURKROWSTAIRS
+	removeobject LOCALID_ROCKETHIDEOUT3_MURKROWSTAIRS
+	clearflag FLAG_HIDE_ROCKETHIDEOUT2_MURKROWGATE
+	setvar VAR_MAHOGANY_TOWN_STATE, 11
+	release
+	end
+
+RocketHideout3_Movement_MurkrowStairs1:
+	jump_in_place_right
+	jump_in_place_right
+	step_end
+
+RocketHideout3_Movement_MurkrowStairs2:
+	jump_in_place_right
+	walk_fast_down
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	step_end
 
 RocketHideout3_Trigger_Silver::
 	lock
@@ -256,25 +299,330 @@ RocketHideout3_Text_Rival:
     .string "Could it be that love made his\n"
     .string "team so powerful?$"
 
-RocketHideout3_Text_ExecutiveM4Before:
-    .string "What? Who are you? This is the\n"
-    .string "office of our leader, GIOVANNI.\p"
-    .string "Since disbanding TEAM ROCKET\n"
-    .string "three years ago, he has been in\l"
-    .string "hiding.\p"
-    .string "But we're certain he will be\n"
-    .string "back some day to assume command\l"
-    .string "again.\p"
-    .string "I won't let you interfere with\n"
-    .string "our plans!$"
+@=======[PETREL]==============================================================================================================================
 
-RocketHideout3_Text_ExecutiveM4Beaten:
+RocketHideout3_EventScript_Giovanni::
+	lock
+	faceplayer
+	msgbox RocketHideout3_Text_PetrelIntro, MSGBOX_DEFAULT
+	playse SE_PIN
+	applymovement LOCALID_ROCKETHIDEOUT3_GIOVANNI, Common_Movement_QuestionMark
+	delay 60
+	msgbox RocketHideout3_Text_PetrelDisbelief MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_ROCKETHIDEOUT3_GIOVANNI, RocketHideout3_Movement_Spin
+	waitmovement 0
+	setflag FLAG_HIDE_ROCKETHIDEOUT3_GIOVANNI
+	removeobject LOCALID_ROCKETHIDEOUT3_GIOVANNI
+	clearflag FLAG_HIDE_ROCKETHIDEOUT3_PETREL
+	addobject LOCALID_ROCKETHIDEOUT3_PETREL
+	applymovement LOCALID_ROCKETHIDEOUT3_PETREL, RocketHideout3_Movement_Spin2
+	waitmovement 0
+	call_if_eq VAR_FACING, DIR_EAST, RocketHideout3_EventScript_FacingEast
+	call_if_eq VAR_FACING, DIR_WEST, RocketHideout3_EventScript_FacingWest
+	msgbox RocketHideout3_Text_PetrelReveal, MSGBOX_DEFAULT
+	@trainerbattle_no_intro TRAINER_PETREL_1, RocketHideout3_Text_PetrelBeaten
+	msgbox RocketHideout3_Text_PetrelAfterBattle, MSGBOX_DEFAULT
+	closemessage
+	call_if_eq VAR_FACING, DIR_EAST, RocketHideout3_EventScript_LeaveEast
+	call_if_eq VAR_FACING, DIR_WEST, RocketHideout3_EventScript_LeaveWest
+	call_if_eq VAR_FACING, DIR_NORTH, RocketHideout3_EventScript_LeaveEast
+	setflag FLAG_HIDE_ROCKETHIDEOUT3_PETREL
+	playse SE_EXIT
+	removeobject LOCALID_ROCKETHIDEOUT3_PETREL
+	
+	applymovement LOCALID_ROCKETHIDEOUT3_MURKROW, RocketHideout3_Movement_Murkrow1
+
+	delay 120
+
+	call_if_eq VAR_FACING, DIR_EAST, RocketHideout3_EventScript_FacingEastMurkrow
+	call_if_eq VAR_FACING, DIR_WEST, RocketHideout3_EventScript_FacingWestMurkrow
+
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_SOUTH
+	waitmovement LOCALID_ROCKETHIDEOUT3_MURKROW
+	playmoncry SPECIES_MURKROW, CRY_MODE_NORMAL
+	msgbox RocketHideout3_Text_MurkrowSpeak1, MSGBOX_DEFAULT
+	msgbox RocketHideout3_Text_MurkrowMimic, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_ROCKETHIDEOUT3_MURKROW, RocketHideout3_Movement_Murkrow2
+	waitmovement LOCALID_ROCKETHIDEOUT3_MURKROW
+
+	setflag FLAG_HIDE_ROCKETHIDEOUT3_MURKROW
+	playse SE_EXIT
+	removeobject LOCALID_ROCKETHIDEOUT3_MURKROW
+	clearflag FLAG_HIDE_ROCKETHIDEOUT2_MURKROWSTAIRS
+	setflag FLAG_HIDE_ROCKETHIDEOUT2_MURKROWGATE
+	setflag FLAG_HIDE_ROCKETHIDEOUT3_MURKROWSTAIRS
+	setvar VAR_MAHOGANY_TOWN_STATE, 9
+	release
+	end
+
+RocketHideout3_EventScript_FacingEastMurkrow::
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkRight1
+	waitmovement OBJ_EVENT_ID_PLAYER
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown1
+	waitmovement OBJ_EVENT_ID_PLAYER
+	return
+
+RocketHideout3_EventScript_FacingWestMurkrow::
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft1
+	waitmovement OBJ_EVENT_ID_PLAYER
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown1
+	waitmovement OBJ_EVENT_ID_PLAYER
+	return
+
+RocketHideout3_EventScript_FacingEast::
+	turnobject LOCALID_ROCKETHIDEOUT3_PETREL, DIR_WEST
+	return
+
+RocketHideout3_EventScript_FacingWest::
+	turnobject LOCALID_ROCKETHIDEOUT3_PETREL, DIR_EAST
+	return
+
+RocketHideout3_EventScript_FacingNorth::
+	turnobject LOCALID_ROCKETHIDEOUT3_PETREL, DIR_SOUTH
+	return
+
+RocketHideout3_EventScript_LeaveEast::
+	applymovement LOCALID_ROCKETHIDEOUT3_PETREL, RocketHideout3_Movement_LeaveEast
+	waitmovement 0
+	return
+
+RocketHideout3_EventScript_LeaveWest::
+	applymovement LOCALID_ROCKETHIDEOUT3_PETREL, RocketHideout3_Movement_LeaveWest
+	waitmovement 0
+	return
+
+RocketHideout3_Movement_Murkrow1:
+	walk_down
+	walk_down
+	walk_down
+	walk_right
+	walk_right
+	jump_in_place_right
+	jump_in_place_left
+	jump_in_place_down
+	jump_in_place_up
+	jump_in_place_up
+	jump_in_place_up
+	jump_in_place_up
+	step_end
+
+RocketHideout3_Movement_Murkrow2:
+	jump_in_place_down
+	walk_faster_down
+	walk_faster_down
+	walk_faster_down
+	walk_faster_down
+	walk_faster_down
+	walk_faster_down
+	walk_faster_down
+	walk_faster_down
+	walk_faster_down
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_right
+	walk_faster_right
+	step_end
+
+RocketHideout3_Movement_LeaveEast:
+	lock_facing_direction
+	walk_slow_right
+	unlock_facing_direction
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_faster_down
+	walk_faster_down
+	walk_faster_down
+	walk_faster_down
+	walk_faster_down
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_fast_right
+	walk_fast_right
+	step_end
+RocketHideout3_Movement_LeaveWest:
+	lock_facing_direction
+	walk_slow_left
+	walk_slow_left
+	unlock_facing_direction
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_faster_down
+	walk_faster_down
+	walk_faster_down
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_down
+	walk_faster_down
+	walk_faster_down
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_fast_right
+	walk_fast_right
+	step_end
+
+RocketHideout3_Movement_Spin:
+	face_right
+	delay_8
+	face_up
+	delay_8
+	face_left
+	delay_8
+	face_down
+	delay_8
+	face_right
+	delay_4
+	face_up
+	delay_4
+	face_left
+	delay_4
+	face_down
+	delay_4
+	face_right
+	delay_2
+	face_up
+	delay_2
+	face_left
+	delay_2
+	face_down
+	step_end
+
+RocketHideout3_Movement_Spin2:
+	face_right
+	delay_2
+	face_up
+	delay_2
+	face_left
+	delay_2
+	face_down
+	step_end
+
+RocketHideout3_Text_PetrelIntro:
+    .string "Muhahaha, we've been waiting\n"
+    .string "for you. So, you are {PLAYER}...\p"
+    .string "Me? You don't know who I am?\n"
+    .string "It is me, GIOVANNI.\p"
+    .string "The majestic GIOVANNI himself!\n"
+    .string "Wahahaha!$"
+
+RocketHideout3_Text_PetrelDisbelief:
+    .string "...Huh?\n"
+    .string "I don't sound anything like\n"
+    .string "GIOVANNI?\p"
+    .string "I don't even look like GIOVANNI?\n"
+    .string "How come? I've worked so hard\l"
+    .string "to mimic him!$"
+
+RocketHideout3_Text_PetrelReveal:
+    .string "PETREL: I am a Team Rocket\n"
+    .string "Executive!\p"
+    .string "You must be trying to sneak into\n"
+    .string "the radio-transmitter room.\p"
+    .string "Well, that's not going to happen.\n"
+    .string "That room is protected with a\l"
+    .string "special password.\p"
+    .string "The password is “Hail GIOVANNI.”\n"
+    .string "Surprised to hear it from me?\p"
+    .string "Knowing the password won't help\n"
+    .string "you though.\p"
+    .string "The door won't open unless I say\n"
+    .string "the password. It only reacts to\l"
+    .string "my voice.$"
+
+RocketHideout3_Text_PetrelBeaten:
     .string "I… I couldn't do a thing…\p"
     .string "GIOVANNI, please forgive me…$"
 
-RocketHideout3_Text_ExecutiveM4After:
-    .string "No, I can't let this affect me.\p"
-    .string "I have to inform the others…$"
+RocketHideout3_Text_PetrelAfterBattle:
+    .string "PETREL: Since disbanding Team\n"
+    .string "Rocket three years ago, our\l"
+    .string "Giovanni has been missing.\p"
+    .string "But we're certain he's been\n"
+    .string "waiting for the right time for\l"
+    .string "our revival... Wahahaha!\p"
+    .string "Losing to you won't change the\n"
+    .string "fact that you are unable to get\l"
+    .string "in the radio-transmitter room!\p"
+    .string "You need my voice to unlock it!$"
+
+RocketHideout3_EventScript_Murkrow::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MURKROW, CRY_MODE_NORMAL
+	msgbox RocketHideout3_Text_MurkrowSpeak1, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+RocketHideout3_Text_MurkrowSpeak1:
+    .string "MURKROW: Hail GIOVANNI.$"
+
+RocketHideout3_Text_MurkrowMimic:
+    .string "MURKROW is mimicking\n"
+    .string "the voice of PETREL!\p"
+    .string "You may be able to...!?$"
 
 RocketHideout3_Text_Murkrow:
     .string "MURKROW: The password is…\p"

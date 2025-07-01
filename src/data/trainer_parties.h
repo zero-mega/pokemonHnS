@@ -21629,33 +21629,33 @@ static const struct TrainerMonNoItemCustomMoves sParty_Giovanni[] = { //RocketAd
 
 
 
-static const struct TrainerMonNoItemCustomMoves sParty_Archer1[] = { //RocketAdminGroup
+static const struct TrainerMonNoItemCustomMoves sParty_Petrel_1[] = { //RocketAdminGroup
     {
     .iv = 255,
     .lvl = 30,
-    .species = SPECIES_WEEZING,
-    .moves = {MOVE_SMOKESCREEN, MOVE_TACKLE, MOVE_TOXIC, MOVE_SLUDGE}
-    },
-    {
-    .iv = 255,
-    .lvl = 29,
-    .species = SPECIES_TAUROS,
-    .moves = {MOVE_FRUSTRATION, MOVE_HORN_ATTACK, MOVE_PURSUIT, MOVE_RAGE}
+    .species = SPECIES_PINECO,
+    .moves = {MOVE_PIN_MISSILE, MOVE_EXPLOSION, MOVE_SPIKES, MOVE_SPIKE_CANNON}
     },
     {
     .iv = 255,
     .lvl = 30,
-    .species = SPECIES_HOUNDOOM,
-    .moves = {MOVE_BITE, MOVE_SMOG, MOVE_ROAR, MOVE_FLAME_WHEEL}
+    .species = SPECIES_LARVITAR,
+    .moves = {MOVE_ROCK_TOMB, MOVE_SCREECH, MOVE_BITE, MOVE_THRASH}
     },
     {
     .iv = 255,
     .lvl = 30,
-    .species = SPECIES_SLOWBRO,
-    .moves = {MOVE_CURSE, MOVE_CONFUSION, MOVE_SURF, MOVE_HEADBUTT}
+    .species = SPECIES_MAGCARGO,
+    .moves = {MOVE_SMOG, MOVE_FLAMETHROWER, MOVE_ROCK_SLIDE, MOVE_CURSE}
+    },
+    {
+    .iv = 255,
+    .lvl = 30,
+    .species = SPECIES_CLOYSTER,
+    .moves = {MOVE_ICE_BEAM, MOVE_CLAMP, MOVE_SPIKE_CANNON, MOVE_SURF}
     },
 };
-static const struct TrainerMonNoItemCustomMoves sParty_Archer2[] = { //RocketAdminGroup
+static const struct TrainerMonNoItemCustomMoves sParty_Archer[] = { //RocketAdminGroup
     {
     .iv = 255,
     .lvl = 39,
@@ -21741,7 +21741,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Proton2[] = { //RocketAdm
     },
 };
 
-static const struct TrainerMonNoItemCustomMoves sParty_Petrel[] = { //RocketAdminGroup
+static const struct TrainerMonNoItemCustomMoves sParty_Petrel_2[] = { //RocketAdminGroup
     {
     .iv = 255,
     .lvl = 38,

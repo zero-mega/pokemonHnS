@@ -52,7 +52,7 @@ GoldenrodRadioTower5_EventScript_Petrel::
 	applymovement LOCALID_PETREL_OFFICE, GoldenrodRadioTower5_Movement_Spin2
 	waitmovement 0
 	msgbox GoldenrodRadioTower5_Text_FakeDirector2, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_PETREL, GoldenrodRadioTower5_Text_FakeDirectorWin
+	trainerbattle_no_intro TRAINER_PETREL_2, GoldenrodRadioTower5_Text_FakeDirectorWin
 	playbgm MUS_HG_ROCKET_TAKEOVER, TRUE
 	msgbox GoldenrodRadioTower5_Text_FakeDirectorAfter, MSGBOX_DEFAULT
 	giveitem ITEM_BASEMENT_KEY
@@ -173,7 +173,7 @@ GoldenrodRadioTower5_EventScript_Archer::
 	lock
 	faceplayer
 	msgbox GoldenrodRadioTower5_Text_RocketBossSeen, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_ARCHER_2, GoldenrodRadioTower5_Text_RocketBossBeaten
+	trainerbattle_no_intro TRAINER_ARCHER, GoldenrodRadioTower5_Text_RocketBossBeaten
 	playbgm MUS_HG_ROCKET_TAKEOVER, TRUE
 	msgbox GoldenrodRadioTower5_Text_RocketBossAfter, MSGBOX_DEFAULT
 	delay 55

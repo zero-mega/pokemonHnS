@@ -279,7 +279,7 @@
 #define TRAINER_PAUL                        275
 #define TRAINER_ARCHER_4                     276
 #define TRAINER_ARCHER_5                     277
-#define TRAINER_PETREL                     278
+#define TRAINER_PETREL_2                     278
 #define TRAINER_PROTON_2                     279
 #define TRAINER_UNUSEDNAME_2                     280
 #define TRAINER_GEORGIA                     281
@@ -468,8 +468,8 @@
 #define TRAINER_GRUNT                      464
 #define TRAINER_GRUNT_31                     465
 #define TRAINER_GRUNT_32                     466
-#define TRAINER_ARCHER_1                     467
-#define TRAINER_ARCHER_2                     468
+#define TRAINER_PETREL_1                     467
+#define TRAINER_ARCHER                     468
 #define TRAINER_HEIDI                       469
 #define TRAINER_DARIN                       470
 #define TRAINER_CAROL                       471

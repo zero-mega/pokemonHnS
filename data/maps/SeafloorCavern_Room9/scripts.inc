@@ -124,7 +124,7 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 	msgbox SeafloorCavern_Room9_Text_MaxieComeOnPlayer, MSGBOX_DEFAULT
 	setvar VAR_GARBAGEVAR, 1
 	setvar VAR_GARBAGEVAR, 1
-	clearflag FLAG_HIDE_SOOTOPOLIS_CITY_STEVEN
+	clearflag FLAG_GARBAGEFLAG
 	clearflag FLAG_HIDE_SOOTOPOLIS_CITY_ARCHIE
 	clearflag FLAG_HIDE_SOOTOPOLIS_CITY_MAXIE
 	clearflag FLAG_HIDE_SOOTOPOLIS_CITY_RESIDENTS

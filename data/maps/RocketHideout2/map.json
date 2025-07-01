@@ -160,9 +160,9 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_ARCHER",
       "x": 15,
-      "y": 17,
+      "y": 23,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -186,15 +186,41 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_ARIANA",
       "x": 16,
-      "y": 17,
+      "y": 23,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_HIDE_MAHOGANY_ROCKETS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_MURKROW",
+      "x": 10,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "RocketHideout3_EventScript_Murkrow",
+      "flag": "FLAG_HIDE_ROCKETHIDEOUT2_MURKROWSTAIRS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_MURKROW",
+      "x": 15,
+      "y": 22,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "RocketHideout3_EventScript_Murkrow",
+      "flag": "FLAG_HIDE_ROCKETHIDEOUT2_MURKROWGATE"
     }
   ],
   "warp_events": [
@@ -261,6 +287,96 @@
       "var": "VAR_MAHOGANY_TOWN_STATE",
       "var_value": "5",
       "script": "RocketHideout2_EventScript_LanceTriggerRight"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_MAHOGANY_TOWN_STATE",
+      "var_value": "9",
+      "script": "RocketHideout2_Trigger_MurkrowStairs"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_MAHOGANY_TOWN_STATE",
+      "var_value": "9",
+      "script": "RocketHideout2_Trigger_MurkrowStairs"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 23,
+      "elevation": 0,
+      "var": "VAR_MAHOGANY_TOWN_STATE",
+      "var_value": "11",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 22,
+      "elevation": 0,
+      "var": "VAR_MAHOGANY_TOWN_STATE",
+      "var_value": "11",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 21,
+      "elevation": 0,
+      "var": "VAR_MAHOGANY_TOWN_STATE",
+      "var_value": "11",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 23,
+      "elevation": 0,
+      "var": "VAR_MAHOGANY_TOWN_STATE",
+      "var_value": "11",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 22,
+      "elevation": 0,
+      "var": "VAR_MAHOGANY_TOWN_STATE",
+      "var_value": "11",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 21,
+      "elevation": 0,
+      "var": "VAR_MAHOGANY_TOWN_STATE",
+      "var_value": "11",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_MAHOGANY_TOWN_STATE",
+      "var_value": "9",
+      "script": "RocketHideout2_Trigger_MurkrowStairs"
+    },
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_MAHOGANY_TOWN_STATE",
+      "var_value": "9",
+      "script": "RocketHideout2_Trigger_MurkrowStairs"
     }
   ],
   "bg_events": [

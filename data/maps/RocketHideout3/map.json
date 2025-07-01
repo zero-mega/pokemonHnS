@@ -45,7 +45,7 @@
       "x": 27,
       "y": 18,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -58,7 +58,7 @@
       "x": 26,
       "y": 18,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -185,42 +185,55 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_MURKROW",
-      "x": 10,
-      "y": 6,
+      "x": 8,
+      "y": 2,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "RocketHideout3_EventScript_Murkrow",
+      "flag": "FLAG_HIDE_ROCKETHIDEOUT3_MURKROW"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PETREL",
-      "x": 9,
-      "y": 5,
+      "x": 10,
+      "y": 3,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HIDE_ROCKETHIDEOUT3_PETREL"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GIOVANNI",
-      "x": 9,
-      "y": 6,
+      "x": 10,
+      "y": 3,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "RocketHideout3_EventScript_Giovanni",
+      "flag": "FLAG_HIDE_ROCKETHIDEOUT3_GIOVANNI"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_MURKROW",
+      "x": 29,
+      "y": 3,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "RocketHideout3_EventScript_Murkrow",
+      "flag": "FLAG_HIDE_ROCKETHIDEOUT3_MURKROWSTAIRS"
     }
   ],
   "warp_events": [
@@ -262,6 +275,78 @@
       "var": "VAR_MAHOGANY_TOWN_STATE",
       "var_value": "7",
       "script": "RocketHideout3_Trigger_Silver"
+    },
+    {
+      "type": "trigger",
+      "x": 32,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_MAHOGANY_TOWN_STATE",
+      "var_value": "10",
+      "script": "RocketHideout3_Trigger_MurkrowStairs"
+    },
+    {
+      "type": "trigger",
+      "x": 31,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_MAHOGANY_TOWN_STATE",
+      "var_value": "10",
+      "script": "RocketHideout3_Trigger_MurkrowStairs"
+    },
+    {
+      "type": "trigger",
+      "x": 27,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_MAHOGANY_TOWN_STATE",
+      "var_value": "10",
+      "script": "RocketHideout3_Trigger_MurkrowStairs"
+    },
+    {
+      "type": "trigger",
+      "x": 27,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_MAHOGANY_TOWN_STATE",
+      "var_value": "10",
+      "script": "RocketHideout3_Trigger_MurkrowStairs"
+    },
+    {
+      "type": "trigger",
+      "x": 27,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_MAHOGANY_TOWN_STATE",
+      "var_value": "10",
+      "script": "RocketHideout3_Trigger_MurkrowStairs"
+    },
+    {
+      "type": "trigger",
+      "x": 27,
+      "y": 5,
+      "elevation": 0,
+      "var": "VAR_MAHOGANY_TOWN_STATE",
+      "var_value": "10",
+      "script": "RocketHideout3_Trigger_MurkrowStairs"
+    },
+    {
+      "type": "trigger",
+      "x": 33,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_MAHOGANY_TOWN_STATE",
+      "var_value": "10",
+      "script": "RocketHideout3_Trigger_MurkrowStairs"
+    },
+    {
+      "type": "trigger",
+      "x": 33,
+      "y": 5,
+      "elevation": 0,
+      "var": "VAR_MAHOGANY_TOWN_STATE",
+      "var_value": "10",
+      "script": "RocketHideout3_Trigger_MurkrowStairs"
     }
   ],
   "bg_events": [
