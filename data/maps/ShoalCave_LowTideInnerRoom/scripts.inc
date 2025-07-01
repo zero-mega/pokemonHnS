@@ -52,7 +52,7 @@ ShoalCave_LowTideInnerRoom_EventScript_SetShoalItemMetatiles5::
 	end
 
 ShoalCave_LowTideInnerRoom_EventScript_SetShoalItemMetatiles6::
-	goto_if_set FLAG_RECEIVED_SHOAL_SHELL_4, ShoalCave_LowTideInnerRoom_EventScript_SetShoalItemMetatilesEnd
+	goto_if_set FLAG_GARBAGEFLAG, ShoalCave_LowTideInnerRoom_EventScript_SetShoalItemMetatilesEnd
 	setmetatile 16, 13, METATILE_Cave_ShoalCave_BlueStone_Large, TRUE
 	return
 
@@ -99,12 +99,12 @@ ShoalCave_LowTideInnerRoom_EventScript_ShoalShell3::
 
 ShoalCave_LowTideInnerRoom_EventScript_ShoalShell4::
 	lockall
-	goto_if_set FLAG_RECEIVED_SHOAL_SHELL_4, ShoalCave_LowTideInnerRoom_EventScript_ReceivedShoalShell
+	goto_if_set FLAG_GARBAGEFLAG, ShoalCave_LowTideInnerRoom_EventScript_ReceivedShoalShell
 	giveitem ITEM_SHOAL_SHELL
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setmetatile 16, 13, METATILE_Cave_ShoalCave_BlueStone_Small, FALSE
 	special DrawWholeMapView
-	setflag FLAG_RECEIVED_SHOAL_SHELL_4
+	setflag FLAG_GARBAGEFLAG
 	releaseall
 	end
 

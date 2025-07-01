@@ -13,8 +13,8 @@ MirageTower_4F_EventScript_RootFossil::
 	goto_if_eq VAR_RESULT, NO, MirageTower_4F_EventScript_LeaveRootFossil
 	giveitem ITEM_ROOT_FOSSIL
 	closemessage
-	setflag FLAG_HIDE_MIRAGE_TOWER_ROOT_FOSSIL
-	setflag FLAG_HIDE_MIRAGE_TOWER_CLAW_FOSSIL
+	setflag FLAG_GARBAGEFLAG
+	setflag FLAG_ITEM_GARBAGEFLAG
 	removeobject LOCALID_ROOT_FOSSIL
 	delay 30
 	setflag FLAG_CHOSE_ROOT_FOSSIL
@@ -33,8 +33,8 @@ MirageTower_4F_EventScript_ClawFossil::
 	goto_if_eq VAR_RESULT, NO, MirageTower_4F_EventScript_LeaveClawFossil
 	giveitem ITEM_CLAW_FOSSIL
 	closemessage
-	setflag FLAG_HIDE_MIRAGE_TOWER_CLAW_FOSSIL
-	setflag FLAG_HIDE_MIRAGE_TOWER_ROOT_FOSSIL
+	setflag FLAG_ITEM_GARBAGEFLAG
+	setflag FLAG_GARBAGEFLAG
 	removeobject LOCALID_CLAW_FOSSIL
 	delay 30
 	setflag FLAG_CHOSE_CLAW_FOSSIL

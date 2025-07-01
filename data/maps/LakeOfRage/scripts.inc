@@ -129,10 +129,12 @@ LakeOfRage_EventScript_LanceAccept::
 	applymovement LOCALID_LAKEOFRAGE_DRAGONITE, LakeOfRage_Movement_DragoniteLeave
 	waitmovement LOCALID_LAKEOFRAGE_LANCE
 	waitmovement LOCALID_LAKEOFRAGE_DRAGONITE
+LakeOfRage_EventScript_EndScene::
 	setflag FLAG_HIDE_LAKE_OF_RAGE_LANCE
 	removeobject LOCALID_LAKEOFRAGE_LANCE
 	removeobject LOCALID_LAKEOFRAGE_DRAGONITE
 	setvar VAR_MAHOGANY_TOWN_STATE, 4
+	clearflag FLAG_HIDE_MAHOGANY_SHOP_NPCS
 	release
 	end
 
@@ -155,13 +157,7 @@ LakeOfRage_EventScript_LanceDragoniteLeaveNorth::
 	applymovement LOCALID_LAKEOFRAGE_DRAGONITE, LakeOfRage_Movement_DragoniteLeaveNorth
 	waitmovement LOCALID_LAKEOFRAGE_LANCE
 	waitmovement LOCALID_LAKEOFRAGE_DRAGONITE
-	setflag FLAG_HIDE_LAKE_OF_RAGE_LANCE
-	removeobject LOCALID_LAKEOFRAGE_LANCE
-	removeobject LOCALID_LAKEOFRAGE_DRAGONITE
-	setvar VAR_MAHOGANY_TOWN_STATE, 4
-	release
-	end
-	return
+	goto LakeOfRage_EventScript_EndScene
 
 LakeOfRage_Movement_LanceLeaveNorth:
 	walk_left

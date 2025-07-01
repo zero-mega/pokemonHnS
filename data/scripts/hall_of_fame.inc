@@ -37,7 +37,7 @@ EverGrandeCity_HallOfFame_EventScript_SetDesertUnderpassCommentReady::
 	return
 
 EverGrandeCity_HallOfFame_EventScript_ShowStevensHouseBeldum::
-	clearflag FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_BELDUM_POKEBALL
+	clearflag FLAG_GARBAGEFLAG
 	return
 
 EverGrandeCity_HallOfFame_EventScript_ReadyReceiveSSTicketEvent::

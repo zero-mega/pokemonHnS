@@ -66021,6 +66021,75 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_ROCKET_HIDEOUT",
+          "base_label": "gRocketHideout",
+          "land_mons": {
+            "encounter_rate": 100,
+            "mons": [
+              {
+                "min_level": 21,
+                "max_level": 21,
+                "species": "SPECIES_VOLTORB"
+              },
+              {
+                "min_level": 21,
+                "max_level": 21,
+                "species": "SPECIES_VOLTORB"
+              },
+              {
+                "min_level": 21,
+                "max_level": 21,
+                "species": "SPECIES_GEODUDE"
+              },
+              {
+                "min_level": 21,
+                "max_level": 21,
+                "species": "SPECIES_GEODUDE"
+              },
+              {
+                "min_level": 21,
+                "max_level": 21,
+                "species": "SPECIES_GEODUDE"
+              },
+              {
+                "min_level": 21,
+                "max_level": 21,
+                "species": "SPECIES_KOFFING"
+              },
+              {
+                "min_level": 21,
+                "max_level": 21,
+                "species": "SPECIES_KOFFING"
+              },
+              {
+                "min_level": 21,
+                "max_level": 21,
+                "species": "SPECIES_KOFFING"
+              },
+              {
+                "min_level": 21,
+                "max_level": 21,
+                "species": "SPECIES_KOFFING"
+              },
+              {
+                "min_level": 21,
+                "max_level": 21,
+                "species": "SPECIES_KOFFING"
+              },
+              {
+                "min_level": 21,
+                "max_level": 21,
+                "species": "SPECIES_KOFFING"
+              },
+              {
+                "min_level": 21,
+                "max_level": 21,
+                "species": "SPECIES_KOFFING"
+              }
+            ]
+          }
         }
       ]
     },

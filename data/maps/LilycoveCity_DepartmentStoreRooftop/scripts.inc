@@ -9,11 +9,11 @@ LilycoveCity_DepartmentStoreRooftop_OnTransition:
 	end
 
 LilycoveCity_DepartmentStoreRooftop_EventScript_ShowSaleWoman::
-	clearflag FLAG_HIDE_LILYCOVE_DEPARTMENT_STORE_ROOFTOP_SALE_WOMAN
+	clearflag FLAG_GARBAGEFLAG
 	return
 
 LilycoveCity_DepartmentStoreRooftop_EventScript_HideSaleWoman::
-	setflag FLAG_HIDE_LILYCOVE_DEPARTMENT_STORE_ROOFTOP_SALE_WOMAN
+	setflag FLAG_GARBAGEFLAG
 	return
 
 LilycoveCity_DepartmentStoreRooftop_EventScript_SaleWoman::

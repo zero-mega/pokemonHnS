@@ -140,7 +140,7 @@ MossdeepCity_StevensHouse_EventScript_ReceivedBeldumFanfare::
 	return
 
 MossdeepCity_StevensHouse_EventScript_ReceivedBeldum::
-	setflag FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_BELDUM_POKEBALL
+	setflag FLAG_GARBAGEFLAG
 	setflag FLAG_RECEIVED_BELDUM
 	releaseall
 	end

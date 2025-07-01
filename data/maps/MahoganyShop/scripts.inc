@@ -1,13 +1,199 @@
+.set LOCALID_MAHOGANYSHOP_LANCE, 3
+.set LOCALID_MAHOGANYSHOP_DRAGONITE,4
+.set LOCALID_MAHOGANYSHOP_ROCKET, 2
+
 MahoganyShop_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, MahoganyShop_OnLoad
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, MahoganyShop_OnFrame
 	.byte 0
+
+MahoganyShop_OnLoad:
+	goto_if_ge VAR_MAHOGANY_TOWN_STATE, 5, MahoganyShop_SetStairs
+	end
+
+MahoganyShop_SetStairs::
+	setmetatile 8, 4, 0x28D, FALSE
+	end
+
+MahoganyShop_OnFrame::
+	map_script_2 VAR_MAHOGANY_TOWN_STATE, 4, MahoganyShop_EventScript_Raid
+	.2byte 0
+
+MahoganyShop_EventScript_Raid::
+	playbgm MUS_HG_TEAM_ROCKET_HQ, TRUE
+	lock
+	playse SE_PIN
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+	delay 60
+	msgbox MahoganyMart1F_Text_Lance_HyperBeam, MSGBOX_DEFAULT
+	closemessage
+	playse SE_M_HYPER_BEAM
+	applymovement LOCALID_MAHOGANYSHOP_DRAGONITE, MahoganyShop_Movement_Dragonite1
+	delay 10
+	applymovement LOCALID_MAHOGANYSHOP_ROCKET, MahoganyShop_Movement_Rocket1
+	waitmovement LOCALID_MAHOGANYSHOP_ROCKET
+	waitse
+	setvar VAR_0x8004, 1  @ vertical pan
+	setvar VAR_0x8005, 1  @ horizontal pan
+	setvar VAR_0x8006, 5  @ num shakes
+	setvar VAR_0x8007, 6  @ shake delay
+	special ShakeCamera
+	waitmovement LOCALID_MAHOGANYSHOP_DRAGONITE
+	waitse
+	delay 10
+	turnobject LOCALID_MAHOGANYSHOP_LANCE, DIR_SOUTH
+	delay 50
+	applymovement LOCALID_MAHOGANYSHOP_LANCE, MahoganyShop_Movement_LanceGreetPlayer
+	waitmovement 0
+	msgbox MahoganyMart1F_Text_Lance_Radio, MSGBOX_DEFAULT
+	closemessage
+	playse SE_PIN
+	applymovement LOCALID_MAHOGANYSHOP_DRAGONITE, Common_Movement_QuestionMark
+	delay 10
+	applymovement LOCALID_MAHOGANYSHOP_DRAGONITE, MahoganyShop_Movement_DragoniteGotoBox
+	waitmovement 0
+	playmoncry SPECIES_DRAGONITE, CRY_MODE_NORMAL
+	waitmovement 0
+	applymovement LOCALID_MAHOGANYSHOP_LANCE, MahoganyShop_Movement_LanceGotoBox
+	applymovement OBJ_EVENT_ID_PLAYER, MahoganyShop_Movement_PlayerGotoBox
+	waitmovement LOCALID_MAHOGANYSHOP_LANCE
+	waitmovement OBJ_EVENT_ID_PLAYER
+
+	playse SE_M_HYPER_BEAM
+	applymovement LOCALID_MAHOGANYSHOP_DRAGONITE, MahoganyShop_Movement_Dragonite2
+	delay 20
+	waitse
+	setvar VAR_0x8004, 1  @ vertical pan
+	setvar VAR_0x8005, 1  @ horizontal pan
+	setvar VAR_0x8006, 5  @ num shakes
+	setvar VAR_0x8007, 6  @ shake delay
+	special ShakeCamera
+
+	waitmovement 0
+	
+	setmetatile 8, 4, 0x28D, FALSE
+	special DrawWholeMapView
+	delay 40
+	msgbox MahoganyMart1F_Text_Lance_Stairs, MSGBOX_DEFAULT
+	turnobject LOCALID_MAHOGANYSHOP_DRAGONITE, DIR_WEST
+	playmoncry SPECIES_DRAGONITE, CRY_MODE_NORMAL
+	waitmoncry
+	turnobject LOCALID_MAHOGANYSHOP_DRAGONITE, DIR_EAST
+
+	turnobject LOCALID_MAHOGANYSHOP_LANCE, DIR_SOUTH
+	msgbox MahoganyMart1F_Text_Lance_SplitUp, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_MAHOGANYSHOP_DRAGONITE, Common_Movement_WalkRight1
+	waitmovement 0
+	removeobject LOCALID_MAHOGANYSHOP_DRAGONITE
+	playse SE_EXIT
+	applymovement LOCALID_MAHOGANYSHOP_LANCE, Common_Movement_WalkRight1
+	waitmovement 0
+	applymovement LOCALID_MAHOGANYSHOP_LANCE, Common_Movement_WalkRight1
+	waitmovement 0
+	removeobject LOCALID_MAHOGANYSHOP_LANCE
+	playse SE_EXIT
+	delay 50
+
+	playse SE_PIN
+	applymovement LOCALID_MAHOGANYSHOP_ROCKET Common_Movement_ExclamationMark
+	delay 20
+	applymovement LOCALID_MAHOGANYSHOP_ROCKET MahoganyShop_Movement_RocketLeave
+	waitmovement 0
+	removeobject LOCALID_MAHOGANYSHOP_ROCKET
+	playse SE_EXIT
+	setflag FLAG_HIDE_MAHOGANY_SHOP_NPCS
+
+
+	setvar VAR_MAHOGANY_TOWN_STATE, 5
+	release
+	end
+
+MahoganyShop_Movement_RocketLeave:
+	walk_faster_left
+	walk_faster_left
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_right
+	walk_faster_right
+	step_end
+
+MahoganyShop_Movement_Dragonite1:
+	lock_facing_direction
+	walk_fast_right
+	walk_fast_right
+	walk_fast_left
+	walk_fast_left
+	unlock_facing_direction
+	step_end
+
+MahoganyShop_Movement_Dragonite2:
+	lock_facing_direction
+	walk_fast_right
+	walk_fast_left
+	unlock_facing_direction
+	step_end
+
+MahoganyShop_Movement_Rocket1:
+	lock_facing_direction
+	slide_right
+	slide_right
+	unlock_facing_direction
+	step_end
+
+MahoganyShop_Movement_LanceGreetPlayer:
+	walk_down
+	walk_right
+	walk_right
+	face_down
+	step_end
+
+MahoganyShop_Movement_DragoniteGotoBox:
+	face_up
+	delay_2
+	face_right
+	walk_right
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_right
+	step_end
+
+MahoganyShop_Movement_LanceGotoBox:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	face_right
+	step_end
+
+MahoganyShop_Movement_PlayerGotoBox:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	step_end
 
 MahoganyShop_EventScript_Granny::
 	lock
 	faceplayer
+	goto_if_eq VAR_MAHOGANY_TOWN_STATE, 5, MahoganyShop_EventScript_GrannyDuring
 	goto_if_ge VAR_MAHOGANY_TOWN_STATE, 11, MahoganyShop_EventScript_GrannyShop @changelater
 	msgbox MahoganyShop_Text_Granny, MSGBOX_NPC
 	release
 	end
+
+MahoganyShop_EventScript_GrannyDuring::
+	msgbox MahoganyMart1F_Text_Pharmacist_Lance, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
 
 MahoganyShop_EventScript_GrannyShop::
 	message gText_HowMayIServeYou
@@ -30,18 +216,12 @@ MahoganyTown_Pokemart:
 	end
 
 MahoganyShop_Text_Granny:
-	.string "Please come back another time,\n"
-	.string "kiddo. The store is... closed\l"
+	.string "Please come back another time.\n"
+	.string "The store is... closed\l"
 	.string "right now.$"
 
-MahoganyMart1F_Text_RageCandyBar: @ unreferenced
-    .string "Hello, kiddo!\p"
-    .string "You wouldn't all the things I found\n"
-    .string "in the basement!$"
-
 MahoganyMart1F_Text_Pharmacist_Lance:
-    .string "Arrgh… You found the secret stair-\n"
-    .string "way…$"
+    .string "ROCKETS have hijacked my basement!$"
 
 MahoganyMart1F_Text_BlackBelt:
     .string "Heheh! The experi- ment worked like\n"
@@ -62,7 +242,8 @@ MahoganyMart1F_Text_Lance_Radio:
     .string "radio signal is coming from here.$"
 
 MahoganyMart1F_Text_Lance_Stairs:
-    .string "The stairs are right here.$"
+    .string "Excellent work finding the stairs,\n"
+	.string "DRAGONITE!$"
 
 MahoganyMart1F_Text_Lance_SplitUp:
     .string "LANCE: {PLAYER}, we should split up\n"
