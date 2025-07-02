@@ -321,7 +321,7 @@ RocketHideout3_EventScript_Giovanni::
 	call_if_eq VAR_FACING, DIR_EAST, RocketHideout3_EventScript_FacingEast
 	call_if_eq VAR_FACING, DIR_WEST, RocketHideout3_EventScript_FacingWest
 	msgbox RocketHideout3_Text_PetrelReveal, MSGBOX_DEFAULT
-	@trainerbattle_no_intro TRAINER_PETREL_1, RocketHideout3_Text_PetrelBeaten
+	trainerbattle_no_intro TRAINER_PETREL_1, RocketHideout3_Text_PetrelBeaten
 	msgbox RocketHideout3_Text_PetrelAfterBattle, MSGBOX_DEFAULT
 	closemessage
 	call_if_eq VAR_FACING, DIR_EAST, RocketHideout3_EventScript_LeaveEast
@@ -353,6 +353,7 @@ RocketHideout3_EventScript_Giovanni::
 	clearflag FLAG_HIDE_ROCKETHIDEOUT2_MURKROWSTAIRS
 	setflag FLAG_HIDE_ROCKETHIDEOUT2_MURKROWGATE
 	setflag FLAG_HIDE_ROCKETHIDEOUT3_MURKROWSTAIRS
+	setflag FLAG_HIDE_ROCKETHIDEOUT2_ARIANA_AND_GRUNT
 	setvar VAR_MAHOGANY_TOWN_STATE, 9
 	release
 	end

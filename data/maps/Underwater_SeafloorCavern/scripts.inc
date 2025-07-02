@@ -10,7 +10,7 @@ Underwater_SeafloorCavern_OnTransition:
 	end
 
 Underwater_SeafloorCavern_EventScript_HideSubmarine::
-	setflag FLAG_HIDE_UNDERWATER_SEA_FLOOR_CAVERN_STOLEN_SUBMARINE
+	setflag FLAG_GARBAGEFLAG
 	end
 
 Underwater_SeafloorCavern_OnLoad:

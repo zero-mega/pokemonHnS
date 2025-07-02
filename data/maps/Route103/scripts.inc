@@ -146,7 +146,7 @@ Route103_EventScript_RivalEnd::
 	clearflag FLAG_GARBAGEFLAG
 	setflag FLAG_DEFEATED_RIVAL_ROUTE103
 	setvar VAR_OLDALE_RIVAL_STATE, 1
-	clearflag FLAG_HIDE_OLDALE_TOWN_RIVAL
+	clearflag FLAG_GARBAGEFLAG
 	savebgm MUS_DUMMY
 	fadedefaultbgm
 	releaseall

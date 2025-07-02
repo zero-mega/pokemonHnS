@@ -951,8 +951,8 @@ static const u8 sNeverMeltIceDesc[] = _(
 
 static const u8 sSpellTagDesc[] = _(
     "Boosts GHOST-type.\n"
-    "Evolves a mischievous\n"
-    "POKéMON.");
+    "Evolves a mischi-\n"
+    "evous POKéMON.");
 
 static const u8 sTwistedSpoonDesc[] = _(
     "A hold item that\n"

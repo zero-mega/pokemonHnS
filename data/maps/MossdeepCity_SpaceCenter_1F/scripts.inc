@@ -11,7 +11,7 @@ MossdeepCity_SpaceCenter_1F_MapScripts::
 	.byte 0
 
 MossdeepCity_SpaceCenter_1F_OnTransition:
-	clearflag FLAG_MOSSDEEP_CENTER_BATTLE
+	clearflag FLAG_ROCKETHIDEOUT2_BATTLE
 	goto_if_eq VAR_GARBAGEVAR, 2, MossdeepCity_SpaceCenter_1F_EventScript_MoveObjectsForTeamMagma
 	end
 

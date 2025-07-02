@@ -8,7 +8,7 @@ LakeOfRage_MapScripts::
 	.byte 0
 
 LakeOfRage_OnTransition::
-	goto_if_lt VAR_MAHOGANY_TOWN_STATE, 4, LakeOfRage_EventScript_SetHighTide @CHANGELATER
+	goto_if_lt VAR_MAHOGANY_TOWN_STATE, 14, LakeOfRage_EventScript_SetHighTide
 	special UpdateShoalTideFlag
 	goto_if_set FLAG_SYS_LAKE_OF_RAGE_TIDE, LakeOfRage_EventScript_SetHighTide
 	goto LakeOfRage_EventScript_SetLowTide

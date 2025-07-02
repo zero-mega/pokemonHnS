@@ -274,7 +274,7 @@
 #define TRAINER_WINONA_1                    270
 #define TRAINER_TATE_AND_LIZA_1             271
 #define TRAINER_JUAN_1                      272
-#define TRAINER_ARCHER_3                     273
+#define TRAINER_ARCHER_1                     273
 #define TRAINER_TED                         274
 #define TRAINER_PAUL                        275
 #define TRAINER_ARCHER_4                     276

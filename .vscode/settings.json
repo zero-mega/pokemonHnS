@@ -37,7 +37,8 @@
         "bug_contest.h": "c",
         "items.h": "c",
         "trainer_hill.h": "c",
-        "event_objects.h": "c"
+        "event_objects.h": "c",
+        "moves.h": "c"
     },
     "git.ignoreLimitWarning": true
 }

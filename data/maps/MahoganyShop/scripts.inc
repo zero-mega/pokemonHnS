@@ -183,7 +183,7 @@ MahoganyShop_EventScript_Granny::
 	lock
 	faceplayer
 	goto_if_eq VAR_MAHOGANY_TOWN_STATE, 5, MahoganyShop_EventScript_GrannyDuring
-	goto_if_ge VAR_MAHOGANY_TOWN_STATE, 11, MahoganyShop_EventScript_GrannyShop @changelater
+	goto_if_ge VAR_MAHOGANY_TOWN_STATE, 14, MahoganyShop_EventScript_GrannyShop
 	msgbox MahoganyShop_Text_Granny, MSGBOX_NPC
 	release
 	end

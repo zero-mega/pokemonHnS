@@ -77,7 +77,7 @@ LittlerootTown_EventScript_SetRivalLeftForRoute103::
 
 LittlerootTown_EventScript_MoveRivalFromOldale::
 	setvar VAR_OLDALE_RIVAL_STATE, 2
-	setflag FLAG_HIDE_OLDALE_TOWN_RIVAL
+	setflag FLAG_GARBAGEFLAG
 	return
 
 LittlerootTown_EventScript_SetExitedHouseAfterLatiSSTicketEvent::

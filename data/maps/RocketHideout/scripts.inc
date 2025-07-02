@@ -47,6 +47,7 @@ RocketHideout_TriggerTest::
 	setflag FLAG_HIDE_ROCKETHIDEOUT2_MURKROWSTAIRS
 	setflag FLAG_HIDE_ROCKETHIDEOUT2_MURKROWGATE
 	setflag FLAG_HIDE_ROCKETHIDEOUT3_MURKROWSTAIRS
+	setflag FLAG_HIDE_ROCKETHIDEOUT2_ARIANA_AND_GRUNT
 	setvar VAR_TEMP_3, 1
 	end
 
@@ -156,17 +157,14 @@ RocketHideout_Trigger_StatueGruntLeft::
 	applymovement VAR_TEMP_0, RocketHideout_Movement_GruntWalkRight
 	waitmovement 0
 	msgbox RocketHideout_Text_CameraGrunt1Seen, MSGBOX_DEFAULT
-	@trainerbattle_no_intro TRAINER_GRUNT_17, RocketHideout_Text_CameraGrunt1Beaten
-	trainerbattle_no_intro TRAINER_JOEY, RocketHideout_Text_CameraGrunt1Beaten
-
+	trainerbattle_no_intro TRAINER_GRUNT_17, RocketHideout_Text_CameraGrunt1Beaten
 	applymovement VAR_TEMP_0, RocketHideout_Movement_GruntWalkLeft
 	waitmovement 0
 	delay 55
 	applymovement VAR_TEMP_0, RocketHideout_Movement_GruntWalkRight
 	waitmovement 0
 	msgbox RocketHideout_Text_CameraGrunt2Seen, MSGBOX_DEFAULT
-	@trainerbattle_no_intro TRAINER_GRUNT_18, RocketHideout_Text_CameraGrunt2Beaten
-	trainerbattle_no_intro TRAINER_JOEY, RocketHideout_Text_CameraGrunt1Beaten
+	trainerbattle_no_intro TRAINER_GRUNT_18, RocketHideout_Text_CameraGrunt2Beaten
 	applymovement VAR_TEMP_0, RocketHideout_Movement_GruntWalkLeft
 	waitmovement 0
 	setflag FLAG_HIDE_ROCKETHIDEOUT_ROCKETS
@@ -185,14 +183,14 @@ RocketHideout_Trigger_StatueGruntRight::
 	applymovement VAR_TEMP_0, RocketHideout_Movement_GruntWalkLeft
 	waitmovement 0
 	msgbox RocketHideout_Text_CameraGrunt1Seen, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_JOEY, RocketHideout_Text_CameraGrunt1Beaten
+	trainerbattle_no_intro TRAINER_GRUNT_17, RocketHideout_Text_CameraGrunt1Beaten
 	applymovement VAR_TEMP_0, RocketHideout_Movement_GruntWalkRight
 	waitmovement 0
 	delay 55
 	applymovement VAR_TEMP_0, RocketHideout_Movement_GruntWalkLeft
 	waitmovement 0
 	msgbox RocketHideout_Text_CameraGrunt2Seen, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_JOEY, RocketHideout_Text_CameraGrunt2Beaten
+	trainerbattle_no_intro TRAINER_GRUNT_18, RocketHideout_Text_CameraGrunt2Beaten
 	applymovement VAR_TEMP_0, RocketHideout_Movement_GruntWalkRight
 	waitmovement 0
 	setflag FLAG_HIDE_ROCKETHIDEOUT_ROCKETS

@@ -1,7 +1,33 @@
 .set LOCALID_MAHOGANY_MERCHANT, 3
 
 Mahoganytown_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, Mahoganytown_OnLoad
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, Mahoganytown_OnFrame
 	.byte 0
+
+Mahoganytown_OnLoad::
+	call_if_ge VAR_MAHOGANY_TOWN_STATE, 13, MahoganyTown_EventScript_FixTree
+	end
+
+MahoganyTown_EventScript_FixTree::
+	setmetatile 18, 8, 0x378, FALSE
+	setmetatile 19, 8, 0x379, FALSE
+	end
+
+Mahoganytown_OnFrame::
+	map_script_2 VAR_MAHOGANY_TOWN_STATE, 15, Mahoganytown_EventScript_RocketTrigger
+	.2byte 0
+
+Mahoganytown_EventScript_RocketTrigger::
+	lock
+	setvar VAR_GOLDENROD_CITY_STATE, 6
+	clearflag FLAG_HIDE_GOLDENROD_ROCKETS
+	setflag FLAG_HIDE_GOLDENROD_ROCKET_SCOUT
+	setflag FLAG_HIDE_GOLDENROD_NPCS
+	clearflag FLAG_HIDE_ROCKET_GOLDENROD_RADIOTOWER_1
+	setvar VAR_MAHOGANY_TOWN_STATE, 16
+	release
+	end
 
 MahoganyTown_EventScript_TownTrigger::
 	clearflag FLAG_HIDE_LAKE_OF_RAGE_GYARADOS
@@ -17,7 +43,9 @@ MahoganyTown_EventScript_TownTrigger::
 	clearflag FLAG_GOT_PASSWORD_FROM_GRUNTF 
 	clearflag FLAG_HIDE_ROCKETHIDEOUT3_MURKROW
 	clearflag FLAG_HIDE_ROCKETHIDEOUT3_GIOVANNI
-
+	clearflag FLAG_HIDE_ROCKETHIDEOUT_ELECTRODE1 
+	clearflag FLAG_HIDE_ROCKETHIDEOUT_ELECTRODE2
+	clearflag FLAG_HIDE_ROCKETHIDEOUT_ELECTRODE3 
 
 	setflag FLAG_HIDE_LAKE_OF_RAGE_LANCE
 	setflag FLAG_HIDE_MAHOGANY_SHOP_NPCS
@@ -28,6 +56,7 @@ MahoganyTown_EventScript_TownTrigger::
 	setflag FLAG_HIDE_ROCKETHIDEOUT2_MURKROWSTAIRS
 	setflag FLAG_HIDE_ROCKETHIDEOUT2_MURKROWGATE
 	setflag FLAG_HIDE_ROCKETHIDEOUT3_MURKROWSTAIRS
+	setflag FLAG_HIDE_ROCKETHIDEOUT2_ARIANA_AND_GRUNT
 
 	setvar VAR_ROCKET_HIDEOUT_STATUE_1, 0
 	setvar VAR_ROCKET_HIDEOUT_STATUE_2, 0
@@ -35,19 +64,9 @@ MahoganyTown_EventScript_TownTrigger::
 	setvar VAR_ROCKET_HIDEOUT_STATUE_4, 0
 	setvar VAR_ROCKET_HIDEOUT_STATUE_5, 0
 	setvar VAR_ROCKET_PASSWORD, 0
+	setvar VAR_ELECTRODES_FAINTED, 0
 
 	setvar VAR_MAHOGANY_TOWN_STATE, 1
-	end
-
-Mahoganytown_EventScript_RocketTrigger::
-	lock
-	setvar VAR_GOLDENROD_CITY_STATE, 6
-	clearflag FLAG_HIDE_GOLDENROD_ROCKETS
-	setflag FLAG_HIDE_GOLDENROD_ROCKET_SCOUT
-	setflag FLAG_HIDE_GOLDENROD_NPCS
-	clearflag FLAG_HIDE_ROCKET_GOLDENROD_RADIOTOWER_1
-	setvar VAR_TEMP_0, 1 @CHANGELATER
-	release
 	end
 
 MahoganyTown_EventScript_MerchantTrigger::
@@ -91,7 +110,7 @@ MahoganyTown_EventScript_WalkUp2::
 MahoganyTown_EventScript_Merchant::
 	lock
 	faceplayer
-	goto_if_eq VAR_MAHOGANY_TOWN_STATE, 6, MahoganyTown_EventScript_MerchantAfter @changelater
+	goto_if_eq VAR_MAHOGANY_TOWN_STATE, 17, MahoganyTown_EventScript_MerchantAfter
 	showmoneybox 0, 0
 	msgbox MahoganyTown_Text_RageCandyBarMerchantTryOne, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, FALSE, MahoganyTown_EventScript_MerchantRefused

@@ -37,8 +37,9 @@
 #include "constants/event_objects.h"
 #include "constants/moves.h"
 
-extern const u8 MossdeepCity_SpaceCenter_2F_EventScript_MaxieTrainer[];
-extern const u8 MossdeepCity_SpaceCenter_2F_EventScript_TabithaTrainer[];
+extern const u8 RocketHideout2_EventScript_ArianaTrainer[];
+extern const u8 RocketHideout2_EventScript_GruntTrainer[];
+
 
 // EWRAM vars.
 EWRAM_DATA const struct BattleFrontierTrainer *gFacilityTrainers = NULL;
@@ -902,28 +903,28 @@ struct
 } static const sStevenMons[MULTI_PARTY_SIZE] =
 {
     {
-        .species = SPECIES_METANG,
+        .species = SPECIES_DRAGONITE,
         .fixedIV = MAX_PER_STAT_IVS,
         .level = 42,
-        .nature = NATURE_BRAVE,
+        .nature = NATURE_ADAMANT,
         .evs = {0, 252, 252, 0, 6, 0},
-        .moves = {MOVE_LIGHT_SCREEN, MOVE_PSYCHIC, MOVE_REFLECT, MOVE_METAL_CLAW}
+        .moves = {MOVE_HYPER_BEAM, MOVE_THUNDER, MOVE_SAFEGUARD, MOVE_OUTRAGE}
     },
     {
-        .species = SPECIES_SKARMORY,
+        .species = SPECIES_DRAGONAIR,
         .fixedIV = MAX_PER_STAT_IVS,
-        .level = 43,
-        .nature = NATURE_IMPISH,
+        .level = 35,
+        .nature = NATURE_ADAMANT,
         .evs = {252, 0, 0, 0, 6, 252},
-        .moves = {MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_PROTECT, MOVE_STEEL_WING}
+        .moves = {MOVE_BLIZZARD, MOVE_THUNDER_WAVE, MOVE_FLAMETHROWER, MOVE_QUICK_ATTACK}
     },
     {
-        .species = SPECIES_AGGRON,
+        .species = SPECIES_CHARIZARD,
         .fixedIV = MAX_PER_STAT_IVS,
-        .level = 44,
+        .level = 36,
         .nature = NATURE_ADAMANT,
         .evs = {0, 252, 0, 0, 252, 6},
-        .moves = {MOVE_THUNDER, MOVE_PROTECT, MOVE_SOLAR_BEAM, MOVE_DRAGON_CLAW}
+        .moves = {MOVE_FLAMETHROWER, MOVE_WING_ATTACK, MOVE_DOUBLE_TEAM, MOVE_STEEL_WING}
     }
 };
 
@@ -1659,7 +1660,7 @@ void GetFrontierTrainerName(u8 *dst, u16 trainerId)
     else if (trainerId == TRAINER_STEVEN_PARTNER)
     {
         for (i = 0; i < PLAYER_NAME_LENGTH; i++)
-            dst[i] = gTrainers[TRAINER_STEVEN].trainerName[i];
+            dst[i] = gTrainers[TRAINER_LANCE_1].trainerName[i];
     }
     else if (trainerId < FRONTIER_TRAINERS_COUNT)
     {
@@ -2117,7 +2118,7 @@ static void HandleSpecialTrainerBattleEnd(void)
     case SPECIAL_BATTLE_FACTORY:
         if (gSaveBlock2Ptr->frontier.battlesCount < 0xFFFFFF)
         {
-            if (FlagGet(FLAG_MOSSDEEP_CENTER_BATTLE) == FALSE)
+            if (FlagGet(FLAG_ROCKETHIDEOUT2_BATTLE) == FALSE)
             {
                 FlagClear(FLAG_LIMIT_TO_50);
 
@@ -2130,7 +2131,7 @@ static void HandleSpecialTrainerBattleEnd(void)
         }
         else
         {
-            if (FlagGet(FLAG_MOSSDEEP_CENTER_BATTLE) == FALSE)
+            if (FlagGet(FLAG_ROCKETHIDEOUT2_BATTLE) == FALSE)
             {
                 FlagClear(FLAG_LIMIT_TO_50);
 
@@ -2183,7 +2184,7 @@ void DoSpecialTrainerBattle(void)
 {
     s32 i, j;
 
-    if (FlagGet(FLAG_MOSSDEEP_CENTER_BATTLE) == FALSE)
+    if (FlagGet(FLAG_ROCKETHIDEOUT2_BATTLE) == FALSE)
     {
         FlagSet(FLAG_LIMIT_TO_50);
 
@@ -2301,17 +2302,17 @@ void DoSpecialTrainerBattle(void)
         PlayMapChosenOrBattleBGM(0);
         BattleTransition_StartOnField(GetSpecialBattleTransition(B_TRANSITION_GROUP_B_PIKE));
         break;
-    case SPECIAL_BATTLE_STEVEN:
+    case SPECIAL_BATTLE_LANCE:
         gBattleTypeFlags = BATTLE_TYPE_TRAINER | BATTLE_TYPE_DOUBLE | BATTLE_TYPE_TWO_OPPONENTS | BATTLE_TYPE_MULTI | BATTLE_TYPE_INGAME_PARTNER;
         FillPartnerParty(TRAINER_STEVEN_PARTNER);
         gApproachingTrainerId = 0;
-        BattleSetup_ConfigureTrainerBattle(MossdeepCity_SpaceCenter_2F_EventScript_MaxieTrainer + 1);
+        BattleSetup_ConfigureTrainerBattle(RocketHideout2_EventScript_ArianaTrainer + 1);
         gApproachingTrainerId = 1;
-        BattleSetup_ConfigureTrainerBattle(MossdeepCity_SpaceCenter_2F_EventScript_TabithaTrainer + 1);
+        BattleSetup_ConfigureTrainerBattle(RocketHideout2_EventScript_GruntTrainer + 1);
         gPartnerTrainerId = TRAINER_STEVEN_PARTNER;
         CreateTask(Task_StartBattleAfterTransition, 1);
         PlayMapChosenOrBattleBGM(0);
-        BattleTransition_StartOnField(B_TRANSITION_MAGMA);
+        BattleTransition_StartOnField(B_TRANSITION_ARIANA);
         break;
     }
 }

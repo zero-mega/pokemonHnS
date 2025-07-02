@@ -21655,7 +21655,28 @@ static const struct TrainerMonNoItemCustomMoves sParty_Petrel_1[] = { //RocketAd
     .moves = {MOVE_ICE_BEAM, MOVE_CLAMP, MOVE_SPIKE_CANNON, MOVE_SURF}
     },
 };
-static const struct TrainerMonNoItemCustomMoves sParty_Archer[] = { //RocketAdminGroup
+
+static const struct TrainerMonNoItemCustomMoves sParty_Archer_1[] = { //RocketAdminGroup
+    {
+    .iv = 255,
+    .lvl = 39,
+    .species = SPECIES_WEEZING,
+    .moves = {MOVE_SELF_DESTRUCT, MOVE_SMOG, MOVE_SMOKESCREEN, MOVE_SLUDGE_BOMB}
+    },
+    {
+    .iv = 255,
+    .lvl = 38,
+    .species = SPECIES_TAUROS,
+    .moves = {MOVE_HEADBUTT, MOVE_ROCK_SMASH, MOVE_PURSUIT, MOVE_FRUSTRATION}
+    },
+    {
+    .iv = 255,
+    .lvl = 38,
+    .species = SPECIES_HOUNDOOM,
+    .moves = {MOVE_BITE, MOVE_SMOG, MOVE_ROAR, MOVE_FLAMETHROWER}
+    },
+};
+static const struct TrainerMonNoItemCustomMoves sParty_Archer_2[] = { //RocketAdminGroup
     {
     .iv = 255,
     .lvl = 39,
@@ -21787,12 +21808,6 @@ static const struct TrainerMonNoItemCustomMoves sParty_Ariana[] = { //RocketAdmi
     .lvl = 30,
     .species = SPECIES_VILEPLUME,
     .moves = {MOVE_SWEET_SCENT, MOVE_SLEEP_POWDER, MOVE_SLUDGE_BOMB, MOVE_GIGA_DRAIN}
-    },
-    {
-    .iv = 255,
-    .lvl = 31,
-    .species = SPECIES_MURKROW,
-    .moves = {MOVE_PURSUIT, MOVE_TOXIC, MOVE_FAINT_ATTACK, MOVE_FLY}
     },
 };
 

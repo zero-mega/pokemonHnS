@@ -1021,11 +1021,11 @@
 #define FLAG_HIDE_ROCKETHIDEOUT2_MURKROWSTAIRS                            0x3CE
 #define FLAG_HIDE_ROCKETHIDEOUT2_MURKROWGATE                            0x3CF
 #define FLAG_HIDE_ROCKETHIDEOUT3_MURKROWSTAIRS                            0x3D0
-#define FLAG_HIDE_AQUA_HIDEOUT_B1F_ELECTRODE_1                      0x3D1
-#define FLAG_HIDE_AQUA_HIDEOUT_B1F_ELECTRODE_2                      0x3D2
-#define FLAG_HIDE_OLDALE_TOWN_RIVAL                                 0x3D3
-#define FLAG_HIDE_UNDERWATER_SEA_FLOOR_CAVERN_STOLEN_SUBMARINE      0x3D4
-#define FLAG_GARBAGEFLAG_SHADOW                   0x3D5
+#define FLAG_HIDE_ROCKETHIDEOUT2_ARIANA_AND_GRUNT                      0x3D1
+#define FLAG_HIDE_ROCKETHIDEOUT2_ELECTRODE_1                      0x3D2 //unused
+#define FLAG_HIDE_ROCKETHIDEOUT2_ELECTRODE_2                                 0x3D3 //unused
+#define FLAG_HIDE_ROCKETHIDEOUT2_ELECTRODE_3                          0x3D4//unused
+#define FLAG_GARBAGEFLAG_SHADOW                                     0x3D5
 #define FLAG_HIDE_ROUTE_120_KECLEON_1                               0x3D6
 #define FLAG_HIDE_RUSTURF_TUNNEL_WANDA                              0x3D7
 #define FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WANDA                0x3D8
@@ -1227,7 +1227,7 @@
 #define FLAG_ENTEI_BATTLE_2                                         0x496
 #define FLAG_ENTEI_BATTLE_3                                         0x497
 #define FLAG_INCREASE_DIFFICULTY                                    0x498
-#define FLAG_MOSSDEEP_CENTER_BATTLE                                 0x499
+#define FLAG_ROCKETHIDEOUT2_BATTLE                                 0x499
 #define FLAG_RAIKOU_BATTLE_1                                        0x49A
 #define FLAG_LANDMARK_DRACO_CHAMBER                                 0x49B
 #define FLAG_RAIKOU_BATTLE_2                                        0x49C
