@@ -45,7 +45,7 @@ Route39_EventScript_LegendaryTrigger::
 	turnobject OBJ_EVENT_ID_PLAYER DIR_WEST
 Route39_EventScript_ChooseLegend::
 	msgbox Route39_Text_ChooseLegend, MSGBOX_DEFAULT
-	multichoice 10, 0, MULTI_GOLDSILVER, FALSE
+	multichoice 20, 10, MULTI_GOLDSILVER, FALSE
 	switch VAR_RESULT
 	case 0, Route39_EventScript_LegendaryTriggerGold
 	case 1, Route39_EventScript_LegendaryTriggerSilver

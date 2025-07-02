@@ -40,7 +40,7 @@ CianwoodCity_Text_LugiaHouseLass:
 
 CianwoodCity_Text_LugiaHouseTwin:
 	.string "I've heard that the whirlpools\n"
-	.string "around the islands are caused by\n"
+	.string "around the islands are caused by\l"
 	.string "the sea creature.\p"
 	.string "You might need a special move\n"
 	.string "to get past them.$"

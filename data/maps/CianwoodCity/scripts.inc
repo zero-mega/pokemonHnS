@@ -15,6 +15,7 @@ CianwoodCity_OnFrame::
 CianwoodCity_EventScript_CityEnter::
 	clearflag FLAG_HIDE_CIANWOOD_SUICUNE
 	setflag FLAG_HIDE_CIANWOOD_EUSINE
+	setflag FLAG_VISITED_CIANWOOD_CITY
 	setvar VAR_CIANWOOD_CITY_STATE, 1
 	end
 

@@ -194,7 +194,6 @@ GoldenrodUnderground_EventScript_Declined_Haircut1::
 GoldenrodUnderground_EventScript_Already_Got_Haircut1::
 	msgbox GoldenrodUnderground_Text_OlderBrotherOnePerDay, MSGBOX_DEFAULT
 	closemessage
-	hidemoneybox
 	release
 	end
 
@@ -377,12 +376,6 @@ GoldenrodUnderground_Text_OlderBrotherNeedMoreMoney:
 GoldenrodUnderground_Text_OlderBrotherOnePerDay:
     .string "I do only one haircut a day.\n"
     .string "I'm done for today.$"
-
-
-
-
-
-
 
 GoldenrodUnderground_Text_SupernerdEricSeen:
     .string "I got booted out of the GAME CORNER.\p"

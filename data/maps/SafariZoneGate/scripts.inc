@@ -4,7 +4,7 @@ SafariZoneGate_MapScripts::
 SafariZoneGate_EventScript_Trigger::
 	clearflag FLAG_SAFARI_ZONE_WEST_EXPANSION
 	clearflag FLAG_SAFARI_ZONE_EAST_EXPANSION
-	
+	setflag FLAG_VISITED_SAFARI_ZONE_GATE
 	setvar VAR_SAFARI_ZONE_GATE_STATE, 3
 	end
 

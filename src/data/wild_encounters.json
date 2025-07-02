@@ -42812,12 +42812,22 @@
               {
                 "min_level": 10,
                 "max_level": 11,
-                "species": "SPECIES_GYARADOS"
+                "species": "SPECIES_MAGIKARP"
               },
               {
                 "min_level": 12,
                 "max_level": 12,
-                "species": "SPECIES_GYARADOS"
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 10,
+                "max_level": 13,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 13,
+                "max_level": 13,
+                "species": "SPECIES_MAGIKARP"
               },
               {
                 "min_level": 10,
@@ -42827,17 +42837,7 @@
               {
                 "min_level": 13,
                 "max_level": 13,
-                "species": "SPECIES_GYARADOS"
-              },
-              {
-                "min_level": 10,
-                "max_level": 13,
-                "species": "SPECIES_GYARADOS"
-              },
-              {
-                "min_level": 13,
-                "max_level": 13,
-                "species": "SPECIES_GYARADOS"
+                "species": "SPECIES_MAGIKARP"
               },
               {
                 "min_level": 12,
@@ -42907,7 +42907,7 @@
               {
                 "min_level": 10,
                 "max_level": 10,
-                "species": "SPECIES_GYARADOS"
+                "species": "SPECIES_MAGIKARP"
               },
               {
                 "min_level": 10,
@@ -42917,7 +42917,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_GYARADOS"
+                "species": "SPECIES_MAGIKARP"
               },
               {
                 "min_level": 20,
@@ -60654,6 +60654,36 @@
                 "min_level": 40,
                 "max_level": 40,
                 "species": "SPECIES_TENTACRUEL"
+              }
+            ]
+          },
+          "rock_smash_mons": {
+            "encounter_rate": 60,
+            "mons": [
+              {
+                "min_level": 20,
+                "max_level": 22,
+                "species": "SPECIES_GEODUDE"
+              },
+              {
+                "min_level": 20,
+                "max_level": 22,
+                "species": "SPECIES_GEODUDE"
+              },
+              {
+                "min_level": 20,
+                "max_level": 22,
+                "species": "SPECIES_GEODUDE"
+              },
+              {
+                "min_level": 20,
+                "max_level": 22,
+                "species": "SPECIES_SHUCKLE"
+              },
+              {
+                "min_level": 20,
+                "max_level": 22,
+                "species": "SPECIES_SHUCKLE"
               }
             ]
           }

@@ -156,6 +156,7 @@ RocketHideout_Trigger_StatueGruntLeft::
 	call_if_eq VAR_TEMP_2, 22, RocketHideout_EventScript_HeightAdjust
 	applymovement VAR_TEMP_0, RocketHideout_Movement_GruntWalkRight
 	waitmovement 0
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_WEST
 	msgbox RocketHideout_Text_CameraGrunt1Seen, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_GRUNT_17, RocketHideout_Text_CameraGrunt1Beaten
 	applymovement VAR_TEMP_0, RocketHideout_Movement_GruntWalkLeft
@@ -182,6 +183,7 @@ RocketHideout_Trigger_StatueGruntRight::
 	call_if_eq VAR_TEMP_2, 22, RocketHideout_EventScript_HeightAdjust
 	applymovement VAR_TEMP_0, RocketHideout_Movement_GruntWalkLeft
 	waitmovement 0
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_EAST
 	msgbox RocketHideout_Text_CameraGrunt1Seen, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_GRUNT_17, RocketHideout_Text_CameraGrunt1Beaten
 	applymovement VAR_TEMP_0, RocketHideout_Movement_GruntWalkRight

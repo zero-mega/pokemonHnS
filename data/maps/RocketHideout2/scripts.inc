@@ -16,7 +16,64 @@ RocketHideout2_MapScripts::
 RocketHideout2_OnLoad::
 	call_if_set FLAG_HIDE_ROCKETHIDEOUT2_GATE, RocketHideout2_HideGate
 	call_if_eq VAR_MAHOGANY_TOWN_STATE, 13, RocketHideout2_MoveLanceDragonite
+	call_if_ge VAR_ELECTRODES_FAINTED, 4, RockerHideout2_DeactivateGenerator
 	end
+
+RockerHideout2_DeactivateGenerator::
+	setmetatile 13, 8, 0x303, TRUE
+	setmetatile 13, 9, 0x303, TRUE
+	setmetatile 13, 10, 0x303, TRUE
+	setmetatile 13, 11, 0x303, TRUE
+	setmetatile 13, 12, 0x303, TRUE
+	setmetatile 13, 13, 0x303, TRUE
+	setmetatile 13, 14, 0x303, TRUE
+	setmetatile 13, 15, 0x303, TRUE
+
+	setmetatile 14, 8, 0x303, TRUE
+	setmetatile 14, 9, 0x303, TRUE
+	setmetatile 14, 10, 0x303, TRUE
+	setmetatile 14, 11, 0x303, TRUE
+	setmetatile 14, 12, 0x303, TRUE
+	setmetatile 14, 13, 0x303, TRUE
+	setmetatile 14, 14, 0x303, TRUE
+	setmetatile 14, 15, 0x303, TRUE
+
+	setmetatile 15, 8, 0x303, TRUE
+	setmetatile 15, 9, 0x303, TRUE
+	setmetatile 15, 10, 0x303, TRUE
+	setmetatile 15, 11, 0x303, TRUE
+	setmetatile 15, 12, 0x303, TRUE
+	setmetatile 15, 13, 0x303, TRUE
+	setmetatile 15, 14, 0x303, TRUE
+	setmetatile 15, 15, 0x303, TRUE
+
+	setmetatile 16, 8, 0x303, TRUE
+	setmetatile 16, 9, 0x303, TRUE
+	setmetatile 16, 10, 0x303, TRUE
+	setmetatile 16, 11, 0x303, TRUE
+	setmetatile 16, 12, 0x303, TRUE
+	setmetatile 16, 13, 0x303, TRUE
+	setmetatile 16, 14, 0x303, TRUE
+	setmetatile 16, 15, 0x303, TRUE
+
+	setmetatile 17, 8, 0x303, TRUE
+	setmetatile 17, 9, 0x303, TRUE
+	setmetatile 17, 10, 0x303, TRUE
+	setmetatile 17, 11, 0x303, TRUE
+	setmetatile 17, 12, 0x303, TRUE
+	setmetatile 17, 13, 0x303, TRUE
+	setmetatile 17, 14, 0x303, TRUE
+	setmetatile 17, 15, 0x303, TRUE
+
+	setmetatile 18, 8, 0x303, TRUE
+	setmetatile 18, 9, 0x303, TRUE
+	setmetatile 18, 10, 0x303, TRUE
+	setmetatile 18, 11, 0x303, TRUE
+	setmetatile 18, 12, 0x303, TRUE
+	setmetatile 18, 13, 0x303, TRUE
+	setmetatile 18, 14, 0x303, TRUE
+	setmetatile 18, 15, 0x303, TRUE
+	return
 
 RocketHideout2_HideGate::
 	setmetatile 14, 19, 0x378, FALSE
@@ -434,9 +491,11 @@ RocketHideout2_EventScript_Ran_Electrode::
 	end
 
 RocketHideout2_EventScript_ElectrodeDone::
+	playse SE_M_HYPER_BEAM
 	removeobject LOCALID_LANCEELECTRODE1
 	removeobject LOCALID_LANCEELECTRODE2
 	removeobject LOCALID_LANCEELECTRODE3
+	waitse
 	getplayerxy VAR_TEMP_0, VAR_TEMP_1 
 	call_if_eq VAR_TEMP_1, 16, RocketHideout2_Movement_PlayerMeetLanceTop
 	call_if_eq VAR_TEMP_1, 18, RocketHideout2_Movement_PlayerMeetLanceBot
@@ -444,6 +503,16 @@ RocketHideout2_EventScript_ElectrodeDone::
 	applymovement LOCALID_ROCKETHIDEOUT2_LANCE, RocketHideout2_Movement_LanceMeetPlayerAfterElectrode
 	applymovement LOCALID_ROCKETHIDEOUT2_DRAGONITE, RocketHideout2_Movement_LanceMeetPlayerAfterElectrode
 	waitmovement LOCALID_ROCKETHIDEOUT2_DRAGONITE
+
+	playse SE_CLICK
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	turnobject LOCALID_ROCKETHIDEOUT2_LANCE, DIR_NORTH
+	call RockerHideout2_DeactivateGenerator
+	special DrawWholeMapView
+	delay 55
+	turnobject LOCALID_ROCKETHIDEOUT2_LANCE DIR_WEST
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_EAST
+	delay 30
 	msgbox RocketHideout2_Text_LanceElectrodeDone, MSGBOX_DEFAULT
 	giveitem ITEM_HM_DIVE
 	msgbox RocketHideout2_Text_LanceWhirlpool, MSGBOX_DEFAULT

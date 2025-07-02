@@ -105,6 +105,7 @@ LakeOfRage_EventScript_Dragonite::
 	playmoncry SPECIES_DRAGONITE, CRY_MODE_NORMAL
 	msgbox LakeOfRage_Text_Dragonite, MSGBOX_DEFAULT
 	waitmoncry
+	turnobject LOCALID_LAKEOFRAGE_DRAGONITE, DIR_WEST
 	release
 	end
 
@@ -172,6 +173,8 @@ LakeOfRage_Movement_LanceLeaveNorth:
 	step_end
 
 LakeOfRage_Movement_DragoniteLeaveNorth:
+	delay_16
+	delay_16
 	walk_left
 	walk_left
 	walk_down
@@ -196,6 +199,8 @@ LakeOfRage_Movement_LanceLeave:
 	step_end
 
 LakeOfRage_Movement_DragoniteLeave:
+	delay_16
+	delay_16
 	walk_left
 	walk_down
 	walk_down

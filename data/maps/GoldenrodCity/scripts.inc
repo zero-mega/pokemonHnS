@@ -7,7 +7,7 @@ GoldenrodCity_MapScripts::
 
 GoldenrodCity_EventScript_Trigger:: @flagheap
 	call_if_unset FLAG_SHOWN_ELM_TOGEPI, GoldenrodCity_Elm_Togepi_Call
-	
+	setflag FLAG_VISITED_GOLDENROD_CITY
 	setflag FLAG_HIDE_GOLDENROD_ROCKETS
 	setflag FLAG_HIDE_GOLDENROD_BILL
 	setflag FLAG_HIDE_GOLDENROD_UNDERGROUND_KIMONO

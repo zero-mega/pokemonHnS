@@ -13,6 +13,7 @@ RocketHideout3_MapScripts::
 
 RocketHideout3_OnLoad::
 	call_if_set FLAG_HIDE_ROCKETHIDEOUT3_GATE, RocketHideout3_HideGate
+	call_if_eq VAR_ROCKET_PASSWORD, 2, RocketHideout3_HidePetrel
 	end
 	
 RocketHideout3_HideGate::
@@ -22,6 +23,10 @@ RocketHideout3_HideGate::
 	setmetatile 12, 12, 0x379, FALSE
 	setmetatile 13, 11, 0x379, FALSE
 	setmetatile 13, 12, 0x379, FALSE
+	return
+RocketHideout3_HidePetrel::
+	setflag FLAG_HIDE_ROCKETHIDEOUT3_PETREL
+	clearflag FLAG_HIDE_ROCKETHIDEOUT3_GIOVANNI
 	return
 
 RocketHideout3_OnFrame::
@@ -63,10 +68,10 @@ RocketHideout3_Movement_LanceLeave:
 	step_end
 
 RocketHideout3_Movement_DragoniteLeave:
-	delay_8
-	delay_8
-	delay_8
-	delay_8
+	delay_16
+	delay_16
+	delay_16
+	delay_16
 	delay_8
 	delay_8
 	delay_8
@@ -354,6 +359,7 @@ RocketHideout3_EventScript_Giovanni::
 	setflag FLAG_HIDE_ROCKETHIDEOUT2_MURKROWGATE
 	setflag FLAG_HIDE_ROCKETHIDEOUT3_MURKROWSTAIRS
 	setflag FLAG_HIDE_ROCKETHIDEOUT2_ARIANA_AND_GRUNT
+	setvar VAR_ROCKET_PASSWORD, 3
 	setvar VAR_MAHOGANY_TOWN_STATE, 9
 	release
 	end

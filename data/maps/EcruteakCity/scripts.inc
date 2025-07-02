@@ -25,6 +25,7 @@ EcruteakCity_EventScript_Trigger::
 	clearflag FLAG_BEAT_KIYO
 	clearflag FLAG_ENABLE_BAOBA_MATCH_CALL
 
+	setflag FLAG_VISITED_ECRUTEAK_CITY
 	setflag FLAG_HIDE_ROUTE42_EUSINE
 	setflag FLAG_HIDE_HO_OH
 	setflag FLAG_HIDE_LUGIA
