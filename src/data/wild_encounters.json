@@ -37324,7 +37324,7 @@
           "map": "MAP_ILEX_FOREST",
           "base_label": "gIlexForest",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 20,
             "mons": [
               {
                 "min_level": 8,
@@ -37508,7 +37508,7 @@
           "map": "MAP_ILEX_FOREST",
           "base_label": "gIlexForest_Night",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 20,
             "mons": [
               {
                 "min_level": 12,

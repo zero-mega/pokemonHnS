@@ -718,7 +718,7 @@ RustboroCity_DevonCorp_2F_Text_FossilizedMonBroughtBackToLife:
 
 RustboroCity_DevonCorp_2F_Text_ReceivedMonFromResearcher:
 	.string "{PLAYER} received {STR_VAR_2} from\n"
-	.string "the DEVON RESEARCHER.$"
+	.string "the RESEARCHER.$"
 
 @ Unused
 RustboroCity_DevonCorp_2F_Text_TooManyPokemon:

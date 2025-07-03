@@ -382,7 +382,7 @@ RuinsOfAlph2_Text_Receptionist1:
 	.string "a POKéMON drawn by the ancients.\p"
 	.string "Slide the panels around to form\n"
 	.string "the picture.\p"
-	.string "To the right is a description of\n"
+	.string "To the left is a description of\n"
 	.string "the POKéMON.\p"
 	.string "Scientists in the lab are examin-\n"
 	.string "-ing some newly found patterns.$"

@@ -256,9 +256,9 @@ static const u16 *const gTilesetAnims_OlivineCity_Gym_Flower[] = {
     sTilesetAnims_OlivineCity_Gym_Flower_Frame4
 };
 
-const u16 gTilesetAnims_AzaleaGym_Flower_Frame0[] = INCBIN_U16("data/tilesets/secondary/national_park/anim/red_flower/0.4bpp");
-const u16 gTilesetAnims_AzaleaGym_Flower_Frame1[] = INCBIN_U16("data/tilesets/secondary/national_park/anim/red_flower/1.4bpp");
-const u16 gTilesetAnims_AzaleaGym_Flower_Frame2[] = INCBIN_U16("data/tilesets/secondary/national_park/anim/red_flower/2.4bpp");
+const u16 gTilesetAnims_AzaleaGym_Flower_Frame0[] = INCBIN_U16("data/tilesets/secondary/azalea_gym_29/anim/yellow_flower/0.4bpp");
+const u16 gTilesetAnims_AzaleaGym_Flower_Frame1[] = INCBIN_U16("data/tilesets/secondary/azalea_gym_29/anim/yellow_flower/1.4bpp");
+const u16 gTilesetAnims_AzaleaGym_Flower_Frame2[] = INCBIN_U16("data/tilesets/secondary/azalea_gym_29/anim/yellow_flower/2.4bpp");
 
 const u16 *const gTilesetAnims_AzaleaGym_Flower[] = {
     gTilesetAnims_AzaleaGym_Flower_Frame0,

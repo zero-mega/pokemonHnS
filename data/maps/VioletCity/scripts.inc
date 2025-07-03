@@ -409,7 +409,7 @@ VioletCity_Text_Gramps:
 	.string "FALKNER, from the VIOLET\n"
 	.string "POKéMON GYM, is a fine trainer!\p"
 	.string "He inherited his father's gym\n"
-	.string "and has done a great job with\p"
+	.string "and has done a great job with\l"
 	.string "it.$"
 
 VioletCity_Text_Youngster:

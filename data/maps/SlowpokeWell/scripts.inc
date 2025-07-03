@@ -55,7 +55,7 @@ SlowpokeWell_EventScript_Proton::
 	removeobject 11
 	removeobject 12
 	removeobject 13
-	delay 60
+	delay 120
 	fadescreen FADE_FROM_BLACK
 	special DrawWholeMapView
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_SOUTH
@@ -135,7 +135,7 @@ SlowpokeWell_Text_ProtonAfter:
 	.string "Yeah, TEAM ROCKET was broken up\n"
 	.string "three years ago.\p"
 	.string "The boss went into hiding.\p"
-	.string "But we continued our activities\l"
+	.string "But we continued our activities\n"
 	.string "underground!\p"
 	.string "A small obstacle like you won't be\n"
 	.string "much of a problem for our mission.\p"

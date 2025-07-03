@@ -194,7 +194,7 @@ Route29_Text_TuscanyNope:
 
 Route29_Text_TuscanyGivesGift:
 	.string "Yes! By way of introduction,\n"
-	.string "please accept this gift, a SILK\p"
+	.string "please accept this gift, a SILK\l"
 	.string "SCARF.$"
 
 Route29_Text_TuscanyGaveGift:

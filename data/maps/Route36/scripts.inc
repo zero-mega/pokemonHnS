@@ -213,7 +213,7 @@ Route36_Text_OddTree:
 Route36_Text_Lass1:
 	.string "Be careful at night on this route!\p"
 	.string "I saw a POKéMON that looked like\n"
-	.string "GROWLITHE, but it had a scary aura\p"
+	.string "GROWLITHE, but it had a scary aura\l"
 	.string "to it.$"
 
 Route36_Text_Lass2_ClearedSudowoodo:

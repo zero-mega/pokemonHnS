@@ -66,6 +66,7 @@ AzaleaGym_EventScript_Trigger_5::
 	waitmovement 0
 	waitmovement 0
 	applymovement LOCALID_AZALEA_ARIADOS_MID1, AzaleaGym_Movement_Ariados_Down
+	delay 10
 	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Down
 	waitmovement 0
 	waitmovement 0
@@ -76,6 +77,7 @@ AzaleaGym_EventScript_Trigger_5::
 	waitmovement 0
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_SOUTH
 	applymovement LOCALID_AZALEA_ARIADOS_MID1, AzaleaGym_Movement_Ariados_Down
+	delay 10
 	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Down
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_JumpDown1
@@ -137,6 +139,7 @@ AzaleaGym_EventScript_Trigger_6::
 	waitmovement 0
 	waitmovement 0
 	applymovement LOCALID_AZALEA_ARIADOS_RIGHT1, AzaleaGym_Movement_Ariados_Down
+	delay 10
 	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Down
 	waitmovement 0
 	waitmovement 0
@@ -147,6 +150,7 @@ AzaleaGym_EventScript_Trigger_6::
 	waitmovement 0
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_SOUTH
 	applymovement LOCALID_AZALEA_ARIADOS_RIGHT1, AzaleaGym_Movement_Ariados_Down
+	delay 10
 	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Down
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_JumpDown1
@@ -212,6 +216,7 @@ AzaleaGym_EventScript_Trigger_4::
 	waitmovement 0
 	waitmovement 0
 	applymovement LOCALID_AZALEA_ARIADOS_LEFT1, AzaleaGym_Movement_Ariados_Down
+	delay 10
 	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Down
 	waitmovement 0
 	waitmovement 0
@@ -226,6 +231,7 @@ AzaleaGym_EventScript_Trigger_4::
 	waitmovement 0
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_SOUTH
 	applymovement LOCALID_AZALEA_ARIADOS_LEFT1, AzaleaGym_Movement_Ariados_Down
+	delay 10
 	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Down
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_JumpDown1
@@ -281,10 +287,12 @@ AzaleaGym_EventScript_Trigger_10::
 	waitmovement 0
 	waitmovement 0
 	applymovement LOCALID_AZALEA_ARIADOS_LEFT2, AzaleaGym_Movement_Ariados_Down
+	delay 10
 	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Down
 	waitmovement 0
 	waitmovement 0
 	applymovement LOCALID_AZALEA_ARIADOS_LEFT2, AzaleaGym_Movement_Ariados_Down
+	delay 10
 	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Down
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_JumpDown1
@@ -347,6 +355,7 @@ AzaleaGym_EventScript_Trigger_12::
 	waitmovement 0
 	waitmovement 0
 	applymovement LOCALID_AZALEA_ARIADOS_RIGHT2, AzaleaGym_Movement_Ariados_Down
+	delay 10
 	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Down
 	waitmovement 0
 	waitmovement 0
@@ -357,6 +366,7 @@ AzaleaGym_EventScript_Trigger_12::
 	waitmovement 0
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_SOUTH
 	applymovement LOCALID_AZALEA_ARIADOS_RIGHT2, AzaleaGym_Movement_Ariados_Down
+	delay 10
 	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Down
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_JumpDown1
@@ -375,7 +385,7 @@ AzaleaGym_EventScript_Trigger_9::
 	clearflag FLAG_HIDE_AZALEA_ARIADOS_RIGHT
 	addobject LOCALID_AZALEA_ARIADOS_RIGHT2
 	SetObjectSubpriority OBJ_EVENT_ID_PLAYER, MAP_AZALEA_GYM, 0
-	applymovement LOCALID_AZALEA_ARIADOS_RIGHT1, AzaleaGym_Movement_Ariados_Down
+	applymovement LOCALID_AZALEA_ARIADOS_RIGHT2, AzaleaGym_Movement_Ariados_Down
 	waitmovement 0
 	turnobject LOCALID_AZALEA_ARIADOS_RIGHT2, DIR_NORTH
 	delay 30
@@ -418,6 +428,7 @@ AzaleaGym_EventScript_Trigger_11::
 	waitmovement 0
 	waitmovement 0
 	applymovement LOCALID_AZALEA_ARIADOS_MID2, AzaleaGym_Movement_Ariados_Down
+	delay 10
 	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Down
 	waitmovement 0
 	waitmovement 0
@@ -428,6 +439,7 @@ AzaleaGym_EventScript_Trigger_11::
 	waitmovement 0
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_SOUTH
 	applymovement LOCALID_AZALEA_ARIADOS_MID2, AzaleaGym_Movement_Ariados_Down
+	delay 10
 	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Down
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_JumpDown1
@@ -632,9 +644,9 @@ AzaleaGym_Text_BugsyIntro:
 	.string "My research is going to make me the\n"
 	.string "authority on bug POKéMON!\p"
 	.string "For example, did you know\n"
-	.string "that the move CUT is\p"
-	.string "actually a BUG-type move?\n"
-	.string "Let me demonstrate all I've\p"
+	.string "that the move CUT is\l"
+	.string "actually a BUG-type move?\p"
+	.string "Let me demonstrate all I've\n"
 	.string "learned from my studies.$"
 
 AzaleaGym_Text_BugsyBeaten:

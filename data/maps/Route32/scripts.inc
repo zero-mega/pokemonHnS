@@ -115,9 +115,26 @@ Route32_EventScript_SlowpokeTail_Trigger::
 Route32_EventScript_SlowpokeTail_Trigger2::
 	msgbox Route32_Text_ThoughtKidsLoaded, MSGBOX_DEFAULT
 	closemessage
+	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+	call_if_eq VAR_TEMP_0, 16, Route32_EventScript_Movement_Left
+	call_if_eq VAR_TEMP_0, 17, 	Route32_EventScript_Movement_Right
 	setvar VAR_SLOWPOKE_TAIL, 1
 	release
 	end
+
+Route32_EventScript_Movement_Left::
+	applymovement LOCALID_SLOWPOKETAIL_MAN, Common_Movement_WalkLeft1
+	waitmovement 0
+	turnobject LOCALID_SLOWPOKETAIL_MAN, DIR_EAST
+	return 
+
+Route32_EventScript_Movement_Right::
+	applymovement LOCALID_SLOWPOKETAIL_MAN, Common_Movement_WalkLeft1
+	waitmovement 0
+	applymovement LOCALID_SLOWPOKETAIL_MAN, Common_Movement_WalkLeft1
+	waitmovement 0
+	turnobject LOCALID_SLOWPOKETAIL_MAN, DIR_EAST
+	return 	
 
 Route32_EventScript_SlowpokeTail::
 	lock
