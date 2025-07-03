@@ -28,7 +28,7 @@ static const TaskFunc sBattleIntroSlideFuncs[] =
     [BATTLE_TERRAIN_GRASS]      = BattleIntroSlide1,
     [BATTLE_TERRAIN_LONG_GRASS] = BattleIntroSlide1,
     [BATTLE_TERRAIN_SAND]       = BattleIntroSlide2,
-    [BATTLE_TERRAIN_UNDERWATER] = BattleIntroSlide2,
+    [BATTLE_TERRAIN_GRAY_CAVE] = BattleIntroSlide2,
     [BATTLE_TERRAIN_WATER]      = BattleIntroSlide2,
     [BATTLE_TERRAIN_POND]       = BattleIntroSlide1,
     [BATTLE_TERRAIN_MOUNTAIN]   = BattleIntroSlide1,
@@ -128,7 +128,7 @@ void HandleIntroSlide(u8 terrain)
     }
     else if ((gBattleTypeFlags & BATTLE_TYPE_KYOGRE_GROUDON) && gGameVersion != VERSION_RUBY)
     {
-        terrain = BATTLE_TERRAIN_UNDERWATER;
+        terrain = BATTLE_TERRAIN_GRAY_CAVE;
         taskId = CreateTask(BattleIntroSlide2, 0);
     }
     else
@@ -309,7 +309,7 @@ static void BattleIntroSlide2(u8 taskId)
     case BATTLE_TERRAIN_WATER:
         gBattle_BG1_X += 8;
         break;
-    case BATTLE_TERRAIN_UNDERWATER:
+    case BATTLE_TERRAIN_GRAY_CAVE:
         gBattle_BG1_X += 6;
         break;
     }

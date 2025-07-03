@@ -38,7 +38,8 @@
         "items.h": "c",
         "trainer_hill.h": "c",
         "event_objects.h": "c",
-        "moves.h": "c"
+        "moves.h": "c",
+        "map_groups.h": "c"
     },
     "git.ignoreLimitWarning": true
 }
