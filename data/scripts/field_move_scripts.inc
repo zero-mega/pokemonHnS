@@ -455,7 +455,9 @@ EventScript_EndSurface::
 @crystal
 EventScript_Whirlpool::
 	lockall
-	goto_if_unset FLAG_BADGE08_GET, EventScript_CantWhirlpool
+	goto_if_unset FLAG_BADGE07_GET, EventScript_CantWhirlpool
+	checkitem ITEM_HM_WHIRLPOOL
+	goto_if_eq VAR_RESULT, FALSE, EventScript_CantWhirlpool
 	goto_if_eq VAR_FACING, DIR_NORTH, EventScript_WhirlpoolGoNorth
 	goto_if_eq VAR_FACING, DIR_SOUTH, EventScript_WhirlpoolGoSouth
 	goto_if_eq VAR_FACING, DIR_EAST, EventScript_WhirlpoolGoEast
@@ -497,9 +499,11 @@ Movement_WhirlpoolNorth:
 	slide_up
 	slide_up
 	slide_up
+	slide_up
 	step_end
 
 Movement_WhirlpoolSouth:
+	slide_down
 	slide_down
 	slide_down
 	slide_down
@@ -509,9 +513,11 @@ Movement_WhirlpoolEast:
 	slide_right
 	slide_right
 	slide_right
+	slide_right
 	step_end
 
 Movement_WhirlpoolWest:
+	slide_left
 	slide_left
 	slide_left
 	slide_left
@@ -530,7 +536,7 @@ Text_WantToDive:
 	.string "Would you like to use DIVE?$"
 
 Text_MonUsedDive:
-	.string "{STR_VAR_1} used DIVE.$"
+	.string "{STR_VAR_1} used WHIRLPOOL.$"
 
 Text_CantSurface:
 	.string "Light is filtering down from above.\n"

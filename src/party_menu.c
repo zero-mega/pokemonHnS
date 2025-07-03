@@ -4892,7 +4892,7 @@ int MoveToHM(u16 move)
     case MOVE_WATERFALL:
         item = ITEM_HM07;
         break;
-    case MOVE_DIVE:
+    case MOVE_WHIRLPOOL:
         item = ITEM_HM08;
         break;
     default:

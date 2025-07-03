@@ -4146,7 +4146,7 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_HM_DIVE] =
+    [ITEM_HM_WHIRLPOOL] =
     {
         .name = _("HM08"),
         .itemId = ITEM_HM08,
@@ -8970,7 +8970,7 @@ const struct Item gItems2[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_HM_DIVE] =
+    [ITEM_HM_WHIRLPOOL] =
     {
         .name = _("HM08"),
         .itemId = ITEM_HM08,

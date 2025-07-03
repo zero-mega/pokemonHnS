@@ -1531,9 +1531,9 @@ static const u8 sHM07Desc[] = _(
     "to climb waterfalls.");
 
 static const u8 sHM08Desc[] = _(
-    "Dives underwater\n"
-    "the 1st turn, then\n"
-    "attacks next turn.");
+    "Traps and hurts the\n"
+    "foe in a whirlpool\n"
+    "for 2-5 turns.");
 
 // FireRed/LeafGreen key items
 static const u8 sOaksParcelDesc[] = _(
