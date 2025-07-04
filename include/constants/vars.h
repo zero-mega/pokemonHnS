@@ -143,7 +143,7 @@
 #define VAR_ROCKET_HIDEOUT_STATUE_5                               0x407B
 #define VAR_ROCKET_PASSWORD                               0x407C // 0-2
 #define VAR_ELECTRODES_FAINTED                               0x407D 
-#define VAR_ROUTE131_STATE                               0x407E // Unused Var
+#define VAR_LAKE_OF_RAGE_FISHERMAN                               0x407E // 0 = unmet, 1 = met, 2 = received a magikarp, 3 = received a satisfactory magikarp
 #define VAR_ROUTE132_STATE                               0x407F // Unused Var
 #define VAR_ROUTE133_STATE                               0x4080 // Unused Var
 #define VAR_ROUTE134_STATE                               0x4081 // Unused Var

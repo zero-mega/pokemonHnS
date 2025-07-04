@@ -633,6 +633,13 @@
 	.2byte \number
 	.endm
 
+	@ Removes Pokémon from player's party. If species in VAR_0x8004 matches the species passed in as number, it will remove the mon.
+	@ VAR_RESULT will be set to TRUE if it works. FALSE if it doesn't.
+	.macro removegenericmon number:req
+	.byte 0xed
+	.2byte \number
+	.endm
+
 	@ Removes Pokémon from player's party. 1 = KENYA, 2 = SHUCKIE
 	@ VAR_RESULT will be set to MON_GIVEN_TO_PARTY, MON_CANT_GIVE depending on the outcome.
 	.macro remove5mons 

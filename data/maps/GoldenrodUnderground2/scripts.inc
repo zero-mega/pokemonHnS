@@ -159,6 +159,7 @@ GoldenrodUnderground_EventScript_Haircut1::
 	msgbox GoldenrodUnderground_Text_OlderBrotherAskWhich
 	special ChoosePartyMon
 	waitstate
+	showmoneybox 0, 0
 	lock
 	faceplayer
 	goto_if_ge VAR_0x8004, PARTY_SIZE, GoldenrodUnderground_EventScript_Declined_Haircut1
@@ -221,6 +222,7 @@ GoldenrodUnderground_EventScript_Haircut2::
 	msgbox GoldenrodUnderground_Text_YoungerBrotherAskWhich
 	special ChoosePartyMon
 	waitstate
+	showmoneybox 0, 0
 	lock
 	faceplayer
 	goto_if_ge VAR_0x8004, PARTY_SIZE, GoldenrodUnderground_EventScript_Declined_Haircut2

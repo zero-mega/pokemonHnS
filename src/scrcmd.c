@@ -1996,6 +1996,45 @@ bool8 ScrCmd_removenamedmon(struct ScriptContext *ctx)
     return FALSE;
 }
 
+bool8 ScrCmd_removegenericmon(struct ScriptContext *ctx)
+{
+    u16 targetSpecies = ScriptReadHalfword(ctx);
+    u8 monIndex = VarGet(VAR_0x8004);
+
+    if (monIndex >= PARTY_SIZE)
+    {
+        gSpecialVar_Result = FALSE;
+        return FALSE;
+    }
+
+    struct Pokemon *mon = &gPlayerParty[monIndex];
+    u16 species = GetMonData(mon, MON_DATA_SPECIES);
+
+    if (species == SPECIES_NONE || species != targetSpecies)
+    {
+        gSpecialVar_Result = FALSE;
+        return FALSE;
+    }
+
+    // Special condition: Magikarp at level 100
+    if (species == SPECIES_MAGIKARP)
+    {
+        u8 level = GetMonData(mon, MON_DATA_LEVEL);
+        if (level == 100)
+        {
+            ZeroMonData(mon);
+            CompactPartySlots();
+            gSpecialVar_Result = MON_SATISFACTORY;
+            return FALSE;
+        }
+    }
+
+    ZeroMonData(mon);
+    CompactPartySlots();
+    gSpecialVar_Result = MON_UNSATISFACTORY;
+    return FALSE;
+}
+
 
 
 bool8 ScrCmd_remove5mons(struct ScriptContext *ctx)

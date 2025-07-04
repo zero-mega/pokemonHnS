@@ -66,8 +66,9 @@ MahoganyTown_EventScript_TownTrigger::
 	setvar VAR_ROCKET_HIDEOUT_STATUE_5, 0
 	setvar VAR_ROCKET_PASSWORD, 0
 	setvar VAR_ELECTRODES_FAINTED, 0
+	setvar VAR_LAKE_OF_RAGE_FISHERMAN, 0
 
-	setvar VAR_MAHOGANY_TOWN_STATE, 1
+	setvar VAR_MAHOGANY_TOWN_STATE, 14
 	end
 
 MahoganyTown_EventScript_MerchantTrigger::

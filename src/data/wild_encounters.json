@@ -42950,8 +42950,8 @@
                 "species": "SPECIES_GYARADOS"
               },
               {
-                "min_level": 40,
-                "max_level": 40,
+                "min_level": 100,
+                "max_level": 100,
                 "species": "SPECIES_MAGIKARP"
               }
             ]

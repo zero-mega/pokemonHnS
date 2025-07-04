@@ -829,7 +829,7 @@
 #define FLAG_HIDE_MAHOGANY_ROCKETS                                0x30E
 #define FLAG_GOT_TM_FROM_MAHOGANY_COP                                0x30F
 #define FLAG_GOT_BLACK_BELT                                       0x310
-#define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_MOM              0x311
+#define FLAG_MET_LAKEOFRAGE_FISHERMAN              0x311//UNUSED
 #define FLAG_HIDE_ROUTE_119_SCOTT                                   0x312
 #define FLAG_HIDE_LILYCOVE_MOTEL_SCOTT                              0x313
 #define FLAG_HIDE_MOSSDEEP_CITY_SCOTT                               0x314
