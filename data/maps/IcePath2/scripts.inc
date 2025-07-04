@@ -20,3 +20,9 @@ IcePath2_SetHoleWarp:
 	callnative SetTimeBasedEncounters
 	end
 
+IcePath2_EventScript_Item_Iron::
+	finditem ITEM_IRON
+	end
+IcePath2_EventScript_Item_Revive::
+	finditem ITEM_REVIVE
+	end

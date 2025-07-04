@@ -830,7 +830,7 @@
 #define FLAG_GOT_TM_FROM_MAHOGANY_COP                               0x30F
 #define FLAG_GOT_BLACK_BELT                                         0x310
 #define FLAG_GOT_HIDDEN_POWER                                       0x311
-#define FLAG_HIDE_ICEPATH2_BOULDER1                                 0x312
+#define FLAG_HIDE_ICEPATH2_BOULDER1                                 0x312 //unused
 #define FLAG_HIDE_ICEPATH2_BOULDER2                                 0x313
 #define FLAG_HIDE_ICEPATH2_BOULDER3                                 0x314
 #define FLAG_HIDE_ICEPATH2_BOULDER4                                 0x315
@@ -1025,7 +1025,7 @@
 #define FLAG_HIDE_ROCKETHIDEOUT2_ELECTRODE_1                      0x3D2 //unused
 #define FLAG_HIDE_ROCKETHIDEOUT2_ELECTRODE_2                                 0x3D3 //unused
 #define FLAG_HIDE_ROCKETHIDEOUT2_ELECTRODE_3                          0x3D4//unused
-#define FLAG_GARBAGEFLAG_SHADOW                                     0x3D5
+#define FLAG_HIDE_ICE_PATH_KIMONO                                     0x3D5
 #define FLAG_HIDE_ROUTE_120_KECLEON_1                               0x3D6
 #define FLAG_HIDE_RUSTURF_TUNNEL_WANDA                              0x3D7
 #define FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WANDA                0x3D8
@@ -1093,7 +1093,6 @@
 #define FLAG_ITEM_RUINSOFALPH_STAR_PIECE                            0x413
 #define FLAG_ITEM_RUINSOFALPH_LUM_BERRY_2                           0x414
 #define FLAG_ITEM_RUINSOFALPH_WATER_STONE                           0x415
-
 #define FLAG_ITEM_WHIRL_ISLANDS1_ULTRA_BALL                     0x416
 #define FLAG_ITEM_WHIRL_ISLANDS1_RARE_CANDY                          0x417
 #define FLAG_ITEM_WHIRL_ISLANDS1_FULL_RESTORE                         0x418
@@ -1117,7 +1116,6 @@
 #define FLAG_ITEM_ROUTE44_MAX_REPEL                            0x42A
 #define FLAG_ITEM_ROUTE44_ULTRA_BALL                                0x42B
 #define FLAG_ITEM_ROUTE44_ELIXIR                                    0x42C
-
 #define FLAG_ITEM_ROCKETHIDEOUT1_BIG_NUGGET                         0x42D
 #define FLAG_ITEM_ROCKETHIDEOUT1_REVIVE                             0x42E
 #define FLAG_ITEM_ROCKETHIDEOUT1_HYPER_POTION                       0x42F
@@ -1126,16 +1124,17 @@
 #define FLAG_ITEM_ROCKETHIDEOUT3_PROTEIN                            0x432
 #define FLAG_ITEM_ROCKETHIDEOUT3_FULL_HEAL                           0x433
 #define FLAG_ITEM_ROCKETHIDEOUT3_GUARD_SPEC                          0x434
-#define FLAG_ITEM_ROCKETHIDEOUT3_HYPER_POTION                         0x435
-#define FLAG_ITEM_ABANDONED_SHIP_HIDDEN_FLOOR_ROOM_2_SCANNER        0x436
-#define FLAG_ITEM_SCORCHED_SLAB_TM_SUNNY_DAY                        0x437
-#define FLAG_ITEM_METEOR_FALLS_B1F_2R_TM_DRAGON_CLAW                0x438
-#define FLAG_ITEM_SHOAL_CAVE_ENTRANCE_BIG_PEARL                     0x439
-#define FLAG_ITEM_SHOAL_CAVE_INNER_ROOM_RARE_CANDY                  0x43A
-#define FLAG_ITEM_SHOAL_CAVE_STAIRS_ROOM_ICE_HEAL                   0x43B
-#define FLAG_ITEM_VICTORY_ROAD_1F_MAX_ELIXIR                        0x43C
-#define FLAG_ITEM_VICTORY_ROAD_1F_PP_UP                             0x43D
-#define FLAG_ITEM_VICTORY_ROAD_B1F_TM_PSYCHIC                       0x43E
+#define FLAG_ITEM_ROCKETHIDEOUT3_HYPER_POTION                        0x435
+
+#define FLAG_ITEM_ICEPATH1_HM_WATERFALL        0x436
+#define FLAG_ITEM_ICEPATH1_PP_UP                        0x437
+#define FLAG_ITEM_ICEPATH1_PROTEIN                0x438
+#define FLAG_ITEM_ICEPATH2_IRON                     0x439
+#define FLAG_ITEM_ICEPATH2_REVIVE                  0x43A
+#define FLAG_ITEM_ICEPATH3_MAX_POTION                   0x43B
+#define FLAG_ITEM_ICEPATH3_FULL_HEAL                        0x43C
+#define FLAG_ITEM_ICEPATH3_CARBOS                             0x43D
+#define FLAG_ITEM_ICEPATH3_NEVER_MELT_ICE                       0x43E
 #define FLAG_ITEM_VICTORY_ROAD_B1F_FULL_RESTORE                     0x43F
 #define FLAG_ITEM_VICTORY_ROAD_B2F_FULL_HEAL                        0x440
 #define FLAG_ITEM_MT_PYRE_6F_TM_SHADOW_BALL                         0x441

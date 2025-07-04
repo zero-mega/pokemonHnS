@@ -6,3 +6,15 @@ IcePath3_MapScripts::
 IcePath3_OnTransition: 
 	callnative SetTimeBasedEncounters
 	end
+
+IcePath3_EventScript_Item_FullHeal::
+	finditem ITEM_FULL_HEAL
+	end
+
+IcePath3_EventScript_Item_MaxPotion::
+	finditem ITEM_MAX_POTION
+	end
+
+IcePath3_EventScript_Item_Carbos::
+	finditem ITEM_CARBOS
+	end
