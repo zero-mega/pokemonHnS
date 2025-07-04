@@ -306,6 +306,10 @@
 // gTileset_GreenHouses
 #define METATILE_GreenHouses_Elevator  0x2AB
 
+// gTileset_IceCave_38
+#define METATILE_IceCave_38_IcePath_CrackedFloor      0x39E
+#define METATILE_IceCave_38_IcePath_CrackedFloorHole  0x39F
+
 // gTileset_InsideOfTruck
 #define METATILE_InsideOfTruck_DoorClosedFloor_Bottom  0x21D
 #define METATILE_InsideOfTruck_DoorClosedFloor_Mid     0x215

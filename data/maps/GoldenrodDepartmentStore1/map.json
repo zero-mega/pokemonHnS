@@ -69,7 +69,7 @@
   ],
   "warp_events": [
     {
-      "x": 16,
+      "x": 15,
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_GOLDENROD_CITY",

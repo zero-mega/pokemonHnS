@@ -61,6 +61,7 @@
 #include "mail.h"
 #include "player_pc.h"
 #include "easy_chat.h"
+#include "strings.h"
 
 
 

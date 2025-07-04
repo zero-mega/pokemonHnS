@@ -39,7 +39,11 @@
         "trainer_hill.h": "c",
         "event_objects.h": "c",
         "moves.h": "c",
-        "map_groups.h": "c"
+        "map_groups.h": "c",
+        "battle_message.h": "c",
+        "mail.h": "c",
+        "sound.h": "c",
+        "tx_randomizer_and_challenges.h": "c"
     },
     "git.ignoreLimitWarning": true
 }

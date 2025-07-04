@@ -315,7 +315,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_DefeatedMaxieTabitha::
 	setflag FLAG_GARBAGEFLAG
 	clearflag FLAG_GARBAGEFLAG
 	setvar VAR_STEVENS_HOUSE_STATE, 1
-	setflag FLAG_HIDE_MOSSDEEP_CITY_SCOTT
+	setflag FLAG_GARBAGEFLAG
 	removeobject LOCALID_SCIENTIST
 	setobjectxyperm LOCALID_SCIENTIST, 5, 6
 	setobjectmovementtype LOCALID_SCIENTIST, MOVEMENT_TYPE_WANDER_AROUND

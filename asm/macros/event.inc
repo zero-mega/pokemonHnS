@@ -498,7 +498,7 @@
 	formatwarp \map, \a, \b, \c
 	.endm
 
-	@ Retrieves the player's zero-indexed x- and y-coordinates in the map, and stores them in the specified variables.
+	@ Retrieves the object's zero-indexed x- and y-coordinates in the map, and stores them in the specified variables.
 	.macro getplayerxy x:req, y:req
 	.byte 0x42
 	.2byte \x
