@@ -971,7 +971,7 @@ void InitTilesetAnim_Mauville(void)
 void InitTilesetAnim_Lavaridge(void)
 {
     sSecondaryTilesetAnimCounter = 0;
-    sSecondaryTilesetAnimCounterMax = sPrimaryTilesetAnimCounterMax;
+    sSecondaryTilesetAnimCounterMax = 160;
     sSecondaryTilesetAnimCallback = TilesetAnim_Lavaridge;
 }
 
@@ -1151,8 +1151,9 @@ static void TilesetAnim_Mauville(u16 timer)
 
 static void TilesetAnim_Lavaridge(u16 timer)
 {
-    if (timer % 16 == 0)
+    /*if (timer % 16 == 0)
         QueueAnimTiles_Lavaridge_Steam(timer / 16);
+        */
     if (timer % 16 == 1)
         QueueAnimTiles_Lavaridge_Lava(timer / 16);
 }
@@ -1223,13 +1224,14 @@ static void QueueAnimTiles_General_LandWaterEdge(u16 timer)
 }
 
 static void QueueAnimTiles_Lavaridge_Steam(u8 timer)
-{
+{/*
     u8 i = timer % ARRAY_COUNT(gTilesetAnims_Lavaridge_Steam);
     AppendTilesetAnimToBuffer(gTilesetAnims_Lavaridge_Steam[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(896)), 4 * TILE_SIZE_4BPP);
 
     i = (timer + 2) % (int)ARRAY_COUNT(gTilesetAnims_Lavaridge_Steam);
     AppendTilesetAnimToBuffer(gTilesetAnims_Lavaridge_Steam[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(896)), 4 * TILE_SIZE_4BPP);
-}
+*/
+    }
 
 static void QueueAnimTiles_Pacifidlog_LogBridges(u8 timer)
 {
@@ -1283,6 +1285,7 @@ static void QueueAnimTiles_Rustboro_Fountain(u16 timer)
 static void QueueAnimTiles_Lavaridge_Lava(u16 timer)
 {
     u16 i = timer % ARRAY_COUNT(gTilesetAnims_Lavaridge_Cave_Lava);
+    
     AppendTilesetAnimToBuffer(gTilesetAnims_Lavaridge_Cave_Lava[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(961)), 4 * TILE_SIZE_4BPP);
 }
 
