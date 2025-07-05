@@ -1049,7 +1049,7 @@ void InitTilesetAnim_SootopolisGym(void)
 {
     sSecondaryTilesetAnimCounter = 0;
     sSecondaryTilesetAnimCounterMax = 240;
-    sSecondaryTilesetAnimCallback = TilesetAnim_SootopolisGym;
+    //sSecondaryTilesetAnimCallback = TilesetAnim_SootopolisGym;
 }
 
 void InitTilesetAnim_Cave(void)

@@ -830,7 +830,7 @@
 #define FLAG_GOT_TM_FROM_MAHOGANY_COP                               0x30F
 #define FLAG_GOT_BLACK_BELT                                         0x310
 #define FLAG_GOT_HIDDEN_POWER                                       0x311
-#define FLAG_HIDE_ICEPATH2_BOULDER1                                 0x312 //unused
+#define FLAG_GOT_SPELL_TAG                                 0x312 //unused
 #define FLAG_HIDE_ICEPATH2_BOULDER2                                 0x313
 #define FLAG_HIDE_ICEPATH2_BOULDER3                                 0x314
 #define FLAG_HIDE_ICEPATH2_BOULDER4                                 0x315
@@ -1026,7 +1026,7 @@
 #define FLAG_HIDE_ROCKETHIDEOUT2_ELECTRODE_2                                 0x3D3 //unused
 #define FLAG_HIDE_ROCKETHIDEOUT2_ELECTRODE_3                          0x3D4//unused
 #define FLAG_HIDE_ICE_PATH_KIMONO                                     0x3D5
-#define FLAG_HIDE_ROUTE_120_KECLEON_1                               0x3D6
+#define FLAG_BLACKTHORN_NPC_TRADE_COMPLETED                               0x3D6
 #define FLAG_HIDE_RUSTURF_TUNNEL_WANDA                              0x3D7
 #define FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WANDA                0x3D8
 #define FLAG_HIDE_ROUTE_120_KECLEON_2                               0x3D9

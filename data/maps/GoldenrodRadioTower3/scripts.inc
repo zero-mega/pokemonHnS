@@ -1,7 +1,7 @@
 GoldenrodRadioTower3_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, GoldenrodRadioTower3_OnLoad
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, GoldenrodRadioTower5_OnFrame
-	map_script MAP_SCRIPT_ON_RESUME, GoldenrodRadioTower5_OnResume
+	map_script MAP_SCRIPT_ON_RETURN_TO_FIELD, GoldenrodRadioTower5_OnResume
 	.byte 0
 
 GoldenrodRadioTower3_OnLoad::

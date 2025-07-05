@@ -5164,8 +5164,8 @@
     {
       "id": "LAYOUT_BLACKTHORN_CITY",
       "name": "BlackthornCity_Layout",
-      "width": 55,
-      "height": 56,
+      "width": 59,
+      "height": 60,
       "primary_tileset": "gTileset_Johto_NorthEast",
       "secondary_tileset": "gTileset_Blackthorn",
       "border_filepath": "data/layouts/BlackthornCity/border.bin",
