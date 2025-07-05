@@ -195,7 +195,6 @@ VioletCity_EventScript_Kimono_Girl::
 	applymovement LOCALID_VIOLET_KIMONO, VioletCity_Movement_Kimono_Girl_3
 	waitmovement 0
 	msgbox VioletCity_Text_Kimono_Girl3, MSGBOX_DEFAULT
-	giveitem ITEM_EXP_SHARE_SMALL
 	closemessage
 	playse SE_M_PETAL_DANCE
 	applymovement LOCALID_VIOLET_KIMONO, VioletCity_Movement_Kimono_Girl_4
@@ -463,8 +462,7 @@ VioletCity_Text_Kimono_Girl2:
 VioletCity_Text_Kimono_Girl3:
 .string "That Egg is truly an important Egg.\p"
 .string "Please do take good care of it\n"
-.string "for me. Is that understood?\p"
-.string "Take this, it might help.$"
+.string "for me. Is that understood?$"
 
 VioletCity_Text_Kimono_Girl4:
 .string "I am counting on you.$"

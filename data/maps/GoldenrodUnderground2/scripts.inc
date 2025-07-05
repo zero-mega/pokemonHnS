@@ -180,7 +180,6 @@ GoldenrodUnderground_EventScript_Haircut1::
 	special BufferMonNickname
 	msgbox GoldenrodUnderground_Text_OlderBrotherAllDone
 	hidemoneybox
-	release
 	setflag FLAG_DAILY_HAIRCUT1_RECEIVED
 	release
 	end
@@ -242,7 +241,7 @@ GoldenrodUnderground_EventScript_Haircut2::
 	fadescreen FADE_FROM_BLACK
 	special BufferMonNickname
 	msgbox GoldenrodUnderground_Text_YoungerBrotherAllDone
-	release
+	hidemoneybox
 	setflag FLAG_DAILY_HAIRCUT2_RECEIVED
 	release
 	end

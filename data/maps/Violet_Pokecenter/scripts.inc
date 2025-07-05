@@ -36,6 +36,8 @@ Violet_Pokecenter_EventScript_Aide_Accepted::
 	closemessage
 	giveegg SPECIES_TOGEPI
 	setflag FLAG_RECEIVED_TOGEPI_EGG
+	msgbox VioletCity_PokeCenter_Text_ElmsAideGiveItem, MSGBOX_DEFAULT
+	giveitem ITEM_EXP_SHARE_SMALL
 	setflag FLAG_HIDE_VIOLET_CITY_AIDE
 	setvar VAR_VIOLET_CITY_KIMONO_GIRL, 1
 	clearflag FLAG_HIDE_VIOLET_CITY_KIMONO_GIRL
@@ -85,6 +87,9 @@ VioletCity_PokeCenter_Text_ElmsAideGiveEgg:
 	.string "active POKéMON to hatch.\p"
 	.string "{PLAYER}, you're the only person\n"
 	.string "we can rely on.$"
+
+VioletCity_PokeCenter_Text_ElmsAideGiveItem:
+	.string "Oh and this might help when it hatches.$"
 
 VioletCity_PokeCenter_Text_ElmsAideFullParty:
 	.string "Oh, no. You can't carry any more\n"

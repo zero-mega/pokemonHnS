@@ -35,11 +35,11 @@ GoldenrodDeptStore5_EventScript_Sign::
 	release
 	end
 
-GoldenrodDeptStore5_EventScript_Receptionist::
+GoldenrodDeptStore5_EventScript_Receptionist:: @CHANGELATER. Need more branching. 
 	lock
 	faceplayer
-	goto_if_unset FLAG_GOT_RETURN, GoldenrodDeptStore5_EventScript_Receptionist_Already
-	goto_if_unset FLAG_GOT_FRUSTRATION, GoldenrodDeptStore5_EventScript_Receptionist_Already
+	@goto_if_set FLAG_GOT_RETURN, GoldenrodDeptStore5_EventScript_Receptionist_Already
+	@goto_if_set FLAG_GOT_FRUSTRATION, GoldenrodDeptStore5_EventScript_Receptionist_Already
 	msgbox GoldenrodDeptStore_Text_5FReceptionistOhYourMon, MSGBOX_DEFAULT
 	closemessage
 	specialvar VAR_RESULT, GetLeadMonFriendshipScore

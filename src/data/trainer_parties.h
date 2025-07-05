@@ -19290,21 +19290,21 @@ static const struct TrainerMonItemCustomMoves sParty_Bugsy2[] = { //LeaderGroup
 
 static const struct TrainerMonItemCustomMoves sParty_Whitney[] = { //LeaderGroup
     {
-    .iv = 100,
+    .iv = 20,
     .lvl = 20,
     .species = SPECIES_CLEFAIRY,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_HEADBUTT, MOVE_CHARM, MOVE_SWEET_KISS, MOVE_METRONOME}
     },
     {
-    .iv = 100,
+    .iv = 20,
     .lvl = 20,
     .species = SPECIES_TEDDIURSA,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_FURY_SWIPES, MOVE_FAKE_TEARS, MOVE_LICK, MOVE_MUD_SLAP}
     },
     {
-    .iv = 100,
+    .iv = 20,
     .lvl = 21,
     .species = SPECIES_MILTANK,
     .heldItem = ITEM_SITRUS_BERRY,
