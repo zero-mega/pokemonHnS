@@ -7165,9 +7165,9 @@
       "id": "LAYOUT_MAHOGANY_GYM",
       "name": "MahoganyGym_Layout",
       "width": 25,
-      "height": 29,
+      "height": 30,
       "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_IceCave_38",
+      "secondary_tileset": "gTileset_SootopolisGym",
       "border_filepath": "data/layouts/MahoganyGym/border.bin",
       "blockdata_filepath": "data/layouts/MahoganyGym/map.bin"
     },

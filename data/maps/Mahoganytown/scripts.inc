@@ -20,6 +20,9 @@ Mahoganytown_OnFrame::
 
 Mahoganytown_EventScript_RocketTrigger::
 	lock
+	pokenavcall ElmPhoneRadioTowerRocketTakeoverText
+	waitmessage
+	delay 30
 	setvar VAR_GOLDENROD_CITY_STATE, 6
 	clearflag FLAG_HIDE_GOLDENROD_ROCKETS
 	setflag FLAG_HIDE_GOLDENROD_ROCKET_SCOUT
@@ -296,4 +299,18 @@ MahoganyTown_Text_GymSign:
     .string "MAHOGANY TOWN POKéMON GYM\p"
     .string "LEADER: PRYCE\p"
     .string "The Teacher of Winter's Harshness$"
+
+ElmPhoneRadioTowerRocketTakeoverText:
+	.string "{PLAYER}, how are things going?\p"
+	.string "I called because something weird\n"
+	.string "is happening with the radio\l"
+	.string "broadcasts.\p"
+	.string "They were talking about TEAM\n"
+	.string "ROCKET.\p"
+	.string "{PLAYER}, do you know anything\n"
+	.string "about it?\p"
+	.string "Maybe TEAM ROCKET has returned.\n"
+	.string "No, that just can't be true.\p"
+	.string "Sorry to bug you.\n"
+	.string "Take care!$"
 

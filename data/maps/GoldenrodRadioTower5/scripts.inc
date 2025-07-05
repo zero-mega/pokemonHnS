@@ -269,7 +269,7 @@ GoldenrodRadioTower5_Fakeout::
 	waitmovement 0
 	setflag FLAG_HIDE_GOLDENROD_RADIOTOWER_DIRECTOR_2
 	removeobject LOCALID_DIRECTOR_STUDIO
-	setvar VAR_MAHOGANY_TOWN_STATE, 17@CHANGELATER
+	setvar VAR_MAHOGANY_TOWN_STATE, 17
 	release
 	end
 
