@@ -16,7 +16,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_M",
-      "x": 27,
+      "x": 30,
       "y": 18,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -29,7 +29,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_M",
-      "x": 29,
+      "x": 32,
       "y": 30,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
@@ -42,7 +42,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_F",
-      "x": 16,
+      "x": 19,
       "y": 16,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -55,7 +55,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CLAIR",
-      "x": 17,
+      "x": 20,
       "y": 5,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -69,9 +69,9 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_GYM_GUY",
       "x": 19,
-      "y": 33,
+      "y": 52,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -81,7 +81,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_CHARIZARD",
-      "x": 29,
+      "x": 32,
       "y": 9,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
@@ -94,7 +94,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_DRAGONITE",
-      "x": 10,
+      "x": 13,
       "y": 18,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
@@ -108,85 +108,85 @@
   ],
   "warp_events": [
     {
-      "x": 17,
+      "x": 20,
       "y": 36,
       "elevation": 0,
       "dest_map": "MAP_BLACKTHORN_CITY",
       "dest_warp_id": "2"
     },
     {
-      "x": 15,
-      "y": 7,
+      "x": 18,
+      "y": 8,
       "elevation": 0,
       "dest_map": "MAP_BLACKTHORN_GYM1",
       "dest_warp_id": "0"
     },
     {
-      "x": 17,
+      "x": 20,
       "y": 34,
       "elevation": 0,
       "dest_map": "MAP_BLACKTHORN_GYM2",
       "dest_warp_id": "2"
     },
     {
-      "x": 9,
+      "x": 12,
       "y": 33,
       "elevation": 0,
       "dest_map": "MAP_BLACKTHORN_GYM2",
       "dest_warp_id": "3"
     },
     {
-      "x": 5,
+      "x": 8,
       "y": 29,
       "elevation": 0,
       "dest_map": "MAP_BLACKTHORN_GYM2",
       "dest_warp_id": "4"
     },
     {
-      "x": 8,
+      "x": 11,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_BLACKTHORN_GYM2",
       "dest_warp_id": "5"
     },
     {
-      "x": 13,
+      "x": 16,
       "y": 14,
       "elevation": 0,
       "dest_map": "MAP_BLACKTHORN_GYM2",
       "dest_warp_id": "6"
     },
     {
-      "x": 27,
+      "x": 30,
       "y": 33,
       "elevation": 0,
       "dest_map": "MAP_BLACKTHORN_GYM2",
       "dest_warp_id": "7"
     },
     {
-      "x": 27,
+      "x": 30,
       "y": 28,
       "elevation": 0,
       "dest_map": "MAP_BLACKTHORN_GYM2",
       "dest_warp_id": "8"
     },
     {
-      "x": 30,
+      "x": 33,
       "y": 18,
       "elevation": 0,
       "dest_map": "MAP_BLACKTHORN_GYM2",
       "dest_warp_id": "9"
     },
     {
-      "x": 23,
+      "x": 26,
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_BLACKTHORN_GYM2",
       "dest_warp_id": "10"
     },
     {
-      "x": 19,
-      "y": 7,
+      "x": 22,
+      "y": 8,
       "elevation": 0,
       "dest_map": "MAP_BLACKTHORN_GYM2",
       "dest_warp_id": "11"

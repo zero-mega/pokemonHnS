@@ -7214,9 +7214,9 @@
     {
       "id": "LAYOUT_BLACKTHORN_GYM1",
       "name": "BlackthornGym1_Layout",
-      "width": 35,
-      "height": 38,
-      "primary_tileset": "gTileset_Johto_General",
+      "width": 41,
+      "height": 60,
+      "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_BlackthornGym",
       "border_filepath": "data/layouts/BlackthornGym1/border.bin",
       "blockdata_filepath": "data/layouts/BlackthornGym1/map.bin"
@@ -7224,9 +7224,9 @@
     {
       "id": "LAYOUT_BLACKTHORN_GYM2",
       "name": "BlackthornGym2_Layout",
-      "width": 35,
+      "width": 39,
       "height": 38,
-      "primary_tileset": "gTileset_Johto_General",
+      "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_BlackthornGym",
       "border_filepath": "data/layouts/BlackthornGym2/border.bin",
       "blockdata_filepath": "data/layouts/BlackthornGym2/map.bin"
