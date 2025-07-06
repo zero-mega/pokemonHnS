@@ -6,16 +6,40 @@ BlackthornCity_MapScripts::
 
 BlackthornCity_OnFrame::
 	map_script_2 VAR_BLACKTHORN_CITY_STATE, 0, BlackthornCity_EventScript_CityEnter
+	map_script_2 VAR_BLACKTHORN_CITY_STATE, 4, BlackthornCity_EventScript_Call
 	.2byte 0
-
 
 BlackthornCity_EventScript_CityEnter:: @flagheap
 	setflag FLAG_VISITED_OLIVINE_CITY
+	setflag FLAG_HIDE_DRAGONS_DEN2_SILVER
+	setflag FLAG_HIDE_DRAGONS_DEN2_CLAIR
+	setflag FLAG_HIDE_DRAGONS_DEN2_LANCE
+	setflag FLAG_HIDE_DRAGONS_DEN3_CLAIR
+
+	clearflag FLAG_GOT_SPELL_TAG
+	clearflag FLAG_GOT_DRATINI
 
 	setvar VAR_BLACKTHORN_GYM_STATE, 0
-	
+	setvar VAR_DRAGONS_DEN_QUIZ, 0
+
 	setvar VAR_BLACKTHORN_CITY_STATE, 1
 	end
+
+BlackthornCity_EventScript_Call::
+	lock
+	pokenavcall BlackthornCity_Text_ElmCall
+	waitmessage
+	delay 30
+	setvar VAR_BLACKTHORN_CITY_STATE, 5
+	setvar VAR_NEWBARKTOWN_LABSTATE, 7
+	release
+	end
+
+BlackthornCity_Text_ElmCall:
+	.string "PROF. ELM: Hello, {PLAYER}?\p"
+	.string "I have something here for you.\n"
+	.string "Could you swing by my LAB?\p"
+	.string "See you later!$"
 
 BlackThornCity_EventScript_Sage::
 	lock

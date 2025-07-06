@@ -1,29 +1,126 @@
+.set LOCALID_DRAGONSDEN2_CLAIR, 5
+
 DragonsDen2_MapScripts::
+	@map_script MAP_SCRIPT_ON_FRAME_TABLE, DragonsDen2_OnFrame
 	.byte 0
 
-DragonsDen2_Text_ClairGiveDragonbreath:
-    .string "CLAIR: I'm sorry about this.\p"
+DragonsDen2_OnFrame::
+	map_script_2 VAR_BLACKTHORN_CITY_STATE, 3, DragonsDen2_EventScript_Clair
+	.2byte 0
+
+DragonsDen2_Trigger_ClairLeft::
+	lock 
+	playse SE_PIN
+	applymovement2 LOCALID_DRAGONSDEN2_CLAIR, Common_Movement_ExclamationMark
+	delay 60
+	call DragonsDen2_EventScript_Clair
+	applymovement2 LOCALID_DRAGONSDEN2_CLAIR, DragonsDen2_Movement_ClairLeaveLeft
+	waitmovement 0
+	setflag FLAG_HIDE_DRAGONS_DEN2_CLAIR
+	removeobject LOCALID_DRAGONSDEN2_CLAIR
+	playse SE_EXIT
+	setvar VAR_BLACKTHORN_CITY_STATE, 4
+	release
+	end
+
+DragonsDen2_Trigger_ClairMid::
+	lock 
+	playse SE_PIN
+	applymovement2 LOCALID_DRAGONSDEN2_CLAIR, Common_Movement_ExclamationMark
+	delay 60
+	applymovement2 LOCALID_DRAGONSDEN2_CLAIR, Common_Movement_WalkRight1
+	call DragonsDen2_EventScript_Clair
+	applymovement2 LOCALID_DRAGONSDEN2_CLAIR, DragonsDen2_Movement_ClairLeaveMid
+	waitmovement 0
+	setflag FLAG_HIDE_DRAGONS_DEN2_CLAIR
+	removeobject LOCALID_DRAGONSDEN2_CLAIR
+	playse SE_EXIT
+	setvar VAR_BLACKTHORN_CITY_STATE, 4
+	release
+	end
+
+DragonsDen2_Trigger_ClairRight::
+	lock 
+	playse SE_PIN
+	applymovement2 LOCALID_DRAGONSDEN2_CLAIR, Common_Movement_ExclamationMark
+	delay 60
+	applymovement2 LOCALID_DRAGONSDEN2_CLAIR, Common_Movement_WalkRight1
+	waitmovement 0
+	applymovement2 LOCALID_DRAGONSDEN2_CLAIR, Common_Movement_WalkRight1
+	call DragonsDen2_EventScript_Clair
+	applymovement2 LOCALID_DRAGONSDEN2_CLAIR, DragonsDen2_Movement_ClairLeaveRight
+	waitmovement 0
+	setflag FLAG_HIDE_DRAGONS_DEN2_CLAIR
+	removeobject LOCALID_DRAGONSDEN2_CLAIR
+	playse SE_EXIT
+	setvar VAR_BLACKTHORN_CITY_STATE, 4
+	release
+	end
+
+
+DragonsDen2_EventScript_Clair::
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_WEST
+	msgbox DragonsDen2_Text_ClairGiveDragonclaw, MSGBOX_DEFAULT
+	giveitem ITEM_TM_DRAGON_CLAW
+	msgbox DragonsDen2_Text_ClairDescribeDragonclaw, MSGBOX_DEFAULT
+	closemessage
+	delay 30
+	msgbox DragonsDen2_Text_ClairWhatsTheMatter, MSGBOX_DEFAULT
+	closemessage
+	delay 10
+	clearflag FLAG_GOT_DRATINI
+	return
+
+DragonsDen2_Movement_ClairLeaveLeft:
+	walk_up
+	walk_right
+	walk_right
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	step_end
+
+DragonsDen2_Movement_ClairLeaveMid:
+	walk_up
+	walk_right
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	step_end
+
+DragonsDen2_Movement_ClairLeaveRight:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	step_end
+
+DragonsDen2_Text_ClairGiveDragonclaw:
+    .string "CLAIR: WAIT!\p"
+	.string "I'm sorry about this.\n"
     .string "Here, take this as my apology.$"
 
-DragonsDen2_Text_ReceivedTM24:
-    .string "{PLAYER} received TM24\n"
-    .string "DRAGONBREATH.$"
-
-DragonsDen2_Text_ClairDescribeDragonbreath:
-    .string "That contains DRAGONBREATH.\p"
+DragonsDen2_Text_ClairDescribeDragonclaw:
+    .string "That contains DRAGON CLAW.\p"
     .string "No, it doesn't have anything to\n"
-    .string "do with my breath.\p"
+    .string "do with my nails.\p"
     .string "If you don't want it, you don't\n"
     .string "have to take it.$"
 
-DragonsDen2_Text_ClairNoRoom:
-    .string "Oh? You don't have any room for\n"
-    .string "this.\p"
-    .string "I'm going back to the GYM, so\n"
-    .string "make room, then come see me there.$"
-
 DragonsDen2_Text_ClairWhatsTheMatter:
-    .string "CLAIR: What's the matter? Aren't\n"
+    .string "What's the matter? Aren't\n"
     .string "you going on to the POKéMON\l"
     .string "LEAGUE?\p"
     .string "After you become CHAMPION, you\n"
@@ -40,6 +137,42 @@ DragonsDen2_Text_ClairWhatsTheMatter:
     .string "about having lost to you!\p"
     .string "Give it everything you've got.$"
 
+DragonsDen2_EventScript_Darin::
+	trainerbattle_single TRAINER_DARIN DragonsDen2_Text_CooltrainermDarinSeen, DragonsDen2_Text_CooltrainermDarinBeaten
+	msgbox DragonsDen2_Text_CooltrainermDarinAfter, MSGBOX_AUTOCLOSE
+	end
+
+DragonsDen2_EventScript_Cara::
+	trainerbattle_single TRAINER_CARA DragonsDen2_Text_CooltrainerfCaraSeen, DragonsDen2_Text_CooltrainerfCaraBeaten
+	msgbox DragonsDen2_Text_CooltrainerfCaraAfter, MSGBOX_AUTOCLOSE
+	end
+
+DragonsDen2_EventScript_TwinLea::
+	trainerbattle_double TRAINER_LEA_AND_PIA, DragonsDen2_Text_TwinsLeaandPia1Seen, DragonsDen2_Text_TwinsLeaandPia1Beaten, Route104_Text_GinaNotEnoughMons
+	special GetPlayerBigGuyGirlString
+	msgbox DragonsDen2_Text_TwinsLeaandPia1After, MSGBOX_DEFAULT
+	release
+	end
+	
+DragonsDen2_EventScript_TwinPia::
+	trainerbattle_double TRAINER_LEA_AND_PIA, DragonsDen2_Text_TwinsLeaandPia2Seen, DragonsDen2_Text_TwinsLeaandPia2Beaten, Route104_Text_GinaNotEnoughMons
+	special GetPlayerBigGuyGirlString
+	msgbox DragonsDen2_Text_TwinsLeaandPia2After, MSGBOX_DEFAULT
+	release
+	end
+
+DragonsDen2_EventScript_Item_Dragon_Fang::
+	finditem ITEM_DRAGON_FANG
+	end
+DragonsDen2_EventScript_Item_Max_Potion::
+	finditem ITEM_MAX_POTION
+	end
+DragonsDen2_EventScript_Item_PP_Max::
+	finditem ITEM_PP_MAX
+	end
+
+
+
 DragonsDen2_Text_DragonShrineSign:
     .string "DRAGON SHRINE\p"
     .string "A shrine honoring the dragon\n"
@@ -54,9 +187,8 @@ DragonsDen2_Text_SilverTraining1:
     .string "My POKéMON aren't ready to beat\n"
     .string "you.\p"
     .string "I can't push them too hard now.\p"
-    .string "I have to be dis-\n"
-    .string "ciplined to become the greatest\l"
-    .string "POKéMON trainer…$"
+    .string "I have to be disciplined to become\n"
+    .string "the greatest POKéMON trainer…$"
 
 DragonsDen2_Text_SilverTraining2:
     .string "…\p"
@@ -107,11 +239,3 @@ DragonsDen2_Text_TwinsLeaandPia2Beaten:
 DragonsDen2_Text_TwinsLeaandPia2After:
     .string "We'll tell on you.\p"
     .string "MASTER will be angry with you.$"
-
-DragonsDen2_Text_FoundDragonFang:
-    .string "{PLAYER} found "
-    .string "!$"
-
-DragonsDen2_Text_NoRoomForDragonFang:
-    .string "But {PLAYER} can't carry any more\n"
-    .string "items.$"

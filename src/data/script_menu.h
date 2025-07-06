@@ -846,6 +846,39 @@ static const struct MenuAction MultichoiceList_GoldSilver[] =
     {gText_Silver},
 };
 
+
+
+static const struct MenuAction MultichoiceList_ElderQuiz1[] = 
+{
+    {gText_Pal},
+    {gText_Underling},
+    {gText_Friend},
+};
+static const struct MenuAction MultichoiceList_ElderQuiz2[] = 
+{
+    {gText_Strategy},
+    {gText_Training},
+    {gText_Cheating},
+};
+static const struct MenuAction MultichoiceList_ElderQuiz3[] = 
+{
+    {gText_WeakPerson},
+    {gText_ToughPerson},
+    {gText_Anybody},
+};
+static const struct MenuAction MultichoiceList_ElderQuiz4[] = 
+{
+    {gText_Love2},
+    {gText_Violence},
+    {gText_Knowledge},
+};
+static const struct MenuAction MultichoiceList_ElderQuiz5[] = 
+{
+    {gText_Tough3},
+    {gText_Weak},
+    {gText_Both},
+};
+
 static const struct MenuAction MultichoiceList_Exit[] =
 {
     {gText_Exit},
@@ -979,6 +1012,13 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_PRIZE_MONS]                  = MULTICHOICE(MultichoiceList_PrizeMons),
     [MULTI_7FLOORS]                  = MULTICHOICE(MultichoiceList_7Floors),
     [MULTI_GOLDSILVER]                 = MULTICHOICE(MultichoiceList_GoldSilver),
+
+    [MULTI_ELDERQUIIZ1]                 = MULTICHOICE(MultichoiceList_ElderQuiz1),
+    [MULTI_ELDERQUIIZ2]                 = MULTICHOICE(MultichoiceList_ElderQuiz2),
+    [MULTI_ELDERQUIIZ3]                 = MULTICHOICE(MultichoiceList_ElderQuiz3),
+    [MULTI_ELDERQUIIZ4]                 = MULTICHOICE(MultichoiceList_ElderQuiz4),
+    [MULTI_ELDERQUIIZ5]                 = MULTICHOICE(MultichoiceList_ElderQuiz5),
+
 };
 
 const u8 *const gStdStrings[] =

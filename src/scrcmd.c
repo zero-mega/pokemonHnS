@@ -1865,6 +1865,15 @@ bool8 ScrCmd_givenamedmon(struct ScriptContext *ctx)
         otName = sEeveeOtName;
         otId = 5231;
         break;
+    case 4: // DRATINI
+        species = SPECIES_DRATINI;
+        level = 15;
+        item = ITEM_NONE;
+        nickname = NULL;
+        otName = gSaveBlock2Ptr->playerName;
+        otId = gSaveBlock2Ptr->playerTrainerId[0];
+        personality = 0x00000003; 
+        break;
     default:
         gSpecialVar_Result = MON_CANT_GIVE;
         return FALSE;
@@ -1907,6 +1916,11 @@ bool8 ScrCmd_givenamedmon(struct ScriptContext *ctx)
                 mailPtr->itemId = item;
 
                 SetMonData(mon, MON_DATA_MAIL, &mailIndex);
+            }
+            if (giftId == 4) // DRATINI with ExtremeSpeed
+            {
+                u16 move = MOVE_EXTREME_SPEED;
+                SetMonData(mon, MON_DATA_MOVE1, &move);
             }
 
             CalculateMonStats(mon);

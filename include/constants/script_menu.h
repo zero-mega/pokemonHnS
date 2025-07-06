@@ -128,6 +128,12 @@
 #define MULTI_PRIZE_MONS                   117
 #define MULTI_7FLOORS                      118
 #define MULTI_GOLDSILVER                   119
+#define MULTI_ELDERQUIIZ1                  120
+#define MULTI_ELDERQUIIZ2                  121
+#define MULTI_ELDERQUIIZ3                  122
+#define MULTI_ELDERQUIIZ4                  123
+#define MULTI_ELDERQUIIZ5                  124
+
 
 
 // Lilycove SS Tidal Multichoice Selections

@@ -1497,6 +1497,26 @@ extern const u8 gText_Munchlax[];
 extern const u8 gText_Dratini[];
 extern const u8 gText_Porygon[];
 
+extern const u8 gText_Pal[];
+extern const u8 gText_Underling[];
+
+extern const u8 gText_Training[];
+extern const u8 gText_Cheating[];
+extern const u8 gText_Strategy[];
+
+extern const u8 gText_WeakPerson[];
+extern const u8 gText_ToughPerson[];
+extern const u8 gText_Anybody[];
+
+extern const u8 gText_Love2[];
+extern const u8 gText_Violence[];
+extern const u8 gText_Knowledge[];
+
+extern const u8 gText_Tough3[];
+extern const u8 gText_Weak[];
+extern const u8 gText_Both[];
+
+
 
 // Cable Club multichoice text
 extern const u8 CableClub_Text_TradeUsingLinkCable[];

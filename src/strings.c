@@ -1437,6 +1437,25 @@ const u8 gText_Munchlax[] = _("MUNCHLAX 2800 COINS");
 const u8 gText_Dratini[] = _("DRATINI 5500 COINS");
 const u8 gText_Porygon[] = _("PORYGON 6500 COINS");
 
+const u8 gText_Pal[] = _("Pal");
+const u8 gText_Underling[] = _("Underling");
+
+const u8 gText_Strategy[] = _("Strategy");
+const u8 gText_Training[] = _("Training");
+const u8 gText_Cheating[] = _("Cheating");
+
+const u8 gText_WeakPerson[] = _("Weak person");
+const u8 gText_ToughPerson[] = _("Tough person");
+const u8 gText_Anybody[] = _("Anybody");
+
+const u8 gText_Love2[] = _("Love");
+const u8 gText_Violence[] = _("Violence");
+const u8 gText_Knowledge[] = _("Knowledge");
+
+const u8 gText_Tough3[] = _("Tough");
+const u8 gText_Weak[] = _("Weak");
+const u8 gText_Both[] = _("Both");
+
 ALIGNED(4) const u8 gText_FacilitySingle[] = _("{STR_VAR_1} SINGLE");
 ALIGNED(4) const u8 gText_FacilityDouble[] = _("{STR_VAR_1} DOUBLE");
 ALIGNED(4) const u8 gText_FacilityMulti[] = _("{STR_VAR_1} MULTI");

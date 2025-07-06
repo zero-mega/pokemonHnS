@@ -44024,12 +44024,12 @@
               {
                 "min_level": 10,
                 "max_level": 19,
-                "species": "SPECIES_HORSEA"
+                "species": "SPECIES_MAGIKARP"
               },
               {
                 "min_level": 10,
                 "max_level": 14,
-                "species": "SPECIES_DRATINI"
+                "species": "SPECIES_HORSEA"
               },
               {
                 "min_level": 10,
@@ -44074,7 +44074,17 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_HORSEA"
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 30,
+                "max_level": 30,
+                "species": "SPECIES_DRATINI"
+              },
+              {
+                "min_level": 30,
+                "max_level": 30,
+                "species": "SPECIES_DRATINI"
               },
               {
                 "min_level": 30,
@@ -44084,22 +44094,12 @@
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_DRATINI"
-              },
-              {
-                "min_level": 30,
-                "max_level": 30,
                 "species": "SPECIES_DRAGONAIR"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_DRATINI"
-              },
-              {
-                "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_MAGIKARP"
+                "species": "SPECIES_DRAGONAIR"
               }
             ]
           }

@@ -112,7 +112,7 @@
 #define VAR_OLIVINE_CITY_STATE                          0x405C  //1 = trigger silver, 2 = climb lighthouse, 3 = get potion, 4 = deliver potion, 5 = goto gym row1, 6 = gymrow2, 7 = jasmine, 8 = done
 #define VAR_CIANWOOD_CITY_STATE                         0x405D 
 #define VAR_SAFARI_ZONE_GATE_STATE                        0x405E
-#define VAR_BLACKTHORN_CITY_STATE                       0x405F 
+#define VAR_BLACKTHORN_CITY_STATE                       0x405F  //1 = fight clair, 2 =goto elder, 3 = talk to clair again, 4 = get phonecall, 5 = done
 #define VAR_PALLET_TOWN_STATE                               0x4060
 #define VAR_VIRIDIAN_CITY_STATE                              0x4061 
 #define VAR_PEWTER_CITY_STATE                               0x4062 
@@ -145,7 +145,7 @@
 #define VAR_ELECTRODES_FAINTED                               0x407D 
 #define VAR_LAKE_OF_RAGE_FISHERMAN                               0x407E // 0 = unmet, 1 = met, 2 = received a magikarp, 3 = received a satisfactory magikarp
 #define VAR_BLACKTHORN_GYM_STATE                               0x407F // Unused Var
-#define VAR_ROUTE133_STATE                               0x4080 // Unused Var
+#define VAR_DRAGONS_DEN_QUIZ                               0x4080 // Unused Var
 #define VAR_ROUTE134_STATE                               0x4081 // Unused Var
 #define VAR_LITTLEROOT_HOUSES_STATE_MAY                  0x4082
 #define VAR_TIME_BASED_ENCOUNTER                         0x4083 // Different encounter tables

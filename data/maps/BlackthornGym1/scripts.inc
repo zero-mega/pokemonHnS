@@ -200,6 +200,8 @@ BlackthornGym_EventScript_Lola::
 BlackthornGym_EventScript_Clair::
 	lock
 	faceplayer
+	goto_if_set FLAG_IS_CHAMPION, BlackthornGym_EventScript_ClairAfterLeague
+	goto_if_ge VAR_BLACKTHORN_CITY_STATE, 4, BlackthornGym_EventScript_Clair_Defeated
 	goto_if_eq VAR_BLACKTHORN_CITY_STATE, 2, BlackthornGym_EventScript_ClairDuringChallenge
 	msgbox BlackthornGym_Text_ClairIntroText, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_CLAIR_1, BlackthornGym_Text_ClairWinText
@@ -215,31 +217,17 @@ BlackthornGym_EventScript_ClairDuringChallenge::
 	release
 	end
 
-BlackthornGym_EventScript_ClairGiveBadge::
-	msgbox BlackthornGym_Text_ClairText_YouKeptMeWaiting, MSGBOX_DEFAULT
-	
-	@message Text_ReceivedFogBadge
-	@waitmessage
-	@call Common_EventScript_PlayGymBadgeFanfare
-	@msgbox MortyText_FogBadgeSpeech, MSGBOX_DEFAULT
-	@setflag FLAG_BADGE08_GET
-	@setflag FLAG_DEFEATED_BLACKTHORN_GYM
-	@setvar VAR_0x8008, 8
-	@call Common_EventScript_SetGymTrainers
-
-	giveitem ITEM_TM_DRAGON_CLAW
-	msgbox BlackthornGym_Text_ClairText_DescribeTM, MSGBOX_DEFAULT
-	@setvar VAR_BLACKTHORN_CITY_STATE, @changelater
-	closemessage
-	release
-	end
-
 BlackthornGym_EventScript_Clair_Defeated::
 	msgbox BlackthornGym_Text_ClairText_League, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
 
+BlackthornGym_EventScript_ClairAfterLeague::
+	msgbox BlackthornGym_Text_ClairAfterLeague, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
 
 BlackthornGym_Text_ClairIntroText:
     .string "I am CLAIR.\p"
@@ -296,6 +284,10 @@ BlackthornGym_Text_ClairText_League:
     .string "If you do, I'll feel even worse\n"
     .string "about having lost to you!\p"
     .string "Give it everything you've got.$"
+
+BlackthornGym_Text_ClairAfterLeague:
+    .string "You did it, huh?\p"
+    .string "You are now the JOHTO CHAMP.$"
 
 BlackthornGym_Text_ClairRematchText:
     .string "You did it, huh?\p"
@@ -390,17 +382,16 @@ BlackthornGym_Text_GuideText:
     .string "Yo! CHAMP in making!\p"
     .string "It's been a long journey, but we\n"
     .string "are almost done! Count on me!\p"
-    .string "While CLAIR looks up to the Dragon\l"
-    .string "Master, LANCE,\p"
-    .string "she's managed to create her own\l"
-    .string "identity with a\p"
+    .string "While CLAIR looks up to the Dragon\n"
+    .string "Master, LANCE, she's managed to\l"
+    .string "create her own identity with a\l"
     .string "team consisting of dragons from\l"
     .string "the sea.\p"
-    .string "Dragons are supposed to be\l"
-    .string "weak against ICE-type moves,\p"
-    .string "but you'll need some DRAGON-type\p"
-    .string "moves of your own if you want to\l"
-    .string "win.\p"
+    .string "Dragons are supposed to be\n"
+    .string "weak against ICE-type moves,\l"
+    .string "but you'll need some DRAGON-type\l"
+	.string "or FAIRY-type moves of your own if\l"
+    .string "you want to win.$"
     .string "You got this!$"
 
 BlackthornGym_Text_GuideWinText:

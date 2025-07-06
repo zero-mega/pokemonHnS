@@ -830,12 +830,12 @@
 #define FLAG_GOT_TM_FROM_MAHOGANY_COP                               0x30F
 #define FLAG_GOT_BLACK_BELT                                         0x310
 #define FLAG_GOT_HIDDEN_POWER                                       0x311
-#define FLAG_GOT_SPELL_TAG                                 0x312 //unused
-#define FLAG_HIDE_ICEPATH2_BOULDER2                                 0x313
-#define FLAG_HIDE_ICEPATH2_BOULDER3                                 0x314
-#define FLAG_HIDE_ICEPATH2_BOULDER4                                 0x315
-#define FLAG_HIDE_ICEPATH3_BOULDER1                                 0x316
-#define FLAG_HIDE_ICEPATH3_BOULDER2                                 0x317
+#define FLAG_GOT_SPELL_TAG                                          0x312 
+#define FLAG_HIDE_DRAGONS_DEN2_SILVER                                 0x313
+#define FLAG_HIDE_DRAGONS_DEN2_CLAIR                                 0x314//unused
+#define FLAG_HIDE_DRAGONS_DEN2_LANCE                                 0x315
+#define FLAG_HIDE_DRAGONS_DEN3_CLAIR                                0x316
+#define FLAG_GOT_DRATINI                                            0x317
 #define FLAG_HIDE_ICEPATH3_BOULDER3                                 0x318
 #define FLAG_HIDE_ICEPATH3_BOULDER4                                 0x319
 #define FLAG_HIDE_LITTLEROOT_TOWN_RIVAL                             0x31A
@@ -1135,9 +1135,9 @@
 #define FLAG_ITEM_ICEPATH3_FULL_HEAL                        0x43C
 #define FLAG_ITEM_ICEPATH3_CARBOS                             0x43D
 #define FLAG_ITEM_ICEPATH3_NEVER_MELT_ICE                       0x43E
-#define FLAG_ITEM_VICTORY_ROAD_B1F_FULL_RESTORE                     0x43F
-#define FLAG_ITEM_VICTORY_ROAD_B2F_FULL_HEAL                        0x440
-#define FLAG_ITEM_MT_PYRE_6F_TM_SHADOW_BALL                         0x441
+#define FLAG_ITEM_DRAGONSDEN2_DRAGON_FANG                     0x43F
+#define FLAG_ITEM_DRAGONSDEN2_MAX_POTION                        0x440
+#define FLAG_ITEM_DRAGONSDEN2_PP_MAX                         0x441
 #define FLAG_ITEM_SEAFLOOR_CAVERN_ROOM_9_TM_EARTHQUAKE              0x442
 #define FLAG_ITEM_FIERY_PATH_TM_TOXIC                               0x443
 #define FLAG_ITEM_ROUTE_124_RED_SHARD                               0x444

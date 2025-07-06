@@ -889,6 +889,11 @@ u8 BattleSetup_GetTerrainId(void)
     case MAP_TYPE_INDOOR:
     case MAP_TYPE_SECRET_BASE:
         return BATTLE_TERRAIN_BUILDING;
+        if (
+                IS_MAP(BLACKTHORN_GYM1, BLACKTHORN_GYM1))
+            {
+                return BATTLE_TERRAIN_CAVE;
+            }
     case MAP_TYPE_UNDERWATER:
         return BATTLE_TERRAIN_GRAY_CAVE;
     case MAP_TYPE_OCEAN_ROUTE:

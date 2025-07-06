@@ -71,15 +71,15 @@ NewBarkTown_EventScript_Aide2Testimony::
 NewBarkTownLab_EventScript_Elm::
 	lock
 	faceplayer
-	goto_if_set FLAG_SHOWN_ELM_TOGEPI, NewBarkTownLab_EventScript_Elm_CallMe
-	call_if_unset FLAG_SHOWN_ELM_TOGEPI, NewBarkTownLab_EventScript_Elm_Check_Togepi
-	goto_if_ge VAR_GOLDENROD_CITY_STATE, 1, NewBarkTownLab_EventScript_Elm_Check_WhereIsEgg
-	goto_if_eq VAR_NEWBARKTOWN_LABSTATE, 5, NewBarkTownLab_EventScript_ElmState5
-
 	goto_if_eq VAR_NEWBARKTOWN_LABSTATE, 7, NewBarkTownLab_EventScript_ElmMasterBall
 	goto_if_eq VAR_NEWBARKTOWN_LABSTATE, 8, NewBarkTownLab_EventScript_ElmKimono
 	goto_if_eq VAR_NEWBARKTOWN_LABSTATE, 9, NewBarkTownLab_EventScript_ElmLeague
 	goto_if_eq VAR_NEWBARKTOWN_LABSTATE, 10, NewBarkTownLab_EventScript_ElmSSTicket
+
+	goto_if_set FLAG_SHOWN_ELM_TOGEPI, NewBarkTownLab_EventScript_Elm_CallMe
+	call_if_unset FLAG_SHOWN_ELM_TOGEPI, NewBarkTownLab_EventScript_Elm_Check_Togepi
+	goto_if_ge VAR_GOLDENROD_CITY_STATE, 1, NewBarkTownLab_EventScript_Elm_Check_WhereIsEgg
+	goto_if_eq VAR_NEWBARKTOWN_LABSTATE, 5, NewBarkTownLab_EventScript_ElmState5
 
 	goto_if_ge VAR_NEWBARKTOWN_LABSTATE, 6, NewBarkTownLab_EventScript_ElmState5
 	goto_if_eq VAR_NEWBARKTOWN_LABSTATE, 2, CopNewBarkTownLab_EventScript_ElmState2
@@ -364,7 +364,7 @@ NewBarkTownLab_EventScript_ElmMasterBall::
 	delay 60
 	msgbox NewBarkTownLab_Text_KimonoGirls, MSGBOX_DEFAULT
 	closemessage
-	setvar VAR_NEWBARKTOWN_LABSTATE, 7
+	setvar VAR_NEWBARKTOWN_LABSTATE, 8
 	clearflag FLAG_HIDE_ECRUTEAK_THEATER_KIMONOS
 	release
 	end
@@ -797,8 +797,8 @@ NewBarkTownLab_Text_KimonoGirls:
 	.string "A group of beautiful Kimono\n"
 	.string "Girls were looking for you.\p"
 	.string "They told me they\n"
-	.string "are waiting for you at the\n"
-	.string "Ecruteak Dance Theater.\p"
+	.string "are waiting for you at the ECRUTEAK\l"
+	.string "DANCE THEATER.\p"
 	.string "I know you've gone through many\n"
 	.string "things since that Egg got you\l"
 	.string "involved in all this...\p"
