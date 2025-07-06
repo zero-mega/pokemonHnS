@@ -12,6 +12,7 @@ BlackthornCity_OnFrame::
 BlackthornCity_EventScript_CityEnter:: @flagheap
 	setflag FLAG_VISITED_OLIVINE_CITY
 
+	setvar VAR_BLACKTHORN_GYM_STATE, 0
 	
 	setvar VAR_BLACKTHORN_CITY_STATE, 1
 	end

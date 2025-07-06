@@ -28,7 +28,7 @@ MahoganyGym_Text_GymStatueCertified:
 MahoganyGymEventScript_GymGuy::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_MAHOGANY_GYM, EcruteakGym_EventScript_GymGuy2
+	goto_if_set FLAG_DEFEATED_MAHOGANY_GYM, MahoganyGym_EventScript_GymGuy2
 	msgbox MahoganyGym_Text_Guide, MSGBOX_DEFAULT
 	closemessage
 	release
