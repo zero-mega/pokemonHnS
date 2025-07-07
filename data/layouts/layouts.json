@@ -5074,7 +5074,7 @@
     {
       "id": "LAYOUT_ROUTE45",
       "name": "Route45_Layout",
-      "width": 44,
+      "width": 46,
       "height": 100,
       "primary_tileset": "gTileset_Johto_NorthEast",
       "secondary_tileset": "gTileset_Blackthorn",
