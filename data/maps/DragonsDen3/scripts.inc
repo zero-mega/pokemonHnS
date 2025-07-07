@@ -115,7 +115,7 @@ DragonsDen3_EventScript_ElderQuiz1Correct::
 	goto DragonsDen3_EventScript_ElderQuiz2
 
 DragonsDen3_EventScript_ElderQuiz2::
-	msgbox DragonsDen3_Text_Question2, MSGBOX_DEFAULT
+	message DragonsDen3_Text_Question2
 	multichoice 20, 6, MULTI_ELDERQUIIZ2, FALSE 
 	switch VAR_RESULT
 	case 0, DragonsDen3_EventScript_ElderQuiz2Correct
@@ -129,7 +129,7 @@ DragonsDen3_EventScript_ElderQuiz2Correct::
 	goto DragonsDen3_EventScript_ElderQuiz3
 
 DragonsDen3_EventScript_ElderQuiz3::
-	msgbox DragonsDen3_Text_Question3, MSGBOX_DEFAULT
+	message DragonsDen3_Text_Question3
 	multichoice 20, 6, MULTI_ELDERQUIIZ3, FALSE 
 	switch VAR_RESULT
 	case 1, DragonsDen3_EventScript_ElderQuiz3Correct
@@ -143,7 +143,7 @@ DragonsDen3_EventScript_ElderQuiz3Correct::
 	goto DragonsDen3_EventScript_ElderQuiz4
 
 DragonsDen3_EventScript_ElderQuiz4::
-	msgbox DragonsDen3_Text_Question4, MSGBOX_DEFAULT
+	message DragonsDen3_Text_Question4
 	multichoice 20, 6, MULTI_ELDERQUIIZ4, FALSE 
 	switch VAR_RESULT
 	case 0, DragonsDen3_EventScript_ElderQuiz4Correct
@@ -157,7 +157,7 @@ DragonsDen3_EventScript_ElderQuiz4Correct::
 	goto DragonsDen3_EventScript_ElderQuiz5
 
 DragonsDen3_EventScript_ElderQuiz5::
-	msgbox DragonsDen3_Text_Question5, MSGBOX_DEFAULT
+	message DragonsDen3_Text_Question5
 	multichoice 20, 6, MULTI_ELDERQUIIZ5, FALSE 
 	switch VAR_RESULT
 	case 2, DragonsDen3_EventScript_ElderQuizFinish

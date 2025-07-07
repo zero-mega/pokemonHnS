@@ -29,6 +29,10 @@ Route46_EventScript_Sign::
 	release
 	end
 
+Route46_EventScript_Item_Revive::
+	finditem ITEM_REVIVE
+	end
+
 Route46_Text_HikerBaileySeen:
 	.string "Awright! I'll show you the\n"
 	.string "power of mountain POKéMON!$"

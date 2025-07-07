@@ -23,6 +23,8 @@ VioletCity_EventScript_Trigger::
 	clearflag FLAG_GOT_HARD_STONE
 	clearflag FLAG_GOT_POISON_BARB
 	clearflag FLAG_HIDE_UNION_CAVE_LAPRAS
+	clearflag FLAG_GOT_BLACK_GLASSES
+	
 	setvar VAR_SLOWPOKE_TAIL, 0
 	setvar VAR_VIOLET_CITY_KIMONO_GIRL, 0
 	setvar VAR_RUINSOFALPH_STATE, 0

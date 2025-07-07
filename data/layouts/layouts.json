@@ -5274,7 +5274,7 @@
     {
       "id": "LAYOUT_DARK_CAVE_1",
       "name": "DarkCave_1_Layout",
-      "width": 58,
+      "width": 78,
       "height": 50,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Cave1_15",
@@ -5284,8 +5284,8 @@
     {
       "id": "LAYOUT_DARK_CAVE_2",
       "name": "DarkCave_2_Layout",
-      "width": 40,
-      "height": 34,
+      "width": 57,
+      "height": 44,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Cave1_15",
       "border_filepath": "data/layouts/DarkCave_2/border.bin",
