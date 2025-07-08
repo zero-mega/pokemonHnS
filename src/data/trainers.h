@@ -1925,7 +1925,7 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_GRUNT_30] =
     {
-        .trainerClass = TRAINER_CLASS_ROCKET_ADMIN,
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
         .trainerName = _("GRUNT"),
@@ -1938,7 +1938,7 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_GRUNT_31] =
     {
-        .trainerClass = TRAINER_CLASS_ROCKET_ADMIN,
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
         .trainerName = _("GRUNT"),
@@ -1951,7 +1951,7 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_GRUNT_32] =
     {
-        .trainerClass = TRAINER_CLASS_ROCKET_ADMIN,
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
         .trainerName = _("GRUNT"),
@@ -1961,6 +1961,17 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Grunt32),
     },
 
+    [TRAINER_GRUNT_33] =
+    {
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
+        .trainerName = _("GRUNT"),
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Grunt33),
+    },
 
     [TRAINER_ETO] =
     {
@@ -3300,9 +3311,9 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_MARKUS] =
     {
-        .trainerClass = TRAINER_CLASS_GUITARIST,
+        .trainerClass = TRAINER_CLASS_SUPER_NERD,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_GUITARIST,
+        .trainerPic = TRAINER_PIC_SUPER_NERD,
         .trainerName = _("MARKUS"),
         .items = {},
         .doubleBattle = FALSE,

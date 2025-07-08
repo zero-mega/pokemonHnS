@@ -124,7 +124,7 @@ EcruteakTheater_EventScript_Rocket::
 	lock
 	faceplayer
 	msgbox EcruteakTheater_Text_RocketSeen, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_GRUNT_15, EcruteakTheater_Text_RocketBeaten
+	trainerbattle_no_intro TRAINER_GRUNT_33, EcruteakTheater_Text_RocketBeaten
 	msgbox EcruteakTheater_Text_RocketAfter, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_ECRUTEAK_ROCKET, EcruteakTheater_Movement_RocketLeave

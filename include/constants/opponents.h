@@ -38,7 +38,7 @@
 #define TRAINER_CASSIE                       34
 #define TRAINER_LEAH                         35
 #define TRAINER_JEFFREY                        36
-#define TRAINER_ROSE_1                       37
+#define TRAINER_GRUNT_33                       37
 #define TRAINER_NORMAN                        38
 #define TRAINER_VIOLET                       39
 #define TRAINER_ROSE_2                       40

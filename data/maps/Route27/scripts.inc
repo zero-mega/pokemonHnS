@@ -1,6 +1,10 @@
 Route27_MapScripts::
 	.byte 0
 
+Route27_EventScript_FirstSteps::
+    lock
+    
+
 Route27_Text_FisherHey:
     .string "Hey!$"
 

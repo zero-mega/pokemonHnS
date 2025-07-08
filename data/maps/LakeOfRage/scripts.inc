@@ -24,7 +24,7 @@ LakeOfRage_EventScript_SetHighTide::
 	end
 
 LakeOfRage_EventScript_Gramps::
-	goto_if_ge VAR_MAHOGANY_TOWN_STATE, 4, LakeOfRage_EventScript_Gramps2
+	goto_if_ge VAR_MAHOGANY_TOWN_STATE, 14, LakeOfRage_EventScript_Gramps2
 	msgbox LakeOfRage_Text_Gramps, MSGBOX_NPC
 	end
 
@@ -116,7 +116,7 @@ LakeOfRage_EventScript_Lance::
 	closemessage
 	delay 20
 	faceplayer
-	turnobject LOCALID_LAKEOFRAGE_OLDMAN, DIR_SOUTH
+	turnobject LOCALID_LAKEOFRAGE_OLDMAN, DIR_WEST
 	msgbox LakeOfRage_Text_LanceIntro2, MSGBOX_DEFAULT
 	setvar VAR_MAHOGANY_TOWN_STATE, 3
 	msgbox LakeOfRage_Text_LanceIntro3, MSGBOX_YESNO

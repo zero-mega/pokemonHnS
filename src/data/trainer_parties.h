@@ -19164,7 +19164,13 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Grunt32[] = { //TeamRock
     .species = SPECIES_ZUBAT,
     },
 };
-
+static const struct TrainerMonNoItemDefaultMoves sParty_Grunt33[] = { //TeamRocketGroup
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_KOFFING,
+    },
+};
 // --- Gym Leader Trainers Start ---
 
 static const struct TrainerMonItemCustomMoves sParty_Falkner[] = { //LeaderGroup
@@ -21569,19 +21575,19 @@ static const struct TrainerMonItemCustomMoves sParty_Red2[] = { //RedGroup
 
 static const struct TrainerMonNoItemCustomMoves sParty_Eusine[] = { //MysteryManGroup
     {
-    .iv = 255,
+    .iv = 20,
     .lvl = 27,
     .species = SPECIES_POLITOED,
-    .moves = {MOVE_BUBBLE_BEAM, MOVE_RAIN_DANCE, MOVE_HYPNOSIS, MOVE_ICE_BEAM}
+    .moves = {MOVE_BUBBLE_BEAM, MOVE_RAIN_DANCE, MOVE_HYPNOSIS, MOVE_ICY_WIND}
     },
     {
-    .iv = 255,
+    .iv = 20,
     .lvl = 27,
     .species = SPECIES_HYPNO,
     .moves = {MOVE_HYPNOSIS, MOVE_DISABLE, MOVE_CONFUSION, MOVE_DREAM_EATER}
     },
     {
-    .iv = 255,
+    .iv = 20,
     .lvl = 27,
     .species = SPECIES_ELECTRODE,
     .moves = {MOVE_THUNDER_WAVE, MOVE_SONIC_BOOM, MOVE_BODY_SLAM, MOVE_THUNDERBOLT}

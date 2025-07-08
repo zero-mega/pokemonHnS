@@ -5,7 +5,12 @@
 CianwoodCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, OlivineCity_MapScript_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, CianwoodCity_OnFrame
+	map_script MAP_SCRIPT_ON_LOAD, CianwoodCity_OnFrame
 	.byte 0
+
+CianwoodCity_RemoveEusine::
+	setflag FLAG_HIDE_CIANWOOD_EUSINE
+	end
 
 CianwoodCity_OnFrame::
 	map_script_2 VAR_CIANWOOD_CITY_STATE, 0, CianwoodCity_EventScript_CityEnter
@@ -42,6 +47,12 @@ CianwoodCity_Movement_ChucksWife:
 	face_up
 	step_end
 
+CianwoodCity_EventScript_Test::
+	lock
+	random 2
+	call_if_eq VAR_RESULT, 1, EventScript_RockSmashHeartscale
+	release
+	end
 
 CianwoodCity_EventScript_ChucksWife::
 	lock

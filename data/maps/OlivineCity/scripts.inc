@@ -216,6 +216,10 @@ OlivineCity_EventScript_LighthouseSign::
 	msgbox OlivineCity_Text_LighthouseSign, MSGBOX_SIGN
 	end
 
+OlivineCity_EventScript_Item_Shockwave::
+	finditem ITEM_TM_SHOCK_WAVE
+	end
+
 OlivineCity_Text_Sailor1:
 	.string "Dark roads are dangerous\n"
 	.string "at night.\p"

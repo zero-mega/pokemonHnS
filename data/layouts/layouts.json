@@ -5134,7 +5134,7 @@
     {
       "id": "LAYOUT_OLIVINE_CITY",
       "name": "OlivineCity_Layout",
-      "width": 50,
+      "width": 52,
       "height": 72,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Olivine_6",
@@ -5684,7 +5684,7 @@
     {
       "id": "LAYOUT_TOHJO_FALLS",
       "name": "TohjoFalls_Layout",
-      "width": 68,
+      "width": 78,
       "height": 30,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Cave1_15",
