@@ -62,8 +62,8 @@ RustboroCity_DevonCorp_3F_EventScript_MeetPresident::
 	call Common_EventScript_OutOfCenterPartyHeal
 	msgbox RustboroCity_DevonCorp_3F_Text_MrStoneGoWithCautionAndCare, MSGBOX_DEFAULT
 	setflag FLAG_GARBAGEFLAG
-	clearflag FLAG_HIDE_RUSTURF_TUNNEL_WANDAS_BOYFRIEND
-	clearflag FLAG_HIDE_RUSTURF_TUNNEL_WANDA
+	clearflag FLAG_GARBAGEFLAGS_BOYFRIEND
+	clearflag FLAG_GARBAGEFLAG
 	clearflag FLAG_GARBAGEFLAG
 	clearflag FLAG_GARBAGEFLAG
 	setvar VAR_BRINEY_LOCATION, 1

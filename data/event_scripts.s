@@ -1997,3 +1997,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/RuinsOfAlphC_4/scripts.inc"
 
 	.include "data/maps/LakeOfRageLowTide/scripts.inc"
+
+	.include "data/maps/TohjoFalls2/scripts.inc"

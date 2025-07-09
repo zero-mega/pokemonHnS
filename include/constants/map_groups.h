@@ -434,6 +434,7 @@
 #define MAP_RUINS_OF_ALPH_C_3     (78 | (24 << 8))
 #define MAP_RUINS_OF_ALPH_C_4     (79 | (24 << 8))
 #define MAP_LAKE_OF_RAGE_LOW_TIDE (80 | (24 << 8))
+#define MAP_TOHJO_FALLS2          (81 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 
@@ -1026,7 +1027,5 @@
 #define MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE          (96 | (31 << 8))
 
 #define MAP_GROUPS_COUNT 32
-
-// static const u8 MAP_GROUP_COUNT[] = {71, 5, 5, 7, 5, 29, 8, 10, 6, 6, 7, 5, 5, 7, 6, 9, 7, 16, 9, 9, 4, 7, 28, 28, 81, 0, 41, 125, 113, 126, 74, 97, 0};
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

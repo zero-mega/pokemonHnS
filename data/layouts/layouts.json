@@ -8800,6 +8800,16 @@
       "secondary_tileset": "gTileset_61_azalea",
       "border_filepath": "data/layouts/LakeOfRageLowTide/border.bin",
       "blockdata_filepath": "data/layouts/LakeOfRageLowTide/map.bin"
+    },
+    {
+      "id": "LAYOUT_TOHJO_FALLS2",
+      "name": "TohjoFalls2_Layout",
+      "width": 11,
+      "height": 11,
+      "primary_tileset": "gTileset_Johto_General",
+      "secondary_tileset": "gTileset_Cave1_15",
+      "border_filepath": "data/layouts/TohjoFalls2/border.bin",
+      "blockdata_filepath": "data/layouts/TohjoFalls2/map.bin"
     }
   ]
 }

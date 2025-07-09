@@ -110,9 +110,6 @@ EventScript_SmashRock:: @ fallthrough
 	releaseall
 	end
 
-
-
-
 @ Interact with headbutt tree
 EventScript_Headbutt::
 	lockall

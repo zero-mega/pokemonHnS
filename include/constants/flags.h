@@ -851,7 +851,7 @@
 #define FLAG_HIDE_MAUVILLE_CITY_WALLY                               0x324
 #define FLAG_HIDE_MAUVILLE_CITY_WALLYS_UNCLE                        0x325
 #define FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WALLY                0x326
-#define FLAG_HIDE_RUSTURF_TUNNEL_WANDAS_BOYFRIEND                   0x327
+#define FLAG_GARBAGEFLAGS_BOYFRIEND                   0x327
 #define FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WANDAS_BOYFRIEND     0x328
 #define FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WALLYS_UNCLE         0x329
 #define FLAG_HIDE_SS_TIDAL_CORRIDOR_SCOTT                           0x32A
@@ -1027,7 +1027,7 @@
 #define FLAG_HIDE_ROCKETHIDEOUT2_ELECTRODE_3                          0x3D4//unused
 #define FLAG_HIDE_ICE_PATH_KIMONO                                     0x3D5
 #define FLAG_BLACKTHORN_NPC_TRADE_COMPLETED                               0x3D6
-#define FLAG_HIDE_RUSTURF_TUNNEL_WANDA                              0x3D7
+#define FLAG_HIDE_TOHJO_GIOVANNI                              0x3D7
 #define FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WANDA                0x3D8
 #define FLAG_HIDE_ROUTE_120_KECLEON_2                               0x3D9
 #define FLAG_HIDE_ROUTE_120_KECLEON_3                               0x3DA
