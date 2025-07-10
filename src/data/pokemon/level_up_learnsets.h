@@ -245,6 +245,7 @@ static const u16 sPidgeyLevelUpLearnset[] = {
 };
 
 static const u16 sPidgeottoLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_GUST),
@@ -264,6 +265,7 @@ static const u16 sPidgeottoLevelUpLearnset[] = {
 };
 
 static const u16 sPidgeotLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_GUST),
@@ -298,6 +300,7 @@ static const u16 sRattataLevelUpLearnset[] = {
 };
 
 static const u16 sRaticateLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
@@ -329,6 +332,7 @@ static const u16 sSpearowLevelUpLearnset[] = {
 };
 
 static const u16 sFearowLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_PECK),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
@@ -432,6 +436,7 @@ static const u16 sSandshrewLevelUpLearnset[] = {
 };
 
 static const u16 sSandslashLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_MOVE( 1, MOVE_SAND_ATTACK),
@@ -583,6 +588,7 @@ static const u16 sClefairyLevelUpLearnset[] = {
 };
 
 static const u16 sClefableLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_SING),
     LEVEL_UP_MOVE( 1, MOVE_ENCORE),
     LEVEL_UP_MOVE( 1, MOVE_SWEET_KISS),
@@ -778,6 +784,7 @@ static const u16 sParasLevelUpLearnset[] = {
 };
 
 static const u16 sParasectLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_STUN_SPORE),
     LEVEL_UP_MOVE( 1, MOVE_POISON_POWDER),
@@ -876,6 +883,7 @@ static const u16 sDugtrioLevelUpLearnset[] = {
 };
 
 static const u16 sMeowthLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE(11, MOVE_BITE),
@@ -890,6 +898,7 @@ static const u16 sMeowthLevelUpLearnset[] = {
 };
 
 static const u16 sPersianLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_BITE),
@@ -923,6 +932,7 @@ static const u16 sPsyduckLevelUpLearnset[] = {
 };
 
 static const u16 sGolduckLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_WATER_SPORT),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
@@ -1466,6 +1476,7 @@ static const u16 sDodrioLevelUpLearnset[] = {
 };
 
 static const u16 sSeelLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_HEADBUTT),
     LEVEL_UP_MOVE( 9, MOVE_GROWL),
     LEVEL_UP_MOVE(17, MOVE_ICY_WIND),
@@ -1478,6 +1489,7 @@ static const u16 sSeelLevelUpLearnset[] = {
 };
 
 static const u16 sDewgongLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_HEADBUTT),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_SIGNAL_BEAM),
@@ -1859,6 +1871,7 @@ static const u16 sHitmonchanLevelUpLearnset[] = {
 };
 
 static const u16 sLickitungLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_LICK),  
     LEVEL_UP_MOVE( 7, MOVE_SUPERSONIC),
     LEVEL_UP_MOVE(12, MOVE_DEFENSE_CURL),
@@ -1982,6 +1995,7 @@ static const u16 sTangelaLevelUpLearnset[] = {
 };
 
 static const u16 sKangaskhanLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_COMET_PUNCH),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 7, MOVE_BITE),
@@ -2213,6 +2227,7 @@ static const u16 sMagmarLevelUpLearnset[] = {
 };
 
 static const u16 sPinsirLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_VICE_GRIP),
     LEVEL_UP_MOVE( 1, MOVE_FOCUS_ENERGY),
     LEVEL_UP_MOVE( 7, MOVE_BIND),
@@ -2292,6 +2307,7 @@ static const u16 sDittoLevelUpLearnset[] = {
 };
 
 static const u16 sEeveeLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 1, MOVE_HELPING_HAND),
@@ -2312,6 +2328,7 @@ static const u16 sEeveeLevelUpLearnset[] = {
 };
 
 static const u16 sVaporeonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_CHARM),
     LEVEL_UP_MOVE( 1, MOVE_HYPER_VOICE),
@@ -2335,6 +2352,7 @@ static const u16 sVaporeonLevelUpLearnset[] = {
 };
 
 static const u16 sJolteonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_CHARM),
     LEVEL_UP_MOVE( 1, MOVE_BITE),
@@ -2357,6 +2375,7 @@ static const u16 sJolteonLevelUpLearnset[] = {
 };
 
 static const u16 sFlareonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_CHARM),
     LEVEL_UP_MOVE( 1, MOVE_COVET),
@@ -2436,6 +2455,7 @@ static const u16 sOmastarLevelUpLearnset[] = {
 };
 
 static const u16 sKabutoLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
     LEVEL_UP_MOVE( 1, MOVE_FURY_CUTTER),
@@ -2454,6 +2474,7 @@ static const u16 sKabutoLevelUpLearnset[] = {
 };
 
 static const u16 sKabutopsLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
@@ -2489,6 +2510,7 @@ static const u16 sAerodactylLevelUpLearnset[] = {
 };
 
 static const u16 sSnorlaxLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_BITE),
     LEVEL_UP_MOVE( 1, MOVE_RECYCLE),
@@ -2837,6 +2859,7 @@ static const u16 sFeraligatrLevelUpLearnset[] = {
 };
 
 static const u16 sSentretLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_FORESIGHT),
     LEVEL_UP_MOVE( 4, MOVE_DEFENSE_CURL),
@@ -2854,6 +2877,7 @@ static const u16 sSentretLevelUpLearnset[] = {
 };
 
 static const u16 sFurretLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_FORESIGHT),
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
@@ -3641,6 +3665,7 @@ static const u16 sDunsparceLevelUpLearnset[] = {
 };
 
 static const u16 sGligarLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 6, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE(12, MOVE_KNOCK_OFF),
@@ -3677,6 +3702,7 @@ static const u16 sSteelixLevelUpLearnset[] = {
 };
 
 static const u16 sSnubbullLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_SCARY_FACE),
     LEVEL_UP_MOVE( 4, MOVE_TAIL_WHIP),
@@ -3694,6 +3720,7 @@ static const u16 sSnubbullLevelUpLearnset[] = {
 };
 
 static const u16 sGranbullLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_SCARY_FACE),
     LEVEL_UP_MOVE( 4, MOVE_TAIL_WHIP),
@@ -3764,6 +3791,7 @@ static const u16 sShuckleLevelUpLearnset[] = {
 };
 
 static const u16 sHeracrossLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 6, MOVE_HORN_ATTACK),
@@ -3782,6 +3810,7 @@ static const u16 sHeracrossLevelUpLearnset[] = {
 };
 
 static const u16 sSneaselLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_TAUNT),
@@ -3802,6 +3831,7 @@ static const u16 sSneaselLevelUpLearnset[] = {
 };
 
 static const u16 sTeddiursaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_COVET),
@@ -3821,6 +3851,7 @@ static const u16 sTeddiursaLevelUpLearnset[] = {
 };
 
 static const u16 sUrsaringLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_CHARM),
     LEVEL_UP_MOVE( 1, MOVE_COVET),
@@ -7321,6 +7352,7 @@ static const u16 sGlaceonLevelUpLearnset[] = {
 };
 
 static const u16 sGliscorLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 1, MOVE_KNOCK_OFF),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
@@ -7387,6 +7419,7 @@ static const u16 sLeafeonLevelUpLearnset[] = {
 };
 
 static const u16 sLickilickyLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_LICK),
     LEVEL_UP_MOVE( 5, MOVE_SUPERSONIC),
     LEVEL_UP_MOVE( 9, MOVE_DEFENSE_CURL),
@@ -7529,6 +7562,7 @@ static const u16 sMimeJrLevelUpLearnset[] = {
 };
 
 static const u16 sMunchlaxLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_ODOR_SLEUTH),
     LEVEL_UP_MOVE( 1, MOVE_METRONOME),
@@ -7747,6 +7781,7 @@ static const u16 sTogekissLevelUpLearnset[] = {
 };
 
 static const u16 sWeavileLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_TAUNT),

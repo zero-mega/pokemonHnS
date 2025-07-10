@@ -14,11 +14,21 @@ EcruteakTheater_MapScripts::
 
 EcruteakTheater_OnTransition::
 	call_if_eq VAR_ECRUTEAK_THEATER, 1, EcruteakTheater_MapScript_SetRocketSceneActive
+	call_if_eq VAR_ECRUTEAK_THEATER, 7, EcruteakTheater_MapScript_SetKimonoMovement
 	end
 
 EcruteakTheater_MapScript_SetRocketSceneActive::
 	setobjectxyperm LOCALID_ECRUTEAK_ZUKI, 10, 2
 	setobjectmovementtype LOCALID_ECRUTEAK_ROCKET, MOVEMENT_TYPE_TOWER_BEAM
+	return
+
+EcruteakTheater_MapScript_SetKimonoMovement::
+	setobjectmovementtype LOCALID_ECRUTEAK_ZUKI, MOVEMENT_TYPE_ROTATE_CLOCKWISE
+	setobjectmovementtype LOCALID_ECRUTEAK_NAOKO, MOVEMENT_TYPE_ROTATE_CLOCKWISE
+	setobjectmovementtype LOCALID_ECRUTEAK_MIKI, MOVEMENT_TYPE_ROTATE_CLOCKWISE
+	setobjectmovementtype LOCALID_ECRUTEAK_SAYO, MOVEMENT_TYPE_ROTATE_COUNTERCLOCKWISE
+	setobjectmovementtype LOCALID_ECRUTEAK_KUNI, MOVEMENT_TYPE_ROTATE_COUNTERCLOCKWISE
+	setobjectmovementtype LOCALID_ECRUTEAK_SISTER, MOVEMENT_TYPE_ROTATE_CLOCKWISE
 	return
 
 EcruteakTheater_EventScript_RocketEventTrigger::
@@ -603,7 +613,6 @@ EcruteakTheater_Movement_MonWalkToZukiTop:
 	walk_right
 	walk_right
 	walk_right
-	face_up
 	step_end
 
 EcruteakTheater_Movement_PlayerWalkToZukiRight:
@@ -696,6 +705,9 @@ EcruteakTheater_EventScript_LegendaryCutscene::
 EcruteakTheater_EventScript_ZukiBattle::
 	msgbox EcruteakTheater_Text_ZukiSeenAgain, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, FALSE, EcruteakTheater_EventScript_LegendaryDenied
+	call_if_eq VAR_FACING, DIR_SOUTH, EcruteakTheater_Movement_SouthCorrection
+	call_if_eq VAR_FACING, DIR_WEST, EcruteakTheater_Movement_WestCorrection
+	call_if_eq VAR_FACING, DIR_EAST, EcruteakTheater_Movement_EastCorrection
 	trainerbattle_no_intro TRAINER_ZUKI, EcruteakTheater_Text_KimonoGirlBeaten
 	applymovement2 LOCALID_ECRUTEAK_ZUKI, EcruteakTheater_Movement_ZukiWalkUp
 	waitmovement 0
@@ -746,6 +758,37 @@ EcruteakTheater_EventScript_BeatGauntlet::
 	goto_if_eq VAR_LUGIA_OR_HOOH, 1, EcruteakTheater_EventScript_Lugia
 	goto_if_eq VAR_LUGIA_OR_HOOH, 2, EcruteakTheater_EventScript_Hooh
 
+	EcruteakTheater_Movement_SouthCorrection::
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkRight1
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown1
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown1
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft1
+	waitmovement 0
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	turnobject LOCALID_ECRUTEAK_ZUKI, DIR_SOUTH
+	return
+
+	EcruteakTheater_Movement_WestCorrection::
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown1
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft1
+	waitmovement 0
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	turnobject LOCALID_ECRUTEAK_ZUKI, DIR_SOUTH
+	return
+
+	EcruteakTheater_Movement_EastCorrection::
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown1
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkRight1
+	waitmovement 0
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	turnobject LOCALID_ECRUTEAK_ZUKI, DIR_SOUTH
+	return
+
 EcruteakTheater_EventScript_Lugia::
 	giveitem ITEM_TIDAL_BELL
 	closemessage
@@ -759,6 +802,7 @@ EcruteakTheater_EventScript_Lugia::
 	addobject LOCALID_ECRUTEAK_SISTER
 	applymovement2 LOCALID_ECRUTEAK_SISTER, EcruteakTheater_Movement_Sister
 	waitmovement 0
+	turnobject LOCALID_ECRUTEAK_ZUKI, DIR_WEST
 	msgbox EcruteakTheater_Text_GirlLugia, MSGBOX_DEFAULT
 	closemessage
 	playse SE_PIN

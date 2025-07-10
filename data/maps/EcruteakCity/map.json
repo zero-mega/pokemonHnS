@@ -458,32 +458,6 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_HIDE_ECRUTEAK_SILVER"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_LASS",
-      "x": 41,
-      "y": 42,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "EcruteakCity_Test_Lugia",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_LASS",
-      "x": 42,
-      "y": 42,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "EcruteakCity_Test_League",
-      "flag": "0"
     }
   ],
   "warp_events": [
@@ -566,7 +540,7 @@
     },
     {
       "x": 39,
-      "y": 48,
+      "y": 47,
       "elevation": 0,
       "dest_map": "MAP_ECRUTEAK_POKECENTER",
       "dest_warp_id": "0"
@@ -587,7 +561,7 @@
     },
     {
       "x": 39,
-      "y": 47,
+      "y": 46,
       "elevation": 0,
       "dest_map": "MAP_BATTLE_FRONTIER_BATTLE_TOWER_LOBBY",
       "dest_warp_id": "0"

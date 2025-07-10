@@ -1,8 +1,20 @@
 .set LOCALID_BLACKTHORN_SAGE, 7
+.set LOCALID_BLACKTHORN_BOY, 2
 
 BlackthornCity_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, BlackthornCity_OnFrame
+	map_script MAP_SCRIPT_ON_LOAD, BlackthornCity_OnLoad
 	.byte 0
+
+BlackthornCity_OnLoad::
+	goto_if_unset FLAG_BADGE05_GET, BlackThornCity_EventScript_MoveGymBoy
+	goto_if_unset FLAG_BADGE06_GET, BlackThornCity_EventScript_MoveGymBoy
+	goto_if_unset FLAG_BADGE07_GET, BlackThornCity_EventScript_MoveGymBoy
+	end
+
+BlackThornCity_EventScript_MoveGymBoy::
+	setobjectxyperm LOCALID_BLACKTHORN_BOY, 24, 27
+	end
 
 BlackthornCity_OnFrame::
 	map_script_2 VAR_BLACKTHORN_CITY_STATE, 0, BlackthornCity_EventScript_CityEnter
@@ -70,11 +82,20 @@ BlackThornCity_Trigger_Sage::
 BlackthornCity_EventScript_GymBoy::
 	lock
 	faceplayer
+	goto_if_unset FLAG_BADGE05_GET, BlackThornCity_EventScript_GymBoyNotReady
+	goto_if_unset FLAG_BADGE06_GET, BlackThornCity_EventScript_GymBoyNotReady
+	goto_if_unset FLAG_BADGE07_GET, BlackThornCity_EventScript_GymBoyNotReady
 	goto_if_eq VAR_BLACKTHORN_CITY_STATE, 1, BlackThornCity_EventScript_GymBoyBefore
 	msgbox BlackthornCity_Text_ClairIsBeaten, MSGBOX_DEFAULT
 	closemessage
 	release
 	end	
+
+BlackThornCity_EventScript_GymBoyNotReady::
+	msgbox BlackthornCity_Text_ClairNotReady, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
 
 BlackThornCity_EventScript_GymBoyBefore::
 	msgbox BlackthornCity_Text_ClairIsIn, MSGBOX_DEFAULT
@@ -157,6 +178,13 @@ BlackthornCity_EventScript_SantosCompleted::
 	closemessage
 	release
 	end
+
+
+BlackthornCity_Text_ClairNotReady:
+	.string "CLAIR, our GYM LEADER, has been\n"
+	.string "following your progress.\p"
+	.string "However, she only battles trainers\n"
+	.string "who already have 7 badges.$"
 
 BlackthornCity_Text_ClairIsIn:
 	.string "CLAIR, our GYM LEADER, is waiting\n"

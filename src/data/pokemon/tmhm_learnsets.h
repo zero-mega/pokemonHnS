@@ -11296,6 +11296,7 @@ const union {
         .FACADE = TRUE,
         .SECRET_POWER = TRUE,
         .REST = TRUE,
+        .FLY = TRUE,
         .ATTRACT = TRUE,
         .THIEF = TRUE,
         .STEEL_WING = TRUE,

@@ -11,7 +11,13 @@ GoldenrodRadioTower5_MapScripts::
 	.byte 0
 
 GoldenrodRadioTower5_OnLoad::
+	call_if_eq VAR_GOLDENROD_CITY_STATE, 7, GoldenrodRadioTower5_MapScript_HidePetrel
 	end
+
+GoldenrodRadioTower5_MapScript_HidePetrel::
+	clearflag FLAG_HIDE_GOLDENROD_RADIOTOWER_DIRECTOR
+	setflag FLAG_HIDE_GOLDENROD_RADIOTOWER_PETREL
+	return
 
 GoldenrodRadioTower5_OnFrame::
 	map_script_2 VAR_TEMP_0, 0, GoldenrodRadioTower_EventScript_TryMusic

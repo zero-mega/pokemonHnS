@@ -1235,9 +1235,21 @@ static u8 GetTrainerBattleTransition(void)
             return B_TRANSITION_MORTY;
         if(gTrainerBattleOpponent_A == TRAINER_CHUCK_1)
             return B_TRANSITION_CHUCK;
+        if(gTrainerBattleOpponent_A == TRAINER_CHUCK_1_2)
+            return B_TRANSITION_CHUCK;
+        if(gTrainerBattleOpponent_A == TRAINER_CHUCK_1_3)
+            return B_TRANSITION_CHUCK;
         if(gTrainerBattleOpponent_A == TRAINER_JASMINE_1)
             return B_TRANSITION_JASMINE;
+        if(gTrainerBattleOpponent_A == TRAINER_JASMINE_1_2)
+            return B_TRANSITION_JASMINE;
+        if(gTrainerBattleOpponent_A == TRAINER_JASMINE_1_3)
+            return B_TRANSITION_JASMINE;
         if(gTrainerBattleOpponent_A == TRAINER_PRYCE_1)
+            return B_TRANSITION_PRYCE;
+        if(gTrainerBattleOpponent_A == TRAINER_PRYCE_1_2)
+            return B_TRANSITION_PRYCE;
+        if(gTrainerBattleOpponent_A == TRAINER_PRYCE_1_3)
             return B_TRANSITION_PRYCE;
         if(gTrainerBattleOpponent_A == TRAINER_CLAIR_1)
             return B_TRANSITION_CLAIR;

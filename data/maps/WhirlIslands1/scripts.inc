@@ -73,7 +73,7 @@ WhirlIslands1_EventScript_TalkToKimono::
 	applymovement LOCALID_KIMONO_MID, WhirlIslands1_Movement_Kimono_Dance_Mid	
 	waitmovement 0
 	playse SE_M_PETAL_DANCE
-	setweather WEATHER_DROUGHT
+	setweather WEATHER_FOG_HORIZONTAL
 	doweather
 	@ 1
 	applymovement LOCALID_KIMONO_1, WhirlIslands1_Movement_Kimono_Dance_Shift_Down
@@ -145,6 +145,16 @@ WhirlIslands1_EventScript_TalkToKimono::
 	waitmovement 0
 	playse SE_M_PETAL_DANCE
 	waitse
+	setobjectxyperm LOCALID_KIMONO_1, 30, 38
+	setobjectxyperm LOCALID_KIMONO_2, 31, 39
+	setobjectxyperm LOCALID_KIMONO_MID, 32, 40
+	setobjectxyperm LOCALID_KIMONO_4, 33, 39
+	setobjectxyperm LOCALID_KIMONO_3, 34, 38
+	setobjectmovementtype LOCALID_KIMONO_1, MOVEMENT_TYPE_FACE_UP
+	setobjectmovementtype LOCALID_KIMONO_2, MOVEMENT_TYPE_FACE_UP
+	setobjectmovementtype LOCALID_KIMONO_3, MOVEMENT_TYPE_FACE_UP
+	setobjectmovementtype LOCALID_KIMONO_4, MOVEMENT_TYPE_FACE_UP
+	setobjectmovementtype LOCALID_KIMONO_MID, MOVEMENT_TYPE_FACE_UP
 	setvar VAR_TEMP_1, 1
 	special SpawnCameraObject
 	setvar VAR_0x8004, 3  @ num loops
@@ -179,11 +189,7 @@ WhirlIslands1_EventScript_TalkToKimono::
 	waitmessage
 	setobjectxyperm LOCALID_LUGIA, 32, 32
 
-	setobjectxyperm LOCALID_KIMONO_1, 30, 38
-	setobjectxyperm LOCALID_KIMONO_2, 31, 39
-	setobjectxyperm LOCALID_KIMONO_MID, 32, 40
-	setobjectxyperm LOCALID_KIMONO_4, 33, 39
-	setobjectxyperm LOCALID_KIMONO_3, 34, 38
+	
 	closemessage
 	releaseall
 	end
@@ -315,11 +321,15 @@ WhirlIslands1_Movement_CameraPanUp:
 	walk_up
 	walk_up
 	walk_up
+	walk_up
+	walk_up
 	step_end
 
 WhirlIslands1_Movement_CameraPanDown:
 	delay_16
 	delay_16
+	walk_down
+	walk_down
 	walk_down
 	walk_down
 	walk_down
