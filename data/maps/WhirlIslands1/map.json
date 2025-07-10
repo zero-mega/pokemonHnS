@@ -50,7 +50,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "WhirlIslands1_EventScript_Kimono",
+      "script": "WhirlIslands1_EventScript_Naoko",
       "flag": "FLAG_HIDE_WHIRL_ISLANDS_KIMONO_GIRLS"
     },
     {
@@ -63,7 +63,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "WhirlIslands1_EventScript_Kimono",
+      "script": "WhirlIslands1_EventScript_Zuki",
       "flag": "FLAG_HIDE_WHIRL_ISLANDS_KIMONO_GIRLS"
     },
     {
@@ -76,7 +76,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "WhirlIslands1_EventScript_Kimono",
+      "script": "WhirlIslands1_EventScript_Miki",
       "flag": "FLAG_HIDE_WHIRL_ISLANDS_KIMONO_GIRLS"
     },
     {
@@ -89,7 +89,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "WhirlIslands1_EventScript_Kimono",
+      "script": "WhirlIslands1_EventScript_Sayo",
       "flag": "FLAG_HIDE_WHIRL_ISLANDS_KIMONO_GIRLS"
     },
     {
@@ -102,7 +102,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "WhirlIslands1_EventScript_Kimono",
+      "script": "WhirlIslands1_EventScript_Kuni",
       "flag": "FLAG_HIDE_WHIRL_ISLANDS_KIMONO_GIRLS"
     },
     {
@@ -115,7 +115,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "WhirlIslands1_EventScript_TalkToLugia",
+      "script": "WhirlIslands1_EventScript_Lugia",
       "flag": "FLAG_HIDE_LUGIA"
     },
     {
@@ -479,8 +479,8 @@
       "y": 42,
       "elevation": 0,
       "var": "VAR_COMPLETED_LUGIA",
-      "var_value": "0",
-      "script": "WhirlIslands1_eventScript_TalkToKimono"
+      "var_value": "2",
+      "script": "WhirlIslands1_EventScript_TalkToKimono"
     }
   ],
   "bg_events": [

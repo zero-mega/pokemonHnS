@@ -5,7 +5,7 @@ EcruteakSageOffice1F_MapScripts::
 	.byte 0
 
 EcruteakSageOffice1F_OnTransition::
-	goto_if_ge VAR_ECRUTEAK_CITY_STATE, 11, EcruteakSageOffice1F_EventScript_SageAside @CHANGELATER
+	goto_if_set FLAG_HIDE_TINTOWER_GUARD, EcruteakSageOffice1F_EventScript_SageAside @CHANGELATER
 	end
 
 EcruteakSageOffice1F_EventScript_SageAside::
@@ -15,8 +15,7 @@ EcruteakSageOffice1F_EventScript_SageAside::
 EcruteakSageOffice_EventScript_SageA::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_HO_OH, EcruteakSageOffice_EventScript_SageA4
-	goto_if_ge VAR_ECRUTEAK_CITY_STATE, 11, EcruteakSageOffice_EventScript_SageA3
+	goto_if_set FLAG_HIDE_TINTOWER_GUARD, EcruteakSageOffice_EventScript_SageA4
 	checkitem ITEM_CLEAR_BELL
 	goto_if_eq VAR_RESULT, TRUE, EcruteakSageOffice_EventScript_SageA2
 	msgbox EcruteakTinTowerEntrance_Text_SageNoBadge, MSGBOX_DEFAULT
@@ -37,11 +36,7 @@ EcruteakSageOffice_EventScript_SageA2::
 	applymovement LOCALID_SAGEOFFICE_SAGE, EcruteakSageOffice_Movement_StandAside
 	waitmovement 0
 	setobjectxyperm LOCALID_SAGEOFFICE_SAGE, 15, 2
-	setvar VAR_ECRUTEAK_CITY_STATE, 11
-
-	clearflag FLAG_HIDE_HO_OH
-	clearflag FLAG_HIDE_TIN_TOWER_KIMONO_GIRLS
-
+	setflag FLAG_HIDE_TINTOWER_GUARD
 	release
 	end
 

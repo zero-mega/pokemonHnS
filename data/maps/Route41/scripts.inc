@@ -180,7 +180,7 @@ Route41_EventScript_Tentacruel1::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_MACHOKE, CRY_MODE_NORMAL
+	playmoncry SPECIES_TENTACRUEL, CRY_MODE_NORMAL
 	goto_if_ge VAR_TEMP_0, 2, Route41_EventScript_TentacruelAttack1
 	msgbox Route41_Text_Tentacruel, MSGBOX_DEFAULT
 	waitmoncry
@@ -204,7 +204,7 @@ Route41_EventScript_Tentacruel2::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_MACHOKE, CRY_MODE_NORMAL
+	playmoncry SPECIES_TENTACRUEL, CRY_MODE_NORMAL
 	goto_if_ge VAR_TEMP_1, 2, Route41_EventScript_TentacruelAttack2
 	msgbox Route41_Text_Tentacruel, MSGBOX_DEFAULT
 	waitmoncry
@@ -228,7 +228,7 @@ Route41_EventScript_Tentacruel3::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_MACHOKE, CRY_MODE_NORMAL
+	playmoncry SPECIES_TENTACRUEL, CRY_MODE_NORMAL
 	goto_if_ge VAR_TEMP_2, 2, Route41_EventScript_TentacruelAttack3
 	msgbox Route41_Text_Tentacruel, MSGBOX_DEFAULT
 	waitmoncry
@@ -252,7 +252,7 @@ Route41_EventScript_Tentacruel4::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_MACHOKE, CRY_MODE_NORMAL
+	playmoncry SPECIES_TENTACRUEL, CRY_MODE_NORMAL
 	goto_if_ge VAR_TEMP_3, 2, Route41_EventScript_TentacruelAttack4
 	msgbox Route41_Text_Tentacruel, MSGBOX_DEFAULT
 	waitmoncry

@@ -7,80 +7,30 @@
 
 TinTower10_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, TinTower10_OnTransition
-	map_script MAP_SCRIPT_ON_RESUME, TinTower10_OnResume
 	.byte 0
 
 TinTower10_OnTransition:
-	call_if_set FLAG_CAUGHT_HO_OH, TinTower10_EventScript_HideHoOh
-	call_if_unset FLAG_CAUGHT_HO_OH, TinTower10_EventScript_TryShowHoOh
+	goto_if_eq VAR_COMPLETED_HO_OH, 2, TinTower10_MapScript_HoohStory
+	goto_if_eq VAR_COMPLETED_HO_OH, 3, TinTower10_MapScript_HoohPostStoryGone
+	goto_if_eq VAR_COMPLETED_HO_OH, 4, TinTower10_MapScript_HoohPostStoryEncounter
 	end
 
-TinTower10_EventScript_HideHoOh::
-	setvar VAR_TEMP_1, 1
-	setflag FLAG_HIDE_HO_OH
-	return
-
-TinTower10_EventScript_TryShowHoOh::
-	setvar VAR_TEMP_1, 1
-	goto_if_set FLAG_DEFEATED_HO_OH, Common_EventScript_NopReturn
-	setvar VAR_TEMP_1, 0
+TinTower10_MapScript_HoohStory::
 	clearflag FLAG_HIDE_HO_OH
-	goto_if_eq VAR_LUGIA_OR_HOOH, 1, Common_EventScript_NopReturn
+	end
+
+TinTower10_MapScript_HoohPostStoryGone::
+	setflag FLAG_HIDE_TIN_TOWER_KIMONO_GIRLS
+	setflag FLAG_HIDE_HO_OH
+	end
+
+TinTower10_MapScript_HoohPostStoryEncounter::
+	setflag FLAG_HIDE_TIN_TOWER_KIMONO_GIRLS
+	clearflag FLAG_HIDE_HO_OH
 	setobjectxyperm LOCALID_HO_OH, 10, 6
-	return
-
-TinTower10_OnResume:
-	call_if_set FLAG_SYS_CTRL_OBJ_DELETE, TinTower10_EventScript_TryRemoveHoOh
 	end
 
-TinTower10_EventScript_TryRemoveHoOh::
-	specialvar VAR_RESULT, GetBattleOutcome
-	goto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, Common_EventScript_NopReturn
-	removeobject LOCALID_HO_OH
-	return
-
-TinTower10_EventScript_HoOh::
-	lockall
-	setvar VAR_TEMP_1, 1
-	special SpawnCameraObject
-	setvar VAR_0x8004, 3  @ num loops
-	setvar VAR_0x8005, 35 @ delay
-	special LoopWingFlapSE
-	applymovement LOCALID_HO_OH, TinTower10_Movement_HoOhAppear
-	applymovement OBJ_EVENT_ID_CAMERA, TinTower10_Movement_CameraPanUp
-	waitmovement 0
-	delay 50
-	setweather WEATHER_NONE
-	doweather
-	waitse
-	playmoncry SPECIES_HO_OH, CRY_MODE_ENCOUNTER
-	delay 30
-	waitmoncry
-	delay 60
-	setvar VAR_0x8004, 3  @ num loops
-	setvar VAR_0x8005, 35 @ delay
-	special LoopWingFlapSE
-	applymovement OBJ_EVENT_ID_CAMERA, TinTower10_Movement_CameraPanDown
-	applymovement LOCALID_HO_OH, TinTower10_Movement_HoOhApproach
-	waitmovement 0
-	special RemoveCameraObject
-	seteventmon SPECIES_HO_OH, 70
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
-	special BattleSetup_StartLegendaryBattle
-	waitstate
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-	setvar VAR_LAST_TALKED, LOCALID_HO_OH
-	specialvar VAR_RESULT, GetBattleOutcome
-	goto_if_eq VAR_RESULT, B_OUTCOME_WON, TinTower10_EventScript_DefeatedHoOh
-	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, TinTower10_EventScript_RanFromHoOh
-	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, TinTower10_EventScript_RanFromHoOh
-	setflag FLAG_CAUGHT_HO_OH
-	setvar VAR_COMPLETED_HO_OH, 1
-	applymovement LOCALID_KIMONO_MID, TinTower10_Movement_Kimono_Dance_Shift_Right
-	releaseall
-	end
-
-TinTower10_eventScript_TalkToKimono::
+TinTower10_EventScript_TalkToKimono::
 	lockall
 	playbgm MUS_HG_KIMONO_GIRL_DANCE, TRUE
 	msgbox TinTower10_Text_Kimono_Opening, MSGBOX_DEFAULT
@@ -177,8 +127,6 @@ TinTower10_eventScript_TalkToKimono::
 	waitmovement 0
 	playse SE_M_PETAL_DANCE
 	waitse
-
-
 	setvar VAR_TEMP_1, 1
 	special SpawnCameraObject
 	setvar VAR_0x8004, 3  @ num loops
@@ -203,9 +151,6 @@ TinTower10_eventScript_TalkToKimono::
 	applymovement OBJ_EVENT_ID_CAMERA, TinTower10_Movement_CameraPanDown
 	waitmovement 0
 	special RemoveCameraObject
-
-
-
 	applymovement LOCALID_KIMONO_MID, TinTower10_Movement_Kimono_Dance_Look_Up
 	applymovement LOCALID_KIMONO_1, TinTower10_Movement_Kimono_Dance_Look_Up
 	applymovement LOCALID_KIMONO_2, TinTower10_Movement_Kimono_Dance_Look_Up
@@ -215,16 +160,42 @@ TinTower10_eventScript_TalkToKimono::
 	msgbox TinTower10_Text_Kimono_Closing1, MSGBOX_DEFAULT
 	waitmessage
 	closemessage
-
-
 	releaseall
 	end
 
-TinTower10_EventScript_TalkToHoOh::
+TinTower10_EventScript_HoOh::
 	lockall
+	goto_if_eq VAR_COMPLETED_HO_OH, 4, TinTower10_EventScript_HoOhPostgame
 	setweather WEATHER_NONE
 	doweather
 	waitse
+	playmoncry SPECIES_HO_OH, CRY_MODE_ENCOUNTER
+	delay 30
+	waitmoncry
+	playbgm MUS_HG_VS_HO_OH, 0
+	seteventmon SPECIES_HO_OH, 45
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartLegendaryBattle
+	waitstate
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	setvar VAR_LAST_TALKED, LOCALID_HO_OH
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, TinTower10_EventScript_RanFromHoOh
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, TinTower10_EventScript_RanFromHoOh
+	call_if_eq VAR_RESULT, B_OUTCOME_WON, TinTower10_EventScript_HoohFlewAway
+	call_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, TinTower10_EventScript_CaughtHooh
+	setflag FLAG_HIDE_TIN_TOWER_KIMONO_GIRLS
+	applymovement LOCALID_KIMONO_MID, TinTower10_Movement_Kimono_Dance_Shift_Right2
+	waitmovement 0
+	clearflag FLAG_HIDE_ECRUTEAK_THEATER_KIMONOS
+	clearflag FLAG_HIDE_ECRUTEAK_THEATER_ZUKI
+	clearflag FLAG_HIDE_ECRUTEAK_THEATER_NPCS
+	setvar VAR_ECRUTEAK_THEATER, 7
+	setvar VAR_COMPLETED_HO_OH, 3
+	releaseall
+	end
+
+TinTower10_EventScript_HoOhPostgame::
 	playmoncry SPECIES_HO_OH, CRY_MODE_ENCOUNTER
 	delay 30
 	waitmoncry
@@ -234,61 +205,74 @@ TinTower10_EventScript_TalkToHoOh::
 	special BattleSetup_StartLegendaryBattle
 	waitstate
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-
 	setvar VAR_LAST_TALKED, LOCALID_HO_OH
 	specialvar VAR_RESULT, GetBattleOutcome
-	goto_if_eq VAR_RESULT, B_OUTCOME_WON, TinTower10_EventScript_DefeatedHoOh
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, TinTower10_EventScript_RanFromHoOh
 	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, TinTower10_EventScript_RanFromHoOh
-	setflag FLAG_HIDE_TIN_TOWER_KIMONO_GIRLS
-	applymovement LOCALID_KIMONO_MID, TinTower10_Movement_Kimono_Dance_Shift_Right2
-	waitmovement 0
-	setflag FLAG_CAUGHT_HO_OH
-	setvar VAR_COMPLETED_HO_OH, 1
-	setvar VAR_ECRUTEAK_CITY_STATE, 12
+	call_if_eq VAR_RESULT, B_OUTCOME_WON, TinTower10_EventScript_HoohFlewAway
+	call_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, TinTower10_EventScript_CaughtHooh
+	setvar VAR_COMPLETED_HO_OH, 3
 	releaseall
 	end
 
-TinTower10_EventScript_DefeatedHoOh::
-	setflag FLAG_DEFEATED_HO_OH
-	setvar VAR_0x8004, SPECIES_HO_OH
-	setvar VAR_COMPLETED_HO_OH, 1
-	setvar VAR_ECRUTEAK_CITY_STATE, 12
-	setflag FLAG_HIDE_TIN_TOWER_KIMONO_GIRLS
-	applymovement LOCALID_KIMONO_MID, TinTower10_Movement_Kimono_Dance_Shift_Right2
-	waitmovement 0
-	goto Common_EventScript_LegendaryFlewAway
-	end
+TinTower10_EventScript_HoohFlewAway::
+	fadescreenswapbuffers FADE_TO_BLACK
+	removeobject LOCALID_HO_OH
+	setflag FLAG_HIDE_HO_OH
+	fadescreenswapbuffers FADE_FROM_BLACK
+	bufferspeciesname STR_VAR_1, SPECIES_HO_OH
+	msgbox gText_LegendaryFlewAway, MSGBOX_DEFAULT
+	return
+
+TinTower10_EventScript_CaughtHooh::
+	fadescreenswapbuffers FADE_TO_BLACK
+	removeobject LOCALID_HO_OH
+	setflag FLAG_HIDE_HO_OH
+	fadescreenswapbuffers FADE_FROM_BLACK
+	return
 
 TinTower10_EventScript_RanFromHoOh::
-	@setflag FLAG_DEFEATED_HO_OH
-	@setvar VAR_0x8004, SPECIES_HO_OH
-	@setvar VAR_COMPLETED_HO_OH, 1
-	@goto Common_EventScript_LegendaryFlewAway
 	releaseall
 	end
 
-TinTower10_EventScript_Kimono::
-	lock
-	faceplayer
-	goto_if_set FLAG_CAUGHT_HO_OH, TinTower10_EventScript_Kimono_AfterCaught
-	goto_if_eq VAR_COMPLETED_HO_OH, 1, TinTower10_EventScript_Kimono_After
-	msgbox TinTower10_Text_Kimono_Before, MSGBOX_DEFAULT 
-	closemessage
-	release
+TinTower10_EventScript_Zuki::
+	goto_if_eq VAR_COMPLETED_HO_OH, 3, TinTower10_EventScript_ZukiAfter
+	msgbox TinTower10_Text_Zuki_Before, MSGBOX_NPC
+	end
+TinTower10_EventScript_ZukiAfter::
+	msgbox TinTower10_Text_Kimono_AfterCaught, MSGBOX_NPC
 	end
 
-
-TinTower10_EventScript_Kimono_After::
-	msgbox TinTower10_Text_Kimono_After, MSGBOX_DEFAULT
-	closemessage
-	release
+TinTower10_EventScript_Naoko::
+	goto_if_eq VAR_COMPLETED_HO_OH, 3, TinTower10_EventScript_NaokoAfter
+	msgbox TinTower10_Text_Naoko_Before, MSGBOX_NPC
+	end
+TinTower10_EventScript_NaokoAfter::
+	msgbox TinTower10_Text_Kimono_After, MSGBOX_NPC
 	end
 
-TinTower10_EventScript_Kimono_AfterCaught::
-	msgbox TinTower10_Text_Kimono_AfterCaught, MSGBOX_DEFAULT
-	closemessage
-	release
+TinTower10_EventScript_Miki::
+	goto_if_eq VAR_COMPLETED_HO_OH, 3, TinTower10_EventScript_MikiAfter
+	msgbox TinTower10_Text_Miki_Before, MSGBOX_NPC
+	end
+TinTower10_EventScript_MikiAfter::
+	msgbox TinTower10_Text_Kimono_After, MSGBOX_NPC
+	end
+
+TinTower10_EventScript_Sayo::
+	goto_if_eq VAR_COMPLETED_HO_OH, 3, TinTower10_EventScript_SayoAfter
+	msgbox TinTower10_Text_Sayo_Before, MSGBOX_NPC
+	end
+TinTower10_EventScript_SayoAfter::
+	msgbox TinTower10_Text_Kimono_After, MSGBOX_NPC
+	end
+
+TinTower10_EventScript_Kuni::
+	goto_if_eq VAR_COMPLETED_HO_OH, 3, TinTower10_EventScript_KuniAfter
+	msgbox TinTower10_Text_Kuni_Before, MSGBOX_NPC
+	end
+TinTower10_EventScript_KuniAfter::
+	msgbox TinTower10_Text_Kimono_After, MSGBOX_NPC
 	end
 
 TinTower10_Text_Kimono_AfterCaught:
@@ -551,8 +535,16 @@ TinTower10_Movement_Kimono_Dance_Shift_Right2:
 	face_left
 	step_end
 
-TinTower10_Text_Kimono_Before::
-	.string "KIMONO GIRL: Go, face HO-OH. $"
+TinTower10_Text_Zuki_Before::
+	.string "ZUKI: Go, face HO-OH. $"
+TinTower10_Text_Naoko_Before::
+	.string "NAOKO: Go, face HO-OH. $"
+TinTower10_Text_Miki_Before::
+	.string "MIKI: Go, face HO-OH. $"
+TinTower10_Text_Sayo_Before::
+	.string "SAYO: Go, face HO-OH. $"
+TinTower10_Text_Kuni_Before::
+	.string "KUNI: Go, face HO-OH. $"
 
 TinTower10_Text_Kimono_Opening::
 	.string "KIMONO GIRL: That's right.\n"

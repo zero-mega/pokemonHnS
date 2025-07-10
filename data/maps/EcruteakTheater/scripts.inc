@@ -1,6 +1,12 @@
 .set LOCALID_ECRUTEAK_ROCKET, 12
 .set LOCALID_ECRUTEAK_ZUKI, 5
 .set LOCALID_SURF_GUY, 7
+.set LOCALID_ECRUTEAK_NAOKO, 2
+.set LOCALID_ECRUTEAK_MIKI, 4
+.set LOCALID_ECRUTEAK_SAYO, 1
+.set LOCALID_ECRUTEAK_KUNI, 3
+.set LOCALID_ECRUTEAK_SISTER, 11
+
 
 EcruteakTheater_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, EcruteakTheater_OnTransition
@@ -199,11 +205,35 @@ EcruteakTheater_Text_KimonoRocket3:
 	.string "talking to myself.\l"
 	.string "Never mind.$"
 
+
+EcruteakTheater_EventScript_KimonoGirl::
+	lock
+	faceplayer
+	goto_if_eq VAR_ECRUTEAK_THEATER, 6, EcruteakTheater_EventScript_KimonoGirlDuringEvent
+	msgbox EcruteakTheater_Text_KimonoDone, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+EcruteakTheater_EventScript_KimonoGirlDuringEvent::
+	msgbox EcruteakTheater_Text_KimonoGirlsBeforeBattle, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+
 EcruteakTheater_EventScript_Zuki::
 	lock
 	faceplayer
+	goto_if_ge VAR_ECRUTEAK_THEATER, 7, EcruteakTheater_EventScript_ZukiAfterLegendary
+	goto_if_eq VAR_ECRUTEAK_THEATER, 6, EcruteakTheater_EventScript_ZukiBattle
 	goto_if_eq VAR_ECRUTEAK_THEATER, 1, EcruteakTheater_EventScript_ZukiDuringRocket
 	msgbox EcruteakTheater_Text_Kimono, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+EcruteakTheater_EventScript_ZukiAfterLegendary::
+	msgbox EcruteakTheater_Text_ZukiAfterAll, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
@@ -222,129 +252,6 @@ EcruteakTheater_Text_Kimono:
 	.string "POKéMON are the same.\n"
 	.string "They grow with you little\l"
 	.string "by little each day.$"
-
-EcruteakTheater_Text_KimonoGirlBeaten:
-	.string "...$"
-
-EcruteakTheater_Text_ZukiSeen:
-	.string "Welcome. My name is ZUKI.\n"
-	.string "I met you previously in\l"
-	.string "VIOLET CITY.\p"
-	.string "To bring back HO-OH, we\n"
-	.string "needed someone with the\l"
-	.string "right bond with POKéMON.\p"
-	.string "We asked Mr. POKéMON to\n"
-	.string "give this Mystery Egg to\l"
-	.string "whoever showed potential.\p"
-	.string "The Egg went from MR.\n"
-	.string "POKéMON to PROF. ELM, then\l"
-	.string "to you.\p"
-	.string "But being pure alone is not\n"
-	.string "enough to face the power\l"
-	.string "of this POKéMON.\p"
-	.string "I must test you.\n"
-	.string "Are you ready? {PLAYER}$"
-
-EcruteakTheater_Text_ZukiSeenAgain:
-	.string "I will test you to see if\n"
-	.string "you are a good Trainer.\l"
-	.string "Are you ready? {PLAYER}$"
-
-EcruteakTheater_Text_ZukiNo:
-	.string "That is fine...\n"
-	.string "I will wait for you to get\l"
-	.string "ready.$"
-
-EcruteakTheater_Text_NaokoSeen:
-	.string "You are quite strong. You\n"
-	.string "helped me in the ILEX FOREST.\p"
-	.string "I'm NAOKO--not so good with\n"
-	.string "directions.\p"
-	.string "I saw you defeat Team Rocket\n"
-	.string "when Kurt was in trouble at\l"
-	.string "the SLOWPOKE Well.\p"
-	.string "Let me challenge you and your\n"
-	.string "POKéMON!$"
-
-EcruteakTheater_Text_MikiSeen:
-	.string "You're quite the Trainer. I\n"
-	.string "remember you chased off that\l"
-	.string "Rocket Grunt from right here.\p"
-	.string "Thank you for that.\p"
-	.string "Though, I'm a Trainer too.\n"
-	.string "She who knows the most speaks\l"
-	.string "the least!\p"
-	.string "I am MIKI--the Kimono Girl!\p"
-	.string "Let me challenge you and your\n"
-	.string "POKéMON!$"
-
-EcruteakTheater_Text_SayoSeen:
-	.string "Excellent spirit! You got me\n"
-	.string "off the ice by pushing me.\p"
-	.string "I skate in sandals.\n"
-	.string "I am SAYO--the Kimono Girl!\p"
-	.string "I listened in the Dragon's Den\n"
-	.string "when you passed the Elder's\l"
-	.string "test.\p"
-	.string "Let me challenge you and your\n"
-	.string "POKéMON!$"
-
-EcruteakTheater_Text_KuniSeen:
-	.string "I'm the last one.\n"
-	.string "You were dependable at the\n"
-	.string "Goldenrod Tunnel.\p"
-	.string "I'm the one who twirls even\n"
-	.string "underground--Kuni!\p"
-	.string "I saw you thwart Rocket's\n"
-	.string "plan to take the Radio Tower.\p"
-	.string "Now show me your strength!\n"
-	.string "Let me challenge you and your\l"
-	.string "POKéMON!$"
-
-EcruteakTheater_Text_KuniAfter:
-	.string "Talk to Zuki in the middle\n"
-	.string "when you are ready.$"
-
-EcruteakTheater_Text_ZukiDone:
-	.string "We were not wrong about you.\n"
-	.string "You are indeed worthy of this...\p"
-	.string "Please take it.$"
-
-EcruteakTheater_Text_GirlHooh:
-	.string "Big sisters! I just saw the\n"
-	.string "big shadow of a POKéMON over\l"
-	.string "the Bell Tower!\p"
-	.string "It could be...$"
-
-EcruteakTheater_Text_GirlLugia:
-	.string "Big sisters! I just saw the\n"
-	.string "big shadow of a POKéMON in the\l"
-	.string "Whirl Islands' waters!\p"
-	.string "It could be...$"
-
-EcruteakTheater_Text_ZukiHooh:
-	.string "ZUKI: {PLAYER}!\n"
-	.string "We'll be at the Bell Tower.\n"
-	.string "See you there!$"
-
-EcruteakTheater_Text_ZukiLugia:
-	.string "ZUKI: {PLAYER}!\n"
-	.string "We'll be at the Whirl Islands.\l"
-	.string "See you there!$"
-
-EcruteakTheater_Text_KimonoDone:
-	.string "We are rehearsing a dance.$"
-
-EcruteakTheater_Text_ZukiAfterAll:
-	.string "Thank you for your help the\n"
-	.string "other day.\p"
-	.string "You've shown the bond between\n"
-	.string "people can grow with POKéMON...\p"
-	.string "We appreciate how you lived up\n"
-	.string "to our hopes, VAR(259, 0, 0)!\p"
-	.string "If you learned anything from\n"
-	.string "this, thank Mr. POKéMON and\l"
-	.string "Professor Elm...$"
 
 EcruteakTheater_EventScript_SurfGuy::
 	lock
@@ -387,6 +294,86 @@ EcruteakTheater_EventScript_TriggerSurfGuy::
 	setvar VAR_ECRUTEAK_THEATER, 3
 	applymovement LOCALID_SURF_GUY, EcruteakTheater_Movement_SurfGuy2
 	waitmovement 0 
+	release
+	end
+
+EcruteakTheater_EventScript_Psyduck::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_PSYDUCK, CRY_MODE_NORMAL
+	msgbox EcruteakTheater_Text_Psyduck, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+
+EcruteakTheater_EventScript_Boy::
+	lock
+	faceplayer
+	goto_if_eq VAR_ECRUTEAK_THEATER, 1, EcruteakTheater_EventScript_BoyDuringRocket
+	msgbox EcruteakTheater_Text_Boy, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+EcruteakTheater_EventScript_BoyDuringRocket::
+	msgbox EcruteakTheater_Text_BoyBefore, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+
+EcruteakTheater_EventScript_Granny::
+	lock
+	faceplayer
+	goto_if_eq VAR_ECRUTEAK_THEATER, 1, EcruteakTheater_EventScript_GrannyDuringRocket
+	msgbox EcruteakTheater_Text_Granny, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+EcruteakTheater_EventScript_GrannyDuringRocket::
+	msgbox EcruteakTheater_Text_GrannyBefore, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+
+EcruteakTheater_EventScript_Gramps::
+	lock
+	faceplayer
+	goto_if_eq VAR_ECRUTEAK_THEATER, 1, EcruteakTheater_EventScript_GrampsDuringRocket
+	msgbox EcruteakTheater_Text_Gramps, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+EcruteakTheater_EventScript_GrampsDuringRocket::
+	msgbox EcruteakTheater_Text_GrampsBefore, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+EcruteakTheater_EventScript_Girl::
+	lock
+	faceplayer
+	goto_if_eq VAR_ECRUTEAK_THEATER, 1, EcruteakTheater_EventScript_GirlDuringRocket
+	msgbox EcruteakTheater_Text_Girl, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+EcruteakTheater_EventScript_GirlDuringRocket::
+	msgbox EcruteakTheater_Text_GirlBefore, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+EcruteakTheater_EventScript_FancyPanel::
+	lock
+	msgbox EcruteakTheater_Text_FancyPanel, MSGBOX_DEFAULT
+	closemessage
 	release
 	end
 
@@ -440,34 +427,8 @@ EcruteakTheater_Text_SurfGuyAfter:
 	.string "I don't know if you could beat\n"
 	.string "them if they showed their skill...$"
 
-EcruteakTheater_EventScript_Psyduck::
-	lock
-	faceplayer
-	waitse
-	playmoncry SPECIES_PSYDUCK, CRY_MODE_NORMAL
-	msgbox EcruteakTheater_Text_Psyduck, MSGBOX_DEFAULT
-	waitmoncry
-	release
-	end
-
 EcruteakTheater_Text_Psyduck:
 	.string "PSYDUCK: Dau dau!$"
-
-
-EcruteakTheater_EventScript_Boy::
-	lock
-	faceplayer
-	goto_if_eq VAR_ECRUTEAK_THEATER, 1, EcruteakTheater_EventScript_BoyDuringRocket
-	msgbox EcruteakTheater_Text_Boy, MSGBOX_DEFAULT
-	closemessage
-	release
-	end
-
-EcruteakTheater_EventScript_BoyDuringRocket::
-	msgbox EcruteakTheater_Text_BoyBefore, MSGBOX_DEFAULT
-	closemessage
-	release
-	end
 
 EcruteakTheater_Text_BoyBefore:
 	.string "eeeeek!$"
@@ -476,22 +437,6 @@ EcruteakTheater_Text_Boy:
 	.string "I was supposed to be the hero...!\n"
 	.string "So much for getting close to\l"
 	.string "a Kimono Girl!$"
-
-
-EcruteakTheater_EventScript_Granny::
-	lock
-	faceplayer
-	goto_if_eq VAR_ECRUTEAK_THEATER, 1, EcruteakTheater_EventScript_GrannyDuringRocket
-	msgbox EcruteakTheater_Text_Granny, MSGBOX_DEFAULT
-	closemessage
-	release
-	end
-
-EcruteakTheater_EventScript_GrannyDuringRocket::
-	msgbox EcruteakTheater_Text_GrannyBefore, MSGBOX_DEFAULT
-	closemessage
-	release
-	end
 
 EcruteakTheater_Text_Granny:
 	.string "That man's always with his\n"
@@ -507,23 +452,6 @@ EcruteakTheater_Text_GrannyBefore:
 	.string "This stomachache!\p"
 	.string "I wouldn't let this guy act like\n"
 	.string "that if not for this pain...!$"
-
-
-EcruteakTheater_EventScript_Gramps::
-	lock
-	faceplayer
-	goto_if_eq VAR_ECRUTEAK_THEATER, 1, EcruteakTheater_EventScript_GrampsDuringRocket
-	msgbox EcruteakTheater_Text_Gramps, MSGBOX_DEFAULT
-	closemessage
-	release
-	end
-
-EcruteakTheater_EventScript_GrampsDuringRocket::
-	msgbox EcruteakTheater_Text_GrampsBefore, MSGBOX_DEFAULT
-	closemessage
-	release
-	end
-
 
 EcruteakTheater_Text_Gramps:
 	.string "The Kimono Girls are so\n"
@@ -542,21 +470,6 @@ EcruteakTheater_Text_GrampsBefore:
 	.string "I wouldn't let this guy act like\n"
 	.string "that if not for this pain...!$"
 
-EcruteakTheater_EventScript_Girl::
-	lock
-	faceplayer
-	goto_if_eq VAR_ECRUTEAK_THEATER, 1, EcruteakTheater_EventScript_GirlDuringRocket
-	msgbox EcruteakTheater_Text_Girl, MSGBOX_DEFAULT
-	closemessage
-	release
-	end
-
-EcruteakTheater_EventScript_GirlDuringRocket::
-	msgbox EcruteakTheater_Text_GirlBefore, MSGBOX_DEFAULT
-	closemessage
-	release
-	end
-
 EcruteakTheater_Text_Girl:
 	.string "The KIMONO GIRLS are my big\n"
 	.string "sisters! I'll be like them one\l"
@@ -565,14 +478,568 @@ EcruteakTheater_Text_Girl:
 EcruteakTheater_Text_GirlBefore:
 	.string "I like that funny dance!$"
 
-EcruteakTheater_EventScript_FancyPanel::
+EcruteakTheater_Text_FancyPanel:
+	.string "It's a fancy panel that's\n"
+	.string "decorated with flowers.$"
+
+EcruteakTheater_Trigger_PreBattleCutsceneLeft::
 	lock
-	msgbox EcruteakTheater_Text_FancyPanel, MSGBOX_DEFAULT
+	applymovement2 OBJ_EVENT_ID_PLAYER, EcruteakTheater_Movement_PlayerWalkToZukiLeft
+	applymovement2 OBJ_EVENT_ID_FOLLOWER, EcruteakTheater_Movement_MonWalkToZukiLeft
+	waitmovement OBJ_EVENT_ID_FOLLOWER
+	waitmovement OBJ_EVENT_ID_PLAYER
+	delay 10
+	lockall
+	goto EcruteakTheater_EventScript_LegendaryCutscene
+
+EcruteakTheater_Trigger_PreBattleCutsceneTop::
+	lock
+	applymovement2 OBJ_EVENT_ID_PLAYER, EcruteakTheater_Movement_PlayerWalkToZukiTop
+	applymovement2 OBJ_EVENT_ID_FOLLOWER, EcruteakTheater_Movement_MonWalkToZukiTop
+	waitmovement OBJ_EVENT_ID_FOLLOWER
+	waitmovement OBJ_EVENT_ID_PLAYER
+	delay 10
+	lockall
+	goto EcruteakTheater_EventScript_LegendaryCutscene
+
+EcruteakTheater_Trigger_PreBattleCutsceneRight::
+	lock
+	applymovement2 OBJ_EVENT_ID_PLAYER, EcruteakTheater_Movement_PlayerWalkToZukiRight
+	applymovement2 OBJ_EVENT_ID_FOLLOWER, EcruteakTheater_Movement_MonWalkToZukiRight
+	waitmovement OBJ_EVENT_ID_FOLLOWER
+	waitmovement OBJ_EVENT_ID_PLAYER
+	delay 10
+	lockall
+	goto EcruteakTheater_EventScript_LegendaryCutscene
+
+
+EcruteakTheater_Movement_PlayerWalkToZukiLeft:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_left
+	walk_left
+	walk_left
+	walk_up
+	walk_up
+	walk_up
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	face_up
+	step_end
+EcruteakTheater_Movement_MonWalkToZukiLeft:
+	walk_left
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_left
+	walk_left
+	walk_left
+	walk_up
+	walk_up
+	walk_up
+	walk_right
+	walk_right
+	walk_right
+	step_end
+
+EcruteakTheater_Movement_PlayerWalkToZukiTop:
+	walk_left
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_left
+	walk_left
+	walk_left
+	walk_up
+	walk_up
+	walk_up
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	face_up
+	step_end
+EcruteakTheater_Movement_MonWalkToZukiTop:
+	walk_up
+	walk_left
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_left
+	walk_left
+	walk_left
+	walk_up
+	walk_up
+	walk_up
+	walk_right
+	walk_right
+	walk_right
+	face_up
+	step_end
+
+EcruteakTheater_Movement_PlayerWalkToZukiRight:
+	walk_right
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_right
+	walk_right
+	walk_right
+	walk_up
+	walk_up
+	walk_up
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	face_up
+	step_end
+EcruteakTheater_Movement_MonWalkToZukiRight::
+	walk_right
+	walk_right
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_right
+	walk_right
+	walk_right
+	walk_up
+	walk_up
+	walk_up
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+
+EcruteakTheater_Movement_KimonoSpin:
+	face_right
+	delay_8
+	face_up
+	delay_8
+	face_left
+	delay_8
+	face_down
+	delay_8
+	face_right
+	delay_8
+	face_up
+	delay_8
+	face_left
+	delay_8
+	face_down
+	step_end
+
+EcruteakTheater_EventScript_LugiaBuffer::
+	bufferspeciesname STR_VAR_1, SPECIES_LUGIA
+	return
+EcruteakTheater_EventScript_HoohBuffer::
+	bufferspeciesname STR_VAR_1, SPECIES_HO_OH
+	return
+EcruteakTheater_EventScript_LegendaryCutscene::
+	clearflag FLAG_HIDE_LUGIA @CHANGELATER remove both
+	clearflag FLAG_HIDE_HO_OH @CHANGELATER
+	call_if_eq VAR_LUGIA_OR_HOOH, 1, EcruteakTheater_EventScript_LugiaBuffer
+	call_if_eq VAR_LUGIA_OR_HOOH, 2, EcruteakTheater_EventScript_HoohBuffer 
+	msgbox EcruteakTheater_Text_ZukiSeen, MSGBOX_DEFAULT
+	closemessage
+	delay 20
+	playse SE_M_PETAL_DANCE
+	applymovement2 LOCALID_ECRUTEAK_ZUKI, EcruteakTheater_Movement_KimonoSpin
+	waitmovement 0
+	setvar VAR_ECRUTEAK_THEATER, 6
+EcruteakTheater_EventScript_ZukiBattle::
+	msgbox EcruteakTheater_Text_ZukiSeenAgain, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, FALSE, EcruteakTheater_EventScript_LegendaryDenied
+	trainerbattle_no_intro TRAINER_ZUKI, EcruteakTheater_Text_KimonoGirlBeaten
+	applymovement2 LOCALID_ECRUTEAK_ZUKI, EcruteakTheater_Movement_ZukiWalkUp
+	waitmovement 0
+EcruteakTheater_EventScript_NaokoBattle::
+	playse SE_M_PETAL_DANCE
+	applymovement2 LOCALID_ECRUTEAK_NAOKO, EcruteakTheater_Movement_KimonoSpin
+	waitmovement 0
+	applymovement2 LOCALID_ECRUTEAK_NAOKO, EcruteakTheater_Movement_NaokoWalkToPlayer
+	waitmovement 0
+	msgbox EcruteakTheater_Text_NaokoSeen, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_NAOKO, EcruteakTheater_Text_KimonoGirlBeaten
+	applymovement2 LOCALID_ECRUTEAK_NAOKO, EcruteakTheater_Movement_NaokoWalkBack
+	waitmovement 0
+EcruteakTheater_EventScript_MikiBattle::
+	playse SE_M_PETAL_DANCE
+	applymovement2 LOCALID_ECRUTEAK_MIKI, EcruteakTheater_Movement_KimonoSpin
+	waitmovement 0
+	applymovement2 LOCALID_ECRUTEAK_MIKI, EcruteakTheater_Movement_MikiWalkToPlayer
+	waitmovement 0
+	msgbox EcruteakTheater_Text_MikiSeen, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_MIKI, EcruteakTheater_Text_KimonoGirlBeaten
+	applymovement2 LOCALID_ECRUTEAK_MIKI, EcruteakTheater_Movement_MikiWalkBack
+	waitmovement 0
+EcruteakTheater_EventScript_SayoBattle::
+	playse SE_M_PETAL_DANCE
+	applymovement2 LOCALID_ECRUTEAK_SAYO, EcruteakTheater_Movement_KimonoSpin
+	waitmovement 0
+	applymovement2 LOCALID_ECRUTEAK_SAYO, EcruteakTheater_Movement_SayoWalkToPlayer
+	waitmovement 0
+	msgbox EcruteakTheater_Text_SayoSeen, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_SAYO, EcruteakTheater_Text_KimonoGirlBeaten
+	applymovement2 LOCALID_ECRUTEAK_SAYO, EcruteakTheater_Movement_SayoWalkBack
+	waitmovement 0
+EcruteakTheater_EventScript_KuniBattle::
+	playse SE_M_PETAL_DANCE
+	applymovement2 LOCALID_ECRUTEAK_KUNI, EcruteakTheater_Movement_KimonoSpin
+	waitmovement 0
+	applymovement2 LOCALID_ECRUTEAK_KUNI, EcruteakTheater_Movement_KuniWalkToPlayer
+	waitmovement 0
+	msgbox EcruteakTheater_Text_KuniSeen, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_KUNI, EcruteakTheater_Text_KimonoGirlBeaten
+	applymovement2 LOCALID_ECRUTEAK_KUNI, EcruteakTheater_Movement_KuniWalkBack
+	waitmovement 0
+EcruteakTheater_EventScript_BeatGauntlet::
+	applymovement2 LOCALID_ECRUTEAK_ZUKI, Common_Movement_WalkDown1
+	waitmovement 0
+	msgbox EcruteakTheater_Text_ZukiDone, MSGBOX_DEFAULT
+	goto_if_eq VAR_LUGIA_OR_HOOH, 1, EcruteakTheater_EventScript_Lugia
+	goto_if_eq VAR_LUGIA_OR_HOOH, 2, EcruteakTheater_EventScript_Hooh
+
+EcruteakTheater_EventScript_Lugia::
+	giveitem ITEM_TIDAL_BELL
+	closemessage
+	playse SE_M_RAZOR_WIND
+	setvar VAR_0x8004, 1  @ vertical pan
+	setvar VAR_0x8005, 1  @ horizontal pan
+	setvar VAR_0x8006, 20  @ num shakes
+	setvar VAR_0x8007, 6  @ shake delay
+	special ShakeCamera
+	waitstate
+	addobject LOCALID_ECRUTEAK_SISTER
+	applymovement2 LOCALID_ECRUTEAK_SISTER, EcruteakTheater_Movement_Sister
+	waitmovement 0
+	msgbox EcruteakTheater_Text_GirlLugia, MSGBOX_DEFAULT
+	closemessage
+	playse SE_PIN
+	applymovement LOCALID_ECRUTEAK_ZUKI, Common_Movement_ExclamationMark
+	delay 60
+	turnobject LOCALID_ECRUTEAK_ZUKI, DIR_SOUTH
+	msgbox EcruteakTheater_Text_ZukiLugia, MSGBOX_DEFAULT
+	closemessage
+	fadescreenswapbuffers FADE_TO_BLACK
+
+	removeobject LOCALID_ECRUTEAK_ZUKI
+	removeobject LOCALID_ECRUTEAK_MIKI
+	removeobject LOCALID_ECRUTEAK_NAOKO
+	removeobject LOCALID_ECRUTEAK_KUNI
+	removeobject LOCALID_ECRUTEAK_SAYO
+	removeobject LOCALID_ECRUTEAK_MIKI
+
+	removeobject LOCALID_ECRUTEAK_SISTER
+	playse SE_EXIT
+	delay 120
+	fadescreenswapbuffers FADE_FROM_BLACK
+	clearflag FLAG_HIDE_WHIRL_ISLANDS_KIMONO_GIRLS
+	clearflag FLAG_HIDE_WHIRL_ISLANDS_TENTACRUEL
+	setvar VAR_COMPLETED_LUGIA, 2
+	setvar VAR_COMPLETED_HO_OH, 3
+	setflag FLAG_HIDE_WHIRL_ISLANDS_TENTACRUEL
+	setflag FLAG_HIDE_ECRUTEAK_THEATER_ZUKI
+	setflag FLAG_HIDE_ECRUTEAK_THEATER_KIMONOS
+	setvar VAR_ECRUTEAK_THEATER, 7
+	release
+	end
+EcruteakTheater_EventScript_Hooh::
+	giveitem ITEM_CLEAR_BELL
+	closemessage
+	playse SE_M_RAZOR_WIND
+	setvar VAR_0x8004, 1  @ vertical pan
+	setvar VAR_0x8005, 1  @ horizontal pan
+	setvar VAR_0x8006, 20  @ num shakes
+	setvar VAR_0x8007, 6  @ shake delay
+	special ShakeCamera
+	waitstate
+	addobject LOCALID_ECRUTEAK_SISTER
+	applymovement2 LOCALID_ECRUTEAK_SISTER, EcruteakTheater_Movement_Sister
+	waitmovement 0
+	msgbox EcruteakTheater_Text_GirlHooh, MSGBOX_DEFAULT
+	closemessage
+	playse SE_PIN
+	applymovement LOCALID_ECRUTEAK_ZUKI, Common_Movement_ExclamationMark
+	delay 60
+	turnobject LOCALID_ECRUTEAK_ZUKI, DIR_SOUTH
+	msgbox EcruteakTheater_Text_ZukiHooh, MSGBOX_DEFAULT
+	closemessage
+	fadescreenswapbuffers FADE_TO_BLACK
+
+	removeobject LOCALID_ECRUTEAK_ZUKI
+	removeobject LOCALID_ECRUTEAK_MIKI
+	removeobject LOCALID_ECRUTEAK_NAOKO
+	removeobject LOCALID_ECRUTEAK_KUNI
+	removeobject LOCALID_ECRUTEAK_SAYO
+	removeobject LOCALID_ECRUTEAK_MIKI
+
+	removeobject LOCALID_ECRUTEAK_SISTER
+	playse SE_EXIT
+	delay 120
+	fadescreenswapbuffers FADE_FROM_BLACK
+
+	clearflag FLAG_HIDE_TINTOWER_GUARD
+	clearflag FLAG_HIDE_TIN_TOWER_KIMONO_GIRLS
+	setvar VAR_COMPLETED_HO_OH, 2
+	setvar VAR_COMPLETED_LUGIA, 3
+	setflag FLAG_HIDE_ECRUTEAK_THEATER_ZUKI
+	setflag FLAG_HIDE_ECRUTEAK_THEATER_KIMONOS
+	setvar VAR_ECRUTEAK_THEATER, 7
+	release
+	end
+
+EcruteakTheater_Movement_Sister:
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_up
+	walk_fast_right
+	step_end
+
+EcruteakTheater_EventScript_LegendaryDenied::
+	msgbox EcruteakTheater_Text_ZukiNo, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
 
-EcruteakTheater_Text_FancyPanel:
-	.string "It's a fancy panel that's\n"
-	.string "decorated with flowers.$"
+EcruteakTheater_Movement_ZukiWalkUp:
+	lock_facing_direction
+	walk_up
+	unlock_facing_direction
+	step_end
+EcruteakTheater_Movement_NaokoWalkToPlayer:
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	face_down
+	step_end
+EcruteakTheater_Movement_NaokoWalkBack:
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	face_down
+	step_end
+EcruteakTheater_Movement_MikiWalkToPlayer:
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	face_down
+	step_end
+EcruteakTheater_Movement_MikiWalkBack:
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	face_down
+	step_end
+
+EcruteakTheater_Movement_SayoWalkToPlayer:
+	walk_down
+	walk_right
+	walk_right
+	walk_right
+	face_down
+	step_end
+EcruteakTheater_Movement_SayoWalkBack:
+	walk_left
+	walk_left
+	walk_left
+	walk_up
+	face_down
+	step_end
+
+EcruteakTheater_Movement_KuniWalkToPlayer:
+	walk_down
+	walk_left
+	walk_left
+	walk_left
+	face_down
+	step_end
+EcruteakTheater_Movement_KuniWalkBack:
+	walk_right
+	walk_right
+	walk_right
+	walk_up
+	face_down
+	step_end
+
+EcruteakTheater_Text_KimonoGirlBeaten:
+	.string "...$"
+
+EcruteakTheater_Text_ZukiSeen:
+	.string "Welcome. My name is ZUKI.\n"
+	.string "I met you previously in VIOLET\l"
+	.string "CITY.\p"
+	.string "To bring back {STR_VAR_1}, we\n"
+	.string "needed someone with the right bond\l"
+	.string "with POKéMON.\p"
+	.string "We asked Mr. POKéMON to give this\n"
+	.string "Mystery Egg to\l"
+	.string "whoever showed potential.\p"
+	.string "The Egg went from MR. POKéMON\n"
+	.string "to PROF. ELM, then to you.\p"
+	.string "But being pure alone is not enough\n"
+	.string "to face the power of this POKéMON.$"
+
+EcruteakTheater_Text_ZukiSeenAgain:
+	.string "I will test you to see if you are\n"
+	.string "a good Trainer.\p"
+	.string "Are you ready? {PLAYER}$"
+
+EcruteakTheater_Text_ZukiNo:
+	.string "That is fine...\n"
+	.string "I will wait for you to get\l"
+	.string "ready.$"
+
+EcruteakTheater_Text_NaokoSeen:
+	.string "You are quite strong. You helped\n"
+	.string "me in the ILEX FOREST.\p"
+	.string "I'm NAOKO--not so good with\n"
+	.string "directions.\p"
+	.string "I saw you defeat Team Rocket\n"
+	.string "when Kurt was in trouble at\l"
+	.string "the SLOWPOKE Well.\p"
+	.string "Let me challenge you and your\n"
+	.string "POKéMON!$"
+
+EcruteakTheater_Text_MikiSeen:
+	.string "You're quite the Trainer. I\n"
+	.string "remember you chased off that\l"
+	.string "Rocket Grunt from right here.\p"
+	.string "Thank you for that.\p"
+	.string "Though, I'm a Trainer too.\n"
+	.string "She who knows the most speaks\l"
+	.string "the least!\p"
+	.string "I am MIKI--the Kimono Girl!\p"
+	.string "Let me challenge you and your\n"
+	.string "POKéMON!$"
+
+EcruteakTheater_Text_SayoSeen:
+	.string "Excellent spirit! You got me\n"
+	.string "off the ice by pushing me.\p"
+	.string "I skate in sandals.\n"
+	.string "I am SAYO--the Kimono Girl!\p"
+	.string "I listened in the Dragon's Den\n"
+	.string "when you passed the Elder's\l"
+	.string "test.\p"
+	.string "Let me challenge you and your\n"
+	.string "POKéMON!$"
+
+EcruteakTheater_Text_KuniSeen:
+	.string "I'm the last one.\p"
+	.string "You were dependable at the\n"
+	.string "GOLDENROD TUNNEL.\p"
+	.string "I'm the one who twirls even\n"
+	.string "underground--Kuni!\p"
+	.string "I saw you thwart Rocket's\n"
+	.string "plan to take the Radio Tower.\p"
+	.string "Now show me your strength!\n"
+	.string "Let me challenge you and your\l"
+	.string "POKéMON!$"
+
+EcruteakTheater_Text_ZukiDone:
+	.string "We were not wrong about you.\n"
+	.string "You are indeed worthy of this...\p"
+	.string "Please take it.$"
+
+EcruteakTheater_Text_GirlHooh:
+	.string "Big sisters! I just saw the\n"
+	.string "big shadow of a POKéMON over\l"
+	.string "the Bell Tower!\p"
+	.string "It could be...$"
+
+EcruteakTheater_Text_GirlLugia:
+	.string "Big sisters! I just saw the\n"
+	.string "big shadow of a POKéMON in the\l"
+	.string "Whirl Islands' waters!\p"
+	.string "It could be...$"
+
+EcruteakTheater_Text_ZukiHooh:
+	.string "ZUKI: {PLAYER}!\n"
+	.string "We'll be at the Bell Tower.\n"
+	.string "See you there!$"
+
+EcruteakTheater_Text_ZukiLugia:
+	.string "ZUKI: {PLAYER}!\n"
+	.string "We'll be at the Whirl Islands.\l"
+	.string "See you there!$"
+
+EcruteakTheater_Text_KimonoDone:
+	.string "We are rehearsing a dance.$"
+
+EcruteakTheater_Text_ZukiAfterAll:
+	.string "Thank you for your help the\n"
+	.string "other day.\p"
+	.string "You've shown the bond between\n"
+	.string "people can grow with POKéMON...\p"
+	.string "We appreciate how you lived up\n"
+	.string "to our hopes, {PLAYER}!\p"
+	.string "If you learned anything from\n"
+	.string "this, thank Mr. POKéMON and\l"
+	.string "Professor Elm...$"
+
+EcruteakTheater_Text_KimonoGirlsBeforeBattle:
+	.string "Talk to Zuki in the middle\n"
+	.string "when you are ready.$"
 

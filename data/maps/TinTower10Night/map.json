@@ -37,7 +37,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "TinTower10_EventScript_Kimono",
+      "script": "TinTower10_EventScript_Miki",
       "flag": "FLAG_HIDE_TIN_TOWER_KIMONO_GIRLS"
     },
     {
@@ -50,7 +50,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "TinTower10_EventScript_Kimono",
+      "script": "TinTower10_EventScript_Sayo",
       "flag": "FLAG_HIDE_TIN_TOWER_KIMONO_GIRLS"
     },
     {
@@ -63,7 +63,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "TinTower10_EventScript_Kimono",
+      "script": "TinTower10_EventScript_Zuki",
       "flag": "FLAG_HIDE_TIN_TOWER_KIMONO_GIRLS"
     },
     {
@@ -76,7 +76,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "TinTower10_EventScript_Kimono",
+      "script": "TinTower10_EventScript_Naoko",
       "flag": "FLAG_HIDE_TIN_TOWER_KIMONO_GIRLS"
     },
     {
@@ -89,7 +89,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "TinTower10_EventScript_Kimono",
+      "script": "TinTower10_EventScript_Miki",
       "flag": "FLAG_HIDE_TIN_TOWER_KIMONO_GIRLS"
     },
     {
@@ -102,7 +102,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "TinTower10_EventScript_Kimono",
+      "script": "TinTower10_EventScript_Kuni",
       "flag": "FLAG_HIDE_TIN_TOWER_KIMONO_GIRLS"
     },
     {
@@ -115,7 +115,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "TinTower10_EventScript_TalkToHoOh",
+      "script": "TinTower10_EventScript_HoOh",
       "flag": "FLAG_HIDE_HO_OH"
     }
   ],
@@ -134,9 +134,9 @@
       "x": 10,
       "y": 13,
       "elevation": 0,
-      "var": "VAR_ECRUTEAK_CITY_STATE",
-      "var_value": "11",
-      "script": "TinTower10_eventScript_TalkToKimono"
+      "var": "VAR_COMPLETED_HO_OH",
+      "var_value": "2",
+      "script": "TinTower10_EventScript_TalkToKimono"
     }
   ],
   "bg_events": [

@@ -358,13 +358,16 @@ NewBarkTownLab_EventScript_ElmMasterBall::
 	giveitem ITEM_MASTER_BALL
 	msgbox NewBarkTownLab_Text_ElmGiveMasterBall2, MSGBOX_DEFAULT
 	closemessage
-	delay 55
+	delay 20
 	playse SE_PIN
 	applymovement LOCALID_ELM, Common_Movement_ExclamationMark
 	delay 60
 	msgbox NewBarkTownLab_Text_KimonoGirls, MSGBOX_DEFAULT
 	closemessage
 	setvar VAR_NEWBARKTOWN_LABSTATE, 8
+	setvar VAR_ECRUTEAK_THEATER, 4
+	setflag FLAG_HIDE_ECRUTEAK_SILVER
+	setflag FLAG_HIDE_ECRUTEAK_THEATER_NPCS
 	clearflag FLAG_HIDE_ECRUTEAK_THEATER_KIMONOS
 	release
 	end
@@ -794,8 +797,8 @@ NewBarkTownLab_Text_ElmGiveMasterBall2:
 
 NewBarkTownLab_Text_KimonoGirls:
 	.string "By the way...\n"
-	.string "A group of beautiful Kimono\n"
-	.string "Girls were looking for you.\p"
+	.string "A group of beautiful KIMONO\n"
+	.string "GIRLS were looking for you.\p"
 	.string "They told me they\n"
 	.string "are waiting for you at the ECRUTEAK\l"
 	.string "DANCE THEATER.\p"
@@ -805,8 +808,8 @@ NewBarkTownLab_Text_KimonoGirls:
 	.string "I hope you'll carry through it.$"
 
 NewBarkTownLab_Text_KimonoWaiting:
-	.string "Professor Elm: The Kimono\n"
-	.string "Girls are waiting for you at\l"
+	.string "Professor Elm: The KIMONO\n"
+	.string "GIRLS are waiting for you at\l"
 	.string "the Ecruteak Dance Theater.$"
 
 NewBarkTownLab_Text_League:
@@ -814,7 +817,7 @@ NewBarkTownLab_Text_League:
 	.string "Good job!\p"
 	.string "That rare Egg has brought you\n"
 	.string "a lot of trouble, huh?\p"
-	.string "The Kimono Girls said something\n"
+	.string "The KIMONO GIRLS said something\n"
 	.string "about me?\p"
 	.string "I have nothing to do with it.\p"
 	.string "You made your decision and went\n"

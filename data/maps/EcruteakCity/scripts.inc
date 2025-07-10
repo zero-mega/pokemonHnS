@@ -1,7 +1,17 @@
 .set LOCALID_ECRUTEAK_GRAMPS, 4
+.set LOCALID_ECRUTEK_SILVER, 33
 
 EcruteakCity_MapScripts::
 	.byte 0
+
+EcruteakCity_Test_Lugia::
+	setvar VAR_LUGIA_OR_HOOH, 1
+	end
+EcruteakCity_Test_League::
+	setvar VAR_COMPLETED_HO_OH, 4
+	setvar VAR_COMPLETED_LUGIA, 4
+	end
+
 
 EcruteakCity_EventScript_Trigger::
 	@flagheap
@@ -24,20 +34,110 @@ EcruteakCity_EventScript_Trigger::
 	clearflag FLAG_GOT_TYROGUE
 	clearflag FLAG_BEAT_KIYO
 	clearflag FLAG_ENABLE_BAOBA_MATCH_CALL
+	clearflag FLAG_HIDE_ECRUTEAK_THEATER_NPCS
+	clearflag FLAG_HIDE_ECRUTEAK_THEATER_ZUKI
+	clearflag FLAG_HIDE_TINTOWER_GUARD
+	clearflag FLAG_HIDE_WHIRL_ISLANDS_TENTACRUEL
+	clearflag FLAG_HIDE_LUGIA
+	clearflag FLAG_HIDE_HO_OH
 
 	setflag FLAG_VISITED_ECRUTEAK_CITY
 	setflag FLAG_HIDE_ROUTE42_EUSINE
-	setflag FLAG_HIDE_HO_OH
-	setflag FLAG_HIDE_LUGIA
-	setflag FLAG_HIDE_HO_OH
+
 	setflag FLAG_HIDE_TIN_TOWER_KIMONO_GIRLS
 	setflag FLAG_HIDE_WHIRL_ISLANDS_KIMONO_GIRLS
 	setflag FLAG_HIDE_ECRUTEAK_THEATER_KIMONOS
 	setflag FLAG_HIDE_ROUTE39_SHADOW
-
+	setflag FLAG_HIDE_ECRUTEAK_SILVER
+	setvar VAR_COMPLETED_HO_OH, 0
+	setvar VAR_COMPLETED_LUGIA, 0
 	setvar VAR_ECRUTEAK_THEATER, 0 
 	setvar VAR_ECRUTEAK_CITY_STATE, 1
 	end
+
+EcruteakCity_Trigger_Silver::
+	lockall
+	opendoor 39, 40
+	waitdooranim
+	delay 10
+	clearflag FLAG_HIDE_ECRUTEAK_SILVER
+	addobject LOCALID_ECRUTEK_SILVER
+	playbgm MUS_HG_ENCOUNTER_RIVAL, TRUE
+	playse SE_BANG
+	applymovement LOCALID_ECRUTEK_SILVER, EcruteakCity_Movement_Silver1
+	applymovement OBJ_EVENT_ID_PLAYER, EcruteakCity_Movement_Silver1
+	message EcruteakCity_Text_Silver1
+	
+	waitmovement OBJ_EVENT_ID_PLAYER
+	waitmovement LOCALID_ECRUTEK_SILVER
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	closedoor 39, 40
+	waitdooranim
+	msgbox EcruteakCity_Text_Silver2, MSGBOX_DEFAULT
+	closemessage
+	playse SE_PIN
+	applymovement LOCALID_ECRUTEK_SILVER, Common_Movement_ExclamationMark
+	delay 60
+	turnobject LOCALID_ECRUTEK_SILVER, DIR_SOUTH
+	msgbox EcruteakCity_Text_Silver3, MSGBOX_DEFAULT
+	closemessage
+
+	applymovement LOCALID_ECRUTEK_SILVER, EcruteakCity_Movement_Silver2
+	waitmovement LOCALID_ECRUTEK_SILVER
+
+
+	setflag FLAG_HIDE_ECRUTEAK_SILVER
+	removeobject LOCALID_ECRUTEK_SILVER
+	fadedefaultbgm
+
+	setvar VAR_ECRUTEAK_THEATER, 5
+	releaseall
+	end
+
+EcruteakCity_Movement_Silver1:
+	delay_16
+	lock_facing_direction
+	walk_down
+	unlock_facing_direction
+	step_end
+
+EcruteakCity_Movement_Silver2:
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+EcruteakCity_Text_Silver1:
+	.string "THUD!!$"
+
+EcruteakCity_Text_Silver2:
+	.string "SILVER: How...? How is this\n"
+	.string "possible? How can I lose to mere\l"
+	.string "KIMONO GIRLS...?$"
+
+EcruteakCity_Text_Silver3:
+	.string "SILVER: You were watching me,\n"
+	.string "{PLAYER}...\p"
+	.string "Yeah, that's right!\p"
+	.string "I never thought defeating five\n"
+	.string "KIMONO GIRLS would be so hard...\p"
+	.string "I got beaten to a pulp...\p"
+	.string "...\p"
+	.string "You must have come here for the\n"
+	.string "same reason, right?\p"
+	.string "Don't get cocky just because you\n"
+	.string "defeated TEAM ROCKET!\p"
+	.string "These KIMONO GIRLS are insanely\n"
+	.string "strong.\p"
+	.string "See if you can defeat them.\p"
+	.string "But I'm not going back, I don't\n"
+	.string "want to see you win.$"
 
 EcruteakCity_EventScript_Gramps::
 	lock

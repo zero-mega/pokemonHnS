@@ -5036,9 +5036,9 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_MIKI] =
     {
-        .trainerClass = TRAINER_CLASS_TWINS,
+        .trainerClass = TRAINER_CLASS_KIMONO_GIRL,
         .encounterMusic_gender = F_TRAINER_FEMALE,
-        .trainerPic = TRAINER_PIC_TWINS,
+        .trainerPic = TRAINER_PIC_KIMONO_GIRL,
         .trainerName = _("MIKI"),
         .items = {},
         .doubleBattle = FALSE,

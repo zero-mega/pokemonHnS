@@ -445,6 +445,45 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EcruteakCity_EventScript_Youngster",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SILVER",
+      "x": 39,
+      "y": 40,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_ECRUTEAK_SILVER"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LASS",
+      "x": 41,
+      "y": 42,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EcruteakCity_Test_Lugia",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LASS",
+      "x": 42,
+      "y": 42,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EcruteakCity_Test_League",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -555,7 +594,15 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 39,
+      "y": 41,
+      "elevation": 0,
+      "var": "VAR_ECRUTEAK_THEATER",
+      "var_value": "4",
+      "script": "EcruteakCity_Trigger_Silver"
+    }
   ],
   "bg_events": [
     {

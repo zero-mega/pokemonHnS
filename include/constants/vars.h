@@ -102,8 +102,8 @@
 #define VAR_NEWBARKTOWN_LABSTATE                           0x4052 // 0 = talk to elm first time, 1 = choose starter, 2 = chosen starter, 3=received potion 4 = police! 5 = receive balls, 6 = get masterball, 7 = gotokimono, 8 = goto league, 9 = get SS ticket, 10 = done
 #define VAR_CHERRYGROVE_CITY_STATE                         0x4053 //0 = guidegent, 1= goto mrpokemon, 2= phonecall, 3=silver, 4=done
 #define VAR_GARBAGEVAR2                          0x4054 // was probably allocated for VAR_FALLARBOR_TOWN_STATE at one point
-#define VAR_COMPLETED_LUGIA                             0x4055 // Lugia trigger
-#define VAR_COMPLETED_HO_OH                             0x4056 // Ho-oh trigger
+#define VAR_COMPLETED_LUGIA                             0x4055 // 0, 1 = Not Primed.  2 = fight lugia, 3 = done. 4 = non-story lugia encounter active.
+#define VAR_COMPLETED_HO_OH                             0x4056 // 0, 1 = Not Primed. 2 = fight hooh, 3 = done. 4 = non-story hooh encounter active.
 #define VAR_VIOLET_CITY_STATE                         0x4057 //0 on trigger, 1 when done
 #define VAR_AZALEA_TOWN_STATE                        0x4058 //0 on trigger, 1 = talk to kurt, 2 = goto well, 3 = goto kurt well, 4 = goto gym, 5 = fight silver, 6 = find farfetchd, 7 = bringGSBall, 8 = GoOutside, 9 = Celebi, 10 = done
 #define VAR_GOLDENROD_CITY_STATE                          0x4059  //0 on trigger, 1 = get radio, 2 = fight whitney, 3 = whitney crying, 4 = whitney give badge, 5 = complete before rocket. 6 = fight petrel, 7 = meet kimono, 8 = silver, 9 = director-archer, 10 = return NPCS, 11 = done
