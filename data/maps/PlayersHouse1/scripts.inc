@@ -108,6 +108,7 @@ PlayersHouse1_EventScript_MomsIntro::
 	
 
 	setvar VAR_VIOLET_CITY_STATE, 0 @CITY STATES
+	setvar VAR_CHERRYGROVE_CITY_STATE, 0
 	setvar VAR_AZALEA_TOWN_STATE, 0
 	setvar VAR_GOLDENROD_CITY_STATE, 0
 	setvar VAR_ECRUTEAK_CITY_STATE, 0
@@ -125,8 +126,7 @@ PlayersHouse1_EventScript_MomsIntro::
 	setvar VAR_CELADON_CITY_STATE, 0
 	setvar VAR_SAFFRON_CITY_STATE, 0
 	setvar VAR_FUCHSIA_CITY_STATE, 0
-	
-	setvar VAR_CHERRYGROVE_CITY_STATE, 0
+	setvar VAR_ROUTE27_STATE, 0
 	releaseall
 	end
 

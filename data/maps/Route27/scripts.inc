@@ -1,9 +1,109 @@
+.set LOCALID_ROUTE27_FATMAN, 1
+
 Route27_MapScripts::
 	.byte 0
 
 Route27_EventScript_FirstSteps::
     lock
-    
+    playse SE_PIN
+    applymovement2 LOCALID_ROUTE27_FATMAN, Common_Movement_ExclamationMark
+    turnobject LOCALID_ROUTE27_FATMAN, DIR_WEST
+    delay 30
+    getplayerxy VAR_TEMP_0, VAR_TEMP_1
+    call_if_eq VAR_TEMP_1, 24, Route27_EventScript_FirstStepsWalkTop
+    call_if_eq VAR_TEMP_1, 25, Route27_EventScript_FirstStepsWalkBot
+
+    msgbox Route27_Text_FisherHey, MSGBOX_DEFAULT
+    msgbox Route27_Text_FisherMessage, MSGBOX_DEFAULT
+    closemessage
+    turnobject LOCALID_ROUTE27_FATMAN, DIR_SOUTH
+
+    @integrated flagheap
+    clearflag FLAG_GOT_TM_SANDSTORM
+    clearflag FLAG_INDIGOJUNCTION_HIDE_SILVER_GUARD
+    clearflag FLAG_INDIGOJUNCTION_HIDE_KANTO_GUARD
+
+    setvar VAR_ROUTE27_STATE, 1
+    release
+    end
+
+Route27_EventScript_FirstStepsWalkTop::
+    applymovement2 LOCALID_ROUTE27_FATMAN, Route27_Movement_WalkTop
+    waitmovement 0
+    return
+Route27_EventScript_FirstStepsWalkBot::
+    applymovement2 LOCALID_ROUTE27_FATMAN, Route27_Movement_WalkBot
+    waitmovement 0
+    return
+
+Route27_Movement_WalkTop:
+    face_left
+    walk_left
+    step_end
+
+Route27_Movement_WalkBot:
+    walk_down
+    walk_left
+    step_end
+
+Route27_EventScript_Item_Moonstone::
+    finditem ITEM_MOON_STONE
+    end
+
+Route27_EventScript_Item_RareCandy::
+    finditem ITEM_RARE_CANDY
+    end
+
+Route27_EventScript_Item_SolarBeam::
+    finditem ITEM_TM_SOLAR_BEAM
+    end
+
+Route27_EventScript_Item_Revive::
+    finditem ITEM_REVIVE
+    end
+
+Route27_EventScript_Fatman::
+    msgbox Route27_Text_FisherMessage, MSGBOX_NPC
+    end
+
+Route27_EventScript_Blake::
+	trainerbattle_single TRAINER_BLAKE Route27_Text_CooltrainermBlakeSeen, Route27_Text_CooltrainermBlakeBeaten
+	msgbox Route27_Text_CooltrainermBlakeAfter, MSGBOX_AUTOCLOSE
+	end
+
+Route27_EventScript_Brian::
+	trainerbattle_single TRAINER_BRIAN Route27_Text_CooltrainermBrianSeen, Route27_Text_CooltrainermBrianBeaten
+	msgbox Route27_Text_CooltrainermBrianAfter, MSGBOX_AUTOCLOSE
+	end
+
+Route27_EventScript_Reena::
+	trainerbattle_single TRAINER_REENA Route27_Text_CooltrainerfReenaSeen, Route27_Text_CooltrainerfReenaBeaten
+	msgbox Route27_Text_CooltrainerfReenaAfter, MSGBOX_AUTOCLOSE
+	end
+
+Route27_EventScript_Megan::
+	trainerbattle_single TRAINER_MEGAN Route27_Text_CooltrainerfMeganSeen, Route27_Text_CooltrainerfMeganBeaten
+	msgbox Route27_Text_CooltrainerfMeganAfter, MSGBOX_AUTOCLOSE
+	end
+
+Route27_EventScript_Gilbert::
+	trainerbattle_single TRAINER_GILBERT Route27_Text_PsychicGilbertSeen, Route27_Text_PsychicGilbertBeaten
+	msgbox Route27_Text_PsychicGilbertAfter, MSGBOX_AUTOCLOSE
+	end
+
+Route27_EventScript_Jose::
+	trainerbattle_single TRAINER_JOSE Route27_Text_BirdKeeperJoseSeen, Route27_Text_BirdKeeperJoseBeaten
+	msgbox Route27_Text_BirdKeeperJoseAfter, MSGBOX_AUTOCLOSE
+	end
+
+Route27_EventScript_Scott::
+	trainerbattle_single TRAINER_SCOTT Route27_Text_FisherScottSeen, Route27_Text_FisherScottBeaten
+	msgbox Route27_Text_FisherScottAfter, MSGBOX_AUTOCLOSE
+	end
+
+Route27_EventScript_TohjoFallsSign::
+    msgbox TohjoFalls_Text_Sign, MSGBOX_SIGN
+    end
 
 Route27_Text_FisherHey:
     .string "Hey!$"
@@ -91,3 +191,15 @@ Route27_Text_BirdKeeperJoseAfter:
 TohjoFalls_Text_Sign:
     .string "TOHJO FALLS\p"
     .string "THE LINK BETWEEN KANTO AND JOHTO$"
+
+Route27_Text_FisherScottSeen:
+    .string "I'm feeling great today!\p"
+    .string "I feel like I could boot even the\n"
+    .string "LEAGUE CHAMP!$"
+
+Route27_Text_FisherScottBeaten:
+    .string "No! Not in this battle!$"
+
+Route27_Text_FisherScottAfter:
+    .string "Just like in fish-ing, it's all over\n"
+    .string "in POKéMON if you give up.$"

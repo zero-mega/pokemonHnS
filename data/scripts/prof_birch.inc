@@ -12,7 +12,7 @@ ProfBirch_EventScript_UpdateLocation::
 	return
 
 ProfBirch_EventScript_MoveToLab::
-	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_BIRCH
+	clearflag FLAG_GARBAGEFLAGS_LAB_BIRCH
 	clearflag FLAG_GARBAGEFLAG
 	setflag FLAG_GARBAGEFLAG
 	setflag FLAG_GARBAGEFLAG
@@ -20,7 +20,7 @@ ProfBirch_EventScript_MoveToLab::
 
 ProfBirch_EventScript_MoveToRoute101::
 	clearflag FLAG_GARBAGEFLAG
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_BIRCH
+	setflag FLAG_GARBAGEFLAGS_LAB_BIRCH
 	setflag FLAG_GARBAGEFLAG
 	setflag FLAG_GARBAGEFLAG
 	return
@@ -28,7 +28,7 @@ ProfBirch_EventScript_MoveToRoute101::
 ProfBirch_EventScript_MoveToRoute103::
 	clearflag FLAG_GARBAGEFLAG
 	setflag FLAG_GARBAGEFLAG
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_BIRCH
+	setflag FLAG_GARBAGEFLAGS_LAB_BIRCH
 	setflag FLAG_GARBAGEFLAG
 	return
 

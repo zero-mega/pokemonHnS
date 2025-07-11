@@ -763,7 +763,7 @@
 #define FLAG_HIDE_MEW                                               0x2CE
 #define FLAG_HIDE_ROUTE_104_RIVAL                                   0x2CF
 #define FLAG_GARBAGEFLAG5                  0x2D0
-#define FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_BIRCH                  0x2D1
+#define FLAG_GARBAGEFLAGS_LAB_BIRCH                  0x2D1
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_BEDROOM          0x2D2
 #define FLAG_HIDE_ROUTE_103_RIVAL                                   0x2D3
 #define FLAG_HIDE_PETALBURG_WOODS_DEVON_EMPLOYEE                    0x2D4
@@ -837,9 +837,9 @@
 #define FLAG_HIDE_DRAGONS_DEN3_CLAIR                                0x316
 #define FLAG_GOT_DRATINI                                            0x317
 #define FLAG_GOT_BLACK_GLASSES                                 0x318
-#define FLAG_HIDE_ICEPATH3_BOULDER4                                 0x319
-#define FLAG_HIDE_LITTLEROOT_TOWN_RIVAL                             0x31A
-#define FLAG_HIDE_LITTLEROOT_TOWN_BIRCH                             0x31B
+#define FLAG_GOT_TM_SANDSTORM                                 0x319
+#define FLAG_INDIGOJUNCTION_HIDE_KANTO_GUARD                             0x31A
+#define FLAG_INDIGOJUNCTION_HIDE_SILVER_GUARD                             0x31B
 #define FLAG_HIDE_ROUTE_111_GABBY_AND_TY_1                          0x31C
 #define FLAG_HIDE_ROUTE_118_GABBY_AND_TY_1                          0x31D
 #define FLAG_HIDE_ROUTE_120_GABBY_AND_TY_1                          0x31E
@@ -855,8 +855,8 @@
 #define FLAG_GARBAGEFLAG12     0x328
 #define FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WALLYS_UNCLE         0x329
 #define FLAG_HIDE_SS_TIDAL_CORRIDOR_SCOTT                           0x32A
-#define FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_POKEBALL_CYNDAQUIL     0x32B
-#define FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_POKEBALL_TOTODILE      0x32C
+#define FLAG_GARBAGEFLAGS_LAB_POKEBALL_CYNDAQUIL     0x32B
+#define FLAG_GARBAGEFLAGS_LAB_POKEBALL_TOTODILE      0x32C
 #define FLAG_HIDE_ROUTE_116_DROPPED_GLASSES_MAN                     0x32D
 #define FLAG_HIDE_RUSTBORO_CITY_RIVAL                               0x32E
 #define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_SWABLU_DOLL     0x32F
@@ -882,7 +882,7 @@
 #define FLAG_HIDE_SLATEPORT_CITY_GABBY_AND_TY                       0x343
 #define FLAG_HIDE_BATTLE_FRONTIER_RECEPTION_GATE_SCOTT              0x344
 #define FLAG_HIDE_ROUTE_110_BIRCH                                   0x345
-#define FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_POKEBALL_CHIKORITA     0x346
+#define FLAG_GARBAGEFLAGS_LAB_POKEBALL_CHIKORITA     0x346
 #define FLAG_HIDE_SOOTOPOLIS_CITY_MAN_1                             0x347
 #define FLAG_HIDE_SLATEPORT_CITY_CAPTAIN_STERN                      0x348
 #define FLAG_HIDE_SLATEPORT_CITY_HARBOR_CAPTAIN_STERN               0x349
@@ -1032,7 +1032,7 @@
 #define FLAG_HIDE_ECRUTEAK_THEATER_NPCS                               0x3D9
 #define FLAG_HIDE_ECRUTEAK_THEATER_ZUKI                               0x3DA
 #define FLAG_HIDE_TINTOWER_GUARD                               0x3DB
-#define FLAG_HIDE_WHIRLISLANDS_GUARD                               0x3DC
+#define FLAG_HIDE_WHIRLISLANDS_GUARD                               0x3DC //unused
 #define FLAG_HIDE_ROUTE_119_KECLEON_1                               0x3DD
 #define FLAG_HIDE_ROUTE_119_KECLEON_2                               0x3DE
 #define FLAG_HIDE_ROUTE_101_BOY                                     0x3DF
@@ -1150,11 +1150,11 @@
 #define FLAG_ITEM_DARKCAVE2_BLACK_FLUTE                  0x44B
 #define FLAG_ITEM_DARKCAVE2_STAR_PIECE        0x44C
 #define FLAG_ITEM_OLIVINE_TM_SHOCKWAVE    0x44D
-#define FLAG_ITEM_ABANDONED_SHIP_HIDDEN_FLOOR_ROOM_1_TM_RAIN_DANCE  0x44E
-#define FLAG_ITEM_ROUTE_121_CARBOS                                  0x44F
-#define FLAG_ITEM_ROUTE_123_ULTRA_BALL                              0x450
-#define FLAG_ITEM_ROUTE_126_GREEN_SHARD                             0x451
-#define FLAG_ITEM_ROUTE_119_HYPER_POTION_2                          0x452
+#define FLAG_ITEM_ROUTE27_MOONSTONE                                       0x44E
+#define FLAG_ITEM_ROUTE27_SOLARBEAM                                       0x44F
+#define FLAG_ITEM_ROUTE27_RARECANDY                                       0x450
+#define FLAG_ITEM_ROUTE27_REVIVE                             0x451
+#define FLAG_ITEM_TOHJOFALLS_HEART_SCALE                          0x452
 #define FLAG_ITEM_ROUTE_120_HYPER_POTION                            0x453
 #define FLAG_ITEM_ROUTE_120_NEST_BALL                               0x454
 #define FLAG_ITEM_ROUTE_123_ELIXIR                                  0x455

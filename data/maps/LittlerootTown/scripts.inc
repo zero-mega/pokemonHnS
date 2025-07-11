@@ -226,8 +226,8 @@ LittlerootTown_EventScript_BeginDexUpgradeScene::
 	goto_if_ge VAR_TIME_BASED_ENCOUNTER, 3, LittlerootTown_EventScript_BeginDexUpgradeSceneSkip
 	msgbox LittlerootTown_Text_BirchSomethingToShowYouAtLab, MSGBOX_DEFAULT
 	closemessage
-	clearflag FLAG_HIDE_LITTLEROOT_TOWN_RIVAL
-	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCH
+	clearflag FLAG_GARBAGEFLAG
+	clearflag FLAG_GARBAGEFLAG
 	delay 20
 	clearflag FLAG_HIDE_MAP_NAME_POPUP
 	warp MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB, 6, 5
@@ -238,8 +238,8 @@ LittlerootTown_EventScript_BeginDexUpgradeScene::
 LittlerootTown_EventScript_BeginDexUpgradeSceneSkip::
 	msgbox LittlerootTown_Text_BirchSomethingToShowYouAtLab2, MSGBOX_DEFAULT
 	closemessage
-	clearflag FLAG_HIDE_LITTLEROOT_TOWN_RIVAL
-	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCH
+	clearflag FLAG_GARBAGEFLAG
+	clearflag FLAG_GARBAGEFLAG
 	delay 20
 	clearflag FLAG_HIDE_MAP_NAME_POPUP
 	warp MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB, 6, 5
