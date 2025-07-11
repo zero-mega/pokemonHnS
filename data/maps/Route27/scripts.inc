@@ -19,6 +19,9 @@ Route27_EventScript_FirstSteps::
     turnobject LOCALID_ROUTE27_FATMAN, DIR_SOUTH
 
     @integrated flagheap
+    setflag FLAG_HIDE_VICTORY_ROAD_SILVER
+    setflag FLAG_HIDE_INDIGO_PLATEAU_SILVER
+    
     clearflag FLAG_GOT_TM_SANDSTORM
     clearflag FLAG_INDIGOJUNCTION_HIDE_SILVER_GUARD
     clearflag FLAG_INDIGOJUNCTION_HIDE_KANTO_GUARD

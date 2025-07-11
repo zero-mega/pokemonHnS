@@ -24,8 +24,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "VictoryRoad3_EventScript_Item_UltraBall",
+      "flag": "FLAG_ITEM_VICTORYROAD3_ULTRA_BALL"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
@@ -37,8 +37,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "VictoryRoad3_EventScript_Item_MaxEther",
+      "flag": "FLAG_ITEM_VICTORYROAD3_MAX_ETHER"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
@@ -50,8 +50,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "VictoryRoad3_EventScript_Item_RareCandy",
+      "flag": "FLAG_ITEM_VICTORYROAD3_RARE_CANDY"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
@@ -120,19 +120,6 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_GOLEM",
-      "x": 32,
-      "y": 17,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_GOLEM",
       "x": 28,
       "y": 22,
       "elevation": 0,
@@ -184,17 +171,17 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_ONIX",
-      "x": 23,
-      "y": 2,
+      "graphics_id": "OBJ_EVENT_GFX_SILVER",
+      "x": 19,
+      "y": 11,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HIDE_VICTORY_ROAD_SILVER"
     }
   ],
   "warp_events": [
@@ -270,7 +257,33 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 28,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_ROUTE27_STATE",
+      "var_value": "2",
+      "script": "VictoryRoad3_Trigger"
+    },
+    {
+      "type": "trigger",
+      "x": 27,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_ROUTE27_STATE",
+      "var_value": "2",
+      "script": "VictoryRoad3_Trigger"
+    },
+    {
+      "type": "trigger",
+      "x": 29,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_ROUTE27_STATE",
+      "var_value": "2",
+      "script": "VictoryRoad3_Trigger"
+    }
   ],
   "bg_events": [
 

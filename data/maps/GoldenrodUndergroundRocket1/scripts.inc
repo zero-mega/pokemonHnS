@@ -315,7 +315,7 @@ GoldenrodUndergroundRocket1_EventScript_SilverTriggerTop::
 	waitse
 	playse SE_PIN
 	playbgm MUS_HG_ENCOUNTER_RIVAL, TRUE
-	clearflag FLAG_HIDE_GOLDENROD_UNDERGROUND_SILVER
+	@clearflag FLAG_HIDE_GOLDENROD_UNDERGROUND_SILVER
 	addobject LOCALID_GOLDENROD_UNDERGROUND_SILVER
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
 	applymovement LOCALID_GOLDENROD_UNDERGROUND_SILVER, GoldenrodUndergroundRocket1_Movement_SilverEnterTop

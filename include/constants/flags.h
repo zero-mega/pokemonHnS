@@ -1033,8 +1033,8 @@
 #define FLAG_HIDE_ECRUTEAK_THEATER_ZUKI                               0x3DA
 #define FLAG_HIDE_TINTOWER_GUARD                               0x3DB
 #define FLAG_HIDE_WHIRLISLANDS_GUARD                               0x3DC //unused
-#define FLAG_HIDE_ROUTE_119_KECLEON_1                               0x3DD
-#define FLAG_HIDE_ROUTE_119_KECLEON_2                               0x3DE
+#define FLAG_HIDE_VICTORY_ROAD_SILVER                               0x3DD
+#define FLAG_HIDE_INDIGO_PLATEAU_SILVER                               0x3DE
 #define FLAG_HIDE_ROUTE_101_BOY                                     0x3DF
 #define FLAG_HIDE_WEATHER_INSTITUTE_2F_AQUA_GRUNT_M                 0x3E0
 #define FLAG_HIDE_LILYCOVE_POKEMON_CENTER_CONTEST_LADY_MON          0x3E1
@@ -1155,15 +1155,15 @@
 #define FLAG_ITEM_ROUTE27_RARECANDY                                       0x450
 #define FLAG_ITEM_ROUTE27_REVIVE                             0x451
 #define FLAG_ITEM_TOHJOFALLS_HEART_SCALE                          0x452
-#define FLAG_ITEM_ROUTE_120_HYPER_POTION                            0x453
-#define FLAG_ITEM_ROUTE_120_NEST_BALL                               0x454
-#define FLAG_ITEM_ROUTE_123_ELIXIR                                  0x455
-#define FLAG_ITEM_NEW_MAUVILLE_THUNDER_STONE                        0x456
-#define FLAG_ITEM_FIERY_PATH_FIRE_STONE                             0x457
-#define FLAG_ITEM_SHOAL_CAVE_ICE_ROOM_TM_HAIL                       0x458
-#define FLAG_ITEM_SHOAL_CAVE_ICE_ROOM_NEVER_MELT_ICE                0x459
-#define FLAG_ITEM_ROUTE_103_GUARD_SPEC                              0x45A
-#define FLAG_ITEM_ROUTE_104_X_ACCURACY                              0x45B
+#define FLAG_ITEM_VICTORYROAD1_MAX_REVIVE                            0x453
+#define FLAG_ITEM_VICTORYROAD1_FULL_HEAL                               0x454
+#define FLAG_ITEM_VICTORYROAD1_POTION                                  0x455
+#define FLAG_ITEM_VICTORYROAD2_FULL_RESTORE                        0x456
+#define FLAG_ITEM_VICTORYROAD2_HP_UP                             0x457
+#define FLAG_ITEM_VICTORYROAD2_MAX_REVIVE                       0x458
+#define FLAG_ITEM_VICTORYROAD3_RARE_CANDY               0x459
+#define FLAG_ITEM_VICTORYROAD3_MAX_ETHER                              0x45A
+#define FLAG_ITEM_VICTORYROAD3_ULTRA_BALL                              0x45B
 #define FLAG_ITEM_MAUVILLE_CITY_X_SPEED                             0x45C
 #define FLAG_ITEM_PETALBURD_WOODS_PARALYZE_HEAL                     0x45D
 #define FLAG_ITEM_ROUTE_115_GREAT_BALL                              0x45E
@@ -1571,7 +1571,7 @@
 // These flags are cleared once per day
 // The start and end are byte-aligned because the flags are cleared in byte increments
 #define DAILY_FLAGS_START                           (FLAG_UNUSED_0x91F + (8 - FLAG_UNUSED_0x91F % 8))
-#define FLAG_UNUSED_0x920                           (DAILY_FLAGS_START + 0x0)  // Unused Flag
+#define FLAG_DAILY_BEAT_SILVER                           (DAILY_FLAGS_START + 0x0)  // Unused Flag
 #define FLAG_DAILY_CONTEST_LOBBY_RECEIVED_BERRY     (DAILY_FLAGS_START + 0x1)
 #define FLAG_DAILY_SECRET_BASE                      (DAILY_FLAGS_START + 0x2)
 #define FLAG_DAILY_HAIRCUT1_RECEIVED                           (DAILY_FLAGS_START + 0x3)  // Sudo2

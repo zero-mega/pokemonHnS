@@ -146,8 +146,8 @@
 #define VAR_LAKE_OF_RAGE_FISHERMAN                               0x407E // 0 = unmet, 1 = met, 2 = received a magikarp, 3 = received a satisfactory magikarp
 #define VAR_BLACKTHORN_GYM_STATE                               0x407F // Unused Var
 #define VAR_DRAGONS_DEN_QUIZ                               0x4080 // Unused Var
-#define VAR_ROUTE27_STATE                               0x4081 // 0 = enter route 27 via surf, 1 = goto junction, 2 = junction unlocked
-#define VAR_LITTLEROOT_HOUSES_STATE_MAY                  0x4082
+#define VAR_ROUTE27_STATE                               0x4081 // 0 = enter route 27 via surf, 1 = goto junction, 2 = fight silver, 3 = done
+#define VAR_LEAGUE_STATE                                 0x4082
 #define VAR_TIME_BASED_ENCOUNTER                         0x4083 // Different encounter tables
 #define VAR_BIRCH_LAB_STATE                              0x4084
 #define VAR_PETALBURG_GYM_STATE                          0x4085 // 0-1: Wally tutorial, 2-6: 0-4 badges, 7: Defeated Norman, 8: Rematch Norman

@@ -9,7 +9,7 @@ GoldenrodUnderground2_MapScripts::
 GoldenrodUnderground2_OnLoad::
 	goto GoldenrodUnderground2_MapScript_TryOpenDoor
 	end
-
+	
 GoldenrodUnderground2_EventScript_KimonoTriggerBot::
 	lock
 	playbgm MUS_HG_KIMONO_GIRL, TRUE
