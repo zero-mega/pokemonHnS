@@ -11,7 +11,7 @@ GoldenrodRadioTower5_MapScripts::
 	.byte 0
 
 GoldenrodRadioTower5_OnLoad::
-	call_if_eq VAR_GOLDENROD_CITY_STATE, 7, GoldenrodRadioTower5_MapScript_HidePetrel
+	call_if_eq VAR_GOLDENROD_CITY_STATE, 6, GoldenrodRadioTower5_MapScript_HidePetrel
 	end
 
 GoldenrodRadioTower5_MapScript_HidePetrel::

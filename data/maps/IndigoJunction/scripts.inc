@@ -13,7 +13,7 @@ IndigoJunction_Trigger::
     applymovement LOCALID_INDIGOJUNCTION_POLICEMAN, Common_Movement_ExclamationMark
     delay 20
     msgbox VictoryRoadGate_Text_Officer, MSGBOX_DEFAULT
-    goto_if_lt NUM_BADGES, 7, IndigoJunction_EventScript_NotEnough
+    goto_if_unset FLAG_BADGE08_GET, IndigoJunction_EventScript_NotEnough
     msgbox VictoryRoadGate_Text_EightBadges, MSGBOX_DEFAULT
     closemessage
     setvar VAR_ROUTE27_STATE, 2
