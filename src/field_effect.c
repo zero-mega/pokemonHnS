@@ -1083,7 +1083,7 @@ bool8 FldEff_HallOfFameRecord(void)
     task = &gTasks[CreateTask(Task_HallOfFameRecord, 0xff)];
     task->tNumMons = nPokemon;
     task->tFirstBallX = 117;
-    task->tFirstBallY = 58;
+    task->tFirstBallY = 60;
     return FALSE;
 }
 
@@ -1160,7 +1160,9 @@ static void PokeballGlowEffect_PlaceBalls(struct Sprite *sprite)
     {
         sprite->sTimer = 25;
         spriteId = CreateSpriteAtEnd(&sSpriteTemplate_PokeballGlow, sPokeballCoordOffsets[sprite->sCounter].x + sprite->x2, sPokeballCoordOffsets[sprite->sCounter].y + sprite->y2, 0);
-        gSprites[spriteId].oam.priority = 2;
+        
+        gSprites[spriteId].oam.priority = 3;
+
         gSprites[spriteId].sEffectSpriteId = sprite->sSpriteId;
         sprite->sCounter++;
         sprite->sNumMons--;
