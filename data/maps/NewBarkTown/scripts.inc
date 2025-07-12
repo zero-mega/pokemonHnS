@@ -3,7 +3,22 @@
 
 NewBarkTown_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, NewBarkTown_OnTransition
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, NewBarkTown_OnFrame
 	.byte 0
+
+NewBarkTown_OnFrame::
+	map_script_2 VAR_NEWBARK_TOWN_STATE, 6, NewBarkTown_EventScript_ElmCallAfterLeague
+	.2byte 0
+
+NewBarkTown_EventScript_ElmCallAfterLeague::
+	lock
+	pokenavcall BlackthornCity_Text_ElmCall
+	waitmessage
+	delay 30
+	setvar VAR_NEWBARK_TOWN_STATE, 7
+	setvar VAR_NEWBARKTOWN_LABSTATE, 10
+	release
+	end
 
 NewBarkTown_OnTransition::
 	goto_if_eq VAR_NEWBARK_TOWN_STATE, 2, NewBarkTown_Set_TalkToElm

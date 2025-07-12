@@ -21,6 +21,7 @@ Route27_EventScript_FirstSteps::
     @integrated flagheap
     setflag FLAG_HIDE_VICTORY_ROAD_SILVER
     setflag FLAG_HIDE_INDIGO_PLATEAU_SILVER
+    setflag FLAG_HIDE_INDIGO_PLATEAU_MARY_OAK
     
     clearflag FLAG_GOT_TM_SANDSTORM
     clearflag FLAG_INDIGOJUNCTION_HIDE_SILVER_GUARD

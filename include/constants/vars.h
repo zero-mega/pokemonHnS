@@ -97,7 +97,7 @@
 #define VAR_POKELOT_PRIZE_PLACE                          0x404D
 #define VAR_REPEL_LAST_USED                              0x404E
 #define VAR_LOTAD_SIZE_RECORD                            0x404F
-#define VAR_NEWBARK_TOWN_STATE                        0x4050 //START VARS FOR CRYSTAL HERE. 0 = havent set clock, 1 = convo with mom, 2 = talk to elm, 3 = go to mr pokemon, 4 = go to mom again, 5 = done
+#define VAR_NEWBARK_TOWN_STATE                        0x4050 //START VARS FOR CRYSTAL HERE. 0 = havent set clock, 1 = convo with mom, 2 = talk to elm, 3 = go to mr pokemon, 4 = go to mom again, 5 = done. 6 = First time beating league, 7 = done.
 #define VAR_STARTER_SPECIES                            0x4051 //152 = CHIKO, 155 = CYNDA, 158 = TOTOD
 #define VAR_NEWBARKTOWN_LABSTATE                           0x4052 // 0 = talk to elm first time, 1 = choose starter, 2 = chosen starter, 3=received potion 4 = police! 5 = receive balls, 6 = get masterball, 7 = gotokimono, 8 = goto league, 9 = get SS ticket, 10 = done
 #define VAR_CHERRYGROVE_CITY_STATE                         0x4053 //0 = guidegent, 1= goto mrpokemon, 2= phonecall, 3=silver, 4=done

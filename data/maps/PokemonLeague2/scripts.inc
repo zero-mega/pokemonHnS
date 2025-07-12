@@ -40,8 +40,7 @@ PokemonLeague2_EventScript_KogaDefeated::
 	end
 
 PokemonLeague2_Text_RematchBefore:
-    .string "KOGA:\n"
-    .string "Fwahahahaha!\p"
+    .string "KOGA: Fwahahahaha!\p"
     .string "You return, brave challenger.\p"
     .string "My ninja skills have sharpened.\p"
     .string "New sinister traps await you.\p"

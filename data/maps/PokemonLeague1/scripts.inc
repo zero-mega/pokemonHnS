@@ -90,7 +90,7 @@ PokemonLeague1_Text_Defeat:
     .string "I will continue battling until I\n"
     .string "stand above all trainers!\p"
     .string "Now, {PLAYER}, move on and\n"
-    .string "experience the true ferocity of\n"
+    .string "experience the true ferocity of\l"
     .string "the ELITE FOUR.$"
 
 PokemonLeague1_Text_RematchBefore:

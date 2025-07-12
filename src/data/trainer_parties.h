@@ -20744,9 +20744,9 @@ static const struct TrainerMonItemCustomMoves sParty_Lance[] = { //EliteFourGrou
     {
     .iv = 255,
     .lvl = 55,
-    .species = SPECIES_ZAPDOS,
-    .heldItem = ITEM_MAGNET,
-    .moves = {MOVE_DRILL_PECK, MOVE_SKY_ATTACK, MOVE_THUNDERBOLT, MOVE_THUNDER_WAVE}
+    .species = SPECIES_DRAGONITE,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_BOUNCE, MOVE_DRAGON_CLAW, MOVE_WATERFALL, MOVE_DRAGON_DANCE}
     },
     {
     .iv = 255,

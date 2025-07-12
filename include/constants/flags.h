@@ -1035,7 +1035,7 @@
 #define FLAG_HIDE_WHIRLISLANDS_GUARD                               0x3DC //unused
 #define FLAG_HIDE_VICTORY_ROAD_SILVER                               0x3DD
 #define FLAG_HIDE_INDIGO_PLATEAU_SILVER                               0x3DE
-#define FLAG_HIDE_ROUTE_101_BOY                                     0x3DF
+#define FLAG_HIDE_INDIGO_PLATEAU_MARY_OAK                                     0x3DF
 #define FLAG_HIDE_WEATHER_INSTITUTE_2F_AQUA_GRUNT_M                 0x3E0
 #define FLAG_HIDE_LILYCOVE_POKEMON_CENTER_CONTEST_LADY_MON          0x3E1
 #define FLAG_HIDE_MT_CHIMNEY_LAVA_COOKIE_LADY                       0x3E2

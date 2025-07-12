@@ -1,2 +1,132 @@
+.set LOCALID_HALLOFFAME_LANCE, 1
+
 HallOfFame_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, HallOfFame_OnFrame
 	.byte 0
+
+HallOfFame_OnFrame::
+	map_script_2 VAR_LEAGUE_STATE, 6, HallOfFame_EventScript_Cutscene
+	.2byte 0
+
+HallOfFame_EventScript_Cutscene::
+	lock
+	goto_if_set FLAG_IS_CHAMPION, HallOfFame_EventScript_CutsceneKantoChamp
+	applymovement LOCALID_HALLOFFAME_LANCE, HallOfFame_Movement_LanceEnter
+	applymovement OBJ_EVENT_ID_PLAYER, HallOfFame_Movement_PlayerEnter
+	waitmovement OBJ_EVENT_ID_PLAYER
+	waitmovement LOCALID_HALLOFFAME_LANCE
+	msgbox HallOfFame_LanceText, MSGBOX_DEFAULT
+	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	waitmovement 0
+	delay 20
+	dofieldeffect FLDEFF_HALL_OF_FAME_RECORD
+	waitfieldeffect FLDEFF_HALL_OF_FAME_RECORD
+	delay 40
+	setvar VAR_TEMP_1, 1
+	call HallOfFame_EventScript_SetGameClearFlags
+	setrespawn HEAL_LOCATION_NEW_BARK_TOWN
+	fadescreenspeed FADE_TO_BLACK, 24
+	special GameClear
+	waitstate
+	releaseall
+	end
+
+HallOfFame_EventScript_CutsceneKantoChamp::
+	applymovement LOCALID_HALLOFFAME_LANCE, HallOfFame_Movement_LanceEnter
+	applymovement OBJ_EVENT_ID_PLAYER, HallOfFame_Movement_PlayerEnter
+	waitmovement OBJ_EVENT_ID_PLAYER
+	waitmovement LOCALID_HALLOFFAME_LANCE
+	msgbox HallOfFame_Rematch_LanceText, MSGBOX_DEFAULT
+	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	waitmovement 0
+	delay 20
+	dofieldeffect FLDEFF_HALL_OF_FAME_RECORD
+	waitfieldeffect FLDEFF_HALL_OF_FAME_RECORD
+	delay 40
+	setvar VAR_TEMP_1, 1
+	call HallOfFame_EventScript_SetGameClearFlags
+	setrespawn HEAL_LOCATION_NEW_BARK_TOWN
+	fadescreenspeed FADE_TO_BLACK, 24
+	special GameClear
+	waitstate
+	releaseall
+	end
+
+HallOfFame_EventScript_SetGameClearFlags::
+	setflag FLAG_IS_CHAMPION
+	setvar VAR_SHUCKIE, 2
+	setvar VAR_COMPLETED_LUGIA, 4
+	setvar VAR_COMPLETED_HO_OH, 4
+	setvar VAR_LEAGUE_STATE, 1
+	setvar VAR_NEWBARK_TOWN_STATE, 6
+	return
+
+HallOfFame_Movement_LanceEnter:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_right
+	face_left
+	step_end
+
+HallOfFame_Movement_PlayerEnter:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	face_right
+	step_end
+
+HallOfFame_LanceText:
+    .string "LANCE: It's been a long time since I\n"
+    .string "last came here.\p"
+    .string "This is where we honor the LEAGUE\n"
+    .string "CHAMPIONS for all eternity.\p"
+    .string "Their courageous POKéMON are also\n"
+    .string "inducted.\p"
+    .string "Here today, we witnessed the rise\n"
+    .string "of a new LEAGUE CHAMPION--a\p"
+    .string "trainer who feels compassion for,\n"
+    .string "and trust toward, all POKéMON.\p"
+    .string "A trainer who succeeded through\n"
+    .string "perseverance and determination.\p"
+    .string "The new LEAGUE CHAMPION who has\n"
+    .string "all the makings of greatness!\p"
+    .string "{PLAYER}, allow me to register you\n"
+    .string "and your partners as CHAMPIONS!$"
+
+HallOfFame_Rematch_LanceText:
+    .string "LANCE: I remember, it wasn't long ago\n"
+    .string "I stood here, welcoming you as\p"
+    .string "the CHAMPION of JOHTO.\p"
+    .string "And now, here we are again, in this\n"
+    .string "sacred place where we honor the very\p"
+    .string "best trainers and their POKéMON.\p"
+    .string "Today, you've proven yourself not\n"
+    .string "just in JOHTO, but in KANTO as well,\p"
+    .string "besting even my strongest team.\p"
+    .string "You've shown remarkable compassion\n"
+    .string "and trust in your POKéMON,\p"
+    .string "a bond that has carried you to\n"
+    .string "victory time and again.\p"
+    .string "Your journey, marked by\n"
+    .string "perseverance and unwavering\l"
+    .string "determination,\p"
+    .string "speaks to your true spirit as a\n"
+    .string "trainer.\p"
+    .string "You have all the makings of a true\n"
+    .string "great, perhaps even the greatest.\p"
+    .string "{PLAYER}, it is my honor to register\n"
+    .string "you, and your trusted partners,\n"
+    .string "as champions once again.$"
+
