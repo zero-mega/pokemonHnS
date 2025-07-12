@@ -226,7 +226,7 @@ int ProcessPlayerFieldInput(struct FieldInput *input)
             gPlayerAvatar.flags -= PLAYER_AVATAR_FLAG_MACH_BIKE;
             gPlayerAvatar.flags += PLAYER_AVATAR_FLAG_ACRO_BIKE;
             SetPlayerAvatarTransitionFlags(PLAYER_AVATAR_FLAG_ACRO_BIKE);
-            PlaySE(SE_BIKE_HOP);
+            PlaySE(SE_BIKE_BELL);
         }
         else
         {

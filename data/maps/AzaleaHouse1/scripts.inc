@@ -34,7 +34,7 @@ AzaleaHouse1_EventScript_Boss4::
 AzaleaHouse1_EventScript_Apprentice::
 	lock
 	faceplayer
-	goto_if_eq VAR_AZALEA_TOWN_STATE, 7, AzaleaHouse1_EventScript_Apprentice3
+	goto_if_ge VAR_AZALEA_TOWN_STATE, 7, AzaleaHouse1_EventScript_Apprentice3
 	goto_if_set FLAG_HIDE_AZALEA_TOWN_ROCKETS, AzaleaHouse1_EventScript_Apprentice2
 	msgbox CharcoalKiln_Text_Apprentice1, MSGBOX_DEFAULT
 	closemessage

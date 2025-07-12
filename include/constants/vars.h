@@ -101,7 +101,7 @@
 #define VAR_STARTER_SPECIES                            0x4051 //152 = CHIKO, 155 = CYNDA, 158 = TOTOD
 #define VAR_NEWBARKTOWN_LABSTATE                           0x4052 // 0 = talk to elm first time, 1 = choose starter, 2 = chosen starter, 3=received potion 4 = police! 5 = receive balls, 6 = get masterball, 7 = gotokimono, 8 = goto league, 9 = get SS ticket, 10 = done
 #define VAR_CHERRYGROVE_CITY_STATE                         0x4053 //0 = guidegent, 1= goto mrpokemon, 2= phonecall, 3=silver, 4=done
-#define VAR_GARBAGEVAR2                          0x4054 // was probably allocated for VAR_FALLARBOR_TOWN_STATE at one point
+#define VAR_GARBAGEVAR2                          0x4054 // 0 = talk to npc, 1 = show larvitar, 3 = got lucky egg
 #define VAR_COMPLETED_LUGIA                             0x4055 // 0, 1 = Not Primed.  2 = fight lugia, 3 = done. 4 = non-story lugia encounter active.
 #define VAR_COMPLETED_HO_OH                             0x4056 // 0, 1 = Not Primed. 2 = fight hooh, 3 = done. 4 = non-story hooh encounter active.
 #define VAR_VIOLET_CITY_STATE                         0x4057 //0 on trigger, 1 when done

@@ -155,6 +155,7 @@ bool8 CheckTogepi(void)
     return FALSE;
 }
 
+
 // THEORY: this was caused by block commenting out all of the older R/S braille functions but leaving the call to it itself, which creates the nullsub.
 void ShouldDoBrailleRegirockEffectOld(void)
 {

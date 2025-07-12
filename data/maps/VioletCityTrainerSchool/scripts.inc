@@ -9,6 +9,14 @@ VioletCityTrainerSchool_EventScript_Earl::
 	release
 	end
 
+VioletCityTrainerSchool_EventScript_Teacher::
+	lock
+	faceplayer
+	msgbox VioletCityTrainerSchool_Text_Teacher, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
 VioletCityTrainerSchool_EventScript_Boy1::
 	lock
 	faceplayer
@@ -54,6 +62,18 @@ VioletCityTrainerSchool_Text_EarlIntro:
 	.string "Teach you I will to be a better\n"
 	.string "trainer!$"
 
+VioletCityTrainerSchool_Text_Teacher:
+	.string "Certain POKéMON start of weak and\n"
+	.string "require much more EXP to become\l"
+	.string "strong than others do.\p"
+	.string "For example, LARVITAR is quite weak\n"
+	.string "but will eventually become a\l"
+	.string "mighty TYRANITAR, at the cost of\l"
+	.string "much EXP.\p"
+	.string "Only the most dedicated trainers\n"
+	.string "should attempt to train such a\l"
+	.string "POKéMON.$"
+
 VioletCityTrainerSchool_Text_TeachHowToWin:
 	.string "Good! Teach you, I will!\p"
 	.string "In battle, POKéMON top on list\n"
@@ -92,7 +112,7 @@ VioletCityTrainerSchool_Text_Youngster1:
 	.string "Some items, like the METAL\n"
 	.string "COAT, have also been found to\p"
 	.string "evolve certain POKéMON\n"
-	.string "similarly to evolution stones.$"
+	.string "while holding and leveling up.$"
 
 VioletCityTrainerSchool_Text_GameboyKid1:
 	.string "Notable POKéMON available in an\n"
@@ -117,11 +137,9 @@ VioletCityTrainerSchool_Text_Youngster2:
 
 VioletCityTrainerSchool_Text_Blackboard:
 	.string "The blackboard describes\n"
-	.string "POKéMON status changes in\p"
-	.string "battle.$"
-
-VioletCityTrainerSchool_Text_BlackboardPrompt:
-	.string "Read which topic?$"
+	.string "POKéMON HM moves.\p"
+	.string "HMs, once unlocked, don't need to\n"
+	.string "be taught to be used.$"
 
 VioletCityTrainerSchool_Text_Notebook:
 	.string "It's this kid's notebook…\p"

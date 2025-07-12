@@ -35,7 +35,7 @@ ChampionRoom_Trigger::
 	end
 
 PokemonLeague1_EventScript_Lance::
-	lock 
+	lockall
 	call_if_eq VAR_FACING, DIR_EAST, PokemonLeague5_EventScript_AdjustPlayerFacingEast
 	call_if_eq VAR_FACING, DIR_SOUTH, PokemonLeague5_EventScript_AdjustPlayerFacingSouth
 	call_if_eq VAR_FACING, DIR_WEST, PokemonLeague5_EventScript_AdjustPlayerFacingWest
@@ -113,7 +113,7 @@ PokemonLeague1_EventScript_LanceOnDefeatJohto::
 	closemessage
 	setvar VAR_LEAGUE_STATE, 6
 	warpsilent MAP_HALL_OF_FAME, 0
-	release
+	releaseall
 	end
 
 PokemonLeague1_EventScript_LanceOnDefeatKanto::
@@ -179,7 +179,7 @@ PokemonLeague1_EventScript_LanceOnDefeatKanto::
 	closemessage
 	setvar VAR_LEAGUE_STATE, 6
 	warpsilent MAP_HALL_OF_FAME, 0
-	release
+	releaseall
 	end
 
 PokemonLeague5_EventScript_AdjustPlayerFacingEast::
