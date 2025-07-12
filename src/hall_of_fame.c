@@ -671,7 +671,7 @@ static void Task_Hof_DoConfetti(u8 taskId)
             if (gTasks[taskId].tMonSpriteId(i) != SPRITE_NONE)
                 gSprites[gTasks[taskId].tMonSpriteId(i)].oam.priority = 1;
         }
-        BeginNormalPaletteFade(sHofFadePalettes, 0, 12, 12, RGB(14, 3, 2));
+        BeginNormalPaletteFade(sHofFadePalettes, 0, 12, 12, RGB(21, 15, 5)); //red:RGB(14, 3, 2) //halloffame background color fade hue tint shade
         FillWindowPixelBuffer(0, PIXEL_FILL(0));
         CopyWindowToVram(0, COPYWIN_FULL);
         gTasks[taskId].tFrameCount = 7;
