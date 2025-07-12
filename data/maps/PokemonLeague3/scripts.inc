@@ -1,6 +1,12 @@
 PokemonLeague3_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, EliteFourRoom_OnFrame
+	map_script MAP_SCRIPT_ON_RESUME, PokemonLeague3_OnResume
 	.byte 0
+
+PokemonLeague3_OnResume::
+	setvar VAR_0x8004, 2
+	special DoPokemonLeagueLightingEffect
+	end
 
 PokemonLeague3_EventScript_Bruno::
 	lock 
@@ -8,15 +14,20 @@ PokemonLeague3_EventScript_Bruno::
 	goto_if_ge VAR_LEAGUE_STATE, 4, PokemonLeague3_EventScript_BrunoDefeated
 	goto_if_set FLAG_IS_CHAMPION, PokemonLeague3_EventScript_BrunoRematch
 	msgbox PokemonLeague3_Text_Before, MSGBOX_DEFAULT
+	setflag FLAG_TEMP_3
+	setflag FLAG_TEMP_5
 	trainerbattle_no_intro TRAINER_BRUNO_1, PokemonLeague3_Text_Beaten
 	goto PokemonLeague3_EventScript_BrunoOnDefeat
 
 PokemonLeague3_EventScript_BrunoRematch::
 	msgbox PokemonLeague3_Text_RematchBefore, MSGBOX_DEFAULT
+	setflag FLAG_TEMP_3
+	setflag FLAG_TEMP_5
 	trainerbattle_no_intro TRAINER_BRUNO_2, PokemonLeague3_Text_Beaten
 	goto PokemonLeague3_EventScript_BrunoOnDefeat
 
 PokemonLeague3_EventScript_BrunoOnDefeat::
+	clearflag FLAG_TEMP_5	
 	msgbox PokemonLeague3_Text_Defeat, MSGBOX_DEFAULT
 	closemessage
 	setmetatile 6, 1, 0x28E, FALSE

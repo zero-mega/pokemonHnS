@@ -1,6 +1,12 @@
 PokemonLeague1_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, EliteFourRoom_OnFrame
+	map_script MAP_SCRIPT_ON_RESUME, PokemonLeague1_OnResume
 	.byte 0
+
+PokemonLeague1_OnResume::
+	setvar VAR_0x8004, 0
+	special DoPokemonLeagueLightingEffect
+	end
 
 EliteFourRoom_OnFrame::
 	map_script_2 VAR_TEMP_0, 0, EliteFourRoom_CloseDoor
@@ -8,6 +14,7 @@ EliteFourRoom_OnFrame::
 
 EliteFourRoom_CloseDoor::
 	lock
+	setflag FLAG_TEMP_2
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp1
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp1
@@ -36,15 +43,20 @@ PokemonLeague1_EventScript_Will::
 	goto_if_ge VAR_LEAGUE_STATE, 2, PokemonLeague1_EventScript_WillDefeated
 	goto_if_set FLAG_IS_CHAMPION, PokemonLeague1_EventScript_WillRematch
 	msgbox PokemonLeague1_Text_Before, MSGBOX_DEFAULT
+	setflag FLAG_TEMP_3
+	setflag FLAG_TEMP_5
 	trainerbattle_no_intro TRAINER_WILL_1, PokemonLeague1_Text_Beaten
 	goto PokemonLeague1_EventScript_WillOnDefeat
 
 PokemonLeague1_EventScript_WillRematch::
 	msgbox PokemonLeague1_Text_RematchBefore, MSGBOX_DEFAULT
+	setflag FLAG_TEMP_3
+	setflag FLAG_TEMP_5
 	trainerbattle_no_intro TRAINER_WILL_2, PokemonLeague1_Text_Beaten
 	goto PokemonLeague1_EventScript_WillOnDefeat
 
 PokemonLeague1_EventScript_WillOnDefeat::
+	clearflag FLAG_TEMP_5
 	msgbox PokemonLeague1_Text_Defeat, MSGBOX_DEFAULT
 	closemessage
 	setmetatile 6, 1, 0x28E, FALSE

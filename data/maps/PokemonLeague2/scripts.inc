@@ -1,6 +1,12 @@
 PokemonLeague2_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, EliteFourRoom_OnFrame
+	map_script MAP_SCRIPT_ON_RESUME, PokemonLeague2_OnResume
 	.byte 0
+
+PokemonLeague2_OnResume::
+	setvar VAR_0x8004, 1
+	special DoPokemonLeagueLightingEffect
+	end
 
 PokemonLeague2_EventScript_Koga::
 	lock 
@@ -8,15 +14,20 @@ PokemonLeague2_EventScript_Koga::
 	goto_if_ge VAR_LEAGUE_STATE, 3, PokemonLeague2_EventScript_KogaDefeated
 	goto_if_set FLAG_IS_CHAMPION, PokemonLeague2_EventScript_KogaRematch
 	msgbox PokemonLeague2_Text_Before, MSGBOX_DEFAULT
+	setflag FLAG_TEMP_3
+	setflag FLAG_TEMP_5
 	trainerbattle_no_intro TRAINER_KOGA_1, PokemonLeague2_Text_Beaten
 	goto PokemonLeague2_EventScript_KogaOnDefeat
 
 PokemonLeague2_EventScript_KogaRematch::
 	msgbox PokemonLeague2_Text_RematchBefore, MSGBOX_DEFAULT
+	setflag FLAG_TEMP_3
+	setflag FLAG_TEMP_5
 	trainerbattle_no_intro TRAINER_KOGA_2, PokemonLeague2_Text_Beaten
 	goto PokemonLeague2_EventScript_KogaOnDefeat
 
 PokemonLeague2_EventScript_KogaOnDefeat::
+	clearflag FLAG_TEMP_5
 	msgbox PokemonLeague2_Text_Defeat, MSGBOX_DEFAULT
 	closemessage
 	setmetatile 6, 1, 0x28E, FALSE

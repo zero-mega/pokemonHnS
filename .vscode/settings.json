@@ -43,7 +43,9 @@
         "battle_message.h": "c",
         "mail.h": "c",
         "sound.h": "c",
-        "tx_randomizer_and_challenges.h": "c"
+        "tx_randomizer_and_challenges.h": "c",
+        "metatile_behaviors.h": "c",
+        "item_menu.h": "c"
     },
     "git.ignoreLimitWarning": true
 }

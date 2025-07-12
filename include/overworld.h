@@ -66,6 +66,7 @@ extern u8 gLocalLinkPlayerId;
 extern u8 gFieldLinkPlayerCount;
 extern u8 gTimeOfDay;
 extern u16 gTimeUpdateCounter;
+extern u8 gGlobalFieldTintMode;
 
 extern struct TimeBlendSettings currentTimeBlend;
 

@@ -966,3 +966,4 @@ void LoadMapTilesetPalettes(struct MapLayout const *mapLayout)
         LoadSecondaryTilesetPalette(mapLayout, FALSE);
     }
 }
+

@@ -4,7 +4,13 @@
 
 PokemonLeague5_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, ChampionRoom_OnFrame
+	map_script MAP_SCRIPT_ON_RESUME, PokemonLeague5_OnResume
 	.byte 0
+
+PokemonLeague5_OnResume::
+	setvar VAR_0x8004, 4
+	special DoPokemonLeagueLightingEffect
+	end
 
 ChampionRoom_OnFrame::
 	map_script_2 VAR_TEMP_0, 0, ChampionRoom_CloseDoor
@@ -12,6 +18,8 @@ ChampionRoom_OnFrame::
 
 ChampionRoom_CloseDoor::
 	lock
+	setflag FLAG_TEMP_2
+	special DrawWholeMapView
 	applymovement OBJ_EVENT_ID_PLAYER, ChamionRoom_Movement_Enter
 	waitmovement 0
 	setvar VAR_TEMP_0, 1
@@ -42,15 +50,20 @@ PokemonLeague1_EventScript_Lance::
 	faceplayer
 	goto_if_set FLAG_IS_CHAMPION, PokemonLeague1_EventScript_LanceRematch
 	msgbox PokemonLeague5_Text_BattleIntro, MSGBOX_DEFAULT
+	setflag FLAG_TEMP_3
+	setflag FLAG_TEMP_5
 	trainerbattle_no_intro TRAINER_LANCE_1, PokemonLeague5_Text_BattleWin
 	goto PokemonLeague1_EventScript_LanceOnDefeatJohto
 
 PokemonLeague1_EventScript_LanceRematch::
 	msgbox PokemonLeague5_Text_RematchBattleIntro, MSGBOX_DEFAULT
+	setflag FLAG_TEMP_3
+	setflag FLAG_TEMP_5
 	trainerbattle_no_intro TRAINER_LANCE_2, PokemonLeague5_Text_BattleWin
 	goto PokemonLeague1_EventScript_LanceOnDefeatKanto
 
 PokemonLeague1_EventScript_LanceOnDefeatJohto::
+	clearflag FLAG_TEMP_5
 	msgbox PokemonLeague5_Text_BattleAfter, MSGBOX_DEFAULT
 	closemessage
 	setmetatile 6, 1, 0x3F2, FALSE
@@ -117,6 +130,7 @@ PokemonLeague1_EventScript_LanceOnDefeatJohto::
 	end
 
 PokemonLeague1_EventScript_LanceOnDefeatKanto::
+	clearflag FLAG_TEMP_5
 	msgbox PokemonLeague5_Text_BattleAfter, MSGBOX_DEFAULT
 	closemessage
 	setmetatile 6, 1, 0x3F2, FALSE

@@ -1,6 +1,12 @@
 PokemonLeague4_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, EliteFourRoom_OnFrame
+	map_script MAP_SCRIPT_ON_RESUME, PokemonLeague4_OnResume
 	.byte 0
+
+PokemonLeague4_OnResume::
+	setvar VAR_0x8004, 3
+	special DoPokemonLeagueLightingEffect
+	end
 
 PokemonLeague4_EventScript_Karen::
 	lock 
@@ -8,15 +14,20 @@ PokemonLeague4_EventScript_Karen::
 	goto_if_ge VAR_LEAGUE_STATE, 5, PokemonLeague4_EventScript_KarenDefeated
 	goto_if_set FLAG_IS_CHAMPION, PokemonLeague4_EventScript_KarenRematch
 	msgbox PokemonLeague4_Text_Before, MSGBOX_DEFAULT
+	setflag FLAG_TEMP_3
+	setflag FLAG_TEMP_5
 	trainerbattle_no_intro TRAINER_KAREN_1, PokemonLeague4_Text_Beaten
 	goto PokemonLeague4_EventScript_KarenOnDefeat
 
 PokemonLeague4_EventScript_KarenRematch::
 	msgbox PokemonLeague4_Text_RematchBefore, MSGBOX_DEFAULT
+	setflag FLAG_TEMP_3
+	setflag FLAG_TEMP_5
 	trainerbattle_no_intro TRAINER_KAREN_2, PokemonLeague4_Text_Beaten
 	goto PokemonLeague4_EventScript_KarenOnDefeat
 
 PokemonLeague4_EventScript_KarenOnDefeat::
+    clearflag FLAG_TEMP_5
 	msgbox PokemonLeague4_Text_Defeat, MSGBOX_DEFAULT
 	closemessage
 	setmetatile 6, 1, 0x28E, FALSE

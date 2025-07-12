@@ -3942,6 +3942,7 @@ static void Task_MoveDeoxysRock(u8 taskId)
     }
 }
 
+
 #undef tState
 #undef tSpriteId
 #undef tTargetX
