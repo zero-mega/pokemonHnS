@@ -118,11 +118,11 @@ const u32 gBattleTerrainPalette_StadiumGlacia[] = INCBIN_U32("graphics/battle_te
 const u32 gBattleTerrainPalette_StadiumDrake[] = INCBIN_U32("graphics/battle_terrain/stadium/palette6.gbapal.lz");
 const u32 gBattleTerrainPalette_StadiumWallace[] = INCBIN_U32("graphics/battle_terrain/stadium/palette7.gbapal.lz");
 
-const u32 gBattleTerrainPalette_StadiumSidney_2[] = INCBIN_U32("graphics/battle_terrain/stadium_2/palette3.gbapal.lz");
-const u32 gBattleTerrainPalette_StadiumPhoebe_2[] = INCBIN_U32("graphics/battle_terrain/stadium_2/palette4.gbapal.lz");
-const u32 gBattleTerrainPalette_StadiumGlacia_2[] = INCBIN_U32("graphics/battle_terrain/stadium_2/palette5.gbapal.lz");
-const u32 gBattleTerrainPalette_StadiumDrake_2[] = INCBIN_U32("graphics/battle_terrain/stadium_2/palette6.gbapal.lz");
-const u32 gBattleTerrainPalette_StadiumWallace_2[] = INCBIN_U32("graphics/battle_terrain/stadium_2/palette7.gbapal.lz");
+const u32 gBattleTerrainPalette_StadiumWill_2[] = INCBIN_U32("graphics/battle_terrain/stadium_2/palette3.gbapal.lz");
+const u32 gBattleTerrainPalette_StadiumKoga_2[] = INCBIN_U32("graphics/battle_terrain/stadium_2/palette4.gbapal.lz");
+const u32 gBattleTerrainPalette_StadiumBruno_2[] = INCBIN_U32("graphics/battle_terrain/stadium_2/palette5.gbapal.lz");
+const u32 gBattleTerrainPalette_StadiumKaren_2[] = INCBIN_U32("graphics/battle_terrain/stadium_2/palette6.gbapal.lz");
+const u32 gBattleTerrainPalette_StadiumLance_2[] = INCBIN_U32("graphics/battle_terrain/stadium_2/palette7.gbapal.lz");
 
 const u32 gBattleTerrainPalette_Rayquaza[] = INCBIN_U32("graphics/battle_terrain/sky/palette.gbapal.lz");
 const u32 gBattleTerrainPalette_Rayquaza_Night[] = INCBIN_U32("graphics/battle_terrain/sky/palette_night.gbapal.lz");

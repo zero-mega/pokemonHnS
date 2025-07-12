@@ -42,7 +42,7 @@ PokemonLeague1_EventScript_Lance::
 	faceplayer
 	goto_if_set FLAG_IS_CHAMPION, PokemonLeague1_EventScript_LanceRematch
 	msgbox PokemonLeague5_Text_BattleIntro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_JOEY, PokemonLeague5_Text_BattleWin
+	trainerbattle_no_intro TRAINER_LANCE_1, PokemonLeague5_Text_BattleWin
 	goto PokemonLeague1_EventScript_LanceOnDefeatJohto
 
 PokemonLeague1_EventScript_LanceRematch::
