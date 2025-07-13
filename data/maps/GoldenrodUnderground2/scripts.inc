@@ -2,8 +2,6 @@
 
 GoldenrodUnderground2_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, GoldenrodUnderground2_OnLoad
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, GoldenrodRadioTower5_OnFrame
-	map_script MAP_SCRIPT_ON_RETURN_TO_FIELD, GoldenrodRadioTower5_OnResume
 	.byte 0
 
 GoldenrodUnderground2_OnLoad::

@@ -6,8 +6,6 @@
 
 GoldenrodRadioTower5_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, GoldenrodRadioTower5_OnLoad
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, GoldenrodRadioTower5_OnFrame
-	map_script MAP_SCRIPT_ON_RETURN_TO_FIELD, GoldenrodRadioTower5_OnResume
 	.byte 0
 
 GoldenrodRadioTower5_OnLoad::
@@ -19,26 +17,6 @@ GoldenrodRadioTower5_MapScript_HidePetrel::
 	setflag FLAG_HIDE_GOLDENROD_RADIOTOWER_PETREL
 	return
 
-GoldenrodRadioTower5_OnFrame::
-	map_script_2 VAR_TEMP_0, 0, GoldenrodRadioTower_EventScript_TryMusic
-	.2byte 0
-
-GoldenrodRadioTower_EventScript_TryMusic::
-	goto_if_eq VAR_GOLDENROD_CITY_STATE, 6, GoldenrodRadioTower_EventScript_Music
-	goto_if_eq VAR_GOLDENROD_CITY_STATE, 7, GoldenrodRadioTower_EventScript_Music
-	goto_if_eq VAR_GOLDENROD_CITY_STATE, 8, GoldenrodRadioTower_EventScript_Music
-	goto_if_eq VAR_GOLDENROD_CITY_STATE, 9, GoldenrodRadioTower_EventScript_Music
-	setvar VAR_TEMP_0, 1
-	end
-
-GoldenrodRadioTower5_OnResume:
-	goto GoldenrodRadioTower_EventScript_TryMusic
-	end
-
-GoldenrodRadioTower_EventScript_Music::
-	playbgm MUS_HG_ROCKET_TAKEOVER, TRUE
-	setvar VAR_TEMP_0, 1
-	end
 
 @=======[OFFICE]==============================================================================================================================
 
@@ -59,7 +37,6 @@ GoldenrodRadioTower5_EventScript_Petrel::
 	waitmovement 0
 	msgbox GoldenrodRadioTower5_Text_FakeDirector2, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_PETREL_2, GoldenrodRadioTower5_Text_FakeDirectorWin
-	playbgm MUS_HG_ROCKET_TAKEOVER, TRUE
 	msgbox GoldenrodRadioTower5_Text_FakeDirectorAfter, MSGBOX_DEFAULT
 	giveitem ITEM_BASEMENT_KEY
 	setvar VAR_GOLDENROD_CITY_STATE, 7
@@ -180,7 +157,6 @@ GoldenrodRadioTower5_EventScript_Archer::
 	faceplayer
 	msgbox GoldenrodRadioTower5_Text_RocketBossSeen, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_ARCHER, GoldenrodRadioTower5_Text_RocketBossBeaten
-	playbgm MUS_HG_ROCKET_TAKEOVER, TRUE
 	msgbox GoldenrodRadioTower5_Text_RocketBossAfter, MSGBOX_DEFAULT
 	delay 55
 	closemessage

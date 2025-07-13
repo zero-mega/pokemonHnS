@@ -1170,9 +1170,30 @@ void Overworld_ResetMapMusic(void)
     ResetMapMusic();
 }
 
+#define IS_MAP(mapGroupId, mapNumId) \
+    (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(mapGroupId) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(mapNumId))
+
 void Overworld_PlaySpecialMapMusic(void)
 {
     u16 music = GetCurrLocationDefaultMusic();
+
+    // Inject Rocket Takeover override logic
+    if (VarGet(VAR_MAHOGANY_TOWN_STATE) == 16)
+    {
+        if (
+            IS_MAP(GOLDENROD_CITY, GOLDENROD_CITY) ||
+            IS_MAP(GOLDENROD_RADIO_TOWER, GOLDENROD_RADIO_TOWER) ||
+            IS_MAP(GOLDENROD_RADIO_TOWER1, GOLDENROD_RADIO_TOWER1) ||
+            IS_MAP(GOLDENROD_RADIO_TOWER2, GOLDENROD_RADIO_TOWER2) ||
+            IS_MAP(GOLDENROD_RADIO_TOWER3, GOLDENROD_RADIO_TOWER3) ||
+            IS_MAP(GOLDENROD_RADIO_TOWER5, GOLDENROD_RADIO_TOWER5) ||
+            IS_MAP(GOLDEN_ROD_UNDERGROUND1, GOLDEN_ROD_UNDERGROUND1) ||
+            IS_MAP(GOLDENROD_UNDERGROUND2, GOLDENROD_UNDERGROUND2)
+        )
+            if (music != GetCurrentMapMusic())
+                music = MUS_HG_ROCKET_TAKEOVER;
+    }
+
     /* REMOVED SURF MUSIC
     if (music != MUS_ABNORMAL_WEATHER && music != MUS_NONE)
     {
@@ -1184,9 +1205,11 @@ void Overworld_PlaySpecialMapMusic(void)
             music = MUS_SURF;
     }
     */
+
     if (music != GetCurrentMapMusic())
         PlayNewMapMusic(music);
 }
+
 
 void Overworld_SetSavedMusic(u16 songNum)
 {
