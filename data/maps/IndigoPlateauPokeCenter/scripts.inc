@@ -8,6 +8,11 @@ IndigoPlateauPokeCenter_MapScripts::
 
 IndigoPlateauPokeCenter_OnFrame::
 	map_script_2 VAR_LEAGUE_STATE, 0, IndigoPlateauPokeCenter_Enter
+	map_script_2 VAR_LEAGUE_STATE, 2, IndigoPlateauPokeCenter_Enter
+	map_script_2 VAR_LEAGUE_STATE, 3, IndigoPlateauPokeCenter_Enter
+	map_script_2 VAR_LEAGUE_STATE, 4, IndigoPlateauPokeCenter_Enter
+	map_script_2 VAR_LEAGUE_STATE, 5, IndigoPlateauPokeCenter_Enter
+	map_script_2 VAR_LEAGUE_STATE, 6, IndigoPlateauPokeCenter_Enter
 	.2byte 0
 
 IndigoPlateauPokeCenter_Enter::

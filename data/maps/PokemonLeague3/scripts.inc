@@ -1,6 +1,7 @@
 PokemonLeague3_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, EliteFourRoom_OnFrame
 	map_script MAP_SCRIPT_ON_RESUME, PokemonLeague3_OnResume
+	map_script MAP_SCRIPT_ON_LOAD, EliteFourRoom_OnLoad
 	.byte 0
 
 PokemonLeague3_OnResume::

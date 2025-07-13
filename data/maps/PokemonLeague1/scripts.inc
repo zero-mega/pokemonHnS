@@ -1,7 +1,21 @@
 PokemonLeague1_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, EliteFourRoom_OnFrame
 	map_script MAP_SCRIPT_ON_RESUME, PokemonLeague1_OnResume
+	map_script MAP_SCRIPT_ON_LOAD, EliteFourRoom_OnLoad
 	.byte 0
+
+EliteFourRoom_OnLoad::
+	call_if_eq VAR_TEMP_0, 1, EliteFourRoom_CreateDoor
+	end
+
+EliteFourRoom_CreateDoor::
+	setmetatile 5, 11, 0x29D, TRUE
+	setmetatile 6, 11, 0x29E, TRUE
+	setmetatile 7, 11, 0x29F, TRUE
+	setmetatile 5, 12, 0x2A5, TRUE
+	setmetatile 6, 12, 0x2A6, TRUE
+	setmetatile 7, 12, 0x2A7, TRUE
+	return
 
 PokemonLeague1_OnResume::
 	setvar VAR_0x8004, 0
