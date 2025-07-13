@@ -239,7 +239,7 @@ Route101_EventScript_BirchsBag::
 	setflag FLAG_GARBAGEFLAG
 	clearflag FLAG_GARBAGEFLAGS_LAB_BIRCH
 	setflag FLAG_GARBAGEFLAG
-	setvar VAR_BIRCH_LAB_STATE, 2
+	setvar VAR_GARBAGEVAR, 2
 	setvar VAR_GARBAGEVAR, 3
 	clearflag FLAG_HIDE_MAP_NAME_POPUP
 	checkplayergender

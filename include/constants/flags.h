@@ -1164,7 +1164,7 @@
 #define FLAG_ITEM_VICTORYROAD3_RARE_CANDY               0x459
 #define FLAG_ITEM_VICTORYROAD3_MAX_ETHER                              0x45A
 #define FLAG_ITEM_VICTORYROAD3_ULTRA_BALL                              0x45B
-#define FLAG_ITEM_MAUVILLE_CITY_X_SPEED                             0x45C
+#define FLAG_ITEM_ICEPATH4_TM_BLIZZARD                             0x45C
 #define FLAG_ITEM_PETALBURD_WOODS_PARALYZE_HEAL                     0x45D
 #define FLAG_ITEM_ROUTE_115_GREAT_BALL                              0x45E
 #define FLAG_ITEM_SAFARI_ZONE_NORTH_CALCIUM                         0x45F

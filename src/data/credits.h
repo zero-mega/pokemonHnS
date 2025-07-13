@@ -529,7 +529,7 @@ static const struct CreditsEntry *const sCreditsEntryPointerTable[PAGE_COUNT][EN
     [PAGE_PROGRAMMERS_2] = {
         &sCreditsEntry_Gameplay,
         &sCreditsEntry_TheSmithPlaysGameplay,
-        &sCreditsEntry_Dylan,
+        _,
         _,
         _,
     },

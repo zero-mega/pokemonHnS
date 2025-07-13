@@ -775,7 +775,7 @@
 #define MUS_HG_EVOLUTION_NO_INTRO         727 // Evolution (No intro)
 #define MUS_HG_CYCLING                    728 // Bicycle
 #define MUS_HG_SURF                       729 // Surf
-#define MUS_HG_E_DENDOURIRI               730 // The Hall of Fame
+#define MUS_HG_HALL_OF_FAME               730 // The Hall of Fame
 #define MUS_HG_CREDITS                    731 // Ending Theme
 #define MUS_HG_END                        732 // The End
 #define MUS_HG_NEW_BARK                   733 // New Bark Town

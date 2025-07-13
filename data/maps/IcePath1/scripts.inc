@@ -1,4 +1,4 @@
-.set LOCALID_ICEPATH1_KIMONO, 11
+.set LOCALID_ICEPATH1_KIMONO, 9
 IcePath1_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, IcePath1_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
@@ -28,6 +28,15 @@ IcePath1_EventScript_KimonoGirl::
 	release
 	end
 
+IcePath1_Trigger_KimonoGirl::
+	lock
+	msgbox IcePath1_Text_Leave, MSGBOX_DEFAULT
+	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp1
+	waitmovement 0
+	release
+	end
+
 IcePath1_EventScript_KimonoGirlPushPrompt::
 	msgbox IcePath1_Text_Stuck2, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, FALSE, IcePath1_EventScript_KimonoGirlRefused
@@ -49,6 +58,7 @@ IcePath1_EventScript_KimonoGirlPush::
 	removeobject LOCALID_ICEPATH1_KIMONO
 	playse SE_EXIT
 	fadedefaultbgm
+	setvar VAR_ICE_PATH_STATE, 1
 	release
 	end
 
@@ -77,6 +87,9 @@ IcePath_Movement_KimonoLeave:
 	walk_down
 	walk_down
 	step_end
+
+IcePath1_Text_Leave:
+	.string "KIMONO GIRL: .....................$"
 
 IcePath1_Text_Stuck1:
     .string "Me oh my... Is that you, {PLAYER}?\n"
