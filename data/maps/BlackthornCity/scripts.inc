@@ -22,7 +22,7 @@ BlackthornCity_OnFrame::
 	.2byte 0
 
 BlackthornCity_EventScript_CityEnter:: @flagheap
-	setflag FLAG_VISITED_OLIVINE_CITY
+	setflag FLAG_VISITED_BLACKTHORN_CITY
 	setflag FLAG_HIDE_DRAGONS_DEN2_SILVER
 	setflag FLAG_HIDE_DRAGONS_DEN2_CLAIR
 	setflag FLAG_HIDE_DRAGONS_DEN2_LANCE

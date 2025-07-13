@@ -20,8 +20,14 @@ LakeOfRage_EventScript_SetLowTide::
 	end
 
 LakeOfRage_EventScript_SetHighTide::
-	setweather WEATHER_RAIN_THUNDERSTORM
 	setmaplayoutindex LAYOUT_LAKE_OF_RAGE
+	goto_if_lt VAR_MAHOGANY_TOWN_STATE, 14, LakeOfRage_EventScript_ThunderStorm
+	random 2
+	goto_if_eq VAR_RESULT, 1, LakeOfRage_EventScript_ThunderStorm
+	end
+
+LakeOfRage_EventScript_ThunderStorm::
+	setweather WEATHER_RAIN_THUNDERSTORM
 	end
 
 LakeOfRage_EventScript_Gramps::
