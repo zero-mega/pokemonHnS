@@ -1,5 +1,11 @@
 Route26_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Route26_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
 	.byte 0
+
+Route26_OnTransition: 
+	callnative SetTimeBasedEncounters
+	end
 
 Route26_EventScript_Jake::
 	trainerbattle_single TRAINER_JAKE Route26_Text_CooltrainermJakeSeen, Route26_Text_CooltrainermJakeBeaten

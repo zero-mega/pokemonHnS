@@ -1,6 +1,34 @@
 UnionCave1_MapScripts::
 	.byte 0
 
+
+UnionCave1_Trigger_Monview::
+	special SpawnCameraObject
+	applymovement2 OBJ_EVENT_ID_CAMERA, Common_Movement_WalkRight1
+	waitmovement 0
+	applymovement2 OBJ_EVENT_ID_CAMERA, Common_Movement_WalkRight1
+	waitmovement 0
+	applymovement2 OBJ_EVENT_ID_CAMERA, Common_Movement_WalkRight1
+	waitmovement 0
+	applymovement2 OBJ_EVENT_ID_CAMERA, Common_Movement_WalkRight1
+	waitmovement 0
+	message Route29_Text_PressAorB
+	waitbuttonpress
+	closemessage
+	applymovement2 OBJ_EVENT_ID_CAMERA, Common_Movement_WalkLeft1
+	waitmovement 0
+	applymovement2 OBJ_EVENT_ID_CAMERA, Common_Movement_WalkLeft1
+	waitmovement 0
+	applymovement2 OBJ_EVENT_ID_CAMERA, Common_Movement_WalkLeft1
+	waitmovement 0
+	applymovement2 OBJ_EVENT_ID_CAMERA, Common_Movement_WalkLeft1
+	waitmovement 0
+	special RemoveCameraObject
+	applymovement2 OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft1
+	waitmovement 0
+	end
+
+
 UnionCave1_EventScript_HikerRussell::
 	trainerbattle_single TRAINER_RUSSELL, UnionCave1_Text_HikerRussellSeen, UnionCave1_Text_HikerRussellBeaten
 	msgbox UnionCave1_Text_HikerRussellAfter, MSGBOX_AUTOCLOSE

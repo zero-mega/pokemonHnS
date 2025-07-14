@@ -4595,7 +4595,7 @@
       "id": "LAYOUT_ROUTE29",
       "name": "Route29_Layout",
       "width": 70,
-      "height": 28,
+      "height": 32,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_NewBarkTown",
       "border_filepath": "data/layouts/Route29/border.bin",
@@ -4924,7 +4924,7 @@
     {
       "id": "LAYOUT_ROUTE30",
       "name": "Route30_Layout",
-      "width": 48,
+      "width": 58,
       "height": 58,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Cherrygrove",
@@ -5404,7 +5404,7 @@
     {
       "id": "LAYOUT_ILEX_FOREST",
       "name": "IlexForest_Layout",
-      "width": 62,
+      "width": 82,
       "height": 73,
       "primary_tileset": "gTileset_johto_south",
       "secondary_tileset": "gTileset_IlexForest",

@@ -7,6 +7,35 @@ Route29_OnTransition:
 	callnative SetTimeBasedEncounters
 	end
 
+Route29_Trigger_Monview::
+	special SpawnCameraObject
+	applymovement2 OBJ_EVENT_ID_CAMERA, Common_Movement_WalkUp1 
+	waitmovement 0
+	applymovement2 OBJ_EVENT_ID_CAMERA, Common_Movement_WalkUp1
+	waitmovement 0
+	applymovement2 OBJ_EVENT_ID_CAMERA, Common_Movement_WalkUp1
+	waitmovement 0
+	applymovement2 OBJ_EVENT_ID_CAMERA, Common_Movement_WalkUp1
+	waitmovement 0
+	message Route29_Text_PressAorB
+	waitbuttonpress
+	closemessage
+	applymovement2 OBJ_EVENT_ID_CAMERA, Common_Movement_WalkDown1
+	waitmovement 0
+	applymovement2 OBJ_EVENT_ID_CAMERA, Common_Movement_WalkDown1
+	waitmovement 0
+	applymovement2 OBJ_EVENT_ID_CAMERA, Common_Movement_WalkDown1
+	waitmovement 0
+	applymovement2 OBJ_EVENT_ID_CAMERA, Common_Movement_WalkDown1
+	waitmovement 0
+	special RemoveCameraObject
+	applymovement2 OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown1
+	waitmovement 0
+	end
+
+Route29_Text_PressAorB:
+	.string "Press A or B to stop viewing.$"
+
 Route29_EventScript_OldMan::
 	lock
 	faceplayer

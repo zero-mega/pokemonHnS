@@ -1,6 +1,19 @@
 RuinsOfAlph_MapScripts::
 	.byte 0
 
+RuinsOfAlph_EventScript_Quagsire::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_QUAGSIRE, CRY_MODE_NORMAL
+	msgbox RuinsOfAlph_Text_Quagsire, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+RuinsOfAlph_Text_Quagsire:
+	.string "QUAGSIRE: Quag Quag$"
+
 RuinsOfAlph_EventScript_Stan::
 	trainerbattle_single TRAINER_STAN, RuinsOfAlph_Text_SuperNerdStan_Seen, RuinsOfAlph_Text_SuperNerdStan_Beaten
 	msgbox RuinsOfAlph_Text_SuperNerdStan_After, MSGBOX_AUTOCLOSE

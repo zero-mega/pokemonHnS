@@ -1,7 +1,13 @@
 .set LOCALID_ROUTE27_FATMAN, 1
 
 Route27_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Route27_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
 	.byte 0
+
+Route27_OnTransition: 
+	callnative SetTimeBasedEncounters
+	end
 
 Route27_EventScript_FirstSteps::
     lock
