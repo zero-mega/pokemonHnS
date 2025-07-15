@@ -128,6 +128,7 @@ PlayersHouse1_EventScript_MomsIntro::
 	setvar VAR_FUCHSIA_CITY_STATE, 0
 	setvar VAR_ROUTE27_STATE, 0
 	setvar VAR_LEAGUE_STATE, 0
+	setvar VAR_OLIVINE_PORT_STATE, 0
 	releaseall
 	end
 

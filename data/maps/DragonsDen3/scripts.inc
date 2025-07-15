@@ -203,7 +203,7 @@ DragonsDen3_Text_Question4:
     .string "raising POKéMON?$"
 
 DragonsDen3_Text_Question5:
-    .string "Strong POKéMON. Weak POKéMON.\p"
+    .string "Strong POKéMON. Weak POKéMON.\n"
     .string "Which is more important?$"
 
 DragonsDen3_Text_WrongAnswer1:

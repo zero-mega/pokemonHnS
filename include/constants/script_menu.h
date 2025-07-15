@@ -133,6 +133,8 @@
 #define MULTI_ELDERQUIIZ3                  122
 #define MULTI_ELDERQUIIZ4                  123
 #define MULTI_ELDERQUIIZ5                  124
+#define MULTI_OLIVINE_HARBOR               125
+#define MULTI_VERMILION_HARBOR             126
 
 
 

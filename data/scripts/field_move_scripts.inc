@@ -113,7 +113,7 @@ EventScript_SmashRock:: @ fallthrough
 @ Interact with headbutt tree
 EventScript_Headbutt::
 	lockall
-	goto_if_unset FLAG_GET_HEADBUTT, EventScript_CantHeadbuttTree
+	@goto_if_unset FLAG_GET_HEADBUTT, EventScript_CantHeadbuttTree
 	setvar VAR_RESULT, 0
 	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantHeadbuttTree
 	@setfieldeffectargument 0, VAR_RESULT
@@ -136,12 +136,10 @@ EventScript_HeadbuttTree:: @ fallthrough
 	playse SE_M_HEADBUTT
 	waitmovement 0
 	special RockSmashWildEncounter
-	goto EventScript_EndSmash
+	goto EventScript_EndHeadbutt
 	waitstate
 	releaseall
 	end
-
-
 
 
 Movement_HeadbuttTree:
@@ -158,13 +156,13 @@ EventScript_CancelHeadbutt::
 	releaseall
 	end
 
+
+EventScript_EndHeadbutt::
+	releaseall
+	end
+
 Text_MonUsedHeadbutt::
 	.string "{STR_VAR_1} used HEADBUTT!$"
-
-
-
-
-
 
 
 EventScript_FollowerFieldMove:
@@ -487,6 +485,7 @@ EventScript_Whirlpool::
 	goto_if_unset FLAG_BADGE07_GET, EventScript_CantWhirlpool
 	checkitem ITEM_HM_WHIRLPOOL
 	goto_if_eq VAR_RESULT, FALSE, EventScript_CantWhirlpool
+	playse SE_M_WATERFALL
 	goto_if_eq VAR_FACING, DIR_NORTH, EventScript_WhirlpoolGoNorth
 	goto_if_eq VAR_FACING, DIR_SOUTH, EventScript_WhirlpoolGoSouth
 	goto_if_eq VAR_FACING, DIR_EAST, EventScript_WhirlpoolGoEast
@@ -528,11 +527,9 @@ Movement_WhirlpoolNorth:
 	slide_up
 	slide_up
 	slide_up
-	slide_up
 	step_end
 
 Movement_WhirlpoolSouth:
-	slide_down
 	slide_down
 	slide_down
 	slide_down
@@ -542,11 +539,9 @@ Movement_WhirlpoolEast:
 	slide_right
 	slide_right
 	slide_right
-	slide_right
 	step_end
 
 Movement_WhirlpoolWest:
-	slide_left
 	slide_left
 	slide_left
 	slide_left

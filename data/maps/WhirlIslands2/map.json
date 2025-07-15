@@ -16,7 +16,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 46,
+      "x": 52,
       "y": 5,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -29,7 +29,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 68,
+      "x": 74,
       "y": 37,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -42,7 +42,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 45,
+      "x": 51,
       "y": 13,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -55,7 +55,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_SEEL",
-      "x": 64,
+      "x": 70,
       "y": 12,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -68,7 +68,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_DEWGONG",
-      "x": 67,
+      "x": 73,
       "y": 11,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -81,7 +81,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_DEWGONG",
-      "x": 36,
+      "x": 42,
       "y": 11,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -94,7 +94,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_SEEL",
-      "x": 38,
+      "x": 44,
       "y": 12,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -107,7 +107,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_KRABBY",
-      "x": 66,
+      "x": 72,
       "y": 28,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -120,7 +120,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_KRABBY",
-      "x": 51,
+      "x": 57,
       "y": 34,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -133,7 +133,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_SEEL",
-      "x": 33,
+      "x": 39,
       "y": 30,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -146,7 +146,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_KINGLER",
-      "x": 67,
+      "x": 73,
       "y": 29,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -159,7 +159,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_HORSEA",
-      "x": 11,
+      "x": 15,
       "y": 21,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -172,7 +172,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_HORSEA",
-      "x": 10,
+      "x": 15,
       "y": 25,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -185,7 +185,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_SEADRA",
-      "x": 2,
+      "x": 3,
       "y": 25,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -199,56 +199,56 @@
   ],
   "warp_events": [
     {
-      "x": 61,
+      "x": 67,
       "y": 32,
       "elevation": 0,
       "dest_map": "MAP_WHIRL_ISLANDS1",
       "dest_warp_id": "10"
     },
     {
-      "x": 47,
+      "x": 53,
       "y": 26,
       "elevation": 0,
       "dest_map": "MAP_WHIRL_ISLANDS1",
       "dest_warp_id": "11"
     },
     {
-      "x": 7,
+      "x": 10,
       "y": 32,
       "elevation": 0,
       "dest_map": "MAP_ROUTE41",
       "dest_warp_id": "3"
     },
     {
-      "x": 7,
+      "x": 10,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_WHIRL_ISLANDS3",
       "dest_warp_id": "5"
     },
     {
-      "x": 47,
+      "x": 53,
       "y": 12,
       "elevation": 0,
       "dest_map": "MAP_WHIRL_ISLANDS3",
       "dest_warp_id": "6"
     },
     {
-      "x": 51,
+      "x": 57,
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_WHIRL_ISLANDS3",
       "dest_warp_id": "7"
     },
     {
-      "x": 6,
+      "x": 12,
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_WHIRL_ISLANDS3",
       "dest_warp_id": "8"
     },
     {
-      "x": 2,
+      "x": 8,
       "y": 12,
       "elevation": 0,
       "dest_map": "MAP_WHIRL_ISLANDS1",

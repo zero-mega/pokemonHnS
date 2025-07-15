@@ -24,7 +24,7 @@ HallOfFame_EventScript_Cutscene::
 	waitfieldeffect FLDEFF_HALL_OF_FAME_RECORD
 	delay 40
 	setvar VAR_TEMP_1, 1
-	call HallOfFame_EventScript_SetGameClearFlags
+	call HallOfFame_EventScript_SetFirstGameClearFlags
 	setrespawn HEAL_LOCATION_NEW_BARK_TOWN
 	fadescreenspeed FADE_TO_BLACK, 24
 	special GameClear
@@ -54,13 +54,19 @@ HallOfFame_EventScript_CutsceneKantoChamp::
 	releaseall
 	end
 
-HallOfFame_EventScript_SetGameClearFlags::
+HallOfFame_EventScript_SetFirstGameClearFlags::
 	setflag FLAG_IS_CHAMPION
 	setvar VAR_SHUCKIE, 2
+	setvar VAR_LEAGUE_STATE, 1
+	setvar VAR_NEWBARK_TOWN_STATE, 6
+	setvar VAR_OLIVINE_PORT_STATE, 0
+	return
+
+HallOfFame_EventScript_SetGameClearFlags::
+	setflag FLAG_IS_CHAMPION
 	setvar VAR_COMPLETED_LUGIA, 4
 	setvar VAR_COMPLETED_HO_OH, 4
 	setvar VAR_LEAGUE_STATE, 1
-	setvar VAR_NEWBARK_TOWN_STATE, 6
 	return
 
 HallOfFame_Movement_LanceEnter:

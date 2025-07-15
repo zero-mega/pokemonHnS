@@ -819,6 +819,23 @@ static const struct MenuAction MultichoiceList_KurtsBalls[] =
     {gText_Exit},
 };
 
+static const struct MenuAction MultichoiceList_OlivineHarbor[] =
+{
+    {gText_Vermilion},   
+    {gText_SouthernIsland},
+    {gText_BirthIsland},
+    {gText_FarawayIsland},
+    {gText_Exit},
+};
+static const struct MenuAction MultichoiceList_VermilionHarbor[] =
+{
+    {gText_Olivine},   
+    {gText_SouthernIsland},
+    {gText_BirthIsland},
+    {gText_FarawayIsland},
+    {gText_Exit},
+};
+
 static const struct MenuAction MultichoiceList_PrizeMons[] = 
 {
     {gText_Abra},
@@ -1012,7 +1029,8 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_PRIZE_MONS]                  = MULTICHOICE(MultichoiceList_PrizeMons),
     [MULTI_7FLOORS]                  = MULTICHOICE(MultichoiceList_7Floors),
     [MULTI_GOLDSILVER]                 = MULTICHOICE(MultichoiceList_GoldSilver),
-
+    [MULTI_OLIVINE_HARBOR]              = MULTICHOICE(MultichoiceList_OlivineHarbor),
+    [MULTI_VERMILION_HARBOR]              = MULTICHOICE(MultichoiceList_VermilionHarbor),
     [MULTI_ELDERQUIIZ1]                 = MULTICHOICE(MultichoiceList_ElderQuiz1),
     [MULTI_ELDERQUIIZ2]                 = MULTICHOICE(MultichoiceList_ElderQuiz2),
     [MULTI_ELDERQUIIZ3]                 = MULTICHOICE(MultichoiceList_ElderQuiz3),

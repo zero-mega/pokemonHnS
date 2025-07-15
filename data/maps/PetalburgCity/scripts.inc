@@ -14,7 +14,7 @@ PetalburgCity_OnTransition:
 	call_if_eq VAR_GARBAGEVAR, 0, PetalburgCity_EventScript_MoveGymBoyToWestEntrance
 	call_if_eq VAR_GARBAGEVAR, 2, PetalburgCity_EventScript_DisableMapNameAndMusic
 	call_if_eq VAR_GARBAGEVAR, 4, PetalburgCity_EventScript_DisableMapNameAndMusic
-	call_if_eq VAR_PETALBURG_GYM_STATE, 8, PetalburgCity_EventScript_SetGymDoorsUnlocked
+	call_if_eq VAR_GARBAGEVAR, 8, PetalburgCity_EventScript_SetGymDoorsUnlocked
 	end
 
 PetalburgCity_GalladeEvo::
@@ -70,7 +70,7 @@ PetalburgCity_EventScript_DisableMapNameAndMusic::
 	return
 
 PetalburgCity_EventScript_SetGymDoorsUnlocked::
-	setvar VAR_PETALBURG_GYM_STATE, 7
+	setvar VAR_GARBAGEVAR, 7
 	return
 
 PetalburgCity_OnFrame:
@@ -98,7 +98,7 @@ PetalburgCity_EventScript_WallyTutorial::
 	fadedefaultbgm
 	clearflag FLAG_DONT_TRANSITION_MUSIC
 	special LoadPlayerParty
-	setvar VAR_PETALBURG_GYM_STATE, 1
+	setvar VAR_GARBAGEVAR, 1
 	warp MAP_PETALBURG_CITY_GYM, 4, 108
 	waitstate
 	releaseall

@@ -797,7 +797,7 @@ NewBarkTownLab_Text_ElmGiveMasterBall2:
 
 NewBarkTownLab_Text_KimonoGirls:
 	.string "By the way...\n"
-	.string "A group of beautiful KIMONO\n"
+	.string "A group of beautiful KIMONO\l"
 	.string "GIRLS were looking for you.\p"
 	.string "They told me they\n"
 	.string "are waiting for you at the ECRUTEAK\l"

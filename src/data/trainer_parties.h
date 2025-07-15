@@ -18735,7 +18735,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Allan[] = { //KimonoGirl
 static const struct TrainerMonNoItemCustomMoves sParty_Naoko[] = { //KimonoGirlGroup
     {
     .iv = 255,
-    .lvl = 38,
+    .lvl = 48,
     .species = SPECIES_ESPEON,
     .moves = {MOVE_PSYCHIC, MOVE_PSYCH_UP, MOVE_SWIFT, MOVE_ENDEAVOR}
     },
@@ -18746,7 +18746,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Naoko[] = { //KimonoGirlG
 static const struct TrainerMonNoItemCustomMoves sParty_Sayo[] = { //KimonoGirlGroup
     {
     .iv = 255,
-    .lvl = 38,
+    .lvl = 48,
     .species = SPECIES_JOLTEON,
     .moves = {MOVE_THUNDERBOLT, MOVE_DOUBLE_TEAM, MOVE_THUNDER_WAVE, MOVE_ENDEAVOR}
     },
@@ -18756,7 +18756,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Sayo[] = { //KimonoGirlGr
 static const struct TrainerMonNoItemCustomMoves sParty_Zuki[] = { //KimonoGirlGroup
     {
     .iv = 255,
-    .lvl = 38,
+    .lvl = 48,
     .species = SPECIES_UMBREON,
     .moves = {MOVE_DARK_PULSE, MOVE_CONFUSE_RAY, MOVE_SHADOW_BALL, MOVE_ENDEAVOR}
     },
@@ -18766,7 +18766,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Zuki[] = { //KimonoGirlGr
 static const struct TrainerMonNoItemCustomMoves sParty_Kuni[] = { //KimonoGirlGroup
     {
     .iv = 255,
-    .lvl = 38,
+    .lvl = 48,
     .species = SPECIES_VAPOREON,
     .moves = {MOVE_SURF, MOVE_QUICK_ATTACK, MOVE_AURORA_BEAM, MOVE_ENDEAVOR}
     },
@@ -18776,7 +18776,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Kuni[] = { //KimonoGirlGr
 static const struct TrainerMonNoItemCustomMoves sParty_Miki[] = { //KimonoGirlGroup
     {
     .iv = 255,
-    .lvl = 38,
+    .lvl = 48,
     .species = SPECIES_FLAREON,
     .moves = {MOVE_FIRE_BLAST, MOVE_QUICK_ATTACK, MOVE_WILL_O_WISP, MOVE_ENDEAVOR}
     },
@@ -18787,7 +18787,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Miki[] = { //KimonoGirlGr
 static const struct TrainerMonNoItemCustomMoves sParty_Naoko2[] = { //KimonoGirlGroup
     {
     .iv = 255,
-    .lvl = 38,
+    .lvl = 45,
     .species = SPECIES_FLAREON,
     .moves = {MOVE_FIRE_BLAST, MOVE_QUICK_ATTACK, MOVE_WILL_O_WISP, MOVE_ENDEAVOR}
     },
