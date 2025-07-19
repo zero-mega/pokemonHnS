@@ -1160,9 +1160,9 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_CARA] =
     {
-        .trainerClass = TRAINER_CLASS_BEAUTY,
+        .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic_gender = F_TRAINER_FEMALE,
-        .trainerPic = TRAINER_PIC_BEAUTY,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("CARA"),
         .items = {},
         .doubleBattle = FALSE,

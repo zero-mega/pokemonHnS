@@ -99,6 +99,11 @@ AzaleaKurtsHouse_EventScript_ReturnFromWell::
 	release
 	end
 
+AzaleaKurtsHouse_EventScript_KurtCheckGSBall::
+	checkitem ITEM_GS_BALL
+	goto_if_eq VAR_RESULT, TRUE, AzaleaKurtsHouse_EventScript_KurtGsBall
+	return
+
 AzaleaKurtsHouse_EventScript_Kurt::
 	lock
 	faceplayer
@@ -106,8 +111,7 @@ AzaleaKurtsHouse_EventScript_Kurt::
 	goto_if_eq VAR_AZALEA_TOWN_STATE, 9, AzaleaKurtsHouse_EventScript_KurtGsBall3
 	msgbox KurtsHouse_Text_KurtAskYouHaveAnApricorn, MSGBOX_DEFAULT
 	closemessage
-	checkitem ITEM_GS_BALL
-	goto_if_eq VAR_RESULT, TRUE, AzaleaKurtsHouse_EventScript_KurtGsBall
+	call_if_unset FLAG_CAUGHT_CELEBI, AzaleaKurtsHouse_EventScript_KurtCheckGSBall
 AzaleaKurtsHouse_EventScript_Kurt2::
 	multichoice 20, 0, MULTI_KURT_BALLS, FALSE
 	switch VAR_RESULT

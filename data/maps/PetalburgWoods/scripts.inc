@@ -25,8 +25,8 @@ PetalburgWoods_SwitchToOld::
 	end
 
 PetalburgWoods_NoCelebiEvent::
-	checkflag FLAG_CELEBI_EVENT
-	call_if_unset FLAG_CELEBI_EVENT, PetalburgWoods_CelebiEvent_End
+	checkflag FLAG_GARBAGEFLAG
+	call_if_unset FLAG_GARBAGEFLAG, PetalburgWoods_CelebiEvent_End
 	end
 
 PetalburgWoods_YesCelebiEvent::
@@ -36,7 +36,7 @@ PetalburgWoods_YesCelebiEvent::
 	end
 
 PetalburgWoods_YesCelebiEvent2::
-	setflag FLAG_CELEBI_EVENT
+	setflag FLAG_GARBAGEFLAG
 	end
 
 PetalburgWoods_CelebiEvent::
@@ -45,9 +45,9 @@ PetalburgWoods_CelebiEvent::
 	waitse
 	msgbox Text_PetalburgWoods_Celebi0, MSGBOX_SIGN
 	closemessage
-	checkflag FLAG_CELEBI_EVENT
-	call_if_unset FLAG_CELEBI_EVENT, PetalburgWoods_CelebiEvent_End
-	call_if_set FLAG_CELEBI_EVENT, PetalburgWoods_CelebiEventGo
+	checkflag FLAG_GARBAGEFLAG
+	call_if_unset FLAG_GARBAGEFLAG, PetalburgWoods_CelebiEvent_End
+	call_if_set FLAG_GARBAGEFLAG, PetalburgWoods_CelebiEventGo
 	end
 
 PetalburgWoods_CelebiEventGo::
@@ -114,7 +114,7 @@ PetalburgWoods_CelebiEvent_Won::
 	applymovement LOCALID_CELEBI, PetalburgWoods_EventScript_CelebiMoves2
 	waitmovement 0
 	setflag FLAG_DEFEATEDCELEBI
-	clearflag FLAG_CELEBI_EVENT
+	clearflag FLAG_GARBAGEFLAG
 	end
 
 PetalburgWoods_CelebiEvent_Ran::

@@ -35,36 +35,42 @@ GoldenrodDeptStore5_EventScript_Sign::
 	release
 	end
 
-GoldenrodDeptStore5_EventScript_Receptionist:: @CHANGELATER. Need more branching. 
+GoldenrodDeptStore5_EventScript_Receptionist::
 	lock
 	faceplayer
-	@goto_if_set FLAG_GOT_RETURN, GoldenrodDeptStore5_EventScript_Receptionist_Already
-	@goto_if_set FLAG_GOT_FRUSTRATION, GoldenrodDeptStore5_EventScript_Receptionist_Already
 	msgbox GoldenrodDeptStore_Text_5FReceptionistOhYourMon, MSGBOX_DEFAULT
 	closemessage
 	specialvar VAR_RESULT, GetLeadMonFriendshipScore
-	goto_if_ge VAR_RESULT, FRIENDSHIP_150_TO_199, GoldenrodDeptStore5_EventScript_Receptionist_GiveReturn
+	goto_if_ge VAR_RESULT, FRIENDSHIP_150_TO_199, GoldenrodDeptStore5_EventScript_Receptionist_HighFriendship
 	specialvar VAR_RESULT, GetLeadMonFriendshipScore
 	goto_if_ge VAR_RESULT, FRIENDSHIP_50_TO_99, GoldenrodDeptStore5_EventScript_Receptionist_PutInEffort
-	goto GoldenrodDeptStore5_EventScript_Receptionist_GiveFrustration
+	goto GoldenrodDeptStore5_EventScript_Receptionist_LowFriendship
+	release
+	end
+
+GoldenrodDeptStore5_EventScript_Receptionist_HighFriendship::
+	call_if_unset FLAG_GOT_RETURN, GoldenrodDeptStore5_EventScript_Receptionist_GiveReturn
+	msgbox GoldenrodDeptStore_Text_5FReceptionistThisMoveShouldBePerfect, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+GoldenrodDeptStore5_EventScript_Receptionist_LowFriendship::
+	call_if_unset FLAG_GOT_FRUSTRATION, GoldenrodDeptStore5_EventScript_Receptionist_GiveFrustration
+	msgbox GoldenrodDeptStore_Text_5FReceptionistItLooksEvilHowAboutThisTM, MSGBOX_DEFAULT
+	closemessage
 	release
 	end
 
 GoldenrodDeptStore5_EventScript_Receptionist_GiveReturn::
-	msgbox GoldenrodDeptStore_Text_5FReceptionistThisMoveShouldBePerfect, MSGBOX_DEFAULT
-	closemessage
 	giveitem ITEM_TM_RETURN
 	setflag FLAG_GOT_RETURN
-	release
-	end
+	return
 
 GoldenrodDeptStore5_EventScript_Receptionist_GiveFrustration::
-	msgbox GoldenrodDeptStore_Text_5FReceptionistItLooksEvilHowAboutThisTM, MSGBOX_DEFAULT
-	closemessage
 	giveitem ITEM_TM_FRUSTRATION
 	setflag FLAG_GOT_FRUSTRATION
-	release
-	end
+	return
 
 GoldenrodDeptStore5_EventScript_Receptionist_PutInEffort::
 	msgbox GoldenrodDeptStore_Text_5FReceptionistPutInSomeMoreEffort, MSGBOX_DEFAULT

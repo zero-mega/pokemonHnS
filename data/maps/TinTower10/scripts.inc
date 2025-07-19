@@ -173,7 +173,7 @@ TinTower10_EventScript_HoOh::
 	delay 30
 	waitmoncry
 	playbgm MUS_HG_VS_HO_OH, 0
-	seteventmon SPECIES_HO_OH, 45
+	seteventmon SPECIES_HO_OH, 50
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special BattleSetup_StartLegendaryBattle
 	waitstate
