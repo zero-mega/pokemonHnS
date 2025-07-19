@@ -5,7 +5,7 @@ EcruteakSageOffice1F_MapScripts::
 	.byte 0
 
 EcruteakSageOffice1F_OnTransition::
-	goto_if_set FLAG_HIDE_TINTOWER_GUARD, EcruteakSageOffice1F_EventScript_SageAside @CHANGELATER
+	goto_if_set FLAG_HIDE_TINTOWER_GUARD, EcruteakSageOffice1F_EventScript_SageAside
 	end
 
 EcruteakSageOffice1F_EventScript_SageAside::

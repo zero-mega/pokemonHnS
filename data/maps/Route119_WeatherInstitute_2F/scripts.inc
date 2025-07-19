@@ -71,7 +71,7 @@ Route119_WeatherInstitute_2F_EventScript_ShellyDefeated::
 	fadedefaultbgm
 	fadescreen FADE_TO_BLACK
 	setflag FLAG_GARBAGEFLAG
-	setflag FLAG_HIDE_WEATHER_INSTITUTE_2F_AQUA_GRUNT_M
+	setflag FLAG_GARBAGEFLAG
 	removeobject LOCALID_GRUNT_1
 	removeobject LOCALID_GRUNT_2
 	removeobject LOCALID_SHELLY

@@ -191,7 +191,8 @@ static const u8 sDoorAnimTiles_DeptStoreElevator[] = INCBIN_U8("graphics/door_an
 static const u16 sDoorNullPalette71[16] = {};
 static const u8 sDoorAnimTiles_RocketElevator[] = INCBIN_U8("graphics/door_anims/rocket_elevator.4bpp");
 static const u16 sDoorNullPalette72[16] = {};
-
+static const u8 sDoorAnimTiles_SSAqua[] = INCBIN_U8("graphics/door_anims/ssaqua.4bpp");
+static const u16 sDoorNullPalette73[16] = {};
 
 
 
@@ -254,6 +255,7 @@ static const u8 sDoorAnimPalettes_Fuchsia_Red_Door[] = {9, 9, 9, 9, 9, 9, 9, 9, 
 static const u8 sDoorAnimPalettes_BlackthornCity_Door[] = {7, 7, 7, 7, 7, 7, 7, 7,};
 static const u8 sDoorAnimPalettes_DeptStore_Door[] = {8, 8, 8, 8, 8, 8, 8, 8,};
 static const u8 sDoorAnimPalettes_Rocket_Door[] = {2, 2, 2, 2, 2, 2, 2, 2,};
+static const u8 sDoorAnimPalettes_SSAqua[] = {7, 7, 7, 7, 7, 7, 7, 7,};
 
 
 static const u8 sDoorAnimPalettes_PokeMart[] = {0, 0, 5, 5, 5, 5, 5, 5};
@@ -390,6 +392,7 @@ static const struct DoorGraphics sDoorGraphics[] =
     {METATILE_JohtoShop_Door,                              DOOR_SOUND_SLIDING, DOOR_SIZE_1x1, sDoorAnimTiles_DeptStoreElevator, sDoorAnimPalettes_DeptStore_Door},
     {METATILE_GreenHouses_Elevator,                              DOOR_SOUND_SLIDING, DOOR_SIZE_1x1, sDoorAnimTiles_RocketElevator, sDoorAnimPalettes_Rocket_Door},
     {METATILE_BattleTowerInner_Door,                              DOOR_SOUND_SLIDING, DOOR_SIZE_1x1, sDoorAnimTiles_RocketElevator, sDoorAnimPalettes_Rocket_Door},
+    {METATILE_ssaqua_Door,                              DOOR_SOUND_NORMAL, DOOR_SIZE_1x1, sDoorAnimTiles_SSAqua, sDoorAnimPalettes_SSAqua},
 
     {},
 };

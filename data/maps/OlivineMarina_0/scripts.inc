@@ -4,6 +4,10 @@
 OlivineMarina_0_MapScripts::
 	.byte 0
 
+OlivinePort_Test::
+	clearflag FLAG_HIDE_SSAQUA1_GRANDPA
+	end
+
 OlivinePort_EventScript_CooltrainerF::
 	msgbox OlivinePort_Text_CooltrainerF, MSGBOX_NPC
 	end
@@ -23,7 +27,7 @@ OlivinePort_EventScript_Youngster::
 OlivinePort_EventScript_Sailor::
 	lock
 	faceplayer
-	goto_if_ge VAR_OLIVINE_PORT_STATE, 1, OlivinePort_EventScript_Sailor_AfterKanto
+	goto_if_ge VAR_SSAQUA_STATE, 5, OlivinePort_EventScript_Sailor_AfterKanto
 	msgbox OlivinePort_Text_AskBoard, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, FALSE, OlivinePort_EventScript_Sailor_Refused
 	checkitem ITEM_SS_TICKET
@@ -34,6 +38,7 @@ OlivinePort_EventScript_Sailor::
 	end
 
 OlivinePort_EventScript_Sailor_AfterKanto::
+	message OlivinePort_Text_WhereSail
 	multichoice 20, 0, MULTI_OLIVINE_HARBOR, FALSE
 	switch VAR_RESULT
 	case 0, OlivinePort_EventScript_ChoseVermilion
@@ -47,6 +52,7 @@ OlivinePort_EventScript_Sailor_AfterKanto::
 
 OlivinePort_EventScript_ChoseVermilion::
 	closemessage
+	delay 20
 	checkitem ITEM_SS_TICKET
 	bufferitemname STR_VAR_1, ITEM_SS_TICKET
 	goto_if_eq VAR_RESULT, FALSE, OlivinePort_EventScript_Sailor_NoCredentials
@@ -57,6 +63,7 @@ OlivinePort_EventScript_ChoseVermilion::
 
 OlivinePort_EventScript_ChoseSouthernIsland::
 	closemessage
+	delay 20
 	checkitem ITEM_EON_TICKET
 	bufferitemname STR_VAR_1, ITEM_EON_TICKET
 	goto_if_eq VAR_RESULT, FALSE, OlivinePort_EventScript_Sailor_NoCredentials
@@ -67,6 +74,7 @@ OlivinePort_EventScript_ChoseSouthernIsland::
 
 OlivinePort_EventScript_ChoseBirthIsland::
 	closemessage
+	delay 20
 	checkitem ITEM_AURORA_TICKET
 	bufferitemname STR_VAR_1, ITEM_AURORA_TICKET
 	goto_if_eq VAR_RESULT, FALSE, OlivinePort_EventScript_Sailor_NoCredentials
@@ -77,6 +85,7 @@ OlivinePort_EventScript_ChoseBirthIsland::
 
 OlivinePort_EventScript_ChoseFarawayIsland::
 	closemessage
+	delay 20
 	checkitem ITEM_OLD_SEA_MAP
 	bufferitemname STR_VAR_1, ITEM_OLD_SEA_MAP
 	goto_if_eq VAR_RESULT, FALSE, OlivinePort_EventScript_Sailor_NoCredentials
@@ -88,7 +97,7 @@ OlivinePort_EventScript_ChoseFarawayIsland::
 OlivinePort_EventScript_Sailor_MaidenVoyage::
 	msgbox OlivinePort_Text_FlashTicket, MSGBOX_DEFAULT
 	call OlivinePort_EventScript_EnterShip
-	setvar VAR_OLIVINE_PORT_STATE, 1
+	setvar VAR_SSAQUA_STATE, 1
 	warpsilent MAP_SSAQUA1, 29, 3
 	release
 	end
@@ -96,18 +105,20 @@ OlivinePort_EventScript_Sailor_MaidenVoyage::
 OlivinePort_EventScript_EnterShip::
 	msgbox OlivinePort_Text_SailorGetOnBoard, MSGBOX_DEFAULT
 	closemessage
+	delay 20
 	applymovement LOCALID_OLIVINEMARINA_SAILOR, OlivinePort_Movement_SailorEnterBoat
 	waitmovement 0
 	playse SE_EXIT
-	removeobject LOCALID_OLIVINEMARINA_SAILOR
 	applymovement OBJ_EVENT_ID_PLAYER, OlivinePort_Movement_PlayerEnterBoat
 	waitmovement 0
 	special SpawnCameraObject
 	playse SE_EXIT
 	removeobject OBJ_EVENT_ID_PLAYER
 	delay 60
+	applymovement LOCALID_OLIVINEMARINA_SAILOR, OlivinePort_Movement_BoatLeave
 	applymovement LOCALID_OLIVINEMARINA_BOAT, OlivinePort_Movement_BoatLeave
-	waitmovement 0
+	waitmovement LOCALID_OLIVINEMARINA_BOAT
+	setrespawn HEAL_LOCATION_OLIVINE_CITY
 	return
 
 OlivinePort_EventScript_Sailor_Refused::
@@ -124,7 +135,7 @@ OlivinePort_EventScript_Sailor_NoCredentials::
 
 OlivinePort_Movement_SailorEnterBoat:
 	walk_down
-	walk_in_place_down
+	walk_down
 	step_end
 
 OlivinePort_Movement_PlayerEnterBoat:
@@ -155,6 +166,9 @@ OlivinePort_Text_SailorGetOnBoard:
 
 OlivinePort_Text_CantBoard:
     .string "Sorry. You can't board now.$"
+
+OlivinePort_Text_WhereSail:
+    .string "Where would you like to sail?.$"
 
 OlivinePort_Text_AskBoard:
     .string "Welcome to FAST SHIP S.S.AQUA.\p"

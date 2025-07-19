@@ -109,7 +109,7 @@
 #define METATILE_BikeShop_Generator_Off_Tile5      0x2F5
 #define METATILE_BikeShop_Generator_Off_Tile6      0x2F6
 #define METATILE_BikeShop_Generator_Off_Tile7      0x2F7
-#define METATILE_BikeShop_Wall_Edge_Top            0x281
+#define METATILE_BikeShop_Wall_Edge_Top            0x011
 
 // gTileset_Blackthorn
 #define METATILE_Blackthorn_Door  0x291
@@ -223,7 +223,7 @@
 #define METATILE_Fortree_BridgeOverTrees_Lowered           0x257
 #define METATILE_Fortree_BridgeOverTrees_Raised            0x256
 #define METATILE_Fortree_LongGrass_Root                    0x208
-#define METATILE_Fortree_SecretBase_LongGrass_BottomLeft   0x281
+#define METATILE_Fortree_SecretBase_LongGrass_BottomLeft   0x011
 #define METATILE_Fortree_SecretBase_LongGrass_BottomMid    0x282
 #define METATILE_Fortree_SecretBase_LongGrass_BottomRight  0x283
 #define METATILE_Fortree_SecretBase_LongGrass_TopLeft      0x279
@@ -498,7 +498,7 @@
 #define METATILE_PokemonCenter_Escalator1F_Tile0_Frame0  0x280
 #define METATILE_PokemonCenter_Escalator1F_Tile0_Frame1  0x282
 #define METATILE_PokemonCenter_Escalator1F_Tile0_Frame2  0x284
-#define METATILE_PokemonCenter_Escalator1F_Tile1_Frame0  0x281
+#define METATILE_PokemonCenter_Escalator1F_Tile1_Frame0  0x011
 #define METATILE_PokemonCenter_Escalator1F_Tile1_Frame1  0x283
 #define METATILE_PokemonCenter_Escalator1F_Tile1_Frame2  0x285
 #define METATILE_PokemonCenter_Escalator1F_Tile2_Frame0  0x288
@@ -795,7 +795,7 @@
 #define METATILE_SecretBase_Tire_BottomLeft             0x288
 #define METATILE_SecretBase_Tire_BottomRight            0x289
 #define METATILE_SecretBase_Tire_TopLeft                0x280
-#define METATILE_SecretBase_Tire_TopRight               0x281
+#define METATILE_SecretBase_Tire_TopRight               0x011
 #define METATILE_SecretBase_TropicalPlant_Base1         0x2DA
 #define METATILE_SecretBase_TropicalPlant_Base2         0x2DB
 #define METATILE_SecretBase_TropicalPlant_Top           0x019
@@ -888,6 +888,9 @@
 
 // gTileset_route34_11
 #define METATILE_route34_11_Saffron  0x35C
+
+// gTileset_ssaqua
+#define METATILE_ssaqua_Door  0x281
 
 // Other
 #define METATILE_RSMossdeepGym_RedArrow_Down   0x205

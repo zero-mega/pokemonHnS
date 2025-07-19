@@ -1032,14 +1032,14 @@
 #define FLAG_HIDE_ECRUTEAK_THEATER_NPCS                               0x3D9
 #define FLAG_HIDE_ECRUTEAK_THEATER_ZUKI                               0x3DA
 #define FLAG_HIDE_TINTOWER_GUARD                               0x3DB
-#define FLAG_HIDE_WHIRLISLANDS_GUARD                               0x3DC //unused
+#define FLAG_HIDE_WHIRLISLANDS_GUARD                               0x3DC//unused?
 #define FLAG_HIDE_VICTORY_ROAD_SILVER                               0x3DD
 #define FLAG_HIDE_INDIGO_PLATEAU_SILVER                               0x3DE
 #define FLAG_HIDE_INDIGO_PLATEAU_MARY_OAK                                     0x3DF
-#define FLAG_HIDE_WEATHER_INSTITUTE_2F_AQUA_GRUNT_M                 0x3E0
-#define FLAG_HIDE_LILYCOVE_POKEMON_CENTER_CONTEST_LADY_MON          0x3E1
-#define FLAG_HIDE_MT_CHIMNEY_LAVA_COOKIE_LADY                       0x3E2
-#define FLAG_HIDE_PETALBURG_CITY_SCOTT                              0x3E3
+#define FLAG_HIDE_SSAQUA1_GRANDPA                 0x3E0
+#define FLAG_HIDE_SSAQUA8_GRANDDAUGHTER          0x3E1
+#define FLAG_HIDE_SSAQUA_SAILOR                      0x3E2
+#define FLAG_HIDE_SSAQUA3_GRANDDAUGHTER                              0x3E3//unused
 #define FLAG_HIDE_SOOTOPOLIS_CITY_RAYQUAZA                          0x3E4
 #define FLAG_HIDE_SOOTOPOLIS_CITY_KYOGRE                            0x3E5
 #define FLAG_HIDE_SOOTOPOLIS_CITY_GROUDON                           0x3E6

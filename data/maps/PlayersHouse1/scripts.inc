@@ -105,7 +105,7 @@ PlayersHouse1_EventScript_MomsIntro::
 	clearflag FLAG_SHOWN_ELM_TOGEPI
 	clearflag FLAG_ENABLE_RADIO
 	clearflag FLAG_ENABLE_BAOBA_MATCH_CALL
-	
+	clearflag FLAG_HIDE_SSAQUA1_GRANDPA
 
 	setvar VAR_VIOLET_CITY_STATE, 0 @CITY STATES
 	setvar VAR_CHERRYGROVE_CITY_STATE, 0
@@ -128,7 +128,7 @@ PlayersHouse1_EventScript_MomsIntro::
 	setvar VAR_FUCHSIA_CITY_STATE, 0
 	setvar VAR_ROUTE27_STATE, 0
 	setvar VAR_LEAGUE_STATE, 0
-	setvar VAR_OLIVINE_PORT_STATE, 0
+	setvar VAR_SSAQUA_STATE, 0
 	releaseall
 	end
 

@@ -8075,7 +8075,7 @@
       "id": "LAYOUT_VERMILION_CITY_PORT_INDOOR",
       "name": "VermilionCityPortIndoor_Layout",
       "width": 18,
-      "height": 14,
+      "height": 28,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Marina_65",
       "border_filepath": "data/layouts/VermilionCityPortIndoor/border.bin",

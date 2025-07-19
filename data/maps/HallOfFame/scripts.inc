@@ -59,7 +59,7 @@ HallOfFame_EventScript_SetFirstGameClearFlags::
 	setvar VAR_SHUCKIE, 2
 	setvar VAR_LEAGUE_STATE, 1
 	setvar VAR_NEWBARK_TOWN_STATE, 6
-	setvar VAR_OLIVINE_PORT_STATE, 0
+	setvar VAR_SSAQUA_STATE, 0
 	return
 
 HallOfFame_EventScript_SetGameClearFlags::

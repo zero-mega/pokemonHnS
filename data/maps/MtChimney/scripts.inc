@@ -76,7 +76,7 @@ MtChimney_EventScript_Maxie::
 	setflag FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY
 	clearflag FLAG_GARBAGEFLAG
 	setflag FLAG_GARBAGEFLAG
-	clearflag FLAG_HIDE_MT_CHIMNEY_LAVA_COOKIE_LADY
+	clearflag FLAG_GARBAGEFLAG
 	releaseall
 	end
 
