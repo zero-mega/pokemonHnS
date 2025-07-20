@@ -4895,7 +4895,7 @@
       "id": "LAYOUT_ROUTE26",
       "name": "Route26_Layout",
       "width": 39,
-      "height": 112,
+      "height": 81,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Blackthorn",
       "border_filepath": "data/layouts/Route26/border.bin",
@@ -5904,7 +5904,7 @@
     {
       "id": "LAYOUT_INDIGO_PLATEAU_POKE_CENTER",
       "name": "IndigoPlateauPokeCenter_Layout",
-      "width": 25,
+      "width": 35,
       "height": 18,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_PokeCenter_14",
@@ -8810,6 +8810,16 @@
       "secondary_tileset": "gTileset_Cave1_15",
       "border_filepath": "data/layouts/TohjoFalls2/border.bin",
       "blockdata_filepath": "data/layouts/TohjoFalls2/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE26NORTH",
+      "name": "Route26North_Layout",
+      "width": 39,
+      "height": 30,
+      "primary_tileset": "gTileset_Johto_General",
+      "secondary_tileset": "gTileset_Viridian_2",
+      "border_filepath": "data/layouts/Route26North/border.bin",
+      "blockdata_filepath": "data/layouts/Route26North/map.bin"
     }
   ]
 }

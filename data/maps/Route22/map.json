@@ -14,14 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE26",
-      "offset": 19,
-      "direction": "left"
-    },
-    {
       "map": "MAP_VIRIDIAN_CITY",
       "offset": -2,
       "direction": "right"
+    },
+    {
+      "map": "MAP_ROUTE26NORTH",
+      "offset": 28,
+      "direction": "left"
     }
   ],
   "object_events": [

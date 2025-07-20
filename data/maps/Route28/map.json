@@ -14,14 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE26",
-      "offset": 36,
-      "direction": "right"
-    },
-    {
       "map": "MAP_MT_SILVER",
       "offset": -6,
       "direction": "left"
+    },
+    {
+      "map": "MAP_ROUTE26NORTH",
+      "offset": 29,
+      "direction": "right"
     }
   ],
   "object_events": [

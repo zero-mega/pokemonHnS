@@ -16,7 +16,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_NURSE",
-      "x": 13,
+      "x": 19,
       "y": 10,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -29,7 +29,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NURSE_CHANSEY",
-      "x": 14,
+      "x": 20,
       "y": 10,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -42,7 +42,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CLERK",
-      "x": 4,
+      "x": 10,
       "y": 10,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -50,12 +50,12 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "OldaleTown_PokemonCenter_1F_EventScript_Nurse",
+      "script": "BattleFrontier_Mart_EventScript_Clerk",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_M",
-      "x": 23,
+      "x": 33,
       "y": 3,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -68,7 +68,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PSYCHIC_M",
-      "x": 23,
+      "x": 30,
       "y": 14,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
@@ -81,7 +81,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_ABRA",
-      "x": 21,
+      "x": 28,
       "y": 15,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_UP",
@@ -94,7 +94,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SILVER",
-      "x": 22,
+      "x": 32,
       "y": 8,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -108,14 +108,14 @@
   ],
   "warp_events": [
     {
-      "x": 8,
+      "x": 19,
       "y": 16,
       "elevation": 0,
       "dest_map": "MAP_INDIGO_PLATEAU",
       "dest_warp_id": "0"
     },
     {
-      "x": 22,
+      "x": 32,
       "y": 2,
       "elevation": 0,
       "dest_map": "MAP_POKEMON_LEAGUE1",
@@ -128,7 +128,7 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 18,
+      "x": 28,
       "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -136,7 +136,7 @@
     },
     {
       "type": "sign",
-      "x": 0,
+      "x": 5,
       "y": 12,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -144,7 +144,7 @@
     },
     {
       "type": "sign",
-      "x": 0,
+      "x": 5,
       "y": 15,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -152,7 +152,7 @@
     },
     {
       "type": "sign",
-      "x": 20,
+      "x": 30,
       "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -160,7 +160,7 @@
     },
     {
       "type": "sign",
-      "x": 20,
+      "x": 30,
       "y": 6,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -168,7 +168,7 @@
     },
     {
       "type": "sign",
-      "x": 24,
+      "x": 34,
       "y": 6,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -176,7 +176,7 @@
     },
     {
       "type": "sign",
-      "x": 24,
+      "x": 34,
       "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",

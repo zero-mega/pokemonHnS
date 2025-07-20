@@ -1390,11 +1390,7 @@
 #define FLAG_VISITED_SAFFRON_CITY                  (SYSTEM_FLAGS + 0x24)
 #define FLAG_VISITED_CINNABAR_ISLAND                          (SYSTEM_FLAGS + 0x25) 
 #define FLAG_VISITED_MT_SILVER                           (SYSTEM_FLAGS + 0x26) //26
-
-
-
-
-#define FLAG_UNUSED_0x887                           (SYSTEM_FLAGS + 0x27) // Unused Flag
+#define FLAG_VISITED_INDIGO_JUNCTION                           (SYSTEM_FLAGS + 0x27) // 27
 
 #define FLAG_SYS_USE_FLASH                          (SYSTEM_FLAGS + 0x28)
 #define FLAG_SYS_USE_STRENGTH                       (SYSTEM_FLAGS + 0x29)

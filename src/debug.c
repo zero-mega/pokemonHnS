@@ -1168,6 +1168,7 @@ static u8 Debug_CheckToggleFlags(u8 id)
                 FlagGet(FLAG_VISITED_SAFFRON_CITY) &&
                 FlagGet(FLAG_VISITED_CINNABAR_ISLAND) &&
                 FlagGet(FLAG_VISITED_MT_SILVER);
+                FlagGet(FLAG_VISITED_INDIGO_JUNCTION);
             break;
         case DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_BADGES_ALL:
             result = FlagGet(FLAG_BADGE01_GET) &&
@@ -1743,6 +1744,7 @@ static void DebugAction_Util_Fly(u8 taskId)
     FlagSet(FLAG_VISITED_SAFFRON_CITY);
     FlagSet(FLAG_VISITED_CINNABAR_ISLAND);
     FlagSet(FLAG_VISITED_MT_SILVER);
+    FlagSet(FLAG_VISITED_INDIGO_JUNCTION);
     Debug_DestroyMenu_Full(taskId);
     SetMainCallback2(CB2_OpenFlyMap);
 }
@@ -2573,6 +2575,7 @@ static void DebugAction_FlagsVars_ToggleFlyFlags(u8 taskId)
         FlagClear(FLAG_VISITED_SAFFRON_CITY);
         FlagClear(FLAG_VISITED_CINNABAR_ISLAND);
         FlagClear(FLAG_VISITED_MT_SILVER);
+        FlagClear(FLAG_VISITED_INDIGO_JUNCTION);
     }
     else
     {
@@ -2602,6 +2605,7 @@ static void DebugAction_FlagsVars_ToggleFlyFlags(u8 taskId)
         FlagSet(FLAG_VISITED_SAFFRON_CITY);
         FlagSet(FLAG_VISITED_CINNABAR_ISLAND);
         FlagSet(FLAG_VISITED_MT_SILVER);
+        FlagSet(FLAG_VISITED_INDIGO_JUNCTION);
     }
 }
 static void DebugAction_FlagsVars_ToggleBadgeFlags(u8 taskId)
