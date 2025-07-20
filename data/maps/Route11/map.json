@@ -20,15 +20,15 @@
     },
     {
       "map": "MAP_VERMILION_CITY",
-      "offset": 6,
+      "offset": 3,
       "direction": "left"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_PSYCHIC_M",
-      "x": 29,
-      "y": 18,
+      "x": 50,
+      "y": 9,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
       "movement_range_x": 0,
@@ -40,8 +40,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ENGINEER",
-      "x": 19,
-      "y": 14,
+      "x": 34,
+      "y": 10,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
@@ -53,12 +53,12 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
-      "x": 23,
-      "y": 25,
+      "x": 48,
+      "y": 22,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_UP_RIGHT_DOWN_LEFT",
-      "movement_range_x": 4,
-      "movement_range_y": 4,
+      "movement_range_x": 3,
+      "movement_range_y": 5,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
@@ -66,8 +66,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
-      "x": 15,
-      "y": 20,
+      "x": 38,
+      "y": 21,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -79,7 +79,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ENGINEER",
-      "x": 9,
+      "x": 19,
       "y": 24,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_LEFT_AND_RIGHT",
@@ -92,7 +92,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PSYCHIC_M",
-      "x": 7,
+      "x": 18,
       "y": 15,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_UP_RIGHT_DOWN_LEFT",
@@ -105,10 +105,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_DROWZEE",
-      "x": 17,
-      "y": 8,
+      "x": 21,
+      "y": 31,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -118,8 +118,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_HYPNO",
-      "x": 20,
-      "y": 7,
+      "x": 37,
+      "y": 1,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
       "movement_range_x": 0,
@@ -130,9 +130,9 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_HOPPIP",
-      "x": 22,
-      "y": 7,
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_MEOWTH",
+      "x": 40,
+      "y": 1,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_ROTATE_COUNTERCLOCKWISE",
       "movement_range_x": 0,
@@ -143,9 +143,9 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_HOPPIP",
-      "x": 23,
-      "y": 7,
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_MEOWTH",
+      "x": 41,
+      "y": 1,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_ROTATE_COUNTERCLOCKWISE",
       "movement_range_x": 0,
@@ -157,8 +157,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_HYPNO",
-      "x": 25,
-      "y": 7,
+      "x": 44,
+      "y": 1,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
       "movement_range_x": 0,
@@ -170,8 +170,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
-      "x": 32,
-      "y": 16,
+      "x": 57,
+      "y": 12,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
@@ -180,6 +180,45 @@
       "trainer_sight_or_berry_tree_id": "BERRY_TREE_GREPA_2",
       "script": "BerryTreeScript",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_MAGNEMITE",
+      "x": 52,
+      "y": 29,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_RIGHT_DOWN_LEFT_UP",
+      "movement_range_x": 5,
+      "movement_range_y": 5,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_MAGNEMITE",
+      "x": 57,
+      "y": 29,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_LEFT_UP_RIGHT",
+      "movement_range_x": 5,
+      "movement_range_y": 5,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_HOPPIP",
+      "x": 13,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_LEFT_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_DAY_POKEMON"
     }
   ],
   "warp_events": [
