@@ -5214,8 +5214,8 @@
     {
       "id": "LAYOUT_VERMILION_CITY",
       "name": "VermilionCity_Layout",
-      "width": 53,
-      "height": 36,
+      "width": 71,
+      "height": 45,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Vermilion",
       "border_filepath": "data/layouts/VermilionCity/border.bin",
