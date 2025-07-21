@@ -307,6 +307,7 @@ static const u8 sDoorAnimPalettes_BattleDomePreBattleRoom[] = {9, 9, 7, 7, 7, 7,
 static const u8 sDoorAnimPalettes_BattleTentInterior[] = {9, 9, 9, 9, 9, 9, 9, 9};
 static const u8 sDoorAnimPalettes_TrainerHillLobbyElevator[] = {7, 7, 7, 7, 7, 7, 7, 7};
 static const u8 sDoorAnimPalettes_TrainerHillRoofElevator[] = {9, 9, 7, 7, 7, 7, 7, 7};
+static const u8 sDoorAnimPalettes_OaksLabDoor[] = {10, 10, 10, 10, 10, 10, 10, 10};
 
 
 static const struct DoorGraphics sDoorGraphics[] =
@@ -393,7 +394,7 @@ static const struct DoorGraphics sDoorGraphics[] =
     {METATILE_GreenHouses_Elevator,                              DOOR_SOUND_SLIDING, DOOR_SIZE_1x1, sDoorAnimTiles_RocketElevator, sDoorAnimPalettes_Rocket_Door},
     {METATILE_BattleTowerInner_Door,                              DOOR_SOUND_SLIDING, DOOR_SIZE_1x1, sDoorAnimTiles_RocketElevator, sDoorAnimPalettes_Rocket_Door},
     {METATILE_ssaqua_Door,                              DOOR_SOUND_NORMAL, DOOR_SIZE_1x1, sDoorAnimTiles_SSAqua, sDoorAnimPalettes_SSAqua},
-
+    {METATILE_PalletTown_Door_Green,                    DOOR_SOUND_NORMAL, DOOR_SIZE_1x1, sDoorAnimTiles_BirchsLab, sDoorAnimPalettes_OaksLabDoor},
     {},
 };
 

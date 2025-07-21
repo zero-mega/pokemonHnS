@@ -16,18 +16,23 @@
     {
       "map": "MAP_ROUTE14",
       "offset": 0,
-      "direction": "down"
+      "direction": "left"
     },
     {
       "map": "MAP_ROUTE12",
-      "offset": 37,
+      "offset": 48,
       "direction": "up"
+    },
+    {
+      "map": "MAP_ROUTE14",
+      "offset": 0,
+      "direction": "left"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_HIKER",
-      "x": 15,
+      "x": 9,
       "y": 11,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -40,7 +45,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ROCKER",
-      "x": 26,
+      "x": 23,
       "y": 7,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -53,7 +58,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_JUGGLER",
-      "x": 33,
+      "x": 35,
       "y": 9,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT_AND_RIGHT",
@@ -66,7 +71,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_M",
-      "x": 43,
+      "x": 42,
       "y": 7,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -79,7 +84,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_F",
-      "x": 44,
+      "x": 43,
       "y": 7,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -105,8 +110,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_NIDORINO",
-      "x": 22,
-      "y": 3,
+      "x": 28,
+      "y": 2,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -118,8 +123,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_NIDORINA",
-      "x": 23,
-      "y": 3,
+      "x": 29,
+      "y": 2,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -131,8 +136,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
-      "x": 7,
-      "y": 15,
+      "x": 14,
+      "y": 8,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,

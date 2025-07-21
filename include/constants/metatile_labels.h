@@ -236,7 +236,7 @@
 
 // gTileset_Fuchsia
 #define METATILE_Fuchsia_Fuchsia   0x2BF
-#define METATILE_Fuchsia_Red_Door  0x315
+#define METATILE_Fuchsia_Red_Door  0x2D2
 
 // gTileset_General
 #define METATILE_General_BlueCaveIndent        0x1B0
@@ -474,6 +474,10 @@
 #define METATILE_Pacifidlog_SubmergedLogs_VerticalBottom       0x262
 #define METATILE_Pacifidlog_SubmergedLogs_VerticalTop          0x25A
 
+// gTileset_PalletTown
+#define METATILE_PalletTown_Door_Green  0x2AC
+#define METATILE_PalletTown_Door_Red    0x2BD
+
 // gTileset_Petalburg
 #define METATILE_Petalburg_Door_BirchsLab   0x249
 #define METATILE_Petalburg_Door_Littleroot  0x248
@@ -515,7 +519,7 @@
 #define METATILE_PokemonCenter_Escalator2F_Tile1_Frame2  0x2A5
 #define METATILE_PokemonCenter_Escalator2F_Tile2_Frame0  0x2A8
 #define METATILE_PokemonCenter_Escalator2F_Tile2_Frame1  0x2AA
-#define METATILE_PokemonCenter_Escalator2F_Tile2_Frame2  0x2AC
+#define METATILE_PokemonCenter_Escalator2F_Tile2_Frame2  0x011
 #define METATILE_PokemonCenter_Floor_Plain_Alt           0x2E4
 #define METATILE_PokemonCenter_Floor_ShadowTop           0x21E
 #define METATILE_PokemonCenter_Floor_ShadowTop_Alt       0x2DC
@@ -582,7 +586,7 @@
 #define METATILE_SecretBase_CampDesk_BottomMid          0x2B5
 #define METATILE_SecretBase_CampDesk_BottomRight        0x2B6
 #define METATILE_SecretBase_CampDesk_Center             0x2AD
-#define METATILE_SecretBase_CampDesk_MidLeft            0x2AC
+#define METATILE_SecretBase_CampDesk_MidLeft            0x011
 #define METATILE_SecretBase_CampDesk_MidRight           0x2AE
 #define METATILE_SecretBase_CampDesk_TopLeft            0x2A4
 #define METATILE_SecretBase_CampDesk_TopMid             0x2A5
@@ -795,7 +799,7 @@
 #define METATILE_SecretBase_Tire_BottomLeft             0x288
 #define METATILE_SecretBase_Tire_BottomRight            0x289
 #define METATILE_SecretBase_Tire_TopLeft                0x280
-#define METATILE_SecretBase_Tire_TopRight               0x011
+#define METATILE_SecretBase_Tire_TopRight               0x012
 #define METATILE_SecretBase_TropicalPlant_Base1         0x2DA
 #define METATILE_SecretBase_TropicalPlant_Base2         0x2DB
 #define METATILE_SecretBase_TropicalPlant_Top           0x019

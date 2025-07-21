@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_ROUTE12",
-      "offset": -8,
+      "offset": -51,
       "direction": "right"
     },
     {
@@ -134,7 +134,7 @@
       "x": 40,
       "y": 1,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_ROTATE_COUNTERCLOCKWISE",
+      "movement_type": "MOVEMENT_TYPE_ROTATE_CLOCKWISE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",

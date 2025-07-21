@@ -15,20 +15,20 @@
   "connections": [
     {
       "map": "MAP_VIRIDIAN_CITY",
-      "offset": -22,
+      "offset": -18,
       "direction": "up"
     },
     {
       "map": "MAP_PALLET_TOWN",
-      "offset": -4,
+      "offset": 0,
       "direction": "down"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_SUPER_NERD",
-      "x": 4,
-      "y": 12,
+      "x": 17,
+      "y": 11,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
@@ -41,7 +41,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY",
       "x": 8,
-      "y": 26,
+      "y": 27,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_LEFT_AND_RIGHT",
       "movement_range_x": 0,
@@ -66,8 +66,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_PIDGEY",
-      "x": 17,
-      "y": 29,
+      "x": 11,
+      "y": 25,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -79,8 +79,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_RATTATA",
-      "x": 17,
-      "y": 11,
+      "x": 21,
+      "y": -1,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -106,7 +106,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
       "x": 3,
-      "y": 8,
+      "y": 3,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
