@@ -4704,8 +4704,8 @@
     {
       "id": "LAYOUT_ROUTE7",
       "name": "Route7_Layout",
-      "width": 24,
-      "height": 20,
+      "width": 22,
+      "height": 40,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_route34_11",
       "border_filepath": "data/layouts/Route7/border.bin",
@@ -5244,7 +5244,7 @@
     {
       "id": "LAYOUT_SAFFRON_CITY",
       "name": "SaffronCity_Layout",
-      "width": 46,
+      "width": 48,
       "height": 55,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_route34_11",
@@ -6306,7 +6306,7 @@
       "name": "UpperGate_Layout",
       "width": 13,
       "height": 11,
-      "primary_tileset": "gTileset_Johto_Building",
+      "primary_tileset": "gTileset_Kanto_Building",
       "secondary_tileset": "gTileset_Gates_42",
       "border_filepath": "data/layouts/UpperGate/border.bin",
       "blockdata_filepath": "data/layouts/UpperGate/map.bin"
@@ -7386,7 +7386,7 @@
       "name": "Route2_ViridianForestGate_Layout",
       "width": 15,
       "height": 12,
-      "primary_tileset": "gTileset_Johto_Building",
+      "primary_tileset": "gTileset_Kanto_Building",
       "secondary_tileset": "gTileset_Gates_42",
       "border_filepath": "data/layouts/Route2_ViridianForestGate/border.bin",
       "blockdata_filepath": "data/layouts/Route2_ViridianForestGate/map.bin"
@@ -7396,7 +7396,7 @@
       "name": "ViridianForest_Route2Gate_Layout",
       "width": 15,
       "height": 12,
-      "primary_tileset": "gTileset_Johto_Building",
+      "primary_tileset": "gTileset_Kanto_Building",
       "secondary_tileset": "gTileset_Gates_42",
       "border_filepath": "data/layouts/ViridianForest_Route2Gate/border.bin",
       "blockdata_filepath": "data/layouts/ViridianForest_Route2Gate/map.bin"
@@ -7406,7 +7406,7 @@
       "name": "Route2_Route2Gate_Layout",
       "width": 15,
       "height": 12,
-      "primary_tileset": "gTileset_Johto_Building",
+      "primary_tileset": "gTileset_Kanto_Building",
       "secondary_tileset": "gTileset_Gates_42",
       "border_filepath": "data/layouts/Route2_Route2Gate/border.bin",
       "blockdata_filepath": "data/layouts/Route2_Route2Gate/map.bin"
@@ -7556,7 +7556,7 @@
       "name": "Route5_SaffronGate_Layout",
       "width": 15,
       "height": 12,
-      "primary_tileset": "gTileset_Johto_Building",
+      "primary_tileset": "gTileset_Kanto_Building",
       "secondary_tileset": "gTileset_Gates_42",
       "border_filepath": "data/layouts/Route5_SaffronGate/border.bin",
       "blockdata_filepath": "data/layouts/Route5_SaffronGate/map.bin"
@@ -7586,7 +7586,7 @@
       "name": "Saffron_Route6Gate_Layout",
       "width": 15,
       "height": 12,
-      "primary_tileset": "gTileset_Johto_Building",
+      "primary_tileset": "gTileset_Kanto_Building",
       "secondary_tileset": "gTileset_Gates_42",
       "border_filepath": "data/layouts/Saffron_Route6Gate/border.bin",
       "blockdata_filepath": "data/layouts/Saffron_Route6Gate/map.bin"
@@ -7596,7 +7596,7 @@
       "name": "Route7_SaffronGate_Layout",
       "width": 13,
       "height": 9,
-      "primary_tileset": "gTileset_Johto_Building",
+      "primary_tileset": "gTileset_Kanto_Building",
       "secondary_tileset": "gTileset_Gates_42",
       "border_filepath": "data/layouts/Route7_SaffronGate/border.bin",
       "blockdata_filepath": "data/layouts/Route7_SaffronGate/map.bin"
@@ -7636,7 +7636,7 @@
       "name": "Saffron_Route8Gate_Layout",
       "width": 13,
       "height": 9,
-      "primary_tileset": "gTileset_Johto_Building",
+      "primary_tileset": "gTileset_Kanto_Building",
       "secondary_tileset": "gTileset_Gates_42",
       "border_filepath": "data/layouts/Saffron_Route8Gate/border.bin",
       "blockdata_filepath": "data/layouts/Saffron_Route8Gate/map.bin"
@@ -7796,7 +7796,7 @@
       "name": "CeladonCityApartments1_Layout",
       "width": 15,
       "height": 20,
-      "primary_tileset": "gTileset_Johto_Building",
+      "primary_tileset": "gTileset_Kanto_Building",
       "secondary_tileset": "gTileset_CeladonApartments",
       "border_filepath": "data/layouts/CeladonCityApartments1/border.bin",
       "blockdata_filepath": "data/layouts/CeladonCityApartments1/map.bin"
@@ -7806,7 +7806,7 @@
       "name": "CeladonApartments2_Layout",
       "width": 15,
       "height": 20,
-      "primary_tileset": "gTileset_Johto_Building",
+      "primary_tileset": "gTileset_Kanto_Building",
       "secondary_tileset": "gTileset_CeladonApartments",
       "border_filepath": "data/layouts/CeladonApartments2/border.bin",
       "blockdata_filepath": "data/layouts/CeladonApartments2/map.bin"
@@ -7816,7 +7816,7 @@
       "name": "CeladonApartments3_Layout",
       "width": 15,
       "height": 20,
-      "primary_tileset": "gTileset_Johto_Building",
+      "primary_tileset": "gTileset_Kanto_Building",
       "secondary_tileset": "gTileset_CeladonApartments",
       "border_filepath": "data/layouts/CeladonApartments3/border.bin",
       "blockdata_filepath": "data/layouts/CeladonApartments3/map.bin"
@@ -7926,7 +7926,7 @@
       "name": "Celadon_Route16Gate_Layout",
       "width": 13,
       "height": 9,
-      "primary_tileset": "gTileset_Johto_Building",
+      "primary_tileset": "gTileset_Kanto_Building",
       "secondary_tileset": "gTileset_Gates_42",
       "border_filepath": "data/layouts/Celadon_Route16Gate/border.bin",
       "blockdata_filepath": "data/layouts/Celadon_Route16Gate/map.bin"
@@ -7936,7 +7936,7 @@
       "name": "Route16_Route18Gate_Layout",
       "width": 13,
       "height": 9,
-      "primary_tileset": "gTileset_Johto_Building",
+      "primary_tileset": "gTileset_Kanto_Building",
       "secondary_tileset": "gTileset_Gates_42",
       "border_filepath": "data/layouts/Route16_Route18Gate/border.bin",
       "blockdata_filepath": "data/layouts/Route16_Route18Gate/map.bin"
@@ -7946,7 +7946,7 @@
       "name": "FuchsiaSafariZoneGate_Layout",
       "width": 9,
       "height": 9,
-      "primary_tileset": "gTileset_Johto_Building",
+      "primary_tileset": "gTileset_Kanto_Building",
       "secondary_tileset": "gTileset_CianwoodGym_48",
       "border_filepath": "data/layouts/FuchsiaSafariZoneGate/border.bin",
       "blockdata_filepath": "data/layouts/FuchsiaSafariZoneGate/map.bin"
@@ -8136,7 +8136,7 @@
       "name": "Fuchsia_Route15Gate_Layout",
       "width": 13,
       "height": 9,
-      "primary_tileset": "gTileset_Johto_Building",
+      "primary_tileset": "gTileset_Kanto_Building",
       "secondary_tileset": "gTileset_Gates_42",
       "border_filepath": "data/layouts/Fuchsia_Route15Gate/border.bin",
       "blockdata_filepath": "data/layouts/Fuchsia_Route15Gate/map.bin"

@@ -15,12 +15,12 @@
   "connections": [
     {
       "map": "MAP_CELADON_CITY",
-      "offset": -10,
+      "offset": 10,
       "direction": "left"
     },
     {
       "map": "MAP_SAFFRON_CITY",
-      "offset": -23,
+      "offset": -3,
       "direction": "right"
     }
   ],
@@ -28,7 +28,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_JIGGLYPUFF",
       "x": 12,
-      "y": -1,
+      "y": 19,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -41,7 +41,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
       "x": 16,
-      "y": 15,
+      "y": 35,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
@@ -55,14 +55,14 @@
   "warp_events": [
     {
       "x": 15,
-      "y": 10,
+      "y": 30,
       "elevation": 0,
       "dest_map": "MAP_ROUTE7_SAFFRON_GATE",
       "dest_warp_id": "1"
     },
     {
       "x": 7,
-      "y": 14,
+      "y": 34,
       "elevation": 0,
       "dest_map": "MAP_ROUTE7TUNNEL_ENTER",
       "dest_warp_id": "0"
