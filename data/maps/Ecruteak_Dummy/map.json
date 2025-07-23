@@ -642,7 +642,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_DAY_POKEMON"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_UMBREON",
@@ -655,7 +655,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_NIGHT_POKEMON"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_MURKROW",
@@ -696,7 +696,7 @@
       "x": 35,
       "y": 41,
       "elevation": 0,
-      "dest_map": "MAP_TIN_TOWER10",
+      "dest_map": "MAP_TIN_TOWER1",
       "dest_warp_id": "0"
     },
     {

@@ -15,25 +15,25 @@
   "connections": [
     {
       "map": "MAP_ROUTE22",
-      "offset": 2,
+      "offset": 10,
       "direction": "left"
     },
     {
       "map": "MAP_ROUTE1",
-      "offset": 18,
+      "offset": 12,
       "direction": "down"
     },
     {
       "map": "MAP_ROUTE2",
-      "offset": 4,
+      "offset": 12,
       "direction": "up"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
-      "x": 7,
-      "y": 22,
+      "x": 8,
+      "y": 25,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -45,8 +45,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_1",
-      "x": 20,
-      "y": 10,
+      "x": 21,
+      "y": 13,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
@@ -58,8 +58,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_2",
-      "x": 26,
-      "y": 5,
+      "x": 29,
+      "y": 6,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
@@ -71,8 +71,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY",
-      "x": 28,
-      "y": 18,
+      "x": 29,
+      "y": 21,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
@@ -84,10 +84,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_PIDGEY",
-      "x": 23,
-      "y": 12,
+      "x": 25,
+      "y": 16,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -98,36 +98,36 @@
   ],
   "warp_events": [
     {
-      "x": 24,
-      "y": 9,
+      "x": 25,
+      "y": 11,
       "elevation": 0,
       "dest_map": "MAP_VIRIDIAN_CITY_HOUSE1",
       "dest_warp_id": "0"
     },
     {
-      "x": 33,
-      "y": 7,
+      "x": 35,
+      "y": 10,
       "elevation": 0,
       "dest_map": "MAP_VIRIDIAN_CITY_GYM",
       "dest_warp_id": "0"
     },
     {
-      "x": 24,
-      "y": 15,
+      "x": 25,
+      "y": 18,
       "elevation": 0,
       "dest_map": "MAP_VIRIDIAN_CITY_HOUSE2",
       "dest_warp_id": "0"
     },
     {
-      "x": 32,
+      "x": 36,
       "y": 19,
       "elevation": 0,
       "dest_map": "MAP_VIRIDIAN_POKEMART",
       "dest_warp_id": "0"
     },
     {
-      "x": 25,
-      "y": 24,
+      "x": 26,
+      "y": 26,
       "elevation": 0,
       "dest_map": "MAP_VIRIDIAN_POKECENTER",
       "dest_warp_id": "0"

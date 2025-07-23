@@ -379,7 +379,8 @@
     "FuchsiaSafariZoneGate",
     "FuchsiaCityHouse1",
     "Route12House",
-    "Fuchsia_Route15Gate"
+    "Fuchsia_Route15Gate",
+    "Route4Pokecenter"
   ],
   "gMapGroup_Dungeons": [
     "DarkCave_1",
@@ -463,7 +464,8 @@
     "RuinsOfAlphC_3",
     "RuinsOfAlphC_4",
     "LakeOfRageLowTide",
-    "TohjoFalls2"
+    "TohjoFalls2",
+    "MtMoon2"
   ],
   "gMapGroup_IndoorDynamic": [
 

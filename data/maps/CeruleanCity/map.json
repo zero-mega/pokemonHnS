@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_ROUTE4",
-      "offset": -4,
+      "offset": 10,
       "direction": "left"
     },
     {
@@ -25,7 +25,7 @@
     },
     {
       "map": "MAP_ROUTE9",
-      "offset": 15,
+      "offset": 10,
       "direction": "right"
     },
     {
@@ -38,7 +38,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER",
       "x": 18,
-      "y": 22,
+      "y": 21,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
@@ -51,7 +51,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
       "x": 19,
-      "y": 30,
+      "y": 29,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -64,7 +64,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_SLOWPOKE",
       "x": 20,
-      "y": 30,
+      "y": 29,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -76,8 +76,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY",
-      "x": 25,
-      "y": 13,
+      "x": 26,
+      "y": 15,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
@@ -90,7 +90,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
       "x": 34,
-      "y": 25,
+      "y": 24,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
@@ -103,7 +103,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
       "x": 9,
-      "y": 10,
+      "y": 14,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
@@ -115,8 +115,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_F",
-      "x": 1,
-      "y": 14,
+      "x": 0,
+      "y": 13,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -129,7 +129,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_PSYDUCK",
       "x": 29,
-      "y": 19,
+      "y": 18,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -142,7 +142,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_SPEAROW",
       "x": 29,
-      "y": 12,
+      "y": 9,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -156,28 +156,28 @@
   "warp_events": [
     {
       "x": 1,
-      "y": 13,
+      "y": 12,
       "elevation": 0,
       "dest_map": "MAP_CERULEAN_CAVE_1",
       "dest_warp_id": "0"
     },
     {
       "x": 10,
-      "y": 14,
+      "y": 11,
       "elevation": 0,
       "dest_map": "MAP_CERULEAN_CITY_HOUSE1",
       "dest_warp_id": "0"
     },
     {
       "x": 30,
-      "y": 15,
+      "y": 11,
       "elevation": 0,
       "dest_map": "MAP_CERULEAN_CITY_HOUSE2",
       "dest_warp_id": "0"
     },
     {
-      "x": 17,
-      "y": 19,
+      "x": 15,
+      "y": 17,
       "elevation": 0,
       "dest_map": "MAP_CERULEAN_CITY_HOUSE3",
       "dest_warp_id": "0"
@@ -191,23 +191,30 @@
     },
     {
       "x": 31,
-      "y": 22,
+      "y": 21,
       "elevation": 0,
       "dest_map": "MAP_CERULEAN_CITY_GYM",
       "dest_warp_id": "0"
     },
     {
-      "x": 16,
+      "x": 13,
       "y": 28,
       "elevation": 0,
       "dest_map": "MAP_CERULEAN_CITY_BIKE_SHOP",
       "dest_warp_id": "0"
     },
     {
-      "x": 27,
+      "x": 29,
       "y": 28,
       "elevation": 0,
       "dest_map": "MAP_CERULEAN_POKEMART",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 14,
+      "y": 28,
+      "elevation": 0,
+      "dest_map": "MAP_CERULEAN_CITY_BIKE_SHOP",
       "dest_warp_id": "0"
     }
   ],

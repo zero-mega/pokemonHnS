@@ -170,7 +170,7 @@ RuinsOfAlph2_MapScript_OmanyteSuccess::
 	playse SE_CLICK
 	special DrawWholeMapView
 	delay 30
-	clearflag ITEM_HELIX_FOSSIL
+	clearflag FLAG_ITEM_HELIX_FOSSIL
 	applymovement OBJ_EVENT_ID_PLAYER, RuinsOfAlph2_Movement_Fall
 	delay 30
 	special SpawnCameraObject
@@ -209,7 +209,7 @@ RuinsOfAlph2_MapScript_AerodactylSuccess::
 	playse SE_CLICK
 	special DrawWholeMapView
 	delay 30
-	clearflag ITEM_OLD_AMBER
+	clearflag FLAG_ITEM_OLD_AMBER
 	applymovement OBJ_EVENT_ID_PLAYER, RuinsOfAlph2_Movement_Fall
 	delay 30
 	special SpawnCameraObject
@@ -248,7 +248,7 @@ RuinsOfAlph2_MapScript_HoohSuccess::
 	playse SE_CLICK
 	special DrawWholeMapView
 	delay 30
-	clearflag ITEM_GS_BALL
+	clearflag FLAG_ITEM_GS_BALL
 	applymovement OBJ_EVENT_ID_PLAYER, RuinsOfAlph2_Movement_Fall
 	delay 30
 	special SpawnCameraObject

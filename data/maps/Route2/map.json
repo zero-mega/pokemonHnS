@@ -15,20 +15,20 @@
   "connections": [
     {
       "map": "MAP_VIRIDIAN_CITY",
-      "offset": -4,
+      "offset": -12,
       "direction": "down"
     },
     {
       "map": "MAP_PEWTER_CITY",
-      "offset": -6,
+      "offset": -14,
       "direction": "up"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 9,
-      "y": 45,
+      "x": 19,
+      "y": 63,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -40,8 +40,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER",
-      "x": 8,
-      "y": 39,
+      "x": 2,
+      "y": 56,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -53,8 +53,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
-      "x": 19,
-      "y": 40,
+      "x": 15,
+      "y": 62,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -66,8 +66,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
-      "x": 21,
-      "y": 47,
+      "x": 15,
+      "y": 70,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -79,8 +79,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
-      "x": 21,
-      "y": 53,
+      "x": 15,
+      "y": 69,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -92,8 +92,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 24,
-      "y": 52,
+      "x": 18,
+      "y": 68,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -105,8 +105,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER",
-      "x": 11,
-      "y": 3,
+      "x": 7,
+      "y": 5,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
@@ -118,8 +118,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
-      "x": 15,
-      "y": 8,
+      "x": 18,
+      "y": 26,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -131,8 +131,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_CATERPIE",
-      "x": 17,
-      "y": 42,
+      "x": 14,
+      "y": 54,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 0,
@@ -144,8 +144,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_WEEDLE",
-      "x": 6,
-      "y": 39,
+      "x": 1,
+      "y": 62,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 0,
@@ -154,64 +154,105 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
+      "x": 11,
+      "y": 13,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_CutTree",
+      "flag": "FLAG_TEMP_5"
     }
   ],
   "warp_events": [
     {
-      "x": 12,
-      "y": 33,
+      "x": 5,
+      "y": 51,
       "elevation": 0,
       "dest_map": "MAP_ROUTE2_VIRIDIAN_FOREST_GATE",
       "dest_warp_id": "0"
     },
     {
-      "x": 10,
-      "y": 8,
+      "x": 5,
+      "y": 13,
       "elevation": 0,
       "dest_map": "MAP_VIRIDIAN_FOREST_ROUTE2GATE",
       "dest_warp_id": "1"
     },
     {
-      "x": 11,
-      "y": 8,
+      "x": 4,
+      "y": 13,
       "elevation": 0,
       "dest_map": "MAP_VIRIDIAN_FOREST_ROUTE2GATE",
       "dest_warp_id": "1"
     },
     {
-      "x": 24,
-      "y": 31,
+      "x": 18,
+      "y": 46,
       "elevation": 0,
       "dest_map": "MAP_ROUTE2_ROUTE2GATE",
       "dest_warp_id": "1"
     },
     {
-      "x": 24,
-      "y": 25,
+      "x": 18,
+      "y": 41,
       "elevation": 0,
       "dest_map": "MAP_ROUTE2_ROUTE2GATE",
       "dest_warp_id": "0"
     },
     {
-      "x": 25,
-      "y": 25,
+      "x": 19,
+      "y": 41,
       "elevation": 0,
       "dest_map": "MAP_ROUTE2_ROUTE2GATE",
       "dest_warp_id": "0"
     },
     {
-      "x": 23,
-      "y": 15,
+      "x": 17,
+      "y": 22,
       "elevation": 0,
       "dest_map": "MAP_ROUTE2HOUSE",
       "dest_warp_id": "0"
     },
     {
-      "x": 20,
-      "y": 7,
+      "x": 17,
+      "y": 11,
       "elevation": 0,
-      "dest_map": "MAP_DYNAMIC",
+      "dest_map": "MAP_DIGLETTS_CAVE1",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 6,
+      "y": 51,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE2_VIRIDIAN_FOREST_GATE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 19,
+      "y": 46,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE2_ROUTE2GATE",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 6,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_VIRIDIAN_FOREST_ROUTE2GATE",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 7,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_VIRIDIAN_FOREST_ROUTE2GATE",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

@@ -352,6 +352,7 @@
 #define MAP_FUCHSIA_CITY_HOUSE1         (25 | (23 << 8))
 #define MAP_ROUTE12HOUSE                (26 | (23 << 8))
 #define MAP_FUCHSIA_ROUTE15GATE         (27 | (23 << 8))
+#define MAP_ROUTE4POKECENTER            (28 | (23 << 8))
 
 // gMapGroup_Dungeons
 #define MAP_DARK_CAVE_1           (0 | (24 << 8))
@@ -436,6 +437,7 @@
 #define MAP_RUINS_OF_ALPH_C_4     (79 | (24 << 8))
 #define MAP_LAKE_OF_RAGE_LOW_TIDE (80 | (24 << 8))
 #define MAP_TOHJO_FALLS2          (81 | (24 << 8))
+#define MAP_MT_MOON2              (82 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 
