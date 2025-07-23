@@ -4807,7 +4807,7 @@
       "width": 24,
       "height": 160,
       "primary_tileset": "gTileset_Johto_General",
-      "secondary_tileset": "gTileset_CeladonCity",
+      "secondary_tileset": "gTileset_CyclingRoad",
       "border_filepath": "data/layouts/Route17/border.bin",
       "blockdata_filepath": "data/layouts/Route17/map.bin"
     },

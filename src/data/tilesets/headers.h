@@ -2072,3 +2072,14 @@ const struct Tileset gTileset_RuinsOfAlphWriting =
     .metatileAttributes = gMetatileAttributes_RuinsOfAlphWriting,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_CyclingRoad =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_CyclingRoad,
+    .palettes = gTilesetPalettes_CyclingRoad,
+    .metatiles = gMetatiles_CyclingRoad,
+    .metatileAttributes = gMetatileAttributes_CyclingRoad,
+    .callback = NULL,
+};
