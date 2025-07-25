@@ -67,7 +67,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_CLEFAIRY",
+      "graphics_id": "OBJ_EVENT_GFX_CLEFAIRY_DOLL",
       "x": 4,
       "y": 6,
       "elevation": 0,
@@ -80,7 +80,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_MILTANK",
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_BAYLEEF",
       "x": 7,
       "y": 6,
       "elevation": 0,

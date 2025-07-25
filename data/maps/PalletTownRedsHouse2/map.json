@@ -29,6 +29,21 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 2,
+      "y": 1,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "PalletTownRedsHouse2_EventScript_PC"
+    },
+    {
+      "type": "sign",
+      "x": 4,
+      "y": 2,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "PalletTownRedsHouse2_EventScript_NES"
+    }
   ]
 }

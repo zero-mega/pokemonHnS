@@ -202,9 +202,9 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_GARBAGEFLAG
 	setflag FLAG_GARBAGEFLAG
 	setflag FLAG_GARBAGEFLAG
-	setflag FLAG_HIDE_ROUTE_118_GABBY_AND_TY_1
-	setflag FLAG_HIDE_ROUTE_120_GABBY_AND_TY_1
-	setflag FLAG_HIDE_ROUTE_111_GABBY_AND_TY_3
+	setflag FLAG_GARBAGEFLAG
+	setflag FLAG_GARBAGEFLAG
+	setflag FLAG_GARBAGEFLAG
 	setflag FLAG_GARBAGEFLAG
 	setflag FLAG_GARBAGEFLAG
 	setflag FLAG_GARBAGEFLAG
@@ -315,5 +315,14 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_GARBAGEFLAG
 	setflag FLAG_HIDE_SKY_PILLAR_WALLACE
 	setflag FLAG_GARBAGEFLAG_STILL
+	@crystal 
+	clearflag FLAG_BADGE09_GET
+	clearflag FLAG_BADGE10_GET
+	clearflag FLAG_BADGE11_GET
+	clearflag FLAG_BADGE12_GET
+	clearflag FLAG_BADGE13_GET
+	clearflag FLAG_BADGE14_GET
+	clearflag FLAG_BADGE15_GET
+	clearflag FLAG_BADGE16_GET
 	call EventScript_ResetAllBerries
 	end

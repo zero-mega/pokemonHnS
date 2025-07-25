@@ -40,7 +40,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "PalletTown_EventScript_Fatman",
       "flag": "0"
     },
     {
@@ -53,7 +53,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "PalletTown_EventScript_Woman",
       "flag": "0"
     },
     {
@@ -162,6 +162,21 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 9,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "PalletTown_EventScript_TownSign"
+    },
+    {
+      "type": "sign",
+      "x": 16,
+      "y": 16,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "PalletTown_EventScript_OaksLabSign"
+    }
   ]
 }

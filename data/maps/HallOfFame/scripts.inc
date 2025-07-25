@@ -63,7 +63,7 @@ HallOfFame_EventScript_SetFirstGameClearFlags::
 	return
 
 HallOfFame_EventScript_SetGameClearFlags::
-	setflag FLAG_IS_CHAMPION
+	clearflag FLAG_HIDE_VERMILION_SNORLAX
 	setvar VAR_COMPLETED_LUGIA, 4
 	setvar VAR_COMPLETED_HO_OH, 4
 	setvar VAR_LEAGUE_STATE, 1

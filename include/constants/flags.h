@@ -840,10 +840,10 @@
 #define FLAG_GOT_TM_SANDSTORM                                 0x319
 #define FLAG_INDIGOJUNCTION_HIDE_KANTO_GUARD                             0x31A
 #define FLAG_INDIGOJUNCTION_HIDE_SILVER_GUARD                             0x31B
-#define FLAG_HIDE_ROUTE_111_GABBY_AND_TY_1                          0x31C
-#define FLAG_HIDE_ROUTE_118_GABBY_AND_TY_1                          0x31D
-#define FLAG_HIDE_ROUTE_120_GABBY_AND_TY_1                          0x31E
-#define FLAG_HIDE_ROUTE_111_GABBY_AND_TY_3                          0x31F
+#define FLAG_HIDE_VERMILION_EUSINE_SUICUNE                          0x31C //crystal kantoflags start
+#define FLAG_GOT_VERMILION_HP_UP                          0x31D
+#define FLAG_GOT_KANTO_RADIO                          0x31E
+#define FLAG_HIDE_VERMILION_SNORLAX                          0x31F
 #define FLAG_HIDE_LUGIA                                             0x320
 #define FLAG_HIDE_HO_OH                                             0x321
 #define FLAG_HIDE_LILYCOVE_CONTEST_HALL_REPORTER                    0x322
@@ -1040,10 +1040,10 @@
 #define FLAG_HIDE_SSAQUA8_GRANDDAUGHTER          0x3E1
 #define FLAG_HIDE_SSAQUA_SAILOR                      0x3E2
 #define FLAG_HIDE_SSAQUA3_GRANDDAUGHTER                              0x3E3//unused
-#define FLAG_HIDE_SOOTOPOLIS_CITY_RAYQUAZA                          0x3E4
-#define FLAG_HIDE_SOOTOPOLIS_CITY_KYOGRE                            0x3E5
-#define FLAG_HIDE_SOOTOPOLIS_CITY_GROUDON                           0x3E6
-#define FLAG_HIDE_RUSTBORO_CITY_POKEMON_SCHOOL_SCOTT                0x3E7
+#define FLAG_HIDE_SOOTOPOLIS_CITY_RAYQUAZA                          0x3E4 //unused
+#define FLAG_HIDE_SOOTOPOLIS_CITY_KYOGRE                            0x3E5//unused
+#define FLAG_HIDE_SOOTOPOLIS_CITY_GROUDON                           0x3E6//unused
+#define FLAG_HIDE_RUSTBORO_CITY_POKEMON_SCHOOL_SCOTT                0x3E7//unused
 
 // Item Ball Flags 
 #define FLAG_ITEM_GARBAGEFLAG                                  0x3E8    //backup CRYSTALITEMFLAGS
@@ -1503,14 +1503,14 @@
 
 #define FLAG_RECEIVED_POKEDEX_FROM_BIRCH            (SYSTEM_FLAGS + 0x84)
 
-#define FLAG_UNUSED_0x8E5                           (SYSTEM_FLAGS + 0x85) // Unused Flag
-#define FLAG_UNUSED_0x8E6                           (SYSTEM_FLAGS + 0x86) // Unused Flag
-#define FLAG_UNUSED_0x8E7                           (SYSTEM_FLAGS + 0x87) // Unused Flag
-#define FLAG_UNUSED_0x8E8                           (SYSTEM_FLAGS + 0x88) // Unused Flag
-#define FLAG_UNUSED_0x8E9                           (SYSTEM_FLAGS + 0x89) // Unused Flag
-#define FLAG_UNUSED_0x8EA                           (SYSTEM_FLAGS + 0x8A) // Unused Flag
-#define FLAG_UNUSED_0x8EB                           (SYSTEM_FLAGS + 0x8B) // Unused Flag
-#define FLAG_UNUSED_0x8EC                           (SYSTEM_FLAGS + 0x8C) // Unused Flag
+#define FLAG_BADGE09_GET                           (SYSTEM_FLAGS + 0x85) 
+#define FLAG_BADGE10_GET                           (SYSTEM_FLAGS + 0x86)  
+#define FLAG_BADGE11_GET                           (SYSTEM_FLAGS + 0x87)  
+#define FLAG_BADGE12_GET                           (SYSTEM_FLAGS + 0x88)  
+#define FLAG_BADGE13_GET                           (SYSTEM_FLAGS + 0x89)  
+#define FLAG_BADGE14_GET                           (SYSTEM_FLAGS + 0x8A)  
+#define FLAG_BADGE15_GET                           (SYSTEM_FLAGS + 0x8B)  
+#define FLAG_BADGE16_GET                           (SYSTEM_FLAGS + 0x8C)  
 #define FLAG_UNUSED_0x8ED                           (SYSTEM_FLAGS + 0x8D) // Unused Flag
 #define FLAG_UNUSED_0x8EE                           (SYSTEM_FLAGS + 0x8E) // Unused Flag
 #define FLAG_UNUSED_0x8EF                           (SYSTEM_FLAGS + 0x8F) // Unused Flag
@@ -1586,7 +1586,7 @@
 #define FLAG_DAILY_FLOWER_SHOP_RECEIVED_BERRY       (DAILY_FLAGS_START + 0x10)
 #define FLAG_DAILY_BERRY_MASTERS_WIFE               (DAILY_FLAGS_START + 0x11)
 #define FLAG_DAILY_SOOTOPOLIS_RECEIVED_BERRY        (DAILY_FLAGS_START + 0x12)
-#define FLAG_UNUSED_0x933                           (DAILY_FLAGS_START + 0x13) // Unused Flag
+#define FLAG_DAILY_DAISY_GROOMED                           (DAILY_FLAGS_START + 0x13) // Unused Flag
 #define FLAG_DAILY_APPRENTICE_LEAVES                (DAILY_FLAGS_START + 0x14)
 
 #define FLAG_UNUSED_0x935                           (DAILY_FLAGS_START + 0x15) // Unused Flag

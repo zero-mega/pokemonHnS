@@ -197,7 +197,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "GabbyAndTy_EventScript_TyBattle1",
-      "flag": "FLAG_HIDE_ROUTE_111_GABBY_AND_TY_1"
+      "flag": "FLAG_GARBAGEFLAG"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SAGE",
@@ -210,7 +210,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "GabbyAndTy_EventScript_GabbyBattle1",
-      "flag": "FLAG_HIDE_ROUTE_111_GABBY_AND_TY_1"
+      "flag": "FLAG_GARBAGEFLAG"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
@@ -301,7 +301,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "GabbyAndTy_EventScript_GabbyBattle4",
-      "flag": "FLAG_HIDE_ROUTE_111_GABBY_AND_TY_3"
+      "flag": "FLAG_GARBAGEFLAG"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_JUGGLER",
@@ -314,7 +314,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "GabbyAndTy_EventScript_TyBattle4",
-      "flag": "FLAG_HIDE_ROUTE_111_GABBY_AND_TY_3"
+      "flag": "FLAG_GARBAGEFLAG"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SAGE",
