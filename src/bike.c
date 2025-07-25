@@ -62,6 +62,18 @@ static void Bike_SetBikeStill(void);
     bike does not. This is because the Acro needs to know the button inputs
     for its complex tricks and actions.
 */
+//crystal added for cycling road
+bool8 ShouldForceCyclingRoadDownward(void)
+{
+    s16 x, y;
+    u8 metatileBehavior;
+
+    PlayerGetDestCoords(&x, &y);
+    metatileBehavior = MapGridGetMetatileBehaviorAt(x, y);
+
+    return MetatileBehavior_IsCyclingRoadPullDownTile(metatileBehavior);
+}
+
 
 static void (*const sMachBikeTransitions[])(u8) =
 {
@@ -126,6 +138,22 @@ static const struct BikeHistoryInputInfo sAcroBikeTricksList[] =
 // code
 void MovePlayerOnBike(u8 direction, u16 newKeys, u16 heldKeys)
 {
+ if (ShouldForceCyclingRoadDownward() && heldKeys == 0)
+    {
+        // If B is held, disable slope forcing
+        if (!(heldKeys & B_BUTTON))
+        {
+            u8 collision = GetBikeCollision(DIR_SOUTH);
+
+            if (collision == COLLISION_NONE)
+                PlayerWalkFaster(DIR_SOUTH);
+            else if (collision == COLLISION_LEDGE_JUMP)
+                PlayerJumpLedge(DIR_SOUTH);
+
+            gPlayerAvatar.runningState = MOVING;
+            return;
+        }
+    }
     if (gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_MACH_BIKE)
         MovePlayerOnMachBike(direction, newKeys, heldKeys);
     else
