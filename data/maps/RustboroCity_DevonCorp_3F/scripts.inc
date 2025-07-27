@@ -7,7 +7,7 @@ RustboroCity_DevonCorp_3F_MapScripts::
 	.byte 0
 
 RustboroCity_DevonCorp_3F_OnTransition:
-	call_if_eq VAR_DEVON_CORP_3F_STATE, 0, RustboroCity_DevonCorp_3F_EventScript_SetEmployeePos
+	call_if_eq VAR_GARBAGEVAR, 0, RustboroCity_DevonCorp_3F_EventScript_SetEmployeePos
 	end
 
 RustboroCity_DevonCorp_3F_EventScript_SetEmployeePos::
@@ -16,7 +16,7 @@ RustboroCity_DevonCorp_3F_EventScript_SetEmployeePos::
 	return
 
 RustboroCity_DevonCorp_3F_OnWarp:
-	map_script_2 VAR_DEVON_CORP_3F_STATE, 0, RustboroCity_DevonCorp_3F_EventScript_PlayerFaceEast
+	map_script_2 VAR_GARBAGEVAR, 0, RustboroCity_DevonCorp_3F_EventScript_PlayerFaceEast
 	.2byte 0
 
 RustboroCity_DevonCorp_3F_EventScript_PlayerFaceEast::
@@ -24,7 +24,7 @@ RustboroCity_DevonCorp_3F_EventScript_PlayerFaceEast::
 	end
 
 RustboroCity_DevonCorp_3F_OnFrame:
-	map_script_2 VAR_DEVON_CORP_3F_STATE, 0, RustboroCity_DevonCorp_3F_EventScript_MeetPresident
+	map_script_2 VAR_GARBAGEVAR, 0, RustboroCity_DevonCorp_3F_EventScript_MeetPresident
 	.2byte 0
 
 RustboroCity_DevonCorp_3F_EventScript_MeetPresident::
@@ -68,7 +68,7 @@ RustboroCity_DevonCorp_3F_EventScript_MeetPresident::
 	clearflag FLAG_GARBAGEFLAG
 	setvar VAR_BRINEY_LOCATION, 1
 	clearflag FLAG_HIDE_RUSTBORO_CITY_RIVAL
-	setvar VAR_DEVON_CORP_3F_STATE, 1
+	setvar VAR_GARBAGEVAR, 1
 	setvar VAR_GARBAGEVAR, 6
 	releaseall
 	end

@@ -6,8 +6,8 @@ LittlerootTown_MaysHouse_2F_MapScripts::
 	.byte 0
 
 LittlerootTown_MaysHouse_2F_OnTransition:
-	call_if_lt VAR_LITTLEROOT_RIVAL_STATE, 2, LittlerootTown_MaysHouse_2F_EventScript_CheckSetReadyToMeetMay
-	call_if_ge VAR_LITTLEROOT_RIVAL_STATE, 3, LittlerootTown_MaysHouse_2F_EventScript_CheckShouldUpdateMayPos
+	call_if_lt VAR_GARBAGEVAR, 2, LittlerootTown_MaysHouse_2F_EventScript_CheckSetReadyToMeetMay
+	call_if_ge VAR_GARBAGEVAR, 3, LittlerootTown_MaysHouse_2F_EventScript_CheckShouldUpdateMayPos
 	call_if_eq VAR_LITTLEROOT_INTRO_STATE, 4, PlayersHouse_2F_EventScript_BlockStairsUntilClockIsSet
 	call SecretBase_EventScript_SetDecorationFlags
 	setvar VAR_SECRET_BASE_INITIALIZED, 0
@@ -35,7 +35,7 @@ LittlerootTown_MaysHouse_2F_EventScript_CheckSetReadyToMeetMay::
 	return
 
 LittlerootTown_MaysHouse_2F_EventScript_SetReadyToMeetMay::
-	setvar VAR_LITTLEROOT_RIVAL_STATE, 2
+	setvar VAR_GARBAGEVAR, 2
 	return
 
 LittlerootTown_MaysHouse_2F_OnWarp:
@@ -49,7 +49,7 @@ LittlerootTown_MaysHouse_2F_EventScript_CheckInitDecor::
 
 LittlerootTown_MaysHouse_2F_EventScript_RivalsPokeBall::
 	lockall
-	goto_if_eq VAR_LITTLEROOT_RIVAL_STATE, 2, LittlerootTown_MaysHouse_2F_EventScript_MeetMay
+	goto_if_eq VAR_GARBAGEVAR, 2, LittlerootTown_MaysHouse_2F_EventScript_MeetMay
 	msgbox RivalsHouse_2F_Text_ItsRivalsPokeBall, MSGBOX_DEFAULT
 	releaseall
 	end
@@ -70,7 +70,7 @@ LittlerootTown_MaysHouse_2F_EventScript_MeetMay::
 	call_if_eq VAR_FACING, DIR_SOUTH, LittlerootTown_MaysHouse_2F_EventScript_MeetMaySouth
 	call_if_eq VAR_FACING, DIR_WEST, LittlerootTown_MaysHouse_2F_EventScript_MeetMayWest
 	call_if_eq VAR_FACING, DIR_EAST, LittlerootTown_MaysHouse_2F_EventScript_MeetMayEast
-	setvar VAR_LITTLEROOT_RIVAL_STATE, 3
+	setvar VAR_GARBAGEVAR, 3
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_POKE_BALL
 	clearflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_BEDROOM
 	setvar VAR_GARBAGEVAR, 1

@@ -167,7 +167,7 @@ LittlerootTown_BrendansHouse_1F_EventScript_MeetRival::
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_POKE_BALL
 	clearflag FLAG_GARBAGEFLAG
 	delay 30
-	setvar VAR_LITTLEROOT_RIVAL_STATE, 3
+	setvar VAR_GARBAGEVAR, 3
 	setvar VAR_GARBAGEVAR, 1
 	savebgm MUS_DUMMY
 	fadedefaultbgm

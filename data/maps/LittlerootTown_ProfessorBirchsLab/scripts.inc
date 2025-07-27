@@ -603,7 +603,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_GivePokedex::
 	setvar VAR_GARBAGEVAR, 5
 	setflag FLAG_ADVENTURE_STARTED
 	setvar VAR_GARBAGEVAR, 1
-	setvar VAR_LITTLEROOT_RIVAL_STATE, 4
+	setvar VAR_GARBAGEVAR, 4
 	setvar VAR_GARBAGEVAR, 3
 	releaseall
 	end

@@ -29,7 +29,7 @@ InsideOfTruck_EventScript_SetIntroFlagsMale::
 	setflag FLAG_GARBAGEFLAG
 	setflag FLAG_GARBAGEFLAG
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_POKE_BALL
-	setvar VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 1
+	setvar VAR_GARBAGEVAR, 1
 	setdynamicwarp MAP_LITTLEROOT_TOWN, 3, 10
 	releaseall
 	end

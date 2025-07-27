@@ -35,8 +35,8 @@ SlateportCity_OnTransition:
 
 SlateportCity_EventScript_EnterSlateport::
 	setflag FLAG_VISITED_MAHOGANY_TOWN
-	setvar VAR_CONTEST_HALL_STATE, 0
-	setflag FLAG_HIDE_SLATEPORT_CITY_CONTEST_REPORTER
+	setvar VAR_GARBAGEVAR, 0
+	setflag FLAG_GARBAGEFLAG
 	return
 
 SlateportCity_EventScript_MovePeopleForSternInterview::

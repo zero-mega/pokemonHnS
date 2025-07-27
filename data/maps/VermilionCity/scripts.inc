@@ -20,6 +20,12 @@ VermilionCity_TriggerCity:: @flagheap
 	clearflag FLAG_GOT_VERMILION_HP_UP
 	clearflag FLAG_GOT_KANTO_RADIO
 	clearflag FLAG_HIDE_VERMILION_SNORLAX
+	clearflag FLAG_HIDE_FAN_CLUB_CLEFAIRY_DOLL
+	clearflag FLAG_FOUND_BOTH_VERMILION_GYM_SWITCHES
+
+	setvar VAR_FAN_CLUB_CLEFAIRY, 0
+	setvar VAR_FAN_CLUB_GUY, 0
+	setvar VAR_CLEFAIRY_DOLL_STATE, 0
 	setvar VAR_VERMILION_CITY_STATE, 1
 	end
 
@@ -143,7 +149,7 @@ VermilionCity_EventScript_BadgeGuy::
 	goto_if_set FLAG_GOT_VERMILION_HP_UP, VermilionCity_EventScript_BadgeGuyAfter
 	goto_if_set FLAG_BADGE16_GET, VermilionCity_EventScript_BadgeGuyAll
 	goto_if_set FLAG_BADGE12_GET, VermilionCity_EventScript_BadgeGuyMost
-	goto_if_set FLAG_BADGE09_GET, VermilionCity_EventScript_BadgeGuySome
+	goto_if_set FLAG_BADGE11_GET, VermilionCity_EventScript_BadgeGuySome
 	msgbox VermilionCity_Text_BadgeGuy_Trainer, MSGBOX_DEFAULT
 	closemessage
 	release
@@ -161,6 +167,7 @@ VermilionCity_EventScript_BadgeGuyMost::
 VermilionCity_EventScript_BadgeGuyAll::
 	msgbox VermilionCity_Text_BadgeGuy_AllBadges, MSGBOX_DEFAULT
 	giveitem ITEM_HP_UP
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_GOT_VERMILION_HP_UP
 	closemessage
 	release

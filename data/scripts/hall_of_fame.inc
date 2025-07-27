@@ -42,7 +42,7 @@ EverGrandeCity_HallOfFame_EventScript_ShowStevensHouseBeldum::
 
 EverGrandeCity_HallOfFame_EventScript_ReadyReceiveSSTicketEvent::
 	setvar VAR_GARBAGEVAR, 3
-	setvar VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 3
+	setvar VAR_GARBAGEVAR, 3
 	clearflag FLAG_GARBAGEFLAG
 	return
 

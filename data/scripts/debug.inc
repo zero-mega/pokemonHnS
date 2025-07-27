@@ -28,9 +28,9 @@ Debug_CheatStart::
 	setflag FLAG_SYS_B_DASH
 	setvar VAR_GARBAGEVAR, 4 @ 4: Received Running Shoes
 	setvar VAR_LITTLEROOT_INTRO_STATE, 7 @ 7: Told to go meet rival
-	setvar VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 2 @ 2: Met Rival's Mom (and is corresponding gender)
 	setvar VAR_GARBAGEVAR, 2 @ 2: Met Rival's Mom (and is corresponding gender)
-	setvar VAR_LITTLEROOT_RIVAL_STATE, 4 @ 4: Received Pokedex
+	setvar VAR_GARBAGEVAR, 2 @ 2: Met Rival's Mom (and is corresponding gender)
+	setvar VAR_GARBAGEVAR, 4 @ 4: Received Pokedex
 	setflag FLAG_RECEIVED_BIKE
 	additem ITEM_ACRO_BIKE
 	setvar VAR_BRINEY_HOUSE_STATE, 1

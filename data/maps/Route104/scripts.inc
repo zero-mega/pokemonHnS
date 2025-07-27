@@ -9,7 +9,7 @@ Route104_MapScripts::
 	.byte 0
 
 Route104_OnFrame:
-	map_script_2 VAR_BOARD_BRINEY_BOAT_STATE, 1, Route104_EventScript_StartSailToDewford
+	map_script_2 VAR_GARBAGEVAR, 1, Route104_EventScript_StartSailToDewford
 	.2byte 0
 
 Route104_EventScript_StartSailToDewford::
@@ -35,7 +35,7 @@ Route104_EventScript_HideWhiteHerbFlorist::
 	return
 
 Route104_EventScript_TrySetRivalPos::
-	goto_if_ge VAR_BOARD_BRINEY_BOAT_STATE, 1, Route104_EventScript_DontSetRivalPos
+	goto_if_ge VAR_GARBAGEVAR, 1, Route104_EventScript_DontSetRivalPos
 	goto_if_set FLAG_MET_RIVAL_RUSTBORO, Route104_EventScript_DontSetRivalPos
 	goto_if_unset FLAG_REGISTER_RIVAL_POKENAV, Route104_EventScript_DontSetRivalPos
 	setobjectxyperm LOCALID_RIVAL, 17, 52
@@ -416,7 +416,7 @@ Route104_EventScript_ArriveInDewford::
 	resetobjectsubpriority OBJ_EVENT_ID_PLAYER, MAP_ROUTE104
 	resetobjectsubpriority LOCALID_BRINEY_DEWFORD, MAP_DEWFORD_TOWN
 	copyobjectxytoperm LOCALID_BRINEY_DEWFORD
-	setvar VAR_BOARD_BRINEY_BOAT_STATE, 0
+	setvar VAR_GARBAGEVAR, 0
 	goto_if_unset FLAG_DELIVERED_STEVEN_LETTER, Route104_EventScript_DeliverLetterReminder
 	goto_if_set FLAG_DELIVERED_STEVEN_LETTER, Route104_EventScript_LandedInDewford
 	end

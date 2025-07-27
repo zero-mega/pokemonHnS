@@ -74,7 +74,7 @@ Route104_MrBrineysHouse_EventScript_DeclineSailing::
 Route104_MrBrineysHouse_EventScript_SailToDewford::
 	msgbox Route104_MrBrineysHouse_Text_SetSailForDewford, MSGBOX_DEFAULT
 	call EventScript_BackupMrBrineyLocation
-	setvar VAR_BOARD_BRINEY_BOAT_STATE, 1
+	setvar VAR_GARBAGEVAR, 1
 	clearflag FLAG_GARBAGEFLAG
 	setflag FLAG_GARBAGEFLAG
 	setflag FLAG_GARBAGEFLAG

@@ -26,14 +26,14 @@ LittlerootTown_MapScripts::
 	@ 7: Told to go meet rival
 
 	@ State descriptions for VAR_GARBAGEVAR
-	@                    and VAR_LITTLEROOT_HOUSES_STATE_BRENDAN
+	@                    and VAR_GARBAGEVAR
 	@ 1: On Truck (and is corresponding gender)
 	@ 2: Met Rival's Mom (and is corresponding gender)
 	@ 3: Entered Hall of Fame
 	@ 4: Completed Lati TV / SS Ticket event
 	@ 5: Exited house after above event
 
-	@ State descriptions for VAR_LITTLEROOT_RIVAL_STATE
+	@ State descriptions for VAR_GARBAGEVAR
 	@ 1: Never occurs
 	@ 2: Entered Rival's bedroom
 	@ 3: Met Rival
@@ -49,9 +49,9 @@ LittlerootTown_OnTransition:
 	call_if_unset FLAG_RESCUED_BIRCH, LittlerootTown_EventScript_SetTwinPos
 	call_if_eq VAR_GARBAGEVAR, 3, LittlerootTown_EventScript_SetMomStandingInFrontOfDoorPos
 	call_if_eq VAR_GARBAGEVAR, 4, LittlerootTown_EventScript_SetExitedHouseAfterLatiSSTicketEvent
-	call_if_eq VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 4, LittlerootTown_EventScript_SetExitedHouseAfterLatiSSTicketEvent
+	call_if_eq VAR_GARBAGEVAR, 4, LittlerootTown_EventScript_SetExitedHouseAfterLatiSSTicketEvent
 	call_if_eq VAR_OLDALE_RIVAL_STATE, 1, LittlerootTown_EventScript_MoveRivalFromOldale
-	call_if_eq VAR_LITTLEROOT_RIVAL_STATE, 3, LittlerootTown_EventScript_SetRivalLeftForRoute103
+	call_if_eq VAR_GARBAGEVAR, 3, LittlerootTown_EventScript_SetRivalLeftForRoute103
 	call_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 1, LittlerootTown_EventScript_HideMapNamePopup
 	call_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 2, LittlerootTown_EventScript_LeftLabAfterDexUpgrade
 	end
@@ -82,7 +82,7 @@ LittlerootTown_EventScript_MoveRivalFromOldale::
 
 LittlerootTown_EventScript_SetExitedHouseAfterLatiSSTicketEvent::
 	setvar VAR_GARBAGEVAR, 5
-	setvar VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 5
+	setvar VAR_GARBAGEVAR, 5
 	return
 
 LittlerootTown_EventScript_MoveMomToMaysDoor::
