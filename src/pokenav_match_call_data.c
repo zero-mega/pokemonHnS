@@ -276,7 +276,7 @@ static const match_call_text_data_t sMayTextScripts[] = {
     { MatchCall_Text_May1,  0xFFFF,                              0xFFFF },
     { MatchCall_Text_May2,  FLAG_DEFEATED_AZALEA_GYM,           0xFFFF },
     { MatchCall_Text_May3,  FLAG_DELIVERED_DEVON_GOODS,          0xFFFF },
-    { MatchCall_Text_May4,  FLAG_HIDE_MAUVILLE_CITY_WALLY,       0xFFFF },
+    { MatchCall_Text_May4,  FLAG_GARBAGEFLAG,       0xFFFF },
     { MatchCall_Text_May5,  FLAG_RECEIVED_HM_STRENGTH,           0xFFFF },
     { MatchCall_Text_May6,  FLAG_DEFEATED_ECRUTEAK_GYM,         0xFFFF },
     { MatchCall_Text_May7,  FLAG_DEFEATED_CIANWOOD_GYM,         0xFFFF },
@@ -305,7 +305,7 @@ static const match_call_text_data_t sBrendanTextScripts[] = {
     { MatchCall_Text_Brendan1,  0xFFFF,                              0xFFFF },
     { MatchCall_Text_Brendan2,  FLAG_DEFEATED_AZALEA_GYM,           0xFFFF },
     { MatchCall_Text_Brendan3,  FLAG_DELIVERED_DEVON_GOODS,          0xFFFF },
-    { MatchCall_Text_Brendan4,  FLAG_HIDE_MAUVILLE_CITY_WALLY,       0xFFFF },
+    { MatchCall_Text_Brendan4,  FLAG_GARBAGEFLAG,       0xFFFF },
     { MatchCall_Text_Brendan5,  FLAG_RECEIVED_HM_STRENGTH,           0xFFFF },
     { MatchCall_Text_Brendan6,  FLAG_DEFEATED_ECRUTEAK_GYM,         0xFFFF },
     { MatchCall_Text_Brendan7,  FLAG_DEFEATED_CIANWOOD_GYM,         0xFFFF },
@@ -342,7 +342,7 @@ static const match_call_text_data_t sWallyTextScripts[] = {
 };
 
 static const struct MatchCallLocationOverride sWallyLocationData[] = {
-    { FLAG_HIDE_MAUVILLE_CITY_WALLY,          MAPSEC_OLIVINE_CITY },
+    { FLAG_GARBAGEFLAG,          MAPSEC_OLIVINE_CITY },
     { FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT,    MAPSEC_NONE },
     { FLAG_HIDE_VICTORY_ROAD_ENTRANCE_WALLY,  MAPSEC_VICTORY_ROAD },
     { 0xFFFF,                                 MAPSEC_NONE }

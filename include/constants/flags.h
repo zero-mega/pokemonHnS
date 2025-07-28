@@ -848,8 +848,8 @@
 #define FLAG_HIDE_HO_OH                                             0x321
 #define FLAG_HIDE_FAN_CLUB_CLEFAIRY_DOLL                    0x322
 #define FLAG_FOUND_BOTH_VERMILION_GYM_SWITCHES                   0x323
-#define FLAG_HIDE_MAUVILLE_CITY_WALLY                               0x324
-#define FLAG_HIDE_MAUVILLE_CITY_WALLYS_UNCLE                        0x325
+#define FLAG_KANTO_POWER_FIXED                               0x324
+#define FLAG_GARBAGEFLAGS_UNCLE                        0x325
 #define FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WALLY                0x326
 #define FLAG_GARBAGEFLAG11                   0x327
 #define FLAG_GARBAGEFLAG12     0x328

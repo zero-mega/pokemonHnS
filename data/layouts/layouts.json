@@ -7724,7 +7724,7 @@
     {
       "id": "LAYOUT_SAFFRON_CITY_DOJO",
       "name": "SaffronCityDojo_Layout",
-      "width": 13,
+      "width": 23,
       "height": 16,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Theater_26",

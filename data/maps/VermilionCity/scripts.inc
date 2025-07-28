@@ -22,6 +22,7 @@ VermilionCity_TriggerCity:: @flagheap
 	clearflag FLAG_HIDE_VERMILION_SNORLAX
 	clearflag FLAG_HIDE_FAN_CLUB_CLEFAIRY_DOLL
 	clearflag FLAG_FOUND_BOTH_VERMILION_GYM_SWITCHES
+	clearflag FLAG_KANTO_POWER_FIXED
 
 	setvar VAR_FAN_CLUB_CLEFAIRY, 0
 	setvar VAR_FAN_CLUB_GUY, 0
