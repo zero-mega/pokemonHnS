@@ -3,7 +3,7 @@ Route6_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
 	.byte 0
 
-Route6_OnTransition: 
+Route6_OnTransition:
 	callnative SetTimeBasedEncounters
 	end
 
@@ -15,6 +15,10 @@ Route6_EventScript_Rex::
 Route6_EventScript_Allan::
 	trainerbattle_single TRAINER_ALLAN PokefanM_Text_AllanSeen, PokefanM_Text_AllanBeaten
 	msgbox PokefanM_Text_AllanAfter, MSGBOX_AUTOCLOSE
+	end
+
+Route6_EventScript_Pokefan::
+	msgbox Route6_Text_PokefanM, MSGBOX_NPC
 	end
 
 Route6_EventScript_Sign::

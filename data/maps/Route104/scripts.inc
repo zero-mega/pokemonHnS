@@ -53,7 +53,7 @@ Route104_EventScript_Rival::
 
 Route104_EventScript_RivalTrigger::
 	lockall
-	setflag FLAG_HIDE_RUSTBORO_CITY_RIVAL
+	setflag FLAG_GARBAGEFLAG
 	setvar VAR_GARBAGEVAR, 8
 	setvar VAR_GARBAGEVAR, 2
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp

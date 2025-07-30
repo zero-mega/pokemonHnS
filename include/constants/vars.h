@@ -158,7 +158,7 @@
 #define VAR_CONTEST_PRIZE_PICKUP                         0x408A
 #define VAR_FAN_CLUB_GUY                                0x408B // Unused Var
 #define VAR_FAN_CLUB_CLEFAIRY              0x408C //0 = goto copycat, 1 = goto fanclub, 2 = goto copycat, 3 = done
-#define VAR_GARBAGEVAR11                       0x408D
+#define VAR_KANTO_ROCKET_STORY_STATE                       0x408D //0 = goto powerplant, 1 = goto cerulean gym, 2 = goto bridge, 3 = battle rocket, 4 = retrieve part, 5 = return part, 6 = done.
 #define VAR_GARBAGEVAR19                      0x408E
 #define VAR_GARBAGEVAR22                          0x408F
 #define VAR_BRINEY_HOUSE_STATE                           0x4090

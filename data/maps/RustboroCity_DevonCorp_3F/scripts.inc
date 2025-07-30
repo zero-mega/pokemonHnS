@@ -67,7 +67,7 @@ RustboroCity_DevonCorp_3F_EventScript_MeetPresident::
 	clearflag FLAG_GARBAGEFLAG
 	clearflag FLAG_GARBAGEFLAG
 	setvar VAR_BRINEY_LOCATION, 1
-	clearflag FLAG_HIDE_RUSTBORO_CITY_RIVAL
+	clearflag FLAG_GARBAGEFLAG
 	setvar VAR_GARBAGEVAR, 1
 	setvar VAR_GARBAGEVAR, 6
 	releaseall

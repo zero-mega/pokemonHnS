@@ -12,7 +12,7 @@ Route104_MrBrineysHouse_OnTransition:
 	end
 
 Route104_MrBrineysHouse_EventScript_HideRustboroRival::
-	setflag FLAG_HIDE_RUSTBORO_CITY_RIVAL
+	setflag FLAG_GARBAGEFLAG
 	return
 
 Route104_MrBrineysHouse_EventScript_SetBrineyPeekoPos::
@@ -80,7 +80,7 @@ Route104_MrBrineysHouse_EventScript_SailToDewford::
 	setflag FLAG_GARBAGEFLAG
 	setvar VAR_GARBAGEVAR, 8
 	setvar VAR_GARBAGEVAR, 2
-	setflag FLAG_HIDE_RUSTBORO_CITY_RIVAL
+	setflag FLAG_GARBAGEFLAG
 	setflag FLAG_HIDE_ROUTE_104_RIVAL
 	warp MAP_ROUTE104, 13, 51
 	waitstate
