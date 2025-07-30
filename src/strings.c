@@ -1458,6 +1458,10 @@ const u8 gText_Tough3[] = _("Tough");
 const u8 gText_Weak[] = _("Weak");
 const u8 gText_Both[] = _("Both");
 
+const u8 gText_BlueStone[] = _("BLUE STONE");
+const u8 gText_GreenStone[] = _("GREEN STONE");
+const u8 gText_RedStone[] = _("RED STONE");
+
 ALIGNED(4) const u8 gText_FacilitySingle[] = _("{STR_VAR_1} SINGLE");
 ALIGNED(4) const u8 gText_FacilityDouble[] = _("{STR_VAR_1} DOUBLE");
 ALIGNED(4) const u8 gText_FacilityMulti[] = _("{STR_VAR_1} MULTI");

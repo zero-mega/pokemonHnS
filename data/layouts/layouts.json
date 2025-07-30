@@ -8840,6 +8840,16 @@
       "secondary_tileset": "gTileset_Kanto_PokemonCenter",
       "border_filepath": "data/layouts/Route4Pokecenter/border.bin",
       "blockdata_filepath": "data/layouts/Route4Pokecenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_SAFFRON_CITY_COPY_CAT_ROOM",
+      "name": "SaffronCityCopyCatRoom_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_Johto_Building",
+      "secondary_tileset": "gTileset_PlayersHouse_20",
+      "border_filepath": "data/layouts/SaffronCityCopyCatRoom/border.bin",
+      "blockdata_filepath": "data/layouts/SaffronCityCopyCatRoom/map.bin"
     }
   ]
 }

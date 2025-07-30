@@ -801,7 +801,7 @@
 #define FLAG_GOT_FRUSTRATION                                        0x2F2
 #define FLAG_HIDE_GOLDENROD_BILL                                    0x2F3
 #define FLAG_GOT_EEVEE                                              0x2F4
-#define FLAG_FIXED_TRAIN                                            0x2F5
+#define FLAG_FIXED_TRAIN                                            0x2F5//unused
 #define FLAG_GOLDENROD_MACHOKE_1                                    0x2F6
 #define FLAG_GOLDENROD_MACHOKE_2                                    0x2F7
 #define FLAG_GOLDENROD_MACHOKE_3                                    0x2F8
@@ -848,12 +848,12 @@
 #define FLAG_HIDE_HO_OH                                             0x321
 #define FLAG_HIDE_FAN_CLUB_CLEFAIRY_DOLL                    0x322
 #define FLAG_FOUND_BOTH_VERMILION_GYM_SWITCHES                   0x323
-#define FLAG_KANTO_POWER_FIXED                               0x324
-#define FLAG_GARBAGEFLAGS_UNCLE                        0x325
+#define FLAG_RETURNED_MACHINE_PART                               0x324
+#define FLAG_HIDE_COPYCAT_CLEFAIRY_DOLL                        0x325
 #define FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WALLY                0x326
-#define FLAG_GARBAGEFLAG11                   0x327
-#define FLAG_GARBAGEFLAG12     0x328
-#define FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WALLYS_UNCLE         0x329
+#define FLAG_GOT_TM_PSYCHIC                   0x327
+#define FLAG_GOT_HOENN_STARTER     0x328
+#define FLAG_GOT_UP_GRADE         0x329
 #define FLAG_HIDE_SS_TIDAL_CORRIDOR_SCOTT                           0x32A
 #define FLAG_GARBAGEFLAGS_LAB_POKEBALL_CYNDAQUIL     0x32B
 #define FLAG_GARBAGEFLAGS_LAB_POKEBALL_TOTODILE      0x32C

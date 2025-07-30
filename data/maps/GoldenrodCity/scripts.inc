@@ -23,7 +23,7 @@ GoldenrodCity_EventScript_Trigger:: @flagheap
 	clearflag FLAG_RECEIVED_SQUIRTBOTTLE
 	clearflag FLAG_GOT_EEVEE
 	clearflag FLAG_SYS_PC_BILL
-	clearflag FLAG_FIXED_TRAIN
+	clearflag FLAG_RETURNED_MACHINE_PART
 	clearflag FLAG_UNLOCKED_GOLDENROD_UNDERGROUND_DOOR
 	clearflag FLAG_GOLDENROD_MACHOKE_1
 	clearflag FLAG_GOLDENROD_MACHOKE_2

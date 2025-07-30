@@ -10,13 +10,34 @@ SaffronStation_OnFrame::
 	map_script_2 VAR_TRAIN, 1, SaffronStation_EventScript_ExitTrain
 	.2byte 0
 
+SaffronStation_EventScript_Nerd::
+	goto_if_set FLAG_RETURNED_MACHINE_PART, SaffronStation_EventScript_Nerd2
+	msgbox SaffronMagnetTrainStation_Text_GymGuide, MSGBOX_NPC
+	end
+SaffronStation_EventScript_Nerd2::
+	msgbox SaffronMagnetTrainStation_Text_GymGuide_ReturnedPart, MSGBOX_NPC
+	end
+SaffronStation_EventScript_Lass::
+	msgbox SaffronMagnetTrainStation_Text_Lass, MSGBOX_NPC
+	end
+SaffronStation_EventScript_Teacher::
+	msgbox SaffronMagnetTrainStation_Text_Teacher, MSGBOX_NPC
+	end
+
 SaffronStation_EventScript_Attendant::
 	lock
 	faceplayer
+	goto_if_unset FLAG_RETURNED_MACHINE_PART, SaffronStation_EventScript_AttendantTrainNotRunning
 	checkitem ITEM_PASS
 	goto_if_eq VAR_RESULT, TRUE, SaffronStation_EventScript_BoardTrain
-	goto_if_set FLAG_FIXED_TRAIN, SaffronStation_EventScript_Attendant2
-	@msgbox SaffronMagnetTrainStation_Text_OfficerNoRailPass, MSGBOX_DEFAULT UPDATE LATER
+	goto_if_set FLAG_RETURNED_MACHINE_PART, SaffronStation_EventScript_Attendant2
+	msgbox SaffronMagnetTrainStation_Text_OfficerNoRailPass, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+SaffronStation_EventScript_AttendantTrainNotRunning::
+	msgbox SaffronMagnetTrainStation_Text_Officer_TrainNotOperating, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
@@ -277,7 +298,7 @@ SaffronMagnetTrainStation_Text_OfficerTrainHasntComeIn:
     .string "That won't work.$"
 
 SaffronMagnetTrainStation_Text_OfficerComingAboard:
-    .string "We'll soon depart for SAFFRON.\p"
+    .string "We'll soon depart for GOLDENROD.\p"
     .string "Are you coming aboard?$"
 
 SaffronMagnetTrainStation_Text_OfficerRightThisWay:
@@ -294,9 +315,33 @@ SaffronMagnetTrainStation_Text_OfficerArrivedInSaffron:
     .string "We have arrived in SAFFRON.\p"
     .string "We hope to see you again.$"
 
-SaffronMagnetTrainStation_Text_GentlemanPresident:
-    .string "I'm the PRESIDENT.\p"
-    .string "My dream was to build a train that\n"
-    .string "is faster than any POKéMON.\p"
-    .string "It really brings JOHTO much closer\n"
-    .string "to KANTO.$"
+@=============================================================================================================================
+
+SaffronMagnetTrainStation_Text_Officer_TrainNotOperating:
+	.string "I'm sorry, but the MAGNET TRAIN\n"
+	.string "isn't operating now.$"
+
+SaffronMagnetTrainStation_Text_GymGuide:
+	.string "The MAGNET TRAIN is a super-modern\n"
+	.string "rail liner that uses electricity\p"
+	.string "and magnets to attain incredible\n"
+	.string "speed.\p"
+	.string "However, if there isn't any\n"
+	.string "electricity…$"
+
+SaffronMagnetTrainStation_Text_GymGuide_ReturnedPart:
+	.string "Whew…\p"
+	.string "How many times have I gone back\n"
+	.string "and forth between KANTO and JOHTO?$"
+
+SaffronMagnetTrainStation_Text_Teacher:
+	.string "Before the MAGNET TRAIN STATION\n"
+	.string "was built, there was a house there.\p"
+	.string "A little girl named COPYCAT used\n"
+	.string "to live there.$"
+
+SaffronMagnetTrainStation_Text_Lass:
+	.string "Hi. Do you have a rail PASS?\n"
+	.string "I have one.\p"
+	.string "All the people in SAFFRON who ride\n"
+	.string "the MAGNET TRAIN have PASSES.$"

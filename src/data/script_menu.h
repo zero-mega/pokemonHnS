@@ -895,6 +895,12 @@ static const struct MenuAction MultichoiceList_ElderQuiz5[] =
     {gText_Weak},
     {gText_Both},
 };
+static const struct MenuAction MultichoiceList_HoennStarters[] = 
+{
+    {gText_GreenStone},
+    {gText_RedStone},
+    {gText_BlueStone},
+};
 
 static const struct MenuAction MultichoiceList_Exit[] =
 {
@@ -1036,6 +1042,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_ELDERQUIIZ3]                 = MULTICHOICE(MultichoiceList_ElderQuiz3),
     [MULTI_ELDERQUIIZ4]                 = MULTICHOICE(MultichoiceList_ElderQuiz4),
     [MULTI_ELDERQUIIZ5]                 = MULTICHOICE(MultichoiceList_ElderQuiz5),
+    [MULTI_HOENN_STARTERS]              = MULTICHOICE(MultichoiceList_HoennStarters),
 
 };
 

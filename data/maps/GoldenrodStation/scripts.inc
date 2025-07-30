@@ -14,7 +14,7 @@ GoldenrodStation_EventScript_Attendant::
 	faceplayer
 	checkitem ITEM_PASS
 	goto_if_eq VAR_RESULT, TRUE, GoldenrodStation_EventScript_BoardTrain
-	goto_if_set FLAG_FIXED_TRAIN, GoldenrodStation_EventScript_Attendant2
+	goto_if_set FLAG_RETURNED_MACHINE_PART, GoldenrodStation_EventScript_Attendant2
 	msgbox GoldenrodMagnetTrainStation_Text_OfficerTrainHasntComeIn, MSGBOX_DEFAULT
 	closemessage
 	release

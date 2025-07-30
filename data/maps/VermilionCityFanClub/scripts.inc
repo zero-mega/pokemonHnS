@@ -44,7 +44,7 @@ VermilionCityFanClub_EventScript_ClefairyGuy::
 	faceplayer
 	msgbox PokemonFanClub_Text_ClefairyGuy_Adorable, MSGBOX_DEFAULT
 	goto_if_eq VAR_FAN_CLUB_CLEFAIRY, 1, VermilionCityFanClub_EventScript_ClefairyGiveDoll
-	goto_if_eq VAR_FAN_CLUB_CLEFAIRY, 2, VermilionCityFanClub_EventScript_ClefairyAfter
+	goto_if_ge VAR_FAN_CLUB_CLEFAIRY, 2, VermilionCityFanClub_EventScript_ClefairyAfter
 	msgbox PokemonFanClub_Text_ClefairyGuy_MakingDo, MSGBOX_DEFAULT
 	closemessage
 	release
@@ -52,9 +52,11 @@ VermilionCityFanClub_EventScript_ClefairyGuy::
 
 VermilionCityFanClub_EventScript_ClefairyGiveDoll::
 	msgbox PokemonFanClub_Text_ClefairyGuy_ReturnDoll, MSGBOX_DEFAULT
+	fadescreenswapbuffers FADE_TO_BLACK
 	setflag FLAG_HIDE_FAN_CLUB_CLEFAIRY_DOLL
 	removeobject LOCALID_FAN_CLUB_CLEFAIRY_DOLL
-	giveitem ITEM_POKE_DOLL
+	fadescreenswapbuffers FADE_FROM_BLACK
+	giveitem ITEM_LOST_ITEM
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setvar VAR_FAN_CLUB_CLEFAIRY, 2
 	msgbox PokemonFanClub_Text_ClefairyGuy_GoingToGetOne, MSGBOX_DEFAULT

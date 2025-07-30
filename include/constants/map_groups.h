@@ -257,15 +257,16 @@
 #define MAP_CELADON_APARTMENTS5            (15 | (17 << 8))
 
 // gMapGroup_IndoorSaffron
-#define MAP_SAFFRON_POKECENTER    (0 | (18 << 8))
-#define MAP_SAFFRON_POKEMART      (1 | (18 << 8))
-#define MAP_SAFFRON_TRAIN_STATION (2 | (18 << 8))
-#define MAP_SAFFRON_CITY_DOJO     (3 | (18 << 8))
-#define MAP_SAFFRON_CITY_GYM      (4 | (18 << 8))
-#define MAP_SAFFRON_CITY_SILPH_CO (5 | (18 << 8))
-#define MAP_SAFFRON_CITY_HOUSE1   (6 | (18 << 8))
-#define MAP_SAFFRON_CITY_HOUSE2   (7 | (18 << 8))
-#define MAP_SAFFRON_CITY_DOJO_VIP (8 | (18 << 8))
+#define MAP_SAFFRON_POKECENTER         (0 | (18 << 8))
+#define MAP_SAFFRON_POKEMART           (1 | (18 << 8))
+#define MAP_SAFFRON_TRAIN_STATION      (2 | (18 << 8))
+#define MAP_SAFFRON_CITY_DOJO          (3 | (18 << 8))
+#define MAP_SAFFRON_CITY_GYM           (4 | (18 << 8))
+#define MAP_SAFFRON_CITY_SILPH_CO      (5 | (18 << 8))
+#define MAP_SAFFRON_CITY_HOUSE1        (6 | (18 << 8))
+#define MAP_SAFFRON_CITY_HOUSE2        (7 | (18 << 8))
+#define MAP_SAFFRON_CITY_DOJO_VIP      (8 | (18 << 8))
+#define MAP_SAFFRON_CITY_COPY_CAT_ROOM (9 | (18 << 8))
 
 // gMapGroup_IndoorFuchsia
 #define MAP_FUCHSIA_POKECENTER           (0 | (19 << 8))
@@ -1030,7 +1031,5 @@
 #define MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE          (96 | (31 << 8))
 
 #define MAP_GROUPS_COUNT 32
-
-// static const u8 MAP_GROUP_COUNT[] = {72, 5, 5, 7, 5, 29, 8, 10, 6, 6, 7, 5, 5, 7, 6, 9, 7, 16, 9, 9, 4, 7, 28, 29, 83, 0, 41, 125, 113, 126, 74, 97, 0};
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

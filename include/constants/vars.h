@@ -157,7 +157,7 @@
 #define VAR_SECRET_BASE_INITIALIZED                      0x4089
 #define VAR_CONTEST_PRIZE_PICKUP                         0x408A
 #define VAR_FAN_CLUB_GUY                                0x408B // Unused Var
-#define VAR_FAN_CLUB_CLEFAIRY              0x408C
+#define VAR_FAN_CLUB_CLEFAIRY              0x408C //0 = goto copycat, 1 = goto fanclub, 2 = goto copycat, 3 = done
 #define VAR_GARBAGEVAR11                       0x408D
 #define VAR_GARBAGEVAR19                      0x408E
 #define VAR_GARBAGEVAR22                          0x408F

@@ -7,6 +7,7 @@ VermilionCity_MapScripts::
 
 VermilionCity_TriggerCity:: @flagheap
 	setflag FLAG_VISITED_VERMILION_CITY
+	setflag FLAG_HIDE_COPYCAT_CLEFAIRY_DOLL
 
 	clearflag FLAG_HIDE_VERMILION_EUSINE_SUICUNE
 	clearflag FLAG_BADGE09_GET
@@ -22,7 +23,10 @@ VermilionCity_TriggerCity:: @flagheap
 	clearflag FLAG_HIDE_VERMILION_SNORLAX
 	clearflag FLAG_HIDE_FAN_CLUB_CLEFAIRY_DOLL
 	clearflag FLAG_FOUND_BOTH_VERMILION_GYM_SWITCHES
-	clearflag FLAG_KANTO_POWER_FIXED
+	clearflag FLAG_RETURNED_MACHINE_PART
+	clearflag FLAG_GOT_TM_PSYCHIC
+	clearflag FLAG_GOT_HOENN_STARTER
+	clearflag FLAG_GOT_UP_GRADE
 
 	setvar VAR_FAN_CLUB_CLEFAIRY, 0
 	setvar VAR_FAN_CLUB_GUY, 0

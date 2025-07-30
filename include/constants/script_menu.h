@@ -135,6 +135,7 @@
 #define MULTI_ELDERQUIIZ5                  124
 #define MULTI_OLIVINE_HARBOR               125
 #define MULTI_VERMILION_HARBOR             126
+#define MULTI_HOENN_STARTERS               127
 
 
 

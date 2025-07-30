@@ -1,8 +1,18 @@
 SaffronCity_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, SaffronCity_OnFrame
 	.byte 0
 
+SaffronCity_OnFrame::
+	map_script_2 VAR_SAFFRON_CITY_STATE, 0,  SaffronCity_EventScript_CityEnter
+	.2byte 0
+
+SaffronCity_EventScript_CityEnter::
+	setflag FLAG_VISITED_SAFFRON_CITY
+	setvar VAR_SAFFRON_CITY_STATE, 1
+	end
+
 SaffronCity_EventScript_Lass1A::
-	goto_if_set FLAG_KANTO_POWER_FIXED, SaffronCity_EventScript_Lass1B
+	goto_if_set FLAG_RETURNED_MACHINE_PART, SaffronCity_EventScript_Lass1B
 	msgbox SaffronCity_Text_Lass1, MSGBOX_NPC
 	end
 
@@ -15,7 +25,7 @@ SaffronCity_EventScript_Lass2::
 	end
 
 SaffronCity_EventScript_PokefanM::
-	goto_if_set FLAG_KANTO_POWER_FIXED, SaffronCity_EventScript_PokefanM2
+	goto_if_set FLAG_RETURNED_MACHINE_PART, SaffronCity_EventScript_PokefanM2
 	msgbox SaffronCity_Text_PokefanM, MSGBOX_NPC
 	end
 
@@ -32,7 +42,7 @@ SaffronCity_EventScript_CooltrainerF::
 	end
 
 SaffronCity_EventScript_Fisher::
-	goto_if_set FLAG_KANTO_POWER_FIXED, SaffronCity_EventScript_Fisher2
+	goto_if_set FLAG_RETURNED_MACHINE_PART, SaffronCity_EventScript_Fisher2
 	msgbox SaffronCity_Text_Fisher, MSGBOX_NPC
 	end
 

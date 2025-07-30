@@ -282,8 +282,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ENGINEER",
-      "x": 14,
-      "y": 36,
+      "x": 0,
+      "y": 34,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
