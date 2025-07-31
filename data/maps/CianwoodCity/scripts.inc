@@ -5,7 +5,7 @@
 CianwoodCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, OlivineCity_MapScript_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, CianwoodCity_OnFrame
-	map_script MAP_SCRIPT_ON_LOAD, CianwoodCity_OnFrame
+	map_script MAP_SCRIPT_ON_LOAD, CianwoodCity_EventScript_InitializeSuicune
 	.byte 0
 
 CianwoodCity_RemoveEusine::
@@ -18,10 +18,22 @@ CianwoodCity_OnFrame::
 	.2byte 0
 
 CianwoodCity_EventScript_CityEnter::
+	setvar VAR_SUICUNE_ENCOUNTERS, 1
 	clearflag FLAG_HIDE_CIANWOOD_SUICUNE
 	setflag FLAG_HIDE_CIANWOOD_EUSINE
 	setflag FLAG_VISITED_CIANWOOD_CITY
 	setvar VAR_CIANWOOD_CITY_STATE, 1
+	end
+
+CianwoodCity_EventScript_InitializeSuicune::
+	goto_if_ge VAR_SUICUNE_ENCOUNTERS, 2, CianwoodCity_EventScript_InitializeNothing
+	clearflag FLAG_HIDE_CIANWOOD_SUICUNE
+	setflag FLAG_HIDE_CIANWOOD_EUSINE
+	setvar VAR_TEMP_0, 1
+	end
+
+CianwoodCity_EventScript_InitializeNothing::
+	setvar VAR_TEMP_0, 1
 	end
 
 CianwoodCity_EventScript_Flytrigger::
@@ -181,9 +193,15 @@ CianwoodCity_EventScript_SuicuneTrigger::
 	setflag FLAG_HIDE_CIANWOOD_SUICUNE
 	removeobject LOCALID_CIANWOOD_SUICUNE
 	removeobject LOCALID_CIANWOOD_EUSINE
+	setvar VAR_SUICUNE_ENCOUNTERS, 2
 	setvar VAR_CIANWOOD_CITY_STATE, 2
+	call_if_set FLAG_HIDE_ROUTE42_SUICUNE, CianwoodCity_EventScript_DoneJohtoSuicune
 	release
 	end
+
+CianwoodCity_EventScript_DoneJohtoSuicune::
+	setvar VAR_SUICUNE_ENCOUNTERS, 3
+	return
 
 CianwoodCity_Movement_Suicune1:
 	jump_in_place_right_left

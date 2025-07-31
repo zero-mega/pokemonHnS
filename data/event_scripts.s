@@ -2007,3 +2007,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Route4Pokecenter/scripts.inc"
 
 	.include "data/maps/SaffronCityCopyCatRoom/scripts.inc"
+
+	.include "data/maps/Route25BillsHouse/scripts.inc"

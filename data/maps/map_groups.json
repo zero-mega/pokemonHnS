@@ -381,7 +381,8 @@
     "FuchsiaCityHouse1",
     "Route12House",
     "Fuchsia_Route15Gate",
-    "Route4Pokecenter"
+    "Route4Pokecenter",
+    "Route25BillsHouse"
   ],
   "gMapGroup_Dungeons": [
     "DarkCave_1",

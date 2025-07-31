@@ -7,13 +7,13 @@ Route42_MapScripts::
 	.byte 0
 
 Route42_MapScript_OnTransition::
+	call_if_set FLAG_HIDE_ROUTE42_SUICUNE, Route42_MapScript_HideTrigger
 	callnative SetTimeBasedEncounters
-	goto_if_set FLAG_HIDE_ROUTE42_SUICUNE, Route42_MapScript_HideTrigger
 	end
 
 Route42_MapScript_HideTrigger::
 	setvar VAR_TEMP_0, 1
-	end
+	return
 
 Route42_EventScript_Suicune_Trigger::
 	lock
@@ -53,8 +53,13 @@ Route42_EventScript_Suicune_Trigger::
 	setflag FLAG_HIDE_ROUTE42_EUSINE
 	removeobject LOCALID_ROUTE42_EUSINE
 	setvar VAR_TEMP_0, 1
+	call_if_eq VAR_SUICUNE_ENCOUNTERS, 2, Route42_EventScript_DoneJohtoSuicune
 	release
 	end
+
+Route42_EventScript_DoneJohtoSuicune::
+	setvar VAR_SUICUNE_ENCOUNTERS, 3
+	return
 
 Route42_Movement_Suicune1:
 	jump_in_place_right_left

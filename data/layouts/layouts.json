@@ -8850,6 +8850,16 @@
       "secondary_tileset": "gTileset_PlayersHouse_20",
       "border_filepath": "data/layouts/SaffronCityCopyCatRoom/border.bin",
       "blockdata_filepath": "data/layouts/SaffronCityCopyCatRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE25BILLS_HOUSE",
+      "name": "Route25BillsHouse_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Johto_Building",
+      "secondary_tileset": "gTileset_Theater_26",
+      "border_filepath": "data/layouts/Route25BillsHouse/border.bin",
+      "blockdata_filepath": "data/layouts/Route25BillsHouse/map.bin"
     }
   ]
 }

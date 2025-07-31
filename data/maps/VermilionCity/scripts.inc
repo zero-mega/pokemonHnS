@@ -3,7 +3,17 @@
 .set LOCALID_VERMILION_SNORLAX, 1
 
 VermilionCity_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, VermilionCity_MapScript_OnTransition
 	.byte 0
+
+VermilionCity_MapScript_OnTransition::
+	goto_if_eq VAR_SUICUNE_ENCOUNTERS, 3, VermilionCity_EventScript_SetSuicuneScene
+	setflag FLAG_HIDE_VERMILION_EUSINE_SUICUNE
+	end
+
+VermilionCity_EventScript_SetSuicuneScene::
+	clearflag FLAG_HIDE_VERMILION_EUSINE_SUICUNE
+	end
 
 VermilionCity_TriggerCity:: @flagheap
 	setflag FLAG_VISITED_VERMILION_CITY
@@ -12,8 +22,8 @@ VermilionCity_TriggerCity:: @flagheap
 	setflag FLAG_HIDE_CERULEAN_CAPE_ROCKET
 	setflag FLAG_HIDE_CERULEAN_GYM_ROCKET
 	setflag FLAG_HIDDEN_ITEM_MACHINE_PART
+	setflag FLAG_HIDE_ROUTE25_MISTY
 
-	clearflag FLAG_HIDE_VERMILION_EUSINE_SUICUNE
 	clearflag FLAG_BADGE09_GET
 	clearflag FLAG_BADGE10_GET
 	clearflag FLAG_BADGE11_GET
@@ -32,10 +42,11 @@ VermilionCity_TriggerCity:: @flagheap
 	clearflag FLAG_GOT_HOENN_STARTER
 	clearflag FLAG_GOT_UP_GRADE
 	clearflag FLAG_GOT_CLEANSE_TAG
+	clearflag FLAG_ROUTE25_GOT_NUGGET
 	
 
 	setvar VAR_KANTO_ROCKET_STORY_STATE, 1 @CHANGELATER TO 0
-	clearflag FLAG_HIDE_CERULEAN_GYM_ROCKET@CHANGELATER REMOVE, add to power plant
+	clearflag FLAG_HIDE_CERULEAN_GYM_ROCKET@removelater
 
 	setvar VAR_FAN_CLUB_CLEFAIRY, 0
 	setvar VAR_FAN_CLUB_GUY, 0
@@ -100,7 +111,8 @@ VermilionCity_EventScript_SuicuneEpisode::
 	removeobject LOCALID_VERMILION_EUSINE
 	removeobject LOCALID_VERMILION_SUICUNE
 	setflag FLAG_HIDE_VERMILION_EUSINE_SUICUNE
-	setvar VAR_VERMILION_CITY_STATE, 2
+
+	setvar VAR_SUICUNE_ENCOUNTERS, 4
 	release
 	end
 

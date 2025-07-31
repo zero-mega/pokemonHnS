@@ -197,7 +197,7 @@ LittlerootTown_MaysHouse_1F_EventScript_MeetRival::
 	playse SE_EXIT
 	removeobject LOCALID_RIVAL
 	setflag FLAG_GARBAGEFLAG
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_POKE_BALL
+	setflag FLAG_GARBAGEFLAG
 	clearflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_BEDROOM
 	delay 30
 	setvar VAR_GARBAGEVAR, 3

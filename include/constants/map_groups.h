@@ -354,6 +354,7 @@
 #define MAP_ROUTE12HOUSE                (26 | (23 << 8))
 #define MAP_FUCHSIA_ROUTE15GATE         (27 | (23 << 8))
 #define MAP_ROUTE4POKECENTER            (28 | (23 << 8))
+#define MAP_ROUTE25BILLS_HOUSE          (29 | (23 << 8))
 
 // gMapGroup_Dungeons
 #define MAP_DARK_CAVE_1           (0 | (24 << 8))
@@ -1032,6 +1033,6 @@
 
 #define MAP_GROUPS_COUNT 32
 
-// static const u8 MAP_GROUP_COUNT[] = {72, 5, 5, 7, 5, 29, 8, 10, 6, 6, 7, 5, 5, 7, 6, 9, 7, 16, 10, 9, 4, 7, 28, 29, 83, 0, 41, 125, 113, 126, 74, 97, 0};
+// static const u8 MAP_GROUP_COUNT[] = {72, 5, 5, 7, 5, 29, 8, 10, 6, 6, 7, 5, 5, 7, 6, 9, 7, 16, 10, 9, 4, 7, 28, 30, 83, 0, 41, 125, 113, 126, 74, 97, 0};
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

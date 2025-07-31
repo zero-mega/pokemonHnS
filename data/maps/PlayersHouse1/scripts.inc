@@ -131,6 +131,8 @@ PlayersHouse1_EventScript_MomsIntro::
 	setvar VAR_ROUTE27_STATE, 0
 	setvar VAR_LEAGUE_STATE, 0
 	setvar VAR_SSAQUA_STATE, 0
+	setvar VAR_SUICUNE_ENCOUNTERS, 0
+	
 	releaseall
 	end
 

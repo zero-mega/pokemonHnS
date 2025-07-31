@@ -373,7 +373,7 @@ LilycoveCity_EventScript_DefeatedBrendan::
 	call_if_eq VAR_RESULT, FALSE, LilycoveCity_EventScript_BrendanCollectBadges
 	call_if_eq VAR_RESULT, TRUE, LilycoveCity_EventScript_BrendanPokemonLeague
 	clearflag FLAG_GARBAGEFLAG
-	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_SWABLU_DOLL
+	clearflag FLAG_GARBAGEFLAG
 	goto LilycoveCity_EventScript_RivalFlyAway
 	end
 
