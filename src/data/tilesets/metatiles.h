@@ -544,3 +544,6 @@ const u16 gMetatileAttributes_RuinsOfAlphWriting[] = INCBIN_U16("data/tilesets/s
 
 const u16 gMetatiles_CyclingRoad[] = INCBIN_U16("data/tilesets/secondary/cycling_road/metatiles.bin");
 const u16 gMetatileAttributes_CyclingRoad[] = INCBIN_U16("data/tilesets/secondary/cycling_road/metatile_attributes.bin");
+
+const u16 gMetatiles_SeaCottage[] = INCBIN_U16("data/tilesets/secondary/sea_cottage/metatiles.bin");
+const u16 gMetatileAttributes_SeaCottage[] = INCBIN_U16("data/tilesets/secondary/sea_cottage/metatile_attributes.bin");

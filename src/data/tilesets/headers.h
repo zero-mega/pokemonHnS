@@ -2083,3 +2083,14 @@ const struct Tileset gTileset_CyclingRoad =
     .metatileAttributes = gMetatileAttributes_CyclingRoad,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_SeaCottage =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_SeaCottage,
+    .palettes = gTilesetPalettes_SeaCottage,
+    .metatiles = gMetatiles_SeaCottage,
+    .metatileAttributes = gMetatileAttributes_SeaCottage,
+    .callback = NULL,
+};

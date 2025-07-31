@@ -66,7 +66,12 @@ HallOfFame_EventScript_SetGameClearFlags::
 	clearflag FLAG_HIDE_VERMILION_SNORLAX
 	setvar VAR_COMPLETED_LUGIA, 4
 	setvar VAR_COMPLETED_HO_OH, 4
+	call_if_ge VAR_SUICUNE_ENCOUNTERS, 8, HallOfFame_EventScript_SpawnSuicuneCheck
 	setvar VAR_LEAGUE_STATE, 1
+	return
+
+HallOfFame_EventScript_SpawnSuicuneCheck::
+	clearflag FLAG_HIDE_ROUTE25_SUICUNE
 	return
 
 HallOfFame_Movement_LanceEnter:
@@ -119,20 +124,20 @@ HallOfFame_Rematch_LanceText:
     .string "sacred place where we honor the very\p"
     .string "best trainers and their POKéMON.\p"
     .string "Today, you've proven yourself not\n"
-    .string "just in JOHTO, but in KANTO as well,\p"
+    .string "just in JOHTO, but in KANTO as well,\l"
     .string "besting even my strongest team.\p"
     .string "You've shown remarkable compassion\n"
-    .string "and trust in your POKéMON,\p"
+    .string "and trust in your POKéMON,\l"
     .string "a bond that has carried you to\n"
     .string "victory time and again.\p"
     .string "Your journey, marked by\n"
     .string "perseverance and unwavering\l"
-    .string "determination,\p"
-    .string "speaks to your true spirit as a\n"
+    .string "determination,\l"
+    .string "speaks to your true spirit as a\l"
     .string "trainer.\p"
     .string "You have all the makings of a true\n"
     .string "great, perhaps even the greatest.\p"
     .string "{PLAYER}, it is my honor to register\n"
-    .string "you, and your trusted partners,\n"
+    .string "you, and your trusted partners,\l"
     .string "as champions once again.$"
 

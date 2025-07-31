@@ -116,7 +116,7 @@
 #define VAR_PALLET_TOWN_STATE                               0x4060
 #define VAR_VIRIDIAN_CITY_STATE                              0x4061 
 #define VAR_PEWTER_CITY_STATE                               0x4062 
-#define VAR_CERULEAN_CITY_STATE                              0x4063 //0 = enter town, 1 = fix power, 2 = find misty, 3 = battle misty, 4 = 
+#define VAR_CERULEAN_CITY_STATE                              0x4063 //0 = enter town, 1 = fix power, 2 = find misty, 3 = battle misty, 4 = done
 #define VAR_VERMILION_CITY_STATE                               0x4064 
 #define VAR_LAVENDER_TOWN_STATE                               0x4065 
 #define VAR_CELADON_CITY_STATE                               0x4066 
@@ -159,7 +159,7 @@
 #define VAR_FAN_CLUB_GUY                                0x408B // Unused Var
 #define VAR_FAN_CLUB_CLEFAIRY              0x408C //0 = goto copycat, 1 = goto fanclub, 2 = goto copycat, 3 = done
 #define VAR_KANTO_ROCKET_STORY_STATE                       0x408D //0 = goto powerplant, 1 = goto cerulean gym, 2 = goto bridge, 3 = battle rocket, 4 = retrieve part, 5 = return part, 6 = done.
-#define VAR_SUICUNE_ENCOUNTERS                      0x408E //0 = goto cianwood, 1 = encounter suicune cianwood, 2 = find suicune on route 42, 3 = goto vermilion, 4 = goto route 14, 5 = goto route 25, 6 = done
+#define VAR_SUICUNE_ENCOUNTERS                      0x408E //0 = goto cianwood, 1 = encounter suicune cianwood, 2 = find suicune on route 42, 3 = goto vermilion, 4 = goto route 14, 5 = beat cerulean gym, 6 = goto route 25, 7 = talk to suicune, 8 = done
 #define VAR_GARBAGEVAR22                          0x408F
 #define VAR_BRINEY_HOUSE_STATE                           0x4090
 #define VAR_UNUSED_0x4091                                0x4091 // Unused Var

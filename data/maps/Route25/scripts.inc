@@ -1,5 +1,19 @@
+.set LOCALID_ROUTE25_MISTY, 10
+.set LOCALID_ROUTE25_MAN, 11
+.set LOCALID_ROUTE25_SUICUNE, 16
+.set LOCALID_ROUTE25_EUSINE, 15
+
 Route25_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Route25_MapScript_OnTransition
 	.byte 0
+
+Route25_MapScript_OnTransition::
+	goto_if_eq VAR_SUICUNE_ENCOUNTERS, 7, Route25_EventScript_SetSuicuneSceneMid
+	end
+
+Route25_EventScript_SetSuicuneSceneMid::
+	setobjectxyperm LOCALID_ROUTE25_EUSINE, 65, 9
+	end
 
 Route25_EventScript_Dudley::
 	trainerbattle_single TRAINER_DUDLEY Route25_Text_SchoolboyDudleySeen, Route25_Text_SchoolboyDudleyBeaten
@@ -57,6 +71,265 @@ Route25_EventScript_KevinAfter::
 Route25_EventScript_BillsHouseSign::
 	msgbox Route25_Text_BillsHouseSign, MSGBOX_SIGN
 	end
+
+Route25_Trigger_MistyRight::
+	lock
+	turnobject LOCALID_ROUTE25_MISTY, DIR_SOUTH
+	delay 40
+	turnobject LOCALID_ROUTE25_MAN, DIR_SOUTH
+	playse SE_PIN
+	applymovement2 LOCALID_ROUTE25_MAN, Common_Movement_ExclamationMark
+	delay 60
+	applymovement2 LOCALID_ROUTE25_MAN, Route25_Movement_ManLeaveRight
+	waitmovement 0
+	applymovement2 LOCALID_ROUTE25_MISTY, Route25_Movement_MistyWalkToPlayerRight
+	waitmovement 0
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_WEST
+	goto Route25_EventScript_Misty
+Route25_Trigger_MistyLeft::
+	lock
+	turnobject LOCALID_ROUTE25_MISTY, DIR_SOUTH
+	delay 40
+	turnobject LOCALID_ROUTE25_MAN, DIR_SOUTH
+	playse SE_PIN
+	applymovement2 LOCALID_ROUTE25_MAN, Common_Movement_ExclamationMark
+	delay 60
+	applymovement2 LOCALID_ROUTE25_MAN, Route25_Movement_ManLeaveLeft
+	waitmovement 0
+	applymovement2 LOCALID_ROUTE25_MISTY, Route25_Movement_MistyWalkToPlayerLeft
+	waitmovement 0
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_EAST
+	goto Route25_EventScript_Misty
+Route25_EventScript_Misty::
+	msgbox Route25_Text_MistyDate, MSGBOX_DEFAULT
+	closemessage
+	applymovement2 LOCALID_ROUTE25_MISTY, Route25_Movement_MistyLeave
+	waitmovement 0
+	removeobject LOCALID_ROUTE25_MISTY
+	removeobject LOCALID_ROUTE25_MAN
+	setflag FLAG_HIDE_ROUTE25_MISTY
+	clearflag FLAG_HIDE_CERULEAN_GYM_TRAINERS
+	setvar VAR_CERULEAN_CITY_STATE, 3
+	release
+	end
+
+Route25_Trigger_SuicuneLeft::
+	lock
+	playse SE_PIN
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+	delay 60
+	playmoncry SPECIES_SUICUNE, CRY_MODE_NORMAL
+	applymovement LOCALID_ROUTE25_SUICUNE, Route25_Movement_Suicune1
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkRight1
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Route25_Movement_WalkToSuicune
+	waitmovement 0
+	goto Route25_EventScript_SuicuneMerge
+Route25_Trigger_SuicuneRight::
+	lock
+	playse SE_PIN
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+	delay 60
+	playmoncry SPECIES_SUICUNE, CRY_MODE_NORMAL
+	applymovement LOCALID_ROUTE25_SUICUNE, Route25_Movement_Suicune1
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Route25_Movement_WalkToSuicune
+	waitmovement 0
+	goto Route25_EventScript_SuicuneMerge
+Route25_EventScript_SuicuneMerge::
+	clearflag FLAG_HIDE_ROUTE25_EUSINE
+	addobject LOCALID_ROUTE25_EUSINE
+	applymovement LOCALID_ROUTE25_EUSINE, Route25_Movement_EusineEnter
+	waitmovement 0
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_SOUTH
+	msgbox Route25_Text_Eusine1, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_ROUTE25_EUSINE, Route25_Movement_EusineSide
+	waitmovement 0
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	msgbox Route25_Text_Eusine2, MSGBOX_DEFAULT
+	closemessage
+	setvar VAR_SUICUNE_ENCOUNTERS, 7
+	release
+	end
+	
+Route25_Text_Eusine1:
+	.string "EUSINE: Puff, puff...\n"
+	.string "I am... no match for you.\p"
+	.string "...As I predicted.\n"
+	.string "..........................\l"
+	.string "... Go ahead.\p"
+	.string "Since I met you in the BURNED TOWER\n"
+	.string "at ECRUTEAK CITY, I've sort of\l"
+	.string "known that SUICUNE would choose\l"
+	.string "you.$"
+
+Route25_Text_Eusine2:
+	.string "Take a look at it!\p"
+	.string "SUICUNE is waiting for you!\n"
+	.string "It has been waiting for a battle\l"
+	.string "with a worthy trainer to whom it\l"
+	.string "can entrust itself.$"
+
+Route25_Text_Eusine3:
+	.string "{PLAYER}...\n"
+	.string "You two are truly amazing...\p"
+	.string "I have never seen a battle this\n"
+	.string "intense!\l"
+	.string "I have no regrets...\p"
+	.string "Farewell, SUICUNE!\n"
+	.string "Farewell... {PLAYER}!$"
+
+Route25_EventScript_Eusine::
+	msgbox Route25_Text_Eusine2, MSGBOX_NPC
+	end
+
+Route25_EventScript_Suicune::
+	lock
+	faceplayer
+	playmoncry SPECIES_SUICUNE, CRY_MODE_NORMAL
+	applymovement LOCALID_ROUTE25_SUICUNE, Route25_Movement_Suicune1
+	waitmovement 0
+	playmoncry SPECIES_SUICUNE, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	seteventmon SPECIES_SUICUNE, 50
+	special BattleSetup_StartLegendaryBattle
+	waitstate
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, Route25_EventScript_SuicuneRan
+	fadescreenswapbuffers FADE_TO_BLACK
+	removeobject LOCALID_ROUTE25_SUICUNE
+	setflag FLAG_HIDE_ROUTE25_SUICUNE
+	fadescreenswapbuffers FADE_FROM_BLACK
+	goto_if_ge VAR_SUICUNE_ENCOUNTERS, 8, Route25_EventScript_SuicunePostGame
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_SOUTH
+	msgbox Route25_Text_Eusine3, MSGBOX_DEFAULT
+	closemessage
+	applymovement2 LOCALID_ROUTE25_EUSINE, Route25_Movement_EusineLeave
+	waitmovement 0
+	removeobject LOCALID_ROUTE25_EUSINE
+	setflag FLAG_HIDE_ROUTE25_EUSINE
+	setvar VAR_SUICUNE_ENCOUNTERS, 8
+	release
+	end
+
+Route25_EventScript_SuicuneRan::
+	release
+	end
+
+Route25_EventScript_SuicunePostGame::
+	release
+	end
+
+Route25_Movement_EusineLeave:
+	walk_down
+	walk_down
+	walk_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	step_end
+
+Route25_Movement_EusineSide:
+	walk_slow_left
+	walk_slow_up
+	step_end
+
+Route25_Movement_EusineEnter:
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_up
+	walk_slow_up
+	step_end
+
+Route25_Movement_Suicune1:
+	jump_in_place_down
+	step_end
+
+Route25_Movement_WalkToSuicune:
+	walk_up
+	walk_up
+	step_end
+
+Route25_Movement_MistyLeave:
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+Route25_Movement_ManLeaveRight:
+	walk_fast_left
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	step_end
+Route25_Movement_ManLeaveLeft:
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	step_end
+
+Route25_Movement_MistyWalkToPlayerRight:
+	walk_left
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	face_right
+	step_end
+Route25_Movement_MistyWalkToPlayerLeft:
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	face_left
+	step_end
 
 Route25_Text_MistyDate:
 	.string "MISTY: Aww! Why did you have to\n"

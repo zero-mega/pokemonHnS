@@ -155,9 +155,15 @@ CeruleanCityGym_EventScript_Misty::
 	call Common_EventScript_SetGymTrainers
 	msgbox CeruleanGym_Text_MistyTm, MSGBOX_DEFAULT
 	giveitem ITEM_TM_WATER_PULSE
+	call_if_eq VAR_SUICUNE_ENCOUNTERS, 5, CeruleanCityGym_SetSuicuneScene
 	closemessage
 	release
 	end
+
+CeruleanCityGym_SetSuicuneScene::
+	setvar VAR_SUICUNE_ENCOUNTERS, 6
+	clearflag FLAG_HIDE_ROUTE25_SUICUNE
+	return
 
 CeruleanCityGym_EventScript_Misty_Defeated::
 	msgbox CeruleanGym_Text_MistyFightDone, MSGBOX_DEFAULT
@@ -210,8 +216,8 @@ CeruleanGym_Text_MistyFightDone:
 	.string "MISTY: Are there many strong\n"
 	.string "trainers in JOHTO? Like you, I\l"
 	.string "mean.\p"
-	.string "I'm going to travel one day, so\p"
-	.string "I can battle some skilled\n"
+	.string "I'm going to travel one day, so\n"
+	.string "I can battle some skilled\l"
 	.string "trainers.$"
 
 CeruleanGym_Text_MistyRematch:
