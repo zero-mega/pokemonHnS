@@ -5244,7 +5244,7 @@
     {
       "id": "LAYOUT_SAFFRON_CITY",
       "name": "SaffronCity_Layout",
-      "width": 48,
+      "width": 66,
       "height": 55,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_route34_11",
