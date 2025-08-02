@@ -164,9 +164,9 @@
       "flag": "FLAG_HIDE_ROUTE25_MISTY"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_BUTTERFREE",
-      "x": 9,
-      "y": 5,
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_SWABLU",
+      "x": 0,
+      "y": 3,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 0,
@@ -174,7 +174,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_NIGHT_POKEMON"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_SPEAROW",
@@ -227,6 +227,45 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route25_EventScript_Suicune",
       "flag": "FLAG_HIDE_ROUTE25_SUICUNE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_LUVDISC",
+      "x": 73,
+      "y": 22,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_LEFT_RIGHT_UP_DOWN",
+      "movement_range_x": 10,
+      "movement_range_y": 8,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_LUVDISC",
+      "x": 74,
+      "y": 23,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_LEFT_RIGHT_UP_DOWN",
+      "movement_range_x": 11,
+      "movement_range_y": 9,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_BUTTERFREE",
+      "x": 20,
+      "y": 19,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
     }
   ],
   "warp_events": [

@@ -47,8 +47,8 @@ VermilionCity_TriggerCity:: @flagheap
 	clearflag FLAG_ROUTE25_GOT_NUGGET
 	
 
-	setvar VAR_KANTO_ROCKET_STORY_STATE, 1 @CHANGELATER TO 0
-	clearflag FLAG_HIDE_CERULEAN_GYM_ROCKET@removelater
+	setvar VAR_KANTO_ROCKET_STORY_STATE, 0
+	setvar VAR_BILLS_GRANDPA, 0
 
 	setvar VAR_FAN_CLUB_CLEFAIRY, 0
 	setvar VAR_FAN_CLUB_GUY, 0

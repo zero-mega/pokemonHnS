@@ -4644,7 +4644,7 @@
     {
       "id": "LAYOUT_ROUTE1",
       "name": "Route1_Layout",
-      "width": 24,
+      "width": 30,
       "height": 40,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_PalletTown",
@@ -4654,7 +4654,7 @@
     {
       "id": "LAYOUT_ROUTE2",
       "name": "Route2_Layout",
-      "width": 24,
+      "width": 30,
       "height": 80,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Viridian_2",
@@ -5554,8 +5554,8 @@
     {
       "id": "LAYOUT_ROCK_TUNNEL1",
       "name": "RockTunnel1_Layout",
-      "width": 48,
-      "height": 44,
+      "width": 58,
+      "height": 40,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Cave4_36",
       "border_filepath": "data/layouts/RockTunnel1/border.bin",
@@ -5564,8 +5564,8 @@
     {
       "id": "LAYOUT_ROCK_TUNNEL2",
       "name": "RockTunnel2_Layout",
-      "width": 64,
-      "height": 40,
+      "width": 48,
+      "height": 50,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Cave4_36",
       "border_filepath": "data/layouts/RockTunnel2/border.bin",

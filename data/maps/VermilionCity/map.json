@@ -27,6 +27,11 @@
       "map": "MAP_VERMILION_CITY_PORT1",
       "offset": 23,
       "direction": "down"
+    },
+    {
+      "map": "MAP_TREES",
+      "offset": 46,
+      "direction": "up"
     }
   ],
   "object_events": [
