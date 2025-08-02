@@ -66,11 +66,11 @@ CeruleanCity_EventScript_SlowbroWoman::
 	playmoncry SPECIES_SLOWBRO, CRY_MODE_NORMAL
 	applymovement2 LOCALID_CERULEAN_SLOWBRO, Common_Movement_QuestionMark
 	turnobject LOCALID_CERULEAN_SLOWBRO DIR_WEST
-	delay 10
-	turnobject LOCALID_CERULEAN_SLOWBRO, DIR_EAST
-	delay 10
-	turnobject LOCALID_CERULEAN_SLOWBRO, DIR_SOUTH
 	delay 30
+	turnobject LOCALID_CERULEAN_SLOWBRO, DIR_EAST
+	delay 30
+	turnobject LOCALID_CERULEAN_SLOWBRO, DIR_SOUTH
+	delay 70
 	msgbox CeruleanCity_Text_CooltrainerF3, MSGBOX_NPC
 	end
 

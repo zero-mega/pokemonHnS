@@ -27,7 +27,7 @@ Route6_EventScript_Sign::
 
 Route6_Text_PokefanM:
 	.string "The road is closed until the\n"
-	.string "problem at the POWER PLANT is\n"
+	.string "problem at the POWER PLANT is\l"
 	.string "solved.$"
 
 Route6_Text_UndergroundPathSign:
