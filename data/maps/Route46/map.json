@@ -17,6 +17,11 @@
       "map": "MAP_ROUTE45",
       "offset": -75,
       "direction": "right"
+    },
+    {
+      "map": "MAP_ROUTE29",
+      "offset": -24,
+      "direction": "down"
     }
   ],
   "object_events": [
@@ -192,14 +197,14 @@
   ],
   "warp_events": [
     {
-      "x": 9,
+      "x": 10,
       "y": 40,
       "elevation": 0,
       "dest_map": "MAP_ROUTE29_46GATE",
       "dest_warp_id": "0"
     },
     {
-      "x": 10,
+      "x": 11,
       "y": 40,
       "elevation": 0,
       "dest_map": "MAP_ROUTE29_46GATE",

@@ -20,7 +20,7 @@
     },
     {
       "map": "MAP_SAFFRON_CITY",
-      "offset": 8,
+      "offset": 16,
       "direction": "up"
     }
   ],
