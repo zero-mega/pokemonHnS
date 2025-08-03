@@ -59,6 +59,10 @@ VermilionCity_TriggerCity:: @flagheap
 	setvar VAR_VERMILION_CITY_STATE, 1
 	end
 
+VermilionCity_EventScript_OldSeaMap::
+	finditem ITEM_OLD_SEA_MAP
+	end
+
 VermilionCity_TriggerSuicuneTop::
 	lock
 	playse SE_PIN
@@ -165,6 +169,10 @@ VermilionCity_EventScript_SnorlaxWakeUp::
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, VermilionCity_EventScript_SnorlaxRan
 	fadescreenswapbuffers FADE_TO_BLACK
 	removeobject LOCALID_VERMILION_SNORLAX
+	removeobject 8
+	removeobject 9
+	removeobject 10
+	removeobject 11
 	setflag FLAG_HIDE_VERMILION_SNORLAX
 	fadescreenswapbuffers FADE_FROM_BLACK
 	release

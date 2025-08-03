@@ -1170,7 +1170,7 @@
 #define FLAG_ITEM_ROCKTUNNEL2_IRON                         0x45F
 #define FLAG_ITEM_ROCKTUNNEL2_PP_UP                            0x460
 #define FLAG_ITEM_ROUTE10_ULTRABALL                            0x461
-#define FLAG_ITEM_NEW_MAUVILLE_FULL_HEAL                            0x462
+#define FLAG_ITEM_VERMILION_OLD_SEA_MAP                            0x462
 #define FLAG_ITEM_NEW_MAUVILLE_PARALYZE_HEAL                        0x463
 #define FLAG_ITEM_AQUA_HIDEOUT_B1F_MASTER_BALL                      0x464
 #define FLAG_DEFEATED_ENTEI                                         0x465

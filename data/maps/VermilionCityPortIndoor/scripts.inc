@@ -22,12 +22,19 @@ VermilionPort_Text_SuperNerd:
 VermilionPort_EventScript_Sailor::
 	lock
 	faceplayer
+	goto_if_unset FLAG_RETURNED_MACHINE_PART, VermilionPort_EventScript_SailorCantSail
 	goto_if_ge VAR_SSAQUA_STATE, 5, VermilionPort_EventScript_Sailor_AfterKanto
 	msgbox VermilionPort_Text_AskBoard, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, FALSE, VermilionPort_EventScript_Sailor_Refused
 	checkitem ITEM_SS_TICKET
 	goto_if_eq VAR_RESULT, TRUE, VermilionPort_EventScript_Sailor_MaidenVoyage
 	msgbox VermilionPort_Text_NoTicket, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+VermilionPort_EventScript_SailorCantSail::
+	msgbox VermilionPort_Text_SailorCantSail, MSGBOX_NPC
 	closemessage
 	release
 	end
@@ -146,6 +153,11 @@ VermilionPort_Movement_BoatLeave:
 	walk_left
 	walk_left
 	step_end
+
+VermilionPort_Text_SailorCantSail:
+	.string "There's been a break-in at the\n"
+	.string "POWER PLANT, so we cannot set sail\l"
+	.string "until the THIEF is found.$"
 
 VermilionPort_Text_NoPass:
     .string "{PLAYER} tried to show the\n"
