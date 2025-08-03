@@ -7,15 +7,15 @@ Route25BillsHouse_MapScripts::
 Route25BillsHouse_EventScript_Gramps::
 	lock
 	faceplayer
-	goto_if_eq VAR_BILLS_GRANDPA, 1, Route25BillsHouse_EventScript_Gramps_Lickitung
-	goto_if_eq VAR_BILLS_GRANDPA, 2, Route25BillsHouse_EventScript_Gramps_Oddish
-	goto_if_eq VAR_BILLS_GRANDPA, 3, Route25BillsHouse_EventScript_Gramps_Growlithe
-	goto_if_eq VAR_BILLS_GRANDPA, 4, Route25BillsHouse_EventScript_Gramps_Vulpix
+	goto_if_eq VAR_BILLS_GRANDPA, 1, Route25BillsHouse_EventScript_Gramps_Spinda
+	goto_if_eq VAR_BILLS_GRANDPA, 2, Route25BillsHouse_EventScript_Gramps_Roselia
+	goto_if_eq VAR_BILLS_GRANDPA, 3, Route25BillsHouse_EventScript_Gramps_Lotad
+	goto_if_eq VAR_BILLS_GRANDPA, 4, Route25BillsHouse_EventScript_Gramps_Growlithe
 	goto_if_eq VAR_BILLS_GRANDPA, 5, Route25BillsHouse_EventScript_Gramps_Pichu
 	goto_if_eq VAR_BILLS_GRANDPA, 6, Route25BillsHouse_EventScript_Gramps_ShownAll
 	msgbox Route25BillsHouse_Text_GrandpaIntro, MSGBOX_DEFAULT
 	setvar VAR_BILLS_GRANDPA, 1
-	goto Route25BillsHouse_EventScript_Gramps_Lickitung
+	goto Route25BillsHouse_EventScript_Gramps_Spinda
 
 Route25BillsHouse_EventScript_Gramps_Declined::
 	msgbox Route25BillsHouse_Text_YouDontHaveIt, MSGBOX_DEFAULT
@@ -29,8 +29,8 @@ Route25BillsHouse_EventScript_Gramps_WrongMon::
 	release
 	end
 
-Route25BillsHouse_EventScript_Gramps_Lickitung::
-	msgbox Route25BillsHouse_Text_Lickitung, MSGBOX_DEFAULT
+Route25BillsHouse_EventScript_Gramps_Spinda::
+	msgbox Route25BillsHouse_Text_Spinda, MSGBOX_DEFAULT
 	msgbox Route25BillsHouse_Text_AskToSeeMon, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, FALSE, Route25BillsHouse_EventScript_Gramps_Declined
 	msgbox Route25BillsHouse_Text_ExcitedToSee, MSGBOX_DEFAULT
@@ -43,14 +43,14 @@ Route25BillsHouse_EventScript_Gramps_Lickitung::
 	copyvar VAR_0x8005, VAR_0x800A
 	specialvar VAR_RESULT, GetTradeSpecies
 	copyvar VAR_0x800B, VAR_RESULT
-	@ Check if it's Lickitung
-	goto_if_ne VAR_RESULT, SPECIES_LICKITUNG, Route25BillsHouse_EventScript_Gramps_WrongMon
-	bufferspeciesname STR_VAR_1, SPECIES_LICKITUNG
+	@ Check if it's Spinda
+	goto_if_ne VAR_RESULT, SPECIES_SPINDA, Route25BillsHouse_EventScript_Gramps_WrongMon
+	bufferspeciesname STR_VAR_1, SPECIES_SPINDA
 	setvar VAR_TEMP_0, ITEM_EVERSTONE
 	goto Route25BillsHouse_EventScript_Gramps_Correctmon
 
-Route25BillsHouse_EventScript_Gramps_Oddish::
-	msgbox Route25BillsHouse_Text_Oddish, MSGBOX_DEFAULT
+Route25BillsHouse_EventScript_Gramps_Roselia::
+	msgbox Route25BillsHouse_Text_Roselia, MSGBOX_DEFAULT
 	msgbox Route25BillsHouse_Text_AskToSeeMon, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, FALSE, Route25BillsHouse_EventScript_Gramps_Declined
 	msgbox Route25BillsHouse_Text_ExcitedToSee, MSGBOX_DEFAULT
@@ -61,13 +61,13 @@ Route25BillsHouse_EventScript_Gramps_Oddish::
 	copyvar VAR_0x8005, VAR_0x800A
 	specialvar VAR_RESULT, GetTradeSpecies
 	copyvar VAR_0x800B, VAR_RESULT
-	goto_if_ne VAR_RESULT, SPECIES_ODDISH, Route25BillsHouse_EventScript_Gramps_WrongMon
-	bufferspeciesname STR_VAR_1, SPECIES_ODDISH
+	goto_if_ne VAR_RESULT, SPECIES_ROSELIA, Route25BillsHouse_EventScript_Gramps_WrongMon
+	bufferspeciesname STR_VAR_1, SPECIES_ROSELIA
 	setvar VAR_TEMP_0, ITEM_LEAF_STONE
 	goto Route25BillsHouse_EventScript_Gramps_Correctmon
 
-Route25BillsHouse_EventScript_Gramps_Staryu::
-	msgbox Route25BillsHouse_Text_Staryu, MSGBOX_DEFAULT
+Route25BillsHouse_EventScript_Gramps_Lotad::
+	msgbox Route25BillsHouse_Text_Lotad, MSGBOX_DEFAULT
 	msgbox Route25BillsHouse_Text_AskToSeeMon, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, FALSE, Route25BillsHouse_EventScript_Gramps_Declined
 	msgbox Route25BillsHouse_Text_ExcitedToSee, MSGBOX_DEFAULT
@@ -78,8 +78,8 @@ Route25BillsHouse_EventScript_Gramps_Staryu::
 	copyvar VAR_0x8005, VAR_0x800A
 	specialvar VAR_RESULT, GetTradeSpecies
 	copyvar VAR_0x800B, VAR_RESULT
-	goto_if_ne VAR_RESULT, SPECIES_STARYU, Route25BillsHouse_EventScript_Gramps_WrongMon
-	bufferspeciesname STR_VAR_1, SPECIES_STARYU
+	goto_if_ne VAR_RESULT, SPECIES_LOTAD, Route25BillsHouse_EventScript_Gramps_WrongMon
+	bufferspeciesname STR_VAR_1, SPECIES_LOTAD
 	setvar VAR_TEMP_0, ITEM_WATER_STONE
 	goto Route25BillsHouse_EventScript_Gramps_Correctmon
 
@@ -97,23 +97,6 @@ Route25BillsHouse_EventScript_Gramps_Growlithe::
 	copyvar VAR_0x800B, VAR_RESULT
 	goto_if_ne VAR_RESULT, SPECIES_GROWLITHE, Route25BillsHouse_EventScript_Gramps_WrongMon
 	bufferspeciesname STR_VAR_1, SPECIES_GROWLITHE
-	setvar VAR_TEMP_0, ITEM_FIRE_STONE
-	goto Route25BillsHouse_EventScript_Gramps_Correctmon
-
-Route25BillsHouse_EventScript_Gramps_Vulpix::
-	msgbox Route25BillsHouse_Text_Vulpix, MSGBOX_DEFAULT
-	msgbox Route25BillsHouse_Text_AskToSeeMon, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, FALSE, Route25BillsHouse_EventScript_Gramps_Declined
-	msgbox Route25BillsHouse_Text_ExcitedToSee, MSGBOX_DEFAULT
-	special ChoosePartyMon
-	waitstate
-	copyvar VAR_0x800A, VAR_0x8004
-	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, Route25BillsHouse_EventScript_Gramps_Declined
-	copyvar VAR_0x8005, VAR_0x800A
-	specialvar VAR_RESULT, GetTradeSpecies
-	copyvar VAR_0x800B, VAR_RESULT
-	goto_if_ne VAR_RESULT, SPECIES_VULPIX, Route25BillsHouse_EventScript_Gramps_WrongMon
-	bufferspeciesname STR_VAR_1, SPECIES_VULPIX
 	setvar VAR_TEMP_0, ITEM_FIRE_STONE
 	goto Route25BillsHouse_EventScript_Gramps_Correctmon
 
@@ -152,10 +135,9 @@ Route25BillsHouse_EventScript_Gramps_Correctmon::
 	end
 
 Route25BillsHouse_Test::
-	givemon SPECIES_LICKITUNG, 10
-	givemon SPECIES_STARYU, 10
-	givemon SPECIES_ODDISH, 10
-	givemon SPECIES_VULPIX, 10
+	givemon SPECIES_SPINDA, 10
+	givemon SPECIES_LOTAD, 10
+	givemon SPECIES_ROSELIA, 10
 	givemon SPECIES_GROWLITHE, 10
 	givemon SPECIES_PICHU, 10
 	end
@@ -167,25 +149,22 @@ Route25BillsHouse_Text_GrandpaIntro:
 	.string "something with PCs, so I'm\l"
 	.string "housesitting.$"
 
-Route25BillsHouse_Text_Lickitung:
+Route25BillsHouse_Text_Spinda:
 	.string "My grandson BILL told me about\n"
-	.string "a POKéMON that has a\l"
-	.string "long tongue.$"
+	.string "a POKéMON that is covered in\l"
+	.string "a random pattern.$"
 
-Route25BillsHouse_Text_Oddish:
+Route25BillsHouse_Text_Roselia:
 	.string "Ah, my grandson mentioned a\n"
-	.string "round,\l"
-	.string "green POKéMON that has leaves\n"
-	.string "growing on its head.$"
+	.string "green POKéMON that has flowers\l"
+	.string "growing from its wrists.$"
 
-Route25BillsHouse_Text_Staryu:
-	.string "Do you know of a sea POKéMON\n"
-	.string "that\l"
-	.string "has a red sphere in its body?\p"
-	.string "You know, the one that's shaped\n"
-	.string "like a star?\p"
-	.string "I heard that it appears at\n"
-	.string "night.\p"
+Route25BillsHouse_Text_Lotad:
+	.string "Do you know of a water POKéMON\n"
+	.string "that has a big lily pad on\l"
+	.string "its head?"
+	.string "I heard there are some at the\n"
+	.string "FUCHSIA SAFARI ZONE.\p"
 	.string "I would surely like to see it.$"
 
 Route25BillsHouse_Text_Growlithe:
@@ -193,12 +172,6 @@ Route25BillsHouse_Text_Growlithe:
 	.string "that is\l"
 	.string "very loyal to its trainer.\p"
 	.string "It's supposed to ROAR well.$"
-
-Route25BillsHouse_Text_Vulpix:
-	.string "I heard about a cute POKéMON\n"
-	.string "that has six tails.\p"
-	.string "I would love to hug a cute\n"
-	.string "POKéMON like that.$"
 
 Route25BillsHouse_Text_Pichu:
 	.string "Do you know that hugely popular\n"

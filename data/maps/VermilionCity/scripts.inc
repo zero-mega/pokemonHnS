@@ -45,7 +45,6 @@ VermilionCity_TriggerCity:: @flagheap
 	clearflag FLAG_GOT_UP_GRADE
 	clearflag FLAG_GOT_CLEANSE_TAG
 	clearflag FLAG_ROUTE25_GOT_NUGGET
-	
 
 	setvar VAR_KANTO_ROCKET_STORY_STATE, 0
 	setvar VAR_BILLS_GRANDPA, 0
