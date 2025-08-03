@@ -8,7 +8,7 @@ Route24_MapScripts::
 	.byte 0
 
 Route24_OnTransition:
-	call_if_eq VAR_KANTO_ROCKET_STORY_STATE, 3, Route24_MapScript_SetRocketScene
+	call_if_eq VAR_KANTO_ROCKET_STORY_STATE, 4, Route24_MapScript_SetRocketScene
 	callnative SetTimeBasedEncounters
 	end
 
@@ -21,8 +21,8 @@ Route24_MapScript_SetRocketScene:
 	return
 
 Route24_EventScript_Woman::
-	goto_if_eq VAR_KANTO_ROCKET_STORY_STATE, 3, Route24_EventScript_WomanRocket
-	goto_if_eq VAR_KANTO_ROCKET_STORY_STATE, 4, Route24_EventScript_WomanAfterRocket
+	goto_if_eq VAR_KANTO_ROCKET_STORY_STATE, 4, Route24_EventScript_WomanRocket
+	goto_if_eq VAR_KANTO_ROCKET_STORY_STATE, 5, Route24_EventScript_WomanAfterRocket
 	msgbox Route24_Text_Woman, MSGBOX_NPC
 	end
 
@@ -35,8 +35,8 @@ Route24_EventScript_WomanAfterRocket::
 	end
 
 Route24_EventScript_Man::
-	goto_if_eq VAR_KANTO_ROCKET_STORY_STATE, 3, Route24_EventScript_ManRocket
-		goto_if_eq VAR_KANTO_ROCKET_STORY_STATE, 4, Route24_EventScript_ManAfterRocket
+	goto_if_eq VAR_KANTO_ROCKET_STORY_STATE, 4, Route24_EventScript_ManRocket
+		goto_if_eq VAR_KANTO_ROCKET_STORY_STATE, 5, Route24_EventScript_ManAfterRocket
 	msgbox Route24_Text_Man, MSGBOX_NPC
 	end
 
@@ -58,7 +58,7 @@ Route24_Trigger_GruntScene::
 	applymovement2 LOCALID_ROUTE24_WOMAN, Route24_Movement_WomanMove
 	waitmovement 0
 	turnobject LOCALID_ROUTE24_MAN, DIR_SOUTH
-	setvar VAR_KANTO_ROCKET_STORY_STATE, 3
+	setvar VAR_KANTO_ROCKET_STORY_STATE, 4
 	call Route24_MapScript_SetRocketScene
 	release
 	end
@@ -93,7 +93,7 @@ Route24_EventScript_Grunt::
 	waitmovement LOCALID_ROUTE24_GRUNT
 	setflag FLAG_HIDE_CERULEAN_CAPE_ROCKET
 	removeobject LOCALID_ROUTE24_GRUNT
-	setvar VAR_KANTO_ROCKET_STORY_STATE, 4
+	setvar VAR_KANTO_ROCKET_STORY_STATE, 5
 	clearflag FLAG_HIDDEN_ITEM_MACHINE_PART
 	release
 	end

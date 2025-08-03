@@ -45,6 +45,10 @@ VermilionCity_TriggerCity:: @flagheap
 	clearflag FLAG_GOT_UP_GRADE
 	clearflag FLAG_GOT_CLEANSE_TAG
 	clearflag FLAG_ROUTE25_GOT_NUGGET
+	clearflag FLAG_HIDE_POWER_PLANT_ENGINEER
+	clearflag FLAG_HIDE_ZAPDOS
+	clearflag FLAG_HIDE_ARTICUNO
+	clearflag FLAG_HIDE_MOLTRES
 
 	setvar VAR_KANTO_ROCKET_STORY_STATE, 0
 	setvar VAR_BILLS_GRANDPA, 0

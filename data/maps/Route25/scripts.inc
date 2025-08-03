@@ -3,11 +3,14 @@
 .set LOCALID_ROUTE25_SUICUNE, 16
 .set LOCALID_ROUTE25_EUSINE, 15
 
+
 Route25_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route25_MapScript_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
 	.byte 0
 
 Route25_MapScript_OnTransition::
+	callnative SetTimeBasedEncounters
 	goto_if_eq VAR_SUICUNE_ENCOUNTERS, 7, Route25_EventScript_SetSuicuneSceneMid
 	end
 

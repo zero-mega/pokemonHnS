@@ -64,6 +64,7 @@ HallOfFame_EventScript_SetFirstGameClearFlags::
 
 HallOfFame_EventScript_SetGameClearFlags::
 	clearflag FLAG_HIDE_VERMILION_SNORLAX
+	clearflag FLAG_HIDE_ZAPDOS
 	setvar VAR_COMPLETED_LUGIA, 4
 	setvar VAR_COMPLETED_HO_OH, 4
 	call_if_ge VAR_SUICUNE_ENCOUNTERS, 8, HallOfFame_EventScript_SpawnSuicuneCheck

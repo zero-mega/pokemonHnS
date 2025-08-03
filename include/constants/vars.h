@@ -158,7 +158,7 @@
 #define VAR_CONTEST_PRIZE_PICKUP                         0x408A
 #define VAR_FAN_CLUB_GUY                                0x408B // Unused Var
 #define VAR_FAN_CLUB_CLEFAIRY              0x408C //0 = goto copycat, 1 = goto fanclub, 2 = goto copycat, 3 = done
-#define VAR_KANTO_ROCKET_STORY_STATE                       0x408D //0 = goto powerplant, 1 = goto cerulean gym, 2 = goto bridge, 3 = battle rocket, 4 = retrieve part, 5 = return part, 6 = done.
+#define VAR_KANTO_ROCKET_STORY_STATE                       0x408D //0 = goto powerplant, 1 = powerplant cop, 2 = goto cerulean gym, 3 = goto bridge, 4 = battle rocket, 5 = retrieve part, 6 = return part, 7 = done.
 #define VAR_SUICUNE_ENCOUNTERS                      0x408E //0 = goto cianwood, 1 = encounter suicune cianwood, 2 = find suicune on route 42, 3 = goto vermilion, 4 = goto route 14, 5 = beat cerulean gym, 6 = goto route 25, 7 = talk to suicune, 8 = done
 #define VAR_BILLS_GRANDPA                          0x408F //0 = meet gramps
 #define VAR_BRINEY_HOUSE_STATE                           0x4090

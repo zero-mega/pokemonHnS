@@ -5,8 +5,8 @@ CeruleanCityGym_MapScripts::
 	.byte 0
 
 CeruleanCityGym_OnFrame::
-	map_script_2 VAR_KANTO_ROCKET_STORY_STATE, 1,  CeruleanCityGym_EventScript_RocketGrunt
-	map_script_2 VAR_KANTO_ROCKET_STORY_STATE, 4,  CeruleanCityGym_EvenetScript_MachinePart
+	map_script_2 VAR_KANTO_ROCKET_STORY_STATE, 2,  CeruleanCityGym_EventScript_RocketGrunt
+	map_script_2 VAR_KANTO_ROCKET_STORY_STATE, 5,  CeruleanCityGym_EvenetScript_MachinePart
 	.2byte 0
 
 CeruleanCityGym_EventScript_RocketGrunt::
@@ -36,16 +36,37 @@ CeruleanCityGym_EventScript_RocketGrunt::
 	removeobject LOCALID_CERULEAN_GYM_ROCKET
 	fadescreenswapbuffers FADE_FROM_BLACK
 	clearflag FLAG_HIDE_CERULEAN_CAPE_ROCKET
-	setvar VAR_KANTO_ROCKET_STORY_STATE, 2
+	setvar VAR_KANTO_ROCKET_STORY_STATE, 3
 	release
 	end
 
 CeruleanCityGym_EvenetScript_MachinePart::
+	special SpawnCameraObject
+	applymovement OBJ_EVENT_ID_CAMERA, CeruleanCity_Movement_CameraPanUp
+	waitmovement 0
+	delay 30
 	setvar VAR_0x8004, 5  @ x
 	setvar VAR_0x8005, 13  @ y
+	playse SE_PIN
 	call Route110_TrickHouseEntrance_EventScript_DoHidingSpotSparkle
-	setvar VAR_KANTO_ROCKET_STORY_STATE, 5
+	delay 55
+	applymovement OBJ_EVENT_ID_CAMERA, CeruleanCity_Movement_CameraPanDown
+	waitmovement 0
+	special RemoveCameraObject
+	setvar VAR_KANTO_ROCKET_STORY_STATE, 6
 	end
+
+CeruleanCity_Movement_CameraPanUp:
+	walk_up
+	walk_up
+	walk_up
+	step_end
+
+CeruleanCity_Movement_CameraPanDown:
+	walk_down
+	walk_down
+	walk_down
+	step_end
 
 CeruleanCityGym_Movement_GruntBumpPlayer:
 	walk_fast_down

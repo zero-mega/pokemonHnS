@@ -669,35 +669,35 @@
 #define FLAG_DEFEATED_FUCHSIA_GYM  0x272 
 #define FLAG_DEFEATED_CINNABAR_GYM  0x273 
 #define FLAG_DEFEATED_VIRIDIAN_GYM  0x274 
-#define FLAG_UNUSED_0x275  0x275 // Unused Flag
-#define FLAG_UNUSED_0x276  0x276 // Unused Flag
-#define FLAG_UNUSED_0x277  0x277 // Unused Flag
-#define FLAG_UNUSED_0x278  0x278 // Unused Flag
-#define FLAG_UNUSED_0x279  0x279 // Unused Flag
-#define FLAG_UNUSED_0x27A  0x27A // Unused Flag
-#define FLAG_UNUSED_0x27B  0x27B // Unused Flag
-#define FLAG_UNUSED_0x27C  0x27C // Unused Flag
-#define FLAG_UNUSED_0x27D  0x27D // Unused Flag
-#define FLAG_UNUSED_0x27E  0x27E // Unused Flag
-#define FLAG_UNUSED_0x27F  0x27F // Unused Flag
-#define FLAG_UNUSED_0x280  0x280 // Unused Flag
-#define FLAG_UNUSED_0x281  0x281 // Unused Flag
-#define FLAG_UNUSED_0x282  0x282 // Unused Flag
-#define FLAG_UNUSED_0x283  0x283 // Unused Flag
-#define FLAG_UNUSED_0x284  0x284 // Unused Flag
-#define FLAG_UNUSED_0x285  0x285 // Unused Flag
-#define FLAG_UNUSED_0x286  0x286 // Unused Flag
-#define FLAG_UNUSED_0x287  0x287 // Unused Flag
-#define FLAG_UNUSED_0x288  0x288 // Unused Flag
-#define FLAG_UNUSED_0x289  0x289 // Unused Flag
-#define FLAG_UNUSED_0x28A  0x28A // Unused Flag
-#define FLAG_UNUSED_0x28B  0x28B // Unused Flag
-#define FLAG_UNUSED_0x28C  0x28C // Unused Flag
-#define FLAG_UNUSED_0x28D  0x28D // Unused Flag
-#define FLAG_UNUSED_0x28E  0x28E // Unused Flag
-#define FLAG_UNUSED_0x28F  0x28F // Unused Flag
-#define FLAG_UNUSED_0x290  0x290 // Unused Flag
-#define FLAG_UNUSED_0x291  0x291 // Unused Flag
+#define FLAG_HIDE_CELADON_FALKNER  0x275 
+#define FLAG_HIDE_DOJO_FALKNER  0x276 
+#define FLAG_HIDE_VIRIDIAN_BUGSY  0x277 
+#define FLAG_HIDE_DOJO_BUGSY  0x278 
+#define FLAG_HIDE_DEPTSTORE_WHITNEY  0x279 
+#define FLAG_HIDE_DOJO_WHITNEY  0x27A 
+#define FLAG_HIDE_BELLCHIE_MORTY  0x27B 
+#define FLAG_HIDE_DOJO_MORTY  0x27C 
+#define FLAG_HIDE_DOJO_CHUCK  0x27D 
+#define FLAG_HIDE_CAFE_JASMINE  0x27E 
+#define FLAG_HIDE_DOJO_JASMINE  0x27F 
+#define FLAG_HIDE_LAKE_PRYCE  0x280 
+#define FLAG_HIDE_DOJO_PRYCE  0x281 
+#define FLAG_HIDE_DEN_CLAIR  0x282 
+#define FLAG_HIDE_DOJO_CLAIR  0x283 
+#define FLAG_HIDE_DIGLETT_BROCK  0x284 
+#define FLAG_HIDE_DOJO_BROCK  0x285 
+#define FLAG_HIDE_CAPE_MISTY  0x286 
+#define FLAG_HIDE_DOJO_MISTY  0x287 
+#define FLAG_HIDE_PLANT_SURGE  0x288 
+#define FLAG_HIDE_DOJO_SURGE  0x289 
+#define FLAG_HIDE_FOUNTAIN_ERIKA  0x28A 
+#define FLAG_HIDE_ROUTE22_JANINE  0x28B 
+#define FLAG_HIDE_DOJO_JANINE  0x28C 
+#define FLAG_HIDE_OLIVINE_SABRINA  0x28D 
+#define FLAG_HIDE_DOJO_SABRINA  0x28E 
+#define FLAG_HIDE_CINNABAR_BLAINE  0x28F 
+#define FLAG_HIDE_DOJO_BLAINE  0x290 
+#define FLAG_HIDE_DOJO_BLUE  0x291 
 #define FLAG_UNUSED_0x292  0x292 // Unused Flag
 #define FLAG_UNUSED_0x293  0x293 // Unused Flag
 #define FLAG_UNUSED_0x294  0x294 // Unused Flag
@@ -863,10 +863,10 @@
 #define FLAG_HIDE_ROUTE25_MISTY                           0x330
 #define FLAG_HIDE_ROUTE25_SUICUNE       0x331
 #define FLAG_HIDE_ROUTE25_EUSINE           0x332
-#define FLAG_HIDE_ROUTE_112_TEAM_MAGMA                              0x333
-#define FLAG_HIDE_CAVE_OF_ORIGIN_B1F_WALLACE                        0x334
-#define FLAG_HIDE_AQUA_HIDEOUT_1F_GRUNT_1_BLOCKING_ENTRANCE         0x335
-#define FLAG_HIDE_AQUA_HIDEOUT_1F_GRUNT_2_BLOCKING_ENTRANCE         0x336
+#define FLAG_HIDE_POWER_PLANT_ENGINEER                              0x333
+#define FLAG_GARBAGEFLAG192                        0x334
+#define FLAG_GARBAGEFLAG191         0x335
+#define FLAG_GARBAGEFLAG193         0x336
 #define FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA                          0x337
 #define FLAG_HIDE_PETALBURG_GYM_WALLYS_DAD                          0x338
 #define FLAG_HIDE_LEGEND_MON_CAVE_OF_ORIGIN                         0x339 // Unused, leftover from R/S
@@ -1165,11 +1165,11 @@
 #define FLAG_ITEM_VICTORYROAD3_MAX_ETHER                              0x45A
 #define FLAG_ITEM_VICTORYROAD3_ULTRA_BALL                              0x45B
 #define FLAG_ITEM_ICEPATH4_TM_BLIZZARD                             0x45C
-#define FLAG_ITEM_PETALBURD_WOODS_PARALYZE_HEAL                     0x45D
-#define FLAG_ITEM_ROUTE_115_GREAT_BALL                              0x45E
-#define FLAG_ITEM_SAFARI_ZONE_NORTH_CALCIUM                         0x45F
-#define FLAG_ITEM_MT_PYRE_3F_SUPER_REPEL                            0x460
-#define FLAG_ITEM_ROUTE_118_HYPER_POTION                            0x461
+#define FLAG_ITEM_ROCKTUNNEL1_TM_STEEL_WING                     0x45D
+#define FLAG_ITEM_ROCKTUNNEL1_ELIXIR                              0x45E
+#define FLAG_ITEM_ROCKTUNNEL2_IRON                         0x45F
+#define FLAG_ITEM_ROCKTUNNEL2_PP_UP                            0x460
+#define FLAG_ITEM_ROUTE10_ULTRABALL                            0x461
 #define FLAG_ITEM_NEW_MAUVILLE_FULL_HEAL                            0x462
 #define FLAG_ITEM_NEW_MAUVILLE_PARALYZE_HEAL                        0x463
 #define FLAG_ITEM_AQUA_HIDEOUT_B1F_MASTER_BALL                      0x464
