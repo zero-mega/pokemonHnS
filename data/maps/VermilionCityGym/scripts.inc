@@ -378,13 +378,16 @@ VermilionCity_Gym_Text_GymGuyPostVictory::
 
 VermilionCity_Gym_Text_GymStatue::
     .string "VERMILION POKéMON GYM\n"
-    .string "LEADER: LT. SURGE$"
+    .string "LEADER: LT. SURGE\p"
+	.string "WINNING TRAINERS:\n"
+	.string "BLUE, RED$"
+
 
 VermilionCity_Gym_Text_GymStatuePlayerWon::
     .string "VERMILION POKéMON GYM\n"
     .string "LEADER: LT. SURGE\p"
     .string "WINNING TRAINERS:\n"
-    .string "{PLAYER}$"
+    .string "BLUE, RED, {PLAYER}$"
 
 VermilionCity_Gym_Text_NopeOnlyTrashHere::
     .string "Nope!\n"

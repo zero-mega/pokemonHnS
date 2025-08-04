@@ -2009,3 +2009,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/SaffronCityCopyCatRoom/scripts.inc"
 
 	.include "data/maps/Route25BillsHouse/scripts.inc"
+
+	.include "data/maps/CeladonApartments4Night/scripts.inc"
+
+	.include "data/maps/CeladonCityDepartmentStore7/scripts.inc"

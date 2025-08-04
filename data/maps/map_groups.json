@@ -282,7 +282,9 @@
     "CeladonCityDepartmentStore5",
     "CeladonCityDepartmentStore6",
     "CeladonCityGym",
-    "CeladonApartments5"
+    "CeladonApartments5",
+    "CeladonApartments4Night",
+    "CeladonCityDepartmentStore7"
   ],
   "gMapGroup_IndoorSaffron": [
     "SaffronPokecenter",

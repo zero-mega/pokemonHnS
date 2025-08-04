@@ -214,6 +214,7 @@ Route25_EventScript_Suicune::
 	waitmovement 0
 	removeobject LOCALID_ROUTE25_EUSINE
 	setflag FLAG_HIDE_ROUTE25_EUSINE
+	clearflag FLAG_HIDE_CELADON_EUSINE
 	setvar VAR_SUICUNE_ENCOUNTERS, 8
 	release
 	end

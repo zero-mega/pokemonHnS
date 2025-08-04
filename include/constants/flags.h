@@ -864,8 +864,8 @@
 #define FLAG_HIDE_ROUTE25_SUICUNE       0x331
 #define FLAG_HIDE_ROUTE25_EUSINE           0x332
 #define FLAG_HIDE_POWER_PLANT_ENGINEER                              0x333
-#define FLAG_GARBAGEFLAG192                        0x334
-#define FLAG_GARBAGEFLAG191         0x335
+#define FLAG_HIDE_CELADON_EUSINE                        0x334
+#define FLAG_GOT_TM_REST         0x335
 #define FLAG_GARBAGEFLAG193         0x336
 #define FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA                          0x337
 #define FLAG_HIDE_PETALBURG_GYM_WALLYS_DAD                          0x338
@@ -1171,7 +1171,7 @@
 #define FLAG_ITEM_ROCKTUNNEL2_PP_UP                            0x460
 #define FLAG_ITEM_ROUTE10_ULTRABALL                            0x461
 #define FLAG_ITEM_VERMILION_OLD_SEA_MAP                            0x462
-#define FLAG_ITEM_NEW_MAUVILLE_PARALYZE_HEAL                        0x463
+#define FLAG_ITEM_CELADON_LEFTOVERS                        0x463
 #define FLAG_ITEM_AQUA_HIDEOUT_B1F_MASTER_BALL                      0x464
 #define FLAG_DEFEATED_ENTEI                                         0x465
 #define FLAG_DEFEATED_RAIKOU                                        0x466

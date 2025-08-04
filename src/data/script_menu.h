@@ -857,6 +857,16 @@ static const struct MenuAction MultichoiceList_7Floors[] =
     {gText_Exit},
 };
 
+static const struct MenuAction MultichoiceList_5Floors[] = 
+{
+    {gText_Floor5},
+    {gText_Floor4},
+    {gText_Floor3},
+    {gText_Floor2},
+    {gText_Floor1},
+    {gText_Exit},   
+};
+
 static const struct MenuAction MultichoiceList_GoldSilver[] = 
 {
     {gText_Gold},
@@ -1043,6 +1053,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_ELDERQUIIZ4]                 = MULTICHOICE(MultichoiceList_ElderQuiz4),
     [MULTI_ELDERQUIIZ5]                 = MULTICHOICE(MultichoiceList_ElderQuiz5),
     [MULTI_HOENN_STARTERS]              = MULTICHOICE(MultichoiceList_HoennStarters),
+    [MULTI_5FLOORS]                    = MULTICHOICE(MultichoiceList_5Floors),
 
 };
 

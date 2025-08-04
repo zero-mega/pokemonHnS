@@ -7814,7 +7814,7 @@
     {
       "id": "LAYOUT_CELADON_APARTMENTS3",
       "name": "CeladonApartments3_Layout",
-      "width": 15,
+      "width": 16,
       "height": 20,
       "primary_tileset": "gTileset_Kanto_Building",
       "secondary_tileset": "gTileset_CeladonApartments",
@@ -8860,6 +8860,26 @@
       "secondary_tileset": "gTileset_SeaCottage",
       "border_filepath": "data/layouts/Route25BillsHouse/border.bin",
       "blockdata_filepath": "data/layouts/Route25BillsHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_CELADON_APARTMENTS4NIGHT",
+      "name": "CeladonApartments4Night_Layout",
+      "width": 14,
+      "height": 23,
+      "primary_tileset": "gTileset_Johto_Building",
+      "secondary_tileset": "gTileset_CeladonApartments",
+      "border_filepath": "data/layouts/CeladonApartments4Night/border.bin",
+      "blockdata_filepath": "data/layouts/CeladonApartments4Night/map.bin"
+    },
+    {
+      "id": "LAYOUT_CELADON_CITY_DEPARTMENT_STORE7",
+      "name": "CeladonCityDepartmentStore7_Layout",
+      "width": 19,
+      "height": 14,
+      "primary_tileset": "gTileset_Johto_Building",
+      "secondary_tileset": "gTileset_ShopRooftop",
+      "border_filepath": "data/layouts/CeladonCityDepartmentStore7/border.bin",
+      "blockdata_filepath": "data/layouts/CeladonCityDepartmentStore7/map.bin"
     }
   ]
 }

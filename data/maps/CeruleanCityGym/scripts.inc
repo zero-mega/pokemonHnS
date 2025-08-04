@@ -145,13 +145,15 @@ CeruleanCityGym_EventScript_GymGuyAfter::
 
 CeruleanCityGym_Text_GymStatue::
     .string "CERULEAN POKéMON GYM\n"
-    .string "LEADER: MISTY$"
+    .string "LEADER: MISTY\p"
+	.string "WINNING TRAINERS:\n"
+	.string "BLUE, RED$"
 
 CeruleanCityGym_Text_GymStatuePlayerWon::
     .string "CERULEAN POKéMON GYM\n"
     .string "LEADER: MISTY\p"
     .string "WINNING TRAINERS:\n"
-    .string "{PLAYER}$"
+	.string "BLUE, RED, {PLAYER}$"
 
 CeruleanGym_Text_Note:
 	.string "Sorry, I'll be out for a while.\n"

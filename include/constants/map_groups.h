@@ -255,6 +255,8 @@
 #define MAP_CELADON_CITY_DEPARTMENT_STORE6 (13 | (17 << 8))
 #define MAP_CELADON_CITY_GYM               (14 | (17 << 8))
 #define MAP_CELADON_APARTMENTS5            (15 | (17 << 8))
+#define MAP_CELADON_APARTMENTS4NIGHT       (16 | (17 << 8))
+#define MAP_CELADON_CITY_DEPARTMENT_STORE7 (17 | (17 << 8))
 
 // gMapGroup_IndoorSaffron
 #define MAP_SAFFRON_POKECENTER         (0 | (18 << 8))
@@ -1033,6 +1035,6 @@
 
 #define MAP_GROUPS_COUNT 32
 
-// static const u8 MAP_GROUP_COUNT[] = {72, 5, 5, 7, 5, 29, 8, 10, 6, 6, 7, 5, 5, 7, 6, 9, 7, 16, 10, 9, 4, 7, 28, 30, 83, 0, 41, 125, 113, 126, 74, 97, 0};
+// static const u8 MAP_GROUP_COUNT[] = {72, 5, 5, 7, 5, 29, 8, 10, 6, 6, 7, 5, 5, 7, 6, 9, 7, 18, 10, 9, 4, 7, 28, 30, 83, 0, 41, 125, 113, 126, 74, 97, 0};
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

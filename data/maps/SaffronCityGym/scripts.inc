@@ -177,10 +177,12 @@ SaffronCityGym_EventScript_GymStatuePostVictory::
 
 SaffronCityGym_Text_GymStatue::
     .string "SAFFRON POKéMON GYM\n"
-    .string "LEADER: LT. SURGE$"
+    .string "LEADER: SABRINA\p"
+	.string "WINNING TRAINERS:\n"
+	.string "BLUE, RED$"
 
 SaffronCityGym_Text_GymStatuePlayerWon::
     .string "SAFFRON POKéMON GYM\n"
     .string "LEADER: SABRINA\p"
     .string "WINNING TRAINERS:\n"
-    .string "{PLAYER}$"
+	.string "BLUE, RED, {PLAYER}$"

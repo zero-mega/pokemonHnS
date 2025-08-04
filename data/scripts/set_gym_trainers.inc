@@ -90,6 +90,7 @@ VermilionCity_Gym_SetGymTrainers::
 CeladonCity_Gym_SetGymTrainers::
 	settrainerflag TRAINER_MICHELLE
 	settrainerflag TRAINER_TANYA
+	settrainerflag TRAINER_JULIA
 	settrainerflag TRAINER_JO_AND_ZOE
 	return
 

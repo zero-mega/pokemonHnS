@@ -25,6 +25,7 @@ VermilionCity_TriggerCity:: @flagheap
 	setflag FLAG_HIDE_ROUTE25_MISTY
 	setflag FLAG_HIDE_ROUTE25_EUSINE
 	setflag FLAG_HIDE_ROUTE25_SUICUNE
+	setflag FLAG_HIDE_CELADON_EUSINE
 
 	clearflag FLAG_BADGE09_GET
 	clearflag FLAG_BADGE10_GET
@@ -49,6 +50,7 @@ VermilionCity_TriggerCity:: @flagheap
 	clearflag FLAG_HIDE_ZAPDOS
 	clearflag FLAG_HIDE_ARTICUNO
 	clearflag FLAG_HIDE_MOLTRES
+	clearflag FLAG_GOT_TM_REST
 
 	setvar VAR_KANTO_ROCKET_STORY_STATE, 0
 	setvar VAR_BILLS_GRANDPA, 0

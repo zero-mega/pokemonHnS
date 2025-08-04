@@ -24,7 +24,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "CeladonApartments5_EventScript_BlackBelt",
       "flag": "0"
     }
   ],
@@ -33,7 +33,7 @@
       "x": 4,
       "y": 8,
       "elevation": 0,
-      "dest_map": "MAP_CELADON_APARTMENTS4",
+      "dest_map": "MAP_DYNAMIC",
       "dest_warp_id": "2"
     }
   ],

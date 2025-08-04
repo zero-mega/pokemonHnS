@@ -136,6 +136,7 @@
 #define MULTI_OLIVINE_HARBOR               125
 #define MULTI_VERMILION_HARBOR             126
 #define MULTI_HOENN_STARTERS               127
+#define MULTI_5FLOORS                     128
 
 
 
