@@ -156,6 +156,10 @@ NewBarkTown_EventScript_Silver::
 	end
 
 
+NewBarkTown_EventScript_Door::
+	msgbox NewBarkTown_Text_Door, MSGBOX_SIGN
+	end
+
 
 
 
@@ -242,6 +246,8 @@ NewBarkTown_Movement_FaceDown:
 	face_down
 	step_end
 
+NewBarkTown_Text_Door:
+	.string "The door is locked.$"
 
 NewBarkTown_Text_Wooper:
 	.string "WOOPER: Woooooop$"
