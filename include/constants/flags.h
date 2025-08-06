@@ -866,13 +866,13 @@
 #define FLAG_HIDE_POWER_PLANT_ENGINEER                              0x333
 #define FLAG_HIDE_CELADON_EUSINE                        0x334
 #define FLAG_GOT_TM_REST         0x335
-#define FLAG_GARBAGEFLAG193         0x336
-#define FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA                          0x337
-#define FLAG_HIDE_PETALBURG_GYM_WALLYS_DAD                          0x338
-#define FLAG_HIDE_LEGEND_MON_CAVE_OF_ORIGIN                         0x339 // Unused, leftover from R/S
-#define FLAG_HIDE_SOOTOPOLIS_CITY_ARCHIE                            0x33A
-#define FLAG_HIDE_SOOTOPOLIS_CITY_MAXIE                             0x33B
-#define FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_ARCHIE                     0x33C
+#define FLAG_GOT_SUPER_ROD         0x336
+#define FLAG_HIDE_SEAFOAM_GYMGUY                          0x337
+#define FLAG_HIDE_CINNABAR_BLUE                          0x338
+#define FLAG_HIDE_VIRIDIAN_BLUE                         0x339 // Unused, leftover from R/S
+#define FLAG_HIDE_ROUTE14_EUSINE                            0x33A
+#define FLAG_HIDE_ROUTE14_SUICUNE                             0x33B
+#define FLAG_GARBAGEFLAG999                     0x33C
 #define FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_MAXIE                      0x33D
 #define FLAG_HIDE_PETALBURG_CITY_WALLYS_DAD                         0x33E
 #define FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_MAGMA_GRUNTS               0x33F
@@ -1172,14 +1172,14 @@
 #define FLAG_ITEM_ROUTE10_ULTRABALL                            0x461
 #define FLAG_ITEM_VERMILION_OLD_SEA_MAP                            0x462
 #define FLAG_ITEM_CELADON_LEFTOVERS                        0x463
-#define FLAG_ITEM_AQUA_HIDEOUT_B1F_MASTER_BALL                      0x464
+#define FLAG_ITEM_ROUTE12_ELIXIR                      0x464
 #define FLAG_DEFEATED_ENTEI                                         0x465
 #define FLAG_DEFEATED_RAIKOU                                        0x466
 #define FLAG_DEFEATED_SUICUNE                                       0x467
 #define FLAG_DEFEATEDCELEBI                                         0x468
-#define FLAG_ITEM_MT_PYRE_2F_ULTRA_BALL                             0x469
-#define FLAG_ITEM_MT_PYRE_4F_SEA_INCENSE                            0x46A
-#define FLAG_ITEM_SAFARI_ZONE_SOUTH_WEST_MAX_REVIVE                 0x46B
+#define FLAG_ITEM_ROUTE12_CALCIUM                             0x469
+#define FLAG_ITEM_ROUTE13_CALCIUM                            0x46A
+#define FLAG_ITEM_ROUTE15_PP_UP                 0x46B
 #define FLAG_ITEM_AQUA_HIDEOUT_B1F_NUGGET                           0x46C
 #define FLAG_ITEM_MOSSDEEP_STEVENS_HOUSE_HM08                       0x46D // Unused Flag, leftover from R/S. HM08 is given to the player directly in Emerald
 #define FLAG_ITEM_ROUTE_119_NUGGET                                  0x46E

@@ -44,11 +44,11 @@
       "y": 9,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "Route14_EventScript_Carter",
       "flag": "0"
     },
     {
@@ -71,23 +71,10 @@
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_UP_AND_DOWN",
       "movement_range_x": 0,
-      "movement_range_y": 4,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
-      "x": 7,
-      "y": 5,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "movement_range_y": 5,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "5",
+      "script": "Route14_EventScript_Roy",
       "flag": "0"
     },
     {
@@ -101,11 +88,11 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HIDE_ROUTE14_SUICUNE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_EUSINE",
-      "x": 15,
+      "x": 16,
       "y": 49,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
@@ -114,7 +101,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HIDE_ROUTE14_EUSINE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_SHROOMISH",
@@ -128,13 +115,70 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_JUGGLER",
+      "x": 7,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 7,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "7",
+      "script": "Route14_EventScript_Trevor",
+      "flag": "0"
     }
   ],
   "warp_events": [
 
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 42,
+      "elevation": 0,
+      "var": "VAR_SUICUNE_ENCOUNTERS",
+      "var_value": "4",
+      "script": "Route14_TriggerSuicune_5"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 42,
+      "elevation": 0,
+      "var": "VAR_SUICUNE_ENCOUNTERS",
+      "var_value": "4",
+      "script": "Route14_TriggerSuicune_4"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 42,
+      "elevation": 0,
+      "var": "VAR_SUICUNE_ENCOUNTERS",
+      "var_value": "4",
+      "script": "Route14_TriggerSuicune_3"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 42,
+      "elevation": 0,
+      "var": "VAR_SUICUNE_ENCOUNTERS",
+      "var_value": "4",
+      "script": "Route14_TriggerSuicune_2"
+    },
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 42,
+      "elevation": 0,
+      "var": "VAR_SUICUNE_ENCOUNTERS",
+      "var_value": "4",
+      "script": "Route14_TriggerSuicune_1"
+    }
   ],
   "bg_events": [
 

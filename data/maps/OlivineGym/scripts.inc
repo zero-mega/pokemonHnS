@@ -237,6 +237,7 @@ OlivineGym_EventScript_JasmineVictory::
 	msgbox OlivineGym_Text_JasmineBadgeSpeech, MSGBOX_DEFAULT
 	setflag FLAG_BADGE06_GET
 	setflag FLAG_DEFEATED_OLIVINE_GYM
+	addvar VAR_NUM_BADGES, 1
 	setvar VAR_0x8008, 6
 	call Common_EventScript_SetGymTrainers
 	giveitem ITEM_TM_IRON_TAIL

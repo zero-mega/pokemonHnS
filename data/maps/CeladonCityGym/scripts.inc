@@ -15,6 +15,7 @@ CeladonCityGym_EventScript_Erika::
 	giveitem ITEM_TM_GIGA_DRAIN
 	setflag FLAG_BADGE12_GET
 	setflag FLAG_DEFEATED_CELADON_GYM
+	addvar VAR_NUM_BADGES, 1
 	setvar VAR_0x8008, 12
 	call Common_EventScript_SetGymTrainers
 	closemessage

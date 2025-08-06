@@ -174,6 +174,7 @@ CeruleanCityGym_EventScript_Misty::
 	call Common_EventScript_PlayGymBadgeFanfare
 	setflag FLAG_BADGE10_GET
 	setflag FLAG_DEFEATED_CERULEAN_GYM
+	addvar VAR_NUM_BADGES, 1
 	setvar VAR_0x8008, 10
 	call Common_EventScript_SetGymTrainers
 	msgbox CeruleanGym_Text_MistyTm, MSGBOX_DEFAULT

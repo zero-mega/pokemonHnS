@@ -25,8 +25,6 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Sawyer1),
     },
 
-
-
     [TRAINER_ROSS] =
     {
         .trainerClass = TRAINER_CLASS_COLLECTOR,
@@ -484,9 +482,9 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_ROY] =
     {
-        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
+        .trainerClass = TRAINER_CLASS_BIKER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
+        .trainerPic = TRAINER_PIC_BIKER,
         .trainerName = _("ROY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -562,9 +560,9 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_BRET] =
     {
-        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
+        .trainerClass = TRAINER_CLASS_JUGGLER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
+        .trainerPic = TRAINER_PIC_JUGGLER,
         .trainerName = _("BRET"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4893,9 +4891,9 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_TREVOR] =
     {
-        .trainerClass = TRAINER_CLASS_POKEFAN,
+        .trainerClass = TRAINER_CLASS_JUGGLER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_POKEFAN_M,
+        .trainerPic = TRAINER_PIC_JUGGLER,
         .trainerName = _("TREVOR"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4945,9 +4943,9 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_ALEX] =
     {
-        .trainerClass = TRAINER_CLASS_POKEFAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_POKEFAN_M,
+        .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .trainerName = _("ALEX"),
         .items = {},
         .doubleBattle = FALSE,

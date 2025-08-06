@@ -26,6 +26,10 @@ VermilionCity_TriggerCity:: @flagheap
 	setflag FLAG_HIDE_ROUTE25_EUSINE
 	setflag FLAG_HIDE_ROUTE25_SUICUNE
 	setflag FLAG_HIDE_CELADON_EUSINE
+	setflag FLAG_HIDE_SEAFOAM_GYMGUY
+	setflag FLAG_HIDE_VIRIDIAN_BLUE
+	setflag FLAG_HIDE_ROUTE14_EUSINE
+	setflag FLAG_HIDE_ROUTE14_SUICUNE
 
 	clearflag FLAG_BADGE09_GET
 	clearflag FLAG_BADGE10_GET
@@ -51,6 +55,9 @@ VermilionCity_TriggerCity:: @flagheap
 	clearflag FLAG_HIDE_ARTICUNO
 	clearflag FLAG_HIDE_MOLTRES
 	clearflag FLAG_GOT_TM_REST
+	clearflag FLAG_GOT_SUPER_ROD
+	clearflag FLAG_HIDE_CINNABAR_BLUE
+	
 
 	setvar VAR_KANTO_ROCKET_STORY_STATE, 0
 	setvar VAR_BILLS_GRANDPA, 0
@@ -59,6 +66,7 @@ VermilionCity_TriggerCity:: @flagheap
 	setvar VAR_FAN_CLUB_GUY, 0
 	setvar VAR_CLEFAIRY_DOLL_STATE, 0
 	setvar VAR_VERMILION_CITY_STATE, 1
+	setvar VAR_NUM_BADGES, 8
 	end
 
 VermilionCity_EventScript_OldSeaMap::
@@ -124,6 +132,7 @@ VermilionCity_EventScript_SuicuneEpisode::
 	setflag FLAG_HIDE_VERMILION_EUSINE_SUICUNE
 
 	setvar VAR_SUICUNE_ENCOUNTERS, 4
+	clearflag FLAG_HIDE_ROUTE14_SUICUNE
 	release
 	end
 
@@ -188,9 +197,9 @@ VermilionCity_EventScript_BadgeGuy::
 	lock
 	faceplayer
 	goto_if_set FLAG_GOT_VERMILION_HP_UP, VermilionCity_EventScript_BadgeGuyAfter
-	goto_if_set FLAG_BADGE16_GET, VermilionCity_EventScript_BadgeGuyAll
-	goto_if_set FLAG_BADGE12_GET, VermilionCity_EventScript_BadgeGuyMost
-	goto_if_set FLAG_BADGE11_GET, VermilionCity_EventScript_BadgeGuySome
+	goto_if_ge VAR_NUM_BADGES, 16, VermilionCity_EventScript_BadgeGuyAll
+	goto_if_ge VAR_NUM_BADGES, 12, VermilionCity_EventScript_BadgeGuyMost
+	goto_if_ge VAR_NUM_BADGES, 9, VermilionCity_EventScript_BadgeGuySome
 	msgbox VermilionCity_Text_BadgeGuy_Trainer, MSGBOX_DEFAULT
 	closemessage
 	release

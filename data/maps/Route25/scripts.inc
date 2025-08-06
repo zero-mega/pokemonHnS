@@ -207,7 +207,10 @@ Route25_EventScript_Suicune::
 	setflag FLAG_HIDE_ROUTE25_SUICUNE
 	fadescreenswapbuffers FADE_FROM_BLACK
 	goto_if_ge VAR_SUICUNE_ENCOUNTERS, 8, Route25_EventScript_SuicunePostGame
+	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+	call_if_eq VAR_TEMP_0, 66, Route25_AdjustPlayer
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_SOUTH
+	turnobject LOCALID_ROUTE25_EUSINE, DIR_NORTH
 	msgbox Route25_Text_Eusine3, MSGBOX_DEFAULT
 	closemessage
 	applymovement2 LOCALID_ROUTE25_EUSINE, Route25_Movement_EusineLeave
@@ -222,6 +225,11 @@ Route25_EventScript_Suicune::
 Route25_EventScript_SuicuneRan::
 	release
 	end
+
+Route25_AdjustPlayer::
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft1
+	waitmovement 0
+	return
 
 Route25_EventScript_SuicunePostGame::
 	release

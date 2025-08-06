@@ -48,6 +48,8 @@ SaffronCityCopyCatRoom_EventScript_Copycat1_Male::
 	addobject LOCALID_GOLD
 	applymovement LOCALID_GOLD, GoldenrodRadioTower5_Movement_Spin2
 	waitmovement 0
+	applymovement LOCALID_GOLD, Common_Movement_FacePlayer
+	waitmovement 0
 	msgbox Copycat_Text_Male_1, MSGBOX_NPC
 	applymovement LOCALID_GOLD, GoldenrodRadioTower5_Movement_Spin
 	waitmovement 0
@@ -55,6 +57,8 @@ SaffronCityCopyCatRoom_EventScript_Copycat1_Male::
 	clearflag FLAG_TEMP_1
 	addobject LOCALID_COPYCAT
 	applymovement LOCALID_COPYCAT, GoldenrodRadioTower5_Movement_Spin2
+	waitmovement 0
+	applymovement LOCALID_COPYCAT, Common_Movement_FacePlayer
 	waitmovement 0
 	msgbox Copycat_Text_QuickMimicking, MSGBOX_NPC
 	closemessage
@@ -68,6 +72,8 @@ SaffronCityCopyCatRoom_EventScript_Copycat1_Female::
 	addobject LOCALID_KRIS
 	applymovement LOCALID_KRIS, GoldenrodRadioTower5_Movement_Spin2
 	waitmovement 0
+	applymovement LOCALID_KRIS, Common_Movement_FacePlayer
+	waitmovement 0
 	msgbox Copycat_Text_Male_1, MSGBOX_NPC
 	applymovement LOCALID_KRIS, GoldenrodRadioTower5_Movement_Spin
 	waitmovement 0
@@ -75,6 +81,8 @@ SaffronCityCopyCatRoom_EventScript_Copycat1_Female::
 	clearflag FLAG_TEMP_1
 	addobject LOCALID_COPYCAT
 	applymovement LOCALID_COPYCAT, GoldenrodRadioTower5_Movement_Spin2
+	waitmovement 0
+	applymovement LOCALID_COPYCAT, Common_Movement_FacePlayer
 	waitmovement 0
 	msgbox Copycat_Text_QuickMimicking, MSGBOX_NPC
 	closemessage
@@ -93,6 +101,8 @@ SaffronCityCopyCatRoom_EventScript_CopycatReturnedMachinePart_Male::
 	addobject LOCALID_GOLD
 	applymovement LOCALID_GOLD, GoldenrodRadioTower5_Movement_Spin2
 	waitmovement 0
+	applymovement LOCALID_GOLD, Common_Movement_FacePlayer
+	waitmovement 0
 	msgbox Copycat_Text_Male_2, MSGBOX_NPC
 	applymovement LOCALID_GOLD, GoldenrodRadioTower5_Movement_Spin
 	waitmovement 0
@@ -100,6 +110,8 @@ SaffronCityCopyCatRoom_EventScript_CopycatReturnedMachinePart_Male::
 	clearflag FLAG_TEMP_1
 	addobject LOCALID_COPYCAT
 	applymovement LOCALID_COPYCAT, GoldenrodRadioTower5_Movement_Spin2
+	waitmovement 0
+	applymovement LOCALID_COPYCAT, Common_Movement_FacePlayer
 	waitmovement 0
 	msgbox Copycat_Text_Worried, MSGBOX_NPC
 	closemessage
@@ -114,6 +126,8 @@ SaffronCityCopyCatRoom_EventScript_CopycatReturnedMachinePart_Female::
 	addobject LOCALID_KRIS
 	applymovement LOCALID_KRIS, GoldenrodRadioTower5_Movement_Spin2
 	waitmovement 0
+	applymovement LOCALID_KRIS, Common_Movement_FacePlayer
+	waitmovement 0
 	msgbox Copycat_Text_Male_2, MSGBOX_NPC
 	applymovement LOCALID_KRIS, GoldenrodRadioTower5_Movement_Spin
 	waitmovement 0
@@ -121,6 +135,8 @@ SaffronCityCopyCatRoom_EventScript_CopycatReturnedMachinePart_Female::
 	clearflag FLAG_TEMP_1
 	addobject LOCALID_COPYCAT
 	applymovement LOCALID_COPYCAT, GoldenrodRadioTower5_Movement_Spin2
+	waitmovement 0
+	applymovement LOCALID_COPYCAT, Common_Movement_FacePlayer
 	waitmovement 0
 	msgbox Copycat_Text_Worried, MSGBOX_NPC
 	closemessage
@@ -155,6 +171,8 @@ SaffronCityCopyCatRoom_EventScript_CopycatAfterDollReturned_Male::
 	addobject LOCALID_GOLD
 	applymovement LOCALID_GOLD, GoldenrodRadioTower5_Movement_Spin2
 	waitmovement 0
+	applymovement LOCALID_GOLD, Common_Movement_FacePlayer
+	waitmovement 0
 	msgbox Copycat_Text_Male_3, MSGBOX_NPC
 	applymovement LOCALID_GOLD, GoldenrodRadioTower5_Movement_Spin
 	waitmovement 0
@@ -162,6 +180,8 @@ SaffronCityCopyCatRoom_EventScript_CopycatAfterDollReturned_Male::
 	clearflag FLAG_TEMP_1
 	addobject LOCALID_COPYCAT
 	applymovement LOCALID_COPYCAT, GoldenrodRadioTower5_Movement_Spin2
+	waitmovement 0
+	applymovement LOCALID_COPYCAT, Common_Movement_FacePlayer
 	waitmovement 0
 	msgbox Copycat_Text_ItsAScream, MSGBOX_NPC
 	closemessage
@@ -175,6 +195,8 @@ SaffronCityCopyCatRoom_EventScript_CopycatAfterDollReturned_Female::
 	addobject LOCALID_KRIS
 	applymovement LOCALID_KRIS, GoldenrodRadioTower5_Movement_Spin2
 	waitmovement 0
+	applymovement LOCALID_KRIS, Common_Movement_FacePlayer
+	waitmovement 0
 	msgbox Copycat_Text_Male_3, MSGBOX_NPC
 	applymovement LOCALID_KRIS, GoldenrodRadioTower5_Movement_Spin
 	waitmovement 0
@@ -182,6 +204,8 @@ SaffronCityCopyCatRoom_EventScript_CopycatAfterDollReturned_Female::
 	clearflag FLAG_TEMP_1
 	addobject LOCALID_COPYCAT
 	applymovement LOCALID_COPYCAT, GoldenrodRadioTower5_Movement_Spin2
+	waitmovement 0
+	applymovement LOCALID_COPYCAT, Common_Movement_FacePlayer
 	waitmovement 0
 	msgbox Copycat_Text_ItsAScream, MSGBOX_NPC
 	closemessage

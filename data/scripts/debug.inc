@@ -33,7 +33,7 @@ Debug_CheatStart::
 	setvar VAR_GARBAGEVAR, 4 @ 4: Received Pokedex
 	setflag FLAG_RECEIVED_BIKE
 	additem ITEM_ACRO_BIKE
-	setvar VAR_BRINEY_HOUSE_STATE, 1
+	setvar VAR_GARBAGEVAR, 1
 	setvar VAR_GARBAGEVAR, 2
 	setflag FLAG_GARBAGEFLAG
 	clearflag FLAG_GARBAGEFLAG

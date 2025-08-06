@@ -343,7 +343,7 @@ RusturfTunnel_EventScript_Grunt::
 	clearflag FLAG_DEVON_GOODS_STOLEN
 	setflag FLAG_RECOVERED_DEVON_GOODS
 	setvar VAR_GARBAGEVAR, 4
-	setvar VAR_BRINEY_HOUSE_STATE, 1
+	setvar VAR_GARBAGEVAR, 1
 	setflag FLAG_GARBAGEFLAG
 	callnative UpdateFollowingPokemon
 	release

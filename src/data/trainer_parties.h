@@ -20269,7 +20269,7 @@ static const struct TrainerMonItemCustomMoves sParty_Blaine[] = { //LeaderGroup
     {
     .iv = 200,
     .lvl = 67,
-    .species = SPECIES_MOLTRES,
+    .species = SPECIES_CHARIZARD,
     .heldItem = ITEM_SHARP_BEAK,
     .moves = {MOVE_FIRE_BLAST, MOVE_SKY_ATTACK, MOVE_SOLAR_BEAM, MOVE_SUNNY_DAY}
     },
@@ -20287,9 +20287,9 @@ static const struct TrainerMonItemCustomMoves sParty_Blue[] = { //LeaderGroup
     {
     .iv = 200,
     .lvl = 69,
-    .species = SPECIES_ARTICUNO,
+    .species = SPECIES_RHYPERIOR,
     .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_ICE_BEAM, MOVE_SKY_ATTACK, MOVE_REST, MOVE_TOXIC}
+    .moves = {MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_REST, MOVE_TOXIC}
     },
     {
     .iv = 200,

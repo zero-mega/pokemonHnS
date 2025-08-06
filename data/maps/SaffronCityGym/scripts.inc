@@ -42,6 +42,7 @@ SaffronCityGym_EventScript_Sabrina::
 	msgbox SaffronCityGym_Text_MarshBadgeInfo, MSGBOX_DEFAULT
 	setflag FLAG_BADGE13_GET
 	setflag FLAG_DEFEATED_SAFFRON_GYM
+	addvar VAR_NUM_BADGES, 1
 	setvar VAR_0x8008, 13
 	call Common_EventScript_SetGymTrainers
 	closemessage

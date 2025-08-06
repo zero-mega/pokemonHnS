@@ -80,6 +80,7 @@ MahoganyGym_EventScript_PryceVictory::
 	msgbox MahoganyGym_Text_GlacierBadgeSpeech, MSGBOX_DEFAULT
 	setflag FLAG_BADGE07_GET
 	setflag FLAG_DEFEATED_MAHOGANY_GYM
+    addvar VAR_NUM_BADGES, 1
 	setvar VAR_0x8008, 7
 	call Common_EventScript_SetGymTrainers
 	giveitem ITEM_TM_HAIL

@@ -38,7 +38,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MtPyre_2F_EventScript_ItemUltraBall",
-      "flag": "FLAG_ITEM_MT_PYRE_2F_ULTRA_BALL"
+      "flag": "FLAG_GARBAGEFLAG"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_3",

@@ -507,6 +507,7 @@ AzaleaGym_EventScript_Bugsy::
 	msgbox AzaleaGym_Text_HiveBadgeSpeech, MSGBOX_DEFAULT
 	setflag FLAG_BADGE02_GET
 	setflag FLAG_DEFEATED_AZALEA_GYM
+	addvar VAR_NUM_BADGES, 1
 	setvar VAR_0x8008, 2
 	call Common_EventScript_SetGymTrainers
 	giveitem ITEM_TM_BULLET_SEED

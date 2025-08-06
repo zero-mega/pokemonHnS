@@ -260,6 +260,7 @@ VermilionCityGym_EventScript_Surge::
 	msgbox VermilionGym_Text_ThunderBadgeInfo, MSGBOX_DEFAULT
 	setflag FLAG_BADGE11_GET
 	setflag FLAG_DEFEATED_VERMILION_GYM
+	addvar VAR_NUM_BADGES, 1
 	setvar VAR_0x8008, 11
 	call Common_EventScript_SetGymTrainers
 	msgbox VermilionGym_Text_LtSurgeTm, MSGBOX_DEFAULT

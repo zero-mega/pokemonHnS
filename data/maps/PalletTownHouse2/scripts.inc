@@ -4,9 +4,7 @@ PalletTownHouse2_MapScripts::
 PalletTownHouse2_EventScript_Daisy::
 	lock
 	faceplayer
-	
-	@goto_if_unset FLAG_DAILY_DAISY_GROOMED, PalletTownHouse2_EventScript_Blue @changelater to flag hide blue at cinnabar or beat viridian
-	
+	goto_if_unset FLAG_HIDE_CINNABAR_BLUE, PalletTownHouse2_EventScript_Blue @changelater to flag hide blue at cinnabar or beat viridian
 	goto_if_unset FLAG_DAILY_DAISY_GROOMED, PalletTownHouse2_EventScript_DaisyGrooming
 	msgbox PalletTownHouse2_Text_AlreadyGroomed, MSGBOX_DEFAULT
 	closemessage
@@ -49,12 +47,10 @@ PalletTownHouse2_EventScript_DaisyGrooming::
 	waitfanfare
 	special HaircutBrother1
 	fadescreen FADE_FROM_BLACK
-	@special BufferMonNickname
+	special BufferMonNickname
 	msgbox PalletTownHouse2_Text_AllDone
 	setflag FLAG_DAILY_DAISY_GROOMED
 	release
-
-
 
 PalletTownHouse2_Text_Hello:
 	.string "DAISY: Hi! My kid brother is the\n"
@@ -77,13 +73,10 @@ PalletTownHouse2_Text_Alright:
 	.string "DAISY: OK, I'll get it looking\n"
 	.string "nice in no time.$"
 
-PalletTownHouse2_Text_GroomedMonLooksContent:
-	.string "{STR_VAR_1}\n"
-	.string " looks content.$"
-
 PalletTownHouse2_Text_AllDone:
 	.string "DAISY: There you go! All done.\p"
-	.string "See? Doesn't it look nice?\p"
+	.string "See? Doesn't {STR_VAR_1} look\n"
+	.string "nice?\p"
 	.string "It's such a cute POKéMON.$"
 
 PalletTownHouse2_Text_AlreadyGroomed:
