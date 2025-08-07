@@ -187,13 +187,14 @@ bool8 MetatileBehavior_IsPokeGrass(u8 metatileBehavior)
         return FALSE;
 }
 
-bool8 MetatileBehavior_IsSandOrDeepSand(u8 metatileBehavior)
+bool8 MetatileBehavior_IsSand(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_SAND || metatileBehavior == MB_DEEP_SAND)
         return TRUE;
     else
         return FALSE;
 }
+
 
 bool8 MetatileBehavior_IsDeepSand(u8 metatileBehavior)
 {

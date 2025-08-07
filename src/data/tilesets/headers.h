@@ -22,7 +22,7 @@ const struct Tileset gTileset_General =
     .palettes = gTilesetPalettes_General,
     .metatiles = gMetatiles_General,
     .metatileAttributes = gMetatileAttributes_General,
-    .callback = InitTilesetAnim_General,
+    .callback = InitTilesetAnim_HoennGeneral,
 };
 
 const struct Tileset gTileset_Petalburg =

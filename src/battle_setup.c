@@ -831,11 +831,19 @@ u8 BattleSetup_GetTerrainId(void)
         {
             return BATTLE_TERRAIN_MOUNTAIN;
         }
+        if (IS_MAP(FUCHSIA, FUCHSIA) || IS_MAP(CINNABAR_ISLAND, CINNABAR_ISLAND))
+            return BATTLE_TERRAIN_SAND;
     return BATTLE_TERRAIN_GRASS;
     }
-    if (MetatileBehavior_IsLongGrass(tileBehavior))
+    if (MetatileBehavior_IsLongGrass(tileBehavior)) {
+        if(IS_MAP(FUCHSIA_CITY_SAFARI_ZONE_MOUNTAIN, FUCHSIA_CITY_SAFARI_ZONE_MOUNTAIN)) {
+            return BATTLE_TERRAIN_MOUNTAIN;
+        }
         return BATTLE_TERRAIN_LONG_GRASS;
-    if (MetatileBehavior_IsSandOrDeepSand(tileBehavior))
+    }
+    if(MetatileBehavior_IsDeepSand(tileBehavior))
+        return BATTLE_TERRAIN_MOUNTAIN;
+    if (MetatileBehavior_IsSand(tileBehavior))
         return BATTLE_TERRAIN_SAND;
 
     switch (gMapHeader.mapType)
@@ -880,7 +888,8 @@ u8 BattleSetup_GetTerrainId(void)
             IS_MAP(ROCK_TUNNEL2, ROCK_TUNNEL2) ||
             IS_MAP(SLOWPOKE_WELL, SLOWPOKE_WELL) ||
             IS_MAP(SLOWPOKE_WELL2, SLOWPOKE_WELL2) ||
-            IS_MAP(SAFARI_ZONE_LOW_RIGHT, SAFARI_ZONE_LOW_RIGHT))
+            IS_MAP(SAFARI_ZONE_LOW_RIGHT, SAFARI_ZONE_LOW_RIGHT) ||
+            IS_MAP(FUCHSIA_SAFARI_ZONE_CAVE, FUCHSIA_SAFARI_ZONE_CAVE))
         {
             return BATTLE_TERRAIN_GRAY_CAVE;
         }
@@ -990,7 +999,8 @@ u8 BattleSetup_GetTerrainId(void)
             IS_MAP(ROCK_TUNNEL2, ROCK_TUNNEL2) ||
             IS_MAP(SLOWPOKE_WELL, SLOWPOKE_WELL) ||
             IS_MAP(SLOWPOKE_WELL2, SLOWPOKE_WELL2) ||
-            IS_MAP(SAFARI_ZONE_LOW_RIGHT, SAFARI_ZONE_LOW_RIGHT))
+            IS_MAP(SAFARI_ZONE_LOW_RIGHT, SAFARI_ZONE_LOW_RIGHT) ||
+            IS_MAP(FUCHSIA_SAFARI_ZONE_CAVE, FUCHSIA_SAFARI_ZONE_CAVE))
         {
             return BATTLE_TERRAIN_GRAY_CAVE;
         }
