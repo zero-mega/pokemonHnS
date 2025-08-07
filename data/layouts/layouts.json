@@ -7944,8 +7944,8 @@
     {
       "id": "LAYOUT_FUCHSIA_SAFARI_ZONE_GATE",
       "name": "FuchsiaSafariZoneGate_Layout",
-      "width": 9,
-      "height": 9,
+      "width": 15,
+      "height": 15,
       "primary_tileset": "gTileset_Kanto_Building",
       "secondary_tileset": "gTileset_CianwoodGym_48",
       "border_filepath": "data/layouts/FuchsiaSafariZoneGate/border.bin",
@@ -8156,7 +8156,7 @@
       "name": "SafariZone1_Layout",
       "width": 51,
       "height": 36,
-      "primary_tileset": "gTileset_Johto_NorthEast",
+      "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_SafariZoneJohto",
       "border_filepath": "data/layouts/SafariZone1/border.bin",
       "blockdata_filepath": "data/layouts/SafariZone1/map.bin"
@@ -8880,6 +8880,46 @@
       "secondary_tileset": "gTileset_ShopRooftop",
       "border_filepath": "data/layouts/CeladonCityDepartmentStore7/border.bin",
       "blockdata_filepath": "data/layouts/CeladonCityDepartmentStore7/map.bin"
+    },
+    {
+      "id": "LAYOUT_FUCHSIA",
+      "name": "Fuchsia_Layout",
+      "width": 50,
+      "height": 46,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_SafariZoneJohto",
+      "border_filepath": "data/layouts/Fuchsia/border.bin",
+      "blockdata_filepath": "data/layouts/Fuchsia/map.bin"
+    },
+    {
+      "id": "LAYOUT_FUCHSIA_CITY_SAFARI_ZONE_BRUSH",
+      "name": "FuchsiaCitySafariZoneBrush_Layout",
+      "width": 50,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NationalPark",
+      "border_filepath": "data/layouts/FuchsiaCitySafariZoneBrush/border.bin",
+      "blockdata_filepath": "data/layouts/FuchsiaCitySafariZoneBrush/map.bin"
+    },
+    {
+      "id": "LAYOUT_FUCHSIA_CITY_SAFARI_ZONE_MOUNTAIN",
+      "name": "FuchsiaCitySafariZoneMountain_Layout",
+      "width": 68,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NationalPark",
+      "border_filepath": "data/layouts/FuchsiaCitySafariZoneMountain/border.bin",
+      "blockdata_filepath": "data/layouts/FuchsiaCitySafariZoneMountain/map.bin"
+    },
+    {
+      "id": "LAYOUT_FUCHSIA_SAFARI_ZONE_CAVE",
+      "name": "FuchsiaSafariZoneCave_Layout",
+      "width": 50,
+      "height": 30,
+      "primary_tileset": "gTileset_Johto_General",
+      "secondary_tileset": "gTileset_whirl_islands",
+      "border_filepath": "data/layouts/FuchsiaSafariZoneCave/border.bin",
+      "blockdata_filepath": "data/layouts/FuchsiaSafariZoneCave/map.bin"
     }
   ]
 }

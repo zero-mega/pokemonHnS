@@ -271,15 +271,19 @@
 #define MAP_SAFFRON_CITY_COPY_CAT_ROOM (9 | (18 << 8))
 
 // gMapGroup_IndoorFuchsia
-#define MAP_FUCHSIA_POKECENTER           (0 | (19 << 8))
-#define MAP_FUCHSIA_POKEMART             (1 | (19 << 8))
-#define MAP_FUCHSIA_CITY_HOUSE2          (2 | (19 << 8))
-#define MAP_FUCHSIA_CITY_HOUSE3          (3 | (19 << 8))
-#define MAP_FUCHSIA_CITY_CAFE            (4 | (19 << 8))
-#define MAP_FUCHSIA_CITY_HOUSE4          (5 | (19 << 8))
-#define MAP_FUCHSIA_CITY_GYM             (6 | (19 << 8))
-#define MAP_FUCHSIA_ROUTE19GATE          (7 | (19 << 8))
-#define MAP_SAFARI_ZONE_ENTRANCE_FUCHSIA (8 | (19 << 8))
+#define MAP_FUCHSIA_POKECENTER                (0 | (19 << 8))
+#define MAP_FUCHSIA_POKEMART                  (1 | (19 << 8))
+#define MAP_FUCHSIA_CITY_HOUSE2               (2 | (19 << 8))
+#define MAP_FUCHSIA_CITY_HOUSE3               (3 | (19 << 8))
+#define MAP_FUCHSIA_CITY_CAFE                 (4 | (19 << 8))
+#define MAP_FUCHSIA_CITY_HOUSE4               (5 | (19 << 8))
+#define MAP_FUCHSIA_CITY_GYM                  (6 | (19 << 8))
+#define MAP_FUCHSIA_ROUTE19GATE               (7 | (19 << 8))
+#define MAP_SAFARI_ZONE_ENTRANCE_FUCHSIA      (8 | (19 << 8))
+#define MAP_FUCHSIA                           (9 | (19 << 8))
+#define MAP_FUCHSIA_CITY_SAFARI_ZONE_BRUSH    (10 | (19 << 8))
+#define MAP_FUCHSIA_CITY_SAFARI_ZONE_MOUNTAIN (11 | (19 << 8))
+#define MAP_FUCHSIA_SAFARI_ZONE_CAVE          (12 | (19 << 8))
 
 // gMapGroup_IndoorCinnabar
 #define MAP_CINNABAR_POKECENTER (0 | (20 << 8))
@@ -1034,7 +1038,5 @@
 #define MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE          (96 | (31 << 8))
 
 #define MAP_GROUPS_COUNT 32
-
-// static const u8 MAP_GROUP_COUNT[] = {72, 5, 5, 7, 5, 29, 8, 10, 6, 6, 7, 5, 5, 7, 6, 9, 7, 18, 10, 9, 4, 7, 28, 30, 83, 0, 41, 125, 113, 126, 74, 97, 0};
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

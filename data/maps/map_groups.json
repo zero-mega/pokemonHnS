@@ -307,7 +307,11 @@
     "FuchsiaCityHouse4",
     "FuchsiaCityGym",
     "Fuchsia_Route19Gate",
-    "SafariZoneEntrance_Fuchsia"
+    "SafariZoneEntrance_Fuchsia",
+    "Fuchsia",
+    "FuchsiaCitySafariZoneBrush",
+    "FuchsiaCitySafariZoneMountain",
+    "FuchsiaSafariZoneCave"
   ],
   "gMapGroup_IndoorCinnabar": [
     "CinnabarPokecenter",

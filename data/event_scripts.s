@@ -2013,3 +2013,11 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/CeladonApartments4Night/scripts.inc"
 
 	.include "data/maps/CeladonCityDepartmentStore7/scripts.inc"
+
+	.include "data/maps/Fuchsia/scripts.inc"
+
+	.include "data/maps/FuchsiaCitySafariZoneBrush/scripts.inc"
+
+	.include "data/maps/FuchsiaCitySafariZoneMountain/scripts.inc"
+
+	.include "data/maps/FuchsiaSafariZoneCave/scripts.inc"
