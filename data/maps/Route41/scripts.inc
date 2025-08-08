@@ -1,6 +1,14 @@
 Route41_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, OlivineCity_MapScript_OnTransition
+	map_script MAP_SCRIPT_ON_TRANSITION, Route41_MapScript_OnTransition
 	.byte 0
+
+Route41_MapScript_OnTransition::
+	goto_if_eq VAR_COMPLETED_LUGIA, 4, Route41_MapScript_DoNothing
+	goto_if_ge VAR_OLIVINE_CITY_STATE, 5, OlivineCity_MapScript_ClearWeather
+	end
+
+Route41_MapScript_DoNothing::
+	end
 
 Route41_EventScript_Charlie::
 	trainerbattle_single TRAINER_CHARLIE, Route41_Text_SwimmermCharlieSeen, Route41_Text_SwimmermCharlieBeaten

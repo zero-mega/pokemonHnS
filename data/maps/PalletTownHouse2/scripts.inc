@@ -4,17 +4,19 @@ PalletTownHouse2_MapScripts::
 PalletTownHouse2_EventScript_Daisy::
 	lock
 	faceplayer
-	goto_if_unset FLAG_HIDE_CINNABAR_BLUE, PalletTownHouse2_EventScript_Blue @changelater to flag hide blue at cinnabar or beat viridian
+	goto_if_unset FLAG_HIDE_CINNABAR_BLUE, PalletTownHouse2_EventScript_Blue
 	goto_if_unset FLAG_DAILY_DAISY_GROOMED, PalletTownHouse2_EventScript_DaisyGrooming
 	msgbox PalletTownHouse2_Text_AlreadyGroomed, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
+
 PalletTownHouse2_EventScript_Blue::
 	msgbox PalletTownHouse2_Text_Hello, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
+
 PalletTownHouse2_EventScript_DaisyDeclineGrooming::
 	msgbox PalletTownHouse2_Text_Refused, MSGBOX_DEFAULT
 	closemessage
@@ -34,7 +36,7 @@ PalletTownHouse2_EventScript_DaisyGrooming::
 	waitstate
 	lock
 	faceplayer
-	bufferpartymonnick STR_VAR_1, VAR_RESULT
+	bufferpartymonnick STR_VAR_1, VAR_0x8004
 	goto_if_ge VAR_0x8004, PARTY_SIZE, PalletTownHouse2_EventScript_DaisyDeclineGrooming
 	specialvar VAR_RESULT, ScriptGetPartyMonSpecies
 	goto_if_eq VAR_RESULT, SPECIES_EGG, PalletTownHouse2_EventScript_Egg
@@ -51,12 +53,13 @@ PalletTownHouse2_EventScript_DaisyGrooming::
 	msgbox PalletTownHouse2_Text_AllDone
 	setflag FLAG_DAILY_DAISY_GROOMED
 	release
+	end
 
 PalletTownHouse2_Text_Hello:
 	.string "DAISY: Hi! My kid brother is the\n"
 	.string "GYM LEADER in VIRIDIAN CITY.\p"
 	.string "But he goes out of town so\n"
-	.string "often, it causes problems for\n"
+	.string "often, it causes problems for\l"
 	.string "the trainers.$"
 
 PalletTownHouse2_Text_OfferGrooming:

@@ -1,5 +1,16 @@
 LavenderTown_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, LavenderTown_OnFrame
 	.byte 0
+
+LavenderTown_OnFrame::
+	map_script_2 VAR_LAVENDER_TOWN_STATE, 0,  LavenderTown_EventScript_CityEnter
+	.2byte 0
+
+LavenderTown_EventScript_CityEnter::
+	setflag FLAG_VISITED_LAVENDER_TOWN
+	setvar VAR_LAVENDER_TOWN_STATE, 1
+	end
+
 
 LavenderTown_EventScript_PokefanM::
 	msgbox LavenderTown_Text_PokefanM, MSGBOX_NPC

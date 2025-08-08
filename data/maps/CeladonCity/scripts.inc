@@ -1,5 +1,15 @@
 CeladonCity_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, CeladonCity_OnFrame
 	.byte 0
+
+CeladonCity_OnFrame::
+	map_script_2 VAR_CELADON_CITY_STATE, 0,  CeladonCity_EventScript_CityEnter
+	.2byte 0
+
+CeladonCity_EventScript_CityEnter::
+	setflag FLAG_VISITED_CELADON_CITY
+	setvar VAR_CELADON_CITY_STATE, 1
+	end
 
 CeladonCity_EventScript_Fatman::
 	msgbox CeladonCity_Text_Fisher, MSGBOX_NPC

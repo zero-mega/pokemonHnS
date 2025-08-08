@@ -4,10 +4,61 @@ PalletTownLab_MapScripts::
 PalletTownLab_EventScript_Oak::
 	lock
 	faceplayer
-
+	goto_if_eq VAR_PALLETTOWN_LABSTATE, 1, PalletTownLab_EventScript_OakBadgeCheck
+	goto_if_eq VAR_PALLETTOWN_LABSTATE, 2, PalletTownLab_EventScript_OakDex
 	msgbox PalletTownLab_Text_OakWelcomeKanto, MSGBOX_DEFAULT
+	msgbox PalletTownLab_Text_OakLabGoodbye, MSGBOX_DEFAULT
+	setvar VAR_PALLETTOWN_LABSTATE, 1
+	closemessage
+	release
 	end
 
+PalletTownLab_EventScript_OakBadgeCheck::
+	goto_if_ge VAR_NUM_BADGES, 16, PalletTownLab_EventScript_Oak16Badges
+	goto_if_ge VAR_NUM_BADGES, 9, PalletTownLab_EventScript_Oak9Badges
+	msgbox PalletTownLab_Text_OakNoKantoBadges, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+PalletTownLab_EventScript_Oak16Badges::
+	msgbox PalletTownLab_Text_OakOpenMtSilver, MSGBOX_DEFAULT
+	closemessage
+	setflag FLAG_INDIGOJUNCTION_HIDE_SILVER_GUARD
+	setvar VAR_PALLETTOWN_LABSTATE, 2
+	release
+	end
+
+PalletTownLab_EventScript_Oak9Badges::
+	msgbox PalletTownLab_Text_OakYesKantoBadges, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+PalletTownLab_EventScript_OakDex::
+	msgbox PalletTownLab_Text_OakLabDexCheck, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+PalletTownLab_EventScript_Assistant1::
+	msgbox PalletTownLab_Text_OaksAssistant1, MSGBOX_NPC
+	end
+
+PalletTownLab_EventScript_Assistant2::
+	msgbox PalletTownLab_Text_OaksAssistant2, MSGBOX_NPC
+	end
+
+PalletTownLab_EventScript_Assistant3::
+	msgbox PalletTownLab_Text_OaksAssistant3, MSGBOX_NPC
+	end
+
+PalletTownLab_EventScript_PC::
+	msgbox PalletTownLab_Text_OaksLabPC, MSGBOX_SIGN
+	end
+
+PalletTownLab_Text_OakLabDexCheck:
+	.string "How is your POKéDEX coming?$"
 
 PalletTownLab_Text_OakWelcomeKanto:
 	.string "OAK: Ah, {PLAYER}!\n"
@@ -15,10 +66,6 @@ PalletTownLab_Text_OakWelcomeKanto:
 	.string "way to KANTO.\p"
 	.string "What do you think of the trainers\n"
 	.string "out here? Pretty tough, huh?$"
-
-PalletTownLab_Text_OakLabDexCheck:
-	.string "How is your POKéDEX coming?\p"
-	.string "Let's see…$"
 
 PalletTownLab_Text_OakLabGoodbye:
 	.string "If you're in the area, I hope you\n"
@@ -31,13 +78,13 @@ PalletTownLab_Text_OakOpenMtSilver:
 	.string "I was right in my assessment of\n"
 	.string "you.\p"
 	.string "Tell you what, {PLAYER}. I'll make\n"
-	.string "arrangements so that you can go\n"
+	.string "arrangements so that you can go\l"
 	.string "to MT.SILVER.\p"
 	.string "MT.SILVER is a big mountain that\n"
 	.string "is home to many wild POKéMON.\p"
 	.string "It's too dangerous for your average\n"
-	.string "trainer, so it's off limits. But\n"
-	.string "we can make an exception in your\n"
+	.string "trainer, so it's off limits. But\l"
+	.string "we can make an exception in your\l"
 	.string "case, {PLAYER}.\p"
 	.string "Go up to INDIGO PLATEAU. You can\n"
 	.string "reach MT.SILVER from there.$"
@@ -65,22 +112,12 @@ PalletTownLab_Text_OaksAssistant1:
 
 PalletTownLab_Text_OaksAssistant2:
 	.string "Thanks to your work on the POKéDEX,\n"
-	.string "the PROF's research is coming along\n"
+	.string "the PROF's research is coming along\l"
 	.string "great.$"
 
 PalletTownLab_Text_OaksAssistant3:
 	.string "Don't tell anyone, but PROF.OAK'S\n"
 	.string "POKéMON TALK isn't a live broadcast.$"
-
-PalletTownLab_Text_OaksLabPoster1:
-	.string "Press START to open the MENU.$"
-
-PalletTownLab_Text_OaksLabPoster2:
-	.string "The SAVE option is on the MENU.\p"
-	.string "Use it in a timely manner.$"
-
-PalletTownLab_Text_OaksLabTrashcan:
-	.string "There's nothing in here…$"
 
 PalletTownLab_Text_OaksLabPC:
 	.string "There's an e-mail message on the PC.\p"

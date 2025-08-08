@@ -22,7 +22,7 @@ SaffronCity_Text_Baoba:
 	.string "SAFARI ZONE has expanded again!\p"
 	.string "Finally, my SAFARI ZONE has been\n"
 	.string "fully realized!\p"
-	.string "You remember where it is right?\p"
+	.string "You remember where it is, right?\p"
 	.string "Just west of CIANWOOD CITY!\n"
 	.string "see you soon!$"
 

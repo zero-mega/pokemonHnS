@@ -101,7 +101,7 @@
 #define VAR_STARTER_SPECIES                            0x4051 //152 = CHIKO, 155 = CYNDA, 158 = TOTOD
 #define VAR_NEWBARKTOWN_LABSTATE                           0x4052 // 0 = talk to elm first time, 1 = choose starter, 2 = chosen starter, 3=received potion 4 = police! 5 = receive balls, 6 = get masterball, 7 = gotokimono, 8 = goto league, 9 = get SS ticket, 10 = done
 #define VAR_CHERRYGROVE_CITY_STATE                         0x4053 //0 = guidegent, 1= goto mrpokemon, 2= phonecall, 3=silver, 4=done
-#define VAR_GARBAGEVAR2                          0x4054 // 0 = talk to npc, 1 = show larvitar, 3 = got lucky egg
+#define VAR_PALLETTOWN_LABSTATE                          0x4054 // 0 = goto lab, 1 = been to lab
 #define VAR_COMPLETED_LUGIA                             0x4055 // 0, 1 = Not Primed.  2 = fight lugia, 3 = done. 4 = non-story lugia encounter active.
 #define VAR_COMPLETED_HO_OH                             0x4056 // 0, 1 = Not Primed. 2 = fight hooh, 3 = done. 4 = non-story hooh encounter active.
 #define VAR_VIOLET_CITY_STATE                         0x4057 //0 on trigger, 1 when done
@@ -164,8 +164,8 @@
 #define VAR_NUM_BADGES                           0x4090
 #define VAR_KANTO_SAFARI_ZONE_PROGRESS                                0x4091 // 0 = meet steven, 1 = unlock brush, 2 = unlock mountain, 3 = unlock cave, 4  = don
 #define VAR_BAOBA_QUEST_STATE                       0x4092 //0 = goto FUCHSIA, 1 = give BELDUM to baoba for 200k, 2 = give CASTFORM to baoba for 300k, 3 = give MEDICHAM to baoba for 400k, 4 = give BAGON to baboa for 500k, 5 = done
-#define VAR_MAUVILLE_GYM_STATE                           0x4093
-#define VAR_LILYCOVE_MUSEUM_2F_STATE                     0x4094
+#define VAR_CINNABAR_ISLAND_STATE                           0x4093
+#define VAR_MT_SILVER_STATE                     0x4094
 #define VAR_LILYCOVE_FAN_CLUB_STATE                      0x4095
 #define VAR_BRINEY_LOCATION                              0x4096
 #define VAR_INIT_SECRET_BASE                             0x4097

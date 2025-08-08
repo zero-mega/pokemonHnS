@@ -17,7 +17,7 @@ Route6_Text_SaffronGuardWelcome:
 	.string "but the MAGNET TRAIN isn't\n"
 	.string "running now.\p"
 	.string "It's not getting any electricity\n"
-	.string "because there's something wrong\n"
+	.string "because there's something wrong\l"
 	.string "with the POWER PLANT.$"
 
 Route6_Text_SaffronGuardMagnetTrain:

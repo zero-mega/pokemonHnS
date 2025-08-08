@@ -247,7 +247,7 @@ SafariZoneEntrance_Text_BaobaLastMon:
 SafariZoneEntrance_Text_BaobaDone:
 	.string "Ah, {PLAYER}!\p"
 	.string "Thanks to you, the SAFARI ZONE is\n"
-	.string "thriving!"\p"
+	.string "thriving!\p"
 	.string "Maybe I should name you OWNER of\n"
 	.string "the safari zone...\p"
 	.string "No, that would be ridiculous.\n"

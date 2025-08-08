@@ -1162,7 +1162,7 @@ static u8 Debug_CheckToggleFlags(u8 id)
                 FlagGet(FLAG_VISITED_PEWTER_CITY) &&
                 FlagGet(FLAG_VISITED_CERULEAN_CITY) &&
                 FlagGet(FLAG_VISITED_VERMILION_CITY) &&
-                FlagGet(FLAG_VISITED_LAVENDAR_TOWN) &&
+                FlagGet(FLAG_VISITED_LAVENDER_TOWN) &&
                 FlagGet(FLAG_VISITED_FUCHSIA_CITY) &&
                 FlagGet(FLAG_VISITED_CELADON_CITY) &&
                 FlagGet(FLAG_VISITED_SAFFRON_CITY) &&
@@ -1738,7 +1738,7 @@ static void DebugAction_Util_Fly(u8 taskId)
     FlagSet(FLAG_VISITED_PEWTER_CITY);
     FlagSet(FLAG_VISITED_CERULEAN_CITY);
     FlagSet(FLAG_VISITED_VERMILION_CITY);
-    FlagSet(FLAG_VISITED_LAVENDAR_TOWN);
+    FlagSet(FLAG_VISITED_LAVENDER_TOWN);
     FlagSet(FLAG_VISITED_FUCHSIA_CITY);
     FlagSet(FLAG_VISITED_CELADON_CITY);
     FlagSet(FLAG_VISITED_SAFFRON_CITY);
@@ -2569,7 +2569,7 @@ static void DebugAction_FlagsVars_ToggleFlyFlags(u8 taskId)
         FlagClear(FLAG_VISITED_PEWTER_CITY);
         FlagClear(FLAG_VISITED_CERULEAN_CITY);
         FlagClear(FLAG_VISITED_VERMILION_CITY);
-        FlagClear(FLAG_VISITED_LAVENDAR_TOWN);
+        FlagClear(FLAG_VISITED_LAVENDER_TOWN);
         FlagClear(FLAG_VISITED_FUCHSIA_CITY);
         FlagClear(FLAG_VISITED_CELADON_CITY);
         FlagClear(FLAG_VISITED_SAFFRON_CITY);
@@ -2599,7 +2599,7 @@ static void DebugAction_FlagsVars_ToggleFlyFlags(u8 taskId)
         FlagSet(FLAG_VISITED_PEWTER_CITY);
         FlagSet(FLAG_VISITED_CERULEAN_CITY);
         FlagSet(FLAG_VISITED_VERMILION_CITY);
-        FlagSet(FLAG_VISITED_LAVENDAR_TOWN);
+        FlagSet(FLAG_VISITED_LAVENDER_TOWN);
         FlagSet(FLAG_VISITED_FUCHSIA_CITY);
         FlagSet(FLAG_VISITED_CELADON_CITY);
         FlagSet(FLAG_VISITED_SAFFRON_CITY);

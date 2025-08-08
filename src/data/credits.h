@@ -70,7 +70,6 @@ static const u8 sCreditsText_EmptyString[]                    = _("");
 static const u8 sCreditsText_PkmnHnS[]             = _("POKéMON HEART & SOUL");
 
 static const u8 sCreditsText_Dylan[]                           = _("Dylan");
-
 static const u8 sCreditsText_Assets[]                        = _("Assets Sourced");
 
 static const u8 sCreditsText_Sprites[]                         = _("Sprites");
@@ -91,6 +90,7 @@ static const u8 sCreditsText_Tilesets[]                        = _("Tilesets");
 static const u8 sCreditsText_KertraTiles[]                     = _("Crystal advance - Kertra");
 static const u8 sCreditsText_Ekat99[]                          = _("Ekat99");
 static const u8 sCreditsText_TheDeadHeroAlistair[]             = _("TheDeadHeroAlistair");
+static const u8 sCreditsText_JohtoRedrawn[]                     =_("Johto Redrawn Team");
 
 static const u8 sCreditsText_Gameplay[]                        = _("Gameplay");
 static const u8 sCreditsText_TheSmithPlaysGameplay[]           = _("Crystal Legacy - TSP");
@@ -301,7 +301,7 @@ static const struct CreditsEntry sCreditsEntry_Tilesets                         
 static const struct CreditsEntry sCreditsEntry_KertraTiles                      = {11, FALSE, sCreditsText_KertraTiles};
 static const struct CreditsEntry sCreditsEntry_Ekat99                           = {11, FALSE, sCreditsText_Ekat99};
 static const struct CreditsEntry sCreditsEntry_TheDeadHeroAlistair             = {11, FALSE, sCreditsText_TheDeadHeroAlistair};
-
+static const struct CreditsEntry sCreditsEntry_JohtoRedrawn                    = {11, FALSE, sCreditsText_JohtoRedrawn};
 // Gameplay
 static const struct CreditsEntry sCreditsEntry_Gameplay                         = {8,  TRUE, sCreditsText_Gameplay};
 static const struct CreditsEntry sCreditsEntry_TheSmithPlaysGameplay            = {11, FALSE, sCreditsText_TheSmithPlaysGameplay};
@@ -514,59 +514,59 @@ static const struct CreditsEntry *const sCreditsEntryPointerTable[PAGE_COUNT][EN
     },
     [PAGE_LEAD_PROGRAMMER] = {
         &sCreditsEntry_Assets,
+        &sCreditsEntry_Tilesets,
+        &sCreditsEntry_JohtoRedrawn,
+        _,
+        _,
+    },
+    [PAGE_PROGRAMMERS_1] = {
+        &sCreditsEntry_Assets,
         &sCreditsEntry_Maps,
         &sCreditsEntry_Kertra,
         &sCreditsEntry_BlackFragrant,
         &sCreditsEntry_SkidMarc25,
     },
-    [PAGE_PROGRAMMERS_1] = {
+    [PAGE_PROGRAMMERS_2] = {
         &sCreditsEntry_Assets,
         &sCreditsEntry_Engine,
         &sCreditsEntry_Pret,
         &sCreditsEntry_Resetes12,
         &sCreditsEntry_SkidMarc25,
     },
-    [PAGE_PROGRAMMERS_2] = {
+    [PAGE_PROGRAMMERS_3] = {
         &sCreditsEntry_Gameplay,
         &sCreditsEntry_TheSmithPlaysGameplay,
         _,
         _,
         _,
     },
-    [PAGE_PROGRAMMERS_3] = {
+    [PAGE_PROGRAMMERS_4] = {
         &sCreditsEntry_Dialogue,
         &sCreditsEntry_TheSmithPlaysDialogue,
         _,
         _,
         _,
     },
-    [PAGE_PROGRAMMERS_4] = {
+    [PAGE_GRAPHIC_DESIGNERS_1] = {
         &sCreditsEntry_Playtesters,
         &sCreditsEntry_PlaytesterDummy1,
         &sCreditsEntry_PlaytesterDummy2,
         &sCreditsEntry_PlaytesterDummy3,
         &sCreditsEntry_PlaytesterDummy4,
     },
-    [PAGE_GRAPHIC_DESIGNERS_1] = {
+    [PAGE_GRAPHIC_DESIGNERS_2] = {
         &sCreditsEntry_Playtesters,
         &sCreditsEntry_PlaytesterDummy5,
         &sCreditsEntry_PlaytesterDummy6,
         &sCreditsEntry_PlaytesterDummy7,
         &sCreditsEntry_PlaytesterDummy8,
     },
-    [PAGE_GRAPHIC_DESIGNERS_2] = {
+    [PAGE_GRAPHIC_DESIGNERS_3] = {
         _,
         &sCreditsEntry_PkmnEmeraldVersion,
         &sCreditsEntry_Credits,
         _,
         _,
-    },
-    [PAGE_GRAPHIC_DESIGNERS_3] = {
-        &sCreditsEntry_GraphicDesigners,
-        &sCreditsEntry_KenSugimori,
-        &sCreditsEntry_HironobuYoshida,
-        &sCreditsEntry_AimiTomita,
-        &sCreditsEntry_KanakoEo,
     },
     [PAGE_MUSIC_COMPOSITION] = {
         &sCreditsEntry_MusicComposition,

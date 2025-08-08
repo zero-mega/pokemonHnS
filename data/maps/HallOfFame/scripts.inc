@@ -55,6 +55,7 @@ HallOfFame_EventScript_CutsceneKantoChamp::
 	end
 
 HallOfFame_EventScript_SetFirstGameClearFlags::
+	clearflag FLAG_HIDE_LEAGUE_BLACKBELT
 	setflag FLAG_IS_CHAMPION
 	setvar VAR_SHUCKIE, 2
 	setvar VAR_LEAGUE_STATE, 1

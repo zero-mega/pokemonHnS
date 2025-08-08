@@ -874,7 +874,7 @@
 #define FLAG_HIDE_ROUTE14_SUICUNE                             0x33B
 #define FLAG_IN_KANTO_SAFARI_ZONE                     0x33C
 #define FLAG_IS_KANTO_CHAMPION                      0x33D
-#define FLAG_HIDE_PETALBURG_CITY_WALLYS_DAD                         0x33E
+#define FLAG_HIDE_LEAGUE_BLACKBELT                         0x33E
 #define FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_MAGMA_GRUNTS               0x33F
 #define FLAG_HIDE_LILYCOVE_CONTEST_HALL_BLEND_MASTER                0x340
 #define FLAG_HIDE_GRANITE_CAVE_STEVEN                               0x341
@@ -1384,7 +1384,7 @@
 #define FLAG_VISITED_PEWTER_CITY                         (SYSTEM_FLAGS + 0x1E) 
 #define FLAG_VISITED_CERULEAN_CITY               (SYSTEM_FLAGS + 0x1F) //49
 #define FLAG_VISITED_VERMILION_CITY                          (SYSTEM_FLAGS + 0x20) 
-#define FLAG_VISITED_LAVENDAR_TOWN                (SYSTEM_FLAGS + 0x21)
+#define FLAG_VISITED_LAVENDER_TOWN                (SYSTEM_FLAGS + 0x21)
 #define FLAG_VISITED_FUCHSIA_CITY               (SYSTEM_FLAGS + 0x22) //48
 #define FLAG_VISITED_CELADON_CITY                  (SYSTEM_FLAGS + 0x23)
 #define FLAG_VISITED_SAFFRON_CITY                  (SYSTEM_FLAGS + 0x24)

@@ -24,6 +24,15 @@ IndigoPlateau_EventScript_Cooltrainer::
 	msgbox IndigoPlateau_Text_CooltrainerM, MSGBOX_NPC
 	end
 
+IndigoPlateau_EventScript_BlackBelt::
+	msgbox IndigoPlateau_Text_Blackbelt, MSGBOX_NPC
+	end
+
+IndigoPlateau_Text_Blackbelt:
+	.string "The POKéMON LEAGUE is not taking\n"
+	.string "new challengers at the moment.\p"
+	.string "Please check back later.$"
+
 IndigoPlateau_Text_CooltrainerM:
     .string "At the POKéMON LEAGUE, you'll get\n"
     .string "tested by the ELITE FOUR.\p"

@@ -91,8 +91,8 @@ PlayersHouse1_EventScript_MomsIntro::
 	setflag FLAG_HIDE_ROUTE_30_NPCS
 	setflag FLAG_HIDE_MRPOKEMON
 	setflag FLAG_HIDE_TOHJO_GIOVANNI
+	setflag FLAG_HIDE_LEAGUE_BLACKBELT
 	
-
 	clearflag FLAG_COMPLETED_AERODACTYL_PUZZLE
 	clearflag FLAG_COMPLETED_HOOH_PUZZLE
 	clearflag FLAG_COMPLETED_KABUTO_PUZZLE
@@ -130,6 +130,8 @@ PlayersHouse1_EventScript_MomsIntro::
 	setvar VAR_CELADON_CITY_STATE, 0
 	setvar VAR_SAFFRON_CITY_STATE, 0
 	setvar VAR_FUCHSIA_CITY_STATE, 0
+	setvar VAR_CINNABAR_ISLAND_STATE, 0
+	setvar VAR_MT_SILVER_STATE, 0
 	setvar VAR_ROUTE27_STATE, 0
 	setvar VAR_LEAGUE_STATE, 0
 	setvar VAR_SSAQUA_STATE, 0
@@ -137,6 +139,7 @@ PlayersHouse1_EventScript_MomsIntro::
 	setvar VAR_NUM_BADGES, 0
 	setvar VAR_KANTO_SAFARI_ZONE_PROGRESS, 0
 	setvar VAR_BAOBA_QUEST_STATE, 0
+	setvar VAR_PALLETTOWN_LABSTATE, 0
 	
 	releaseall
 	end

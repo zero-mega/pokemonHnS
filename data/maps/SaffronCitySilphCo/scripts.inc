@@ -21,7 +21,17 @@ SaffronCitySilphCo_EventScript_StevenChooseStone::
 	case 0, SaffronCitySilphCo_EventScript_TreeckoChosen
 	case 1, SaffronCitySilphCo_EventScript_TorchicChosen
 	case 2, SaffronCitySilphCo_EventScript_MudkipChosen
-	case MULTI_B_PRESSED, SaffronCitySilphCo_EventScript_StevenChooseStone
+	case MULTI_B_PRESSED, SaffronCitySilphCo_EventScript_Refused
+
+SaffronCitySilphCo_EventScript_Refused::
+	msgbox SaffronCitySilphCo_Text_Refused, MSGBOX_DEFAULT
+	turnobject LOCALID_SILPHCO_STEVEN, DIR_NORTH
+	closemessage
+	release
+	end
+
+SaffronCitySilphCo_Text_Refused:
+	.string "Oh...$"
 
 SaffronCitySilphCo_EventScript_TreeckoChosen::
 	closemessage
