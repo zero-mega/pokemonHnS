@@ -260,7 +260,7 @@ FuchsiaCity_Gym_EventScript_GymStatuePostVictory::
 
 FuchsiaCity_Gym_Text_GymStatue::
     .string "FUCHSIA POKéMON GYM\n"
-    .string "LEADER: LT. SURGE\p"
+    .string "LEADER: JANINE\p"
 	.string "WINNING TRAINERS:\n"
 	.string "BLUE, RED$"
 

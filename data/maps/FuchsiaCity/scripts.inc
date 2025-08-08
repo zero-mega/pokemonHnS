@@ -31,6 +31,42 @@ FuchsiaCity_Text_Baoba:
 	.string "Please {PLAYER}, my business depends\n"
 	.string "on you!$"
 
+FuchsiaCity_EventScript_Dratini::
+	lock
+	showmonpic SPECIES_DRATINI, 10, 3
+	delay 60
+	hidemonpic
+	release
+	end
+FuchsiaCity_EventScript_Kangaskhan::
+	lock
+	showmonpic SPECIES_KANGASKHAN, 10, 3
+	delay 60
+	hidemonpic
+	release
+	end
+FuchsiaCity_EventScript_Cubone::
+	lock
+	showmonpic SPECIES_CUBONE, 10, 3
+	delay 60
+	hidemonpic
+	release
+	end
+FuchsiaCity_EventScript_Omanyte::
+	lock
+	showmonpic SPECIES_OMANYTE, 10, 3
+	delay 60
+	hidemonpic
+	release
+	end
+FuchsiaCity_EventScript_Kabuto::
+	lock
+	showmonpic SPECIES_KABUTO, 10, 3
+	delay 60
+	hidemonpic
+	release
+	end
+
 FuchsiaCity_EventScript_Youngster::
 	msgbox FuchsiaCity_Text_Youngster, MSGBOX_NPC
 	end
@@ -61,12 +97,12 @@ FuchsiaCity_Text_Youngster:
 
 FuchsiaCity_Text_PokefanM:
 	.string "KOGA's daughter succeeded him as\n"
-	.string "the GYM LEADER after he joined the\n"
+	.string "the GYM LEADER after he joined the\l"
 	.string "ELITE FOUR.$"
 
 FuchsiaCity_Text_Teacher:
 	.string "The SAFARI ZONE is closed… It's sad,\n"
-	.string "considering it's FUCHSIA's main\n"
+	.string "considering it's FUCHSIA's main\l"
 	.string "attraction.$"
 
 FuchsiaCity_Text_Sign:

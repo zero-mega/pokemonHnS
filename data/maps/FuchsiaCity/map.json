@@ -118,7 +118,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "FuchsiaCity_EventScript_Omanyte",
       "flag": "0"
     },
     {
@@ -131,7 +131,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "FuchsiaCity_EventScript_Omanyte",
       "flag": "0"
     },
     {
@@ -304,6 +304,54 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "FuchsiaCity_EventScript_SafariZone"
+    },
+    {
+      "type": "sign",
+      "x": 38,
+      "y": 16,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "FuchsiaCity_EventScript_Dratini"
+    },
+    {
+      "type": "sign",
+      "x": 41,
+      "y": 10,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "FuchsiaCity_EventScript_Cubone"
+    },
+    {
+      "type": "sign",
+      "x": 35,
+      "y": 10,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "FuchsiaCity_EventScript_Kangaskhan"
+    },
+    {
+      "type": "sign",
+      "x": 15,
+      "y": 10,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "FuchsiaCity_EventScript_Omanyte"
+    },
+    {
+      "type": "sign",
+      "x": 8,
+      "y": 10,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "FuchsiaCity_EventScript_Omanyte"
+    },
+    {
+      "type": "sign",
+      "x": 9,
+      "y": 22,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "FuchsiaCity_EventScript_Kabuto"
     }
   ]
 }
