@@ -108,6 +108,8 @@ PlayersHouse1_EventScript_MomsIntro::
 	clearflag FLAG_HIDE_SSAQUA1_GRANDPA
 	clearflag FLAG_CAUGHT_CELEBI
 	clearflag FLAG_RETURNED_MACHINE_PART
+	clearflag FLAG_IN_KANTO_SAFARI_ZONE
+	clearflag FLAG_IS_KANTO_CHAMPION
 	
 	setvar VAR_VIOLET_CITY_STATE, 0 @CITY STATES
 	setvar VAR_CHERRYGROVE_CITY_STATE, 0
@@ -133,6 +135,8 @@ PlayersHouse1_EventScript_MomsIntro::
 	setvar VAR_SSAQUA_STATE, 0
 	setvar VAR_SUICUNE_ENCOUNTERS, 0
 	setvar VAR_NUM_BADGES, 0
+	setvar VAR_KANTO_SAFARI_ZONE_PROGRESS, 0
+	setvar VAR_BAOBA_QUEST_STATE, 0
 	
 	releaseall
 	end

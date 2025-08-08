@@ -231,7 +231,7 @@
       "x": 26,
       "y": 5,
       "elevation": 0,
-      "dest_map": "MAP_FUCHSIA_SAFARI_ZONE_GATE",
+      "dest_map": "MAP_SAFARI_ZONE_ENTRANCE_FUCHSIA",
       "dest_warp_id": "0"
     },
     {

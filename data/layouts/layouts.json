@@ -8516,8 +8516,8 @@
       "name": "SafariZoneEntrance_Fuchsia_Layout",
       "width": 15,
       "height": 15,
-      "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_Petalburg",
+      "primary_tileset": "gTileset_Kanto_Building",
+      "secondary_tileset": "gTileset_CianwoodGym_48",
       "border_filepath": "data/layouts/SafariZoneEntrance_Fuchsia/border.bin",
       "blockdata_filepath": "data/layouts/SafariZoneEntrance_Fuchsia/map.bin"
     },

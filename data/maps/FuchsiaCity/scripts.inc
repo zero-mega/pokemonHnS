@@ -1,5 +1,35 @@
 FuchsiaCity_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, FuchsiaCity_OnFrame
 	.byte 0
+
+FuchsiaCity_OnFrame::
+	map_script_2 VAR_FUCHSIA_CITY_STATE, 0,  FuchsiaCity_EventScript_CityEnter
+	.2byte 0
+
+FuchsiaCity_EventScript_CityEnter::
+	pokenavcall FuchsiaCity_Text_Baoba
+	waitmessage
+	delay 30
+	setvar VAR_BAOBA_QUEST_STATE, 1
+	setflag FLAG_VISITED_FUCHSIA_CITY
+	setvar VAR_FUCHSIA_CITY_STATE, 1
+	end
+
+FuchsiaCity_Text_Baoba:
+	.string "WARDEN BAOBA: {PLAYER}!\p"
+	.string "This is WARDEN BAOBA.\p"
+	.string "Something awful has happened!\n"
+	.string "My old SAFARI ZONE in FUCHSIA CITY\l"
+	.string "was bought out and reopened!\p"
+	.string "And apparently it has exotic new\n"
+	.string "POKéMON!\p"
+	.string "It's hurting my business!\p"
+	.string "{PLAYER}, you must venture into the\n"
+	.string "new SAFARI ZONE and catch a POKéMON\l"
+	.string "to show me. I must know about these\l"
+	.string "'exotic' POKéMON.\p"
+	.string "Please {PLAYER}, my business depends\n"
+	.string "on you!$"
 
 FuchsiaCity_EventScript_Youngster::
 	msgbox FuchsiaCity_Text_Youngster, MSGBOX_NPC

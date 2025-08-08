@@ -57,16 +57,19 @@ VermilionCity_TriggerCity:: @flagheap
 	clearflag FLAG_GOT_TM_REST
 	clearflag FLAG_GOT_SUPER_ROD
 	clearflag FLAG_HIDE_CINNABAR_BLUE
-	
+	clearflag FLAG_IN_KANTO_SAFARI_ZONE @removelater
+	clearflag FLAG_IS_KANTO_CHAMPION @removelater
 
 	setvar VAR_KANTO_ROCKET_STORY_STATE, 0
 	setvar VAR_BILLS_GRANDPA, 0
+	setvar VAR_KANTO_SAFARI_ZONE_PROGRESS, 0 @removelater
 
 	setvar VAR_FAN_CLUB_CLEFAIRY, 0
 	setvar VAR_FAN_CLUB_GUY, 0
 	setvar VAR_CLEFAIRY_DOLL_STATE, 0
 	setvar VAR_VERMILION_CITY_STATE, 1
 	setvar VAR_NUM_BADGES, 8
+	setvar VAR_BAOBA_QUEST_STATE, 0 @removelater
 	end
 
 VermilionCity_EventScript_OldSeaMap::

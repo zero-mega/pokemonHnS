@@ -27,7 +27,7 @@ Debug_CheatStart::
 	setflag FLAG_RECEIVED_RUNNING_SHOES
 	setflag FLAG_SYS_B_DASH
 	setvar VAR_GARBAGEVAR, 4 @ 4: Received Running Shoes
-	setvar VAR_LITTLEROOT_INTRO_STATE, 7 @ 7: Told to go meet rival
+	setvar VAR_GARBAGEVAR, 7 @ 7: Told to go meet rival
 	setvar VAR_GARBAGEVAR, 2 @ 2: Met Rival's Mom (and is corresponding gender)
 	setvar VAR_GARBAGEVAR, 2 @ 2: Met Rival's Mom (and is corresponding gender)
 	setvar VAR_GARBAGEVAR, 4 @ 4: Received Pokedex

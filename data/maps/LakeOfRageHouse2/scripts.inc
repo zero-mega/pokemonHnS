@@ -118,7 +118,6 @@ LakeOfRageHouse2_Text_MenInBlack:
     .string "The LAKE hasn't been normal since\n"
     .string "those men wearing black arrived.$"
 
-
 LakeOfRageHouse2_Text_LastMon:
     .string "Well don't let me take your last\n"
     .string "POKéMON!$"
@@ -126,10 +125,10 @@ LakeOfRageHouse2_Text_LastMon:
 LakeOfRageHouse2_Text_WorldsLargest:
     .string "LAKE OF RAGE is back to normal.\p"
     .string "The MAGIKARP have returned.\p"
-    .string "I may yet realize my dream of see-\n"
+    .string "I may yet realize my dream of own-\n"
     .string "ing the world's largest MAGIKARP.\p"
     .string "In fact... I'll pay you ¥2000 for\n"
-	.string "every MAGIKARP you bring me, and\l"
+	.string "every MAGIKARP you give me, and\l"
 	.string "¥100,000 for a HUGE MAGIKARP!$"
 
 LakeOfRageHouse2_Text_ForMe:

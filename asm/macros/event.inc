@@ -640,6 +640,15 @@
 	.2byte \number
 	.endm
 
+	@ New: Check Baoba target species in party slot VAR_0x8004.
+	@ Usage (script): baobacheckmon <1|2|3|4>
+	@ Result: gSpecialVar_Result = TRUE if the mon at VAR_0x8004 matches the allowed
+	@ species list for the given case; FALSE otherwise.
+	.macro baobacheckmon number:req
+	.byte 0xee
+	.2byte \number
+	.endm
+
 	@ Removes Pokémon from player's party. 1 = KENYA, 2 = SHUCKIE
 	@ VAR_RESULT will be set to MON_GIVEN_TO_PARTY, MON_CANT_GIVE depending on the outcome.
 	.macro remove5mons 

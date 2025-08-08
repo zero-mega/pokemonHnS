@@ -872,8 +872,8 @@
 #define FLAG_HIDE_VIRIDIAN_BLUE                         0x339 // Unused, leftover from R/S
 #define FLAG_HIDE_ROUTE14_EUSINE                            0x33A
 #define FLAG_HIDE_ROUTE14_SUICUNE                             0x33B
-#define FLAG_GARBAGEFLAG999                     0x33C
-#define FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_MAXIE                      0x33D
+#define FLAG_IN_KANTO_SAFARI_ZONE                     0x33C
+#define FLAG_IS_KANTO_CHAMPION                      0x33D
 #define FLAG_HIDE_PETALBURG_CITY_WALLYS_DAD                         0x33E
 #define FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_MAGMA_GRUNTS               0x33F
 #define FLAG_HIDE_LILYCOVE_CONTEST_HALL_BLEND_MASTER                0x340

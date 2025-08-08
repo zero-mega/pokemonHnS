@@ -16,7 +16,7 @@ LittlerootTown_MapScripts::
 	@ 3: Received Pokedex
 	@ 4: Received Running Shoes
 
-	@ State descriptions for VAR_LITTLEROOT_INTRO_STATE
+	@ State descriptions for VAR_GARBAGEVAR
 	@ 1: In truck male
 	@ 2: In truck female
 	@ 3: Entered house
@@ -45,7 +45,7 @@ LittlerootTown_OnTransition:
 	call_if_unset FLAG_MINTS_ENABLED, LittlerootTown_Disable_Pokeball_Mints
 	setflag FLAG_VISITED_NEWBARK_TOWN
 	call Common_EventScript_SetupRivalGfxId
-	call_if_eq VAR_LITTLEROOT_INTRO_STATE, 2, LittlerootTown_EventScript_MoveMomToMaysDoor
+	call_if_eq VAR_GARBAGEVAR, 2, LittlerootTown_EventScript_MoveMomToMaysDoor
 	call_if_unset FLAG_RESCUED_BIRCH, LittlerootTown_EventScript_SetTwinPos
 	call_if_eq VAR_GARBAGEVAR, 3, LittlerootTown_EventScript_SetMomStandingInFrontOfDoorPos
 	call_if_eq VAR_GARBAGEVAR, 4, LittlerootTown_EventScript_SetExitedHouseAfterLatiSSTicketEvent
@@ -117,8 +117,8 @@ LittlerootTown_EventScript_SetMomInFrontOfDoorFemale::
 	return
 
 LittlerootTown_OnFrame:
-	map_script_2 VAR_LITTLEROOT_INTRO_STATE, 1, LittlerootTown_EventScript_StepOffTruckMale
-	map_script_2 VAR_LITTLEROOT_INTRO_STATE, 2, LittlerootTown_EventScript_StepOffTruckFemale
+	map_script_2 VAR_GARBAGEVAR, 1, LittlerootTown_EventScript_StepOffTruckMale
+	map_script_2 VAR_GARBAGEVAR, 2, LittlerootTown_EventScript_StepOffTruckFemale
 	map_script_2 VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 1, LittlerootTown_EventScript_BeginDexUpgradeScene
 	.2byte 0
 
@@ -170,7 +170,7 @@ LittlerootTown_EventScript_GoInsideWithMom::
 	applymovement OBJ_EVENT_ID_PLAYER, LittlerootTown_Movement_PlayerEnterHouse
 	waitmovement 0
 	setflag FLAG_GARBAGEFLAG
-	setvar VAR_LITTLEROOT_INTRO_STATE, 3
+	setvar VAR_GARBAGEVAR, 3
 	hideobjectat OBJ_EVENT_ID_PLAYER, 0
 	closedoor VAR_0x8004, VAR_0x8005
 	waitdooranim

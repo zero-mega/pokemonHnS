@@ -7,9 +7,24 @@ SaffronCity_OnFrame::
 	.2byte 0
 
 SaffronCity_EventScript_CityEnter::
+	pokenavcall SaffronCity_Text_Baoba
+	waitmessage
+	delay 30
+	setflag FLAG_SAFARI_ZONE_EAST_EXPANSION
 	setflag FLAG_VISITED_SAFFRON_CITY
 	setvar VAR_SAFFRON_CITY_STATE, 1
 	end
+
+SaffronCity_Text_Baoba:
+	.string "WARDEN BAOBA: {PLAYER}!\p"
+	.string "This is WARDEN BAOBA.\p"
+	.string "I'm calling to tell you that the\n"
+	.string "SAFARI ZONE has expanded again!\p"
+	.string "Finally, my SAFARI ZONE has been\n"
+	.string "fully realized!\p"
+	.string "You remember where it is right?\p"
+	.string "Just west of CIANWOOD CITY!\n"
+	.string "see you soon!$"
 
 SaffronCity_EventScript_Lass1A::
 	goto_if_set FLAG_RETURNED_MACHINE_PART, SaffronCity_EventScript_Lass1B

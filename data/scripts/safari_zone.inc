@@ -1,13 +1,21 @@
 SafariZone_EventScript_OutOfBallsMidBattle::
 	setvar VAR_SAFARI_ZONE_STATE, 1
 	special ExitSafariMode
+	goto_if_set FLAG_IN_KANTO_SAFARI_ZONE, SafariZone_EventScript_ExitKanto
 	setwarp MAP_SAFARI_ZONE_ENTRANCE, 9, 3
 	end
 
 SafariZone_EventScript_Exit::
 	setvar VAR_SAFARI_ZONE_STATE, 1
 	special ExitSafariMode
+	goto_if_set FLAG_IN_KANTO_SAFARI_ZONE, SafariZone_EventScript_ExitKanto
 	warp MAP_SAFARI_ZONE_ENTRANCE, 9, 3
+	waitstate
+	end
+
+SafariZone_EventScript_ExitKanto::
+	clearflag FLAG_IN_KANTO_SAFARI_ZONE
+	warp MAP_SAFARI_ZONE_ENTRANCE_FUCHSIA, 5, 6
 	waitstate
 	end
 
@@ -160,7 +168,7 @@ Route121_SafariZoneEntrance_Text_YouNeedPokeblockCase:
 	.string "fruitful if you use {POKEBLOCK}S.\p"
 	.string "Please come back with a {POKEBLOCK} CASE.\p"
 	.string "You may obtain a {POKEBLOCK} CASE from\n"
-	.string "the LILYCOVE CONTEST HALL.$"
+	.string "the JOHTO SAFARI ZONE.$"
 
 SafariZone_South_Text_StillHaveTimeExit:
 	.string "You still have time left. Would you like\n"

@@ -2050,6 +2050,80 @@ bool8 ScrCmd_removegenericmon(struct ScriptContext *ctx)
     return FALSE;
 }
 
+// New: Check Baoba target species in party slot VAR_0x8004.
+// Usage (script): baobacheckmon <1|2|3|4>
+// Result: gSpecialVar_Result = TRUE if the mon at VAR_0x8004 matches the allowed
+//         species list for the given case; FALSE otherwise.
+bool8 ScrCmd_baobacheckmon(struct ScriptContext *ctx)
+{
+    u8 checkId = ScriptReadByte(ctx);
+    u16 partyIndex = VarGet(VAR_0x8004);
+    u16 species;
+
+    gSpecialVar_Result = FALSE;
+
+    if (partyIndex >= PARTY_SIZE)
+        return FALSE;
+
+    // Ignore empty slots and eggs
+    if (GetMonData(&gPlayerParty[partyIndex], MON_DATA_SPECIES, NULL) == SPECIES_NONE)
+        return FALSE;
+    if (GetMonData(&gPlayerParty[partyIndex], MON_DATA_IS_EGG, NULL))
+        return FALSE;
+
+    species = GetMonData(&gPlayerParty[partyIndex], MON_DATA_SPECIES, NULL);
+
+    switch (checkId)
+    {
+    case 1:
+        gSpecialVar_Result =
+            (species == SPECIES_CACNEA ||
+             species == SPECIES_LOTAD ||
+             species == SPECIES_MAKUHITA ||
+             species == SPECIES_LOMBRE ||
+             species == SPECIES_TRAPINCH ||
+             species == SPECIES_BELDUM ||
+             species == SPECIES_VIBRAVA);
+        break;
+
+    case 2:
+        gSpecialVar_Result =
+            (species == SPECIES_TROPIUS ||
+             species == SPECIES_CHIMECHO ||
+             species == SPECIES_ABSOL ||
+             species == SPECIES_CASTFORM);
+        break;
+
+    case 3:
+        gSpecialVar_Result =
+            (species == SPECIES_BARBOACH ||
+             species == SPECIES_WHISCASH ||
+             species == SPECIES_MEDITITE ||
+             species == SPECIES_NUMEL ||
+             species == SPECIES_BALTOY ||
+             species == SPECIES_ABSOL ||
+             species == SPECIES_MEDICHAM ||
+             species == SPECIES_CAMERUPT);
+        break;
+
+    case 4:
+        gSpecialVar_Result =
+            (species == SPECIES_WHISMUR ||
+             species == SPECIES_NOSEPASS ||
+             species == SPECIES_BAGON ||
+             species == SPECIES_RELICANTH ||
+             species == SPECIES_FEEBAS);
+        break;
+
+    default:
+        gSpecialVar_Result = FALSE;
+        break;
+    }
+
+    return FALSE;
+}
+
+
 
 
 bool8 ScrCmd_remove5mons(struct ScriptContext *ctx)

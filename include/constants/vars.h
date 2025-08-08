@@ -162,8 +162,8 @@
 #define VAR_SUICUNE_ENCOUNTERS                      0x408E //0 = goto cianwood, 1 = encounter suicune cianwood, 2 = find suicune on route 42, 3 = goto vermilion, 4 = goto route 14, 5 = beat cerulean gym, 6 = goto route 25, 7 = talk to suicune, 8 = done
 #define VAR_BILLS_GRANDPA                          0x408F //0 = meet gramps
 #define VAR_NUM_BADGES                           0x4090
-#define VAR_UNUSED_0x4091                                0x4091 // Unused Var
-#define VAR_LITTLEROOT_INTRO_STATE                       0x4092
+#define VAR_KANTO_SAFARI_ZONE_PROGRESS                                0x4091 // 0 = meet steven, 1 = unlock brush, 2 = unlock mountain, 3 = unlock cave, 4  = don
+#define VAR_BAOBA_QUEST_STATE                       0x4092 //0 = goto FUCHSIA, 1 = give BELDUM to baoba for 200k, 2 = give CASTFORM to baoba for 300k, 3 = give MEDICHAM to baoba for 400k, 4 = give BAGON to baboa for 500k, 5 = done
 #define VAR_MAUVILLE_GYM_STATE                           0x4093
 #define VAR_LILYCOVE_MUSEUM_2F_STATE                     0x4094
 #define VAR_LILYCOVE_FAN_CLUB_STATE                      0x4095

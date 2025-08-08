@@ -34,6 +34,11 @@ BlackthornCity_EventScript_CityEnter:: @flagheap
 	setvar VAR_BLACKTHORN_GYM_STATE, 0
 	setvar VAR_DRAGONS_DEN_QUIZ, 0
 
+
+	pokenavcall BlackthornCity_Text_BaobaCall
+	waitmessage
+	delay 30
+	setflag FLAG_SAFARI_ZONE_WEST_EXPANSION
 	setvar VAR_BLACKTHORN_CITY_STATE, 1
 	end
 
@@ -46,6 +51,13 @@ BlackthornCity_EventScript_Call::
 	setvar VAR_NEWBARKTOWN_LABSTATE, 7
 	release
 	end
+
+BlackthornCity_Text_BaobaCall:
+	.string "WARDEN BAOBA: {PLAYER}!\p"
+	.string "This is WARDEN BAOBA.\p"
+	.string "I'm calling to tell you that\n"
+	.string "the SAFARI ZONE has expanded!\p"
+	.string "Please come visit!$"
 
 BlackthornCity_Text_ElmCall:
 	.string "PROF. ELM: Hello, {PLAYER}?\p"

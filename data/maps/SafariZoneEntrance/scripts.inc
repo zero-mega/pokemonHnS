@@ -55,10 +55,203 @@ SafariZoneEntrance_MeetBaoba::
 SafariZoneEntrance_EventScript_Baoba::
 	lock
 	faceplayer
+	goto_if_eq VAR_BAOBA_QUEST_STATE, 1, SafariZoneEntrance_EventScript_BaobaBeach
+	goto_if_eq VAR_BAOBA_QUEST_STATE, 2, SafariZoneEntrance_EventScript_BaobaBrush
+	goto_if_eq VAR_BAOBA_QUEST_STATE, 3, SafariZoneEntrance_EventScript_BaobaMountain
+	goto_if_eq VAR_BAOBA_QUEST_STATE, 4, SafariZoneEntrance_EventScript_BaobaCave
+	goto_if_ge VAR_BAOBA_QUEST_STATE, 5, SafariZoneEntrance_EventScript_BaobaDone
 	msgbox SafariZoneEntrance_Text_Baoba, MSGBOX_DEFAULT 
 	closemessage
 	release
 	end
+
+SafariZoneEntrance_EventScript_BaobaBeach::
+	msgbox SafariZoneEntrance_Text_BaobaBeach, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, FALSE, SafariZoneEntrance_EventScript_BaobaDeclined
+	special ChoosePartyMon
+	waitstate
+	lockall
+	copyvar VAR_0x800A, VAR_0x8004
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, SafariZoneEntrance_EventScript_BaobaDeclined
+	baobacheckmon 1
+	goto_if_eq VAR_RESULT, FALSE, SafarioneEntrance_EventScript_BaobaWrong
+	msgbox SafariZoneEntrance_Text_BaobaBeachDone, MSGBOX_DEFAULT
+	showmoneybox 0, 0
+	addmoney 200000
+	delay 60
+	playse SE_SHOP
+	updatemoneybox
+	delay 60
+	closemessage
+	hidemoneybox
+	setvar VAR_BAOBA_QUEST_STATE, 2
+	release
+	end
+
+SafariZoneEntrance_EventScript_BaobaBrush::
+	msgbox SafariZoneEntrance_Text_BaobaBrush, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, FALSE, SafariZoneEntrance_EventScript_BaobaDeclined
+	special ChoosePartyMon
+	waitstate
+	lockall
+	copyvar VAR_0x800A, VAR_0x8004
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, SafariZoneEntrance_EventScript_BaobaDeclined
+	baobacheckmon 2
+	goto_if_eq VAR_RESULT, FALSE, SafarioneEntrance_EventScript_BaobaWrong
+	msgbox SafariZoneEntrance_Text_BaobaBrushDone, MSGBOX_DEFAULT
+	showmoneybox 0, 0
+	addmoney 300000
+	delay 60
+	playse SE_SHOP
+	updatemoneybox
+	delay 60
+	closemessage
+	hidemoneybox
+	setvar VAR_BAOBA_QUEST_STATE, 3
+	release
+	end
+
+SafariZoneEntrance_EventScript_BaobaMountain::
+	msgbox SafariZoneEntrance_Text_BaobaMountain, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, FALSE, SafariZoneEntrance_EventScript_BaobaDeclined
+	special ChoosePartyMon
+	waitstate
+	lockall
+	copyvar VAR_0x800A, VAR_0x8004
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, SafariZoneEntrance_EventScript_BaobaDeclined
+	baobacheckmon 3
+	goto_if_eq VAR_RESULT, FALSE, SafarioneEntrance_EventScript_BaobaWrong
+	msgbox SafariZoneEntrance_Text_BaobaMountainDone, MSGBOX_DEFAULT
+	showmoneybox 0, 0
+	addmoney 400000
+	delay 60
+	playse SE_SHOP
+	updatemoneybox
+	delay 60
+	closemessage
+	hidemoneybox
+	setvar VAR_BAOBA_QUEST_STATE, 4
+	release
+	end
+
+SafariZoneEntrance_EventScript_BaobaCave::
+	msgbox SafariZoneEntrance_Text_BaobaCave, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, FALSE, SafariZoneEntrance_EventScript_BaobaDeclined
+	special ChoosePartyMon
+	waitstate
+	lockall
+	copyvar VAR_0x800A, VAR_0x8004
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, SafariZoneEntrance_EventScript_BaobaDeclined
+	baobacheckmon 4
+	goto_if_eq VAR_RESULT, FALSE, SafarioneEntrance_EventScript_BaobaWrong
+	msgbox SafariZoneEntrance_Text_BaobaCaveDone, MSGBOX_DEFAULT
+	showmoneybox 0, 0
+	addmoney 400000
+	delay 20
+	playse SE_SHOP
+	updatemoneybox
+	delay 20
+	closemessage
+	hidemoneybox
+	setvar VAR_BAOBA_QUEST_STATE, 5
+	release
+	end
+
+SafarioneEntrance_EventScript_BaobaWrong::
+	msgbox SafariZoneEntrance_Text_BaobaWrong, MSGBOX_DEFAULT
+	release
+	end
+
+SafariZoneEntrance_EventScript_BaobaDeclined:
+	msgbox SafariZoneEntrance_Text_BaobaDeclined, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+SafariZoneEntrance_EventScript_BaobaDone::
+	msgbox SafariZoneEntrance_Text_BaobaDone, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+SafariZoneEntrance_EventScript_Test::
+	givemon SPECIES_BELDUM, 5
+	givemon SPECIES_CASTFORM, 5
+	givemon SPECIES_MEDICHAM, 5
+	givemon SPECIES_BAGON, 5
+	end
+
+SafariZoneEntrance_Text_BaobaBeachDone:
+	.string "Thank you, {PLAYER}!\n"
+	.string "Here, take this money to upgrade\l"
+	.string "your SAFARI LEVEL and show me an\l"
+	.string "exotic POKéMON from the BRUSH area\l"
+	.string "next!$"
+	
+SafariZoneEntrance_Text_BaobaBrushDone:
+	.string "Thank you, {PLAYER}!\n"
+	.string "Here, take this money to upgrade\l"
+	.string "your SAFARI LEVEL and show me an\l"
+	.string "exotic POKéMON from the MOUNTAIN\l"
+	.string "area next!$"
+
+SafariZoneEntrance_Text_BaobaMountainDone:
+	.string "Thank you, {PLAYER}!\n"
+	.string "Here, take this money to upgrade\l"
+	.string "your SAFARI LEVEL and show me an\l"
+	.string "exotic POKéMON from the CAVE area\l"
+	.string "next!$"
+
+SafariZoneEntrance_Text_BaobaCaveDone:
+	.string "Thank you, {PLAYER}!\n"
+	.string "That's all I need to see.\p"
+	.string "Now that I know what DEVON is up\n"
+	.string "to, I'll be able to keep my SAFARI\l"
+	.string "competitive. Here, take this as a\l"
+	.string "reward for your troubles.$"
+
+SafariZoneEntrance_Text_BaobaWrong:
+	.string "That can't be right!$"
+
+SafariZoneEntrance_Text_BaobaBeach:
+	.string "Ah, {PLAYER}!\p"
+	.string "Did you bring an exotic POKéMON\n"
+	.string "from the BEACH area of the FUCHSIA\l"
+	.string "SAFARI ZONE to show me?$"
+
+SafariZoneEntrance_Text_BaobaBrush:
+	.string "Ah, {PLAYER}!\p"
+	.string "Did you bring an exotic POKéMON\n"
+	.string "from the BRUSH area of the FUCHSIA\l"
+	.string "SAFARI ZONE to show me?$"
+
+SafariZoneEntrance_Text_BaobaMountain:
+	.string "Ah, {PLAYER}!\p"
+	.string "Did you bring an exotic POKéMON\n"
+	.string "from the MOUNTAIN area of the\l"
+	.string "FUCHSIA SAFARI ZONE to show me?$"
+
+SafariZoneEntrance_Text_BaobaCave:
+	.string "Ah, {PLAYER}!\p"
+	.string "Did you bring an exotic POKéMON\n"
+	.string "from the CAVE area of the FUCHSIA\l"
+	.string "SAFARI ZONE to show me?$"
+
+SafariZoneEntrance_Text_BaobaDeclined:
+	.string "What will I do now?\n"
+	.string "We'll never keep up with DEVON!$"
+
+SafariZoneEntrance_Text_BaobaLastMon:
+	.string "I can't take your last POKéMON!$"
+
+SafariZoneEntrance_Text_BaobaDone:
+	.string "Ah, {PLAYER}!\p"
+	.string "Thanks to you, the SAFARI ZONE is\n"
+	.string "thriving!"\p"
+	.string "Maybe I should name you OWNER of\n"
+	.string "the safari zone...\p"
+	.string "No, that would be ridiculous.\n"
+	.string "Ahahahaha.$"
 
 SafariZoneEntrance_EventScript_EntranceCounterTrigger::
 	lockall
@@ -76,7 +269,6 @@ SafariZoneEntrance_EventScript_TryEnterSafariZone::
 	call SafariZoneEntrance_EventScript_CheckHasRoomForPokemon
 	checkmoney 500
 	goto_if_eq VAR_RESULT, 0, SafariZoneEntrance_EventScript_NotEnoughMoney
-	playse SE_SHOP
 	msgbox Route121_SafariZoneEntrance_Text_ThatWillBe500Please, MSGBOX_DEFAULT
 	removemoney 500
 	playse SE_SHOP
