@@ -6,13 +6,19 @@
   "region_map_section": "MAPSEC_MT_MOON",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_NONE",
+  "map_type": "MAP_TYPE_ROUTE",
   "allow_cycling": true,
   "allow_escaping": true,
   "allow_running": false,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": [
+    {
+      "map": "MAP_ROUTE4",
+      "offset": -18,
+      "direction": "down"
+    }
+  ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_CLEFAIRY",
@@ -24,7 +30,7 @@
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "MtMoonTest_EventScript_Clefairy",
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
@@ -37,7 +43,7 @@
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "MtMoonTest_EventScript_Clefairy",
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
@@ -50,7 +56,7 @@
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "MtMoonTest_EventScript_Clefairy",
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
@@ -63,7 +69,7 @@
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "MtMoonTest_EventScript_Clefairy",
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
@@ -76,7 +82,7 @@
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "MtMoonTest_EventScript_Clefairy",
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
@@ -89,7 +95,7 @@
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "MtMoonTest_EventScript_Clefairy",
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
@@ -102,7 +108,7 @@
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "MtMoonTest_EventScript_Clefairy",
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
@@ -115,8 +121,21 @@
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "MtMoonTest_EventScript_Clefairy",
       "flag": "FLAG_NIGHT_POKEMON"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 6,
+      "y": 24,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "MtMoon_EventScript_Moonstone",
+      "flag": "FLAG_ITEM_MTMOON_MOONSTONE"
     }
   ],
   "warp_events": [
@@ -146,6 +165,13 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 26,
+      "y": 12,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "MtMoonTest_EventScript_Sign"
+    }
   ]
 }

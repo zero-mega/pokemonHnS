@@ -27,6 +27,22 @@ CeruleanCity_EventScript_Boy::
 	msgbox CeruleanCity_Text_SuperNerd, MSGBOX_NPC
 	end
 
+CeruleanCity_EventScript_Guard::
+	msgbox CeruleanCity_Text_ThisIsCeruleanCave, MSGBOX_NPC
+	end
+
+CeruleanCity_Text_ThisIsCeruleanCave::
+    .string "This is CERULEAN CAVE.\p"
+    .string "Horribly strong POKéMON live inside\n"
+    .string "there.\p"
+    .string "It takes a very special TRAINER to\n"
+    .string "be allowed inside there.\p"
+    .string "You'd have to be strong enough to\n"
+    .string "become the KANTO POKéMON LEAGUE\l"
+    .string "CHAMPION for starters.\p"
+    .string "And, you would have to have\n"
+    .string "made a great achievement.$"
+
 CeruleanCity_Text_CooltrainerM1:
 	.string "KANTO's POWER PLANT?\p"
 	.string "It's near the end of ROUTE 9, the\n"

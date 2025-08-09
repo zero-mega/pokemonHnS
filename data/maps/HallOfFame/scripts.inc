@@ -64,6 +64,13 @@ HallOfFame_EventScript_SetFirstGameClearFlags::
 	return
 
 HallOfFame_EventScript_SetGameClearFlags::
+	clearflag FLAG_HIDE_LATIOS
+	clearflag FLAG_HIDE_LATIAS
+	clearflag FLAG_HIDE_RAYQUAZA
+	clearflag FLAG_HIDE_GROUDON
+	clearflag FLAG_HIDE_KYOGRE
+	clearflag FLAG_HIDE_MEWTWO
+	clearflag FLAG_HIDE_CERULEANCAVE_GUARD
 	clearflag FLAG_HIDE_VERMILION_SNORLAX
 	clearflag FLAG_HIDE_ZAPDOS
 	setvar VAR_COMPLETED_LUGIA, 4

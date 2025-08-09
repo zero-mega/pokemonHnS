@@ -7,8 +7,8 @@ RockTunnel1_OnTransition:
 	callnative SetTimeBasedEncounters
 	end
 
-RockTunnel1_EventScript_ItemSteelWing::
-	finditem ITEM_TM_STEEL_WING
+RockTunnel1_EventScript_ItemFacade::
+	finditem ITEM_TM_FACADE
 	end
 
 RockTunnel1_EventScript_Elixir::

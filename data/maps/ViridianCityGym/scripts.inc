@@ -104,7 +104,7 @@ ViridianCityGym_EventScript_GymStatuePostVictory::
 
 ViridianCityGym_Text_GymStatue::
     .string "VIRIDIAN POKéMON GYM\n"
-    .string "LEADER: BLUE$"
+    .string "LEADER: BLUE\p"
 	.string "WINNING TRAINERS:\n"
 	.string "BLUE, RED$"
 

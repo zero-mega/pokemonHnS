@@ -243,7 +243,7 @@
       "x": 21,
       "y": 20,
       "elevation": 0,
-      "dest_map": "MAP_MT_SILVER3",
+      "dest_map": "MAP_MT_SILVER_SUMMIT_TEST",
       "dest_warp_id": "0"
     },
     {
@@ -257,7 +257,7 @@
       "x": 21,
       "y": 22,
       "elevation": 0,
-      "dest_map": "MAP_MT_SILVER_SUMMIT_TEST",
+      "dest_map": "MAP_CERULEAN_CAVE_3",
       "dest_warp_id": "0"
     }
   ],

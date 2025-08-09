@@ -4027,7 +4027,7 @@
       "width": 29,
       "height": 26,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Fortree",
+      "secondary_tileset": "gTileset_NationalPark",
       "border_filepath": "data/layouts/FarawayIsland_Interior/border.bin",
       "blockdata_filepath": "data/layouts/FarawayIsland_Interior/map.bin"
     },
@@ -7475,9 +7475,9 @@
       "id": "LAYOUT_MT_MOON_HOUSE",
       "name": "MtMoonHouse_Layout",
       "width": 10,
-      "height": 9,
+      "height": 13,
       "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_R26_21",
+      "secondary_tileset": "gTileset_House2_44",
       "border_filepath": "data/layouts/MtMoonHouse/border.bin",
       "blockdata_filepath": "data/layouts/MtMoonHouse/map.bin"
     },
@@ -8920,6 +8920,16 @@
       "secondary_tileset": "gTileset_whirl_islands",
       "border_filepath": "data/layouts/FuchsiaSafariZoneCave/border.bin",
       "blockdata_filepath": "data/layouts/FuchsiaSafariZoneCave/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_SILVER_SUMMIT_TEST_NIGHT",
+      "name": "MtSilverSummitTestNight_Layout",
+      "width": 21,
+      "height": 27,
+      "primary_tileset": "gTileset_Johto_General",
+      "secondary_tileset": "gTileset_MtSilverSnow",
+      "border_filepath": "data/layouts/MtSilverSummitTestNight/border.bin",
+      "blockdata_filepath": "data/layouts/MtSilverSummitTestNight/map.bin"
     }
   ]
 }

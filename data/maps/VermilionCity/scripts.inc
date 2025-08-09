@@ -30,6 +30,7 @@ VermilionCity_TriggerCity:: @flagheap
 	setflag FLAG_HIDE_VIRIDIAN_BLUE
 	setflag FLAG_HIDE_ROUTE14_EUSINE
 	setflag FLAG_HIDE_ROUTE14_SUICUNE
+	
 
 	clearflag FLAG_BADGE09_GET
 	clearflag FLAG_BADGE10_GET
@@ -60,6 +61,19 @@ VermilionCity_TriggerCity:: @flagheap
 	clearflag FLAG_GOT_ROUTE2_NUGGET
 	clearflag FLAG_GOT_VIRIDIAN_TM_SLUDGE_BOMB
 	clearflag FLAG_GOT_ROUTE_14_AERIAL_ACE
+	clearflag FLAG_HIDE_PEWTER_ROOT_FOSSIL
+	clearflag FLAG_HIDE_PEWTER_CLAW_FOSSIL
+	clearflag FLAG_HIDE_MTMOON_SILVER
+	clearflag FLAG_GOT_TM_STEEL_WING
+	clearflag FLAG_HIDE_CERULEANCAVE_GUARD
+	clearflag FLAG_HIDE_MTSILVER_RED
+	clearflag FLAG_HIDE_MEWTWO
+	clearflag FLAG_HIDE_LATIAS
+	clearflag FLAG_HIDE_LATIOS
+	clearflag FLAG_HIDE_GROUDON
+	clearflag FLAG_HIDE_KYOGRE
+	clearflag FLAG_HIDE_RAYQUAZA
+
 
 	setvar VAR_KANTO_ROCKET_STORY_STATE, 0
 	setvar VAR_BILLS_GRANDPA, 0
@@ -198,6 +212,7 @@ VermilionCity_EventScript_SnorlaxWakeUp::
 	removeobject 11
 	setflag FLAG_HIDE_VERMILION_SNORLAX
 	fadescreenswapbuffers FADE_FROM_BLACK
+	setflag FLAG_INDIGOJUNCTION_HIDE_KANTO_GUARD
 	release
 	end
 

@@ -6,3 +6,10 @@ MtSilverSideTest_MapScripts::
 MtSilverSideTest_OnTransition: 
 	callnative SetTimeBasedEncounters
 	end
+
+MtSilverSideTest_EventScript_RareCandy::
+	finditem ITEM_RARE_CANDY
+	end
+MtSilverSideTest_EventScript_NevermeltIce::	
+	finditem ITEM_NEVER_MELT_ICE
+	end

@@ -220,6 +220,46 @@ OlivineCity_EventScript_Item_Shockwave::
 	finditem ITEM_TM_SHOCK_WAVE
 	end
 
+OlivineCity_EventScript_EonTicketWoman::
+	lock
+	faceplayer
+	checkitem ITEM_AURORA_TICKET
+	goto_if_eq VAR_RESULT, TRUE, OlivineCity_EventScript_EonTicketWomanAfter
+	goto_if_set FLAG_IS_KANTO_CHAMPION, OlivineCity_EventScript_EonTicketWomanChamp
+	msgbox OlivineCity_Text_EonTicketWoman1, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+OlivineCity_EventScript_EonTicketWomanChamp::
+	msgbox OlivineCity_Text_EonTicketWoman2, MSGBOX_DEFAULT
+	giveitem ITEM_AURORA_TICKET
+	closemessage
+	release
+	end
+
+OlivineCity_EventScript_EonTicketWomanAfter::
+	msgbox OlivineCity_Text_EonTicketWoman3, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+OlivineCity_Text_EonTicketWoman1:
+	.string "My name is MARY!\p"
+	.string "Just kidding, but I love MARY's\n"
+	.string "radio show!$"
+
+OlivineCity_Text_EonTicketWoman2:
+	.string "You must be {PLAYER}!!!\p"
+	.string "Oh my goodness! The champion!\p"
+	.string "I heard about you on MARY's\n"
+	.string "radio show!\p"
+	.string "Here, take this!$"
+
+OlivineCity_Text_EonTicketWoman3:
+	.string "I can't believe I met the\n"
+	.string "champion!!!$"
+
 OlivineCity_Text_Sailor1:
 	.string "Dark roads are dangerous\n"
 	.string "at night.\p"

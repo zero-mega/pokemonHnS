@@ -595,7 +595,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route120_EventScript_ItemRevive",
-      "flag": "FLAG_ITEM_ROUTE_120_REVIVE"
+      "flag": "FLAG_ITEM_GARBAGEFLAG"
     }
   ],
   "warp_events": [

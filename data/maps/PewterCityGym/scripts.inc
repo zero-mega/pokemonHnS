@@ -120,7 +120,7 @@ PewterCityGym_EventScript_GymStatuePostVictory::
 
 PewterCityGym_Text_GymStatue::
     .string "PEWTER POKéMON GYM\n"
-    .string "LEADER: BROCK$"
+    .string "LEADER: BROCK\p"
 	.string "WINNING TRAINERS:\n"
 	.string "BLUE, RED$"
 

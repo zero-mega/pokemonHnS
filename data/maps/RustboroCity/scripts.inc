@@ -102,7 +102,7 @@ RustboroCity_EventScript_MatchCallTutorial::
 	waitmovement 0
 	playse SE_EXIT
 	removeobject LOCALID_SCIENTIST
-	setflag FLAG_HIDE_RUSTBORO_CITY_SCIENTIST
+	setflag FLAG_GARBAGEFLAG
 	setvar VAR_GARBAGEVAR, 7
 	clearflag FLAG_HIDE_MAP_NAME_POPUP
 	releaseall

@@ -62,8 +62,35 @@ SafariZoneEntranceFuchsia_MeetSteven::
 	end
 
 SafariZoneEntranceFuchsia_Steven::
+	lock
+	faceplayer
+	checkitem ITEM_EON_TICKET
+	goto_if_eq VAR_RESULT, TRUE, SafariZoneEntranceFuchsia_StevenAfter
+	goto_if_set FLAG_IS_KANTO_CHAMPION, SafariZoneEntranceFuchsia_StevenChamp
 	msgbox SafariZoneEntranceFuchsia_Text_Steven, MSGBOX_NPC
+	release
 	end
+
+SafariZoneEntranceFuchsia_StevenChamp::
+	msgbox SafariZoneEntranceFuchsia_Text_StevenChamp, MSGBOX_DEFAULT
+	giveitem ITEM_EON_TICKET
+	closemessage
+	release
+	end
+
+SafariZoneEntranceFuchsia_StevenAfter::
+	msgbox SafariZoneEntranceFuchsia_Text_Steven, MSGBOX_NPC
+	release
+	end
+
+SafariZoneEntranceFuchsia_Text_StevenChamp:
+	.string "Oh, hey {PLAYER}.\n"
+	.string "Or should I say KANTO champion?\p"
+	.string "You know, for some time, I was the\n"
+	.string "champion of the HOENN region.\p"
+	.string "So welcome to the club, {PLAYER}.\p"
+	.string "In fact, here.\n"
+	.string "Consider this a welcome gift.$"
 
 SafariZoneEntranceFuchsia_EventScript_EntranceCounterTrigger::
 	lockall

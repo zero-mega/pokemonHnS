@@ -353,6 +353,30 @@
       "height": 1
     },
     {
+      "map_section": "MAPSEC_SOUTHERN_ISLAND",
+      "name": "SOUTHERN ISLAND",
+      "x": 9,
+      "y": 14,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_FARAWAY_ISLAND",
+      "name": "FARAWAY ISLAND",
+      "x": 9,
+      "y": 14,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_BIRTH_ISLAND",
+      "name": "BIRTH ISLAND",
+      "x": 9,
+      "y": 14,
+      "width": 1,
+      "height": 1
+    },
+    {
       "map_section": "MAPSEC_CINNABAR_ISLAND",
       "name": "CINNABAR ISLAND",
       "x": 19,

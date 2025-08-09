@@ -1,4 +1,6 @@
 .set LOCALID_LATI, 2
+.set LOCALID_SOUTHERNISLAND_LATIOS, 3
+.set LOCALID_SOUTHERNISLAND_LATIAS, 4
 
 SouthernIsland_Interior_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, SouthernIsland_Interior_OnResume
@@ -147,3 +149,51 @@ SouthernIsland_Interior_Movement_LatiApproach:
 	walk_down
 	walk_down
 	step_end
+
+
+@==============================================================================================================================
+
+
+SouthernIsland_Interior_EventScript_Latios::
+	lock
+	faceplayer
+	playmoncry SPECIES_LATIOS, CRY_MODE_ENCOUNTER
+	waitmoncry
+	seteventmon SPECIES_LATIOS, 50
+	special BattleSetup_StartLegendaryBattle
+	specialvar VAR_RESULT, GetBattleOutcome
+	waitstate
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, SouthernIsland_Interior_EventScript_LatiosRan
+	fadescreenswapbuffers FADE_TO_BLACK
+	removeobject LOCALID_SOUTHERNISLAND_LATIOS
+	setflag FLAG_HIDE_LATIOS
+	fadescreenswapbuffers FADE_FROM_BLACK
+	release
+	end
+
+SouthernIsland_Interior_EventScript_LatiosRan::
+	release
+	end
+
+
+SouthernIsland_Interior_EventScript_Latias::
+	lock
+	faceplayer
+	playmoncry SPECIES_LATIAS, CRY_MODE_ENCOUNTER
+	waitmoncry
+	seteventmon SPECIES_LATIAS, 50
+	special BattleSetup_StartLegendaryBattle
+	specialvar VAR_RESULT, GetBattleOutcome
+	waitstate
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, SouthernIsland_Interior_EventScript_LatiasRan
+	fadescreenswapbuffers FADE_TO_BLACK
+	removeobject LOCALID_SOUTHERNISLAND_LATIAS
+	setflag FLAG_HIDE_LATIAS
+	fadescreenswapbuffers FADE_FROM_BLACK
+	release
+	end
+
+SouthernIsland_Interior_EventScript_LatiasRan::
+	release
+	end
+

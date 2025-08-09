@@ -55,7 +55,7 @@ SeafoamIslands2_EventScript_GymStatuePostVictory::
 
 SeafoamIslands2_Text_GymStatue::
     .string "CINNABAR POKéMON GYM\n"
-    .string "LEADER: BLAINE$"
+    .string "LEADER: BLAINE\p"
 	.string "WINNING TRAINERS:\n"
 	.string "BLUE, RED$"
 

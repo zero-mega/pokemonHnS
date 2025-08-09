@@ -172,7 +172,7 @@ CeladonCityGym_EventScript_GymStatuePostVictory::
 
 CeladonCityGym_Text_GymStatue::
     .string "CELADON POKéMON GYM\n"
-    .string "LEADER: ERIKA$"
+    .string "LEADER: ERIKA\p"
 	.string "WINNING TRAINERS:\n"
 	.string "BLUE, RED$"
 

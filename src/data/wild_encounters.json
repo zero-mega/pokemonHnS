@@ -66330,6 +66330,144 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_MT_SILVER_SIDE_TEST",
+          "base_label": "gMtSilverSideTest",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 61,
+                "max_level": 69,
+                "species": "SPECIES_URSARING"
+              },
+              {
+                "min_level": 68,
+                "max_level": 68,
+                "species": "SPECIES_WEAVILE"
+              },
+              {
+                "min_level": 68,
+                "max_level": 68,
+                "species": "SPECIES_MACHOKE"
+              },
+              {
+                "min_level": 65,
+                "max_level": 65,
+                "species": "SPECIES_SKARMORY"
+              },
+              {
+                "min_level": 61,
+                "max_level": 69,
+                "species": "SPECIES_MISMAGIUS"
+              },
+              {
+                "min_level": 68,
+                "max_level": 68,
+                "species": "SPECIES_MAMOSWINE"
+              },
+              {
+                "min_level": 68,
+                "max_level": 68,
+                "species": "SPECIES_PILOSWINE"
+              },
+              {
+                "min_level": 61,
+                "max_level": 69,
+                "species": "SPECIES_HOUNDOOM"
+              },
+              {
+                "min_level": 61,
+                "max_level": 69,
+                "species": "SPECIES_HOUNDOOM"
+              },
+              {
+                "min_level": 65,
+                "max_level": 65,
+                "species": "SPECIES_RAPIDASH"
+              },
+              {
+                "min_level": 61,
+                "max_level": 69,
+                "species": "SPECIES_RAPIDASH"
+              },
+              {
+                "min_level": 65,
+                "max_level": 65,
+                "species": "SPECIES_HOUNDOOM"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_MT_SILVER_SIDE_TEST",
+          "base_label": "gMtSilverSideTestNight",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 61,
+                "max_level": 69,
+                "species": "SPECIES_URSARING"
+              },
+              {
+                "min_level": 68,
+                "max_level": 68,
+                "species": "SPECIES_WEAVILE"
+              },
+              {
+                "min_level": 68,
+                "max_level": 68,
+                "species": "SPECIES_ANNIHILAPE"
+              },
+              {
+                "min_level": 65,
+                "max_level": 65,
+                "species": "SPECIES_SKARMORY"
+              },
+              {
+                "min_level": 61,
+                "max_level": 69,
+                "species": "SPECIES_MACHOKE"
+              },
+              {
+                "min_level": 68,
+                "max_level": 68,
+                "species": "SPECIES_MAMOSWINE"
+              },
+              {
+                "min_level": 68,
+                "max_level": 68,
+                "species": "SPECIES_PILOSWINE"
+              },
+              {
+                "min_level": 61,
+                "max_level": 69,
+                "species": "SPECIES_HOUNDOOM"
+              },
+              {
+                "min_level": 61,
+                "max_level": 69,
+                "species": "SPECIES_HOUNDOOM"
+              },
+              {
+                "min_level": 65,
+                "max_level": 65,
+                "species": "SPECIES_RAPIDASH"
+              },
+              {
+                "min_level": 61,
+                "max_level": 69,
+                "species": "SPECIES_RAPIDASH"
+              },
+              {
+                "min_level": 65,
+                "max_level": 65,
+                "species": "SPECIES_HOUNDOOM"
+              }
+            ]
+          }
         }
       ]
     },

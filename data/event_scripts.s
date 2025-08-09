@@ -2021,3 +2021,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/FuchsiaCitySafariZoneMountain/scripts.inc"
 
 	.include "data/maps/FuchsiaSafariZoneCave/scripts.inc"
+
+	.include "data/maps/MtSilverSummitTestNight/scripts.inc"

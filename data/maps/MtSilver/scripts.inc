@@ -17,3 +17,9 @@ MtSilver_EventScript_CityEnter::
 	setvar VAR_MT_SILVER_STATE, 1
 	end
 
+MtSilver_EventScript_Sign::
+	msgbox MtSilver_Text_Sign, MSGBOX_SIGN
+	end
+
+MtSilver_Text_Sign:
+	.string "MT. SILVER$"
