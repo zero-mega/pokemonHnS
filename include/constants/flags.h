@@ -875,9 +875,9 @@
 #define FLAG_IN_KANTO_SAFARI_ZONE                     0x33C
 #define FLAG_IS_KANTO_CHAMPION                      0x33D
 #define FLAG_HIDE_LEAGUE_BLACKBELT                         0x33E
-#define FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_MAGMA_GRUNTS               0x33F
-#define FLAG_HIDE_LILYCOVE_CONTEST_HALL_BLEND_MASTER                0x340
-#define FLAG_HIDE_GRANITE_CAVE_STEVEN                               0x341
+#define FLAG_GOT_ROUTE2_NUGGET               0x33F
+#define FLAG_GOT_VIRIDIAN_TM_SLUDGE_BOMB                0x340
+#define FLAG_GOT_ROUTE_14_AERIAL_ACE                               0x341
 #define FLAG_HIDE_ROUTE_128_STEVEN                                  0x342
 #define FLAG_HIDE_SLATEPORT_CITY_GABBY_AND_TY                       0x343
 #define FLAG_HIDE_BATTLE_FRONTIER_RECEPTION_GATE_SCOTT              0x344
@@ -1180,16 +1180,16 @@
 #define FLAG_ITEM_ROUTE12_CALCIUM                             0x469
 #define FLAG_ITEM_ROUTE13_CALCIUM                            0x46A
 #define FLAG_ITEM_ROUTE15_PP_UP                 0x46B
-#define FLAG_ITEM_AQUA_HIDEOUT_B1F_NUGGET                           0x46C
-#define FLAG_ITEM_MOSSDEEP_STEVENS_HOUSE_HM08                       0x46D // Unused Flag, leftover from R/S. HM08 is given to the player directly in Emerald
-#define FLAG_ITEM_ROUTE_119_NUGGET                                  0x46E
-#define FLAG_ITEM_ROUTE_104_POTION                                  0x46F
+#define FLAG_ITEM_ROUTE2_CARBOS                           0x46C
+#define FLAG_ITEM_ROUTE2_NUGGET                       0x46D // Unused Flag, leftover from R/S. HM08 is given to the player directly in Emerald
+#define FLAG_ITEM_VIRIDIANFOREST_MAX_POTION                                  0x46E
+#define FLAG_ITEM_VIRIDIANFOREST_DIRE_HIT                                  0x46F
 #define FLAG_CAUGHT_CELEBI                                           0x470
-#define FLAG_ITEM_ROUTE_103_PP_UP                                   0x471
-#define FLAG_UNUSED_0x472                                           0x472 // Unused Flag
-#define FLAG_ITEM_ROUTE_108_STAR_PIECE                              0x473
-#define FLAG_ITEM_ROUTE_109_POTION                                  0x474
-#define FLAG_ITEM_ROUTE_110_ELIXIR                                  0x475
+#define FLAG_ITEM_VIRIDIANFOREST_ELIXIR                                   0x471
+#define FLAG_ITEM_VIRIDIANFOREST_REVIVE                                           0x472 // Unused Flag
+#define FLAG_ITEM_VIRIDIANFOREST_FULL_RESTORE                              0x473
+#define FLAG_ITEM_VIRIDIANFOREST_MAX_ETHER                                  0x474
+#define FLAG_ITEM_VIRIDIANFOREST_FULL_HEAL                                  0x475 //pewter
 #define FLAG_ITEM_ROUTE_111_ELIXIR                                  0x476
 #define FLAG_ITEM_ROUTE_113_HYPER_POTION                            0x477
 #define FLAG_ITEM_ROUTE_115_HEAL_POWDER                             0x478

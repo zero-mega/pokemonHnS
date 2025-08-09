@@ -45,3 +45,4 @@ CliffEdgeGate_Text_SignOpen:
 	.string "Explore to Find Wild POKéMON!\l"
 	.string "Warden BAOBA's SAFARI ZONE\l"
 	.string "Up and Running!$"
+

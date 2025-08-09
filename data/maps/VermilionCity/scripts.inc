@@ -57,7 +57,9 @@ VermilionCity_TriggerCity:: @flagheap
 	clearflag FLAG_GOT_TM_REST
 	clearflag FLAG_GOT_SUPER_ROD
 	clearflag FLAG_HIDE_CINNABAR_BLUE
-
+	clearflag FLAG_GOT_ROUTE2_NUGGET
+	clearflag FLAG_GOT_VIRIDIAN_TM_SLUDGE_BOMB
+	clearflag FLAG_GOT_ROUTE_14_AERIAL_ACE
 
 	setvar VAR_KANTO_ROCKET_STORY_STATE, 0
 	setvar VAR_BILLS_GRANDPA, 0

@@ -20,12 +20,12 @@ LilycoveCity_ContestLobby_EventScript_TryShowBlendMaster::
 	getpokenewsactive POKENEWS_BLENDMASTER
 	goto_if_eq VAR_RESULT, TRUE, LilycoveCity_ContestLobby_EventScript_ShowBlendMaster
 	clearflag FLAG_GARBAGEFLAG
-	setflag FLAG_HIDE_LILYCOVE_CONTEST_HALL_BLEND_MASTER
+	setflag FLAG_GARBAGEFLAG
 	return
 
 LilycoveCity_ContestLobby_EventScript_ShowBlendMaster::
 	setflag FLAG_GARBAGEFLAG
-	clearflag FLAG_HIDE_LILYCOVE_CONTEST_HALL_BLEND_MASTER
+	clearflag FLAG_GARBAGEFLAG
 	return
 
 LilycoveCity_ContestLobby_OnFrame:

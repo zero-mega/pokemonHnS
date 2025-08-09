@@ -16,7 +16,7 @@ SeafoamIslands2_EventScript_Blaine::
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
 	msgbox SeafoamIslands2_Text_TM, MSGBOX_DEFAULT
-	giveitem ITEM_TM_FLAMETHROWER
+	giveitem ITEM_TM_OVERHEAT
 	setflag FLAG_BADGE15_GET
 	setflag FLAG_DEFEATED_CINNABAR_GYM
 	addvar VAR_NUM_BADGES, 1
@@ -67,7 +67,7 @@ SeafoamIslands2_Text_GymStatuePlayerWon::
 
 SeafoamIslands2_Text_TM:
 	.string "Take this too. This TM contains\n"
-	.string "the awesome FLAMETHROWER.\p"
+	.string "the awesome OVERHEAT.\p"
 	.string "I hope your next opponent has an\n"
 	.string "extra BURN HEAL! Waaah!$"
 SeafoamIslands2_Text_BlaineIntro:

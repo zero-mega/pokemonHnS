@@ -1,5 +1,6 @@
 .set LOCALID_ROUTE14_SUICUNE, 5
 .set LOCALID_ROUTE14_EUSINE, 6
+.set LOCALID_ROUTE14_PIDGEOTTO, 9
 
 Route14_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route14_OnTransition
@@ -162,6 +163,8 @@ Route14_EventScript_Trevor::
 	msgbox Route14_Text_PokefanmTrevorAfterBattle, MSGBOX_AUTOCLOSE
 	end
 
+
+
 Route14_Text_Eusine:
 	.string "EUSINE: {PLAYER}! Not again!\n"
 	.string "I'll be there first next time!\p"
@@ -217,4 +220,101 @@ Route14_Text_PokefanmTrevorBeaten:
 Route14_Text_PokefanmTrevorAfterBattle:
 	.string "If only there were an easy way to\n"
 	.string "identify where I got my POKéMON…$"
+
+Route14_EventScript_Pidgeotto::
+	lockall
+	faceplayer
+	playmoncry SPECIES_PIDGEOTTO, CRY_MODE_NORMAL
+	msgbox Route14_Text_Pidgeotto, MSGBOX_DEFAULT
+	waitmoncry
+	goto_if_set FLAG_GOT_ROUTE_14_AERIAL_ACE, Route14_EventScript_PidgeottoBlowPlayer
+	msgbox Route14_Text_PidgeottoBerry, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, FALSE, Route14_EventScript_PidgeottoBlowPlayer
+	chooseitem BERRIES_POCKET
+	removeitem VAR_ITEM_ID, 1
+	goto_if_ne VAR_ITEM_ID, ITEM_QUALOT_BERRY, Route14_EventScript_PidgeottoDislikedBerry
+	msgbox Route14_Text_PidgeottoAteBerry, MSGBOX_DEFAULT
+	giveitem ITEM_TM_AERIAL_ACE
+	setflag FLAG_GOT_ROUTE_14_AERIAL_ACE
+Route14_EventScript_PidgeottoBlowPlayer::
+	closemessage
+	playse SE_M_TWISTER
+	call_if_eq VAR_FACING, DIR_EAST, Route14_EventScript_PidgeottoBlowPlayerLeft
+	releaseall
+	end
+Route14_EventScript_PidgeottoDislikedBerry::
+	msgbox Route14_Text_PidgeottoTurnedAway, MSGBOX_DEFAULT
+	goto Route14_EventScript_PidgeottoBlowPlayer
+
+Route14_EventScript_PidgeottoBlowPlayerLeft::
+	applymovement LOCALID_ROUTE14_PIDGEOTTO, Route14_Movement_JumpLeft
+	applymovement OBJ_EVENT_ID_PLAYER, Route14_Movement_Player_BlownLeft
+	waitmovement 0
+	return
+
+Route14_Movement_Player_BlownUp:
+	lock_facing_direction
+	walk_up
+	walk_up
+	unlock_facing_direction
+	step_end
+
+Route14_Movement_Player_BlownLeft:
+	face_up
+	delay_8
+	face_left
+	delay_8
+	face_down
+	delay_8
+	face_right
+	delay_8
+	face_up
+	delay_8
+	face_left
+	delay_8
+	face_down
+	face_right
+	face_up
+	face_left
+	face_down
+	face_right
+	face_up
+	face_left
+	face_down
+	face_right
+	face_up
+	face_left
+	lock_facing_direction
+	walk_left
+	walk_left
+	unlock_facing_direction
+	step_end
+
+Route14_Movement_JumpUp:
+	jump_in_place_up
+	step_end
+
+Route14_Movement_JumpLeft:
+	jump_in_place_left
+	step_end
+
+Route14_Movement_StuckPidgeottoJump0:
+	jump_in_place_up
+	step_end
+
+Route14_Movement_StuckPidgeottoJump:
+	jump_2_up
+	jump_in_place_left_right
+	jump_in_place_left_right
+	face_left
+	step_end
+
+Route14_Text_Pidgeotto:
+	.string "PIDGEOTT: Kaaaaa!$"
+Route14_Text_PidgeottoBerry:
+	.string "Give the PIDGEOTTO a BERRY?$"
+Route14_Text_PidgeottoAteBerry:
+	.string "PIDGEOTTO enjoyed the QUALOT BERRY!$"
+Route14_Text_PidgeottoTurnedAway:
+	.string "PIDGEOTTO doesn't like it!$"
 
