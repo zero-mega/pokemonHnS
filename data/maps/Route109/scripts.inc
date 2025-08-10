@@ -60,7 +60,7 @@ Route109_EventScript_DoSailToDewford::
 	hideobjectat LOCALID_BOAT_R109, MAP_ROUTE109
 	msgbox DewfordTown_Text_BrineyLandedInDewford, MSGBOX_DEFAULT
 	closemessage
-	copyvar VAR_BRINEY_LOCATION, VAR_0x8008
+	copyvar VAR_GARBAGEVAR, VAR_0x8008
 	resetobjectsubpriority OBJ_EVENT_ID_PLAYER, MAP_ROUTE109
 	resetobjectsubpriority LOCALID_BRINEY_DEWFORD, MAP_DEWFORD_TOWN
 	copyobjectxytoperm LOCALID_BRINEY_DEWFORD

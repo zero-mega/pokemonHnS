@@ -73,6 +73,7 @@ VermilionCity_TriggerCity:: @flagheap
 	clearflag FLAG_HIDE_GROUDON
 	clearflag FLAG_HIDE_KYOGRE
 	clearflag FLAG_HIDE_RAYQUAZA
+	clearflag FLAG_HIDE_SEAFOAM_BLAINE
 
 
 	setvar VAR_KANTO_ROCKET_STORY_STATE, 0

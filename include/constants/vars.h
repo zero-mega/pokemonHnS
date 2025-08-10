@@ -167,7 +167,7 @@
 #define VAR_CINNABAR_ISLAND_STATE                           0x4093
 #define VAR_MT_SILVER_STATE                     0x4094
 #define VAR_LILYCOVE_FAN_CLUB_STATE                      0x4095
-#define VAR_BRINEY_LOCATION                              0x4096
+#define VAR_EMBEDDED_TOWER                              0x4096 // 2 = fight rayquaza
 #define VAR_INIT_SECRET_BASE                             0x4097
 #define VAR_PETALBURG_WOODS_STATE                        0x4098
 #define VAR_LILYCOVE_CONTEST_LOBBY_STATE                 0x4099

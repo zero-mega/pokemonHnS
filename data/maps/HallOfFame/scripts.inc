@@ -66,6 +66,8 @@ HallOfFame_EventScript_SetFirstGameClearFlags::
 HallOfFame_EventScript_SetGameClearFlags::
 	clearflag FLAG_HIDE_LATIOS
 	clearflag FLAG_HIDE_LATIAS
+	clearflag FLAG_DEFEATED_MEW
+	clearflag FLAG_DEFEATED_DEOXYS
 	clearflag FLAG_HIDE_RAYQUAZA
 	clearflag FLAG_HIDE_GROUDON
 	clearflag FLAG_HIDE_KYOGRE
@@ -73,6 +75,7 @@ HallOfFame_EventScript_SetGameClearFlags::
 	clearflag FLAG_HIDE_CERULEANCAVE_GUARD
 	clearflag FLAG_HIDE_VERMILION_SNORLAX
 	clearflag FLAG_HIDE_ZAPDOS
+	setflag FLAG_IS_KANTO_CHAMPION
 	setvar VAR_COMPLETED_LUGIA, 4
 	setvar VAR_COMPLETED_HO_OH, 4
 	call_if_ge VAR_SUICUNE_ENCOUNTERS, 8, HallOfFame_EventScript_SpawnSuicuneCheck

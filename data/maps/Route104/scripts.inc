@@ -412,7 +412,7 @@ Route104_EventScript_ArriveInDewford::
 	call Common_EventScript_StopBrineysBoatMusic
 	setflag FLAG_GARBAGEFLAG
 	hideobjectat LOCALID_BOAT_R104, MAP_ROUTE104
-	copyvar VAR_BRINEY_LOCATION, VAR_0x8008
+	copyvar VAR_GARBAGEVAR, VAR_0x8008
 	resetobjectsubpriority OBJ_EVENT_ID_PLAYER, MAP_ROUTE104
 	resetobjectsubpriority LOCALID_BRINEY_DEWFORD, MAP_DEWFORD_TOWN
 	copyobjectxytoperm LOCALID_BRINEY_DEWFORD

@@ -8106,7 +8106,7 @@
       "name": "CinnabarVolcano1_Layout",
       "width": 35,
       "height": 28,
-      "primary_tileset": "gTileset_Johto_General",
+      "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_BlackthornGym",
       "border_filepath": "data/layouts/CinnabarVolcano1/border.bin",
       "blockdata_filepath": "data/layouts/CinnabarVolcano1/map.bin"
@@ -8930,6 +8930,16 @@
       "secondary_tileset": "gTileset_MtSilverSnow",
       "border_filepath": "data/layouts/MtSilverSummitTestNight/border.bin",
       "blockdata_filepath": "data/layouts/MtSilverSummitTestNight/map.bin"
+    },
+    {
+      "id": "LAYOUT_LAKE_OF_RAGE_UNDERGROUND",
+      "name": "LakeOfRageUnderground_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Johto_NorthEast",
+      "secondary_tileset": "gTileset_Cave1_15",
+      "border_filepath": "data/layouts/LakeOfRageUnderground/border.bin",
+      "blockdata_filepath": "data/layouts/LakeOfRageUnderground/map.bin"
     }
   ]
 }

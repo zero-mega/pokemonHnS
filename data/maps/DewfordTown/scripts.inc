@@ -150,7 +150,7 @@ DewfordTown_EventScript_SailToPetalburg::
 	setvar VAR_GARBAGEVAR, 2
 	resetobjectsubpriority OBJ_EVENT_ID_PLAYER, MAP_DEWFORD_TOWN
 	warp MAP_ROUTE104_MR_BRINEYS_HOUSE, 5, 4
-	copyvar VAR_BRINEY_LOCATION, VAR_0x8008
+	copyvar VAR_GARBAGEVAR, VAR_0x8008
 	waitstate
 	release
 	end
@@ -186,7 +186,7 @@ DewfordTown_EventScript_SailToSlateport::
 	call_if_unset FLAG_DELIVERED_DEVON_GOODS, DewfordTown_EventScript_LandedSlateportDeliverGoods
 	call_if_set FLAG_DELIVERED_DEVON_GOODS, DewfordTown_EventScript_LandedSlateport
 	closemessage
-	copyvar VAR_BRINEY_LOCATION, VAR_0x8008
+	copyvar VAR_GARBAGEVAR, VAR_0x8008
 	resetobjectsubpriority OBJ_EVENT_ID_PLAYER, MAP_DEWFORD_TOWN
 	resetobjectsubpriority LOCALID_BRINEY_R109, MAP_ROUTE109
 	copyobjectxytoperm LOCALID_BRINEY_R109

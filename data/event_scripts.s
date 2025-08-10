@@ -587,9 +587,9 @@ EventScript_WhiteOut::
 	end
 
 EventScript_ResetMrBriney::
-	goto_if_eq VAR_BRINEY_LOCATION, 1, EventScript_MoveMrBrineyToHouse
-	goto_if_eq VAR_BRINEY_LOCATION, 2, EventScript_MoveMrBrineyToDewford
-	goto_if_eq VAR_BRINEY_LOCATION, 3, EventScript_MoveMrBrineyToRoute109
+	goto_if_eq VAR_GARBAGEVAR, 1, EventScript_MoveMrBrineyToHouse
+	goto_if_eq VAR_GARBAGEVAR, 2, EventScript_MoveMrBrineyToDewford
+	goto_if_eq VAR_GARBAGEVAR, 3, EventScript_MoveMrBrineyToRoute109
 	end
 
 EventScript_MoveMrBrineyToHouse::
@@ -641,15 +641,15 @@ Common_EventScript_UpdateBrineyLocation::
 	return
 
 EventScript_SetBrineyLocation_House::
-	setvar VAR_BRINEY_LOCATION, 1
+	setvar VAR_GARBAGEVAR, 1
 	return
 
 EventScript_SetBrineyLocation_Dewford::
-	setvar VAR_BRINEY_LOCATION, 2
+	setvar VAR_GARBAGEVAR, 2
 	return
 
 EventScript_SetBrineyLocation_Route109::
-	setvar VAR_BRINEY_LOCATION, 3
+	setvar VAR_GARBAGEVAR, 3
 	return
 
 	.include "data/scripts/pkmn_center_nurse.inc"
@@ -684,8 +684,8 @@ Common_EventScript_BufferTrendyPhrase::
 	return
 
 EventScript_BackupMrBrineyLocation::
-	copyvar VAR_0x8008, VAR_BRINEY_LOCATION
-	setvar VAR_BRINEY_LOCATION, 0
+	copyvar VAR_0x8008, VAR_GARBAGEVAR
+	setvar VAR_GARBAGEVAR, 0
 	return
 
 	.include "data/scripts/surf.inc"
@@ -775,7 +775,7 @@ EventScript_HideMrBriney::
 	setflag FLAG_GARBAGEFLAG
 	setflag FLAG_GARBAGEFLAG
 	setflag FLAG_GARBAGEFLAG
-	setvar VAR_BRINEY_LOCATION, 0
+	setvar VAR_GARBAGEVAR, 0
 	return
 
 RusturfTunnel_EventScript_SetRusturfTunnelOpen::
@@ -2023,3 +2023,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/FuchsiaSafariZoneCave/scripts.inc"
 
 	.include "data/maps/MtSilverSummitTestNight/scripts.inc"
+
+	.include "data/maps/LakeOfRageUnderground/scripts.inc"
