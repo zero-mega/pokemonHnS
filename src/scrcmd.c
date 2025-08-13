@@ -1077,6 +1077,7 @@ bool8 ScrCmd_applymovement2(struct ScriptContext *ctx)
     ScriptMovement_StartObjectMovementScript(localId, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup, movementScript);
     sMovingNpcId = localId;
     objEvent = GetFollowerObject();
+    return FALSE;
 
 }
 

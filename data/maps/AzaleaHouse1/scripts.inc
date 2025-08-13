@@ -48,7 +48,7 @@ AzaleaHouse1_EventScript_Apprentice2::
 	end
 
 AzaleaHouse1_EventScript_Apprentice3::
-	goto_if_unset FLAG_GOT_CHARCOAL, AzaleaHouse1_EventScript_Apprentice4
+	goto_if_set FLAG_GOT_CHARCOAL, AzaleaHouse1_EventScript_Apprentice4
 	msgbox CharcoalKiln_Text_Apprentice3, MSGBOX_DEFAULT
 	giveitem ITEM_CHARCOAL 
 	setflag FLAG_GOT_CHARCOAL

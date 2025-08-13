@@ -73,6 +73,7 @@ HallOfFame_EventScript_SetGameClearFlags::
 	clearflag FLAG_HIDE_KYOGRE
 	clearflag FLAG_HIDE_MEWTWO
 	clearflag FLAG_HIDE_VERMILION_SNORLAX
+	clearflag FLAG_HIDE_SUDOWOODO
 	clearflag FLAG_HIDE_ZAPDOS
 	setflag FLAG_IS_KANTO_CHAMPION
 	setvar VAR_COMPLETED_LUGIA, 4
