@@ -31,7 +31,6 @@ VermilionCity_TriggerCity:: @flagheap
 	setflag FLAG_HIDE_ROUTE14_EUSINE
 	setflag FLAG_HIDE_ROUTE14_SUICUNE
 	
-
 	clearflag FLAG_BADGE09_GET
 	clearflag FLAG_BADGE10_GET
 	clearflag FLAG_BADGE11_GET
@@ -75,6 +74,14 @@ VermilionCity_TriggerCity:: @flagheap
 	clearflag FLAG_HIDE_RAYQUAZA
 	clearflag FLAG_HIDE_SEAFOAM_BLAINE
 
+	clearflag FLAG_HIDE_CELADON_FALKNER
+	clearflag FLAG_HIDE_VIRIDIAN_BUGSY
+	clearflag FLAG_HIDE_DEPTSTORE_WHITNEY
+	clearflag FLAG_HIDE_BELLCHIME_MORTY
+	clearflag FLAG_HIDE_CAFE_JASMINE
+	clearflag FLAG_HIDE_LAKE_PRYCE
+	clearflag FLAG_HIDE_DEN_CLAIR
+
 
 	setvar VAR_KANTO_ROCKET_STORY_STATE, 0
 	setvar VAR_BILLS_GRANDPA, 0
@@ -94,6 +101,22 @@ VermilionCity_TriggerCity:: @flagheap
 	setvar VAR_MT_SILVER_STATE, 0, @removelater
 	setvar VAR_PALLETTOWN_LABSTATE, 0 @removelater
 	clearflag FLAG_HIDE_LEAGUE_BLACKBELT @removelater
+	setflag FLAG_HIDE_DOJO_FALKNER
+	setflag FLAG_HIDE_DOJO_BUGSY
+	setflag FLAG_HIDE_DOJO_WHITNEY
+	setflag FLAG_HIDE_DOJO_MORTY
+	setflag FLAG_HIDE_DOJO_CHUCK
+	setflag FLAG_HIDE_DOJO_JASMINE
+	setflag FLAG_HIDE_DOJO_PRYCE
+	setflag FLAG_HIDE_DOJO_CLAIR
+	setflag FLAG_HIDE_DOJO_BROCK
+	setflag FLAG_HIDE_DOJO_MISTY
+	setflag FLAG_HIDE_DOJO_SURGE
+	setflag FLAG_HIDE_DOJO_ERIKA
+	setflag FLAG_HIDE_DOJO_JANINE
+	setflag FLAG_HIDE_DOJO_SABRINA
+	setflag FLAG_HIDE_DOJO_BLAINE
+	setflag FLAG_HIDE_DOJO_BLUE
 	end
 
 VermilionCity_EventScript_OldSeaMap::

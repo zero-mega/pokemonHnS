@@ -265,6 +265,7 @@ VermilionCityGym_EventScript_Surge::
 	call Common_EventScript_SetGymTrainers
 	msgbox VermilionGym_Text_LtSurgeTm, MSGBOX_DEFAULT
 	giveitem ITEM_TM_THUNDERBOLT
+	clearflag FLAG_HIDE_PLANT_SURGE
 	closemessage
 	release
 	end

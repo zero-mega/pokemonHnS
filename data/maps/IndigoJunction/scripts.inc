@@ -1,7 +1,31 @@
 .set LOCALID_INDIGOJUNCTION_POLICEMAN, 1
+.set LOCALID_INDIGOJUNCTION_JANINE, 4
 
 IndigoJunction_MapScripts::
 	.byte 0
+
+IndigoJunction_EventScript_Janine::
+    lock
+    faceplayer
+    msgbox IndigoJunction_Text_Janine, MSGBOX_DEFAULT
+    closemessage
+    fadescreenswapbuffers FADE_TO_BLACK
+    setflag FLAG_HIDE_ROUTE22_JANINE
+    removeobject LOCALID_INDIGOJUNCTION_JANINE
+    fadescreenswapbuffers FADE_FROM_BLACK
+    clearflag FLAG_HIDE_DOJO_JANINE
+    release
+    end
+
+IndigoJunction_Text_Janine:
+    .string "JAINE: I'm on the way to my dad's\n"
+    .string "house to give him his lunch.\p"
+    .string "The ELITE FOUR has no time to rest\n"
+    .string "day or night. It's such hard work,\l"
+    .string "you know?\p"
+    .string "If you're ready for another battle,\n"
+    .string "I'll be at the DOJO later.$"
+
 
 IndigoJunction_EventScript_Officer::
     msgbox VictoryRoadGate_Text_EightBadges, MSGBOX_NPC

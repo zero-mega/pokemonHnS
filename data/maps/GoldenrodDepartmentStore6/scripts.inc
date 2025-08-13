@@ -1,3 +1,5 @@
+.set LOCALID_STORE_WHITNEY, 4
+
 GoldenrodDepartmentStore6_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, GoldenrodDeptElevator_OnFrame
 	.byte 0
@@ -14,6 +16,25 @@ GoldenrodDeptStore6_EventScript_SetWarpDay::
 	release
 	end
 
+GoldenrodDeptStore6_EventScript_Whitney::
+	lock
+	faceplayer
+	msgbox GoldenrodDeptStore6_Text_Whitney, MSGBOX_DEFAULT
+	closemessage
+	fadescreenswapbuffers FADE_TO_BLACK
+	setflag FLAG_HIDE_DEPTSTORE_WHITNEY
+	removeobject LOCALID_STORE_WHITNEY
+	fadescreenswapbuffers FADE_FROM_BLACK
+	clearflag FLAG_HIDE_DOJO_WHITNEY
+	release
+	end
+
+GoldenrodDeptStore6_Text_Whitney:
+	.string "{PLAYER}! Fancy seeing you here!\p"
+	.string "I'm picking up something for\n"
+	.string "my MILTANK.\p"
+	.string "If you want another battle, come to\n"
+	.string "the FIGHTING DOJO!$"
 
 GoldenrodDepartmentStore6_EventScript_Jose::
 	lock

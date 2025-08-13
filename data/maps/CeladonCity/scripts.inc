@@ -1,3 +1,5 @@
+.set LOCALID_CELADON_ERIKA, 15
+
 CeladonCity_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, CeladonCity_OnFrame
 	.byte 0
@@ -10,6 +12,25 @@ CeladonCity_EventScript_CityEnter::
 	setflag FLAG_VISITED_CELADON_CITY
 	setvar VAR_CELADON_CITY_STATE, 1
 	end
+
+CeladonCity_EventScript_Erika::
+    lock
+    faceplayer
+    msgbox CeladonCity_Text_Erika, MSGBOX_DEFAULT
+    closemessage
+    fadescreenswapbuffers FADE_TO_BLACK
+    setflag FLAG_HIDE_FOUNTAIN_ERIKA
+    removeobject LOCALID_CELADON_ERIKA
+    fadescreenswapbuffers FADE_FROM_BLACK
+    clearflag FLAG_HIDE_DOJO_ERIKA
+    release
+    end
+
+CeladonCity_Text_Erika:
+    .string "Oh, {PLAYER}.\n"
+	.string "Isn't the fountain lovely today?\p"
+	.string "If you wish for another battle,\n"
+	.string "I'll be at the FIGHTING DOJO.$"
 
 CeladonCity_EventScript_Fatman::
 	msgbox CeladonCity_Text_Fisher, MSGBOX_NPC

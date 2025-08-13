@@ -1,3 +1,5 @@
+.set LOCALID_VIRIDIAN_BUGSY, 16
+
 ViridianForest_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, ViridianForest_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
@@ -6,6 +8,28 @@ ViridianForest_MapScripts::
 ViridianForest_OnTransition: 
 	callnative SetTimeBasedEncounters
 	end
+
+ViridianForest_EventScript_Bugsy::
+	lock
+	faceplayer
+	msgbox ViridianForest_Text_Bugsy, MSGBOX_DEFAULT
+	closemessage
+	fadescreenswapbuffers FADE_TO_BLACK
+	setflag FLAG_HIDE_VIRIDIAN_BUGSY
+	removeobject LOCALID_VIRIDIAN_BUGSY
+	fadescreenswapbuffers FADE_FROM_BLACK
+	clearflag FLAG_HIDE_DOJO_BUGSY
+	release
+	end
+
+ViridianForest_Text_Bugsy:
+	.string "BUGSY: I came to KANTO to look for\n"
+	.string "BUG-TYPE POKéMON, so I can become\l"
+	.string "a stronger BUG-TYPE POKéMON\l"
+	.string "TRAINER!"
+    .string "If you're ready for another match,\n"
+    .string "I'll be at the DOJO in SAFFRON!$"
+
 
 ViridianForest_EventScript_MaxPotion::
     finditem ITEM_MAX_POTION

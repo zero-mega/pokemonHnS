@@ -10,6 +10,26 @@ Route10_OnTransition:
 	callnative SetTimeBasedEncounters
 	end
 
+Route10_EventScript_Surge::
+    lock
+    faceplayer
+    msgbox Route10_Text_Surge, MSGBOX_DEFAULT
+    closemessage
+    fadescreenswapbuffers FADE_TO_BLACK
+    setflag FLAG_HIDE_PLANT_SURGE
+    removeobject LOCALID_ROUTE10_SURGE
+    fadescreenswapbuffers FADE_FROM_BLACK
+    clearflag FLAG_HIDE_DOJO_SURGE
+    release
+    end
+
+Route10_Text_Surge:
+    .string "Hey, kid!\p"
+	.string "Keep your guard up out here,\n"
+	.string "this place is cracklin' with power!\p"
+	.string "If you want a rematch, report to\n"
+	.string "the FIGHTING DOJO!$"
+
 Route10_EventScript_UltraBall::
 	finditem ITEM_ULTRA_BALL
 	end

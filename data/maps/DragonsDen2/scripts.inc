@@ -1,4 +1,5 @@
 .set LOCALID_DRAGONSDEN2_CLAIR, 5
+.set LOCALID_DEN_CLAIR, 35
 
 DragonsDen2_MapScripts::
 	@map_script MAP_SCRIPT_ON_FRAME_TABLE, DragonsDen2_OnFrame
@@ -7,6 +8,25 @@ DragonsDen2_MapScripts::
 DragonsDen2_OnFrame::
 	map_script_2 VAR_BLACKTHORN_CITY_STATE, 3, DragonsDen2_EventScript_Clair
 	.2byte 0
+
+DragonsDen_EventScript_ClairRematch::
+    lock
+    faceplayer
+    msgbox DragonsDen_Text_Clair, MSGBOX_DEFAULT
+    closemessage
+    fadescreenswapbuffers FADE_TO_BLACK
+    setflag FLAG_HIDE_DEN_CLAIR
+    removeobject LOCALID_DEN_CLAIR
+    fadescreenswapbuffers FADE_FROM_BLACK
+    clearflag FLAG_HIDE_DOJO_CLAIR
+    release
+    end
+
+DragonsDen_Text_Clair:
+    .string "{PLAYER}… So you're here.\p"
+	.string "If you think you can keep up,\n"
+	.string "with me, come to the FIGHTING\l"
+	.string "DOJO in SAFFRON.$"
 
 DragonsDen2_Trigger_ClairLeft::
 	lock 

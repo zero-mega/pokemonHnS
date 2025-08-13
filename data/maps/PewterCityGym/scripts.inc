@@ -24,6 +24,7 @@ PewterCityGym_EventScript_Brock::
 	addvar VAR_NUM_BADGES, 1
 	setvar VAR_0x8008, 9
 	call Common_EventScript_SetGymTrainers
+	clearflag FLAG_HIDE_DIGLETT_BROCK
 	closemessage
 	release
 	end

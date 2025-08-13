@@ -2,6 +2,7 @@
 .set LOCALID_LAKEOFRAGE_LANCE, 3
 .set LOCALID_LAKEOFRAGE_DRAGONITE, 16
 .set LOCALID_LAKEOFRAGE_OLDMAN, 4
+.set LOCALID_LAKE_PRYCE, 17
 
 LakeOfRage_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, LakeOfRage_OnTransition
@@ -29,6 +30,25 @@ LakeOfRage_EventScript_SetHighTide::
 LakeOfRage_EventScript_ThunderStorm::
 	setweather WEATHER_RAIN_THUNDERSTORM
 	end
+
+LakeOfRage_EventScript_Pryce::
+    lock
+    faceplayer
+    msgbox LakeOfRage_Text_Pryce, MSGBOX_DEFAULT
+    closemessage
+    fadescreenswapbuffers FADE_TO_BLACK
+    setflag FLAG_HIDE_LAKE_PRYCE
+    removeobject LOCALID_LAKE_PRYCE
+    fadescreenswapbuffers FADE_FROM_BLACK
+    clearflag FLAG_HIDE_DOJO_PRYCE
+    release
+    end
+
+LakeOfRage_Text_Pryce:
+    .string "{PLAYER}.\p"
+	.string "Even here, the cold keeps me sharp.\p"
+	.string "If you wish to battle again, come\n"
+	.string "to the FIGHTING DOJO.$"
 
 LakeOfRage_EventScript_Gramps::
 	goto_if_ge VAR_MAHOGANY_TOWN_STATE, 14, LakeOfRage_EventScript_Gramps2

@@ -60,6 +60,7 @@ FuchsiaCityGym_EventScript_Janine::
 	clearflag FLAG_TEMP_3
 	clearflag FLAG_TEMP_5
 	clearflag FLAG_TEMP_7
+	clearflag FLAG_HIDE_ROUTE22_JANINE
 	closemessage
 	release
 	end

@@ -1,4 +1,5 @@
 .set LOCALID_CINNABAR_BLUE, 1
+.set LOCALID_CINNABAR_BLAINE, 12
 
 CinnabarIsland_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, CinnabarIsland_OnTransition
@@ -18,6 +19,28 @@ CinnabarIsland_EventScript_CityEnter::
 CinnabarIsland_OnTransition:
 	callnative SetTimeBasedEncounters
 	end
+
+CinnabarIsland_EventScript_Blaine::
+    lock
+    faceplayer
+    msgbox CinnabarIsland_Text_Blaine, MSGBOX_DEFAULT
+    closemessage
+    fadescreenswapbuffers FADE_TO_BLACK
+    setflag FLAG_HIDE_CINNABAR_BLAINE
+    removeobject LOCALID_CINNABAR_BLAINE
+    fadescreenswapbuffers FADE_FROM_BLACK
+    clearflag FLAG_HIDE_DOJO_BLAINE
+    release
+    end
+
+CinnabarIsland_Text_Blaine:
+    .string "BLAINE: I'll never give up\n"
+	.string "until the day I've rebuilt\l"
+	.string "CINNABAR GYM!\p"
+	.string "I'll be at the FIGHTING DOJO\n"
+	.string "until then.$"
+
+
 
 CinnabarIsland_EventScript_Blue::
 	lock

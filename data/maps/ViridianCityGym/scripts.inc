@@ -4,6 +4,8 @@ ViridianCityGym_MapScripts::
 ViridianCityGym_EventScript_Blue::
 	lock
 	faceplayer
+	goto_if_unset FLAG_HIDE_DOJO_BLUE, ViridianCityGym_EventScript_BlueAtDojo
+	goto_if_set FLAG_DEFEATED_VIRIDIAN_GYM, ViridianCityGym_EventScript_BlueGotoDojo
 	goto_if_set FLAG_DEFEATED_VIRIDIAN_GYM, ViridianCityGym_EventScript_Blue_Defeated
 	msgbox ViridianCityGym_Text_LeaderBlue_Before, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_BLUE, ViridianCityGym_Text_LeaderBlue_Win
@@ -20,6 +22,7 @@ ViridianCityGym_EventScript_Blue::
 	closemessage
 	setflag FLAG_HIDE_LEAGUE_BLACKBELT
 	setflag FLAG_HIDE_SEAFOAM_BLAINE
+	clearflag FLAG_HIDE_CINNABAR_BLAINE
 	release
 	end
 
@@ -29,6 +32,23 @@ ViridianCityGym_EventScript_Blue_Defeated::
 	release
 	end
 
+ViridianCityGym_EventScript_BlueGotoDojo::
+	msgbox ViridianCityGym_Text_BlueGotoDojo, MSGBOX_DEFAULT
+	closemessage
+	clearflag FLAG_HIDE_DOJO_BLUE
+	release
+	end
+
+ViridianCityGym_Text_BlueGotoDojo:
+	.string "BLUE: Back for more already?\p"
+	.string "If you want another shot at me,\n"
+	.string "come to the FIGHTING DOJO!$"
+
+ViridianCityGym_EventScript_BlueAtDojo::
+	msgbox ViridianCityGym_Text_LeaderBlue_Epilogue, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
 
 ViridianCityGym_Text_LeaderBlue_Before:
 	.string "BLUE: Yo! Finally got here, huh?\p"

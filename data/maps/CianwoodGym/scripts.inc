@@ -31,6 +31,8 @@ CianwoodGym_Text_GymStatueCertified:
 CianwoodGym_EventScript_Chuck::
 	lock
 	faceplayer
+	goto_if_unset FLAG_HIDE_DOJO_CHUCK, CianwoodGym_EventScript_ChuckAtDojo
+	goto_if_set FLAG_VISITED_VERMILION_CITY, CianwoodGym_EventScript_ChuckGotoDojo
 	goto_if_set FLAG_DEFEATED_CIANWOOD_GYM, CianwoodGym_EventScript_Chuck_Defeated
 	msgbox CianwoodGym_Text_ChuckIntro1, MSGBOX_DEFAULT
 	applymovement LOCALID_CIANWOOD_CHUCK, CianwoodGym_Movement_ChuckLeft
@@ -70,6 +72,29 @@ CianwoodGym_EventScript_ChuckVictory::
 	closemessage
 	release
 	end
+
+CianwoodGym_EventScript_ChuckGotoDojo::
+	msgbox CianwoodGym_Text_ChuckGotoDojo, MSGBOX_DEFAULT
+	closemessage
+	clearflag FLAG_HIDE_DOJO_CHUCK
+	release
+	end
+
+CianwoodGym_Text_ChuckGotoDojo:
+	.string "WAHAHAHA {PLAYER}!\n"
+	.string "I'm in the middle of my training!\p"
+	.string "If you want another match, come to\n"
+	.string "the FIGHTING DOJO in SAFFRON!$"	
+
+CianwoodGym_EventScript_ChuckAtDojo::
+	msgbox CianwoodGym_Text_ChuckAtDojo, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+CianwoodGym_Text_ChuckAtDojo:
+	.string "I will see you at the DOJO!\n"
+	.string "WAHAHAHAHAHA$"
 
 CianwoodGym_EventScript_OlivineCheckMahog::
 	goto_if_set FLAG_DEFEATED_MAHOGANY_GYM, CianwoodGym_EventScript_Chuck_Battle3

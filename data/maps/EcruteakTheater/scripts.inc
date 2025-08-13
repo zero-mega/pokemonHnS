@@ -691,8 +691,6 @@ EcruteakTheater_EventScript_HoohBuffer::
 	bufferspeciesname STR_VAR_1, SPECIES_HO_OH
 	return
 EcruteakTheater_EventScript_LegendaryCutscene::
-	clearflag FLAG_HIDE_LUGIA @CHANGELATER remove both
-	clearflag FLAG_HIDE_HO_OH @CHANGELATER
 	call_if_eq VAR_LUGIA_OR_HOOH, 1, EcruteakTheater_EventScript_LugiaBuffer
 	call_if_eq VAR_LUGIA_OR_HOOH, 2, EcruteakTheater_EventScript_HoohBuffer 
 	msgbox EcruteakTheater_Text_ZukiSeen, MSGBOX_DEFAULT

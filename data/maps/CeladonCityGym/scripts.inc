@@ -18,6 +18,7 @@ CeladonCityGym_EventScript_Erika::
 	addvar VAR_NUM_BADGES, 1
 	setvar VAR_0x8008, 12
 	call Common_EventScript_SetGymTrainers
+	clearflag FLAG_HIDE_FOUNTAIN_ERIKA
 	closemessage
 	release
 	end

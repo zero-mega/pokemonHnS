@@ -104,7 +104,6 @@ CeruleanCityGym_Movement_GruntLeave:
 
 CeruleanCityGym_EventScript_Statue::
 	lockall
-	@goto_if_lt VAR_CERULEAN_CITY_STATE, X,  @CHANGELATER for when misty returns
 	goto_if_set FLAG_BADGE10_GET, CeruleanCity_Gym_EventScript_GymStatuePostVictory
 	msgbox CeruleanCityGym_Text_GymStatue
 	releaseall
@@ -179,6 +178,7 @@ CeruleanCityGym_EventScript_Misty::
 	call Common_EventScript_SetGymTrainers
 	msgbox CeruleanGym_Text_MistyTm, MSGBOX_DEFAULT
 	giveitem ITEM_TM_WATER_PULSE
+	clearflag FLAG_HIDE_CAPE_MISTY
 	call_if_eq VAR_SUICUNE_ENCOUNTERS, 5, CeruleanCityGym_SetSuicuneScene
 	closemessage
 	release

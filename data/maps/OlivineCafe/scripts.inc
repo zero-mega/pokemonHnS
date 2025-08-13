@@ -1,5 +1,31 @@
+.set LOCALID_CAFE_JASMINE, 4
+
 OlivineCafe_MapScripts::
 	.byte 0
+
+OlivineCafe_EventScript_Jasmine::
+	lock
+	faceplayer
+	msgbox OlivineCafe_Text_Jasmine, MSGBOX_DEFAULT
+	closemessage
+	fadescreenswapbuffers FADE_TO_BLACK
+	setflag FLAG_HIDE_CAFE_JASMINE
+	removeobject LOCALID_CAFE_JASMINE
+	fadescreenswapbuffers FADE_FROM_BLACK
+	clearflag FLAG_HIDE_DOJO_JASMINE
+	release
+	end
+
+OlivineCafe_Text_Jasmine:
+	.string "Oh... Hello, {PLAYER}.\p"
+	.string "These dishes in front of me are\n"
+	.string "not all mine...\p"
+	.string "Uh...\p"
+	.string "Actually, the person who sat here\n"
+	.string "before me ate a lot...\p"
+	.string "If you'd like to battle again,\n"
+	.string "please visit me at the FIGHTING\l"
+	.string "DOJO in SAFFRON CITY.$"
 
 OlivineCity_EventScript_SailorA::
 	lock

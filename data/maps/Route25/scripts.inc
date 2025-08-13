@@ -2,7 +2,7 @@
 .set LOCALID_ROUTE25_MAN, 11
 .set LOCALID_ROUTE25_SUICUNE, 16
 .set LOCALID_ROUTE25_EUSINE, 15
-
+.set LOCALID_CAPE_MISTY, 20
 
 Route25_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route25_MapScript_OnTransition
@@ -17,6 +17,27 @@ Route25_MapScript_OnTransition::
 Route25_EventScript_SetSuicuneSceneMid::
 	setobjectxyperm LOCALID_ROUTE25_EUSINE, 65, 9
 	end
+
+Route25_EventScript_MistyRematch::
+    lock
+    faceplayer
+    msgbox Route25_Text_Misty, MSGBOX_DEFAULT
+    closemessage
+    fadescreenswapbuffers FADE_TO_BLACK
+    setflag FLAG_HIDE_CAPE_MISTY
+    removeobject LOCALID_CAPE_MISTY
+    fadescreenswapbuffers FADE_FROM_BLACK
+    clearflag FLAG_HIDE_DOJO_MISTY
+    release
+    end
+
+Route25_Text_Misty:
+    .string "MISTY: I love the sunset here!\n"
+	.string "It gives me the courage to go on,\l"
+	.string "you know?\p"
+	.string "Right!\p"
+	.string "If you're ready for a real splash,\n"
+	.string "meet me at the FIGHTING DOJO!$"
 
 Route25_EventScript_Dudley::
 	trainerbattle_single TRAINER_DUDLEY Route25_Text_SchoolboyDudleySeen, Route25_Text_SchoolboyDudleyBeaten
