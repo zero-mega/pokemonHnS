@@ -21,7 +21,7 @@ SafariZoneEntranceFuchsia_FirstTime::
 
 SafariZoneEntranceFuchsia_EventScript_ExitSafari::
 	lock
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_WEST
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_SOUTH
 	msgbox SafariZone_Text_WouldYouLikeToExit, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, FALSE, SafariZoneEntranceFuchsia_EventScript_ReenterSafari
 	clearflag FLAG_IN_KANTO_SAFARI_ZONE

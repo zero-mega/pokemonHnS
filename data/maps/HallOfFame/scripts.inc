@@ -72,7 +72,6 @@ HallOfFame_EventScript_SetGameClearFlags::
 	clearflag FLAG_HIDE_GROUDON
 	clearflag FLAG_HIDE_KYOGRE
 	clearflag FLAG_HIDE_MEWTWO
-	clearflag FLAG_HIDE_CERULEANCAVE_GUARD
 	clearflag FLAG_HIDE_VERMILION_SNORLAX
 	clearflag FLAG_HIDE_ZAPDOS
 	setflag FLAG_IS_KANTO_CHAMPION

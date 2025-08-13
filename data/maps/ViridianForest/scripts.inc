@@ -1,13 +1,7 @@
 .set LOCALID_VIRIDIAN_BUGSY, 16
 
 ViridianForest_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, ViridianForest_OnTransition
-	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
 	.byte 0
-
-ViridianForest_OnTransition: 
-	callnative SetTimeBasedEncounters
-	end
 
 ViridianForest_EventScript_Bugsy::
 	lock

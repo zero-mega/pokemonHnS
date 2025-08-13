@@ -51,10 +51,10 @@ Route20_EventScript_Dewgong::
 	end
 
 Route20_Text_Seel:
-	.string "SEEL: Seel seel!"
+	.string "SEEL: Seel seel!$"
 
 Route20_Text_Dewgong:
-	.string "DEWGONG: Goooong!"
+	.string "DEWGONG: Goooong!$"
 
 Route20_Text_SeafoamSign:
 	.string "SEAFOAM ISLANDS$"

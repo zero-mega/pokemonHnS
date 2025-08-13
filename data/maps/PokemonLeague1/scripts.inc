@@ -120,10 +120,10 @@ PokemonLeague1_Text_Defeat:
     .string "the ELITE FOUR.$"
 
 PokemonLeague1_Text_RematchBefore:
-    .string "WILL: Ah, welcome back."
+    .string "WILL: Ah, welcome back.\p"
     .string "I have foreseen this encounter.\p"
     .string "My psychic POKéMON and I have\n"
-    .string "evolved,\p"
+    .string "evolved,\l"
     .string "developing new tactics.\p"
     .string "Prepare yourself for a battle of\n"
     .string "enhanced strategy and might.\p"

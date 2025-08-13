@@ -2750,9 +2750,9 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_PARKER] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
+        .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("PARKER"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2997,9 +2997,9 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_BRIANA] =
     {
-        .trainerClass = TRAINER_CLASS_SAILOR,
+        .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_SAILOR,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("BRIANA"),
         .items = {},
         .doubleBattle = FALSE,

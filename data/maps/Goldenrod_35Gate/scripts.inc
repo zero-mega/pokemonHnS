@@ -130,4 +130,4 @@ Route35GoldenrodGate_Text_Fisher:
 	.string "Three years ago, PROF.OAK said that\n"
 	.string "there were 150 different kinds.\p"
 	.string "But recently I heard there's\n"
-	.string "over 270!$"
+	.string "over 400!$"

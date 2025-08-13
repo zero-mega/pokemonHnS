@@ -22,16 +22,14 @@ PewterCity_EventScript_BugCatcher::
 PewterCity_EventScript_Gramps::
 	lock
 	faceplayer
-	checkitem ITEM_SILVER_WING
-	goto_if_eq VAR_RESULT, TRUE, PewterCity_EventScript_GrampsDone
-	checkitem ITEM_RAINBOW_WING
-	goto_if_eq VAR_RESULT, TRUE, PewterCity_EventScript_GrampsDone
-	msgbox PewterCity_Text_Gramps, MSGBOX_DEFAULT
 	goto_if_eq VAR_LUGIA_OR_HOOH, 1, PewterCity_EventScript_GrampsRainbowWing
 	goto_if_eq VAR_LUGIA_OR_HOOH, 2, PewterCity_EventScript_GrampsSilverWing
 	end
 
 PewterCity_EventScript_GrampsRainbowWing::
+	checkitem ITEM_RAINBOW_WING
+	goto_if_eq VAR_RESULT, TRUE, PewterCity_EventScript_GrampsDone
+	msgbox PewterCity_Text_Gramps, MSGBOX_DEFAULT
 	setvar VAR_COMPLETED_HO_OH, 4
 	giveitem ITEM_RAINBOW_WING
 	setflag FLAG_HIDE_TINTOWER_GUARD
@@ -40,6 +38,9 @@ PewterCity_EventScript_GrampsRainbowWing::
 	end
 
 PewterCity_EventScript_GrampsSilverWing::
+	checkitem ITEM_SILVER_WING
+	goto_if_eq VAR_RESULT, TRUE, PewterCity_EventScript_GrampsDone
+	msgbox PewterCity_Text_Gramps, MSGBOX_DEFAULT
 	setvar VAR_COMPLETED_LUGIA, 4
 	giveitem ITEM_SILVER_WING
 	setflag FLAG_HIDE_WHIRL_ISLANDS_TENTACRUEL

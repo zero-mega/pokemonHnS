@@ -12,6 +12,7 @@ ViridianCity_EventScript_CityEnter::
 	end
 
 ViridianCity_EventScript_Gramps::
+	lock
 	msgbox ViridianCity_Text_CoffeeGramps_Question, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, FALSE, ViridianCity_EventScript_GrampsDoubted
 	msgbox ViridianCity_Text_CoffeeGramps_Believed, MSGBOX_DEFAULT

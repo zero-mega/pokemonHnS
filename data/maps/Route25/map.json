@@ -69,7 +69,7 @@
       "movement_range_y": 4,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "NULL",
+      "script": "Route25_EventScript_Laura",
       "flag": "0"
     },
     {
@@ -79,9 +79,9 @@
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 5,
-      "movement_range_y": 4,
+      "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "5",
+      "trainer_sight_or_berry_tree_id": "2",
       "script": "Route25_EventScript_Lloyd",
       "flag": "0"
     },

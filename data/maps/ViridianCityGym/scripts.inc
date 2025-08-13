@@ -21,6 +21,7 @@ ViridianCityGym_EventScript_Blue::
 	call Common_EventScript_SetGymTrainers
 	closemessage
 	setflag FLAG_HIDE_LEAGUE_BLACKBELT
+	setflag FLAG_HIDE_CERULEANCAVE_GUARD
 	setflag FLAG_HIDE_SEAFOAM_BLAINE
 	clearflag FLAG_HIDE_CINNABAR_BLAINE
 	release

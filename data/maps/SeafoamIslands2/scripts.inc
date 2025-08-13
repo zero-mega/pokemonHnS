@@ -21,6 +21,7 @@ SeafoamIslands2_EventScript_Blaine::
 	setflag FLAG_DEFEATED_CINNABAR_GYM
 	addvar VAR_NUM_BADGES, 1
 	setvar VAR_0x8008, 15
+	clearflag FLAG_HIDE_SEAFOAM_GYMGUY
 	call Common_EventScript_SetGymTrainers
 	closemessage
 	release

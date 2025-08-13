@@ -113,7 +113,7 @@ EventScript_SmashRock:: @ fallthrough
 @ Interact with headbutt tree
 EventScript_Headbutt::
 	lockall
-	@goto_if_unset FLAG_GET_HEADBUTT, EventScript_CantHeadbuttTree
+	goto_if_unset FLAG_GET_HEADBUTT, EventScript_CantHeadbuttTree
 	setvar VAR_RESULT, 0
 	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantHeadbuttTree
 	@setfieldeffectargument 0, VAR_RESULT

@@ -98,7 +98,7 @@ Route14_EventScript_Suicune::
 	removeobject LOCALID_ROUTE14_SUICUNE
 	removeobject LOCALID_ROUTE14_EUSINE
 	setvar VAR_SUICUNE_ENCOUNTERS, 5
-	call_if_eq VAR_CERULEAN_CITY_STATE, 4, CeruleanCityGym_SetSuicuneScene
+	call_if_ge VAR_CERULEAN_CITY_STATE, 3, CeruleanCityGym_SetSuicuneScene
 	closemessage
 	release
 	end
@@ -310,7 +310,7 @@ Route14_Movement_StuckPidgeottoJump:
 	step_end
 
 Route14_Text_Pidgeotto:
-	.string "PIDGEOTT: Kaaaaa!$"
+	.string "PIDGEOTTO: Kaaaaa!$"
 Route14_Text_PidgeottoBerry:
 	.string "Give the PIDGEOTTO a BERRY?$"
 Route14_Text_PidgeottoAteBerry:

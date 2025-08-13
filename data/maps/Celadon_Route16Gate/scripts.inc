@@ -13,6 +13,7 @@ Celadon_Route16Gate_NoBike::
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkRight1
 	waitmovement 0
+	clearflag FLAG_SYS_CYCLING_ROAD
 	releaseall
 	end
 
