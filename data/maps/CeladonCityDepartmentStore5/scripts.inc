@@ -2,18 +2,16 @@
 
 CeladonCityDepartmentStore5_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, CeladonDeptElevator_OnFrame
+	map_script MAP_SCRIPT_ON_TRANSITION, CeladonDept5_EventScript_SetWarp
 	.byte 0
 
 CeladonDept5_EventScript_SetWarp::
-	lock
 	goto_if_set FLAG_NIGHT_POKEMON, CeladonDept5_EventScript_SetWarpDay
 	setdynamicwarp MAP_CELADON_CITY_DEPARTMENT_STORE7, 15, 6
-	release
 	end
 
 CeladonDept5_EventScript_SetWarpDay::
 	setdynamicwarp MAP_CELADON_CITY_DEPARTMENT_STORE6, 15, 6
-	release
 	end
 
 CeladonDept5_EventScript_Gent::

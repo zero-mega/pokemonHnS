@@ -773,11 +773,11 @@ AzaleaGym_Text_GymGuide:
 	.string "It's going to be tough\n"
 	.string "without my advice.\p"
 	.string "Let's see… BUGSY's bagworm POKéMON\n"
-	.string "knows a move that covers its\p"
-	.string "ROCK-type weakness.\n"
-	.string "He's also developed a new verison\p"
-	.string "of CUT that is BUG-type.\n"
-	.string "Oh, and don't forget about those\l"
+	.string "knows a move that covers its\l"
+	.string "ROCK-type weakness.\p"
+	.string "He's also developed a new verison\n"
+	.string "of CUT that is BUG-type.\p"
+	.string "Oh, and don't forget about those\n"
 	.string "nasty critical hits! Good luck!$"
 
 AzaleaGym_Text_GymGuideWin:

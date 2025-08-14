@@ -321,8 +321,11 @@ AzaleaKurtsHouse_EventScript_KurtGsBall::
 	msgbox KurtsHouse_Text_KurtThisBallStartedToShake, MSGBOX_DEFAULT
 	closemessage
 	playse SE_M_PETAL_DANCE
+	waitse
+	playse SE_PIN
 	applymovement LOCALID_AZALEA_TOWN_KURT, Common_Movement_ExclamationMark
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+	delay 60
 	waitse
 	playse SE_M_PETAL_DANCE
 	waitse
