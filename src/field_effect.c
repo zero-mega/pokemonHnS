@@ -938,8 +938,10 @@ u8 CreateMonSprite_FieldMove(u16 species, u32 otId, u32 personality, s16 x, s16 
 
 u8 CreateMonSprite_PicBox(u16 species, s16 x, s16 y, u8 subpriority)
 {
-    // Reuse logic; (otId ^ pid) >= SHINY_ODDS ensures non-shiny
-    return CreateMonSprite_FieldMove(species, 0, SHINY_ODDS, x, y, subpriority);
+    // Force a non-shiny personality: hi=0xFFFF, lo=0x0000 -> xor = 0xFFFF
+    // With otId=0, (otHi ^ otLo ^ pidHi ^ pidLo) == 0xFFFF, which will never be < any SHINY_ODDS.
+    const u32 NON_SHINY_PIC_PERSONALITY = 0xFFFF0000u;
+    return CreateMonSprite_FieldMove(species, /*otId=*/0, NON_SHINY_PIC_PERSONALITY, x, y, subpriority);
 }
 
 void FreeResourcesAndDestroySprite(struct Sprite *sprite, u8 spriteId)

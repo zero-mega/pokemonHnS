@@ -333,7 +333,7 @@ CherrygroveCity_Text_SilverWin:
 
 CherrygroveCity_Text_RivalAfter:
 	.string "… … … … … … … …\p"
-	.string "Do you want to know who I am?.\p"
+	.string "Do you want to know who I am?\p"
 	.string "I'm going to be the world's\n"
 	.string "greatest POKéMON trainer.$"
 

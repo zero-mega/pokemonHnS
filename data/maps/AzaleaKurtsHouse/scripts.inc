@@ -430,7 +430,7 @@ KurtsHouse_Text_KurtBallsFromApricorns:
 
 KurtsHouse_Text_KurtAskYouHaveAnApricorn:
 	.string "KURT: You have 5 BERRIES for me?\p"
-	.string "Fine! I'll turn it into a BALL.$"
+	.string "Fine! I'll turn them into BALLS.$"
 
 KurtsHouse_Text_KurtThatsALetdown:
 	.string "KURT: I don't see 5 {STR_VAR_1}s!$"

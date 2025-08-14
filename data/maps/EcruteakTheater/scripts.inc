@@ -1079,8 +1079,8 @@ EcruteakTheater_Text_ZukiAfterAll:
 	.string "We appreciate how you lived up\n"
 	.string "to our hopes, {PLAYER}!\p"
 	.string "If you learned anything from\n"
-	.string "this, thank Mr. POKéMON and\l"
-	.string "Professor Elm...$"
+	.string "this, thank MR. POKéMON and\l"
+	.string "PROF. ELM...$"
 
 EcruteakTheater_Text_KimonoGirlsBeforeBattle:
 	.string "Talk to Zuki in the middle\n"

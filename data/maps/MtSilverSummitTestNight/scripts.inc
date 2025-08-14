@@ -8,7 +8,7 @@ MtSilverSummitTest_EventScript_Red::
 	faceplayer
 	msgbox MtSilverSummitTest_Text_Red, MSGBOX_DEFAULT
 	closemessage
-	trainerbattle_no_intro TRAINER_JOEY, MtSilverSummitTest_Text_RedBeaten
+	trainerbattle_no_intro TRAINER_RED_2, MtSilverSummitTest_Text_RedBeaten
 	setrespawn HEAL_LOCATION_NEW_BARK_TOWN
 	msgbox MtSilverSummitTest_Text_Red, MSGBOX_DEFAULT
 	closemessage

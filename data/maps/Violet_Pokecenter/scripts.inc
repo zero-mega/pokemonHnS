@@ -12,12 +12,20 @@ Violet_Pokecenter_EventScript_Aide::
 	lock
 	faceplayer
 	goto_if_set FLAG_RECEIVED_TOGEPI_EGG, Violet_Pokecenter_EventScript_Aide_Received
+	getpartysize
+	goto_if_eq VAR_RESULT, PARTY_SIZE, Violet_Pokecenter_EventScript_AideNoRoom
 	msgbox VioletCity_PokeCenter_Text_ElmsAideFavor, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Violet_Pokecenter_EventScript_Aide_Refuse
 	goto_if_eq VAR_RESULT, YES, Violet_Pokecenter_EventScript_Aide_Accepted
 	release
 	end
 
+
+Violet_Pokecenter_EventScript_AideNoRoom::
+	msgbox VioletCity_PokeCenter_Text_ElmsAideNoRoom, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
 
 Violet_Pokecenter_EventScript_Aide_Refuse::
 	msgbox VioletCity_PokeCenter_Text_ElmsAideRefuse, MSGBOX_YESNO
@@ -79,6 +87,14 @@ VioletCity_PokeCenter_Text_ElmsAideFavor:
 	.string "PROF.ELM asked me to find you.\p"
 	.string "He has another favor to ask.\p"
 	.string "Would you take the POKéMON EGG?$"
+
+VioletCity_PokeCenter_Text_ElmsAideNoRoom:
+	.string "{PLAYER}, long time, no see.\p"
+	.string "PROF.ELM asked me to find you.\p"
+	.string "He has another favor to ask.\p"
+	.string "Would you take the POKéMON EGG?\p"
+	.string "Oh, wait... You need to make room\n"
+	.string "in your party first.$"
 
 VioletCity_PokeCenter_Text_ElmsAideGiveEgg:
 	.string "We discovered that a POKéMON won't\n"

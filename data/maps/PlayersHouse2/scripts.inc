@@ -44,3 +44,12 @@ PlayersHouse2_Movement_PlayerWalkToClock2:
 	walk_up
 	delay_8
 	step_end
+
+PlayersHouse2_EventScript_NES::
+	msgbox PlayersHouse2_Text_NES, MSGBOX_SIGN
+	end
+
+PlayersHouse2_Text_NES:
+    .string "{PLAYER} played with the NES.\p"
+    .string "…Okay!\n"
+    .string "It's time to go!$"

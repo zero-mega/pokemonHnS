@@ -680,7 +680,7 @@ IlexForest_Text_CharcoalMasterIntro:
 
 IlexForest_Text_CharcoalMasterOutro:
 	.string "That's the CUT HM.\n"
-	.string "Teach that to a POKéMON to clear\n"
+	.string "Teach that to a POKéMON to clear\l"
 	.string "small trees.\p"
 	.string "Of course, you have to have the\n"
 	.string "GYM BADGE from AZALEA to use it.$"
@@ -731,7 +731,7 @@ IlexForest_Text_ShrineCelebiEvent:
 	.string "protector…\p"
 	.string "Oh? What is this?\p"
 	.string "It's a hole.\n"
-	.string "It looks like the GS BALL would fit\n"
+	.string "It looks like the GS BALL would fit\l"
 	.string "inside it.\p"
 	.string "Want to put the GS BALL here?$"
 

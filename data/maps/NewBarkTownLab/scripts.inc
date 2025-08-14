@@ -156,6 +156,7 @@ NewBarkTownLab_EventScript_ChikoritaBall::
 NewBarkTownLab_EventScript_ChikoritaBall_Choice::
 	setvar PLAYER_STARTER_SPECIES, SPECIES_CHIKORITA
 	showmonpic PLAYER_STARTER_SPECIES, 10, 3
+	playmoncry PLAYER_STARTER_SPECIES, CRY_MODE_NORMAL
 	msgbox NewBarkTownLab_Text_ChooseChikorita, MSGBOX_YESNO
 	setvar VAR_STARTER_MON, 0
 	goto_if_eq VAR_RESULT, YES, NewBarkTownLab_EventScript_ChoseStarter
@@ -174,6 +175,7 @@ NewBarkTownLab_EventScript_CyndaquilBall::
 NewBarkTownLab_EventScript_CyndaquilBall_Choice::
 	setvar PLAYER_STARTER_SPECIES, SPECIES_CYNDAQUIL
 	showmonpic PLAYER_STARTER_SPECIES, 10, 3
+	playmoncry PLAYER_STARTER_SPECIES, CRY_MODE_NORMAL
 	msgbox NewBarkTownLab_Text_ChooseCyndaquil, MSGBOX_YESNO
 	setvar VAR_STARTER_MON, 1
 	goto_if_eq VAR_RESULT, YES, NewBarkTownLab_EventScript_ChoseStarter
@@ -192,6 +194,7 @@ NewBarkTownLab_EventScript_TotodileBall::
 NewBarkTownLab_EventScript_TotodileBall_Choice::
 	setvar PLAYER_STARTER_SPECIES, SPECIES_TOTODILE
 	showmonpic PLAYER_STARTER_SPECIES, 10, 3
+	playmoncry PLAYER_STARTER_SPECIES, CRY_MODE_NORMAL
 	msgbox NewBarkTownLab_Text_ChooseTotodile, MSGBOX_YESNO
 	setvar VAR_STARTER_MON, 2
 	goto_if_eq VAR_RESULT, YES, NewBarkTownLab_EventScript_ChoseStarter
@@ -665,7 +668,7 @@ NewBarkTownLab_Text_ElmDirections2:
 	.string "If your POKéMON is hurt, you\n"
 	.string "should heal it with the machine\l"
 	.string "to my right, or at the POKéCENTER.\p"
-	.string "I'm counting on you!.$"
+	.string "I'm counting on you!$"
 
 NewBarkTownLab_Text_GotElmsNumber:
 	.string "{PLAYER} got ELM's phone\n"
@@ -809,12 +812,12 @@ NewBarkTownLab_Text_KimonoGirls:
 	.string "I hope you'll carry through it.$"
 
 NewBarkTownLab_Text_KimonoWaiting:
-	.string "Professor Elm: The KIMONO\n"
+	.string "PROF. ELM: The KIMONO\n"
 	.string "GIRLS are waiting for you at\l"
 	.string "the Ecruteak Dance Theater.$"
 
 NewBarkTownLab_Text_League:
-	.string "Professor Elm: Hahaha...\n"
+	.string "PROF. ELM: Hahaha...\n"
 	.string "Good job!\p"
 	.string "That rare Egg has brought you\n"
 	.string "a lot of trouble, huh?\p"

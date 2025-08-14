@@ -665,7 +665,7 @@ AzaleaGym_Text_HiveBadgeSpeech:
 	.string "Do you know the benefits\n"
 	.string "of HIVEBADGE?\p"
 	.string "If you have it, POKéMON up\n"
-	.string "to L30 will obey you,\n"
+	.string "to L30 will obey you,\l"
 	.string "even traded ones.\p"
 	.string "POKéMON that know CUT will be able\n"
 	.string "to use it outside of battle too.\p"
@@ -745,14 +745,14 @@ AzaleaGym_Text_TwinsAmyMay1Beaten:
 AzaleaGym_Text_TwinsAmyMay1After:
 	.string "AMY: You're really strong!\p"
 	.string "But BUGSY's even stronger!\n"
-	.string "His SCYTHER's CUT almost\n"
+	.string "His SCYTHER's CUT almost\l"
 	.string "always makes critical hits!$"
 
 AzaleaGym_Text_TwinsAmyMay2Seen:
 	.string "MAY: You want to see the\n"
 	.string "LEADER? Good luck!\p"
 	.string "BUGSY is so strong!\n"
-	.string "His SCYTHER's CUT always\n"
+	.string "His SCYTHER's CUT always\l"
 	.string "seems to crit!$"
 
 AzaleaGym_Text_TwinsAmyMay2Beaten:
@@ -777,7 +777,7 @@ AzaleaGym_Text_GymGuide:
 	.string "ROCK-type weakness.\n"
 	.string "He's also developed a new verison\p"
 	.string "of CUT that is BUG-type.\n"
-	.string "Oh, and don't forget about those\n"
+	.string "Oh, and don't forget about those\l"
 	.string "nasty critical hits! Good luck!$"
 
 AzaleaGym_Text_GymGuideWin:

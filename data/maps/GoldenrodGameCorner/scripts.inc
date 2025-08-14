@@ -304,7 +304,7 @@ GoldenrodGameCorner_Text_PokefanM1:
     .string "ones in CELADON.$"
 
 GoldenrodGameCorner_Text_CooltrainerM:
-    .string "Life is a gamble. I'm going to pull"
+    .string "Life is a gamble. I'm going to pull\n"
     .string "till I drop!$"
 
 GoldenrodGameCorner_Text_PokefanF:

@@ -197,8 +197,8 @@ PlayersHouse1_EventScript_GiveRunningShoes::
 	closemessage
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox PlayersHouse1_Text_SwitchShoesWithRunningShoes, MSGBOX_DEFAULT
-	closemessage
 	waitfanfare
+	closemessage
 	setflag FLAG_RECEIVED_RUNNING_SHOES
 	setflag FLAG_SYS_B_DASH
 	msgbox PlayersHouse1_Text_ExplainRunningShoes, MSGBOX_DEFAULT

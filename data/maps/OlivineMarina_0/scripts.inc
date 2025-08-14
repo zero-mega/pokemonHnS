@@ -168,7 +168,7 @@ OlivinePort_Text_CantBoard:
     .string "Sorry. You can't board now.$"
 
 OlivinePort_Text_WhereSail:
-    .string "Where would you like to sail?.$"
+    .string "Where would you like to sail?$"
 
 OlivinePort_Text_AskBoard:
     .string "Welcome to FAST SHIP S.S.AQUA.\p"

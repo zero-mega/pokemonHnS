@@ -264,6 +264,16 @@ NewBarkTown_Text_Sign:
 	.string "The Town Where the Winds of\n"
 	.string "a New Beginning Blow$"
 
+NewBarkTown_EventScript_PlayersHouseMailbox::
+	msgbox NewBarkTown_Text_PlayersHouse, MSGBOX_SIGN
+	end
 
+NewBarkTown_EventScript_ElmsHouseMailbox::
+	msgbox NewBarkTown_Text_ElmsHouse, MSGBOX_SIGN
+	end
 
+NewBarkTown_Text_PlayersHouse:
+	.string "{PLAYER}'s house.$"
 
+NewBarkTown_Text_ElmsHouse:
+	.string "PROF.ELM's house.$"

@@ -22,7 +22,7 @@ Route33_EventScript_Lass::
 
 Route33_Text_HikerAnthony2Seen:
 	.string "I came through the tunnel,\n"
-	.string "but I still have plenty\n"
+	.string "but I still have plenty\l"
 	.string "of energy left.$"
 
 Route33_Text_HikerAnthony2Beaten:
