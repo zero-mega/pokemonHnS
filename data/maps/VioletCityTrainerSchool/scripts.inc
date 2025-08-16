@@ -63,7 +63,7 @@ VioletCityTrainerSchool_Text_EarlIntro:
 	.string "trainer!$"
 
 VioletCityTrainerSchool_Text_Teacher:
-	.string "Certain POKéMON start of weak and\n"
+	.string "Certain POKéMON start off weak and\n"
 	.string "require much more EXP to become\l"
 	.string "strong than others do.\p"
 	.string "For example, LARVITAR is quite weak\n"

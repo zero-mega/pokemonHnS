@@ -186,7 +186,7 @@ MrPokemonHouse_Text_DependingOnYou:
 
 MrPokemonHouse_Text_AlwaysNewDiscoveries:
 	.string "Life is delightful!\n"
-	.string "Always, new discoveries to be made$"
+	.string "Always, new discoveries to be made.$"
 
 MrPokemonHouse_Text_OakIntro:
 	.string "OAK: Aha! So you're {PLAYER}!\p"

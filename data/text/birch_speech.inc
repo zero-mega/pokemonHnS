@@ -15,7 +15,7 @@ gText_Birch_MainSpeech::
 	.string "This world is widely inhabited by\n"
 	.string "creatures known as POKéMON.\p"
 	.string "People and POKéMON live together,\n"
-	.string "by supporting eachother.\p"
+	.string "by supporting each other.\p"
 	.string "Some people play with POKéMON,\n"
 	.string "some battle with them. \p"
 	.string "But we don't know everything about\n"
