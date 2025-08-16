@@ -1143,9 +1143,23 @@ static void BuyMenuInitBgs(void)
 
 static void BuyMenuDecompressBgGraphics(void)
 {
+    int i;
+    u16 *map;
+
+    // Decompress graphics
     DecompressAndCopyTileDataToVram(1, gShopMenu_Gfx, 0x3A0, 0x3E3, 0);
+
+    // Decompress tilemap to WRAM
     LZDecompressWram(gShopMenu_Tilemap, sShopData->tilemapBuffers[0]);
-    LoadCompressedPalette(gShopMenu_Pal, BG_PLTT_ID(12), PLTT_SIZE_4BPP);
+
+    // Patch palette index in each entry (change 12 → 6)
+    map = (u16 *)sShopData->tilemapBuffers[0];
+    // size = width * height of the tilemap. Shop menu is 32x32 tiles → 1024 entries.
+    for (i = 0; i < 32 * 32; i++)
+        map[i] = (map[i] & 0x0FFF) | (10 << 12);
+
+    // Load palette into slot 6
+    LoadCompressedPalette(gShopMenu_Pal, BG_PLTT_ID(6), PLTT_SIZE_4BPP);
 }
 
 static void BuyMenuInitWindows(void)

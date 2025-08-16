@@ -46,7 +46,10 @@
         "tx_randomizer_and_challenges.h": "c",
         "metatile_behaviors.h": "c",
         "item_menu.h": "c",
-        "event_scripts.h": "c"
+        "event_scripts.h": "c",
+        "__tree": "c",
+        "map": "c",
+        "format": "c"
     },
     "git.ignoreLimitWarning": true
 }
