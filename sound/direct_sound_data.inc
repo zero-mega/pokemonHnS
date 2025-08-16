@@ -2098,6 +2098,12 @@ Cry_Farigiraf::
 Cry_Dudunsparce::
 	.incbin "sound/direct_sound_samples/cries/dudunsparce.bin"
 
+Cry_Wyrdeer::
+	.incbin "sound/direct_sound_samples/cries/wyrdeer.bin"
+
+Cry_Ursaluna::
+	.incbin "sound/direct_sound_samples/cries/ursaluna.bin"
+
 	.align 2
 DirectSoundWaveData_register_noise::
 	.incbin "sound/direct_sound_samples/register_noise.bin"

@@ -1,4 +1,4 @@
-# Pokémon Modern Emerald
+# Pokémon Modern Emerald (this has not been updated for Pokemon Heart & Soul.)
 
 This is a decompilation of Pokémon Emerald, edited to be "Pokémon Modern Emerald".
 You can get more information about Modern Emerald at [Pokecommunity](https://www.pokecommunity.com/showthread.php?t=494005)

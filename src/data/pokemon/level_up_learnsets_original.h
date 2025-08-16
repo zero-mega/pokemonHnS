@@ -3207,8 +3207,12 @@ static const u16 sStantlerLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE(25, MOVE_STOMP),
     LEVEL_UP_MOVE(31, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE(37, MOVE_TAKE_DOWN),
+    LEVEL_UP_MOVE(41, MOVE_IMPRISON),
+    LEVEL_UP_MOVE(42, MOVE_PSYCHO_CUT),
     LEVEL_UP_MOVE(43, MOVE_CONFUSE_RAY),
+    LEVEL_UP_MOVE(43, MOVE_JUMP_KICK),
     LEVEL_UP_MOVE(49, MOVE_CALM_MIND),
+    LEVEL_UP_MOVE(55, MOVE_DOUBLE_EDGE),
     LEVEL_UP_END
 };
 
@@ -6345,13 +6349,28 @@ static const u16 sDudunsparceLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sUnusedSpace1LevelUpLearnset_Original[] = {
+static const u16 sWyrdeerLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 5, MOVE_CONFUSION),
+    LEVEL_UP_MOVE( 9, MOVE_HYPNOSIS),
+    LEVEL_UP_MOVE( 15, MOVE_CALM_MIND),
+    LEVEL_UP_MOVE( 21, MOVE_HEADBUTT),
+    LEVEL_UP_MOVE( 29, MOVE_EXTRASENSORY),
+    LEVEL_UP_MOVE( 37, MOVE_PSYCHO_CUT),
+    LEVEL_UP_MOVE( 47, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(53, MOVE_JUMP_KICK),
     LEVEL_UP_END
 };
 
-static const u16 sUnusedSpace2LevelUpLearnset_Original[] = {
+static const u16 sUrsalunaLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 5, MOVE_CHARM),
+    LEVEL_UP_MOVE( 11, MOVE_MAGNITUDE),
+    LEVEL_UP_MOVE( 18, MOVE_SLASH),
+    LEVEL_UP_MOVE( 25, MOVE_PLAY_ROUGH),
+    LEVEL_UP_MOVE( 29, MOVE_MAGNITUDE),
+    LEVEL_UP_MOVE( 43, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE( 47, MOVE_EARTHQUAKE),
     LEVEL_UP_END
 };
 

@@ -480,8 +480,8 @@ const struct CompressedSpritePalette gMonPaletteTable[] =
     SPECIES_PAL(ANNIHILAPE, gMonPalette_Annihilape),
     SPECIES_PAL(FARIGIRAF, gMonPalette_Farigiraf),
     SPECIES_PAL(DUDUNSPARCE, gMonPalette_Dudunsparce),
-    //SPECIES_PAL(UNUSED_SPACE1, gMonPalette_Unused_Space1),
-    //SPECIES_PAL(UNUSED_SPACE2, gMonPalette_Unused_Space2),
+    SPECIES_PAL(WYRDEER, gMonPalette_Wyrdeer),
+    SPECIES_PAL(URSALUNA, gMonPalette_Ursaluna),
     //SPECIES_PAL(UNUSED_SPACE3, gMonPalette_Unused_Space3),
     //SPECIES_PAL(UNUSED_SPACE4, gMonPalette_Unused_Space4),
     //SPECIES_PAL(UNUSED_SPACE5, gMonPalette_Unused_Space5),
@@ -489,6 +489,6 @@ const struct CompressedSpritePalette gMonPaletteTable[] =
     //SPECIES_PAL(UNUSED_SPACE7, gMonPalette_Unused_Space7),
     //SPECIES_PAL(UNUSED_SPACE8, gMonPalette_Unused_Space8),
     //SPECIES_PAL(UNUSED_SPACE9, gMonPalette_Unused_Space9),
-    //SPECIES_PAL(UNUSED_SPACE10, gMonPalette_Unused_Space10),
+    //SPECIES_PAL(UNUSED_SPACE10, gMonPalette_Wyrdeer0),
 
 };

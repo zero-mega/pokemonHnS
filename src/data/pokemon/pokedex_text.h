@@ -2541,3 +2541,15 @@ const u8 gDudunsparcePokedexText[] = _(
     "sucking in enough air to fill its long,\n"
     "narrow lungs, then releasing the air\n"
     "in an intense blast.");
+
+const u8 gWyrdeerPokedexText[] = _(
+    "The black orbs shine with an uncanny light\n"
+    "when it is erecting invisible barriers.\n"
+    "The fur shed from its beard retains heat\n"
+    "and is useful for winter clothing.");
+
+const u8 gUrsalunaPokedexText[] = _(
+    "Swampy terrain gives Ursaluna its burly\n"
+    "physique and newfound capacity to\n"
+    "manipulate peat at will.");
+

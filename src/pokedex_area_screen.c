@@ -516,7 +516,9 @@ static const u16 sSpeciesHiddenFromAreaScreenModern[] = {
     SPECIES_SYLVEON, 
     SPECIES_ANNIHILAPE, 
     //SPECIES_FARIGIRAF, 
-    SPECIES_DUDUNSPARCE,*/
+    SPECIES_DUDUNSPARCE,
+    SPECIES_WYRDEER,
+    SPECIES_URSALUNA,*/
 };
 
 static const u16 sMovingRegionMapSections[3] =
