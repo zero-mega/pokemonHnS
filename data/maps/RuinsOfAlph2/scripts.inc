@@ -433,8 +433,8 @@ RuinsOfAlph_EventScript_Item_MaxRevive1::
 	finditem ITEM_MAX_REVIVE
 	end
 
-RuinsOfAlph_EventScript_Item_SitrusBerry1::
-	finditem ITEM_SITRUS_BERRY
+RuinsOfAlph_EventScript_Item_SacredAsh::
+	finditem ITEM_SACRED_ASH
 	end
 
 @ Aero

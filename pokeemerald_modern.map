@@ -25408,7 +25408,7 @@ script_data     0x08213400   0x15f3f0
                 0x0833b043                RuinsOfAlph_EventScript_Item_LumBerry1
                 0x0833b050                RuinsOfAlph_EventScript_Item_Charcoal
                 0x0833b05d                RuinsOfAlph_EventScript_Item_MaxRevive1
-                0x0833b06a                RuinsOfAlph_EventScript_Item_SitrusBerry1
+                0x0833b06a                RuinsOfAlph_EventScript_Item_SacredAsh
                 0x0833b077                RuinsOfAlph_EventScript_Item_HealPowder1
                 0x0833b084                RuinsOfAlph_EventScript_Item_EnergyRoot
                 0x0833b091                RuinsOfAlph_EventScript_Item_SitrusBerry2
