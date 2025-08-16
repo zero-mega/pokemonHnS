@@ -515,6 +515,7 @@ AzaleaGym_EventScript_Bugsy::
 	setvar VAR_AZALEA_TOWN_STATE, 5
 	closemessage
 	setflag FLAG_HIDE_AZALEA_TOWN_FARFETCHD
+	setflag FLAG_GET_HEADBUTT
 	clearflag FLAG_HIDE_ILEX_FOREST_APPRENTICE
 	clearflag FLAG_HIDE_ILEX_FOREST_FARFETCHD_1
 	release
