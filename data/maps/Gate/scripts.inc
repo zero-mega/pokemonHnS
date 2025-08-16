@@ -44,7 +44,7 @@ GateRocket_EventScript_Policeman::
 	faceplayer
 	goto_if_set FLAG_GOT_TM_FROM_MAHOGANY_COP, GateRocket_EventScript_PolicemanAfter
 	msgbox Route43Gate_Text_OfficerFoundTM, MSGBOX_DEFAULT
-	giveitem ITEM_TM_SHADOW_BALL
+	giveitem ITEM_TM_SLUDGE_BOMB
 	setflag FLAG_GOT_TM_FROM_MAHOGANY_COP
 	closemessage
 	release
@@ -84,7 +84,7 @@ Route43Gate_Text_OfficerFoundTM:
     .string "you take it away?$"
 
 Text_ReceivedTM30:
-    .string "{PLAYER} received TM30.$"
+    .string "{PLAYER} received TM36.$"
 
 Route43Gate_Text_OfficerAvoidGrass:
     .string "Use this gate to avoid walking in\n"
