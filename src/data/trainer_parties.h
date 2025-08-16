@@ -17190,12 +17190,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Nob[] = { //BlackbeltGro
 static const struct TrainerMonNoItemDefaultMoves sParty_Kiyo[] = { //BlackbeltGroup
     {
     .iv = 0,
-    .lvl = 24,
+    .lvl = 34,
     .species = SPECIES_HITMONLEE,
     },
     {
     .iv = 0,
-    .lvl = 24,
+    .lvl = 34,
     .species = SPECIES_HITMONCHAN,
     },
 };
