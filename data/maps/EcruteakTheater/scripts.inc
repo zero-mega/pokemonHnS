@@ -874,6 +874,7 @@ EcruteakTheater_EventScript_Hooh::
 	setvar VAR_COMPLETED_LUGIA, 3
 	setflag FLAG_HIDE_ECRUTEAK_THEATER_ZUKI
 	setflag FLAG_HIDE_ECRUTEAK_THEATER_KIMONOS
+	setvar VAR_NEWBARKTOWN_LABSTATE, 9
 	setvar VAR_ECRUTEAK_THEATER, 7
 	release
 	end
