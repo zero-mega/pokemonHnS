@@ -82,6 +82,7 @@ static const u8 sCreditsText_Batima[]                   = _("BatimaTheBat");
 static const u8 sCreditsText_Engine[]                          = _("Engine");
 static const u8 sCreditsText_Pret[]                            = _("Pret pokeemerald");
 static const u8 sCreditsText_Resetes12[]                       = _("Modern Emerald - Resetes12");
+static const u8 sCreditsText_PokeemeraldExpansion[]                       = _("Pokeemerald Expansion");
 
 static const u8 sCreditsText_Maps[]                            = _("Maps");
 static const u8 sCreditsText_Kertra[]                      = _("Crystal Advance - Kertra");
@@ -293,6 +294,7 @@ static const struct CreditsEntry sCreditsEntry_Batima                 = {11, FAL
 static const struct CreditsEntry sCreditsEntry_Engine                           = {8,  TRUE, sCreditsText_Engine};
 static const struct CreditsEntry sCreditsEntry_Pret                             = {11, FALSE, sCreditsText_Pret};
 static const struct CreditsEntry sCreditsEntry_Resetes12                        = {11, FALSE, sCreditsText_Resetes12};
+static const struct CreditsEntry sCreditsEntry_PokeemeraldExpansion             = {11, FALSE, sCreditsText_PokeemeraldExpansion};
 
 // Maps
 static const struct CreditsEntry sCreditsEntry_Maps                             = {8,  TRUE, sCreditsText_Maps};
@@ -542,7 +544,7 @@ static const struct CreditsEntry *const sCreditsEntryPointerTable[PAGE_COUNT][EN
         &sCreditsEntry_Engine,
         &sCreditsEntry_Pret,
         &sCreditsEntry_Resetes12,
-        &sCreditsEntry_SkidMarc25,
+        &sCreditsEntry_PokeemeraldExpansion,
     },
     [PAGE_PROGRAMMERS_4] = {
         &sCreditsEntry_Gameplay,
