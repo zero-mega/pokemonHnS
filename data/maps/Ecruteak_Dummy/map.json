@@ -125,7 +125,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_STANTLER",
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_WYRDEER",
       "x": 56,
       "y": 44,
       "elevation": 0,
