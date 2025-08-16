@@ -1137,9 +1137,9 @@ void DrawMainBattleBackground(void)
                 else if ((gBattleTerrain == BATTLE_TERRAIN_LONG_GRASS) && (gLocalTime.hours >= 6 && gLocalTime.hours < 21))
                     LoadCompressedPalette(gBattleTerrainPalette_LongGrass_2, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
                 else if ((gBattleTerrain == BATTLE_TERRAIN_LONG_GRASS) && (gLocalTime.hours >= 0 && gLocalTime.hours < 6) && !(gMapHeader.mapType == MAP_TYPE_INDOOR))
-                    LoadCompressedPalette(gBattleTerrainPalette_LongGrass_2_Night, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                    LoadCompressedPalette(gBattleTerrainPalette_TallGrass_2_Night, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
                 else if ((gBattleTerrain == BATTLE_TERRAIN_LONG_GRASS) && (gLocalTime.hours >= 21 && gLocalTime.hours < 24) && !(gMapHeader.mapType == MAP_TYPE_INDOOR))
-                    LoadCompressedPalette(gBattleTerrainPalette_LongGrass_2_Night, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                    LoadCompressedPalette(gBattleTerrainPalette_TallGrass_2_Night, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
                 //sand
                 else if ((gBattleTerrain == BATTLE_TERRAIN_SAND) && (gLocalTime.hours >= 6 && gLocalTime.hours < 21))
                     LoadCompressedPalette(gBattleTerrainPalette_Sand_2, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
