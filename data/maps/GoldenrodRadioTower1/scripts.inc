@@ -177,8 +177,8 @@ RadioTower1F_Text_RadioCardWomanOfferQuiz:
     .string "right now.\p"
     .string "Answer five questions correctly to\n"
     .string "win a RADIO.\p"
-    .string "Slide it into your POKéGEAR to play\n"
-    .string "the radio anytime, anywhere.\p"
+    .string "You and your POKéMON can use it to\n"
+    .string "play music anytime, anywhere.\p"
     .string "Would you like to take the quiz?$"
 
 RadioTower1F_Text_QuizQuestion1:

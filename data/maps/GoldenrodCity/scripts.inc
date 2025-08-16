@@ -105,6 +105,10 @@ GoldenrodCity_EventScript_Gramps::
 	release
 	end
 
+GoldenrodCity_EventScript_NameRaterSign::
+	msgbox GoldenrodCity_Text_NameRaterSign, MSGBOX_SIGN
+	end
+
 GoldenrodCity_EventScript_RocketScout::
 	lock
 	msgbox GoldenrodCity_Text_RocketScout1, MSGBOX_DEFAULT
