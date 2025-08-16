@@ -2,8 +2,8 @@ NewMap2_MapScripts::
 	.byte 0
 
 SSAquaRoomSSW_EventScript_Lyle::
-	trainerbattle_single TRAINER_NOLAND SSAquaRoomNE_Text_HikerNolandSeen, SSAquaRoomNE_Text_HikerNolandBeaten
-	msgbox SSAquaRoomNE_Text_HikerNolandAfterBattle, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_LYLE SSAquaRoomSSW_Text_FirebreatherLyleSeen, SSAquaRoomSSW_Text_FirebreatherLyleBeaten
+	msgbox SSAquaRoomSSW_Text_FirebreatherLyleAfterBattle, MSGBOX_AUTOCLOSE
 	end
 
 SSAquaRoomSSW_EventScript_Ken::
