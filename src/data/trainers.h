@@ -4812,9 +4812,9 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_DOUGLAS] =
     {
-        .trainerClass = TRAINER_CLASS_POKEFAN,
+        .trainerClass = TRAINER_CLASS_EXPERT,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_POKEFAN_M,
+        .trainerPic = TRAINER_PIC_EXPERT_M,
         .trainerName = _("DOUGLAS"),
         .items = {},
         .doubleBattle = FALSE,
