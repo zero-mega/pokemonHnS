@@ -178,7 +178,7 @@ GoldenrodCity_EventScript_Woman::
 GoldenrodCity_EventScript_Hiker::
 	lock
 	faceplayer
-	goto_if_set FLAG_NIGHT_POKEMON, GoldenrodCity_EventScript_Hiker2
+	goto_if_set FLAG_DAY_POKEMON, GoldenrodCity_EventScript_Hiker2
 	msgbox GoldenrodCity_Text_HikerDay, MSGBOX_DEFAULT
 	closemessage
 	release

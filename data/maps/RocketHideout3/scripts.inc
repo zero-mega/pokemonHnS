@@ -100,6 +100,7 @@ RocketHideout3_Text_LanceGetPassword:
 
 RocketHideout3_EventScript_RocketKO::
 	lock
+	faceplayer
 	msgbox RocketHideout3_Text_B3FRocket, MSGBOX_DEFAULT
 	release
 	end

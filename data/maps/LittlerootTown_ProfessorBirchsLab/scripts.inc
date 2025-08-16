@@ -771,7 +771,7 @@ LittlerootTown_ProfessorBirchsLab_Text_BirchIsntOneForDeskWork:
 LittlerootTown_ProfessorBirchsLab_Text_BirchEnjoysRivalsHelpToo:
 	.string "PROF. BIRCH is studying the habitats\n"
 	.string "and distribution of POKéMON.\p"
-	.string "The PROF enjoys {RIVAL}'s help, too.\n"
+	.string "The PROF enjoys SILVER's help, too.\n"
 	.string "There's a lot of love there.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_LikeYouToHavePokemon:
@@ -801,15 +801,15 @@ LittlerootTown_ProfessorBirchsLab_Text_MightBeGoodIdeaToGoSeeRival:
 	.string "PROF. BIRCH: If you work at POKéMON\n"
 	.string "and gain experience, I think you'll make\l"
 	.string "an extremely good TRAINER.\p"
-	.string "My kid, {RIVAL}, is also studying\n"
+	.string "My kid, SILVER, is also studying\n"
 	.string "POKéMON while helping me out.\p"
 	.string "{PLAYER}{KUN}, don't you think it might be\n"
-	.string "a good idea to go see {RIVAL}?$"
+	.string "a good idea to go see SILVER?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_GetRivalToTeachYou:
 	.string "PROF. BIRCH: Great!\n"
-	.string "{RIVAL} should be happy, too.\p"
-	.string "Get {RIVAL} to teach you what it\n"
+	.string "SILVER should be happy, too.\p"
+	.string "Get SILVER to teach you what it\n"
 	.string "means to be a TRAINER.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_DontBeThatWay:
@@ -817,7 +817,7 @@ LittlerootTown_ProfessorBirchsLab_Text_DontBeThatWay:
 	.string "You should go meet my kid.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BirchRivalGoneHome:
-	.string "PROF. BIRCH: {RIVAL}?\n"
+	.string "PROF. BIRCH: SILVER?\n"
 	.string "Gone home, I think.\p"
 	.string "Or maybe that kid's scrabbling around\n"
 	.string "in tall grass again somewhere…\p"
@@ -826,11 +826,11 @@ LittlerootTown_ProfessorBirchsLab_Text_BirchRivalGoneHome:
 
 LittlerootTown_ProfessorBirchsLab_Text_HeardYouBeatRivalTakePokedex:
 	.string "PROF. BIRCH: Oh, hi, {PLAYER}{KUN}!\p"
-	.string "I heard you beat {RIVAL} on\n"
+	.string "I heard you beat SILVER on\n"
 	.string "your first try. That's excellent!\p"
-	.string "{RIVAL}'s been helping with my research\n"
+	.string "SILVER's been helping with my research\n"
 	.string "for a long time.\p"
-	.string "{RIVAL} has an extensive history as\n"
+	.string "SILVER has an extensive history as\n"
 	.string "a TRAINER already.\p"
 	.string "Here, {PLAYER}{KUN}, I ordered this for my\n"
 	.string "research, but I think you should have\l"
@@ -843,11 +843,11 @@ LittlerootTown_ProfessorBirchsLab_Text_ExplainPokedex:
 	.string "PROF. BIRCH: The POKéDEX is a high-tech\n"
 	.string "tool that automatically makes a record\l"
 	.string "of any POKéMON you meet or catch.\p"
-	.string "My kid, {RIVAL}, goes everywhere\n"
+	.string "My kid, SILVER, goes everywhere\n"
 	.string "with it.\p"
 	.string "Whenever my kid catches a rare POKéMON\n"
 	.string "and records its data in the POKéDEX,\l"
-	.string "why, {RIVAL} looks for me while I'm out\l"
+	.string "why, SILVER looks for me while I'm out\l"
 	.string "doing fieldwork, and shows me.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CountlessPokemonAwait:
@@ -920,7 +920,7 @@ LittlerootTown_ProfessorBirchsLab_Text_BookTooHardToRead:
 
 LittlerootTown_ProfessorBirchsLab_Text_OtherRegionsUpgradeToNational:
 	.string "PROF. BIRCH: Now…\p"
-	.string "{PLAYER}{KUN} and {RIVAL}, I've had the two\n"
+	.string "{PLAYER}{KUN} and SILVER, I've had the two\n"
 	.string "of you help me study POKéMON.\p"
 	.string "Thanks to your help, new facts\n"
 	.string "are coming to light.\p"

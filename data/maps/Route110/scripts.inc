@@ -972,7 +972,7 @@ Route110_Text_ThereIsNoRecord:
 Route110_Text_ImagineSeeingYouHere:
 	.string "PROF. BIRCH: Oh, {PLAYER}{KUN}!\n"
 	.string "Imagine seeing you here!\p"
-	.string "And where might my {RIVAL} be?$"
+	.string "And where might my SILVER be?$"
 
 Route110_Text_HeardYouInstallMatchCall:
 	.string "Oh, I see!\n"
@@ -992,7 +992,7 @@ Route110_Text_RegisteredBirchInPokenav:
 
 Route110_Text_KeepAnEyeOutForRival:
 	.string "PROF. BIRCH: {PLAYER}{KUN}…\p"
-	.string "Please keep an eye out for my {RIVAL}.\n"
+	.string "Please keep an eye out for my SILVER.\n"
 	.string "… … … … … …\p"
 	.string "Well, I had better get going.\n"
 	.string "See you again, {PLAYER}{KUN}!$"

@@ -4,6 +4,7 @@ Common_EventScript_PkmnCenterNurse::
 	setvar VAR_0x8004, 0
 	specialvar VAR_RESULT, CountPlayerTrainerStars
 	goto_if_eq VAR_RESULT, 4, EventScript_PkmnCenterNurse_GoldCard
+	goto_if_set FLAG_EVEN_FASTER_JOY, EventScript_PkmnCenterNurse_HealPkmnFast
 	msgbox gText_WouldYouLikeToRestYourPkmn, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, EventScript_PkmnCenterNurse_HealPkmn
 	goto_if_eq VAR_RESULT, NO, EventScript_PkmnCenterNurse_Goodbye
@@ -17,6 +18,7 @@ EventScript_PkmnCenterNurse_Goodbye::
 	goto EventScript_PkmnCenterNurse_PlayerTurn
 	return
 
+
 @ VAR_0x8004 is 1 when player has Gold Card; jumps are identical
 EventScript_PkmnCenterNurse_HealPkmn::
 	incrementgamestat GAME_STAT_USED_POKECENTER
@@ -25,6 +27,14 @@ EventScript_PkmnCenterNurse_HealPkmn::
 	waitmessage
 	call EventScript_PkmnCenterNurse_TakeAndHealPkmn
 	goto_if_unset FLAG_POKERUS_EXPLAINED, EventScript_PkmnCenterNurse_CheckPokerus
+	goto EventScript_PkmnCenterNurse_ReturnPkmn
+	release
+	end
+
+@ VAR_0x8004 is 1 when player has Gold Card; jumps are identical
+EventScript_PkmnCenterNurse_HealPkmnFast::
+	incrementgamestat GAME_STAT_USED_POKECENTER
+	special HealPlayerParty
 	goto EventScript_PkmnCenterNurse_ReturnPkmn
 	release
 	end
@@ -137,6 +147,7 @@ EventScript_PkmnCenterNurse_GoldCardHealPkmn::
 
 EventScript_PkmnCenterNurse_PlayerTurn::
 	closemessage
+	callnative UpdateFollowingPokemon
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
 	waitmovement 0
 	release

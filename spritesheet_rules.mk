@@ -2156,6 +2156,12 @@ $(OBJEVENTGFXDIR)/pokemon/followers/farigiraf.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/followers/dudunsparce.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
+$(POKEMONGFXDIR)/pokemon/followers/ursaluna.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(POKEMONGFXDIR)/pokemon/followers/wyrdeer.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
 $(MISCGFXDIR)/emotes.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 2
 

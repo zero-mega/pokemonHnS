@@ -256,13 +256,6 @@
       "elevation": 0,
       "dest_map": "MAP_LAKE_OF_RAGE_HOUSE1",
       "dest_warp_id": "0"
-    },
-    {
-      "x": 12,
-      "y": 25,
-      "elevation": 0,
-      "dest_map": "MAP_LAKE_OF_RAGE_UNDERGROUND",
-      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

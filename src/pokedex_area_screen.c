@@ -355,7 +355,7 @@ static const u16 sSpeciesHiddenFromAreaScreenModern[] = {
    //SPECIES_ELEKID, 
    //SPECIES_MAGBY, 
     //SPECIES_MILTANK, 
-    SPECIES_BLISSEY, 
+    /*SPECIES_BLISSEY, 
     SPECIES_LARVITAR, 
     SPECIES_PUPITAR, 
     SPECIES_TYRANITAR, 
@@ -367,7 +367,7 @@ static const u16 sSpeciesHiddenFromAreaScreenModern[] = {
     SPECIES_BLAZIKEN, 
     //SPECIES_MUDKIP, 
     SPECIES_MARSHTOMP, 
-    SPECIES_SWAMPERT, 
+    SPECIES_SWAMPERT, */
     /*SPECIES_POOCHYENA, 
     SPECIES_MIGHTYENA, 
     SPECIES_ZIGZAGOON, 
@@ -483,7 +483,7 @@ static const u16 sSpeciesHiddenFromAreaScreenModern[] = {
     SPECIES_BELDUM, 
     SPECIES_METANG, 
     SPECIES_METAGROSS, 
-    SPECIES_CHIMECHO, */ 
+    SPECIES_CHIMECHO,  
     SPECIES_MIME_JR, 
     SPECIES_MUNCHLAX, 
     SPECIES_BONSLY, 
@@ -516,7 +516,7 @@ static const u16 sSpeciesHiddenFromAreaScreenModern[] = {
     SPECIES_SYLVEON, 
     SPECIES_ANNIHILAPE, 
     //SPECIES_FARIGIRAF, 
-    SPECIES_DUDUNSPARCE,
+    SPECIES_DUDUNSPARCE,*/
 };
 
 static const u16 sMovingRegionMapSections[3] =

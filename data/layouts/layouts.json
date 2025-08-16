@@ -6684,10 +6684,10 @@
     {
       "id": "LAYOUT_ECRUTEAK_GYM",
       "name": "EcruteakGym_Layout",
-      "width": 40,
-      "height": 24,
+      "width": 17,
+      "height": 48,
       "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_EcruteakGym_54",
+      "secondary_tileset": "gTileset_EcruteakGymNew",
       "border_filepath": "data/layouts/EcruteakGym/border.bin",
       "blockdata_filepath": "data/layouts/EcruteakGym/map.bin"
     },

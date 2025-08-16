@@ -262,7 +262,6 @@ IlexForest_EventScript_Celebi_Event::
 	msgbox IlexForest_Text_ShrineCelebiEvent, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, FALSE, IlexForest_EventScript_Shrine_Cancel
 	msgbox IlexForest_Text_InsertGSBall, MSGBOX_DEFAULT
-	removeitem ITEM_GS_BALL
 	clearflag FLAG_HIDE_CELEBI
 	addobject LOCALID_ILEX_FOREST_CELEBI
 	playse SE_M_PETAL_DANCE
@@ -279,11 +278,15 @@ IlexForest_EventScript_Celebi_Event::
 	playmoncry SPECIES_CELEBI, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	setvar VAR_LAST_TALKED, LOCALID_ILEX_FOREST_CELEBI
-	setwildbattle SPECIES_CELEBI, 40
-	dowildbattle
-	setflag FLAG_HIDE_CELEBI
+	seteventmon SPECIES_CELEBI, 40
+	special BattleSetup_StartLegendaryBattle
+	specialvar VAR_RESULT, GetBattleOutcome
+	waitstate
+	call_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, IlexForest_EventScript_Shrine_Caught
+	fadescreenswapbuffers FADE_TO_BLACK
 	removeobject LOCALID_ILEX_FOREST_CELEBI
+	setflag FLAG_HIDE_CELEBI
+	fadescreenswapbuffers FADE_FROM_BLACK
 IlexForest_EventScript_Kurt::
 	clearflag FLAG_HIDE_ILEX_FOREST_KURT
 	addobject LOCALID_ILEX_FOREST_KURT
@@ -299,6 +302,10 @@ IlexForest_EventScript_Kurt::
 	setvar VAR_AZALEA_TOWN_STATE, 10
 	release
 	end
+
+IlexForest_EventScript_Shrine_Caught::
+	setflag FLAG_CAUGHT_CELEBI
+	return
 
 IlexForest_EventScript_Shrine_Cancel::
 	closemessage

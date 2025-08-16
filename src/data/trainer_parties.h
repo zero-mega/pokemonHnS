@@ -18293,7 +18293,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Jeffrey[] = { //SageGrou
     {
     .iv = 0,
     .lvl = 21,
-    .species = SPECIES_GASTLY,
+    .species = SPECIES_MURKROW,
     },
 };
 
@@ -18434,7 +18434,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Grace[] = { //MediumGrou
     {
     .iv = 0,
     .lvl = 20,
-    .species = SPECIES_HAUNTER,
+    .species = SPECIES_MURKROW,
     },
 };
 

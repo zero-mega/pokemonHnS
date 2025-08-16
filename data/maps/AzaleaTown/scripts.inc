@@ -224,10 +224,10 @@ AzaleaTown_EventScript_GSBall::
 	waitmovement 0
 	clearflag FLAG_HIDE_AZALEA_TOWN_KURT
 	addobject LOCALID_AZALEA_TOWN_KURT_GS
-	opendoor 15, 11
+	opendoor 19, 11
 	waitdooranim
 	waitmovement 0
-	closedoor 15, 11
+	closedoor 19, 11
 	waitdooranim
 	applymovement LOCALID_AZALEA_TOWN_KURT_GS, AzaleaTown_Movement_Kurt2
 	playse SE_M_PETAL_DANCE

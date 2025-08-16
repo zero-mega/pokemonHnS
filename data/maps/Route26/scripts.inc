@@ -74,7 +74,7 @@ Route26_Text_CooltrainerfJoyceAfter:
     .string "I'll have to try harder next time.$"
 
 Route26_Text_CooltrainerfBethSeen:
-    .string "I lost to a train-er named {RIVAL}.\p"
+    .string "I lost to a train-er named SILVER.\p"
     .string "He was really strong, but…\p"
     .string "It was as if he absolutely had to\n"
     .string "win at any cost.\p"

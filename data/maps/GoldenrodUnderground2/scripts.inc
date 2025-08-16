@@ -254,7 +254,6 @@ GoldenrodUnderground_EventScript_Declined_Haircut2::
 GoldenrodUnderground_EventScript_Already_Got_Haircut2::
 	msgbox GoldenrodUnderground_Text_YoungerBrotherOnePerDay, MSGBOX_DEFAULT
 	closemessage
-	hidemoneybox
 	release
 	end
 

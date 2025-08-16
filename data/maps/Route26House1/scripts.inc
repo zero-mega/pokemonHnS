@@ -6,11 +6,7 @@ Route26House1_EventScript_HealWoman::
 	faceplayer
 	msgbox Route26_Text_HealHouseRest, MSGBOX_DEFAULT
 	closemessage
-	fadescreenswapbuffers FADE_TO_BLACK
-	playse MUS_HEAL
-	special HealPlayerParty
-	waitse
-	fadescreenswapbuffers FADE_FROM_BLACK
+	call Common_EventScript_OutOfCenterPartyHeal
 	msgbox Route26_Text_HealHouseKeepAtIt, MSGBOX_DEFAULT
 	release
 	end

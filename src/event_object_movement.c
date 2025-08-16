@@ -505,9 +505,9 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_CHUCK                 0x1132
 #define OBJ_EVENT_PAL_TAG_PRYCE                 0x1133
 #define OBJ_EVENT_PAL_TAG_CLAIR                 0x1134
-#define OBJ_EVENT_PAL_TAG_BROCKSURGEBLUE          0x1135
-#define OBJ_EVENT_PAL_TAG_MISTYERIKASABRINA       0x1136
-#define OBJ_EVENT_PAL_TAG_BLAINE                 0x1137
+#define OBJ_EVENT_PAL_TAG_UNUSED3          0x1135
+#define OBJ_EVENT_PAL_TAG_UNUSED4       0x1136
+#define OBJ_EVENT_PAL_TAG_UNUSED2                 0x1137
 #define OBJ_EVENT_PAL_TAG_JANINE                 0x1138
 #define OBJ_EVENT_PAL_TAG_WILL                   0x1139
 #define OBJ_EVENT_PAL_TAG_KAREN                  0x113A
@@ -606,10 +606,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Chuck,               OBJ_EVENT_PAL_TAG_CHUCK},
     {gObjectEventPal_Pryce,               OBJ_EVENT_PAL_TAG_PRYCE},
     {gObjectEventPal_Clair,               OBJ_EVENT_PAL_TAG_CLAIR},
-    {gObjectEventPal_BrockSurgeBlue,               OBJ_EVENT_PAL_TAG_BROCKSURGEBLUE},
-    {gObjectEventPal_MistyErikaSabrina,               OBJ_EVENT_PAL_TAG_MISTYERIKASABRINA},
     {gObjectEventPal_Janine,               OBJ_EVENT_PAL_TAG_JANINE},
-    {gObjectEventPal_Blaine,               OBJ_EVENT_PAL_TAG_BLAINE},
 
     {gObjectEventPal_Will,               OBJ_EVENT_PAL_TAG_WILL},
     {gObjectEventPal_Karen,               OBJ_EVENT_PAL_TAG_KAREN},

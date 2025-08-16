@@ -311,6 +311,7 @@ AzaleaKurtsHouse_EventScript_KurtCancel::
 AzaleaKurtsHouse_EventScript_KurtGsBall::
 	msgbox KurtsHouse_Text_KurtWhatIsThat, MSGBOX_DEFAULT
 	closemessage
+	removeitem ITEM_GS_BALL
 	playse SE_BANG
 	applymovement LOCALID_AZALEA_TOWN_KURT, AzaleaTownKurt_Movement_Making_Ball
 	waitmovement 0
@@ -343,8 +344,14 @@ AzaleaKurtsHouse_EventScript_KurtGsBall2::
 AzaleaKurtsHouse_EventScript_KurtGsBall3::
 	msgbox KurtsHouse_Text_Forest, MSGBOX_DEFAULT
 	closemessage
+	delay 30
+	msgbox KurtsHouse_Text_BallAnyway, MSGBOX_DEFAULT
+	closemessage
+	goto AzaleaKurtsHouse_EventScript_Kurt2
 	release
 	end
+KurtsHouse_Text_BallAnyway:
+	.string "Anyway, can I make you some BALLS?$"
 
 AzaleaKurtsHouse_EventScript_OakPhoto::
 	msgbox KurtsHouse_Text_OakPhoto, MSGBOX_SIGN

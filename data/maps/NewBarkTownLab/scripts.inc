@@ -418,7 +418,6 @@ NewBarkTownLab_EventScript_TriggerAideGiveBalls::
 	release
 	end
 
-
 NewBarkTownLab_EventScript_Elm_Check_WhereIsEgg::
 	msgbox NewBarkTownLab_Text_ElmWaitingEggHatch, MSGBOX_DEFAULT
 	closemessage

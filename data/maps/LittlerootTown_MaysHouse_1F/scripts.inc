@@ -340,16 +340,16 @@ RivalsHouse_1F_Text_LikeChildLikeFather:
 	.string "scrabbling about in grassy places.$"
 
 RivalsHouse_1F_Text_TooBusyToNoticeVisit:
-	.string "That {RIVAL}!\p"
+	.string "That SILVER!\p"
 	.string "I guess our child is too busy with\n"
 	.string "POKéMON to notice that you came\l"
 	.string "to visit, {PLAYER}{KUN}.$"
 
 RivalsHouse_1F_Text_WentOutToRoute103:
-	.string "Oh, {RIVAL} went out to ROUTE 103\n"
+	.string "Oh, SILVER went out to ROUTE 103\n"
 	.string "just a little while ago.\p"
 	.string "Like father, like child.\n"
-	.string "{RIVAL} can't stay quietly at home.$"
+	.string "SILVER can't stay quietly at home.$"
 
 RivalsHouse_1F_Text_ShouldGoHomeEverySoOften:
 	.string "I think it's wonderful for people to\n"
