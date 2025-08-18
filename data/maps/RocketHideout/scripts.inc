@@ -8,6 +8,7 @@ RocketHideout_MapScripts::
 	.byte 0
 
 RocketHideout_OnLoad::
+	setflag FLAG_HIDE_ROCKETHIDEOUT_ROCKETS
 	call_if_eq VAR_ROCKET_HIDEOUT_STATUE_1, 2, RocketHideout_EventScript_SetStatue1
 	call_if_eq VAR_ROCKET_HIDEOUT_STATUE_2, 2, RocketHideout_EventScript_SetStatue2
 	call_if_eq VAR_ROCKET_HIDEOUT_STATUE_3, 2, RocketHideout_EventScript_SetStatue3
@@ -75,8 +76,13 @@ RocketHideout_Trigger_SpawnGruntStatue1::
 RocketHideout_Trigger_Statue1::
 	lock
 	setvar VAR_TEMP_0, LOCALID_ROCKETHIDEOUT_GRUNTM1
+	call RocketHideout_EventScript_SpawnGruntLeft
+	call RocketHideout_EventScript_SpawnGruntRight
 	call RocketHideout_Trigger_StatueGruntLeft
 	setvar VAR_ROCKET_HIDEOUT_STATUE_1, 2
+	fadescreenswapbuffers FADE_TO_BLACK
+	removeobject VAR_TEMP_0
+	fadescreenswapbuffers FADE_FROM_BLACK
 	setmetatile 45, 1, 0x2A9, TRUE
 	special DrawWholeMapView
 	release
@@ -91,8 +97,13 @@ RocketHideout_Trigger_SpawnGruntStatue2::
 RocketHideout_Trigger_Statue2::
 	lock
 	setvar VAR_TEMP_0, LOCALID_ROCKETHIDEOUT_GRUNTM2
+	call RocketHideout_EventScript_SpawnGruntLeft
+	call RocketHideout_EventScript_SpawnGruntRight
 	call RocketHideout_Trigger_StatueGruntRight
 	setvar VAR_ROCKET_HIDEOUT_STATUE_2, 2
+	fadescreenswapbuffers FADE_TO_BLACK
+	removeobject VAR_TEMP_0
+	fadescreenswapbuffers FADE_FROM_BLACK
 	setmetatile 24, 1, 0x2A9, TRUE
 	special DrawWholeMapView
 	release
@@ -107,8 +118,13 @@ RocketHideout_Trigger_SpawnGruntStatue3::
 RocketHideout_Trigger_Statue3::
 	lock
 	setvar VAR_TEMP_0, LOCALID_ROCKETHIDEOUT_GRUNTM3
+	call RocketHideout_EventScript_SpawnGruntLeft
+	call RocketHideout_EventScript_SpawnGruntRight
 	call RocketHideout_Trigger_StatueGruntLeft
 	setvar VAR_ROCKET_HIDEOUT_STATUE_3, 2
+	fadescreenswapbuffers FADE_TO_BLACK
+	removeobject VAR_TEMP_0
+	fadescreenswapbuffers FADE_FROM_BLACK
 	setmetatile 45, 6, 0x2A9, TRUE
 	special DrawWholeMapView
 	release
@@ -123,8 +139,13 @@ RocketHideout_Trigger_SpawnGruntStatue4::
 RocketHideout_Trigger_Statue4::
 	lock
 	setvar VAR_TEMP_0, LOCALID_ROCKETHIDEOUT_GRUNTM4
+	call RocketHideout_EventScript_SpawnGruntLeft
+	call RocketHideout_EventScript_SpawnGruntRight
 	call RocketHideout_Trigger_StatueGruntLeft
 	setvar VAR_ROCKET_HIDEOUT_STATUE_4, 2
+	fadescreenswapbuffers FADE_TO_BLACK
+	removeobject VAR_TEMP_0
+	fadescreenswapbuffers FADE_FROM_BLACK
 	setmetatile 45, 19, 0x2A9, TRUE
 	special DrawWholeMapView
 	release
@@ -139,8 +160,13 @@ RocketHideout_Trigger_SpawnGruntStatue5::
 RocketHideout_Trigger_Statue5::
 	lock
 	setvar VAR_TEMP_0, LOCALID_ROCKETHIDEOUT_GRUNTM4
+	call RocketHideout_EventScript_SpawnGruntLeft
+	call RocketHideout_EventScript_SpawnGruntRight
 	call RocketHideout_Trigger_StatueGruntRight
 	setvar VAR_ROCKET_HIDEOUT_STATUE_5, 2
+	fadescreenswapbuffers FADE_TO_BLACK
+	removeobject VAR_TEMP_0
+	fadescreenswapbuffers FADE_FROM_BLACK
 	setmetatile 27, 19, 0x2A9, TRUE
 	special DrawWholeMapView
 	release
