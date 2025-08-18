@@ -225,7 +225,7 @@ NationalParkBugContest_Text_Sign_BattleNotice:
 	.string "NATIONAL PARK WARDEN'S OFFICE$"
 
 NationalParkBugContest_Text_TrainerTips:
-	.string "The NATIONAL PARK has different\p"
+	.string "The NATIONAL PARK has different\n"
 	.string "POKéMON during the BUG-CATCHING\l"
 	.string "CONTEST.$"
 

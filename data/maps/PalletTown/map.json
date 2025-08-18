@@ -20,11 +20,6 @@
     },
     {
       "map": "MAP_ROUTE21",
-      "offset": -2,
-      "direction": "down"
-    },
-    {
-      "map": "MAP_ROUTE21",
       "offset": 0,
       "direction": "down"
     }

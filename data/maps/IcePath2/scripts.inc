@@ -26,3 +26,12 @@ IcePath2_EventScript_Item_Iron::
 IcePath2_EventScript_Item_Revive::
 	finditem ITEM_REVIVE
 	end
+
+IcePath2_EventScript_Sign::
+	msgbox IcePath2_Text_Sign, MSGBOX_SIGN
+	end
+
+IcePath2_Text_Sign:
+	.string "The sign is faded:\n"
+	.string "DANG-R CR--KED ICE\l"
+	.string "FA-- B-CYCLE --QUIRED$"
