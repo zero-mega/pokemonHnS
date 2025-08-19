@@ -276,7 +276,7 @@ RocketHideout2_Text_LanceInterrupt:
     .string "Lance: Hold it!\n"
     .string "A two-on-one battle?\p"
     .string "That is so unfair!\n"
-    .string "Typical of Team Rocket to be so\n"
+    .string "Typical of Team Rocket to be so\l"
     .string "sneaky.\p"
     .string "Allow me to join the battle!$"
 

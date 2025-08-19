@@ -291,7 +291,8 @@ MahoganyTown_Text_GymSign:
     .string "The Teacher of Winter's Harshness$"
 
 ElmPhoneRadioTowerRocketTakeoverText:
-	.string "{PLAYER}, how are things going?\p"
+	.string "PROF.ELM: {PLAYER}, how are\n"
+	.string "things going?\p"
 	.string "I called because something weird\n"
 	.string "is happening with the radio\l"
 	.string "broadcasts.\p"
