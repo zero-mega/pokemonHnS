@@ -40,6 +40,8 @@
 #include "tx_randomizer_and_challenges.h"
 #include "menu.h"
 #include "pokemon_summary_screen.h"
+#include "event_data.h"
+#include "constants/flags.h"
 
 //static void MoveSelectionDisplaySplitIcon(void);
 static void PlayerHandleGetMonData(void);
@@ -308,7 +310,7 @@ static void HandleInputChooseAction(void)
         {
             sAckBallUseBtn = FALSE;
         }
-        else if (JOY_NEW(R_BUTTON))
+        else if (JOY_NEW(R_BUTTON) && !FlagGet(FLAG_SYS_NO_CATCHING))
         {
             sAckBallUseBtn = TRUE;
             sBallSwapped = FALSE;
@@ -346,7 +348,7 @@ static void HandleInputChooseAction(void)
                 sBallSwapped = FALSE;
                 ArrowsChangeColorLastBallCycle(FALSE);
             }
-            else if (!JOY_HELD(R_BUTTON) && CanThrowLastUsedBall())
+            else if (!JOY_HELD(R_BUTTON) && CanThrowLastUsedBall() && !FlagGet(FLAG_SYS_NO_CATCHING))
             {
                 sAckBallUseBtn = FALSE;
                 PlaySE(SE_SELECT);
@@ -456,7 +458,7 @@ static void HandleInputChooseAction(void)
     {
         SwapHpBarsWithHpText();
     }
-    else if (JOY_NEW(R_BUTTON) && CanThrowLastUsedBall())
+    else if (JOY_NEW(R_BUTTON) && CanThrowLastUsedBall()  && !FlagGet(FLAG_SYS_NO_CATCHING))
     {
         PlaySE(SE_SELECT);
         TryHideLastUsedBall();
