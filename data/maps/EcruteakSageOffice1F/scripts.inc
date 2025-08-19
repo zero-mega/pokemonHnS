@@ -12,6 +12,14 @@ EcruteakSageOffice1F_EventScript_SageAside::
 	setobjectxyperm LOCALID_SAGEOFFICE_SAGE, 15, 2
 	end
 
+EcruteakSageOffice1F_EventScript_Sign::
+	msgbox EcruteakSageOffice1F_Text_Sign, MSGBOX_SIGN
+	end
+
+EcruteakSageOffice1F_Text_Sign:
+	.string "The bell of tin rings clearlly for\n"
+	.string "those under the tower's wing.$"
+
 EcruteakSageOffice_EventScript_SageA::
 	lock
 	faceplayer
