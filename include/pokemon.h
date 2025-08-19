@@ -143,7 +143,7 @@ struct PokemonSubstruct3
 
  /* 0x02 */ u16 metLevel:7;
  /* 0x02 */ u16 metGame:4;
- /* 0x03 */ u16 pokeball:5;
+ /* 0x03 */ u16 pokeball:4;
  /* 0x03 */ u16 otGender:1;
 
  /* 0x04 */ u32 hpIV:5;
@@ -172,7 +172,7 @@ struct PokemonSubstruct3
  /* 0x0B */ u32 nationalRibbon:1;           // Given to purified Shadow Pokémon in Colosseum/XD.
  /* 0x0B */ u32 earthRibbon:1;              // Given to teams that have beaten Mt. Battle's 100-battle challenge in Colosseum/XD.
  /* 0x0B */ u32 worldRibbon:1;              // Distributed during Pokémon Festa '04 and '05 to tournament winners.
- /* 0x0B */ u32 unusedRibbons:2;            // Discarded in Gen 4.
+ /* 0x0B */ u32 unusedRibbons:3;            // Discarded in Gen 4.
 /* 0x0B */ u32 nuzlockeRibbon:1;
 
  // The functionality of this bit changed in FRLG:
@@ -585,7 +585,5 @@ u16 GetSpeciesRandomSeeded(u16 species, u8 type, u16 additionalOffset);
 u16 GetRandomMove(u16 input_move, u16 species);
 u8 GetRandomType(void);
 u8 EvolutionBlockedByEvoLimit(u16 species);
-
-void FixSavePokemon1(struct BoxPokemon *boxMon);
 
 #endif // GUARD_POKEMON_H

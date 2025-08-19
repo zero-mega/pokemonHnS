@@ -872,7 +872,6 @@ bool8 WriteSaveBlock1Sector(void)
 u8 LoadGameSave(u8 saveType)
 {
     u8 status;
-    int i, j;
 
     if (gFlashMemoryPresent != TRUE)
     {
@@ -895,33 +894,6 @@ u8 LoadGameSave(u8 saveType)
         if (status == SAVE_STATUS_OK)
             status = TryLoadSaveSector(SECTOR_ID_HOF_2, &gDecompressionBuffer[SECTOR_DATA_SIZE], SECTOR_DATA_SIZE);
         break;
-    }
-
-    /* Apply any save modifications that need to be done between versions */
-    if (gSaveBlock1Ptr->versionIdMagic != 0xE8F828BC)
-    {
-        gSaveBlock1Ptr->versionId = 0;
-        gSaveBlock1Ptr->versionIdMagic = 0xE8F828BC;
-    }
-
-    // PokemonSubstruct3::pokeball went from 4 bits to 5
-    // PokemonSubstruct3unusedRibbons went from 3 bits to 2
-    if (gSaveBlock1Ptr->versionId < 1) 
-    {
-        for (i = 0; i < gPlayerPartyCount; i++)
-        {
-            FixSavePokemon1(&(gPlayerParty[i].box));
-        }
-
-        for (i = 0; i < TOTAL_BOXES_COUNT; i++)
-        {
-            for (j = 0; j < IN_BOX_COUNT; j++)
-            {
-                FixSavePokemon1(&(gPokemonStoragePtr->boxes[i][j]));
-            }
-        }
-
-        gSaveBlock1Ptr->versionId = 1;
     }
 
     return status;

@@ -249,9 +249,6 @@ void NewGameInitData(void)
     EnableMints ? FlagSet(FLAG_MINTS_ENABLED) : FlagClear(FLAG_MINTS_ENABLED);
     EnableExtraLegendaries ? FlagSet(FLAG_EXTRA_LEGENDARIES) : FlagClear(FLAG_EXTRA_LEGENDARIES);
 
-    gSaveBlock1Ptr->versionIdMagic = SAVE_MAGIC_NUM;
-    gSaveBlock1Ptr->versionId = SAVE_VERSION;
-
     /*if (difficultyPrev == DIFFICULTY_EASY)
         VarSet(VAR_DIFFICULTY, DIFFICULTY_EASY);
     else if (difficultyPrev == DIFFICULTY_NORMAL)

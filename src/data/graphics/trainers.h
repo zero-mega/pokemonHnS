@@ -218,7 +218,7 @@ const u32 gTrainerPalette_Wally_Back[] = INCBIN_U32("graphics/trainers/palettes/
 
 const u32 gTrainerFrontPic_Brendan[] = INCBIN_U32("graphics/trainers/front_pics/brendan.4bpp.lz");
 const u32 gTrainerPalette_Brendan[] = INCBIN_U32("graphics/trainers/palettes/brendan.gbapal.lz");
-const u32 gTrainerPalette_Brendan_Back[] = INCBIN_U32("graphics/trainers/palettes/brendan_back.gbapal.lz");
+const u32 gTrainerPalette_Brendan_Back[] = INCBIN_U32("graphics/trainers/palettes/brendan_Back.gbapal.lz");
 
 const u32 gTrainerFrontPic_May[] = INCBIN_U32("graphics/trainers/front_pics/may.4bpp.lz");
 const u32 gTrainerPalette_May[] = INCBIN_U32("graphics/trainers/palettes/may.gbapal.lz");
