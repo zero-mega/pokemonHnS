@@ -17,10 +17,10 @@ LavenderTownSoulHouse_EventScript_Granny::
 MrFuji_Text_Main:
 	.string "MR.FUJI: Welcome.\p"
 	.string "Hmm… You appear to be raising\n"
-	.string "your POKéMON in a kind and\n"
+	.string "your POKéMON in a kind and\l"
 	.string "loving manner.\p"
 	.string "POKéMON lovers come here to pay\n"
-	.string "their respects to departed\n"
+	.string "their respects to departed\l"
 	.string "POKéMON.\p"
 	.string "Please offer condolences for the\n"
 	.string "souls of the departed POKéMON.\p"

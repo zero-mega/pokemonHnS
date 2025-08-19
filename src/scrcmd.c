@@ -1865,6 +1865,7 @@ bool8 ScrCmd_givenamedmon(struct ScriptContext *ctx)
         nickname = NULL;
         otName = sEeveeOtName;
         otId = 5231;
+        personality = 0x00000000; 
         break;
     case 4: // DRATINI
         species = SPECIES_DRATINI;

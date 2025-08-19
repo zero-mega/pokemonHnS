@@ -12,6 +12,7 @@ Route2House_EventScript_Man::
 
 Route2House_EventScript_ManAfter::
 	msgbox Route2House_Text_Fisher_GotNugget, MSGBOX_NPC
+	end
 
 Route2House_Text_Fisher:
 	.string "Hi! Wow, I'm glad to see you.\p"

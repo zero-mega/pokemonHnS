@@ -98,7 +98,7 @@ VioletCity_PokeCenter_Text_ElmsAideNoRoom:
 
 VioletCity_PokeCenter_Text_ElmsAideGiveEgg:
 	.string "We discovered that a POKéMON won't\n"
-	.string "hatch until it grows in the EGG\p"
+	.string "hatch until it grows in the EGG.\p"
 	.string "It also has to be with other\n"
 	.string "active POKéMON to hatch.\p"
 	.string "{PLAYER}, you're the only person\n"

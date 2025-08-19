@@ -101,8 +101,7 @@ LavenderTownRadioStation_Text_SuperNerd2:
 	.string "Hey there!\p"
 	.string "I am the super MUSIC DIRECTOR!\p"
 	.string "Huh? Your RADIO can't tune into\n" @POKéGEAR
-	.string "my music programs. How\n"
-	.string "unfortunate!\p"
+	.string "my music programs. How unfortunate!\p"
 	.string "If you get an EXPN CARD upgrade,\n"
 	.string "you can tune in. You'd better get\l"
 	.string "one!$"

@@ -256,6 +256,7 @@ WhirlIslands1_EventScript_LugiaFlewAway::
 	return
 
 WhirlIslands1_EventScript_CaughtLugia::
+	setflag FLAG_CAUGHT_LUGIA
 	fadescreenswapbuffers FADE_TO_BLACK
 	removeobject LOCALID_LUGIA
 	setflag FLAG_HIDE_LUGIA
@@ -271,7 +272,11 @@ WhirlIslands1_EventScript_Zuki::
 	msgbox WhirlIslands1_Text_Zuki_Before, MSGBOX_NPC
 	end
 WhirlIslands1_EventScript_ZukiAfter::
+	goto_if_unset FLAG_CAUGHT_LUGIA, WhirlIslands1_EventScript_ZukiAfterNotCaught
 	msgbox WhirlIslands1_Text_Kimono_AfterCaught, MSGBOX_NPC
+	end
+WhirlIslands1_EventScript_ZukiAfterNotCaught::
+	msgbox WhirlIslands1_Text_Kimono_AfterNotCaught, MSGBOX_NPC
 	end
 
 WhirlIslands1_EventScript_Naoko::
@@ -305,6 +310,14 @@ WhirlIslands1_EventScript_Kuni::
 WhirlIslands1_EventScript_KuniAfter::
 	msgbox WhirlIslands1_Text_Kimono_After, MSGBOX_NPC
 	end
+
+WhirlIslands1_Text_Kimono_AfterNotCaught:
+	.string "You have not only made LUGIA\n"
+	.string "appear, but you have also defeated\l"
+	.string "it...\p"
+	.string "There is nothing more for us to\n"
+	.string "say. Take care of yourself in your\l"
+	.string "journey...$"	
 
 WhirlIslands1_Text_Kimono_AfterCaught:
 	.string "You have not only made LUGIA\n"

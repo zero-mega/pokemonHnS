@@ -186,8 +186,7 @@ MediumMarthaAfterBattleText:
 	.string "most-is the one who will!$"
 
 MediumGraceSeenText:
-	.string "Stumped by our invisible\n"
-	.string "floor?\p"
+	.string "Stumped by our dark corridors?\n"
 	.string "Defeat me if you want a hint!$"
 
 MediumGraceBeatenText:
@@ -195,7 +194,7 @@ MediumGraceBeatenText:
 
 MediumGraceAfterBattleText:
 	.string "Fine. I'll tell you the secret\n"
-	.string "of the invisible floor.\p"
+	.string "of the shadows.\p"
 	.string "The path is right in front of\n"
 	.string "your eyes!$"
 

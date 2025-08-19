@@ -28,7 +28,7 @@ BlackthornHouse2_EventScript_Emy::
 	msgbox BlackthornHouse2_Text_MonYouTakeCare, MSGBOX_DEFAULT
 	closemessage
 	setflag FLAG_BLACKTHORN_NPC_TRADE_COMPLETED
-	release
+	releaseall
 	end
 
 BlackthornHouse2_EventScript_DeclineTrade::

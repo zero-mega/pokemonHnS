@@ -64,10 +64,8 @@ Route38_Text_BirdKeeperTobyBeaten:
 	.string "away now.$"
 
 Route38_Text_BirdKeeperTobyAfter:
-	.string "I plan to train in\n"
-	.string "CIANWOOD CITY to\p"
-	.string "teach my POKéMON\n"
-	.string "how to FLY.$"
+	.string "I plan to train in CIANWOOD CITY\n"
+	.string "to teach my POKéMON how to FLY.$"
 
 Route38_Text_SchoolboyChad1Seen:
 	.string "Let me try something\n"

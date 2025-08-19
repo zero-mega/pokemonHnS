@@ -927,9 +927,6 @@
 // gTileset_ssaqua
 #define METATILE_ssaqua_Door  0x281
 
-// gTileset_whirl_islands
-#define METATILE_whirl_islands_MB_POKEBLOCK_FEEDER  0x3DB
-
 // Other
 #define METATILE_RSMossdeepGym_RedArrow_Down   0x205
 #define METATILE_RSMossdeepGym_RedArrow_Left   0x20C

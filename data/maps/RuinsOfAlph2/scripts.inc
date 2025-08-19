@@ -397,7 +397,7 @@ RuinsOfAlph2_Text_Receptionist3:
 
 
 RuinsOfAlph2_Text_Kabuto:
-	.string "A POKéMON that hid on the sea floor\n"
+	.string "A POKéMON that hid on the sea floor.\n"
 	.string "Eyes on its back scanned the area.$"
 
 RuinsOfAlph2_Text_UnownText:

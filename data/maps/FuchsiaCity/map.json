@@ -275,6 +275,13 @@
       "elevation": 0,
       "dest_map": "MAP_FUCHSIA_CITY_HOUSE3",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 39,
+      "y": 28,
+      "elevation": 0,
+      "dest_map": "MAP_FUCHSIA_CITY_HOUSE3",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

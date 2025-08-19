@@ -17,7 +17,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BALDING_MAN",
       "x": 3,
-      "y": -2,
+      "y": -5,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -69,7 +69,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_3",
       "x": 2,
-      "y": -2,
+      "y": -5,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,

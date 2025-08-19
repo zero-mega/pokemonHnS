@@ -225,6 +225,7 @@ TinTower10_EventScript_HoohFlewAway::
 	return
 
 TinTower10_EventScript_CaughtHooh::
+	setflag FLAG_CAUGHT_HO_OH
 	fadescreenswapbuffers FADE_TO_BLACK
 	removeobject LOCALID_HO_OH
 	setflag FLAG_HIDE_HO_OH
@@ -240,7 +241,11 @@ TinTower10_EventScript_Zuki::
 	msgbox TinTower10_Text_Zuki_Before, MSGBOX_NPC
 	end
 TinTower10_EventScript_ZukiAfter::
+	goto_if_unset FLAG_CAUGHT_HO_OH, TinTower10_EventScript_ZukiAfterNotCaught
 	msgbox TinTower10_Text_Kimono_AfterCaught, MSGBOX_NPC
+	end
+TinTower10_EventScript_ZukiAfterNotCaught::
+	msgbox TinTower10_Text_Kimono_AfterNotCaught, MSGBOX_NPC
 	end
 
 TinTower10_EventScript_Naoko::
@@ -274,6 +279,14 @@ TinTower10_EventScript_Kuni::
 TinTower10_EventScript_KuniAfter::
 	msgbox TinTower10_Text_Kimono_After, MSGBOX_NPC
 	end
+
+TinTower10_Text_Kimono_AfterNotCaught:
+	.string "You have not only made HO-OH\n"
+	.string "appear, but you have also defeated\l"
+	.string "it...\p"
+	.string "There is nothing more for us to\n"
+	.string "say. Take care of yourself in your\l"
+	.string "journey...$"
 
 TinTower10_Text_Kimono_AfterCaught:
 	.string "You have not only made HO-OH\n"

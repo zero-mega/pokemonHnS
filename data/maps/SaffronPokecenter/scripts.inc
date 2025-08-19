@@ -41,12 +41,12 @@ SaffronPokecenter1F_Text_Fisher:
 SaffronPokecenter1F_Text_Fisher_ReturnedPart:
 	.string "Caves collapse easily.\p"
 	.string "Several caves have disappeared in\n"
-	.string "the past few years, like the one\n"
+	.string "the past few years, like the one\l"
 	.string "outside CERULEAN.\p"
 	.string "As a pro HIKER, that's common\n"
 	.string "knowledge.$"
 
 SaffronPokecenter1F_Text_Youngster:
 	.string "SILPH CO.'s HEAD OFFICE and the\n"
-	.string "MAGNET TRAIN STATION--they're the\n"
+	.string "MAGNET TRAIN STATION--they're the\l"
 	.string "places to see in SAFFRON.$"

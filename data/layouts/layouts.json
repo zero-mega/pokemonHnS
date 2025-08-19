@@ -5384,7 +5384,7 @@
     {
       "id": "LAYOUT_ICE_PATH4",
       "name": "IcePath4_Layout",
-      "width": 22,
+      "width": 26,
       "height": 28,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_IceCave_38",

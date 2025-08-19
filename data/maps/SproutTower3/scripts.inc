@@ -225,7 +225,7 @@ SproutTower_Text_SageJin_AfterBattle:
 	.string "As POKéMON grow stronger,\n"
 	.string "so does the trainer.\p"
 	.string "No, wait. As the trainer\n"
-	.string "grows stronger, so do the\n"
+	.string "grows stronger, so do the\l"
 	.string "POKéMON.$"
 
 SproutTower_Text_SageTroy_Seen:
