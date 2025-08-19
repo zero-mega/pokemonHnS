@@ -1,0 +1,67 @@
+From cb81b2ab16733de563919a26f377d7fe3fecdeae Mon Sep 17 00:00:00 2001
+From: Andrew Strauss <astrauss11@gmail.com>
+Date: Mon, 18 Aug 2025 04:30:00 +0000
+Subject: [PATCH 1/3] Fix capitalization issue on certain filesystems
+
+Signed-off-by: Andrew Strauss <astrauss11@gmail.com>
+---
+ src/field_door.c | 24 ++++++++++++------------
+ 1 file changed, 12 insertions(+), 12 deletions(-)
+
+diff --git a/src/field_door.c b/src/field_door.c
+index b7c697a8..fb445910 100755
+--- a/src/field_door.c
++++ b/src/field_door.c
+@@ -149,37 +149,37 @@ static const u8 sDoorAnimTiles_Goldenrod[] = INCBIN_U8("graphics/door_anims/gold
+ static const u16 sDoorNullPalette50[16] = {};
+ static const u8 sDoorAnimTiles_NewBarkTown_Door_Yellow[] = INCBIN_U8("graphics/door_anims/NewBarkTown_Door_Yellow.4bpp");
+ static const u16 sDoorNullPalette51[16] = {};
+-static const u8 sDoorAnimTiles_NewBarkTown_Door_Blue[] = INCBIN_U8("graphics/door_anims/Cerulean.4bpp");
++static const u8 sDoorAnimTiles_NewBarkTown_Door_Blue[] = INCBIN_U8("graphics/door_anims/cerulean.4bpp");
+ static const u16 sDoorNullPalette52[16] = {};
+ static const u8 sDoorAnimTiles_NewBarkTown_Door_Red[] = INCBIN_U8("graphics/door_anims/NewBarkTown_Door_Red.4bpp");
+ static const u16 sDoorNullPalette53[16] = {};
+ static const u8 sDoorAnimTiles_Azalea[] = INCBIN_U8("graphics/door_anims/NewBarkTown_Door_Yellow.4bpp");
+ static const u16 sDoorNullPalette54[16] = {};
+-static const u8 sDoorAnimTiles_Cianwood[] = INCBIN_U8("graphics/door_anims/Cianwood.4bpp");
++static const u8 sDoorAnimTiles_Cianwood[] = INCBIN_U8("graphics/door_anims/cianwood.4bpp");
+ static const u16 sDoorNullPalette55[16] = {};
+-static const u8 sDoorAnimTiles_Viridian[] = INCBIN_U8("graphics/door_anims/Viridian.4bpp");
++static const u8 sDoorAnimTiles_Viridian[] = INCBIN_U8("graphics/door_anims/viridian.4bpp");
+ static const u16 sDoorNullPalette56[16] = {};
+-static const u8 sDoorAnimTiles_Pewter[] = INCBIN_U8("graphics/door_anims/Pewter.4bpp");
++static const u8 sDoorAnimTiles_Pewter[] = INCBIN_U8("graphics/door_anims/pewter.4bpp");
+ static const u16 sDoorNullPalette57[16] = {};
+-static const u8 sDoorAnimTiles_Cerulean[] = INCBIN_U8("graphics/door_anims/Cerulean.4bpp");
++static const u8 sDoorAnimTiles_Cerulean[] = INCBIN_U8("graphics/door_anims/cerulean.4bpp");
+ static const u16 sDoorNullPalette58[16] = {};
+-static const u8 sDoorAnimTiles_Vermilion[] = INCBIN_U8("graphics/door_anims/Vermilion.4bpp");
++static const u8 sDoorAnimTiles_Vermilion[] = INCBIN_U8("graphics/door_anims/vermilion.4bpp");
+ static const u16 sDoorNullPalette59[16] = {};
+-static const u8 sDoorAnimTiles_Lavender[] = INCBIN_U8("graphics/door_anims/Lavender.4bpp");
++static const u8 sDoorAnimTiles_Lavender[] = INCBIN_U8("graphics/door_anims/lavender.4bpp");
+ static const u16 sDoorNullPalette60[16] = {};
+-static const u8 sDoorAnimTiles_Saffron[] = INCBIN_U8("graphics/door_anims/Saffron.4bpp");
++static const u8 sDoorAnimTiles_Saffron[] = INCBIN_U8("graphics/door_anims/saffron.4bpp");
+ static const u16 sDoorNullPalette61[16] = {};
+-static const u8 sDoorAnimTiles_Fuchsia[] = INCBIN_U8("graphics/door_anims/Fuchsia.4bpp");
++static const u8 sDoorAnimTiles_Fuchsia[] = INCBIN_U8("graphics/door_anims/fuchsia.4bpp");
+ static const u16 sDoorNullPalette62[16] = {};
+ static const u8 sDoorAnimTiles_NewBarkTown_Door_Grey[] = INCBIN_U8("graphics/door_anims/NewBarkTown_Door_Grey.4bpp");
+ static const u16 sDoorNullPalette63[16] = {};
+-static const u8 sDoorAnimTiles_JohtoSafariZone_Door[] = INCBIN_U8("graphics/door_anims/Safari_Zone.4bpp");
++static const u8 sDoorAnimTiles_JohtoSafariZone_Door[] = INCBIN_U8("graphics/door_anims/safari_zone.4bpp");
+ static const u16 sDoorNullPalette64[16] = {};
+ static const u8 sDoorAnimTiles_CherryGrove_Door[] = INCBIN_U8("graphics/door_anims/NewBarkTown_Door_Red.4bpp");
+ static const u16 sDoorNullPalette65[16] = {};
+-static const u8 sDoorAnimTiles_VioletCity_Dojo_Door[] = INCBIN_U8("graphics/door_anims/Dojo_door.4bpp");
++static const u8 sDoorAnimTiles_VioletCity_Dojo_Door[] = INCBIN_U8("graphics/door_anims/dojo_door.4bpp");
+ static const u16 sDoorNullPalette66[16] = {};
+-static const u8 sDoorAnimTiles_EcruteakCity_Dojo_Door[] = INCBIN_U8("graphics/door_anims/Dojo_door_ecruteak.4bpp");
++static const u8 sDoorAnimTiles_EcruteakCity_Dojo_Door[] = INCBIN_U8("graphics/door_anims/dojo_door_ecruteak.4bpp");
+ static const u16 sDoorNullPalette67[16] = {};
+ static const u8 sDoorAnimTiles_OlivineCity_Door[] = INCBIN_U8("graphics/door_anims/olivine.4bpp");
+ static const u16 sDoorNullPalette68[16] = {};
+-- 
+2.45.2
+

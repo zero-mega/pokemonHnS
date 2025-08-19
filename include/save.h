@@ -39,6 +39,12 @@
 // indicate that no specific sector should be used.
 #define FULL_SAVE_SLOT 0xFFFF
 
+// A random number to identify that the save data has a valid version number
+#define SAVE_MAGIC_NUM 0xE8F828BC
+
+// The current save version, increment if the save data structure changes, including the pokmeon struct
+#define SAVE_VERSION 1
+
 // SetDamagedSectorBits states
 enum
 {

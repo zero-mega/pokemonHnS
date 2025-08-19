@@ -1,0 +1,223 @@
+From a4cec57e3239825edbdb66e45d9f95796d2bffb1 Mon Sep 17 00:00:00 2001
+From: Andrew Strauss <astrauss11@gmail.com>
+Date: Mon, 18 Aug 2025 03:30:27 -0400
+Subject: [PATCH 3/3] Expand pokeball bit field (#2)
+
+* Expand PokemonSubstruct3::pokeball and implement save versioning
+
+Signed-off-by: Andrew Strauss <astrauss11@gmail.com>
+
+* Fix versionIdMagic not being set
+
+Signed-off-by: Andrew Strauss <astrauss11@gmail.com>
+
+---------
+
+Signed-off-by: Andrew Strauss <astrauss11@gmail.com>
+---
+ include/global.h  |  3 ++-
+ include/pokemon.h |  6 +++--
+ include/save.h    |  6 +++++
+ src/new_game.c    |  3 +++
+ src/pokemon.c     | 67 +++++++++++++++++++++++++++++++++++++++++++++++
+ src/save.c        | 28 ++++++++++++++++++++
+ 6 files changed, 110 insertions(+), 3 deletions(-)
+
+diff --git a/include/global.h b/include/global.h
+index cf23fca5..18929d68 100755
+--- a/include/global.h
++++ b/include/global.h
+@@ -1042,7 +1042,8 @@ struct SaveBlock1
+     /*0x848*/ struct Pokeblock pokeblocks[POKEBLOCKS_COUNT];
+     /*0x988*/ u8 seen1[NUM_DEX_FLAG_BYTES];
+     /*0x9BC*/ u16 berryBlenderRecords[3];
+-    /*0x9C2*/ u8 unused_9C2[6];
++    /*0x9C2*/ u32 versionIdMagic;
++    /*0x9C6*/ u16 versionId;
+     /*0x9C8*/ u16 trainerRematchStepCounter;
+     /*0x9CA*/ u8 trainerRematches[MAX_REMATCH_ENTRIES];
+     /*0xA2E*/ //u8 padding3[2];
+diff --git a/include/pokemon.h b/include/pokemon.h
+index 4c90a285..82fa15e9 100755
+--- a/include/pokemon.h
++++ b/include/pokemon.h
+@@ -143,7 +143,7 @@ struct PokemonSubstruct3
+ 
+  /* 0x02 */ u16 metLevel:7;
+  /* 0x02 */ u16 metGame:4;
+- /* 0x03 */ u16 pokeball:4;
++ /* 0x03 */ u16 pokeball:5;
+  /* 0x03 */ u16 otGender:1;
+ 
+  /* 0x04 */ u32 hpIV:5;
+@@ -172,7 +172,7 @@ struct PokemonSubstruct3
+  /* 0x0B */ u32 nationalRibbon:1;           // Given to purified Shadow Pokémon in Colosseum/XD.
+  /* 0x0B */ u32 earthRibbon:1;              // Given to teams that have beaten Mt. Battle's 100-battle challenge in Colosseum/XD.
+  /* 0x0B */ u32 worldRibbon:1;              // Distributed during Pokémon Festa '04 and '05 to tournament winners.
+- /* 0x0B */ u32 unusedRibbons:3;            // Discarded in Gen 4.
++ /* 0x0B */ u32 unusedRibbons:2;            // Discarded in Gen 4.
+ /* 0x0B */ u32 nuzlockeRibbon:1;
+ 
+  // The functionality of this bit changed in FRLG:
+@@ -586,4 +586,6 @@ u16 GetRandomMove(u16 input_move, u16 species);
+ u8 GetRandomType(void);
+ u8 EvolutionBlockedByEvoLimit(u16 species);
+ 
++void FixSavePokemon1(struct BoxPokemon *boxMon);
++
+ #endif // GUARD_POKEMON_H
+diff --git a/include/save.h b/include/save.h
+index 58f2ef5f..71514cf2 100755
+--- a/include/save.h
++++ b/include/save.h
+@@ -39,6 +39,12 @@
+ // indicate that no specific sector should be used.
+ #define FULL_SAVE_SLOT 0xFFFF
+ 
++// A random number to identify that the save data has a valid version number
++#define SAVE_MAGIC_NUM 0xE8F828BC
++
++// The current save version, increment if the save data structure changes, including the pokmeon struct
++#define SAVE_VERSION 1
++
+ // SetDamagedSectorBits states
+ enum
+ {
+diff --git a/src/new_game.c b/src/new_game.c
+index 1372ea2b..2ef0f9a7 100755
+--- a/src/new_game.c
++++ b/src/new_game.c
+@@ -249,6 +249,9 @@ void NewGameInitData(void)
+     EnableMints ? FlagSet(FLAG_MINTS_ENABLED) : FlagClear(FLAG_MINTS_ENABLED);
+     EnableExtraLegendaries ? FlagSet(FLAG_EXTRA_LEGENDARIES) : FlagClear(FLAG_EXTRA_LEGENDARIES);
+ 
++    gSaveBlock1Ptr->versionIdMagic = SAVE_MAGIC_NUM;
++    gSaveBlock1Ptr->versionId = SAVE_VERSION;
++
+     /*if (difficultyPrev == DIFFICULTY_EASY)
+         VarSet(VAR_DIFFICULTY, DIFFICULTY_EASY);
+     else if (difficultyPrev == DIFFICULTY_NORMAL)
+diff --git a/src/pokemon.c b/src/pokemon.c
+index 528c9a99..61b9f0c5 100755
+--- a/src/pokemon.c
++++ b/src/pokemon.c
+@@ -11789,3 +11789,70 @@ u8 EvolutionBlockedByEvoLimit(u16 species)
+ 
+     return FALSE;
+ }
++
++void FixSavePokemon1(struct BoxPokemon *boxMon)
++{
++
++    struct PokemonSubstruct0 *substruct0 = NULL;
++    struct PokemonSubstruct1 *substruct1 = NULL;
++    struct PokemonSubstruct2 *substruct2 = NULL;
++    struct PokemonSubstruct3 *substruct3 = NULL;
++
++    substruct0 = &(GetSubstruct(boxMon, boxMon->personality, 0)->type0);
++    substruct1 = &(GetSubstruct(boxMon, boxMon->personality, 1)->type1);
++    substruct2 = &(GetSubstruct(boxMon, boxMon->personality, 2)->type2);
++    substruct3 = &(GetSubstruct(boxMon, boxMon->personality, 3)->type3);
++
++    DecryptBoxMon(boxMon);
++
++    if (substruct0->species != SPECIES_NONE)
++    {    
++        uint32_t b0 = ((uint32_t*)substruct3)[0];
++        uint32_t b1 = ((uint32_t*)substruct3)[1];
++        uint32_t b2 = ((uint32_t*)substruct3)[2];
++        
++        /* u32 b2 95:64 */
++        // Identify bits to remain unchanged - 95:93
++            // bit 91 (worldRibbon) will overwrite bit 92 (unusedRibbons)
++        uint32_t hiMask = 0b11100000000000000000000000000000;
++        uint32_t hiKeep = b2 & hiMask;
++        
++        // Identify bits to be shifted - 91:64
++        hiMask = 0b11110000000000000000000000000000; // exclude bit 92
++        hiMask = ~hiMask; // flip mask
++        uint32_t hiShift = b2 & hiMask;
++        
++        /* u32 b1 63:32 */
++        // Identify bits to be shifted - 63:32 (all of them)
++        uint32_t mdMask = 0b11111111111111111111111111111111;
++        uint32_t mdShift = b1 & mdMask;
++        
++        // Retrieve the leftmost bit of mdShift, which will become the rightmost of hiShift
++        uint32_t lastHiBit = mdShift >> 31;
++        
++        /* u32 b0 31:0 */
++        // Identify bits to remain unchanged - 30:0
++        uint32_t loMask = 0b01111111111111111111111111111111;
++        uint32_t loKeep = b0 & loMask;
++        
++        // Identify bits to be shifted - 63:31
++        loMask = ~loMask;
++        uint32_t loShift = b0 & loMask;
++        
++        // Retrieve the leftmost bit of loShift, which will become the rightmost of mdShift
++        uint32_t lastMdBit = (uint32_t)(loShift >> 31);
++        
++        // Shift the relevant bits, and recombine with the unchanged bits
++        b2 = hiKeep | ((hiShift << 1) | lastHiBit);
++        b1 = (mdShift << 1) | lastMdBit;
++        b0 = loKeep | (loShift << 1);
++    
++        ((uint32_t*)substruct3)[0] = b0;
++        ((uint32_t*)substruct3)[1] = b1;
++        ((uint32_t*)substruct3)[2] = b2;
++
++        boxMon->checksum = CalculateBoxMonChecksum(boxMon);
++    }
++    
++    EncryptBoxMon(boxMon);
++}
+diff --git a/src/save.c b/src/save.c
+index 765fb045..bf3c2599 100755
+--- a/src/save.c
++++ b/src/save.c
+@@ -872,6 +872,7 @@ bool8 WriteSaveBlock1Sector(void)
+ u8 LoadGameSave(u8 saveType)
+ {
+     u8 status;
++    int i, j;
+ 
+     if (gFlashMemoryPresent != TRUE)
+     {
+@@ -896,6 +897,33 @@ u8 LoadGameSave(u8 saveType)
+         break;
+     }
+ 
++    /* Apply any save modifications that need to be done between versions */
++    if (gSaveBlock1Ptr->versionIdMagic != 0xE8F828BC)
++    {
++        gSaveBlock1Ptr->versionId = 0;
++        gSaveBlock1Ptr->versionIdMagic = 0xE8F828BC;
++    }
++
++    // PokemonSubstruct3::pokeball went from 4 bits to 5
++    // PokemonSubstruct3unusedRibbons went from 3 bits to 2
++    if (gSaveBlock1Ptr->versionId < 1) 
++    {
++        for (i = 0; i < gPlayerPartyCount; i++)
++        {
++            FixSavePokemon1(&(gPlayerParty[i].box));
++        }
++
++        for (i = 0; i < TOTAL_BOXES_COUNT; i++)
++        {
++            for (j = 0; j < IN_BOX_COUNT; j++)
++            {
++                FixSavePokemon1(&(gPokemonStoragePtr->boxes[i][j]));
++            }
++        }
++
++        gSaveBlock1Ptr->versionId = 1;
++    }
++
+     return status;
+ }
+ 
+-- 
+2.45.2
+

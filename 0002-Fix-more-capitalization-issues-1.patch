@@ -1,0 +1,61 @@
+From 8d8d0b0ebad39f8dd96f42d2c465c1e98569c0f0 Mon Sep 17 00:00:00 2001
+From: Andrew Strauss <astrauss11@gmail.com>
+Date: Mon, 18 Aug 2025 00:45:38 -0400
+Subject: [PATCH 2/3] Fix more capitalization issues (#1)
+
+Signed-off-by: Andrew Strauss <astrauss11@gmail.com>
+---
+ src/data/graphics/pokemon.h  | 26 +++++++++++++-------------
+ src/data/graphics/trainers.h |  2 +-
+ 2 files changed, 14 insertions(+), 14 deletions(-)
+
+diff --git a/src/data/graphics/pokemon.h b/src/data/graphics/pokemon.h
+index 03e70550..b3c13971 100755
+--- a/src/data/graphics/pokemon.h
++++ b/src/data/graphics/pokemon.h
+@@ -3103,16 +3103,16 @@ const u32 gMonShinyPalette_Dudunsparce[] = INCBIN_U32("graphics/pokemon/dudunspa
+ const u8 gMonIcon_Dudunsparce[] = INCBIN_U8("graphics/pokemon/dudunsparce/icon.4bpp");
+ const u8 gMonFootprint_Dudunsparce[] = INCBIN_U8("graphics/pokemon/dudunsparce/footprint.1bpp");
+ 
+-const u32 gMonStillFrontPic_Wyrdeer[] = INCBIN_U32("graphics/pokemon/Wyrdeer/front.4bpp.lz");
+-const u32 gMonPalette_Wyrdeer[] = INCBIN_U32("graphics/pokemon/Wyrdeer/normal.gbapal.lz");
+-const u32 gMonBackPic_Wyrdeer[] = INCBIN_U32("graphics/pokemon/Wyrdeer/back.4bpp.lz");
+-const u32 gMonShinyPalette_Wyrdeer[] = INCBIN_U32("graphics/pokemon/Wyrdeer/shiny.gbapal.lz");
+-const u8 gMonIcon_Wyrdeer[] = INCBIN_U8("graphics/pokemon/Wyrdeer/icon.4bpp");
+-const u8 gMonFootprint_Wyrdeer[] = INCBIN_U8("graphics/pokemon/Wyrdeer/footprint.1bpp");
+-
+-const u32 gMonStillFrontPic_Ursaluna[] = INCBIN_U32("graphics/pokemon/Ursaluna/front.4bpp.lz");
+-const u32 gMonPalette_Ursaluna[] = INCBIN_U32("graphics/pokemon/Ursaluna/normal.gbapal.lz");
+-const u32 gMonBackPic_Ursaluna[] = INCBIN_U32("graphics/pokemon/Ursaluna/back.4bpp.lz");
+-const u32 gMonShinyPalette_Ursaluna[] = INCBIN_U32("graphics/pokemon/Ursaluna/shiny.gbapal.lz");
+-const u8 gMonIcon_Ursaluna[] = INCBIN_U8("graphics/pokemon/Ursaluna/icon.4bpp");
+-const u8 gMonFootprint_Ursaluna[] = INCBIN_U8("graphics/pokemon/Ursaluna/footprint.1bpp");
++const u32 gMonStillFrontPic_Wyrdeer[] = INCBIN_U32("graphics/pokemon/wyrdeer/front.4bpp.lz");
++const u32 gMonPalette_Wyrdeer[] = INCBIN_U32("graphics/pokemon/wyrdeer/normal.gbapal.lz");
++const u32 gMonBackPic_Wyrdeer[] = INCBIN_U32("graphics/pokemon/wyrdeer/back.4bpp.lz");
++const u32 gMonShinyPalette_Wyrdeer[] = INCBIN_U32("graphics/pokemon/wyrdeer/shiny.gbapal.lz");
++const u8 gMonIcon_Wyrdeer[] = INCBIN_U8("graphics/pokemon/wyrdeer/icon.4bpp");
++const u8 gMonFootprint_Wyrdeer[] = INCBIN_U8("graphics/pokemon/wyrdeer/footprint.1bpp");
++
++const u32 gMonStillFrontPic_Ursaluna[] = INCBIN_U32("graphics/pokemon/ursaluna/front.4bpp.lz");
++const u32 gMonPalette_Ursaluna[] = INCBIN_U32("graphics/pokemon/ursaluna/normal.gbapal.lz");
++const u32 gMonBackPic_Ursaluna[] = INCBIN_U32("graphics/pokemon/ursaluna/back.4bpp.lz");
++const u32 gMonShinyPalette_Ursaluna[] = INCBIN_U32("graphics/pokemon/ursaluna/shiny.gbapal.lz");
++const u8 gMonIcon_Ursaluna[] = INCBIN_U8("graphics/pokemon/ursaluna/icon.4bpp");
++const u8 gMonFootprint_Ursaluna[] = INCBIN_U8("graphics/pokemon/ursaluna/footprint.1bpp");
+diff --git a/src/data/graphics/trainers.h b/src/data/graphics/trainers.h
+index 1d3796d9..46d502b8 100755
+--- a/src/data/graphics/trainers.h
++++ b/src/data/graphics/trainers.h
+@@ -218,7 +218,7 @@ const u32 gTrainerPalette_Wally_Back[] = INCBIN_U32("graphics/trainers/palettes/
+ 
+ const u32 gTrainerFrontPic_Brendan[] = INCBIN_U32("graphics/trainers/front_pics/brendan.4bpp.lz");
+ const u32 gTrainerPalette_Brendan[] = INCBIN_U32("graphics/trainers/palettes/brendan.gbapal.lz");
+-const u32 gTrainerPalette_Brendan_Back[] = INCBIN_U32("graphics/trainers/palettes/brendan_Back.gbapal.lz");
++const u32 gTrainerPalette_Brendan_Back[] = INCBIN_U32("graphics/trainers/palettes/brendan_back.gbapal.lz");
+ 
+ const u32 gTrainerFrontPic_May[] = INCBIN_U32("graphics/trainers/front_pics/may.4bpp.lz");
+ const u32 gTrainerPalette_May[] = INCBIN_U32("graphics/trainers/palettes/may.gbapal.lz");
+-- 
+2.45.2
+

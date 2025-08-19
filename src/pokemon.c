@@ -11789,3 +11789,70 @@ u8 EvolutionBlockedByEvoLimit(u16 species)
 
     return FALSE;
 }
+
+void FixSavePokemon1(struct BoxPokemon *boxMon)
+{
+
+    struct PokemonSubstruct0 *substruct0 = NULL;
+    struct PokemonSubstruct1 *substruct1 = NULL;
+    struct PokemonSubstruct2 *substruct2 = NULL;
+    struct PokemonSubstruct3 *substruct3 = NULL;
+
+    substruct0 = &(GetSubstruct(boxMon, boxMon->personality, 0)->type0);
+    substruct1 = &(GetSubstruct(boxMon, boxMon->personality, 1)->type1);
+    substruct2 = &(GetSubstruct(boxMon, boxMon->personality, 2)->type2);
+    substruct3 = &(GetSubstruct(boxMon, boxMon->personality, 3)->type3);
+
+    DecryptBoxMon(boxMon);
+
+    if (substruct0->species != SPECIES_NONE)
+    {    
+        uint32_t b0 = ((uint32_t*)substruct3)[0];
+        uint32_t b1 = ((uint32_t*)substruct3)[1];
+        uint32_t b2 = ((uint32_t*)substruct3)[2];
+        
+        /* u32 b2 95:64 */
+        // Identify bits to remain unchanged - 95:93
+            // bit 91 (worldRibbon) will overwrite bit 92 (unusedRibbons)
+        uint32_t hiMask = 0b11100000000000000000000000000000;
+        uint32_t hiKeep = b2 & hiMask;
+        
+        // Identify bits to be shifted - 91:64
+        hiMask = 0b11110000000000000000000000000000; // exclude bit 92
+        hiMask = ~hiMask; // flip mask
+        uint32_t hiShift = b2 & hiMask;
+        
+        /* u32 b1 63:32 */
+        // Identify bits to be shifted - 63:32 (all of them)
+        uint32_t mdMask = 0b11111111111111111111111111111111;
+        uint32_t mdShift = b1 & mdMask;
+        
+        // Retrieve the leftmost bit of mdShift, which will become the rightmost of hiShift
+        uint32_t lastHiBit = mdShift >> 31;
+        
+        /* u32 b0 31:0 */
+        // Identify bits to remain unchanged - 30:0
+        uint32_t loMask = 0b01111111111111111111111111111111;
+        uint32_t loKeep = b0 & loMask;
+        
+        // Identify bits to be shifted - 63:31
+        loMask = ~loMask;
+        uint32_t loShift = b0 & loMask;
+        
+        // Retrieve the leftmost bit of loShift, which will become the rightmost of mdShift
+        uint32_t lastMdBit = (uint32_t)(loShift >> 31);
+        
+        // Shift the relevant bits, and recombine with the unchanged bits
+        b2 = hiKeep | ((hiShift << 1) | lastHiBit);
+        b1 = (mdShift << 1) | lastMdBit;
+        b0 = loKeep | (loShift << 1);
+    
+        ((uint32_t*)substruct3)[0] = b0;
+        ((uint32_t*)substruct3)[1] = b1;
+        ((uint32_t*)substruct3)[2] = b2;
+
+        boxMon->checksum = CalculateBoxMonChecksum(boxMon);
+    }
+    
+    EncryptBoxMon(boxMon);
+}
