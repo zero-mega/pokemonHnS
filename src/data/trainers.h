@@ -4526,9 +4526,9 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_QUENTIN] =
     {
-        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
+        .trainerClass = TRAINER_CLASS_CAMPER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
+        .trainerPic = TRAINER_PIC_CAMPER,
         .trainerName = _("QUENTIN"),
         .items = {},
         .doubleBattle = FALSE,

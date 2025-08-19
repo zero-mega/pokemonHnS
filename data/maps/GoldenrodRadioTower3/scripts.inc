@@ -149,7 +149,7 @@ GoldenrodRadioTower3_Text_SuperNerd:
 	.string "We have recordings of the cries\n"
 	.string "of all POKéMON that have been\l"
 	.string "found.\p"
-	.string "We must have about 200 kinds.$"
+	.string "We must have about 400 kinds.$"
 
 GoldenrodRadioTower3_Text_GymGuideRockets:
 	.string "To trainers, POKéMON are their\n"

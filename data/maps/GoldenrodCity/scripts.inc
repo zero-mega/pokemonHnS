@@ -65,28 +65,24 @@ GoldenrodCity_EventScript_PokefanM::
 	end
 
 GoldenrodCity_EventScript_Youngster::
-	lockall
-	faceplayer
-	goto_if_set FLAG_RECEIVED_BIKE, GoldenrodCity_EventScript_Youngster2
-	msgbox GoldenrodCity_Text_Youngster1, MSGBOX_DEFAULT
-	closemessage
-	releaseall
+	msgbox GoldenrodCity_Text_Youngster1, MSGBOX_NPC
 	end
 
 GoldenrodCity_EventScript_Youngster2::
-	lock
-	faceplayer
-	msgbox GoldenrodCity_Text_CooltrainerF1, MSGBOX_DEFAULT
-	closemessage
-	release
+	msgbox GoldenrodCity_Text_Youngster2, MSGBOX_NPC
 	end
 
 GoldenrodCity_EventScript_CooltrainerF::
 	lock
 	faceplayer
-	msgbox GoldenrodCity_Text_CooltrainerF2, MSGBOX_DEFAULT
+	goto_if_set FLAG_HIDE_GOLDENROD_ROCKET_SCOUT, GoldenrodCity_EventScript_CooltrainerFCleared
+	msgbox GoldenrodCity_Text_CooltrainerF1, MSGBOX_DEFAULT
 	closemessage
 	release
+	end
+
+GoldenrodCity_EventScript_CooltrainerFCleared::
+	msgbox GoldenrodCity_Text_CooltrainerF1_Cleared, MSGBOX_NPC
 	end
 
 GoldenrodCity_EventScript_Lass::

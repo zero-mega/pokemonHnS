@@ -263,12 +263,22 @@ VermilionCityGym_EventScript_Surge::
 	addvar VAR_NUM_BADGES, 1
 	setvar VAR_0x8008, 11
 	call Common_EventScript_SetGymTrainers
-	msgbox VermilionGym_Text_LtSurgeTm, MSGBOX_DEFAULT
-	giveitem ITEM_TM_THUNDERBOLT
+	checkitem ITEM_TM_THUNDERBOLT
+	call_if_eq VAR_RESULT, TRUE, VermilionCityGym_EventScript_GiveThunderstone
+	call_if_eq VAR_RESULT, FALSE, VermilionCityGym_EventScript_GiveTM
 	clearflag FLAG_HIDE_PLANT_SURGE
 	closemessage
 	release
 	end
+
+VermilionCityGym_EventScript_GiveThunderstone::
+	msgbox VermilionGym_Text_LtSurgeThunderstone, MSGBOX_DEFAULT
+	giveitem ITEM_THUNDER_STONE
+	return
+VermilionCityGym_EventScript_GiveTM::
+	msgbox VermilionGym_Text_LtSurgeTm, MSGBOX_DEFAULT
+	giveitem ITEM_TM_THUNDERBOLT
+	return
 
 VermilionCityGym_EventScript_Surge_Defeated::
 	msgbox VermilionGym_Text_LtSurgePostBattle, MSGBOX_DEFAULT
@@ -305,6 +315,11 @@ VermilionGym_Text_ThunderBadgeInfo:
 VermilionGym_Text_LtSurgeTm:
 	.string "And take this TM. It served me\n"
 	.string "well in the war!$"
+
+VermilionGym_Text_LtSurgeThunderstone:
+	.string "And take this stone. It has real\n"
+	.string "thunder power!$"
+
 
 VermilionGym_Text_LtSurgePostBattle:
 	.string "SURGE: Hey, kid! Still slugging\n"
