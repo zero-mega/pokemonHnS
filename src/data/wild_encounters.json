@@ -46640,8 +46640,8 @@
                 "species": "SPECIES_ARBOK"
               },
               {
-                "min_level": 39,
-                "max_level": 39,
+                "min_level": 5,
+                "max_level": 5,
                 "species": "SPECIES_CHIKORITA"
               },
               {
@@ -46824,8 +46824,8 @@
                 "species": "SPECIES_ARBOK"
               },
               {
-                "min_level": 39,
-                "max_level": 39,
+                "min_level": 5,
+                "max_level": 5,
                 "species": "SPECIES_CHIKORITA"
               },
               {
@@ -47008,8 +47008,8 @@
                 "species": "SPECIES_ARBOK"
               },
               {
-                "min_level": 39,
-                "max_level": 39,
+                "min_level": 5,
+                "max_level": 5,
                 "species": "SPECIES_BULBASAUR"
               },
               {
@@ -47192,8 +47192,8 @@
                 "species": "SPECIES_ARBOK"
               },
               {
-                "min_level": 39,
-                "max_level": 39,
+                "min_level": 5,
+                "max_level": 5,
                 "species": "SPECIES_BULBASAUR"
               },
               {
