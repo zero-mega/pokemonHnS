@@ -1080,7 +1080,7 @@
 #define FLAG_ITEM_RUINSOFALPH_LUM_BERRY_1                           0x406
 #define FLAG_ITEM_RUINSOFALPH_CHARCOAL                              0x407
 #define FLAG_ITEM_RUINSOFALPH_MAX_REVIVE_1                          0x408
-#define FLAG_ITEM_RUINSOFALPH_SITRUS_BERRY_1                        0x409
+#define FLAG_ITEM_RUINSOFALPH_SACRED_ASH                        0x409
 #define FLAG_ITEM_RUINSOFALPH_HEAL_POWDER_1                         0x40A
 #define FLAG_ITEM_RUINSOFALPH_ENERGY_ROOT                           0x40B
 #define FLAG_ITEM_RUINSOFALPH_SITRUS_BERRY_2                        0x40C
