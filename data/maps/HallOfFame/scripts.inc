@@ -79,8 +79,14 @@ HallOfFame_EventScript_SetGameClearFlags::
 	setflag FLAG_IS_KANTO_CHAMPION
 	setvar VAR_COMPLETED_LUGIA, 4
 	setvar VAR_COMPLETED_HO_OH, 4
+	call_if_set FLAG_CAUGHT_RAIKOU, HallOfFame_EventScript_SpawnRoamers
 	call_if_ge VAR_SUICUNE_ENCOUNTERS, 8, HallOfFame_EventScript_SpawnSuicuneCheck
 	setvar VAR_LEAGUE_STATE, 1
+	return
+
+HallOfFame_EventScript_SpawnRoamers::
+	setvar VAR_0x8004, 1
+	special InitRoamer
 	return
 
 HallOfFame_EventScript_SpawnSuicuneCheck::
