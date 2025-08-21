@@ -491,14 +491,14 @@
       "x": 39,
       "y": 22,
       "elevation": 0,
-      "dest_map": "MAP_ECRUTEAK_SAGE_OFFICE1F",
+      "dest_map": "MAP_ECRUTEAK_SAGE_OFFICE1",
       "dest_warp_id": "0"
     },
     {
       "x": 36,
       "y": 16,
       "elevation": 0,
-      "dest_map": "MAP_ECRUTEAK_SAGE_OFFICE",
+      "dest_map": "MAP_ECRUTEAK_SAGE_OFFICE2",
       "dest_warp_id": "0"
     },
     {

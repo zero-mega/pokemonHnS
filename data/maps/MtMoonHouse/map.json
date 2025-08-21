@@ -46,7 +46,7 @@
       "x": 5,
       "y": 9,
       "elevation": 0,
-      "dest_map": "MAP_MT_MOON_TEST",
+      "dest_map": "MAP_MT_MOON_OUTSIDE",
       "dest_warp_id": "0"
     }
   ],

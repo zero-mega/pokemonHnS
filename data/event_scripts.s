@@ -1504,13 +1504,13 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/IndigoJunction/scripts.inc"
 
-	.include "data/maps/EcruteakSageOffice/scripts.inc"
+	.include "data/maps/EcruteakSageOffice2/scripts.inc"
 
-	.include "data/maps/EcruteakSageOffice1F/scripts.inc"
+	.include "data/maps/EcruteakSageOffice1/scripts.inc"
 
 	.include "data/maps/EcruteakTheater/scripts.inc"
 
-	.include "data/maps/OlivineMarina_0/scripts.inc"
+	.include "data/maps/OlivineCityPortInside/scripts.inc"
 
 	.include "data/maps/OlivineLighthouse1/scripts.inc"
 
@@ -1854,7 +1854,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/VermilionCityPortIndoor/scripts.inc"
 
-	.include "data/maps/OlivineCityPort/scripts.inc"
+	.include "data/maps/OlivineCityPortOutside/scripts.inc"
 
 	.include "data/maps/VermilionCityGym/scripts.inc"
 
@@ -1966,13 +1966,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/VioletCityGym2/scripts.inc"
 
-	.include "data/maps/LighthouseTopTest/scripts.inc"
-
-	.include "data/maps/CianwoodGymTest/scripts.inc"
-
-	.include "data/maps/EcruteakGymTest/scripts.inc"
-
-	.include "data/maps/MtMoonTest/scripts.inc"
+	.include "data/maps/MtMoonOutside/scripts.inc"
 
 	.include "data/maps/MtSilverSideTest/scripts.inc"
 

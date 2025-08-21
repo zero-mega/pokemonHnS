@@ -101,11 +101,9 @@
     "Route24",
     "Route25",
     "Route26",
+    "Route26North",
     "Route27",
-    "Route28",
-    "TinTower10Night",
-    "BattleTowerOuter",
-    "Route26North"
+    "Route28"
   ],
   "gMapGroup_IndoorNewBark": [
     "NewBarkTownLab",
@@ -174,20 +172,20 @@
     "EcruteakTheater",
     "EcruteakHouse1",
     "EcruteakHouse2",
-    "EcruteakSageOffice",
-    "EcruteakSageOffice1F",
+    "EcruteakSageOffice1",
+    "EcruteakSageOffice2",
     "EcruteakGym"
   ],
   "gMapGroup_IndoorOlivine": [
     "OlivinePokecenter",
-    "OlivineMarina_0",
     "OlivineGym",
     "OlivineCafe",
     "OlivinePokemart",
     "OlivineHouse1",
     "OlivineHouse2",
     "OlivineHouse3",
-    "OlivineCityPort",
+    "OlivineCityPortOutside",
+    "OlivineCityPortInside",
     "OlivineLighthouse1"
   ],
   "gMapGroup_IndoorCianwood": [
@@ -274,6 +272,8 @@
     "CeladonApartments2",
     "CeladonApartments3",
     "CeladonApartments4",
+    "CeladonApartments4Night",
+    "CeladonApartments5",
     "CeladonCityGameCorner",
     "CeladonCityDepartmentStore1",
     "CeladonCityDepartmentStore2",
@@ -281,10 +281,8 @@
     "CeladonCityDepartmentStore4",
     "CeladonCityDepartmentStore5",
     "CeladonCityDepartmentStore6",
-    "CeladonCityGym",
-    "CeladonApartments5",
-    "CeladonApartments4Night",
-    "CeladonCityDepartmentStore7"
+    "CeladonCityDepartmentStore7",
+    "CeladonCityGym"
   ],
   "gMapGroup_IndoorSaffron": [
     "SaffronPokecenter",
@@ -405,6 +403,7 @@
     "SlowpokeWell2",
     "IlexForest",
     "NationalPark",
+    "NationalPark2",
     "BurnedTower1",
     "BurnedTower2",
     "CliffEdgeGate",
@@ -413,6 +412,7 @@
     "MtMortar3",
     "MtMortar4",
     "LakeOfRage",
+    "LakeOfRageLowTide",
     "IcePath1",
     "IcePath2",
     "IcePath3",
@@ -434,7 +434,9 @@
     "TinTower8",
     "TinTower9",
     "TinTower10",
+    "TinTower10Night",
     "TohjoFalls",
+    "TohjoFalls2",
     "VictoryRoad1",
     "VictoryRoad2",
     "VictoryRoad3",
@@ -457,6 +459,9 @@
     "MtSilver3",
     "MtSilver4",
     "MtSilver5",
+    "MtSilver6",
+    "MtSilver7",
+    "MtSilver8",
     "MtSilverBrumal",
     "MtSilverMeadow",
     "CliffEdgeCave",
@@ -464,16 +469,12 @@
     "RocketHideout",
     "RocketHideout2",
     "RocketHideout3",
-    "MtSilver6",
-    "MtSilver7",
-    "MtSilver8",
     "RuinsOfAlphC_1",
     "RuinsOfAlphC_2",
     "RuinsOfAlphC_3",
     "RuinsOfAlphC_4",
-    "LakeOfRageLowTide",
-    "TohjoFalls2",
-    "MtMoon2"
+    "MtMoon2",
+    "LakeOfRageUnderground"
   ],
   "gMapGroup_IndoorDynamic": [
 
@@ -493,6 +494,7 @@
     "SafariZone3",
     "SafariZoneIndoor",
     "SafariZoneEntrance",
+    "BattleTowerOuter",
     "Saffron_Temp",
     "SSAqua1",
     "SSAqua2",
@@ -513,12 +515,10 @@
     "SafariZone_Low_Right",
     "SafariZone_Top_Mid",
     "SafariZone_Top_Right",
-    "MtMoonTest",
+    "MtMoonOutside",
     "MtSilverSideTest",
     "MtSilverSummitTest",
-    "NationalPark2",
-    "MtSilverSummitTestNight",
-    "LakeOfRageUnderground"
+    "MtSilverSummitTestNight"
   ],
   "gMapGroup_Emerald1": [
     "PetalburgCity",

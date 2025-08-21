@@ -1,7 +1,7 @@
 {
-  "id": "MAP_ECRUTEAK_SAGE_OFFICE1F",
-  "name": "EcruteakSageOffice1F",
-  "layout": "LAYOUT_ECRUTEAK_SAGE_OFFICE1F",
+  "id": "MAP_ECRUTEAK_SAGE_OFFICE1",
+  "name": "EcruteakSageOffice1",
+  "layout": "LAYOUT_ECRUTEAK_SAGE_OFFICE1",
   "music": "MUS_HG_ECRUTEAK",
   "region_map_section": "MAPSEC_ECRUTEAK_CITY",
   "requires_flash": false,
@@ -24,7 +24,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "EcruteakSageOffice_EventScript_SageB",
+      "script": "EcruteakSageOffice2_EventScript_SageB",
       "flag": "0"
     },
     {
@@ -37,7 +37,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "EcruteakSageOffice_EventScript_SageC",
+      "script": "EcruteakSageOffice2_EventScript_SageC",
       "flag": "0"
     },
     {
@@ -50,7 +50,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "EcruteakSageOffice_EventScript_SageA",
+      "script": "EcruteakSageOffice2_EventScript_SageA",
       "flag": "0"
     }
   ],
@@ -66,7 +66,7 @@
       "x": 16,
       "y": 1,
       "elevation": 0,
-      "dest_map": "MAP_ECRUTEAK_SAGE_OFFICE",
+      "dest_map": "MAP_ECRUTEAK_SAGE_OFFICE2",
       "dest_warp_id": "1"
     }
   ],
@@ -80,7 +80,7 @@
       "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "EcruteakSageOffice1F_EventScript_Sign"
+      "script": "EcruteakSageOffice1_EventScript_Sign"
     }
   ]
 }

@@ -60197,8 +60197,8 @@
           }
         },
         {
-          "map": "MAP_OLIVINE_CITY_PORT",
-          "base_label": "gOlivineCityPort",
+          "map": "MAP_OLIVINE_CITY_PORT_OUTSIDE",
+          "base_label": "gOlivineCityPortOutside",
           "land_mons": {
             "encounter_rate": 0,
             "mons": [
@@ -60386,8 +60386,8 @@
           }
         },
         {
-          "map": "MAP_OLIVINE_CITY_PORT",
-          "base_label": "gOlivineCityPort_Night",
+          "map": "MAP_OLIVINE_CITY_PORT_OUTSIDE",
+          "base_label": "gOlivineCityPortOutside_Night",
           "land_mons": {
             "encounter_rate": 0,
             "mons": [

@@ -6332,24 +6332,24 @@
       "blockdata_filepath": "data/layouts/IndigoJunction/map.bin"
     },
     {
-      "id": "LAYOUT_ECRUTEAK_SAGE_OFFICE",
-      "name": "EcruteakSageOffice_Layout",
+      "id": "LAYOUT_ECRUTEAK_SAGE_OFFICE2",
+      "name": "EcruteakSageOffice2_Layout",
       "width": 10,
       "height": 17,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Theater_26",
-      "border_filepath": "data/layouts/EcruteakSageOffice/border.bin",
-      "blockdata_filepath": "data/layouts/EcruteakSageOffice/map.bin"
+      "border_filepath": "data/layouts/EcruteakSageOffice2/border.bin",
+      "blockdata_filepath": "data/layouts/EcruteakSageOffice2/map.bin"
     },
     {
-      "id": "LAYOUT_ECRUTEAK_SAGE_OFFICE1F",
-      "name": "EcruteakSageOffice1F_Layout",
+      "id": "LAYOUT_ECRUTEAK_SAGE_OFFICE1",
+      "name": "EcruteakSageOffice1_Layout",
       "width": 19,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Theater_26",
-      "border_filepath": "data/layouts/EcruteakSageOffice1F/border.bin",
-      "blockdata_filepath": "data/layouts/EcruteakSageOffice1F/map.bin"
+      "border_filepath": "data/layouts/EcruteakSageOffice1/border.bin",
+      "blockdata_filepath": "data/layouts/EcruteakSageOffice1/map.bin"
     },
     {
       "id": "LAYOUT_ECRUTEAK_THEATER",
@@ -6362,14 +6362,14 @@
       "blockdata_filepath": "data/layouts/EcruteakTheater/map.bin"
     },
     {
-      "id": "LAYOUT_OLIVINE_MARINA_0",
-      "name": "OlivineMarina_0_Layout",
+      "id": "LAYOUT_OLIVINE_CITY_PORT_INSIDE",
+      "name": "OlivineCityPortInside_Layout",
       "width": 18,
       "height": 28,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Marina_65",
-      "border_filepath": "data/layouts/OlivineMarina_0/border.bin",
-      "blockdata_filepath": "data/layouts/OlivineMarina_0/map.bin"
+      "border_filepath": "data/layouts/OlivineCityPortInside/border.bin",
+      "blockdata_filepath": "data/layouts/OlivineCityPortInside/map.bin"
     },
     {
       "id": "LAYOUT_OLIVINE_LIGHTHOUSE1",
@@ -8082,14 +8082,14 @@
       "blockdata_filepath": "data/layouts/VermilionCityPortIndoor/map.bin"
     },
     {
-      "id": "LAYOUT_OLIVINE_CITY_PORT",
-      "name": "OlivineCityPort_Layout",
+      "id": "LAYOUT_OLIVINE_CITY_PORT_OUTSIDE",
+      "name": "OlivineCityPortOutside_Layout",
       "width": 32,
       "height": 23,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Marina_65",
-      "border_filepath": "data/layouts/OlivineCityPort/border.bin",
-      "blockdata_filepath": "data/layouts/OlivineCityPort/map.bin"
+      "border_filepath": "data/layouts/OlivineCityPortOutside/border.bin",
+      "blockdata_filepath": "data/layouts/OlivineCityPortOutside/map.bin"
     },
     {
       "id": "LAYOUT_VERMILION_CITY_GYM",
@@ -8642,14 +8642,14 @@
       "blockdata_filepath": "data/layouts/VioletCityGym2/map.bin"
     },
     {
-      "id": "LAYOUT_MT_MOON_TEST",
-      "name": "MtMoonTest_Layout",
+      "id": "LAYOUT_MT_MOON_OUTSIDE",
+      "name": "MtMoonOutside_Layout",
       "width": 49,
       "height": 29,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Cherrygrove",
-      "border_filepath": "data/layouts/MtMoonTest/border.bin",
-      "blockdata_filepath": "data/layouts/MtMoonTest/map.bin"
+      "border_filepath": "data/layouts/MtMoonOutside/border.bin",
+      "blockdata_filepath": "data/layouts/MtMoonOutside/map.bin"
     },
     {
       "id": "LAYOUT_MT_SILVER_SIDE_TEST",

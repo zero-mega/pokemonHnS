@@ -702,7 +702,7 @@
       "x": 8,
       "y": 37,
       "elevation": 0,
-      "dest_map": "MAP_ECRUTEAK_SAGE_OFFICE",
+      "dest_map": "MAP_ECRUTEAK_SAGE_OFFICE2",
       "dest_warp_id": "0"
     },
     {
@@ -716,14 +716,14 @@
       "x": 8,
       "y": 38,
       "elevation": 0,
-      "dest_map": "MAP_ECRUTEAK_SAGE_OFFICE",
+      "dest_map": "MAP_ECRUTEAK_SAGE_OFFICE2",
       "dest_warp_id": "0"
     },
     {
       "x": 8,
       "y": 36,
       "elevation": 0,
-      "dest_map": "MAP_ECRUTEAK_SAGE_OFFICE",
+      "dest_map": "MAP_ECRUTEAK_SAGE_OFFICE2",
       "dest_warp_id": "0"
     }
   ],

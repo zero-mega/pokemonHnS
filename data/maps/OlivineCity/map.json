@@ -19,7 +19,7 @@
       "direction": "left"
     },
     {
-      "map": "MAP_OLIVINE_CITY_PORT",
+      "map": "MAP_OLIVINE_CITY_PORT_OUTSIDE",
       "offset": 5,
       "direction": "down"
     },
