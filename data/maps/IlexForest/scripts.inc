@@ -320,7 +320,7 @@ IlexForest_EventScript_SecondCelebi::
 	playmoncry SPECIES_CELEBI, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	seteventmon SPECIES_CELEBI, 50
+	seteventmon SPECIES_CELEBI, 40
 	special BattleSetup_StartLegendaryBattle
 	specialvar VAR_RESULT, GetBattleOutcome
 	waitstate
