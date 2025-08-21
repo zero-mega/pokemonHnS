@@ -8642,36 +8642,6 @@
       "blockdata_filepath": "data/layouts/VioletCityGym2/map.bin"
     },
     {
-      "id": "LAYOUT_LIGHTHOUSE_TOP_TEST",
-      "name": "LighthouseTopTest_Layout",
-      "width": 16,
-      "height": 14,
-      "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_Observatory",
-      "border_filepath": "data/layouts/LighthouseTopTest/border.bin",
-      "blockdata_filepath": "data/layouts/LighthouseTopTest/map.bin"
-    },
-    {
-      "id": "LAYOUT_CIANWOOD_GYM_TEST",
-      "name": "CianwoodGymTest_Layout",
-      "width": 21,
-      "height": 17,
-      "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_CianwoodGymNew",
-      "border_filepath": "data/layouts/CianwoodGymTest/border.bin",
-      "blockdata_filepath": "data/layouts/CianwoodGymTest/map.bin"
-    },
-    {
-      "id": "LAYOUT_ECRUTEAK_GYM_TEST",
-      "name": "EcruteakGymTest_Layout",
-      "width": 17,
-      "height": 48,
-      "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_EcruteakGymNew",
-      "border_filepath": "data/layouts/EcruteakGymTest/border.bin",
-      "blockdata_filepath": "data/layouts/EcruteakGymTest/map.bin"
-    },
-    {
       "id": "LAYOUT_MT_MOON_TEST",
       "name": "MtMoonTest_Layout",
       "width": 49,

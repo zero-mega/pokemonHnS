@@ -484,15 +484,12 @@
 #define MAP_SAFARI_ZONE_LOW_RIGHT       (31 | (26 << 8))
 #define MAP_SAFARI_ZONE_TOP_MID         (32 | (26 << 8))
 #define MAP_SAFARI_ZONE_TOP_RIGHT       (33 | (26 << 8))
-#define MAP_LIGHTHOUSE_TOP_TEST         (34 | (26 << 8))
-#define MAP_CIANWOOD_GYM_TEST           (35 | (26 << 8))
-#define MAP_ECRUTEAK_GYM_TEST           (36 | (26 << 8))
-#define MAP_MT_MOON_TEST                (37 | (26 << 8))
-#define MAP_MT_SILVER_SIDE_TEST         (38 | (26 << 8))
-#define MAP_MT_SILVER_SUMMIT_TEST       (39 | (26 << 8))
-#define MAP_NATIONAL_PARK2              (40 | (26 << 8))
-#define MAP_MT_SILVER_SUMMIT_TEST_NIGHT (41 | (26 << 8))
-#define MAP_LAKE_OF_RAGE_UNDERGROUND    (42 | (26 << 8))
+#define MAP_MT_MOON_TEST                (34 | (26 << 8))
+#define MAP_MT_SILVER_SIDE_TEST         (35 | (26 << 8))
+#define MAP_MT_SILVER_SUMMIT_TEST       (36 | (26 << 8))
+#define MAP_NATIONAL_PARK2              (37 | (26 << 8))
+#define MAP_MT_SILVER_SUMMIT_TEST_NIGHT (38 | (26 << 8))
+#define MAP_LAKE_OF_RAGE_UNDERGROUND    (39 | (26 << 8))
 
 // gMapGroup_Emerald1
 #define MAP_PETALBURG_CITY                          (0 | (27 << 8))
@@ -1040,7 +1037,5 @@
 #define MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE          (96 | (31 << 8))
 
 #define MAP_GROUPS_COUNT 32
-
-// static const u8 MAP_GROUP_COUNT[] = {72, 5, 5, 7, 5, 29, 8, 10, 6, 6, 7, 5, 5, 7, 6, 9, 7, 18, 10, 13, 4, 7, 27, 30, 84, 0, 43, 125, 113, 126, 74, 97, 0};
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H
