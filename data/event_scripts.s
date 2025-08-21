@@ -1668,7 +1668,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/CianwoodGym/scripts.inc"
 
-	.include "data/maps/Ecruteak_Dummy/scripts.inc"
+	.include "data/maps/Bellchime_Trail/scripts.inc"
 
 	.include "data/maps/MahoganyGym/scripts.inc"
 

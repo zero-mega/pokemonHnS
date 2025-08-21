@@ -457,7 +457,7 @@
 #define MAP_POWER_PLANT2                (4 | (26 << 8))
 #define MAP_MT_SILVER_POKECENTER        (5 | (26 << 8))
 #define MAP_TREES                       (6 | (26 << 8))
-#define MAP_ECRUTEAK_DUMMY              (7 | (26 << 8))
+#define MAP_BELLCHIME_TRAIL             (7 | (26 << 8))
 #define MAP_NEW_MAP1                    (8 | (26 << 8))
 #define MAP_SAFARI_ZONE1                (9 | (26 << 8))
 #define MAP_SAFARI_ZONE2                (10 | (26 << 8))

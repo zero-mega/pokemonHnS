@@ -7152,14 +7152,14 @@
       "blockdata_filepath": "data/layouts/CianwoodGym/map.bin"
     },
     {
-      "id": "LAYOUT_ECRUTEAK_DUMMY",
-      "name": "Ecruteak_Dummy_Layout",
+      "id": "LAYOUT_BELLCHIME_TRAIL",
+      "name": "Bellchime_Trail_Layout",
       "width": 70,
       "height": 69,
       "primary_tileset": "gTileset_Johto_NorthWest",
       "secondary_tileset": "gTileset_BellchimeTrail",
-      "border_filepath": "data/layouts/Ecruteak_Dummy/border.bin",
-      "blockdata_filepath": "data/layouts/Ecruteak_Dummy/map.bin"
+      "border_filepath": "data/layouts/Bellchime_Trail/border.bin",
+      "blockdata_filepath": "data/layouts/Bellchime_Trail/map.bin"
     },
     {
       "id": "LAYOUT_MAHOGANY_GYM",
