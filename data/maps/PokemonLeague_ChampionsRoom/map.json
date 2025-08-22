@@ -1,7 +1,7 @@
 {
-  "id": "MAP_POKEMON_LEAGUE5",
-  "name": "PokemonLeague5",
-  "layout": "LAYOUT_POKEMON_LEAGUE5",
+  "id": "MAP_POKEMON_LEAGUE_CHAMPIONS_ROOM",
+  "name": "PokemonLeague_ChampionsRoom",
+  "layout": "LAYOUT_POKEMON_LEAGUE_CHAMPIONS_ROOM",
   "music": "MUS_HG_POKEMON_LEAGUE",
   "region_map_section": "MAPSEC_INDIGO_PLATEAU",
   "requires_flash": false,
@@ -24,7 +24,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "PokemonLeague1_EventScript_Lance",
+      "script": "PokemonLeague_WillsRoom_EventScript_Lance",
       "flag": "0"
     },
     {
@@ -59,7 +59,7 @@
       "x": 6,
       "y": 19,
       "elevation": 0,
-      "dest_map": "MAP_POKEMON_LEAGUE4",
+      "dest_map": "MAP_POKEMON_LEAGUE_KARENS_ROOM",
       "dest_warp_id": "1"
     },
     {

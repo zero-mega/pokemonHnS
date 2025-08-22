@@ -1418,7 +1418,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/SproutTower3/scripts.inc"
 
-	.include "data/maps/IndigoPlateauPokeCenter/scripts.inc"
+	.include "data/maps/IndigoPlateau_PokemonCenter/scripts.inc"
 
 	.include "data/maps/CherrygroveCity_PokemonCenter/scripts.inc"
 
@@ -1456,7 +1456,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/FuchsiaCity_PokemonCenter/scripts.inc"
 
-	.include "data/maps/CinnabarPokecenter/scripts.inc"
+	.include "data/maps/CinnabarIsland_PokemonCenter/scripts.inc"
 
 	.include "data/maps/SeafoamIslands1/scripts.inc"
 
@@ -1860,9 +1860,9 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/CinnabarVolcano1/scripts.inc"
 
-	.include "data/maps/CinnabarVolcano2/scripts.inc"
+	.include "data/maps/CinnabarIsland_Unused/scripts.inc"
 
-	.include "data/maps/CinnabarGym/scripts.inc"
+	.include "data/maps/CinnabarIsland_GymUnused/scripts.inc"
 
 	.include "data/maps/FuchsiaCity_Route15_Gate/scripts.inc"
 
@@ -1922,15 +1922,15 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/WorldHub2/scripts.inc"
 
-	.include "data/maps/PokemonLeague1/scripts.inc"
+	.include "data/maps/PokemonLeague_WillsRoom/scripts.inc"
 
-	.include "data/maps/PokemonLeague2/scripts.inc"
+	.include "data/maps/PokemonLeague_KogasRoom/scripts.inc"
 
-	.include "data/maps/PokemonLeague3/scripts.inc"
+	.include "data/maps/PokemonLeague_BrunosRoom/scripts.inc"
 
-	.include "data/maps/PokemonLeague4/scripts.inc"
+	.include "data/maps/PokemonLeague_KarensRoom/scripts.inc"
 
-	.include "data/maps/PokemonLeague5/scripts.inc"
+	.include "data/maps/PokemonLeague_ChampionsRoom/scripts.inc"
 
 	.include "data/maps/HallOfFame/scripts.inc"
 

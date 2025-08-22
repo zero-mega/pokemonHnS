@@ -436,8 +436,8 @@ const u16 gMetatileAttributes_FuchsiaCity_Gym[] = INCBIN_U16("data/tilesets/seco
 const u16 gMetatiles_VermilionGym[] = INCBIN_U16("data/tilesets/secondary/vermilion_gym/metatiles.bin");
 const u16 gMetatileAttributes_VermilionGym[] = INCBIN_U16("data/tilesets/secondary/vermilion_gym/metatile_attributes.bin");
 
-const u16 gMetatiles_CinnabarGym_31[] = INCBIN_U16("data/tilesets/secondary/cinnabar_gym_31/metatiles.bin");
-const u16 gMetatileAttributes_CinnabarGym_31[] = INCBIN_U16("data/tilesets/secondary/cinnabar_gym_31/metatile_attributes.bin");
+const u16 gMetatiles_CinnabarIsland_GymUnused_31[] = INCBIN_U16("data/tilesets/secondary/cinnabar_gym_31/metatiles.bin");
+const u16 gMetatileAttributes_CinnabarIsland_GymUnused_31[] = INCBIN_U16("data/tilesets/secondary/cinnabar_gym_31/metatile_attributes.bin");
 
 const u16 gMetatiles_Route37[] = INCBIN_U16("data/tilesets/secondary/route_37/metatiles.bin");
 const u16 gMetatileAttributes_Route37[] = INCBIN_U16("data/tilesets/secondary/route_37/metatile_attributes.bin");

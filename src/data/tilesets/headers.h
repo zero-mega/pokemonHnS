@@ -1686,14 +1686,14 @@ const struct Tileset gTileset_VermilionGym =
     .callback = NULL,
 };
 
-const struct Tileset gTileset_CinnabarGym_31 =
+const struct Tileset gTileset_CinnabarIsland_GymUnused_31 =
 {
     .isCompressed = TRUE,
     .isSecondary = TRUE,
-    .tiles = gTilesetTiles_CinnabarGym_31,
-    .palettes = gTilesetPalettes_CinnabarGym_31,
-    .metatiles = gMetatiles_CinnabarGym_31,
-    .metatileAttributes = gMetatileAttributes_CinnabarGym_31,
+    .tiles = gTilesetTiles_CinnabarIsland_GymUnused_31,
+    .palettes = gTilesetPalettes_CinnabarIsland_GymUnused_31,
+    .metatiles = gMetatiles_CinnabarIsland_GymUnused_31,
+    .metatileAttributes = gMetatileAttributes_CinnabarIsland_GymUnused_31,
     .callback = NULL,
 };
 

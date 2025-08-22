@@ -187,14 +187,14 @@
       "x": 41,
       "y": 1,
       "elevation": 0,
-      "dest_map": "MAP_CINNABAR_VOLCANO2",
+      "dest_map": "MAP_CINNABAR_ISLAND_UNUSED",
       "dest_warp_id": "0"
     },
     {
       "x": 45,
       "y": 29,
       "elevation": 0,
-      "dest_map": "MAP_CINNABAR_POKECENTER",
+      "dest_map": "MAP_CINNABAR_ISLAND_POKEMON_CENTER",
       "dest_warp_id": "0"
     }
   ],

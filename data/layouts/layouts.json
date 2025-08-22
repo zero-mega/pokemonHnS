@@ -5902,14 +5902,14 @@
       "blockdata_filepath": "data/layouts/SproutTower3/map.bin"
     },
     {
-      "id": "LAYOUT_INDIGO_PLATEAU_POKE_CENTER",
-      "name": "IndigoPlateauPokeCenter_Layout",
+      "id": "LAYOUT_INDIGO_PLATEAU_POKEMON_CENTER",
+      "name": "IndigoPlateau_PokemonCenter_Layout",
       "width": 35,
       "height": 18,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_PokeCenter_14",
-      "border_filepath": "data/layouts/IndigoPlateauPokeCenter/border.bin",
-      "blockdata_filepath": "data/layouts/IndigoPlateauPokeCenter/map.bin"
+      "border_filepath": "data/layouts/IndigoPlateau_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/IndigoPlateau_PokemonCenter/map.bin"
     },
     {
       "id": "LAYOUT_CHERRYGROVE_CITY_POKEMON_CENTER",
@@ -6092,14 +6092,14 @@
       "blockdata_filepath": "data/layouts/FuchsiaCity_PokemonCenter/map.bin"
     },
     {
-      "id": "LAYOUT_CINNABAR_POKECENTER",
-      "name": "CinnabarPokecenter_Layout",
+      "id": "LAYOUT_CINNABAR_ISLAND_POKEMON_CENTER",
+      "name": "CinnabarIsland_PokemonCenter_Layout",
       "width": 15,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Kanto_PokemonCenter",
-      "border_filepath": "data/layouts/CinnabarPokecenter/border.bin",
-      "blockdata_filepath": "data/layouts/CinnabarPokecenter/map.bin"
+      "border_filepath": "data/layouts/CinnabarIsland_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/CinnabarIsland_PokemonCenter/map.bin"
     },
     {
       "id": "LAYOUT_SEAFOAM_ISLANDS1",
@@ -8112,24 +8112,24 @@
       "blockdata_filepath": "data/layouts/CinnabarVolcano1/map.bin"
     },
     {
-      "id": "LAYOUT_CINNABAR_VOLCANO2",
-      "name": "CinnabarVolcano2_Layout",
+      "id": "LAYOUT_CINNABAR_ISLAND_UNUSED",
+      "name": "CinnabarIsland_Unused_Layout",
       "width": 15,
       "height": 11,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_BlackthornGym",
-      "border_filepath": "data/layouts/CinnabarVolcano2/border.bin",
-      "blockdata_filepath": "data/layouts/CinnabarVolcano2/map.bin"
+      "border_filepath": "data/layouts/CinnabarIsland_Unused/border.bin",
+      "blockdata_filepath": "data/layouts/CinnabarIsland_Unused/map.bin"
     },
     {
-      "id": "LAYOUT_CINNABAR_GYM",
-      "name": "CinnabarGym_Layout",
+      "id": "LAYOUT_CINNABAR_ISLAND_GYM_UNUSED",
+      "name": "CinnabarIsland_GymUnused_Layout",
       "width": 30,
       "height": 25,
       "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_CinnabarGym_31",
-      "border_filepath": "data/layouts/CinnabarGym/border.bin",
-      "blockdata_filepath": "data/layouts/CinnabarGym/map.bin"
+      "secondary_tileset": "gTileset_CinnabarIsland_GymUnused_31",
+      "border_filepath": "data/layouts/CinnabarIsland_GymUnused/border.bin",
+      "blockdata_filepath": "data/layouts/CinnabarIsland_GymUnused/map.bin"
     },
     {
       "id": "LAYOUT_FUCHSIA_ROUTE15GATE",
@@ -8422,54 +8422,54 @@
       "blockdata_filepath": "data/layouts/WorldHub2/map.bin"
     },
     {
-      "id": "LAYOUT_POKEMON_LEAGUE1",
-      "name": "PokemonLeague1_Layout",
+      "id": "LAYOUT_POKEMON_LEAGUE_WILLS_ROOM",
+      "name": "PokemonLeague_WillsRoom_Layout",
       "width": 13,
       "height": 13,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_PokemonLeague",
-      "border_filepath": "data/layouts/PokemonLeague1/border.bin",
-      "blockdata_filepath": "data/layouts/PokemonLeague1/map.bin"
+      "border_filepath": "data/layouts/PokemonLeague_WillsRoom/border.bin",
+      "blockdata_filepath": "data/layouts/PokemonLeague_WillsRoom/map.bin"
     },
     {
-      "id": "LAYOUT_POKEMON_LEAGUE2",
-      "name": "PokemonLeague2_Layout",
+      "id": "LAYOUT_POKEMON_LEAGUE_KOGAS_ROOM",
+      "name": "PokemonLeague_KogasRoom_Layout",
       "width": 13,
       "height": 13,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_PokemonLeague",
-      "border_filepath": "data/layouts/PokemonLeague2/border.bin",
-      "blockdata_filepath": "data/layouts/PokemonLeague2/map.bin"
+      "border_filepath": "data/layouts/PokemonLeague_KogasRoom/border.bin",
+      "blockdata_filepath": "data/layouts/PokemonLeague_KogasRoom/map.bin"
     },
     {
-      "id": "LAYOUT_POKEMON_LEAGUE3",
-      "name": "PokemonLeague3_Layout",
+      "id": "LAYOUT_POKEMON_LEAGUE_BRUNOS_ROOM",
+      "name": "PokemonLeague_BrunosRoom_Layout",
       "width": 13,
       "height": 13,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_PokemonLeague",
-      "border_filepath": "data/layouts/PokemonLeague3/border.bin",
-      "blockdata_filepath": "data/layouts/PokemonLeague3/map.bin"
+      "border_filepath": "data/layouts/PokemonLeague_BrunosRoom/border.bin",
+      "blockdata_filepath": "data/layouts/PokemonLeague_BrunosRoom/map.bin"
     },
     {
-      "id": "LAYOUT_POKEMON_LEAGUE4",
-      "name": "PokemonLeague4_Layout",
+      "id": "LAYOUT_POKEMON_LEAGUE_KARENS_ROOM",
+      "name": "PokemonLeague_KarensRoom_Layout",
       "width": 28,
       "height": 13,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_PokemonLeague",
-      "border_filepath": "data/layouts/PokemonLeague4/border.bin",
-      "blockdata_filepath": "data/layouts/PokemonLeague4/map.bin"
+      "border_filepath": "data/layouts/PokemonLeague_KarensRoom/border.bin",
+      "blockdata_filepath": "data/layouts/PokemonLeague_KarensRoom/map.bin"
     },
     {
-      "id": "LAYOUT_POKEMON_LEAGUE5",
-      "name": "PokemonLeague5_Layout",
+      "id": "LAYOUT_POKEMON_LEAGUE_CHAMPIONS_ROOM",
+      "name": "PokemonLeague_ChampionsRoom_Layout",
       "width": 13,
       "height": 20,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_PokemonLeague",
-      "border_filepath": "data/layouts/PokemonLeague5/border.bin",
-      "blockdata_filepath": "data/layouts/PokemonLeague5/map.bin"
+      "border_filepath": "data/layouts/PokemonLeague_ChampionsRoom/border.bin",
+      "blockdata_filepath": "data/layouts/PokemonLeague_ChampionsRoom/map.bin"
     },
     {
       "id": "LAYOUT_HALL_OF_FAME",

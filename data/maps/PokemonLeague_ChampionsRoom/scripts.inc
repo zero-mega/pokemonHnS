@@ -2,12 +2,12 @@
 .set LOCALID_LEAGUE_MARY, 2
 .set LOCALID_LEAGUE_OAK, 3
 
-PokemonLeague5_MapScripts::
+PokemonLeague_ChampionsRoom_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, ChampionRoom_OnFrame
-	map_script MAP_SCRIPT_ON_RESUME, PokemonLeague5_OnResume
+	map_script MAP_SCRIPT_ON_RESUME, PokemonLeague_ChampionsRoom_OnResume
 	.byte 0
 
-PokemonLeague5_OnResume::
+PokemonLeague_ChampionsRoom_OnResume::
 	setvar VAR_0x8004, 4
 	special DoPokemonLeagueLightingEffect
 	end
@@ -42,29 +42,29 @@ ChampionRoom_Trigger::
 	release
 	end
 
-PokemonLeague1_EventScript_Lance::
+PokemonLeague_WillsRoom_EventScript_Lance::
 	lockall
-	call_if_eq VAR_FACING, DIR_EAST, PokemonLeague5_EventScript_AdjustPlayerFacingEast
-	call_if_eq VAR_FACING, DIR_SOUTH, PokemonLeague5_EventScript_AdjustPlayerFacingSouth
-	call_if_eq VAR_FACING, DIR_WEST, PokemonLeague5_EventScript_AdjustPlayerFacingWest
+	call_if_eq VAR_FACING, DIR_EAST, PokemonLeague_ChampionsRoom_EventScript_AdjustPlayerFacingEast
+	call_if_eq VAR_FACING, DIR_SOUTH, PokemonLeague_ChampionsRoom_EventScript_AdjustPlayerFacingSouth
+	call_if_eq VAR_FACING, DIR_WEST, PokemonLeague_ChampionsRoom_EventScript_AdjustPlayerFacingWest
 	faceplayer
-	goto_if_set FLAG_IS_CHAMPION, PokemonLeague1_EventScript_LanceRematch
-	msgbox PokemonLeague5_Text_BattleIntro, MSGBOX_DEFAULT
+	goto_if_set FLAG_IS_CHAMPION, PokemonLeague_WillsRoom_EventScript_LanceRematch
+	msgbox PokemonLeague_ChampionsRoom_Text_BattleIntro, MSGBOX_DEFAULT
 	setflag FLAG_TEMP_3
 	setflag FLAG_TEMP_5
-	trainerbattle_no_intro TRAINER_LANCE_1, PokemonLeague5_Text_BattleWin
-	goto PokemonLeague1_EventScript_LanceOnDefeatJohto
+	trainerbattle_no_intro TRAINER_LANCE_1, PokemonLeague_ChampionsRoom_Text_BattleWin
+	goto PokemonLeague_WillsRoom_EventScript_LanceOnDefeatJohto
 
-PokemonLeague1_EventScript_LanceRematch::
-	msgbox PokemonLeague5_Text_RematchBattleIntro, MSGBOX_DEFAULT
+PokemonLeague_WillsRoom_EventScript_LanceRematch::
+	msgbox PokemonLeague_ChampionsRoom_Text_RematchBattleIntro, MSGBOX_DEFAULT
 	setflag FLAG_TEMP_3
 	setflag FLAG_TEMP_5
-	trainerbattle_no_intro TRAINER_LANCE_2, PokemonLeague5_Text_BattleWin
-	goto PokemonLeague1_EventScript_LanceOnDefeatKanto
+	trainerbattle_no_intro TRAINER_LANCE_2, PokemonLeague_ChampionsRoom_Text_BattleWin
+	goto PokemonLeague_WillsRoom_EventScript_LanceOnDefeatKanto
 
-PokemonLeague1_EventScript_LanceOnDefeatJohto::
+PokemonLeague_WillsRoom_EventScript_LanceOnDefeatJohto::
 	clearflag FLAG_TEMP_5
-	msgbox PokemonLeague5_Text_BattleAfter, MSGBOX_DEFAULT
+	msgbox PokemonLeague_ChampionsRoom_Text_BattleAfter, MSGBOX_DEFAULT
 	closemessage
 	setmetatile 6, 1, 0x3F2, FALSE
 	setmetatile 6, 2, 0x296, FALSE	
@@ -80,33 +80,33 @@ PokemonLeague1_EventScript_LanceOnDefeatJohto::
 	applymovement LOCALID_LEAGUE_LANCE, Common_Movement_ExclamationMark
 	delay 40
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_SOUTH
-	applymovement OBJ_EVENT_ID_PLAYER, PokemonLeague5_Movement_PlayerMoveToCenter
-	applymovement LOCALID_LEAGUE_LANCE, PokemonLeague5_Movement_LanceMoveOver
+	applymovement OBJ_EVENT_ID_PLAYER, PokemonLeague_ChampionsRoom_Movement_PlayerMoveToCenter
+	applymovement LOCALID_LEAGUE_LANCE, PokemonLeague_ChampionsRoom_Movement_LanceMoveOver
 	waitmovement OBJ_EVENT_ID_PLAYER
 	waitmovement LOCALID_LEAGUE_LANCE
 	addobject LOCALID_LEAGUE_MARY
 	addobject LOCALID_LEAGUE_OAK
-	applymovement LOCALID_LEAGUE_MARY, PokemonLeague5_Movement_MaryEnter
+	applymovement LOCALID_LEAGUE_MARY, PokemonLeague_ChampionsRoom_Movement_MaryEnter
 	waitmovement 0
-	msgbox PokemonLeague5_Text_MaryOhNoOak, MSGBOX_DEFAULT
+	msgbox PokemonLeague_ChampionsRoom_Text_MaryOhNoOak, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_LEAGUE_OAK, PokemonLeague5_Movement_OakEnter
+	applymovement LOCALID_LEAGUE_OAK, PokemonLeague_ChampionsRoom_Movement_OakEnter
 	delay 60
-	applymovement LOCALID_LEAGUE_MARY, PokemonLeague5_Movement_MaryMoveOver
+	applymovement LOCALID_LEAGUE_MARY, PokemonLeague_ChampionsRoom_Movement_MaryMoveOver
 	waitmovement LOCALID_LEAGUE_MARY
 	waitmovement LOCALID_LEAGUE_OAK
-	msgbox PokemonLeague5_Text_OakCongratulations, MSGBOX_DEFAULT
-	applymovement LOCALID_LEAGUE_MARY, PokemonLeague5_Movement_MaryInterview
+	msgbox PokemonLeague_ChampionsRoom_Text_OakCongratulations, MSGBOX_DEFAULT
+	applymovement LOCALID_LEAGUE_MARY, PokemonLeague_ChampionsRoom_Movement_MaryInterview
 	waitmovement 0
-	msgbox PokemonLeague5_Text_MaryInterview, MSGBOX_DEFAULT
+	msgbox PokemonLeague_ChampionsRoom_Text_MaryInterview, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_LEAGUE_LANCE, PokemonLeague5_Movement_LanceAnxious
+	applymovement LOCALID_LEAGUE_LANCE, PokemonLeague_ChampionsRoom_Movement_LanceAnxious
 	waitmovement 0
-	msgbox PokemonLeague5_Text_Noisy, MSGBOX_DEFAULT
+	msgbox PokemonLeague_ChampionsRoom_Text_Noisy, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_LEAGUE_LANCE, PokemonLeague5_Movement_LanceLeave
+	applymovement LOCALID_LEAGUE_LANCE, PokemonLeague_ChampionsRoom_Movement_LanceLeave
 	delay 30
-	applymovement OBJ_EVENT_ID_PLAYER, PokemonLeague5_Movement_PlayerLeave
+	applymovement OBJ_EVENT_ID_PLAYER, PokemonLeague_ChampionsRoom_Movement_PlayerLeave
 	waitmovement LOCALID_LEAGUE_LANCE
 	@setobjectxyperm LOCALID_LEAGUE_LANCE, 6, 14
 	removeobject LOCALID_LEAGUE_LANCE
@@ -117,21 +117,21 @@ PokemonLeague1_EventScript_LanceOnDefeatJohto::
 	playse SE_EXIT
 	waitse
 	delay 50
-	applymovement LOCALID_LEAGUE_MARY, PokemonLeague5_Movement_MaryLeft
+	applymovement LOCALID_LEAGUE_MARY, PokemonLeague_ChampionsRoom_Movement_MaryLeft
 	waitmovement 0
 	playse SE_PIN
 	applymovement LOCALID_LEAGUE_MARY, Common_Movement_ExclamationMark
 	delay 60
-	msgbox PokemonLeague5_Text_MaryNoInterview, MSGBOX_DEFAULT
+	msgbox PokemonLeague_ChampionsRoom_Text_MaryNoInterview, MSGBOX_DEFAULT
 	closemessage
 	setvar VAR_LEAGUE_STATE, 6
 	warpsilent MAP_HALL_OF_FAME, 0
 	releaseall
 	end
 
-PokemonLeague1_EventScript_LanceOnDefeatKanto::
+PokemonLeague_WillsRoom_EventScript_LanceOnDefeatKanto::
 	clearflag FLAG_TEMP_5
-	msgbox PokemonLeague5_Text_BattleAfter, MSGBOX_DEFAULT
+	msgbox PokemonLeague_ChampionsRoom_Text_BattleAfter, MSGBOX_DEFAULT
 	closemessage
 	setmetatile 6, 1, 0x3F2, FALSE
 	setmetatile 6, 2, 0x296, FALSE	
@@ -147,33 +147,33 @@ PokemonLeague1_EventScript_LanceOnDefeatKanto::
 	applymovement LOCALID_LEAGUE_LANCE, Common_Movement_ExclamationMark
 	delay 40
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_SOUTH
-	applymovement OBJ_EVENT_ID_PLAYER, PokemonLeague5_Movement_PlayerMoveToCenter
-	applymovement LOCALID_LEAGUE_LANCE, PokemonLeague5_Movement_LanceMoveOver
+	applymovement OBJ_EVENT_ID_PLAYER, PokemonLeague_ChampionsRoom_Movement_PlayerMoveToCenter
+	applymovement LOCALID_LEAGUE_LANCE, PokemonLeague_ChampionsRoom_Movement_LanceMoveOver
 	waitmovement OBJ_EVENT_ID_PLAYER
 	waitmovement LOCALID_LEAGUE_LANCE
 	addobject LOCALID_LEAGUE_MARY
 	addobject LOCALID_LEAGUE_OAK
-	applymovement LOCALID_LEAGUE_MARY, PokemonLeague5_Movement_MaryEnter
+	applymovement LOCALID_LEAGUE_MARY, PokemonLeague_ChampionsRoom_Movement_MaryEnter
 	waitmovement 0
-	msgbox PokemonLeague5_Text_MaryOhNoOak, MSGBOX_DEFAULT
+	msgbox PokemonLeague_ChampionsRoom_Text_MaryOhNoOak, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_LEAGUE_OAK, PokemonLeague5_Movement_OakEnter
+	applymovement LOCALID_LEAGUE_OAK, PokemonLeague_ChampionsRoom_Movement_OakEnter
 	delay 60
-	applymovement LOCALID_LEAGUE_MARY, PokemonLeague5_Movement_MaryMoveOver
+	applymovement LOCALID_LEAGUE_MARY, PokemonLeague_ChampionsRoom_Movement_MaryMoveOver
 	waitmovement LOCALID_LEAGUE_MARY
 	waitmovement LOCALID_LEAGUE_OAK
-	msgbox PokemonLeague5_Text_RematchOakCongratulations, MSGBOX_DEFAULT
-	applymovement LOCALID_LEAGUE_MARY, PokemonLeague5_Movement_MaryInterview
+	msgbox PokemonLeague_ChampionsRoom_Text_RematchOakCongratulations, MSGBOX_DEFAULT
+	applymovement LOCALID_LEAGUE_MARY, PokemonLeague_ChampionsRoom_Movement_MaryInterview
 	waitmovement 0
-	msgbox PokemonLeague5_Text_RematchMaryInterview, MSGBOX_DEFAULT
+	msgbox PokemonLeague_ChampionsRoom_Text_RematchMaryInterview, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_LEAGUE_LANCE, PokemonLeague5_Movement_LanceAnxious
+	applymovement LOCALID_LEAGUE_LANCE, PokemonLeague_ChampionsRoom_Movement_LanceAnxious
 	waitmovement 0
-	msgbox PokemonLeague5_Text_Noisy, MSGBOX_DEFAULT
+	msgbox PokemonLeague_ChampionsRoom_Text_Noisy, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_LEAGUE_LANCE, PokemonLeague5_Movement_LanceLeave
+	applymovement LOCALID_LEAGUE_LANCE, PokemonLeague_ChampionsRoom_Movement_LanceLeave
 	delay 30
-	applymovement OBJ_EVENT_ID_PLAYER, PokemonLeague5_Movement_PlayerLeave
+	applymovement OBJ_EVENT_ID_PLAYER, PokemonLeague_ChampionsRoom_Movement_PlayerLeave
 	waitmovement LOCALID_LEAGUE_LANCE
 	@setobjectxyperm LOCALID_LEAGUE_LANCE, 6, 14
 	removeobject LOCALID_LEAGUE_LANCE
@@ -184,62 +184,62 @@ PokemonLeague1_EventScript_LanceOnDefeatKanto::
 	playse SE_EXIT
 	waitse
 	delay 50
-	applymovement LOCALID_LEAGUE_MARY, PokemonLeague5_Movement_MaryLeft
+	applymovement LOCALID_LEAGUE_MARY, PokemonLeague_ChampionsRoom_Movement_MaryLeft
 	waitmovement 0
 	playse SE_PIN
 	applymovement LOCALID_LEAGUE_MARY, Common_Movement_ExclamationMark
 	delay 60
-	msgbox PokemonLeague5_Text_RematchMaryNoInterview, MSGBOX_DEFAULT
+	msgbox PokemonLeague_ChampionsRoom_Text_RematchMaryNoInterview, MSGBOX_DEFAULT
 	closemessage
 	setvar VAR_LEAGUE_STATE, 6
 	warpsilent MAP_HALL_OF_FAME, 0
 	releaseall
 	end
 
-PokemonLeague5_EventScript_AdjustPlayerFacingEast::
-	applymovement OBJ_EVENT_ID_PLAYER, PokemonLeague5_Movement_AdjustPlayerFacingEast
+PokemonLeague_ChampionsRoom_EventScript_AdjustPlayerFacingEast::
+	applymovement OBJ_EVENT_ID_PLAYER, PokemonLeague_ChampionsRoom_Movement_AdjustPlayerFacingEast
 	waitmovement 0
 	return
-PokemonLeague5_EventScript_AdjustPlayerFacingSouth::
-	applymovement OBJ_EVENT_ID_PLAYER, PokemonLeague5_Movement_AdjustPlayerFacingSouth
+PokemonLeague_ChampionsRoom_EventScript_AdjustPlayerFacingSouth::
+	applymovement OBJ_EVENT_ID_PLAYER, PokemonLeague_ChampionsRoom_Movement_AdjustPlayerFacingSouth
 	waitmovement 0
 	return
-PokemonLeague5_EventScript_AdjustPlayerFacingWest::
-	applymovement OBJ_EVENT_ID_PLAYER, PokemonLeague5_Movement_AdjustPlayerFacingWest
+PokemonLeague_ChampionsRoom_EventScript_AdjustPlayerFacingWest::
+	applymovement OBJ_EVENT_ID_PLAYER, PokemonLeague_ChampionsRoom_Movement_AdjustPlayerFacingWest
 	waitmovement 0
 	return
 
-PokemonLeague5_Movement_AdjustPlayerFacingEast:
+PokemonLeague_ChampionsRoom_Movement_AdjustPlayerFacingEast:
 	walk_down
 	walk_right
 	face_up
 	step_end
-PokemonLeague5_Movement_AdjustPlayerFacingSouth:
+PokemonLeague_ChampionsRoom_Movement_AdjustPlayerFacingSouth:
 	walk_left
 	walk_down
 	walk_down
 	walk_right
 	face_up
 	step_end
-PokemonLeague5_Movement_AdjustPlayerFacingWest:
+PokemonLeague_ChampionsRoom_Movement_AdjustPlayerFacingWest:
 	walk_down
 	walk_left
 	face_up
 	step_end
 
-PokemonLeague5_Movement_PlayerMoveToCenter:
+PokemonLeague_ChampionsRoom_Movement_PlayerMoveToCenter:
 	lock_facing_direction
 	walk_up
 	unlock_facing_direction
 	step_end
 
-PokemonLeague5_Movement_LanceMoveOver:
+PokemonLeague_ChampionsRoom_Movement_LanceMoveOver:
 	lock_facing_direction
 	walk_right
 	unlock_facing_direction
 	step_end
 
-PokemonLeague5_Movement_MaryEnter:
+PokemonLeague_ChampionsRoom_Movement_MaryEnter:
 	walk_fast_up
 	walk_fast_up
 	walk_fast_up
@@ -250,12 +250,12 @@ PokemonLeague5_Movement_MaryEnter:
 	walk_in_place_fast_down
 	step_end
 
-PokemonLeague5_Movement_MaryMoveOver:
+PokemonLeague_ChampionsRoom_Movement_MaryMoveOver:
 	walk_left
 	face_right
 	step_end
 
-PokemonLeague5_Movement_OakEnter:
+PokemonLeague_ChampionsRoom_Movement_OakEnter:
 	walk_up
 	walk_up
 	walk_up
@@ -265,12 +265,12 @@ PokemonLeague5_Movement_OakEnter:
 	walk_up
 	step_end
 
-PokemonLeague5_Movement_MaryInterview:
+PokemonLeague_ChampionsRoom_Movement_MaryInterview:
 	walk_fast_up
 	walk_in_place_fast_right
 	step_end
 
-PokemonLeague5_Movement_LanceAnxious:
+PokemonLeague_ChampionsRoom_Movement_LanceAnxious:
 	face_up
 	delay_16
 	delay_16
@@ -280,7 +280,7 @@ PokemonLeague5_Movement_LanceAnxious:
 	face_left
 	step_end
 
-PokemonLeague5_Movement_LanceLeave:
+PokemonLeague_ChampionsRoom_Movement_LanceLeave:
 	walk_up
 	walk_left
 	walk_up
@@ -290,7 +290,7 @@ PokemonLeague5_Movement_LanceLeave:
 	walk_up
 	step_end
 
-PokemonLeague5_Movement_PlayerLeave:
+PokemonLeague_ChampionsRoom_Movement_PlayerLeave:
 	walk_up
 	walk_up
 	walk_up
@@ -299,7 +299,7 @@ PokemonLeague5_Movement_PlayerLeave:
 	walk_up
 	step_end
 
-PokemonLeague5_Movement_MaryLeft:
+PokemonLeague_ChampionsRoom_Movement_MaryLeft:
 	walk_fast_right
 	walk_fast_up
 	walk_fast_up
@@ -307,7 +307,7 @@ PokemonLeague5_Movement_MaryLeft:
 	walk_fast_up
 	step_end
 
-PokemonLeague5_Text_RematchBattleIntro:
+PokemonLeague_ChampionsRoom_Text_RematchBattleIntro:
     .string "LANCE: Welcome back!\p"
     .string "You've proven yourself in JOHTO,\p"
     .string "acquiring all 8 badges and even\n"
@@ -329,7 +329,7 @@ PokemonLeague5_Text_RematchBattleIntro:
     .string "Show me the strength that\n"
     .string "conquered JOHTO, CHAMPION.$"
 
-PokemonLeague5_Text_BattleIntro:
+PokemonLeague_ChampionsRoom_Text_BattleIntro:
     .string "LANCE: I've been waiting for you.\p"
     .string "{PLAYER}!\p"
     .string "I knew that you, with your skills,\n"
@@ -342,7 +342,7 @@ PokemonLeague5_Text_BattleIntro:
     .string "I, LANCE the dragon master, accept\n"
     .string "your challenge!$"
 
-PokemonLeague5_Text_BattleWin:
+PokemonLeague_ChampionsRoom_Text_BattleWin:
     .string "…It's over.\p"
     .string "But it's an odd feeling.\p"
     .string "I'm not angry that I lost. In fact,\n"
@@ -350,7 +350,7 @@ PokemonLeague5_Text_BattleWin:
     .string "Happy that I witnessed the rise\n"
     .string "of a great new CHAMPION!$"
 
-PokemonLeague5_Text_BattleAfter:
+PokemonLeague_ChampionsRoom_Text_BattleAfter:
     .string "…Whew.\p"
     .string "You have become truly powerful,\n"
     .string "{PLAYER}.\p"
@@ -359,11 +359,11 @@ PokemonLeague5_Text_BattleAfter:
     .string "As a trainer, you will continue to\n"
     .string "grow strong with your POKéMON.$"
 
-PokemonLeague5_Text_MaryOhNoOak:
+PokemonLeague_ChampionsRoom_Text_MaryOhNoOak:
     .string "MARY: Oh, no! It's all over!\p"
     .string "PROF.OAK, if you weren't so slow…$"
 
-PokemonLeague5_Text_OakCongratulations:
+PokemonLeague_ChampionsRoom_Text_OakCongratulations:
     .string "PROF.OAK: Ah, {PLAYER}!\p"
     .string "It's been a long while.\p"
     .string "You certainly look more impressive.\p"
@@ -376,7 +376,7 @@ PokemonLeague5_Text_OakCongratulations:
     .string "trainer, they persevered.\p"
     .string "Congratulations, {PLAYER}!$"
 
-PokemonLeague5_Text_RematchOakCongratulations:
+PokemonLeague_ChampionsRoom_Text_RematchOakCongratulations:
     .string "PROF.OAK: Ah, {PLAYER}!\p"
     .string "I've been following your progress\n"
     .string "since PROF. ELM sent you on your\l"
@@ -399,24 +399,24 @@ PokemonLeague5_Text_RematchOakCongratulations:
     .string "Congratulations on your victory,\n"
     .string "{PLAYER}!$"
 
-PokemonLeague5_Text_MaryInterview:
+PokemonLeague_ChampionsRoom_Text_MaryInterview:
     .string "MARY: Let's interview the brand new\n"
     .string "JOHTO CHAMPION!$"
 
-PokemonLeague5_Text_RematchMaryInterview:
+PokemonLeague_ChampionsRoom_Text_RematchMaryInterview:
     .string "MARY: Let's inter-view the brand new\n"
     .string "KANTO CHAMPION!$"
 
-PokemonLeague5_Text_Noisy:
+PokemonLeague_ChampionsRoom_Text_Noisy:
     .string "LANCE: This is getting to be a bit\n"
     .string "too noisy…\p"
     .string "{PLAYER}, could you come with me?$"
 
-PokemonLeague5_Text_MaryNoInterview:
+PokemonLeague_ChampionsRoom_Text_MaryNoInterview:
     .string "MARY: Oh, wait! We haven't done\n"
     .string "the interview!$"
 
-PokemonLeague5_Text_RematchMaryNoInterview:
+PokemonLeague_ChampionsRoom_Text_RematchMaryNoInterview:
     .string "MARY: Come on! You can't blow off\n"
     .string "the interview AGAIN!$"
 

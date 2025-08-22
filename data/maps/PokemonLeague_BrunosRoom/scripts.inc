@@ -1,35 +1,35 @@
-PokemonLeague3_MapScripts::
+PokemonLeague_BrunosRoom_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, EliteFourRoom_OnFrame
-	map_script MAP_SCRIPT_ON_RESUME, PokemonLeague3_OnResume
+	map_script MAP_SCRIPT_ON_RESUME, PokemonLeague_BrunosRoom_OnResume
 	map_script MAP_SCRIPT_ON_LOAD, EliteFourRoom_OnLoad
 	.byte 0
 
-PokemonLeague3_OnResume::
+PokemonLeague_BrunosRoom_OnResume::
 	setvar VAR_0x8004, 2
 	special DoPokemonLeagueLightingEffect
 	end
 
-PokemonLeague3_EventScript_Bruno::
+PokemonLeague_BrunosRoom_EventScript_Bruno::
 	lock 
 	faceplayer
-	goto_if_ge VAR_LEAGUE_STATE, 4, PokemonLeague3_EventScript_BrunoDefeated
-	goto_if_set FLAG_IS_CHAMPION, PokemonLeague3_EventScript_BrunoRematch
-	msgbox PokemonLeague3_Text_Before, MSGBOX_DEFAULT
+	goto_if_ge VAR_LEAGUE_STATE, 4, PokemonLeague_BrunosRoom_EventScript_BrunoDefeated
+	goto_if_set FLAG_IS_CHAMPION, PokemonLeague_BrunosRoom_EventScript_BrunoRematch
+	msgbox PokemonLeague_BrunosRoom_Text_Before, MSGBOX_DEFAULT
 	setflag FLAG_TEMP_3
 	setflag FLAG_TEMP_5
-	trainerbattle_no_intro TRAINER_BRUNO_1, PokemonLeague3_Text_Beaten
-	goto PokemonLeague3_EventScript_BrunoOnDefeat
+	trainerbattle_no_intro TRAINER_BRUNO_1, PokemonLeague_BrunosRoom_Text_Beaten
+	goto PokemonLeague_BrunosRoom_EventScript_BrunoOnDefeat
 
-PokemonLeague3_EventScript_BrunoRematch::
-	msgbox PokemonLeague3_Text_RematchBefore, MSGBOX_DEFAULT
+PokemonLeague_BrunosRoom_EventScript_BrunoRematch::
+	msgbox PokemonLeague_BrunosRoom_Text_RematchBefore, MSGBOX_DEFAULT
 	setflag FLAG_TEMP_3
 	setflag FLAG_TEMP_5
-	trainerbattle_no_intro TRAINER_BRUNO_2, PokemonLeague3_Text_Beaten
-	goto PokemonLeague3_EventScript_BrunoOnDefeat
+	trainerbattle_no_intro TRAINER_BRUNO_2, PokemonLeague_BrunosRoom_Text_Beaten
+	goto PokemonLeague_BrunosRoom_EventScript_BrunoOnDefeat
 
-PokemonLeague3_EventScript_BrunoOnDefeat::
+PokemonLeague_BrunosRoom_EventScript_BrunoOnDefeat::
 	clearflag FLAG_TEMP_5	
-	msgbox PokemonLeague3_Text_Defeat, MSGBOX_DEFAULT
+	msgbox PokemonLeague_BrunosRoom_Text_Defeat, MSGBOX_DEFAULT
 	closemessage
 	setmetatile 6, 1, 0x28E, FALSE
 	setmetatile 6, 2, 0x296, FALSE	
@@ -45,13 +45,13 @@ PokemonLeague3_EventScript_BrunoOnDefeat::
 	release
 	end
 
-PokemonLeague3_EventScript_BrunoDefeated::
-	msgbox PokemonLeague3_Text_Defeat, MSGBOX_DEFAULT
+PokemonLeague_BrunosRoom_EventScript_BrunoDefeated::
+	msgbox PokemonLeague_BrunosRoom_Text_Defeat, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
 
-PokemonLeague3_Text_RematchBefore:
+PokemonLeague_BrunosRoom_Text_RematchBefore:
     .string "BRUNO: Welcome back, young\n"
     .string "warrior.\p"
     .string "Through rigorous training, we have\n"
@@ -64,7 +64,7 @@ PokemonLeague3_Text_RematchBefore:
     .string "training.\p"
     .string "Hoo hah!$"
 
-PokemonLeague3_Text_Before:
+PokemonLeague_BrunosRoom_Text_Before:
     .string "I am BRUNO of the ELITE FOUR.\p"
     .string "I always train to the extreme be-\n"
     .string "cause I believe in our potential.\p"
@@ -76,10 +76,10 @@ PokemonLeague3_Text_Before:
     .string "to our overwhelming power!\p"
     .string "Hoo hah!$"
 
-PokemonLeague3_Text_Beaten:
+PokemonLeague_BrunosRoom_Text_Beaten:
     .string "Why? How could we lose?$"
 
-PokemonLeague3_Text_Defeat:
+PokemonLeague_BrunosRoom_Text_Defeat:
     .string "Having lost, I have no right to\n"
     .string "say anything…\p"
     .string "Go face your next challenge!$"

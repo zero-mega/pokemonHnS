@@ -4160,7 +4160,7 @@ void DoPokemonLeagueLightingEffect(void)
     }
     else
     {
-        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(POKEMON_LEAGUE5) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(POKEMON_LEAGUE5))
+        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(POKEMON_LEAGUE_CHAMPIONS_ROOM) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(POKEMON_LEAGUE_CHAMPIONS_ROOM))
         {
             data[0] = sChampionRoomLightingTimers[0];
             data[2] = 8;
@@ -4190,7 +4190,7 @@ static void Task_RunPokemonLeagueLightingEffect(u8 taskId)
         if (++data[1] == data[2])
             data[1] = 0;
 
-        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(POKEMON_LEAGUE5) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(POKEMON_LEAGUE5))
+        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(POKEMON_LEAGUE_CHAMPIONS_ROOM) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(POKEMON_LEAGUE_CHAMPIONS_ROOM))
         {
             data[0] = sChampionRoomLightingTimers[data[1]];
             LoadPalette(sChampionRoomLightingPalettes[data[1]], BG_PLTT_ID(7), PLTT_SIZE_4BPP);
@@ -4209,7 +4209,7 @@ static void Task_CancelPokemonLeagueLightingEffect(u8 taskId)
     s16 *data = gTasks[taskId].data;
     if (FlagGet(FLAG_TEMP_4) != FALSE)
     {
-        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(POKEMON_LEAGUE5) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(POKEMON_LEAGUE5))
+        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(POKEMON_LEAGUE_CHAMPIONS_ROOM) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(POKEMON_LEAGUE_CHAMPIONS_ROOM))
             LoadPalette(sChampionRoomLightingPalettes[8], BG_PLTT_ID(7), PLTT_SIZE_4BPP);
         else
             LoadPalette(sEliteFourLightingPalettes[11], BG_PLTT_ID(7), PLTT_SIZE_4BPP);

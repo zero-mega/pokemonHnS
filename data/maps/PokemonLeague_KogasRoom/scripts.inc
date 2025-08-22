@@ -1,35 +1,35 @@
-PokemonLeague2_MapScripts::
+PokemonLeague_KogasRoom_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, EliteFourRoom_OnFrame
-	map_script MAP_SCRIPT_ON_RESUME, PokemonLeague2_OnResume
+	map_script MAP_SCRIPT_ON_RESUME, PokemonLeague_KogasRoom_OnResume
 	map_script MAP_SCRIPT_ON_LOAD, EliteFourRoom_OnLoad
 	.byte 0
 
-PokemonLeague2_OnResume::
+PokemonLeague_KogasRoom_OnResume::
 	setvar VAR_0x8004, 1
 	special DoPokemonLeagueLightingEffect
 	end
 
-PokemonLeague2_EventScript_Koga::
+PokemonLeague_KogasRoom_EventScript_Koga::
 	lock 
 	faceplayer
-	goto_if_ge VAR_LEAGUE_STATE, 3, PokemonLeague2_EventScript_KogaDefeated
-	goto_if_set FLAG_IS_CHAMPION, PokemonLeague2_EventScript_KogaRematch
-	msgbox PokemonLeague2_Text_Before, MSGBOX_DEFAULT
+	goto_if_ge VAR_LEAGUE_STATE, 3, PokemonLeague_KogasRoom_EventScript_KogaDefeated
+	goto_if_set FLAG_IS_CHAMPION, PokemonLeague_KogasRoom_EventScript_KogaRematch
+	msgbox PokemonLeague_KogasRoom_Text_Before, MSGBOX_DEFAULT
 	setflag FLAG_TEMP_3
 	setflag FLAG_TEMP_5
-	trainerbattle_no_intro TRAINER_KOGA_1, PokemonLeague2_Text_Beaten
-	goto PokemonLeague2_EventScript_KogaOnDefeat
+	trainerbattle_no_intro TRAINER_KOGA_1, PokemonLeague_KogasRoom_Text_Beaten
+	goto PokemonLeague_KogasRoom_EventScript_KogaOnDefeat
 
-PokemonLeague2_EventScript_KogaRematch::
-	msgbox PokemonLeague2_Text_RematchBefore, MSGBOX_DEFAULT
+PokemonLeague_KogasRoom_EventScript_KogaRematch::
+	msgbox PokemonLeague_KogasRoom_Text_RematchBefore, MSGBOX_DEFAULT
 	setflag FLAG_TEMP_3
 	setflag FLAG_TEMP_5
-	trainerbattle_no_intro TRAINER_KOGA_2, PokemonLeague2_Text_Beaten
-	goto PokemonLeague2_EventScript_KogaOnDefeat
+	trainerbattle_no_intro TRAINER_KOGA_2, PokemonLeague_KogasRoom_Text_Beaten
+	goto PokemonLeague_KogasRoom_EventScript_KogaOnDefeat
 
-PokemonLeague2_EventScript_KogaOnDefeat::
+PokemonLeague_KogasRoom_EventScript_KogaOnDefeat::
 	clearflag FLAG_TEMP_5
-	msgbox PokemonLeague2_Text_Defeat, MSGBOX_DEFAULT
+	msgbox PokemonLeague_KogasRoom_Text_Defeat, MSGBOX_DEFAULT
 	closemessage
 	setmetatile 6, 1, 0x28E, FALSE
 	setmetatile 6, 2, 0x296, FALSE	
@@ -45,13 +45,13 @@ PokemonLeague2_EventScript_KogaOnDefeat::
 	release
 	end
 
-PokemonLeague2_EventScript_KogaDefeated::
-	msgbox PokemonLeague2_Text_Defeat, MSGBOX_DEFAULT
+PokemonLeague_KogasRoom_EventScript_KogaDefeated::
+	msgbox PokemonLeague_KogasRoom_Text_Defeat, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
 
-PokemonLeague2_Text_RematchBefore:
+PokemonLeague_KogasRoom_Text_RematchBefore:
     .string "KOGA: Fwahahahaha!\p"
     .string "You return, brave challenger.\p"
     .string "My ninja skills have sharpened.\p"
@@ -61,7 +61,7 @@ PokemonLeague2_Text_RematchBefore:
     .string "Fwahahahaha!\p"
     .string "Show me how you've grown!$"
 
-PokemonLeague2_Text_Before:
+PokemonLeague_KogasRoom_Text_Before:
     .string "Fwahahahaha!\p"
     .string "I am KOGA of the ELITE FOUR.\p"
     .string "I live in shadows, a ninja!\p"
@@ -74,11 +74,11 @@ PokemonLeague2_Text_Before:
     .string "POKéMON is not merely about brute\n"
     .string "force--you shall see soon enough!$"
 
-PokemonLeague2_Text_Beaten:
+PokemonLeague_KogasRoom_Text_Beaten:
     .string "Ah!\n"
     .string "You have proven your worth!$"
 
-PokemonLeague2_Text_Defeat:
+PokemonLeague_KogasRoom_Text_Defeat:
     .string "I subjected you to everything I\n"
     .string "could muster.\p"
     .string "But my efforts failed. I must hone\n"

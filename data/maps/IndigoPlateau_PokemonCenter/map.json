@@ -1,7 +1,7 @@
 {
-  "id": "MAP_INDIGO_PLATEAU_POKE_CENTER",
-  "name": "IndigoPlateauPokeCenter",
-  "layout": "LAYOUT_INDIGO_PLATEAU_POKE_CENTER",
+  "id": "MAP_INDIGO_PLATEAU_POKEMON_CENTER",
+  "name": "IndigoPlateau_PokemonCenter",
+  "layout": "LAYOUT_INDIGO_PLATEAU_POKEMON_CENTER",
   "music": "MUS_HG_POKE_CENTER",
   "region_map_section": "MAPSEC_INDIGO_PLATEAU",
   "requires_flash": false,
@@ -131,7 +131,7 @@
       "x": 32,
       "y": 2,
       "elevation": 0,
-      "dest_map": "MAP_POKEMON_LEAGUE1",
+      "dest_map": "MAP_POKEMON_LEAGUE_WILLS_ROOM",
       "dest_warp_id": "0"
     }
   ],

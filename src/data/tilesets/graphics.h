@@ -3079,7 +3079,7 @@ const u16 gTilesetPalettes_VermilionGym[][16] =
 
 const u32 gTilesetTiles_VermilionGym[] = INCBIN_U32("data/tilesets/secondary/vermilion_gym/tiles.4bpp.lz");
 
-const u16 gTilesetPalettes_CinnabarGym_31[][16] =
+const u16 gTilesetPalettes_CinnabarIsland_GymUnused_31[][16] =
 {
     INCBIN_U16("data/tilesets/secondary/cinnabar_gym_31/palettes/00.gbapal"),
     INCBIN_U16("data/tilesets/secondary/cinnabar_gym_31/palettes/01.gbapal"),
@@ -3096,7 +3096,7 @@ const u16 gTilesetPalettes_CinnabarGym_31[][16] =
     INCBIN_U16("data/tilesets/secondary/cinnabar_gym_31/palettes/12.gbapal"),
 };
 
-const u32 gTilesetTiles_CinnabarGym_31[] = INCBIN_U32("data/tilesets/secondary/cinnabar_gym_31/tiles.4bpp.lz");
+const u32 gTilesetTiles_CinnabarIsland_GymUnused_31[] = INCBIN_U32("data/tilesets/secondary/cinnabar_gym_31/tiles.4bpp.lz");
 
 const u16 gTilesetPalettes_Route37[][16] =
 {

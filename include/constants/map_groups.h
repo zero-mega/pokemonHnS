@@ -287,18 +287,18 @@
 #define MAP_FUCHSIA_CITY_SAFARI_ZONE_CAVE          (15 | (19 << 8))
 
 // gMapGroup_IndoorCinnabar
-#define MAP_CINNABAR_POKECENTER (0 | (20 << 8))
-#define MAP_CINNABAR_VOLCANO2   (1 | (20 << 8))
-#define MAP_CINNABAR_GYM        (2 | (20 << 8))
+#define MAP_CINNABAR_ISLAND_POKEMON_CENTER (0 | (20 << 8))
+#define MAP_CINNABAR_ISLAND_UNUSED   (1 | (20 << 8))
+#define MAP_CINNABAR_ISLAND_GYM_UNUSED        (2 | (20 << 8))
 #define MAP_CINNABAR_VOLCANO1   (3 | (20 << 8))
 
 // gMapGroup_IndoorIndigo
-#define MAP_INDIGO_PLATEAU_POKE_CENTER (0 | (21 << 8))
-#define MAP_POKEMON_LEAGUE1            (1 | (21 << 8))
-#define MAP_POKEMON_LEAGUE2            (2 | (21 << 8))
-#define MAP_POKEMON_LEAGUE3            (3 | (21 << 8))
-#define MAP_POKEMON_LEAGUE4            (4 | (21 << 8))
-#define MAP_POKEMON_LEAGUE5            (5 | (21 << 8))
+#define MAP_INDIGO_PLATEAU_POKEMON_CENTER (0 | (21 << 8))
+#define MAP_POKEMON_LEAGUE_WILLS_ROOM            (1 | (21 << 8))
+#define MAP_POKEMON_LEAGUE_KOGAS_ROOM            (2 | (21 << 8))
+#define MAP_POKEMON_LEAGUE_BRUNOS_ROOM            (3 | (21 << 8))
+#define MAP_POKEMON_LEAGUE_KARENS_ROOM            (4 | (21 << 8))
+#define MAP_POKEMON_LEAGUE_CHAMPIONS_ROOM            (5 | (21 << 8))
 #define MAP_HALL_OF_FAME               (6 | (21 << 8))
 
 // gMapGroup_IndoorJohtoRoutes

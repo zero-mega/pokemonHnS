@@ -315,18 +315,17 @@
     "FuchsiaCity_SafariZoneCave"
   ],
   "gMapGroup_IndoorCinnabar": [
-    "CinnabarPokecenter",
-    "CinnabarVolcano2",
-    "CinnabarGym",
-    "CinnabarVolcano1"
+    "CinnabarIsland_PokemonCenter",
+    "CinnabarIsland_Unused",
+    "CinnabarIsland_GymUnused"
   ],
   "gMapGroup_IndoorIndigo": [
-    "IndigoPlateauPokeCenter",
-    "PokemonLeague1",
-    "PokemonLeague2",
-    "PokemonLeague3",
-    "PokemonLeague4",
-    "PokemonLeague5",
+    "IndigoPlateau_PokemonCenter",
+    "PokemonLeague_WillsRoom",
+    "PokemonLeague_KogasRoom",
+    "PokemonLeague_BrunosRoom",
+    "PokemonLeague_KarensRoom",
+    "PokemonLeague_ChampionsRoom",
     "HallOfFame"
   ],
   "gMapGroup_IndoorJohtoRoutes": [
@@ -453,6 +452,7 @@
     "SeafoamIslands1",
     "SeafoamIslands2",
     "SeafoamIslands3",
+    "CinnabarVolcano1",
     "MtSilver",
     "MtSilver1",
     "MtSilver2",

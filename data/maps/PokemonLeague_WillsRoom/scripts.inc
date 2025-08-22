@@ -1,6 +1,6 @@
-PokemonLeague1_MapScripts::
+PokemonLeague_WillsRoom_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, EliteFourRoom_OnFrame
-	map_script MAP_SCRIPT_ON_RESUME, PokemonLeague1_OnResume
+	map_script MAP_SCRIPT_ON_RESUME, PokemonLeague_WillsRoom_OnResume
 	map_script MAP_SCRIPT_ON_LOAD, EliteFourRoom_OnLoad
 	.byte 0
 
@@ -17,7 +17,7 @@ EliteFourRoom_CreateDoor::
 	setmetatile 7, 12, 0x2A7, TRUE
 	return
 
-PokemonLeague1_OnResume::
+PokemonLeague_WillsRoom_OnResume::
 	setvar VAR_0x8004, 0
 	special DoPokemonLeagueLightingEffect
 	end
@@ -51,27 +51,27 @@ EliteFourRoom_CloseDoor::
 	release
 	end
 
-PokemonLeague1_EventScript_Will::
+PokemonLeague_WillsRoom_EventScript_Will::
 	lock 
 	faceplayer
-	goto_if_ge VAR_LEAGUE_STATE, 2, PokemonLeague1_EventScript_WillDefeated
-	goto_if_set FLAG_IS_CHAMPION, PokemonLeague1_EventScript_WillRematch
-	msgbox PokemonLeague1_Text_Before, MSGBOX_DEFAULT
+	goto_if_ge VAR_LEAGUE_STATE, 2, PokemonLeague_WillsRoom_EventScript_WillDefeated
+	goto_if_set FLAG_IS_CHAMPION, PokemonLeague_WillsRoom_EventScript_WillRematch
+	msgbox PokemonLeague_WillsRoom_Text_Before, MSGBOX_DEFAULT
 	setflag FLAG_TEMP_3
 	setflag FLAG_TEMP_5
-	trainerbattle_no_intro TRAINER_WILL_1, PokemonLeague1_Text_Beaten
-	goto PokemonLeague1_EventScript_WillOnDefeat
+	trainerbattle_no_intro TRAINER_WILL_1, PokemonLeague_WillsRoom_Text_Beaten
+	goto PokemonLeague_WillsRoom_EventScript_WillOnDefeat
 
-PokemonLeague1_EventScript_WillRematch::
-	msgbox PokemonLeague1_Text_RematchBefore, MSGBOX_DEFAULT
+PokemonLeague_WillsRoom_EventScript_WillRematch::
+	msgbox PokemonLeague_WillsRoom_Text_RematchBefore, MSGBOX_DEFAULT
 	setflag FLAG_TEMP_3
 	setflag FLAG_TEMP_5
-	trainerbattle_no_intro TRAINER_WILL_2, PokemonLeague1_Text_Beaten
-	goto PokemonLeague1_EventScript_WillOnDefeat
+	trainerbattle_no_intro TRAINER_WILL_2, PokemonLeague_WillsRoom_Text_Beaten
+	goto PokemonLeague_WillsRoom_EventScript_WillOnDefeat
 
-PokemonLeague1_EventScript_WillOnDefeat::
+PokemonLeague_WillsRoom_EventScript_WillOnDefeat::
 	clearflag FLAG_TEMP_5
-	msgbox PokemonLeague1_Text_Defeat, MSGBOX_DEFAULT
+	msgbox PokemonLeague_WillsRoom_Text_Defeat, MSGBOX_DEFAULT
 	closemessage
 	setmetatile 6, 1, 0x28E, FALSE
 	setmetatile 6, 2, 0x296, FALSE	
@@ -87,13 +87,13 @@ PokemonLeague1_EventScript_WillOnDefeat::
 	release
 	end
 
-PokemonLeague1_EventScript_WillDefeated::
-	msgbox PokemonLeague1_Text_Defeat, MSGBOX_DEFAULT
+PokemonLeague_WillsRoom_EventScript_WillDefeated::
+	msgbox PokemonLeague_WillsRoom_Text_Defeat, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
 
-PokemonLeague1_Text_Before:
+PokemonLeague_WillsRoom_Text_Before:
     .string "Welcome to POKéMON LEAGUE,\n"
     .string "{PLAYER}.\p"
     .string "Allow me to intro-duce myself. I\n"
@@ -107,10 +107,10 @@ PokemonLeague1_Text_Before:
     .string "I can only keep getting better!\p"
     .string "Losing is not an option!$"
 
-PokemonLeague1_Text_Beaten:
+PokemonLeague_WillsRoom_Text_Beaten:
     .string "I… I can't… believe it…$"
 
-PokemonLeague1_Text_Defeat:
+PokemonLeague_WillsRoom_Text_Defeat:
     .string "Even though I was defeated, I\n"
     .string "won't change my course.\p"
     .string "I will continue battling until I\n"
@@ -119,7 +119,7 @@ PokemonLeague1_Text_Defeat:
     .string "experience the true ferocity of\l"
     .string "the ELITE FOUR.$"
 
-PokemonLeague1_Text_RematchBefore:
+PokemonLeague_WillsRoom_Text_RematchBefore:
     .string "WILL: Ah, welcome back.\p"
     .string "I have foreseen this encounter.\p"
     .string "My psychic POKéMON and I have\n"

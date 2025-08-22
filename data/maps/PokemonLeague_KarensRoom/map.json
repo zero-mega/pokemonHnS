@@ -1,7 +1,7 @@
 {
-  "id": "MAP_POKEMON_LEAGUE3",
-  "name": "PokemonLeague3",
-  "layout": "LAYOUT_POKEMON_LEAGUE3",
+  "id": "MAP_POKEMON_LEAGUE_KARENS_ROOM",
+  "name": "PokemonLeague_KarensRoom",
+  "layout": "LAYOUT_POKEMON_LEAGUE_KARENS_ROOM",
   "music": "MUS_HG_POKEMON_LEAGUE",
   "region_map_section": "MAPSEC_INDIGO_PLATEAU",
   "requires_flash": false,
@@ -11,11 +11,11 @@
   "allow_escaping": false,
   "allow_running": false,
   "show_map_name": false,
-  "battle_scene": "MAP_BATTLE_SCENE_BRUNO",
+  "battle_scene": "MAP_BATTLE_SCENE_KAREN",
   "connections": 0,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_BRUNO",
+      "graphics_id": "OBJ_EVENT_GFX_KAREN",
       "x": 6,
       "y": 6,
       "elevation": 0,
@@ -24,7 +24,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "PokemonLeague3_EventScript_Bruno",
+      "script": "PokemonLeague_KarensRoom_EventScript_Karen",
       "flag": "0"
     }
   ],
@@ -33,14 +33,14 @@
       "x": 6,
       "y": 12,
       "elevation": 0,
-      "dest_map": "MAP_POKEMON_LEAGUE2",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_POKEMON_LEAGUE_BRUNOS_ROOM",
+      "dest_warp_id": "1"
     },
     {
       "x": 6,
       "y": 2,
       "elevation": 0,
-      "dest_map": "MAP_POKEMON_LEAGUE4",
+      "dest_map": "MAP_POKEMON_LEAGUE_CHAMPIONS_ROOM",
       "dest_warp_id": "0"
     }
   ],

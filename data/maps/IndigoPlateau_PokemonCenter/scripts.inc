@@ -1,21 +1,21 @@
 .set LOCALID_NURSE, 1
 .set LOCALID_INDIGOPLATEAU_ABRA, 6
 
-IndigoPlateauPokeCenter_MapScripts::
+IndigoPlateau_PokemonCenter_MapScripts::
 	@map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, IndigoPlateauPokeCenter_OnFrame 
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, IndigoPlateau_PokemonCenter_OnFrame 
 	.byte 0
 
-IndigoPlateauPokeCenter_OnFrame::
-	map_script_2 VAR_LEAGUE_STATE, 0, IndigoPlateauPokeCenter_Enter
-	map_script_2 VAR_LEAGUE_STATE, 2, IndigoPlateauPokeCenter_Enter
-	map_script_2 VAR_LEAGUE_STATE, 3, IndigoPlateauPokeCenter_Enter
-	map_script_2 VAR_LEAGUE_STATE, 4, IndigoPlateauPokeCenter_Enter
-	map_script_2 VAR_LEAGUE_STATE, 5, IndigoPlateauPokeCenter_Enter
-	map_script_2 VAR_LEAGUE_STATE, 6, IndigoPlateauPokeCenter_Enter
+IndigoPlateau_PokemonCenter_OnFrame::
+	map_script_2 VAR_LEAGUE_STATE, 0, IndigoPlateau_PokemonCenter_Enter
+	map_script_2 VAR_LEAGUE_STATE, 2, IndigoPlateau_PokemonCenter_Enter
+	map_script_2 VAR_LEAGUE_STATE, 3, IndigoPlateau_PokemonCenter_Enter
+	map_script_2 VAR_LEAGUE_STATE, 4, IndigoPlateau_PokemonCenter_Enter
+	map_script_2 VAR_LEAGUE_STATE, 5, IndigoPlateau_PokemonCenter_Enter
+	map_script_2 VAR_LEAGUE_STATE, 6, IndigoPlateau_PokemonCenter_Enter
 	.2byte 0
 
-IndigoPlateauPokeCenter_Enter::
+IndigoPlateau_PokemonCenter_Enter::
 	setflag FLAG_VISITED_INDIGO_PLATEAU
 	setvar VAR_LEAGUE_STATE, 1
 	end

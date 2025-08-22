@@ -1,7 +1,7 @@
 {
-  "id": "MAP_CINNABAR_POKECENTER",
-  "name": "CinnabarPokecenter",
-  "layout": "LAYOUT_CINNABAR_POKECENTER",
+  "id": "MAP_CINNABAR_ISLAND_POKEMON_CENTER",
+  "name": "CinnabarIsland_PokemonCenter",
+  "layout": "LAYOUT_CINNABAR_ISLAND_POKEMON_CENTER",
   "music": "MUS_RG_POKE_CENTER",
   "region_map_section": "MAPSEC_CINNABAR_ISLAND",
   "requires_flash": false,
@@ -50,7 +50,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "CinnabarPokecenter_EventScript_Cooltrainer",
+      "script": "CinnabarIsland_PokemonCenter_EventScript_Cooltrainer",
       "flag": "0"
     },
     {
@@ -63,7 +63,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "CinnabarPokecenter_EventScript_Fisher",
+      "script": "CinnabarIsland_PokemonCenter_EventScript_Fisher",
       "flag": "0"
     },
     {
