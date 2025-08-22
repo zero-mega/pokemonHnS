@@ -256,7 +256,7 @@ static const match_call_text_data_t sStevenTextScripts[] = {
     { MatchCall_Text_Steven2, FLAG_RUSTURF_TUNNEL_OPENED,          0xFFFF },
     { MatchCall_Text_Steven3, FLAG_RECEIVED_RED_OR_BLUE_ORB,       0xFFFF },
     { MatchCall_Text_Steven4, FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, 0xFFFF },
-    { MatchCall_Text_Steven5, FLAG_DEFEATED_MAHOGANY_GYM,          0xFFFF },
+    { MatchCall_Text_Steven5, FLAG_DEFEATED_MAHOGANY_TOWN_GYM,          0xFFFF },
     { MatchCall_Text_Steven6, FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN, 0xFFFF },
     { MatchCall_Text_Steven7, FLAG_SYS_GAME_CLEAR,                 0xFFFF },
     { NULL,                   0xFFFF,                              0xFFFF },
@@ -690,7 +690,7 @@ static const struct MatchCallCheckPageOverride sCheckPageOverrides[] = {
     {
         .idx = MC_HEADER_STEVEN,
         .facilityClass = FACILITY_CLASS_CHAMPION_STEVEN,
-        .flag = FLAG_DEFEATED_MAHOGANY_GYM,
+        .flag = FLAG_DEFEATED_MAHOGANY_TOWN_GYM,
         .flavorTexts = {
             [CHECK_PAGE_STRATEGY] = gText_MatchCallSteven_Strategy,
             [CHECK_PAGE_POKEMON]  = gText_MatchCallSteven_Pokemon,

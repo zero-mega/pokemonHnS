@@ -824,7 +824,7 @@
 #define FLAG_HIDE_LAKE_OF_RAGE_GYARADOS                             0x309
 #define FLAG_HIDE_LAKE_OF_RAGE_LANCE                                0x30A
 #define FLAG_HIDE_MAHOGANY_TOWN_FATMAN                              0x30B
-#define FLAG_HIDE_MAHOGANY_SHOP_NPCS                                0x30C
+#define FLAG_HIDE_MAHOGANY_TOWN_SHOP_NPCS                                0x30C
 #define FLAG_HIDE_MAHOGANY_COP                                      0x30D
 #define FLAG_HIDE_MAHOGANY_ROCKETS                                  0x30E
 #define FLAG_GOT_TM_FROM_MAHOGANY_COP                               0x30F
@@ -1321,7 +1321,7 @@
 #define FLAG_DEFEATED_ECRUTEAK_CITY_GYM                                 0x4F3
 #define FLAG_DEFEATED_CIANWOOD_GYM                                 0x4F4
 #define FLAG_DEFEATED_OLIVINE_CITY_GYM                                   0x4F5
-#define FLAG_DEFEATED_MAHOGANY_GYM                                  0x4F6
+#define FLAG_DEFEATED_MAHOGANY_TOWN_GYM                                  0x4F6
 #define FLAG_DEFEATED_BLACKTHORN_GYM                                0x4F7
 #define FLAG_DEFEATED_RED                           0x4F8
 

@@ -904,7 +904,7 @@ u8 BattleSetup_GetTerrainId(void)
     case MAP_TYPE_SECRET_BASE:
         return BATTLE_TERRAIN_BUILDING;
         if (
-                IS_MAP(BLACKTHORN_GYM1, BLACKTHORN_GYM1))
+                IS_MAP(BLACKTHORN_CITY_GYM, BLACKTHORN_CITY_GYM))
             {
                 return BATTLE_TERRAIN_CAVE;
             }

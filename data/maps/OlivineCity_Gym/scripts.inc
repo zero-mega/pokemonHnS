@@ -227,7 +227,7 @@ OlivineCity_Gym_EventScript_Jasmine::
 	goto_if_set FLAG_DEFEATED_OLIVINE_CITY_GYM, OlivineCity_Gym_EventScript_Jasmine_Defeated
 	msgbox OlivineCity_Gym_Text_JasmineSteelTypeIntro, MSGBOX_DEFAULT
 	goto_if_set FLAG_DEFEATED_CIANWOOD_GYM, OlivineCity_Gym_EventScript_CianwoodCheckMahog
-	goto_if_set FLAG_DEFEATED_MAHOGANY_GYM, OlivineCity_Gym_EventScript_MahogCheckCianwood
+	goto_if_set FLAG_DEFEATED_MAHOGANY_TOWN_GYM, OlivineCity_Gym_EventScript_MahogCheckCianwood
 	goto OlivineCity_Gym_EventScript_Jasmine_Battle1
 
 OlivineCity_Gym_EventScript_JasmineVictory::
@@ -248,7 +248,7 @@ OlivineCity_Gym_EventScript_JasmineVictory::
 	end
 
 OlivineCity_Gym_EventScript_CianwoodCheckMahog::
-	goto_if_set FLAG_DEFEATED_MAHOGANY_GYM, OlivineCity_Gym_EventScript_Jasmine_Battle3
+	goto_if_set FLAG_DEFEATED_MAHOGANY_TOWN_GYM, OlivineCity_Gym_EventScript_Jasmine_Battle3
 	goto OlivineCity_Gym_EventScript_Jasmine_Battle2
 
 OlivineCity_Gym_EventScript_MahogCheckCianwood::

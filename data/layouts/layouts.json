@@ -5982,24 +5982,24 @@
       "blockdata_filepath": "data/layouts/CianwoodPokecenter/map.bin"
     },
     {
-      "id": "LAYOUT_MAHOGANY_POKECENTER",
-      "name": "MahoganyPokecenter_Layout",
+      "id": "LAYOUT_MAHOGANY_TOWN_POKEMON_CENTER",
+      "name": "MahoganyTown_PokemonCenter_Layout",
       "width": 16,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Kanto_PokemonCenter",
-      "border_filepath": "data/layouts/MahoganyPokecenter/border.bin",
-      "blockdata_filepath": "data/layouts/MahoganyPokecenter/map.bin"
+      "border_filepath": "data/layouts/MahoganyTown_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/MahoganyTown_PokemonCenter/map.bin"
     },
     {
-      "id": "LAYOUT_BLACKTHORN_POKECENTER",
-      "name": "BlackthornPokecenter_Layout",
+      "id": "LAYOUT_BLACKTHORN_CITY_POKEMON_CENTER",
+      "name": "BlackthornCity_PokemonCenter_Layout",
       "width": 16,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Kanto_PokemonCenter",
-      "border_filepath": "data/layouts/BlackthornPokecenter/border.bin",
-      "blockdata_filepath": "data/layouts/BlackthornPokecenter/map.bin"
+      "border_filepath": "data/layouts/BlackthornCity_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/BlackthornCity_PokemonCenter/map.bin"
     },
     {
       "id": "LAYOUT_MT_SILVER_POKECENTER",
@@ -6502,14 +6502,14 @@
       "blockdata_filepath": "data/layouts/EcruteakCity_Mart/map.bin"
     },
     {
-      "id": "LAYOUT_BLACKTHORN_POKEMART",
-      "name": "BlackthornPokemart_Layout",
+      "id": "LAYOUT_BLACKTHORN_CITY_MART",
+      "name": "BlackthornCity_Mart_Layout",
       "width": 14,
       "height": 9,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Pokemart_13",
-      "border_filepath": "data/layouts/BlackthornPokemart/border.bin",
-      "blockdata_filepath": "data/layouts/BlackthornPokemart/map.bin"
+      "border_filepath": "data/layouts/BlackthornCity_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/BlackthornCity_Mart/map.bin"
     },
     {
       "id": "LAYOUT_VIRIDIAN_POKEMART",
@@ -7162,104 +7162,104 @@
       "blockdata_filepath": "data/layouts/Bellchime_Trail/map.bin"
     },
     {
-      "id": "LAYOUT_MAHOGANY_GYM",
-      "name": "MahoganyGym_Layout",
+      "id": "LAYOUT_MAHOGANY_TOWN_GYM",
+      "name": "MahoganyTown_Gym_Layout",
       "width": 25,
       "height": 30,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_SootopolisGym",
-      "border_filepath": "data/layouts/MahoganyGym/border.bin",
-      "blockdata_filepath": "data/layouts/MahoganyGym/map.bin"
+      "border_filepath": "data/layouts/MahoganyTown_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/MahoganyTown_Gym/map.bin"
     },
     {
-      "id": "LAYOUT_MAHOGANY_SHOP",
-      "name": "MahoganyShop_Layout",
+      "id": "LAYOUT_MAHOGANY_TOWN_SHOP",
+      "name": "MahoganyTown_Shop_Layout",
       "width": 10,
       "height": 12,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_House2_44",
-      "border_filepath": "data/layouts/MahoganyShop/border.bin",
-      "blockdata_filepath": "data/layouts/MahoganyShop/map.bin"
+      "border_filepath": "data/layouts/MahoganyTown_Shop/border.bin",
+      "blockdata_filepath": "data/layouts/MahoganyTown_Shop/map.bin"
     },
     {
-      "id": "LAYOUT_MAHOGANY_HOUSE1",
-      "name": "MahoganyHouse1_Layout",
+      "id": "LAYOUT_MAHOGANY_TOWN_HOUSE1",
+      "name": "MahoganyTown_House1_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/MahoganyHouse1/border.bin",
-      "blockdata_filepath": "data/layouts/MahoganyHouse1/map.bin"
+      "border_filepath": "data/layouts/MahoganyTown_House1/border.bin",
+      "blockdata_filepath": "data/layouts/MahoganyTown_House1/map.bin"
     },
     {
       "id": "LAYOUT_LAKE_OF_RAGE_HOUSE1",
-      "name": "LakeOfRageHouse1_Layout",
+      "name": "LakeOfRage_House1_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/LakeOfRageHouse1/border.bin",
-      "blockdata_filepath": "data/layouts/LakeOfRageHouse1/map.bin"
+      "border_filepath": "data/layouts/LakeOfRage_House1/border.bin",
+      "blockdata_filepath": "data/layouts/LakeOfRage_House1/map.bin"
     },
     {
       "id": "LAYOUT_LAKE_OF_RAGE_HOUSE2",
-      "name": "LakeOfRageHouse2_Layout",
+      "name": "LakeOfRage_House2_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/LakeOfRageHouse2/border.bin",
-      "blockdata_filepath": "data/layouts/LakeOfRageHouse2/map.bin"
+      "border_filepath": "data/layouts/LakeOfRage_House2/border.bin",
+      "blockdata_filepath": "data/layouts/LakeOfRage_House2/map.bin"
     },
     {
-      "id": "LAYOUT_BLACKTHORN_GYM1",
-      "name": "BlackthornGym1_Layout",
+      "id": "LAYOUT_BLACKTHORN_CITY_GYM",
+      "name": "BlackthornCity_Gym_Layout",
       "width": 41,
       "height": 60,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_BlackthornGym",
-      "border_filepath": "data/layouts/BlackthornGym1/border.bin",
-      "blockdata_filepath": "data/layouts/BlackthornGym1/map.bin"
+      "border_filepath": "data/layouts/BlackthornCity_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/BlackthornCity_Gym/map.bin"
     },
     {
-      "id": "LAYOUT_BLACKTHORN_GYM2",
-      "name": "BlackthornGym2_Layout",
+      "id": "LAYOUT_BLACKTHORN_CITY_GYM_UNUSED",
+      "name": "BlackthornCity_GymUnused_Layout",
       "width": 39,
       "height": 38,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_BlackthornGym",
-      "border_filepath": "data/layouts/BlackthornGym2/border.bin",
-      "blockdata_filepath": "data/layouts/BlackthornGym2/map.bin"
+      "border_filepath": "data/layouts/BlackthornCity_GymUnused/border.bin",
+      "blockdata_filepath": "data/layouts/BlackthornCity_GymUnused/map.bin"
     },
     {
-      "id": "LAYOUT_BLACKTHORN_HOUSE1",
-      "name": "BlackthornHouse1_Layout",
+      "id": "LAYOUT_BLACKTHORN_CITY_HOUSE1",
+      "name": "BlackthornCity_House1_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/BlackthornHouse1/border.bin",
-      "blockdata_filepath": "data/layouts/BlackthornHouse1/map.bin"
+      "border_filepath": "data/layouts/BlackthornCity_House1/border.bin",
+      "blockdata_filepath": "data/layouts/BlackthornCity_House1/map.bin"
     },
     {
-      "id": "LAYOUT_BLACKTHORN_HOUSE2",
-      "name": "BlackthornHouse2_Layout",
+      "id": "LAYOUT_BLACKTHORN_CITY_HOUSE2",
+      "name": "BlackthornCity_House2_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/BlackthornHouse2/border.bin",
-      "blockdata_filepath": "data/layouts/BlackthornHouse2/map.bin"
+      "border_filepath": "data/layouts/BlackthornCity_House2/border.bin",
+      "blockdata_filepath": "data/layouts/BlackthornCity_House2/map.bin"
     },
     {
-      "id": "LAYOUT_BLACKTHORN_HOUSE3",
-      "name": "BlackthornHouse3_Layout",
+      "id": "LAYOUT_BLACKTHORN_CITY_HOUSE3",
+      "name": "BlackthornCity_House3_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/BlackthornHouse3/border.bin",
-      "blockdata_filepath": "data/layouts/BlackthornHouse3/map.bin"
+      "border_filepath": "data/layouts/BlackthornCity_House3/border.bin",
+      "blockdata_filepath": "data/layouts/BlackthornCity_House3/map.bin"
     },
     {
       "id": "LAYOUT_MT_SILVER_HOUSE",

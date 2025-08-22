@@ -169,21 +169,21 @@
 #define MAP_CIANWOOD_GYM        (5 | (8 << 8))
 
 // gMapGroup_IndoorMahogany
-#define MAP_MAHOGANY_POKECENTER (0 | (9 << 8))
-#define MAP_MAHOGANY_GYM        (1 | (9 << 8))
-#define MAP_MAHOGANY_SHOP       (2 | (9 << 8))
-#define MAP_MAHOGANY_HOUSE1     (3 | (9 << 8))
+#define MAP_MAHOGANY_TOWN_POKEMON_CENTER (0 | (9 << 8))
+#define MAP_MAHOGANY_TOWN_GYM        (1 | (9 << 8))
+#define MAP_MAHOGANY_TOWN_SHOP       (2 | (9 << 8))
+#define MAP_MAHOGANY_TOWN_HOUSE1     (3 | (9 << 8))
 #define MAP_LAKE_OF_RAGE_HOUSE1 (4 | (9 << 8))
 #define MAP_LAKE_OF_RAGE_HOUSE2 (5 | (9 << 8))
 
 // gMapGroup_IndoorBlackthorn
-#define MAP_BLACKTHORN_POKECENTER (0 | (10 << 8))
-#define MAP_BLACKTHORN_POKEMART   (1 | (10 << 8))
-#define MAP_BLACKTHORN_GYM1       (2 | (10 << 8))
-#define MAP_BLACKTHORN_GYM2       (3 | (10 << 8))
-#define MAP_BLACKTHORN_HOUSE1     (4 | (10 << 8))
-#define MAP_BLACKTHORN_HOUSE2     (5 | (10 << 8))
-#define MAP_BLACKTHORN_HOUSE3     (6 | (10 << 8))
+#define MAP_BLACKTHORN_CITY_POKEMON_CENTER (0 | (10 << 8))
+#define MAP_BLACKTHORN_CITY_MART   (1 | (10 << 8))
+#define MAP_BLACKTHORN_CITY_GYM       (2 | (10 << 8))
+#define MAP_BLACKTHORN_CITY_GYM_UNUSED       (3 | (10 << 8))
+#define MAP_BLACKTHORN_CITY_HOUSE1     (4 | (10 << 8))
+#define MAP_BLACKTHORN_CITY_HOUSE2     (5 | (10 << 8))
+#define MAP_BLACKTHORN_CITY_HOUSE3     (6 | (10 << 8))
 
 // gMapGroup_IndoorPallet
 #define MAP_PALLET_TOWN_REDS_HOUSE1 (0 | (11 << 8))

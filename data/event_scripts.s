@@ -1434,9 +1434,9 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/CianwoodPokecenter/scripts.inc"
 
-	.include "data/maps/MahoganyPokecenter/scripts.inc"
+	.include "data/maps/MahoganyTown_PokemonCenter/scripts.inc"
 
-	.include "data/maps/BlackthornPokecenter/scripts.inc"
+	.include "data/maps/BlackthornCity_PokemonCenter/scripts.inc"
 
 	.include "data/maps/MtSilverPokecenter/scripts.inc"
 
@@ -1538,7 +1538,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/EcruteakCity_Mart/scripts.inc"
 
-	.include "data/maps/BlackthornPokemart/scripts.inc"
+	.include "data/maps/BlackthornCity_Mart/scripts.inc"
 
 	.include "data/maps/ViridianPokemart/scripts.inc"
 
@@ -1670,25 +1670,25 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/Bellchime_Trail/scripts.inc"
 
-	.include "data/maps/MahoganyGym/scripts.inc"
+	.include "data/maps/MahoganyTown_Gym/scripts.inc"
 
-	.include "data/maps/MahoganyShop/scripts.inc"
+	.include "data/maps/MahoganyTown_Shop/scripts.inc"
 
-	.include "data/maps/MahoganyHouse1/scripts.inc"
+	.include "data/maps/MahoganyTown_House1/scripts.inc"
 
-	.include "data/maps/LakeOfRageHouse1/scripts.inc"
+	.include "data/maps/LakeOfRage_House1/scripts.inc"
 
-	.include "data/maps/LakeOfRageHouse2/scripts.inc"
+	.include "data/maps/LakeOfRage_House2/scripts.inc"
 
-	.include "data/maps/BlackthornGym1/scripts.inc"
+	.include "data/maps/BlackthornCity_Gym/scripts.inc"
 
-	.include "data/maps/BlackthornGym2/scripts.inc"
+	.include "data/maps/BlackthornCity_GymUnused/scripts.inc"
 
-	.include "data/maps/BlackthornHouse1/scripts.inc"
+	.include "data/maps/BlackthornCity_House1/scripts.inc"
 
-	.include "data/maps/BlackthornHouse2/scripts.inc"
+	.include "data/maps/BlackthornCity_House2/scripts.inc"
 
-	.include "data/maps/BlackthornHouse3/scripts.inc"
+	.include "data/maps/BlackthornCity_House3/scripts.inc"
 
 	.include "data/maps/MtSilverHouse/scripts.inc"
 
