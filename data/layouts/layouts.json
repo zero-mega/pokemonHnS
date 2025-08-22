@@ -5912,24 +5912,24 @@
       "blockdata_filepath": "data/layouts/IndigoPlateauPokeCenter/map.bin"
     },
     {
-      "id": "LAYOUT_CHERRYGROVE_POKECENTER",
-      "name": "Cherrygrove_Pokecenter_Layout",
+      "id": "LAYOUT_CHERRYGROVE_CITY_POKEMON_CENTER",
+      "name": "CherrygroveCity_PokemonCenter_Layout",
       "width": 16,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Kanto_PokemonCenter",
-      "border_filepath": "data/layouts/Cherrygrove_Pokecenter/border.bin",
-      "blockdata_filepath": "data/layouts/Cherrygrove_Pokecenter/map.bin"
+      "border_filepath": "data/layouts/CherrygroveCity_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/CherrygroveCity_PokemonCenter/map.bin"
     },
     {
-      "id": "LAYOUT_VIOLET_POKECENTER",
-      "name": "Violet_Pokecenter_Layout",
+      "id": "LAYOUT_VIOLET_CITY_POKEMON_CENTER",
+      "name": "VioletCity_PokemonCenter_Layout",
       "width": 16,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Kanto_PokemonCenter",
-      "border_filepath": "data/layouts/Violet_Pokecenter/border.bin",
-      "blockdata_filepath": "data/layouts/Violet_Pokecenter/map.bin"
+      "border_filepath": "data/layouts/VioletCity_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/VioletCity_PokemonCenter/map.bin"
     },
     {
       "id": "LAYOUT_AZALEA_POKECENTER",
@@ -6472,24 +6472,24 @@
       "blockdata_filepath": "data/layouts/AzaleaPokemart/map.bin"
     },
     {
-      "id": "LAYOUT_VIOLET_POKEMART",
-      "name": "VioletPokemart_Layout",
+      "id": "LAYOUT_VIOLET_CITY_MART",
+      "name": "VioletCity_Mart_Layout",
       "width": 14,
       "height": 9,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Pokemart_13",
-      "border_filepath": "data/layouts/VioletPokemart/border.bin",
-      "blockdata_filepath": "data/layouts/VioletPokemart/map.bin"
+      "border_filepath": "data/layouts/VioletCity_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/VioletCity_Mart/map.bin"
     },
     {
-      "id": "LAYOUT_CHERRYGROVE_POKEMART",
-      "name": "CherrygrovePokemart_Layout",
+      "id": "LAYOUT_CHERRYGROVE_CITY_MART",
+      "name": "CherrygroveCity_Mart_Layout",
       "width": 14,
       "height": 9,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Pokemart_13",
-      "border_filepath": "data/layouts/CherrygrovePokemart/border.bin",
-      "blockdata_filepath": "data/layouts/CherrygrovePokemart/map.bin"
+      "border_filepath": "data/layouts/CherrygroveCity_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/CherrygroveCity_Mart/map.bin"
     },
     {
       "id": "LAYOUT_ECRUTEAK_POKEMART",
@@ -6583,83 +6583,83 @@
     },
     {
       "id": "LAYOUT_NEW_BARK_TOWN_LAB",
-      "name": "NewBarkTownLab_Layout",
+      "name": "NewBarkTown_Lab_Layout",
       "width": 40,
       "height": 14,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/NewBarkTownLab/border.bin",
-      "blockdata_filepath": "data/layouts/NewBarkTownLab/map.bin"
+      "border_filepath": "data/layouts/NewBarkTown_Lab/border.bin",
+      "blockdata_filepath": "data/layouts/NewBarkTown_Lab/map.bin"
     },
     {
       "id": "LAYOUT_NEW_BARK_TOWN_HOUSE2",
-      "name": "NewBarkTownHouse2_Layout",
+      "name": "NewBarkTown_House2_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/NewBarkTownHouse2/border.bin",
-      "blockdata_filepath": "data/layouts/NewBarkTownHouse2/map.bin"
+      "border_filepath": "data/layouts/NewBarkTown_House2/border.bin",
+      "blockdata_filepath": "data/layouts/NewBarkTown_House2/map.bin"
     },
     {
       "id": "LAYOUT_NEW_BARK_TOWN_HOUSE1",
-      "name": "NewBarkTownHouse1_Layout",
+      "name": "NewBarkTown_House1_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/NewBarkTownHouse1/border.bin",
-      "blockdata_filepath": "data/layouts/NewBarkTownHouse1/map.bin"
+      "border_filepath": "data/layouts/NewBarkTown_House1/border.bin",
+      "blockdata_filepath": "data/layouts/NewBarkTown_House1/map.bin"
     },
     {
-      "id": "LAYOUT_PLAYERS_HOUSE1",
-      "name": "PlayersHouse1_Layout",
+      "id": "LAYOUT_NEW_BARK_TOWN_PLAYERS_HOUSE_1F",
+      "name": "NewBarkTown_PlayersHouse_1F_Layout",
       "width": 17,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_PlayersHouse_20",
-      "border_filepath": "data/layouts/PlayersHouse1/border.bin",
-      "blockdata_filepath": "data/layouts/PlayersHouse1/map.bin"
+      "border_filepath": "data/layouts/NewBarkTown_PlayersHouse_1F/border.bin",
+      "blockdata_filepath": "data/layouts/NewBarkTown_PlayersHouse_1F/map.bin"
     },
     {
-      "id": "LAYOUT_PLAYERS_HOUSE2",
-      "name": "PlayersHouse2_Layout",
+      "id": "LAYOUT_NEW_BARK_TOWN_PLAYERS_HOUSE_2F",
+      "name": "NewBarkTown_PlayersHouse_2F_Layout",
       "width": 11,
       "height": 9,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_PlayersHouse_20",
-      "border_filepath": "data/layouts/PlayersHouse2/border.bin",
-      "blockdata_filepath": "data/layouts/PlayersHouse2/map.bin"
+      "border_filepath": "data/layouts/NewBarkTown_PlayersHouse_2F/border.bin",
+      "blockdata_filepath": "data/layouts/NewBarkTown_PlayersHouse_2F/map.bin"
     },
     {
-      "id": "LAYOUT_CHERRYGROVE_HOUSE1",
-      "name": "CherrygroveHouse1_Layout",
+      "id": "LAYOUT_CHERRYGROVE_CITY_HOUSE1",
+      "name": "CherrygroveCity_House1_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/CherrygroveHouse1/border.bin",
-      "blockdata_filepath": "data/layouts/CherrygroveHouse1/map.bin"
+      "border_filepath": "data/layouts/CherrygroveCity_House1/border.bin",
+      "blockdata_filepath": "data/layouts/CherrygroveCity_House1/map.bin"
     },
     {
-      "id": "LAYOUT_CHERRYGROVE_HOUSE2",
-      "name": "CherrygroveHouse2_Layout",
+      "id": "LAYOUT_CHERRYGROVE_CITY_HOUSE2",
+      "name": "CherrygroveCity_House2_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/CherrygroveHouse2/border.bin",
-      "blockdata_filepath": "data/layouts/CherrygroveHouse2/map.bin"
+      "border_filepath": "data/layouts/CherrygroveCity_House2/border.bin",
+      "blockdata_filepath": "data/layouts/CherrygroveCity_House2/map.bin"
     },
     {
-      "id": "LAYOUT_CHERRYGROVE_HOUSE3",
-      "name": "CherrygroveHouse3_Layout",
+      "id": "LAYOUT_CHERRYGROVE_CITY_HOUSE3",
+      "name": "CherrygroveCity_House3_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/CherrygroveHouse3/border.bin",
-      "blockdata_filepath": "data/layouts/CherrygroveHouse3/map.bin"
+      "border_filepath": "data/layouts/CherrygroveCity_House3/border.bin",
+      "blockdata_filepath": "data/layouts/CherrygroveCity_House3/map.bin"
     },
     {
       "id": "LAYOUT_ECRUTEAK_HOUSE1",
@@ -6743,43 +6743,43 @@
     },
     {
       "id": "LAYOUT_VIOLET_CITY_TRAINER_SCHOOL",
-      "name": "VioletCityTrainerSchool_Layout",
+      "name": "VioletCity_TrainerSchool_Layout",
       "width": 10,
       "height": 21,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_TrainerSchool",
-      "border_filepath": "data/layouts/VioletCityTrainerSchool/border.bin",
-      "blockdata_filepath": "data/layouts/VioletCityTrainerSchool/map.bin"
+      "border_filepath": "data/layouts/VioletCity_TrainerSchool/border.bin",
+      "blockdata_filepath": "data/layouts/VioletCity_TrainerSchool/map.bin"
     },
     {
       "id": "LAYOUT_VIOLET_CITY_HOUSE1",
-      "name": "VioletCityHouse1_Layout",
+      "name": "VioletCity_House1_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/VioletCityHouse1/border.bin",
-      "blockdata_filepath": "data/layouts/VioletCityHouse1/map.bin"
+      "border_filepath": "data/layouts/VioletCity_House1/border.bin",
+      "blockdata_filepath": "data/layouts/VioletCity_House1/map.bin"
     },
     {
       "id": "LAYOUT_VIOLET_CITY_HOUSE2",
-      "name": "VioletCityHouse2_Layout",
+      "name": "VioletCity_House2_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/VioletCityHouse2/border.bin",
-      "blockdata_filepath": "data/layouts/VioletCityHouse2/map.bin"
+      "border_filepath": "data/layouts/VioletCity_House2/border.bin",
+      "blockdata_filepath": "data/layouts/VioletCity_House2/map.bin"
     },
     {
       "id": "LAYOUT_VIOLET_CITY_GYM",
-      "name": "VioletCityGym_Layout",
+      "name": "VioletCity_Gym_Layout",
       "width": 19,
       "height": 21,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Theater_26",
-      "border_filepath": "data/layouts/VioletCityGym/border.bin",
-      "blockdata_filepath": "data/layouts/VioletCityGym/map.bin"
+      "border_filepath": "data/layouts/VioletCity_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/VioletCity_Gym/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE32POKECENTER",
@@ -8632,14 +8632,14 @@
       "blockdata_filepath": "data/layouts/MtSilver8/map.bin"
     },
     {
-      "id": "LAYOUT_VIOLET_CITY_GYM2",
-      "name": "VioletCityGym2_Layout",
+      "id": "LAYOUT_VIOLET_CITY_GYM_UNUSED",
+      "name": "VioletCity_GymUnused_Layout",
       "width": 14,
       "height": 11,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Theater_26",
-      "border_filepath": "data/layouts/VioletCityGym2/border.bin",
-      "blockdata_filepath": "data/layouts/VioletCityGym2/map.bin"
+      "border_filepath": "data/layouts/VioletCity_GymUnused/border.bin",
+      "blockdata_filepath": "data/layouts/VioletCity_GymUnused/map.bin"
     },
     {
       "id": "LAYOUT_MT_MOON_OUTSIDE",

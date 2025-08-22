@@ -78,27 +78,27 @@
 #define MAP_ROUTE28          (69 | (0 << 8))
 
 // gMapGroup_IndoorNewBark
-#define MAP_NEW_BARK_TOWN_LAB    (0 | (1 << 8))
-#define MAP_NEW_BARK_TOWN_HOUSE2 (1 | (1 << 8))
-#define MAP_NEW_BARK_TOWN_HOUSE1 (2 | (1 << 8))
-#define MAP_PLAYERS_HOUSE1       (3 | (1 << 8))
-#define MAP_PLAYERS_HOUSE2       (4 | (1 << 8))
+#define MAP_NEW_BARK_TOWN_LAB              (0 | (1 << 8))
+#define MAP_NEW_BARK_TOWN_HOUSE2           (1 | (1 << 8))
+#define MAP_NEW_BARK_TOWN_HOUSE1           (2 | (1 << 8))
+#define MAP_NEW_BARK_TOWN_PLAYERS_HOUSE_1F (3 | (1 << 8))
+#define MAP_NEW_BARK_TOWN_PLAYERS_HOUSE_2F (4 | (1 << 8))
 
 // gMapGroup_IndoorCherrygrove
-#define MAP_CHERRYGROVE_POKECENTER (0 | (2 << 8))
-#define MAP_CHERRYGROVE_POKEMART   (1 | (2 << 8))
-#define MAP_CHERRYGROVE_HOUSE1     (2 | (2 << 8))
-#define MAP_CHERRYGROVE_HOUSE2     (3 | (2 << 8))
-#define MAP_CHERRYGROVE_HOUSE3     (4 | (2 << 8))
+#define MAP_CHERRYGROVE_CITY_POKEMON_CENTER (0 | (2 << 8))
+#define MAP_CHERRYGROVE_CITY_MART   (1 | (2 << 8))
+#define MAP_CHERRYGROVE_CITY_HOUSE1     (2 | (2 << 8))
+#define MAP_CHERRYGROVE_CITY_HOUSE2     (3 | (2 << 8))
+#define MAP_CHERRYGROVE_CITY_HOUSE3     (4 | (2 << 8))
 
 // gMapGroup_IndoorViolet
-#define MAP_VIOLET_POKECENTER          (0 | (3 << 8))
-#define MAP_VIOLET_POKEMART            (1 | (3 << 8))
+#define MAP_VIOLET_CITY_POKEMON_CENTER          (0 | (3 << 8))
+#define MAP_VIOLET_CITY_MART            (1 | (3 << 8))
 #define MAP_VIOLET_CITY_TRAINER_SCHOOL (2 | (3 << 8))
 #define MAP_VIOLET_CITY_HOUSE1         (3 | (3 << 8))
 #define MAP_VIOLET_CITY_HOUSE2         (4 | (3 << 8))
 #define MAP_VIOLET_CITY_GYM            (5 | (3 << 8))
-#define MAP_VIOLET_CITY_GYM2           (6 | (3 << 8))
+#define MAP_VIOLET_CITY_GYM_UNUSED           (6 | (3 << 8))
 
 // gMapGroup_IndoorAzalea
 #define MAP_AZALEA_POKECENTER  (0 | (4 << 8))

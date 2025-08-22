@@ -1420,9 +1420,9 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/IndigoPlateauPokeCenter/scripts.inc"
 
-	.include "data/maps/Cherrygrove_Pokecenter/scripts.inc"
+	.include "data/maps/CherrygroveCity_PokemonCenter/scripts.inc"
 
-	.include "data/maps/Violet_Pokecenter/scripts.inc"
+	.include "data/maps/VioletCity_PokemonCenter/scripts.inc"
 
 	.include "data/maps/Azalea_Pokecenter/scripts.inc"
 
@@ -1532,9 +1532,9 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/AzaleaPokemart/scripts.inc"
 
-	.include "data/maps/VioletPokemart/scripts.inc"
+	.include "data/maps/VioletCity_Mart/scripts.inc"
 
-	.include "data/maps/CherrygrovePokemart/scripts.inc"
+	.include "data/maps/CherrygroveCity_Mart/scripts.inc"
 
 	.include "data/maps/EcruteakPokemart/scripts.inc"
 
@@ -1554,21 +1554,21 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/FuchsiaPokemart/scripts.inc"
 
-	.include "data/maps/NewBarkTownLab/scripts.inc"
+	.include "data/maps/NewBarkTown_Lab/scripts.inc"
 
-	.include "data/maps/NewBarkTownHouse2/scripts.inc"
+	.include "data/maps/NewBarkTown_House2/scripts.inc"
 
-	.include "data/maps/NewBarkTownHouse1/scripts.inc"
+	.include "data/maps/NewBarkTown_House1/scripts.inc"
 
-	.include "data/maps/PlayersHouse1/scripts.inc"
+	.include "data/maps/NewBarkTown_PlayersHouse_1F/scripts.inc"
 
-	.include "data/maps/PlayersHouse2/scripts.inc"
+	.include "data/maps/NewBarkTown_PlayersHouse_2F/scripts.inc"
 
-	.include "data/maps/CherrygroveHouse1/scripts.inc"
+	.include "data/maps/CherrygroveCity_House1/scripts.inc"
 
-	.include "data/maps/CherrygroveHouse2/scripts.inc"
+	.include "data/maps/CherrygroveCity_House2/scripts.inc"
 
-	.include "data/maps/CherrygroveHouse3/scripts.inc"
+	.include "data/maps/CherrygroveCity_House3/scripts.inc"
 
 	.include "data/maps/EcruteakHouse1/scripts.inc"
 
@@ -1586,13 +1586,13 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/Route30MrPokemonHouse/scripts.inc"
 
-	.include "data/maps/VioletCityTrainerSchool/scripts.inc"
+	.include "data/maps/VioletCity_TrainerSchool/scripts.inc"
 
-	.include "data/maps/VioletCityHouse1/scripts.inc"
+	.include "data/maps/VioletCity_House1/scripts.inc"
 
-	.include "data/maps/VioletCityHouse2/scripts.inc"
+	.include "data/maps/VioletCity_House2/scripts.inc"
 
-	.include "data/maps/VioletCityGym/scripts.inc"
+	.include "data/maps/VioletCity_Gym/scripts.inc"
 
 	.include "data/maps/Route32Pokecenter/scripts.inc"
 
@@ -1964,7 +1964,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/MtSilver8/scripts.inc"
 
-	.include "data/maps/VioletCityGym2/scripts.inc"
+	.include "data/maps/VioletCity_GymUnused/scripts.inc"
 
 	.include "data/maps/MtMoonOutside/scripts.inc"
 
