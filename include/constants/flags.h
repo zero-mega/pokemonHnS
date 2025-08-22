@@ -985,7 +985,7 @@
 #define FLAG_AMPHAROS_HEALED                            0x3AA
 #define FLAG_HIDE_ECRUTEAK_BILL                           0x3AB
 #define FLAG_HIDE_ECRUTEAK_ROCKET                      0x3AC
-#define FLAG_HIDE_ECRUTEAK_THEATER_KIMONOS               0x3AD
+#define FLAG_HIDE_ECRUTEAK_CITY_THEATER_KIMONOS               0x3AD
 #define FLAG_HIDE_BURNED_TOWER_NPCS                          0x3AE
 #define FLAG_HIDE_BURNED_TOWER_BEASTS                 0x3AF
 #define FLAG_HIDE_BURNED_TOWER2_EUSINE                                  0x3B0
@@ -1029,8 +1029,8 @@
 #define FLAG_BLACKTHORN_NPC_TRADE_COMPLETED                               0x3D6
 #define FLAG_HIDE_TOHJO_GIOVANNI                              0x3D7
 #define FLAG_HIDE_ECRUTEAK_SILVER                0x3D8
-#define FLAG_HIDE_ECRUTEAK_THEATER_NPCS                               0x3D9
-#define FLAG_HIDE_ECRUTEAK_THEATER_ZUKI                               0x3DA
+#define FLAG_HIDE_ECRUTEAK_CITY_THEATER_NPCS                               0x3D9
+#define FLAG_HIDE_ECRUTEAK_CITY_THEATER_ZUKI                               0x3DA
 #define FLAG_HIDE_TINTOWER_GUARD                               0x3DB
 #define FLAG_HIDE_WHIRLISLANDS_GUARD                               0x3DC//unused?
 #define FLAG_HIDE_VICTORY_ROAD_SILVER                               0x3DD
@@ -1318,7 +1318,7 @@
 #define FLAG_DEFEATED_VIOLET_GYM                                  0x4F0
 #define FLAG_DEFEATED_AZALEA_TOWN_GYM                                   0x4F1
 #define FLAG_DEFEATED_GOLDENROD_CITY_GYM                                  0x4F2
-#define FLAG_DEFEATED_ECRUTEAK_GYM                                 0x4F3
+#define FLAG_DEFEATED_ECRUTEAK_CITY_GYM                                 0x4F3
 #define FLAG_DEFEATED_CIANWOOD_GYM                                 0x4F4
 #define FLAG_DEFEATED_OLIVINE_GYM                                   0x4F5
 #define FLAG_DEFEATED_MAHOGANY_GYM                                  0x4F6

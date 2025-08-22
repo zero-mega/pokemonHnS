@@ -1257,14 +1257,14 @@ const struct Tileset gTileset_Johto_General_Fall =
     .callback = InitTilesetAnim_General,
 };
 
-const struct Tileset gTileset_EcruteakGym_54 =
+const struct Tileset gTileset_EcruteakCity_Gym_54 =
 {
     .isCompressed = TRUE,
     .isSecondary = TRUE,
-    .tiles = gTilesetTiles_EcruteakGym_54,
-    .palettes = gTilesetPalettes_EcruteakGym_54,
-    .metatiles = gMetatiles_EcruteakGym_54,
-    .metatileAttributes = gMetatileAttributes_EcruteakGym_54,
+    .tiles = gTilesetTiles_EcruteakCity_Gym_54,
+    .palettes = gTilesetPalettes_EcruteakCity_Gym_54,
+    .metatiles = gMetatiles_EcruteakCity_Gym_54,
+    .metatileAttributes = gMetatileAttributes_EcruteakCity_Gym_54,
     .callback = NULL,
 };
 
@@ -2007,14 +2007,14 @@ const struct Tileset gTileset_CianwoodGymNew =
     .callback = NULL,
 };
 
-const struct Tileset gTileset_EcruteakGymNew =
+const struct Tileset gTileset_EcruteakCity_GymNew =
 {
     .isCompressed = TRUE,
     .isSecondary = TRUE,
-    .tiles = gTilesetTiles_EcruteakGymNew,
-    .palettes = gTilesetPalettes_EcruteakGymNew,
-    .metatiles = gMetatiles_EcruteakGymNew,
-    .metatileAttributes = gMetatileAttributes_EcruteakGymNew,
+    .tiles = gTilesetTiles_EcruteakCity_GymNew,
+    .palettes = gTilesetPalettes_EcruteakCity_GymNew,
+    .metatiles = gMetatiles_EcruteakCity_GymNew,
+    .metatileAttributes = gMetatileAttributes_EcruteakCity_GymNew,
     .callback = NULL,
 };
 

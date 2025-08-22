@@ -1,7 +1,7 @@
-EcruteakPokemart_MapScripts::
+EcruteakCity_Mart_MapScripts::
 	.byte 0
 
-EcruteakPokemart_EventScript_Nerd::
+EcruteakCity_Mart_EventScript_Nerd::
 	lock
 	faceplayer
 	msgbox EcruteakMart_Text_SuperNerd, MSGBOX_DEFAULT
@@ -9,7 +9,7 @@ EcruteakPokemart_EventScript_Nerd::
 	release
 	end
 
-EcruteakPokemart_EventScript_Granny::
+EcruteakCity_Mart_EventScript_Granny::
 	lock
 	faceplayer
 	msgbox EcruteakMart_Text_Granny, MSGBOX_DEFAULT

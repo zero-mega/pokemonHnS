@@ -1,37 +1,37 @@
 .set LOCALID_SAGEOFFICE_SAGE, 3
 
-EcruteakSageOffice1_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, EcruteakSageOffice1_OnTransition
+EcruteakCity_SageOffice1_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, EcruteakCity_SageOffice1_OnTransition
 	.byte 0
 
-EcruteakSageOffice1_OnTransition::
-	goto_if_set FLAG_HIDE_TINTOWER_GUARD, EcruteakSageOffice1_EventScript_SageAside
+EcruteakCity_SageOffice1_OnTransition::
+	goto_if_set FLAG_HIDE_TINTOWER_GUARD, EcruteakCity_SageOffice1_EventScript_SageAside
 	end
 
-EcruteakSageOffice1_EventScript_SageAside::
+EcruteakCity_SageOffice1_EventScript_SageAside::
 	setobjectxyperm LOCALID_SAGEOFFICE_SAGE, 15, 2
 	end
 
-EcruteakSageOffice1_EventScript_Sign::
-	msgbox EcruteakSageOffice1_Text_Sign, MSGBOX_SIGN
+EcruteakCity_SageOffice1_EventScript_Sign::
+	msgbox EcruteakCity_SageOffice1_Text_Sign, MSGBOX_SIGN
 	end
 
-EcruteakSageOffice1_Text_Sign:
+EcruteakCity_SageOffice1_Text_Sign:
 	.string "The bell of tin rings clearlly for\n"
 	.string "those under the tower's wing.$"
 
-EcruteakSageOffice2_EventScript_SageA::
+EcruteakCity_SageOffice2_EventScript_SageA::
 	lock
 	faceplayer
-	goto_if_set FLAG_HIDE_TINTOWER_GUARD, EcruteakSageOffice2_EventScript_SageA4
+	goto_if_set FLAG_HIDE_TINTOWER_GUARD, EcruteakCity_SageOffice2_EventScript_SageA4
 	checkitem ITEM_CLEAR_BELL
-	goto_if_eq VAR_RESULT, TRUE, EcruteakSageOffice2_EventScript_SageA2
+	goto_if_eq VAR_RESULT, TRUE, EcruteakCity_SageOffice2_EventScript_SageA2
 	msgbox EcruteakTinTowerEntrance_Text_SageNoBadge, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
 
-EcruteakSageOffice2_EventScript_SageA2::
+EcruteakCity_SageOffice2_EventScript_SageA2::
 	msgbox EcruteakTinTowerEntrance_Text_SageHearsClearBell1, MSGBOX_DEFAULT
 	waitmessage
 	playse SE_M_PETAL_DANCE
@@ -41,42 +41,42 @@ EcruteakSageOffice2_EventScript_SageA2::
 	delay 60
 	msgbox EcruteakTinTowerEntrance_Text_SageHearsClearBell2, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_SAGEOFFICE_SAGE, EcruteakSageOffice2_Movement_StandAside
+	applymovement LOCALID_SAGEOFFICE_SAGE, EcruteakCity_SageOffice2_Movement_StandAside
 	waitmovement 0
 	setobjectxyperm LOCALID_SAGEOFFICE_SAGE, 15, 2
 	setflag FLAG_HIDE_TINTOWER_GUARD
 	release
 	end
 
-EcruteakSageOffice2_EventScript_SageA3::
+EcruteakCity_SageOffice2_EventScript_SageA3::
 	msgbox EcruteakTinTowerEntrance_Text_SagePleaseDoGoOn, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
 
-EcruteakSageOffice2_EventScript_SageA4::
+EcruteakCity_SageOffice2_EventScript_SageA4::
 	msgbox EcruteakTinTowerEntrance_Text_SageDone, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
 	
-EcruteakSageOffice2_EventScript_SageB::
+EcruteakCity_SageOffice2_EventScript_SageB::
 	lock
 	faceplayer
-	goto_if_eq VAR_ECRUTEAK_CITY_STATE, 10, EcruteakSageOffice2_EventScript_B2
-	goto_if_eq VAR_ECRUTEAK_CITY_STATE, 11, EcruteakSageOffice2_EventScript_B2
+	goto_if_eq VAR_ECRUTEAK_CITY_STATE, 10, EcruteakCity_SageOffice2_EventScript_B2
+	goto_if_eq VAR_ECRUTEAK_CITY_STATE, 11, EcruteakCity_SageOffice2_EventScript_B2
 	msgbox EcruteakTinTowerEntrance_Text_WanderingSage, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
 
-EcruteakSageOffice2_EventScript_B2::
+EcruteakCity_SageOffice2_EventScript_B2::
 	msgbox EcruteakTinTowerEntrance_Text_WanderingSageClearBell, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
 
-EcruteakSageOffice2_EventScript_SageC::
+EcruteakCity_SageOffice2_EventScript_SageC::
 	lock
 	faceplayer
 	msgbox EcruteakTinTowerEntrance_Text_Gramps, MSGBOX_DEFAULT
@@ -84,7 +84,7 @@ EcruteakSageOffice2_EventScript_SageC::
 	release
 	end
 
-EcruteakSageOffice2_Movement_StandAside:
+EcruteakCity_SageOffice2_Movement_StandAside:
 	walk_left
 	face_down
 	step_end

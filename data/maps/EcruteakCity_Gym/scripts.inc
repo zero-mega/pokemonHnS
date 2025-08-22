@@ -1,43 +1,43 @@
-EcruteakGym_MapScripts::
+EcruteakCity_Gym_MapScripts::
 	.byte 0
 
-EcruteakGym_EventScript_GymGuy::
+EcruteakCity_Gym_EventScript_GymGuy::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_ECRUTEAK_GYM, EcruteakGym_EventScript_GymGuy2
-	msgbox EcruteakGymGuideText, MSGBOX_DEFAULT
+	goto_if_set FLAG_DEFEATED_ECRUTEAK_CITY_GYM, EcruteakCity_Gym_EventScript_GymGuy2
+	msgbox EcruteakCity_GymGuideText, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
 	
-EcruteakGym_EventScript_GymGuy2::
-	msgbox EcruteakGymGuideWinText, MSGBOX_DEFAULT
+EcruteakCity_Gym_EventScript_GymGuy2::
+	msgbox EcruteakCity_GymGuideWinText, MSGBOX_DEFAULT
 	release
 	end	
 
-EcruteakGym_EventScript_Jeffrey::
+EcruteakCity_Gym_EventScript_Jeffrey::
 	trainerbattle_single TRAINER_JEFFREY SageJeffreySeenText, SageJeffreyBeatenText
 	msgbox SageJeffreyAfterBattleText, MSGBOX_AUTOCLOSE
 	end
-EcruteakGym_EventScript_Ping::
+EcruteakCity_Gym_EventScript_Ping::
 	trainerbattle_single TRAINER_PING SagePingSeenText, SagePingBeatenText
 	msgbox SagePingAfterBattleText, MSGBOX_AUTOCLOSE
 	end
 
-EcruteakGym_EventScript_Martha::
+EcruteakCity_Gym_EventScript_Martha::
 	trainerbattle_single TRAINER_MARTHA MediumMarthaSeenText, MediumMarthaBeatenText
 	msgbox MediumMarthaAfterBattleText, MSGBOX_AUTOCLOSE
 	end
 
-EcruteakGym_EventScript_Grace::
+EcruteakCity_Gym_EventScript_Grace::
 	trainerbattle_single TRAINER_GRACE MediumGraceSeenText, MediumGraceBeatenText
 	msgbox MediumGraceAfterBattleText, MSGBOX_AUTOCLOSE
 	end
 
-EcruteakGym_EventScript_Morty::
+EcruteakCity_Gym_EventScript_Morty::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_ECRUTEAK_GYM, EcruteakGym_EventScript_Morty_Defeated
+	goto_if_set FLAG_DEFEATED_ECRUTEAK_CITY_GYM, EcruteakCity_Gym_EventScript_Morty_Defeated
 	msgbox MortyIntroText, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_MORTY_1, MortyWinLossText
 	message Text_ReceivedFogBadge
@@ -45,7 +45,7 @@ EcruteakGym_EventScript_Morty::
 	call Common_EventScript_PlayGymBadgeFanfare
 	msgbox MortyText_FogBadgeSpeech, MSGBOX_DEFAULT
 	setflag FLAG_BADGE04_GET
-	setflag FLAG_DEFEATED_ECRUTEAK_GYM
+	setflag FLAG_DEFEATED_ECRUTEAK_CITY_GYM
 	addvar VAR_NUM_BADGES, 1
 	setvar VAR_0x8008, 4
 	call Common_EventScript_SetGymTrainers
@@ -56,30 +56,30 @@ EcruteakGym_EventScript_Morty::
 	release
 	end
 
-EcruteakGym_EventScript_Morty_Defeated::
+EcruteakCity_Gym_EventScript_Morty_Defeated::
 	msgbox MortyFightDoneText, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
 
-EcruteakGym_EventScript_Statue::
+EcruteakCity_Gym_EventScript_Statue::
 	lock
-	goto_if_set FLAG_DEFEATED_ECRUTEAK_GYM, EcruteakGym_EventScript_Statue2
-	msgbox EcruteakGym_Text_GymStatue, MSGBOX_DEFAULT
+	goto_if_set FLAG_DEFEATED_ECRUTEAK_CITY_GYM, EcruteakCity_Gym_EventScript_Statue2
+	msgbox EcruteakCity_Gym_Text_GymStatue, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
 
-EcruteakGym_EventScript_Statue2::
-	msgbox EcruteakGym_Text_GymStatueCertified, MSGBOX_DEFAULT
+EcruteakCity_Gym_EventScript_Statue2::
+	msgbox EcruteakCity_Gym_Text_GymStatueCertified, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
 
-EcruteakGym_Text_GymStatue:
+EcruteakCity_Gym_Text_GymStatue:
 	.string "ECRUTEAK CITY POKéMON GYM$"
 
-EcruteakGym_Text_GymStatueCertified:
+EcruteakCity_Gym_Text_GymStatueCertified:
 	.string "ECRUTEAK CITY POKéMON GYM\p"
 	.string "MORTY'S CERTIFIED TRAINERS:\n"
 	.string "{PLAYER}$"
@@ -198,7 +198,7 @@ MediumGraceAfterBattleText:
 	.string "The path is right in front of\n"
 	.string "your eyes!$"
 
-EcruteakGymGuideText:
+EcruteakCity_GymGuideText:
 	.string "Hey CHAMP! You're almost\n"
 	.string "halfway there!\p"
 	.string "Trainers here use GHOST- and\n"
@@ -209,12 +209,12 @@ EcruteakGymGuideText:
 	.string "It's said to cause strange\n"
 	.string "nightmares...$"
 
-EcruteakGymGuideWinText:
+EcruteakCity_GymGuideWinText:
 	.string "Whew, {PLAYER}. You did great!\p"
 	.string "I was cowering in the corner\n"
 	.string "out of pure terror!$"
 
-EcruteakGymClosedText:
+EcruteakCity_GymClosedText:
 	.string "MORTY, the GYM LEADER, is\n"
 	.string "absent.\p"
 	.string "Sorry, but you'll have to\n"

@@ -319,8 +319,8 @@ const u16 gMetatileAttributes_Fall_Ecruteak[] = INCBIN_U16("data/tilesets/second
 const u16 gMetatiles_Johto_General_Fall[] = INCBIN_U16("data/tilesets/primary/johto_general_fall/metatiles.bin");
 const u16 gMetatileAttributes_Johto_General_Fall[] = INCBIN_U16("data/tilesets/primary/johto_general_fall/metatile_attributes.bin");
 
-const u16 gMetatiles_EcruteakGym_54[] = INCBIN_U16("data/tilesets/secondary/ecruteak_gym_54/metatiles.bin");
-const u16 gMetatileAttributes_EcruteakGym_54[] = INCBIN_U16("data/tilesets/secondary/ecruteak_gym_54/metatile_attributes.bin");
+const u16 gMetatiles_EcruteakCity_Gym_54[] = INCBIN_U16("data/tilesets/secondary/ecruteak_gym_54/metatiles.bin");
+const u16 gMetatileAttributes_EcruteakCity_Gym_54[] = INCBIN_U16("data/tilesets/secondary/ecruteak_gym_54/metatile_attributes.bin");
 
 const u16 gMetatiles_Route38Farm[] = INCBIN_U16("data/tilesets/secondary/route_38farm/metatiles.bin");
 const u16 gMetatileAttributes_Route38Farm[] = INCBIN_U16("data/tilesets/secondary/route_38farm/metatile_attributes.bin");
@@ -524,8 +524,8 @@ const u16 gMetatileAttributes_Observatory[] = INCBIN_U16("data/tilesets/secondar
 const u16 gMetatiles_CianwoodGymNew[] = INCBIN_U16("data/tilesets/secondary/cianwood_gym_new/metatiles.bin");
 const u16 gMetatileAttributes_CianwoodGymNew[] = INCBIN_U16("data/tilesets/secondary/cianwood_gym_new/metatile_attributes.bin");
 
-const u16 gMetatiles_EcruteakGymNew[] = INCBIN_U16("data/tilesets/secondary/ecruteak_gym_new/metatiles.bin");
-const u16 gMetatileAttributes_EcruteakGymNew[] = INCBIN_U16("data/tilesets/secondary/ecruteak_gym_new/metatile_attributes.bin");
+const u16 gMetatiles_EcruteakCity_GymNew[] = INCBIN_U16("data/tilesets/secondary/ecruteak_gym_new/metatiles.bin");
+const u16 gMetatileAttributes_EcruteakCity_GymNew[] = INCBIN_U16("data/tilesets/secondary/ecruteak_gym_new/metatile_attributes.bin");
 
 const u16 gMetatiles_MtSilverSnow[] = INCBIN_U16("data/tilesets/secondary/mt_silver_snow/metatiles.bin");
 const u16 gMetatileAttributes_MtSilverSnow[] = INCBIN_U16("data/tilesets/secondary/mt_silver_snow/metatile_attributes.bin");

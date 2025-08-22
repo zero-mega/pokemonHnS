@@ -1,25 +1,25 @@
 .set LOCALID_NURSE, 1
 .set LOCALID_ECRUTEAK_BILL, 6
 
-EcruteakPokecenter_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, EcruteakPokecenter_OnTransition
+EcruteakCity_PokemonCenter_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, EcruteakCity_PokemonCenter_OnTransition
 	.byte 0
 
-EcruteakPokecenter_OnTransition::
+EcruteakCity_PokemonCenter_OnTransition::
 	setrespawn HEAL_LOCATION_ECRUTEAK_CITY
 	end
 
-EcruteakPokecenter_EventScript_Bill::
+EcruteakCity_PokemonCenter_EventScript_Bill::
 	lock
 	delay 30
 	playse SE_PC_OFF
 	delay 55
 	faceplayer
-	msgbox EcruteakPokecenter1F_Text_Bill1, MSGBOX_DEFAULT
-	msgbox EcruteakPokecenter1F_Text_Bill2, MSGBOX_DEFAULT
+	msgbox EcruteakCity_PokemonCenter1F_Text_Bill1, MSGBOX_DEFAULT
+	msgbox EcruteakCity_PokemonCenter1F_Text_Bill2, MSGBOX_DEFAULT
 	closemessage
-	call_if_eq VAR_FACING, DIR_NORTH, EcruteakPokecenter_EventScript_BillLeaveBot
-	call_if_eq VAR_FACING, DIR_WEST, EcruteakPokecenter_EventScript_BillLeaveTop
+	call_if_eq VAR_FACING, DIR_NORTH, EcruteakCity_PokemonCenter_EventScript_BillLeaveBot
+	call_if_eq VAR_FACING, DIR_WEST, EcruteakCity_PokemonCenter_EventScript_BillLeaveTop
 	playse SE_EXIT
 	setflag FLAG_HIDE_ECRUTEAK_BILL
 	removeobject LOCALID_ECRUTEAK_BILL
@@ -28,49 +28,49 @@ EcruteakPokecenter_EventScript_Bill::
 	release
 	end
 
-EcruteakPokecenter_EventScript_BillFaceDown::
+EcruteakCity_PokemonCenter_EventScript_BillFaceDown::
 	turnobject LOCALID_ECRUTEAK_BILL, DIR_SOUTH
 	return
 
-EcruteakPokecenter_EventScript_BillFaceRight::
+EcruteakCity_PokemonCenter_EventScript_BillFaceRight::
 	turnobject LOCALID_ECRUTEAK_BILL, DIR_EAST
 	return
 
-EcruteakPokecenter_EventScript_BillLeaveTop::
-	applymovement LOCALID_ECRUTEAK_BILL, EcruteakPokecenter_Movement_BillTop
+EcruteakCity_PokemonCenter_EventScript_BillLeaveTop::
+	applymovement LOCALID_ECRUTEAK_BILL, EcruteakCity_PokemonCenter_Movement_BillTop
 	waitmovement 0
 	return
 
-EcruteakPokecenter_EventScript_BillLeaveBot::
-	applymovement LOCALID_ECRUTEAK_BILL, EcruteakPokecenter_Movement_BillBot
+EcruteakCity_PokemonCenter_EventScript_BillLeaveBot::
+	applymovement LOCALID_ECRUTEAK_BILL, EcruteakCity_PokemonCenter_Movement_BillBot
 	waitmovement 0
 	return
 
-EcruteakPokecenter_EventScript_Hiker::
+EcruteakCity_PokemonCenter_EventScript_Hiker::
 	lock
 	faceplayer
-	msgbox EcruteakPokecenter1F_Text_PokefanM, MSGBOX_DEFAULT
+	msgbox EcruteakCity_PokemonCenter1F_Text_PokefanM, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
 
-EcruteakPokecenter_EventScript_Woman::
+EcruteakCity_PokemonCenter_EventScript_Woman::
 	lock
 	faceplayer
-	msgbox EcruteakPokecenter1F_Text_CooltrainerF, MSGBOX_DEFAULT
+	msgbox EcruteakCity_PokemonCenter1F_Text_CooltrainerF, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
 
-EcruteakPokecenter_EventScript_Nerd::
+EcruteakCity_PokemonCenter_EventScript_Nerd::
 	lock
 	faceplayer
-	msgbox EcruteakPokecenter1F_Text_GymGuide, MSGBOX_DEFAULT
+	msgbox EcruteakCity_PokemonCenter1F_Text_GymGuide, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
 
-EcruteakPokecenter_Movement_BillTop:
+EcruteakCity_PokemonCenter_Movement_BillTop:
 	walk_down
 	walk_down
 	walk_left
@@ -83,7 +83,7 @@ EcruteakPokecenter_Movement_BillTop:
 	walk_down
 	step_end
 
-EcruteakPokecenter_Movement_BillBot:
+EcruteakCity_PokemonCenter_Movement_BillBot:
 	walk_right
 	walk_down
 	walk_down
@@ -99,12 +99,12 @@ EcruteakPokecenter_Movement_BillBot:
 	step_end
 
 
-EcruteakPokecenter1F_Text_Bill1:
+EcruteakCity_PokemonCenter1F_Text_Bill1:
 	.string "Hi, I'm BILL. And who are you?\p"
 	.string "Hmm, {PLAYER}, huh?\n"
 	.string "You've come at the right time.$"
 
-EcruteakPokecenter1F_Text_Bill2:
+EcruteakCity_PokemonCenter1F_Text_Bill2:
 	.string "I just finished adjustments on my\n"
 	.string "POKéMON STORAGE SYSTEM.\p"
 	.string "You know that PC you use to store\n"
@@ -118,13 +118,13 @@ EcruteakPokecenter1F_Text_Bill2:
 	.string "free to visit anytime!\p"
 	.string "Buh-bye!$"
 
-EcruteakPokecenter1F_Text_PokefanM:
+EcruteakCity_PokemonCenter1F_Text_PokefanM:
 	.string "The way the KIMONO GIRLS dance is\n"
 	.string "marvelous.\p"
 	.string "Just like the way they use their\n"
 	.string "POKéMON.$"
 
-EcruteakPokecenter1F_Text_PokefanM_Mobile:
+EcruteakCity_PokemonCenter1F_Text_PokefanM_Mobile:
 	.string "You must be hoping to battle more\n"
 	.string "people, right?\p"
 	.string "There's apparently some place where\n"
@@ -132,12 +132,12 @@ EcruteakPokecenter1F_Text_PokefanM_Mobile:
 	.string "Where, you ask?\p"
 	.string "It's a little past OLIVINE CITY.$"
 
-EcruteakPokecenter1F_Text_CooltrainerF:
+EcruteakCity_PokemonCenter1F_Text_CooltrainerF:
 	.string "MORTY, the GYM LEADER, is soooo\n"
 	.string "cool.\p"
 	.string "His POKéMON are really tough too.$"
 
-EcruteakPokecenter1F_Text_GymGuide:
+EcruteakCity_PokemonCenter1F_Text_GymGuide:
 	.string "LAKE OF RAGE…\p"
 	.string "The appearance of a GYARADOS\n"
 	.string "swarm…\p"

@@ -5952,14 +5952,14 @@
       "blockdata_filepath": "data/layouts/GoldenrodCity_PokemonCenter/map.bin"
     },
     {
-      "id": "LAYOUT_ECRUTEAK_POKECENTER",
-      "name": "EcruteakPokecenter_Layout",
+      "id": "LAYOUT_ECRUTEAK_CITY_POKEMON_CENTER",
+      "name": "EcruteakCity_PokemonCenter_Layout",
       "width": 16,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Kanto_PokemonCenter",
-      "border_filepath": "data/layouts/EcruteakPokecenter/border.bin",
-      "blockdata_filepath": "data/layouts/EcruteakPokecenter/map.bin"
+      "border_filepath": "data/layouts/EcruteakCity_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/EcruteakCity_PokemonCenter/map.bin"
     },
     {
       "id": "LAYOUT_OLIVINE_POKECENTER",
@@ -6332,34 +6332,34 @@
       "blockdata_filepath": "data/layouts/IndigoJunction/map.bin"
     },
     {
-      "id": "LAYOUT_ECRUTEAK_SAGE_OFFICE2",
-      "name": "EcruteakSageOffice2_Layout",
+      "id": "LAYOUT_ECRUTEAK_CITY_SAGE_OFFICE2",
+      "name": "EcruteakCity_SageOffice2_Layout",
       "width": 10,
       "height": 17,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Theater_26",
-      "border_filepath": "data/layouts/EcruteakSageOffice2/border.bin",
-      "blockdata_filepath": "data/layouts/EcruteakSageOffice2/map.bin"
+      "border_filepath": "data/layouts/EcruteakCity_SageOffice2/border.bin",
+      "blockdata_filepath": "data/layouts/EcruteakCity_SageOffice2/map.bin"
     },
     {
-      "id": "LAYOUT_ECRUTEAK_SAGE_OFFICE1",
-      "name": "EcruteakSageOffice1_Layout",
+      "id": "LAYOUT_ECRUTEAK_CITY_SAGE_OFFICE1",
+      "name": "EcruteakCity_SageOffice1_Layout",
       "width": 19,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Theater_26",
-      "border_filepath": "data/layouts/EcruteakSageOffice1/border.bin",
-      "blockdata_filepath": "data/layouts/EcruteakSageOffice1/map.bin"
+      "border_filepath": "data/layouts/EcruteakCity_SageOffice1/border.bin",
+      "blockdata_filepath": "data/layouts/EcruteakCity_SageOffice1/map.bin"
     },
     {
-      "id": "LAYOUT_ECRUTEAK_THEATER",
-      "name": "EcruteakTheater_Layout",
+      "id": "LAYOUT_ECRUTEAK_CITY_THEATER",
+      "name": "EcruteakCity_Theater_Layout",
       "width": 21,
       "height": 19,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Theater_26",
-      "border_filepath": "data/layouts/EcruteakTheater/border.bin",
-      "blockdata_filepath": "data/layouts/EcruteakTheater/map.bin"
+      "border_filepath": "data/layouts/EcruteakCity_Theater/border.bin",
+      "blockdata_filepath": "data/layouts/EcruteakCity_Theater/map.bin"
     },
     {
       "id": "LAYOUT_OLIVINE_CITY_PORT_INSIDE",
@@ -6492,14 +6492,14 @@
       "blockdata_filepath": "data/layouts/CherrygroveCity_Mart/map.bin"
     },
     {
-      "id": "LAYOUT_ECRUTEAK_POKEMART",
-      "name": "EcruteakPokemart_Layout",
+      "id": "LAYOUT_ECRUTEAK_CITY_MART",
+      "name": "EcruteakCity_Mart_Layout",
       "width": 14,
       "height": 9,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Pokemart_13",
-      "border_filepath": "data/layouts/EcruteakPokemart/border.bin",
-      "blockdata_filepath": "data/layouts/EcruteakPokemart/map.bin"
+      "border_filepath": "data/layouts/EcruteakCity_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/EcruteakCity_Mart/map.bin"
     },
     {
       "id": "LAYOUT_BLACKTHORN_POKEMART",
@@ -6662,34 +6662,34 @@
       "blockdata_filepath": "data/layouts/CherrygroveCity_House3/map.bin"
     },
     {
-      "id": "LAYOUT_ECRUTEAK_HOUSE1",
-      "name": "EcruteakHouse1_Layout",
+      "id": "LAYOUT_ECRUTEAK_CITY_HOUSE1",
+      "name": "EcruteakCity_House1_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/EcruteakHouse1/border.bin",
-      "blockdata_filepath": "data/layouts/EcruteakHouse1/map.bin"
+      "border_filepath": "data/layouts/EcruteakCity_House1/border.bin",
+      "blockdata_filepath": "data/layouts/EcruteakCity_House1/map.bin"
     },
     {
-      "id": "LAYOUT_ECRUTEAK_HOUSE2",
-      "name": "EcruteakHouse2_Layout",
+      "id": "LAYOUT_ECRUTEAK_CITY_HOUSE2",
+      "name": "EcruteakCity_House2_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/EcruteakHouse2/border.bin",
-      "blockdata_filepath": "data/layouts/EcruteakHouse2/map.bin"
+      "border_filepath": "data/layouts/EcruteakCity_House2/border.bin",
+      "blockdata_filepath": "data/layouts/EcruteakCity_House2/map.bin"
     },
     {
-      "id": "LAYOUT_ECRUTEAK_GYM",
-      "name": "EcruteakGym_Layout",
+      "id": "LAYOUT_ECRUTEAK_CITY_GYM",
+      "name": "EcruteakCity_Gym_Layout",
       "width": 17,
       "height": 48,
       "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_EcruteakGymNew",
-      "border_filepath": "data/layouts/EcruteakGym/border.bin",
-      "blockdata_filepath": "data/layouts/EcruteakGym/map.bin"
+      "secondary_tileset": "gTileset_EcruteakCity_GymNew",
+      "border_filepath": "data/layouts/EcruteakCity_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/EcruteakCity_Gym/map.bin"
     },
     {
       "id": "LAYOUT_TREES",

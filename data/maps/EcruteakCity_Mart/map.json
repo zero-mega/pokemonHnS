@@ -1,7 +1,7 @@
 {
-  "id": "MAP_ECRUTEAK_POKEMART",
-  "name": "EcruteakPokemart",
-  "layout": "LAYOUT_ECRUTEAK_POKEMART",
+  "id": "MAP_ECRUTEAK_CITY_MART",
+  "name": "EcruteakCity_Mart",
+  "layout": "LAYOUT_ECRUTEAK_CITY_MART",
   "music": "MUS_HG_POKE_MART",
   "region_map_section": "MAPSEC_ECRUTEAK_CITY",
   "requires_flash": false,
@@ -24,7 +24,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "EcruteakPokemart_EventScript_Granny",
+      "script": "EcruteakCity_Mart_EventScript_Granny",
       "flag": "0"
     },
     {
@@ -37,7 +37,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "EcruteakPokemart_EventScript_Nerd",
+      "script": "EcruteakCity_Mart_EventScript_Nerd",
       "flag": "0"
     },
     {

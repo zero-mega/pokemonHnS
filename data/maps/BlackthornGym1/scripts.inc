@@ -367,7 +367,7 @@ BlackthornGym_Text_CooltrainerfLolaAfterBattleText:
 BlackthornGym_EventScript_GymGuy::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_BLACKTHORN_GYM, EcruteakGym_EventScript_GymGuy2
+	goto_if_set FLAG_DEFEATED_BLACKTHORN_GYM, EcruteakCity_Gym_EventScript_GymGuy2
 	msgbox BlackthornGym_Text_GuideText, MSGBOX_DEFAULT
 	closemessage
 	release

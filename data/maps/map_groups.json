@@ -167,14 +167,14 @@
     "GoldenrodCity_DepartmentStoreElevator"
   ],
   "gMapGroup_IndoorEcruteak": [
-    "EcruteakPokecenter",
-    "EcruteakPokemart",
-    "EcruteakTheater",
-    "EcruteakHouse1",
-    "EcruteakHouse2",
-    "EcruteakSageOffice1",
-    "EcruteakSageOffice2",
-    "EcruteakGym"
+    "EcruteakCity_PokemonCenter",
+    "EcruteakCity_Mart",
+    "EcruteakCity_Theater",
+    "EcruteakCity_House1",
+    "EcruteakCity_House2",
+    "EcruteakCity_SageOffice1",
+    "EcruteakCity_SageOffice2",
+    "EcruteakCity_Gym"
   ],
   "gMapGroup_IndoorOlivine": [
     "OlivinePokecenter",

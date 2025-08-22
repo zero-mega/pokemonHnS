@@ -139,14 +139,14 @@
 #define MAP_GOLDENROD_CITY_DEPARTMENT_STORE_ELEVATOR (28 | (5 << 8))
 
 // gMapGroup_IndoorEcruteak
-#define MAP_ECRUTEAK_POKECENTER   (0 | (6 << 8))
-#define MAP_ECRUTEAK_POKEMART     (1 | (6 << 8))
-#define MAP_ECRUTEAK_THEATER      (2 | (6 << 8))
-#define MAP_ECRUTEAK_HOUSE1       (3 | (6 << 8))
-#define MAP_ECRUTEAK_HOUSE2       (4 | (6 << 8))
-#define MAP_ECRUTEAK_SAGE_OFFICE1 (5 | (6 << 8))
-#define MAP_ECRUTEAK_SAGE_OFFICE2 (6 | (6 << 8))
-#define MAP_ECRUTEAK_GYM          (7 | (6 << 8))
+#define MAP_ECRUTEAK_CITY_POKEMON_CENTER   (0 | (6 << 8))
+#define MAP_ECRUTEAK_CITY_MART     (1 | (6 << 8))
+#define MAP_ECRUTEAK_CITY_THEATER      (2 | (6 << 8))
+#define MAP_ECRUTEAK_CITY_HOUSE1       (3 | (6 << 8))
+#define MAP_ECRUTEAK_CITY_HOUSE2       (4 | (6 << 8))
+#define MAP_ECRUTEAK_CITY_SAGE_OFFICE1 (5 | (6 << 8))
+#define MAP_ECRUTEAK_CITY_SAGE_OFFICE2 (6 | (6 << 8))
+#define MAP_ECRUTEAK_CITY_GYM          (7 | (6 << 8))
 
 // gMapGroup_IndoorOlivine
 #define MAP_OLIVINE_POKECENTER        (0 | (7 << 8))

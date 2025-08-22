@@ -1,7 +1,7 @@
 {
-  "id": "MAP_ECRUTEAK_HOUSE2",
-  "name": "EcruteakHouse2",
-  "layout": "LAYOUT_ECRUTEAK_HOUSE2",
+  "id": "MAP_ECRUTEAK_CITY_HOUSE1",
+  "name": "EcruteakCity_House1",
+  "layout": "LAYOUT_ECRUTEAK_CITY_HOUSE1",
   "music": "MUS_HG_ECRUTEAK",
   "region_map_section": "MAPSEC_ECRUTEAK_CITY",
   "requires_flash": false,
@@ -15,8 +15,8 @@
   "connections": 0,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_BALDING_MAN",
-      "x": 5,
+      "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_1",
+      "x": 4,
       "y": 4,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
@@ -24,7 +24,20 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "EcruteakHouse2_EventScript_ItemFinderMan",
+      "script": "EcruteakCity_House1_EventScript_Gramps",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY",
+      "x": 7,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EcruteakCity_House1_EventScript_Youngster",
       "flag": "0"
     }
   ],
@@ -34,28 +47,13 @@
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_ECRUTEAK_CITY",
-      "dest_warp_id": "10"
+      "dest_warp_id": "9"
     }
   ],
   "coord_events": [
 
   ],
   "bg_events": [
-    {
-      "type": "sign",
-      "x": 6,
-      "y": 4,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "EcruteakHouse2_EventScript_Book"
-    },
-    {
-      "type": "sign",
-      "x": 7,
-      "y": 4,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "EcruteakHouse2_EventScript_Book"
-    }
+
   ]
 }

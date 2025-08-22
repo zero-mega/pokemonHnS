@@ -1,4 +1,4 @@
-EcruteakHouse2_MapScripts::
+EcruteakCity_House2_MapScripts::
 	.byte 0
 
 Ecruteak_Text_ItemfinderAdventure:
@@ -26,7 +26,7 @@ Ecruteak_Text_ItemfinderExplanation:
 Ecruteak_Text_ItemfinderToEachHisOwn:
 	.string "Oh… To each his own, I suppose…$"
 
-EcruteakHouse2_EventScript_ItemFinderMan::
+EcruteakCity_House2_EventScript_ItemFinderMan::
 	lock
 	faceplayer
 	msgbox Ecruteak_Text_ItemFinderMan, MSGBOX_DEFAULT
@@ -34,21 +34,21 @@ EcruteakHouse2_EventScript_ItemFinderMan::
 	release
 	end
 
-EcruteakHouse2_EventScript_Book::
+EcruteakCity_House2_EventScript_Book::
 	lock
 	msgbox Ecruteak_Text_HistoryBook, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, TRUE, EcruteakHouse2_EventScript_Book2
+	goto_if_eq VAR_RESULT, TRUE, EcruteakCity_House2_EventScript_Book2
 	closemessage
 	release
 	end
 
-EcruteakHouse2_EventScript_Book2::
+EcruteakCity_House2_EventScript_Book2::
 	msgbox Ecruteak_Text_TwoTowers, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, TRUE, EcruteakHouse2_EventScript_Book3
+	goto_if_eq VAR_RESULT, TRUE, EcruteakCity_House2_EventScript_Book3
 	release
 	end
 
-EcruteakHouse2_EventScript_Book3::
+EcruteakCity_House2_EventScript_Book3::
 	msgbox Ecruteak_Text_ThreeMon, MSGBOX_DEFAULT
 	closemessage
 	release

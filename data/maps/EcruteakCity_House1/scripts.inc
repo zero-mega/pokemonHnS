@@ -1,7 +1,7 @@
-EcruteakHouse1_MapScripts::
+EcruteakCity_House1_MapScripts::
 	.byte 0
 
-EcruteakHouse1_EventScript_Gramps::
+EcruteakCity_House1_EventScript_Gramps::
 	lock
 	faceplayer
 	msgbox EcruteakLugiaSpeechHouse_Text_Gramps, MSGBOX_DEFAULT
@@ -9,7 +9,7 @@ EcruteakHouse1_EventScript_Gramps::
 	release
 	end
 
-EcruteakHouse1_EventScript_Youngster::
+EcruteakCity_House1_EventScript_Youngster::
 	lock
 	faceplayer
 	msgbox EcruteakLugiaSpeechHouse_Text_Youngster, MSGBOX_DEFAULT

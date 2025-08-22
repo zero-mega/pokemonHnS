@@ -1428,7 +1428,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/GoldenrodCity_PokemonCenter/scripts.inc"
 
-	.include "data/maps/EcruteakPokecenter/scripts.inc"
+	.include "data/maps/EcruteakCity_PokemonCenter/scripts.inc"
 
 	.include "data/maps/OlivinePokecenter/scripts.inc"
 
@@ -1504,11 +1504,11 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/IndigoJunction/scripts.inc"
 
-	.include "data/maps/EcruteakSageOffice2/scripts.inc"
+	.include "data/maps/EcruteakCity_SageOffice2/scripts.inc"
 
-	.include "data/maps/EcruteakSageOffice1/scripts.inc"
+	.include "data/maps/EcruteakCity_SageOffice1/scripts.inc"
 
-	.include "data/maps/EcruteakTheater/scripts.inc"
+	.include "data/maps/EcruteakCity_Theater/scripts.inc"
 
 	.include "data/maps/OlivineCityPortInside/scripts.inc"
 
@@ -1536,7 +1536,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/CherrygroveCity_Mart/scripts.inc"
 
-	.include "data/maps/EcruteakPokemart/scripts.inc"
+	.include "data/maps/EcruteakCity_Mart/scripts.inc"
 
 	.include "data/maps/BlackthornPokemart/scripts.inc"
 
@@ -1570,11 +1570,11 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/CherrygroveCity_House3/scripts.inc"
 
-	.include "data/maps/EcruteakHouse1/scripts.inc"
+	.include "data/maps/EcruteakCity_House1/scripts.inc"
 
-	.include "data/maps/EcruteakHouse2/scripts.inc"
+	.include "data/maps/EcruteakCity_House2/scripts.inc"
 
-	.include "data/maps/EcruteakGym/scripts.inc"
+	.include "data/maps/EcruteakCity_Gym/scripts.inc"
 
 	.include "data/maps/Trees/scripts.inc"
 

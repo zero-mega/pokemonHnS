@@ -491,14 +491,14 @@
       "x": 39,
       "y": 22,
       "elevation": 0,
-      "dest_map": "MAP_ECRUTEAK_SAGE_OFFICE1",
+      "dest_map": "MAP_ECRUTEAK_CITY_SAGE_OFFICE1",
       "dest_warp_id": "0"
     },
     {
       "x": 36,
       "y": 16,
       "elevation": 0,
-      "dest_map": "MAP_ECRUTEAK_SAGE_OFFICE2",
+      "dest_map": "MAP_ECRUTEAK_CITY_SAGE_OFFICE2",
       "dest_warp_id": "0"
     },
     {
@@ -512,7 +512,7 @@
       "x": 39,
       "y": 40,
       "elevation": 0,
-      "dest_map": "MAP_ECRUTEAK_THEATER",
+      "dest_map": "MAP_ECRUTEAK_CITY_THEATER",
       "dest_warp_id": "0"
     },
     {
@@ -533,35 +533,35 @@
       "x": 19,
       "y": 40,
       "elevation": 0,
-      "dest_map": "MAP_ECRUTEAK_HOUSE1",
+      "dest_map": "MAP_ECRUTEAK_CITY_HOUSE1",
       "dest_warp_id": "0"
     },
     {
       "x": 28,
       "y": 47,
       "elevation": 0,
-      "dest_map": "MAP_ECRUTEAK_HOUSE2",
+      "dest_map": "MAP_ECRUTEAK_CITY_HOUSE2",
       "dest_warp_id": "0"
     },
     {
       "x": 39,
       "y": 47,
       "elevation": 0,
-      "dest_map": "MAP_ECRUTEAK_POKECENTER",
+      "dest_map": "MAP_ECRUTEAK_CITY_POKEMON_CENTER",
       "dest_warp_id": "0"
     },
     {
       "x": 48,
       "y": 40,
       "elevation": 0,
-      "dest_map": "MAP_ECRUTEAK_POKEMART",
+      "dest_map": "MAP_ECRUTEAK_CITY_MART",
       "dest_warp_id": "0"
     },
     {
       "x": 20,
       "y": 48,
       "elevation": 0,
-      "dest_map": "MAP_ECRUTEAK_GYM",
+      "dest_map": "MAP_ECRUTEAK_CITY_GYM",
       "dest_warp_id": "0"
     },
     {
@@ -578,7 +578,7 @@
       "x": 39,
       "y": 41,
       "elevation": 0,
-      "var": "VAR_ECRUTEAK_THEATER",
+      "var": "VAR_ECRUTEAK_CITY_THEATER",
       "var_value": "4",
       "script": "EcruteakCity_Trigger_Silver"
     }

@@ -2338,7 +2338,7 @@ const u16 gTilesetPalettes_Johto_General_Fall[][16] =
 
 const u32 gTilesetTiles_Johto_General_Fall[] = INCBIN_U32("data/tilesets/primary/johto_general_fall/tiles.4bpp.lz");
 
-const u16 gTilesetPalettes_EcruteakGym_54[][16] =
+const u16 gTilesetPalettes_EcruteakCity_Gym_54[][16] =
 {
     INCBIN_U16("data/tilesets/secondary/ecruteak_gym_54/palettes/00.gbapal"),
     INCBIN_U16("data/tilesets/secondary/ecruteak_gym_54/palettes/01.gbapal"),
@@ -2355,7 +2355,7 @@ const u16 gTilesetPalettes_EcruteakGym_54[][16] =
     INCBIN_U16("data/tilesets/secondary/ecruteak_gym_54/palettes/12.gbapal"),
 };
 
-const u32 gTilesetTiles_EcruteakGym_54[] = INCBIN_U32("data/tilesets/secondary/ecruteak_gym_54/tiles.4bpp.lz");
+const u32 gTilesetTiles_EcruteakCity_Gym_54[] = INCBIN_U32("data/tilesets/secondary/ecruteak_gym_54/tiles.4bpp.lz");
 
 const u16 gTilesetPalettes_Route38Farm[][16] =
 {
@@ -3631,7 +3631,7 @@ const u16 gTilesetPalettes_CianwoodGymNew[][16] =
 
 const u32 gTilesetTiles_CianwoodGymNew[] = INCBIN_U32("data/tilesets/secondary/cianwood_gym_new/tiles.4bpp.lz");
 
-const u16 gTilesetPalettes_EcruteakGymNew[][16] =
+const u16 gTilesetPalettes_EcruteakCity_GymNew[][16] =
 {
     INCBIN_U16("data/tilesets/secondary/ecruteak_gym_new/palettes/00.gbapal"),
     INCBIN_U16("data/tilesets/secondary/ecruteak_gym_new/palettes/01.gbapal"),
@@ -3648,7 +3648,7 @@ const u16 gTilesetPalettes_EcruteakGymNew[][16] =
     INCBIN_U16("data/tilesets/secondary/ecruteak_gym_new/palettes/12.gbapal"),
 };
 
-const u32 gTilesetTiles_EcruteakGymNew[] = INCBIN_U32("data/tilesets/secondary/ecruteak_gym_new/tiles.4bpp.lz");
+const u32 gTilesetTiles_EcruteakCity_GymNew[] = INCBIN_U32("data/tilesets/secondary/ecruteak_gym_new/tiles.4bpp.lz");
 
 const u16 gTilesetPalettes_MtSilverSnow[][16] =
 {
