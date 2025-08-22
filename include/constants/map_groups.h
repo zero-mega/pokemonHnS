@@ -271,17 +271,20 @@
 // gMapGroup_IndoorFuchsia
 #define MAP_FUCHSIA_POKECENTER                (0 | (19 << 8))
 #define MAP_FUCHSIA_POKEMART                  (1 | (19 << 8))
-#define MAP_FUCHSIA_CITY_HOUSE2               (2 | (19 << 8))
-#define MAP_FUCHSIA_CITY_HOUSE3               (3 | (19 << 8))
-#define MAP_FUCHSIA_CITY_CAFE                 (4 | (19 << 8))
-#define MAP_FUCHSIA_CITY_HOUSE4               (5 | (19 << 8))
-#define MAP_FUCHSIA_CITY_GYM                  (6 | (19 << 8))
-#define MAP_FUCHSIA_ROUTE19GATE               (7 | (19 << 8))
-#define MAP_SAFARI_ZONE_ENTRANCE_FUCHSIA      (8 | (19 << 8))
-#define MAP_FUCHSIA                           (9 | (19 << 8))
-#define MAP_FUCHSIA_CITY_SAFARI_ZONE_BRUSH    (10 | (19 << 8))
-#define MAP_FUCHSIA_CITY_SAFARI_ZONE_MOUNTAIN (11 | (19 << 8))
-#define MAP_FUCHSIA_SAFARI_ZONE_CAVE          (12 | (19 << 8))
+#define MAP_FUCHSIA_CITY_HOUSE1               (2 | (19 << 8))
+#define MAP_FUCHSIA_CITY_HOUSE2               (3 | (19 << 8))
+#define MAP_FUCHSIA_CITY_HOUSE3               (4 | (19 << 8))
+#define MAP_FUCHSIA_CITY_CAFE                 (5 | (19 << 8))
+#define MAP_FUCHSIA_CITY_HOUSE4               (6 | (19 << 8))
+#define MAP_FUCHSIA_CITY_GYM                  (7 | (19 << 8))
+#define MAP_FUCHSIA_ROUTE19GATE               (8 | (19 << 8))
+#define MAP_FUCHSIA_SAFARI_ZONE_GATE          (9 | (19 << 8))
+#define MAP_FUCHSIA_ROUTE15GATE               (10 | (19 << 8))
+#define MAP_SAFARI_ZONE_ENTRANCE_FUCHSIA      (11 | (19 << 8))
+#define MAP_FUCHSIA_CITY_SAFARI_ZONE_BEACH    (12 | (19 << 8))
+#define MAP_FUCHSIA_CITY_SAFARI_ZONE_BRUSH    (13 | (19 << 8))
+#define MAP_FUCHSIA_CITY_SAFARI_ZONE_MOUNTAIN (14 | (19 << 8))
+#define MAP_FUCHSIA_SAFARI_ZONE_CAVE          (15 | (19 << 8))
 
 // gMapGroup_IndoorCinnabar
 #define MAP_CINNABAR_POKECENTER (0 | (20 << 8))
@@ -352,12 +355,9 @@
 #define MAP_ROUTE16HOUSE                (21 | (23 << 8))
 #define MAP_CELADON_ROUTE16GATE         (22 | (23 << 8))
 #define MAP_ROUTE16_ROUTE18GATE         (23 | (23 << 8))
-#define MAP_FUCHSIA_SAFARI_ZONE_GATE    (24 | (23 << 8))
-#define MAP_FUCHSIA_CITY_HOUSE1         (25 | (23 << 8))
-#define MAP_ROUTE12HOUSE                (26 | (23 << 8))
-#define MAP_FUCHSIA_ROUTE15GATE         (27 | (23 << 8))
-#define MAP_ROUTE4POKECENTER            (28 | (23 << 8))
-#define MAP_ROUTE25BILLS_HOUSE          (29 | (23 << 8))
+#define MAP_ROUTE12HOUSE                (24 | (23 << 8))
+#define MAP_ROUTE4POKECENTER            (25 | (23 << 8))
+#define MAP_ROUTE25BILLS_HOUSE          (26 | (23 << 8))
 
 // gMapGroup_Dungeons
 #define MAP_DARK_CAVE_1              (0 | (24 << 8))
@@ -1038,6 +1038,6 @@
 
 #define MAP_GROUPS_COUNT 32
 
-// static const u8 MAP_GROUP_COUNT[] = {70, 5, 5, 7, 5, 29, 8, 10, 6, 6, 7, 5, 5, 7, 6, 9, 7, 18, 10, 13, 4, 7, 27, 30, 87, 0, 39, 125, 113, 126, 74, 97, 0};
+// static const u8 MAP_GROUP_COUNT[] = {70, 5, 5, 7, 5, 29, 8, 10, 6, 6, 7, 5, 5, 7, 6, 9, 7, 18, 10, 16, 4, 7, 27, 27, 87, 0, 39, 125, 113, 126, 74, 97, 0};
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

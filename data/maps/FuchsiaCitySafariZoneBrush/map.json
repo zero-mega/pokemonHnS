@@ -14,7 +14,7 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_FUCHSIA",
+      "map": "MAP_FUCHSIA_CITY_SAFARI_ZONE_BEACH",
       "offset": 0,
       "direction": "right"
     },

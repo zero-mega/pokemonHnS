@@ -66461,7 +66461,7 @@
           }
         },
         {
-          "map": "MAP_FUCHSIA",
+          "map": "MAP_FUCHSIA_CITY_SAFARI_ZONE_BEACH",
           "base_label": "gFuchsiaCitySafariZoneBeach",
           "land_mons": {
             "encounter_rate": 20,

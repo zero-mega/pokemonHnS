@@ -2008,7 +2008,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/CeladonCity_DepartmentStore_RoofNight/scripts.inc"
 
-	.include "data/maps/Fuchsia/scripts.inc"
+	.include "data/maps/FuchsiaCity_SafariZoneBeach/scripts.inc"
 
 	.include "data/maps/FuchsiaCitySafariZoneBrush/scripts.inc"
 

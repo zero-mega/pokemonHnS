@@ -128,7 +128,7 @@ SafariZoneEntranceFuchsia_EventScript_TryEnterSafariZone::
 	special EnterSafariMode
 	setvar VAR_SAFARI_ZONE_STATE, 2
 	clearflag FLAG_GOOD_LUCK_SAFARI_ZONE
-	warp MAP_FUCHSIA, 1
+	warp MAP_FUCHSIA_CITY_SAFARI_ZONE_BEACH, 1
 	waitstate
 	end
 

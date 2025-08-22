@@ -8852,14 +8852,14 @@
       "blockdata_filepath": "data/layouts/CeladonCity_DepartmentStore_RoofNight/map.bin"
     },
     {
-      "id": "LAYOUT_FUCHSIA",
+      "id": "LAYOUT_FUCHSIA_CITY_SAFARI_ZONE_BEACH",
       "name": "Fuchsia_Layout",
       "width": 50,
       "height": 46,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_SafariZoneJohto",
-      "border_filepath": "data/layouts/Fuchsia/border.bin",
-      "blockdata_filepath": "data/layouts/Fuchsia/map.bin"
+      "border_filepath": "data/layouts/FuchsiaCity_SafariZoneBeach/border.bin",
+      "blockdata_filepath": "data/layouts/FuchsiaCity_SafariZoneBeach/map.bin"
     },
     {
       "id": "LAYOUT_FUCHSIA_CITY_SAFARI_ZONE_BRUSH",

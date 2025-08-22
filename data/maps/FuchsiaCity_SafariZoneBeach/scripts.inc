@@ -3,7 +3,7 @@
 .set LOCALID_SAFARIATTENDANT_3, 6
 .set LOCALID_SAFARIATTENDANT_4, 7
 
-Fuchsia_MapScripts::
+FuchsiaCity_SafariZoneBeach_MapScripts::
 	.byte 0
 
 SafariZoneFuchsia_EventScript_Attendant1::

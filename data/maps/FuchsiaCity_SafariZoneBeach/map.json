@@ -1,7 +1,7 @@
 {
-  "id": "MAP_FUCHSIA",
-  "name": "Fuchsia",
-  "layout": "LAYOUT_FUCHSIA",
+  "id": "MAP_FUCHSIA_CITY_SAFARI_ZONE_BEACH",
+  "name": "FuchsiaCity_SafariZoneBeach",
+  "layout": "LAYOUT_FUCHSIA_CITY_SAFARI_ZONE_BEACH",
   "music": "MUS_SAFARI_ZONE",
   "region_map_section": "MAPSEC_FUCHSIA_CITY",
   "requires_flash": false,
