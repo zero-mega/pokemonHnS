@@ -40,7 +40,7 @@ SSAqua1_EventScript_DoorSailorArrived::
 
 SSAqua1_EventScript_LeaveBoat::
 	fadescreenswapbuffers FADE_TO_BLACK
-	warp MAP_VERMILION_CITY_PORT_INDOOR, 8, 9
+	warp MAP_VERMILION_CITY_PORT_INSIDE, 8, 9
 	release
 	end
 

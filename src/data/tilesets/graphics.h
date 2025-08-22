@@ -2908,7 +2908,7 @@ const u16 gTilesetPalettes_Museum[][16] =
 
 const u32 gTilesetTiles_Museum[] = INCBIN_U32("data/tilesets/secondary/museum/tiles.4bpp.lz");
 
-const u16 gTilesetPalettes_CeruleanCityGym_27[][16] =
+const u16 gTilesetPalettes_CeruleanCity_Gym_27[][16] =
 {
     INCBIN_U16("data/tilesets/secondary/cerulean_city_gym_27/palettes/00.gbapal"),
     INCBIN_U16("data/tilesets/secondary/cerulean_city_gym_27/palettes/01.gbapal"),
@@ -2925,7 +2925,7 @@ const u16 gTilesetPalettes_CeruleanCityGym_27[][16] =
     INCBIN_U16("data/tilesets/secondary/cerulean_city_gym_27/palettes/12.gbapal"),
 };
 
-const u32 gTilesetTiles_CeruleanCityGym_27[] = INCBIN_U32("data/tilesets/secondary/cerulean_city_gym_27/tiles.4bpp.lz");
+const u32 gTilesetTiles_CeruleanCity_Gym_27[] = INCBIN_U32("data/tilesets/secondary/cerulean_city_gym_27/tiles.4bpp.lz");
 
 const u16 gTilesetPalettes_SaffronCity[][16] =
 {

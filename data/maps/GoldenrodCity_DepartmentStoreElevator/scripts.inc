@@ -192,7 +192,7 @@ CeladonDeptElevator_EventScript_F1::
 	playse SE_SUCCESS
 	setvar VAR_ELEVATOR, 1
 	waitse
-	warp MAP_CELADON_CITY_DEPARTMENT_STORE1, 6, 0
+	warp MAP_CELADON_CITY_DEPARTMENT_STORE_1F, 6, 0
 	delay 60
 	end
 CeladonDeptElevator_EventScript_F2::
@@ -200,7 +200,7 @@ CeladonDeptElevator_EventScript_F2::
 	playse SE_SUCCESS
 	setvar VAR_ELEVATOR, 1
 	waitse
-	warp MAP_CELADON_CITY_DEPARTMENT_STORE2, 6, 0
+	warp MAP_CELADON_CITY_DEPARTMENT_STORE_2F, 6, 0
 	delay 60
 	end
 CeladonDeptElevator_EventScript_F3::
@@ -208,7 +208,7 @@ CeladonDeptElevator_EventScript_F3::
 	playse SE_SUCCESS
 	setvar VAR_ELEVATOR, 1
 	waitse
-	warp MAP_CELADON_CITY_DEPARTMENT_STORE3, 6, 0
+	warp MAP_CELADON_CITY_DEPARTMENT_STORE_3F, 6, 0
 	delay 60
 	end
 CeladonDeptElevator_EventScript_F4::
@@ -216,7 +216,7 @@ CeladonDeptElevator_EventScript_F4::
 	playse SE_SUCCESS
 	setvar VAR_ELEVATOR, 1
 	waitse
-	warp MAP_CELADON_CITY_DEPARTMENT_STORE4, 6, 0
+	warp MAP_CELADON_CITY_DEPARTMENT_STORE_4F, 6, 0
 	delay 60
 	end
 CeladonDeptElevator_EventScript_F5::
@@ -224,7 +224,7 @@ CeladonDeptElevator_EventScript_F5::
 	playse SE_SUCCESS
 	setvar VAR_ELEVATOR, 1
 	waitse
-	warp MAP_CELADON_CITY_DEPARTMENT_STORE5, 6, 0
+	warp MAP_CELADON_CITY_DEPARTMENT_STORE_5F, 6, 0
 	delay 60
 	end
 

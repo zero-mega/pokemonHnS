@@ -1587,14 +1587,14 @@ const struct Tileset gTileset_Museum =
     .callback = NULL,
 };
 
-const struct Tileset gTileset_CeruleanCityGym_27 =
+const struct Tileset gTileset_CeruleanCity_Gym_27 =
 {
     .isCompressed = TRUE,
     .isSecondary = TRUE,
-    .tiles = gTilesetTiles_CeruleanCityGym_27,
-    .palettes = gTilesetPalettes_CeruleanCityGym_27,
-    .metatiles = gMetatiles_CeruleanCityGym_27,
-    .metatileAttributes = gMetatileAttributes_CeruleanCityGym_27,
+    .tiles = gTilesetTiles_CeruleanCity_Gym_27,
+    .palettes = gTilesetPalettes_CeruleanCity_Gym_27,
+    .metatiles = gMetatiles_CeruleanCity_Gym_27,
+    .metatileAttributes = gMetatileAttributes_CeruleanCity_Gym_27,
     .callback = NULL,
 };
 

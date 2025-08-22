@@ -6032,44 +6032,44 @@
       "blockdata_filepath": "data/layouts/PewterCity_PokemonCenter/map.bin"
     },
     {
-      "id": "LAYOUT_CERULEAN_POKECENTER",
-      "name": "CeruleanPokecenter_Layout",
+      "id": "LAYOUT_CERULEAN_CITY_POKEMON_CENTER",
+      "name": "CeruleanCity_PokemonCenter_Layout",
       "width": 15,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Kanto_PokemonCenter",
-      "border_filepath": "data/layouts/CeruleanPokecenter/border.bin",
-      "blockdata_filepath": "data/layouts/CeruleanPokecenter/map.bin"
+      "border_filepath": "data/layouts/CeruleanCity_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/CeruleanCity_PokemonCenter/map.bin"
     },
     {
-      "id": "LAYOUT_VERMILION_POKECENTER",
-      "name": "VermilionPokecenter_Layout",
+      "id": "LAYOUT_VERMILION_CITY_POKEMON_CENTER",
+      "name": "VermilionCity_PokemonCenter_Layout",
       "width": 15,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Kanto_PokemonCenter",
-      "border_filepath": "data/layouts/VermilionPokecenter/border.bin",
-      "blockdata_filepath": "data/layouts/VermilionPokecenter/map.bin"
+      "border_filepath": "data/layouts/VermilionCity_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/VermilionCity_PokemonCenter/map.bin"
     },
     {
-      "id": "LAYOUT_LAVENDER_POKECENTER",
-      "name": "LavenderPokecenter_Layout",
+      "id": "LAYOUT_LAVENDER_TOWN_POKEMON_CENTER",
+      "name": "LavenderTown_PokemonCenter_Layout",
       "width": 15,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Kanto_PokemonCenter",
-      "border_filepath": "data/layouts/LavenderPokecenter/border.bin",
-      "blockdata_filepath": "data/layouts/LavenderPokecenter/map.bin"
+      "border_filepath": "data/layouts/LavenderTown_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/LavenderTown_PokemonCenter/map.bin"
     },
     {
-      "id": "LAYOUT_CELADON_POKECENTER",
-      "name": "CeladonPokecenter_Layout",
+      "id": "LAYOUT_CELADON_CITY_POKEMON_CENTER",
+      "name": "CeladonCity_PokemonCenter_Layout",
       "width": 15,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Kanto_PokemonCenter",
-      "border_filepath": "data/layouts/CeladonPokecenter/border.bin",
-      "blockdata_filepath": "data/layouts/CeladonPokecenter/map.bin"
+      "border_filepath": "data/layouts/CeladonCity_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/CeladonCity_PokemonCenter/map.bin"
     },
     {
       "id": "LAYOUT_SAFFRON_POKECENTER",
@@ -6532,34 +6532,34 @@
       "blockdata_filepath": "data/layouts/PewterCity_Mart/map.bin"
     },
     {
-      "id": "LAYOUT_CERULEAN_POKEMART",
-      "name": "CeruleanPokemart_Layout",
+      "id": "LAYOUT_CERULEAN_CITY_MART",
+      "name": "CeruleanCity_Mart_Layout",
       "width": 11,
       "height": 9,
       "primary_tileset": "gTileset_Kanto_Building",
       "secondary_tileset": "gTileset_Kanto_Mart",
-      "border_filepath": "data/layouts/CeruleanPokemart/border.bin",
-      "blockdata_filepath": "data/layouts/CeruleanPokemart/map.bin"
+      "border_filepath": "data/layouts/CeruleanCity_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/CeruleanCity_Mart/map.bin"
     },
     {
-      "id": "LAYOUT_VERMILION_POKEMART",
-      "name": "VermilionPokemart_Layout",
+      "id": "LAYOUT_VERMILION_CITY_MART",
+      "name": "VermilionCity_Mart_Layout",
       "width": 11,
       "height": 9,
       "primary_tileset": "gTileset_Kanto_Building",
       "secondary_tileset": "gTileset_Kanto_Mart",
-      "border_filepath": "data/layouts/VermilionPokemart/border.bin",
-      "blockdata_filepath": "data/layouts/VermilionPokemart/map.bin"
+      "border_filepath": "data/layouts/VermilionCity_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/VermilionCity_Mart/map.bin"
     },
     {
-      "id": "LAYOUT_LAVENDER_POKEMART",
-      "name": "LavenderPokemart_Layout",
+      "id": "LAYOUT_LAVENDER_TOWN_MART",
+      "name": "LavenderTown_Mart_Layout",
       "width": 11,
       "height": 9,
       "primary_tileset": "gTileset_Kanto_Building",
       "secondary_tileset": "gTileset_Kanto_Mart",
-      "border_filepath": "data/layouts/LavenderPokemart/border.bin",
-      "blockdata_filepath": "data/layouts/LavenderPokemart/map.bin"
+      "border_filepath": "data/layouts/LavenderTown_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/LavenderTown_Mart/map.bin"
     },
     {
       "id": "LAYOUT_SAFFRON_POKEMART",
@@ -7493,43 +7493,43 @@
     },
     {
       "id": "LAYOUT_CERULEAN_CITY_HOUSE2",
-      "name": "CeruleanCityHouse2_Layout",
+      "name": "CeruleanCity_House2_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/CeruleanCityHouse2/border.bin",
-      "blockdata_filepath": "data/layouts/CeruleanCityHouse2/map.bin"
+      "border_filepath": "data/layouts/CeruleanCity_House2/border.bin",
+      "blockdata_filepath": "data/layouts/CeruleanCity_House2/map.bin"
     },
     {
       "id": "LAYOUT_CERULEAN_CITY_HOUSE3",
-      "name": "CeruleanCityHouse3_Layout",
+      "name": "CeruleanCity_House3_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/CeruleanCityHouse3/border.bin",
-      "blockdata_filepath": "data/layouts/CeruleanCityHouse3/map.bin"
+      "border_filepath": "data/layouts/CeruleanCity_House3/border.bin",
+      "blockdata_filepath": "data/layouts/CeruleanCity_House3/map.bin"
     },
     {
       "id": "LAYOUT_CERULEAN_CITY_BIKE_SHOP",
-      "name": "CeruleanCityBikeShop_Layout",
+      "name": "CeruleanCity_BikeShop_Layout",
       "width": 11,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_BikeShop",
-      "border_filepath": "data/layouts/CeruleanCityBikeShop/border.bin",
-      "blockdata_filepath": "data/layouts/CeruleanCityBikeShop/map.bin"
+      "border_filepath": "data/layouts/CeruleanCity_BikeShop/border.bin",
+      "blockdata_filepath": "data/layouts/CeruleanCity_BikeShop/map.bin"
     },
     {
       "id": "LAYOUT_CERULEAN_CITY_GYM",
-      "name": "CeruleanCityGym_Layout",
+      "name": "CeruleanCity_Gym_Layout",
       "width": 17,
       "height": 20,
       "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_CeruleanCityGym_27",
-      "border_filepath": "data/layouts/CeruleanCityGym/border.bin",
-      "blockdata_filepath": "data/layouts/CeruleanCityGym/map.bin"
+      "secondary_tileset": "gTileset_CeruleanCity_Gym_27",
+      "border_filepath": "data/layouts/CeruleanCity_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/CeruleanCity_Gym/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE5HOUSE",
@@ -7663,53 +7663,53 @@
     },
     {
       "id": "LAYOUT_LAVENDER_TOWN_HOUSE2",
-      "name": "LavenderTownHouse2_Layout",
+      "name": "LavenderTown_House2_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/LavenderTownHouse2/border.bin",
-      "blockdata_filepath": "data/layouts/LavenderTownHouse2/map.bin"
+      "border_filepath": "data/layouts/LavenderTown_House2/border.bin",
+      "blockdata_filepath": "data/layouts/LavenderTown_House2/map.bin"
     },
     {
       "id": "LAYOUT_LAVENDER_TOWN_HOUSE3",
-      "name": "LavenderTownHouse3_Layout",
+      "name": "LavenderTown_House3_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/LavenderTownHouse3/border.bin",
-      "blockdata_filepath": "data/layouts/LavenderTownHouse3/map.bin"
+      "border_filepath": "data/layouts/LavenderTown_House3/border.bin",
+      "blockdata_filepath": "data/layouts/LavenderTown_House3/map.bin"
     },
     {
       "id": "LAYOUT_LAVENDER_TOWN_RADIO_STATION",
-      "name": "LavenderTownRadioStation_Layout",
+      "name": "LavenderTown_RadioStation_Layout",
       "width": 21,
       "height": 11,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_GoldenrodUndergroundRocket",
-      "border_filepath": "data/layouts/LavenderTownRadioStation/border.bin",
-      "blockdata_filepath": "data/layouts/LavenderTownRadioStation/map.bin"
+      "border_filepath": "data/layouts/LavenderTown_RadioStation/border.bin",
+      "blockdata_filepath": "data/layouts/LavenderTown_RadioStation/map.bin"
     },
     {
-      "id": "LAYOUT_LAVENDER_TOWN_SOUL_HOUSE1",
-      "name": "LavenderTownSoulHouse1_Layout",
+      "id": "LAYOUT_LAVENDER_TOWN_SOUL_HOUSE",
+      "name": "LavenderTown_SoulHouse_Layout",
       "width": 24,
       "height": 20,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_SoulHouse",
-      "border_filepath": "data/layouts/LavenderTownSoulHouse1/border.bin",
-      "blockdata_filepath": "data/layouts/LavenderTownSoulHouse1/map.bin"
+      "border_filepath": "data/layouts/LavenderTown_SoulHouse/border.bin",
+      "blockdata_filepath": "data/layouts/LavenderTown_SoulHouse/map.bin"
     },
     {
-      "id": "LAYOUT_LAVENDER_TOWN_SOUL_HOUSE2",
-      "name": "LavenderTownSoulHouse2_Layout",
+      "id": "LAYOUT_LAVENDER_TOWN_SOUL_HOUSE_UNUSED",
+      "name": "LavenderTown_SoulHouseUnused_Layout",
       "width": 24,
       "height": 20,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Lighthouse_47",
-      "border_filepath": "data/layouts/LavenderTownSoulHouse2/border.bin",
-      "blockdata_filepath": "data/layouts/LavenderTownSoulHouse2/map.bin"
+      "border_filepath": "data/layouts/LavenderTown_SoulHouseUnused/border.bin",
+      "blockdata_filepath": "data/layouts/LavenderTown_SoulHouseUnused/map.bin"
     },
     {
       "id": "LAYOUT_SAFFRON_TRAIN_STATION",
@@ -7772,144 +7772,144 @@
       "blockdata_filepath": "data/layouts/SaffronCityHouse2/map.bin"
     },
     {
-      "id": "LAYOUT_CELADON_HOUSE1",
-      "name": "CeladonHouse1_Layout",
+      "id": "LAYOUT_CELADON_CITY_HOUSE1",
+      "name": "CeladonCity_House1_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Cafe_50",
-      "border_filepath": "data/layouts/CeladonHouse1/border.bin",
-      "blockdata_filepath": "data/layouts/CeladonHouse1/map.bin"
+      "border_filepath": "data/layouts/CeladonCity_House1/border.bin",
+      "blockdata_filepath": "data/layouts/CeladonCity_House1/map.bin"
     },
     {
-      "id": "LAYOUT_CELADON_HOUSE2",
-      "name": "CeladonHouse2_Layout",
+      "id": "LAYOUT_CELADON_CITY_HOUSE2",
+      "name": "CeladonCity_House2_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/CeladonHouse2/border.bin",
-      "blockdata_filepath": "data/layouts/CeladonHouse2/map.bin"
+      "border_filepath": "data/layouts/CeladonCity_House2/border.bin",
+      "blockdata_filepath": "data/layouts/CeladonCity_House2/map.bin"
     },
     {
-      "id": "LAYOUT_CELADON_CITY_APARTMENTS1",
-      "name": "CeladonCityApartments1_Layout",
+      "id": "LAYOUT_CELADON_CITY_APARTMENTS_1F",
+      "name": "CeladonCity_Apartments_1F_Layout",
       "width": 15,
       "height": 20,
       "primary_tileset": "gTileset_Kanto_Building",
       "secondary_tileset": "gTileset_CeladonApartments",
-      "border_filepath": "data/layouts/CeladonCityApartments1/border.bin",
-      "blockdata_filepath": "data/layouts/CeladonCityApartments1/map.bin"
+      "border_filepath": "data/layouts/CeladonCity_Apartments_1F/border.bin",
+      "blockdata_filepath": "data/layouts/CeladonCity_Apartments_1F/map.bin"
     },
     {
-      "id": "LAYOUT_CELADON_APARTMENTS2",
-      "name": "CeladonApartments2_Layout",
+      "id": "LAYOUT_CELADON_CITY_APARTMENTS_2F",
+      "name": "CeladonCity_Apartments_2F_Layout",
       "width": 15,
       "height": 20,
       "primary_tileset": "gTileset_Kanto_Building",
       "secondary_tileset": "gTileset_CeladonApartments",
-      "border_filepath": "data/layouts/CeladonApartments2/border.bin",
-      "blockdata_filepath": "data/layouts/CeladonApartments2/map.bin"
+      "border_filepath": "data/layouts/CeladonCity_Apartments_2F/border.bin",
+      "blockdata_filepath": "data/layouts/CeladonCity_Apartments_2F/map.bin"
     },
     {
-      "id": "LAYOUT_CELADON_APARTMENTS3",
-      "name": "CeladonApartments3_Layout",
+      "id": "LAYOUT_CELADON_CITY_APARTMENTS_3F",
+      "name": "CeladonCity_Apartments_3F_Layout",
       "width": 16,
       "height": 20,
       "primary_tileset": "gTileset_Kanto_Building",
       "secondary_tileset": "gTileset_CeladonApartments",
-      "border_filepath": "data/layouts/CeladonApartments3/border.bin",
-      "blockdata_filepath": "data/layouts/CeladonApartments3/map.bin"
+      "border_filepath": "data/layouts/CeladonCity_Apartments_3F/border.bin",
+      "blockdata_filepath": "data/layouts/CeladonCity_Apartments_3F/map.bin"
     },
     {
-      "id": "LAYOUT_CELADON_APARTMENTS4",
-      "name": "CeladonApartments4_Layout",
+      "id": "LAYOUT_CELADON_CITY_APARTMENTS_ROOF_DAY",
+      "name": "CeladonCity_Apartments_RoofDay_Layout",
       "width": 14,
       "height": 23,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_CeladonApartments",
-      "border_filepath": "data/layouts/CeladonApartments4/border.bin",
-      "blockdata_filepath": "data/layouts/CeladonApartments4/map.bin"
+      "border_filepath": "data/layouts/CeladonCity_Apartments_RoofDay/border.bin",
+      "blockdata_filepath": "data/layouts/CeladonCity_Apartments_RoofDay/map.bin"
     },
     {
       "id": "LAYOUT_CELADON_CITY_GAME_CORNER",
-      "name": "CeladonCityGameCorner_Layout",
+      "name": "CeladonCity_GameCorner_Layout",
       "width": 21,
       "height": 14,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_GameCorner",
-      "border_filepath": "data/layouts/CeladonCityGameCorner/border.bin",
-      "blockdata_filepath": "data/layouts/CeladonCityGameCorner/map.bin"
+      "border_filepath": "data/layouts/CeladonCity_GameCorner/border.bin",
+      "blockdata_filepath": "data/layouts/CeladonCity_GameCorner/map.bin"
     },
     {
-      "id": "LAYOUT_CELADON_CITY_DEPARTMENT_STORE1",
-      "name": "CeladonCityDepartmentStore1_Layout",
+      "id": "LAYOUT_CELADON_CITY_DEPARTMENT_STORE_1F",
+      "name": "CeladonCity_DepartmentStore_1F_Layout",
       "width": 13,
       "height": 16,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_JohtoShop",
-      "border_filepath": "data/layouts/CeladonCityDepartmentStore1/border.bin",
-      "blockdata_filepath": "data/layouts/CeladonCityDepartmentStore1/map.bin"
+      "border_filepath": "data/layouts/CeladonCity_DepartmentStore_1F/border.bin",
+      "blockdata_filepath": "data/layouts/CeladonCity_DepartmentStore_1F/map.bin"
     },
     {
-      "id": "LAYOUT_CELADON_CITY_DEPARTMENT_STORE2",
-      "name": "CeladonCityDepartmentStore2_Layout",
+      "id": "LAYOUT_CELADON_CITY_DEPARTMENT_STORE_2F",
+      "name": "CeladonCity_DepartmentStore_2F_Layout",
       "width": 13,
       "height": 15,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_JohtoShop",
-      "border_filepath": "data/layouts/CeladonCityDepartmentStore2/border.bin",
-      "blockdata_filepath": "data/layouts/CeladonCityDepartmentStore2/map.bin"
+      "border_filepath": "data/layouts/CeladonCity_DepartmentStore_2F/border.bin",
+      "blockdata_filepath": "data/layouts/CeladonCity_DepartmentStore_2F/map.bin"
     },
     {
-      "id": "LAYOUT_CELADON_CITY_DEPARTMENT_STORE3",
-      "name": "CeladonCityDepartmentStore3_Layout",
+      "id": "LAYOUT_CELADON_CITY_DEPARTMENT_STORE_3F",
+      "name": "CeladonCity_DepartmentStore_3F_Layout",
       "width": 13,
       "height": 15,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_JohtoShop",
-      "border_filepath": "data/layouts/CeladonCityDepartmentStore3/border.bin",
-      "blockdata_filepath": "data/layouts/CeladonCityDepartmentStore3/map.bin"
+      "border_filepath": "data/layouts/CeladonCity_DepartmentStore_3F/border.bin",
+      "blockdata_filepath": "data/layouts/CeladonCity_DepartmentStore_3F/map.bin"
     },
     {
-      "id": "LAYOUT_CELADON_CITY_DEPARTMENT_STORE4",
-      "name": "CeladonCityDepartmentStore4_Layout",
+      "id": "LAYOUT_CELADON_CITY_DEPARTMENT_STORE_4F",
+      "name": "CeladonCity_DepartmentStore_4F_Layout",
       "width": 13,
       "height": 15,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_JohtoShop",
-      "border_filepath": "data/layouts/CeladonCityDepartmentStore4/border.bin",
-      "blockdata_filepath": "data/layouts/CeladonCityDepartmentStore4/map.bin"
+      "border_filepath": "data/layouts/CeladonCity_DepartmentStore_4F/border.bin",
+      "blockdata_filepath": "data/layouts/CeladonCity_DepartmentStore_4F/map.bin"
     },
     {
-      "id": "LAYOUT_CELADON_CITY_DEPARTMENT_STORE5",
-      "name": "CeladonCityDepartmentStore5_Layout",
+      "id": "LAYOUT_CELADON_CITY_DEPARTMENT_STORE_5F",
+      "name": "CeladonCity_DepartmentStore_5F_Layout",
       "width": 13,
       "height": 15,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_JohtoShop",
-      "border_filepath": "data/layouts/CeladonCityDepartmentStore5/border.bin",
-      "blockdata_filepath": "data/layouts/CeladonCityDepartmentStore5/map.bin"
+      "border_filepath": "data/layouts/CeladonCity_DepartmentStore_5F/border.bin",
+      "blockdata_filepath": "data/layouts/CeladonCity_DepartmentStore_5F/map.bin"
     },
     {
-      "id": "LAYOUT_CELADON_CITY_DEPARTMENT_STORE6",
-      "name": "CeladonCityDepartmentStore6_Layout",
+      "id": "LAYOUT_CELADON_CITY_DEPARTMENT_STORE_ROOF_DAY",
+      "name": "CeladonCity_DepartmentStore_RoofDay_Layout",
       "width": 19,
       "height": 14,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_JohtoShop",
-      "border_filepath": "data/layouts/CeladonCityDepartmentStore6/border.bin",
-      "blockdata_filepath": "data/layouts/CeladonCityDepartmentStore6/map.bin"
+      "border_filepath": "data/layouts/CeladonCity_DepartmentStore_RoofDay/border.bin",
+      "blockdata_filepath": "data/layouts/CeladonCity_DepartmentStore_RoofDay/map.bin"
     },
     {
       "id": "LAYOUT_CELADON_CITY_GYM",
-      "name": "CeladonCityGym_Layout",
+      "name": "CeladonCity_Gym_Layout",
       "width": 13,
       "height": 20,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_AzaleaTown_Gym_29",
-      "border_filepath": "data/layouts/CeladonCityGym/border.bin",
-      "blockdata_filepath": "data/layouts/CeladonCityGym/map.bin"
+      "border_filepath": "data/layouts/CeladonCity_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/CeladonCity_Gym/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE16HOUSE",
@@ -8023,63 +8023,63 @@
     },
     {
       "id": "LAYOUT_VERMILION_CITY_FAN_CLUB",
-      "name": "VermilionCityFanClub_Layout",
+      "name": "VermilionCity_FanClub_Layout",
       "width": 12,
       "height": 12,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_PokemonDayCare",
-      "border_filepath": "data/layouts/VermilionCityFanClub/border.bin",
-      "blockdata_filepath": "data/layouts/VermilionCityFanClub/map.bin"
+      "border_filepath": "data/layouts/VermilionCity_FanClub/border.bin",
+      "blockdata_filepath": "data/layouts/VermilionCity_FanClub/map.bin"
     },
     {
       "id": "LAYOUT_VERMILION_CITY_HOUSE1",
-      "name": "VermilionCityHouse1_Layout",
+      "name": "VermilionCity_House1_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/VermilionCityHouse1/border.bin",
-      "blockdata_filepath": "data/layouts/VermilionCityHouse1/map.bin"
+      "border_filepath": "data/layouts/VermilionCity_House1/border.bin",
+      "blockdata_filepath": "data/layouts/VermilionCity_House1/map.bin"
     },
     {
       "id": "LAYOUT_VERMILION_CITY_HOUSE2",
-      "name": "VermilionCityHouse2_Layout",
+      "name": "VermilionCity_House2_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/VermilionCityHouse2/border.bin",
-      "blockdata_filepath": "data/layouts/VermilionCityHouse2/map.bin"
+      "border_filepath": "data/layouts/VermilionCity_House2/border.bin",
+      "blockdata_filepath": "data/layouts/VermilionCity_House2/map.bin"
     },
     {
       "id": "LAYOUT_VERMILION_CITY_HOUSE3",
-      "name": "VermilionCityHouse3_Layout",
+      "name": "VermilionCity_House3_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/VermilionCityHouse3/border.bin",
-      "blockdata_filepath": "data/layouts/VermilionCityHouse3/map.bin"
+      "border_filepath": "data/layouts/VermilionCity_House3/border.bin",
+      "blockdata_filepath": "data/layouts/VermilionCity_House3/map.bin"
     },
     {
-      "id": "LAYOUT_VERMILION_CITY_PORT1",
-      "name": "VermilionCityPort1_Layout",
+      "id": "LAYOUT_VERMILION_CITY_PORT_OUTSIDE",
+      "name": "VermilionCity_PortOutside_Layout",
       "width": 52,
       "height": 23,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Marina_65",
-      "border_filepath": "data/layouts/VermilionCityPort1/border.bin",
-      "blockdata_filepath": "data/layouts/VermilionCityPort1/map.bin"
+      "border_filepath": "data/layouts/VermilionCity_PortOutside/border.bin",
+      "blockdata_filepath": "data/layouts/VermilionCity_PortOutside/map.bin"
     },
     {
-      "id": "LAYOUT_VERMILION_CITY_PORT_INDOOR",
-      "name": "VermilionCityPortIndoor_Layout",
+      "id": "LAYOUT_VERMILION_CITY_PORT_INSIDE",
+      "name": "VermilionCity_PortInside_Layout",
       "width": 18,
       "height": 28,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Marina_65",
-      "border_filepath": "data/layouts/VermilionCityPortIndoor/border.bin",
-      "blockdata_filepath": "data/layouts/VermilionCityPortIndoor/map.bin"
+      "border_filepath": "data/layouts/VermilionCity_PortInside/border.bin",
+      "blockdata_filepath": "data/layouts/VermilionCity_PortInside/map.bin"
     },
     {
       "id": "LAYOUT_OLIVINE_CITY_PORT_OUTSIDE",
@@ -8093,13 +8093,13 @@
     },
     {
       "id": "LAYOUT_VERMILION_CITY_GYM",
-      "name": "VermilionCityGym_Layout",
+      "name": "VermilionCity_Gym_Layout",
       "width": 11,
       "height": 21,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_VermilionGym",
-      "border_filepath": "data/layouts/VermilionCityGym/border.bin",
-      "blockdata_filepath": "data/layouts/VermilionCityGym/map.bin"
+      "border_filepath": "data/layouts/VermilionCity_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/VermilionCity_Gym/map.bin"
     },
     {
       "id": "LAYOUT_CINNABAR_VOLCANO1",
@@ -8502,14 +8502,14 @@
       "blockdata_filepath": "data/layouts/SafariZone_Top_Left/map.bin"
     },
     {
-      "id": "LAYOUT_CELADON_APARTMENTS5",
-      "name": "CeladonApartments5_Layout",
+      "id": "LAYOUT_CELADON_CITY_APARTMENTS_ROOF_HOUSE",
+      "name": "CeladonCity_Apartments_RoofHouse_Layout",
       "width": 12,
       "height": 12,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/CeladonApartments5/border.bin",
-      "blockdata_filepath": "data/layouts/CeladonApartments5/map.bin"
+      "border_filepath": "data/layouts/CeladonCity_Apartments_RoofHouse/border.bin",
+      "blockdata_filepath": "data/layouts/CeladonCity_Apartments_RoofHouse/map.bin"
     },
     {
       "id": "LAYOUT_SAFARI_ZONE_ENTRANCE_FUCHSIA",
@@ -8832,24 +8832,24 @@
       "blockdata_filepath": "data/layouts/Route25BillsHouse/map.bin"
     },
     {
-      "id": "LAYOUT_CELADON_APARTMENTS4NIGHT",
-      "name": "CeladonApartments4Night_Layout",
+      "id": "LAYOUT_CELADON_CITY_APARTMENTS_ROOF_DAYNIGHT",
+      "name": "CeladonCity_Apartments_RoofNight_Layout",
       "width": 14,
       "height": 23,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_CeladonApartments",
-      "border_filepath": "data/layouts/CeladonApartments4Night/border.bin",
-      "blockdata_filepath": "data/layouts/CeladonApartments4Night/map.bin"
+      "border_filepath": "data/layouts/CeladonCity_Apartments_RoofNight/border.bin",
+      "blockdata_filepath": "data/layouts/CeladonCity_Apartments_RoofNight/map.bin"
     },
     {
-      "id": "LAYOUT_CELADON_CITY_DEPARTMENT_STORE7",
-      "name": "CeladonCityDepartmentStore7_Layout",
+      "id": "LAYOUT_CELADON_CITY_DEPARTMENT_STORE_ROOF_NIGHT",
+      "name": "CeladonCity_DepartmentStore_RoofNight_Layout",
       "width": 19,
       "height": 14,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_ShopRooftop",
-      "border_filepath": "data/layouts/CeladonCityDepartmentStore7/border.bin",
-      "blockdata_filepath": "data/layouts/CeladonCityDepartmentStore7/map.bin"
+      "border_filepath": "data/layouts/CeladonCity_DepartmentStore_RoofNight/border.bin",
+      "blockdata_filepath": "data/layouts/CeladonCity_DepartmentStore_RoofNight/map.bin"
     },
     {
       "id": "LAYOUT_FUCHSIA",

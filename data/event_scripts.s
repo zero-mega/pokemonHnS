@@ -1444,13 +1444,13 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/PewterCity_PokemonCenter/scripts.inc"
 
-	.include "data/maps/CeruleanPokecenter/scripts.inc"
+	.include "data/maps/CeruleanCity_PokemonCenter/scripts.inc"
 
-	.include "data/maps/VermilionPokecenter/scripts.inc"
+	.include "data/maps/VermilionCity_PokemonCenter/scripts.inc"
 
-	.include "data/maps/LavenderPokecenter/scripts.inc"
+	.include "data/maps/LavenderTown_PokemonCenter/scripts.inc"
 
-	.include "data/maps/CeladonPokecenter/scripts.inc"
+	.include "data/maps/CeladonCity_PokemonCenter/scripts.inc"
 
 	.include "data/maps/SaffronPokecenter/scripts.inc"
 
@@ -1544,11 +1544,11 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/PewterCity_Mart/scripts.inc"
 
-	.include "data/maps/CeruleanPokemart/scripts.inc"
+	.include "data/maps/CeruleanCity_Mart/scripts.inc"
 
-	.include "data/maps/VermilionPokemart/scripts.inc"
+	.include "data/maps/VermilionCity_Mart/scripts.inc"
 
-	.include "data/maps/LavenderPokemart/scripts.inc"
+	.include "data/maps/LavenderTown_Mart/scripts.inc"
 
 	.include "data/maps/SaffronPokemart/scripts.inc"
 
@@ -1736,13 +1736,13 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/CeruleanCityHouse1/scripts.inc"
 
-	.include "data/maps/CeruleanCityHouse2/scripts.inc"
+	.include "data/maps/CeruleanCity_House2/scripts.inc"
 
-	.include "data/maps/CeruleanCityHouse3/scripts.inc"
+	.include "data/maps/CeruleanCity_House3/scripts.inc"
 
-	.include "data/maps/CeruleanCityBikeShop/scripts.inc"
+	.include "data/maps/CeruleanCity_BikeShop/scripts.inc"
 
-	.include "data/maps/CeruleanCityGym/scripts.inc"
+	.include "data/maps/CeruleanCity_Gym/scripts.inc"
 
 	.include "data/maps/Route5House/scripts.inc"
 
@@ -1770,15 +1770,15 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/LavenderTownHouse1/scripts.inc"
 
-	.include "data/maps/LavenderTownHouse2/scripts.inc"
+	.include "data/maps/LavenderTown_House2/scripts.inc"
 
-	.include "data/maps/LavenderTownHouse3/scripts.inc"
+	.include "data/maps/LavenderTown_House3/scripts.inc"
 
-	.include "data/maps/LavenderTownRadioStation/scripts.inc"
+	.include "data/maps/LavenderTown_RadioStation/scripts.inc"
 
-	.include "data/maps/LavenderTownSoulHouse1/scripts.inc"
+	.include "data/maps/LavenderTown_SoulHouse/scripts.inc"
 
-	.include "data/maps/LavenderTownSoulHouse2/scripts.inc"
+	.include "data/maps/LavenderTown_SoulHouseUnused/scripts.inc"
 
 	.include "data/maps/SaffronTrainStation/scripts.inc"
 
@@ -1792,33 +1792,33 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/SaffronCityHouse2/scripts.inc"
 
-	.include "data/maps/CeladonHouse1/scripts.inc"
+	.include "data/maps/CeladonCity_House1/scripts.inc"
 
-	.include "data/maps/CeladonHouse2/scripts.inc"
+	.include "data/maps/CeladonCity_House2/scripts.inc"
 
-	.include "data/maps/CeladonCityApartments1/scripts.inc"
+	.include "data/maps/CeladonCity_Apartments_1F/scripts.inc"
 
-	.include "data/maps/CeladonApartments2/scripts.inc"
+	.include "data/maps/CeladonCity_Apartments_2F/scripts.inc"
 
-	.include "data/maps/CeladonApartments3/scripts.inc"
+	.include "data/maps/CeladonCity_Apartments_3F/scripts.inc"
 
-	.include "data/maps/CeladonApartments4/scripts.inc"
+	.include "data/maps/CeladonCity_Apartments_RoofDay/scripts.inc"
 
-	.include "data/maps/CeladonCityGameCorner/scripts.inc"
+	.include "data/maps/CeladonCity_GameCorner/scripts.inc"
 
-	.include "data/maps/CeladonCityDepartmentStore1/scripts.inc"
+	.include "data/maps/CeladonCity_DepartmentStore_1F/scripts.inc"
 
-	.include "data/maps/CeladonCityDepartmentStore2/scripts.inc"
+	.include "data/maps/CeladonCity_DepartmentStore_2F/scripts.inc"
 
-	.include "data/maps/CeladonCityDepartmentStore3/scripts.inc"
+	.include "data/maps/CeladonCity_DepartmentStore_3F/scripts.inc"
 
-	.include "data/maps/CeladonCityDepartmentStore4/scripts.inc"
+	.include "data/maps/CeladonCity_DepartmentStore_4F/scripts.inc"
 
-	.include "data/maps/CeladonCityDepartmentStore5/scripts.inc"
+	.include "data/maps/CeladonCity_DepartmentStore_5F/scripts.inc"
 
-	.include "data/maps/CeladonCityDepartmentStore6/scripts.inc"
+	.include "data/maps/CeladonCity_DepartmentStore_RoofDay/scripts.inc"
 
-	.include "data/maps/CeladonCityGym/scripts.inc"
+	.include "data/maps/CeladonCity_Gym/scripts.inc"
 
 	.include "data/maps/Route16House/scripts.inc"
 
@@ -1842,21 +1842,21 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/Fuchsia_Route19Gate/scripts.inc"
 
-	.include "data/maps/VermilionCityFanClub/scripts.inc"
+	.include "data/maps/VermilionCity_FanClub/scripts.inc"
 
-	.include "data/maps/VermilionCityHouse1/scripts.inc"
+	.include "data/maps/VermilionCity_House1/scripts.inc"
 
-	.include "data/maps/VermilionCityHouse2/scripts.inc"
+	.include "data/maps/VermilionCity_House2/scripts.inc"
 
-	.include "data/maps/VermilionCityHouse3/scripts.inc"
+	.include "data/maps/VermilionCity_House3/scripts.inc"
 
-	.include "data/maps/VermilionCityPort1/scripts.inc"
+	.include "data/maps/VermilionCity_PortOutside/scripts.inc"
 
-	.include "data/maps/VermilionCityPortIndoor/scripts.inc"
+	.include "data/maps/VermilionCity_PortInside/scripts.inc"
 
 	.include "data/maps/OlivineCity_PortOutside/scripts.inc"
 
-	.include "data/maps/VermilionCityGym/scripts.inc"
+	.include "data/maps/VermilionCity_Gym/scripts.inc"
 
 	.include "data/maps/CinnabarVolcano1/scripts.inc"
 
@@ -1938,7 +1938,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/SafariZone_Top_Left/scripts.inc"
 
-	.include "data/maps/CeladonApartments5/scripts.inc"
+	.include "data/maps/CeladonCity_Apartments_RoofHouse/scripts.inc"
 
 	.include "data/maps/SafariZoneEntrance_Fuchsia/scripts.inc"
 
@@ -2004,9 +2004,9 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/Route25BillsHouse/scripts.inc"
 
-	.include "data/maps/CeladonApartments4Night/scripts.inc"
+	.include "data/maps/CeladonCity_Apartments_RoofNight/scripts.inc"
 
-	.include "data/maps/CeladonCityDepartmentStore7/scripts.inc"
+	.include "data/maps/CeladonCity_DepartmentStore_RoofNight/scripts.inc"
 
 	.include "data/maps/Fuchsia/scripts.inc"
 

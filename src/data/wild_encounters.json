@@ -61794,8 +61794,8 @@
           }
         },
         {
-          "map": "MAP_VERMILION_CITY_PORT1",
-          "base_label": "gVermilionCityPort1",
+          "map": "MAP_VERMILION_CITY_PORT_OUTSIDE",
+          "base_label": "gVermilionCity_PortOutside",
           "land_mons": {
             "encounter_rate": 0,
             "mons": [
@@ -61983,8 +61983,8 @@
           }
         },
         {
-          "map": "MAP_VERMILION_CITY_PORT1",
-          "base_label": "gVermilionCityPort1_Night",
+          "map": "MAP_VERMILION_CITY_PORT_OUTSIDE",
+          "base_label": "gVermilionCity_PortOutside_Night",
           "land_mons": {
             "encounter_rate": 0,
             "mons": [

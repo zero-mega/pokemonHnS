@@ -409,8 +409,8 @@ const u16 gMetatileAttributes_ViridianGym_23[] = INCBIN_U16("data/tilesets/secon
 const u16 gMetatiles_Museum[] = INCBIN_U16("data/tilesets/secondary/museum/metatiles.bin");
 const u16 gMetatileAttributes_Museum[] = INCBIN_U16("data/tilesets/secondary/museum/metatile_attributes.bin");
 
-const u16 gMetatiles_CeruleanCityGym_27[] = INCBIN_U16("data/tilesets/secondary/cerulean_city_gym_27/metatiles.bin");
-const u16 gMetatileAttributes_CeruleanCityGym_27[] = INCBIN_U16("data/tilesets/secondary/cerulean_city_gym_27/metatile_attributes.bin");
+const u16 gMetatiles_CeruleanCity_Gym_27[] = INCBIN_U16("data/tilesets/secondary/cerulean_city_gym_27/metatiles.bin");
+const u16 gMetatileAttributes_CeruleanCity_Gym_27[] = INCBIN_U16("data/tilesets/secondary/cerulean_city_gym_27/metatile_attributes.bin");
 
 const u16 gMetatiles_SaffronCity[] = INCBIN_U16("data/tilesets/secondary/saffron_city/metatiles.bin");
 const u16 gMetatileAttributes_SaffronCity[] = INCBIN_U16("data/tilesets/secondary/saffron_city/metatile_attributes.bin");
