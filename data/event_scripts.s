@@ -1454,7 +1454,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/SaffronCity_PokemonCenter/scripts.inc"
 
-	.include "data/maps/FuchsiaPokecenter/scripts.inc"
+	.include "data/maps/FuchsiaCity_PokemonCenter/scripts.inc"
 
 	.include "data/maps/CinnabarPokecenter/scripts.inc"
 
@@ -1552,7 +1552,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/SaffronCity_Mart/scripts.inc"
 
-	.include "data/maps/FuchsiaPokemart/scripts.inc"
+	.include "data/maps/FuchsiaCity_Mart/scripts.inc"
 
 	.include "data/maps/NewBarkTown_Lab/scripts.inc"
 
@@ -1826,21 +1826,21 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/Route16_Route18Gate/scripts.inc"
 
-	.include "data/maps/FuchsiaSafariZoneGate/scripts.inc"
+	.include "data/maps/FuchsiaCity_SafariZoneEntranceUnused/scripts.inc"
 
-	.include "data/maps/FuchsiaCityHouse1/scripts.inc"
+	.include "data/maps/FuchsiaCity_House1/scripts.inc"
 
-	.include "data/maps/FuchsiaCityHouse2/scripts.inc"
+	.include "data/maps/FuchsiaCity_HouseUnused/scripts.inc"
 
-	.include "data/maps/FuchsiaCityHouse3/scripts.inc"
+	.include "data/maps/FuchsiaCity_House2/scripts.inc"
 
-	.include "data/maps/FuchsiaCityCafe/scripts.inc"
+	.include "data/maps/FuchsiaCity_CafeUnused/scripts.inc"
 
-	.include "data/maps/FuchsiaCityHouse4/scripts.inc"
+	.include "data/maps/FuchsiaCity_HouseUnused2/scripts.inc"
 
-	.include "data/maps/FuchsiaCityGym/scripts.inc"
+	.include "data/maps/FuchsiaCity_Gym/scripts.inc"
 
-	.include "data/maps/Fuchsia_Route19Gate/scripts.inc"
+	.include "data/maps/FuchsiaCity_Route19_Gate/scripts.inc"
 
 	.include "data/maps/VermilionCity_FanClub/scripts.inc"
 
@@ -1864,7 +1864,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/CinnabarGym/scripts.inc"
 
-	.include "data/maps/Fuchsia_Route15Gate/scripts.inc"
+	.include "data/maps/FuchsiaCity_Route15_Gate/scripts.inc"
 
 	.include "data/maps/Route12House/scripts.inc"
 
@@ -1940,7 +1940,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/CeladonCity_Apartments_RoofHouse/scripts.inc"
 
-	.include "data/maps/SafariZoneEntrance_Fuchsia/scripts.inc"
+	.include "data/maps/FuchsiaCity_SafariZoneEntrance/scripts.inc"
 
 	.include "data/maps/MtSilver4/scripts.inc"
 
@@ -2010,11 +2010,11 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/FuchsiaCity_SafariZoneBeach/scripts.inc"
 
-	.include "data/maps/FuchsiaCitySafariZoneBrush/scripts.inc"
+	.include "data/maps/FuchsiaCity_SafariZoneBrush/scripts.inc"
 
-	.include "data/maps/FuchsiaCitySafariZoneMountain/scripts.inc"
+	.include "data/maps/FuchsiaCity_SafariZoneMountain/scripts.inc"
 
-	.include "data/maps/FuchsiaSafariZoneCave/scripts.inc"
+	.include "data/maps/FuchsiaCity_SafariZoneCave/scripts.inc"
 
 	.include "data/maps/MtSilverSummitTestNight/scripts.inc"
 

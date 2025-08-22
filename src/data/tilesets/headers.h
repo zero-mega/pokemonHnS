@@ -1664,14 +1664,14 @@ const struct Tileset gTileset_FuchsiaHouseBackdoor =
     .callback = NULL,
 };
 
-const struct Tileset gTileset_FuchsiaCityGym =
+const struct Tileset gTileset_FuchsiaCity_Gym =
 {
     .isCompressed = TRUE,
     .isSecondary = TRUE,
-    .tiles = gTilesetTiles_FuchsiaCityGym,
-    .palettes = gTilesetPalettes_FuchsiaCityGym,
-    .metatiles = gMetatiles_FuchsiaCityGym,
-    .metatileAttributes = gMetatileAttributes_FuchsiaCityGym,
+    .tiles = gTilesetTiles_FuchsiaCity_Gym,
+    .palettes = gTilesetPalettes_FuchsiaCity_Gym,
+    .metatiles = gMetatiles_FuchsiaCity_Gym,
+    .metatileAttributes = gMetatileAttributes_FuchsiaCity_Gym,
     .callback = NULL,
 };
 

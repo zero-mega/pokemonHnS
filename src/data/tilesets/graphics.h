@@ -3041,7 +3041,7 @@ const u16 gTilesetPalettes_FuchsiaHouseBackdoor[][16] =
 
 const u32 gTilesetTiles_FuchsiaHouseBackdoor[] = INCBIN_U32("data/tilesets/secondary/fuchsia_house_backdoor/tiles.4bpp.lz");
 
-const u16 gTilesetPalettes_FuchsiaCityGym[][16] =
+const u16 gTilesetPalettes_FuchsiaCity_Gym[][16] =
 {
     INCBIN_U16("data/tilesets/secondary/fuchsia_city_gym/palettes/00.gbapal"),
     INCBIN_U16("data/tilesets/secondary/fuchsia_city_gym/palettes/01.gbapal"),
@@ -3058,7 +3058,7 @@ const u16 gTilesetPalettes_FuchsiaCityGym[][16] =
     INCBIN_U16("data/tilesets/secondary/fuchsia_city_gym/palettes/12.gbapal"),
 };
 
-const u32 gTilesetTiles_FuchsiaCityGym[] = INCBIN_U32("data/tilesets/secondary/fuchsia_city_gym/tiles.4bpp.lz");
+const u32 gTilesetTiles_FuchsiaCity_Gym[] = INCBIN_U32("data/tilesets/secondary/fuchsia_city_gym/tiles.4bpp.lz");
 
 const u16 gTilesetPalettes_VermilionGym[][16] =
 {

@@ -66615,8 +66615,8 @@
           }
         },
         {
-          "map": "MAP_FUCHSIA_SAFARI_ZONE_CAVE",
-          "base_label": "gFuchsiaSafariZoneCave",
+          "map": "MAP_FUCHSIA_CITY_SAFARI_ZONE_CAVE",
+          "base_label": "gFuchsiaCity_SafariZoneCave",
           "land_mons": {
             "encounter_rate": 20,
             "mons": [
@@ -66770,7 +66770,7 @@
         },
         {
           "map": "MAP_FUCHSIA_CITY_SAFARI_ZONE_MOUNTAIN",
-          "base_label": "gFuchsiaCitySafariZoneMountain",
+          "base_label": "gFuchsiaCity_SafariZoneMountain",
           "land_mons": {
             "encounter_rate": 20,
             "mons": [
@@ -66924,7 +66924,7 @@
         },
         {
           "map": "MAP_FUCHSIA_CITY_SAFARI_ZONE_BRUSH",
-          "base_label": "gFuchsiaCitySafariZoneBrush",
+          "base_label": "gFuchsiaCity_SafariZoneBrush",
           "land_mons": {
             "encounter_rate": 20,
             "mons": [
