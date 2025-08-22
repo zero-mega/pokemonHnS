@@ -478,7 +478,7 @@
       "x": 13,
       "y": 3,
       "elevation": 0,
-      "dest_map": "MAP_ROUTE32_RUINS_GATE",
+      "dest_map": "MAP_GATE_RUINS_OF_ALPH_ROUTE32",
       "dest_warp_id": "0"
     },
     {
@@ -492,7 +492,7 @@
       "x": 25,
       "y": 84,
       "elevation": 0,
-      "dest_map": "MAP_ROUTE32POKECENTER",
+      "dest_map": "MAP_ROUTE32_POKEMON_CENTER",
       "dest_warp_id": "0"
     }
   ],

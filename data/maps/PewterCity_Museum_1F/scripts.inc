@@ -2,7 +2,7 @@
 .set LOCALID_MUSEUM_CLAWFOSSIL, 6
 
 PewterCity_Museum_1F_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, RuinsOfAlphOffice_OnTransition
+	map_script MAP_SCRIPT_ON_TRANSITION, RuinsOfAlph_Lab_OnTransition
 	.byte 0
 
 PewterCity_Museum_1F_EventScript_RootFossil::

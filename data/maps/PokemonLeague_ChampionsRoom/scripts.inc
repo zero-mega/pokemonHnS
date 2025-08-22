@@ -125,7 +125,7 @@ PokemonLeague_WillsRoom_EventScript_LanceOnDefeatJohto::
 	msgbox PokemonLeague_ChampionsRoom_Text_MaryNoInterview, MSGBOX_DEFAULT
 	closemessage
 	setvar VAR_LEAGUE_STATE, 6
-	warpsilent MAP_HALL_OF_FAME, 0
+	warpsilent MAP_POKEMON_LEAGUE_HALL_OF_FAME, 0
 	releaseall
 	end
 
@@ -192,7 +192,7 @@ PokemonLeague_WillsRoom_EventScript_LanceOnDefeatKanto::
 	msgbox PokemonLeague_ChampionsRoom_Text_RematchMaryNoInterview, MSGBOX_DEFAULT
 	closemessage
 	setvar VAR_LEAGUE_STATE, 6
-	warpsilent MAP_HALL_OF_FAME, 0
+	warpsilent MAP_POKEMON_LEAGUE_HALL_OF_FAME, 0
 	releaseall
 	end
 

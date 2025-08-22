@@ -1292,9 +1292,9 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/CinnabarIsland/scripts.inc"
 
-	.include "data/maps/DarkCave_1/scripts.inc"
+	.include "data/maps/DarkCave_SouthSide/scripts.inc"
 
-	.include "data/maps/DarkCave_2/scripts.inc"
+	.include "data/maps/DarkCave_NorthSide/scripts.inc"
 
 	.include "data/maps/CeruleanCave_1/scripts.inc"
 
@@ -1472,37 +1472,37 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/CliffEdgeGate/scripts.inc"
 
-	.include "data/maps/Route29_46Gate/scripts.inc"
+	.include "data/maps/Gate_Route29_Route46/scripts.inc"
 
-	.include "data/maps/Route31_VioletGate/scripts.inc"
+	.include "data/maps/Gate_Route31_VioletCity/scripts.inc"
 
-	.include "data/maps/Route32_RuinsGate/scripts.inc"
+	.include "data/maps/Gate_RuinsOfAlph_Route32/scripts.inc"
 
-	.include "data/maps/Route36_RuinsGate/scripts.inc"
+	.include "data/maps/Gate_RuinsOfAlph_Route36/scripts.inc"
 
-	.include "data/maps/Azalea_IlexGate/scripts.inc"
+	.include "data/maps/Gate_AzaleaTown_IlexForest/scripts.inc"
 
-	.include "data/maps/Ilex_34Gate/scripts.inc"
+	.include "data/maps/Gate_IlexForest_Route34/scripts.inc"
 
-	.include "data/maps/Goldenrod_35Gate/scripts.inc"
+	.include "data/maps/Gate_GoldenrodCity_Route35/scripts.inc"
 
-	.include "data/maps/NationalParkGates/scripts.inc"
+	.include "data/maps/Gate_NationalPark/scripts.inc"
 
 	.include "data/maps/NationalPark/scripts.inc"
 
-	.include "data/maps/Ecruteak_38Gate/scripts.inc"
+	.include "data/maps/Gate_EcruteakCity_Route38/scripts.inc"
 
-	.include "data/maps/Ecruteak_42Gate/scripts.inc"
+	.include "data/maps/Gate_EcruteakCity_Route42/scripts.inc"
 
-	.include "data/maps/Mahogany_43Gate/scripts.inc"
+	.include "data/maps/Gate_MahoganyTown_Route43/scripts.inc"
 
-	.include "data/maps/Gate/scripts.inc"
+	.include "data/maps/Gate_Route43/scripts.inc"
 
-	.include "data/maps/UpperGate/scripts.inc"
+	.include "data/maps/Gate_Unused_2F/scripts.inc"
 
-	.include "data/maps/Route26Building/scripts.inc"
+	.include "data/maps/Route26_UnusedHouse/scripts.inc"
 
-	.include "data/maps/IndigoJunction/scripts.inc"
+	.include "data/maps/ReceptionGate/scripts.inc"
 
 	.include "data/maps/EcruteakCity_SageOffice2/scripts.inc"
 
@@ -1526,7 +1526,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/OlivineCity_House3/scripts.inc"
 
-	.include "data/maps/Route39_Farmhouse/scripts.inc"
+	.include "data/maps/Route39_FarmHouse/scripts.inc"
 
 	.include "data/maps/AzaleaTown_KurtsHouse/scripts.inc"
 
@@ -1578,13 +1578,13 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/Trees/scripts.inc"
 
-	.include "data/maps/Route39Barn/scripts.inc"
+	.include "data/maps/Route39_Barn/scripts.inc"
 
-	.include "data/maps/Route39_OlivineGate/scripts.inc"
+	.include "data/maps/Gate_OlivineCity_Route39_Unused/scripts.inc"
 
-	.include "data/maps/Route30House/scripts.inc"
+	.include "data/maps/Route30_House/scripts.inc"
 
-	.include "data/maps/Route30MrPokemonHouse/scripts.inc"
+	.include "data/maps/Route30_MrPokemonsHouse/scripts.inc"
 
 	.include "data/maps/VioletCity_TrainerSchool/scripts.inc"
 
@@ -1594,15 +1594,15 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/VioletCity_Gym/scripts.inc"
 
-	.include "data/maps/Route32Pokecenter/scripts.inc"
+	.include "data/maps/Route32_PokemonCenter/scripts.inc"
 
-	.include "data/maps/RuinsOfAlphOffice/scripts.inc"
+	.include "data/maps/RuinsOfAlph_Lab/scripts.inc"
 
 	.include "data/maps/AzaleaTown_House1/scripts.inc"
 
 	.include "data/maps/AzaleaTown_Gym/scripts.inc"
 
-	.include "data/maps/Route34DayCare/scripts.inc"
+	.include "data/maps/Route34_DayCare/scripts.inc"
 
 	.include "data/maps/GoldenrodCity_UndergroundEntrance/scripts.inc"
 
@@ -1690,11 +1690,11 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/BlackthornCity_House3/scripts.inc"
 
-	.include "data/maps/MtSilverHouse/scripts.inc"
+	.include "data/maps/Route28_House/scripts.inc"
 
-	.include "data/maps/Route26House1/scripts.inc"
+	.include "data/maps/Route26_House1/scripts.inc"
 
-	.include "data/maps/Route26House2/scripts.inc"
+	.include "data/maps/Route26_House2/scripts.inc"
 
 	.include "data/maps/NewMap1/scripts.inc"
 
@@ -1714,13 +1714,13 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/ViridianCity_Gym/scripts.inc"
 
-	.include "data/maps/Route2_ViridianForestGate/scripts.inc"
+	.include "data/maps/Gate_Route2_ViridianForest/scripts.inc"
 
-	.include "data/maps/ViridianForest_Route2Gate/scripts.inc"
+	.include "data/maps/Gate_ViridianForest_Route2/scripts.inc"
 
-	.include "data/maps/Route2_Route2Gate/scripts.inc"
+	.include "data/maps/Gate_Route2/scripts.inc"
 
-	.include "data/maps/Route2House/scripts.inc"
+	.include "data/maps/Route2_House/scripts.inc"
 
 	.include "data/maps/PewterCity_House1/scripts.inc"
 
@@ -1732,9 +1732,9 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/PewterCity_Museum_2F/scripts.inc"
 
-	.include "data/maps/MtMoonHouse/scripts.inc"
+	.include "data/maps/MtMoon_Shop/scripts.inc"
 
-	.include "data/maps/CeruleanCityHouse1/scripts.inc"
+	.include "data/maps/CeruleanCity_House1/scripts.inc"
 
 	.include "data/maps/CeruleanCity_House2/scripts.inc"
 
@@ -1744,31 +1744,31 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/CeruleanCity_Gym/scripts.inc"
 
-	.include "data/maps/Route5House/scripts.inc"
+	.include "data/maps/Route5_House/scripts.inc"
 
-	.include "data/maps/Route5TunnelEnter/scripts.inc"
+	.include "data/maps/Route5_TunnelEntrance/scripts.inc"
 
-	.include "data/maps/Route5_SaffronGate/scripts.inc"
+	.include "data/maps/Gate_SaffronCity_Route5/scripts.inc"
 
-	.include "data/maps/Route5_Route6Tunnel/scripts.inc"
+	.include "data/maps/SaffronCity_Tunnel_NS/scripts.inc"
 
-	.include "data/maps/Route6TunnelEnter/scripts.inc"
+	.include "data/maps/Route6_TunnelEntrance/scripts.inc"
 
-	.include "data/maps/Saffron_Route6Gate/scripts.inc"
+	.include "data/maps/Gate_SaffronCity_Route6/scripts.inc"
 
-	.include "data/maps/Route7_SaffronGate/scripts.inc"
+	.include "data/maps/Gate_SaffronCity_Route7/scripts.inc"
 
-	.include "data/maps/Route7TunnelEnter/scripts.inc"
+	.include "data/maps/Route7_TunnelEntrance/scripts.inc"
 
-	.include "data/maps/Route7_Route8Tunnel/scripts.inc"
+	.include "data/maps/SaffronCity_Tunnel_SW/scripts.inc"
 
-	.include "data/maps/Route8TunnelEnter/scripts.inc"
+	.include "data/maps/Route8_TunnelEntrance/scripts.inc"
 
-	.include "data/maps/Saffron_Route8Gate/scripts.inc"
+	.include "data/maps/Gate_SaffronCity_Route8/scripts.inc"
 
-	.include "data/maps/Route9Pokecenter/scripts.inc"
+	.include "data/maps/Route9_PokemonCenter/scripts.inc"
 
-	.include "data/maps/LavenderTownHouse1/scripts.inc"
+	.include "data/maps/LavenderTown_House1/scripts.inc"
 
 	.include "data/maps/LavenderTown_House2/scripts.inc"
 
@@ -1820,11 +1820,11 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/CeladonCity_Gym/scripts.inc"
 
-	.include "data/maps/Route16House/scripts.inc"
+	.include "data/maps/Route16_House/scripts.inc"
 
-	.include "data/maps/Celadon_Route16Gate/scripts.inc"
+	.include "data/maps/Gate_CeladonCity_Route16/scripts.inc"
 
-	.include "data/maps/Route16_Route18Gate/scripts.inc"
+	.include "data/maps/Gate_FuchsiaCity_Route18/scripts.inc"
 
 	.include "data/maps/FuchsiaCity_SafariZoneEntranceUnused/scripts.inc"
 
@@ -1866,7 +1866,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/FuchsiaCity_Route15_Gate/scripts.inc"
 
-	.include "data/maps/Route12House/scripts.inc"
+	.include "data/maps/Route12_House/scripts.inc"
 
 	.include "data/maps/SafariZone1/scripts.inc"
 
@@ -1878,7 +1878,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/SafariZoneEntrance/scripts.inc"
 
-	.include "data/maps/SafariZoneGatePokecenter/scripts.inc"
+	.include "data/maps/SafariZoneGate_PokemonCenter/scripts.inc"
 
 	.include "data/maps/CliffEdgeCave/scripts.inc"
 
@@ -1896,7 +1896,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/MtSilverMeadow/scripts.inc"
 
-	.include "data/maps/Route27House/scripts.inc"
+	.include "data/maps/Route27_House/scripts.inc"
 
 	.include "data/maps/SSAqua1/scripts.inc"
 
@@ -1932,7 +1932,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/PokemonLeague_ChampionsRoom/scripts.inc"
 
-	.include "data/maps/HallOfFame/scripts.inc"
+	.include "data/maps/PokemonLeague_HallOfFame/scripts.inc"
 
 	.include "data/maps/SaffronCity_FightingDojoVIP/scripts.inc"
 
@@ -1980,7 +1980,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/BattleTowerOuter/scripts.inc"
 
-	.include "data/maps/Route40_BattleTowerGate/scripts.inc"
+	.include "data/maps/Gate_Route40_BattleTowerOutside/scripts.inc"
 
 	.include "data/maps/RuinsOfAlphC_1/scripts.inc"
 
@@ -1998,11 +1998,11 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/MtMoon2/scripts.inc"
 
-	.include "data/maps/Route4Pokecenter/scripts.inc"
+	.include "data/maps/Route4_PokemonCenter/scripts.inc"
 
 	.include "data/maps/SaffronCity_CopyCatsHouse_2F/scripts.inc"
 
-	.include "data/maps/Route25BillsHouse/scripts.inc"
+	.include "data/maps/Route25_BillsHouse/scripts.inc"
 
 	.include "data/maps/CeladonCity_Apartments_RoofNight/scripts.inc"
 

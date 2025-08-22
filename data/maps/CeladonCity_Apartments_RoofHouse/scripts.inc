@@ -4,7 +4,7 @@ CeladonCity_Apartments_RoofHouse_MapScripts::
 
 CeladonCity_Apartments_RoofHouse_OnTransition::
 	goto_if_set FLAG_NIGHT_POKEMON, CeladonCity_Apartments_RoofHouse_EventScript_SetWarpDay
-	setdynamicwarp MAP_CELADON_CITY_APARTMENTS_ROOF_DAYNIGHT, 2, 13
+	setdynamicwarp MAP_CELADON_CITY_APARTMENTS_ROOF_NIGHT, 2, 13
 	release
 	end
 

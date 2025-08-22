@@ -34950,8 +34950,8 @@
           }
         },
         {
-          "map": "MAP_DARK_CAVE_1",
-          "base_label": "gDarkCave_1",
+          "map": "MAP_DARK_CAVE_SOUTH_SIDE",
+          "base_label": "gDarkCave_SouthSide",
           "land_mons": {
             "encounter_rate": 5,
             "mons": [
@@ -44413,7 +44413,7 @@
           }
         },
         {
-          "map": "MAP_DARK_CAVE_2",
+          "map": "MAP_DARK_CAVE_NORTH_SIDE",
           "base_label": "gDarkCave2",
           "land_mons": {
             "encounter_rate": 5,
@@ -44567,7 +44567,7 @@
           }
         },
         {
-          "map": "MAP_DARK_CAVE_2",
+          "map": "MAP_DARK_CAVE_NORTH_SIDE",
           "base_label": "gDarkCave2_Night",
           "land_mons": {
             "encounter_rate": 10,

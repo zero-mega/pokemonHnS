@@ -473,14 +473,14 @@
       "x": 33,
       "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_GOLDENROD_35GATE",
+      "dest_map": "MAP_GATE_GOLDENROD_CITY_ROUTE35",
       "dest_warp_id": "0"
     },
     {
       "x": 34,
       "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_GOLDENROD_35GATE",
+      "dest_map": "MAP_GATE_GOLDENROD_CITY_ROUTE35",
       "dest_warp_id": "0"
     },
     {

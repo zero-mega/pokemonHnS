@@ -1,7 +1,7 @@
 {
-  "id": "MAP_CELADON_CITY_APARTMENTS_ROOF_DAYNIGHT",
+  "id": "MAP_CELADON_CITY_APARTMENTS_ROOF_NIGHT",
   "name": "CeladonCity_Apartments_RoofNight",
-  "layout": "LAYOUT_CELADON_CITY_APARTMENTS_ROOF_DAYNIGHT",
+  "layout": "LAYOUT_CELADON_CITY_APARTMENTS_ROOF_NIGHT",
   "music": "MUS_HG_CELADON",
   "region_map_section": "MAPSEC_CELADON_CITY",
   "requires_flash": false,

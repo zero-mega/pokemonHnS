@@ -423,35 +423,35 @@
       "x": 12,
       "y": 49,
       "elevation": 0,
-      "dest_map": "MAP_NATIONAL_PARK_GATES",
+      "dest_map": "MAP_GATE_NATIONAL_PARK",
       "dest_warp_id": "1"
     },
     {
       "x": 13,
       "y": 49,
       "elevation": 0,
-      "dest_map": "MAP_NATIONAL_PARK_GATES",
+      "dest_map": "MAP_GATE_NATIONAL_PARK",
       "dest_warp_id": "1"
     },
     {
       "x": 40,
       "y": 19,
       "elevation": 0,
-      "dest_map": "MAP_NATIONAL_PARK_GATES",
+      "dest_map": "MAP_GATE_NATIONAL_PARK",
       "dest_warp_id": "2"
     },
     {
       "x": 11,
       "y": 49,
       "elevation": 0,
-      "dest_map": "MAP_NATIONAL_PARK_GATES",
+      "dest_map": "MAP_GATE_NATIONAL_PARK",
       "dest_warp_id": "1"
     },
     {
       "x": 14,
       "y": 49,
       "elevation": 0,
-      "dest_map": "MAP_NATIONAL_PARK_GATES",
+      "dest_map": "MAP_GATE_NATIONAL_PARK",
       "dest_warp_id": "1"
     },
     {

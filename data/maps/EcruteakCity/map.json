@@ -470,14 +470,14 @@
       "x": 8,
       "y": 35,
       "elevation": 0,
-      "dest_map": "MAP_ECRUTEAK_38GATE",
+      "dest_map": "MAP_GATE_ECRUTEAK_CITY_ROUTE38",
       "dest_warp_id": "0"
     },
     {
       "x": 55,
       "y": 42,
       "elevation": 0,
-      "dest_map": "MAP_ECRUTEAK_42GATE",
+      "dest_map": "MAP_GATE_ECRUTEAK_CITY_ROUTE42",
       "dest_warp_id": "0"
     },
     {

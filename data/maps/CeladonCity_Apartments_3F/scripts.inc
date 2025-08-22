@@ -13,13 +13,13 @@ CeladonCity_Apartments_3F_EventScript_SetWarpDayRight::
 
 CeladonCity_Apartments_3F_EventScript_Trigger_Left::
 	goto_if_set FLAG_NIGHT_POKEMON, CeladonCity_Apartments_3F_EventScript_SetWarpDayLeft
-	setdynamicwarp MAP_CELADON_CITY_APARTMENTS_ROOF_DAYNIGHT, 1
+	setdynamicwarp MAP_CELADON_CITY_APARTMENTS_ROOF_NIGHT, 1
 	release
 	end
 
 CeladonCity_Apartments_3F_EventScript_Trigger_Right::
 	goto_if_set FLAG_NIGHT_POKEMON, CeladonCity_Apartments_3F_EventScript_SetWarpDayRight
-	setdynamicwarp MAP_CELADON_CITY_APARTMENTS_ROOF_DAYNIGHT, 0
+	setdynamicwarp MAP_CELADON_CITY_APARTMENTS_ROOF_NIGHT, 0
 	release
 	end
 

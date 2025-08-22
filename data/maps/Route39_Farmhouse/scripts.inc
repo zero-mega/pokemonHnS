@@ -1,4 +1,4 @@
-Route39_Farmhouse_MapScripts::
+Route39_FarmHouse_MapScripts::
 	.byte 0
 
 
@@ -27,27 +27,27 @@ Route39House_EventScript_FarmerFAfterTM::
 	release
 	end
 
-Route39_Farmhouse_EventScript_FarmerM::
+Route39_FarmHouse_EventScript_FarmerM::
 	lock
 	faceplayer
-	goto_if_lt VAR_ROUTE39_BARN, 5, Route39_Farmhouse_EventScript_FarmerM_Sick
+	goto_if_lt VAR_ROUTE39_BARN, 5, Route39_FarmHouse_EventScript_FarmerM_Sick
 	showmoneybox 0, 0
 	msgbox Route39_Text_FarmerMBuyMilk, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, TRUE, Route39_Farmhouse_EventScript_FarmerMBuyMilk
+	goto_if_eq VAR_RESULT, TRUE, Route39_FarmHouse_EventScript_FarmerMBuyMilk
 	msgbox Route39_Text_FarmerMNoSale, MSGBOX_DEFAULT
 	hidemoneybox
 	closemessage
 	end
 
-Route39_Farmhouse_EventScript_FarmerMBuyMilk::
+Route39_FarmHouse_EventScript_FarmerMBuyMilk::
 	checkmoney 500, 0
-	goto_if_eq VAR_RESULT, FALSE, Route39_Farmhouse_EventScript_FarmerM_NotEnough
+	goto_if_eq VAR_RESULT, FALSE, Route39_FarmHouse_EventScript_FarmerM_NotEnough
 	additem ITEM_MOOMOO_MILK
-	goto_if_eq VAR_RESULT, FALSE, Route39_Farmhouse_EventScript_FarmerM_BagFull
+	goto_if_eq VAR_RESULT, FALSE, Route39_FarmHouse_EventScript_FarmerM_BagFull
 	removemoney 500
 	updatemoneybox 0
 	msgbox Route39FarmHouse_Text_WouldYouLikeAnother, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, TRUE, Route39_Farmhouse_EventScript_FarmerMBuyMilk
+	goto_if_eq VAR_RESULT, TRUE, Route39_FarmHouse_EventScript_FarmerMBuyMilk
 
 	
 	msgbox Route39_Text_FarmerMGotMilk, MSGBOX_DEFAULT
@@ -59,20 +59,20 @@ Route39_Farmhouse_EventScript_FarmerMBuyMilk::
 	release
 	end
 
-Route39_Farmhouse_EventScript_FarmerM_Sick::
+Route39_FarmHouse_EventScript_FarmerM_Sick::
 	msgbox Route39_Text_FarmerMSickCow, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
 
-Route39_Farmhouse_EventScript_FarmerM_BagFull::
+Route39_FarmHouse_EventScript_FarmerM_BagFull::
 	msgbox Route39_Text_FarmerMNoRoom, MSGBOX_DEFAULT
 	hidemoneybox
 	closemessage
 	release
 	end
 
-Route39_Farmhouse_EventScript_FarmerM_NotEnough::
+Route39_FarmHouse_EventScript_FarmerM_NotEnough::
 	msgbox Route39_Text_FarmerMNoMoney, MSGBOX_DEFAULT
 	closemessage
 	hidemoneybox

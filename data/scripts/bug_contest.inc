@@ -110,12 +110,12 @@ BugContest_EventScript_End::
 	setvar VAR_BUG_CONTEST_STATE, 0
 	special RemoveSafariBalls
 	goto_if_eq VAR_TEMP_1, 1, BugContest_EventScript_SideEnd
-	warp MAP_NATIONAL_PARK_GATES, 7, 2
+	warp MAP_GATE_NATIONAL_PARK, 7, 2
 	releaseall
 	end
 
 BugContest_EventScript_SideEnd::
-	warp MAP_NATIONAL_PARK_GATES, 35, 7
+	warp MAP_GATE_NATIONAL_PARK, 35, 7
 	releaseall
 	end
 

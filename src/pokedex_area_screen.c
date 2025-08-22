@@ -31,7 +31,7 @@
 
 // Only maps in the following map groups have their encounters considered for the area screen
 #define MAP_GROUP_TOWNS_AND_ROUTES MAP_GROUP(NEW_BARK_TOWN)
-#define MAP_GROUP_DUNGEONS MAP_GROUP(DARK_CAVE_1)
+#define MAP_GROUP_DUNGEONS MAP_GROUP(DARK_CAVE_SOUTH_SIDE)
 #define MAP_GROUP_SPECIAL_AREA MAP_GROUP(SAFARI_ZONE_TOP_LEFT)
 
 #define AREA_SCREEN_WIDTH 32

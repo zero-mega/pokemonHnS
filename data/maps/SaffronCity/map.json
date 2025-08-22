@@ -197,42 +197,42 @@
       "x": 26,
       "y": 5,
       "elevation": 0,
-      "dest_map": "MAP_ROUTE5_SAFFRON_GATE",
+      "dest_map": "MAP_GATE_SAFFRON_CITY_ROUTE5",
       "dest_warp_id": "1"
     },
     {
       "x": 26,
       "y": 46,
       "elevation": 0,
-      "dest_map": "MAP_SAFFRON_ROUTE6GATE",
+      "dest_map": "MAP_GATE_SAFFRON_CITY_ROUTE6",
       "dest_warp_id": "0"
     },
     {
       "x": 0,
       "y": 27,
       "elevation": 0,
-      "dest_map": "MAP_ROUTE7_SAFFRON_GATE",
+      "dest_map": "MAP_GATE_SAFFRON_CITY_ROUTE7",
       "dest_warp_id": "0"
     },
     {
       "x": 50,
       "y": 27,
       "elevation": 0,
-      "dest_map": "MAP_SAFFRON_ROUTE8GATE",
+      "dest_map": "MAP_GATE_SAFFRON_CITY_ROUTE8",
       "dest_warp_id": "0"
     },
     {
       "x": 27,
       "y": 46,
       "elevation": 0,
-      "dest_map": "MAP_SAFFRON_ROUTE6GATE",
+      "dest_map": "MAP_GATE_SAFFRON_CITY_ROUTE6",
       "dest_warp_id": "0"
     },
     {
       "x": 27,
       "y": 5,
       "elevation": 0,
-      "dest_map": "MAP_ROUTE5_SAFFRON_GATE",
+      "dest_map": "MAP_GATE_SAFFRON_CITY_ROUTE5",
       "dest_warp_id": "1"
     },
     {

@@ -278,14 +278,14 @@
       "x": 38,
       "y": 27,
       "elevation": 0,
-      "dest_map": "MAP_ROUTE32_RUINS_GATE",
+      "dest_map": "MAP_GATE_RUINS_OF_ALPH_ROUTE32",
       "dest_warp_id": "1"
     },
     {
       "x": 20,
       "y": 6,
       "elevation": 0,
-      "dest_map": "MAP_ROUTE36_RUINS_GATE",
+      "dest_map": "MAP_GATE_RUINS_OF_ALPH_ROUTE36",
       "dest_warp_id": "1"
     },
     {
@@ -306,7 +306,7 @@
       "x": 36,
       "y": 16,
       "elevation": 0,
-      "dest_map": "MAP_RUINS_OF_ALPH_OFFICE",
+      "dest_map": "MAP_RUINS_OF_ALPH_LAB",
       "dest_warp_id": "0"
     },
     {
