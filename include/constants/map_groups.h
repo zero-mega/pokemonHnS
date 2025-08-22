@@ -186,27 +186,27 @@
 #define MAP_BLACKTHORN_CITY_HOUSE3     (6 | (10 << 8))
 
 // gMapGroup_IndoorPallet
-#define MAP_PALLET_TOWN_REDS_HOUSE1 (0 | (11 << 8))
-#define MAP_PALLET_TOWN_REDS_HOUSE2 (1 | (11 << 8))
+#define MAP_PALLET_TOWN_REDS_HOUSE_1F (0 | (11 << 8))
+#define MAP_PALLET_TOWN_REDS_HOUSE_2F (1 | (11 << 8))
 #define MAP_PALLET_TOWN_HOUSE2      (2 | (11 << 8))
 #define MAP_PALLET_TOWN_HOUSE3      (3 | (11 << 8))
 #define MAP_PALLET_TOWN_LAB         (4 | (11 << 8))
 
 // gMapGroup_IndoorViridian
-#define MAP_VIRIDIAN_POKECENTER  (0 | (12 << 8))
-#define MAP_VIRIDIAN_POKEMART    (1 | (12 << 8))
+#define MAP_VIRIDIAN_CITY_POKEMON_CENTER  (0 | (12 << 8))
+#define MAP_VIRIDIAN_CITY_MART    (1 | (12 << 8))
 #define MAP_VIRIDIAN_CITY_HOUSE1 (2 | (12 << 8))
 #define MAP_VIRIDIAN_CITY_HOUSE2 (3 | (12 << 8))
 #define MAP_VIRIDIAN_CITY_GYM    (4 | (12 << 8))
 
 // gMapGroup_IndoorPewter
-#define MAP_PEWTER_POKECENTER   (0 | (13 << 8))
-#define MAP_PEWTER_POKEMART     (1 | (13 << 8))
+#define MAP_PEWTER_CITY_POKEMON_CENTER   (0 | (13 << 8))
+#define MAP_PEWTER_CITY_MART     (1 | (13 << 8))
 #define MAP_PEWTER_CITY_HOUSE1  (2 | (13 << 8))
 #define MAP_PEWTER_CITY_HOUSE2  (3 | (13 << 8))
 #define MAP_PEWTER_CITY_GYM     (4 | (13 << 8))
-#define MAP_PEWTER_CITY_MUSEUM1 (5 | (13 << 8))
-#define MAP_PEWTER_CITY_MUSEUM2 (6 | (13 << 8))
+#define MAP_PEWTER_CITY_MUSEUM_1F (5 | (13 << 8))
+#define MAP_PEWTER_CITY_MUSEUM_2F (6 | (13 << 8))
 
 // gMapGroup_IndoorCerulean
 #define MAP_CERULEAN_POKECENTER     (0 | (14 << 8))

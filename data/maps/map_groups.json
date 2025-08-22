@@ -214,27 +214,27 @@
     "BlackthornCity_House3"
   ],
   "gMapGroup_IndoorPallet": [
-    "PalletTownRedsHouse1",
-    "PalletTownRedsHouse2",
-    "PalletTownHouse2",
-    "PalletTownHouse3",
-    "PalletTownLab"
+    "PalletTown_RedsHouse_1F",
+    "PalletTown_RedsHouse_2F",
+    "PalletTown_House2",
+    "PalletTown_House3",
+    "PalletTown_Lab"
   ],
   "gMapGroup_IndoorViridian": [
-    "ViridianPokecenter",
-    "ViridianPokemart",
-    "ViridianCityHouse1",
-    "ViridianCityHouse2",
-    "ViridianCityGym"
+    "ViridianCity_PokemonCenter",
+    "ViridianCity_Mart",
+    "ViridianCity_House1",
+    "ViridianCity_House2",
+    "ViridianCity_Gym"
   ],
   "gMapGroup_IndoorPewter": [
-    "PewterPokecenter",
-    "PewterPokemart",
-    "PewterCityHouse1",
-    "PewterCityHouse2",
-    "PewterCityGym",
-    "PewterCityMuseum1",
-    "PewterCityMuseum2"
+    "PewterCity_PokemonCenter",
+    "PewterCity_Mart",
+    "PewterCity_House1",
+    "PewterCity_House2",
+    "PewterCity_Gym",
+    "PewterCity_Museum_1F",
+    "PewterCity_Museum_2F"
   ],
   "gMapGroup_IndoorCerulean": [
     "CeruleanPokecenter",

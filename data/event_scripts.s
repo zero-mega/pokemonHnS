@@ -1440,9 +1440,9 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/MtSilverPokecenter/scripts.inc"
 
-	.include "data/maps/ViridianPokecenter/scripts.inc"
+	.include "data/maps/ViridianCity_PokemonCenter/scripts.inc"
 
-	.include "data/maps/PewterPokecenter/scripts.inc"
+	.include "data/maps/PewterCity_PokemonCenter/scripts.inc"
 
 	.include "data/maps/CeruleanPokecenter/scripts.inc"
 
@@ -1540,9 +1540,9 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/BlackthornCity_Mart/scripts.inc"
 
-	.include "data/maps/ViridianPokemart/scripts.inc"
+	.include "data/maps/ViridianCity_Mart/scripts.inc"
 
-	.include "data/maps/PewterPokemart/scripts.inc"
+	.include "data/maps/PewterCity_Mart/scripts.inc"
 
 	.include "data/maps/CeruleanPokemart/scripts.inc"
 
@@ -1698,21 +1698,21 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/NewMap1/scripts.inc"
 
-	.include "data/maps/PalletTownRedsHouse1/scripts.inc"
+	.include "data/maps/PalletTown_RedsHouse_1F/scripts.inc"
 
-	.include "data/maps/PalletTownHouse2/scripts.inc"
+	.include "data/maps/PalletTown_House2/scripts.inc"
 
-	.include "data/maps/PalletTownHouse3/scripts.inc"
+	.include "data/maps/PalletTown_House3/scripts.inc"
 
-	.include "data/maps/PalletTownLab/scripts.inc"
+	.include "data/maps/PalletTown_Lab/scripts.inc"
 
-	.include "data/maps/ViridianCityHouse1/scripts.inc"
+	.include "data/maps/ViridianCity_House1/scripts.inc"
 
-	.include "data/maps/PalletTownRedsHouse2/scripts.inc"
+	.include "data/maps/PalletTown_RedsHouse_2F/scripts.inc"
 
-	.include "data/maps/ViridianCityHouse2/scripts.inc"
+	.include "data/maps/ViridianCity_House2/scripts.inc"
 
-	.include "data/maps/ViridianCityGym/scripts.inc"
+	.include "data/maps/ViridianCity_Gym/scripts.inc"
 
 	.include "data/maps/Route2_ViridianForestGate/scripts.inc"
 
@@ -1722,15 +1722,15 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/Route2House/scripts.inc"
 
-	.include "data/maps/PewterCityHouse1/scripts.inc"
+	.include "data/maps/PewterCity_House1/scripts.inc"
 
-	.include "data/maps/PewterCityHouse2/scripts.inc"
+	.include "data/maps/PewterCity_House2/scripts.inc"
 
-	.include "data/maps/PewterCityGym/scripts.inc"
+	.include "data/maps/PewterCity_Gym/scripts.inc"
 
-	.include "data/maps/PewterCityMuseum1/scripts.inc"
+	.include "data/maps/PewterCity_Museum_1F/scripts.inc"
 
-	.include "data/maps/PewterCityMuseum2/scripts.inc"
+	.include "data/maps/PewterCity_Museum_2F/scripts.inc"
 
 	.include "data/maps/MtMoonHouse/scripts.inc"
 

@@ -6012,24 +6012,24 @@
       "blockdata_filepath": "data/layouts/MtSilverPokecenter/map.bin"
     },
     {
-      "id": "LAYOUT_VIRIDIAN_POKECENTER",
-      "name": "ViridianPokecenter_Layout",
+      "id": "LAYOUT_VIRIDIAN_CITY_POKEMON_CENTER",
+      "name": "ViridianCity_PokemonCenter_Layout",
       "width": 15,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Kanto_PokemonCenter",
-      "border_filepath": "data/layouts/ViridianPokecenter/border.bin",
-      "blockdata_filepath": "data/layouts/ViridianPokecenter/map.bin"
+      "border_filepath": "data/layouts/ViridianCity_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/ViridianCity_PokemonCenter/map.bin"
     },
     {
-      "id": "LAYOUT_PEWTER_POKECENTER",
-      "name": "PewterPokecenter_Layout",
+      "id": "LAYOUT_PEWTER_CITY_POKEMON_CENTER",
+      "name": "PewterCity_PokemonCenter_Layout",
       "width": 15,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Kanto_PokemonCenter",
-      "border_filepath": "data/layouts/PewterPokecenter/border.bin",
-      "blockdata_filepath": "data/layouts/PewterPokecenter/map.bin"
+      "border_filepath": "data/layouts/PewterCity_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/PewterCity_PokemonCenter/map.bin"
     },
     {
       "id": "LAYOUT_CERULEAN_POKECENTER",
@@ -6512,24 +6512,24 @@
       "blockdata_filepath": "data/layouts/BlackthornCity_Mart/map.bin"
     },
     {
-      "id": "LAYOUT_VIRIDIAN_POKEMART",
-      "name": "ViridianPokemart_Layout",
+      "id": "LAYOUT_VIRIDIAN_CITY_MART",
+      "name": "ViridianCity_Mart_Layout",
       "width": 11,
       "height": 9,
       "primary_tileset": "gTileset_Kanto_Building",
       "secondary_tileset": "gTileset_Kanto_Mart",
-      "border_filepath": "data/layouts/ViridianPokemart/border.bin",
-      "blockdata_filepath": "data/layouts/ViridianPokemart/map.bin"
+      "border_filepath": "data/layouts/ViridianCity_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/ViridianCity_Mart/map.bin"
     },
     {
-      "id": "LAYOUT_PEWTER_POKEMART",
-      "name": "PewterPokemart_Layout",
+      "id": "LAYOUT_PEWTER_CITY_MART",
+      "name": "PewterCity_Mart_Layout",
       "width": 11,
       "height": 9,
       "primary_tileset": "gTileset_Kanto_Building",
       "secondary_tileset": "gTileset_Kanto_Mart",
-      "border_filepath": "data/layouts/PewterPokemart/border.bin",
-      "blockdata_filepath": "data/layouts/PewterPokemart/map.bin"
+      "border_filepath": "data/layouts/PewterCity_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/PewterCity_Mart/map.bin"
     },
     {
       "id": "LAYOUT_CERULEAN_POKEMART",
@@ -7302,84 +7302,84 @@
       "blockdata_filepath": "data/layouts/NewMap1/map.bin"
     },
     {
-      "id": "LAYOUT_PALLET_TOWN_REDS_HOUSE1",
-      "name": "PalletTownRedsHouse1_Layout",
+      "id": "LAYOUT_PALLET_TOWN_REDS_HOUSE_1F",
+      "name": "PalletTown_RedsHouse_1F_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/PalletTownRedsHouse1/border.bin",
-      "blockdata_filepath": "data/layouts/PalletTownRedsHouse1/map.bin"
+      "border_filepath": "data/layouts/PalletTown_RedsHouse_1F/border.bin",
+      "blockdata_filepath": "data/layouts/PalletTown_RedsHouse_1F/map.bin"
     },
     {
       "id": "LAYOUT_PALLET_TOWN_HOUSE2",
-      "name": "PalletTownHouse2_Layout",
+      "name": "PalletTown_House2_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/PalletTownHouse2/border.bin",
-      "blockdata_filepath": "data/layouts/PalletTownHouse2/map.bin"
+      "border_filepath": "data/layouts/PalletTown_House2/border.bin",
+      "blockdata_filepath": "data/layouts/PalletTown_House2/map.bin"
     },
     {
       "id": "LAYOUT_PALLET_TOWN_HOUSE3",
-      "name": "PalletTownHouse3_Layout",
+      "name": "PalletTown_House3_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/PalletTownHouse3/border.bin",
-      "blockdata_filepath": "data/layouts/PalletTownHouse3/map.bin"
+      "border_filepath": "data/layouts/PalletTown_House3/border.bin",
+      "blockdata_filepath": "data/layouts/PalletTown_House3/map.bin"
     },
     {
       "id": "LAYOUT_PALLET_TOWN_LAB",
-      "name": "PalletTownLab_Layout",
+      "name": "PalletTown_Lab_Layout",
       "width": 32,
       "height": 28,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/PalletTownLab/border.bin",
-      "blockdata_filepath": "data/layouts/PalletTownLab/map.bin"
+      "border_filepath": "data/layouts/PalletTown_Lab/border.bin",
+      "blockdata_filepath": "data/layouts/PalletTown_Lab/map.bin"
     },
     {
       "id": "LAYOUT_VIRIDIAN_CITY_HOUSE1",
-      "name": "ViridianCityHouse1_Layout",
+      "name": "ViridianCity_House1_Layout",
       "width": 17,
       "height": 14,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/ViridianCityHouse1/border.bin",
-      "blockdata_filepath": "data/layouts/ViridianCityHouse1/map.bin"
+      "border_filepath": "data/layouts/ViridianCity_House1/border.bin",
+      "blockdata_filepath": "data/layouts/ViridianCity_House1/map.bin"
     },
     {
-      "id": "LAYOUT_PALLET_TOWN_REDS_HOUSE2",
+      "id": "LAYOUT_PALLET_TOWN_REDS_HOUSE_2F",
       "name": "PalletTownHouseRedsHouse2_Layout",
       "width": 11,
       "height": 9,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_PlayersHouse_20",
-      "border_filepath": "data/layouts/PalletTownRedsHouse2/border.bin",
-      "blockdata_filepath": "data/layouts/PalletTownRedsHouse2/map.bin"
+      "border_filepath": "data/layouts/PalletTown_RedsHouse_2F/border.bin",
+      "blockdata_filepath": "data/layouts/PalletTown_RedsHouse_2F/map.bin"
     },
     {
       "id": "LAYOUT_VIRIDIAN_CITY_HOUSE2",
-      "name": "ViridianCityHouse2_Layout",
+      "name": "ViridianCity_House2_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/ViridianCityHouse2/border.bin",
-      "blockdata_filepath": "data/layouts/ViridianCityHouse2/map.bin"
+      "border_filepath": "data/layouts/ViridianCity_House2/border.bin",
+      "blockdata_filepath": "data/layouts/ViridianCity_House2/map.bin"
     },
     {
       "id": "LAYOUT_VIRIDIAN_CITY_GYM",
-      "name": "ViridianCityGym_Layout",
+      "name": "ViridianCity_Gym_Layout",
       "width": 11,
       "height": 22,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_ViridianGym_23",
-      "border_filepath": "data/layouts/ViridianCityGym/border.bin",
-      "blockdata_filepath": "data/layouts/ViridianCityGym/map.bin"
+      "border_filepath": "data/layouts/ViridianCity_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/ViridianCity_Gym/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE2_VIRIDIAN_FOREST_GATE",
@@ -7423,53 +7423,53 @@
     },
     {
       "id": "LAYOUT_PEWTER_CITY_HOUSE1",
-      "name": "PewterCityHouse1_Layout",
+      "name": "PewterCity_House1_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/PewterCityHouse1/border.bin",
-      "blockdata_filepath": "data/layouts/PewterCityHouse1/map.bin"
+      "border_filepath": "data/layouts/PewterCity_House1/border.bin",
+      "blockdata_filepath": "data/layouts/PewterCity_House1/map.bin"
     },
     {
       "id": "LAYOUT_PEWTER_CITY_HOUSE2",
-      "name": "PewterCityHouse2_Layout",
+      "name": "PewterCity_House2_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/PewterCityHouse2/border.bin",
-      "blockdata_filepath": "data/layouts/PewterCityHouse2/map.bin"
+      "border_filepath": "data/layouts/PewterCity_House2/border.bin",
+      "blockdata_filepath": "data/layouts/PewterCity_House2/map.bin"
     },
     {
       "id": "LAYOUT_PEWTER_CITY_GYM",
-      "name": "PewterCityGym_Layout",
+      "name": "PewterCity_Gym_Layout",
       "width": 13,
       "height": 16,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Theater_26",
-      "border_filepath": "data/layouts/PewterCityGym/border.bin",
-      "blockdata_filepath": "data/layouts/PewterCityGym/map.bin"
+      "border_filepath": "data/layouts/PewterCity_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/PewterCity_Gym/map.bin"
     },
     {
-      "id": "LAYOUT_PEWTER_CITY_MUSEUM1",
-      "name": "PewterCityMuseum1_Layout",
+      "id": "LAYOUT_PEWTER_CITY_MUSEUM_1F",
+      "name": "PewterCity_Museum_1F_Layout",
       "width": 28,
       "height": 11,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Museum",
-      "border_filepath": "data/layouts/PewterCityMuseum1/border.bin",
-      "blockdata_filepath": "data/layouts/PewterCityMuseum1/map.bin"
+      "border_filepath": "data/layouts/PewterCity_Museum_1F/border.bin",
+      "blockdata_filepath": "data/layouts/PewterCity_Museum_1F/map.bin"
     },
     {
-      "id": "LAYOUT_PEWTER_CITY_MUSEUM2",
-      "name": "PewterCityMuseum2_Layout",
+      "id": "LAYOUT_PEWTER_CITY_MUSEUM_2F",
+      "name": "PewterCity_Museum_2F_Layout",
       "width": 19,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Museum",
-      "border_filepath": "data/layouts/PewterCityMuseum2/border.bin",
-      "blockdata_filepath": "data/layouts/PewterCityMuseum2/map.bin"
+      "border_filepath": "data/layouts/PewterCity_Museum_2F/border.bin",
+      "blockdata_filepath": "data/layouts/PewterCity_Museum_2F/map.bin"
     },
     {
       "id": "LAYOUT_MT_MOON_HOUSE",
