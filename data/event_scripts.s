@@ -1424,7 +1424,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/VioletCity_PokemonCenter/scripts.inc"
 
-	.include "data/maps/Azalea_Pokecenter/scripts.inc"
+	.include "data/maps/AzaleaTown_PokemonCenter/scripts.inc"
 
 	.include "data/maps/GoldenrodPokecenter/scripts.inc"
 
@@ -1528,9 +1528,9 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/Route39_Farmhouse/scripts.inc"
 
-	.include "data/maps/AzaleaKurtsHouse/scripts.inc"
+	.include "data/maps/AzaleaTown_KurtsHouse/scripts.inc"
 
-	.include "data/maps/AzaleaPokemart/scripts.inc"
+	.include "data/maps/AzaleaTown_Mart/scripts.inc"
 
 	.include "data/maps/VioletCity_Mart/scripts.inc"
 
@@ -1598,9 +1598,9 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/RuinsOfAlphOffice/scripts.inc"
 
-	.include "data/maps/AzaleaHouse1/scripts.inc"
+	.include "data/maps/AzaleaTown_House1/scripts.inc"
 
-	.include "data/maps/AzaleaGym/scripts.inc"
+	.include "data/maps/AzaleaTown_Gym/scripts.inc"
 
 	.include "data/maps/Route34DayCare/scripts.inc"
 

@@ -1316,7 +1316,7 @@
 #define FLAG_ITEM_ROUTE39_TM_BRICK_BREAK                                           0x4EF // Unused Flag
 
 #define FLAG_DEFEATED_VIOLET_GYM                                  0x4F0
-#define FLAG_DEFEATED_AZALEA_GYM                                   0x4F1
+#define FLAG_DEFEATED_AZALEA_TOWN_GYM                                   0x4F1
 #define FLAG_DEFEATED_GOLDENROD_GYM                                  0x4F2
 #define FLAG_DEFEATED_ECRUTEAK_GYM                                 0x4F3
 #define FLAG_DEFEATED_CIANWOOD_GYM                                 0x4F4

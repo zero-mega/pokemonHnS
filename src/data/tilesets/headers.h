@@ -1345,15 +1345,15 @@ const struct Tileset gTileset_GreenHouses =
     .callback = NULL,
 };
 
-const struct Tileset gTileset_AzaleaGym_29 =
+const struct Tileset gTileset_AzaleaTown_Gym_29 =
 {
     .isCompressed = TRUE,
     .isSecondary = TRUE,
-    .tiles = gTilesetTiles_AzaleaGym_29,
-    .palettes = gTilesetPalettes_AzaleaGym_29,
-    .metatiles = gMetatiles_AzaleaGym_29,
-    .metatileAttributes = gMetatileAttributes_AzaleaGym_29,
-    .callback = InitTilesetAnim_AzaleaGym_29,
+    .tiles = gTilesetTiles_AzaleaTown_Gym_29,
+    .palettes = gTilesetPalettes_AzaleaTown_Gym_29,
+    .metatiles = gMetatiles_AzaleaTown_Gym_29,
+    .metatileAttributes = gMetatileAttributes_AzaleaTown_Gym_29,
+    .callback = InitTilesetAnim_AzaleaTown_Gym_29,
 };
 
 const struct Tileset gTileset_Goldenrod =

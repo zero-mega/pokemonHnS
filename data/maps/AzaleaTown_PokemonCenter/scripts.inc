@@ -1,6 +1,6 @@
 .set LOCALID_NURSE, 1
 
-Azalea_Pokecenter_MapScripts::
+AzaleaTown_PokemonCenter_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, AzaleaTown_Pokecenter_OnTransition
 	.byte 0
 

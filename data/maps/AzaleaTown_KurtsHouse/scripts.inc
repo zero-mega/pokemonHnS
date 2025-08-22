@@ -1,26 +1,26 @@
 .set LOCALID_AZALEA_TOWN_KURT_BEFORE, 1
 .set LOCALID_AZALEA_TOWN_KURT, 3
 
-AzaleaKurtsHouse_MapScripts::
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, AzaleaKurtsHouse_OnFrame
-	map_script MAP_SCRIPT_ON_TRANSITION, AzaleaKurtsHouse_OnTransition
+AzaleaTown_KurtsHouse_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, AzaleaTown_KurtsHouse_OnFrame
+	map_script MAP_SCRIPT_ON_TRANSITION, AzaleaTown_KurtsHouse_OnTransition
 	.byte 0
 
-AzaleaKurtsHouse_OnTransition::
-	goto_if_eq VAR_AZALEA_TOWN_STATE, 3, AzaleaKurtsHouse_EventScript_ReturnFromWellSetup
+AzaleaTown_KurtsHouse_OnTransition::
+	goto_if_eq VAR_AZALEA_TOWN_STATE, 3, AzaleaTown_KurtsHouse_EventScript_ReturnFromWellSetup
 	end
 
-AzaleaKurtsHouse_OnFrame::
-	map_script_2 VAR_AZALEA_TOWN_STATE, 3, AzaleaKurtsHouse_EventScript_ReturnFromWell
+AzaleaTown_KurtsHouse_OnFrame::
+	map_script_2 VAR_AZALEA_TOWN_STATE, 3, AzaleaTown_KurtsHouse_EventScript_ReturnFromWell
 	.2byte 0
 
-AzaleaKurtsHouse_EventScript_KurtBefore::
+AzaleaTown_KurtsHouse_EventScript_KurtBefore::
 	lock
 	faceplayer
 	msgbox KurtsHouse_Text_KurtMakingBallsMustWait, MSGBOX_DEFAULT
 	closemessage
-	goto_if_eq VAR_FACING, DIR_NORTH, AzaleaKurtsHouse_EventScript_PlayerMove
-	applymovement LOCALID_AZALEA_TOWN_KURT_BEFORE, AzaleaKurtsHouse_Movement_KurtWalkDown
+	goto_if_eq VAR_FACING, DIR_NORTH, AzaleaTown_KurtsHouse_EventScript_PlayerMove
+	applymovement LOCALID_AZALEA_TOWN_KURT_BEFORE, AzaleaTown_KurtsHouse_Movement_KurtWalkDown
 	waitmovement 0
 	playse SE_EXIT
 	removeobject LOCALID_AZALEA_TOWN_KURT_BEFORE
@@ -30,10 +30,10 @@ AzaleaKurtsHouse_EventScript_KurtBefore::
 	release
 	end
 
-AzaleaKurtsHouse_EventScript_PlayerMove::
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaKurtsHouse_Movement_Player
+AzaleaTown_KurtsHouse_EventScript_PlayerMove::
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_KurtsHouse_Movement_Player
 	waitmovement 0
-	applymovement LOCALID_AZALEA_TOWN_KURT_BEFORE, AzaleaKurtsHouse_Movement_KurtWalkDown
+	applymovement LOCALID_AZALEA_TOWN_KURT_BEFORE, AzaleaTown_KurtsHouse_Movement_KurtWalkDown
 	waitmovement 0
 	playse SE_EXIT
 	removeobject LOCALID_AZALEA_TOWN_KURT_BEFORE
@@ -42,51 +42,51 @@ AzaleaKurtsHouse_EventScript_PlayerMove::
 	release
 	end
 
-AzaleaKurtsHouse_EventScript_Girl::
+AzaleaTown_KurtsHouse_EventScript_Girl::
 	lock
 	faceplayer
-	goto_if_unset FLAG_HIDE_KURT_2, AzaleaKurtsHouse_EventScript_Girl2
-	goto_if_set FLAG_HIDE_KURT_1, AzaleaKurtsHouse_EventScript_Girl3
+	goto_if_unset FLAG_HIDE_KURT_2, AzaleaTown_KurtsHouse_EventScript_Girl2
+	goto_if_set FLAG_HIDE_KURT_1, AzaleaTown_KurtsHouse_EventScript_Girl3
 	msgbox KurtsHouse_Text_GranddaughterSlowpokeGone, MSGBOX_DEFAULT
 	release
 	end
 
-AzaleaKurtsHouse_EventScript_Girl2::
-	goto_if_eq VAR_AZALEA_TOWN_STATE, 3, AzaleaKurtsHouse_EventScript_Girl4
-	goto_if_eq VAR_AZALEA_TOWN_STATE, 4, AzaleaKurtsHouse_EventScript_Girl4
-	goto_if_eq VAR_AZALEA_TOWN_STATE, 5, AzaleaKurtsHouse_EventScript_Girl4
-	goto_if_eq VAR_AZALEA_TOWN_STATE, 6, AzaleaKurtsHouse_EventScript_Girl4
-	goto_if_eq VAR_AZALEA_TOWN_STATE, 8, AzaleaKurtsHouse_EventScript_Girl5
-	goto_if_eq VAR_AZALEA_TOWN_STATE, 9, AzaleaKurtsHouse_EventScript_Girl5
+AzaleaTown_KurtsHouse_EventScript_Girl2::
+	goto_if_eq VAR_AZALEA_TOWN_STATE, 3, AzaleaTown_KurtsHouse_EventScript_Girl4
+	goto_if_eq VAR_AZALEA_TOWN_STATE, 4, AzaleaTown_KurtsHouse_EventScript_Girl4
+	goto_if_eq VAR_AZALEA_TOWN_STATE, 5, AzaleaTown_KurtsHouse_EventScript_Girl4
+	goto_if_eq VAR_AZALEA_TOWN_STATE, 6, AzaleaTown_KurtsHouse_EventScript_Girl4
+	goto_if_eq VAR_AZALEA_TOWN_STATE, 8, AzaleaTown_KurtsHouse_EventScript_Girl5
+	goto_if_eq VAR_AZALEA_TOWN_STATE, 9, AzaleaTown_KurtsHouse_EventScript_Girl5
 
 	msgbox KurtsHouse_Text_GranddaughterDad, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
 
-AzaleaKurtsHouse_EventScript_Girl3::
+AzaleaTown_KurtsHouse_EventScript_Girl3::
 	msgbox KurtsHouse_Text_GranddaughterLonely, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
 
-AzaleaKurtsHouse_EventScript_Girl4::
+AzaleaTown_KurtsHouse_EventScript_Girl4::
 	msgbox KurtsHouse_Text_GranddaughterSlowpokeBack, MSGBOX_DEFAULT
 	closemessage
 	release
 	end	
 
-AzaleaKurtsHouse_EventScript_Girl5::
+AzaleaTown_KurtsHouse_EventScript_Girl5::
 	msgbox KurtsHouse_Text_GranddaughterSound, MSGBOX_DEFAULT
 	closemessage
 	release
 	end	
 
-AzaleaKurtsHouse_EventScript_ReturnFromWellSetup::
+AzaleaTown_KurtsHouse_EventScript_ReturnFromWellSetup::
 	setobjectmovementtype LOCALID_AZALEA_TOWN_KURT, MOVEMENT_TYPE_FACE_DOWN
 	end
 
-AzaleaKurtsHouse_EventScript_ReturnFromWell::
+AzaleaTown_KurtsHouse_EventScript_ReturnFromWell::
 	lock
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
 	msgbox KurtsHouse_Text_KurtHonoredToMakeBalls, MSGBOX_DEFAULT
@@ -99,38 +99,38 @@ AzaleaKurtsHouse_EventScript_ReturnFromWell::
 	release
 	end
 
-AzaleaKurtsHouse_EventScript_KurtCheckGSBall::
+AzaleaTown_KurtsHouse_EventScript_KurtCheckGSBall::
 	checkitem ITEM_GS_BALL
-	goto_if_eq VAR_RESULT, TRUE, AzaleaKurtsHouse_EventScript_KurtGsBall
+	goto_if_eq VAR_RESULT, TRUE, AzaleaTown_KurtsHouse_EventScript_KurtGsBall
 	return
 
-AzaleaKurtsHouse_EventScript_Kurt::
+AzaleaTown_KurtsHouse_EventScript_Kurt::
 	lock
 	faceplayer
-	goto_if_eq VAR_AZALEA_TOWN_STATE, 8, AzaleaKurtsHouse_EventScript_KurtGsBall2
-	goto_if_eq VAR_AZALEA_TOWN_STATE, 9, AzaleaKurtsHouse_EventScript_KurtGsBall3
+	goto_if_eq VAR_AZALEA_TOWN_STATE, 8, AzaleaTown_KurtsHouse_EventScript_KurtGsBall2
+	goto_if_eq VAR_AZALEA_TOWN_STATE, 9, AzaleaTown_KurtsHouse_EventScript_KurtGsBall3
 	msgbox KurtsHouse_Text_KurtAskYouHaveAnApricorn, MSGBOX_DEFAULT
 	closemessage
-	call_if_unset FLAG_CAUGHT_CELEBI, AzaleaKurtsHouse_EventScript_KurtCheckGSBall
-AzaleaKurtsHouse_EventScript_Kurt2::
+	call_if_unset FLAG_CAUGHT_CELEBI, AzaleaTown_KurtsHouse_EventScript_KurtCheckGSBall
+AzaleaTown_KurtsHouse_EventScript_Kurt2::
 	multichoice 20, 0, MULTI_KURT_BALLS, FALSE
 	switch VAR_RESULT
-	case 0, AzaleaKurtsHouse_EventScript_Kurt_Love
-	case 1, AzaleaKurtsHouse_EventScript_Kurt_Lure
-	case 2, AzaleaKurtsHouse_EventScript_Kurt_Friend
-	case 3, AzaleaKurtsHouse_EventScript_Kurt_Heavy
-	case 4, AzaleaKurtsHouse_EventScript_Kurt_Moon
-	case 5, AzaleaKurtsHouse_EventScript_Kurt_Fast
-	case 6, AzaleaKurtsHouse_EventScript_Kurt_Level
-	case 7, AzaleaKurtsHouse_EventScript_KurtCancel
-	case MULTI_B_PRESSED, AzaleaKurtsHouse_EventScript_KurtCancel
+	case 0, AzaleaTown_KurtsHouse_EventScript_Kurt_Love
+	case 1, AzaleaTown_KurtsHouse_EventScript_Kurt_Lure
+	case 2, AzaleaTown_KurtsHouse_EventScript_Kurt_Friend
+	case 3, AzaleaTown_KurtsHouse_EventScript_Kurt_Heavy
+	case 4, AzaleaTown_KurtsHouse_EventScript_Kurt_Moon
+	case 5, AzaleaTown_KurtsHouse_EventScript_Kurt_Fast
+	case 6, AzaleaTown_KurtsHouse_EventScript_Kurt_Level
+	case 7, AzaleaTown_KurtsHouse_EventScript_KurtCancel
+	case MULTI_B_PRESSED, AzaleaTown_KurtsHouse_EventScript_KurtCancel
 	closemessage
 
-AzaleaKurtsHouse_EventScript_Kurt_Love::
+AzaleaTown_KurtsHouse_EventScript_Kurt_Love::
 	closemessage
 	bufferitemname STR_VAR_1, ITEM_PECHA_BERRY
 	checkitem ITEM_PECHA_BERRY, 5
-	goto_if_eq VAR_RESULT, FALSE, AzaleaKurtsHouse_EventScript_DontHaveBerry
+	goto_if_eq VAR_RESULT, FALSE, AzaleaTown_KurtsHouse_EventScript_DontHaveBerry
 	msgbox KurtsHouse_Text_KurtGetStarted, MSGBOX_DEFAULT
 	closemessage
 	playse SE_BANG
@@ -150,11 +150,11 @@ AzaleaKurtsHouse_EventScript_Kurt_Love::
 	turnobject LOCALID_AZALEA_TOWN_KURT, DIR_NORTH
 	release
 	end
-AzaleaKurtsHouse_EventScript_Kurt_Lure::
+AzaleaTown_KurtsHouse_EventScript_Kurt_Lure::
 	closemessage
 	bufferitemname STR_VAR_1, ITEM_RAWST_BERRY
 	checkitem ITEM_RAWST_BERRY, 5
-	goto_if_eq VAR_RESULT, FALSE, AzaleaKurtsHouse_EventScript_DontHaveBerry
+	goto_if_eq VAR_RESULT, FALSE, AzaleaTown_KurtsHouse_EventScript_DontHaveBerry
 	msgbox KurtsHouse_Text_KurtGetStarted, MSGBOX_DEFAULT
 	closemessage
 	playse SE_BANG
@@ -174,11 +174,11 @@ AzaleaKurtsHouse_EventScript_Kurt_Lure::
 	turnobject LOCALID_AZALEA_TOWN_KURT, DIR_NORTH
 	release
 	end
-AzaleaKurtsHouse_EventScript_Kurt_Friend::
+AzaleaTown_KurtsHouse_EventScript_Kurt_Friend::
 	closemessage
 	bufferitemname STR_VAR_1, ITEM_CHERI_BERRY
 	checkitem ITEM_CHERI_BERRY, 5
-	goto_if_eq VAR_RESULT, FALSE, AzaleaKurtsHouse_EventScript_DontHaveBerry
+	goto_if_eq VAR_RESULT, FALSE, AzaleaTown_KurtsHouse_EventScript_DontHaveBerry
 	msgbox KurtsHouse_Text_KurtGetStarted, MSGBOX_DEFAULT
 	closemessage
 	playse SE_BANG
@@ -198,11 +198,11 @@ AzaleaKurtsHouse_EventScript_Kurt_Friend::
 	turnobject LOCALID_AZALEA_TOWN_KURT, DIR_NORTH
 	release
 	end
-AzaleaKurtsHouse_EventScript_Kurt_Heavy::
+AzaleaTown_KurtsHouse_EventScript_Kurt_Heavy::
 	closemessage
 	bufferitemname STR_VAR_1, ITEM_ORAN_BERRY
 	checkitem ITEM_ORAN_BERRY, 5
-	goto_if_eq VAR_RESULT, FALSE, AzaleaKurtsHouse_EventScript_DontHaveBerry
+	goto_if_eq VAR_RESULT, FALSE, AzaleaTown_KurtsHouse_EventScript_DontHaveBerry
 	msgbox KurtsHouse_Text_KurtGetStarted, MSGBOX_DEFAULT
 	closemessage
 	playse SE_BANG
@@ -222,11 +222,11 @@ AzaleaKurtsHouse_EventScript_Kurt_Heavy::
 	turnobject LOCALID_AZALEA_TOWN_KURT, DIR_NORTH
 	release
 	end
-AzaleaKurtsHouse_EventScript_Kurt_Moon::
+AzaleaTown_KurtsHouse_EventScript_Kurt_Moon::
 	closemessage
 	bufferitemname STR_VAR_1, ITEM_CHESTO_BERRY
 	checkitem ITEM_CHESTO_BERRY, 5
-	goto_if_eq VAR_RESULT, FALSE, AzaleaKurtsHouse_EventScript_DontHaveBerry
+	goto_if_eq VAR_RESULT, FALSE, AzaleaTown_KurtsHouse_EventScript_DontHaveBerry
 	msgbox KurtsHouse_Text_KurtGetStarted, MSGBOX_DEFAULT
 	closemessage
 	playse SE_BANG
@@ -246,11 +246,11 @@ AzaleaKurtsHouse_EventScript_Kurt_Moon::
 	turnobject LOCALID_AZALEA_TOWN_KURT, DIR_NORTH
 	release
 	end
-AzaleaKurtsHouse_EventScript_Kurt_Fast::
+AzaleaTown_KurtsHouse_EventScript_Kurt_Fast::
 	closemessage
 	bufferitemname STR_VAR_1, ITEM_ASPEAR_BERRY
 	checkitem ITEM_ASPEAR_BERRY, 5
-	goto_if_eq VAR_RESULT, FALSE, AzaleaKurtsHouse_EventScript_DontHaveBerry
+	goto_if_eq VAR_RESULT, FALSE, AzaleaTown_KurtsHouse_EventScript_DontHaveBerry
 	msgbox KurtsHouse_Text_KurtGetStarted, MSGBOX_DEFAULT
 	closemessage
 	playse SE_BANG
@@ -270,11 +270,11 @@ AzaleaKurtsHouse_EventScript_Kurt_Fast::
 	turnobject LOCALID_AZALEA_TOWN_KURT, DIR_NORTH
 	release
 	end
-AzaleaKurtsHouse_EventScript_Kurt_Level::
+AzaleaTown_KurtsHouse_EventScript_Kurt_Level::
 	closemessage
 	bufferitemname STR_VAR_1, ITEM_PERSIM_BERRY
 	checkitem ITEM_PERSIM_BERRY, 5
-	goto_if_eq VAR_RESULT, FALSE, AzaleaKurtsHouse_EventScript_DontHaveBerry
+	goto_if_eq VAR_RESULT, FALSE, AzaleaTown_KurtsHouse_EventScript_DontHaveBerry
 	msgbox KurtsHouse_Text_KurtGetStarted, MSGBOX_DEFAULT
 	closemessage
 	playse SE_BANG
@@ -295,20 +295,20 @@ AzaleaKurtsHouse_EventScript_Kurt_Level::
 	release
 	end
 
-AzaleaKurtsHouse_EventScript_DontHaveBerry::
+AzaleaTown_KurtsHouse_EventScript_DontHaveBerry::
 	msgbox KurtsHouse_Text_KurtThatsALetdown, MSGBOX_DEFAULT
 	closemessage
-	goto AzaleaKurtsHouse_EventScript_Kurt2
+	goto AzaleaTown_KurtsHouse_EventScript_Kurt2
 	release
 	end
 	
-AzaleaKurtsHouse_EventScript_KurtCancel::
+AzaleaTown_KurtsHouse_EventScript_KurtCancel::
 	closemessage
 	turnobject LOCALID_AZALEA_TOWN_KURT, DIR_NORTH
 	release
 	end
 
-AzaleaKurtsHouse_EventScript_KurtGsBall::
+AzaleaTown_KurtsHouse_EventScript_KurtGsBall::
 	msgbox KurtsHouse_Text_KurtWhatIsThat, MSGBOX_DEFAULT
 	closemessage
 	removeitem ITEM_GS_BALL
@@ -334,31 +334,31 @@ AzaleaKurtsHouse_EventScript_KurtGsBall::
 	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTownKurt_Movement_Look_Around
 	waitmovement 0
 	waitmovement 0
-AzaleaKurtsHouse_EventScript_KurtGsBall2::
+AzaleaTown_KurtsHouse_EventScript_KurtGsBall2::
 	msgbox KurtsHouse_Text_Kurt_Whatwasthat, MSGBOX_DEFAULT
 	setvar VAR_AZALEA_TOWN_STATE, 8
 	closemessage
 	release
 	end
 
-AzaleaKurtsHouse_EventScript_KurtGsBall3::
+AzaleaTown_KurtsHouse_EventScript_KurtGsBall3::
 	msgbox KurtsHouse_Text_Forest, MSGBOX_DEFAULT
 	closemessage
 	delay 30
 	msgbox KurtsHouse_Text_BallAnyway, MSGBOX_DEFAULT
 	closemessage
-	goto AzaleaKurtsHouse_EventScript_Kurt2
+	goto AzaleaTown_KurtsHouse_EventScript_Kurt2
 	release
 	end
 KurtsHouse_Text_BallAnyway:
 	.string "Anyway, can I make you some BALLS?$"
 
-AzaleaKurtsHouse_EventScript_OakPhoto::
+AzaleaTown_KurtsHouse_EventScript_OakPhoto::
 	msgbox KurtsHouse_Text_OakPhoto, MSGBOX_SIGN
 	closemessage
 	end
 
-AzaleaKurtsHouse_EventScript_CelebiStatue::
+AzaleaTown_KurtsHouse_EventScript_CelebiStatue::
 	msgbox KurtsHouse_Text_CelebiStatue, MSGBOX_SIGN
 	closemessage
 	end
@@ -384,14 +384,14 @@ AzaleaTownKurt_Movement_Making_Ball:
 	walk_in_place_fast_up
 	step_end
 
-AzaleaKurtsHouse_Movement_Player:
+AzaleaTown_KurtsHouse_Movement_Player:
 	face_right
 	lock_facing_direction
 	walk_left
 	unlock_facing_direction
 	step_end
 
-AzaleaKurtsHouse_Movement_KurtWalkDown:
+AzaleaTown_KurtsHouse_Movement_KurtWalkDown:
 	walk_fast_down
 	walk_fast_down
 	walk_fast_down

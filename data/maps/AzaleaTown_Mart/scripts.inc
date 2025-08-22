@@ -1,7 +1,7 @@
-AzaleaPokemart_MapScripts::
+AzaleaTown_Mart_MapScripts::
 	.byte 0
 
-AzaleaPokemart_EventScriptCooltrainerM::
+AzaleaTown_Mart_EventScriptCooltrainerM::
 	lock
 	faceplayer
 	msgbox AzaleaMart_Text_CooltrainerM, MSGBOX_DEFAULT
@@ -9,7 +9,7 @@ AzaleaPokemart_EventScriptCooltrainerM::
 	release
 	end
 
-AzaleaPokemart_EventScriptBugCatcher::
+AzaleaTown_Mart_EventScriptBugCatcher::
 	lock
 	faceplayer
 	msgbox AzaleaMart_Text_BugCatcher, MSGBOX_DEFAULT

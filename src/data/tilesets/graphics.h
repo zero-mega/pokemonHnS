@@ -2490,7 +2490,7 @@ const u16 gTilesetPalettes_GreenHouses[][16] =
 
 const u32 gTilesetTiles_GreenHouses[] = INCBIN_U32("data/tilesets/secondary/green_houses/tiles.4bpp.lz");
 
-const u16 gTilesetPalettes_AzaleaGym_29[][16] =
+const u16 gTilesetPalettes_AzaleaTown_Gym_29[][16] =
 {
     INCBIN_U16("data/tilesets/secondary/azalea_gym_29/palettes/00.gbapal"),
     INCBIN_U16("data/tilesets/secondary/azalea_gym_29/palettes/01.gbapal"),
@@ -2507,7 +2507,7 @@ const u16 gTilesetPalettes_AzaleaGym_29[][16] =
     INCBIN_U16("data/tilesets/secondary/azalea_gym_29/palettes/12.gbapal"),
 };
 
-const u32 gTilesetTiles_AzaleaGym_29[] = INCBIN_U32("data/tilesets/secondary/azalea_gym_29/tiles.4bpp.lz");
+const u32 gTilesetTiles_AzaleaTown_Gym_29[] = INCBIN_U32("data/tilesets/secondary/azalea_gym_29/tiles.4bpp.lz");
 
 const u16 gTilesetPalettes_Goldenrod[][16] =
 {

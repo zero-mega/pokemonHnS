@@ -1,7 +1,7 @@
 {
-  "id": "MAP_AZALEA_KURTS_HOUSE",
-  "name": "AzaleaKurtsHouse",
-  "layout": "LAYOUT_AZALEA_KURTS_HOUSE",
+  "id": "MAP_AZALEA_TOWN_KURTS_HOUSE",
+  "name": "AzaleaTown_KurtsHouse",
+  "layout": "LAYOUT_AZALEA_TOWN_KURTS_HOUSE",
   "music": "MUS_HG_AZALEA",
   "region_map_section": "MAPSEC_AZALEA_TOWN",
   "requires_flash": false,
@@ -24,7 +24,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "AzaleaKurtsHouse_EventScript_KurtBefore",
+      "script": "AzaleaTown_KurtsHouse_EventScript_KurtBefore",
       "flag": "FLAG_HIDE_KURT_1"
     },
     {
@@ -37,7 +37,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "AzaleaKurtsHouse_EventScript_Girl",
+      "script": "AzaleaTown_KurtsHouse_EventScript_Girl",
       "flag": "0"
     },
     {
@@ -50,7 +50,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "AzaleaKurtsHouse_EventScript_Kurt",
+      "script": "AzaleaTown_KurtsHouse_EventScript_Kurt",
       "flag": "FLAG_HIDE_KURT_2"
     },
     {
@@ -86,7 +86,7 @@
       "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "AzaleaKurtsHouse_EventScript_CelebiStatue"
+      "script": "AzaleaTown_KurtsHouse_EventScript_CelebiStatue"
     },
     {
       "type": "sign",
@@ -118,7 +118,7 @@
       "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "AzaleaKurtsHouse_EventScript_OakPhoto"
+      "script": "AzaleaTown_KurtsHouse_EventScript_OakPhoto"
     },
     {
       "type": "sign",
@@ -126,7 +126,7 @@
       "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "AzaleaKurtsHouse_EventScript_OakPhoto"
+      "script": "AzaleaTown_KurtsHouse_EventScript_OakPhoto"
     }
   ]
 }

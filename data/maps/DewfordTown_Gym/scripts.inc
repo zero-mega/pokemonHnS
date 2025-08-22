@@ -147,7 +147,7 @@ DewfordTown_Gym_EventScript_BrawlyDefeated::
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
 	msgbox DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis, MSGBOX_DEFAULT
-	setflag FLAG_DEFEATED_AZALEA_GYM
+	setflag FLAG_DEFEATED_AZALEA_TOWN_GYM
 	setflag FLAG_BADGE02_GET
 	addvar VAR_GARBAGEVAR, 1
 	call_if_eq VAR_GARBAGEVAR, 6, Common_EventScript_ReadyPetalburgGymForBattle
@@ -250,7 +250,7 @@ DewfordTown_Gym_EventScript_LilithBrightenRoom::
 DewfordTown_Gym_EventScript_GymGuide::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_AZALEA_GYM, DewfordTown_Gym_EventScript_GymGuidePostVictory
+	goto_if_set FLAG_DEFEATED_AZALEA_TOWN_GYM, DewfordTown_Gym_EventScript_GymGuidePostVictory
 	msgbox DewfordTown_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT
 	release
 	end

@@ -101,11 +101,11 @@
 #define MAP_VIOLET_CITY_GYM_UNUSED           (6 | (3 << 8))
 
 // gMapGroup_IndoorAzalea
-#define MAP_AZALEA_POKECENTER  (0 | (4 << 8))
-#define MAP_AZALEA_POKEMART    (1 | (4 << 8))
-#define MAP_AZALEA_KURTS_HOUSE (2 | (4 << 8))
-#define MAP_AZALEA_HOUSE1      (3 | (4 << 8))
-#define MAP_AZALEA_GYM         (4 | (4 << 8))
+#define MAP_AZALEA_TOWN_POKEMON_CENTER  (0 | (4 << 8))
+#define MAP_AZALEA_TOWN_MART    (1 | (4 << 8))
+#define MAP_AZALEA_TOWN_KURTS_HOUSE (2 | (4 << 8))
+#define MAP_AZALEA_TOWN_HOUSE1      (3 | (4 << 8))
+#define MAP_AZALEA_TOWN_GYM         (4 | (4 << 8))
 
 // gMapGroup_IndoorGoldenrod
 #define MAP_GOLDENROD_POKECENTER                (0 | (5 << 8))

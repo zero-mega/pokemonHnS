@@ -343,8 +343,8 @@ const u16 gMetatileAttributes_TrainerSchool[] = INCBIN_U16("data/tilesets/second
 const u16 gMetatiles_GreenHouses[] = INCBIN_U16("data/tilesets/secondary/green_houses/metatiles.bin");
 const u16 gMetatileAttributes_GreenHouses[] = INCBIN_U16("data/tilesets/secondary/green_houses/metatile_attributes.bin");
 
-const u16 gMetatiles_AzaleaGym_29[] = INCBIN_U16("data/tilesets/secondary/azalea_gym_29/metatiles.bin");
-const u16 gMetatileAttributes_AzaleaGym_29[] = INCBIN_U16("data/tilesets/secondary/azalea_gym_29/metatile_attributes.bin");
+const u16 gMetatiles_AzaleaTown_Gym_29[] = INCBIN_U16("data/tilesets/secondary/azalea_gym_29/metatiles.bin");
+const u16 gMetatileAttributes_AzaleaTown_Gym_29[] = INCBIN_U16("data/tilesets/secondary/azalea_gym_29/metatile_attributes.bin");
 
 const u16 gMetatiles_Goldenrod[] = INCBIN_U16("data/tilesets/secondary/goldenrod/metatiles.bin");
 const u16 gMetatileAttributes_Goldenrod[] = INCBIN_U16("data/tilesets/secondary/goldenrod/metatile_attributes.bin");

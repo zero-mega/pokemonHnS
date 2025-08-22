@@ -129,11 +129,11 @@
     "VioletCity_GymUnused"
   ],
   "gMapGroup_IndoorAzalea": [
-    "Azalea_Pokecenter",
-    "AzaleaPokemart",
-    "AzaleaKurtsHouse",
-    "AzaleaHouse1",
-    "AzaleaGym"
+    "AzaleaTown_PokemonCenter",
+    "AzaleaTown_Mart",
+    "AzaleaTown_KurtsHouse",
+    "AzaleaTown_House1",
+    "AzaleaTown_Gym"
   ],
   "gMapGroup_IndoorGoldenrod": [
     "GoldenrodPokecenter",

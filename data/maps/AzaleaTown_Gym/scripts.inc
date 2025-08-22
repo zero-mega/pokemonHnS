@@ -6,83 +6,83 @@
 .set LOCALID_AZALEA_ARIADOS_MID2, 12
 .set LOCALID_AZALEA_ARIADOS_RIGHT2, 13
 
-AzaleaGym_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, AzaleaGym_OnTransition
+AzaleaTown_Gym_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, AzaleaTown_Gym_OnTransition
 	.byte 0
 
-AzaleaGym_OnTransition::
+AzaleaTown_Gym_OnTransition::
 	setflag FLAG_HIDE_AZALEA_ARIADOS_LEFT
 	setflag FLAG_HIDE_AZALEA_ARIADOS_MID
 	setflag FLAG_HIDE_AZALEA_ARIADOS_RIGHT
 	end
 
 @ 1-8->5,  5-9->1
-AzaleaGym_EventScript_Trigger_1::
+AzaleaTown_Gym_EventScript_Trigger_1::
 	lock
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
 	clearflag FLAG_HIDE_AZALEA_ARIADOS_LEFT
 	addobject LOCALID_AZALEA_ARIADOS_LEFT1
-	SetObjectSubpriority OBJ_EVENT_ID_PLAYER, MAP_AZALEA_GYM, 0
-	applymovement LOCALID_AZALEA_ARIADOS_LEFT1, AzaleaGym_Movement_Ariados_Down
+	SetObjectSubpriority OBJ_EVENT_ID_PLAYER, MAP_AZALEA_TOWN_GYM, 0
+	applymovement LOCALID_AZALEA_ARIADOS_LEFT1, AzaleaTown_Gym_Movement_Ariados_Down
 	waitmovement 0
 	turnobject LOCALID_AZALEA_ARIADOS_LEFT1, DIR_NORTH
 	delay 30
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_JumpUp1
 	waitmovement 0
 	waitmovement 0
-	applymovement LOCALID_AZALEA_ARIADOS_LEFT1, AzaleaGym_Movement_Ariados_Up
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Up
+	applymovement LOCALID_AZALEA_ARIADOS_LEFT1, AzaleaTown_Gym_Movement_Ariados_Up
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Up
 	waitmovement 0
 	waitmovement 0
 	@turnobject OBJ_EVENT_ID_PLAYER, DIR_EAST
-	applymovement LOCALID_AZALEA_ARIADOS_LEFT1, AzaleaGym_Movement_Ariados_Right
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Right
+	applymovement LOCALID_AZALEA_ARIADOS_LEFT1, AzaleaTown_Gym_Movement_Ariados_Right
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Right
 	waitmovement 0
 	waitmovement 0
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
-	applymovement LOCALID_AZALEA_ARIADOS_LEFT1, AzaleaGym_Movement_Ariados_Up
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Up
+	applymovement LOCALID_AZALEA_ARIADOS_LEFT1, AzaleaTown_Gym_Movement_Ariados_Up
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Up
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_JumpUp1
 	waitmovement 0
-	applymovement LOCALID_AZALEA_ARIADOS_LEFT1, AzaleaGym_Movement_Ariados_Down
+	applymovement LOCALID_AZALEA_ARIADOS_LEFT1, AzaleaTown_Gym_Movement_Ariados_Down
 	waitmovement 0
 	setflag FLAG_HIDE_AZALEA_ARIADOS_LEFT
 	removeobject LOCALID_AZALEA_ARIADOS_LEFT1
 	release
 	end
 
-AzaleaGym_EventScript_Trigger_5::
+AzaleaTown_Gym_EventScript_Trigger_5::
 	lock
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_SOUTH
 	clearflag FLAG_HIDE_AZALEA_ARIADOS_MID
 	addobject LOCALID_AZALEA_ARIADOS_MID1
-	SetObjectSubpriority OBJ_EVENT_ID_PLAYER, MAP_AZALEA_GYM, 0
-	applymovement LOCALID_AZALEA_ARIADOS_MID1, AzaleaGym_Movement_Ariados_Up
+	SetObjectSubpriority OBJ_EVENT_ID_PLAYER, MAP_AZALEA_TOWN_GYM, 0
+	applymovement LOCALID_AZALEA_ARIADOS_MID1, AzaleaTown_Gym_Movement_Ariados_Up
 	waitmovement 0
 	turnobject LOCALID_AZALEA_ARIADOS_MID1, DIR_SOUTH
 	delay 30
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_JumpDown1
 	waitmovement 0
 	waitmovement 0
-	applymovement LOCALID_AZALEA_ARIADOS_MID1, AzaleaGym_Movement_Ariados_Down
+	applymovement LOCALID_AZALEA_ARIADOS_MID1, AzaleaTown_Gym_Movement_Ariados_Down
 	delay 10
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Down
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Down
 	waitmovement 0
 	waitmovement 0
 	@turnobject OBJ_EVENT_ID_PLAYER, DIR_WEST
-	applymovement LOCALID_AZALEA_ARIADOS_MID1, AzaleaGym_Movement_Ariados_Left
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Left
+	applymovement LOCALID_AZALEA_ARIADOS_MID1, AzaleaTown_Gym_Movement_Ariados_Left
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Left
 	waitmovement 0
 	waitmovement 0
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_SOUTH
-	applymovement LOCALID_AZALEA_ARIADOS_MID1, AzaleaGym_Movement_Ariados_Down
+	applymovement LOCALID_AZALEA_ARIADOS_MID1, AzaleaTown_Gym_Movement_Ariados_Down
 	delay 10
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Down
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Down
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_JumpDown1
 	waitmovement 0
-	applymovement LOCALID_AZALEA_ARIADOS_MID1, AzaleaGym_Movement_Ariados_Up
+	applymovement LOCALID_AZALEA_ARIADOS_MID1, AzaleaTown_Gym_Movement_Ariados_Up
 	waitmovement 0
 	setflag FLAG_HIDE_AZALEA_ARIADOS_MID
 	removeobject LOCALID_AZALEA_ARIADOS_MID1
@@ -90,72 +90,72 @@ AzaleaGym_EventScript_Trigger_5::
 	end
 
 @ 2-9->6,  6-10->2
-AzaleaGym_EventScript_Trigger_2::
+AzaleaTown_Gym_EventScript_Trigger_2::
 	lock
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
 	clearflag FLAG_HIDE_AZALEA_ARIADOS_MID
 	addobject LOCALID_AZALEA_ARIADOS_MID1
-	SetObjectSubpriority OBJ_EVENT_ID_PLAYER, MAP_AZALEA_GYM, 0
-	applymovement LOCALID_AZALEA_ARIADOS_MID1, AzaleaGym_Movement_Ariados_Down
+	SetObjectSubpriority OBJ_EVENT_ID_PLAYER, MAP_AZALEA_TOWN_GYM, 0
+	applymovement LOCALID_AZALEA_ARIADOS_MID1, AzaleaTown_Gym_Movement_Ariados_Down
 	waitmovement 0
 	turnobject LOCALID_AZALEA_ARIADOS_MID1, DIR_NORTH
 	delay 30
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_JumpUp1
 	waitmovement 0
 	waitmovement 0
-	applymovement LOCALID_AZALEA_ARIADOS_MID1, AzaleaGym_Movement_Ariados_Up
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Up
+	applymovement LOCALID_AZALEA_ARIADOS_MID1, AzaleaTown_Gym_Movement_Ariados_Up
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Up
 	waitmovement 0
 	waitmovement 0
 	@turnobject OBJ_EVENT_ID_PLAYER, DIR_EAST
-	applymovement LOCALID_AZALEA_ARIADOS_MID1, AzaleaGym_Movement_Ariados_Right
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Right
+	applymovement LOCALID_AZALEA_ARIADOS_MID1, AzaleaTown_Gym_Movement_Ariados_Right
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Right
 	waitmovement 0
 	waitmovement 0
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
-	applymovement LOCALID_AZALEA_ARIADOS_MID1, AzaleaGym_Movement_Ariados_Up
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Up
+	applymovement LOCALID_AZALEA_ARIADOS_MID1, AzaleaTown_Gym_Movement_Ariados_Up
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Up
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_JumpUp1
 	waitmovement 0
-	applymovement LOCALID_AZALEA_ARIADOS_MID1, AzaleaGym_Movement_Ariados_Down
+	applymovement LOCALID_AZALEA_ARIADOS_MID1, AzaleaTown_Gym_Movement_Ariados_Down
 	waitmovement 0
 	setflag FLAG_HIDE_AZALEA_ARIADOS_MID
 	removeobject LOCALID_AZALEA_ARIADOS_MID1
 	release
 	end
 
-AzaleaGym_EventScript_Trigger_6::
+AzaleaTown_Gym_EventScript_Trigger_6::
 	lock
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_SOUTH
 	clearflag FLAG_HIDE_AZALEA_ARIADOS_RIGHT
 	addobject LOCALID_AZALEA_ARIADOS_RIGHT1
-	SetObjectSubpriority OBJ_EVENT_ID_PLAYER, MAP_AZALEA_GYM, 0
-	applymovement LOCALID_AZALEA_ARIADOS_RIGHT1, AzaleaGym_Movement_Ariados_Up
+	SetObjectSubpriority OBJ_EVENT_ID_PLAYER, MAP_AZALEA_TOWN_GYM, 0
+	applymovement LOCALID_AZALEA_ARIADOS_RIGHT1, AzaleaTown_Gym_Movement_Ariados_Up
 	waitmovement 0
 	turnobject LOCALID_AZALEA_ARIADOS_RIGHT1, DIR_SOUTH
 	delay 30
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_JumpDown1
 	waitmovement 0
 	waitmovement 0
-	applymovement LOCALID_AZALEA_ARIADOS_RIGHT1, AzaleaGym_Movement_Ariados_Down
+	applymovement LOCALID_AZALEA_ARIADOS_RIGHT1, AzaleaTown_Gym_Movement_Ariados_Down
 	delay 10
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Down
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Down
 	waitmovement 0
 	waitmovement 0
 	@turnobject OBJ_EVENT_ID_PLAYER, DIR_WEST
-	applymovement LOCALID_AZALEA_ARIADOS_RIGHT1, AzaleaGym_Movement_Ariados_Left
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Left
+	applymovement LOCALID_AZALEA_ARIADOS_RIGHT1, AzaleaTown_Gym_Movement_Ariados_Left
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Left
 	waitmovement 0
 	waitmovement 0
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_SOUTH
-	applymovement LOCALID_AZALEA_ARIADOS_RIGHT1, AzaleaGym_Movement_Ariados_Down
+	applymovement LOCALID_AZALEA_ARIADOS_RIGHT1, AzaleaTown_Gym_Movement_Ariados_Down
 	delay 10
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Down
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Down
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_JumpDown1
 	waitmovement 0
-	applymovement LOCALID_AZALEA_ARIADOS_RIGHT1, AzaleaGym_Movement_Ariados_Up
+	applymovement LOCALID_AZALEA_ARIADOS_RIGHT1, AzaleaTown_Gym_Movement_Ariados_Up
 	waitmovement 0
 	setflag FLAG_HIDE_AZALEA_ARIADOS_RIGHT
 	removeobject LOCALID_AZALEA_ARIADOS_RIGHT1
@@ -163,80 +163,80 @@ AzaleaGym_EventScript_Trigger_6::
 	end
 
 @ 3-10->4,  4-8->3
-AzaleaGym_EventScript_Trigger_3::
+AzaleaTown_Gym_EventScript_Trigger_3::
 	lock
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
 	clearflag FLAG_HIDE_AZALEA_ARIADOS_RIGHT
 	addobject LOCALID_AZALEA_ARIADOS_RIGHT1
-	SetObjectSubpriority OBJ_EVENT_ID_PLAYER, MAP_AZALEA_GYM, 0
-	applymovement LOCALID_AZALEA_ARIADOS_RIGHT1, AzaleaGym_Movement_Ariados_Down
+	SetObjectSubpriority OBJ_EVENT_ID_PLAYER, MAP_AZALEA_TOWN_GYM, 0
+	applymovement LOCALID_AZALEA_ARIADOS_RIGHT1, AzaleaTown_Gym_Movement_Ariados_Down
 	waitmovement 0
 	turnobject LOCALID_AZALEA_ARIADOS_RIGHT1, DIR_NORTH
 	delay 30
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_JumpUp1
 	waitmovement 0
 	waitmovement 0
-	applymovement LOCALID_AZALEA_ARIADOS_RIGHT1, AzaleaGym_Movement_Ariados_Up
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Up
+	applymovement LOCALID_AZALEA_ARIADOS_RIGHT1, AzaleaTown_Gym_Movement_Ariados_Up
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Up
 	waitmovement 0
 	waitmovement 0
 	@turnobject OBJ_EVENT_ID_PLAYER, DIR_WEST
-	applymovement LOCALID_AZALEA_ARIADOS_RIGHT1, AzaleaGym_Movement_Ariados_Left
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Left
+	applymovement LOCALID_AZALEA_ARIADOS_RIGHT1, AzaleaTown_Gym_Movement_Ariados_Left
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Left
 	waitmovement 0
 	waitmovement 0
-	applymovement LOCALID_AZALEA_ARIADOS_RIGHT1, AzaleaGym_Movement_Ariados_Left
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Left
+	applymovement LOCALID_AZALEA_ARIADOS_RIGHT1, AzaleaTown_Gym_Movement_Ariados_Left
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Left
 	waitmovement 0
 	waitmovement 0
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
-	applymovement LOCALID_AZALEA_ARIADOS_RIGHT1, AzaleaGym_Movement_Ariados_Up
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Up
+	applymovement LOCALID_AZALEA_ARIADOS_RIGHT1, AzaleaTown_Gym_Movement_Ariados_Up
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Up
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_JumpUp1
 	waitmovement 0
-	applymovement LOCALID_AZALEA_ARIADOS_RIGHT1, AzaleaGym_Movement_Ariados_Down
+	applymovement LOCALID_AZALEA_ARIADOS_RIGHT1, AzaleaTown_Gym_Movement_Ariados_Down
 	waitmovement 0
 	setflag FLAG_HIDE_AZALEA_ARIADOS_RIGHT
 	removeobject LOCALID_AZALEA_ARIADOS_RIGHT1
 	release
 	end
 
-AzaleaGym_EventScript_Trigger_4::
+AzaleaTown_Gym_EventScript_Trigger_4::
 	lock
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_SOUTH
 	clearflag FLAG_HIDE_AZALEA_ARIADOS_LEFT
 	addobject LOCALID_AZALEA_ARIADOS_LEFT1
-	SetObjectSubpriority OBJ_EVENT_ID_PLAYER, MAP_AZALEA_GYM, 0
-	applymovement LOCALID_AZALEA_ARIADOS_LEFT1, AzaleaGym_Movement_Ariados_Up
+	SetObjectSubpriority OBJ_EVENT_ID_PLAYER, MAP_AZALEA_TOWN_GYM, 0
+	applymovement LOCALID_AZALEA_ARIADOS_LEFT1, AzaleaTown_Gym_Movement_Ariados_Up
 	waitmovement 0
 	turnobject LOCALID_AZALEA_ARIADOS_LEFT1, DIR_SOUTH
 	delay 30
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_JumpDown1
 	waitmovement 0
 	waitmovement 0
-	applymovement LOCALID_AZALEA_ARIADOS_LEFT1, AzaleaGym_Movement_Ariados_Down
+	applymovement LOCALID_AZALEA_ARIADOS_LEFT1, AzaleaTown_Gym_Movement_Ariados_Down
 	delay 10
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Down
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Down
 	waitmovement 0
 	waitmovement 0
 	@turnobject OBJ_EVENT_ID_PLAYER, DIR_EAST
-	applymovement LOCALID_AZALEA_ARIADOS_LEFT1, AzaleaGym_Movement_Ariados_Right
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Right
+	applymovement LOCALID_AZALEA_ARIADOS_LEFT1, AzaleaTown_Gym_Movement_Ariados_Right
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Right
 	waitmovement 0
 	waitmovement 0
-	applymovement LOCALID_AZALEA_ARIADOS_LEFT1, AzaleaGym_Movement_Ariados_Right
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Right
+	applymovement LOCALID_AZALEA_ARIADOS_LEFT1, AzaleaTown_Gym_Movement_Ariados_Right
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Right
 	waitmovement 0
 	waitmovement 0
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_SOUTH
-	applymovement LOCALID_AZALEA_ARIADOS_LEFT1, AzaleaGym_Movement_Ariados_Down
+	applymovement LOCALID_AZALEA_ARIADOS_LEFT1, AzaleaTown_Gym_Movement_Ariados_Down
 	delay 10
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Down
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Down
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_JumpDown1
 	waitmovement 0
-	applymovement LOCALID_AZALEA_ARIADOS_LEFT1, AzaleaGym_Movement_Ariados_Up
+	applymovement LOCALID_AZALEA_ARIADOS_LEFT1, AzaleaTown_Gym_Movement_Ariados_Up
 	waitmovement 0
 	setflag FLAG_HIDE_AZALEA_ARIADOS_LEFT
 	removeobject LOCALID_AZALEA_ARIADOS_LEFT1
@@ -244,60 +244,60 @@ AzaleaGym_EventScript_Trigger_4::
 	end
 
 @ 7-11->10,  10-11->7
-AzaleaGym_EventScript_Trigger_7::
+AzaleaTown_Gym_EventScript_Trigger_7::
 	lock
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
 	clearflag FLAG_HIDE_AZALEA_ARIADOS_LEFT
 	addobject LOCALID_AZALEA_ARIADOS_LEFT2
-	SetObjectSubpriority OBJ_EVENT_ID_PLAYER, MAP_AZALEA_GYM, 0
-	applymovement LOCALID_AZALEA_ARIADOS_LEFT2, AzaleaGym_Movement_Ariados_Down
+	SetObjectSubpriority OBJ_EVENT_ID_PLAYER, MAP_AZALEA_TOWN_GYM, 0
+	applymovement LOCALID_AZALEA_ARIADOS_LEFT2, AzaleaTown_Gym_Movement_Ariados_Down
 	waitmovement 0
 	turnobject LOCALID_AZALEA_ARIADOS_LEFT2, DIR_NORTH
 	delay 30
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_JumpUp1
 	waitmovement 0
 	waitmovement 0
-	applymovement LOCALID_AZALEA_ARIADOS_LEFT2, AzaleaGym_Movement_Ariados_Up
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Up
+	applymovement LOCALID_AZALEA_ARIADOS_LEFT2, AzaleaTown_Gym_Movement_Ariados_Up
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Up
 	waitmovement 0
 	waitmovement 0
-	applymovement LOCALID_AZALEA_ARIADOS_LEFT2, AzaleaGym_Movement_Ariados_Up
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Up
+	applymovement LOCALID_AZALEA_ARIADOS_LEFT2, AzaleaTown_Gym_Movement_Ariados_Up
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Up
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_JumpUp1
 	waitmovement 0
-	applymovement LOCALID_AZALEA_ARIADOS_LEFT2, AzaleaGym_Movement_Ariados_Down
+	applymovement LOCALID_AZALEA_ARIADOS_LEFT2, AzaleaTown_Gym_Movement_Ariados_Down
 	waitmovement 0
 	setflag FLAG_HIDE_AZALEA_ARIADOS_LEFT
 	removeobject LOCALID_AZALEA_ARIADOS_LEFT2
 	release
 	end
 
-AzaleaGym_EventScript_Trigger_10::
+AzaleaTown_Gym_EventScript_Trigger_10::
 	lock
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_SOUTH
 	clearflag FLAG_HIDE_AZALEA_ARIADOS_LEFT
 	addobject LOCALID_AZALEA_ARIADOS_LEFT2
-	SetObjectSubpriority OBJ_EVENT_ID_PLAYER, MAP_AZALEA_GYM, 0
-	applymovement LOCALID_AZALEA_ARIADOS_LEFT2, AzaleaGym_Movement_Ariados_Up
+	SetObjectSubpriority OBJ_EVENT_ID_PLAYER, MAP_AZALEA_TOWN_GYM, 0
+	applymovement LOCALID_AZALEA_ARIADOS_LEFT2, AzaleaTown_Gym_Movement_Ariados_Up
 	waitmovement 0
 	turnobject LOCALID_AZALEA_ARIADOS_LEFT2, DIR_SOUTH
 	delay 30
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_JumpDown1
 	waitmovement 0
 	waitmovement 0
-	applymovement LOCALID_AZALEA_ARIADOS_LEFT2, AzaleaGym_Movement_Ariados_Down
+	applymovement LOCALID_AZALEA_ARIADOS_LEFT2, AzaleaTown_Gym_Movement_Ariados_Down
 	delay 10
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Down
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Down
 	waitmovement 0
 	waitmovement 0
-	applymovement LOCALID_AZALEA_ARIADOS_LEFT2, AzaleaGym_Movement_Ariados_Down
+	applymovement LOCALID_AZALEA_ARIADOS_LEFT2, AzaleaTown_Gym_Movement_Ariados_Down
 	delay 10
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Down
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Down
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_JumpDown1
 	waitmovement 0
-	applymovement LOCALID_AZALEA_ARIADOS_LEFT2, AzaleaGym_Movement_Ariados_Up
+	applymovement LOCALID_AZALEA_ARIADOS_LEFT2, AzaleaTown_Gym_Movement_Ariados_Up
 	waitmovement 0
 	setflag FLAG_HIDE_AZALEA_ARIADOS_LEFT
 	removeobject LOCALID_AZALEA_ARIADOS_LEFT2
@@ -306,72 +306,72 @@ AzaleaGym_EventScript_Trigger_10::
 
 
 @ 8-12->12,  12-13->8
-AzaleaGym_EventScript_Trigger_8::
+AzaleaTown_Gym_EventScript_Trigger_8::
 	lock
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
 	clearflag FLAG_HIDE_AZALEA_ARIADOS_MID
 	addobject LOCALID_AZALEA_ARIADOS_MID2
-	SetObjectSubpriority OBJ_EVENT_ID_PLAYER, MAP_AZALEA_GYM, 0
-	applymovement LOCALID_AZALEA_ARIADOS_MID2, AzaleaGym_Movement_Ariados_Down
+	SetObjectSubpriority OBJ_EVENT_ID_PLAYER, MAP_AZALEA_TOWN_GYM, 0
+	applymovement LOCALID_AZALEA_ARIADOS_MID2, AzaleaTown_Gym_Movement_Ariados_Down
 	waitmovement 0
 	turnobject LOCALID_AZALEA_ARIADOS_MID2, DIR_NORTH
 	delay 30
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_JumpUp1
 	waitmovement 0
 	waitmovement 0
-	applymovement LOCALID_AZALEA_ARIADOS_MID2, AzaleaGym_Movement_Ariados_Up
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Up
+	applymovement LOCALID_AZALEA_ARIADOS_MID2, AzaleaTown_Gym_Movement_Ariados_Up
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Up
 	waitmovement 0
 	waitmovement 0
 	@turnobject OBJ_EVENT_ID_PLAYER, DIR_EAST
-	applymovement LOCALID_AZALEA_ARIADOS_MID2, AzaleaGym_Movement_Ariados_Right
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Right
+	applymovement LOCALID_AZALEA_ARIADOS_MID2, AzaleaTown_Gym_Movement_Ariados_Right
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Right
 	waitmovement 0
 	waitmovement 0
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
-	applymovement LOCALID_AZALEA_ARIADOS_MID2, AzaleaGym_Movement_Ariados_Up
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Up
+	applymovement LOCALID_AZALEA_ARIADOS_MID2, AzaleaTown_Gym_Movement_Ariados_Up
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Up
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_JumpUp1
 	waitmovement 0
-	applymovement LOCALID_AZALEA_ARIADOS_MID2, AzaleaGym_Movement_Ariados_Down
+	applymovement LOCALID_AZALEA_ARIADOS_MID2, AzaleaTown_Gym_Movement_Ariados_Down
 	waitmovement 0
 	setflag FLAG_HIDE_AZALEA_ARIADOS_MID
 	removeobject LOCALID_AZALEA_ARIADOS_MID2
 	release
 	end
 
-AzaleaGym_EventScript_Trigger_12::
+AzaleaTown_Gym_EventScript_Trigger_12::
 	lock
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_SOUTH
 	clearflag FLAG_HIDE_AZALEA_ARIADOS_RIGHT
 	addobject LOCALID_AZALEA_ARIADOS_RIGHT2
-	SetObjectSubpriority OBJ_EVENT_ID_PLAYER, MAP_AZALEA_GYM, 0
-	applymovement LOCALID_AZALEA_ARIADOS_RIGHT2, AzaleaGym_Movement_Ariados_Up
+	SetObjectSubpriority OBJ_EVENT_ID_PLAYER, MAP_AZALEA_TOWN_GYM, 0
+	applymovement LOCALID_AZALEA_ARIADOS_RIGHT2, AzaleaTown_Gym_Movement_Ariados_Up
 	waitmovement 0
 	turnobject LOCALID_AZALEA_ARIADOS_RIGHT2, DIR_SOUTH
 	delay 30
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_JumpDown1
 	waitmovement 0
 	waitmovement 0
-	applymovement LOCALID_AZALEA_ARIADOS_RIGHT2, AzaleaGym_Movement_Ariados_Down
+	applymovement LOCALID_AZALEA_ARIADOS_RIGHT2, AzaleaTown_Gym_Movement_Ariados_Down
 	delay 10
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Down
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Down
 	waitmovement 0
 	waitmovement 0
 	@turnobject OBJ_EVENT_ID_PLAYER, DIR_WEST
-	applymovement LOCALID_AZALEA_ARIADOS_RIGHT2, AzaleaGym_Movement_Ariados_Left
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Left
+	applymovement LOCALID_AZALEA_ARIADOS_RIGHT2, AzaleaTown_Gym_Movement_Ariados_Left
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Left
 	waitmovement 0
 	waitmovement 0
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_SOUTH
-	applymovement LOCALID_AZALEA_ARIADOS_RIGHT2, AzaleaGym_Movement_Ariados_Down
+	applymovement LOCALID_AZALEA_ARIADOS_RIGHT2, AzaleaTown_Gym_Movement_Ariados_Down
 	delay 10
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Down
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Down
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_JumpDown1
 	waitmovement 0
-	applymovement LOCALID_AZALEA_ARIADOS_RIGHT2, AzaleaGym_Movement_Ariados_Up
+	applymovement LOCALID_AZALEA_ARIADOS_RIGHT2, AzaleaTown_Gym_Movement_Ariados_Up
 	waitmovement 0
 	setflag FLAG_HIDE_AZALEA_ARIADOS_RIGHT
 	removeobject LOCALID_AZALEA_ARIADOS_RIGHT2
@@ -379,139 +379,139 @@ AzaleaGym_EventScript_Trigger_12::
 	end
 
 @ 9-13->11,  11-12->9
-AzaleaGym_EventScript_Trigger_9::
+AzaleaTown_Gym_EventScript_Trigger_9::
 	lock
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
 	clearflag FLAG_HIDE_AZALEA_ARIADOS_RIGHT
 	addobject LOCALID_AZALEA_ARIADOS_RIGHT2
-	SetObjectSubpriority OBJ_EVENT_ID_PLAYER, MAP_AZALEA_GYM, 0
-	applymovement LOCALID_AZALEA_ARIADOS_RIGHT2, AzaleaGym_Movement_Ariados_Down
+	SetObjectSubpriority OBJ_EVENT_ID_PLAYER, MAP_AZALEA_TOWN_GYM, 0
+	applymovement LOCALID_AZALEA_ARIADOS_RIGHT2, AzaleaTown_Gym_Movement_Ariados_Down
 	waitmovement 0
 	turnobject LOCALID_AZALEA_ARIADOS_RIGHT2, DIR_NORTH
 	delay 30
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_JumpUp1
 	waitmovement 0
 	waitmovement 0
-	applymovement LOCALID_AZALEA_ARIADOS_RIGHT2, AzaleaGym_Movement_Ariados_Up
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Up
+	applymovement LOCALID_AZALEA_ARIADOS_RIGHT2, AzaleaTown_Gym_Movement_Ariados_Up
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Up
 	waitmovement 0
 	waitmovement 0
 	@turnobject OBJ_EVENT_ID_PLAYER, DIR_WEST
-	applymovement LOCALID_AZALEA_ARIADOS_RIGHT2, AzaleaGym_Movement_Ariados_Left
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Left
+	applymovement LOCALID_AZALEA_ARIADOS_RIGHT2, AzaleaTown_Gym_Movement_Ariados_Left
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Left
 	waitmovement 0
 	waitmovement 0
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
-	applymovement LOCALID_AZALEA_ARIADOS_RIGHT2, AzaleaGym_Movement_Ariados_Up
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Up
+	applymovement LOCALID_AZALEA_ARIADOS_RIGHT2, AzaleaTown_Gym_Movement_Ariados_Up
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Up
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_JumpUp1
 	waitmovement 0
-	applymovement LOCALID_AZALEA_ARIADOS_RIGHT2, AzaleaGym_Movement_Ariados_Down
+	applymovement LOCALID_AZALEA_ARIADOS_RIGHT2, AzaleaTown_Gym_Movement_Ariados_Down
 	waitmovement 0
 	setflag FLAG_HIDE_AZALEA_ARIADOS_RIGHT
 	removeobject LOCALID_AZALEA_ARIADOS_RIGHT2
 	release
 	end
 
-AzaleaGym_EventScript_Trigger_11::
+AzaleaTown_Gym_EventScript_Trigger_11::
 	lock
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_SOUTH
 	clearflag FLAG_HIDE_AZALEA_ARIADOS_MID
 	addobject LOCALID_AZALEA_ARIADOS_MID2
-	SetObjectSubpriority OBJ_EVENT_ID_PLAYER, MAP_AZALEA_GYM, 0
-	applymovement LOCALID_AZALEA_ARIADOS_MID2, AzaleaGym_Movement_Ariados_Up
+	SetObjectSubpriority OBJ_EVENT_ID_PLAYER, MAP_AZALEA_TOWN_GYM, 0
+	applymovement LOCALID_AZALEA_ARIADOS_MID2, AzaleaTown_Gym_Movement_Ariados_Up
 	waitmovement 0
 	turnobject LOCALID_AZALEA_ARIADOS_MID2, DIR_SOUTH
 	delay 30
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_JumpDown1
 	waitmovement 0
 	waitmovement 0
-	applymovement LOCALID_AZALEA_ARIADOS_MID2, AzaleaGym_Movement_Ariados_Down
+	applymovement LOCALID_AZALEA_ARIADOS_MID2, AzaleaTown_Gym_Movement_Ariados_Down
 	delay 10
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Down
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Down
 	waitmovement 0
 	waitmovement 0
 	@turnobject OBJ_EVENT_ID_PLAYER, DIR_EAST
-	applymovement LOCALID_AZALEA_ARIADOS_MID2, AzaleaGym_Movement_Ariados_Right
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Right
+	applymovement LOCALID_AZALEA_ARIADOS_MID2, AzaleaTown_Gym_Movement_Ariados_Right
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Right
 	waitmovement 0
 	waitmovement 0
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_SOUTH
-	applymovement LOCALID_AZALEA_ARIADOS_MID2, AzaleaGym_Movement_Ariados_Down
+	applymovement LOCALID_AZALEA_ARIADOS_MID2, AzaleaTown_Gym_Movement_Ariados_Down
 	delay 10
-	applymovement OBJ_EVENT_ID_PLAYER, AzaleaGym_Movement_Player_Down
+	applymovement OBJ_EVENT_ID_PLAYER, AzaleaTown_Gym_Movement_Player_Down
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_JumpDown1
 	waitmovement 0
-	applymovement LOCALID_AZALEA_ARIADOS_MID2, AzaleaGym_Movement_Ariados_Up
+	applymovement LOCALID_AZALEA_ARIADOS_MID2, AzaleaTown_Gym_Movement_Ariados_Up
 	waitmovement 0
 	setflag FLAG_HIDE_AZALEA_ARIADOS_MID
 	removeobject LOCALID_AZALEA_ARIADOS_MID2
 	release
 	end
 
-AzaleaGym_EventScript_GymGuy::
+AzaleaTown_Gym_EventScript_GymGuy::
 	lock
 	faceplayer
-	goto_if_set FLAG_BADGE02_GET, AzaleaGym_EventScript_GymGuy2
-	msgbox AzaleaGym_Text_GymGuide, MSGBOX_DEFAULT
+	goto_if_set FLAG_BADGE02_GET, AzaleaTown_Gym_EventScript_GymGuy2
+	msgbox AzaleaTown_Gym_Text_GymGuide, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
 
-AzaleaGym_EventScript_GymGuy2::
-	msgbox AzaleaGym_Text_GymGuideWin, MSGBOX_DEFAULT
+AzaleaTown_Gym_EventScript_GymGuy2::
+	msgbox AzaleaTown_Gym_Text_GymGuideWin, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
 
-AzaleaGym_EventScript_Al::
-	trainerbattle_single TRAINER_AL AzaleaGym_Text_BugCatcherAlSeen, AzaleaGym_Text_BugCatcherAlBeaten
-	msgbox AzaleaGym_Text_BugCatcherAlAfter, MSGBOX_AUTOCLOSE
+AzaleaTown_Gym_EventScript_Al::
+	trainerbattle_single TRAINER_AL AzaleaTown_Gym_Text_BugCatcherAlSeen, AzaleaTown_Gym_Text_BugCatcherAlBeaten
+	msgbox AzaleaTown_Gym_Text_BugCatcherAlAfter, MSGBOX_AUTOCLOSE
 	end
 
-AzaleaGym_EventScript_Josh::
-	trainerbattle_single TRAINER_JOSH AzaleaGym_Text_BugCatcherJoshSeen, AzaleaGym_Text_BugCatcherJoshBeaten
-	msgbox AzaleaGym_Text_BugCatcherJoshAfter, MSGBOX_AUTOCLOSE
+AzaleaTown_Gym_EventScript_Josh::
+	trainerbattle_single TRAINER_JOSH AzaleaTown_Gym_Text_BugCatcherJoshSeen, AzaleaTown_Gym_Text_BugCatcherJoshBeaten
+	msgbox AzaleaTown_Gym_Text_BugCatcherJoshAfter, MSGBOX_AUTOCLOSE
 	end
 
-AzaleaGym_EventScript_Benny::
-	trainerbattle_single TRAINER_BENNY AzaleaGym_Text_BugCatcherBennySeen, AzaleaGym_Text_BugCatcherBennyBeaten
-	msgbox AzaleaGym_Text_BugCatcherBennyAfter, MSGBOX_AUTOCLOSE
+AzaleaTown_Gym_EventScript_Benny::
+	trainerbattle_single TRAINER_BENNY AzaleaTown_Gym_Text_BugCatcherBennySeen, AzaleaTown_Gym_Text_BugCatcherBennyBeaten
+	msgbox AzaleaTown_Gym_Text_BugCatcherBennyAfter, MSGBOX_AUTOCLOSE
 	end
 
-AzaleaGym_EventScript_Amy::
-	trainerbattle_double TRAINER_AMY_AND_MAY, AzaleaGym_Text_TwinsAmyMay1Seen, AzaleaGym_Text_TwinsAmyMay1Beaten, Route104_Text_GinaNotEnoughMons
+AzaleaTown_Gym_EventScript_Amy::
+	trainerbattle_double TRAINER_AMY_AND_MAY, AzaleaTown_Gym_Text_TwinsAmyMay1Seen, AzaleaTown_Gym_Text_TwinsAmyMay1Beaten, Route104_Text_GinaNotEnoughMons
 	special GetPlayerBigGuyGirlString
-	msgbox AzaleaGym_Text_TwinsAmyMay1After, MSGBOX_DEFAULT
+	msgbox AzaleaTown_Gym_Text_TwinsAmyMay1After, MSGBOX_DEFAULT
 	release
 	end
 	
-AzaleaGym_EventScript_May::
-	trainerbattle_double TRAINER_AMY_AND_MAY, AzaleaGym_Text_TwinsAmyMay2Seen, AzaleaGym_Text_TwinsAmyMay2Beaten, Route104_Text_GinaNotEnoughMons
+AzaleaTown_Gym_EventScript_May::
+	trainerbattle_double TRAINER_AMY_AND_MAY, AzaleaTown_Gym_Text_TwinsAmyMay2Seen, AzaleaTown_Gym_Text_TwinsAmyMay2Beaten, Route104_Text_GinaNotEnoughMons
 	special GetPlayerBigGuyGirlString
-	msgbox AzaleaGym_Text_TwinsAmyMay2After, MSGBOX_DEFAULT
+	msgbox AzaleaTown_Gym_Text_TwinsAmyMay2After, MSGBOX_DEFAULT
 	release
 	end
 
-AzaleaGym_EventScript_Bugsy::
+AzaleaTown_Gym_EventScript_Bugsy::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_AZALEA_GYM, AzaleaGym_EventScript_Bugsy_Defeated
-	msgbox AzaleaGym_Text_BugsyIntro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_BUGSY_1, AzaleaGym_Text_BugsyBeaten
-	message AzaleaGym_Text_ReceivedHiveBadge
+	goto_if_set FLAG_DEFEATED_AZALEA_TOWN_GYM, AzaleaTown_Gym_EventScript_Bugsy_Defeated
+	msgbox AzaleaTown_Gym_Text_BugsyIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_BUGSY_1, AzaleaTown_Gym_Text_BugsyBeaten
+	message AzaleaTown_Gym_Text_ReceivedHiveBadge
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
-	msgbox AzaleaGym_Text_HiveBadgeSpeech, MSGBOX_DEFAULT
+	msgbox AzaleaTown_Gym_Text_HiveBadgeSpeech, MSGBOX_DEFAULT
 	setflag FLAG_BADGE02_GET
-	setflag FLAG_DEFEATED_AZALEA_GYM
+	setflag FLAG_DEFEATED_AZALEA_TOWN_GYM
 	addvar VAR_NUM_BADGES, 1
 	setvar VAR_0x8008, 2
 	call Common_EventScript_SetGymTrainers
 	giveitem ITEM_TM_BULLET_SEED
-	msgbox AzaleaGym_Text_FuryCutterSpeech, MSGBOX_DEFAULT
+	msgbox AzaleaTown_Gym_Text_FuryCutterSpeech, MSGBOX_DEFAULT
 	setvar VAR_AZALEA_TOWN_STATE, 5
 	closemessage
 	setflag FLAG_HIDE_AZALEA_TOWN_FARFETCHD
@@ -521,13 +521,13 @@ AzaleaGym_EventScript_Bugsy::
 	release
 	end
 
-AzaleaGym_EventScript_Bugsy_Defeated::
-	msgbox AzaleaGym_Text_BugsyAdvice, MSGBOX_DEFAULT
+AzaleaTown_Gym_EventScript_Bugsy_Defeated::
+	msgbox AzaleaTown_Gym_Text_BugsyAdvice, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
 
-AzaleaGym_Movement_Ariados_Down:
+AzaleaTown_Gym_Movement_Ariados_Down:
 	delay_8
 	walk_down
 	walk_down
@@ -536,7 +536,7 @@ AzaleaGym_Movement_Ariados_Down:
 	walk_down
 	step_end
 
-AzaleaGym_Movement_Ariados_Up:
+AzaleaTown_Gym_Movement_Ariados_Up:
 	delay_8
 	walk_up
 	walk_up
@@ -545,7 +545,7 @@ AzaleaGym_Movement_Ariados_Up:
 	walk_up
 	step_end
 
-AzaleaGym_Movement_Ariados_Right:
+AzaleaTown_Gym_Movement_Ariados_Right:
 	lock_facing_direction
 	delay_8
 	walk_right
@@ -556,7 +556,7 @@ AzaleaGym_Movement_Ariados_Right:
 	unlock_facing_direction
 	step_end
 
-AzaleaGym_Movement_Ariados_Left:
+AzaleaTown_Gym_Movement_Ariados_Left:
 	lock_facing_direction
 	delay_8
 	walk_left
@@ -567,7 +567,7 @@ AzaleaGym_Movement_Ariados_Left:
 	unlock_facing_direction
 	step_end
 
-AzaleaGym_Movement_Player_Down:
+AzaleaTown_Gym_Movement_Player_Down:
 	lock_anim
 	delay_8
 	walk_down
@@ -579,7 +579,7 @@ AzaleaGym_Movement_Player_Down:
 	unlock_facing_direction
 	step_end
 
-AzaleaGym_Movement_Player_Up:
+AzaleaTown_Gym_Movement_Player_Up:
 	lock_anim
 	delay_8
 	walk_up
@@ -591,7 +591,7 @@ AzaleaGym_Movement_Player_Up:
 	unlock_facing_direction
 	step_end
 
-AzaleaGym_Movement_Player_Right:
+AzaleaTown_Gym_Movement_Player_Right:
 	lock_facing_direction
 	lock_anim
 	delay_8
@@ -604,7 +604,7 @@ AzaleaGym_Movement_Player_Right:
 	unlock_facing_direction
 	step_end
 
-AzaleaGym_Movement_Player_Left:
+AzaleaTown_Gym_Movement_Player_Left:
 	lock_facing_direction
 	lock_anim
 	delay_8
@@ -617,29 +617,29 @@ AzaleaGym_Movement_Player_Left:
 	unlock_facing_direction
 	step_end
 
-AzaleaGym_EventScript_Statue::
+AzaleaTown_Gym_EventScript_Statue::
 	lock
-	goto_if_set FLAG_DEFEATED_AZALEA_GYM, AzaleaGym_EventScript_Statue2
-	msgbox AzaleaGym_Text_GymStatue, MSGBOX_DEFAULT
+	goto_if_set FLAG_DEFEATED_AZALEA_TOWN_GYM, AzaleaTown_Gym_EventScript_Statue2
+	msgbox AzaleaTown_Gym_Text_GymStatue, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
 
-AzaleaGym_EventScript_Statue2::
-	msgbox AzaleaGym_Text_GymStatueCertified, MSGBOX_DEFAULT
+AzaleaTown_Gym_EventScript_Statue2::
+	msgbox AzaleaTown_Gym_Text_GymStatueCertified, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
 
-AzaleaGym_Text_GymStatue:
+AzaleaTown_Gym_Text_GymStatue:
 	.string "AZALEA POKéMON GYM$"
 
-AzaleaGym_Text_GymStatueCertified:
+AzaleaTown_Gym_Text_GymStatueCertified:
 	.string "AZALEA TOWN POKéMON GYM\p"
 	.string "BUGSY'S CERTIFIED TRAINERS:\n"
 	.string "{PLAYER}$"
 
-AzaleaGym_Text_BugsyIntro:
+AzaleaTown_Gym_Text_BugsyIntro:
 	.string "I'm BUGSY!\p"
 	.string "I never lose when it comes\n"
 	.string "to bug POKéMON.\p"
@@ -651,7 +651,7 @@ AzaleaGym_Text_BugsyIntro:
 	.string "Let me demonstrate all I've\n"
 	.string "learned from my studies.$"
 
-AzaleaGym_Text_BugsyBeaten:
+AzaleaTown_Gym_Text_BugsyBeaten:
 	.string "Whoa, amazing! You're an\n"
 	.string "expert on POKéMON!\p"
 	.string "My research isn't complete\n"
@@ -659,10 +659,10 @@ AzaleaGym_Text_BugsyBeaten:
 	.string "OK, you win. Take this\n"
 	.string "BADGE.$"
 
-AzaleaGym_Text_ReceivedHiveBadge:
+AzaleaTown_Gym_Text_ReceivedHiveBadge:
 	.string "{PLAYER} received HIVEBADGE.$"
 
-AzaleaGym_Text_HiveBadgeSpeech:
+AzaleaTown_Gym_Text_HiveBadgeSpeech:
 	.string "Do you know the benefits\n"
 	.string "of HIVEBADGE?\p"
 	.string "If you have it, POKéMON up\n"
@@ -673,7 +673,7 @@ AzaleaGym_Text_HiveBadgeSpeech:
 	.string "Here, I also want you to\n"
 	.string "have this.$"
 
-AzaleaGym_Text_FuryCutterSpeech:
+AzaleaTown_Gym_Text_FuryCutterSpeech:
 	.string "TM09 contains BULLET SEED.\p"
 	.string "It shoots a torrent of seeds\n"
 	.string "between 2 and 5 times every turn.\p"
@@ -682,12 +682,12 @@ AzaleaGym_Text_FuryCutterSpeech:
 	.string "Isn't that great?\n"
 	.string "I discovered it!$"
 
-AzaleaGym_Text_BugsyAdvice:
+AzaleaTown_Gym_Text_BugsyAdvice:
 	.string "Bug POKéMON are deep. There are\n"
 	.string "many mysteries to be explored.\p"
 	.string "Study your favorites thoroughly.$"
 
-AzaleaGym_Text_BugsyRematch:
+AzaleaTown_Gym_Text_BugsyRematch:
 	.string "Wow, you're the JOHTO CHAMPION now!\p"
 	.string "Your skills are truly impressive!\p"
 	.string "I've been busy with my research.\p"
@@ -695,79 +695,79 @@ AzaleaGym_Text_BugsyRematch:
 	.string "findings.\p"
 	.string "Want to have a rematch with me?$"
 
-AzaleaGym_Text_BugsyRematchDefeat:
+AzaleaTown_Gym_Text_BugsyRematchDefeat:
 	.string "Wow, you must be an expert trainer.\n"
 	.string "My research must not be complete...$"
 
-AzaleaGym_Text_BugCatcherBennySeen:
+AzaleaTown_Gym_Text_BugCatcherBennySeen:
 	.string "Bug POKéMON evolve young. So they\n"
 	.string "get stronger that much faster.$"
 
-AzaleaGym_Text_BugCatcherBennyBeaten:
+AzaleaTown_Gym_Text_BugCatcherBennyBeaten:
 	.string "Just evolving isn't enough!$"
 
-AzaleaGym_Text_BugCatcherBennyAfter:
+AzaleaTown_Gym_Text_BugCatcherBennyAfter:
 	.string "POKéMON become stronger\n"
 	.string "if they evolve. Really!$"
 
-AzaleaGym_Text_BugCatcherAlSeen:
+AzaleaTown_Gym_Text_BugCatcherAlSeen:
 	.string "Bug POKéMON are cool and tough!\n"
 	.string "I'll prove it to you!$"
 
-AzaleaGym_Text_BugCatcherAlBeaten:
+AzaleaTown_Gym_Text_BugCatcherAlBeaten:
 	.string "You proved how tough you are…$"
 
-AzaleaGym_Text_BugCatcherAlAfter:
+AzaleaTown_Gym_Text_BugCatcherAlAfter:
 	.string "They're so cool, but most girls\n"
 	.string "don't like bug POKéMON.\p"
 	.string "I don't know why…$"
 
-AzaleaGym_Text_BugCatcherJoshSeen:
+AzaleaTown_Gym_Text_BugCatcherJoshSeen:
 	.string "You saved all the SLOWPOKE?\n"
 	.string "Whew, you're mighty!\p"
 	.string "But my grown-up POKéMON are\n"
 	.string "pretty tough too!$"
 
-AzaleaGym_Text_BugCatcherJoshBeaten:
+AzaleaTown_Gym_Text_BugCatcherJoshBeaten:
 	.string "Urrgggh!$"
 
-AzaleaGym_Text_BugCatcherJoshAfter:
+AzaleaTown_Gym_Text_BugCatcherJoshAfter:
 	.string "I guess I should teach them\n"
 	.string "better moves…$"
 
-AzaleaGym_Text_TwinsAmyMay1Seen:
+AzaleaTown_Gym_Text_TwinsAmyMay1Seen:
 	.string "AMY: Hi! Are you challenging\n"
 	.string "the LEADER? No way!$"
 
-AzaleaGym_Text_TwinsAmyMay1Beaten:
+AzaleaTown_Gym_Text_TwinsAmyMay1Beaten:
 	.string "AMY & MAY: Oh, double\n"
 	.string "goodness!$"
 
-AzaleaGym_Text_TwinsAmyMay1After:
+AzaleaTown_Gym_Text_TwinsAmyMay1After:
 	.string "AMY: You're really strong!\p"
 	.string "But BUGSY's even stronger!\n"
 	.string "His SCYTHER's CUT almost\l"
 	.string "always makes critical hits!$"
 
-AzaleaGym_Text_TwinsAmyMay2Seen:
+AzaleaTown_Gym_Text_TwinsAmyMay2Seen:
 	.string "MAY: You want to see the\n"
 	.string "LEADER? Good luck!\p"
 	.string "BUGSY is so strong!\n"
 	.string "His SCYTHER's CUT always\l"
 	.string "seems to crit!$"
 
-AzaleaGym_Text_TwinsAmyMay2Beaten:
+AzaleaTown_Gym_Text_TwinsAmyMay2Beaten:
 	.string "AMY & MAY: Oh, double\n"
 	.string "goodness!$"
 
-AzaleaGym_Text_TwinsAmyMay2After:
+AzaleaTown_Gym_Text_TwinsAmyMay2After:
 	.string "MAY: Our bug POKéMON lost!\n"
 	.string "Oh, what a shame.\p"
 	.string "BUGSY's won't lose though!\p"
 	.string "His PINECO makes short work\n"
 	.string "of ROCK-type POKéMON!$"
 
-AzaleaGym_Text_GymGuide:
+AzaleaTown_Gym_Text_GymGuide:
 	.string "Yo, challenger!\p"
 	.string "BUGSY's young, but his knowledge\n"
 	.string "of bug POKéMON is for real.\p"
@@ -781,7 +781,7 @@ AzaleaGym_Text_GymGuide:
 	.string "Oh, and don't forget about those\n"
 	.string "nasty critical hits! Good luck!$"
 
-AzaleaGym_Text_GymGuideWin:
+AzaleaTown_Gym_Text_GymGuideWin:
 	.string "Well done! That was a great\n"
 	.string "clash of talented young\p"
 	.string "trainers.\p"
