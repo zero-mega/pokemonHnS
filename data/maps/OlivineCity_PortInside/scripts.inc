@@ -1,7 +1,7 @@
 .set LOCALID_OLIVINEMARINA_SAILOR, 1
 .set LOCALID_OLIVINEMARINA_BOAT, 6
 
-OlivineCityPortInside_MapScripts::
+OlivineCity_PortInside_MapScripts::
 	.byte 0
 
 OlivinePort_Test::

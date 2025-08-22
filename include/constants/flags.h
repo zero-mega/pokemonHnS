@@ -994,7 +994,7 @@
 #define FLAG_CAUGHT_RAIKOU                          0x3B3
 #define FLAG_HIDE_ROUTE39_SHADOW                        0x3B4
 #define FLAG_HIDE_OLIVINE_SILVER              0x3B5
-#define FLAG_HIDE_OLIVINE_GYM_JASMINE                       0x3B6
+#define FLAG_HIDE_OLIVINE_CITY_GYM_JASMINE                       0x3B6
 #define FLAG_HIDE_LIGHTHOUSE_JASMINE                       0x3B7
 #define FLAG_HIDE_ROUTE42_EUSINE                                  0x3B8
 #define FLAG_HIDE_ROUTE42_SUICUNE                                  0x3B9
@@ -1320,7 +1320,7 @@
 #define FLAG_DEFEATED_GOLDENROD_CITY_GYM                                  0x4F2
 #define FLAG_DEFEATED_ECRUTEAK_CITY_GYM                                 0x4F3
 #define FLAG_DEFEATED_CIANWOOD_GYM                                 0x4F4
-#define FLAG_DEFEATED_OLIVINE_GYM                                   0x4F5
+#define FLAG_DEFEATED_OLIVINE_CITY_GYM                                   0x4F5
 #define FLAG_DEFEATED_MAHOGANY_GYM                                  0x4F6
 #define FLAG_DEFEATED_BLACKTHORN_GYM                                0x4F7
 #define FLAG_DEFEATED_RED                           0x4F8

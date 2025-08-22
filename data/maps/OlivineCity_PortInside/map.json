@@ -1,6 +1,6 @@
 {
   "id": "MAP_OLIVINE_CITY_PORT_INSIDE",
-  "name": "OlivineCityPortInside",
+  "name": "OlivineCity_PortInside",
   "layout": "LAYOUT_OLIVINE_CITY_PORT_INSIDE",
   "music": "MUS_HG_CHERRYGROVE",
   "region_map_section": "MAPSEC_OLIVINE_CITY",

@@ -69,7 +69,7 @@ MahoganyGym_EventScript_Pryce::
 	faceplayer
 	goto_if_set FLAG_DEFEATED_MAHOGANY_GYM, MahoganyGym_EventScript_Pryce_Defeated
 	msgbox MahoganyGym_Text_PryceIntro, MSGBOX_DEFAULT
-	goto_if_set FLAG_DEFEATED_OLIVINE_GYM, MahoganyGym_EventScript_OlivineCheckCianwood
+	goto_if_set FLAG_DEFEATED_OLIVINE_CITY_GYM, MahoganyGym_EventScript_OlivineCheckCianwood
 	goto_if_set FLAG_DEFEATED_CIANWOOD_GYM, MahoganyGym_EventScript_CianwoodCheckOlivine
 	goto MahoganyGym_EventScript_Pryce_Battle1
 
@@ -95,7 +95,7 @@ MahoganyGym_EventScript_OlivineCheckCianwood::
 	goto MahoganyGym_EventScript_Pryce_Battle2
 
 MahoganyGym_EventScript_CianwoodCheckOlivine::
-	goto_if_set FLAG_DEFEATED_OLIVINE_GYM, MahoganyGym_EventScript_Pryce_Battle3
+	goto_if_set FLAG_DEFEATED_OLIVINE_CITY_GYM, MahoganyGym_EventScript_Pryce_Battle3
 	goto MahoganyGym_EventScript_Pryce_Battle2
 	
 MahoganyGym_EventScript_Pryce_Battle1::

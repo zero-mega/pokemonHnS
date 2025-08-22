@@ -1,4 +1,4 @@
-OlivinePokemart_MapScripts::
+OlivineCity_Mart_MapScripts::
 	.byte 0
 
 OlivineCity_EventScript_Trainer1::

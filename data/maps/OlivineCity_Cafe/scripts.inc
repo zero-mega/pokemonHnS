@@ -1,12 +1,12 @@
 .set LOCALID_CAFE_JASMINE, 4
 
-OlivineCafe_MapScripts::
+OlivineCity_Cafe_MapScripts::
 	.byte 0
 
-OlivineCafe_EventScript_Jasmine::
+OlivineCity_Cafe_EventScript_Jasmine::
 	lock
 	faceplayer
-	msgbox OlivineCafe_Text_Jasmine, MSGBOX_DEFAULT
+	msgbox OlivineCity_Cafe_Text_Jasmine, MSGBOX_DEFAULT
 	closemessage
 	fadescreenswapbuffers FADE_TO_BLACK
 	setflag FLAG_HIDE_CAFE_JASMINE
@@ -16,7 +16,7 @@ OlivineCafe_EventScript_Jasmine::
 	release
 	end
 
-OlivineCafe_Text_Jasmine:
+OlivineCity_Cafe_Text_Jasmine:
 	.string "Oh... Hello, {PLAYER}.\p"
 	.string "These dishes in front of me are\n"
 	.string "not all mine...\p"

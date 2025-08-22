@@ -149,16 +149,16 @@
 #define MAP_ECRUTEAK_CITY_GYM          (7 | (6 << 8))
 
 // gMapGroup_IndoorOlivine
-#define MAP_OLIVINE_POKECENTER        (0 | (7 << 8))
-#define MAP_OLIVINE_GYM               (1 | (7 << 8))
-#define MAP_OLIVINE_CAFE              (2 | (7 << 8))
-#define MAP_OLIVINE_POKEMART          (3 | (7 << 8))
-#define MAP_OLIVINE_HOUSE1            (4 | (7 << 8))
-#define MAP_OLIVINE_HOUSE2            (5 | (7 << 8))
-#define MAP_OLIVINE_HOUSE3            (6 | (7 << 8))
+#define MAP_OLIVINE_CITY_POKEMON_CENTER        (0 | (7 << 8))
+#define MAP_OLIVINE_CITY_GYM               (1 | (7 << 8))
+#define MAP_OLIVINE_CITY_CAFE              (2 | (7 << 8))
+#define MAP_OLIVINE_CITY_MART          (3 | (7 << 8))
+#define MAP_OLIVINE_CITY_HOUSE1            (4 | (7 << 8))
+#define MAP_OLIVINE_CITY_HOUSE2            (5 | (7 << 8))
+#define MAP_OLIVINE_CITY_HOUSE3            (6 | (7 << 8))
 #define MAP_OLIVINE_CITY_PORT_OUTSIDE (7 | (7 << 8))
 #define MAP_OLIVINE_CITY_PORT_INSIDE  (8 | (7 << 8))
-#define MAP_OLIVINE_LIGHTHOUSE1       (9 | (7 << 8))
+#define MAP_OLIVINE_CITY_LIGHTHOUSE       (9 | (7 << 8))
 
 // gMapGroup_IndoorCianwood
 #define MAP_CIANWOOD_POKECENTER (0 | (8 << 8))

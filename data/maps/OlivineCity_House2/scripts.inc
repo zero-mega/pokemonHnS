@@ -1,4 +1,4 @@
-OlivineHouse2_MapScripts::
+OlivineCity_House2_MapScripts::
 	.byte 0
 
 OlivineCity_EventScript_Punisher::

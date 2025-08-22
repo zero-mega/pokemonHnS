@@ -31,7 +31,7 @@ FortreeCity_Gym_EventScript_WinonaDefeated::
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
 	msgbox FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis, MSGBOX_DEFAULT
-	setflag FLAG_DEFEATED_OLIVINE_GYM
+	setflag FLAG_DEFEATED_OLIVINE_CITY_GYM
 	setflag FLAG_BADGE06_GET
 	setvar VAR_0x8008, 6
 	call Common_EventScript_SetGymTrainers
@@ -102,7 +102,7 @@ FortreeCity_Gym_EventScript_Darius::
 FortreeCity_Gym_EventScript_GymGuide::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_OLIVINE_GYM, FortreeCity_Gym_EventScript_GymGuidePostVictory
+	goto_if_set FLAG_DEFEATED_OLIVINE_CITY_GYM, FortreeCity_Gym_EventScript_GymGuidePostVictory
 	msgbox FortreeCity_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT
 	release
 	end

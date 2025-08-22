@@ -1,4 +1,4 @@
-OlivineHouse3_MapScripts::
+OlivineCity_House3_MapScripts::
 	.byte 0
 
 OlivineCityHouse3_EventScriptFishingGuru::

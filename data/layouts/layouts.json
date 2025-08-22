@@ -5962,14 +5962,14 @@
       "blockdata_filepath": "data/layouts/EcruteakCity_PokemonCenter/map.bin"
     },
     {
-      "id": "LAYOUT_OLIVINE_POKECENTER",
-      "name": "OlivinePokecenter_Layout",
+      "id": "LAYOUT_OLIVINE_CITY_POKEMON_CENTER",
+      "name": "OlivineCity_PokemonCenter_Layout",
       "width": 16,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Kanto_PokemonCenter",
-      "border_filepath": "data/layouts/OlivinePokecenter/border.bin",
-      "blockdata_filepath": "data/layouts/OlivinePokecenter/map.bin"
+      "border_filepath": "data/layouts/OlivineCity_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/OlivineCity_PokemonCenter/map.bin"
     },
     {
       "id": "LAYOUT_CIANWOOD_POKECENTER",
@@ -6363,83 +6363,83 @@
     },
     {
       "id": "LAYOUT_OLIVINE_CITY_PORT_INSIDE",
-      "name": "OlivineCityPortInside_Layout",
+      "name": "OlivineCity_PortInside_Layout",
       "width": 18,
       "height": 28,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Marina_65",
-      "border_filepath": "data/layouts/OlivineCityPortInside/border.bin",
-      "blockdata_filepath": "data/layouts/OlivineCityPortInside/map.bin"
+      "border_filepath": "data/layouts/OlivineCity_PortInside/border.bin",
+      "blockdata_filepath": "data/layouts/OlivineCity_PortInside/map.bin"
     },
     {
-      "id": "LAYOUT_OLIVINE_LIGHTHOUSE1",
-      "name": "OlivineLighthouse1_Layout",
+      "id": "LAYOUT_OLIVINE_CITY_LIGHTHOUSE",
+      "name": "OlivineCity_Lighthouse_Layout",
       "width": 170,
       "height": 20,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Lighthouse",
-      "border_filepath": "data/layouts/OlivineLighthouse1/border.bin",
-      "blockdata_filepath": "data/layouts/OlivineLighthouse1/map.bin"
+      "border_filepath": "data/layouts/OlivineCity_Lighthouse/border.bin",
+      "blockdata_filepath": "data/layouts/OlivineCity_Lighthouse/map.bin"
     },
     {
-      "id": "LAYOUT_OLIVINE_GYM",
-      "name": "OlivineGym_Layout",
+      "id": "LAYOUT_OLIVINE_CITY_GYM",
+      "name": "OlivineCity_Gym_Layout",
       "width": 17,
       "height": 22,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Theater_26",
-      "border_filepath": "data/layouts/OlivineGym/border.bin",
-      "blockdata_filepath": "data/layouts/OlivineGym/map.bin"
+      "border_filepath": "data/layouts/OlivineCity_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/OlivineCity_Gym/map.bin"
     },
     {
-      "id": "LAYOUT_OLIVINE_CAFE",
-      "name": "OlivineCafe_Layout",
+      "id": "LAYOUT_OLIVINE_CITY_CAFE",
+      "name": "OlivineCity_Cafe_Layout",
       "width": 8,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Cafe_50",
-      "border_filepath": "data/layouts/OlivineCafe/border.bin",
-      "blockdata_filepath": "data/layouts/OlivineCafe/map.bin"
+      "border_filepath": "data/layouts/OlivineCity_Cafe/border.bin",
+      "blockdata_filepath": "data/layouts/OlivineCity_Cafe/map.bin"
     },
     {
-      "id": "LAYOUT_OLIVINE_POKEMART",
-      "name": "OlivinePokemart_Layout",
+      "id": "LAYOUT_OLIVINE_CITY_MART",
+      "name": "OlivineCity_Mart_Layout",
       "width": 14,
       "height": 9,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Pokemart_13",
-      "border_filepath": "data/layouts/OlivinePokemart/border.bin",
-      "blockdata_filepath": "data/layouts/OlivinePokemart/map.bin"
+      "border_filepath": "data/layouts/OlivineCity_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/OlivineCity_Mart/map.bin"
     },
     {
-      "id": "LAYOUT_OLIVINE_HOUSE1",
-      "name": "OlivineHouse1_Layout",
+      "id": "LAYOUT_OLIVINE_CITY_HOUSE1",
+      "name": "OlivineCity_House1_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/OlivineHouse1/border.bin",
-      "blockdata_filepath": "data/layouts/OlivineHouse1/map.bin"
+      "border_filepath": "data/layouts/OlivineCity_House1/border.bin",
+      "blockdata_filepath": "data/layouts/OlivineCity_House1/map.bin"
     },
     {
-      "id": "LAYOUT_OLIVINE_HOUSE2",
-      "name": "OlivineHouse2_Layout",
+      "id": "LAYOUT_OLIVINE_CITY_HOUSE2",
+      "name": "OlivineCity_House2_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/OlivineHouse2/border.bin",
-      "blockdata_filepath": "data/layouts/OlivineHouse2/map.bin"
+      "border_filepath": "data/layouts/OlivineCity_House2/border.bin",
+      "blockdata_filepath": "data/layouts/OlivineCity_House2/map.bin"
     },
     {
-      "id": "LAYOUT_OLIVINE_HOUSE3",
-      "name": "OlivineHouse3_Layout",
+      "id": "LAYOUT_OLIVINE_CITY_HOUSE3",
+      "name": "OlivineCity_House3_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/OlivineHouse3/border.bin",
-      "blockdata_filepath": "data/layouts/OlivineHouse3/map.bin"
+      "border_filepath": "data/layouts/OlivineCity_House3/border.bin",
+      "blockdata_filepath": "data/layouts/OlivineCity_House3/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE39_FARMHOUSE",
@@ -8083,13 +8083,13 @@
     },
     {
       "id": "LAYOUT_OLIVINE_CITY_PORT_OUTSIDE",
-      "name": "OlivineCityPortOutside_Layout",
+      "name": "OlivineCity_PortOutside_Layout",
       "width": 32,
       "height": 23,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Marina_65",
-      "border_filepath": "data/layouts/OlivineCityPortOutside/border.bin",
-      "blockdata_filepath": "data/layouts/OlivineCityPortOutside/map.bin"
+      "border_filepath": "data/layouts/OlivineCity_PortOutside/border.bin",
+      "blockdata_filepath": "data/layouts/OlivineCity_PortOutside/map.bin"
     },
     {
       "id": "LAYOUT_VERMILION_CITY_GYM",

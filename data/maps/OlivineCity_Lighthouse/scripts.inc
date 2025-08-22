@@ -1,7 +1,7 @@
 .set LOCALID_LIGHTHOUSE_JASMINE, 12
 .set LOCALID_LIGHTHOUSE_AMPHAROS, 13
 
-OlivineLighthouse1_MapScripts::
+OlivineCity_Lighthouse_MapScripts::
 	.byte 0
 
 OlivineLighthouse_EventScript_Item_Ether::
@@ -331,7 +331,7 @@ OlivineLighthouse_EventScript_JasmineDeliverPotion::
 	setvar VAR_SAFARI_ZONE_GATE_STATE, 1
 	setvar VAR_OLIVINE_CITY_STATE, 5
 	setflag FLAG_AMPHAROS_HEALED
-	clearflag FLAG_HIDE_OLIVINE_GYM_JASMINE
+	clearflag FLAG_HIDE_OLIVINE_CITY_GYM_JASMINE
 	release
 	end
 

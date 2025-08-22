@@ -177,16 +177,16 @@
     "EcruteakCity_Gym"
   ],
   "gMapGroup_IndoorOlivine": [
-    "OlivinePokecenter",
-    "OlivineGym",
-    "OlivineCafe",
-    "OlivinePokemart",
-    "OlivineHouse1",
-    "OlivineHouse2",
-    "OlivineHouse3",
-    "OlivineCityPortOutside",
-    "OlivineCityPortInside",
-    "OlivineLighthouse1"
+    "OlivineCity_PokemonCenter",
+    "OlivineCity_Gym",
+    "OlivineCity_Cafe",
+    "OlivineCity_Mart",
+    "OlivineCity_House1",
+    "OlivineCity_House2",
+    "OlivineCity_House3",
+    "OlivineCity_PortOutside",
+    "OlivineCity_PortInside",
+    "OlivineCity_Lighthouse"
   ],
   "gMapGroup_IndoorCianwood": [
     "CianwoodPokecenter",

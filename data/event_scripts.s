@@ -1430,7 +1430,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/EcruteakCity_PokemonCenter/scripts.inc"
 
-	.include "data/maps/OlivinePokecenter/scripts.inc"
+	.include "data/maps/OlivineCity_PokemonCenter/scripts.inc"
 
 	.include "data/maps/CianwoodPokecenter/scripts.inc"
 
@@ -1510,21 +1510,21 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/EcruteakCity_Theater/scripts.inc"
 
-	.include "data/maps/OlivineCityPortInside/scripts.inc"
+	.include "data/maps/OlivineCity_PortInside/scripts.inc"
 
-	.include "data/maps/OlivineLighthouse1/scripts.inc"
+	.include "data/maps/OlivineCity_Lighthouse/scripts.inc"
 
-	.include "data/maps/OlivineGym/scripts.inc"
+	.include "data/maps/OlivineCity_Gym/scripts.inc"
 
-	.include "data/maps/OlivineCafe/scripts.inc"
+	.include "data/maps/OlivineCity_Cafe/scripts.inc"
 
-	.include "data/maps/OlivinePokemart/scripts.inc"
+	.include "data/maps/OlivineCity_Mart/scripts.inc"
 
-	.include "data/maps/OlivineHouse1/scripts.inc"
+	.include "data/maps/OlivineCity_House1/scripts.inc"
 
-	.include "data/maps/OlivineHouse2/scripts.inc"
+	.include "data/maps/OlivineCity_House2/scripts.inc"
 
-	.include "data/maps/OlivineHouse3/scripts.inc"
+	.include "data/maps/OlivineCity_House3/scripts.inc"
 
 	.include "data/maps/Route39_Farmhouse/scripts.inc"
 
@@ -1854,7 +1854,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/VermilionCityPortIndoor/scripts.inc"
 
-	.include "data/maps/OlivineCityPortOutside/scripts.inc"
+	.include "data/maps/OlivineCity_PortOutside/scripts.inc"
 
 	.include "data/maps/VermilionCityGym/scripts.inc"
 
