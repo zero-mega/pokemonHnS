@@ -1426,7 +1426,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/AzaleaTown_PokemonCenter/scripts.inc"
 
-	.include "data/maps/GoldenrodPokecenter/scripts.inc"
+	.include "data/maps/GoldenrodCity_PokemonCenter/scripts.inc"
 
 	.include "data/maps/EcruteakPokecenter/scripts.inc"
 
@@ -1604,59 +1604,59 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/Route34DayCare/scripts.inc"
 
-	.include "data/maps/GoldenRodUnderground1/scripts.inc"
+	.include "data/maps/GoldenrodCity_UndergroundEntrance/scripts.inc"
 
-	.include "data/maps/GoldenrodUnderground2/scripts.inc"
+	.include "data/maps/GoldenrodCity_UndergroundTunnel/scripts.inc"
 
-	.include "data/maps/GoldenrodUndergroundRocket1/scripts.inc"
+	.include "data/maps/GoldenrodCity_UndergroundSwitches/scripts.inc"
 
-	.include "data/maps/GoldenrodUndergroundRocket2/scripts.inc"
+	.include "data/maps/GoldenrodCity_UndergroundStorage/scripts.inc"
 
-	.include "data/maps/GoldenrodUndergroundRocket3/scripts.inc"
+	.include "data/maps/GoldenrodCity_DepartmentStoreBasement/scripts.inc"
 
-	.include "data/maps/GoldenrodGym/scripts.inc"
+	.include "data/maps/GoldenrodCity_Gym/scripts.inc"
 
-	.include "data/maps/GoldenrodFlowerShop/scripts.inc"
+	.include "data/maps/GoldenrodCity_FlowerShop/scripts.inc"
 
-	.include "data/maps/GoldenrodHouse1/scripts.inc"
+	.include "data/maps/GoldenrodCity_House1/scripts.inc"
 
-	.include "data/maps/GoldenrodHouse2/scripts.inc"
+	.include "data/maps/GoldenrodCity_House2/scripts.inc"
 
-	.include "data/maps/GoldenrodHouse3/scripts.inc"
+	.include "data/maps/GoldenrodCity_House3/scripts.inc"
 
-	.include "data/maps/GoldenrodBillsHouse/scripts.inc"
+	.include "data/maps/GoldenrodCity_BillsHouse/scripts.inc"
 
-	.include "data/maps/GoldenrodBikeShop/scripts.inc"
+	.include "data/maps/GoldenrodCity_BikeShop/scripts.inc"
 
-	.include "data/maps/GoldenrodGameCorner/scripts.inc"
+	.include "data/maps/GoldenrodCity_GameCorner/scripts.inc"
 
-	.include "data/maps/GoldenrodStation/scripts.inc"
+	.include "data/maps/GoldenrodCity_TrainStation/scripts.inc"
 
-	.include "data/maps/GoldenrodRadioTower1/scripts.inc"
+	.include "data/maps/GoldenrodCity_RadioTower_1F/scripts.inc"
 
-	.include "data/maps/GoldenrodRadioTower2/scripts.inc"
+	.include "data/maps/GoldenrodCity_RadioTower_2F/scripts.inc"
 
-	.include "data/maps/GoldenrodRadioTower3/scripts.inc"
+	.include "data/maps/GoldenrodCity_RadioTower_3F/scripts.inc"
 
-	.include "data/maps/GoldenrodRadioTower/scripts.inc"
+	.include "data/maps/GoldenrodCity_RadioTower_4F/scripts.inc"
 
-	.include "data/maps/GoldenrodRadioTower5/scripts.inc"
+	.include "data/maps/GoldenrodCity_RadioTower_5F/scripts.inc"
 
-	.include "data/maps/GoldenrodDepartmentStore1/scripts.inc"
+	.include "data/maps/GoldenrodCity_DepartmentStore_1F/scripts.inc"
 
-	.include "data/maps/GoldenrodDepartmentStore2/scripts.inc"
+	.include "data/maps/GoldenrodCity_DepartmentStore_2F/scripts.inc"
 
-	.include "data/maps/GoldenrodDepartmentStore3/scripts.inc"
+	.include "data/maps/GoldenrodCity_DepartmentStore_3F/scripts.inc"
 
-	.include "data/maps/GoldenrodDepartmentStore4/scripts.inc"
+	.include "data/maps/GoldenrodCity_DepartmentStore_4F/scripts.inc"
 
-	.include "data/maps/GoldenrodDepartmentStore5/scripts.inc"
+	.include "data/maps/GoldenrodCity_DepartmentStore_5F/scripts.inc"
 
-	.include "data/maps/GoldenrodDepartmentStore6/scripts.inc"
+	.include "data/maps/GoldenrodCity_DepartmentStore_6F/scripts.inc"
 
-	.include "data/maps/GoldenrodDepartmentStore7/scripts.inc"
+	.include "data/maps/GoldenrodCity_DepartmentStore_7F/scripts.inc"
 
-	.include "data/maps/GoldenrodDepartmentStoreElevator/scripts.inc"
+	.include "data/maps/GoldenrodCity_DepartmentStoreElevator/scripts.inc"
 
 	.include "data/maps/CianwoodHouse1/scripts.inc"
 
@@ -1972,7 +1972,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/MtSilverSummitTest/scripts.inc"
 
-	.include "data/maps/GoldenrodDepartmentStore7Night/scripts.inc"
+	.include "data/maps/GoldenrodCity_DepartmentStore_7FNight/scripts.inc"
 
 	.include "data/maps/NationalPark2/scripts.inc"
 

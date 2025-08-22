@@ -1400,14 +1400,14 @@ const struct Tileset gTileset_GoldenrodUndergroundRocket =
     .callback = NULL,
 };
 
-const struct Tileset gTileset_GoldenrodStation =
+const struct Tileset gTileset_GoldenrodCity_TrainStation =
 {
     .isCompressed = TRUE,
     .isSecondary = TRUE,
-    .tiles = gTilesetTiles_GoldenrodStation,
-    .palettes = gTilesetPalettes_GoldenrodStation,
-    .metatiles = gMetatiles_GoldenrodStation,
-    .metatileAttributes = gMetatileAttributes_GoldenrodStation,
+    .tiles = gTilesetTiles_GoldenrodCity_TrainStation,
+    .palettes = gTilesetPalettes_GoldenrodCity_TrainStation,
+    .metatiles = gMetatiles_GoldenrodCity_TrainStation,
+    .metatileAttributes = gMetatileAttributes_GoldenrodCity_TrainStation,
     .callback = NULL,
 };
 

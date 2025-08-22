@@ -102,12 +102,12 @@ FuchsiaCityGym_EventScript_Alice_J::
 	lock
 	faceplayer
 	msgbox FuchsiaPokecenter1F_Text_JanineImpersonator1, MSGBOX_DEFAULT
-	applymovement LOCALID_FUCHSIAGYM_ALICE_J, GoldenrodRadioTower5_Movement_Spin
+	applymovement LOCALID_FUCHSIAGYM_ALICE_J, GoldenrodCity_RadioTower_5F_Movement_Spin
 	waitmovement 0
 	removeobject LOCALID_FUCHSIAGYM_ALICE_J
 	clearflag FLAG_TEMP_1
 	addobject LOCALID_FUCHSIAGYM_ALICE
-	applymovement LOCALID_FUCHSIAGYM_ALICE, GoldenrodRadioTower5_Movement_Spin2
+	applymovement LOCALID_FUCHSIAGYM_ALICE, GoldenrodCity_RadioTower_5F_Movement_Spin2
 	waitmovement 0
 	applymovement LOCALID_FUCHSIAGYM_ALICE, Common_Movement_FacePlayer
 	waitmovement 0
@@ -127,12 +127,12 @@ FuchsiaCityGym_EventScript_Linda_J::
 	lock
 	faceplayer
 	msgbox FuchsiaPokecenter1F_Text_JanineImpersonator1, MSGBOX_DEFAULT
-	applymovement LOCALID_FUCHSIAGYM_LINDA_J, GoldenrodRadioTower5_Movement_Spin
+	applymovement LOCALID_FUCHSIAGYM_LINDA_J, GoldenrodCity_RadioTower_5F_Movement_Spin
 	waitmovement 0
 	removeobject LOCALID_FUCHSIAGYM_LINDA_J
 	clearflag FLAG_TEMP_3
 	addobject LOCALID_FUCHSIAGYM_LINDA
-	applymovement LOCALID_FUCHSIAGYM_LINDA, GoldenrodRadioTower5_Movement_Spin2
+	applymovement LOCALID_FUCHSIAGYM_LINDA, GoldenrodCity_RadioTower_5F_Movement_Spin2
 	waitmovement 0
 	applymovement LOCALID_FUCHSIAGYM_LINDA, Common_Movement_FacePlayer
 	waitmovement 0
@@ -151,12 +151,12 @@ FuchsiaCityGym_EventScript_Cindy_J::
 	lock
 	faceplayer
 	msgbox FuchsiaPokecenter1F_Text_JanineImpersonator1, MSGBOX_DEFAULT
-	applymovement LOCALID_FUCHSIAGYM_CINDY_J, GoldenrodRadioTower5_Movement_Spin
+	applymovement LOCALID_FUCHSIAGYM_CINDY_J, GoldenrodCity_RadioTower_5F_Movement_Spin
 	waitmovement 0
 	removeobject LOCALID_FUCHSIAGYM_CINDY_J
 	clearflag FLAG_TEMP_5
 	addobject LOCALID_FUCHSIAGYM_CINDY
-	applymovement LOCALID_FUCHSIAGYM_CINDY, GoldenrodRadioTower5_Movement_Spin2
+	applymovement LOCALID_FUCHSIAGYM_CINDY, GoldenrodCity_RadioTower_5F_Movement_Spin2
 	waitmovement 0
 	applymovement LOCALID_FUCHSIAGYM_CINDY, Common_Movement_FacePlayer
 	waitmovement 0
@@ -175,12 +175,12 @@ FuchsiaCityGym_EventScript_Barry_J::
 	lock
 	faceplayer
 	msgbox FuchsiaPokecenter1F_Text_JanineImpersonator1, MSGBOX_DEFAULT
-	applymovement LOCALID_FUCHSIAGYM_BARRY_J, GoldenrodRadioTower5_Movement_Spin
+	applymovement LOCALID_FUCHSIAGYM_BARRY_J, GoldenrodCity_RadioTower_5F_Movement_Spin
 	waitmovement 0
 	removeobject LOCALID_FUCHSIAGYM_BARRY_J
 	clearflag FLAG_TEMP_7
 	addobject LOCALID_FUCHSIAGYM_BARRY
-	applymovement LOCALID_FUCHSIAGYM_BARRY, GoldenrodRadioTower5_Movement_Spin2
+	applymovement LOCALID_FUCHSIAGYM_BARRY, GoldenrodCity_RadioTower_5F_Movement_Spin2
 	waitmovement 0
 	applymovement LOCALID_FUCHSIAGYM_BARRY, Common_Movement_FacePlayer
 	waitmovement 0

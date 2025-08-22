@@ -5942,14 +5942,14 @@
       "blockdata_filepath": "data/layouts/AzaleaTown_PokemonCenter/map.bin"
     },
     {
-      "id": "LAYOUT_GOLDENROD_POKECENTER",
-      "name": "GoldenrodPokecenter_Layout",
+      "id": "LAYOUT_GOLDENROD_CITY_POKEMON_CENTER",
+      "name": "GoldenrodCity_PokemonCenter_Layout",
       "width": 16,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Kanto_PokemonCenter",
-      "border_filepath": "data/layouts/GoldenrodPokecenter/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodPokecenter/map.bin"
+      "border_filepath": "data/layouts/GoldenrodCity_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/GoldenrodCity_PokemonCenter/map.bin"
     },
     {
       "id": "LAYOUT_ECRUTEAK_POKECENTER",
@@ -6832,274 +6832,274 @@
       "blockdata_filepath": "data/layouts/Route34DayCare/map.bin"
     },
     {
-      "id": "LAYOUT_GOLDEN_ROD_UNDERGROUND1",
-      "name": "GoldenRodUnderground1_Layout",
+      "id": "LAYOUT_GOLDENROD_CITY_UNDERGROUND_ENTRANCE",
+      "name": "GoldenrodCity_UndergroundEntrance_Layout",
       "width": 28,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_GoldenrodUndergroundTunnel",
-      "border_filepath": "data/layouts/GoldenRodUnderground1/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenRodUnderground1/map.bin"
+      "border_filepath": "data/layouts/GoldenrodCity_UndergroundEntrance/border.bin",
+      "blockdata_filepath": "data/layouts/GoldenrodCity_UndergroundEntrance/map.bin"
     },
     {
-      "id": "LAYOUT_GOLDENROD_UNDERGROUND2",
-      "name": "GoldenrodUnderground2_Layout",
+      "id": "LAYOUT_GOLDENROD_CITY_UNDERGROUND_TUNNEL",
+      "name": "GoldenrodCity_UndergroundTunnel_Layout",
       "width": 16,
       "height": 36,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_GoldenrodUndergroundTunnel",
-      "border_filepath": "data/layouts/GoldenrodUnderground2/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodUnderground2/map.bin"
+      "border_filepath": "data/layouts/GoldenrodCity_UndergroundTunnel/border.bin",
+      "blockdata_filepath": "data/layouts/GoldenrodCity_UndergroundTunnel/map.bin"
     },
     {
-      "id": "LAYOUT_GOLDENROD_UNDERGROUND_ROCKET1",
-      "name": "GoldenrodUndergroundRocket1_Layout",
+      "id": "LAYOUT_GOLDENROD_CITY_UNDERGROUND_SWITCHES",
+      "name": "GoldenrodCity_UndergroundSwitches_Layout",
       "width": 60,
       "height": 18,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_GoldenrodUndergroundRocket",
-      "border_filepath": "data/layouts/GoldenrodUndergroundRocket1/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodUndergroundRocket1/map.bin"
+      "border_filepath": "data/layouts/GoldenrodCity_UndergroundSwitches/border.bin",
+      "blockdata_filepath": "data/layouts/GoldenrodCity_UndergroundSwitches/map.bin"
     },
     {
-      "id": "LAYOUT_GOLDENROD_UNDERGROUND_ROCKET2",
-      "name": "GoldenrodUndergroundRocket2_Layout",
+      "id": "LAYOUT_GOLDENROD_CITY_UNDERGROUND_STORAGE",
+      "name": "GoldenrodCity_UndergroundStorage_Layout",
       "width": 30,
       "height": 19,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_GreenHouses",
-      "border_filepath": "data/layouts/GoldenrodUndergroundRocket2/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodUndergroundRocket2/map.bin"
+      "border_filepath": "data/layouts/GoldenrodCity_UndergroundStorage/border.bin",
+      "blockdata_filepath": "data/layouts/GoldenrodCity_UndergroundStorage/map.bin"
     },
     {
-      "id": "LAYOUT_GOLDENROD_UNDERGROUND_ROCKET3",
-      "name": "GoldenrodUndergroundRocket3_Layout",
+      "id": "LAYOUT_GOLDENROD_CITY_DEPARTMENT_STORE_BASEMENT",
+      "name": "GoldenrodCity_DepartmentStoreBasement_Layout",
       "width": 30,
       "height": 24,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_GreenHouses",
-      "border_filepath": "data/layouts/GoldenrodUndergroundRocket3/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodUndergroundRocket3/map.bin"
+      "border_filepath": "data/layouts/GoldenrodCity_DepartmentStoreBasement/border.bin",
+      "blockdata_filepath": "data/layouts/GoldenrodCity_DepartmentStoreBasement/map.bin"
     },
     {
-      "id": "LAYOUT_GOLDENROD_GYM",
-      "name": "GoldenrodGym_Layout",
+      "id": "LAYOUT_GOLDENROD_CITY_GYM",
+      "name": "GoldenrodCity_Gym_Layout",
       "width": 34,
       "height": 27,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Cafe_50",
-      "border_filepath": "data/layouts/GoldenrodGym/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodGym/map.bin"
+      "border_filepath": "data/layouts/GoldenrodCity_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/GoldenrodCity_Gym/map.bin"
     },
     {
-      "id": "LAYOUT_GOLDENROD_FLOWER_SHOP",
-      "name": "GoldenrodFlowerShop_Layout",
+      "id": "LAYOUT_GOLDENROD_CITY_FLOWER_SHOP",
+      "name": "GoldenrodCity_FlowerShop_Layout",
       "width": 13,
       "height": 11,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_PokemonDayCare",
-      "border_filepath": "data/layouts/GoldenrodFlowerShop/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodFlowerShop/map.bin"
+      "border_filepath": "data/layouts/GoldenrodCity_FlowerShop/border.bin",
+      "blockdata_filepath": "data/layouts/GoldenrodCity_FlowerShop/map.bin"
     },
     {
-      "id": "LAYOUT_GOLDENROD_HOUSE1",
-      "name": "GoldenrodHouse1_Layout",
+      "id": "LAYOUT_GOLDENROD_CITY_HOUSE1",
+      "name": "GoldenrodCity_House1_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/GoldenrodHouse1/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodHouse1/map.bin"
+      "border_filepath": "data/layouts/GoldenrodCity_House1/border.bin",
+      "blockdata_filepath": "data/layouts/GoldenrodCity_House1/map.bin"
     },
     {
-      "id": "LAYOUT_GOLDENROD_HOUSE2",
-      "name": "GoldenrodHouse2_Layout",
+      "id": "LAYOUT_GOLDENROD_CITY_HOUSE2",
+      "name": "GoldenrodCity_House2_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/GoldenrodHouse2/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodHouse2/map.bin"
+      "border_filepath": "data/layouts/GoldenrodCity_House2/border.bin",
+      "blockdata_filepath": "data/layouts/GoldenrodCity_House2/map.bin"
     },
     {
-      "id": "LAYOUT_GOLDENROD_HOUSE3",
-      "name": "GoldenrodHouse3_Layout",
+      "id": "LAYOUT_GOLDENROD_CITY_HOUSE3",
+      "name": "GoldenrodCity_House3_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/GoldenrodHouse3/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodHouse3/map.bin"
+      "border_filepath": "data/layouts/GoldenrodCity_House3/border.bin",
+      "blockdata_filepath": "data/layouts/GoldenrodCity_House3/map.bin"
     },
     {
-      "id": "LAYOUT_GOLDENROD_BILLS_HOUSE",
-      "name": "GoldenrodBillsHouse_Layout",
+      "id": "LAYOUT_GOLDENROD_CITY_BILLS_HOUSE",
+      "name": "GoldenrodCity_BillsHouse_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/GoldenrodBillsHouse/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodBillsHouse/map.bin"
+      "border_filepath": "data/layouts/GoldenrodCity_BillsHouse/border.bin",
+      "blockdata_filepath": "data/layouts/GoldenrodCity_BillsHouse/map.bin"
     },
     {
-      "id": "LAYOUT_GOLDENROD_BIKE_SHOP",
-      "name": "GoldenrodBikeShop_Layout",
+      "id": "LAYOUT_GOLDENROD_CITY_BIKE_SHOP",
+      "name": "GoldenrodCity_BikeShop_Layout",
       "width": 11,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_BikeShop",
-      "border_filepath": "data/layouts/GoldenrodBikeShop/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodBikeShop/map.bin"
+      "border_filepath": "data/layouts/GoldenrodCity_BikeShop/border.bin",
+      "blockdata_filepath": "data/layouts/GoldenrodCity_BikeShop/map.bin"
     },
     {
-      "id": "LAYOUT_GOLDENROD_GAME_CORNER",
-      "name": "GoldenrodGameCorner_Layout",
+      "id": "LAYOUT_GOLDENROD_CITY_GAME_CORNER",
+      "name": "GoldenrodCity_GameCorner_Layout",
       "width": 23,
       "height": 15,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_GameCorner",
-      "border_filepath": "data/layouts/GoldenrodGameCorner/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodGameCorner/map.bin"
+      "border_filepath": "data/layouts/GoldenrodCity_GameCorner/border.bin",
+      "blockdata_filepath": "data/layouts/GoldenrodCity_GameCorner/map.bin"
     },
     {
-      "id": "LAYOUT_GOLDENROD_STATION",
-      "name": "GoldenrodStation_Layout",
+      "id": "LAYOUT_GOLDENROD_CITY_TRAIN_STATION",
+      "name": "GoldenrodCity_TrainStation_Layout",
       "width": 154,
       "height": 28,
       "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_GoldenrodStation",
-      "border_filepath": "data/layouts/GoldenrodStation/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodStation/map.bin"
+      "secondary_tileset": "gTileset_GoldenrodCity_TrainStation",
+      "border_filepath": "data/layouts/GoldenrodCity_TrainStation/border.bin",
+      "blockdata_filepath": "data/layouts/GoldenrodCity_TrainStation/map.bin"
     },
     {
-      "id": "LAYOUT_GOLDENROD_RADIO_TOWER1",
-      "name": "GoldenrodRadioTower1_Layout",
+      "id": "LAYOUT_GOLDENROD_CITY_RADIO_TOWER_1F",
+      "name": "GoldenrodCity_RadioTower_1F_Layout",
       "width": 32,
       "height": 16,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_GoldenrodUndergroundRocket",
-      "border_filepath": "data/layouts/GoldenrodRadioTower1/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodRadioTower1/map.bin"
+      "border_filepath": "data/layouts/GoldenrodCity_RadioTower_1F/border.bin",
+      "blockdata_filepath": "data/layouts/GoldenrodCity_RadioTower_1F/map.bin"
     },
     {
-      "id": "LAYOUT_GOLDENROD_RADIO_TOWER2",
-      "name": "GoldenrodRadioTower2_Layout",
+      "id": "LAYOUT_GOLDENROD_CITY_RADIO_TOWER_2F",
+      "name": "GoldenrodCity_RadioTower_2F_Layout",
       "width": 32,
       "height": 16,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_GoldenrodUndergroundRocket",
-      "border_filepath": "data/layouts/GoldenrodRadioTower2/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodRadioTower2/map.bin"
+      "border_filepath": "data/layouts/GoldenrodCity_RadioTower_2F/border.bin",
+      "blockdata_filepath": "data/layouts/GoldenrodCity_RadioTower_2F/map.bin"
     },
     {
-      "id": "LAYOUT_GOLDENROD_RADIO_TOWER3",
-      "name": "GoldenrodRadioTower3_Layout",
+      "id": "LAYOUT_GOLDENROD_CITY_RADIO_TOWER_3F",
+      "name": "GoldenrodCity_RadioTower_3F_Layout",
       "width": 32,
       "height": 16,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_GoldenrodUndergroundRocket",
-      "border_filepath": "data/layouts/GoldenrodRadioTower3/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodRadioTower3/map.bin"
+      "border_filepath": "data/layouts/GoldenrodCity_RadioTower_3F/border.bin",
+      "blockdata_filepath": "data/layouts/GoldenrodCity_RadioTower_3F/map.bin"
     },
     {
-      "id": "LAYOUT_GOLDENROD_RADIO_TOWER",
-      "name": "GoldenrodRadioTower_Layout",
+      "id": "LAYOUT_GOLDENROD_CITY_RADIO_TOWER_4F",
+      "name": "GoldenrodCity_RadioTower_4F_Layout",
       "width": 32,
       "height": 16,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_GoldenrodUndergroundRocket",
-      "border_filepath": "data/layouts/GoldenrodRadioTower/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodRadioTower/map.bin"
+      "border_filepath": "data/layouts/GoldenrodCity_RadioTower_4F/border.bin",
+      "blockdata_filepath": "data/layouts/GoldenrodCity_RadioTower_4F/map.bin"
     },
     {
-      "id": "LAYOUT_GOLDENROD_RADIO_TOWER5",
-      "name": "GoldenrodRadioTower5_Layout",
+      "id": "LAYOUT_GOLDENROD_CITY_RADIO_TOWER_5F",
+      "name": "GoldenrodCity_RadioTower_5F_Layout",
       "width": 34,
       "height": 16,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_GoldenrodUndergroundRocket",
-      "border_filepath": "data/layouts/GoldenrodRadioTower5/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodRadioTower5/map.bin"
+      "border_filepath": "data/layouts/GoldenrodCity_RadioTower_5F/border.bin",
+      "blockdata_filepath": "data/layouts/GoldenrodCity_RadioTower_5F/map.bin"
     },
     {
-      "id": "LAYOUT_GOLDENROD_DEPARTMENT_STORE1",
-      "name": "GoldenrodDepartmentStore1_Layout",
+      "id": "LAYOUT_GOLDENROD_CITY_DEPARTMENT_STORE_1F",
+      "name": "GoldenrodCity_DepartmentStore_1F_Layout",
       "width": 32,
       "height": 16,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_JohtoShop",
-      "border_filepath": "data/layouts/GoldenrodDepartmentStore1/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodDepartmentStore1/map.bin"
+      "border_filepath": "data/layouts/GoldenrodCity_DepartmentStore_1F/border.bin",
+      "blockdata_filepath": "data/layouts/GoldenrodCity_DepartmentStore_1F/map.bin"
     },
     {
-      "id": "LAYOUT_GOLDENROD_DEPARTMENT_STORE2",
-      "name": "GoldenrodDepartmentStore2_Layout",
+      "id": "LAYOUT_GOLDENROD_CITY_DEPARTMENT_STORE_2F",
+      "name": "GoldenrodCity_DepartmentStore_2F_Layout",
       "width": 32,
       "height": 19,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_JohtoShop",
-      "border_filepath": "data/layouts/GoldenrodDepartmentStore2/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodDepartmentStore2/map.bin"
+      "border_filepath": "data/layouts/GoldenrodCity_DepartmentStore_2F/border.bin",
+      "blockdata_filepath": "data/layouts/GoldenrodCity_DepartmentStore_2F/map.bin"
     },
     {
-      "id": "LAYOUT_GOLDENROD_DEPARTMENT_STORE3",
-      "name": "GoldenrodDepartmentStore3_Layout",
+      "id": "LAYOUT_GOLDENROD_CITY_DEPARTMENT_STORE_3F",
+      "name": "GoldenrodCity_DepartmentStore_3F_Layout",
       "width": 33,
       "height": 16,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_JohtoShop",
-      "border_filepath": "data/layouts/GoldenrodDepartmentStore3/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodDepartmentStore3/map.bin"
+      "border_filepath": "data/layouts/GoldenrodCity_DepartmentStore_3F/border.bin",
+      "blockdata_filepath": "data/layouts/GoldenrodCity_DepartmentStore_3F/map.bin"
     },
     {
-      "id": "LAYOUT_GOLDENROD_DEPARTMENT_STORE4",
-      "name": "GoldenrodDepartmentStore4_Layout",
+      "id": "LAYOUT_GOLDENROD_CITY_DEPARTMENT_STORE_4F",
+      "name": "GoldenrodCity_DepartmentStore_4F_Layout",
       "width": 32,
       "height": 19,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_JohtoShop",
-      "border_filepath": "data/layouts/GoldenrodDepartmentStore4/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodDepartmentStore4/map.bin"
+      "border_filepath": "data/layouts/GoldenrodCity_DepartmentStore_4F/border.bin",
+      "blockdata_filepath": "data/layouts/GoldenrodCity_DepartmentStore_4F/map.bin"
     },
     {
-      "id": "LAYOUT_GOLDENROD_DEPARTMENT_STORE5",
-      "name": "GoldenrodDepartmentStore5_Layout",
+      "id": "LAYOUT_GOLDENROD_CITY_DEPARTMENT_STORE_5F",
+      "name": "GoldenrodCity_DepartmentStore_5F_Layout",
       "width": 33,
       "height": 16,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_JohtoShop",
-      "border_filepath": "data/layouts/GoldenrodDepartmentStore5/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodDepartmentStore5/map.bin"
+      "border_filepath": "data/layouts/GoldenrodCity_DepartmentStore_5F/border.bin",
+      "blockdata_filepath": "data/layouts/GoldenrodCity_DepartmentStore_5F/map.bin"
     },
     {
-      "id": "LAYOUT_GOLDENROD_DEPARTMENT_STORE6",
-      "name": "GoldenrodDepartmentStore6_Layout",
+      "id": "LAYOUT_GOLDENROD_CITY_DEPARTMENT_STORE_6F",
+      "name": "GoldenrodCity_DepartmentStore_6F_Layout",
       "width": 32,
       "height": 19,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_JohtoShop",
-      "border_filepath": "data/layouts/GoldenrodDepartmentStore6/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodDepartmentStore6/map.bin"
+      "border_filepath": "data/layouts/GoldenrodCity_DepartmentStore_6F/border.bin",
+      "blockdata_filepath": "data/layouts/GoldenrodCity_DepartmentStore_6F/map.bin"
     },
     {
-      "id": "LAYOUT_GOLDENROD_DEPARTMENT_STORE7",
-      "name": "GoldenrodDepartmentStore7_Layout",
+      "id": "LAYOUT_GOLDENROD_CITY_DEPARTMENT_STORE_7F",
+      "name": "GoldenrodCity_DepartmentStore_7F_Layout",
       "width": 32,
       "height": 19,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_ShopRooftop",
-      "border_filepath": "data/layouts/GoldenrodDepartmentStore7/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodDepartmentStore7/map.bin"
+      "border_filepath": "data/layouts/GoldenrodCity_DepartmentStore_7F/border.bin",
+      "blockdata_filepath": "data/layouts/GoldenrodCity_DepartmentStore_7F/map.bin"
     },
     {
-      "id": "LAYOUT_GOLDENROD_DEPARTMENT_STORE_ELEVATOR",
-      "name": "GoldenrodDepartmentStoreElevator_Layout",
+      "id": "LAYOUT_GOLDENROD_CITY_DEPARTMENT_STORE_ELEVATOR",
+      "name": "GoldenrodCity_DepartmentStoreElevator_Layout",
       "width": 5,
       "height": 7,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_GoldenrodUndergroundRocket",
-      "border_filepath": "data/layouts/GoldenrodDepartmentStoreElevator/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodDepartmentStoreElevator/map.bin"
+      "border_filepath": "data/layouts/GoldenrodCity_DepartmentStoreElevator/border.bin",
+      "blockdata_filepath": "data/layouts/GoldenrodCity_DepartmentStoreElevator/map.bin"
     },
     {
       "id": "LAYOUT_CIANWOOD_HOUSE1",
@@ -7717,7 +7717,7 @@
       "width": 154,
       "height": 28,
       "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_GoldenrodStation",
+      "secondary_tileset": "gTileset_GoldenrodCity_TrainStation",
       "border_filepath": "data/layouts/SaffronTrainStation/border.bin",
       "blockdata_filepath": "data/layouts/SaffronTrainStation/map.bin"
     },
@@ -8672,14 +8672,14 @@
       "blockdata_filepath": "data/layouts/MtSilverSummitTest/map.bin"
     },
     {
-      "id": "LAYOUT_GOLDENROD_DEPARTMENT_STORE7NIGHT",
-      "name": "GoldenrodDepartmentStore7Night_Layout",
+      "id": "LAYOUT_GOLDENROD_CITY_DEPARTMENT_STORE_7FNIGHT",
+      "name": "GoldenrodCity_DepartmentStore_7FNight_Layout",
       "width": 32,
       "height": 19,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_ShopRooftop",
-      "border_filepath": "data/layouts/GoldenrodDepartmentStore7Night/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodDepartmentStore7Night/map.bin"
+      "border_filepath": "data/layouts/GoldenrodCity_DepartmentStore_7FNight/border.bin",
+      "blockdata_filepath": "data/layouts/GoldenrodCity_DepartmentStore_7FNight/map.bin"
     },
     {
       "id": "LAYOUT_NATIONAL_PARK2",

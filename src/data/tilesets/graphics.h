@@ -2585,7 +2585,7 @@ const u16 gTilesetPalettes_GoldenrodUndergroundRocket[][16] =
 
 const u32 gTilesetTiles_GoldenrodUndergroundRocket[] = INCBIN_U32("data/tilesets/secondary/goldenrod_underground_rocket/tiles.4bpp.lz");
 
-const u16 gTilesetPalettes_GoldenrodStation[][16] =
+const u16 gTilesetPalettes_GoldenrodCity_TrainStation[][16] =
 {
     INCBIN_U16("data/tilesets/secondary/goldenrod_station/palettes/00.gbapal"),
     INCBIN_U16("data/tilesets/secondary/goldenrod_station/palettes/01.gbapal"),
@@ -2602,7 +2602,7 @@ const u16 gTilesetPalettes_GoldenrodStation[][16] =
     INCBIN_U16("data/tilesets/secondary/goldenrod_station/palettes/12.gbapal"),
 };
 
-const u32 gTilesetTiles_GoldenrodStation[] = INCBIN_U32("data/tilesets/secondary/goldenrod_station/tiles.4bpp.lz");
+const u32 gTilesetTiles_GoldenrodCity_TrainStation[] = INCBIN_U32("data/tilesets/secondary/goldenrod_station/tiles.4bpp.lz");
 
 const u16 gTilesetPalettes_RadioTower[][16] =
 {

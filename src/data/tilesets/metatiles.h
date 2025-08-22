@@ -358,8 +358,8 @@ const u16 gMetatileAttributes_GoldenrodUndergroundTunnel[] = INCBIN_U16("data/ti
 const u16 gMetatiles_GoldenrodUndergroundRocket[] = INCBIN_U16("data/tilesets/secondary/goldenrod_underground_rocket/metatiles.bin");
 const u16 gMetatileAttributes_GoldenrodUndergroundRocket[] = INCBIN_U16("data/tilesets/secondary/goldenrod_underground_rocket/metatile_attributes.bin");
 
-const u16 gMetatiles_GoldenrodStation[] = INCBIN_U16("data/tilesets/secondary/goldenrod_station/metatiles.bin");
-const u16 gMetatileAttributes_GoldenrodStation[] = INCBIN_U16("data/tilesets/secondary/goldenrod_station/metatile_attributes.bin");
+const u16 gMetatiles_GoldenrodCity_TrainStation[] = INCBIN_U16("data/tilesets/secondary/goldenrod_station/metatiles.bin");
+const u16 gMetatileAttributes_GoldenrodCity_TrainStation[] = INCBIN_U16("data/tilesets/secondary/goldenrod_station/metatile_attributes.bin");
 
 const u16 gMetatiles_RadioTower[] = INCBIN_U16("data/tilesets/secondary/radio_tower/metatiles.bin");
 const u16 gMetatileAttributes_RadioTower[] = INCBIN_U16("data/tilesets/secondary/radio_tower/metatile_attributes.bin");

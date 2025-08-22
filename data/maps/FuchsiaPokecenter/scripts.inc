@@ -23,22 +23,22 @@ FuchsiaPokecenter_EventScript_JanineClone::
 	lock
 	faceplayer
 	msgbox FuchsiaPokecenter1F_Text_JanineImpersonator1, MSGBOX_DEFAULT
-	applymovement LOCALID_FUCHSIAPOKECENTER_WOMAN, GoldenrodRadioTower5_Movement_Spin
+	applymovement LOCALID_FUCHSIAPOKECENTER_WOMAN, GoldenrodCity_RadioTower_5F_Movement_Spin
 	waitmovement 0
 	removeobject LOCALID_FUCHSIAPOKECENTER_WOMAN
 	clearflag FLAG_TEMP_1
 	addobject LOCALID_FUCHSIAPOKECENTER_JASMINE
-	applymovement LOCALID_FUCHSIAPOKECENTER_JASMINE, GoldenrodRadioTower5_Movement_Spin2
+	applymovement LOCALID_FUCHSIAPOKECENTER_JASMINE, GoldenrodCity_RadioTower_5F_Movement_Spin2
 	waitmovement 0
 	applymovement LOCALID_FUCHSIAPOKECENTER_JASMINE, Common_Movement_FacePlayer
 	waitmovement 0
 	msgbox FuchsiaPokecenter1F_Text_JanineImpersonator2, MSGBOX_DEFAULT
-	applymovement LOCALID_FUCHSIAPOKECENTER_JASMINE, GoldenrodRadioTower5_Movement_Spin
+	applymovement LOCALID_FUCHSIAPOKECENTER_JASMINE, GoldenrodCity_RadioTower_5F_Movement_Spin
 	waitmovement 0
 	removeobject LOCALID_FUCHSIAPOKECENTER_JASMINE
 	clearflag FLAG_TEMP_2
 	addobject LOCALID_FUCHSIAPOKECENTER_WOMAN
-	applymovement LOCALID_FUCHSIAPOKECENTER_WOMAN, GoldenrodRadioTower5_Movement_Spin2
+	applymovement LOCALID_FUCHSIAPOKECENTER_WOMAN, GoldenrodCity_RadioTower_5F_Movement_Spin2
 	waitmovement 0
 	release
 	closemessage
