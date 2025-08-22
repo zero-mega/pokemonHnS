@@ -460,8 +460,8 @@ const u16 gMetatileAttributes_Barn[] = INCBIN_U16("data/tilesets/secondary/barn/
 const u16 gMetatiles_PokemonLeague[] = INCBIN_U16("data/tilesets/secondary/pokemon_league/metatiles.bin");
 const u16 gMetatileAttributes_PokemonLeague[] = INCBIN_U16("data/tilesets/secondary/pokemon_league/metatile_attributes.bin");
 
-const u16 gMetatiles_SaffronCityDojoVIP[] = INCBIN_U16("data/tilesets/secondary/saffron_city_dojo_vip/metatiles.bin");
-const u16 gMetatileAttributes_SaffronCityDojoVIP[] = INCBIN_U16("data/tilesets/secondary/saffron_city_dojo_vip/metatile_attributes.bin");
+const u16 gMetatiles_SaffronCity_FightingDojoVIP[] = INCBIN_U16("data/tilesets/secondary/saffron_city_dojo_vip/metatiles.bin");
+const u16 gMetatileAttributes_SaffronCity_FightingDojoVIP[] = INCBIN_U16("data/tilesets/secondary/saffron_city_dojo_vip/metatile_attributes.bin");
 
 const u16 gMetatiles_Vermilion[] = INCBIN_U16("data/tilesets/secondary/vermilion/metatiles.bin");
 const u16 gMetatileAttributes_Vermilion[] = INCBIN_U16("data/tilesets/secondary/vermilion/metatile_attributes.bin");

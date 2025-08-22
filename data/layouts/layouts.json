@@ -6072,14 +6072,14 @@
       "blockdata_filepath": "data/layouts/CeladonCity_PokemonCenter/map.bin"
     },
     {
-      "id": "LAYOUT_SAFFRON_POKECENTER",
-      "name": "SaffronPokecenter_Layout",
+      "id": "LAYOUT_SAFFRON_CITY_POKEMON_CENTER",
+      "name": "SaffronCity_PokemonCenter_Layout",
       "width": 15,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Kanto_PokemonCenter",
-      "border_filepath": "data/layouts/SaffronPokecenter/border.bin",
-      "blockdata_filepath": "data/layouts/SaffronPokecenter/map.bin"
+      "border_filepath": "data/layouts/SaffronCity_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/SaffronCity_PokemonCenter/map.bin"
     },
     {
       "id": "LAYOUT_FUCHSIA_POKECENTER",
@@ -6562,14 +6562,14 @@
       "blockdata_filepath": "data/layouts/LavenderTown_Mart/map.bin"
     },
     {
-      "id": "LAYOUT_SAFFRON_POKEMART",
-      "name": "SaffronPokemart_Layout",
+      "id": "LAYOUT_SAFFRON_CITY_MART",
+      "name": "SaffronCity_Mart_Layout",
       "width": 11,
       "height": 9,
       "primary_tileset": "gTileset_Kanto_Building",
       "secondary_tileset": "gTileset_Kanto_Mart",
-      "border_filepath": "data/layouts/SaffronPokemart/border.bin",
-      "blockdata_filepath": "data/layouts/SaffronPokemart/map.bin"
+      "border_filepath": "data/layouts/SaffronCity_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/SaffronCity_Mart/map.bin"
     },
     {
       "id": "LAYOUT_FUCHSIA_POKEMART",
@@ -7712,64 +7712,64 @@
       "blockdata_filepath": "data/layouts/LavenderTown_SoulHouseUnused/map.bin"
     },
     {
-      "id": "LAYOUT_SAFFRON_TRAIN_STATION",
-      "name": "SaffronTrainStation_Layout",
+      "id": "LAYOUT_SAFFRON_CITY_TRAIN_STATION",
+      "name": "SaffronCity_TrainStation_Layout",
       "width": 154,
       "height": 28,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_GoldenrodCity_TrainStation",
-      "border_filepath": "data/layouts/SaffronTrainStation/border.bin",
-      "blockdata_filepath": "data/layouts/SaffronTrainStation/map.bin"
+      "border_filepath": "data/layouts/SaffronCity_TrainStation/border.bin",
+      "blockdata_filepath": "data/layouts/SaffronCity_TrainStation/map.bin"
     },
     {
-      "id": "LAYOUT_SAFFRON_CITY_DOJO",
-      "name": "SaffronCityDojo_Layout",
+      "id": "LAYOUT_SAFFRON_CITY_FIGHTING_DOJO",
+      "name": "SaffronCity_FightingDojo_Layout",
       "width": 23,
       "height": 16,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_Theater_26",
-      "border_filepath": "data/layouts/SaffronCityDojo/border.bin",
-      "blockdata_filepath": "data/layouts/SaffronCityDojo/map.bin"
+      "border_filepath": "data/layouts/SaffronCity_FightingDojo/border.bin",
+      "blockdata_filepath": "data/layouts/SaffronCity_FightingDojo/map.bin"
     },
     {
       "id": "LAYOUT_SAFFRON_CITY_GYM",
-      "name": "SaffronCityGym_Layout",
+      "name": "SaffronCity_Gym_Layout",
       "width": 29,
       "height": 25,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_SaffronGym_30",
-      "border_filepath": "data/layouts/SaffronCityGym/border.bin",
-      "blockdata_filepath": "data/layouts/SaffronCityGym/map.bin"
+      "border_filepath": "data/layouts/SaffronCity_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/SaffronCity_Gym/map.bin"
     },
     {
       "id": "LAYOUT_SAFFRON_CITY_SILPH_CO",
-      "name": "SaffronCitySilphCo_Layout",
+      "name": "SaffronCity_SilphCo_Layout",
       "width": 36,
       "height": 22,
       "primary_tileset": "gTileset_Kanto_Building",
       "secondary_tileset": "gTileset_SilphCo",
-      "border_filepath": "data/layouts/SaffronCitySilphCo/border.bin",
-      "blockdata_filepath": "data/layouts/SaffronCitySilphCo/map.bin"
+      "border_filepath": "data/layouts/SaffronCity_SilphCo/border.bin",
+      "blockdata_filepath": "data/layouts/SaffronCity_SilphCo/map.bin"
+    },
+    {
+      "id": "LAYOUT_SAFFRON_CITY_COPY_CATS_HOUSE_1F",
+      "name": "SaffronCity_CopyCatsHouse_1F_Layout",
+      "width": 13,
+      "height": 10,
+      "primary_tileset": "gTileset_Johto_Building",
+      "secondary_tileset": "gTileset_R26_21",
+      "border_filepath": "data/layouts/SaffronCity_CopyCatsHouse_1F/border.bin",
+      "blockdata_filepath": "data/layouts/SaffronCity_CopyCatsHouse_1F/map.bin"
     },
     {
       "id": "LAYOUT_SAFFRON_CITY_HOUSE1",
-      "name": "SaffronCityHouse1_Layout",
+      "name": "SaffronCity_House1_Layout",
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/SaffronCityHouse1/border.bin",
-      "blockdata_filepath": "data/layouts/SaffronCityHouse1/map.bin"
-    },
-    {
-      "id": "LAYOUT_SAFFRON_CITY_HOUSE2",
-      "name": "SaffronCityHouse2_Layout",
-      "width": 13,
-      "height": 10,
-      "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/SaffronCityHouse2/border.bin",
-      "blockdata_filepath": "data/layouts/SaffronCityHouse2/map.bin"
+      "border_filepath": "data/layouts/SaffronCity_House1/border.bin",
+      "blockdata_filepath": "data/layouts/SaffronCity_House1/map.bin"
     },
     {
       "id": "LAYOUT_CELADON_CITY_HOUSE1",
@@ -8482,14 +8482,14 @@
       "blockdata_filepath": "data/layouts/HallOfFame/map.bin"
     },
     {
-      "id": "LAYOUT_SAFFRON_CITY_DOJO_VIP",
-      "name": "SaffronCityDojoVIP_Layout",
+      "id": "LAYOUT_SAFFRON_CITY_FIGHTING_DOJO_VIP",
+      "name": "SaffronCity_FightingDojoVIP_Layout",
       "width": 45,
       "height": 43,
       "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_SaffronCityDojoVIP",
-      "border_filepath": "data/layouts/SaffronCityDojoVIP/border.bin",
-      "blockdata_filepath": "data/layouts/SaffronCityDojoVIP/map.bin"
+      "secondary_tileset": "gTileset_SaffronCity_FightingDojoVIP",
+      "border_filepath": "data/layouts/SaffronCity_FightingDojoVIP/border.bin",
+      "blockdata_filepath": "data/layouts/SaffronCity_FightingDojoVIP/map.bin"
     },
     {
       "id": "LAYOUT_SAFARI_ZONE_TOP_LEFT",
@@ -8812,14 +8812,14 @@
       "blockdata_filepath": "data/layouts/Route4Pokecenter/map.bin"
     },
     {
-      "id": "LAYOUT_SAFFRON_CITY_COPY_CAT_ROOM",
-      "name": "SaffronCityCopyCatRoom_Layout",
+      "id": "LAYOUT_SAFFRON_CITY_COPY_CATS_HOUSE_2F",
+      "name": "SaffronCity_CopyCatsHouse_2F_Layout",
       "width": 11,
       "height": 9,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_PlayersHouse_20",
-      "border_filepath": "data/layouts/SaffronCityCopyCatRoom/border.bin",
-      "blockdata_filepath": "data/layouts/SaffronCityCopyCatRoom/map.bin"
+      "border_filepath": "data/layouts/SaffronCity_CopyCatsHouse_2F/border.bin",
+      "blockdata_filepath": "data/layouts/SaffronCity_CopyCatsHouse_2F/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE25BILLS_HOUSE",

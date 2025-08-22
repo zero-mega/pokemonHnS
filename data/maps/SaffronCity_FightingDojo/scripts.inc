@@ -1,18 +1,18 @@
-SaffronCityDojo_MapScripts::
+SaffronCity_FightingDojo_MapScripts::
 	.byte 0
 
-SaffronCityDojo_EventScript_StatueLeft::
+SaffronCity_FightingDojo_EventScript_StatueLeft::
 	msgbox FightingDojo_Text_Sign1, MSGBOX_SIGN
 	end
-SaffronCityDojo_EventScript_StatueRight::
+SaffronCity_FightingDojo_EventScript_StatueRight::
 	msgbox FightingDojo_Text_Sign2, MSGBOX_SIGN
 	end
 
-SaffronCityDojo_EventScript_BlackBelt::
+SaffronCity_FightingDojo_EventScript_BlackBelt::
 	msgbox FightingDojo_Text_BlackBelt, MSGBOX_NPC
 	end
 
-SaffronCityDojo_EventScript_Cooltrainer::
+SaffronCity_FightingDojo_EventScript_Cooltrainer::
 	msgbox FightingDojo_Text_Cooltrainer, MSGBOX_NPC
 	end
 

@@ -285,16 +285,16 @@
     "CeladonCity_Gym"
   ],
   "gMapGroup_IndoorSaffron": [
-    "SaffronPokecenter",
-    "SaffronPokemart",
-    "SaffronTrainStation",
-    "SaffronCityDojo",
-    "SaffronCityGym",
-    "SaffronCitySilphCo",
-    "SaffronCityHouse1",
-    "SaffronCityHouse2",
-    "SaffronCityDojoVIP",
-    "SaffronCityCopyCatRoom"
+    "SaffronCity_PokemonCenter",
+    "SaffronCity_Mart",
+    "SaffronCity_TrainStation",
+    "SaffronCity_FightingDojo",
+    "SaffronCity_FightingDojoVIP",
+    "SaffronCity_Gym",
+    "SaffronCity_SilphCo",
+    "SaffronCity_CopyCatsHouse_1F",
+    "SaffronCity_CopyCatsHouse_2F",
+    "SaffronCity_House1"
   ],
   "gMapGroup_IndoorFuchsia": [
     "FuchsiaPokecenter",

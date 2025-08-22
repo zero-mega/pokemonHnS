@@ -1,6 +1,6 @@
 {
   "id": "MAP_SAFFRON_CITY_SILPH_CO",
-  "name": "SaffronCitySilphCo",
+  "name": "SaffronCity_SilphCo",
   "layout": "LAYOUT_SAFFRON_CITY_SILPH_CO",
   "music": "MUS_HG_GOLDENROD",
   "region_map_section": "MAPSEC_SAFFRON_CITY",
@@ -24,7 +24,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SaffronCitySilphCo_EventScript_Officer",
+      "script": "SaffronCity_SilphCo_EventScript_Officer",
       "flag": "0"
     },
     {
@@ -37,7 +37,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SaffronCitySilphCo_EventScript_Receptionist",
+      "script": "SaffronCity_SilphCo_EventScript_Receptionist",
       "flag": "0"
     },
     {
@@ -50,7 +50,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SaffronCitySilphCo_EventScript_Steven",
+      "script": "SaffronCity_SilphCo_EventScript_Steven",
       "flag": "FLAG_GOT_HOENN_STARTER"
     },
     {
@@ -63,7 +63,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SaffronCitySilphCo_EventScript_Receptionist",
+      "script": "SaffronCity_SilphCo_EventScript_Receptionist",
       "flag": "0"
     }
   ],
@@ -86,7 +86,7 @@
       "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "SaffronCitySilphCo_EventScript_Sign1"
+      "script": "SaffronCity_SilphCo_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -94,7 +94,7 @@
       "y": 3,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "SaffronCitySilphCo_EventScript_Sign2"
+      "script": "SaffronCity_SilphCo_EventScript_Sign2"
     }
   ]
 }

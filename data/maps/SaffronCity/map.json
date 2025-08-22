@@ -239,14 +239,14 @@
       "x": 13,
       "y": 14,
       "elevation": 0,
-      "dest_map": "MAP_SAFFRON_TRAIN_STATION",
+      "dest_map": "MAP_SAFFRON_CITY_TRAIN_STATION",
       "dest_warp_id": "0"
     },
     {
       "x": 32,
       "y": 12,
       "elevation": 0,
-      "dest_map": "MAP_SAFFRON_CITY_DOJO",
+      "dest_map": "MAP_SAFFRON_CITY_FIGHTING_DOJO",
       "dest_warp_id": "0"
     },
     {
@@ -260,14 +260,14 @@
       "x": 32,
       "y": 21,
       "elevation": 0,
-      "dest_map": "MAP_SAFFRON_POKEMART",
+      "dest_map": "MAP_SAFFRON_CITY_MART",
       "dest_warp_id": "0"
     },
     {
       "x": 19,
       "y": 21,
       "elevation": 0,
-      "dest_map": "MAP_SAFFRON_CITY_HOUSE1",
+      "dest_map": "MAP_SAFFRON_CITY_COPY_CATS_HOUSE_1F",
       "dest_warp_id": "0"
     },
     {
@@ -281,14 +281,14 @@
       "x": 16,
       "y": 38,
       "elevation": 0,
-      "dest_map": "MAP_SAFFRON_POKECENTER",
+      "dest_map": "MAP_SAFFRON_CITY_POKEMON_CENTER",
       "dest_warp_id": "0"
     },
     {
       "x": 35,
       "y": 38,
       "elevation": 0,
-      "dest_map": "MAP_SAFFRON_CITY_HOUSE2",
+      "dest_map": "MAP_SAFFRON_CITY_HOUSE1",
       "dest_warp_id": "0"
     }
   ],

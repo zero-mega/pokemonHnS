@@ -1,200 +1,200 @@
-SaffronCityDojoVIP_MapScripts::
+SaffronCity_FightingDojoVIP_MapScripts::
 	.byte 0
 
-SaffronCityDojoVIP_EventScript_Declined::
+SaffronCity_FightingDojoVIP_EventScript_Declined::
 	closemessage
 	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
 
-SaffronCityDojoVIP_EventScript_Falkner::
+SaffronCity_FightingDojoVIP_EventScript_Falkner::
 	lock
 	faceplayer
-	msgbox SaffronCityDojoVIP_Text_Falkner_Rematch, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, FALSE, SaffronCityDojoVIP_EventScript_Declined
+	msgbox SaffronCity_FightingDojoVIP_Text_Falkner_Rematch, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, FALSE, SaffronCity_FightingDojoVIP_EventScript_Declined
 	closemessage
-	trainerbattle_no_intro TRAINER_FALKNER_2, SaffronCityDojoVIP_Text_Falkner_RematchDefeat
+	trainerbattle_no_intro TRAINER_FALKNER_2, SaffronCity_FightingDojoVIP_Text_Falkner_RematchDefeat
 	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
 
-SaffronCityDojoVIP_EventScript_Bugsy::
+SaffronCity_FightingDojoVIP_EventScript_Bugsy::
 	lock
 	faceplayer
-	msgbox SaffronCityDojoVIP_Text_Bugsy_Rematch, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, FALSE, SaffronCityDojoVIP_EventScript_Declined
+	msgbox SaffronCity_FightingDojoVIP_Text_Bugsy_Rematch, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, FALSE, SaffronCity_FightingDojoVIP_EventScript_Declined
 	closemessage
-	trainerbattle_no_intro TRAINER_BUGSY_2, SaffronCityDojoVIP_Text_Bugsy_RematchDefeat
+	trainerbattle_no_intro TRAINER_BUGSY_2, SaffronCity_FightingDojoVIP_Text_Bugsy_RematchDefeat
 	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
 
-SaffronCityDojoVIP_EventScript_Whitney::
+SaffronCity_FightingDojoVIP_EventScript_Whitney::
 	lock
 	faceplayer
-	msgbox SaffronCityDojoVIP_Text_Whitney_Rematch, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, FALSE, SaffronCityDojoVIP_EventScript_Declined
+	msgbox SaffronCity_FightingDojoVIP_Text_Whitney_Rematch, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, FALSE, SaffronCity_FightingDojoVIP_EventScript_Declined
 	closemessage
-	trainerbattle_no_intro TRAINER_WHITNEY_2, SaffronCityDojoVIP_Text_Whitney_RematchDefeat
+	trainerbattle_no_intro TRAINER_WHITNEY_2, SaffronCity_FightingDojoVIP_Text_Whitney_RematchDefeat
 	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
 
-SaffronCityDojoVIP_EventScript_Morty::
+SaffronCity_FightingDojoVIP_EventScript_Morty::
 	lock
 	faceplayer
-	msgbox SaffronCityDojoVIP_Text_Morty_Rematch, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, FALSE, SaffronCityDojoVIP_EventScript_Declined
+	msgbox SaffronCity_FightingDojoVIP_Text_Morty_Rematch, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, FALSE, SaffronCity_FightingDojoVIP_EventScript_Declined
 	closemessage
-	trainerbattle_no_intro TRAINER_MORTY_2, SaffronCityDojoVIP_Text_Morty_RematchDefeat
+	trainerbattle_no_intro TRAINER_MORTY_2, SaffronCity_FightingDojoVIP_Text_Morty_RematchDefeat
 	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
 
-SaffronCityDojoVIP_EventScript_Chuck::
+SaffronCity_FightingDojoVIP_EventScript_Chuck::
 	lock
 	faceplayer
-	msgbox SaffronCityDojoVIP_Text_Chuck_Rematch, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, FALSE, SaffronCityDojoVIP_EventScript_Declined
+	msgbox SaffronCity_FightingDojoVIP_Text_Chuck_Rematch, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, FALSE, SaffronCity_FightingDojoVIP_EventScript_Declined
 	closemessage
-	trainerbattle_no_intro TRAINER_CHUCK_2, SaffronCityDojoVIP_Text_Chuck_RematchDefeat
+	trainerbattle_no_intro TRAINER_CHUCK_2, SaffronCity_FightingDojoVIP_Text_Chuck_RematchDefeat
 	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
 
-SaffronCityDojoVIP_EventScript_Jasmine::
+SaffronCity_FightingDojoVIP_EventScript_Jasmine::
 	lock
 	faceplayer
-	msgbox SaffronCityDojoVIP_Text_Jasmine_Rematch, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, FALSE, SaffronCityDojoVIP_EventScript_Declined
+	msgbox SaffronCity_FightingDojoVIP_Text_Jasmine_Rematch, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, FALSE, SaffronCity_FightingDojoVIP_EventScript_Declined
 	closemessage
-	trainerbattle_no_intro TRAINER_JASMINE_2, SaffronCityDojoVIP_Text_Jasmine_RematchDefeat
+	trainerbattle_no_intro TRAINER_JASMINE_2, SaffronCity_FightingDojoVIP_Text_Jasmine_RematchDefeat
 	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
 
-SaffronCityDojoVIP_EventScript_Pryce::
+SaffronCity_FightingDojoVIP_EventScript_Pryce::
 	lock
 	faceplayer
-	msgbox SaffronCityDojoVIP_Text_Pryce_Rematch, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, FALSE, SaffronCityDojoVIP_EventScript_Declined
+	msgbox SaffronCity_FightingDojoVIP_Text_Pryce_Rematch, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, FALSE, SaffronCity_FightingDojoVIP_EventScript_Declined
 	closemessage
-	trainerbattle_no_intro TRAINER_PRYCE_2, SaffronCityDojoVIP_Text_Pryce_RematchDefeat
+	trainerbattle_no_intro TRAINER_PRYCE_2, SaffronCity_FightingDojoVIP_Text_Pryce_RematchDefeat
 	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
 
-SaffronCityDojoVIP_EventScript_Clair::
+SaffronCity_FightingDojoVIP_EventScript_Clair::
 	lock
 	faceplayer
-	msgbox SaffronCityDojoVIP_Text_Clair_Rematch, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, FALSE, SaffronCityDojoVIP_EventScript_Declined
+	msgbox SaffronCity_FightingDojoVIP_Text_Clair_Rematch, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, FALSE, SaffronCity_FightingDojoVIP_EventScript_Declined
 	closemessage
-	trainerbattle_no_intro TRAINER_CLAIR_2, SaffronCityDojoVIP_Text_Clair_RematchDefeat
+	trainerbattle_no_intro TRAINER_CLAIR_2, SaffronCity_FightingDojoVIP_Text_Clair_RematchDefeat
 	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
 
-SaffronCityDojoVIP_EventScript_Brock::
+SaffronCity_FightingDojoVIP_EventScript_Brock::
 	lock
 	faceplayer
-	msgbox SaffronCityDojoVIP_Text_Brock_Rematch, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, FALSE, SaffronCityDojoVIP_EventScript_Declined
+	msgbox SaffronCity_FightingDojoVIP_Text_Brock_Rematch, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, FALSE, SaffronCity_FightingDojoVIP_EventScript_Declined
 	closemessage
-	trainerbattle_no_intro TRAINER_BROCK, SaffronCityDojoVIP_Text_Brock_RematchDefeat
+	trainerbattle_no_intro TRAINER_BROCK, SaffronCity_FightingDojoVIP_Text_Brock_RematchDefeat
 	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
 
-SaffronCityDojoVIP_EventScript_Misty::
+SaffronCity_FightingDojoVIP_EventScript_Misty::
 	lock
 	faceplayer
-	msgbox SaffronCityDojoVIP_Text_Misty_Rematch, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, FALSE, SaffronCityDojoVIP_EventScript_Declined
+	msgbox SaffronCity_FightingDojoVIP_Text_Misty_Rematch, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, FALSE, SaffronCity_FightingDojoVIP_EventScript_Declined
 	closemessage
-	trainerbattle_no_intro TRAINER_MISTY, SaffronCityDojoVIP_Text_Misty_RematchDefeat
+	trainerbattle_no_intro TRAINER_MISTY, SaffronCity_FightingDojoVIP_Text_Misty_RematchDefeat
 	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
 
-SaffronCityDojoVIP_EventScript_Surge::
+SaffronCity_FightingDojoVIP_EventScript_Surge::
 	lock
 	faceplayer
-	msgbox SaffronCityDojoVIP_Text_Surge_Rematch, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, FALSE, SaffronCityDojoVIP_EventScript_Declined
+	msgbox SaffronCity_FightingDojoVIP_Text_Surge_Rematch, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, FALSE, SaffronCity_FightingDojoVIP_EventScript_Declined
 	closemessage
-	trainerbattle_no_intro TRAINER_LTSURGE, SaffronCityDojoVIP_Text_Surge_RematchDefeat
+	trainerbattle_no_intro TRAINER_LTSURGE, SaffronCity_FightingDojoVIP_Text_Surge_RematchDefeat
 	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
 
-SaffronCityDojoVIP_EventScript_Erika::
+SaffronCity_FightingDojoVIP_EventScript_Erika::
 	lock
 	faceplayer
-	msgbox SaffronCityDojoVIP_Text_Erika_Rematch, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, FALSE, SaffronCityDojoVIP_EventScript_Declined
+	msgbox SaffronCity_FightingDojoVIP_Text_Erika_Rematch, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, FALSE, SaffronCity_FightingDojoVIP_EventScript_Declined
 	closemessage
-	trainerbattle_no_intro TRAINER_ERIKA, SaffronCityDojoVIP_Text_Erika_RematchDefeat
+	trainerbattle_no_intro TRAINER_ERIKA, SaffronCity_FightingDojoVIP_Text_Erika_RematchDefeat
 	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
 
-SaffronCityDojoVIP_EventScript_Janine::
+SaffronCity_FightingDojoVIP_EventScript_Janine::
 	lock
 	faceplayer
-	msgbox SaffronCityDojoVIP_Text_Janine_Rematch, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, FALSE, SaffronCityDojoVIP_EventScript_Declined
+	msgbox SaffronCity_FightingDojoVIP_Text_Janine_Rematch, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, FALSE, SaffronCity_FightingDojoVIP_EventScript_Declined
 	closemessage
-	trainerbattle_no_intro TRAINER_JANINE, SaffronCityDojoVIP_Text_Janine_RematchDefeat
+	trainerbattle_no_intro TRAINER_JANINE, SaffronCity_FightingDojoVIP_Text_Janine_RematchDefeat
 	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
 
-SaffronCityDojoVIP_EventScript_Sabrina::
+SaffronCity_FightingDojoVIP_EventScript_Sabrina::
 	lock
 	faceplayer
-	msgbox SaffronCityDojoVIP_Text_Sabrina_Rematch, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, FALSE, SaffronCityDojoVIP_EventScript_Declined
+	msgbox SaffronCity_FightingDojoVIP_Text_Sabrina_Rematch, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, FALSE, SaffronCity_FightingDojoVIP_EventScript_Declined
 	closemessage
-	trainerbattle_no_intro TRAINER_SABRINA, SaffronCityDojoVIP_Text_Sabrina_RematchDefeat
+	trainerbattle_no_intro TRAINER_SABRINA, SaffronCity_FightingDojoVIP_Text_Sabrina_RematchDefeat
 	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
 
-SaffronCityDojoVIP_EventScript_Blaine::
+SaffronCity_FightingDojoVIP_EventScript_Blaine::
 	lock
 	faceplayer
-	msgbox SaffronCityDojoVIP_Text_Blaine_Rematch, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, FALSE, SaffronCityDojoVIP_EventScript_Declined
+	msgbox SaffronCity_FightingDojoVIP_Text_Blaine_Rematch, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, FALSE, SaffronCity_FightingDojoVIP_EventScript_Declined
 	closemessage
-	trainerbattle_no_intro TRAINER_BLAINE, SaffronCityDojoVIP_Text_Blaine_RematchDefeat
+	trainerbattle_no_intro TRAINER_BLAINE, SaffronCity_FightingDojoVIP_Text_Blaine_RematchDefeat
 	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
 
-SaffronCityDojoVIP_EventScript_Blue::
+SaffronCity_FightingDojoVIP_EventScript_Blue::
 	lock
 	faceplayer
-	msgbox SaffronCityDojoVIP_Text_Blue_Rematch, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, FALSE, SaffronCityDojoVIP_EventScript_Declined
+	msgbox SaffronCity_FightingDojoVIP_Text_Blue_Rematch, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, FALSE, SaffronCity_FightingDojoVIP_EventScript_Declined
 	closemessage
-	trainerbattle_no_intro TRAINER_BLUE, SaffronCityDojoVIP_Text_Blue_RematchDefeat
+	trainerbattle_no_intro TRAINER_BLUE, SaffronCity_FightingDojoVIP_Text_Blue_RematchDefeat
 	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
@@ -202,217 +202,217 @@ SaffronCityDojoVIP_EventScript_Blue::
 
 @===============MONS===============================================================================================================
 
-SaffronCityDojoVIP_EventScript_Scizor::
+SaffronCity_FightingDojoVIP_EventScript_Scizor::
 	lock
 	faceplayer
 	waitse
 	playmoncry SPECIES_SCIZOR, CRY_MODE_NORMAL
-	msgbox SaffronCityDojoVIP_Text_Scizor, MSGBOX_DEFAULT
+	msgbox SaffronCity_FightingDojoVIP_Text_Scizor, MSGBOX_DEFAULT
 	waitmoncry
 	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
-SaffronCityDojoVIP_Text_Scizor:
+SaffronCity_FightingDojoVIP_Text_Scizor:
 	.string "SCIZOR: Scii-zor!$"
 
-SaffronCityDojoVIP_EventScript_Miltank::
+SaffronCity_FightingDojoVIP_EventScript_Miltank::
 	lock
 	faceplayer
 	waitse
 	playmoncry SPECIES_MILTANK, CRY_MODE_NORMAL
-	msgbox SaffronCityDojoVIP_Text_Miltank, MSGBOX_DEFAULT
+	msgbox SaffronCity_FightingDojoVIP_Text_Miltank, MSGBOX_DEFAULT
 	waitmoncry
 	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
-SaffronCityDojoVIP_Text_Miltank:
+SaffronCity_FightingDojoVIP_Text_Miltank:
 	.string "MILTANK: MooOOO!$"
 
-SaffronCityDojoVIP_EventScript_Poliwhirl::
+SaffronCity_FightingDojoVIP_EventScript_Poliwhirl::
 	lock
 	faceplayer
 	waitse
 	playmoncry SPECIES_POLIWHIRL, CRY_MODE_NORMAL
-	msgbox SaffronCityDojoVIP_Text_Poliwhirl, MSGBOX_DEFAULT
+	msgbox SaffronCity_FightingDojoVIP_Text_Poliwhirl, MSGBOX_DEFAULT
 	waitmoncry
 	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
-SaffronCityDojoVIP_Text_Poliwhirl:
+SaffronCity_FightingDojoVIP_Text_Poliwhirl:
 	.string "POLIWHIRL: Whirl-whirl!$"
 
-SaffronCityDojoVIP_EventScript_Dewgong::
+SaffronCity_FightingDojoVIP_EventScript_Dewgong::
 	lock
 	faceplayer
 	waitse
 	playmoncry SPECIES_DEWGONG, CRY_MODE_NORMAL
-	msgbox SaffronCityDojoVIP_Text_Dewgong, MSGBOX_DEFAULT
+	msgbox SaffronCity_FightingDojoVIP_Text_Dewgong, MSGBOX_DEFAULT
 	waitmoncry
 	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
-SaffronCityDojoVIP_Text_Dewgong:
+SaffronCity_FightingDojoVIP_Text_Dewgong:
 	.string "DEWGONG: Goooooong!$"
 
-SaffronCityDojoVIP_EventScript_Steelix::
+SaffronCity_FightingDojoVIP_EventScript_Steelix::
 	lock
 	faceplayer
 	waitse
 	playmoncry SPECIES_STEELIX, CRY_MODE_NORMAL
-	msgbox SaffronCityDojoVIP_Text_Steelix, MSGBOX_DEFAULT
+	msgbox SaffronCity_FightingDojoVIP_Text_Steelix, MSGBOX_DEFAULT
 	waitmoncry
 	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
-SaffronCityDojoVIP_Text_Steelix:
+SaffronCity_FightingDojoVIP_Text_Steelix:
 	.string "STEELIX: GraaAAANk!$"
 
-SaffronCityDojoVIP_EventScript_Kingdra::
+SaffronCity_FightingDojoVIP_EventScript_Kingdra::
 	lock
 	faceplayer
 	waitse
 	playmoncry SPECIES_KINGDRA, CRY_MODE_NORMAL
-	msgbox SaffronCityDojoVIP_Text_Kingdra, MSGBOX_DEFAULT
+	msgbox SaffronCity_FightingDojoVIP_Text_Kingdra, MSGBOX_DEFAULT
 	waitmoncry
 	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
-SaffronCityDojoVIP_Text_Kingdra:
+SaffronCity_FightingDojoVIP_Text_Kingdra:
 	.string "KINGDRA: Draaa...$"
 
-SaffronCityDojoVIP_EventScript_Onix::
+SaffronCity_FightingDojoVIP_EventScript_Onix::
 	lock
 	faceplayer
 	waitse
 	playmoncry SPECIES_ONIX, CRY_MODE_NORMAL
-	msgbox SaffronCityDojoVIP_Text_Onix, MSGBOX_DEFAULT
+	msgbox SaffronCity_FightingDojoVIP_Text_Onix, MSGBOX_DEFAULT
 	waitmoncry
 	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
-SaffronCityDojoVIP_Text_Onix:
+SaffronCity_FightingDojoVIP_Text_Onix:
 	.string "ONIX: Oooonix!$"
 
-SaffronCityDojoVIP_EventScript_Starmie::
+SaffronCity_FightingDojoVIP_EventScript_Starmie::
 	lock
 	faceplayer
 	waitse
 	playmoncry SPECIES_STARMIE, CRY_MODE_NORMAL
-	msgbox SaffronCityDojoVIP_Text_Starmie, MSGBOX_DEFAULT
+	msgbox SaffronCity_FightingDojoVIP_Text_Starmie, MSGBOX_DEFAULT
 	waitmoncry
 	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
-SaffronCityDojoVIP_Text_Starmie:
+SaffronCity_FightingDojoVIP_Text_Starmie:
 	.string "STARMIE: Hyaaa!$"
 
-SaffronCityDojoVIP_EventScript_Victreebel::
+SaffronCity_FightingDojoVIP_EventScript_Victreebel::
 	lock
 	faceplayer
 	waitse
 	playmoncry SPECIES_VICTREEBEL, CRY_MODE_NORMAL
-	msgbox SaffronCityDojoVIP_Text_Victreebel, MSGBOX_DEFAULT
+	msgbox SaffronCity_FightingDojoVIP_Text_Victreebel, MSGBOX_DEFAULT
 	waitmoncry
 	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
-SaffronCityDojoVIP_Text_Victreebel:
+SaffronCity_FightingDojoVIP_Text_Victreebel:
 	.string "VICTREEBEL: Vreeee!$"
 
-SaffronCityDojoVIP_EventScript_Muk::
+SaffronCity_FightingDojoVIP_EventScript_Muk::
 	lock
 	faceplayer
 	waitse
 	playmoncry SPECIES_MUK, CRY_MODE_NORMAL
-	msgbox SaffronCityDojoVIP_Text_Muk, MSGBOX_DEFAULT
+	msgbox SaffronCity_FightingDojoVIP_Text_Muk, MSGBOX_DEFAULT
 	waitmoncry
 	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
-SaffronCityDojoVIP_Text_Muk:
+SaffronCity_FightingDojoVIP_Text_Muk:
 	.string "MUK: Muuuk...$"
 
-SaffronCityDojoVIP_EventScript_Kadabra::
+SaffronCity_FightingDojoVIP_EventScript_Kadabra::
 	lock
 	faceplayer
 	waitse
 	playmoncry SPECIES_KADABRA, CRY_MODE_NORMAL
-	msgbox SaffronCityDojoVIP_Text_Kadabra, MSGBOX_DEFAULT
+	msgbox SaffronCity_FightingDojoVIP_Text_Kadabra, MSGBOX_DEFAULT
 	waitmoncry
 	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
-SaffronCityDojoVIP_Text_Kadabra:
+SaffronCity_FightingDojoVIP_Text_Kadabra:
 	.string "KADABRA: Kadabra!$"
 
-SaffronCityDojoVIP_EventScript_Magmar::
+SaffronCity_FightingDojoVIP_EventScript_Magmar::
 	lock
 	faceplayer
 	waitse
 	playmoncry SPECIES_MAGMAR, CRY_MODE_NORMAL
-	msgbox SaffronCityDojoVIP_Text_Magmar, MSGBOX_DEFAULT
+	msgbox SaffronCity_FightingDojoVIP_Text_Magmar, MSGBOX_DEFAULT
 	waitmoncry
 	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
-SaffronCityDojoVIP_Text_Magmar:
+SaffronCity_FightingDojoVIP_Text_Magmar:
 	.string "MAGMAR: Magmaaaar!$"
 
-SaffronCityDojoVIP_EventScript_Raichu::
+SaffronCity_FightingDojoVIP_EventScript_Raichu::
 	lock
 	faceplayer
 	waitse
 	playmoncry SPECIES_RAICHU, CRY_MODE_NORMAL
-	msgbox SaffronCityDojoVIP_Text_Raichu, MSGBOX_DEFAULT
+	msgbox SaffronCity_FightingDojoVIP_Text_Raichu, MSGBOX_DEFAULT
 	waitmoncry
 	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
-SaffronCityDojoVIP_Text_Raichu:
+SaffronCity_FightingDojoVIP_Text_Raichu:
 	.string "RAICHU: Rai-CHU!$"
 
-SaffronCityDojoVIP_EventScript_Machamp::
+SaffronCity_FightingDojoVIP_EventScript_Machamp::
 	lock
 	faceplayer
 	waitse
 	playmoncry SPECIES_MACHAMP, CRY_MODE_NORMAL
-	msgbox SaffronCityDojoVIP_Text_Machamp, MSGBOX_DEFAULT
+	msgbox SaffronCity_FightingDojoVIP_Text_Machamp, MSGBOX_DEFAULT
 	waitmoncry
 	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
-SaffronCityDojoVIP_Text_Machamp:
+SaffronCity_FightingDojoVIP_Text_Machamp:
 	.string "MACHAMP: Maa-champ!$"
 
-SaffronCityDojo_EventScript_Chased::
-	msgbox SaffronCityDojoVIP_Text_Chased, MSGBOX_NPC
+SaffronCity_FightingDojo_EventScript_Chased::
+	msgbox SaffronCity_FightingDojoVIP_Text_Chased, MSGBOX_NPC
 	end
 
-SaffronCityDojoVIP_Text_Chased:
+SaffronCity_FightingDojoVIP_Text_Chased:
 	.string "Help!$"
 
-SaffronCityDojoVIP_EvetScript_Statue::
-	msgbox SaffronCityDojoVIP_Text_Statue, MSGBOX_SIGN
+SaffronCity_FightingDojoVIP_EvetScript_Statue::
+	msgbox SaffronCity_FightingDojoVIP_Text_Statue, MSGBOX_SIGN
 	end
 
-SaffronCityDojoVIP_Text_Statue:
+SaffronCity_FightingDojoVIP_Text_Statue:
 	.string "FIGHTING DOJO VIP LOUNGE$"
 
-SaffronCityDojoVIP_Text_Falkner_Rematch:
+SaffronCity_FightingDojoVIP_Text_Falkner_Rematch:
 	.string "Congratulations on defeating\n"
 	.string "the ELITE 4!\p"
 	.string "I've been training my\n"
@@ -420,12 +420,12 @@ SaffronCityDojoVIP_Text_Falkner_Rematch:
 	.string "Think you can take on the power\n"
 	.string "of the skies again?$"
 
-SaffronCityDojoVIP_Text_Falkner_RematchDefeat:
+SaffronCity_FightingDojoVIP_Text_Falkner_RematchDefeat:
 	.string "Wow… You beat me again.\p"
 	.string "I'm going to train harder to\n"
 	.string "become the greatest bird master!$"
 
-SaffronCityDojoVIP_Text_Bugsy_Rematch:
+SaffronCity_FightingDojoVIP_Text_Bugsy_Rematch:
 	.string "Wow, you're the JOHTO CHAMPION\n"
 	.string "now!\p"
 	.string "Your skills are truly impressive!\p"
@@ -434,25 +434,25 @@ SaffronCityDojoVIP_Text_Bugsy_Rematch:
 	.string "findings.\p"
 	.string "Want to have a rematch with me?$"
 
-SaffronCityDojoVIP_Text_Bugsy_RematchDefeat:
+SaffronCity_FightingDojoVIP_Text_Bugsy_RematchDefeat:
 	.string "Wow, you must be an expert\n"
 	.string "trainer.\p"
 	.string "My research must not be\n"
 	.string "complete…$"
 
-SaffronCityDojoVIP_Text_Whitney_Rematch:
+SaffronCity_FightingDojoVIP_Text_Whitney_Rematch:
 	.string "Hi! It's you!\p"
 	.string "Wow, JOHTO CHAMPION now?\p"
 	.string "You really are amazing!\p"
 	.string "I want to see how strong you are.\p"
 	.string "Want to have a rematch with me?$"
 
-SaffronCityDojoVIP_Text_Whitney_RematchDefeat:
+SaffronCity_FightingDojoVIP_Text_Whitney_RematchDefeat:
 	.string "Waaaaah!\p"
 	.string "Waaaaah!\p"
 	.string "…Snivel, hic… …You meanie!$"
 
-SaffronCityDojoVIP_Text_Morty_Rematch:
+SaffronCity_FightingDojoVIP_Text_Morty_Rematch:
 	.string "Ah, the JOHTO CHAMPION! Good of\n"
 	.string "you to come.\p"
 	.string "You've shown your strength and\n"
@@ -464,22 +464,22 @@ SaffronCityDojoVIP_Text_Morty_Rematch:
 	.string "the shadows once again.\p"
 	.string "Want to have a rematch with me?$"
 
-SaffronCityDojoVIP_Text_Morty_RematchDefeat:
+SaffronCity_FightingDojoVIP_Text_Morty_RematchDefeat:
 	.string "I'm not good enough yet…\p"
 	.string "You have witnessed much more\n"
 	.string "than I.\p"
 	.string "I envy you for that…$"
 
-SaffronCityDojoVIP_Text_Chuck_Rematch:
+SaffronCity_FightingDojoVIP_Text_Chuck_Rematch:
 	.string "WAHAHAH! JOHTO CHAMPION!\p"
 	.string "You've come back for more!\p"
 	.string "I see your skills have improved!\p"
 	.string "Ready to see who's stronger?$"
 
-SaffronCityDojoVIP_Text_Chuck_RematchDefeat:
+SaffronCity_FightingDojoVIP_Text_Chuck_RematchDefeat:
 	.string "Wha? Huh? I lost? Again?$"
 
-SaffronCityDojoVIP_Text_Jasmine_Rematch:
+SaffronCity_FightingDojoVIP_Text_Jasmine_Rematch:
 	.string "…Congratulations, JOHTO\n"
 	.string "CHAMPION.\p"
 	.string "You have become so strong…\p"
@@ -487,12 +487,12 @@ SaffronCityDojoVIP_Text_Jasmine_Rematch:
 	.string "Would you like to test that?\p"
 	.string "Want to have a rematch with me?$"
 
-SaffronCityDojoVIP_Text_Jasmine_RematchDefeat:
+SaffronCity_FightingDojoVIP_Text_Jasmine_RematchDefeat:
 	.string "…You are a better trainer than\n"
 	.string "me,\p"
 	.string "in both skill and kindness.$"
 
-SaffronCityDojoVIP_Text_Pryce_Rematch:
+SaffronCity_FightingDojoVIP_Text_Pryce_Rematch:
 	.string "Ah, JOHTO CHAMPION!\p"
 	.string "Your skills are indeed\n"
 	.string "remarkable.\p"
@@ -503,14 +503,14 @@ SaffronCityDojoVIP_Text_Pryce_Rematch:
 	.string "still have a few tricks left.\p"
 	.string "Want to have a rematch with me?$"
 
-SaffronCityDojoVIP_Text_Pryce_RematchDefeat:
+SaffronCity_FightingDojoVIP_Text_Pryce_RematchDefeat:
 	.string "Ah, yet again I'm impressed by\n"
 	.string "your prowess.\p"
 	.string "With your strong will, I know\n"
 	.string "you will overcome all life's\l"
 	.string "obstacles.$"
 
-SaffronCityDojoVIP_Text_Clair_Rematch:
+SaffronCity_FightingDojoVIP_Text_Clair_Rematch:
 	.string "You did it, huh?\p"
 	.string "You are now the JOHTO CHAMP.\p"
 	.string "You've proven your strength but\n"
@@ -520,13 +520,13 @@ SaffronCityDojoVIP_Text_Clair_Rematch:
 	.string "Not this time.\p"
 	.string "Want to have a rematch with me?$"
 
-SaffronCityDojoVIP_Text_Clair_RematchDefeat:
+SaffronCity_FightingDojoVIP_Text_Clair_RematchDefeat:
 	.string "I lost?\p"
 	.string "Again?\p"
 	.string "I don't believe it. There must\n"
 	.string "be some mistake…$"
 
-SaffronCityDojoVIP_Text_Brock_Rematch:
+SaffronCity_FightingDojoVIP_Text_Brock_Rematch:
 	.string "BROCK: Hey there, {PLAYER}!\p"
 	.string "I heard you are now the KANTO\n"
 	.string "CHAMPION.\p"
@@ -534,11 +534,11 @@ SaffronCityDojoVIP_Text_Brock_Rematch:
 	.string "You must be even stronger now.\p"
 	.string "Want to have a rematch with me?$"
 
-SaffronCityDojoVIP_Text_Brock_RematchDefeat:
+SaffronCity_FightingDojoVIP_Text_Brock_RematchDefeat:
 	.string "BROCK: Your POKéMON once again\n"
 	.string "overcame my rock-hard defense…$"
 
-SaffronCityDojoVIP_Text_Misty_Rematch:
+SaffronCity_FightingDojoVIP_Text_Misty_Rematch:
 	.string "MISTY: Wow, you're the KANTO\n"
 	.string "CHAMPION now!\p"
 	.string "That's amazing! You've come a\n"
@@ -546,21 +546,21 @@ SaffronCityDojoVIP_Text_Misty_Rematch:
 	.string "But I'm not backing down.\p"
 	.string "Want to have a rematch with me?$"
 
-SaffronCityDojoVIP_Text_Misty_RematchDefeat:
+SaffronCity_FightingDojoVIP_Text_Misty_RematchDefeat:
 	.string "MISTY: You really are good…$"
 
-SaffronCityDojoVIP_Text_Surge_Rematch:
+SaffronCity_FightingDojoVIP_Text_Surge_Rematch:
 	.string "SURGE: So, you're now KANTO\n"
 	.string "CHAMPION!\p"
 	.string "Impressive work, kid! But don't\n"
 	.string "think I'm done!\p"
 	.string "How about we have a go again?$"
 
-SaffronCityDojoVIP_Text_Surge_RematchDefeat:
+SaffronCity_FightingDojoVIP_Text_Surge_RematchDefeat:
 	.string "SURGE: Arrrgh! You're still just\n"
 	.string "as strong!$"
 
-SaffronCityDojoVIP_Text_Erika_Rematch:
+SaffronCity_FightingDojoVIP_Text_Erika_Rematch:
 	.string "ERIKA: Oh, hello.\p"
 	.string "What a surprise, CHAMPION!\p"
 	.string "It's so lovely to see you again.\p"
@@ -569,25 +569,25 @@ SaffronCityDojoVIP_Text_Erika_Rematch:
 	.string "Even champions enjoy a challenge.\p"
 	.string "Want to have a rematch with me?$"
 
-SaffronCityDojoVIP_Text_Erika_RematchDefeat:
+SaffronCity_FightingDojoVIP_Text_Erika_RematchDefeat:
 	.string "ERIKA: Losing still leaves a\n"
 	.string "bitter aftertaste…\p"
 	.string "But knowing that there are strong\n"
 	.string "trainers spurs me to do better…$"
 
-SaffronCityDojoVIP_Text_Sabrina_Rematch:
+SaffronCity_FightingDojoVIP_Text_Sabrina_Rematch:
 	.string "SABRINA: Ah, the CHAMPION.\p"
 	.string "I sensed your return.\p"
 	.string "Your power has grown immensely.\p"
 	.string "Even now, I feel your aura.\p"
 	.string "Want to have a rematch with me?$"
 
-SaffronCityDojoVIP_Text_Sabrina_RematchDefeat:
+SaffronCity_FightingDojoVIP_Text_Sabrina_RematchDefeat:
 	.string "SABRINA: Your love for your\n"
 	.string "POKéMON again overwhelmed my\l"
 	.string "psychic power…$"
 
-SaffronCityDojoVIP_Text_Janine_Rematch:
+SaffronCity_FightingDojoVIP_Text_Janine_Rematch:
 	.string "Fufufufu…\p"
 	.string "Wow, you did it!\p"
 	.string "You're the CHAMPION now!\p"
@@ -595,12 +595,12 @@ SaffronCityDojoVIP_Text_Janine_Rematch:
 	.string "think I'll go easy on you.\p"
 	.string "Want to have a rematch with me?$"
 
-SaffronCityDojoVIP_Text_Janine_RematchDefeat:
+SaffronCity_FightingDojoVIP_Text_Janine_RematchDefeat:
 	.string "JANINE: You're still just as\n"
 	.string "tough!\p"
 	.string "You definitely won…$"
 
-SaffronCityDojoVIP_Text_Blaine_Rematch:
+SaffronCity_FightingDojoVIP_Text_Blaine_Rematch:
 	.string "BLAINE: Whoa!\p"
 	.string "I see you've become the KANTO\n"
 	.string "CHAMPION!\p"
@@ -609,13 +609,13 @@ SaffronCityDojoVIP_Text_Blaine_Rematch:
 	.string "I'm always up for a battle.\p"
 	.string "Want to have a rematch with me?$"
 
-SaffronCityDojoVIP_Text_Blaine_RematchDefeat:
+SaffronCity_FightingDojoVIP_Text_Blaine_RematchDefeat:
 	.string "BLAINE: Your skills are truly\n"
 	.string "fiery!\p"
 	.string "You've burned right through my\n"
 	.string "defenses.$"
 
-SaffronCityDojoVIP_Text_Blue_Rematch:
+SaffronCity_FightingDojoVIP_Text_Blue_Rematch:
 	.string "BLUE: Well, well. CHAMPION!\p"
 	.string "Looks like you've come a long way.\p"
 	.string "I used to have that title too,\n"
@@ -623,7 +623,7 @@ SaffronCityDojoVIP_Text_Blue_Rematch:
 	.string "Let's see if you can keep it up.\p"
 	.string "Want to have a rematch with me?$"
 
-SaffronCityDojoVIP_Text_Blue_RematchDefeat:
+SaffronCity_FightingDojoVIP_Text_Blue_RematchDefeat:
 	.string "BLUE: What?\p"
 	.string "How the heck did I lose again?$"
 

@@ -3,18 +3,18 @@
 .set LOCALID_GOLD, 7
 .set LOCALID_KRIS, 6
 
-SaffronCityCopyCatRoom_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, SaffronCityCopyCatRoom_OnTransition
+SaffronCity_CopyCatsHouse_2F_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, SaffronCity_CopyCatsHouse_2F_OnTransition
 	.byte 0
 
-SaffronCityCopyCatRoom_OnTransition::
+SaffronCity_CopyCatsHouse_2F_OnTransition::
 	setflag FLAG_TEMP_2
 	setflag FLAG_TEMP_3
 	end
 
 @VAR_FAN_CLUB_CLEFAIRY
 
-SaffronCityCopyCatRoom_EventScript_Dodrio::
+SaffronCity_CopyCatsHouse_2F_EventScript_Dodrio::
 	lock
 	faceplayer
 	waitse
@@ -26,21 +26,21 @@ SaffronCityCopyCatRoom_EventScript_Dodrio::
 	release
 	end
 
-SaffronCityCopyCatRoom_EventScript_Dolls::
+SaffronCity_CopyCatsHouse_2F_EventScript_Dolls::
 	msgbox Copycat_Text_2FDoll, MSGBOX_SIGN
 	end
 
-SaffronCityCopyCatRoom_EventScript_Copycat::
+SaffronCity_CopyCatsHouse_2F_EventScript_Copycat::
 	lock
 	faceplayer
-	goto_if_ge VAR_FAN_CLUB_CLEFAIRY, 3, SaffronCityCopyCatRoom_EventScript_CopycatAfterDollReturned
-	goto_if_eq VAR_FAN_CLUB_CLEFAIRY, 2, SaffronCityCopyCatRoom_EventScript_CopycatReturnDoll
-	goto_if_set FLAG_RETURNED_MACHINE_PART, SaffronCityCopyCatRoom_EventScript_CopycatReturnedMachinePart
+	goto_if_ge VAR_FAN_CLUB_CLEFAIRY, 3, SaffronCity_CopyCatsHouse_2F_EventScript_CopycatAfterDollReturned
+	goto_if_eq VAR_FAN_CLUB_CLEFAIRY, 2, SaffronCity_CopyCatsHouse_2F_EventScript_CopycatReturnDoll
+	goto_if_set FLAG_RETURNED_MACHINE_PART, SaffronCity_CopyCatsHouse_2F_EventScript_CopycatReturnedMachinePart
 	checkplayergender
-	goto_if_eq VAR_RESULT, MALE, SaffronCityCopyCatRoom_EventScript_Copycat1_Male
-	goto_if_eq VAR_RESULT, FEMALE, SaffronCityCopyCatRoom_EventScript_Copycat1_Female
+	goto_if_eq VAR_RESULT, MALE, SaffronCity_CopyCatsHouse_2F_EventScript_Copycat1_Male
+	goto_if_eq VAR_RESULT, FEMALE, SaffronCity_CopyCatsHouse_2F_EventScript_Copycat1_Female
 
-SaffronCityCopyCatRoom_EventScript_Copycat1_Male::
+SaffronCity_CopyCatsHouse_2F_EventScript_Copycat1_Male::
 	applymovement LOCALID_COPYCAT, GoldenrodCity_RadioTower_5F_Movement_Spin
 	waitmovement 0
 	removeobject LOCALID_COPYCAT
@@ -64,7 +64,7 @@ SaffronCityCopyCatRoom_EventScript_Copycat1_Male::
 	closemessage
 	end
 
-SaffronCityCopyCatRoom_EventScript_Copycat1_Female::
+SaffronCity_CopyCatsHouse_2F_EventScript_Copycat1_Female::
 	applymovement LOCALID_COPYCAT, GoldenrodCity_RadioTower_5F_Movement_Spin
 	waitmovement 0
 	removeobject LOCALID_COPYCAT
@@ -88,12 +88,12 @@ SaffronCityCopyCatRoom_EventScript_Copycat1_Female::
 	closemessage
 	end
 
-SaffronCityCopyCatRoom_EventScript_CopycatReturnedMachinePart::
+SaffronCity_CopyCatsHouse_2F_EventScript_CopycatReturnedMachinePart::
 	checkplayergender
-	goto_if_eq VAR_RESULT, MALE, SaffronCityCopyCatRoom_EventScript_CopycatReturnedMachinePart_Male
-	goto_if_eq VAR_RESULT, FEMALE, SaffronCityCopyCatRoom_EventScript_CopycatReturnedMachinePart_Female
+	goto_if_eq VAR_RESULT, MALE, SaffronCity_CopyCatsHouse_2F_EventScript_CopycatReturnedMachinePart_Male
+	goto_if_eq VAR_RESULT, FEMALE, SaffronCity_CopyCatsHouse_2F_EventScript_CopycatReturnedMachinePart_Female
 
-SaffronCityCopyCatRoom_EventScript_CopycatReturnedMachinePart_Male::
+SaffronCity_CopyCatsHouse_2F_EventScript_CopycatReturnedMachinePart_Male::
 	applymovement LOCALID_COPYCAT, GoldenrodCity_RadioTower_5F_Movement_Spin
 	waitmovement 0
 	removeobject LOCALID_COPYCAT
@@ -118,7 +118,7 @@ SaffronCityCopyCatRoom_EventScript_CopycatReturnedMachinePart_Male::
 	setvar VAR_FAN_CLUB_CLEFAIRY, 1
 	end
 
-SaffronCityCopyCatRoom_EventScript_CopycatReturnedMachinePart_Female::
+SaffronCity_CopyCatsHouse_2F_EventScript_CopycatReturnedMachinePart_Female::
 	applymovement LOCALID_COPYCAT, GoldenrodCity_RadioTower_5F_Movement_Spin
 	waitmovement 0
 	removeobject LOCALID_COPYCAT
@@ -143,7 +143,7 @@ SaffronCityCopyCatRoom_EventScript_CopycatReturnedMachinePart_Female::
 	setvar VAR_FAN_CLUB_CLEFAIRY, 1
 	end
 
-SaffronCityCopyCatRoom_EventScript_CopycatReturnDoll::
+SaffronCity_CopyCatsHouse_2F_EventScript_CopycatReturnDoll::
 	msgbox Copycat_Text_GiveDoll, MSGBOX_DEFAULT
 	fadescreenswapbuffers FADE_TO_BLACK
 	removeitem ITEM_LOST_ITEM
@@ -158,12 +158,12 @@ SaffronCityCopyCatRoom_EventScript_CopycatReturnDoll::
 	release
 	end
 
-SaffronCityCopyCatRoom_EventScript_CopycatAfterDollReturned::
+SaffronCity_CopyCatsHouse_2F_EventScript_CopycatAfterDollReturned::
 	checkplayergender
-	goto_if_eq VAR_RESULT, MALE, SaffronCityCopyCatRoom_EventScript_CopycatAfterDollReturned_Male
-	goto_if_eq VAR_RESULT, FEMALE, SaffronCityCopyCatRoom_EventScript_CopycatAfterDollReturned_Female
+	goto_if_eq VAR_RESULT, MALE, SaffronCity_CopyCatsHouse_2F_EventScript_CopycatAfterDollReturned_Male
+	goto_if_eq VAR_RESULT, FEMALE, SaffronCity_CopyCatsHouse_2F_EventScript_CopycatAfterDollReturned_Female
 
-SaffronCityCopyCatRoom_EventScript_CopycatAfterDollReturned_Male::
+SaffronCity_CopyCatsHouse_2F_EventScript_CopycatAfterDollReturned_Male::
 	applymovement LOCALID_COPYCAT, GoldenrodCity_RadioTower_5F_Movement_Spin
 	waitmovement 0
 	removeobject LOCALID_COPYCAT
@@ -187,7 +187,7 @@ SaffronCityCopyCatRoom_EventScript_CopycatAfterDollReturned_Male::
 	closemessage
 	end
 
-SaffronCityCopyCatRoom_EventScript_CopycatAfterDollReturned_Female::
+SaffronCity_CopyCatsHouse_2F_EventScript_CopycatAfterDollReturned_Female::
 	applymovement LOCALID_COPYCAT, GoldenrodCity_RadioTower_5F_Movement_Spin
 	waitmovement 0
 	removeobject LOCALID_COPYCAT

@@ -1774,14 +1774,14 @@ const struct Tileset gTileset_PokemonLeague =
     .callback = NULL,
 };
 
-const struct Tileset gTileset_SaffronCityDojoVIP =
+const struct Tileset gTileset_SaffronCity_FightingDojoVIP =
 {
     .isCompressed = TRUE,
     .isSecondary = TRUE,
-    .tiles = gTilesetTiles_SaffronCityDojoVIP,
-    .palettes = gTilesetPalettes_SaffronCityDojoVIP,
-    .metatiles = gMetatiles_SaffronCityDojoVIP,
-    .metatileAttributes = gMetatileAttributes_SaffronCityDojoVIP,
+    .tiles = gTilesetTiles_SaffronCity_FightingDojoVIP,
+    .palettes = gTilesetPalettes_SaffronCity_FightingDojoVIP,
+    .metatiles = gMetatiles_SaffronCity_FightingDojoVIP,
+    .metatileAttributes = gMetatileAttributes_SaffronCity_FightingDojoVIP,
     .callback = NULL,
 };
 

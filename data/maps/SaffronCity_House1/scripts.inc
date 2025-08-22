@@ -1,10 +1,10 @@
-SaffronCityHouse2_MapScripts::
+SaffronCity_House1_MapScripts::
 	.byte 0
 
-SaffronCityHouse2_EventScript_MrPsychic::
+SaffronCity_House1_EventScript_MrPsychic::
 	lock
 	faceplayer
-	goto_if_set FLAG_GOT_TM_PSYCHIC, SaffronCityHouse2_EventScript_MrPsychicAfter
+	goto_if_set FLAG_GOT_TM_PSYCHIC, SaffronCity_House1_EventScript_MrPsychicAfter
 	msgbox MrPsychic_Text_1, MSGBOX_NPC
 	giveitem ITEM_TM_PSYCHIC
 	msgbox MrPsychic_Text_2, MSGBOX_NPC
@@ -12,7 +12,7 @@ SaffronCityHouse2_EventScript_MrPsychic::
 	release
 	end
 
-SaffronCityHouse2_EventScript_MrPsychicAfter::
+SaffronCity_House1_EventScript_MrPsychicAfter::
 	msgbox MrPsychic_Text_2, MSGBOX_NPC
 	end
 

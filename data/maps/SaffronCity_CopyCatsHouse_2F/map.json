@@ -1,7 +1,7 @@
 {
-  "id": "MAP_SAFFRON_CITY_COPY_CAT_ROOM",
-  "name": "SaffronCityCopyCatRoom",
-  "layout": "LAYOUT_SAFFRON_CITY_COPY_CAT_ROOM",
+  "id": "MAP_SAFFRON_CITY_COPY_CATS_HOUSE_2F",
+  "name": "SaffronCity_CopyCatsHouse_2F",
+  "layout": "LAYOUT_SAFFRON_CITY_COPY_CATS_HOUSE_2F",
   "music": "MUS_HG_GOLDENROD",
   "region_map_section": "MAPSEC_SAFFRON_CITY",
   "requires_flash": false,
@@ -24,7 +24,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SaffronCityCopyCatRoom_EventScript_Copycat",
+      "script": "SaffronCity_CopyCatsHouse_2F_EventScript_Copycat",
       "flag": "FLAG_TEMP_1"
     },
     {
@@ -37,7 +37,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SaffronCityCopyCatRoom_EventScript_Dolls",
+      "script": "SaffronCity_CopyCatsHouse_2F_EventScript_Dolls",
       "flag": "0"
     },
     {
@@ -50,7 +50,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SaffronCityCopyCatRoom_EventScript_Dolls",
+      "script": "SaffronCity_CopyCatsHouse_2F_EventScript_Dolls",
       "flag": "0"
     },
     {
@@ -63,7 +63,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SaffronCityCopyCatRoom_EventScript_Dolls",
+      "script": "SaffronCity_CopyCatsHouse_2F_EventScript_Dolls",
       "flag": "FLAG_HIDE_COPYCAT_CLEFAIRY_DOLL"
     },
     {
@@ -76,7 +76,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SaffronCityCopyCatRoom_EventScript_Dodrio",
+      "script": "SaffronCity_CopyCatsHouse_2F_EventScript_Dodrio",
       "flag": "0"
     },
     {
@@ -111,7 +111,7 @@
       "x": 9,
       "y": 2,
       "elevation": 0,
-      "dest_map": "MAP_SAFFRON_CITY_HOUSE1",
+      "dest_map": "MAP_SAFFRON_CITY_COPY_CATS_HOUSE_1F",
       "dest_warp_id": "1"
     }
   ],

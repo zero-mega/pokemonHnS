@@ -1,7 +1,7 @@
 {
-  "id": "MAP_SAFFRON_CITY_DOJO",
-  "name": "SaffronCityDojo",
-  "layout": "LAYOUT_SAFFRON_CITY_DOJO",
+  "id": "MAP_SAFFRON_CITY_FIGHTING_DOJO",
+  "name": "SaffronCity_FightingDojo",
+  "layout": "LAYOUT_SAFFRON_CITY_FIGHTING_DOJO",
   "music": "MUS_HG_GYM",
   "region_map_section": "MAPSEC_SAFFRON_CITY",
   "requires_flash": false,
@@ -154,7 +154,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SaffronCityDojo_EventScript_Cooltrainer",
+      "script": "SaffronCity_FightingDojo_EventScript_Cooltrainer",
       "flag": "FLAG_VISITED_VERMILION_CITY"
     },
     {
@@ -167,7 +167,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SaffronCityDojo_EventScript_BlackBelt",
+      "script": "SaffronCity_FightingDojo_EventScript_BlackBelt",
       "flag": "0"
     }
   ],
@@ -183,7 +183,7 @@
       "x": 11,
       "y": 4,
       "elevation": 0,
-      "dest_map": "MAP_SAFFRON_CITY_DOJO_VIP",
+      "dest_map": "MAP_SAFFRON_CITY_FIGHTING_DOJO_VIP",
       "dest_warp_id": "0"
     }
   ],
@@ -197,7 +197,7 @@
       "y": 13,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "SaffronCityDojo_EventScript_StatueLeft"
+      "script": "SaffronCity_FightingDojo_EventScript_StatueLeft"
     },
     {
       "type": "sign",
@@ -205,7 +205,7 @@
       "y": 13,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "SaffronCityDojo_EventScript_StatueRight"
+      "script": "SaffronCity_FightingDojo_EventScript_StatueRight"
     }
   ]
 }

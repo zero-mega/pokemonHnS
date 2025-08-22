@@ -1452,7 +1452,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/CeladonCity_PokemonCenter/scripts.inc"
 
-	.include "data/maps/SaffronPokecenter/scripts.inc"
+	.include "data/maps/SaffronCity_PokemonCenter/scripts.inc"
 
 	.include "data/maps/FuchsiaPokecenter/scripts.inc"
 
@@ -1550,7 +1550,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/LavenderTown_Mart/scripts.inc"
 
-	.include "data/maps/SaffronPokemart/scripts.inc"
+	.include "data/maps/SaffronCity_Mart/scripts.inc"
 
 	.include "data/maps/FuchsiaPokemart/scripts.inc"
 
@@ -1780,17 +1780,17 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/LavenderTown_SoulHouseUnused/scripts.inc"
 
-	.include "data/maps/SaffronTrainStation/scripts.inc"
+	.include "data/maps/SaffronCity_TrainStation/scripts.inc"
 
-	.include "data/maps/SaffronCityDojo/scripts.inc"
+	.include "data/maps/SaffronCity_FightingDojo/scripts.inc"
 
-	.include "data/maps/SaffronCityGym/scripts.inc"
+	.include "data/maps/SaffronCity_Gym/scripts.inc"
 
-	.include "data/maps/SaffronCitySilphCo/scripts.inc"
+	.include "data/maps/SaffronCity_SilphCo/scripts.inc"
 
-	.include "data/maps/SaffronCityHouse1/scripts.inc"
+	.include "data/maps/SaffronCity_CopyCatsHouse_1F/scripts.inc"
 
-	.include "data/maps/SaffronCityHouse2/scripts.inc"
+	.include "data/maps/SaffronCity_House1/scripts.inc"
 
 	.include "data/maps/CeladonCity_House1/scripts.inc"
 
@@ -1934,7 +1934,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/HallOfFame/scripts.inc"
 
-	.include "data/maps/SaffronCityDojoVIP/scripts.inc"
+	.include "data/maps/SaffronCity_FightingDojoVIP/scripts.inc"
 
 	.include "data/maps/SafariZone_Top_Left/scripts.inc"
 
@@ -2000,7 +2000,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/Route4Pokecenter/scripts.inc"
 
-	.include "data/maps/SaffronCityCopyCatRoom/scripts.inc"
+	.include "data/maps/SaffronCity_CopyCatsHouse_2F/scripts.inc"
 
 	.include "data/maps/Route25BillsHouse/scripts.inc"
 

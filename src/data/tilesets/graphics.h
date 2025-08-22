@@ -3231,7 +3231,7 @@ const u16 gTilesetPalettes_PokemonLeague[][16] =
 
 const u32 gTilesetTiles_PokemonLeague[] = INCBIN_U32("data/tilesets/secondary/pokemon_league/tiles.4bpp.lz");
 
-const u16 gTilesetPalettes_SaffronCityDojoVIP[][16] =
+const u16 gTilesetPalettes_SaffronCity_FightingDojoVIP[][16] =
 {
     INCBIN_U16("data/tilesets/secondary/saffron_city_dojo_vip/palettes/00.gbapal"),
     INCBIN_U16("data/tilesets/secondary/saffron_city_dojo_vip/palettes/01.gbapal"),
@@ -3248,7 +3248,7 @@ const u16 gTilesetPalettes_SaffronCityDojoVIP[][16] =
     INCBIN_U16("data/tilesets/secondary/saffron_city_dojo_vip/palettes/12.gbapal"),
 };
 
-const u32 gTilesetTiles_SaffronCityDojoVIP[] = INCBIN_U32("data/tilesets/secondary/saffron_city_dojo_vip/tiles.4bpp.lz");
+const u32 gTilesetTiles_SaffronCity_FightingDojoVIP[] = INCBIN_U32("data/tilesets/secondary/saffron_city_dojo_vip/tiles.4bpp.lz");
 
 const u16 gTilesetPalettes_Vermilion[][16] =
 {

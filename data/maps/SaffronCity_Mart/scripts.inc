@@ -1,4 +1,4 @@
-SaffronPokemart_MapScripts::
+SaffronCity_Mart_MapScripts::
 	.byte 0
 
 SafronMart_EventScript_CooltrainerM::
