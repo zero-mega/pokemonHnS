@@ -8722,14 +8722,14 @@
       "blockdata_filepath": "data/layouts/FuchsiaCity_SafariZoneCave/map.bin"
     },
     {
-      "id": "LAYOUT_MT_SILVER_SUMMIT_DAY_NIGHT",
-      "name": "MtSilver_SummitDayNight_Layout",
+      "id": "LAYOUT_MT_SILVER_SUMMIT_NIGHT",
+      "name": "MtSilver_SummitNight_Layout",
       "width": 21,
       "height": 27,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_MtSilverSnow",
-      "border_filepath": "data/layouts/MtSilver_SummitDayNight/border.bin",
-      "blockdata_filepath": "data/layouts/MtSilver_SummitDayNight/map.bin"
+      "border_filepath": "data/layouts/MtSilver_SummitNight/border.bin",
+      "blockdata_filepath": "data/layouts/MtSilver_SummitNight/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE19_CAVE",

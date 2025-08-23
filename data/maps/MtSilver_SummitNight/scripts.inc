@@ -1,6 +1,6 @@
 .set LOCALID_MTSILVER_RED, 1
 
-MtSilver_SummitDayNight_MapScripts::
+MtSilver_SummitNight_MapScripts::
 	.byte 0
 
 MtSilver_SummitDay_EventScript_Red::

@@ -10,7 +10,7 @@ MtSilver_3F_OnTransition:
 	end
 
 MtSilver_3F_EventScript_SetwarpNight::
-	setdynamicwarp MAP_MT_SILVER_SUMMIT_DAY_NIGHT, 0
+	setdynamicwarp MAP_MT_SILVER_SUMMIT_NIGHT, 0
 	return
 
 MtSilver_3F_EventScript_SetwarpDay::

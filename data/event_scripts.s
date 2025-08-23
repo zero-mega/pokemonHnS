@@ -1982,6 +1982,6 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/FuchsiaCity_SafariZoneCave/scripts.inc"
 
-	.include "data/maps/MtSilver_SummitDayNight/scripts.inc"
+	.include "data/maps/MtSilver_SummitNight/scripts.inc"
 
 	.include "data/maps/Route19_Cave/scripts.inc"

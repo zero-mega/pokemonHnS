@@ -51388,6 +51388,71 @@
                 "species": "SPECIES_TENTACOOL"
               }
             ]
+          },
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 23,
+                "max_level": 23,
+                "species": "SPECIES_NIDORINO"
+              },
+              {
+                "min_level": 23,
+                "max_level": 23,
+                "species": "SPECIES_NIDORINA"
+              },
+              {
+                "min_level": 25,
+                "max_level": 25,
+                "species": "SPECIES_PIDGEOTTO"
+              },
+              {
+                "min_level": 25,
+                "max_level": 27,
+                "species": "SPECIES_HOPPIP"
+              },
+              {
+                "min_level": 23,
+                "max_level": 23,
+                "species": "SPECIES_NIDORINO"
+              },
+              {
+                "min_level": 23,
+                "max_level": 23,
+                "species": "SPECIES_NIDORINA"
+              },
+              {
+                "min_level": 25,
+                "max_level": 25,
+                "species": "SPECIES_PIDGEOTTO"
+              },
+              {
+                "min_level": 25,
+                "max_level": 27,
+                "species": "SPECIES_SEEDOT"
+              },
+              {
+                "min_level": 25,
+                "max_level": 27,
+                "species": "SPECIES_HOPPIP"
+              },
+              {
+                "min_level": 25,
+                "max_level": 27,
+                "species": "SPECIES_HOPPIP"
+              },
+              {
+                "min_level": 25,
+                "max_level": 25,
+                "species": "SPECIES_CHANSEY"
+              },
+              {
+                "min_level": 25,
+                "max_level": 25,
+                "species": "SPECIES_CHANSEY"
+              }
+            ]
           }
         },
         {
@@ -51530,6 +51595,71 @@
                 "min_level": 40,
                 "max_level": 40,
                 "species": "SPECIES_TENTACOOL"
+              }
+            ]
+          },
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 23,
+                "max_level": 23,
+                "species": "SPECIES_VENONAT"
+              },
+              {
+                "min_level": 23,
+                "max_level": 25,
+                "species": "SPECIES_QUAGSIRE"
+              },
+              {
+                "min_level": 25,
+                "max_level": 25,
+                "species": "SPECIES_NOCTOWL"
+              },
+              {
+                "min_level": 25,
+                "max_level": 25,
+                "species": "SPECIES_VENOMOTH"
+              },
+              {
+                "min_level": 23,
+                "max_level": 23,
+                "species": "SPECIES_VENONAT"
+              },
+              {
+                "min_level": 23,
+                "max_level": 25,
+                "species": "SPECIES_QUAGSIRE"
+              },
+              {
+                "min_level": 25,
+                "max_level": 25,
+                "species": "SPECIES_NOCTOWL"
+              },
+              {
+                "min_level": 23,
+                "max_level": 25,
+                "species": "SPECIES_SEEDOT"
+              },
+              {
+                "min_level": 25,
+                "max_level": 25,
+                "species": "SPECIES_VENOMOTH"
+              },
+              {
+                "min_level": 23,
+                "max_level": 25,
+                "species": "SPECIES_QUAGSIRE"
+              },
+              {
+                "min_level": 25,
+                "max_level": 25,
+                "species": "SPECIES_CHANSEY"
+              },
+              {
+                "min_level": 25,
+                "max_level": 25,
+                "species": "SPECIES_CHANSEY"
               }
             ]
           }
@@ -64224,6 +64354,144 @@
           }
         },
         {
+          "map": "MAP_MT_SILVER_SNOW",
+          "base_label": "gMtSilver_Snow",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 61,
+                "max_level": 69,
+                "species": "SPECIES_URSARING"
+              },
+              {
+                "min_level": 68,
+                "max_level": 68,
+                "species": "SPECIES_WEAVILE"
+              },
+              {
+                "min_level": 68,
+                "max_level": 68,
+                "species": "SPECIES_MACHOKE"
+              },
+              {
+                "min_level": 65,
+                "max_level": 65,
+                "species": "SPECIES_SKARMORY"
+              },
+              {
+                "min_level": 61,
+                "max_level": 69,
+                "species": "SPECIES_MISMAGIUS"
+              },
+              {
+                "min_level": 68,
+                "max_level": 68,
+                "species": "SPECIES_MAMOSWINE"
+              },
+              {
+                "min_level": 68,
+                "max_level": 68,
+                "species": "SPECIES_PILOSWINE"
+              },
+              {
+                "min_level": 61,
+                "max_level": 69,
+                "species": "SPECIES_HOUNDOOM"
+              },
+              {
+                "min_level": 61,
+                "max_level": 69,
+                "species": "SPECIES_HOUNDOOM"
+              },
+              {
+                "min_level": 65,
+                "max_level": 65,
+                "species": "SPECIES_RAPIDASH"
+              },
+              {
+                "min_level": 61,
+                "max_level": 69,
+                "species": "SPECIES_RAPIDASH"
+              },
+              {
+                "min_level": 65,
+                "max_level": 65,
+                "species": "SPECIES_HOUNDOOM"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_MT_SILVER_SNOW",
+          "base_label": "gMtSilver_SnowNight",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 61,
+                "max_level": 69,
+                "species": "SPECIES_URSARING"
+              },
+              {
+                "min_level": 68,
+                "max_level": 68,
+                "species": "SPECIES_WEAVILE"
+              },
+              {
+                "min_level": 68,
+                "max_level": 68,
+                "species": "SPECIES_ANNIHILAPE"
+              },
+              {
+                "min_level": 65,
+                "max_level": 65,
+                "species": "SPECIES_SKARMORY"
+              },
+              {
+                "min_level": 61,
+                "max_level": 69,
+                "species": "SPECIES_MACHOKE"
+              },
+              {
+                "min_level": 68,
+                "max_level": 68,
+                "species": "SPECIES_MAMOSWINE"
+              },
+              {
+                "min_level": 68,
+                "max_level": 68,
+                "species": "SPECIES_PILOSWINE"
+              },
+              {
+                "min_level": 61,
+                "max_level": 69,
+                "species": "SPECIES_HOUNDOOM"
+              },
+              {
+                "min_level": 61,
+                "max_level": 69,
+                "species": "SPECIES_HOUNDOOM"
+              },
+              {
+                "min_level": 65,
+                "max_level": 65,
+                "species": "SPECIES_RAPIDASH"
+              },
+              {
+                "min_level": 61,
+                "max_level": 69,
+                "species": "SPECIES_RAPIDASH"
+              },
+              {
+                "min_level": 65,
+                "max_level": 65,
+                "species": "SPECIES_HOUNDOOM"
+              }
+            ]
+          }
+        },
+        {
           "map": "MAP_MT_SILVER_3F",
           "base_label": "gMtSilver_3F",
           "land_mons": {
@@ -66987,144 +67255,6 @@
                 "min_level": 17,
                 "max_level": 30,
                 "species": "SPECIES_CASTFORM"
-              }
-            ]
-          }
-        },
-        {
-          "map": "MAP_MT_SILVER_SNOW",
-          "base_label": "gMtSilver_Snow",
-          "land_mons": {
-            "encounter_rate": 20,
-            "mons": [
-              {
-                "min_level": 61,
-                "max_level": 69,
-                "species": "SPECIES_URSARING"
-              },
-              {
-                "min_level": 68,
-                "max_level": 68,
-                "species": "SPECIES_WEAVILE"
-              },
-              {
-                "min_level": 68,
-                "max_level": 68,
-                "species": "SPECIES_MACHOKE"
-              },
-              {
-                "min_level": 65,
-                "max_level": 65,
-                "species": "SPECIES_SKARMORY"
-              },
-              {
-                "min_level": 61,
-                "max_level": 69,
-                "species": "SPECIES_MISMAGIUS"
-              },
-              {
-                "min_level": 68,
-                "max_level": 68,
-                "species": "SPECIES_MAMOSWINE"
-              },
-              {
-                "min_level": 68,
-                "max_level": 68,
-                "species": "SPECIES_PILOSWINE"
-              },
-              {
-                "min_level": 61,
-                "max_level": 69,
-                "species": "SPECIES_HOUNDOOM"
-              },
-              {
-                "min_level": 61,
-                "max_level": 69,
-                "species": "SPECIES_HOUNDOOM"
-              },
-              {
-                "min_level": 65,
-                "max_level": 65,
-                "species": "SPECIES_RAPIDASH"
-              },
-              {
-                "min_level": 61,
-                "max_level": 69,
-                "species": "SPECIES_RAPIDASH"
-              },
-              {
-                "min_level": 65,
-                "max_level": 65,
-                "species": "SPECIES_HOUNDOOM"
-              }
-            ]
-          }
-        },
-        {
-          "map": "MAP_MT_SILVER_SNOW",
-          "base_label": "gMtSilver_SnowNight",
-          "land_mons": {
-            "encounter_rate": 20,
-            "mons": [
-              {
-                "min_level": 61,
-                "max_level": 69,
-                "species": "SPECIES_URSARING"
-              },
-              {
-                "min_level": 68,
-                "max_level": 68,
-                "species": "SPECIES_WEAVILE"
-              },
-              {
-                "min_level": 68,
-                "max_level": 68,
-                "species": "SPECIES_ANNIHILAPE"
-              },
-              {
-                "min_level": 65,
-                "max_level": 65,
-                "species": "SPECIES_SKARMORY"
-              },
-              {
-                "min_level": 61,
-                "max_level": 69,
-                "species": "SPECIES_MACHOKE"
-              },
-              {
-                "min_level": 68,
-                "max_level": 68,
-                "species": "SPECIES_MAMOSWINE"
-              },
-              {
-                "min_level": 68,
-                "max_level": 68,
-                "species": "SPECIES_PILOSWINE"
-              },
-              {
-                "min_level": 61,
-                "max_level": 69,
-                "species": "SPECIES_HOUNDOOM"
-              },
-              {
-                "min_level": 61,
-                "max_level": 69,
-                "species": "SPECIES_HOUNDOOM"
-              },
-              {
-                "min_level": 65,
-                "max_level": 65,
-                "species": "SPECIES_RAPIDASH"
-              },
-              {
-                "min_level": 61,
-                "max_level": 69,
-                "species": "SPECIES_RAPIDASH"
-              },
-              {
-                "min_level": 65,
-                "max_level": 65,
-                "species": "SPECIES_HOUNDOOM"
               }
             ]
           }
