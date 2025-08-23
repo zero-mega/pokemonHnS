@@ -5852,14 +5852,14 @@
       "blockdata_filepath": "data/layouts/TinTower_9F/map.bin"
     },
     {
-      "id": "LAYOUT_TIN_TOWER_1F0",
-      "name": "TinTower_1F0_Layout",
+      "id": "LAYOUT_TIN_TOWER_ROOF_DAY",
+      "name": "TinTower_RoofDay_Layout",
       "width": 23,
       "height": 21,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_PowerPlant_43",
-      "border_filepath": "data/layouts/TinTower_1F0/border.bin",
-      "blockdata_filepath": "data/layouts/TinTower_1F0/map.bin"
+      "border_filepath": "data/layouts/TinTower_RoofDay/border.bin",
+      "blockdata_filepath": "data/layouts/TinTower_RoofDay/map.bin"
     },
     {
       "id": "LAYOUT_SPROUT_TOWER_1F",
@@ -8532,14 +8532,14 @@
       "blockdata_filepath": "data/layouts/NationalPark_BugContest/map.bin"
     },
     {
-      "id": "LAYOUT_TIN_TOWER_1F0NIGHT",
-      "name": "TinTower_1F0Night_Layout",
+      "id": "LAYOUT_TIN_TOWER_ROOF_NIGHT",
+      "name": "TinTower_RoofNight_Layout",
       "width": 23,
       "height": 21,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_PowerPlant_43",
-      "border_filepath": "data/layouts/TinTower_1F0Night/border.bin",
-      "blockdata_filepath": "data/layouts/TinTower_1F0Night/map.bin"
+      "border_filepath": "data/layouts/TinTower_RoofNight/border.bin",
+      "blockdata_filepath": "data/layouts/TinTower_RoofNight/map.bin"
     },
     {
       "id": "LAYOUT_BATTLE_TOWER_OUTSIDE",

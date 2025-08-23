@@ -1,15 +1,15 @@
 {
-  "id": "MAP_TIN_TOWER_1F0NIGHT",
-  "name": "TinTower_1F0Night",
-  "layout": "LAYOUT_TIN_TOWER_1F0NIGHT",
+  "id": "MAP_TIN_TOWER_ROOF_DAY",
+  "name": "TinTower_RoofDay",
+  "layout": "LAYOUT_TIN_TOWER_ROOF_DAY",
   "music": "MUS_HG_BELL_TOWER",
   "region_map_section": "MAPSEC_TIN_TOWER",
   "requires_flash": false,
-  "weather": "WEATHER_NONE",
+  "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_ROUTE",
   "allow_cycling": false,
   "allow_escaping": false,
-  "allow_running": false,
+  "allow_running": true,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
@@ -37,7 +37,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "TinTower_1F0_EventScript_Miki",
+      "script": "TinTower_RoofDay_EventScript_Sayo",
       "flag": "FLAG_HIDE_TIN_TOWER_KIMONO_GIRLS"
     },
     {
@@ -50,7 +50,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "TinTower_1F0_EventScript_Sayo",
+      "script": "TinTower_RoofDay_EventScript_Miki",
       "flag": "FLAG_HIDE_TIN_TOWER_KIMONO_GIRLS"
     },
     {
@@ -63,7 +63,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "TinTower_1F0_EventScript_Zuki",
+      "script": "TinTower_RoofDay_EventScript_Zuki",
       "flag": "FLAG_HIDE_TIN_TOWER_KIMONO_GIRLS"
     },
     {
@@ -76,7 +76,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "TinTower_1F0_EventScript_Naoko",
+      "script": "TinTower_RoofDay_EventScript_Naoko",
       "flag": "FLAG_HIDE_TIN_TOWER_KIMONO_GIRLS"
     },
     {
@@ -89,7 +89,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "TinTower_1F0_EventScript_Miki",
+      "script": "TinTower_RoofDay_EventScript_Sayo",
       "flag": "FLAG_HIDE_TIN_TOWER_KIMONO_GIRLS"
     },
     {
@@ -102,7 +102,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "TinTower_1F0_EventScript_Kuni",
+      "script": "TinTower_RoofDay_EventScript_Kuni",
       "flag": "FLAG_HIDE_TIN_TOWER_KIMONO_GIRLS"
     },
     {
@@ -110,12 +110,12 @@
       "x": 10,
       "y": 1,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "TinTower_1F0_EventScript_HoOh",
+      "script": "TinTower_RoofDay_EventScript_HoOh",
       "flag": "FLAG_HIDE_HO_OH"
     }
   ],
@@ -136,7 +136,7 @@
       "elevation": 0,
       "var": "VAR_COMPLETED_HO_OH",
       "var_value": "2",
-      "script": "TinTower_1F0_EventScript_TalkToKimono"
+      "script": "TinTower_RoofDay_EventScript_TalkToKimono"
     }
   ],
   "bg_events": [

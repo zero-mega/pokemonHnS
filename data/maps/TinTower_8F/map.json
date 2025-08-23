@@ -74,7 +74,7 @@
       "x": -1,
       "y": 10,
       "elevation": 0,
-      "dest_map": "MAP_TIN_TOWER_1F0",
+      "dest_map": "MAP_TIN_TOWER_ROOF_DAY",
       "dest_warp_id": "0"
     },
     {

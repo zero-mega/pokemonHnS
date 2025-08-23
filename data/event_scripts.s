@@ -1408,7 +1408,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/TinTower_9F/scripts.inc"
 
-	.include "data/maps/TinTower_1F0/scripts.inc"
+	.include "data/maps/TinTower_RoofDay/scripts.inc"
 
 	.include "data/maps/SproutTower_1F/scripts.inc"
 
@@ -1944,7 +1944,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/NationalPark_BugContest/scripts.inc"
 
-	.include "data/maps/TinTower_1F0Night/scripts.inc"
+	.include "data/maps/TinTower_RoofNight/scripts.inc"
 
 	.include "data/maps/BattleTower_Outside/scripts.inc"
 
