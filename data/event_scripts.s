@@ -1296,91 +1296,91 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/DarkCave_NorthSide/scripts.inc"
 
-	.include "data/maps/CeruleanCave_1/scripts.inc"
+	.include "data/maps/CeruleanCave_1F/scripts.inc"
 
-	.include "data/maps/CeruleanCave_2/scripts.inc"
+	.include "data/maps/CeruleanCave_B1F/scripts.inc"
 
-	.include "data/maps/CeruleanCave_3/scripts.inc"
+	.include "data/maps/CeruleanCave_B2F/scripts.inc"
 
-	.include "data/maps/DiglettsCave1/scripts.inc"
+	.include "data/maps/DiglettsCave_EntranceNorth/scripts.inc"
 
-	.include "data/maps/DiglettsCave2/scripts.inc"
+	.include "data/maps/DiglettsCave_EntranceSouth/scripts.inc"
 
-	.include "data/maps/DiglettsCave3/scripts.inc"
+	.include "data/maps/DiglettsCave_Tunnel/scripts.inc"
 
-	.include "data/maps/IcePath1/scripts.inc"
+	.include "data/maps/IcePath_1F/scripts.inc"
 
-	.include "data/maps/IcePath2/scripts.inc"
+	.include "data/maps/IcePath_B1F/scripts.inc"
 
-	.include "data/maps/IcePath3/scripts.inc"
+	.include "data/maps/IcePath_B2F/scripts.inc"
 
-	.include "data/maps/IcePath4/scripts.inc"
+	.include "data/maps/IcePath_B3F/scripts.inc"
 
-	.include "data/maps/IcePath5/scripts.inc"
+	.include "data/maps/IcePath_B4F/scripts.inc"
 
 	.include "data/maps/IlexForest/scripts.inc"
 
-	.include "data/maps/MtMoon1/scripts.inc"
+	.include "data/maps/MtMoon_Cave/scripts.inc"
 
-	.include "data/maps/UnionCave1/scripts.inc"
+	.include "data/maps/UnionCave_1F/scripts.inc"
 
-	.include "data/maps/UnionCave2/scripts.inc"
+	.include "data/maps/UnionCave_B1F/scripts.inc"
 
-	.include "data/maps/UnionCave3/scripts.inc"
+	.include "data/maps/UnionCave_B2F/scripts.inc"
 
-	.include "data/maps/SlowpokeWell/scripts.inc"
+	.include "data/maps/SlowpokeWell_B1F/scripts.inc"
 
-	.include "data/maps/SlowpokeWell2/scripts.inc"
+	.include "data/maps/SlowpokeWell_B2F/scripts.inc"
 
-	.include "data/maps/VictoryRoad1/scripts.inc"
+	.include "data/maps/VictoryRoadKanto_B2F/scripts.inc"
 
-	.include "data/maps/VictoryRoad2/scripts.inc"
+	.include "data/maps/VictoryRoadKanto_B1F/scripts.inc"
 
-	.include "data/maps/VictoryRoad3/scripts.inc"
+	.include "data/maps/VictoryRoadKanto_1F/scripts.inc"
 
-	.include "data/maps/WhirlIslands1/scripts.inc"
+	.include "data/maps/WhirlIslands_1F/scripts.inc"
 
-	.include "data/maps/WhirlIslands2/scripts.inc"
+	.include "data/maps/WhirlIslands_B1F/scripts.inc"
 
-	.include "data/maps/WhirlIslands3/scripts.inc"
+	.include "data/maps/WhirlIslands_B2F/scripts.inc"
 
-	.include "data/maps/RuinsOfAlph1/scripts.inc"
+	.include "data/maps/RuinsOfAlph_B1F/scripts.inc"
 
-	.include "data/maps/RuinsOfAlph2/scripts.inc"
+	.include "data/maps/RuinsOfAlph_PuzzleAndRewardChambers/scripts.inc"
 
-	.include "data/maps/RockTunnel1/scripts.inc"
+	.include "data/maps/RockTunnel_B1F/scripts.inc"
 
-	.include "data/maps/RockTunnel2/scripts.inc"
+	.include "data/maps/RockTunnel_1F/scripts.inc"
 
-	.include "data/maps/MtMortar1/scripts.inc"
+	.include "data/maps/MtMortar_1F_South/scripts.inc"
 
-	.include "data/maps/MtMortar2/scripts.inc"
+	.include "data/maps/MtMortar_1F_North/scripts.inc"
 
-	.include "data/maps/MtMortar3/scripts.inc"
+	.include "data/maps/MtMortar_2F/scripts.inc"
 
-	.include "data/maps/MtMortar4/scripts.inc"
+	.include "data/maps/MtMortar_B1F/scripts.inc"
 
-	.include "data/maps/MtSilver1/scripts.inc"
+	.include "data/maps/MtSilver_1F_ItemRoom/scripts.inc"
 
-	.include "data/maps/MtSilver2/scripts.inc"
+	.include "data/maps/MtSilver_1F_WaterfallRoom/scripts.inc"
 
-	.include "data/maps/MtSilver3/scripts.inc"
+	.include "data/maps/MtSilver_SummitUnused/scripts.inc"
 
-	.include "data/maps/MtSilver/scripts.inc"
+	.include "data/maps/MtSilver_Outside/scripts.inc"
 
 	.include "data/maps/PowerPlant1/scripts.inc"
 
 	.include "data/maps/PowerPlant2/scripts.inc"
 
-	.include "data/maps/RuinsOfAlph/scripts.inc"
+	.include "data/maps/RuinsOfAlph_Outside/scripts.inc"
 
-	.include "data/maps/TohjoFalls/scripts.inc"
+	.include "data/maps/TohjoFalls_Cavern/scripts.inc"
 
-	.include "data/maps/DragonsDen1/scripts.inc"
+	.include "data/maps/DragonsDen_Entrance/scripts.inc"
 
-	.include "data/maps/DragonsDen2/scripts.inc"
+	.include "data/maps/DragonsDen_Cavern/scripts.inc"
 
-	.include "data/maps/DragonsDen3/scripts.inc"
+	.include "data/maps/DragonsDen_Shrine/scripts.inc"
 
 	.include "data/maps/ViridianForest/scripts.inc"
 
@@ -1388,35 +1388,35 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/IndigoPlateau/scripts.inc"
 
-	.include "data/maps/BurnedTower1/scripts.inc"
+	.include "data/maps/BurnedTower_1F/scripts.inc"
 
-	.include "data/maps/BurnedTower2/scripts.inc"
+	.include "data/maps/BurnedTower_B1F/scripts.inc"
 
-	.include "data/maps/TinTower1/scripts.inc"
+	.include "data/maps/TinTower_1F/scripts.inc"
 
-	.include "data/maps/TinTower2/scripts.inc"
+	.include "data/maps/TinTower_2F/scripts.inc"
 
-	.include "data/maps/TinTower3/scripts.inc"
+	.include "data/maps/TinTower_3F/scripts.inc"
 
-	.include "data/maps/TinTower4/scripts.inc"
+	.include "data/maps/TinTower_4F/scripts.inc"
 
-	.include "data/maps/TinTower5/scripts.inc"
+	.include "data/maps/TinTower_5F/scripts.inc"
 
-	.include "data/maps/TinTower6/scripts.inc"
+	.include "data/maps/TinTower_6F/scripts.inc"
 
-	.include "data/maps/TinTower7/scripts.inc"
+	.include "data/maps/TinTower_7F/scripts.inc"
 
-	.include "data/maps/TinTower8/scripts.inc"
+	.include "data/maps/TinTower_8F/scripts.inc"
 
-	.include "data/maps/TinTower9/scripts.inc"
+	.include "data/maps/TinTower_9F/scripts.inc"
 
-	.include "data/maps/TinTower10/scripts.inc"
+	.include "data/maps/TinTower_1F0/scripts.inc"
 
-	.include "data/maps/SproutTower1/scripts.inc"
+	.include "data/maps/SproutTower_1F/scripts.inc"
 
-	.include "data/maps/SproutTower2/scripts.inc"
+	.include "data/maps/SproutTower_2F/scripts.inc"
 
-	.include "data/maps/SproutTower3/scripts.inc"
+	.include "data/maps/SproutTower_3F/scripts.inc"
 
 	.include "data/maps/IndigoPlateau_PokemonCenter/scripts.inc"
 
@@ -1458,11 +1458,11 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/CinnabarIsland_PokemonCenter/scripts.inc"
 
-	.include "data/maps/SeafoamIslands1/scripts.inc"
+	.include "data/maps/SeafoamIslands_1F/scripts.inc"
 
-	.include "data/maps/SeafoamIslands2/scripts.inc"
+	.include "data/maps/SeafoamIslands_Gym/scripts.inc"
 
-	.include "data/maps/SeafoamIslands3/scripts.inc"
+	.include "data/maps/SeafoamIslands_B1F/scripts.inc"
 
 	.include "data/maps/Route47/scripts.inc"
 
@@ -1488,7 +1488,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/Gate_NationalPark/scripts.inc"
 
-	.include "data/maps/NationalPark/scripts.inc"
+	.include "data/maps/NationalPark_Normal/scripts.inc"
 
 	.include "data/maps/Gate_EcruteakCity_Route38/scripts.inc"
 
@@ -1858,7 +1858,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/VermilionCity_Gym/scripts.inc"
 
-	.include "data/maps/CinnabarVolcano1/scripts.inc"
+	.include "data/maps/SeafoamIslands_SecretCave/scripts.inc"
 
 	.include "data/maps/CinnabarIsland_Unused/scripts.inc"
 
@@ -1886,15 +1886,15 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/Saffron_Temp/scripts.inc"
 
-	.include "data/maps/RocketHideout/scripts.inc"
+	.include "data/maps/RocketHideout_B1F/scripts.inc"
 
-	.include "data/maps/RocketHideout2/scripts.inc"
+	.include "data/maps/RocketHideout_B2F/scripts.inc"
 
-	.include "data/maps/RocketHideout3/scripts.inc"
+	.include "data/maps/RocketHideout_B3F/scripts.inc"
 
-	.include "data/maps/MtSilverBrumal/scripts.inc"
+	.include "data/maps/MtSilver_BrumalUnused/scripts.inc"
 
-	.include "data/maps/MtSilverMeadow/scripts.inc"
+	.include "data/maps/MtSilver_MeadowUnused/scripts.inc"
 
 	.include "data/maps/Route27_House/scripts.inc"
 
@@ -1942,9 +1942,9 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/FuchsiaCity_SafariZoneEntrance/scripts.inc"
 
-	.include "data/maps/MtSilver4/scripts.inc"
+	.include "data/maps/MtSilver_1F_MoltresRoom/scripts.inc"
 
-	.include "data/maps/MtSilver5/scripts.inc"
+	.include "data/maps/MtSilver_MountainSide/scripts.inc"
 
 	.include "data/maps/SafariZone_Low_Mid/scripts.inc"
 
@@ -1958,11 +1958,11 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/SafariZone_Top_Right/scripts.inc"
 
-	.include "data/maps/MtSilver6/scripts.inc"
+	.include "data/maps/MtSilver_2F/scripts.inc"
 
-	.include "data/maps/MtSilver7/scripts.inc"
+	.include "data/maps/MtSilver_SnowUnused/scripts.inc"
 
-	.include "data/maps/MtSilver8/scripts.inc"
+	.include "data/maps/MtSilver_3F/scripts.inc"
 
 	.include "data/maps/VioletCity_GymUnused/scripts.inc"
 
@@ -1974,29 +1974,29 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/GoldenrodCity_DepartmentStore_7FNight/scripts.inc"
 
-	.include "data/maps/NationalPark2/scripts.inc"
+	.include "data/maps/NationalPark_BugContest/scripts.inc"
 
-	.include "data/maps/TinTower10Night/scripts.inc"
+	.include "data/maps/TinTower_1F0Night/scripts.inc"
 
 	.include "data/maps/BattleTowerOuter/scripts.inc"
 
 	.include "data/maps/Gate_Route40_BattleTowerOutside/scripts.inc"
 
-	.include "data/maps/RuinsOfAlphC_1/scripts.inc"
+	.include "data/maps/RuinsOfAlph_WordsRoom1/scripts.inc"
 
-	.include "data/maps/RuinsOfAlphC_2/scripts.inc"
+	.include "data/maps/RuinsOfAlph_WordsRoom2/scripts.inc"
 
-	.include "data/maps/RuinsOfAlphC_3/scripts.inc"
+	.include "data/maps/RuinsOfAlph_WordsRoom3/scripts.inc"
 
-	.include "data/maps/RuinsOfAlphC_4/scripts.inc"
+	.include "data/maps/RuinsOfAlph_WordsRoom4/scripts.inc"
 
 	.include "data/maps/LakeOfRageLowTide/scripts.inc"
 
-	.include "data/maps/TohjoFalls2/scripts.inc"
+	.include "data/maps/TohjoFalls_GiovanniRoom/scripts.inc"
 
 	.include "data/maps/Route26North/scripts.inc"
 
-	.include "data/maps/MtMoon2/scripts.inc"
+	.include "data/maps/MtMoon_Unused/scripts.inc"
 
 	.include "data/maps/Route4_PokemonCenter/scripts.inc"
 
@@ -2018,4 +2018,4 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/MtSilverSummitTestNight/scripts.inc"
 
-	.include "data/maps/LakeOfRageUnderground/scripts.inc"
+	.include "data/maps/Route19_Cave/scripts.inc"

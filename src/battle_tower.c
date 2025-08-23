@@ -37,8 +37,8 @@
 #include "constants/event_objects.h"
 #include "constants/moves.h"
 
-extern const u8 RocketHideout2_EventScript_ArianaTrainer[];
-extern const u8 RocketHideout2_EventScript_GruntTrainer[];
+extern const u8 RocketHideout_B2F_EventScript_ArianaTrainer[];
+extern const u8 RocketHideout_B2F_EventScript_GruntTrainer[];
 
 
 // EWRAM vars.
@@ -2306,9 +2306,9 @@ void DoSpecialTrainerBattle(void)
         gBattleTypeFlags = BATTLE_TYPE_TRAINER | BATTLE_TYPE_DOUBLE | BATTLE_TYPE_TWO_OPPONENTS | BATTLE_TYPE_MULTI | BATTLE_TYPE_INGAME_PARTNER;
         FillPartnerParty(TRAINER_STEVEN_PARTNER);
         gApproachingTrainerId = 0;
-        BattleSetup_ConfigureTrainerBattle(RocketHideout2_EventScript_ArianaTrainer + 1);
+        BattleSetup_ConfigureTrainerBattle(RocketHideout_B2F_EventScript_ArianaTrainer + 1);
         gApproachingTrainerId = 1;
-        BattleSetup_ConfigureTrainerBattle(RocketHideout2_EventScript_GruntTrainer + 1);
+        BattleSetup_ConfigureTrainerBattle(RocketHideout_B2F_EventScript_GruntTrainer + 1);
         gPartnerTrainerId = TRAINER_STEVEN_PARTNER;
         CreateTask(Task_StartBattleAfterTransition, 1);
         PlayMapChosenOrBattleBGM(0);

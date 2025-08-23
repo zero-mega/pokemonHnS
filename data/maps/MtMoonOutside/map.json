@@ -150,14 +150,14 @@
       "x": 32,
       "y": 10,
       "elevation": 0,
-      "dest_map": "MAP_MT_MOON1",
+      "dest_map": "MAP_MT_MOON_CAVE",
       "dest_warp_id": "6"
     },
     {
       "x": 36,
       "y": 22,
       "elevation": 0,
-      "dest_map": "MAP_MT_MOON1",
+      "dest_map": "MAP_MT_MOON_CAVE",
       "dest_warp_id": "8"
     }
   ],

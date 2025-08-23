@@ -353,7 +353,7 @@
       "x": 61,
       "y": 10,
       "elevation": 0,
-      "dest_map": "MAP_DIGLETTS_CAVE2",
+      "dest_map": "MAP_DIGLETTS_CAVE_ENTRANCE_SOUTH",
       "dest_warp_id": "1"
     },
     {

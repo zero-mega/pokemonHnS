@@ -831,10 +831,10 @@
 #define FLAG_GOT_BLACK_BELT                                         0x310
 #define FLAG_GOT_HIDDEN_POWER                                       0x311
 #define FLAG_GOT_SPELL_TAG                                          0x312 
-#define FLAG_HIDE_DRAGONS_DEN2_SILVER                                 0x313
-#define FLAG_HIDE_DRAGONS_DEN2_CLAIR                                 0x314//unused
-#define FLAG_HIDE_DRAGONS_DEN2_LANCE                                 0x315
-#define FLAG_HIDE_DRAGONS_DEN3_CLAIR                                0x316
+#define FLAG_HIDE_DRAGONS_DEN_CAVERN_SILVER                                 0x313
+#define FLAG_HIDE_DRAGONS_DEN_CAVERN_CLAIR                                 0x314//unused
+#define FLAG_HIDE_DRAGONS_DEN_CAVERN_LANCE                                 0x315
+#define FLAG_HIDE_DRAGONS_DEN_SHRINE_CLAIR                                0x316
 #define FLAG_GOT_DRATINI                                            0x317
 #define FLAG_GOT_BLACK_GLASSES                                 0x318
 #define FLAG_GOT_TM_SANDSTORM                                 0x319
@@ -988,7 +988,7 @@
 #define FLAG_HIDE_ECRUTEAK_CITY_THEATER_KIMONOS               0x3AD
 #define FLAG_HIDE_BURNED_TOWER_NPCS                          0x3AE
 #define FLAG_HIDE_BURNED_TOWER_BEASTS                 0x3AF
-#define FLAG_HIDE_BURNED_TOWER2_EUSINE                                  0x3B0
+#define FLAG_HIDE_BURNED_TOWER_B1F_EUSINE                                  0x3B0
 #define FLAG_HIDE_ECRUTEAK_CITY_SAGE                                   0x3B1
 #define FLAG_CAUGHT_ENTEI                       0x3B2
 #define FLAG_CAUGHT_RAIKOU                          0x3B3
@@ -1093,18 +1093,18 @@
 #define FLAG_ITEM_RUINSOFALPH_STAR_PIECE                            0x413
 #define FLAG_ITEM_RUINSOFALPH_LUM_BERRY_2                           0x414
 #define FLAG_ITEM_RUINSOFALPH_WATER_STONE                           0x415
-#define FLAG_ITEM_WHIRL_ISLANDS1_ULTRA_BALL                     0x416
-#define FLAG_ITEM_WHIRL_ISLANDS1_RARE_CANDY                          0x417
-#define FLAG_ITEM_WHIRL_ISLANDS1_FULL_RESTORE                         0x418
-#define FLAG_ITEM_WHIRL_ISLANDS1_GUARD_SPEC                         0x419
-#define FLAG_ITEM_WHIRL_ISLANDS2_MAX_REVIVE                       0x41A
-#define FLAG_ITEM_WHIRL_ISLANDS2_FULL_RESTORE                     0x41B
-#define FLAG_ITEM_WHIRL_ISLANDS2_PP_MAX                            0x41C
-#define FLAG_ITEM_WHIRL_ISLANDS3_BIG_NUGGET                          0x41D
-#define FLAG_ITEM_WHIRL_ISLANDS3_FULL_RESTORE                       0x41E
-#define FLAG_ITEM_WHIRL_ISLANDS3_CARBOS                          0x41F
-#define FLAG_ITEM_WHIRL_ISLANDS3_CALCIUM                        0x420
-#define FLAG_ITEM_WHIRL_ISLANDS3_ESCAPE_ROPE                               0x421
+#define FLAG_ITEM_WHIRL_ISLANDS_1F_ULTRA_BALL                     0x416
+#define FLAG_ITEM_WHIRL_ISLANDS_1F_RARE_CANDY                          0x417
+#define FLAG_ITEM_WHIRL_ISLANDS_1F_FULL_RESTORE                         0x418
+#define FLAG_ITEM_WHIRL_ISLANDS_1F_GUARD_SPEC                         0x419
+#define FLAG_ITEM_WHIRL_ISLANDS_B1F_MAX_REVIVE                       0x41A
+#define FLAG_ITEM_WHIRL_ISLANDS_B1F_FULL_RESTORE                     0x41B
+#define FLAG_ITEM_WHIRL_ISLANDS_B1F_PP_MAX                            0x41C
+#define FLAG_ITEM_WHIRL_ISLANDS_B2F_BIG_NUGGET                          0x41D
+#define FLAG_ITEM_WHIRL_ISLANDS_B2F_FULL_RESTORE                       0x41E
+#define FLAG_ITEM_WHIRL_ISLANDS_B2F_CARBOS                          0x41F
+#define FLAG_ITEM_WHIRL_ISLANDS_B2F_CALCIUM                        0x420
+#define FLAG_ITEM_WHIRL_ISLANDS_B2F_ESCAPE_ROPE                               0x421
 #define FLAG_ITEM_ROUTE47_PEARL                             0x422
 #define FLAG_ITEM_ROUTE47_REVIVE                    0x423
 #define FLAG_ITEM_ROUTE47_WHITE_FLUTE                  0x424
@@ -1297,21 +1297,21 @@
 #define FLAG_ITEM_NATIONAL_PARK_TM_DIG                                           0x4DC // Unused Flag
 #define FLAG_ITEM_ECRUTEAK_RARE_CANDY                                           0x4DD // Unused Flag
 #define FLAG_ITEM_BELLCHIME_BIG_MUSHROOM                                           0x4DE // Unused Flag
-#define FLAG_ITEM_TIN_TOWER3_FULL_HEAL                                           0x4DF // Unused Flag
-#define FLAG_ITEM_TIN_TOWER4_ULTRA_BALL                                        0x4E0 // Unused Flag
-#define FLAG_ITEM_TIN_TOWER4_ESCAPE_ROPE                                      0x4E1 // Unused Flag
-#define FLAG_ITEM_TIN_TOWER4_MAX_POTION                                    0x4E2 // Unused Flag
-#define FLAG_ITEM_TIN_TOWER5_RARE_CANDY                                           0x4E3 // Unused Flag
-#define FLAG_ITEM_TIN_TOWER5_MAX_POTION                                           0x4E4 // Unused Flag
-#define FLAG_ITEM_TIN_TOWER5_CARBOS                                           0x4E5 // Unused Flag
-#define FLAG_ITEM_TIN_TOWER7_MAX_REVIVE                                           0x4E6 // Unused Flag
-#define FLAG_ITEM_TIN_TOWER8_FULL_RESTORE                                           0x4E7 // Unused Flag
-#define FLAG_ITEM_TIN_TOWER8_MAX_ELIXIR                                          0x4E8 // Unused Flag
-#define FLAG_ITEM_TIN_TOWER8_BIG_NUGGET                                          0x4E9 // Unused Flag
-#define FLAG_ITEM_BURNED_TOWER1_HP_UP                                           0x4EA // Unused Flag
-#define FLAG_ITEM_BURNED_TOWER1_ETHER                                           0x4EB // Unused Flag
-#define FLAG_ITEM_BURNED_TOWER2_TM_TAUNT                                           0x4EC // Unused Flag
-#define FLAG_ITEM_BURNED_TOWER2_ULTRA_BALL                                           0x4ED // Unused Flag
+#define FLAG_ITEM_TIN_TOWER_3F_FULL_HEAL                                           0x4DF // Unused Flag
+#define FLAG_ITEM_TIN_TOWER_4F_ULTRA_BALL                                        0x4E0 // Unused Flag
+#define FLAG_ITEM_TIN_TOWER_4F_ESCAPE_ROPE                                      0x4E1 // Unused Flag
+#define FLAG_ITEM_TIN_TOWER_4F_MAX_POTION                                    0x4E2 // Unused Flag
+#define FLAG_ITEM_TIN_TOWER_5F_RARE_CANDY                                           0x4E3 // Unused Flag
+#define FLAG_ITEM_TIN_TOWER_5F_MAX_POTION                                           0x4E4 // Unused Flag
+#define FLAG_ITEM_TIN_TOWER_5F_CARBOS                                           0x4E5 // Unused Flag
+#define FLAG_ITEM_TIN_TOWER_7F_MAX_REVIVE                                           0x4E6 // Unused Flag
+#define FLAG_ITEM_TIN_TOWER_8F_FULL_RESTORE                                           0x4E7 // Unused Flag
+#define FLAG_ITEM_TIN_TOWER_8F_MAX_ELIXIR                                          0x4E8 // Unused Flag
+#define FLAG_ITEM_TIN_TOWER_8F_BIG_NUGGET                                          0x4E9 // Unused Flag
+#define FLAG_ITEM_BURNED_TOWER_1F_HP_UP                                           0x4EA // Unused Flag
+#define FLAG_ITEM_BURNED_TOWER_1F_ETHER                                           0x4EB // Unused Flag
+#define FLAG_ITEM_BURNED_TOWER_B1F_TM_TAUNT                                           0x4EC // Unused Flag
+#define FLAG_ITEM_BURNED_TOWER_B1F_ULTRA_BALL                                           0x4ED // Unused Flag
 #define FLAG_ITEM_ROUTE38_LAX_INCENSE                                           0x4EE // Unused Flag
 #define FLAG_ITEM_ROUTE39_TM_BRICK_BREAK                                           0x4EF // Unused Flag
 

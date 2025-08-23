@@ -131,14 +131,14 @@
       "x": 7,
       "y": 1,
       "elevation": 0,
-      "dest_map": "MAP_NATIONAL_PARK",
+      "dest_map": "MAP_NATIONAL_PARK_NORMAL",
       "dest_warp_id": "0"
     },
     {
       "x": 34,
       "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_NATIONAL_PARK",
+      "dest_map": "MAP_NATIONAL_PARK_NORMAL",
       "dest_warp_id": "2"
     },
     {
@@ -152,7 +152,7 @@
       "x": 7,
       "y": 0,
       "elevation": 0,
-      "dest_map": "MAP_NATIONAL_PARK2",
+      "dest_map": "MAP_NATIONAL_PARK_BUG_CONTEST",
       "dest_warp_id": "0"
     }
   ],

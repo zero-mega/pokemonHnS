@@ -225,7 +225,7 @@
       "x": 16,
       "y": 57,
       "elevation": 0,
-      "dest_map": "MAP_ROCK_TUNNEL1",
+      "dest_map": "MAP_ROCK_TUNNEL_B1F",
       "dest_warp_id": "5"
     },
     {
@@ -246,7 +246,7 @@
       "x": 16,
       "y": 19,
       "elevation": 0,
-      "dest_map": "MAP_ROCK_TUNNEL1",
+      "dest_map": "MAP_ROCK_TUNNEL_B1F",
       "dest_warp_id": "1"
     }
   ],

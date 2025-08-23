@@ -446,7 +446,7 @@
       "x": 30,
       "y": 13,
       "elevation": 0,
-      "dest_map": "MAP_SPROUT_TOWER1",
+      "dest_map": "MAP_SPROUT_TOWER_1F",
       "dest_warp_id": "0"
     },
     {

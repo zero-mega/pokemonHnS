@@ -210,7 +210,7 @@
       "x": 17,
       "y": 11,
       "elevation": 0,
-      "dest_map": "MAP_DIGLETTS_CAVE1",
+      "dest_map": "MAP_DIGLETTS_CAVE_ENTRANCE_NORTH",
       "dest_warp_id": "0"
     },
     {

@@ -484,7 +484,7 @@
       "x": 22,
       "y": 14,
       "elevation": 0,
-      "dest_map": "MAP_BURNED_TOWER1",
+      "dest_map": "MAP_BURNED_TOWER_1F",
       "dest_warp_id": "0"
     },
     {
@@ -505,7 +505,7 @@
       "x": 37,
       "y": 16,
       "elevation": 0,
-      "dest_map": "MAP_TIN_TOWER1",
+      "dest_map": "MAP_TIN_TOWER_1F",
       "dest_warp_id": "0"
     },
     {

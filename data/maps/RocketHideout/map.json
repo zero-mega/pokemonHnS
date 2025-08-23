@@ -1,7 +1,7 @@
 {
-  "id": "MAP_ROCKET_HIDEOUT",
-  "name": "RocketHideout",
-  "layout": "LAYOUT_ROCKET_HIDEOUT",
+  "id": "MAP_ROCKET_HIDEOUT_B1F",
+  "name": "RocketHideout_B1F",
+  "layout": "LAYOUT_ROCKET_HIDEOUT_B1F",
   "music": "MUS_RG_ROCKET_HIDEOUT",
   "region_map_section": "MAPSEC_ROCKET_HIDEOUT",
   "requires_flash": false,
@@ -76,7 +76,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RocketHideout_EventScript_TrainerJed",
+      "script": "RocketHideout_B1F_EventScript_TrainerJed",
       "flag": "FLAG_HIDE_MAHOGANY_ROCKETS"
     },
     {
@@ -89,7 +89,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RocketHideout_EventScript_Item_HyperPotion",
+      "script": "RocketHideout_B1F_EventScript_Item_HyperPotion",
       "flag": "FLAG_ITEM_ROCKETHIDEOUT1_HYPER_POTION"
     },
     {
@@ -102,7 +102,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RocketHideout_EventScript_Item_Revive",
+      "script": "RocketHideout_B1F_EventScript_Item_Revive",
       "flag": "FLAG_ITEM_ROCKETHIDEOUT1_REVIVE"
     },
     {
@@ -115,7 +115,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RocketHideout_EventScript_Item_BigNugget",
+      "script": "RocketHideout_B1F_EventScript_Item_BigNugget",
       "flag": "FLAG_ITEM_ROCKETHIDEOUT1_BIG_NUGGET"
     },
     {
@@ -128,7 +128,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
-      "script": "RocketHideout_EventScript_Rocket16",
+      "script": "RocketHideout_B1F_EventScript_Rocket16",
       "flag": "FLAG_HIDE_MAHOGANY_ROCKETS"
     }
   ],
@@ -144,14 +144,14 @@
       "x": 21,
       "y": 20,
       "elevation": 0,
-      "dest_map": "MAP_ROCKET_HIDEOUT2",
+      "dest_map": "MAP_ROCKET_HIDEOUT_B2F",
       "dest_warp_id": "0"
     },
     {
       "x": 23,
       "y": 20,
       "elevation": 0,
-      "dest_map": "MAP_ROCKET_HIDEOUT",
+      "dest_map": "MAP_ROCKET_HIDEOUT_B1F",
       "dest_warp_id": "0"
     }
   ],
@@ -163,7 +163,7 @@
       "elevation": 0,
       "var": "VAR_ROCKET_HIDEOUT_STATUE_1",
       "var_value": "0",
-      "script": "RocketHideout_Trigger_Statue1"
+      "script": "RocketHideout_B1F_Trigger_Statue1"
     },
     {
       "type": "trigger",
@@ -172,7 +172,7 @@
       "elevation": 0,
       "var": "VAR_ROCKET_HIDEOUT_STATUE_2",
       "var_value": "0",
-      "script": "RocketHideout_Trigger_Statue2"
+      "script": "RocketHideout_B1F_Trigger_Statue2"
     },
     {
       "type": "trigger",
@@ -181,7 +181,7 @@
       "elevation": 0,
       "var": "VAR_ROCKET_HIDEOUT_STATUE_3",
       "var_value": "0",
-      "script": "RocketHideout_Trigger_Statue3"
+      "script": "RocketHideout_B1F_Trigger_Statue3"
     },
     {
       "type": "trigger",
@@ -190,7 +190,7 @@
       "elevation": 0,
       "var": "VAR_ROCKET_HIDEOUT_STATUE_4",
       "var_value": "0",
-      "script": "RocketHideout_Trigger_Statue4"
+      "script": "RocketHideout_B1F_Trigger_Statue4"
     },
     {
       "type": "trigger",
@@ -199,7 +199,7 @@
       "elevation": 0,
       "var": "VAR_ROCKET_HIDEOUT_STATUE_5",
       "var_value": "0",
-      "script": "RocketHideout_Trigger_Statue5"
+      "script": "RocketHideout_B1F_Trigger_Statue5"
     },
     {
       "type": "trigger",
@@ -208,7 +208,7 @@
       "elevation": 0,
       "var": "VAR_ROCKET_HIDEOUT_STATUE_1",
       "var_value": "0",
-      "script": "RocketHideout_Trigger_SpawnGruntStatue1"
+      "script": "RocketHideout_B1F_Trigger_SpawnGruntStatue1"
     },
     {
       "type": "trigger",
@@ -217,7 +217,7 @@
       "elevation": 0,
       "var": "VAR_ROCKET_HIDEOUT_STATUE_3",
       "var_value": "0",
-      "script": "RocketHideout_Trigger_SpawnGruntStatue3"
+      "script": "RocketHideout_B1F_Trigger_SpawnGruntStatue3"
     },
     {
       "type": "trigger",
@@ -226,7 +226,7 @@
       "elevation": 0,
       "var": "VAR_ROCKET_HIDEOUT_STATUE_3",
       "var_value": "0",
-      "script": "RocketHideout_Trigger_SpawnGruntStatue3"
+      "script": "RocketHideout_B1F_Trigger_SpawnGruntStatue3"
     },
     {
       "type": "trigger",
@@ -235,7 +235,7 @@
       "elevation": 0,
       "var": "VAR_ROCKET_HIDEOUT_STATUE_4",
       "var_value": "0",
-      "script": "RocketHideout_Trigger_SpawnGruntStatue4"
+      "script": "RocketHideout_B1F_Trigger_SpawnGruntStatue4"
     },
     {
       "type": "trigger",
@@ -244,7 +244,7 @@
       "elevation": 0,
       "var": "VAR_ROCKET_HIDEOUT_STATUE_4",
       "var_value": "0",
-      "script": "RocketHideout_Trigger_SpawnGruntStatue4"
+      "script": "RocketHideout_B1F_Trigger_SpawnGruntStatue4"
     },
     {
       "type": "trigger",
@@ -253,7 +253,7 @@
       "elevation": 0,
       "var": "VAR_ROCKET_HIDEOUT_STATUE_2",
       "var_value": "0",
-      "script": "RocketHideout_Trigger_SpawnGruntStatue2"
+      "script": "RocketHideout_B1F_Trigger_SpawnGruntStatue2"
     },
     {
       "type": "trigger",
@@ -262,7 +262,7 @@
       "elevation": 0,
       "var": "VAR_ROCKET_HIDEOUT_STATUE_2",
       "var_value": "0",
-      "script": "RocketHideout_Trigger_SpawnGruntStatue2"
+      "script": "RocketHideout_B1F_Trigger_SpawnGruntStatue2"
     },
     {
       "type": "trigger",
@@ -271,7 +271,7 @@
       "elevation": 0,
       "var": "VAR_ROCKET_HIDEOUT_STATUE_5",
       "var_value": "0",
-      "script": "RocketHideout_Trigger_SpawnGruntStatue5"
+      "script": "RocketHideout_B1F_Trigger_SpawnGruntStatue5"
     },
     {
       "type": "trigger",
@@ -280,7 +280,7 @@
       "elevation": 0,
       "var": "VAR_ROCKET_HIDEOUT_STATUE_5",
       "var_value": "0",
-      "script": "RocketHideout_Trigger_SpawnGruntStatue5"
+      "script": "RocketHideout_B1F_Trigger_SpawnGruntStatue5"
     },
     {
       "type": "trigger",
@@ -289,7 +289,7 @@
       "elevation": 0,
       "var": "VAR_ROCKET_HIDEOUT_STATUE_1",
       "var_value": "0",
-      "script": "RocketHideout_Trigger_Statue1"
+      "script": "RocketHideout_B1F_Trigger_Statue1"
     },
     {
       "type": "trigger",
@@ -298,7 +298,7 @@
       "elevation": 0,
       "var": "VAR_ROCKET_HIDEOUT_STATUE_1",
       "var_value": "0",
-      "script": "RocketHideout_Trigger_SpawnGruntStatue1"
+      "script": "RocketHideout_B1F_Trigger_SpawnGruntStatue1"
     },
     {
       "type": "trigger",
@@ -307,7 +307,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_3",
       "var_value": "0",
-      "script": "RocketHideout_TriggerTest"
+      "script": "RocketHideout_B1F_TriggerTest"
     },
     {
       "type": "trigger",
@@ -316,7 +316,7 @@
       "elevation": 0,
       "var": "VAR_ROCKET_HIDEOUT_STATUE_2",
       "var_value": "0",
-      "script": "RocketHideout_Trigger_Statue2"
+      "script": "RocketHideout_B1F_Trigger_Statue2"
     },
     {
       "type": "trigger",
@@ -325,7 +325,7 @@
       "elevation": 0,
       "var": "VAR_ROCKET_HIDEOUT_STATUE_2",
       "var_value": "0",
-      "script": "RocketHideout_Trigger_SpawnGruntStatue2"
+      "script": "RocketHideout_B1F_Trigger_SpawnGruntStatue2"
     },
     {
       "type": "trigger",
@@ -334,7 +334,7 @@
       "elevation": 0,
       "var": "VAR_ROCKET_HIDEOUT_STATUE_2",
       "var_value": "0",
-      "script": "RocketHideout_Trigger_SpawnGruntStatue2"
+      "script": "RocketHideout_B1F_Trigger_SpawnGruntStatue2"
     },
     {
       "type": "trigger",
@@ -343,7 +343,7 @@
       "elevation": 0,
       "var": "VAR_ROCKET_HIDEOUT_STATUE_5",
       "var_value": "0",
-      "script": "RocketHideout_Trigger_Statue5"
+      "script": "RocketHideout_B1F_Trigger_Statue5"
     },
     {
       "type": "trigger",
@@ -352,7 +352,7 @@
       "elevation": 0,
       "var": "VAR_ROCKET_HIDEOUT_STATUE_5",
       "var_value": "0",
-      "script": "RocketHideout_Trigger_SpawnGruntStatue5"
+      "script": "RocketHideout_B1F_Trigger_SpawnGruntStatue5"
     },
     {
       "type": "trigger",
@@ -361,7 +361,7 @@
       "elevation": 0,
       "var": "VAR_ROCKET_HIDEOUT_STATUE_5",
       "var_value": "0",
-      "script": "RocketHideout_Trigger_SpawnGruntStatue5"
+      "script": "RocketHideout_B1F_Trigger_SpawnGruntStatue5"
     },
     {
       "type": "trigger",
@@ -370,7 +370,7 @@
       "elevation": 0,
       "var": "VAR_ROCKET_HIDEOUT_STATUE_4",
       "var_value": "0",
-      "script": "RocketHideout_Trigger_SpawnGruntStatue4"
+      "script": "RocketHideout_B1F_Trigger_SpawnGruntStatue4"
     },
     {
       "type": "trigger",
@@ -379,7 +379,7 @@
       "elevation": 0,
       "var": "VAR_ROCKET_HIDEOUT_STATUE_4",
       "var_value": "0",
-      "script": "RocketHideout_Trigger_Statue4"
+      "script": "RocketHideout_B1F_Trigger_Statue4"
     },
     {
       "type": "trigger",
@@ -388,7 +388,7 @@
       "elevation": 0,
       "var": "VAR_ROCKET_HIDEOUT_STATUE_4",
       "var_value": "0",
-      "script": "RocketHideout_Trigger_SpawnGruntStatue4"
+      "script": "RocketHideout_B1F_Trigger_SpawnGruntStatue4"
     },
     {
       "type": "trigger",
@@ -397,7 +397,7 @@
       "elevation": 0,
       "var": "VAR_ROCKET_HIDEOUT_STATUE_3",
       "var_value": "0",
-      "script": "RocketHideout_Trigger_SpawnGruntStatue3"
+      "script": "RocketHideout_B1F_Trigger_SpawnGruntStatue3"
     },
     {
       "type": "trigger",
@@ -406,7 +406,7 @@
       "elevation": 0,
       "var": "VAR_ROCKET_HIDEOUT_STATUE_3",
       "var_value": "0",
-      "script": "RocketHideout_Trigger_Statue3"
+      "script": "RocketHideout_B1F_Trigger_Statue3"
     },
     {
       "type": "trigger",
@@ -415,7 +415,7 @@
       "elevation": 0,
       "var": "VAR_ROCKET_HIDEOUT_STATUE_3",
       "var_value": "0",
-      "script": "RocketHideout_Trigger_SpawnGruntStatue3"
+      "script": "RocketHideout_B1F_Trigger_SpawnGruntStatue3"
     }
   ],
   "bg_events": [
@@ -425,7 +425,7 @@
       "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RocketHideout_EventScript_DummyPanel"
+      "script": "RocketHideout_B1F_EventScript_DummyPanel"
     },
     {
       "type": "sign",
@@ -433,7 +433,7 @@
       "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RocketHideout_EventScript_DummyPanel"
+      "script": "RocketHideout_B1F_EventScript_DummyPanel"
     },
     {
       "type": "sign",
@@ -441,7 +441,7 @@
       "y": 6,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RocketHideout_EventScript_DummyPanel"
+      "script": "RocketHideout_B1F_EventScript_DummyPanel"
     },
     {
       "type": "sign",
@@ -449,7 +449,7 @@
       "y": 19,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RocketHideout_EventScript_DummyPanel"
+      "script": "RocketHideout_B1F_EventScript_DummyPanel"
     },
     {
       "type": "sign",
@@ -457,7 +457,7 @@
       "y": 11,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RocketHideout_EventScript_Switch"
+      "script": "RocketHideout_B1F_EventScript_Switch"
     },
     {
       "type": "sign",
@@ -465,7 +465,7 @@
       "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RocketHideout_EventScript_Persian"
+      "script": "RocketHideout_B1F_B1F_EventScript_Persian"
     },
     {
       "type": "sign",
@@ -473,7 +473,7 @@
       "y": 2,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RocketHideout_EventScript_Persian"
+      "script": "RocketHideout_B1F_B1F_EventScript_Persian"
     },
     {
       "type": "sign",
@@ -481,7 +481,7 @@
       "y": 2,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RocketHideout_EventScript_Persian"
+      "script": "RocketHideout_B1F_B1F_EventScript_Persian"
     },
     {
       "type": "sign",
@@ -489,7 +489,7 @@
       "y": 20,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RocketHideout_EventScript_Persian"
+      "script": "RocketHideout_B1F_B1F_EventScript_Persian"
     },
     {
       "type": "sign",
@@ -497,7 +497,7 @@
       "y": 20,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RocketHideout_EventScript_Persian"
+      "script": "RocketHideout_B1F_B1F_EventScript_Persian"
     }
   ]
 }

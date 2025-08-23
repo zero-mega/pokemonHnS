@@ -42,7 +42,7 @@
       "y": 10,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RuinsOfAlph2_MapScript_StatueDescription"
+      "script": "RuinsOfAlph_PuzzleAndRewardChambers_MapScript_StatueDescription"
     },
     {
       "type": "sign",
@@ -50,7 +50,7 @@
       "y": 14,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RuinsOfAlph2_MapScript_StatueDescription"
+      "script": "RuinsOfAlph_PuzzleAndRewardChambers_MapScript_StatueDescription"
     },
     {
       "type": "sign",
@@ -58,7 +58,7 @@
       "y": 14,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RuinsOfAlph2_MapScript_StatueDescription"
+      "script": "RuinsOfAlph_PuzzleAndRewardChambers_MapScript_StatueDescription"
     },
     {
       "type": "sign",
@@ -66,7 +66,7 @@
       "y": 10,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RuinsOfAlph2_MapScript_StatueDescription"
+      "script": "RuinsOfAlph_PuzzleAndRewardChambers_MapScript_StatueDescription"
     },
     {
       "type": "sign",
@@ -74,7 +74,7 @@
       "y": 6,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RuinsOfAlph2_MapScript_StatueDescription"
+      "script": "RuinsOfAlph_PuzzleAndRewardChambers_MapScript_StatueDescription"
     }
   ]
 }

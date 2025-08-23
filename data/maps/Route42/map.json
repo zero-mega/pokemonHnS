@@ -285,21 +285,21 @@
       "x": 18,
       "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_MT_MORTAR1",
+      "dest_map": "MAP_MT_MORTAR_1F_SOUTH",
       "dest_warp_id": "0"
     },
     {
       "x": 40,
       "y": 11,
       "elevation": 0,
-      "dest_map": "MAP_MT_MORTAR1",
+      "dest_map": "MAP_MT_MORTAR_1F_SOUTH",
       "dest_warp_id": "1"
     },
     {
       "x": 62,
       "y": 9,
       "elevation": 0,
-      "dest_map": "MAP_MT_MORTAR1",
+      "dest_map": "MAP_MT_MORTAR_1F_SOUTH",
       "dest_warp_id": "2"
     }
   ],

@@ -46,7 +46,7 @@
       "x": 7,
       "y": 8,
       "elevation": 0,
-      "dest_map": "MAP_MT_SILVER",
+      "dest_map": "MAP_MT_SILVER_OUTSIDE",
       "dest_warp_id": "1"
     }
   ],

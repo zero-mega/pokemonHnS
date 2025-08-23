@@ -697,11 +697,11 @@ static bool8 TryStartStepCountScript(u16 metatileBehavior)
         SetObjectSubpriority(38, MAP_NUM(ROUTE41), MAP_GROUP(ROUTE41), (99+83));
         SetObjectSubpriority(39, MAP_NUM(ROUTE41), MAP_GROUP(ROUTE41), (99+83));
     }
-    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(DRAGONS_DEN2) &&
-        gSaveBlock1Ptr->location.mapNum == MAP_NUM(DRAGONS_DEN2))
+    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(DRAGONS_DEN_CAVERN) &&
+        gSaveBlock1Ptr->location.mapNum == MAP_NUM(DRAGONS_DEN_CAVERN))
     {
-        SetObjectSubpriority(23, MAP_NUM(DRAGONS_DEN2), MAP_GROUP(DRAGONS_DEN2), (99+83));
-        SetObjectSubpriority(24, MAP_NUM(DRAGONS_DEN2), MAP_GROUP(DRAGONS_DEN2), (99+83));
+        SetObjectSubpriority(23, MAP_NUM(DRAGONS_DEN_CAVERN), MAP_GROUP(DRAGONS_DEN_CAVERN), (99+83));
+        SetObjectSubpriority(24, MAP_NUM(DRAGONS_DEN_CAVERN), MAP_GROUP(DRAGONS_DEN_CAVERN), (99+83));
     }
 
     if (SafariZoneTakeStep() == TRUE)
