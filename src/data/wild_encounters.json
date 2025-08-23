@@ -35647,7 +35647,7 @@
           }
         },
         {
-          "map": "MAP_RUINS_OF_ALPH",
+          "map": "MAP_RUINS_OF_ALPH_OUTSIDE",
           "base_label": "gRuinsOfAlph",
           "land_mons": {
             "encounter_rate": 20,
@@ -35831,7 +35831,7 @@
           }
         },
         {
-          "map": "MAP_RUINS_OF_ALPH",
+          "map": "MAP_RUINS_OF_ALPH_OUTSIDE",
           "base_label": "gRuinsOfAlph_Night",
           "land_mons": {
             "encounter_rate": 20,

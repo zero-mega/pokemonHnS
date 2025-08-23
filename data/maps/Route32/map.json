@@ -24,7 +24,7 @@
       "direction": "down"
     },
     {
-      "map": "MAP_RUINS_OF_ALPH",
+      "map": "MAP_RUINS_OF_ALPH_OUTSIDE",
       "offset": -24,
       "direction": "left"
     }

@@ -359,7 +359,7 @@
 #define MAP_SPROUT_TOWER_1F                          (2 | (24 << 8))
 #define MAP_SPROUT_TOWER_2F                          (3 | (24 << 8))
 #define MAP_SPROUT_TOWER_3F                          (4 | (24 << 8))
-#define MAP_RUINS_OF_ALPH                            (5 | (24 << 8))
+#define MAP_RUINS_OF_ALPH_OUTSIDE                    (5 | (24 << 8))
 #define MAP_RUINS_OF_ALPH_B1F                        (6 | (24 << 8))
 #define MAP_RUINS_OF_ALPH_PUZZLE_AND_REWARD_CHAMBERS (7 | (24 << 8))
 #define MAP_UNION_CAVE_1F                            (8 | (24 << 8))

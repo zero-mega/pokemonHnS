@@ -241,28 +241,28 @@
       "x": 20,
       "y": 9,
       "elevation": 0,
-      "dest_map": "MAP_RUINS_OF_ALPH",
+      "dest_map": "MAP_RUINS_OF_ALPH_OUTSIDE",
       "dest_warp_id": "9"
     },
     {
       "x": 4,
       "y": 9,
       "elevation": 0,
-      "dest_map": "MAP_RUINS_OF_ALPH",
+      "dest_map": "MAP_RUINS_OF_ALPH_OUTSIDE",
       "dest_warp_id": "8"
     },
     {
       "x": 4,
       "y": 26,
       "elevation": 0,
-      "dest_map": "MAP_RUINS_OF_ALPH",
+      "dest_map": "MAP_RUINS_OF_ALPH_OUTSIDE",
       "dest_warp_id": "7"
     },
     {
       "x": 20,
       "y": 26,
       "elevation": 0,
-      "dest_map": "MAP_RUINS_OF_ALPH",
+      "dest_map": "MAP_RUINS_OF_ALPH_OUTSIDE",
       "dest_warp_id": "6"
     },
     {

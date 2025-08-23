@@ -223,14 +223,14 @@
       "x": 3,
       "y": 13,
       "elevation": 0,
-      "dest_map": "MAP_RUINS_OF_ALPH",
+      "dest_map": "MAP_RUINS_OF_ALPH_OUTSIDE",
       "dest_warp_id": "3"
     },
     {
       "x": 3,
       "y": 3,
       "elevation": 0,
-      "dest_map": "MAP_RUINS_OF_ALPH",
+      "dest_map": "MAP_RUINS_OF_ALPH_OUTSIDE",
       "dest_warp_id": "2"
     }
   ],
