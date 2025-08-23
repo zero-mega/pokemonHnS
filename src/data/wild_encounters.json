@@ -64086,7 +64086,7 @@
           }
         },
         {
-          "map": "MAP_MT_SILVER_SNOW_UNUSED",
+          "map": "MAP_MT_SILVER_SNOW",
           "base_label": "gMtSilver_SnowUnused",
           "land_mons": {
             "encounter_rate": 20,
@@ -64155,7 +64155,7 @@
           }
         },
         {
-          "map": "MAP_MT_SILVER_SNOW_UNUSED",
+          "map": "MAP_MT_SILVER_SNOW",
           "base_label": "gMtSilver_SnowUnused_Night",
           "land_mons": {
             "encounter_rate": 20,

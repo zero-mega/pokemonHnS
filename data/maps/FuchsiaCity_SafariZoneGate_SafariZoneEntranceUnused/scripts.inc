@@ -1,2 +1,0 @@
-FuchsiaCity_SafariZoneGate_SafariZoneEntranceUnused_MapScripts::
-	.byte 0
