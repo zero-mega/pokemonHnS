@@ -3965,7 +3965,7 @@ u8 IsMonDisobedient(void)
 
         obedienceLevel = 20;
 
-        if (FlagGet(FLAG_BADGE01_GET)) //crystal change
+        if (FlagGet(FLAG_BADGE01_GET)) //HnS change
             obedienceLevel = 20;
         if (FlagGet(FLAG_BADGE02_GET))
             obedienceLevel = 30;

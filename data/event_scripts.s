@@ -629,7 +629,7 @@ EverGrandeCity_HallOfFame_EventScript_ResetEliteFour::
 	clearflag FLAG_DEFEATED_ELITE_4_KOGA
 	clearflag FLAG_DEFEATED_ELITE_4_BRUNO
 	clearflag FLAG_DEFEATED_ELITE_4_KAREN
-	setvar VAR_ELITE_4_STATE, 0
+	setvar VAR_GARBAGEVAR, 0
 	return
 
 Common_EventScript_UpdateBrineyLocation::
@@ -783,7 +783,7 @@ RusturfTunnel_EventScript_SetRusturfTunnelOpen::
 	removeobject LOCALID_WANDA
 	clearflag FLAG_GARBAGEFLAG
 	clearflag FLAG_GARBAGEFLAG
-	setvar VAR_RUSTURF_TUNNEL_STATE, 6
+	setvar VAR_GARBAGEVAR, 6
 	setflag FLAG_RUSTURF_TUNNEL_OPENED
 	return
 
@@ -977,7 +977,7 @@ EventScript_SelectWithoutRegisteredLongItem::
 Common_EventScript_NopReturn::
 	return
 
-@crystal 
+@HnS 
 Common_EventScript_GiftMon::
 	call_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, Common_EventScript_RecieveMonParty
 	call_if_eq VAR_RESULT, MON_GIVEN_TO_PC, Common_EventScript_ReceiveMonPC

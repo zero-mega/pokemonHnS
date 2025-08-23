@@ -1186,7 +1186,7 @@ static const u8 sDevonScopeDesc[] = _(
     "that signals any\n"
     "unseeable POKéMON.");
 
-//crystal JOHTO ITEMS START
+//HnS JOHTO ITEMS START
 
 static const u8 sClearBellDesc[] = _(
     "Old fashioned bell\n"

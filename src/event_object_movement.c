@@ -4294,7 +4294,7 @@ bool8 MovementType_BerryTreeGrowth_SparkleStart(struct ObjectEvent *objectEvent,
 // BERRYTREEFUNC_SPARKLE
 bool8 MovementType_BerryTreeGrowth_Sparkle(struct ObjectEvent *objectEvent, struct Sprite *sprite)
 {
-   //crystal removed if statement to remove berry growth disappear and reapper/flicker
+   //HnS removed if statement to remove berry growth disappear and reapper/flicker
     get_berry_tree_graphics(objectEvent, sprite);
     sprite->sTypeFuncId = BERRYTREEFUNC_SPARKLE_END;
     sprite->sTimer = 0;
@@ -4857,7 +4857,7 @@ bool8 MovementType_RotateCounterclockwise_Step3(struct ObjectEvent *objectEvent,
     return TRUE;
 }
 
-//crystal tower beam movement 
+//HnS tower beam movement 
 #define TOWER_BEAM_ANIM_COUNT 4
 
 movement_type_def(MovementType_TowerBeam, gMovementTypeFuncs_TowerBeam)

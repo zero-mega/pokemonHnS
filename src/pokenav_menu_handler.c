@@ -259,7 +259,7 @@ static u32 HandleMainMenuInput(struct Pokenav_Menu *menu)
             return POKENAV_MENU_FUNC_OPEN_FEATURE;
             
         case POKENAV_MENUITEM_RIBBONS:
-            //crystal
+            //HnS
             PrintRandomRibbonMessage();
             return POKENAV_MENU_FUNC_NONE;
 

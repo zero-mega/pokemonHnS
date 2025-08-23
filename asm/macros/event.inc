@@ -604,7 +604,7 @@
 	.endm
 
 
-	@crystal applymovement but doesnt remove follower. 
+	@HnS applymovement but doesnt remove follower. 
 	.macro applymovement2 localId:req, movements:req, map
 		.ifb \map
 			.byte 0xe8

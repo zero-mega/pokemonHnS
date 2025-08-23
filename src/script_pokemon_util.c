@@ -157,7 +157,7 @@ void CreateScriptedWildMon(u16 species, u8 level, u16 item)
     SetNuzlockeChecks(); //tx_randomizer_and_challenges
 }
 
-//crystal
+//HnS
 u32 GenerateShinyPersonalityForOtId(u32 otId)
 {
     u32 personality;

@@ -903,7 +903,7 @@ static const struct WindowTemplate sWindowTemplate_MainMenu =
     .paletteNum = 15,
     .baseBlock = 0x1,
 };
-//crystal
+//HnS
 s32 StorePokemonInBox(struct BoxPokemon *src, u8 *boxId, u8 *position)
 {
     u8 boxIdTemp = StorageGetCurrentBox();

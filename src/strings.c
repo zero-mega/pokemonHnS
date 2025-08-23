@@ -1416,7 +1416,7 @@ const u8 gText_Easy[] = _("EASY");
 const u8 gText_Hard[] = _("HARD");
 const u8 gText_Modern[] = _("MODERN");
 const u8 gText_Classic[] = _("CLASSIC");
-//crystal texts
+//HnS texts
 const u8 gText_Sunday[] = _("SUNDAY");
 const u8 gText_Monday[] = _("MONDAY");
 const u8 gText_Tuesday[] = _("TUESDAY");

@@ -256,7 +256,7 @@
 #define ITEM_INFINITE_REPEL 226
 #define ITEM_INFINITE_RARE_CANDIES 227
 
-//Crystal johto key items
+//HnS johto key items
 
 #define ITEM_CLEAR_BELL 228
 #define ITEM_LOST_ITEM 229

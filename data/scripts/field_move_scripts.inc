@@ -480,7 +480,7 @@ EventScript_EndSurface::
 	releaseall
 	end
 	
-@crystal
+@HnS
 EventScript_Whirlpool::
 	lockall
 	goto_if_unset FLAG_BADGE07_GET, EventScript_CantWhirlpool

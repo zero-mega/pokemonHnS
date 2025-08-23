@@ -76,7 +76,7 @@ MagmaHideout_4F_EventScript_Maxie::
 	removeobject LOCALID_GRUNT_2
 	removeobject LOCALID_GRUNT_3
 	removeobject LOCALID_TABITHA
-	setflag FLAG_HIDE_MAGMA_HIDEOUT_GRUNTS
+	setflag FLAG_GARBAGEFLAG
 	fadescreen FADE_FROM_BLACK
 	releaseall
 	end

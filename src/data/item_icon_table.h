@@ -298,7 +298,7 @@ const u32 *const gItemIconTable[ITEMS_COUNT + 1][2] =
     [ITEM_ROOT_FOSSIL] = {gItemIcon_RootFossil, gItemIconPalette_HoennFossil},
     [ITEM_CLAW_FOSSIL] = {gItemIcon_ClawFossil, gItemIconPalette_HoennFossil},
     [ITEM_DEVON_SCOPE] = {gItemIcon_DevonScope, gItemIconPalette_DevonScope},
-//CRYSTAL JOHTO START
+//HnS JOHTO START
 
     [ITEM_CLEAR_BELL] = {gItemIcon_ClearBell, gItemIcon_Palette_ClearBell},
 

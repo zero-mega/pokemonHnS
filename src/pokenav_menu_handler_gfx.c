@@ -16,7 +16,7 @@
 #include "scanline_effect.h"
 #include "constants/songs.h"
 #include "constants/rgb.h"
-//crystal
+//HnS
 #include "random.h"
 #include "field_message_box.h"  // If ShowPokenavFieldMessage is here
 
@@ -310,7 +310,7 @@ static const u8 *const sPageDescriptions[] =
 static const u8 sOptionDescTextColors[]  = {TEXT_COLOR_GREEN, TEXT_COLOR_BLUE, TEXT_COLOR_LIGHT_GREEN};
 static const u8 sOptionDescTextColors2[] = {TEXT_COLOR_GREEN, TEXT_COLOR_BLUE, TEXT_COLOR_LIGHT_GREEN};
 
-//crystal added
+//HnS added
 void PrintRandomRibbonMessage(void)
 {
     const u8 *msg = sPokenavCallMessages[Random() % NUM_POKENAV_CALL_MSGS];

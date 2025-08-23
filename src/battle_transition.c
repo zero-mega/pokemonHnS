@@ -2507,7 +2507,7 @@ static void Task_Drake(u8 taskId)
     DoMugshotTransition(taskId);
 }
 
-//crystal added
+//HnS added
 static void Task_Ariana(u8 taskId)
 {
     gTasks[taskId].tMugshotId = MUGSHOT_ARIANA;

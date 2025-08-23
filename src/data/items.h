@@ -4509,7 +4509,7 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
 
-//Crystal Johto key items
+//HnS Johto key items
 
 [ITEM_CLEAR_BELL] = {    
     .name = _("CLEAR BELL"),

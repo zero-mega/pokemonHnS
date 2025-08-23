@@ -2071,7 +2071,7 @@ void BufferPokedexRatingForMatchCall(u8 *destStr)
     u8 *str;
     u8 dexRatingLevel;
 
-    //crystal Check if lab state is 3 — show MR. POKéMON message only
+    //HnS Check if lab state is 3 — show MR. POKéMON message only
     if (VarGet(VAR_NEWBARKTOWN_LABSTATE) == 3)
     {
         StringCopy(destStr, gBirchDexRatingText_GoFindMrPokemon);

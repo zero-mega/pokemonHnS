@@ -170,7 +170,7 @@ PetalburgCity_Gym_EventScript_WallyPresentation::
 	setflag FLAG_HIDE_PETALBURG_CITY_WALLYS_MOM
 	setvar VAR_GARBAGEVAR, 2
 	setvar VAR_GARBAGEVAR, 3
-	setflag FLAG_HIDE_PETALBURG_GYM_WALLY
+	setflag FLAG_GARBAGEFLAG
 	setflag FLAG_GARBAGEFLAG
 	special InitBirchState
 	msgbox PetalburgCity_Gym_Text_DadGoCollectBadges, MSGBOX_DEFAULT
@@ -270,7 +270,7 @@ PetalburgCity_Gym_EventScript_BeginWallyTutorial::
 	setvar VAR_GARBAGEVAR, 1
 	setvar VAR_GARBAGEVAR, 2
 	clearflag FLAG_HIDE_PETALBURG_CITY_WALLY
-	clearflag FLAG_HIDE_PETALBURG_GYM_WALLY
+	clearflag FLAG_GARBAGEFLAG
 	setflag FLAG_GARBAGEFLAG
 	special InitBirchState
 	warp MAP_PETALBURG_CITY, 15, 8

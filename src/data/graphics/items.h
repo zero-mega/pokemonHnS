@@ -638,7 +638,7 @@ const u32 gItemIcon_ClawFossil[] = INCBIN_U32("graphics/items/icons/claw_fossil.
 const u32 gItemIcon_DevonScope[] = INCBIN_U32("graphics/items/icons/devon_scope.4bpp.lz");
 const u32 gItemIconPalette_DevonScope[] = INCBIN_U32("graphics/items/icon_palettes/devon_scope.gbapal.lz");
 
-//CRYSTAL JOHTO ITEMS
+//HnS JOHTO ITEMS
 
 const u32 gItemIcon_ClearBell[] = INCBIN_U32("graphics/items/icons/clearbell.4bpp.lz");
 const u32 gItemIcon_Palette_ClearBell[] = INCBIN_U32("graphics/items/icon_palettes/clearbell.gbapal.lz");

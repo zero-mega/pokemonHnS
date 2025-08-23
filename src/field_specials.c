@@ -1410,12 +1410,12 @@ u8 TryUpdateRusturfTunnelState(void)
     {
         if (FlagGet(FLAG_GARBAGEFLAG))
         {
-            VarSet(VAR_RUSTURF_TUNNEL_STATE, 4);
+            VarSet(VAR_GARBAGEVAR, 4);
             return TRUE;
         }
         else if (FlagGet(FLAG_GARBAGEFLAG))
         {
-            VarSet(VAR_RUSTURF_TUNNEL_STATE, 5);
+            VarSet(VAR_GARBAGEVAR, 5);
             return TRUE;
         }
     }
@@ -4691,7 +4691,7 @@ void SetSpDefStat(void)
     SetMonData(&gEnemyParty[0], MON_DATA_SPDEF, &SpDefStat);
 }
 
-//crystal haircut
+//HnS haircut
 void HaircutBrother1(void)
 {
     AdjustFriendship(&gPlayerParty[gSpecialVar_0x8004], FRIENDSHIP_EVENT_HAIRCUT1);

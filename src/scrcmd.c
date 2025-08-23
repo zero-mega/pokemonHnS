@@ -1805,7 +1805,7 @@ bool8 ScrCmd_givemon(struct ScriptContext *ctx)
     return FALSE;
 }
 
-//crystal
+//HnS
 bool8 ScrCmd_givenamedmon(struct ScriptContext *ctx)
 {
     u16 giftId = ScriptReadHalfword(ctx);
@@ -2383,7 +2383,7 @@ bool8 ScrCmd_setwildbattle(struct ScriptContext *ctx)
     return FALSE;
 }
 
-//crystal
+//HnS
 bool8 ScrCmd_setwildbattleshiny(struct ScriptContext *ctx)
 {
     u16 species = ScriptReadHalfword(ctx);

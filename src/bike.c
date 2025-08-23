@@ -62,7 +62,7 @@ static void Bike_SetBikeStill(void);
     bike does not. This is because the Acro needs to know the button inputs
     for its complex tricks and actions.
 */
-//crystal added for cycling road
+//HnS added for cycling road
 bool8 ShouldForceCyclingRoadDownward(void)
 {
     s16 x, y;
@@ -338,7 +338,7 @@ static u8 CheckMovementInputAcroBike(u8 *newDirection, u16 newKeys, u16 heldKeys
 }
 
 
-/* //crystal
+/* //HnS
 static u8 CheckMovementInputAcroBike(u8 *newDirection, u16 newKeys, u16 heldKeys)
 {
     return sAcroBikeInputHandlers[gPlayerAvatar.acroBikeState](newDirection, newKeys, heldKeys);
@@ -824,7 +824,7 @@ static void AcroBikeTransition_WheelieLoweringMoving(u8 direction)
 
     PlayerEndWheelieWhileMoving(direction);
 }
-void Bike_TryAcroBikeHistoryUpdate(u16 newKeys, u16 heldKeys) {} //crystal
+void Bike_TryAcroBikeHistoryUpdate(u16 newKeys, u16 heldKeys) {} //HnS
 /*
 void Bike_TryAcroBikeHistoryUpdate(u16 newKeys, u16 heldKeys)
 {

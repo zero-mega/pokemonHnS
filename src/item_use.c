@@ -164,7 +164,7 @@ static void DisplayDadsAdviceCannotUseItemMessage(u8 taskId, bool8 isUsingRegist
 }
 
 
-static void DisplayRadioMessage(u8 taskId, bool8 isUsingRegisteredKeyItemOnField) //crystal radio logic
+static void DisplayRadioMessage(u8 taskId, bool8 isUsingRegisteredKeyItemOnField) //HnS radio logic
 {
     if (!Overworld_MapTypeAllowsTeleportAndFly(gMapHeader.mapType))
         if (gMapHeader.regionMapSectionId == MAPSEC_RUINS_OF_ALPH) 

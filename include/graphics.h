@@ -4301,7 +4301,7 @@ extern const u32 gItemIconPalette_HoennFossil[];
 extern const u32 gItemIcon_ClawFossil[];
 extern const u32 gItemIcon_DevonScope[];
 extern const u32 gItemIconPalette_DevonScope[];
-//crystal johto items
+//HnS johto items
 
 extern const u32 gItemIcon_ClearBell[];
 extern const u32 gItemIcon_Palette_ClearBell[];

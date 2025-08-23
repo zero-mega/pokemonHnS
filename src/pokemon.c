@@ -6514,7 +6514,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
     && (side == B_SIDE_PLAYER) 
     //&& !(gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_EREADER_TRAINER | BATTLE_TYPE_RECORDED_LINK | BATTLE_TYPE_FRONTIER))
     ) //FlagSet(FLAG_DIFFICULTY_HARD)
-    {//crystal changed to 110
+    {//HnS changed to 110
         if (FlagGet(FLAG_BADGE05_GET) == TRUE)
         {
             defense = (110 * defense) / 100; //+25%
