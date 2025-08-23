@@ -150,7 +150,7 @@
       "x": 12,
       "y": 9,
       "elevation": 3,
-      "dest_map": "MAP_BATTLE_TOWER_OUTER",
+      "dest_map": "MAP_BATTLE_TOWER_OUTSIDE",
       "dest_warp_id": "0"
     },
     {

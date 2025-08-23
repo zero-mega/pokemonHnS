@@ -1036,10 +1036,10 @@
 #define FLAG_HIDE_VICTORY_ROAD_SILVER                               0x3DD
 #define FLAG_HIDE_INDIGO_PLATEAU_SILVER                               0x3DE
 #define FLAG_HIDE_INDIGO_PLATEAU_MARY_OAK                                     0x3DF
-#define FLAG_HIDE_SSAQUA1_GRANDPA                 0x3E0
-#define FLAG_HIDE_SSAQUA8_GRANDDAUGHTER          0x3E1
+#define FLAG_HIDE_SSAQUA_1F_GRANDPA                 0x3E0
+#define FLAG_HIDE_SSAQUA_ROOM_SSE_GRANDDAUGHTER          0x3E1
 #define FLAG_HIDE_SSAQUA_SAILOR                      0x3E2
-#define FLAG_HIDE_SSAQUA3_GRANDDAUGHTER                              0x3E3//unused
+#define FLAG_HIDE_SSAQUA_CAPTAINS_ROOM_GRANDDAUGHTER                              0x3E3//unused
 #define FLAG_HIDE_SOOTOPOLIS_CITY_RAYQUAZA                          0x3E4 //unused
 #define FLAG_HIDE_SOOTOPOLIS_CITY_KYOGRE                            0x3E5//unused
 #define FLAG_HIDE_SOOTOPOLIS_CITY_GROUDON                           0x3E6//unused

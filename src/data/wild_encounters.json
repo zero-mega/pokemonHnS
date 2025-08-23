@@ -66992,8 +66992,8 @@
           }
         },
         {
-          "map": "MAP_MT_SILVER_SIDE_TEST",
-          "base_label": "gMtSilverSideTest",
+          "map": "MAP_MT_SILVER_SNOW",
+          "base_label": "gMtSilver_Snow",
           "land_mons": {
             "encounter_rate": 20,
             "mons": [
@@ -67061,8 +67061,8 @@
           }
         },
         {
-          "map": "MAP_MT_SILVER_SIDE_TEST",
-          "base_label": "gMtSilverSideTestNight",
+          "map": "MAP_MT_SILVER_SNOW",
+          "base_label": "gMtSilver_SnowNight",
           "land_mons": {
             "encounter_rate": 20,
             "mons": [

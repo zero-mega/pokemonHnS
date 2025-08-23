@@ -828,7 +828,7 @@ u8 BattleSetup_GetTerrainId(void)
             IS_MAP(SAFARI_ZONE_TOP_MID, SAFARI_ZONE_TOP_MID) ||
             IS_MAP(SAFARI_ZONE_TOP_RIGHT, SAFARI_ZONE_TOP_RIGHT) ||
             IS_MAP(WHIRL_ISLANDS_1F, WHIRL_ISLANDS_1F) ||
-            IS_MAP(MT_SILVER_SIDE_TEST, MT_SILVER_SIDE_TEST) ||
+            IS_MAP(MT_SILVER_SNOW, MT_SILVER_SNOW) ||
             IS_MAP(ROUTE3, ROUTE3) ||
             IS_MAP(ROUTE4, ROUTE4) ||
             IS_MAP(ROUTE9, ROUTE9) ||

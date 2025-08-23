@@ -1232,14 +1232,14 @@
       "blockdata_filepath": "data/layouts/Route117_PokemonDayCare/map.bin"
     },
     {
-      "id": "LAYOUT_ROUTE121_SAFARI_ZONE_ENTRANCE",
-      "name": "Route121_SafariZoneEntrance_Layout",
+      "id": "LAYOUT_ROUTE121_SAFARI_ZONE_GATE_SAFARI_ZONE_ENTRANCE",
+      "name": "Route121_SafariZoneGate_SafariZoneGate_SafariZoneEntrance_Layout",
       "width": 18,
       "height": 14,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/Route121_SafariZoneEntrance/border.bin",
-      "blockdata_filepath": "data/layouts/Route121_SafariZoneEntrance/map.bin"
+      "border_filepath": "data/layouts/Route121_SafariZoneGate_SafariZoneEntrance/border.bin",
+      "blockdata_filepath": "data/layouts/Route121_SafariZoneGate_SafariZoneEntrance/map.bin"
     },
     {
       "id": "LAYOUT_METEOR_FALLS_1F_1R",
@@ -5652,24 +5652,24 @@
       "blockdata_filepath": "data/layouts/MtSilver_Outside/map.bin"
     },
     {
-      "id": "LAYOUT_POWER_PLANT1",
-      "name": "PowerPlant1_Layout",
+      "id": "LAYOUT_ROUTE10_POWER_PLANT_ENTRANCE",
+      "name": "Route10_PowerPlantEntrance_Layout",
       "width": 23,
       "height": 24,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_SilphCo",
-      "border_filepath": "data/layouts/PowerPlant1/border.bin",
-      "blockdata_filepath": "data/layouts/PowerPlant1/map.bin"
+      "border_filepath": "data/layouts/Route10_PowerPlantEntrance/border.bin",
+      "blockdata_filepath": "data/layouts/Route10_PowerPlantEntrance/map.bin"
     },
     {
-      "id": "LAYOUT_POWER_PLANT2",
-      "name": "PowerPlant2_Layout",
+      "id": "LAYOUT_ROUTE10_POWER_PLANT_BACK_ROOM",
+      "name": "Route10_PowerPlantBackRoom_Layout",
       "width": 18,
       "height": 14,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_PowerPlant_43",
-      "border_filepath": "data/layouts/PowerPlant2/border.bin",
-      "blockdata_filepath": "data/layouts/PowerPlant2/map.bin"
+      "border_filepath": "data/layouts/Route10_PowerPlantBackRoom/border.bin",
+      "blockdata_filepath": "data/layouts/Route10_PowerPlantBackRoom/map.bin"
     },
     {
       "id": "LAYOUT_RUINS_OF_ALPH_OUTSIDE",
@@ -6002,14 +6002,14 @@
       "blockdata_filepath": "data/layouts/BlackthornCity_PokemonCenter/map.bin"
     },
     {
-      "id": "LAYOUT_MT_SILVER_POKECENTER",
-      "name": "MtSilverPokecenter_Layout",
+      "id": "LAYOUT_MT_SILVER_POKEMON_CENTER",
+      "name": "MtSilver_PokemonCenter_Layout",
       "width": 16,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_PokeCenter_14",
-      "border_filepath": "data/layouts/MtSilverPokecenter/border.bin",
-      "blockdata_filepath": "data/layouts/MtSilverPokecenter/map.bin"
+      "border_filepath": "data/layouts/MtSilver_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/MtSilver_PokemonCenter/map.bin"
     },
     {
       "id": "LAYOUT_VIRIDIAN_CITY_POKEMON_CENTER",
@@ -7153,13 +7153,13 @@
     },
     {
       "id": "LAYOUT_BELLCHIME_TRAIL",
-      "name": "Bellchime_Trail_Layout",
+      "name": "BellchimeTrail_Layout",
       "width": 70,
       "height": 69,
       "primary_tileset": "gTileset_Johto_NorthWest",
       "secondary_tileset": "gTileset_BellchimeTrail",
-      "border_filepath": "data/layouts/Bellchime_Trail/border.bin",
-      "blockdata_filepath": "data/layouts/Bellchime_Trail/map.bin"
+      "border_filepath": "data/layouts/BellchimeTrail/border.bin",
+      "blockdata_filepath": "data/layouts/BellchimeTrail/map.bin"
     },
     {
       "id": "LAYOUT_MAHOGANY_TOWN_GYM",
@@ -7942,14 +7942,14 @@
       "blockdata_filepath": "data/layouts/Gate_FuchsiaCity_Route18/map.bin"
     },
     {
-      "id": "LAYOUT_FUCHSIA_CITY_SAFARI_ZONE_ENTRANCE_UNUSED",
-      "name": "FuchsiaCity_SafariZoneEntranceUnused_Layout",
+      "id": "LAYOUT_FUCHSIA_CITY_SAFARI_ZONE_GATE_SAFARI_ZONE_ENTRANCE_UNUSED",
+      "name": "FuchsiaCity_SafariZoneGate_SafariZoneEntranceUnused_Layout",
       "width": 15,
       "height": 15,
       "primary_tileset": "gTileset_Kanto_Building",
       "secondary_tileset": "gTileset_CianwoodGym_48",
-      "border_filepath": "data/layouts/FuchsiaCity_SafariZoneEntranceUnused/border.bin",
-      "blockdata_filepath": "data/layouts/FuchsiaCity_SafariZoneEntranceUnused/map.bin"
+      "border_filepath": "data/layouts/FuchsiaCity_SafariZoneGate_SafariZoneEntranceUnused/border.bin",
+      "blockdata_filepath": "data/layouts/FuchsiaCity_SafariZoneGate_SafariZoneEntranceUnused/map.bin"
     },
     {
       "id": "LAYOUT_FUCHSIA_CITY_HOUSE1",
@@ -8192,14 +8192,14 @@
       "blockdata_filepath": "data/layouts/SafariZoneIndoor/map.bin"
     },
     {
-      "id": "LAYOUT_SAFARI_ZONE_ENTRANCE",
-      "name": "SafariZoneEntrance_Layout",
+      "id": "LAYOUT_SAFARI_ZONE_GATE_SAFARI_ZONE_ENTRANCE",
+      "name": "SafariZoneGate_SafariZoneGate_SafariZoneEntrance_Layout",
       "width": 19,
       "height": 15,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_CianwoodGym_48",
-      "border_filepath": "data/layouts/SafariZoneEntrance/border.bin",
-      "blockdata_filepath": "data/layouts/SafariZoneEntrance/map.bin"
+      "border_filepath": "data/layouts/SafariZoneGate_SafariZoneEntrance/border.bin",
+      "blockdata_filepath": "data/layouts/SafariZoneGate_SafariZoneEntrance/map.bin"
     },
     {
       "id": "LAYOUT_SAFARI_ZONE_GATE_POKEMON_CENTER",
@@ -8302,114 +8302,114 @@
       "blockdata_filepath": "data/layouts/Route27_House/map.bin"
     },
     {
-      "id": "LAYOUT_SSAQUA1",
-      "name": "SSAqua1_Layout",
+      "id": "LAYOUT_SSAQUA_1F",
+      "name": "SSAqua_1F_Layout",
       "width": 38,
       "height": 21,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_ssaqua",
-      "border_filepath": "data/layouts/SSAqua1/border.bin",
-      "blockdata_filepath": "data/layouts/SSAqua1/map.bin"
+      "border_filepath": "data/layouts/SSAqua_1F/border.bin",
+      "blockdata_filepath": "data/layouts/SSAqua_1F/map.bin"
     },
     {
-      "id": "LAYOUT_SSAQUA2",
-      "name": "SSAqua2_Layout",
+      "id": "LAYOUT_SSAQUA_B1F",
+      "name": "SSAqua_B1F_Layout",
       "width": 34,
       "height": 16,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_ssaqua",
-      "border_filepath": "data/layouts/SSAqua2/border.bin",
-      "blockdata_filepath": "data/layouts/SSAqua2/map.bin"
+      "border_filepath": "data/layouts/SSAqua_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/SSAqua_B1F/map.bin"
     },
     {
-      "id": "LAYOUT_SSAQUA3",
-      "name": "SSAqua3_Layout",
+      "id": "LAYOUT_SSAQUA_CAPTAINS_ROOM",
+      "name": "SSAqua_CaptainsRoom_Layout",
       "width": 16,
       "height": 14,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_ssaqua",
-      "border_filepath": "data/layouts/SSAqua3/border.bin",
-      "blockdata_filepath": "data/layouts/SSAqua3/map.bin"
+      "border_filepath": "data/layouts/SSAqua_CaptainsRoom/border.bin",
+      "blockdata_filepath": "data/layouts/SSAqua_CaptainsRoom/map.bin"
     },
     {
-      "id": "LAYOUT_SSAQUA4",
-      "name": "SSAqua4_Layout",
+      "id": "LAYOUT_SSAQUA_PLAYERS_ROOM",
+      "name": "SSAqua_PlayersRoom_Layout",
       "width": 8,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_ssaqua",
-      "border_filepath": "data/layouts/SSAqua4/border.bin",
-      "blockdata_filepath": "data/layouts/SSAqua4/map.bin"
+      "border_filepath": "data/layouts/SSAqua_PlayersRoom/border.bin",
+      "blockdata_filepath": "data/layouts/SSAqua_PlayersRoom/map.bin"
     },
     {
-      "id": "LAYOUT_SSAQUA",
-      "name": "SSAqua_Layout",
+      "id": "LAYOUT_SSAQUA_ROOM_NW",
+      "name": "SSAqua_Room_NW_Layout",
       "width": 8,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_ssaqua",
-      "border_filepath": "data/layouts/SSAqua/border.bin",
-      "blockdata_filepath": "data/layouts/SSAqua/map.bin"
+      "border_filepath": "data/layouts/SSAqua_RoomNW/border.bin",
+      "blockdata_filepath": "data/layouts/SSAqua_RoomNW/map.bin"
     },
     {
-      "id": "LAYOUT_SSAQUA6",
-      "name": "SSAqua6_Layout",
+      "id": "LAYOUT_SSAQUA_ROOM_NE",
+      "name": "SSAqua_RoomNE_Layout",
       "width": 8,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_ssaqua",
-      "border_filepath": "data/layouts/SSAqua6/border.bin",
-      "blockdata_filepath": "data/layouts/SSAqua6/map.bin"
+      "border_filepath": "data/layouts/SSAqua_RoomNE/border.bin",
+      "blockdata_filepath": "data/layouts/SSAqua_RoomNE/map.bin"
     },
     {
-      "id": "LAYOUT_SSAQUA7",
-      "name": "SSAqua7_Layout",
+      "id": "LAYOUT_SSAQUA_ROOM_NNE",
+      "name": "SSAqua_RoomNNE_Layout",
       "width": 8,
       "height": 10,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_ssaqua",
-      "border_filepath": "data/layouts/SSAqua7/border.bin",
-      "blockdata_filepath": "data/layouts/SSAqua7/map.bin"
+      "border_filepath": "data/layouts/SSAqua_RoomNNE/border.bin",
+      "blockdata_filepath": "data/layouts/SSAqua_RoomNNE/map.bin"
     },
     {
-      "id": "LAYOUT_NEW_MAP2",
-      "name": "NewMap2_Layout",
+      "id": "LAYOUT_SSAQUA_ROOM_SSW",
+      "name": "SSAqua_RoomSSW_Layout",
       "width": 8,
       "height": 11,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_ssaqua",
-      "border_filepath": "data/layouts/NewMap2/border.bin",
-      "blockdata_filepath": "data/layouts/NewMap2/map.bin"
+      "border_filepath": "data/layouts/SSAqua_RoomSSW/border.bin",
+      "blockdata_filepath": "data/layouts/SSAqua_RoomSSW/map.bin"
     },
     {
-      "id": "LAYOUT_SSAQUA8",
-      "name": "SSAqua8_Layout",
+      "id": "LAYOUT_SSAQUA_ROOM_SSE",
+      "name": "SSAqua_RoomSSE_Layout",
       "width": 8,
       "height": 11,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_ssaqua",
-      "border_filepath": "data/layouts/SSAqua8/border.bin",
-      "blockdata_filepath": "data/layouts/SSAqua8/map.bin"
+      "border_filepath": "data/layouts/SSAqua_RoomSSE/border.bin",
+      "blockdata_filepath": "data/layouts/SSAqua_RoomSSE/map.bin"
     },
     {
-      "id": "LAYOUT_SSAQUA9",
-      "name": "SSAqua9_Layout",
+      "id": "LAYOUT_SSAQUA_ROOM_SE",
+      "name": "SSAqua_RoomSE_Layout",
       "width": 8,
       "height": 11,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_ssaqua",
-      "border_filepath": "data/layouts/SSAqua9/border.bin",
-      "blockdata_filepath": "data/layouts/SSAqua9/map.bin"
+      "border_filepath": "data/layouts/SSAqua_RoomSE/border.bin",
+      "blockdata_filepath": "data/layouts/SSAqua_RoomSE/map.bin"
     },
     {
-      "id": "LAYOUT_SSAQUA10",
-      "name": "SSAqua10_Layout",
+      "id": "LAYOUT_SSAQUA_ROOM_SW",
+      "name": "SSAqua_RoomSW_Layout",
       "width": 8,
       "height": 11,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_ssaqua",
-      "border_filepath": "data/layouts/SSAqua10/border.bin",
-      "blockdata_filepath": "data/layouts/SSAqua10/map.bin"
+      "border_filepath": "data/layouts/SSAqua_RoomSW/border.bin",
+      "blockdata_filepath": "data/layouts/SSAqua_RoomSW/map.bin"
     },
     {
       "id": "LAYOUT_WORLD_HUB2",
@@ -8512,14 +8512,14 @@
       "blockdata_filepath": "data/layouts/CeladonCity_Apartments_RoofHouse/map.bin"
     },
     {
-      "id": "LAYOUT_FUCHSIA_CITY_SAFARI_ZONE_ENTRANCE",
-      "name": "FuchsiaCity_SafariZoneEntrance_Layout",
+      "id": "LAYOUT_FUCHSIA_CITY_SAFARI_ZONE_GATE_SAFARI_ZONE_ENTRANCE",
+      "name": "FuchsiaCity_SafariZoneGate_SafariZoneGate_SafariZoneEntrance_Layout",
       "width": 15,
       "height": 15,
       "primary_tileset": "gTileset_Kanto_Building",
       "secondary_tileset": "gTileset_CianwoodGym_48",
-      "border_filepath": "data/layouts/FuchsiaCity_SafariZoneEntrance/border.bin",
-      "blockdata_filepath": "data/layouts/FuchsiaCity_SafariZoneEntrance/map.bin"
+      "border_filepath": "data/layouts/FuchsiaCity_SafariZoneGate_SafariZoneEntrance/border.bin",
+      "blockdata_filepath": "data/layouts/FuchsiaCity_SafariZoneGate_SafariZoneEntrance/map.bin"
     },
     {
       "id": "LAYOUT_MT_SILVER_1F_MOLTRES_ROOM",
@@ -8643,33 +8643,33 @@
     },
     {
       "id": "LAYOUT_MT_MOON_OUTSIDE",
-      "name": "MtMoonOutside_Layout",
+      "name": "MtMoon_Outside_Layout",
       "width": 49,
       "height": 29,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Cherrygrove",
-      "border_filepath": "data/layouts/MtMoonOutside/border.bin",
-      "blockdata_filepath": "data/layouts/MtMoonOutside/map.bin"
+      "border_filepath": "data/layouts/MtMoon_Outside/border.bin",
+      "blockdata_filepath": "data/layouts/MtMoon_Outside/map.bin"
     },
     {
-      "id": "LAYOUT_MT_SILVER_SIDE_TEST",
-      "name": "MtSilverSideTest_Layout",
+      "id": "LAYOUT_MT_SILVER_SNOW",
+      "name": "MtSilver_Snow_Layout",
       "width": 55,
       "height": 64,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_MtSilverSnow",
-      "border_filepath": "data/layouts/MtSilverSideTest/border.bin",
-      "blockdata_filepath": "data/layouts/MtSilverSideTest/map.bin"
+      "border_filepath": "data/layouts/MtSilver_Snow/border.bin",
+      "blockdata_filepath": "data/layouts/MtSilver_Snow/map.bin"
     },
     {
-      "id": "LAYOUT_MT_SILVER_SUMMIT_TEST",
-      "name": "MtSilverSummitTest_Layout",
+      "id": "LAYOUT_MT_SILVER_SUMMIT_DAY",
+      "name": "MtSilver_SummitDay_Layout",
       "width": 21,
       "height": 27,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_MtSilverSnow",
-      "border_filepath": "data/layouts/MtSilverSummitTest/border.bin",
-      "blockdata_filepath": "data/layouts/MtSilverSummitTest/map.bin"
+      "border_filepath": "data/layouts/MtSilver_SummitDay/border.bin",
+      "blockdata_filepath": "data/layouts/MtSilver_SummitDay/map.bin"
     },
     {
       "id": "LAYOUT_GOLDENROD_CITY_DEPARTMENT_STORE_7FNIGHT",
@@ -8702,14 +8702,14 @@
       "blockdata_filepath": "data/layouts/TinTower_1F0Night/map.bin"
     },
     {
-      "id": "LAYOUT_BATTLE_TOWER_OUTER",
-      "name": "BattleTowerOuter_Layout",
+      "id": "LAYOUT_BATTLE_TOWER_OUTSIDE",
+      "name": "BattleTower_Outside_Layout",
       "width": 33,
       "height": 30,
       "primary_tileset": "gTileset_Johto_General",
-      "secondary_tileset": "gTileset_BattleTowerOuter",
-      "border_filepath": "data/layouts/BattleTowerOuter/border.bin",
-      "blockdata_filepath": "data/layouts/BattleTowerOuter/map.bin"
+      "secondary_tileset": "gTileset_BattleTower_Outside",
+      "border_filepath": "data/layouts/BattleTower_Outside/border.bin",
+      "blockdata_filepath": "data/layouts/BattleTower_Outside/map.bin"
     },
     {
       "id": "LAYOUT_GATE_ROUTE40_BATTLE_TOWER_OUTSIDE",
@@ -8892,14 +8892,14 @@
       "blockdata_filepath": "data/layouts/FuchsiaCity_SafariZoneCave/map.bin"
     },
     {
-      "id": "LAYOUT_MT_SILVER_SUMMIT_TEST_NIGHT",
-      "name": "MtSilverSummitTestNight_Layout",
+      "id": "LAYOUT_MT_SILVER_SUMMIT_DAY_NIGHT",
+      "name": "MtSilver_SummitDayNight_Layout",
       "width": 21,
       "height": 27,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_MtSilverSnow",
-      "border_filepath": "data/layouts/MtSilverSummitTestNight/border.bin",
-      "blockdata_filepath": "data/layouts/MtSilverSummitTestNight/map.bin"
+      "border_filepath": "data/layouts/MtSilver_SummitDayNight/border.bin",
+      "blockdata_filepath": "data/layouts/MtSilver_SummitDayNight/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE19_CAVE",

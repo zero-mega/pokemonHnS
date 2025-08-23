@@ -232,14 +232,14 @@
       "x": 15,
       "y": 40,
       "elevation": 0,
-      "dest_map": "MAP_POWER_PLANT1",
+      "dest_map": "MAP_ROUTE10_POWER_PLANT_ENTRANCE",
       "dest_warp_id": "0"
     },
     {
       "x": 10,
       "y": 37,
       "elevation": 0,
-      "dest_map": "MAP_POWER_PLANT2",
+      "dest_map": "MAP_ROUTE10_POWER_PLANT_BACK_ROOM",
       "dest_warp_id": "1"
     },
     {

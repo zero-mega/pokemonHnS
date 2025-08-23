@@ -100,7 +100,7 @@ VermilionPort_EventScript_Sailor_MaidenVoyage::
 	msgbox VermilionPort_Text_FlashTicket, MSGBOX_DEFAULT
 	call VermilionPort_EventScript_EnterShip
 	setvar VAR_SSAQUA_STATE, 1
-	warpsilent MAP_SSAQUA1, 29, 3
+	warpsilent MAP_SSAQUA_1F, 29, 3
 	release
 	end
 

@@ -202,7 +202,7 @@
       "x": 25,
       "y": 14,
       "elevation": 0,
-      "dest_map": "MAP_MT_SILVER_POKECENTER",
+      "dest_map": "MAP_MT_SILVER_POKEMON_CENTER",
       "dest_warp_id": "0"
     }
   ],

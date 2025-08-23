@@ -396,7 +396,7 @@ NewBarkTown_Lab_EventScript_ElmSSTicket::
 	giveitem ITEM_SS_TICKET
 	msgbox NewBarkTown_Lab_Text_ElmGiveTicket2, MSGBOX_DEFAULT
 	closemessage
-	clearflag FLAG_HIDE_SSAQUA1_GRANDPA
+	clearflag FLAG_HIDE_SSAQUA_1F_GRANDPA
 	setvar VAR_NEWBARKTOWN_LABSTATE, 11
 	release
 	end

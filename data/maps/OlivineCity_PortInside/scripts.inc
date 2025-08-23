@@ -5,7 +5,7 @@ OlivineCity_PortInside_MapScripts::
 	.byte 0
 
 OlivinePort_Test::
-	clearflag FLAG_HIDE_SSAQUA1_GRANDPA
+	clearflag FLAG_HIDE_SSAQUA_1F_GRANDPA
 	end
 
 OlivinePort_EventScript_CooltrainerF::
@@ -98,7 +98,7 @@ OlivinePort_EventScript_Sailor_MaidenVoyage::
 	msgbox OlivinePort_Text_FlashTicket, MSGBOX_DEFAULT
 	call OlivinePort_EventScript_EnterShip
 	setvar VAR_SSAQUA_STATE, 1
-	warpsilent MAP_SSAQUA1, 29, 3
+	warpsilent MAP_SSAQUA_1F, 29, 3
 	release
 	end
 

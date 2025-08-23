@@ -341,7 +341,7 @@ gStdScripts_End::
 	.include "data/maps/Route114_LanettesHouse/scripts.inc"
 	.include "data/maps/Route116_TunnelersRestHouse/scripts.inc"
 	.include "data/maps/Route117_PokemonDayCare/scripts.inc"
-	.include "data/maps/Route121_SafariZoneEntrance/scripts.inc"
+	.include "data/maps/Route121_SafariZoneGate_SafariZoneEntrance/scripts.inc"
 	.include "data/maps/MeteorFalls_1F_1R/scripts.inc"
 	.include "data/maps/MeteorFalls_1F_2R/scripts.inc"
 	.include "data/maps/MeteorFalls_B1F_1R/scripts.inc"
@@ -1368,9 +1368,9 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/MtSilver_Outside/scripts.inc"
 
-	.include "data/maps/PowerPlant1/scripts.inc"
+	.include "data/maps/Route10_PowerPlantEntrance/scripts.inc"
 
-	.include "data/maps/PowerPlant2/scripts.inc"
+	.include "data/maps/Route10_PowerPlantBackRoom/scripts.inc"
 
 	.include "data/maps/RuinsOfAlph_Outside/scripts.inc"
 
@@ -1438,7 +1438,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/BlackthornCity_PokemonCenter/scripts.inc"
 
-	.include "data/maps/MtSilverPokecenter/scripts.inc"
+	.include "data/maps/MtSilver_PokemonCenter/scripts.inc"
 
 	.include "data/maps/ViridianCity_PokemonCenter/scripts.inc"
 
@@ -1668,7 +1668,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/CianwoodGym/scripts.inc"
 
-	.include "data/maps/Bellchime_Trail/scripts.inc"
+	.include "data/maps/BellchimeTrail/scripts.inc"
 
 	.include "data/maps/MahoganyTown_Gym/scripts.inc"
 
@@ -1826,7 +1826,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/Gate_FuchsiaCity_Route18/scripts.inc"
 
-	.include "data/maps/FuchsiaCity_SafariZoneEntranceUnused/scripts.inc"
+	.include "data/maps/FuchsiaCity_SafariZoneGate_SafariZoneEntranceUnused/scripts.inc"
 
 	.include "data/maps/FuchsiaCity_House1/scripts.inc"
 
@@ -1876,7 +1876,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/SafariZoneIndoor/scripts.inc"
 
-	.include "data/maps/SafariZoneEntrance/scripts.inc"
+	.include "data/maps/SafariZoneGate_SafariZoneEntrance/scripts.inc"
 
 	.include "data/maps/SafariZoneGate_PokemonCenter/scripts.inc"
 
@@ -1898,27 +1898,27 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/Route27_House/scripts.inc"
 
-	.include "data/maps/SSAqua1/scripts.inc"
+	.include "data/maps/SSAqua_1F/scripts.inc"
 
-	.include "data/maps/SSAqua2/scripts.inc"
+	.include "data/maps/SSAqua_B1F/scripts.inc"
 
-	.include "data/maps/SSAqua3/scripts.inc"
+	.include "data/maps/SSAqua_CaptainsRoom/scripts.inc"
 
-	.include "data/maps/SSAqua4/scripts.inc"
+	.include "data/maps/SSAqua_PlayersRoom/scripts.inc"
 
-	.include "data/maps/SSAqua/scripts.inc"
+	.include "data/maps/SSAqua_RoomNW/scripts.inc"
 
-	.include "data/maps/SSAqua6/scripts.inc"
+	.include "data/maps/SSAqua_RoomNE/scripts.inc"
 
-	.include "data/maps/SSAqua7/scripts.inc"
+	.include "data/maps/SSAqua_RoomNNE/scripts.inc"
 
-	.include "data/maps/NewMap2/scripts.inc"
+	.include "data/maps/SSAqua_RoomSSW/scripts.inc"
 
-	.include "data/maps/SSAqua8/scripts.inc"
+	.include "data/maps/SSAqua_RoomSSE/scripts.inc"
 
-	.include "data/maps/SSAqua9/scripts.inc"
+	.include "data/maps/SSAqua_RoomSE/scripts.inc"
 
-	.include "data/maps/SSAqua10/scripts.inc"
+	.include "data/maps/SSAqua_RoomSW/scripts.inc"
 
 	.include "data/maps/WorldHub2/scripts.inc"
 
@@ -1940,7 +1940,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/CeladonCity_Apartments_RoofHouse/scripts.inc"
 
-	.include "data/maps/FuchsiaCity_SafariZoneEntrance/scripts.inc"
+	.include "data/maps/FuchsiaCity_SafariZoneGate_SafariZoneEntrance/scripts.inc"
 
 	.include "data/maps/MtSilver_1F_MoltresRoom/scripts.inc"
 
@@ -1966,11 +1966,11 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/VioletCity_GymUnused/scripts.inc"
 
-	.include "data/maps/MtMoonOutside/scripts.inc"
+	.include "data/maps/MtMoon_Outside/scripts.inc"
 
-	.include "data/maps/MtSilverSideTest/scripts.inc"
+	.include "data/maps/MtSilver_Snow/scripts.inc"
 
-	.include "data/maps/MtSilverSummitTest/scripts.inc"
+	.include "data/maps/MtSilver_SummitDay/scripts.inc"
 
 	.include "data/maps/GoldenrodCity_DepartmentStore_7FNight/scripts.inc"
 
@@ -1978,7 +1978,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/TinTower_1F0Night/scripts.inc"
 
-	.include "data/maps/BattleTowerOuter/scripts.inc"
+	.include "data/maps/BattleTower_Outside/scripts.inc"
 
 	.include "data/maps/Gate_Route40_BattleTowerOutside/scripts.inc"
 
@@ -2016,6 +2016,6 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/FuchsiaCity_SafariZoneCave/scripts.inc"
 
-	.include "data/maps/MtSilverSummitTestNight/scripts.inc"
+	.include "data/maps/MtSilver_SummitDayNight/scripts.inc"
 
 	.include "data/maps/Route19_Cave/scripts.inc"

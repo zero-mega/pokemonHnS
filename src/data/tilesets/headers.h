@@ -2040,14 +2040,14 @@ const struct Tileset gTileset_ShopRooftop =
     .callback = NULL,
 };
 
-const struct Tileset gTileset_BattleTowerOuter =
+const struct Tileset gTileset_BattleTower_Outside =
 {
     .isCompressed = TRUE,
     .isSecondary = TRUE,
-    .tiles = gTilesetTiles_BattleTowerOuter,
-    .palettes = gTilesetPalettes_BattleTowerOuter,
-    .metatiles = gMetatiles_BattleTowerOuter,
-    .metatileAttributes = gMetatileAttributes_BattleTowerOuter,
+    .tiles = gTilesetTiles_BattleTower_Outside,
+    .palettes = gTilesetPalettes_BattleTower_Outside,
+    .metatiles = gMetatiles_BattleTower_Outside,
+    .metatileAttributes = gMetatileAttributes_BattleTower_Outside,
     .callback = NULL,
 };
 
