@@ -5632,16 +5632,6 @@
       "blockdata_filepath": "data/layouts/MtSilver_1F_WaterfallRoom/map.bin"
     },
     {
-      "id": "LAYOUT_MT_SILVER_SUMMIT_UNUSED",
-      "name": "MtSilver_SummitUnused_Layout",
-      "width": 39,
-      "height": 24,
-      "primary_tileset": "gTileset_Kanto_General",
-      "secondary_tileset": "gTileset_NavelRock",
-      "border_filepath": "data/layouts/MtSilver_SummitUnused/border.bin",
-      "blockdata_filepath": "data/layouts/MtSilver_SummitUnused/map.bin"
-    },
-    {
       "id": "LAYOUT_MT_SILVER_OUTSIDE",
       "name": "MtSilver_Outside_Layout",
       "width": 44,
@@ -6302,26 +6292,6 @@
       "blockdata_filepath": "data/layouts/Gate_Route43/map.bin"
     },
     {
-      "id": "LAYOUT_GATE_UNUSED_2F",
-      "name": "Gate_Unused_2F_Layout",
-      "width": 13,
-      "height": 11,
-      "primary_tileset": "gTileset_Kanto_Building",
-      "secondary_tileset": "gTileset_Gates_42",
-      "border_filepath": "data/layouts/Gate_Unused_2F/border.bin",
-      "blockdata_filepath": "data/layouts/Gate_Unused_2F/map.bin"
-    },
-    {
-      "id": "LAYOUT_ROUTE26_UNUSED_HOUSE",
-      "name": "Route26_UnusedHouse_Layout",
-      "width": 13,
-      "height": 10,
-      "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/Route26_UnusedHouse/border.bin",
-      "blockdata_filepath": "data/layouts/Route26_UnusedHouse/map.bin"
-    },
-    {
       "id": "LAYOUT_RECEPTION_GATE",
       "name": "ReceptionGate_Layout",
       "width": 22,
@@ -6710,16 +6680,6 @@
       "secondary_tileset": "gTileset_Barn",
       "border_filepath": "data/layouts/Route39_Barn/border.bin",
       "blockdata_filepath": "data/layouts/Route39_Barn/map.bin"
-    },
-    {
-      "id": "LAYOUT_GATE_OLIVINE_CITY_ROUTE39_UNUSED",
-      "name": "Gate_OlivineCity_Route39_Unused_Layout",
-      "width": 26,
-      "height": 33,
-      "primary_tileset": "gTileset_Johto_General",
-      "secondary_tileset": "gTileset_Johto_General_Fall_Spring",
-      "border_filepath": "data/layouts/Gate_OlivineCity_Route39_Unused/border.bin",
-      "blockdata_filepath": "data/layouts/Gate_OlivineCity_Route39_Unused/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE30_HOUSE",
@@ -7222,16 +7182,6 @@
       "blockdata_filepath": "data/layouts/BlackthornCity_Gym/map.bin"
     },
     {
-      "id": "LAYOUT_BLACKTHORN_CITY_GYM_UNUSED",
-      "name": "BlackthornCity_GymUnused_Layout",
-      "width": 39,
-      "height": 38,
-      "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_BlackthornGym",
-      "border_filepath": "data/layouts/BlackthornCity_GymUnused/border.bin",
-      "blockdata_filepath": "data/layouts/BlackthornCity_GymUnused/map.bin"
-    },
-    {
       "id": "LAYOUT_BLACKTHORN_CITY_HOUSE1",
       "name": "BlackthornCity_House1_Layout",
       "width": 13,
@@ -7702,16 +7652,6 @@
       "blockdata_filepath": "data/layouts/LavenderTown_SoulHouse/map.bin"
     },
     {
-      "id": "LAYOUT_LAVENDER_TOWN_SOUL_HOUSE_UNUSED",
-      "name": "LavenderTown_SoulHouseUnused_Layout",
-      "width": 24,
-      "height": 20,
-      "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_Lighthouse_47",
-      "border_filepath": "data/layouts/LavenderTown_SoulHouseUnused/border.bin",
-      "blockdata_filepath": "data/layouts/LavenderTown_SoulHouseUnused/map.bin"
-    },
-    {
       "id": "LAYOUT_SAFFRON_CITY_TRAIN_STATION",
       "name": "SaffronCity_TrainStation_Layout",
       "width": 154,
@@ -7942,16 +7882,6 @@
       "blockdata_filepath": "data/layouts/Gate_FuchsiaCity_Route18/map.bin"
     },
     {
-      "id": "LAYOUT_FUCHSIA_CITY_SAFARI_ZONE_GATE_SAFARI_ZONE_ENTRANCE_UNUSED",
-      "name": "FuchsiaCity_SafariZoneGate_SafariZoneEntranceUnused_Layout",
-      "width": 15,
-      "height": 15,
-      "primary_tileset": "gTileset_Kanto_Building",
-      "secondary_tileset": "gTileset_CianwoodGym_48",
-      "border_filepath": "data/layouts/FuchsiaCity_SafariZoneGate_SafariZoneEntranceUnused/border.bin",
-      "blockdata_filepath": "data/layouts/FuchsiaCity_SafariZoneGate_SafariZoneEntranceUnused/map.bin"
-    },
-    {
       "id": "LAYOUT_FUCHSIA_CITY_HOUSE1",
       "name": "FuchsiaCity_House1_Layout",
       "width": 13,
@@ -7962,16 +7892,6 @@
       "blockdata_filepath": "data/layouts/FuchsiaCity_House1/map.bin"
     },
     {
-      "id": "LAYOUT_FUCHSIA_CITY_HOUSE_UNUSED",
-      "name": "FuchsiaCity_HouseUnused_Layout",
-      "width": 13,
-      "height": 10,
-      "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/FuchsiaCity_HouseUnused/border.bin",
-      "blockdata_filepath": "data/layouts/FuchsiaCity_HouseUnused/map.bin"
-    },
-    {
       "id": "LAYOUT_FUCHSIA_CITY_HOUSE2",
       "name": "FuchsiaCity_House2_Layout",
       "width": 13,
@@ -7980,26 +7900,6 @@
       "secondary_tileset": "gTileset_R26_21",
       "border_filepath": "data/layouts/FuchsiaCity_House2/border.bin",
       "blockdata_filepath": "data/layouts/FuchsiaCity_House2/map.bin"
-    },
-    {
-      "id": "LAYOUT_FUCHSIA_CITY_CAFE_UNUSED",
-      "name": "FuchsiaCity_CafeUnused_Layout",
-      "width": 13,
-      "height": 10,
-      "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/FuchsiaCity_CafeUnused/border.bin",
-      "blockdata_filepath": "data/layouts/FuchsiaCity_CafeUnused/map.bin"
-    },
-    {
-      "id": "LAYOUT_FUCHSIA_CITY_HOUSE_UNUSED2",
-      "name": "FuchsiaCity_HouseUnused2_Layout",
-      "width": 10,
-      "height": 10,
-      "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_R26_21",
-      "border_filepath": "data/layouts/FuchsiaCity_HouseUnused2/border.bin",
-      "blockdata_filepath": "data/layouts/FuchsiaCity_HouseUnused2/map.bin"
     },
     {
       "id": "LAYOUT_FUCHSIA_CITY_GYM",
@@ -8110,26 +8010,6 @@
       "secondary_tileset": "gTileset_BlackthornGym",
       "border_filepath": "data/layouts/SeafoamIslands_SecretCave/border.bin",
       "blockdata_filepath": "data/layouts/SeafoamIslands_SecretCave/map.bin"
-    },
-    {
-      "id": "LAYOUT_CINNABAR_ISLAND_UNUSED",
-      "name": "CinnabarIsland_Unused_Layout",
-      "width": 15,
-      "height": 11,
-      "primary_tileset": "gTileset_Johto_General",
-      "secondary_tileset": "gTileset_BlackthornGym",
-      "border_filepath": "data/layouts/CinnabarIsland_Unused/border.bin",
-      "blockdata_filepath": "data/layouts/CinnabarIsland_Unused/map.bin"
-    },
-    {
-      "id": "LAYOUT_CINNABAR_ISLAND_GYM_UNUSED",
-      "name": "CinnabarIsland_GymUnused_Layout",
-      "width": 30,
-      "height": 25,
-      "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_CinnabarIsland_GymUnused_31",
-      "border_filepath": "data/layouts/CinnabarIsland_GymUnused/border.bin",
-      "blockdata_filepath": "data/layouts/CinnabarIsland_GymUnused/map.bin"
     },
     {
       "id": "LAYOUT_FUCHSIA_ROUTE15GATE",
@@ -8270,26 +8150,6 @@
       "secondary_tileset": "gTileset_GoldenrodUndergroundRocket",
       "border_filepath": "data/layouts/RocketHideout_B3F/border.bin",
       "blockdata_filepath": "data/layouts/RocketHideout_B3F/map.bin"
-    },
-    {
-      "id": "LAYOUT_MT_SILVER_BRUMAL_UNUSED_UNUSED",
-      "name": "MtSilver_BrumalUnused_Layout",
-      "width": 30,
-      "height": 50,
-      "primary_tileset": "gTileset_Kanto_Brumal",
-      "secondary_tileset": "gTileset_SilverBrumal",
-      "border_filepath": "data/layouts/MtSilver_BrumalUnused/border.bin",
-      "blockdata_filepath": "data/layouts/MtSilver_BrumalUnused/map.bin"
-    },
-    {
-      "id": "LAYOUT_MT_SILVER_MEADOW_UNUSED_UNUSED",
-      "name": "MtSilver_MeadowUnused_Layout",
-      "width": 39,
-      "height": 39,
-      "primary_tileset": "gTileset_Kanto_General",
-      "secondary_tileset": "gTileset_IlexForest_34_For_real",
-      "border_filepath": "data/layouts/MtSilver_MeadowUnused/border.bin",
-      "blockdata_filepath": "data/layouts/MtSilver_MeadowUnused/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE27_HOUSE",
@@ -8612,16 +8472,6 @@
       "blockdata_filepath": "data/layouts/MtSilver_2F/map.bin"
     },
     {
-      "id": "LAYOUT_MT_SILVER_SNOW_UNUSED",
-      "name": "MtSilver_SnowUnused_Layout",
-      "width": 55,
-      "height": 55,
-      "primary_tileset": "gTileset_Kanto_Brumal",
-      "secondary_tileset": "gTileset_SilverBrumal",
-      "border_filepath": "data/layouts/MtSilver_SnowUnused/border.bin",
-      "blockdata_filepath": "data/layouts/MtSilver_SnowUnused/map.bin"
-    },
-    {
       "id": "LAYOUT_MT_SILVER_3F",
       "name": "MtSilver_3F_Layout",
       "width": 55,
@@ -8630,16 +8480,6 @@
       "secondary_tileset": "gTileset_Cave4_36",
       "border_filepath": "data/layouts/MtSilver_3F/border.bin",
       "blockdata_filepath": "data/layouts/MtSilver_3F/map.bin"
-    },
-    {
-      "id": "LAYOUT_VIOLET_CITY_GYM_UNUSED",
-      "name": "VioletCity_GymUnused_Layout",
-      "width": 14,
-      "height": 11,
-      "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_Theater_26",
-      "border_filepath": "data/layouts/VioletCity_GymUnused/border.bin",
-      "blockdata_filepath": "data/layouts/VioletCity_GymUnused/map.bin"
     },
     {
       "id": "LAYOUT_MT_MOON_OUTSIDE",
@@ -8790,16 +8630,6 @@
       "secondary_tileset": "gTileset_Viridian_2",
       "border_filepath": "data/layouts/Route26North/border.bin",
       "blockdata_filepath": "data/layouts/Route26North/map.bin"
-    },
-    {
-      "id": "LAYOUT_MT_MOON_UNUSED",
-      "name": "MtMoon_Unused_Layout",
-      "width": 20,
-      "height": 20,
-      "primary_tileset": "gTileset_Johto_General",
-      "secondary_tileset": "gTileset_Pewter",
-      "border_filepath": "data/layouts/MtMoon_Unused/border.bin",
-      "blockdata_filepath": "data/layouts/MtMoon_Unused/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE4_POKEMON_CENTER",

@@ -1364,8 +1364,6 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/MtSilver_1F_WaterfallRoom/scripts.inc"
 
-	.include "data/maps/MtSilver_SummitUnused/scripts.inc"
-
 	.include "data/maps/MtSilver_Outside/scripts.inc"
 
 	.include "data/maps/Route10_PowerPlantEntrance/scripts.inc"
@@ -1498,10 +1496,6 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/Gate_Route43/scripts.inc"
 
-	.include "data/maps/Gate_Unused_2F/scripts.inc"
-
-	.include "data/maps/Route26_UnusedHouse/scripts.inc"
-
 	.include "data/maps/ReceptionGate/scripts.inc"
 
 	.include "data/maps/EcruteakCity_SageOffice2/scripts.inc"
@@ -1579,8 +1573,6 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Trees/scripts.inc"
 
 	.include "data/maps/Route39_Barn/scripts.inc"
-
-	.include "data/maps/Gate_OlivineCity_Route39_Unused/scripts.inc"
 
 	.include "data/maps/Route30_House/scripts.inc"
 
@@ -1682,8 +1674,6 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/BlackthornCity_Gym/scripts.inc"
 
-	.include "data/maps/BlackthornCity_GymUnused/scripts.inc"
-
 	.include "data/maps/BlackthornCity_House1/scripts.inc"
 
 	.include "data/maps/BlackthornCity_House2/scripts.inc"
@@ -1778,8 +1768,6 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/LavenderTown_SoulHouse/scripts.inc"
 
-	.include "data/maps/LavenderTown_SoulHouseUnused/scripts.inc"
-
 	.include "data/maps/SaffronCity_TrainStation/scripts.inc"
 
 	.include "data/maps/SaffronCity_FightingDojo/scripts.inc"
@@ -1826,17 +1814,9 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/Gate_FuchsiaCity_Route18/scripts.inc"
 
-	.include "data/maps/FuchsiaCity_SafariZoneGate_SafariZoneEntranceUnused/scripts.inc"
-
 	.include "data/maps/FuchsiaCity_House1/scripts.inc"
 
-	.include "data/maps/FuchsiaCity_HouseUnused/scripts.inc"
-
 	.include "data/maps/FuchsiaCity_House2/scripts.inc"
-
-	.include "data/maps/FuchsiaCity_CafeUnused/scripts.inc"
-
-	.include "data/maps/FuchsiaCity_HouseUnused2/scripts.inc"
 
 	.include "data/maps/FuchsiaCity_Gym/scripts.inc"
 
@@ -1859,10 +1839,6 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/VermilionCity_Gym/scripts.inc"
 
 	.include "data/maps/SeafoamIslands_SecretCave/scripts.inc"
-
-	.include "data/maps/CinnabarIsland_Unused/scripts.inc"
-
-	.include "data/maps/CinnabarIsland_GymUnused/scripts.inc"
 
 	.include "data/maps/FuchsiaCity_Route15_Gate/scripts.inc"
 
@@ -1891,10 +1867,6 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/RocketHideout_B2F/scripts.inc"
 
 	.include "data/maps/RocketHideout_B3F/scripts.inc"
-
-	.include "data/maps/MtSilver_BrumalUnused/scripts.inc"
-
-	.include "data/maps/MtSilver_MeadowUnused/scripts.inc"
 
 	.include "data/maps/Route27_House/scripts.inc"
 
@@ -1960,11 +1932,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/MtSilver_2F/scripts.inc"
 
-	.include "data/maps/MtSilver_SnowUnused/scripts.inc"
-
 	.include "data/maps/MtSilver_3F/scripts.inc"
-
-	.include "data/maps/VioletCity_GymUnused/scripts.inc"
 
 	.include "data/maps/MtMoon_Outside/scripts.inc"
 
@@ -1995,8 +1963,6 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/TohjoFalls_GiovanniRoom/scripts.inc"
 
 	.include "data/maps/Route26North/scripts.inc"
-
-	.include "data/maps/MtMoon_Unused/scripts.inc"
 
 	.include "data/maps/Route4_PokemonCenter/scripts.inc"
 
