@@ -492,6 +492,7 @@
     "SafariZone_Low_Right",
     "SafariZone_Top_Mid",
     "SafariZone_Top_Right",
+    "Trees",
     "VioletCity_GymUnused",
     "MtMoon_Unused",
     "MtSilver_SnowUnused",
@@ -509,10 +510,8 @@
     "FuchsiaCity_CafeUnused",
     "BlackthornCity_GymUnused",
     "LavenderTown_SoulHouseUnused",
-    "InsideOfTruck",
     "WorldHub",
     "WorldHub2",
-    "Trees",
     "NewMap1",
     "SafariZone1",
     "SafariZone2",
@@ -521,6 +520,7 @@
     "Saffron_Temp"
   ],
   "gMapGroup_Emerald1": [
+    "InsideOfTruck",
     "PetalburgCity",
     "SlateportCity",
     "MauvilleCity",
