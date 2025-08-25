@@ -149,7 +149,7 @@
 #define FACILITY_CLASS_POKEMANIAC            0x17
 #define FACILITY_CLASS_MAGMA_GRUNT_F         0x18
 #define FACILITY_CLASS_GUITARIST             0x19
-#define FACILITY_CLASS_KINDLER               0x1a
+#define FACILITY_CLASS_SUPER_NERD               0x1a
 #define FACILITY_CLASS_CAMPER                0x1b
 #define FACILITY_CLASS_PICNICKER             0x1c
 #define FACILITY_CLASS_BUG_MANIAC            0x1d
