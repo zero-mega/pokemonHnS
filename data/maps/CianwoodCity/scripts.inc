@@ -176,6 +176,7 @@ CianwoodCity_EventScript_SuicuneTrigger::
 	applymovement LOCALID_CIANWOOD_SUICUNE, CianwoodCity_Movement_Suicune3
 	waitmovement 0
 	delay 30
+	playbgm MUS_HG_EUSINE, TRUE
 	clearflag FLAG_HIDE_CIANWOOD_EUSINE
 	addobject LOCALID_CIANWOOD_EUSINE
 	applymovement LOCALID_CIANWOOD_EUSINE, CianwoodCity_Movement_Eusine1
@@ -185,6 +186,7 @@ CianwoodCity_EventScript_SuicuneTrigger::
 	waitmovement 0 
 	msgbox CianwoodCity_Text_EusineSuicune, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_EUSINE, CianwoodCity_Text_EusineBeaten
+	playbgm MUS_HG_EUSINE, TRUE
 	msgbox CianwoodCity_Text_EusineAfter, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_CIANWOOD_EUSINE, CianwoodCity_Movement_Eusine3
@@ -195,6 +197,7 @@ CianwoodCity_EventScript_SuicuneTrigger::
 	removeobject LOCALID_CIANWOOD_EUSINE
 	setvar VAR_SUICUNE_ENCOUNTERS, 2
 	setvar VAR_CIANWOOD_CITY_STATE, 2
+	fadedefaultbgm
 	call_if_set FLAG_HIDE_ROUTE42_SUICUNE, CianwoodCity_EventScript_DoneJohtoSuicune
 	release
 	end
