@@ -10336,6 +10336,22 @@ u16 GetBattleBGM(void)
         return MUS_VS_REGI;
     else if (gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_RECORDED_LINK))
         return MUS_HG_VS_TRAINER;
+    else if (gBattleTypeFlags & BATTLE_TYPE_ROAMER)
+     {
+         // Distinguish which roamer we just ran into.
+         // Enemy party should already be populated for the encounter.
+         u16 species = GetMonData(&gEnemyParty[0], MON_DATA_SPECIES);
+         switch (species)
+         {
+         case SPECIES_RAIKOU:
+             return MUS_HG_VS_RAIKOU;   // Raikou theme
+         case SPECIES_ENTEI:
+             return MUS_HG_VS_ENTEI;    // Entei theme
+         default:
+             // Fallback to existing behavior if species couldn't be read.
+             return MUS_HG_VS_ENTEI;
+         }
+     }
     else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
     {
         u8 trainerClass;
