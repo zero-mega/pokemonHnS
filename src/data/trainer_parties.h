@@ -20134,7 +20134,7 @@ static const struct TrainerMonItemCustomMoves sParty_LtSurge[] = { //LeaderGroup
     {
     .iv = 200,
     .lvl = 58,
-    .species = SPECIES_ELECTRIKE,
+    .species = SPECIES_MANECTRIC,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_CHARGE, MOVE_THUNDER, MOVE_THUNDER_WAVE, MOVE_CRUNCH}
     },
