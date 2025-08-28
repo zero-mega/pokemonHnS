@@ -250,12 +250,12 @@ AzaleaTown_EventScript_GSBall::
 	closemessage
 	applymovement LOCALID_AZALEA_TOWN_KURT_GS, AzaleaTown_Movement_KurtLeave
 	delay 60
-	opendoor 15, 11
+	opendoor 19, 11
 	waitdooranim
 	waitmovement 0
 	setflag FLAG_HIDE_AZALEA_TOWN_KURT
 	removeobject LOCALID_AZALEA_TOWN_KURT_GS
-	closedoor 15, 11
+	closedoor 19, 11
 	waitdooranim
 	setvar VAR_AZALEA_TOWN_STATE, 9
 	release
