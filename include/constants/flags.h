@@ -1077,7 +1077,7 @@
 #define FLAG_ITEM_MTMORTAR4_MAX_REVIVE                              0x400
 #define FLAG_ITEM_LIGHTHOUSE_ETHER                                  0x401
 #define FLAG_ITEM_LIGHTHOUSE_RARE_CANDY                             0x402
-#define FLAG_ITEM_LIGHTHOUSE_BULK_UP                                0x403
+#define FLAG_ITEM_LUCKY_PUNCH                                0x403
 #define FLAG_ITEM_LIGHTHOUSE_HYPER_POTION                           0x404
 #define FLAG_ITEM_LIGHTHOUSE_PROTEIN                                0x405
 
@@ -1213,7 +1213,7 @@
 #define FLAG_ITEM_CERULEANCAVE2_BIG_PEARL                           0x486
 #define FLAG_ITEM_CERULEANCAVE3_MAX_REVIVE                          0x487
 #define FLAG_ITEM_CERULEANCAVE3_ULTRA_BALL                          0x488
-#define FLAG_ITEM_ROUTE_115_PP_UP                                   0x489
+#define FLAG_ITEM_ROUTE20_SHELL_BELL                                   0x489
 #define FLAG_ITEM_ARTISAN_CAVE_B1F_HP_UP                            0x48A
 #define FLAG_ITEM_ARTISAN_CAVE_1F_CARBOS                            0x48B
 #define FLAG_ITEM_MAGMA_HIDEOUT_2F_2R_MAX_ELIXIR                    0x48C
