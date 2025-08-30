@@ -366,7 +366,6 @@ AzaleaTown_Text_RivalAfter:
 	.string "That goes for TEAM ROCKET too.\p"
 	.string "They act big and tough in a group.\p"
 	.string "But get them alone, and they're weak.\n"
-	.string "weak.\p"
 	.string "I hate them all.\p"
 	.string "You stay out of my way. A weakling\n"
 	.string "like you is only a distraction.$"
