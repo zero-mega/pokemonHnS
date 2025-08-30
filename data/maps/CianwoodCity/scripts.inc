@@ -163,17 +163,37 @@ CianwoodCity_EventScript_SuicuneTrigger::
 	lock
 	playmoncry SPECIES_SUICUNE, CRY_MODE_NORMAL
 	applymovement LOCALID_CIANWOOD_SUICUNE, CianwoodCity_Movement_Suicune1
+	playse SE_LEDGE
+	waitse
+	playse SE_LEDGE
+	waitse
 	waitmovement 0
 	waitmoncry
 	playse SE_PIN
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
 	delay 60
 	applymovement LOCALID_CIANWOOD_SUICUNE, CianwoodCity_Movement_Suicune2
+	playse SE_LEDGE
+	delay 30
+	playse SE_LEDGE
+	delay 30
+	playse SE_LEDGE
+	delay 30
 	waitmovement 0
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_SOUTH
 	playmoncry SPECIES_SUICUNE, CRY_MODE_NORMAL
 	waitmoncry
 	applymovement LOCALID_CIANWOOD_SUICUNE, CianwoodCity_Movement_Suicune3
+	playse SE_LEDGE
+	delay 30
+	playse SE_LEDGE
+	delay 30
+	playse SE_LEDGE
+	delay 30
+	playse SE_LEDGE
+	delay 30
+	playse SE_LEDGE
+	delay 30
 	waitmovement 0
 	delay 30
 	playbgm MUS_HG_EUSINE, TRUE

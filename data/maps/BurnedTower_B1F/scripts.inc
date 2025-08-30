@@ -101,8 +101,6 @@ BurnedTower_B1F_EventScript_ReleaseBeasts::
 	delay 30
 	playse SE_LEDGE
 	delay 30
-	playse SE_LEDGE
-	delay 30
 	waitmovement 0
 	
 	setflag FLAG_HIDE_BURNED_TOWER_BEASTS
