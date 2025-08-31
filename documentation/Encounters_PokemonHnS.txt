@@ -1,5 +1,6 @@
-WILD ENCOUNTER GUIDE (Full)
+POKEMON HNS ENCOUNTERS
 
+WILD ENCOUNTERS:
 Global Slot Weights:
  Land: 1:20%, 2:20%, 3:10%, 4:10%, 5:10%, 6:10%, 7:5%, 8:5%, 9:4%, 10:4%, 11:1%, 12:1%
  Water: 1:60%, 2:30%, 3:5%, 4:4%, 5:1%
@@ -8561,4 +8562,46 @@ Rock Smash / Headbutt:
   Slot 3: Spinarak L10 — 5%
   Slot 4: Ledyba L10 — 4%
   Slot 5: Ledyba L10 — 1%
+
+
+STATIC ENCOUNTERS:
+
+Trades:
+Bellsprout 	-> Onix 	- Violet City
+Drowzee 	-> Machop 	- Goldenrod Department Store
+Krabby 		-> Voltorb 	- Olivine City
+Dodrio 		-> Mr Mime 	- Blackthorn City
+
+Gift Pokemon:
+
+Non-Legendaries:
+Sudowoodo: 	Route 36		Water Bottle
+Lapras:		Union Cave		Night
+
+
+ 
+
+Legendaries:
+Entei: 		Roaming			Mainland Johto Routes after Burned Tower
+Raikou: 	Roaming			Mainland Johto Routes after Burned Tower
+Suicune: 	Route 25		After seen at Cianwood City, Route 42, Vermilion City, Route 14
+Ho-oh: 		Tin Tower		after Dragons Den, or after Pewter City
+Lugia: 		Whirl Islands		after Dragons Den, or after Pewter City
+Celebi: 	Ilex Forest		see kurt with GS Ball
+
+Moltres: 	Mt Silver
+Articuno:	Seafoam Islands
+Zapdos: 	Route 10 Power Plant 	after repaired
+Mewtwo: 	Cerulean Cave
+Mew: 		Faraway Island
+
+Latios:		Southern Island
+Latias:		Southern Island
+Deoxys: 	Birth Island
+Groudon:	Seafoam Islands		 after 16 badges
+Kyogre:		Route 19		 after 16 badges
+Rayquaza: 	Embedded Tower		 after 16 badges
+
+
+
 
