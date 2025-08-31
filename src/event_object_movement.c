@@ -456,10 +456,10 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_BRENDAN                 0x1100
 #define OBJ_EVENT_PAL_TAG_BRENDAN_REFLECTION      0x1101
 #define OBJ_EVENT_PAL_TAG_BRIDGE_REFLECTION       0x1102
-#define OBJ_EVENT_PAL_TAG_NPC_1                   0x1103
-#define OBJ_EVENT_PAL_TAG_NPC_2                   0x1104
-#define OBJ_EVENT_PAL_TAG_NPC_3                   0x1105
-#define OBJ_EVENT_PAL_TAG_NPC_4                   0x1106
+#define OBJ_EVENT_PAL_TAG_NPC_1                   0x1103 //NPC_WHITE
+#define OBJ_EVENT_PAL_TAG_NPC_2                   0x1104 //NPC_PINK
+#define OBJ_EVENT_PAL_TAG_NPC_3                   0x1105 //NPC_BLUE
+#define OBJ_EVENT_PAL_TAG_NPC_4                   0x1106 //NPC_GREEN
 #define OBJ_EVENT_PAL_TAG_NPC_1_REFLECTION        0x1107
 #define OBJ_EVENT_PAL_TAG_NPC_2_REFLECTION        0x1108
 #define OBJ_EVENT_PAL_TAG_NPC_3_REFLECTION        0x1109
@@ -591,10 +591,10 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #include "data/object_events/object_event_graphics_info_followers.h"
 
 static const struct SpritePalette sObjectEventSpritePalettes[] = {
-    {gObjectEventPal_Npc1,                  OBJ_EVENT_PAL_TAG_NPC_1},
-    {gObjectEventPal_Npc2,                  OBJ_EVENT_PAL_TAG_NPC_2},
-    {gObjectEventPal_Npc3,                  OBJ_EVENT_PAL_TAG_NPC_3},
-    {gObjectEventPal_Npc4,                  OBJ_EVENT_PAL_TAG_NPC_4},
+    {gObjectEventPal_Npc1,                  OBJ_EVENT_PAL_TAG_NPC_1}, //NPC_WHITE
+    {gObjectEventPal_Npc2,                  OBJ_EVENT_PAL_TAG_NPC_2}, //NPC_PINK
+    {gObjectEventPal_Npc3,                  OBJ_EVENT_PAL_TAG_NPC_3}, //NPC_BLUE
+    {gObjectEventPal_Npc4,                  OBJ_EVENT_PAL_TAG_NPC_4}, //NPC_GREEN
     {gObjectEventPal_Rocket1,               OBJ_EVENT_PAL_TAG_ROCKET_1},
     {gObjectEventPal_Rocket2,               OBJ_EVENT_PAL_TAG_ROCKET_2},
     {gObjectEventPal_Rocket3,               OBJ_EVENT_PAL_TAG_ROCKET_3},
