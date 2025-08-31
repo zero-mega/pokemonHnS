@@ -8567,19 +8567,26 @@ Rock Smash / Headbutt:
 STATIC ENCOUNTERS:
 
 Trades:
-Bellsprout 	-> Onix 	- Violet City
-Drowzee 	-> Machop 	- Goldenrod Department Store
-Krabby 		-> Voltorb 	- Olivine City
-Dodrio 		-> Mr Mime 	- Blackthorn City
+Onix (Rocky) 		->  Bellsprout	- Violet City
+Machop (Muscle) 	-> Drowzee	- Goldenrod Department Store
+Voltorb (Billy) 	-> Krabby 	- Olivine City
+Mr Mime (Mimien) 	-> Dodrio	- Blackthorn City
 
 Gift Pokemon:
-
+Togepi:			Violet City		Story
+Eevee:			Goldenrod City		Bill after meeting in Ecruteak
+Dratini: 		Dragons Den 		After getting Dragon Claw
+Special Dratini: 	Dragons Den		After getting Dragon Claw + 100% On Quiz
+Spearow (Kenya):	Goldenrod North Gate
+Shuckle (Shuckie):	Cianwood City
+Tyrogue:		Mt Mortar	
+Odd egg:		Route 34		Special Phrases			
+Odder egg:		Route 34		Just for playtesters
+		
 Non-Legendaries:
 Sudowoodo: 	Route 36		Water Bottle
 Lapras:		Union Cave		Night
-
-
- 
+Snorlax: 	Vermilion City		Kanto Radio
 
 Legendaries:
 Entei: 		Roaming			Mainland Johto Routes after Burned Tower
