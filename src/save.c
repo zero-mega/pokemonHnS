@@ -936,7 +936,7 @@ u8 LoadGameSave(u8 saveType)
         FlagSet(FLAG_UNUSED_SET7);
         FlagSet(FLAG_UNUSED_SET8);
         FlagSet(FLAG_UNUSED_SET9);
-        FlagClear(FLAG_UNUSED_UNSET1);
+        FlagClear(FLAG_RECEIVED_ODD_EGG);
         FlagClear(FLAG_UNUSED_UNSET2);
         FlagClear(FLAG_UNUSED_UNSET3);
         FlagClear(FLAG_UNUSED_UNSET4);

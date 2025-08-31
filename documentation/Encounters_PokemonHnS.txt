@@ -1,6 +1,15 @@
 POKEMON HNS ENCOUNTERS
 
-WILD ENCOUNTERS:
+=================== TABLE OF CONTENTS =================================================
+1. WILD ENCOUNTERS
+2. STATIC ENCOUNTERS
+
+=======================================================================================
+=======================================================================================
+=================== WILD ENCOUNTERS ===================================================
+=======================================================================================
+=======================================================================================
+
 Global Slot Weights:
  Land: 1:20%, 2:20%, 3:10%, 4:10%, 5:10%, 6:10%, 7:5%, 8:5%, 9:4%, 10:4%, 11:1%, 12:1%
  Water: 1:60%, 2:30%, 3:5%, 4:4%, 5:1%
@@ -8563,16 +8572,22 @@ Rock Smash / Headbutt:
   Slot 4: Ledyba L10 — 4%
   Slot 5: Ledyba L10 — 1%
 
+=========================================================================
+=========================================================================
+=================== STATIC ENCOUNTERS ===================================
+=========================================================================
+=========================================================================
 
-STATIC ENCOUNTERS:
-
-Trades:
+Trades
+----------------------------------------
 Onix (Rocky) 		->  Bellsprout	- Violet City
 Machop (Muscle) 	-> Drowzee	- Goldenrod Department Store
 Voltorb (Billy) 	-> Krabby 	- Olivine City
 Mr Mime (Mimien) 	-> Dodrio	- Blackthorn City
 
-Gift Pokemon:
+
+Gift Pokemon
+----------------------------------------
 Togepi:			Violet City		Story
 Eevee:			Goldenrod City		Bill after meeting in Ecruteak
 Dratini: 		Dragons Den 		After getting Dragon Claw
@@ -8580,15 +8595,19 @@ Special Dratini: 	Dragons Den		After getting Dragon Claw + 100% On Quiz
 Spearow (Kenya):	Goldenrod North Gate
 Shuckle (Shuckie):	Cianwood City
 Tyrogue:		Mt Mortar	
-Odd egg:		Route 34		Special Phrases			
-Odder egg:		Route 34		Just for playtesters
+Odd Egg:		Route 34 DayCare	Special Phrases	(BABE, POKéMON, TYPE, ABILITY). For fairy types, try CUTE or SONG.		
+Odder Egg:		Route 34 DayCare	Just for playtesters
 		
-Non-Legendaries:
+
+Non-Legendaries
+----------------------------------------
 Sudowoodo: 	Route 36		Water Bottle
 Lapras:		Union Cave		Night
 Snorlax: 	Vermilion City		Kanto Radio
 
-Legendaries:
+
+Legendaries
+----------------------------------------
 Entei: 		Roaming			Mainland Johto Routes after Burned Tower
 Raikou: 	Roaming			Mainland Johto Routes after Burned Tower
 Suicune: 	Route 25		After seen at Cianwood City, Route 42, Vermilion City, Route 14

@@ -3,6 +3,121 @@
 Route34_DayCare_MapScripts::
 	.byte 0
 
+Route34_DayCare_EventScript_Clerk::
+	lock
+	faceplayer
+	goto_if_set FLAG_RECEIVED_ODD_EGG, Route34_DayCare_EventScript_ClerkAfter
+	msgbox Route34_DayCare_Text_ClerkBefore, MSGBOX_DEFAULT
+	getpartysize
+	goto_if_eq VAR_RESULT, PARTY_SIZE, Route34_DayCare_EventScript_ClerkPartyFull
+	msgbox Route34_DayCare_Text_ClerkQuestion, MSGBOX_DEFAULT
+	closemessage
+	setvar VAR_0x8004, EASY_CHAT_TYPE_INTERVIEW
+	call Common_ShowEasyChatScreen
+	lock
+	faceplayer
+	switch VAR_RESULT
+	case 0, Route34_DayCare_EventScript_ClerkRejection
+	case 1, Route34_DayCare_EventScript_GivePichu
+	case 2, Route34_DayCare_EventScript_GiveCleffa
+	case 3, Route34_DayCare_EventScript_GiveIgglybuff
+	case 4, Route34_DayCare_EventScript_GiveTyrogue
+	case 5, Route34_DayCare_EventScript_GiveSmoochum
+	case 6, Route34_DayCare_EventScript_GiveElekid
+	case 7, Route34_DayCare_EventScript_GiveMagby
+	closemessage
+	release
+	end
+
+Route34_DayCare_EventScript_GivePichu::
+	giveoddegg 1
+	goto Route34_DayCare_EventScript_Clerk_GaveEgg
+
+Route34_DayCare_EventScript_GiveCleffa::
+	giveoddegg 2
+	goto Route34_DayCare_EventScript_Clerk_GaveEgg
+
+Route34_DayCare_EventScript_GiveIgglybuff::
+	giveoddegg 3
+	goto Route34_DayCare_EventScript_Clerk_GaveEgg
+
+Route34_DayCare_EventScript_GiveTyrogue::
+	giveoddegg 4
+	goto Route34_DayCare_EventScript_Clerk_GaveEgg
+
+Route34_DayCare_EventScript_GiveSmoochum::
+	giveoddegg 5
+	goto Route34_DayCare_EventScript_Clerk_GaveEgg
+
+Route34_DayCare_EventScript_GiveElekid::
+	giveoddegg 6
+	goto Route34_DayCare_EventScript_Clerk_GaveEgg
+
+Route34_DayCare_EventScript_GiveMagby::
+	giveoddegg 7
+	goto Route34_DayCare_EventScript_Clerk_GaveEgg
+
+Route34_DayCare_EventScript_Clerk_GaveEgg::
+	msgbox Route34_DayCare_Text_TakeCare, MSGBOX_DEFAULT
+	closemessage
+	delay 30
+	setflag FLAG_RECEIVED_ODD_EGG
+	playfanfare MUS_OBTAIN_ITEM
+	message Route34_DayCare_Text_ReceivedOddEgg
+	waitfanfare
+	closemessage
+	release
+	end
+
+Route34_DayCare_EventScript_ClerkPartyFull::
+	msgbox Route34_DayCare_Text_ClerkNoRoom, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+Route34_DayCare_EventScript_ClerkRejection::
+	msgbox Route34_DayCare_Text_Rejection, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+Route34_DayCare_EventScript_ClerkAfter::
+	msgbox Route34_DayCare_Text_ClerkAfter, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+Route34_DayCare_Text_ClerkBefore:
+	.string "I'm the DAYCARE couple's son.\p"
+	.string "An ODD EGG was found with a trainer's\n"
+	.string "POKéMON, but they didn't want it...\p"
+	.string "I'd offer it to you...\n"
+	.string "But how can I know you'll take good\l"
+	.string "care of it?$"
+
+Route34_DayCare_Text_ClerkNoRoom:
+	.string "It looks like you can't carry another\n"
+	.string "POKéMON anyway.$"
+
+Route34_DayCare_Text_ClerkQuestion:
+	.string "Answer this question for me.\n"
+	.string "How do you feel about this ODD EGG?$"
+
+Route34_DayCare_Text_Rejection:
+	.string "Hmm, I think this egg isn't for you.$"
+
+Route34_DayCare_Text_ReceivedOddEgg:
+	.string "{PLAYER} Received the ODD EGG.$"
+
+Route34_DayCare_Text_TakeCare:
+	.string "I knew you were the right trainer\n"
+	.string "for the job. Take good care of it!$"
+
+Route34_DayCare_Text_ClerkAfter:
+	.string "We see a lot of those eggs around\n"
+	.string "here.\p"
+	.string "Something was different about that\n"
+	.string "one, though.$"
 
 Route34_DayCare_EventScript_Ditto::
 	lock
