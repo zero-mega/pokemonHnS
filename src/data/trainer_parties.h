@@ -21668,7 +21668,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Giovanni[] = { //RocketAd
     .iv = 255,
     .lvl = 61,
     .species = SPECIES_NIDOQUEEN,
-    .moves = {MOVE_ICE_PUNCH, MOVE_SLUDGE_BOMB, MOVE_BUBBLE_BEAM, MOVE_BODY_SLAM}
+    .moves = {MOVE_ICE_PUNCH, MOVE_SLUDGE_BOMB, MOVE_SURF, MOVE_BODY_SLAM}
     },
     {
     .iv = 255,

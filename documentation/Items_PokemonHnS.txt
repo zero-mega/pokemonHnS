@@ -1,7 +1,7 @@
 Evolution Items		
-Fire Stone	Goldenrod Department Store, bug contest 2nd place
-Water Stone	Goldenrod Department Store, bug contest 2nd place
-Thunder Stone	Goldenrod Department Store, bug contest 2nd place
+Fire Stone	Goldenrod Department Store, bug contest 2nd place, shard vendor at pewter museum
+Water Stone	Goldenrod Department Store, bug contest 2nd place, shard vendor at pewter museum
+Thunder Stone	Goldenrod Department Store, bug contest 2nd place, shard vendor at pewter museum
 Metal Coat	Mahogany Mart after Goldenrod Rockets defeated
 Dragon Scale	Mahogany Mart after Goldenrod Rockets defeated
 Up-Grade	Mahogany Mart after Goldenrod Rockets defeated
