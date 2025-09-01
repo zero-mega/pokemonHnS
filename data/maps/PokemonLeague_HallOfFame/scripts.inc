@@ -78,6 +78,7 @@ PokemonLeague_HallOfFame_EventScript_SetGameClearFlags::
 	clearflag FLAG_HIDE_ARTICUNO
 	clearflag FLAG_HIDE_MOLTRES
 	clearflag FLAG_ITEM_GS_BALL
+	setflag FLAG_HIDE_BATTLEFRONTIER_ENGINEER
 	setflag FLAG_IS_KANTO_CHAMPION
 	setvar VAR_COMPLETED_LUGIA, 4
 	clearflag FLAG_HIDE_LUGIA
