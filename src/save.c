@@ -945,8 +945,8 @@ u8 LoadGameSave(u8 saveType)
         FlagClear(FLAG_UNUSED_UNSET7);
         FlagClear(FLAG_UNUSED_UNSET8);
         FlagClear(FLAG_UNUSED_UNSET9);
-        VarSet(VAR_UNUSED_HNS_VAR1, 0);
-        VarSet(VAR_UNUSED_HNS_VAR2, 0);
+        VarSet(VAR_TOHJO_FALLS_GIOVANNI_STATE, 0);
+        VarSet(VAR_ROUTE22_GIOVANNI_STATE, 0);
         VarSet(VAR_UNUSED_HNS_VAR3, 0);
         VarSet(VAR_UNUSED_HNS_VAR4, 0);
         VarSet(VAR_UNUSED_HNS_VAR5, 0);

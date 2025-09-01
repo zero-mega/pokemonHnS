@@ -157,10 +157,13 @@ bool8 CheckTogepi(void)
 
 bool8 CheckCelebi(void)
 {
- 
-    if (GetMonData(&gPlayerParty[0], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_CELEBI)
+    struct Pokemon *mon = &gPlayerParty[0];
+    u16 species = GetMonData(mon, MON_DATA_SPECIES_OR_EGG, NULL);
+
+    if (species == SPECIES_CELEBI)
     {
-        return TRUE;
+        u16 hp = GetMonData(mon, MON_DATA_HP, NULL); // current HP
+        return (hp > 0);
     }
     return FALSE;
 }
