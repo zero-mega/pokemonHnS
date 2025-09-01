@@ -411,7 +411,7 @@
 #define MAP_MT_MOON_OUTSIDE                          (54 | (24 << 8))
 #define MAP_ROCK_TUNNEL_B1F                          (55 | (24 << 8))
 #define MAP_ROCK_TUNNEL_1F                           (56 | (24 << 8))
-#define MAP_CERULEAN_CAVE_1FF                        (57 | (24 << 8))
+#define MAP_CERULEAN_CAVE_1F                         (57 | (24 << 8))
 #define MAP_CERULEAN_CAVE_B1F                        (58 | (24 << 8))
 #define MAP_CERULEAN_CAVE_B2F                        (59 | (24 << 8))
 #define MAP_DIGLETTS_CAVE_ENTRANCE_NORTH             (60 | (24 << 8))
