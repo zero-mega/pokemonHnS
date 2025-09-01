@@ -928,7 +928,7 @@ u8 LoadGameSave(u8 saveType)
     //Adds flags for future content
     if (gSaveBlock1Ptr->versionId <2){ 
         FlagSet(FLAG_HIDE_OLIVINE_PORT_OAK);
-        FlagSet(FLAG_UNUSED_SET2);
+        FlagSet(FLAG_HIDE_ROUTE22_GIOVANNI_SILVER);
         FlagSet(FLAG_UNUSED_SET3);
         FlagSet(FLAG_UNUSED_SET4);
         FlagSet(FLAG_UNUSED_SET5);

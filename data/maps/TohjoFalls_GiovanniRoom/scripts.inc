@@ -7,6 +7,7 @@ TohjoFalls_GiovanniRoom_MapScripts::
 TohjoFalls_GiovanniRoom_OnTransition::
 	specialvar VAR_RESULT, CheckCelebi
 	goto_if_eq VAR_RESULT, TRUE, TohjoFalls_GiovanniRoom_SetScene
+	setvar VAR_TOHJO_FALLS_GIOVANNI_STATE, 0
 	end
 
 TohjoFalls_GiovanniRoom_SetScene::
@@ -26,7 +27,13 @@ TohjoFalls_GiovanniRoom_Text_RadioObject::
 	.string "A radio...\n"
 	.string "The battery is dead...$"
 
+TohjoFalls_GiovanniRoom_CancelScene::
+	setvar VAR_TOHJO_FALLS_GIOVANNI_STATE, 0
+	end
+
 TohjoFalls_EventScript_GiovanniSceneRight::
+	specialvar VAR_RESULT, CheckCelebi
+	goto_if_eq VAR_RESULT, FALSE, TohjoFalls_GiovanniRoom_CancelScene
 	lock
 	applymovement2 OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft1
 	waitmovement 0
@@ -35,6 +42,8 @@ TohjoFalls_EventScript_GiovanniSceneRight::
 	goto TohjoFalls_EventScript_GiovanniScene
 
 TohjoFalls_EventScript_GiovanniSceneLeft::
+	specialvar VAR_RESULT, CheckCelebi
+	goto_if_eq VAR_RESULT, FALSE, TohjoFalls_GiovanniRoom_CancelScene
 	lock
 	applymovement2 OBJ_EVENT_ID_PLAYER, Common_Movement_WalkRight1
 	waitmovement 0
@@ -43,6 +52,8 @@ TohjoFalls_EventScript_GiovanniSceneLeft::
 	goto TohjoFalls_EventScript_GiovanniScene
 
 TohjoFalls_EventScript_GiovanniScene::
+	specialvar VAR_RESULT, CheckCelebi
+	goto_if_eq VAR_RESULT, FALSE, TohjoFalls_GiovanniRoom_CancelScene
 	lock
 	applymovement2 OBJ_EVENT_ID_FOLLOWER, TohjoFalls_Movement_CelebiBegin
 	playse SE_LEDGE
@@ -63,8 +74,8 @@ TohjoFalls_EventScript_GiovanniScene::
 	waitse
 	playse SE_LEDGE
 	waitse
-	playse SE_M_PETAL_DANCE
-	delay 10
+	@playse SE_M_PETAL_DANCE
+	@delay 10
 	playse SE_LEDGE
 	waitse
 	playse SE_LEDGE
@@ -129,8 +140,8 @@ TohjoFalls_EventScript_GiovanniScene::
 	waitse
 	playse SE_LEDGE
 	waitse
-	playse SE_M_PETAL_DANCE
-	delay 10
+	@playse SE_M_PETAL_DANCE
+	@delay 10
 	playse SE_LEDGE
 	waitse
 	playse SE_LEDGE
@@ -155,14 +166,6 @@ TohjoFalls_Movement_CelebiBegin:
 TohjoFalls_Movement_CelebiSpin:
 	jump_in_place_up
 	jump_in_place_up
-	face_left
-	delay_4
-	face_down
-	delay_4
-	face_right
-	delay_4
-	face_up
-	delay_4
 	jump_in_place_up
 	jump_in_place_up
 	step_end

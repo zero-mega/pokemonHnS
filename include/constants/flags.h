@@ -897,7 +897,7 @@
 #define FLAG_HIDE_SEAFOAM_BLAINE                                    0x34E
 #define FLAG_HIDE_ILEX_FOREST_SECOND_CELEBI                         0x34F
 #define FLAG_HIDE_OLIVINE_PORT_OAK                                            0x350
-#define FLAG_UNUSED_SET2                                            0x351
+#define FLAG_HIDE_ROUTE22_GIOVANNI_SILVER                                            0x351
 #define FLAG_UNUSED_SET3                                            0x352
 #define FLAG_UNUSED_SET4                                            0x353
 #define FLAG_UNUSED_SET5                                            0x354
