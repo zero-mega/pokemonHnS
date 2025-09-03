@@ -470,9 +470,9 @@
       "flag": "FLAG_HIDE_DOJO_PRYCE"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ATTENDANT",
-      "x": 11,
-      "y": 5,
+      "graphics_id": "OBJ_EVENT_GFX_OLD_WOMAN",
+      "x": 5,
+      "y": 9,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -483,11 +483,11 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ATTENDANT_M",
-      "x": 8,
-      "y": 5,
+      "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_1",
+      "x": 4,
+      "y": 10,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -496,11 +496,11 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ATTENDANT",
-      "x": 5,
-      "y": 5,
+      "graphics_id": "OBJ_EVENT_GFX_OLD_WOMAN",
+      "x": 4,
+      "y": 11,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -509,8 +509,8 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_CLERK",
-      "x": 35,
+      "graphics_id": "OBJ_EVENT_GFX_ATTENDANT",
+      "x": 8,
       "y": 5,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -522,8 +522,8 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_CLERK",
-      "x": 31,
+      "graphics_id": "OBJ_EVENT_GFX_ATTENDANT_M",
+      "x": 32,
       "y": 5,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",

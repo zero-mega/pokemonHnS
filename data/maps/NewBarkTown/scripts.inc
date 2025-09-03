@@ -161,12 +161,8 @@ NewBarkTown_EventScript_Door::
 	end
 
 NewBarkTown_EventScript_TestMan1::
-	setflag FLAG_GET_HEADBUTT
-	setflag FLAG_IS_KANTO_CHAMPION
-	setflag FLAG_RETURNED_MACHINE_PART
-	giveitem ITEM_OLD_SEA_MAP
-	giveitem ITEM_AURORA_TICKET
-	giveitem ITEM_EON_TICKET
+	frontier_givepoints
+	msgbox BattleFrontier_Text_ObtainedXBattlePoints, MSGBOX_GETPOINTS
 	end
 
 NewBarkTown_EventScript_TestMan2::
