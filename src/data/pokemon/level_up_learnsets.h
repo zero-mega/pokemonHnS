@@ -7929,9 +7929,11 @@ static const u16 sUrsalunaLevelUpLearnset[] = {
 
 static const u16 sUrsaluna_BloodMoonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 1, MOVE_REST),
     LEVEL_UP_MOVE( 5, MOVE_CHARM),
     LEVEL_UP_MOVE( 11, MOVE_MAGNITUDE),
     LEVEL_UP_MOVE( 18, MOVE_SLASH),
+    LEVEL_UP_MOVE( 24, MOVE_FAKE_TEARS),
     LEVEL_UP_MOVE( 30, MOVE_MUD_SHOT),
     LEVEL_UP_MOVE( 40, MOVE_ANCIENT_POWER),
     LEVEL_UP_MOVE( 50, MOVE_MOONBLAST),

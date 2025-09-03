@@ -577,7 +577,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_TWINEEDLE] =
     {
         .effect = EFFECT_TWINEEDLE,
-        .power = 25,
+        .power = 70,
         .type = TYPE_BUG,
         .accuracy = 100,
         .pp = 20,
