@@ -1035,7 +1035,7 @@ EcruteakCity_Theater_Text_KuniSeen:
 	.string "You were dependable at the\n"
 	.string "GOLDENROD TUNNEL.\p"
 	.string "I'm the one who twirls even\n"
-	.string "underground--Kuni!\p"
+	.string "underground--KUNI!\p"
 	.string "I saw you thwart Rocket's\n"
 	.string "plan to take the Radio Tower.\p"
 	.string "Now show me your strength!\n"

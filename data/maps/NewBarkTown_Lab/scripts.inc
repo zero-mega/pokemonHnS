@@ -825,14 +825,14 @@ NewBarkTown_Lab_Text_KimonoGirls:
 	.string "are waiting for you at the ECRUTEAK\l"
 	.string "DANCE THEATER.\p"
 	.string "I know you've gone through many\n"
-	.string "things since that Egg got you\l"
+	.string "things since that EGG got you\l"
 	.string "involved in all this...\p"
 	.string "I hope you'll carry through it.$"
 
 NewBarkTown_Lab_Text_KimonoWaiting:
 	.string "PROF. ELM: The KIMONO\n"
 	.string "GIRLS are waiting for you at\l"
-	.string "the Ecruteak Dance Theater.$"
+	.string "the ECRUTEAK DANCE THEATER.$"
 
 NewBarkTown_Lab_Text_League:
 	.string "PROF. ELM: Hahaha...\n"
@@ -849,7 +849,7 @@ NewBarkTown_Lab_Text_League:
 	.string "You should head for Indigo\n"
 	.string "Plateau!\p"
 	.string "Do you know how to get there?\n"
-	.string "Follow Route 27 to Route 26.\p"
+	.string "Follow ROUTE 27 to ROUTE 26.\p"
 	.string "Once there, go straight north!$"
 
 

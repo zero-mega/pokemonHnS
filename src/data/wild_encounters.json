@@ -47535,28 +47535,28 @@
             "encounter_rate": 7,
             "mons": [
               {
-                "min_level": 15,
-                "max_level": 19,
+                "min_level": 30,
+                "max_level": 40,
                 "species": "SPECIES_WOOPER"
               },
               {
-                "min_level": 15,
-                "max_level": 19,
+                "min_level": 30,
+                "max_level": 40,
                 "species": "SPECIES_WOOPER"
               },
               {
-                "min_level": 15,
-                "max_level": 19,
+                "min_level": 30,
+                "max_level": 40,
                 "species": "SPECIES_WOOPER"
               },
               {
-                "min_level": 15,
-                "max_level": 24,
+                "min_level": 30,
+                "max_level": 40,
                 "species": "SPECIES_QUAGSIRE"
               },
               {
-                "min_level": 15,
-                "max_level": 24,
+                "min_level": 30,
+                "max_level": 40,
                 "species": "SPECIES_QUAGSIRE"
               }
             ]

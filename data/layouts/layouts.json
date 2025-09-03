@@ -4864,8 +4864,8 @@
     {
       "id": "LAYOUT_ROUTE23",
       "name": "Route23_Layout",
-      "width": 23,
-      "height": 12,
+      "width": 24,
+      "height": 160,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_IndigoPlateau",
       "border_filepath": "data/layouts/Route23/border.bin",
