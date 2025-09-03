@@ -2104,6 +2104,12 @@ Cry_Wyrdeer::
 Cry_Ursaluna::
 	.incbin "sound/direct_sound_samples/cries/ursaluna.bin"
 
+Cry_Ursaluna_BloodMoon::
+	.incbin "sound/direct_sound_samples/cries/ursaluna.bin"
+
+Cry_Kleavor::
+	.incbin "sound/direct_sound_samples/cries/kleavor.bin"
+
 	.align 2
 DirectSoundWaveData_register_noise::
 	.incbin "sound/direct_sound_samples/register_noise.bin"

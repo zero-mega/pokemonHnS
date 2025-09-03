@@ -49,6 +49,7 @@
 #include "constants/party_menu.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
+#include "region_map.h"  // for GetMapName
 #ifdef TX_RANDOMIZER_AND_CHALLENGES
     #include "tx_randomizer_and_challenges.h"
 #endif
@@ -6941,6 +6942,10 @@ static u8 PrintEvolutionTargetSpeciesAndMethod(u8 taskId, u16 species, u8 depth,
             item = gEvolutionTable[species][i].param; //item
             CopyItemName(item, gStringVar2); //item
             StringExpandPlaceholders(gStringVar4, gText_EVO_ITEM_HOLD );
+            break;
+        case EVO_LEVEL_LOCATION:
+            GetMapName(gStringVar2, gEvolutionTable[species][i].param, 0);
+            StringExpandPlaceholders(gStringVar4, gText_EVO_LEVEL_LOCATION);
             break;
         default:
             StringExpandPlaceholders(gStringVar4, gText_EVO_UNKNOWN );

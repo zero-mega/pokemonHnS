@@ -6419,6 +6419,20 @@ const struct FacilityMon gBattleFrontierMonsSplit[NUM_FRONTIER_MONS] =
         .evSpread = F_EV_SPREAD_HP | F_EV_SPREAD_ATTACK,
         .nature = NATURE_ADAMANT
     },
+    [FRONTIER_MON_URSALUNA_BLOODMOON_1] = {
+        .species = SPECIES_URSALUNA_BLOODMOON,
+        .moves = {MOVE_EARTHQUAKE, MOVE_SLASH, MOVE_ROLLOUT, MOVE_PLAY_ROUGH},
+        .itemTableId = BATTLE_FRONTIER_ITEM_SITRUS_BERRY,
+        .evSpread = F_EV_SPREAD_HP | F_EV_SPREAD_ATTACK,
+        .nature = NATURE_ADAMANT
+    },
+    [FRONTIER_MON_KLEAVOR_1] = {
+        .species = SPECIES_KLEAVOR,
+        .moves = {MOVE_PSYCHO_CUT, MOVE_SLASH, MOVE_CRUSH_CLAW, MOVE_DOUBLE_EDGE},
+        .itemTableId = BATTLE_FRONTIER_ITEM_SITRUS_BERRY,
+        .evSpread = F_EV_SPREAD_HP | F_EV_SPREAD_ATTACK,
+        .nature = NATURE_ADAMANT
+    },
 };
 
 const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
@@ -12838,6 +12852,20 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     [FRONTIER_MON_URSALUNA_1] = {
         .species = SPECIES_URSALUNA,
         .moves = {MOVE_EARTHQUAKE, MOVE_SLASH, MOVE_ROLLOUT, MOVE_PLAY_ROUGH},
+        .itemTableId = BATTLE_FRONTIER_ITEM_SITRUS_BERRY,
+        .evSpread = F_EV_SPREAD_HP | F_EV_SPREAD_ATTACK,
+        .nature = NATURE_ADAMANT
+    },
+    [FRONTIER_MON_URSALUNA_BLOODMOON_1] = {
+        .species = SPECIES_URSALUNA_BLOODMOON,
+        .moves = {MOVE_EARTHQUAKE, MOVE_SLASH, MOVE_ROLLOUT, MOVE_PLAY_ROUGH},
+        .itemTableId = BATTLE_FRONTIER_ITEM_SITRUS_BERRY,
+        .evSpread = F_EV_SPREAD_HP | F_EV_SPREAD_ATTACK,
+        .nature = NATURE_ADAMANT
+    },
+    [FRONTIER_MON_KLEAVOR_1] = {
+        .species = SPECIES_KLEAVOR,
+        .moves = {MOVE_PSYCHO_CUT, MOVE_SLASH, MOVE_CRUSH_CLAW, MOVE_DOUBLE_EDGE},
         .itemTableId = BATTLE_FRONTIER_ITEM_SITRUS_BERRY,
         .evSpread = F_EV_SPREAD_HP | F_EV_SPREAD_ATTACK,
         .nature = NATURE_ADAMANT

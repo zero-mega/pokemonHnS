@@ -668,6 +668,7 @@ extern const u8 gText_EVO_TRADE_SPECIFIC_MON[];
 extern const u8 gText_EVO_SPECIFIC_MAP[];
 extern const u8 gText_EVO_UNKNOWN[];
 extern const u8 gText_EVO_NONE[];
+extern const u8 gText_EVO_LEVEL_LOCATION[];
 
 extern const u8 gText_FORMS_Buttons_PE[];
 extern const u8 gText_FORMS_Buttons_Decapped_PE[];

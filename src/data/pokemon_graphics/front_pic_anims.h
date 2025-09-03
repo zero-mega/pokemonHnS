@@ -5265,6 +5265,23 @@ static const union AnimCmd sAnim_Ursaluna_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_Ursaluna_BloodMoon_1[] =
+{
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+static const union AnimCmd sAnim_Kleavor_1[] =
+{
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
 #define SINGLE_ANIMATION(name)                      \
 static const union AnimCmd *const sAnims_##name[] = \
 {                                                   \
@@ -5751,6 +5768,8 @@ SINGLE_ANIMATION(Farigiraf);
 SINGLE_ANIMATION(Dudunsparce);
 SINGLE_ANIMATION(Wyrdeer);
 SINGLE_ANIMATION(Ursaluna);
+SINGLE_ANIMATION(Ursaluna_BloodMoon);
+SINGLE_ANIMATION(Kleavor);
 
 const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
 {
@@ -6236,5 +6255,6 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_DUDUNSPARCE] = sAnims_Dudunsparce,
     [SPECIES_WYRDEER] = sAnims_Wyrdeer,
     [SPECIES_URSALUNA] = sAnims_Ursaluna,
-
+    [SPECIES_URSALUNA_BLOODMOON] = sAnims_Ursaluna_BloodMoon,
+    [SPECIES_KLEAVOR] = sAnims_Kleavor,
 };

@@ -2553,3 +2553,14 @@ const u8 gUrsalunaPokedexText[] = _(
     "physique and newfound capacity to\n"
     "manipulate peat at will.");
 
+const u8 gUrsaluna_BloodMoonPokedexText[] = _(
+            "It crossed the sea and drifted\n"
+            "ashore in a new land. Surviving in this\n"
+            "place led it to take on a unique\n"
+            "appearance and gain special powers.");
+
+const u8 gKleavorPokedexText[] = _(
+            "A violent creature that fells trees with\n"
+            "its crude axes and shields itself with hard\n"
+            "stone. Should one encounter this Pokémon\n"
+            "in the wild, one's only recourse is to flee.");
