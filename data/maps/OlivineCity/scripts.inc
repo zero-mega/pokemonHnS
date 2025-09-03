@@ -76,6 +76,7 @@ OlivineCity_EventScript_SilverTrigger::
 	waitmovement 0
 	setvar VAR_OLIVINE_CITY_STATE, 2
 	setflag FLAG_HIDE_OLIVINE_SILVER
+	removeobject LOCALID_OLIVINE_SILVER
 	fadedefaultbgm
 	release
 	end
