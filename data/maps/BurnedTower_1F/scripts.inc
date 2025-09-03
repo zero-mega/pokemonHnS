@@ -213,5 +213,5 @@ BurnedTower_Text_RichardoSeen:
 BurnedTower_Text_RichardoBeaten:
 	.string "Pfffffffffffffff.$"
 BurnedTower_Text_RichardoAfter:
-	.string "Maybe a life of crime isn't for\p"
+	.string "Maybe a life of crime isn't for\n"
 	.string "me...$"
