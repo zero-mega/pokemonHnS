@@ -1459,7 +1459,7 @@ static void ExitEasyChatScreen(MainCallback callback)
 // Replace these EC_WORD_* with your real words later.
 static const u16 sInterviewPasswords[7][4] = {
     // 1 → Pichu (Electric / Static)
-    { EC_WORD_BABE, EC_WORD_POKEMON, EC_WORD_ELECTRIC, EC_WORD_STATIC },
+    { EC_WORD_BABE, EC_WORD_POKEMON, EC_WORD_CUTE, EC_WORD_STATIC },
 
     // 2 → Cleffa (Normal / Cute Charm)
     { EC_WORD_BABE, EC_WORD_POKEMON, EC_WORD_CUTE, EC_WORD_CUTE_CHARM },
