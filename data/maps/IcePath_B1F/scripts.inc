@@ -32,6 +32,9 @@ IcePath_B1F_EventScript_Sign::
 	end
 
 IcePath_B1F_Text_Sign:
-	.string "The sign is faded:\n"
-	.string "DANG-R CR--KED ICE\l"
-	.string "FA-- B-CYCLE --QUIRED$"
+	.string "DANGER CRACKED ICE\n"
+	.string "GO FAST ON BICYCLE\l"
+	.string "SWITCH GEARS BY\l"
+	.string "PRESSING ...\l"
+	.string "The sign is faded...$"
+

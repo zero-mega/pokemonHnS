@@ -879,7 +879,7 @@ static const u8 sScopeLensDesc[] = _(
 static const u8 sMetalCoatDesc[] = _(
     "Boosts STEEL.\n"
     "Evolves ONIX,\n"
-    "SCYTHER, MAGNETON");
+    "SCYTHER, MAGNETON.");
 
 static const u8 sLeftoversDesc[] = _(
     "A hold item that\n"
@@ -888,7 +888,8 @@ static const u8 sLeftoversDesc[] = _(
 
 static const u8 sDragonScaleDesc[] = _(
     "Evolves a\n"
-    "SEA-DRAGON POKéMON");
+    "SEA-DRAGON\n"
+    "POKéMON.");
 
 static const u8 sLightBallDesc[] = _(
     "A hold item that\n"
@@ -1041,8 +1042,9 @@ static const u8 sYellowScarfDesc[] = _(
 
 // Key items
 static const u8 sMachBikeDesc[] = _(
-    "A fast, folding bike.\n"
-    "Switch gears with R.");
+    "A bicycle. Press {R_BUTTON}\n"
+    "while stationary to\n"
+    "change gears.");
 
 static const u8 sCoinCaseDesc[] = _(
     "A case that holds\n"

@@ -4,7 +4,7 @@ MahoganyTown_Gym_MapScripts::
 
 MahoganyTown_Gym_EventScript_Statue::
 	lock
-	goto_if_set FLAG_DEFEATED_MAHOGANY_TOWN_GYM, CianwoodGym_EventScript_Statue2
+	goto_if_set FLAG_DEFEATED_MAHOGANY_TOWN_GYM,  MahoganyTown_Gym_EventScript_Statue2
 	msgbox MahoganyTown_Gym_Text_GymStatue, MSGBOX_DEFAULT
 	closemessage
 	release

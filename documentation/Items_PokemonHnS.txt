@@ -1,16 +1,16 @@
 Evolution Items		
 Fire Stone	Goldenrod Department Store, bug contest 2nd place, shard vendor at pewter museum
-Water Stone	Goldenrod Department Store, bug contest 2nd place, shard vendor at pewter museum
+Water Stone	Goldenrod Department Store, bug contest 2nd place, shard vendor at pewter museum, Ruins of Alph Omanyte Chamber rewards room
 Thunder Stone	Goldenrod Department Store, bug contest 2nd place, shard vendor at pewter museum
-Metal Coat	Mahogany Mart after Goldenrod Rockets defeated
-Dragon Scale	Mahogany Mart after Goldenrod Rockets defeated
-Up-Grade	Mahogany Mart after Goldenrod Rockets defeated
-King's Rock	Mahogany Mart after Goldenrod Rockets defeated
-Spell Tag	Mahogany Mart after Goldenrod Rockets defeated
-NeverMeltIce	Mahogany Mart after Goldenrod Rockets defeated
+Metal Coat	Mahogany Mart after Goldenrod Rockets defeated, SS Aqua
+Dragon Scale	Mahogany Mart after Goldenrod Rockets defeated, Mt. Mortar
+Up-Grade	Mahogany Mart after Goldenrod Rockets defeated, Saffron City
+King's Rock	Mahogany Mart after Goldenrod Rockets defeated, Slowpoke well
+Spell Tag	Mahogany Mart after Goldenrod Rockets defeated, Blackthorn City, Mt Silver
+NeverMeltIce	Mahogany Mart after Goldenrod Rockets defeated, Ice path
 Leaf Stone	1st place in Bug Contest
 Sun Stone	1st place in Bug Contest
-Moon Stone	1st place in Bug Contest
+Moon Stone	1st place in Bug Contest, Ruins of Alph Aerodactyl Chamber rewards room
 Heart Scale	Rock Smash
 		
 Hold items		
