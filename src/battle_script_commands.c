@@ -56,6 +56,18 @@
 #include "debug.h"
 #include "tx_randomizer_and_challenges.h"
 
+// --- EXP ALL (Large EXP Share) tuning ---------------------------------------
+// Non-participant share = baseExp * EXPALL_SHARE_NUM / EXPALL_SHARE_DEN
+// Participant share     = normalShare * EXPALL_PARTICIPANT_NUM / EXPALL_PARTICIPANT_DEN
+#ifndef EXPALL_TUNING
+#define EXPALL_SHARE_NUM          1
+#define EXPALL_SHARE_DEN          4
+#define EXPALL_PARTICIPANT_NUM    2
+#define EXPALL_PARTICIPANT_DEN    3
+#endif
+// ---------------------------------------------------------------------------
+
+
 extern const u8 *const gBattleScriptsForMoveEffects[];
 
 #define DEFENDER_IS_PROTECTED ((gProtectStructs[gBattlerTarget].protected) && (gBattleMoves[gCurrentMove].flags & FLAG_PROTECT_AFFECTED))
@@ -3624,37 +3636,30 @@ static void Cmd_getexp(void)
             }
             else if ((FlagGet(FLAG_EXP_SHARE) == TRUE) && (gSaveBlock2Ptr->optionsDifficulty != 2))
             {
-                *exp = SAFE_DIV(calculatedExp, viaSentIn);
+                // Participants: scale normal share by EXPALL_PARTICIPANT_NUM / EXPALL_PARTICIPANT_DEN
+                *exp = SAFE_DIV(calculatedExp * EXPALL_PARTICIPANT_NUM,
+                                viaSentIn    * EXPALL_PARTICIPANT_DEN);
                 if (*exp == 0)
                     *exp = 1;
 
-                gExpShareExp = calculatedExp / 3;
-                if (gExpShareExp == 0)
+                // Non-participants (EXP ALL): base * EXPALL_SHARE_NUM / EXPALL_SHARE_DEN
+                gExpShareExp = SAFE_DIV(calculatedExp * EXPALL_SHARE_NUM, EXPALL_SHARE_DEN);
+                if (gExpShareExp == 0 && calculatedExp != 0)
                     gExpShareExp = 1;
             }
             else if ((FlagGet(FLAG_EXP_SHARE) == TRUE) && (gSaveBlock2Ptr->optionsDifficulty == 2))
             {
-                if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
-                {
-                    *exp = SAFE_DIV(calculatedExp / 2, viaSentIn);
-                    if (*exp == 0)
-                        *exp = 1;
-                    gExpShareExp = calculatedExp / 4;
-                    if (gExpShareExp == 0)
-                        gExpShareExp = 1;
-                }
-                else
-                {
-                    *exp = SAFE_DIV(calculatedExp / 2, viaSentIn);
-                    if (*exp == 0)
-                        *exp = 1;
-                    gExpShareExp = calculatedExp / 2;
-                    if (gExpShareExp == 0)
-                        gExpShareExp = 1;
-                }
-                
-            }
+                // Participants: scale normal share by EXPALL_PARTICIPANT_NUM / EXPALL_PARTICIPANT_DEN
+                *exp = SAFE_DIV(calculatedExp * EXPALL_PARTICIPANT_NUM,
+                                viaSentIn    * EXPALL_PARTICIPANT_DEN);
+                if (*exp == 0)
+                    *exp = 1;
 
+                // Non-participants (EXP ALL): base * EXPALL_SHARE_NUM / EXPALL_SHARE_DEN
+                gExpShareExp = SAFE_DIV(calculatedExp * EXPALL_SHARE_NUM, EXPALL_SHARE_DEN);
+                if (gExpShareExp == 0 && calculatedExp != 0)
+                    gExpShareExp = 1;
+            }
             if (gSaveBlock1Ptr->tx_Challenges_ExpMultiplier == 3)
             {
                 if (TX_EXP_MULTIPLER_ONLY_ON_NUZLOCKE_AND_RANDOMIZER) //special for Jaizu
