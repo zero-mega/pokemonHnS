@@ -517,14 +517,14 @@ CherryGroveCity_Movement_Trigger_Silver_Bottom:
 	step_end
 
 CherryGroveCity_Movement_Silver_Enter:
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
 	step_end
 
 CherryGroveCity_Movement_Silver_Leave1:
