@@ -8595,9 +8595,16 @@ Special Dratini: 	Dragons Den		After getting Dragon Claw + 100% On Quiz
 Spearow (Kenya):	Goldenrod North Gate
 Shuckle (Shuckie):	Cianwood City
 Tyrogue:		Mt Mortar	
-Odd Egg:		Route 34 DayCare	Special Phrases	(BABE, POKéMON, TYPE, ABILITY). For fairy types, try CUTE or SONG.		
+Odd Egg:		Route 34 DayCare
 Odder Egg:		Route 34 DayCare	Just for playtesters
-		
+Odd Egg Passwords:
+	Pichu: 		BABE, POKEMON, CUTE, 	 STATIC
+	Cleffa: 	BABE, POKEMON, CUTE, 	 CUTE CHARM
+	Igglybuff:	BABE, POKEMON, SONG, 	 CUTE CHARM
+	Tyrogue:	BABE, POKEMON, FIGHTING, GUTS
+	Smoochum:	BABE, POKEMON, ICE, 	 OBLIVIOUS
+	Elekid:		BABE, POKEMON, ELECTRIC, STATIC
+	Magby:		BABE, POKEMON, FIRE, 	 FLAME BODY
 
 Non-Legendaries
 ----------------------------------------

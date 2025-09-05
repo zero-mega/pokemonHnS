@@ -2872,10 +2872,25 @@ static const u16 sOddEggSpecies[8] = {
 // EDIT THIS LIST: exact-match names that force 100% shiny eggs
 static const u8 sOddEggShinyNameList[][PLAYER_NAME_LENGTH + 1] = {
     _("DYLAN"),
-    _("RED"),
-    _("LEAF"),
-    _("GOLD"),
-    _("KRIS"),
+    _("Zee"),
+    _("Josh"),
+    _("Meara"),
+    _("Anthony"),
+    _("FERRO"),
+    _("Kris"),
+    _("Chad"),
+    _("Bacon"),
+    _("Excl"),
+    _("Liquid"),
+    _("Dyn"),
+    _("Fabian"),
+    _("peepy"),
+    _("Cameron"),
+    _("Joe"),
+    _("Andrew"),
+    _("Nova"),
+    _("Cromlnt"),
+    _("Phant"),
 };
 
 static bool8 IsPlayerNameInShinyList(void)

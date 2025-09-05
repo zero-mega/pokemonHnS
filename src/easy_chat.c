@@ -1458,13 +1458,13 @@ static void ExitEasyChatScreen(MainCallback callback)
 // 7 passwords; each is EXACTLY four Easy Chat words (order matters).
 // Replace these EC_WORD_* with your real words later.
 static const u16 sInterviewPasswords[7][4] = {
-    // 1 → Pichu (Electric / Static)
+    // 1 → Pichu (Cute / Static)
     { EC_WORD_BABE, EC_WORD_POKEMON, EC_WORD_CUTE, EC_WORD_STATIC },
 
-    // 2 → Cleffa (Normal / Cute Charm)
+    // 2 → Cleffa (Cute / Cute Charm)
     { EC_WORD_BABE, EC_WORD_POKEMON, EC_WORD_CUTE, EC_WORD_CUTE_CHARM },
 
-    // 3 → Igglybuff (Normal / Cute Charm)
+    // 3 → Igglybuff (Song / Cute Charm)
     { EC_WORD_BABE, EC_WORD_POKEMON, EC_WORD_SONG, EC_WORD_CUTE_CHARM },
 
     // 4 → Tyrogue (Fighting / Guts)
