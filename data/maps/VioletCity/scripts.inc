@@ -7,6 +7,7 @@ VioletCity_MapScripts::
 
 VioletCity_OnFrame::
 	map_script_2 VAR_VIOLET_CITY_KIMONO_GIRL, 1, VioletCity_EventScript_Kimono_Girl
+	map_script_2 VAR_VIOLET_CITY_STATE, 3, VioletCity_EventScript_ElmCall_Trigger
 	.2byte 0
 
 VioletCity_EventScript_Trigger::
