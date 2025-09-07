@@ -282,7 +282,6 @@ EventScript_ResetAllMapFlags::
 	setvar VAR_UNUSED_HNS_VAR7, 0
 
 	additem ITEM_EXP_SHARE
-	setflag FLAG_EXP_SHARE
 
 	call EventScript_ResetAllBerries
 	end
