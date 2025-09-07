@@ -6,7 +6,7 @@ FuchsiaCity_SafariZoneGate_SafariZoneEntrance_MapScripts::
 	.byte 0
 
 SafariZoneGate_SafariZoneEntranceFuchsia_OnFrame::
-	map_script_2 VAR_KANTO_SAFARI_ZONE_PROGRESS, 0, SafariZoneGate_SafariZoneEntranceFuchsia_MeetSteven
+	map_script_2 VAR_KANTO_SAFARI_ZONE_PROGRESS, 0, SafariZoneGate_SafariZoneEntranceFuchsia_EventScript_MeetSteven
 	map_script_2 VAR_SAFARI_ZONE_STATE, 2, SafariZoneGate_SafariZoneEntranceFuchsia_EventScript_ExitSafari
 	.2byte 0
 
@@ -43,7 +43,7 @@ SafariZoneGate_SafariZoneEntranceFuchsia_EventScript_ReenterSafari::
 	delay 120
 	end
 
-SafariZoneGate_SafariZoneEntranceFuchsia_MeetSteven::
+SafariZoneGate_SafariZoneEntranceFuchsia_EventScript_MeetSteven::
 	lock
 	playse SE_PIN
 	applymovement LOCALID_SAFARIZONEFUCHSIA_STEVEN, Common_Movement_ExclamationMark
@@ -54,12 +54,23 @@ SafariZoneGate_SafariZoneEntranceFuchsia_MeetSteven::
 
 	msgbox SafariZoneGate_SafariZoneEntranceFuchsia_Text_StevenWelcome, MSGBOX_DEFAULT
 	closemessage
+	checkitem ITEM_POKEBLOCK_CASE
+	call_if_eq VAR_RESULT, FALSE, SafariZoneGate_SafariZoneEntranceFuchsia_EventScript_StevenGiveCase
 
 	applymovement LOCALID_SAFARIZONEFUCHSIA_STEVEN, SafariZoneGate_SafariZoneEntranceFuchsia_Movement_ReturnToTable
 	waitmovement 0
 	setvar VAR_KANTO_SAFARI_ZONE_PROGRESS, 1
 	release
 	end
+
+SafariZoneGate_SafariZoneEntranceFuchsia_EventScript_StevenGiveCase::
+	msgbox SafariZoneGate_SafariZoneEntranceFuchsia_Text_StevenGiveCase, MSGBOX_DEFAULT
+	giveitem ITEM_POKEBLOCK_CASE
+	closemessage
+	return
+
+SafariZoneGate_SafariZoneEntranceFuchsia_Text_StevenGiveCase:
+	.string "Oh and you might need this.$"
 
 SafariZoneGate_SafariZoneEntranceFuchsia_Steven::
 	lock
