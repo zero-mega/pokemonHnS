@@ -6,13 +6,12 @@ callfunc ScrFunc_IsFollowerFieldMoveUser
 @ Interact with cuttable tree
 EventScript_CutTree::
 	lockall
-	goto_if_unset FLAG_BADGE02_GET, EventScript_CheckTreeCantCut
 	goto_if_unset FLAG_RECEIVED_HM_CUT, EventScript_CheckTreeCantCut
-	@checkpartymove MOVE_CUT
-	setvar VAR_RESULT, 0
+	goto_if_unset FLAG_BADGE02_GET, EventScript_CheckTreeCantCut
+	checkpartymove MOVE_CUT
 	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CheckTreeCantCut
-	@setfieldeffectargument 0, VAR_RESULT
 	bufferpartymonnick STR_VAR_1, VAR_RESULT
+	setfieldeffectargument 0, VAR_RESULT
 	buffermovename STR_VAR_2, MOVE_CUT
 	@msgbox Text_WantToCut, MSGBOX_YESNO
 	@goto_if_eq VAR_RESULT, NO, EventScript_CancelCut
@@ -72,12 +71,12 @@ EventScript_UseRockSmash::
 @ Interact with smashable rock
 EventScript_RockSmash::
 	lockall
+	checkpartymove MOVE_ROCK_SMASH
 	goto_if_unset FLAG_BADGE01_GET, EventScript_CantSmashRock
 	goto_if_unset FLAG_RECEIVED_HM_ROCK_SMASH, EventScript_CantSmashRock
-	@checkpartymove MOVE_ROCK_SMASH
-	setvar VAR_RESULT, 0
 	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantSmashRock
-	@setfieldeffectargument 0, VAR_RESULT
+	bufferpartymonnick STR_VAR_1, VAR_RESULT
+	setfieldeffectargument 0, VAR_RESULT
 	bufferpartymonnick STR_VAR_1, VAR_RESULT
 	buffermovename STR_VAR_2, MOVE_ROCK_SMASH
 	@msgbox Text_WantToSmash, MSGBOX_YESNO
@@ -115,21 +114,15 @@ EventScript_SmashRock:: @ fallthrough
 EventScript_Headbutt::
 	lockall
 	goto_if_unset FLAG_GET_HEADBUTT, EventScript_CantHeadbuttTree
-	setvar VAR_RESULT, 0
+	checkpartymove MOVE_HEADBUTT
 	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantHeadbuttTree
-	@setfieldeffectargument 0, VAR_RESULT
 	bufferpartymonnick STR_VAR_1, VAR_RESULT
-	buffermovename STR_VAR_2, MOVE_ROCK_SMASH
-	@msgbox Text_WantToHeadbutt, MSGBOX_YESNO
-	@goto_if_eq VAR_RESULT, NO, EventScript_CancelHeadbutt
+	setfieldeffectargument 0, VAR_RESULT
 	msgbox Text_MonUsedHeadbutt, MSGBOX_DEFAULT
 	closemessage
 EventScript_HeadbuttCommon:
 	@ check if follower should use the field move
 	IsFollowerFieldMoveUser VAR_0x8004
-	@setfieldeffectargument 3, VAR_0x8004 @ skip pose if so
-	@dofieldeffect FLDEFF_USE_ROCK_SMASH
-	@waitstate
 EventScript_HeadbuttTree:: @ fallthrough
 	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
 	call_if_eq VAR_0x8004, TRUE, EventScript_FollowerFieldMove
@@ -340,13 +333,10 @@ EventScript_StrengthBoulder::
 	lockall
 	goto_if_unset FLAG_BADGE03_GET, EventScript_CantStrength
 	goto_if_set FLAG_SYS_USE_STRENGTH, EventScript_CheckActivatedBoulder
-	@checkpartymove MOVE_STRENGTH
-	checkitem ITEM_HM_STRENGTH
-	goto_if_eq VAR_RESULT, FALSE, EventScript_CantStrength
-	setvar VAR_RESULT, 0
+	checkpartymove MOVE_STRENGTH
 	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantStrength
-	setfieldeffectargument 0, VAR_RESULT
 	bufferpartymonnick STR_VAR_1, VAR_RESULT
+	setfieldeffectargument 0, VAR_RESULT
 	@msgbox Text_WantToStrength, MSGBOX_YESNO
 	@goto_if_eq VAR_RESULT, NO, EventScript_CancelStrength
 	@closemessage
@@ -401,8 +391,8 @@ Text_StrengthActivated:
 
 EventScript_UseWaterfall::
 	lockall
-	@checkpartymove MOVE_WATERFALL
-	setvar VAR_RESULT, 0
+	goto_if_unset FLAG_BADGE08_GET, EventScript_CantWaterfall
+	checkpartymove MOVE_WATERFALL
 	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantWaterfall
 	bufferpartymonnick STR_VAR_1, VAR_RESULT
 	setfieldeffectargument 0, VAR_RESULT
@@ -484,7 +474,7 @@ EventScript_EndSurface::
 EventScript_Whirlpool::
 	lockall
 	goto_if_unset FLAG_BADGE07_GET, EventScript_CantWhirlpool
-	checkitem ITEM_HM_WHIRLPOOL
+	checkpartymove MOVE_WHIRLPOOL
 	goto_if_eq VAR_RESULT, FALSE, EventScript_CantWhirlpool
 	playse SE_M_WATERFALL
 	goto_if_eq VAR_FACING, DIR_NORTH, EventScript_WhirlpoolGoNorth

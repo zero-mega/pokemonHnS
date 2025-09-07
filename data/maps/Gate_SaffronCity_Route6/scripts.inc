@@ -14,7 +14,7 @@ Route6_Text_SaffronGuardWelcome:
 	.string "Welcome to SAFFRON CITY, home of\n"
 	.string "the MAGNET TRAIN!\p"
 	.string "…That's what I'd normally say,\n"
-	.string "but the MAGNET TRAIN isn't\n"
+	.string "but the MAGNET TRAIN isn't\l"
 	.string "running now.\p"
 	.string "It's not getting any electricity\n"
 	.string "because there's something wrong\l"

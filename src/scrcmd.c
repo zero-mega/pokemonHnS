@@ -63,7 +63,10 @@
 #include "easy_chat.h"
 #include "strings.h"
 
-
+//HnS For headbutt
+// From party_menu.c (that TU owns the tutor data)
+extern bool8 CanLearnTutorMove(u16 species, u8 tutor);
+extern s8    MoveIdToTutorIndex(u16 moveId);
 
 
 #define MON_BOX_FULL 0xFF
@@ -1819,6 +1822,28 @@ bool8 ScrCmd_checkpartymove(struct ScriptContext *ctx)
             gSpecialVar_Result = i;
             gSpecialVar_0x8004 = species;
             break;
+        }
+    }
+    // If still not found, treat tutor moves (like HEADBUTT) as usable if any party
+    // mon can learn them (even if they don't currently know them).
+    if (gSpecialVar_Result == PARTY_SIZE)
+    {
+        s8 tutorIdx = MoveIdToTutorIndex(moveId);
+        if (tutorIdx >= 0)
+        {
+            for (i = 0; i < PARTY_SIZE; i++)
+            {
+                u16 species = GetMonData(&gPlayerParty[i], MON_DATA_SPECIES, NULL);
+                if (!species)
+                    break;
+                if (!GetMonData(&gPlayerParty[i], MON_DATA_IS_EGG, NULL)
+                    && CanLearnTutorMove(species, (u8)tutorIdx))
+                {
+                    gSpecialVar_Result = i;
+                    gSpecialVar_0x8004 = species;
+                    break;
+                }
+            }
         }
     }
     if (gSpecialVar_Result == PARTY_SIZE && (CheckBagHasItem(MoveToHM(moveId), 1)))

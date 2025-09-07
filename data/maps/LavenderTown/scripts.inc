@@ -53,7 +53,7 @@ LavenderTown_Text_Teacher:
 
 LavenderTown_Text_Gramps:
 	.string "People come from all over to pay\n"
-	.string "their respects to the departed\n"
+	.string "their respects to the departed\l"
 	.string "souls of POKéMON.$"
 
 LavenderTown_Text_Youngster:

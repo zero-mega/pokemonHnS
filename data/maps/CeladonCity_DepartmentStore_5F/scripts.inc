@@ -40,7 +40,7 @@ CeladonDeptStore5_Text_Falkner:
 
 CeladonDeptStore5F_Text_Gentleman:
 	.string "I want to buy some items that\n"
-	.string "raise POKéMON stats, but I don't\n"
+	.string "raise POKéMON stats, but I don't\l"
 	.string "have enough money…$"
 
 CeladonDeptStore5F_Text_Sailor:

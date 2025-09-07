@@ -101,9 +101,9 @@ FuchsiaCity_Text_PokefanM:
 	.string "ELITE FOUR.$"
 
 FuchsiaCity_Text_Teacher:
-	.string "The SAFARI ZONE is closed… It's sad,\n"
-	.string "considering it's FUCHSIA's main\l"
-	.string "attraction.$"
+	.string "The SAFARI ZONE is under new\n"
+	.string "management.\p"
+	.string "And it has tons of new POKéMON!$"
 
 FuchsiaCity_Text_Sign:
 	.string "FUCHSIA CITY\p"

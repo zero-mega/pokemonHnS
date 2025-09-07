@@ -167,7 +167,7 @@ CeruleanCity_Text_BikeShopSign:
 CeruleanCity_Text_PoliceSign:
 	.string "There's a notice here…\p"
 	.string "Stamp out thievery and make the\n"
-	.string "city a friendlier, more cheerful\n"
+	.string "city a friendlier, more cheerful\l"
 	.string "place!\p"
 	.string "CERULEAN POLICE$"
 
