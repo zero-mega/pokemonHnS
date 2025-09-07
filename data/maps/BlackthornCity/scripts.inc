@@ -5,6 +5,7 @@ BlackthornCity_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, BlackthornCity_OnFrame
 	map_script MAP_SCRIPT_ON_LOAD, BlackthornCity_OnLoad
 	map_script MAP_SCRIPT_ON_TRANSITION, BlackthornCity_EventScript_CityEnter
+	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
 	.byte 0
 
 BlackthornCity_OnLoad::
@@ -23,6 +24,7 @@ BlackthornCity_OnFrame::
 
 BlackthornCity_EventScript_CityEnter:: 
 	setflag FLAG_VISITED_BLACKTHORN_CITY
+	callnative SetTimeBasedEncounters
 	end
 
 BlackthornCity_EventScript_Call::

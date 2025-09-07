@@ -2,7 +2,13 @@
 .set LOCALID_CHERRYGROVE_SILVER, 14
 
 CherrygroveCity_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, CherryGroveCity_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
 	.byte 0
+
+CherryGroveCity_OnTransition::
+	callnative SetTimeBasedEncounters
+	end
 
 CherryGroveCity_EventScript_TriggerGent_Top::
 	lock

@@ -4,16 +4,19 @@
 
 VermilionCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, VermilionCity_MapScript_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
 	.byte 0
 
 VermilionCity_MapScript_OnTransition::
 	setflag FLAG_VISITED_VERMILION_CITY
 	goto_if_eq VAR_SUICUNE_ENCOUNTERS, 3, VermilionCity_EventScript_SetSuicuneScene
 	setflag FLAG_HIDE_VERMILION_EUSINE_SUICUNE
+	callnative SetTimeBasedEncounters
 	end
 
 VermilionCity_EventScript_SetSuicuneScene::
 	clearflag FLAG_HIDE_VERMILION_EUSINE_SUICUNE
+	callnative SetTimeBasedEncounters
 	end
 
 VermilionCity_EventScript_OldSeaMap::

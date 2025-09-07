@@ -4,6 +4,7 @@
 NewBarkTown_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, NewBarkTown_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, NewBarkTown_OnFrame
+	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
 	.byte 0
 
 NewBarkTown_OnFrame::
@@ -28,10 +29,12 @@ NewBarkTown_OnTransition::
 NewBarkTown_Set_TalkToElm::
 	clearflag FLAG_HIDE_SILVER_NEWBARKTOWN
 	setobjectxyperm LOCALID_LASS, 0, 11
+	callnative SetTimeBasedEncounters
 	end
 
 NewBarkTown_Set_TalkToMom::
 	setobjectxyperm LOCALID_LASS, 0, 11
+	callnative SetTimeBasedEncounters
 	end
 
 NewBarkTown_EventScript_TownSign::

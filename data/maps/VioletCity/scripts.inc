@@ -3,12 +3,18 @@
 
 VioletCity_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, VioletCity_OnFrame
+	map_script MAP_SCRIPT_ON_TRANSITION, VioletCity_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
 	.byte 0
 
 VioletCity_OnFrame::
 	map_script_2 VAR_VIOLET_CITY_KIMONO_GIRL, 1, VioletCity_EventScript_Kimono_Girl
 	map_script_2 VAR_VIOLET_CITY_STATE, 3, VioletCity_EventScript_ElmCall_Trigger
 	.2byte 0
+
+VioletCity_OnTransition::
+	callnative SetTimeBasedEncounters
+	end
 
 VioletCity_EventScript_Trigger::
 	@LOCAL FLAGHEAP
