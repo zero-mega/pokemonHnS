@@ -1912,7 +1912,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/CeladonCity_Apartments_RoofHouse/scripts.inc"
 
-	.include "data/maps/FuchsiaCity_SafariZoneGate_SafariZoneEntrance/scripts.inc"
+	.include "data/maps/FuchsiaCity_SafariZoneEntrance/scripts.inc"
 
 	.include "data/maps/MtSilver_1F_MoltresRoom/scripts.inc"
 

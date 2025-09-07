@@ -1,7 +1,7 @@
 {
-  "id": "MAP_FUCHSIA_CITY_SAFARI_ZONE_GATE_SAFARI_ZONE_ENTRANCE",
-  "name": "FuchsiaCity_SafariZoneGate_SafariZoneEntrance",
-  "layout": "LAYOUT_FUCHSIA_CITY_SAFARI_ZONE_GATE_SAFARI_ZONE_ENTRANCE",
+  "id": "MAP_FUCHSIA_CITY_SAFARI_ZONE_ENTRANCE",
+  "name": "FuchsiaCity_SafariZoneEntrance",
+  "layout": "LAYOUT_FUCHSIA_CITY_SAFARI_ZONE_ENTRANCE",
   "music": "MUS_HG_SAFARI_ZONE",
   "region_map_section": "MAPSEC_FUCHSIA_CITY",
   "requires_flash": false,
@@ -37,7 +37,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SafariZoneGate_SafariZoneEntranceFuchsia_Steven",
+      "script": "FuchsiaCity_SafariZoneEntrance_Steven",
       "flag": "0"
     },
     {
@@ -128,7 +128,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SafariZoneGate_SafariZoneEntranceFuchsia_UpgradeGuy",
+      "script": "FuchsiaCity_SafariZoneEntrance_UpgradeGuy",
       "flag": "0"
     }
   ],
@@ -156,7 +156,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "SafariZoneGate_SafariZoneEntranceFuchsia_EventScript_EntranceCounterTrigger"
+      "script": "FuchsiaCity_SafariZoneEntrance_EventScript_EntranceCounterTrigger"
     },
     {
       "type": "trigger",
@@ -165,7 +165,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "SafariZoneGate_SafariZoneEntranceFuchsia_EventScript_EntranceCounterTrigger"
+      "script": "FuchsiaCity_SafariZoneEntrance_EventScript_EntranceCounterTrigger"
     },
     {
       "type": "trigger",
@@ -174,7 +174,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "SafariZoneGate_SafariZoneEntranceFuchsia_EventScript_EntranceCounterTrigger"
+      "script": "FuchsiaCity_SafariZoneEntrance_EventScript_EntranceCounterTrigger"
     }
   ],
   "bg_events": [

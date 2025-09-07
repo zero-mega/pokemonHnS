@@ -8372,14 +8372,14 @@
       "blockdata_filepath": "data/layouts/CeladonCity_Apartments_RoofHouse/map.bin"
     },
     {
-      "id": "LAYOUT_FUCHSIA_CITY_SAFARI_ZONE_GATE_SAFARI_ZONE_ENTRANCE",
+      "id": "LAYOUT_FUCHSIA_CITY_SAFARI_ZONE_ENTRANCE",
       "name": "FuchsiaCity_SafariZoneGate_SafariZoneGate_SafariZoneEntrance_Layout",
       "width": 15,
       "height": 15,
       "primary_tileset": "gTileset_Kanto_Building",
       "secondary_tileset": "gTileset_SafariZone_Entrance",
-      "border_filepath": "data/layouts/FuchsiaCity_SafariZoneGate_SafariZoneEntrance/border.bin",
-      "blockdata_filepath": "data/layouts/FuchsiaCity_SafariZoneGate_SafariZoneEntrance/map.bin"
+      "border_filepath": "data/layouts/FuchsiaCity_SafariZoneEntrance/border.bin",
+      "blockdata_filepath": "data/layouts/FuchsiaCity_SafariZoneEntrance/map.bin"
     },
     {
       "id": "LAYOUT_MT_SILVER_1F_MOLTRES_ROOM",
