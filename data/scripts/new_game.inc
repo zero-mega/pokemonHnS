@@ -228,7 +228,7 @@ EventScript_ResetAllMapFlags::
 	clearflag FLAG_DEFEATED_RED
 	clearflag FLAG_RECEIVED_ODD_EGG
 	clearflag FLAG_VISITED_KANTO
-	clearflag FLAG_UNUSED_UNSET3
+	clearflag FLAG_HIDE_CERULEAN_GYM_POKEMON
 	clearflag FLAG_UNUSED_UNSET4
 	clearflag FLAG_UNUSED_UNSET5
 	clearflag FLAG_UNUSED_UNSET6

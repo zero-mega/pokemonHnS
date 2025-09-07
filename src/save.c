@@ -938,7 +938,7 @@ u8 LoadGameSave(u8 saveType)
         FlagSet(FLAG_UNUSED_SET9);
         FlagClear(FLAG_RECEIVED_ODD_EGG);
         FlagClear(FLAG_VISITED_KANTO);
-        FlagClear(FLAG_UNUSED_UNSET3);
+        FlagClear(FLAG_HIDE_CERULEAN_GYM_POKEMON);
         FlagClear(FLAG_UNUSED_UNSET4);
         FlagClear(FLAG_UNUSED_UNSET5);
         FlagClear(FLAG_UNUSED_UNSET6);
