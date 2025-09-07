@@ -1,17 +1,20 @@
 FuchsiaCity_MapScripts::
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, FuchsiaCity_OnFrame
+	map_script MAP_SCRIPT_ON_TRANSITION, FuchsiaCity_EventScript_CityEnter
 	.byte 0
 
 FuchsiaCity_OnFrame::
-	map_script_2 VAR_FUCHSIA_CITY_STATE, 0,  FuchsiaCity_EventScript_CityEnter
+	map_script_2 VAR_FUCHSIA_CITY_STATE, 0,  FuchsiaCity_EventScript_BaobaCall
 	.2byte 0
 
 FuchsiaCity_EventScript_CityEnter::
+	setflag FLAG_VISITED_FUCHSIA_CITY
+	end
+
+FuchsiaCity_EventScript_BaobaCall::
 	pokenavcall FuchsiaCity_Text_Baoba
 	waitmessage
 	delay 30
 	setvar VAR_BAOBA_QUEST_STATE, 1
-	setflag FLAG_VISITED_FUCHSIA_CITY
 	setvar VAR_FUCHSIA_CITY_STATE, 1
 	end
 

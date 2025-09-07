@@ -252,14 +252,14 @@
       "x": 16,
       "y": 11,
       "elevation": 0,
-      "dest_map": "MAP_FUCHSIA_ROUTE15GATE",
+      "dest_map": "MAP_FUCHSIA_CITY_ROUTE15_GATE",
       "dest_warp_id": "0"
     },
     {
       "x": 9,
       "y": 11,
       "elevation": 0,
-      "dest_map": "MAP_FUCHSIA_ROUTE15GATE",
+      "dest_map": "MAP_FUCHSIA_CITY_ROUTE15_GATE",
       "dest_warp_id": "1"
     }
   ],

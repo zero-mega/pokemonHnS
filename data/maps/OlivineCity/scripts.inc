@@ -51,8 +51,14 @@ OlivineCity_EventScript_CityTrigger:: @FLAGHEAP
 	clearflag FLAG_HIDE_LIGHTHOUSE_JASMINE
 	clearflag FLAG_HIDE_WHIRL_ISLANDS_TENTACRUEL
 	setvar VAR_GETFLY, 0
-
+	
 	setvar VAR_OLIVINE_CITY_STATE, 1
+
+	@cianwood flags
+	setvar VAR_SUICUNE_ENCOUNTERS, 1
+	clearflag FLAG_HIDE_CIANWOOD_SUICUNE
+	setflag FLAG_HIDE_CIANWOOD_EUSINE
+	setvar VAR_CIANWOOD_CITY_STATE, 1
 	end
 
 OlivineCity_EventScript_SilverTrigger::

@@ -327,6 +327,24 @@
       "var": "VAR_ROUTE27_STATE",
       "var_value": "0",
       "script": "Route27_EventScript_FirstSteps"
+    },
+    {
+      "type": "trigger",
+      "x": 45,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_ROUTE27_BAOBA_CALL",
+      "var_value": "0",
+      "script": "Route27_EventScript_BaobaCall"
+    },
+    {
+      "type": "trigger",
+      "x": 46,
+      "y": 18,
+      "elevation": 0,
+      "var": "VAR_ROUTE27_BAOBA_CALL",
+      "var_value": "0",
+      "script": "Route27_EventScript_BaobaCall"
     }
   ],
   "bg_events": [

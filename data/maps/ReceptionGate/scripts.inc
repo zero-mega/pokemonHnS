@@ -74,7 +74,7 @@ VictoryRoadGate_Text_Officer:
 
 VictoryRoadGate_Text_Kimono:
     .string "Sorry kid, this way is closed until\n"
-    .string "someone deals with that LEGENDARY\p"
+    .string "someone deals with that LEGENDARY\l"
     .string "POKéMON...$"
 
 VictoryRoadGate_Text_NotEnoughBadges:

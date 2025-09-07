@@ -275,7 +275,7 @@
 #define MAP_FUCHSIA_CITY_HOUSE2               (3 | (19 << 8))
 #define MAP_FUCHSIA_CITY_GYM                  (4 | (19 << 8))
 #define MAP_FUCHSIA_ROUTE19GATE               (5 | (19 << 8))
-#define MAP_FUCHSIA_ROUTE15GATE               (6 | (19 << 8))
+#define MAP_FUCHSIA_CITY_ROUTE15_GATE         (6 | (19 << 8))
 #define MAP_FUCHSIA_CITY_SAFARI_ZONE_ENTRANCE (7 | (19 << 8))
 #define MAP_FUCHSIA_CITY_SAFARI_ZONE_BEACH    (8 | (19 << 8))
 #define MAP_FUCHSIA_CITY_SAFARI_ZONE_BRUSH    (9 | (19 << 8))

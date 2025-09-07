@@ -1,17 +1,20 @@
 SaffronCity_MapScripts::
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, SaffronCity_OnFrame
+	map_script MAP_SCRIPT_ON_TRANSITION, SaffronCity_EventScript_CityEnter
 	.byte 0
 
 SaffronCity_OnFrame::
-	map_script_2 VAR_SAFFRON_CITY_STATE, 0,  SaffronCity_EventScript_CityEnter
+	map_script_2 VAR_SAFFRON_CITY_STATE, 0,  SaffronCity_EventScript_BaobaCall
 	.2byte 0
 
 SaffronCity_EventScript_CityEnter::
+	setflag FLAG_VISITED_SAFFRON_CITY
+	end
+
+SaffronCity_EventScript_BaobaCall::
 	pokenavcall SaffronCity_Text_Baoba
 	waitmessage
 	delay 30
 	setflag FLAG_SAFARI_ZONE_EAST_EXPANSION
-	setflag FLAG_VISITED_SAFFRON_CITY
 	setvar VAR_SAFFRON_CITY_STATE, 1
 	end
 
