@@ -2105,8 +2105,7 @@ void BlitMenuInfoIcon(u8 windowId, u8 iconId, u16 x, u16 y)
 void BufferSaveMenuText(u8 textId, u8 *dest, u8 color)
 {
     s32 curFlag;
-    s32 flagCount;
-    u8 *endOfString;
+    u8 badgeCount;
     u8 *string = dest;
 
     *(string++) = EXT_CTRL_CODE_BEGIN;
@@ -2137,13 +2136,31 @@ void BufferSaveMenuText(u8 textId, u8 *dest, u8 color)
             GetMapNameGeneric(string, gMapHeader.regionMapSectionId);
             break;
         case SAVE_MENU_BADGES:
-            for (curFlag = FLAG_BADGE01_GET, flagCount = 0, endOfString = string + 1; curFlag < FLAG_BADGE01_GET + NUM_BADGES; curFlag++)
+        {
+            badgeCount = 0;
+
+            // First 8 badges (contiguous flags)
+            for (curFlag = FLAG_BADGE01_GET; curFlag < FLAG_BADGE01_GET + NUM_BADGES; curFlag++)
             {
                 if (FlagGet(curFlag))
-                    flagCount++;
+                    badgeCount++;
             }
-            *string = flagCount + CHAR_0;
-            *endOfString = EOS;
+
+            // Kanto 8 badges (explicit flags)
+            if (FlagGet(FLAG_DEFEATED_PEWTER_GYM))          badgeCount++;
+            if (FlagGet(FLAG_DEFEATED_CERULEAN_GYM))        badgeCount++;
+            if (FlagGet(FLAG_DEFEATED_VERMILION_GYM))       badgeCount++;
+            if (FlagGet(FLAG_DEFEATED_CELADON_GYM))         badgeCount++;
+            if (FlagGet(FLAG_DEFEATED_SAFFRON_GYM))         badgeCount++;
+            if (FlagGet(FLAG_DEFEATED_FUCHSIA_GYM))         badgeCount++;
+            if (FlagGet(FLAG_DEFEATED_CINNABAR_ISLAND_GYM)) badgeCount++;
+            if (FlagGet(FLAG_DEFEATED_VIRIDIAN_GYM))        badgeCount++;
+
+            // Write 2 digits so "16" fits (matches main menu behavior)
+            string = ConvertIntToDecimalStringN(string, badgeCount, STR_CONV_MODE_LEADING_ZEROS, 2);
+            *string = EOS;
             break;
+        }
+
     }
 }
