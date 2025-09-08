@@ -2319,8 +2319,8 @@ static const s8 sFriendshipEventModifiers[][3] =
     [FRIENDSHIP_EVENT_FAINT_SMALL]     = {-1, -1, -1},
     [FRIENDSHIP_EVENT_FAINT_FIELD_PSN] = {-5, -5, -10},
     [FRIENDSHIP_EVENT_FAINT_LARGE]     = {-5, -5, -10},
-    [FRIENDSHIP_EVENT_HAIRCUT1]        = {50,  50,  50},
-    [FRIENDSHIP_EVENT_HAIRCUT2]        = {40,  40,  40},
+    [FRIENDSHIP_EVENT_HAIRCUT1]        = {99,  99,  99},
+    [FRIENDSHIP_EVENT_HAIRCUT2]        = {66,  66,  66},
 
 };
 
