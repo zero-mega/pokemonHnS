@@ -130,7 +130,7 @@ static bool8 LoadCardGfx(void);
 static void CB2_InitTrainerCard(void);
 static u32 GetCappedGameStat(u8 statId, u32 maxValue);
 static bool8 HasAllFrontierSymbols(void);
-static u8 GetRubyTrainerStars(struct TrainerCard *);
+static u8 GetHnSTrainerStars(struct TrainerCard *);
 static u16 GetCaughtMonsCount(void);
 static void SetPlayerCardData(struct TrainerCard *, u8);
 static void TrainerCard_GenerateCardForPlayer(struct TrainerCard *);
@@ -695,17 +695,17 @@ u32 CountPlayerTrainerStars(void)
     return stars;
 }
 
-static u8 GetRubyTrainerStars(struct TrainerCard *trainerCard)
+static u8 GetHnSTrainerStars(struct TrainerCard *trainerCard) //Updated HnS stars logic
 {
     u8 stars = 0;
 
-    if (trainerCard->hofDebutHours || trainerCard->hofDebutMinutes || trainerCard->hofDebutSeconds)
+    if (FlagGet(FLAG_IS_CHAMPION))
         stars++;
     if (trainerCard->caughtAllHoenn)
         stars++;
-    if (trainerCard->battleTowerStraightWins > 49)
+    if (FlagGet(TRAINER_FLAGS_START + TRAINER_RED_2))
         stars++;
-    if (trainerCard->hasAllPaintings)
+    if (FlagGet(FLAG_IS_KANTO_CHAMPION))
         stars++;
 
     return stars;
@@ -763,7 +763,7 @@ static void SetPlayerCardData(struct TrainerCard *trainerCard, u8 cardType)
         trainerCard->pokeblocksWithFriends = GetCappedGameStat(GAME_STAT_POKEBLOCKS_WITH_FRIENDS, 0xFFFF);
         if (CountPlayerMuseumPaintings() >= CONTEST_CATEGORIES_COUNT)
             trainerCard->hasAllPaintings = TRUE;
-        trainerCard->stars = GetRubyTrainerStars(trainerCard);
+        trainerCard->stars = GetHnSTrainerStars(trainerCard);
         break;
     case CARD_TYPE_RS:
         trainerCard->battleTowerWins = 0;
@@ -783,8 +783,8 @@ static void TrainerCard_GenerateCardForPlayer(struct TrainerCard *trainerCard)
     SetPlayerCardData(trainerCard, CARD_TYPE_EMERALD);
     trainerCard->hasAllFrontierSymbols = HasAllFrontierSymbols();
     trainerCard->frontierBP = gSaveBlock2Ptr->frontier.cardBattlePoints;
-    if (trainerCard->hasAllFrontierSymbols)
-        trainerCard->stars++;
+    //if (trainerCard->hasAllFrontierSymbols)
+    //    trainerCard->stars++;
 
     if (trainerCard->gender == FEMALE)
         trainerCard->unionRoomClass = gUnionRoomFacilityClasses[(trainerCard->trainerId % NUM_UNION_ROOM_CLASSES) + NUM_UNION_ROOM_CLASSES];
