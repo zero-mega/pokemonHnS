@@ -420,3 +420,8 @@ Dunsparce -> Dudunsparce by Move Drill Peck
 Stantler -> Wyrdeer by Move Psycho Cut
 
 Ursaring -> Ursaluna by Level Night Level 42
+
+Ursaring -> Blood Moon Ursaluna by Level at Mt. Moon
+
+Scyther -> Kleavor by Level at Mt. Silver
+
