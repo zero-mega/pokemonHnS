@@ -2356,16 +2356,35 @@ static void MainMenu_FormatSavegameBadges(void)
     u8 badgeCount = 0;
     u32 i;
 
+    // First 8 badges (contiguous flags)
     for (i = FLAG_BADGE01_GET; i < FLAG_BADGE01_GET + NUM_BADGES; i++)
     {
         if (FlagGet(i))
             badgeCount++;
     }
+
+    // Kanto 8 badges (non-contiguous flags)
+    if (FlagGet(FLAG_DEFEATED_PEWTER_GYM))      badgeCount++;
+    if (FlagGet(FLAG_DEFEATED_CERULEAN_GYM))    badgeCount++;
+    if (FlagGet(FLAG_DEFEATED_VERMILION_GYM))   badgeCount++;
+    if (FlagGet(FLAG_DEFEATED_CELADON_GYM))     badgeCount++;
+    if (FlagGet(FLAG_DEFEATED_SAFFRON_GYM))     badgeCount++;
+    if (FlagGet(FLAG_DEFEATED_FUCHSIA_GYM))     badgeCount++;
+    if (FlagGet(FLAG_DEFEATED_CINNABAR_ISLAND_GYM)) badgeCount++;
+    if (FlagGet(FLAG_DEFEATED_VIRIDIAN_GYM))    badgeCount++;
+
+    // Label
     StringExpandPlaceholders(gStringVar4, gText_ContinueMenuBadges);
-    AddTextPrinterParameterized3(2, FONT_NORMAL, 0x6C, 33, sTextColor_MenuInfo, TEXT_SKIP_DRAW, gStringVar4);
-    ConvertIntToDecimalStringN(str, badgeCount, STR_CONV_MODE_LEADING_ZEROS, 1);
-    AddTextPrinterParameterized3(2, FONT_NORMAL, GetStringRightAlignXOffset(FONT_NORMAL, str, 0xD0), 33, sTextColor_MenuInfo, TEXT_SKIP_DRAW, str);
+    AddTextPrinterParameterized3(2, FONT_NORMAL, 0x6C, 33,
+                                 sTextColor_MenuInfo, TEXT_SKIP_DRAW, gStringVar4);
+
+    // Value: print 2 digits so "16" fits
+    ConvertIntToDecimalStringN(str, badgeCount, STR_CONV_MODE_LEADING_ZEROS, 2);
+    AddTextPrinterParameterized3(2, FONT_NORMAL,
+                                 GetStringRightAlignXOffset(FONT_NORMAL, str, 0xD0),
+                                 33, sTextColor_MenuInfo, TEXT_SKIP_DRAW, str);
 }
+
 
 static void LoadMainMenuWindowFrameTiles(u8 bgId, u16 tileOffset)
 {
