@@ -93,6 +93,15 @@ static const u8 sCreditsText_Chronotakular[]                   = _("Chronotakula
 static const u8 sCreditsText_NoVaXCerberuS[]                   = _("NoVa x CerberuS");
 static const u8 sCreditsText_Czarwardy[]                       = _("Czarwardy");
 static const u8 sCreditsText_Phantonomy[]                      = _("Phantonomy");
+static const u8 sCreditsText_TeggyDave[]    = _("TeggyDave");
+static const u8 sCreditsText_HenryChess[]   = _("HenryChess");
+static const u8 sCreditsText_InnerRhymes[]  = _("Inner Rhymes");
+static const u8 sCreditsText_Astralaria[]   = _("Astralaria");
+static const u8 sCreditsText_GPie[]         = _("GPie");
+static const u8 sCreditsText_BillyNaing[]   = _("BillyNaing");
+static const u8 sCreditsText_Penkachu[]     = _("Penkachu");
+static const u8 sCreditsText_EmmaM[]        = _("Emma M");
+
 
 static const u8 sCreditsText_Sprites[]                         = _("Sprites");
 static const u8 sCreditsText_Aveontrainer[]                    = _("AveonTrainer");
@@ -122,6 +131,9 @@ static const u8 sCreditsText_TheSmithPlaysGameplay[]           = _("Crystal Lega
 static const u8 sCreditsText_Dialogue[]                        = _("Dialogue");
 static const u8 sCreditsText_TheSmithPlaysDialogue[]           = _("Crystal Legacy - TSP");
 
+static const u8 sCreditsText_SurfMons[]                        = _("Surfing Pokémon");
+static const u8 sCreditsText_slawter666[] = _("slawter666");
+static const u8 sCreditsText_wally217[]   = _("wally-217");
 
 
 static const u8 sCreditsText_PkmnEmeraldVersion[]             = _("POKéMON EMERALD VERSION");
@@ -349,7 +361,18 @@ static const struct CreditsEntry sCreditsEntry_Chronotakular   = {11, FALSE, sCr
 static const struct CreditsEntry sCreditsEntry_NoVaXCerberuS   = {11, FALSE, sCreditsText_NoVaXCerberuS};
 static const struct CreditsEntry sCreditsEntry_Czarwardy       = {11, FALSE, sCreditsText_Czarwardy};
 static const struct CreditsEntry sCreditsEntry_Phantonomy      = {11, FALSE, sCreditsText_Phantonomy};
+static const struct CreditsEntry sCreditsEntry_TeggyDave   = {11, FALSE, sCreditsText_TeggyDave};
+static const struct CreditsEntry sCreditsEntry_HenryChess  = {11, FALSE, sCreditsText_HenryChess};
+static const struct CreditsEntry sCreditsEntry_InnerRhymes = {11, FALSE, sCreditsText_InnerRhymes};
+static const struct CreditsEntry sCreditsEntry_Astralaria  = {11, FALSE, sCreditsText_Astralaria};
+static const struct CreditsEntry sCreditsEntry_GPie        = {11, FALSE, sCreditsText_GPie};
+static const struct CreditsEntry sCreditsEntry_BillyNaing  = {11, FALSE, sCreditsText_BillyNaing};
+static const struct CreditsEntry sCreditsEntry_Penkachu    = {11, FALSE, sCreditsText_Penkachu};
+static const struct CreditsEntry sCreditsEntry_EmmaM       = {11, FALSE, sCreditsText_EmmaM};
 
+static const struct CreditsEntry sCreditsEntry_SurfMons        = {10, TRUE, sCreditsText_SurfMons};
+static const struct CreditsEntry sCreditsEntry_slawter666 = {11, FALSE, sCreditsText_slawter666};
+static const struct CreditsEntry sCreditsEntry_wally217   = {11, FALSE, sCreditsText_wally217};
 
 static const struct CreditsEntry sCreditsEntry_EmptyString                      = { 0, FALSE, sCreditsText_EmptyString};
 static const struct CreditsEntry sCreditsEntry_PkmnEmeraldVersion               = { 7,  TRUE, sCreditsText_PkmnEmeraldVersion};
@@ -578,8 +601,8 @@ static const struct CreditsEntry *const sCreditsEntryPointerTable[PAGE_COUNT][EN
     [PAGE_HNS_GAMEPLAY] = {
         &sCreditsEntry_Gameplay,
         &sCreditsEntry_TheSmithPlaysGameplay,
-        _,
-        _,
+        &sCreditsEntry_slawter666,
+        &sCreditsEntry_wally217,
         _,
     },
     [PAGE_HNS_PLAYTESTERS_1] = {
@@ -608,19 +631,19 @@ static const struct CreditsEntry *const sCreditsEntryPointerTable[PAGE_COUNT][EN
         &sCreditsEntry_NoVaXCerberuS,
         &sCreditsEntry_Czarwardy,
         &sCreditsEntry_Phantonomy,
-        _,
+        &sCreditsEntry_TeggyDave,
     },
     [PAGE_HNS_PLAYTESTERS_5] = {
-        _,
-        _,
-        _,
-        _,
-        _,
+        &sCreditsEntry_Playtesters,
+        &sCreditsEntry_HenryChess,
+        &sCreditsEntry_InnerRhymes,
+        &sCreditsEntry_Astralaria,
+        &sCreditsEntry_GPie,
     },
     [PAGE_HNS_PLAYTESTERS_6] = {
-        _,
-        _,
-        _,
+        &sCreditsEntry_BillyNaing,
+        &sCreditsEntry_Penkachu,
+        &sCreditsEntry_EmmaM,
         _,
         _,
     },
