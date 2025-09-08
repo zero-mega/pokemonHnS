@@ -96,7 +96,7 @@ PokemonLeague_WillsRoom_EventScript_WillDefeated::
 PokemonLeague_WillsRoom_Text_Before:
     .string "Welcome to POKéMON LEAGUE,\n"
     .string "{PLAYER}.\p"
-    .string "Allow me to intro-duce myself. I\n"
+    .string "Allow me to introduce myself. I\n"
     .string "am WILL.\p"
     .string "I have trained all around the\n"
     .string "world,\p"
