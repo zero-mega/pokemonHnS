@@ -131,7 +131,7 @@ VermilionCity_EventScript_Nerd::
 
 VermilionCity_EventScript_Snorlax::
 	lock
-	goto_if_set FLAG_GOT_KANTO_RADIO, VermilionCity_EventScript_SnorlaxWakeUp
+	goto_if_set FLAG_KANTO_RADIO_GOT, VermilionCity_EventScript_SnorlaxWakeUp
 	msgbox VermilionCity_Text_SnorlaxSleeping, MSGBOX_DEFAULT
 	closemessage
 	release
@@ -300,7 +300,7 @@ VermilionCity_Text_SnorlaxSleeping:
 	.string "SNORLAX is snoring peacefully…$"
 
 VermilionCity_Text_RadioNearSnorlax:
-	.string "The POKéGEAR was placed near the\n"
+	.string "The RADIO was placed near the\n"
 	.string "sleeping SNORLAX…\p"
 	.string "…\p"
 	.string "SNORLAX woke up!$"
