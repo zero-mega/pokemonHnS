@@ -69,7 +69,7 @@ Route26_Text_CooltrainerfJoyceBeaten:
     .string "No! I don't believe this!$"
 
 Route26_Text_CooltrainerfJoyceAfter:
-    .string "I've defeated eight GYM LEADERS,\p"
+    .string "I've defeated eight GYM LEADERS,\n"
     .string "so I was feeling confident.\p"
     .string "I'll have to try harder next time.$"
 
