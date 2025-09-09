@@ -289,7 +289,7 @@ $(OBJEVENTGFXDIR)/people/cook.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/people/eusine.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/people/cycling_triathlete_m.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/people/biker.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/people/fat_man.4bpp: %.4bpp: %.png
@@ -457,7 +457,7 @@ $(OBJEVENTGFXDIR)/people/engineer.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/people/burglar.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
-$(OBJEVENTGFXDIR)/people/burglar_swimming.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/people/tuber_m_swimming.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 2
 
 $(OBJEVENTGFXDIR)/people/union_room_attendant.4bpp: %.4bpp: %.png
