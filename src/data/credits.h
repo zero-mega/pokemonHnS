@@ -93,14 +93,14 @@ static const u8 sCreditsText_Chronotakular[]                   = _("Chronotakula
 static const u8 sCreditsText_NoVaXCerberuS[]                   = _("NoVa x CerberuS");
 static const u8 sCreditsText_Czarwardy[]                       = _("Czarwardy");
 static const u8 sCreditsText_Phantonomy[]                      = _("Phantonomy");
-static const u8 sCreditsText_TeggyDave[]    = _("TeggyDave");
-static const u8 sCreditsText_HenryChess[]   = _("HenryChess");
-static const u8 sCreditsText_InnerRhymes[]  = _("Inner Rhymes");
-static const u8 sCreditsText_Astralaria[]   = _("Astralaria");
-static const u8 sCreditsText_GPie[]         = _("GPie");
-static const u8 sCreditsText_BillyNaing[]   = _("BillyNaing");
-static const u8 sCreditsText_Penkachu[]     = _("Penkachu");
-static const u8 sCreditsText_EmmaM[]        = _("Emma M");
+static const u8 sCreditsText_TeggyDave[]                       = _("TeggyDave");
+static const u8 sCreditsText_HenryChess[]                      = _("HenryChess");
+static const u8 sCreditsText_InnerRhymes[]                     = _("Inner Rhymes");
+static const u8 sCreditsText_Astralaria[]                      = _("Astralaria");
+static const u8 sCreditsText_GPie[]                            = _("GPie");
+static const u8 sCreditsText_BillyNaing[]                      = _("BillyNaing");
+static const u8 sCreditsText_Penkachu[]                        = _("Penkachu");
+static const u8 sCreditsText_EmmaM[]                           = _("Emma M");
 
 
 static const u8 sCreditsText_Sprites[]                         = _("Sprites");

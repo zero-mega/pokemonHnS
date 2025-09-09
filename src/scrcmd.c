@@ -2901,6 +2901,7 @@ static const u8 sOddEggShinyNameList[][PLAYER_NAME_LENGTH + 1] = {
     _("Josh"),
     _("Meara"),
     _("Anthony"),
+    _("RAINBOW"),
     _("FERRO"),
     _("Kris"),
     _("Chad"),
