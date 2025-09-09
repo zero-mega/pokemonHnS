@@ -788,7 +788,7 @@ IlexForest_Text_BugCatcherWayneBeaten:
 
 IlexForest_Text_BugCatcherWayneAfter:
 	.string "A POKéMON I've never seen before\n"
-	.string "fell out of the tree when I used\p"
+	.string "fell out of the tree when I used\l"
 	.string "HEADBUTT.\p"
 	.string "I ought to use HEADBUTT in other\n"
 	.string "places too.$"

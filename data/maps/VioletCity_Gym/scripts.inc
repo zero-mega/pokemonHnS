@@ -146,8 +146,8 @@ VioletGym_Text_GymGuide_Intro:
 	.string "that loves to eat BERRIES.\p"
 	.string "While it's not the strongest,\n"
 	.string "it can take a lot of hits.\p"
-	.string "You can hurt it with ELECTRIC-\n"
-	.string "and ROCK-type moves, but watch out\p"
+	.string "You can hurt it with ELECTRIC \n"
+	.string "and ROCK-type moves, but watch out\l"
 	.string "for MUD-SLAP!\p"
 	.string "If you want more help, go visit the\n"
 	.string "POKéMON ACADEMY.\p"
@@ -156,7 +156,7 @@ VioletGym_Text_GymGuide_Intro:
 
 VioletGym_Text_GymGuide_Win:
 	.string "Nice battle! Keep it up,\n"
-	.string "and you'll be the CHAMP in no\p"
+	.string "and you'll be the CHAMP in no\l"
 	.string "time at all!$"
 
 VioletCity_Gym_EventScript_Statue::

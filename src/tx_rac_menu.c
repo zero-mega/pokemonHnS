@@ -714,9 +714,9 @@ static bool8 CheckConditions(int selection)
 static const u8 sText_Empty[]               = _("");
 static const u8 sText_Description_Save[]    = _("Save choices and continue...");
 
-static const u8 sText_Description_Mode_Gamemode_Classic[]         = _("Recommended settings.");
-static const u8 sText_Description_Mode_Gamemode_Modern[]          = _("Choose your own rules.");
-static const u8 sText_Description_Mode_Gamemode_Custom[]          = _("Choose your own rules.");
+static const u8 sText_Description_Mode_Gamemode_Classic[]         = _("Recommended settings.\n{COLOR 7}{COLOR 8}NOTE: All selections are PERMANENT.");
+static const u8 sText_Description_Mode_Gamemode_Modern[]          = _("Choose your own rules.\n{COLOR 7}{COLOR 8}NOTE: All selections are PERMANENT.");
+static const u8 sText_Description_Mode_Gamemode_Custom[]          = _("Choose your own rules.\n{COLOR 7}{COLOR 8}NOTE: All selections are PERMANENT.");
 static const u8 sText_Description_Mode_AlternateSpawns_Off[]      = _("{COLOR 7}{COLOR 8}This feature is not currently\nsupported for this game.");
 static const u8 sText_Description_Mode_AlternateSpawns_On[]       = _("{COLOR 7}{COLOR 8}This feature is not currently\nsupported for this game.");
 static const u8 sText_Description_Mode_InfiniteTMs_On[]           = _("TMs are reusable.\nRecommended.");
@@ -869,9 +869,9 @@ static const u8 sText_Description_Difficulty_Party_Limit[]              = _("{CO
 static const u8 sText_Description_Difficulty_LevelCap_Base[]            = _("No level cap. Overleveling possible.\n");
 static const u8 sText_Description_Difficulty_LevelCap_Normal[]          = _("Maximum level is based on the\nnext gym's {COLOR 7}{COLOR 8}highest POKéMON level.");
 static const u8 sText_Description_Difficulty_LevelCap_Hard[]            = _("Maximum level is based on the\nnext gym's {COLOR 7}{COLOR 8}lowest POKéMON level.");
-static const u8 sText_Description_Difficulty_ExpMultiplier_1_0[]        = _("POKéMON gain normal EXP. Points.");
-static const u8 sText_Description_Difficulty_ExpMultiplier_1_5[]        = _("POKéMON gain 50 percent more EXP.\nPoints!");
-static const u8 sText_Description_Difficulty_ExpMultiplier_2_0[]        = _("POKéMON gain double EXP. Points!");
+static const u8 sText_Description_Difficulty_ExpMultiplier_1_0[]        = _("POKéMON gain normal EXP. Points.\n{COLOR 7}{COLOR 8}The game is balanced for x1.0.");
+static const u8 sText_Description_Difficulty_ExpMultiplier_1_5[]        = _("POKéMON gain 50 percent more EXP.\nPoints! {COLOR 7}{COLOR 8}You will be VERY overleveled!");
+static const u8 sText_Description_Difficulty_ExpMultiplier_2_0[]        = _("POKéMON gain double EXP. Points! \n{COLOR 7}{COLOR 8}You will be EXTREMELY overleveled!");
 static const u8 sText_Description_Difficulty_ExpMultiplier_0_0[]        = _("POKéMON gain {COLOR 7}{COLOR 8}ZERO EXP. Points!!!");
 static const u8 sText_Description_Difficulty_Items_Player_Yes[]         = _("The player can use battle items.");
 static const u8 sText_Description_Difficulty_Items_Player_No[]          = _("The player can {COLOR 7}{COLOR 8}NOT use battle items.\nHold items are allowed!");
@@ -2184,8 +2184,8 @@ static void DrawChoices_Mode_Classic_Modern_Selector(int selection, int y)
         sOptions->sel_mode[MENUITEM_MODE_INFINITE_TMS]              = !TX_MODE_INFINITE_TMS;
         gSaveBlock1Ptr->tx_Mode_InfiniteTMs = 1;
         FlagClear (FLAG_FINITE_TMS);
-        sOptions->sel_mode[MENUITEM_MODE_SURVIVE_POISON]            = TX_MODE_SURVIVE_POISON;
-        gSaveBlock1Ptr->tx_Mode_PoisonSurvive = 0;
+        sOptions->sel_mode[MENUITEM_MODE_SURVIVE_POISON]            = !TX_MODE_SURVIVE_POISON;
+        gSaveBlock1Ptr->tx_Mode_PoisonSurvive = 1;
         sOptions->sel_mode[MENUITEM_MODE_SYNCHRONIZE]               = !TX_MODE_NEW_SYNCHRONIZE;
         gSaveBlock1Ptr->tx_Mode_Synchronize = 1;
         sOptions->sel_mode[MENUITEM_MODE_MINTS]                     = !TX_MODE_MINTS;
