@@ -308,12 +308,12 @@ DarkCave SouthSide — Day
 Land:
   Slot 1: Zubat L2 — 20%
   Slot 2: Zubat L2 — 20%
-  Slot 3: Zubat L2 — 10%
+  Slot 3: Teddiursa L2 — 10%
   Slot 4: Geodude L3-4 — 10%
   Slot 5: Geodude L3-4 — 10%
   Slot 6: Geodude L3-4 — 10%
-  Slot 7: Teddiursa L2 — 5%
-  Slot 8: Teddiursa L3-4 — 5%
+  Slot 7: Dunsparce L2 — 5%
+  Slot 8: Zubat L3-4 — 5%
   Slot 9: Teddiursa L2 — 4%
   Slot 10: Larvitar L2 — 4%
   Slot 11: Larvitar L4 — 1%
@@ -2718,7 +2718,7 @@ Fishing — Super Rod:
   Slot 10: Magikarp L10 — 1%
 
 
-DarkCave2 — Day
+DarkCave NorthSide — Day
 ----------------------------------------
 Land:
   Slot 1: Geodude L33 — 20%
@@ -2758,7 +2758,7 @@ Fishing — Super Rod:
   Slot 10: Goldeen L40 — 1%
 
 
-DarkCave2 Night — Night
+DarkCave NorthSide Night — Night
 ----------------------------------------
 Land:
   Slot 1: Geodude L33 — 20%
