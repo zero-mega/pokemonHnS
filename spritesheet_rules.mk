@@ -289,7 +289,7 @@ $(OBJEVENTGFXDIR)/people/cook.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/people/eusine.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/people/kimono_girl.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/people/cycling_triathlete_m.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/people/fat_man.4bpp: %.4bpp: %.png
