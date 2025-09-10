@@ -7664,7 +7664,7 @@
     {
       "id": "LAYOUT_SAFFRON_CITY_FIGHTING_DOJO",
       "name": "SaffronCity_FightingDojo_Layout",
-      "width": 23,
+      "width": 29,
       "height": 16,
       "primary_tileset": "gTileset_Johto_Building",
       "secondary_tileset": "gTileset_EcruteakTheater",
