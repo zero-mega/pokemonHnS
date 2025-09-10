@@ -14,8 +14,20 @@ IlexForest_MapScripts::
 	.byte 0
 
 IlexForest_OnTransition: 
+	call_if_eq VAR_ILEX_FOREST_FARFETCHD, 1, IlexForest_EventScript_ReenterWhenFarfetchdLeaving
+	call_if_eq VAR_ILEX_FOREST_FARFETCHD, 2, IlexForest_EventScript_ReenterDuringCutScene
 	callnative SetTimeBasedEncounters
 	end	
+
+IlexForest_EventScript_ReenterWhenFarfetchdLeaving::
+	setobjectxyperm LOCALID_ILEX_FOREST_FARFETCHD_1, 33, 51
+	return
+
+IlexForest_EventScript_ReenterDuringCutScene::
+	clearflag FLAG_HIDE_ILEX_FOREST_MASTER
+	clearflag FLAG_HIDE_ILEX_FOREST_APPRENTICE
+	setobjectxyperm LOCALID_ILEX_FOREST_FARFETCHD_1, 28, 42
+	return
 
 IlexForest_EventScript_Apprentice::
 	lock
@@ -65,6 +77,7 @@ IlexForest_EventScript_Farfetchd_1B::
 	applymovement LOCALID_ILEX_FOREST_FARFETCHD_1, IlexForest_Movement_Farfetchd_1B
 	waitmovement 0
 	setvar VAR_ILEX_FOREST_FARFETCHD, 1
+	setobjectxyperm LOCALID_ILEX_FOREST_FARFETCHD_1, 33, 51
 	release
 	end
 
@@ -157,6 +170,7 @@ IlexForest_EventScript_Farfetchd_Leave::
 	goto_if_eq VAR_FACING, DIR_EAST, IlexForest_EventScript_Farfetchd_Return
 	applymovement LOCALID_ILEX_FOREST_FARFETCHD_1, IlexForest_Movement_Farfetchd_Leave
 	waitmovement 0
+	setobjectxyperm LOCALID_ILEX_FOREST_FARFETCHD_1, 28, 42
 	setvar VAR_ILEX_FOREST_FARFETCHD, 2
 	clearflag FLAG_HIDE_ILEX_FOREST_KIMONO
 	clearflag FLAG_HIDE_AZALEA_TOWN_FARFETCHD
