@@ -103,8 +103,9 @@ NewBarkTown_Lab_EventScript_ElmRefused::
 NewBarkTown_Lab_EventScript_ElmAccepted::
 	msgbox NewBarkTown_Lab_Text_ElmAccepted, MSGBOX_DEFAULT
 	msgbox NewBarkTown_Lab_Text_ElmResearchAmbitions, MSGBOX_DEFAULT
+	delay 30
 	playse SE_PC_LOGIN
-	delay 40
+	waitse
 	playse SE_PIN
 	applymovement LOCALID_ELM, Common_Movement_QuestionMark
 	delay 60
