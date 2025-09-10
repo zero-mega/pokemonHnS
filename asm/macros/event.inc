@@ -2060,3 +2060,8 @@
 	.2byte \number
 	.endm
 
+	@ Gives the player the number of BP (battle points) inputted
+	.macro givebp number:req
+	.byte 0xf0
+	.2byte \number
+	.endm

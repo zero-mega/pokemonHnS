@@ -232,14 +232,15 @@ gScriptCmdTable::
 	.4byte ScrCmd_calculatemonstats                 @ 0xe5
 	.4byte ScrCmd_deleteparty                       @ 0xe6
 	.4byte ScrCmd_callfunc                          @ 0xe7
-	.4byte ScrCmd_applymovement2					@0xe8
-	.4byte ScrCmd_givenamedmon						@0xe9
-	.4byte ScrCmd_removenamedmon					@0xea
-	.4byte ScrCmd_remove5mons						@0xeb
-	.4byte ScrCmd_setwildbattleshiny                @0xec
-	.4byte ScrCmd_removegenericmon					@0xed
-	.4byte ScrCmd_baobacheckmon						@0xee
-	.4byte ScrCmd_giveoddegg						@0xef
+	.4byte ScrCmd_applymovement2					@ 0xe8 start HnS macros
+	.4byte ScrCmd_givenamedmon						@ 0xe9
+	.4byte ScrCmd_removenamedmon					@ 0xea
+	.4byte ScrCmd_remove5mons						@ 0xeb
+	.4byte ScrCmd_setwildbattleshiny                @ 0xec
+	.4byte ScrCmd_removegenericmon					@ 0xed
+	.4byte ScrCmd_baobacheckmon						@ 0xee
+	.4byte ScrCmd_giveoddegg						@ 0xef
+	.4byte ScrCmd_givebp						@ 0xf0
 
 gScriptCmdTableEnd::
 	.4byte ScrCmd_nop

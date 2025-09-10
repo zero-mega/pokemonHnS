@@ -164,7 +164,7 @@ NewBarkTown_EventScript_Door::
 	end
 
 NewBarkTown_EventScript_TestMan1::
-	frontier_givepoints
+	givebp 4
 	msgbox BattleFrontier_Text_ObtainedXBattlePoints, MSGBOX_GETPOINTS
 	end
 
