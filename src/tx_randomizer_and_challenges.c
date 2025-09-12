@@ -380,29 +380,38 @@ u8 GetCurrentPartyLevelCap(void)
 {
     u8 badgeCount = GetCurrentBadgeCount();
 
-    if (TX_CHALLENGE_LEVEL_CAP_DEBUG != 0) //debug allways overwrites the rest
+    // Safety clamp in case badgeCount ever drifts out of range
+    if (badgeCount > LEVEL_CAP_BADGE_8)
+        badgeCount = LEVEL_CAP_BADGE_8;
+
+    // Debug override
+    if (TX_CHALLENGE_LEVEL_CAP_DEBUG != 0)
         return TX_CHALLENGE_LEVEL_CAP_DEBUG;
 
-    if (FlagGet(FLAG_IS_KANTO_CHAMPION)) //after beating the second E4 remove the cap
+    switch (gSaveBlock1Ptr->tx_Challenges_LevelCap)
+    {
+    case 0: // Level caps OFF
         return MAX_LEVEL;
 
-    if (FlagGet(FLAG_IS_CHAMPION)) //after beating first E4, bring cap up to 70
-        return KANTO_MAX_LEVEL;
-    
-    if (gSaveBlock1Ptr->tx_Challenges_LevelCap == 1) //normal level cap
-        if (gSaveBlock2Ptr->optionsDifficulty == 2) //hard difficulty
-            return sLevelCapTable_Normal_Caps_And_Hard_Mode[badgeCount];
-        else
-            return sLevelCapTable_Normal[badgeCount];
+    case 1: // Normal HnS caps
+    case 2: // Hard   HnS caps
+        // Post-E4 overrides when caps are ON
+        if (FlagGet(FLAG_IS_KANTO_CHAMPION))
+            return MAX_LEVEL;        // after Kanto E4, no cap
+        if (FlagGet(FLAG_IS_CHAMPION))
+            return KANTO_MAX_LEVEL;  // after first E4, cap = 70
 
-    if (gSaveBlock1Ptr->tx_Challenges_LevelCap == 2) //hard level cap
-        if (gSaveBlock2Ptr->optionsDifficulty == 2) //hard difficulty
-            return sLevelCapTable_Hard_Caps_And_Hard_Mode[badgeCount];
+        if (gSaveBlock1Ptr->tx_Challenges_LevelCap == 1)
+            return sLevelCapTable_Normal[badgeCount];
         else
             return sLevelCapTable_Hard[badgeCount];
 
-    return MAX_LEVEL;
+    default:
+        // Fallback: treat unknown setting as "no cap"
+        return MAX_LEVEL;
+    }
 }
+
 
 // Scaling IVs and EVs
 static const u8 sIV_Table[] = 
