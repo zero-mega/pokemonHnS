@@ -265,8 +265,6 @@ DragonsDen_Shrine_EventScript_ClairEnter::
 	setflag FLAG_BADGE08_GET
 	setflag FLAG_DEFEATED_BLACKTHORN_GYM
 	addvar VAR_NUM_BADGES, 1
-	setvar VAR_0x8008, 8
-	call Common_EventScript_SetGymTrainers
 
 	applymovement2 LOCALID_DRAGONSDEN3_ELDER, DragonsDen_Shrine_Movement_ElderReturnToPlayer
 	waitmovement 0
