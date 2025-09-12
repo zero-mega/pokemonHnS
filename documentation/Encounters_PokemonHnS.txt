@@ -7950,7 +7950,7 @@ Land:
   Slot 7: Ditto L58-67 — 5%
   Slot 8: Kadabra L58-67 — 5%
   Slot 9: Parasect L55-64 — 4%
-  Slot 10: None L5 — 4%
+  Slot 10: Crobat L67 — 4%
   Slot 11: Crobat L67 — 1%
   Slot 12: Annihilape L67 — 1%
 
