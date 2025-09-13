@@ -5576,7 +5576,7 @@
       "name": "MtMortar_1F_South_Layout",
       "width": 72,
       "height": 54,
-      "primary_tileset": "gTileset_Johto_General",
+      "primary_tileset": "gTileset_Johto_NorthEast",
       "secondary_tileset": "gTileset_Cave_Gray",
       "border_filepath": "data/layouts/MtMortar_1F_South/border.bin",
       "blockdata_filepath": "data/layouts/MtMortar_1F_South/map.bin"

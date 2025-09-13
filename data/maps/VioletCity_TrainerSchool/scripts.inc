@@ -49,12 +49,30 @@ VioletCity_TrainerSchool_EventScript_Girl::
 	release
 	end
 
+VioletCity_TrainerSchool_EventScript_Twin::
+	msgbox VioletCity_TrainerSchool_Text_Twin, MSGBOX_NPC
+	end
+
 VioletCity_TrainerSchool_EventScript_BlackBoard::
 	lock
 	msgbox VioletCity_TrainerSchool_Text_Blackboard, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
+
+VioletCity_TrainerSchool_Text_Twin:
+	.string "I'm not a GBA kid, but I love\n"
+	.string "playing POKéMON games!\p"
+	.string "In the old games, you had to battle\n"
+	.string "a lot of wild POKéMON to get enough\l"
+	.string "EXP.\p"
+	.string "But in newer games, the EXP share\n"
+	.string "makes your POKéMON level up too fast.\p"
+	.string "In this game, the EXP share is\n"
+	.string "balanced to put your POKéMON at just\l"
+	.string "the right level. Or slightly higher,\l"
+	.string "depending on how many battles you do.\p"
+	.string "You choose how you want to play!$"
 
 VioletCity_TrainerSchool_Text_EarlIntro:
 	.string "EARL, I am!\p"

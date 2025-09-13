@@ -213,6 +213,10 @@ OlivineCity_EventScript_PortSign::
 	msgbox OlivineCity_Text_PortSign, MSGBOX_SIGN
 	end
 
+OlivineCity_EventScript_CafeSign::
+	msgbox OlivineCity_Text_CafeSign, MSGBOX_SIGN
+	end
+
 OlivineCity_EventScript_GymSign::
 	lock
 	msgbox OlivineCity_Text_GymSign, MSGBOX_SIGN
@@ -250,6 +254,11 @@ OlivineCity_EventScript_EonTicketWomanAfter::
 	closemessage
 	release
 	end
+
+OlivineCity_Text_CafeSign:
+	.string "OLIVINE CAFE\n"
+	.string "WHERE STRONG SAILORS ENJOY\l"
+	.string "HEARTY MEALS OF STRENGTH$"
 
 OlivineCity_Text_EonTicketWoman1:
 	.string "My name is MARY!\p"
