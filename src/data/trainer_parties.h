@@ -19250,7 +19250,7 @@ static const struct TrainerMonItemCustomMoves sParty_Bugsy[] = { //LeaderGroup
     .lvl = 15,
     .species = SPECIES_LEDIAN,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_THUNDER_PUNCH, MOVE_COMET_PUNCH, MOVE_SUPERSONIC, MOVE_REFLECT}
+    .moves = {MOVE_BULLET_SEED, MOVE_COMET_PUNCH, MOVE_SUPERSONIC, MOVE_REFLECT}
     },
     {
     .iv = 100,
