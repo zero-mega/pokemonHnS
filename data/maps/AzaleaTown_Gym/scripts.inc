@@ -700,8 +700,8 @@ AzaleaTown_Gym_Text_FuryCutterSpeech:
 	.string "TM09 contains BULLET SEED.\p"
 	.string "It shoots a torrent of seeds\n"
 	.string "between 2 and 5 times every turn.\p"
-	.string "So even though the power is 20, it\n"
-	.string "is really between 40 and 100 power!\p"
+	.string "So even though the power is 25, it\n"
+	.string "is really between 50 and 125 power!\p"
 	.string "Isn't that great?\n"
 	.string "I discovered it!$"
 
