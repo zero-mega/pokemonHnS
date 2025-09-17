@@ -128,6 +128,48 @@ enum
 #define TILE_FILLED_JAM_HEART    0x103C
 #define TILE_EMPTY_JAM_HEART     0x103D
 
+// Tags — use your free slots (you told me 30006/30005 were open earlier)
+#define TAG_SHINY_STAR_TILE 30006
+#define TAG_SHINY_STAR_PAL  30005
+
+static const u16 sMarkings_Pal[] = INCBIN_U16("graphics/summary_screen/markings.gbapal");
+
+// Use your shiny_icon asset. Toolchain should emit the .4bpp.lz during build.
+static const u32 sStarObjTiles[] = INCBIN_U32("graphics/summary_screen/shiny_icon.4bpp.lz");
+
+// 8x8, 4bpp OAM (small star)
+static const struct OamData sStarObjOamData =
+{
+    .y = 0,
+    .affineMode = ST_OAM_AFFINE_OFF,
+    .objMode = ST_OAM_OBJ_NORMAL,
+    .mosaic = FALSE,
+    .bpp = ST_OAM_4BPP,
+    .shape = SPRITE_SHAPE(8x8),
+    .x = 0,
+    .matrixNum = 0,
+    .size = SPRITE_SIZE(8x8),
+    .tileNum = 0,
+    .priority = 3,   // same as ball, adjust if needed
+    .paletteNum = 0,
+};
+
+// Single-frame anim
+static const union AnimCmd sStarObjAnim0[] = {
+    ANIMCMD_FRAME(0, 0),
+    ANIMCMD_END,
+};
+static const union AnimCmd *const sStarObjAnimTable[] = {
+    sStarObjAnim0,
+};
+
+// Small holder like FR
+struct ShinyStarObjData {
+    struct Sprite *sprite;
+    u16 tileTag, palTag;
+};
+static EWRAM_DATA struct ShinyStarObjData *sShinyStarObjData = NULL;
+
 static EWRAM_DATA struct PokemonSummaryScreenData
 {
     /*0x00*/ union {
@@ -1150,7 +1192,6 @@ static const struct SpriteTemplate sSpriteTemplate_StatusCondition =
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = SpriteCallbackDummy
 };
-static const u16 sMarkings_Pal[] = INCBIN_U16("graphics/summary_screen/markings.gbapal");
 
 // code
 static u8 ShowSplitIcon(u32 split)
@@ -1211,6 +1252,100 @@ void ShowPokemonSummaryScreen(u8 mode, void *mons, u8 monIndex, u8 maxMonIndex, 
         CreateMonSpritesGfxManager(MON_SPR_GFX_MANAGER_A, MON_SPR_GFX_MODE_NORMAL);
 
     SetMainCallback2(CB2_InitSummaryScreen);
+}
+
+
+// Create (FR pattern: decompress into temp buffer, then LoadSpriteSheet/Palette)
+static void CreateShinyStarObj(u16 tileTag, u16 palTag)
+{
+    void *gfxBuffer = NULL;
+
+    if (sShinyStarObjData != NULL)
+        return;
+
+    sShinyStarObjData = AllocZeroed(sizeof(*sShinyStarObjData));
+    if (sShinyStarObjData == NULL)
+        return;
+
+    // One 8x8 tile (32 bytes). Keep 0x40 (FR style) to be safe if your converter emits 2 tiles.
+    gfxBuffer = AllocZeroed(0x20 * 2);
+    if (gfxBuffer == NULL)
+        goto fail;
+
+    LZ77UnCompWram(sStarObjTiles, gfxBuffer);
+
+    struct SpriteSheet sheet = {
+        .data = gfxBuffer,
+        .size = 0x20 * 2, // safe for 1–2 tiles
+        .tag  = tileTag,
+    };
+    struct SpritePalette pal = { .data = sMarkings_Pal, .tag = palTag };
+    struct SpriteTemplate tmpl = {
+        .tileTag = tileTag,
+        .paletteTag = palTag,
+        .oam = &sStarObjOamData,
+        .anims = sStarObjAnimTable,
+        .images = NULL,
+        .affineAnims = gDummySpriteAffineAnimTable,
+        .callback = SpriteCallbackDummy,
+    };
+
+    LoadSpriteSheet(&sheet);
+    LoadSpritePalette(&pal);
+
+    // Position: bottom-left, just below the Poké Ball (ball is at 16,136 in your file).
+    // Tweak a couple pixels if you want it tighter/looser.
+    u8 spriteId = CreateSprite(&tmpl, 16, 151, 0);
+    sShinyStarObjData->sprite = &gSprites[spriteId];
+    sShinyStarObjData->tileTag = tileTag;
+    sShinyStarObjData->palTag  = palTag;
+
+    // Start hidden; we’ll reveal if shiny.
+    sShinyStarObjData->sprite->invisible = TRUE;
+
+fail:
+    if (gfxBuffer)
+        Free(gfxBuffer);
+}
+
+static void DestroyShinyStarObj(void)
+{
+    if (sShinyStarObjData == NULL)
+        return;
+
+    if (sShinyStarObjData->sprite != NULL)
+        DestroySpriteAndFreeResources(sShinyStarObjData->sprite);
+
+    Free(sShinyStarObjData);
+    sShinyStarObjData = NULL;
+}
+
+// FR-style gate: only visible if current mon is shiny and not an egg
+static void HideShowShinyStar(bool8 invisible)
+{
+    if (sShinyStarObjData == NULL || sShinyStarObjData->sprite == NULL)
+        return;
+
+    if (IsMonShiny(&sMonSummaryScreen->currentMon) && !sMonSummaryScreen->summary.isEgg)
+        sShinyStarObjData->sprite->invisible = invisible;
+    else
+        sShinyStarObjData->sprite->invisible = TRUE;
+
+    // Keep it anchored bottom-left. If you later add a page with a different layout,
+    // you can branch here like FR and move the icon.
+    sShinyStarObjData->sprite->x = 16;
+    sShinyStarObjData->sprite->y = 151;
+}
+
+static void ShowShinyStarObjIfMonShiny(void)
+{
+    if (sShinyStarObjData == NULL || sShinyStarObjData->sprite == NULL)
+        return;
+
+    if (IsMonShiny(&sMonSummaryScreen->currentMon) && !sMonSummaryScreen->summary.isEgg)
+        HideShowShinyStar(FALSE);
+    else
+        HideShowShinyStar(TRUE);
 }
 
 void ShowSelectMovePokemonSummaryScreen(struct Pokemon *mons, u8 monIndex, u8 maxMonIndex, void (*callback)(void), u16 newMove)
@@ -1327,6 +1462,7 @@ static bool8 LoadGraphics(void)
         break;
     case 17:
         sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_MON] = LoadMonGfxAndSprite(&sMonSummaryScreen->currentMon, &sMonSummaryScreen->switchCounter);
+        ShowShinyStarObjIfMonShiny();
         if (sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_MON] != SPRITE_NONE)
         {
             sMonSummaryScreen->switchCounter = 0;
@@ -1339,6 +1475,8 @@ static bool8 LoadGraphics(void)
         break;
     case 19:
         CreateCaughtBallSprite(&sMonSummaryScreen->currentMon);
+        CreateShinyStarObj(TAG_SHINY_STAR_TILE, TAG_SHINY_STAR_PAL);
+        ShowShinyStarObjIfMonShiny();                    // add this line
         gMain.state++;
         break;
     case 20:
@@ -1609,6 +1747,7 @@ static void CloseSummaryScreen(u8 taskId)
         gLastViewedMonIndex = sMonSummaryScreen->curMonIndex;
         SummaryScreen_DestroyAnimDelayTask();
         ResetSpriteData();
+        DestroyShinyStarObj();
         FreeAllSpritePalettes();
         StopCryAndClearCrySongs();
         m4aMPlayVolumeControl(&gMPlayInfo_BGM, TRACKS_ALL, 0x100);
@@ -1771,6 +1910,8 @@ static void Task_ChangeSummaryMon(u8 taskId)
         break;
     case 6:
         CreateCaughtBallSprite(&sMonSummaryScreen->currentMon);
+        CreateShinyStarObj(TAG_SHINY_STAR_TILE, TAG_SHINY_STAR_PAL);
+        ShowShinyStarObjIfMonShiny();                    // add this line
         break;
     case 7:
         if (sMonSummaryScreen->summary.ailment != AILMENT_NONE)
@@ -1780,9 +1921,11 @@ static void Task_ChangeSummaryMon(u8 taskId)
         break;
     case 8:
         sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_MON] = LoadMonGfxAndSprite(&sMonSummaryScreen->currentMon, &data[1]);
+        ShowShinyStarObjIfMonShiny();
         if (sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_MON] == SPRITE_NONE)
             return;
         gSprites[sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_MON]].data[2] = 1;
+        ShowShinyStarObjIfMonShiny();
         TryDrawExperienceProgressBar();
         data[1] = 0;
         break;
@@ -1932,6 +2075,7 @@ static void PssScrollRightEnd(u8 taskId) // display right
     DrawPagination();
     PutPageWindowTilemaps(sMonSummaryScreen->currPageIndex);
     SetTypeIcons();
+    ShowShinyStarObjIfMonShiny();
     TryDrawExperienceProgressBar();
     SwitchTaskToFollowupFunc(taskId);
 }
@@ -1981,6 +2125,7 @@ static void PssScrollLeftEnd(u8 taskId) // display left
     DrawPagination();
     PutPageWindowTilemaps(sMonSummaryScreen->currPageIndex);
     SetTypeIcons();
+    ShowShinyStarObjIfMonShiny();
     TryDrawExperienceProgressBar();
     SwitchTaskToFollowupFunc(taskId);
 }
