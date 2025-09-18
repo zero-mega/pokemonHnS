@@ -1355,7 +1355,7 @@ static void CreateShinyStarObj(u16 tileTag, u16 palTag)
         .size = 0x20 * 2, // safe for 1–2 tiles
         .tag  = tileTag,
     };
-    struct SpritePalette pal = { .data = sMarkings_Pal, .tag = palTag };
+    struct SpritePalette pal = { .data = sFriendshipIcon_Pal, .tag = palTag };
     struct SpriteTemplate tmpl = {
         .tileTag = tileTag,
         .paletteTag = palTag,
@@ -1371,7 +1371,7 @@ static void CreateShinyStarObj(u16 tileTag, u16 palTag)
 
     // Position: bottom-left, just below the Poké Ball (ball is at 16,136 in your file).
     // Tweak a couple pixels if you want it tighter/looser.
-    u8 spriteId = CreateSprite(&tmpl, 20, 151, 0);
+    u8 spriteId = CreateSprite(&tmpl, 68, 37, 0); //HnS Shiny star location
     sShinyStarObjData->sprite = &gSprites[spriteId];
     sShinyStarObjData->tileTag = tileTag;
     sShinyStarObjData->palTag  = palTag;
@@ -1409,8 +1409,8 @@ static void HideShowShinyStar(bool8 invisible)
 
     // Keep it anchored bottom-left. If you later add a page with a different layout,
     // you can branch here like FR and move the icon.
-    sShinyStarObjData->sprite->x = 20;
-    sShinyStarObjData->sprite->y = 151;
+    sShinyStarObjData->sprite->x = 68;
+    sShinyStarObjData->sprite->y = 37;//HnS Shiny star location
 }
 
 static void ShowShinyStarObjIfMonShiny(void)
@@ -1472,7 +1472,7 @@ static void SetFriendshipSprite(void)
     }
     StartSpriteAnim(&gSprites[*spriteId], level);
     if (*spriteId == SPRITE_NONE)
-        *spriteId = CreateSprite(&sSpriteTemplate_FriendshipIcon, 6, 151, 0); // position; adjust to taste
+        *spriteId = CreateSprite(&sSpriteTemplate_FriendshipIcon, 68, 92, 0); //HnS Friendship heart location
 
     StartSpriteAnim(&gSprites[*spriteId], level);
     SetSpriteInvisibility(SPRITE_ARR_ID_FRIENDSHIP, FALSE);
