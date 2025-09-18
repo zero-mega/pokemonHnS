@@ -111,17 +111,34 @@ enum {
 
 #define MOVE_SELECTOR_SPRITES_COUNT 10
 #define TYPE_ICON_SPRITE_COUNT (MAX_MON_MOVES + 1)
+
+#define TAG_FRIENDSHIP_ICON 30007  // pick an unused tag (30005/30006 are used in your file)
+
+enum
+{
+    FRIENDSHIP_LEVEL_0,
+    FRIENDSHIP_LEVEL_1,
+    FRIENDSHIP_LEVEL_2,
+    FRIENDSHIP_LEVEL_3,
+    FRIENDSHIP_LEVEL_4,
+    FRIENDSHIP_LEVEL_5,
+    FRIENDSHIP_LEVEL_6,
+    FRIENDSHIP_LEVEL_COUNT
+};
+
 // for the spriteIds field in PokemonSummaryScreenData
 enum
 {
     SPRITE_ARR_ID_MON,
     SPRITE_ARR_ID_BALL,
     SPRITE_ARR_ID_STATUS,
-    SPRITE_ARR_ID_TYPE, // 2 for mon types, 5 for move types(4 moves and 1 to learn), used interchangeably, because mon types and move types aren't shown on the same screen
-    SPRITE_ARR_ID_MOVE_SELECTOR1 = SPRITE_ARR_ID_TYPE + TYPE_ICON_SPRITE_COUNT, // 10 sprites that make up the selector
+    SPRITE_ARR_ID_FRIENDSHIP, // NEW: friendship heart icon
+    SPRITE_ARR_ID_TYPE, // 2 for mon types, 5 for move types..., used interchangeably
+    SPRITE_ARR_ID_MOVE_SELECTOR1 = SPRITE_ARR_ID_TYPE + TYPE_ICON_SPRITE_COUNT,
     SPRITE_ARR_ID_MOVE_SELECTOR2 = SPRITE_ARR_ID_MOVE_SELECTOR1 + MOVE_SELECTOR_SPRITES_COUNT,
     SPRITE_ARR_ID_COUNT = SPRITE_ARR_ID_MOVE_SELECTOR2 + MOVE_SELECTOR_SPRITES_COUNT
 };
+
 
 #define TILE_EMPTY_APPEAL_HEART  0x1039
 #define TILE_FILLED_APPEAL_HEART 0x103A
@@ -131,6 +148,10 @@ enum
 // Tags — use your free slots (you told me 30006/30005 were open earlier)
 #define TAG_SHINY_STAR_TILE 30006
 #define TAG_SHINY_STAR_PAL  30005
+
+static const u16 sFriendshipLevelToThreshold[FRIENDSHIP_LEVEL_COUNT] = { 0, 42, 85, 128, 170, 212, 250 };
+static const u16 sFriendshipIcon_Pal[] = INCBIN_U16("graphics/summary_screen/heart.gbapal");    
+static const u32 sFriendshipIcon_Gfx[] = INCBIN_U32("graphics/summary_screen/heart.4bpp.lz");    
 
 static const u16 sMarkings_Pal[] = INCBIN_U16("graphics/summary_screen/markings.gbapal");
 
@@ -152,6 +173,46 @@ static const struct OamData sStarObjOamData =
     .tileNum = 0,
     .priority = 3,   // same as ball, adjust if needed
     .paletteNum = 0,
+};
+
+static const struct OamData sOamData_FriendshipIcon =
+{
+    .affineMode = ST_OAM_AFFINE_OFF,
+    .objMode = ST_OAM_OBJ_NORMAL,
+    .mosaic = 0,
+    .bpp = ST_OAM_4BPP,
+    .shape = SPRITE_SHAPE(8x8),    // was 16x16
+    .size = SPRITE_SIZE(8x8),      // was 16x16
+};
+
+static const union AnimCmd sAnim_Friendship_0[] = { ANIMCMD_FRAME(0, 0), ANIMCMD_END };
+static const union AnimCmd sAnim_Friendship_1[] = { ANIMCMD_FRAME(1, 0), ANIMCMD_END };
+static const union AnimCmd sAnim_Friendship_2[] = { ANIMCMD_FRAME(2, 0), ANIMCMD_END };
+static const union AnimCmd sAnim_Friendship_3[] = { ANIMCMD_FRAME(3, 0), ANIMCMD_END };
+static const union AnimCmd sAnim_Friendship_4[] = { ANIMCMD_FRAME(4, 0), ANIMCMD_END };
+static const union AnimCmd sAnim_Friendship_5[] = { ANIMCMD_FRAME(5, 0), ANIMCMD_END };
+static const union AnimCmd sAnim_Friendship_6[] = { ANIMCMD_FRAME(6, 0), ANIMCMD_END };
+
+static const union AnimCmd *const sAnimTable_FriendshipIcon[] =
+{
+    sAnim_Friendship_0,
+    sAnim_Friendship_1,
+    sAnim_Friendship_2,
+    sAnim_Friendship_3,
+    sAnim_Friendship_4,
+    sAnim_Friendship_5,
+    sAnim_Friendship_6,
+};
+
+static const struct SpriteTemplate sSpriteTemplate_FriendshipIcon =
+{
+    .tileTag = TAG_FRIENDSHIP_ICON,
+    .paletteTag = TAG_FRIENDSHIP_ICON,
+    .oam = &sOamData_FriendshipIcon,
+    .anims = sAnimTable_FriendshipIcon,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCallbackDummy,
 };
 
 // Single-frame anim
@@ -797,12 +858,27 @@ static const struct OamData sOamData_SplitIcons =
     .priority = 0,
 };
 
+
+static const struct CompressedSpriteSheet sSpriteSheet_FriendshipIcon =
+{
+    .data = sFriendshipIcon_Gfx,
+    .size = 7 * 32,   // 7 tiles * 32 bytes per 8×8 4bpp tile
+    .tag = TAG_FRIENDSHIP_ICON
+};
+
 static const struct CompressedSpriteSheet sSpriteSheet_SplitIcons =
 {
     .data = sSplitIcons_Gfx,
     .size = 16*16*3/2,
     .tag = TAG_SPLIT_ICONS,
 };
+
+static const struct SpritePalette sSpritePal_FriendshipIcon =
+{
+    .data = sFriendshipIcon_Pal,
+    .tag = TAG_FRIENDSHIP_ICON
+};
+
 
 static const struct SpritePalette sSpritePal_SplitIcons =
 {
@@ -1295,7 +1371,7 @@ static void CreateShinyStarObj(u16 tileTag, u16 palTag)
 
     // Position: bottom-left, just below the Poké Ball (ball is at 16,136 in your file).
     // Tweak a couple pixels if you want it tighter/looser.
-    u8 spriteId = CreateSprite(&tmpl, 16, 151, 0);
+    u8 spriteId = CreateSprite(&tmpl, 20, 151, 0);
     sShinyStarObjData->sprite = &gSprites[spriteId];
     sShinyStarObjData->tileTag = tileTag;
     sShinyStarObjData->palTag  = palTag;
@@ -1333,7 +1409,7 @@ static void HideShowShinyStar(bool8 invisible)
 
     // Keep it anchored bottom-left. If you later add a page with a different layout,
     // you can branch here like FR and move the icon.
-    sShinyStarObjData->sprite->x = 16;
+    sShinyStarObjData->sprite->x = 20;
     sShinyStarObjData->sprite->y = 151;
 }
 
@@ -1379,6 +1455,32 @@ static void VBlank(void)
 static void CB2_InitSummaryScreen(void)
 {
     while (MenuHelpers_ShouldWaitForLinkRecv() != TRUE && LoadGraphics() != TRUE && MenuHelpers_IsLinkActive() != TRUE);
+}
+
+static void SetFriendshipSprite(void)
+{
+    u8 *spriteId = &sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_FRIENDSHIP];
+    u16 friendship = GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_FRIENDSHIP);
+    u8 level = 0;
+
+    // Map friendship (0..255) into 6 animation levels using BW thresholds.
+    // 0:[0-49], 1:[50-99], 2:[100-149], 3:[150-199], 4:[200-249], 5:[250-255]
+    while (level + 1 < FRIENDSHIP_LEVEL_COUNT
+    && friendship >= sFriendshipLevelToThreshold[level + 1])
+    {
+        level++;
+    }
+    StartSpriteAnim(&gSprites[*spriteId], level);
+    if (*spriteId == SPRITE_NONE)
+        *spriteId = CreateSprite(&sSpriteTemplate_FriendshipIcon, 6, 151, 0); // position; adjust to taste
+
+    StartSpriteAnim(&gSprites[*spriteId], level);
+    SetSpriteInvisibility(SPRITE_ARR_ID_FRIENDSHIP, FALSE);
+}
+
+static void TrySetInfoPageIcons(void)
+{
+     SetFriendshipSprite();
 }
 
 static bool8 LoadGraphics(void)
@@ -1485,6 +1587,7 @@ static bool8 LoadGraphics(void)
         break;
     case 21:
         SetTypeIcons();
+        TrySetInfoPageIcons();
         gMain.state++;
         break;
     case 22:
@@ -1591,6 +1694,8 @@ static bool8 DecompressGraphics(void)
         LoadCompressedPalette(gMoveTypes_Pal, OBJ_PLTT_ID(13), 3 * PLTT_SIZE_4BPP);
         LoadCompressedSpriteSheet(&sSpriteSheet_SplitIcons);
         LoadSpritePalette(&sSpritePal_SplitIcons);
+        LoadCompressedSpriteSheet(&sSpriteSheet_FriendshipIcon);
+        LoadSpritePalette(&sSpritePal_FriendshipIcon);
         sMonSummaryScreen->switchCounter = 0;
         return TRUE;
     }
@@ -1931,6 +2036,7 @@ static void Task_ChangeSummaryMon(u8 taskId)
         break;
     case 9:
         SetTypeIcons();
+        TrySetInfoPageIcons();
         break;
     case 10:
         PrintMonInfo();
@@ -2075,6 +2181,7 @@ static void PssScrollRightEnd(u8 taskId) // display right
     DrawPagination();
     PutPageWindowTilemaps(sMonSummaryScreen->currPageIndex);
     SetTypeIcons();
+    TrySetInfoPageIcons();
     ShowShinyStarObjIfMonShiny();
     TryDrawExperienceProgressBar();
     SwitchTaskToFollowupFunc(taskId);
@@ -2125,6 +2232,7 @@ static void PssScrollLeftEnd(u8 taskId) // display left
     DrawPagination();
     PutPageWindowTilemaps(sMonSummaryScreen->currPageIndex);
     SetTypeIcons();
+    TrySetInfoPageIcons();
     ShowShinyStarObjIfMonShiny();
     TryDrawExperienceProgressBar();
     SwitchTaskToFollowupFunc(taskId);
@@ -4155,15 +4263,16 @@ static void SetSpriteInvisibility(u8 spriteArrayId, bool8 invisible)
 
 static void HidePageSpecificSprites(void)
 {
-    // Keeps Pok�mon, caught ball and status sprites visible.
+    // Keeps Pokémon, caught ball, status, and friendship sprites visible.
     u8 i;
-
     for (i = SPRITE_ARR_ID_TYPE; i < ARRAY_COUNT(sMonSummaryScreen->spriteIds); i++)
     {
         if (sMonSummaryScreen->spriteIds[i] != SPRITE_NONE)
             SetSpriteInvisibility(i, TRUE);
     }
 }
+
+
 
 static void SetTypeIcons(void)
 {
