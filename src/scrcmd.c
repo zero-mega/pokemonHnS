@@ -2500,6 +2500,69 @@ bool8 ScrCmd_deleteparty(void)
         ZeroMonData(&gPlayerParty[i]);
 }
 
+//========================================================================================================================================================================
+//====== Start HnS SCRCMDs ==================================================================================================================================================================
+//========================================================================================================================================================================
+
+//applymovement but follower doesn't hide
+bool8 ScrCmd_applymovement2(struct ScriptContext *ctx)
+{
+    u16 localId = VarGet(ScriptReadHalfword(ctx));
+    const u8 *movementScript = (const u8 *)ScriptReadWord(ctx);
+    struct ObjectEvent *objEvent;
+
+    // When applying script movements to follower, it may have frozen animation that must be cleared
+    if (localId == OBJ_EVENT_ID_FOLLOWER && (objEvent = GetFollowerObject()) && objEvent->frozen) {
+        ClearObjectEventMovement(objEvent, &gSprites[objEvent->spriteId]);
+        gSprites[objEvent->spriteId].animCmdIndex = 0; // Reset start frame of animation
+    }
+    gObjectEvents[GetObjectEventIdByLocalId(localId)].directionOverwrite = DIR_NONE;
+    ScriptMovement_StartObjectMovementScript(localId, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup, movementScript);
+    sMovingNpcId = localId;
+    objEvent = GetFollowerObject();
+    return FALSE;
+
+}
+
+bool8 ScrCmd_remove5mons(struct ScriptContext *ctx)
+{
+    // Remove all Pokémon from slots 2 to 6 (party indices 1 to 5)
+    u8 removedCount = 0;
+
+
+    if (GetMonData(&gPlayerParty[0], MON_DATA_HP) == 0)
+    {
+        gSpecialVar_Result = MON_CANT_GIVE;
+        return FALSE;
+    }
+
+    if (GetMonData(&gPlayerParty[0], MON_DATA_SPECIES_OR_EGG) == SPECIES_EGG)
+    {
+        gSpecialVar_Result = MON_CANT_GIVE;
+        return FALSE;
+    } 
+
+
+    for (u8 i = 1; i < PARTY_SIZE; i++)
+    {
+        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) != SPECIES_NONE)
+        {
+            ZeroMonData(&gPlayerParty[i]);
+            removedCount++;
+        }
+    }
+
+
+    if (removedCount > 0)
+    {
+        CompactPartySlots();
+    }
+
+
+    gSpecialVar_Result = MON_GIVEN_TO_PARTY;
+    return FALSE;
+}
+
 
 //HnS
 bool8 ScrCmd_givenamedmon(struct ScriptContext *ctx)
@@ -2821,68 +2884,6 @@ bool8 ScrCmd_baobacheckmon(struct ScriptContext *ctx)
     return FALSE;
 }
 
-//========================================================================================================================================================================
-//====== Start HnS SCRCMDs ==================================================================================================================================================================
-//========================================================================================================================================================================
-
-//applymovement but follower doesn't hide
-bool8 ScrCmd_applymovement2(struct ScriptContext *ctx)
-{
-    u16 localId = VarGet(ScriptReadHalfword(ctx));
-    const u8 *movementScript = (const u8 *)ScriptReadWord(ctx);
-    struct ObjectEvent *objEvent;
-
-    // When applying script movements to follower, it may have frozen animation that must be cleared
-    if (localId == OBJ_EVENT_ID_FOLLOWER && (objEvent = GetFollowerObject()) && objEvent->frozen) {
-        ClearObjectEventMovement(objEvent, &gSprites[objEvent->spriteId]);
-        gSprites[objEvent->spriteId].animCmdIndex = 0; // Reset start frame of animation
-    }
-    gObjectEvents[GetObjectEventIdByLocalId(localId)].directionOverwrite = DIR_NONE;
-    ScriptMovement_StartObjectMovementScript(localId, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup, movementScript);
-    sMovingNpcId = localId;
-    objEvent = GetFollowerObject();
-    return FALSE;
-
-}
-
-bool8 ScrCmd_remove5mons(struct ScriptContext *ctx)
-{
-    // Remove all Pokémon from slots 2 to 6 (party indices 1 to 5)
-    u8 removedCount = 0;
-
-
-    if (GetMonData(&gPlayerParty[0], MON_DATA_HP) == 0)
-    {
-        gSpecialVar_Result = MON_CANT_GIVE;
-        return FALSE;
-    }
-
-    if (GetMonData(&gPlayerParty[0], MON_DATA_SPECIES_OR_EGG) == SPECIES_EGG)
-    {
-        gSpecialVar_Result = MON_CANT_GIVE;
-        return FALSE;
-    } 
-
-
-    for (u8 i = 1; i < PARTY_SIZE; i++)
-    {
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) != SPECIES_NONE)
-        {
-            ZeroMonData(&gPlayerParty[i]);
-            removedCount++;
-        }
-    }
-
-
-    if (removedCount > 0)
-    {
-        CompactPartySlots();
-    }
-
-
-    gSpecialVar_Result = MON_GIVEN_TO_PARTY;
-    return FALSE;
-}
 // ====================== HnS: giveoddegg ======================
 static const u16 sOddEggSpecies[8] = {
     SPECIES_NONE,        // [0] unused
