@@ -3008,7 +3008,7 @@ static bool8 GiveOddEgg_Internal(u16 species, bool8 forceShiny, bool8 allow14Per
             }
 
             // You can set met location/ball/etc. here if you want.
-
+            SetMonMoveSlot(mon, MOVE_DIZZY_PUNCH, 1);
             CalculateMonStats(mon);
             gSpecialVar_Result = MON_GIVEN_TO_PARTY;
             return TRUE;
