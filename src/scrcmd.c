@@ -2900,7 +2900,6 @@ static const u16 sOddEggSpecies[8] = {
 static const u8 sOddEggShinyNameList[][PLAYER_NAME_LENGTH + 1] = {
     _("DYLAN"),
     _("Zee"),
-    _("Josh"),
     _("Meara"),
     _("Anthony"),
     _("RAINBOW"),
@@ -2927,6 +2926,9 @@ static const u8 sOddEggShinyNameList[][PLAYER_NAME_LENGTH + 1] = {
     _("Penka"),
     _("Emmam"),
     _("Casper"),
+    _("MARZ"),
+    _("leob050"),
+    _("Sayu"),
 };
 
 static bool8 IsPlayerNameInShinyList(void)
