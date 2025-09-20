@@ -171,7 +171,7 @@ static const struct OamData sStarObjOamData =
     .matrixNum = 0,
     .size = SPRITE_SIZE(8x8),
     .tileNum = 0,
-    .priority = 0,   // ontop of mon
+    .priority = 3,   // ontop of mon
     .paletteNum = 0,
 };
 
@@ -183,7 +183,7 @@ static const struct OamData sOamData_FriendshipIcon =
     .bpp = ST_OAM_4BPP,
     .shape = SPRITE_SHAPE(8x8),    // was 16x16
     .size = SPRITE_SIZE(8x8),      // was 16x16
-    .priority = 0,   // ontop of mon
+    .priority = 3,   // ontop of mon
 };
 
 static const union AnimCmd sAnim_Friendship_0[] = { ANIMCMD_FRAME(0, 0), ANIMCMD_END };
