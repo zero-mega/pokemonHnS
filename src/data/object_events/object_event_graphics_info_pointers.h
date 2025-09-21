@@ -29,7 +29,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lass;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cook;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LinkReceptionist;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_OldMan2;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_OldWoman2;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AttendantF;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Camper;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Picnicker;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Man;
@@ -112,7 +112,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BrendanUnde
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MayUnderwater;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MovingBox;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CableCar;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Scientist2;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ScientistF;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KimonoGirl;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RocketMemberM;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RocketMemberF;
@@ -284,7 +284,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_CHEF] =                     &gObjectEventGraphicsInfo_Cook,
     [OBJ_EVENT_GFX_LINK_RECEPTIONIST] =        &gObjectEventGraphicsInfo_LinkReceptionist,
     [OBJ_EVENT_GFX_OLD_MAN_2] =                  &gObjectEventGraphicsInfo_OldMan2,
-    [OBJ_EVENT_GFX_ATTENDANT] =                &gObjectEventGraphicsInfo_OldWoman2,
+    [OBJ_EVENT_GFX_ATTENDANT] =                &gObjectEventGraphicsInfo_AttendantF,
     [OBJ_EVENT_GFX_CAMPER] =                   &gObjectEventGraphicsInfo_Camper,
     [OBJ_EVENT_GFX_PICNICKER] =                &gObjectEventGraphicsInfo_Picnicker,
     [OBJ_EVENT_GFX_MAN] =                    &gObjectEventGraphicsInfo_Man,
@@ -368,7 +368,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_MAY_UNDERWATER] =           &gObjectEventGraphicsInfo_MayUnderwater,
     [OBJ_EVENT_GFX_MOVING_BOX] =               &gObjectEventGraphicsInfo_MovingBox,
     [OBJ_EVENT_GFX_TRAIN_FRONT] =                &gObjectEventGraphicsInfo_TrainFront,
-    [OBJ_EVENT_GFX_SCIENTIST_F] =              &gObjectEventGraphicsInfo_Scientist2,
+    [OBJ_EVENT_GFX_SCIENTIST_F] =              &gObjectEventGraphicsInfo_ScientistF,
     [OBJ_EVENT_GFX_KIMONO_GIRL] =           &gObjectEventGraphicsInfo_KimonoGirl, 
     [OBJ_EVENT_GFX_ROCKET_M] =            &gObjectEventGraphicsInfo_RocketMemberM,
     [OBJ_EVENT_GFX_ROCKET_F] =            &gObjectEventGraphicsInfo_RocketMemberF,
