@@ -7793,6 +7793,7 @@ Special Dratini: 	Dragons Den		After getting Dragon Claw + 100% On Quiz
 Spearow (Kenya):	Goldenrod North Gate
 Shuckle (Shuckie):	Cianwood City
 Tyrogue:		Mt Mortar	
+Tentacool:		Cianwood Pokécenter	Have no surf-capable Pokémon in your party
 Odd Egg:		Route 34 DayCare
 Odder Egg:		Route 34 DayCare	Just for playtesters
 Odd Egg Passwords:
