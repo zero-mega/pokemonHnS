@@ -3,7 +3,8 @@
 # Pokémon Heart & Soul
 Pokémon Heart & Soul brings the classic Johto Region and its iconic story to the world of modern GBA decomp hacking. Built on the Modern Emerald decomp, this project offers a fresh take on the GSC/HGSS experience, blending key aspects of the Gen 2 and Gen 4 games, while incorporating many modern QoL features, as well as some familiar Gen 3 mechanics. Not only is Heart & Soul (HnS) a first-of-its-kind, fully completed, playtested, and largely faithful GSC remake / HGSS demake, it's also completely open source, and is intended to be a base for a new generation of Johto rom hacks.
 
-![HnS Collage](HnS_Collage_StartYourAdventure.png)
+![HnS Collage](HnS_Collage_YourAdventure.png)
+![HnS Collage](HnS_Collage_Exploration.png)
 
 ## Developer's Note: 
 Development for this project was primarily (95%) a solo-effort that consumed almost all of my free time for the last year. I am not a professional programmer, but I did my best to make the game that I wanted to play. If you'd like to improve, expand upon, or make your own version of HnS, feel free to take advantage of the open source! Please direct any questions to the [Heart & Soul Discord](https://discord.gg/KmuvXJrS9M). I hope you enjoy!
@@ -134,6 +135,7 @@ I plan to take a step back from this project once the initial wave of inevitable
 # For Developers
 If you are a developer interested in forking this repository and making your own modifications to Heart & Soul, you may want to read up on the base that was used, Modern Emerald. Information on that project, and pret's Pokéemerald decompilation project, continue reading below!
 - Note: This project is not yet compatible with Porymap 6. Use Porymap 5 instead.
+- Also Note: devkitARM version 65 or older is required.
 
 ---
 
