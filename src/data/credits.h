@@ -635,7 +635,7 @@ static const struct CreditsEntry *const sCreditsEntryPointerTable[PAGE_COUNT][EN
         &sCreditsEntry_MearaTheDigger,
         &sCreditsEntry_Kingofrocks,
         &sCreditsEntry_Ferropexola,
-        &sCreditsEntry_DaniRainbow,
+        &sCreditsEntry_Brick,
     },
     [PAGE_HNS_PLAYTESTERS_2] = {
         &sCreditsEntry_Playtesters,
@@ -676,8 +676,8 @@ static const struct CreditsEntry *const sCreditsEntryPointerTable[PAGE_COUNT][EN
         &sCreditsEntry_Playtesters,
         &sCreditsEntry_Leob,
         &sCreditsEntry_Sayu,
-        &sCreditsEntry_Brick,
         &sCreditsEntry_KinoKuma,
+        _,
     },
     [PAGE_HNS_PLAYTESTERS_8] = {
         _,
