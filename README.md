@@ -34,7 +34,7 @@ Development for this project was primarily (95%) a solo-effort that consumed alm
 
 ### Setting Expectations:
 - Heart & Soul was designed as a traditional Pokémon experience, akin to the main-series games. It is not a difficulty hack, and does not have built-in features for non-traditional playstyles. Do not expect to see features like infinite rare candies, or built-in randomization or nuzlocking rules. 
-- Heart & Soul stands on the shoulders of giants. I am not an artist, so much of the art and some of the code for this project was drawn from open source assets. I did my best to credit all sources below and in the game credits, but if you find any that I missed, please let me know in the [Heart & Soul Discord](https://discord.gg/KmuvXJrS9M).
+- Heart & Soul stands on the shoulders of giants. I am not an artist or a professional programmer, so much of the art and some of the code for this project was drawn from open source assets. I did my best to credit all sources below and in the game credits, but if you find any that I missed, please let me know in the [Heart & Soul Discord](https://discord.gg/KmuvXJrS9M).
 - Heart & Soul has been rigorously playtested, (shoutout to the playtesters) but there still may be some small bugs. If you find any, please report them to the [Heart & Soul Discord](https://discord.gg/KmuvXJrS9M).
 - There are a few GSC/HGSS features that were too complex or time consuming for me to implement in this project. See differences section below.
 
@@ -44,6 +44,7 @@ Development for this project was primarily (95%) a solo-effort that consumed alm
 - Apricorns replaced with berries, berry ball catch boost is based on Type
 - Strength boulder-in-hole puzzles replaced with Emerald Mach Bike puzzles
 - No itemfinder and no hidden items
+- Only 50 TMs (The ones from emerald)
 - Swarms are replaced with a 5% Hoenn encounter on each route in Kanto
 - Mom does not take your money
 - Ruins of alph back room requirements are slightly altered
@@ -87,6 +88,7 @@ I plan to take a step back from this project once the initial wave of inevitable
 If you are a developer interested in forking this repository and making your own modifications to Heart & Soul, you may want to read up on the base that was used, Modern Emerald. Information on that project, and pret's Pokéemerald decompilation project, continue reading below!
 
 ## Credits
+<small>Special thanks to the playtesters and devs who joined me late in development. Their work greatly improved the stability and quality of HnS. They inspired me to add new features for all of you to enjoy, and they made the whole process way more fun. HnS would be a mess without them.</small>
 
 #### Lead Developer / Game Director
 - **Lil Dill**
