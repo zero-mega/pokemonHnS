@@ -939,7 +939,7 @@ u8 LoadGameSave(u8 saveType)
         FlagClear(FLAG_RECEIVED_ODD_EGG);
         FlagClear(FLAG_VISITED_KANTO);
         FlagClear(FLAG_HIDE_CERULEAN_GYM_POKEMON);
-        FlagClear(FLAG_UNUSED_UNSET4);
+        FlagClear(FLAG_HIDE_NEWBARKTOWN_LAB_AIDE);
         FlagClear(FLAG_UNUSED_UNSET5);
         FlagClear(FLAG_UNUSED_UNSET6);
         FlagClear(FLAG_UNUSED_UNSET7);

@@ -908,7 +908,7 @@
 #define FLAG_VISITED_KANTO                                          0x359
 #define FLAG_RECEIVED_ODD_EGG                                       0x35A
 #define FLAG_HIDE_CERULEAN_GYM_POKEMON                                          0x35B
-#define FLAG_UNUSED_UNSET4                                          0x35C
+#define FLAG_HIDE_NEWBARKTOWN_LAB_AIDE                                          0x35C
 #define FLAG_UNUSED_UNSET5                                          0x35D
 #define FLAG_UNUSED_UNSET6                                          0x35E
 #define FLAG_UNUSED_UNSET7                                          0x35F
