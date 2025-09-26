@@ -604,7 +604,7 @@ NewBarkTown_Lab_Text_ElmIntro:
 	.string "don't quite understand yet.\p"
 	.string "So!\p"
 	.string "I'd like you to raise a\n"
-	.string "POKéMON that I recently caught$"
+	.string "POKéMON that I recently caught.$"
 
 NewBarkTown_Lab_Text_ElmAccepted:
 	.string "Thanks, {PLAYER}!\n"
@@ -757,7 +757,7 @@ NewBarkTown_Lab_Text_ElmAfterTheft4:
 
 NewBarkTown_Lab_Text_ElmStudyingEgg:
 	.string "ELM: Don't give up!\n"
-	.string "I'll call if I learn anything\p"
+	.string "I'll call if I learn anything\l"
 	.string "about that EGG!$"
 
 NewBarkTown_Lab_Text_ElmAideHasEgg:
@@ -837,9 +837,9 @@ NewBarkTown_Lab_Text_KimonoGirls:
 	.string "By the way...\n"
 	.string "A group of beautiful KIMONO\l"
 	.string "GIRLS were looking for you.\p"
-	.string "They told me they\n"
-	.string "are waiting for you at the ECRUTEAK\l"
-	.string "DANCE THEATER.\p"
+	.string "They told me they are\n"
+	.string "waiting for you at the\l" 
+	.string "ECRUTEAK DANCE THEATER.\p"
 	.string "I know you've gone through many\n"
 	.string "things since that EGG got you\l"
 	.string "involved in all this...\p"
