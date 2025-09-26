@@ -70,7 +70,7 @@ Use [Rom Patcher JS](https://www.marcrobledo.com/RomPatcher.js/legacy/) to patch
 - Upload the Pokemon - Emerald Version (U).gba file to the "ROM file" section
 - Upload the HnS patch file to the "Patch file" section
 - Look for a green checkmark and hit apply patch. 
-This will automatically download your new Heart & Soul.gba ROM for you to play!
+This will automatically download your new Heart & Soul GBA ROM (pokemonHnS v1.0.gba) for you to play!
 
 ## Recommended Emulators
 - For PC/Mac: mGBA
