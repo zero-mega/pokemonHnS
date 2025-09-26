@@ -41,6 +41,7 @@ Development for this project was primarily (95%) a solo-effort that consumed alm
 ### Differences from GSC/HGSS:
 - Radio is a standalone Key Item with limited functionality instead of a menu in the Pokégear
 - Trainers will not offer their phone numbers, no way to rematch them
+- Level curve is much improved
 - Apricorns replaced with berries, berry ball catch boost is based on Type
 - Strength boulder-in-hole puzzles replaced with Emerald Mach Bike puzzles
 - No itemfinder and no hidden items
