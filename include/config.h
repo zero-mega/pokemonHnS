@@ -34,7 +34,7 @@
 #define LOG_HANDLER (LOG_HANDLER_MGBA_PRINT)
 #endif
 
-#define ENGLISH
+#define FRENCH
 
 #ifdef ENGLISH
 #define UNITS_IMPERIAL
