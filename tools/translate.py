@@ -398,18 +398,174 @@ def cmd_export():
     export_scripts(TEMPLATES_DIR / 'scripts.csv')
     print('Exported CSVs to', TEMPLATES_DIR)
 
+def apply_move_descriptions(csv_path: Path):
+    rows = {r['id']: r['description'] for r in read_csv(csv_path)}
+    text = MOVE_DESCRIPTIONS_FILE.read_text(encoding='utf-8', errors='ignore')
+    # Update description variables
+    desc_vars = {}
+    for m in re.finditer(r"static const u8 (s[A-Za-z0-9_]+Description)\[\] = _\(\n?\s*\"([\s\S]*?)\"\);", text):
+        desc_vars[m.group(1)] = m.group(2)
+    # Map move -> var
+    move_to_var = {}
+    for m in re.finditer(r"\[(MOVE_[A-Z0-9_]+)\s*-\s*1\]\s*=\s*(s[A-Za-z0-9_]+Description)", text):
+        move_to_var[m.group(1)] = m.group(2)
+    # Update each description variable
+    for move_id, new_desc in rows.items():
+        var = move_to_var.get(move_id)
+        if var:
+            new_desc = new_desc.replace('\\n', '\n')
+            pattern = re.compile(r"(static const u8 " + re.escape(var) + r"\[\] = _\(\n?\s*\")([\s\S]*?)(\"[\s]*\);)")
+            text = re.sub(pattern, lambda m: f'{m.group(1)}{new_desc}{m.group(3)}', text)
+    MOVE_DESCRIPTIONS_FILE.write_text(text, encoding='utf-8')
+
+def apply_items(csv_items: Path, csv_item_desc: Path):
+    names = {r['id']: r['name'] for r in read_csv(csv_items)}
+    descs = {r['id']: r['description'] for r in read_csv(csv_item_desc)}
+    
+    # Update item descriptions
+    desc_text = ITEM_DESCRIPTIONS_FILE.read_text(encoding='utf-8', errors='ignore')
+    # Map var -> new description
+    items_text = ITEMS_FILE.read_text(encoding='utf-8', errors='ignore')
+    desc_re = re.compile(r"\.description\s*=\s*([A-Za-z0-9_]+)")
+    var_to_new = {}
+    for m in re.finditer(r"\[(ITEM_[A-Z0-9_]+)\]\s*=\s*\{([\s\S]*?)\}\,", items_text):
+        item_id, body = m.group(1), m.group(2)
+        desc_m = desc_re.search(body)
+        if desc_m and item_id in descs:
+            var_to_new[desc_m.group(1)] = descs[item_id]
+    # Update description variables
+    for var, new_desc in var_to_new.items():
+        new_desc = new_desc.replace('\\n', '\n')
+        pattern = re.compile(r"(static const u8 " + re.escape(var) + r"\[\] = _\(\n?\s*\")([\s\S]*?)(\"[\s]*\);)")
+        desc_text = re.sub(pattern, lambda m: f'{m.group(1)}{new_desc}{m.group(3)}', desc_text)
+    ITEM_DESCRIPTIONS_FILE.write_text(desc_text, encoding='utf-8')
+    
+    # Update item names - use regex substitution for each item block
+    def replace_item_name(match):
+        item_id = match.group(1)
+        item_block = match.group(2)
+        if item_id in names:
+            # Replace the .name field within this item block
+            item_block = re.sub(
+                r'(\.name\s*=\s*_\(")[^"]*("\))',
+                lambda m: f'{m.group(1)}{names[item_id]}{m.group(2)}',
+                item_block
+            )
+        return f'[{item_id}] =\n{item_block}}},'
+    
+    # Match entire item blocks
+    items_text = re.sub(
+        r'\[(ITEM_[A-Z0-9_]+)\]\s*=\s*\n(\s*\{[\s\S]*?\n\s*)\},',
+        replace_item_name,
+        items_text
+    )
+    ITEMS_FILE.write_text(items_text, encoding='utf-8')
+
+def apply_ui_strings(csv_path: Path):
+    rows = {r['key']: r['text'] for r in read_csv(csv_path)}
+    text = STRINGS_FILE.read_text(encoding='utf-8', errors='ignore')
+    pat = re.compile(r"(const u8 (gText_[A-Za-z0-9_]+)\[\] = _\(\")[\s\S]*?(\"\);)")
+    def repl(m):
+        key = m.group(2)
+        if key in rows:
+            new_text = rows[key].replace('\\n', '\n')
+            return f'{m.group(1)}{new_text}{m.group(3)}'
+        return m.group(0)
+    text = re.sub(pat, lambda m: repl(m), text)
+    STRINGS_FILE.write_text(text, encoding='utf-8')
+
+def apply_map_sections(csv_path: Path):
+    rows = {r['id']: r['name'] for r in read_csv(csv_path)}
+    if MAP_SECTIONS_JSON.exists():
+        import json
+        data = json.loads(MAP_SECTIONS_JSON.read_text(encoding='utf-8', errors='ignore'))
+        sections = data.get('map_sections', [])
+        for entry in sections:
+            section_id = entry.get('map_section', '')
+            if section_id in rows:
+                entry['name'] = rows[section_id]
+        MAP_SECTIONS_JSON.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding='utf-8')
+
+def apply_easy_chat(csv_path: Path):
+    rows_by_key = {}
+    for r in read_csv(csv_path):
+        rows_by_key[r['key']] = r['text']
+    
+    easy_chat_dir = REPO_ROOT / 'src' / 'data' / 'easy_chat'
+    group_files = [
+        'easy_chat_group_people.h', 'easy_chat_group_battle.h', 'easy_chat_group_greetings.h',
+        'easy_chat_group_voices.h', 'easy_chat_group_speech.h', 'easy_chat_group_endings.h',
+        'easy_chat_group_feelings.h', 'easy_chat_group_conditions.h', 'easy_chat_group_actions.h',
+        'easy_chat_group_lifestyle.h', 'easy_chat_group_hobbies.h', 'easy_chat_group_time.h',
+        'easy_chat_group_misc.h', 'easy_chat_group_adjectives.h', 'easy_chat_group_events.h',
+        'easy_chat_group_move_1.h', 'easy_chat_group_move_2.h', 'easy_chat_group_trainer.h',
+        'easy_chat_group_status.h', 'easy_chat_group_trendy_saying.h',
+    ]
+    
+    pat = re.compile(r"(const u8 gEasyChatWord_([A-Za-z0-9_]+)\[\] = _\(\")([^\"]*)(\"\);)")
+    for filename in group_files:
+        filepath = easy_chat_dir / filename
+        if filepath.exists():
+            text = filepath.read_text(encoding='utf-8', errors='ignore')
+            def repl(m):
+                key = m.group(2)
+                if key in rows_by_key:
+                    return f'{m.group(1)}{rows_by_key[key]}{m.group(4)}'
+                return m.group(0)
+            text = re.sub(pat, lambda m: repl(m), text)
+            filepath.write_text(text, encoding='utf-8')
+
+def apply_ability_descriptions(csv_path: Path):
+    rows = {r['id']: r['description'] for r in read_csv(csv_path)}
+    text = ABILITIES_FILE.read_text(encoding='utf-8', errors='ignore')
+    
+    # Map ability ID -> description variable using gAbilityDescriptionPointers array
+    ability_to_var = {}
+    for m in re.finditer(r"\[(ABILITY_[A-Z0-9_]+)\]\s*=\s*(s[A-Za-z0-9_]+Description)", text):
+        ability_to_var[m.group(1)] = m.group(2)
+    
+    # Update each description variable
+    for ability_id, new_desc in rows.items():
+        var = ability_to_var.get(ability_id)
+        if var and new_desc:  # Only update if we have a translation
+            new_desc = new_desc.replace('\\n', '\n')
+            # Match the description variable declaration
+            pattern = re.compile(r"(static const u8 " + re.escape(var) + r"\[\] = _\(\")([\s\S]*?)(\"[\s]*\);)")
+            text = re.sub(pattern, lambda m: f'{m.group(1)}{new_desc}{m.group(3)}', text)
+    
+    ABILITIES_FILE.write_text(text, encoding='utf-8')
+
 def cmd_apply():
     missing = [name for name in CSV_EXPECTED if not (TEMPLATES_DIR / name).exists()]
     if missing:
         print('Missing CSV templates:', ', '.join(missing))
         print('Create them under', TEMPLATES_DIR)
         sys.exit(1)
+    
+    print('Applying translations...')
     apply_species(TEMPLATES_DIR / 'species.csv')
+    print('[OK] Applied species names')
     apply_moves(TEMPLATES_DIR / 'moves.csv')
+    print('[OK] Applied move names')
+    apply_move_descriptions(TEMPLATES_DIR / 'move_descriptions.csv')
+    print('[OK] Applied move descriptions')
     apply_abilities(TEMPLATES_DIR / 'abilities.csv')
+    print('[OK] Applied ability names')
+    apply_ability_descriptions(TEMPLATES_DIR / 'ability_descriptions.csv')
+    print('[OK] Applied ability descriptions')
     apply_natures(TEMPLATES_DIR / 'natures.csv')
+    print('[OK] Applied nature names')
     apply_types(TEMPLATES_DIR / 'types.csv')
-    print('Applied CSVs for species, moves, abilities, natures, types')
+    print('[OK] Applied type names')
+    apply_items(TEMPLATES_DIR / 'items.csv', TEMPLATES_DIR / 'item_descriptions.csv')
+    print('[OK] Applied item names and descriptions')
+    apply_ui_strings(TEMPLATES_DIR / 'ui_strings.csv')
+    print('[OK] Applied UI strings')
+    apply_map_sections(TEMPLATES_DIR / 'map_sections.csv')
+    print('[OK] Applied map sections')
+    apply_easy_chat(TEMPLATES_DIR / 'easy_chat.csv')
+    print('[OK] Applied Easy Chat words')
+    print('\nAll translations applied successfully!')
 
 def main():
     parser = argparse.ArgumentParser(description='French localization tools')

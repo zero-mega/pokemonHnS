@@ -2,7 +2,7 @@
   "map_sections": [
     {
       "map_section": "MAPSEC_VIOLET_CITY",
-      "name": "VIOLET CITY",
+      "name": "MAUVILLE",
       "x": 12,
       "y": 4,
       "width": 1,
@@ -10,7 +10,7 @@
     },
     {
       "map_section": "MAPSEC_AZALEA_TOWN",
-      "name": "AZALEA TOWN",
+      "name": "ECORCIA",
       "x": 10,
       "y": 13,
       "width": 1,
@@ -18,7 +18,7 @@
     },
     {
       "map_section": "MAPSEC_GOLDENROD_CITY",
-      "name": "GOLDENROD CITY",
+      "name": "DOUBLONVILLE",
       "x": 8,
       "y": 8,
       "width": 1,
@@ -26,7 +26,7 @@
     },
     {
       "map_section": "MAPSEC_ECRUTEAK_CITY",
-      "name": "ECRUTEAK CITY",
+      "name": "ROSALIA",
       "x": 10,
       "y": 2,
       "width": 1,
@@ -34,7 +34,7 @@
     },
     {
       "map_section": "MAPSEC_OLIVINE_CITY",
-      "name": "OLIVINE CITY",
+      "name": "OLIVILLE",
       "x": 6,
       "y": 4,
       "width": 1,
@@ -42,7 +42,7 @@
     },
     {
       "map_section": "MAPSEC_CIANWOOD_CITY",
-      "name": "CIANWOOD CITY",
+      "name": "IRISIA",
       "x": 4,
       "y": 11,
       "width": 1,
@@ -50,7 +50,7 @@
     },
     {
       "map_section": "MAPSEC_SAFARI_ZONE_GATE",
-      "name": "SAFARI ZONE GATE",
+      "name": "PORTE SAFARI",
       "x": 2,
       "y": 9,
       "width": 1,
@@ -58,7 +58,7 @@
     },
     {
       "map_section": "MAPSEC_MAHOGANY_TOWN",
-      "name": "MAHOGANY TOWN",
+      "name": "ACAJOU",
       "x": 15,
       "y": 2,
       "width": 1,
@@ -66,7 +66,7 @@
     },
     {
       "map_section": "MAPSEC_BLACKTHORN_CITY",
-      "name": "BLACKTHORN CITY",
+      "name": "EBENELLE",
       "x": 18,
       "y": 2,
       "width": 1,
@@ -74,7 +74,7 @@
     },
     {
       "map_section": "MAPSEC_CHERRYGROVE_CITY",
-      "name": "CHERRYGROVE CITY",
+      "name": "VILLE-GRIOTTE",
       "x": 14,
       "y": 10,
       "width": 1,
@@ -82,7 +82,7 @@
     },
     {
       "map_section": "MAPSEC_INDIGO_PLATEAU",
-      "name": "INDIGO PLATEAU",
+      "name": "PLATEAU INDIGO",
       "x": 24,
       "y": 3,
       "width": 1,
@@ -274,7 +274,7 @@
     },
     {
       "map_section": "MAPSEC_SAFARI_ZONE",
-      "name": "SAFARI ZONE",
+      "name": "ZONE SAFARI",
       "x": 0,
       "y": 6,
       "width": 1,
@@ -282,7 +282,7 @@
     },
     {
       "map_section": "MAPSEC_VICTORY_ROAD",
-      "name": "VICTORY ROAD",
+      "name": "ROUTE VICTOIRE",
       "x": 24,
       "y": 5,
       "width": 1,
@@ -290,7 +290,7 @@
     },
     {
       "map_section": "MAPSEC_PALLET_TOWN",
-      "name": "PALLET TOWN",
+      "name": "BOURG PALETTE",
       "x": 19,
       "y": 11,
       "width": 1,
@@ -298,7 +298,7 @@
     },
     {
       "map_section": "MAPSEC_VIRIDIAN_CITY",
-      "name": "VIRIDIAN CITY",
+      "name": "JADIELLE",
       "x": 19,
       "y": 7,
       "width": 1,
@@ -306,7 +306,7 @@
     },
     {
       "map_section": "MAPSEC_PEWTER_CITY",
-      "name": "PEWTER CITY",
+      "name": "ARGENTA",
       "x": 19,
       "y": 2,
       "width": 1,
@@ -314,7 +314,7 @@
     },
     {
       "map_section": "MAPSEC_CERULEAN_CITY",
-      "name": "CERULEAN CITY",
+      "name": "AZURIA",
       "x": 24,
       "y": 2,
       "width": 1,
@@ -322,7 +322,7 @@
     },
     {
       "map_section": "MAPSEC_LAVENDER_TOWN",
-      "name": "LAVENDER TOWN",
+      "name": "LAVANDE",
       "x": 27,
       "y": 5,
       "width": 1,
@@ -330,7 +330,7 @@
     },
     {
       "map_section": "MAPSEC_VERMILION_CITY",
-      "name": "VERMILION CITY",
+      "name": "CARMIN SUR MER",
       "x": 24,
       "y": 7,
       "width": 1,
@@ -338,7 +338,7 @@
     },
     {
       "map_section": "MAPSEC_CELADON_CITY",
-      "name": "CELADON CITY",
+      "name": "CELADOPOLE",
       "x": 22,
       "y": 5,
       "width": 1,
@@ -346,7 +346,7 @@
     },
     {
       "map_section": "MAPSEC_FUCHSIA_CITY",
-      "name": "FUCHSIA CITY",
+      "name": "PARMANIE",
       "x": 24,
       "y": 11,
       "width": 1,
@@ -354,7 +354,7 @@
     },
     {
       "map_section": "MAPSEC_SOUTHERN_ISLAND",
-      "name": "SOUTHERN ISLAND",
+      "name": "ILE AU SUD",
       "x": 9,
       "y": 14,
       "width": 1,
@@ -362,7 +362,7 @@
     },
     {
       "map_section": "MAPSEC_FARAWAY_ISLAND",
-      "name": "FARAWAY ISLAND",
+      "name": "ILE LOINTAINE",
       "x": 9,
       "y": 14,
       "width": 1,
@@ -370,7 +370,7 @@
     },
     {
       "map_section": "MAPSEC_BIRTH_ISLAND",
-      "name": "BIRTH ISLAND",
+      "name": "ILE NAISSANCE",
       "x": 9,
       "y": 14,
       "width": 1,
@@ -378,7 +378,7 @@
     },
     {
       "map_section": "MAPSEC_CINNABAR_ISLAND",
-      "name": "CINNABAR ISLAND",
+      "name": "CRAMOIS'ILE",
       "x": 19,
       "y": 13,
       "width": 1,
@@ -386,7 +386,7 @@
     },
     {
       "map_section": "MAPSEC_SAFFRON_CITY",
-      "name": "SAFFRON CITY",
+      "name": "SAFRANIA",
       "x": 24,
       "y": 5,
       "width": 1,
@@ -594,7 +594,7 @@
     },
     {
       "map_section": "MAPSEC_VIRIDIAN_FOREST",
-      "name": "VIRIDIAN FOREST",
+      "name": "FORET DE JADIELLE",
       "x": 19,
       "y": 4,
       "width": 1,
@@ -602,7 +602,7 @@
     },
     {
       "map_section": "MAPSEC_MT_MOON",
-      "name": "MT. MOON",
+      "name": "MONT SELENITE",
       "x": 21,
       "y": 2,
       "width": 2,
@@ -610,7 +610,7 @@
     },
     {
       "map_section": "MAPSEC_S_S_ANNE",
-      "name": "S.S. ANNE",
+      "name": "NAVIRE ANNE",
       "x": 13,
       "y": 15,
       "width": 1,
@@ -618,7 +618,7 @@
     },
     {
       "map_section": "MAPSEC_UNDERGROUND_PATH_2",
-      "name": "UNDERGROUND PATH",
+      "name": "PASSAGE SOUTERRAIN",
       "x": 24,
       "y": 5,
       "width": 1,
@@ -626,7 +626,7 @@
     },
     {
       "map_section": "MAPSEC_DIGLETTS_CAVE",
-      "name": "DIGLETT'S CAVE",
+      "name": "GROTTE TAUPIQUEUR",
       "x": 20,
       "y": 3,
       "width": 6,
@@ -634,7 +634,7 @@
     },
     {
       "map_section": "MAPSEC_ROCKET_HIDEOUT",
-      "name": "ROCKET HIDEOUT",
+      "name": "PLANQUE ROCKET",
       "x": 9,
       "y": 3,
       "width": 1,
@@ -642,7 +642,7 @@
     },
     {
       "map_section": "MAPSEC_SILPH_CO",
-      "name": "SILPH CO.",
+      "name": "SILPH SARL",
       "x": 24,
       "y": 5,
       "width": 1,
@@ -650,7 +650,7 @@
     },
     {
       "map_section": "MAPSEC_ROCK_TUNNEL",
-      "name": "ROCK TUNNEL",
+      "name": "TUNNEL ROCHEUX",
       "x": 27,
       "y": 3,
       "width": 1,
@@ -658,7 +658,7 @@
     },
     {
       "map_section": "MAPSEC_SEAFOAM_ISLANDS",
-      "name": "SEAFOAM ISLANDS",
+      "name": "ILES ECUME",
       "x": 22,
       "y": 13,
       "width": 1,
@@ -666,7 +666,7 @@
     },
     {
       "map_section": "MAPSEC_POKEMON_TOWER",
-      "name": "POKéMON TOWER",
+      "name": "TOUR POKEMON",
       "x": 27,
       "y": 5,
       "width": 1,
@@ -674,7 +674,7 @@
     },
     {
       "map_section": "MAPSEC_CERULEAN_CAVE",
-      "name": "CERULEAN CAVE",
+      "name": "GROTTE AZUR",
       "x": 23,
       "y": 1,
       "width": 1,
@@ -682,7 +682,7 @@
     },
     {
       "map_section": "MAPSEC_POWER_PLANT",
-      "name": "POWER PLANT",
+      "name": "CENTRALE",
       "x": 27,
       "y": 3,
       "width": 1,
@@ -690,7 +690,7 @@
     },
     {
       "map_section": "MAPSEC_NEW_BARK_TOWN",
-      "name": "NEW BARK TOWN",
+      "name": "BOURG GEON",
       "x": 19,
       "y": 10,
       "width": 1,
@@ -714,7 +714,7 @@
     },
     {
       "map_section": "MAPSEC_DARK_CAVE",
-      "name": "DARK CAVE",
+      "name": "ANTRE NOIRE",
       "x": 15,
       "y": 4,
       "width": 3,
@@ -722,7 +722,7 @@
     },
     {
       "map_section": "MAPSEC_UNION_CAVE",
-      "name": "UNION CAVE",
+      "name": "CAVES JUMELLES",
       "x": 12,
       "y": 11,
       "width": 1,
@@ -730,7 +730,7 @@
     },
     {
       "map_section": "MAPSEC_ILEX_FOREST",
-      "name": "ILEX FOREST",
+      "name": "BOIS AUX CHENES",
       "x": 8,
       "y": 12,
       "width": 2,
@@ -738,7 +738,7 @@
     },
     {
       "map_section": "MAPSEC_NATIONAL_PARK",
-      "name": "NATIONAL PARK",
+      "name": "PARC NATUREL",
       "x": 8,
       "y": 4,
       "width": 1,
@@ -746,7 +746,7 @@
     },
     {
       "map_section": "MAPSEC_WHIRL_ISLANDS",
-      "name": "WHIRL ISLANDS",
+      "name": "LES TOURB'ILES",
       "x": 6,
       "y": 11,
       "width": 1,
@@ -754,7 +754,7 @@
     },
     {
       "map_section": "MAPSEC_CLIFF_CAVE",
-      "name": "CLIFF CAVE",
+      "name": "GROTTE DU CAP",
       "x": 3,
       "y": 11,
       "width": 1,
@@ -762,7 +762,7 @@
     },
     {
       "map_section": "MAPSEC_MT_MORTAR",
-      "name": "MT MORTAR",
+      "name": "MONT CREUSET",
       "x": 12,
       "y": 1,
       "width": 1,
@@ -770,7 +770,7 @@
     },
     {
       "map_section": "MAPSEC_LAKE_OF_RAGE",
-      "name": "LAKE OF RAGE",
+      "name": "LAC COLERE",
       "x": 15,
       "y": 0,
       "width": 1,
@@ -778,7 +778,7 @@
     },
     {
       "map_section": "MAPSEC_ICE_PATH",
-      "name": "ICE PATH",
+      "name": "ROUTE DE GLACE",
       "x": 17,
       "y": 1,
       "width": 1,
@@ -786,7 +786,7 @@
     },
     {
       "map_section": "MAPSEC_MT_SILVER",
-      "name": "MT. SILVER",
+      "name": "MONT ARGENT",
       "x": 14,
       "y": 7,
       "width": 1,
@@ -794,7 +794,7 @@
     },
     {
       "map_section": "MAPSEC_TOHJO_FALLS",
-      "name": "TOHJO FALLS",
+      "name": "CHUTES TOHJO",
       "x": 20,
       "y": 9,
       "width": 1,
@@ -802,7 +802,7 @@
     },
     {
       "map_section": "MAPSEC_SPROUT_TOWER",
-      "name": "SPROUT TOWER",
+      "name": "TOUR CHETIFLOR",
       "x": 12,
       "y": 3,
       "width": 1,
@@ -810,7 +810,7 @@
     },
     {
       "map_section": "MAPSEC_SLOWPOKE_WELL",
-      "name": "SLOWPOKE WELL",
+      "name": "PUIT RAMOLOSSE",
       "x": 10,
       "y": 12,
       "width": 1,
@@ -818,7 +818,7 @@
     },
     {
       "map_section": "MAPSEC_BURNED_TOWER",
-      "name": "BURNED TOWER",
+      "name": "TOUR CENDREE",
       "x": 9,
       "y": 1,
       "width": 1,
@@ -826,7 +826,7 @@
     },
     {
       "map_section": "MAPSEC_TIN_TOWER",
-      "name": "TIN TOWER",
+      "name": "TOUR FERAILLE",
       "x": 10,
       "y": 1,
       "width": 1,
@@ -834,7 +834,7 @@
     },
     {
       "map_section": "MAPSEC_DRAGONS_DEN",
-      "name": "Dragon's Den",
+      "name": "ANTRE DU DRAGON",
       "x": 12,
       "y": 2,
       "width": 1,
@@ -842,7 +842,7 @@
     },
     {
       "map_section": "MAPSEC_RUINS_OF_ALPH",
-      "name": "Ruins of Alph",
+      "name": "RUINE D'ALPHA",
       "x": 6,
       "y": 6,
       "width": 1,
@@ -850,7 +850,7 @@
     },
     {
       "map_section": "MAPSEC_SS_AQUA",
-      "name": "S.S. AQUA",
+      "name": "NAVIRE AQUA",
       "x": 14,
       "y": 14,
       "width": 10,
@@ -858,7 +858,7 @@
     },
     {
       "map_section": "MAPSEC_EMBEDDED_TOWER",
-      "name": "EMBEDDED TOWER",
+      "name": "TOUR ENFOUIE",
       "x": 1,
       "y": 10,
       "width": 1,
@@ -866,7 +866,7 @@
     },
     {
       "map_section": "MAPSEC_OLIVINE_LIGHTHOUSE",
-      "name": "LIGHTHOUSE",
+      "name": "PHARE",
       "x": 7,
       "y": 4,
       "width": 1,

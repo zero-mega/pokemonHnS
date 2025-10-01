@@ -1,75 +1,75 @@
 gText_Birch_Welcome::
-	.string "Hi! Sorry to keep you waiting!\p"
-	.string "Welcome to the world of POKéMON!\p"
-	.string "My name is OAK.\p"
-	.string "People call me the POKéMON\n"
-	.string "PROFESSOR.\p"
+	.string "Salut! Désolé de t'avoir fait attendre!\p"
+	.string "Bienvenue dans le monde des POKéMON!\p"
+	.string "Je m'appelle CHEN.\p"
+	.string "On m'appelle le PROFESSEUR\n"
+	.string "POKéMON.\p"
 	.string "$"
 
 gText_Birch_Pokemon::
-	.string "This is what we call a “POKéMON.”\p"
+	.string "Voici ce que l'on appelle un « POKéMON ».\p"
 	.string "\n"
 	.string "$"
 
 gText_Birch_MainSpeech::
-	.string "This world is widely inhabited by\n"
-	.string "creatures known as POKéMON.\p"
-	.string "People and POKéMON live together,\n"
-	.string "by supporting each other.\p"
-	.string "Some people play with POKéMON,\n"
-	.string "some battle with them. \p"
-	.string "But we don't know everything about\n"
-	.string "POKéMON yet. \p"
-	.string "There are still many mysteries\n"
-	.string "to solve. That's why I study\l"
-	.string "POKéMON every day.\p"
+	.string "Ce monde est largement peuplé de\n"
+	.string "créatures appelées POKéMON.\p"
+	.string "Les gens et les POKéMON vivent ensemble,\n"
+	.string "en s'entraidant.\p"
+	.string "Certaines personnes jouent avec les POKéMON,\n"
+	.string "d'autres combattent avec eux.\p"
+	.string "Mais nous ne savons pas encore tout\n"
+	.string "sur les POKéMON.\p"
+	.string "Il reste encore beaucoup de mystères\n"
+	.string "à résoudre. C'est pourquoi j'étudie\l"
+	.string "les POKéMON chaque jour.\p"
 	.string "$"
 
 gText_Birch_AndYouAre::
-	.string "And you are?$"
+	.string "Et toi, qui es-tu?$"
 
 gText_Birch_BoyOrGirl::
-	.string "Are you a boy?\n"
-	.string "Or are you a girl?$"
+	.string "Es-tu un garçon ?\n"
+	.string "Ou es-tu une fille ?$"
 
 gText_Birch_Difficulty::
-	.string "Aha…\p"
-	.string "And… How do you think this\n"
-	.string "adventure is going to be?$"
+	.string "Ah…\p"
+	.string "Et… Comment penses-tu que cette\n"
+	.string "aventure va se passer?$"
 
 gText_Birch_LockDifficulty::
-	.string "If you need to change the DIFFICULTY\n"
-	.string "you can open the OPTIONS MENU and\l"
-	.string "change it from there.\p"
-	.string "You can also lock it, if you want.\n"
-	.string "Do you want to lock the\l"
-	.string "chosen DIFFICULTY?\p"
-	.string "This cannot be changed later.$"
+	.string "Si tu veux changer la DIFFICULTÉ\n"
+	.string "tu peux ouvrir le MENU OPTIONS et\l"
+	.string "la modifier depuis là.\p"
+	.string "Tu peux aussi la verrouiller, si tu veux.\n"
+	.string "Veux-tu verrouiller la\l"
+	.string "DIFFICULTÉ choisie ?\p"
+	.string "Cela ne pourra plus être changé plus tard.$"
 
 gText_Birch_Challenge::
-	.string "Oh, is that so?\p"
-	.string "All right, with that clear…\n"
-	.string "Do you expect any CHALLENGE\l"
-	.string "in your journey?\p"
-	.string "And what's your name?$"
+	.string "Oh, c'est ainsi ?\p"
+	.string "Très bien, maintenant que c'est clair…\n"
+	.string "Attends-tu un DÉFI\l"
+	.string "dans ton aventure ?\p"
+	.string "Et comment t'appelles-tu ?$"
 
 gText_Birch_WhatsYourName::
-	.string "Now, what did you say your name.\n"
-	.string "was?$"
+	.string "Alors, comment as-tu dit que tu t'appelais ?\n"
+	.string "$"
 
 gText_Birch_SoItsPlayer::
-	.string "Oh! So you're {PLAYER}{KUN}?$"
+	.string "Oh! Donc tu es {PLAYER}{KUN} ?$"
 
 gText_Birch_YourePlayer::
-	.string "{PLAYER}{KUN}, are you ready?\p"
-	.string "Your very own adventure is about\n"
-	.string "to unfold.\p"
+	.string "{PLAYER}{KUN}, es-tu prêt ?\p"
+	.string "Ta propre aventure est sur le point\n"
+	.string "de commencer.\p"
 	.string "$"
 
 gText_Birch_AreYouReady::
-	.string "You'll face fun times and tough\n"
-	.string "challenges.\p"
-	.string "A world of dreams and adventures\n"
-	.string "with POKéMON awaits! Let's go!\p"
-	.string "I'll be seeing you later!\p"
+	.string "Tu vivras des moments amusants et des\n"
+	.string "défis difficiles.\p"
+	.string "Un monde de rêves et d'aventures\n"
+	.string "avec les POKéMON t'attend! Allons-y!\p"
+	.string "On se revoit bientôt!\p"
 	.string "$"

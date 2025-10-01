@@ -12,14 +12,14 @@ ITEM_REPEAT_BALL,Une BALL qui marche bien sur un POKéMON déjà capturé.
 ITEM_TIMER_BALL,Plus efficace pendant les combats longs.
 ITEM_LUXURY_BALL,Une BALL confor- table qui rend les POKéMON amicaux.
 ITEM_PREMIER_BALL,Une BALL rare créée à l'occasion d'un grand évènement.
-ITEM_LOVE_BALL,
-ITEM_LURE_BALL,
-ITEM_FRIEND_BALL,
-ITEM_HEAVY_BALL,
-ITEM_MOON_BALL,
-ITEM_LEVEL_BALL,
-ITEM_FAST_BALL,
-ITEM_GS_BALL,
+ITEM_LOVE_BALL,Une BALL qui marche mieux sur les POKéMON du genre opposé.
+ITEM_LURE_BALL,Une BALL qui marche mieux sur les POKéMON pêchés.
+ITEM_FRIEND_BALL,Une BALL qui rend les POKéMON capturés plus amicaux.
+ITEM_HEAVY_BALL,Une BALL qui marche mieux sur les POKéMON lourds.
+ITEM_MOON_BALL,Une BALL qui marche mieux sur les POKéMON évoluant avec les pierres lunaires.
+ITEM_LEVEL_BALL,Une BALL qui marche mieux si votre POKéMON est plus fort.
+ITEM_FAST_BALL,Une BALL qui marche mieux sur les POKéMON rapides.
+ITEM_GS_BALL,Une BALL mystérieuse aux pouvoirs inconnus.
 ITEM_POTION,Restaure les PV d'un POKéMON de 20 points.
 ITEM_ANTIDOTE,Soigne les POKéMON empoisonnés.
 ITEM_BURN_HEAL,Soigne les POKéMON de leurs brûlures.
@@ -59,7 +59,7 @@ ITEM_RED_SHARD,Fragment d'objet antique. Peut être vendu à bas prix.
 ITEM_BLUE_SHARD,Fragment d'objet antique. Peut être vendu à bas prix.
 ITEM_YELLOW_SHARD,Fragment d'objet antique. Peut être vendu à bas prix.
 ITEM_GREEN_SHARD,Fragment d'objet antique. Peut être vendu à bas prix.
-ITEM_FERTILIZER,
+ITEM_FERTILIZER,Engrais spécial pour accélérer la croissance des BAIES.
 ITEM_03D,?????
 ITEM_03E,?????
 ITEM_HP_UP,Monte les PV d'un POKéMON.
@@ -81,7 +81,7 @@ ITEM_X_ACCURACY,Monte la précision des attaques pendant un combat.
 ITEM_X_SPECIAL,Monte l'ATQ. SPE. pendant un combat.
 ITEM_POKE_DOLL,Pour s'enfuir d'un combat contre un POKéMON sauvage.
 ITEM_FLUFFY_TAIL,Pour s'enfuir d'un combat contre un POKéMON sauvage.
-ITEM_BIG_NUGGET,
+ITEM_BIG_NUGGET,Une grosse pépite d'or pur. Peut être vendue à très bon prix.
 ITEM_SUPER_REPEL,Repousse les {PKMN} sauvages faibles durant 200 pas.
 ITEM_MAX_REPEL,Repousse les {PKMN} sauvages faibles durant 250 pas.
 ITEM_ESCAPE_ROPE,Pour sortir rapide- ment d'une grotte ou d'un souterrain.
@@ -111,8 +111,8 @@ ITEM_STARDUST,Sable rouge très fin. Peut être vendu à bon prix.
 ITEM_STAR_PIECE,Fragment de gemme rouge. Peut se ven- dre à très bon prix.
 ITEM_NUGGET,Pépite d'or pur. Peut être vendue à bon prix.
 ITEM_HEART_SCALE,Une jolie écaille convoitée par les collectionneurs.
-ITEM_EXP_SHARE_SMALL,
-ITEM_FAIRY_GEM,
+ITEM_EXP_SHARE_SMALL,Objet tenu pour partager l'EXP. après un combat.
+ITEM_FAIRY_GEM,Gemme mystérieuse qui booste les attaques FÉE.
 ITEM_072,?????
 ITEM_073,?????
 ITEM_074,?????
@@ -225,8 +225,8 @@ ITEM_LUCKY_PUNCH,Objet tenu montant le taux de criti- ques de LEVEINARD.
 ITEM_METAL_POWDER,Objet tenu montant la DEFENSE de METAMORPH.
 ITEM_THICK_CLUB,Objet tenu montant l'ATQ. d'OSSELAIT et d'OSSATUEUR.
 ITEM_STICK,Objet montant le taux de critiques de CANARTICHO.
-ITEM_INFINITE_REPEL,
-ITEM_INFINITE_RARE_CANDIES,
+ITEM_INFINITE_REPEL,Repousse les {PKMN} sauvages faibles de manière permanente.
+ITEM_INFINITE_RARE_CANDIES,Bonbons rares infinis pour faire progresser les POKéMON.
 ITEM_0F0,?????
 ITEM_0F0,?????
 ITEM_0F1,?????
@@ -250,7 +250,7 @@ ITEM_YELLOW_SCARF,Objet tenu montant la stat ROBUSTESSE dans les CONCOURS.
 ITEM_MACH_BIKE,Un vélo pliable pour aller 2 fois plus vite qu'à pied.
 ITEM_COIN_CASE,Une boîte qui peut contenir jusqu'à 9 999 JETONS.
 ITEM_ITEMFINDER,Un appareil qui sig- nale les objets in- visibles par un son.
-ITEM_RADIO,
+ITEM_RADIO,Appareil radio permettant d'écouter différentes stations.
 ITEM_OLD_ROD,Canne pour pêcher des POKéMON sauvages.
 ITEM_GOOD_ROD,Une bonne canne pour pêcher des POKéMON sauvages.
 ITEM_SUPER_ROD,La meilleure canne pour pêcher des POKéMON sauvages.
@@ -262,7 +262,7 @@ ITEM_DEVON_GOODS,Un paquet avec des pièces détachées de chez DEVON.
 ITEM_SOOT_SACK,Un sac utilisé pour ramasser des cen- dres volcaniques.
 ITEM_BASEMENT_KEY,"La clé de NEW LAVANDIA, située sous LAVANDIA."
 ITEM_ACRO_BIKE,Un vélo pliable pour faire des sauts.
-ITEM_POKEBLOCK_CASE,
+ITEM_POKEBLOCK_CASE,Boîte pour transporter les {POKEBLOCK}.
 ITEM_LETTER,Lettre pour PIERRE du PRESIDENT de la DEVON SARL.
 ITEM_EON_TICKET,"Un ticket de ferry pour une île lointaine, au sud."
 ITEM_RED_ORB,Un globe rouge censé abriter un pouvoir antique.
@@ -364,40 +364,40 @@ ITEM_AURORA_TICKET,Le ticket requis pour aller sur l'ILE AURORE.
 ITEM_POWDER_JAR,Un pot pour conserver la POUDRE BAIE.
 ITEM_RUBY,Une pierre rouge qui symbolise la passion.
 ITEM_SAPPHIRE,Une pierre bleue qui symbolise l'honnêteté.
-ITEM_CLEAR_BELL,
-ITEM_LOST_ITEM,
-ITEM_MACHINE_PART,
-ITEM_MYSTERY_EGG,
-ITEM_PASS,
-ITEM_RAINBOW_WING,
-ITEM_RED_SCALE,
-ITEM_SECRET_POTION,
-ITEM_SILVER_WING,
-ITEM_RAGE_CANDY_BAR,
-ITEM_TIDAL_BELL,
+ITEM_CLEAR_BELL,Une cloche mystérieuse aux pouvoirs inconnus.
+ITEM_LOST_ITEM,Objet perdu par quelqu'un. Peut être rendu à son propriétaire.
+ITEM_MACHINE_PART,Pièce de machine trouvée dans la CENTRALE ÉLECTRIQUE.
+ITEM_MYSTERY_EGG,Un œuf mystérieux aux pouvoirs inconnus.
+ITEM_PASS,Carte d'accès pour des zones spéciales.
+ITEM_RAINBOW_WING,Plume arc-en-ciel d'un POKéMON légendaire.
+ITEM_RED_SCALE,Écaille rouge brillante d'un POKéMON légendaire.
+ITEM_SECRET_POTION,Potion secrète aux pouvoirs mystérieux.
+ITEM_SILVER_WING,Plume argentée d'un POKéMON légendaire.
+ITEM_RAGE_CANDY_BAR,Barre de chocolat qui restaure 20 PV.
+ITEM_TIDAL_BELL,Cloche mystérieuse liée aux marées.
 ITEM_MAGMA_EMBLEM,Un objet portant le sceau de la TEAM MAGMA.
 ITEM_OLD_SEA_MAP,Une vieille carte montrant la route vers une île.
-ITEM_ADAMANT_MINT,
-ITEM_BOLD_MINT,
-ITEM_BRAVE_MINT,
-ITEM_CALM_MINT,
-ITEM_CAREFUL_MINT,
-ITEM_GENTLE_MINT,
-ITEM_HASTY_MINT,
-ITEM_IMPISH_MINT,
-ITEM_JOLLY_MINT,
-ITEM_LAX_MINT,
-ITEM_LONELY_MINT,
-ITEM_MILD_MINT,
-ITEM_MODEST_MINT,
-ITEM_NAIVE_MINT,
-ITEM_NAUGHTY_MINT,
-ITEM_QUIET_MINT,
-ITEM_RASH_MINT,
-ITEM_RELAXED_MINT,
-ITEM_SASSY_MINT,
-ITEM_SERIOUS_MINT,
-ITEM_TIMID_MINT,
+ITEM_ADAMANT_MINT,Change la nature du POKéMON en RIGIDE.
+ITEM_BOLD_MINT,Change la nature du POKéMON en ASSURÉ.
+ITEM_BRAVE_MINT,Change la nature du POKéMON en BRAVE.
+ITEM_CALM_MINT,Change la nature du POKéMON en CALME.
+ITEM_CAREFUL_MINT,Change la nature du POKéMON en PRUDENT.
+ITEM_GENTLE_MINT,Change la nature du POKéMON en DOUX.
+ITEM_HASTY_MINT,Change la nature du POKéMON en PRÉCIPITÉ.
+ITEM_IMPISH_MINT,Change la nature du POKéMON en MALIN.
+ITEM_JOLLY_MINT,Change la nature du POKéMON en JOYEUX.
+ITEM_LAX_MINT,Change la nature du POKéMON en LÂCHE.
+ITEM_LONELY_MINT,Change la nature du POKéMON en SOLITAIRE.
+ITEM_MILD_MINT,Change la nature du POKéMON en DOUX.
+ITEM_MODEST_MINT,Change la nature du POKéMON en MODESTE.
+ITEM_NAIVE_MINT,Change la nature du POKéMON en NAÏF.
+ITEM_NAUGHTY_MINT,Change la nature du POKéMON en COQUIN.
+ITEM_QUIET_MINT,Change la nature du POKéMON en DISCRET.
+ITEM_RASH_MINT,Change la nature du POKéMON en FOUILLEUX.
+ITEM_RELAXED_MINT,Change la nature du POKéMON en DÉTENDU.
+ITEM_SASSY_MINT,Change la nature du POKéMON en MALPOLI.
+ITEM_SERIOUS_MINT,Change la nature du POKéMON en SÉRIEUX.
+ITEM_TIMID_MINT,Change la nature du POKéMON en TIMIDE.
 ITEM_NONE,
 ITEM_MASTER_BALL,La meilleure BALL. Capture le POKéMON à coup sûr.
 ITEM_ULTRA_BALL,BALL au taux de réussite supérieur à la SUPER BALL.
@@ -411,14 +411,14 @@ ITEM_REPEAT_BALL,Une BALL qui marche bien sur un POKéMON déjà capturé.
 ITEM_TIMER_BALL,Plus efficace pendant les combats longs.
 ITEM_LUXURY_BALL,Une BALL confor- table qui rend les POKéMON amicaux.
 ITEM_PREMIER_BALL,Une BALL rare créée à l'occasion d'un grand évènement.
-ITEM_LOVE_BALL,
-ITEM_LURE_BALL,
-ITEM_FRIEND_BALL,
-ITEM_HEAVY_BALL,
-ITEM_MOON_BALL,
-ITEM_LEVEL_BALL,
-ITEM_FAST_BALL,
-ITEM_GS_BALL,
+ITEM_LOVE_BALL,Une BALL qui marche mieux sur les POKéMON du genre opposé.
+ITEM_LURE_BALL,Une BALL qui marche mieux sur les POKéMON pêchés.
+ITEM_FRIEND_BALL,Une BALL qui rend les POKéMON capturés plus amicaux.
+ITEM_HEAVY_BALL,Une BALL qui marche mieux sur les POKéMON lourds.
+ITEM_MOON_BALL,Une BALL qui marche mieux sur les POKéMON évoluant avec les pierres lunaires.
+ITEM_LEVEL_BALL,Une BALL qui marche mieux si votre POKéMON est plus fort.
+ITEM_FAST_BALL,Une BALL qui marche mieux sur les POKéMON rapides.
+ITEM_GS_BALL,Une BALL mystérieuse aux pouvoirs inconnus.
 ITEM_POTION,Restaure les PV d'un POKéMON de 20 points.
 ITEM_ANTIDOTE,Soigne les POKéMON empoisonnés.
 ITEM_BURN_HEAL,Soigne les POKéMON de leurs brûlures.
@@ -458,7 +458,7 @@ ITEM_RED_SHARD,Fragment d'objet antique. Peut être vendu à bas prix.
 ITEM_BLUE_SHARD,Fragment d'objet antique. Peut être vendu à bas prix.
 ITEM_YELLOW_SHARD,Fragment d'objet antique. Peut être vendu à bas prix.
 ITEM_GREEN_SHARD,Fragment d'objet antique. Peut être vendu à bas prix.
-ITEM_FERTILIZER,
+ITEM_FERTILIZER,Engrais spécial pour accélérer la croissance des BAIES.
 ITEM_03D,?????
 ITEM_03E,?????
 ITEM_HP_UP,Monte les PV d'un POKéMON.
@@ -480,7 +480,7 @@ ITEM_X_ACCURACY,Monte la précision des attaques pendant un combat.
 ITEM_X_SPECIAL,Monte l'ATQ. SPE. pendant un combat.
 ITEM_POKE_DOLL,Pour s'enfuir d'un combat contre un POKéMON sauvage.
 ITEM_FLUFFY_TAIL,Pour s'enfuir d'un combat contre un POKéMON sauvage.
-ITEM_BIG_NUGGET,
+ITEM_BIG_NUGGET,Une grosse pépite d'or pur. Peut être vendue à très bon prix.
 ITEM_SUPER_REPEL,Repousse les {PKMN} sauvages faibles durant 200 pas.
 ITEM_MAX_REPEL,Repousse les {PKMN} sauvages faibles durant 250 pas.
 ITEM_ESCAPE_ROPE,Pour sortir rapide- ment d'une grotte ou d'un souterrain.
@@ -510,8 +510,8 @@ ITEM_STARDUST,Sable rouge très fin. Peut être vendu à bon prix.
 ITEM_STAR_PIECE,Fragment de gemme rouge. Peut se ven- dre à très bon prix.
 ITEM_NUGGET,Pépite d'or pur. Peut être vendue à bon prix.
 ITEM_HEART_SCALE,Une jolie écaille convoitée par les collectionneurs.
-ITEM_EXP_SHARE_SMALL,
-ITEM_FAIRY_GEM,
+ITEM_EXP_SHARE_SMALL,Objet tenu pour partager l'EXP. après un combat.
+ITEM_FAIRY_GEM,Gemme mystérieuse qui booste les attaques FÉE.
 ITEM_072,?????
 ITEM_073,?????
 ITEM_074,?????
@@ -624,8 +624,8 @@ ITEM_LUCKY_PUNCH,Objet tenu montant le taux de criti- ques de LEVEINARD.
 ITEM_METAL_POWDER,Objet tenu montant la DEFENSE de METAMORPH.
 ITEM_THICK_CLUB,Objet tenu montant l'ATQ. d'OSSELAIT et d'OSSATUEUR.
 ITEM_STICK,Objet montant le taux de critiques de CANARTICHO.
-ITEM_INFINITE_REPEL,
-ITEM_INFINITE_RARE_CANDIES,
+ITEM_INFINITE_REPEL,Repousse les {PKMN} sauvages faibles de manière permanente.
+ITEM_INFINITE_RARE_CANDIES,Bonbons rares infinis pour faire progresser les POKéMON.
 ITEM_0F0,?????
 ITEM_0F0,?????
 ITEM_0F1,?????
@@ -660,7 +660,7 @@ ITEM_DEVON_GOODS,Un paquet avec des pièces détachées de chez DEVON.
 ITEM_SOOT_SACK,Un sac utilisé pour ramasser des cen- dres volcaniques.
 ITEM_BASEMENT_KEY,"La clé de NEW LAVANDIA, située sous LAVANDIA."
 ITEM_ACRO_BIKE,Un vélo pliable pour faire des sauts.
-ITEM_POKEBLOCK_CASE,
+ITEM_POKEBLOCK_CASE,Boîte pour transporter les {POKEBLOCK}.
 ITEM_LETTER,Lettre pour PIERRE du PRESIDENT de la DEVON SARL.
 ITEM_EON_TICKET,"Un ticket de ferry pour une île lointaine, au sud."
 ITEM_RED_ORB,Un globe rouge censé abriter un pouvoir antique.
@@ -764,24 +764,24 @@ ITEM_RUBY,Une pierre rouge qui symbolise la passion.
 ITEM_SAPPHIRE,Une pierre bleue qui symbolise l'honnêteté.
 ITEM_MAGMA_EMBLEM,Un objet portant le sceau de la TEAM MAGMA.
 ITEM_OLD_SEA_MAP,Une vieille carte montrant la route vers une île.
-ITEM_ADAMANT_MINT,
-ITEM_BOLD_MINT,
-ITEM_BRAVE_MINT,
-ITEM_CALM_MINT,
-ITEM_CAREFUL_MINT,
-ITEM_GENTLE_MINT,
-ITEM_HASTY_MINT,
-ITEM_IMPISH_MINT,
-ITEM_JOLLY_MINT,
-ITEM_LAX_MINT,
-ITEM_LONELY_MINT,
-ITEM_MILD_MINT,
-ITEM_MODEST_MINT,
-ITEM_NAIVE_MINT,
-ITEM_NAUGHTY_MINT,
-ITEM_QUIET_MINT,
-ITEM_RASH_MINT,
-ITEM_RELAXED_MINT,
-ITEM_SASSY_MINT,
-ITEM_SERIOUS_MINT,
-ITEM_TIMID_MINT,
+ITEM_ADAMANT_MINT,Change la nature du POKéMON en RIGIDE.
+ITEM_BOLD_MINT,Change la nature du POKéMON en ASSURÉ.
+ITEM_BRAVE_MINT,Change la nature du POKéMON en BRAVE.
+ITEM_CALM_MINT,Change la nature du POKéMON en CALME.
+ITEM_CAREFUL_MINT,Change la nature du POKéMON en PRUDENT.
+ITEM_GENTLE_MINT,Change la nature du POKéMON en DOUX.
+ITEM_HASTY_MINT,Change la nature du POKéMON en PRÉCIPITÉ.
+ITEM_IMPISH_MINT,Change la nature du POKéMON en MALIN.
+ITEM_JOLLY_MINT,Change la nature du POKéMON en JOYEUX.
+ITEM_LAX_MINT,Change la nature du POKéMON en LÂCHE.
+ITEM_LONELY_MINT,Change la nature du POKéMON en SOLITAIRE.
+ITEM_MILD_MINT,Change la nature du POKéMON en DOUX.
+ITEM_MODEST_MINT,Change la nature du POKéMON en MODESTE.
+ITEM_NAIVE_MINT,Change la nature du POKéMON en NAÏF.
+ITEM_NAUGHTY_MINT,Change la nature du POKéMON en COQUIN.
+ITEM_QUIET_MINT,Change la nature du POKéMON en DISCRET.
+ITEM_RASH_MINT,Change la nature du POKéMON en FOUILLEUX.
+ITEM_RELAXED_MINT,Change la nature du POKéMON en DÉTENDU.
+ITEM_SASSY_MINT,Change la nature du POKéMON en MALPOLI.
+ITEM_SERIOUS_MINT,Change la nature du POKéMON en SÉRIEUX.
+ITEM_TIMID_MINT,Change la nature du POKéMON en TIMIDE.
