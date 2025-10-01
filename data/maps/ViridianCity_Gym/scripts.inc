@@ -41,9 +41,9 @@ ViridianCity_Gym_EventScript_BlueGotoDojo::
 	end
 
 ViridianCity_Gym_Text_BlueGotoDojo:
-	.string "BLUE: Back for more already?\p"
-	.string "If you want another shot at me,\n"
-	.string "come to the FIGHTING DOJO!$"
+	.string "BLEU: Déjà de retour pour plus ?\p"
+	.string "Si tu veux une autre chance contre moi,\n"
+	.string "viens au DOJO DE COMBAT !$"
 
 ViridianCity_Gym_EventScript_BlueAtDojo::
 	msgbox ViridianCity_Gym_Text_LeaderBlue_Epilogue, MSGBOX_DEFAULT
@@ -52,40 +52,40 @@ ViridianCity_Gym_EventScript_BlueAtDojo::
 	end
 
 ViridianCity_Gym_Text_LeaderBlue_Before:
-	.string "BLUE: Yo! Finally got here, huh?\p"
-	.string "I wasn't in the mood at CINNABAR,\p"
-	.string "but now I'm ready to battle you.\p"
+	.string "BLEU: Yo ! Tu es enfin arrivé, hein ?\p"
+	.string "Je n'étais pas d'humeur à CANNELAGE,\p"
+	.string "mais maintenant je suis prêt à te combattre.\p"
 	.string "…\p"
-	.string "You're telling me you conquered all\n"
-	.string "the GYMS in JOHTO?\p"
-	.string "Heh! JOHTO's GYMS must be pretty\n"
-	.string "pathetic then.\p"
-	.string "Hey, don't worry about it.\p"
-	.string "I'll know if you are good or not by\n"
-	.string "battling you right now.\p"
-	.string "Ready, JOHTO CHAMP?$"
+	.string "Tu me dis que tu as conquis toutes\n"
+	.string "les ARÈNES de JOHTO ?\p"
+	.string "Heh ! Les ARÈNES de JOHTO doivent être\n"
+	.string "plutôt pathétiques alors.\p"
+	.string "Hé, ne t'inquiète pas pour ça.\p"
+	.string "Je saurai si tu es bon ou pas en\n"
+	.string "te combattant maintenant.\p"
+	.string "Prêt, CHAMP de JOHTO ?$"
 
 ViridianCity_Gym_Text_LeaderBlue_Win:
-	.string "BLUE: What?\p"
-	.string "How the heck did I lose to you?\p"
+	.string "BLEU: Quoi ?\p"
+	.string "Comment diable ai-je pu perdre contre toi ?\p"
 	.string "…\p"
-	.string "Tch, all right… Here, take this--it's\n"
-	.string "EARTHBADGE.$"
+	.string "Tch, d'accord… Tiens, prends ça--c'est\n"
+	.string "le BADGE TERRE.$"
 
 ViridianCity_Gym_Text_ReceivedEarthBadge:
-	.string "{PLAYER} received EARTHBADGE.$"
+	.string "{PLAYER} a reçu le BADGE TERRE.$"
 
 ViridianCity_Gym_Text_LeaderBlue_After:
-	.string "BLUE: …\p"
-	.string "All right, I was wrong. You're the\n"
-	.string "real deal. You are a good trainer.\p"
-	.string "But I'm going to beat you someday.\p"
-	.string "Don't you forget it!$"
+	.string "BLEU: …\p"
+	.string "D'accord, j'avais tort. Tu es\n"
+	.string "le vrai. Tu es un bon dresseur.\p"
+	.string "Mais je vais te battre un jour.\p"
+	.string "Ne l'oublie pas !$"
 
 ViridianCity_Gym_Text_LeaderBlue_Epilogue:
-	.string "BLUE: Listen, you.\p"
-	.string "You'd better not lose until I beat\n"
-	.string "you. Got it?$"
+	.string "BLEU: Écoute, toi.\p"
+	.string "Tu ferais mieux de ne pas perdre\n"
+	.string "jusqu'à ce que je te batte. Compris ?$"
 
 
 ViridianCity_Gym_EventScript_GymGuy::
@@ -98,18 +98,18 @@ ViridianCity_Gym_EventScript_GymGuyAfter::
 	end
 
 ViridianCity_Gym_Text_Guide:
-	.string "Yo, CHAMP in making!\p"
-	.string "How's it going? Looks like you're on\n"
-	.string "a roll.\p"
-	.string "The GYM LEADER is a guy who battled\n"
-	.string "the CHAMPION three years ago.\p"
-	.string "He's no pushover.\p"
-	.string "Give it everything you've got!$"
+	.string "Yo, CHAMP en devenir !\p"
+	.string "Comment ça va ? On dirait que tu es\n"
+	.string "en pleine forme.\p"
+	.string "Le CHAMPION D'ARÈNE est un gars qui a combattu\n"
+	.string "le CHAMPION il y a trois ans.\p"
+	.string "Ce n'est pas un amateur.\p"
+	.string "Donne tout ce que tu as !$"
 
 ViridianCity_Gym_Text_Guide_Win:
-	.string "Man, you are truly tough…\p"
-	.string "That was a heck of an inspirational\n"
-	.string "battle. It brought tears to my eyes.$"
+	.string "Mec, tu es vraiment coriace…\p"
+	.string "C'était un combat vraiment inspirant.\n"
+	.string "Ça m'a fait venir les larmes aux yeux.$"
 
 
 ViridianCity_Gym_EventScript_GymStatue::
@@ -125,14 +125,14 @@ ViridianCity_Gym_EventScript_GymStatuePostVictory::
 	end
 
 ViridianCity_Gym_Text_GymStatue::
-    .string "VIRIDIAN POKéMON GYM\n"
-    .string "LEADER: BLUE\p"
-	.string "WINNING TRAINERS:\n"
-	.string "BLUE, RED$"
+    .string "ARÈNE POKéMON DE JADIELLE\n"
+    .string "CHAMPION: BLEU\p"
+	.string "DRESSEURS VICTOIREUX:\n"
+	.string "BLEU, ROUGE$"
 
 ViridianCity_Gym_Text_GymStatuePlayerWon::
-    .string "VIRIDIAN POKéMON GYM\n"
-    .string "LEADER: BLUE\p"
-    .string "WINNING TRAINERS:\n"
-	.string "BLUE, RED, {PLAYER}$"
+    .string "ARÈNE POKéMON DE JADIELLE\n"
+    .string "CHAMPION: BLEU\p"
+    .string "DRESSEURS VICTOIREUX:\n"
+	.string "BLEU, ROUGE, {PLAYER}$"
 

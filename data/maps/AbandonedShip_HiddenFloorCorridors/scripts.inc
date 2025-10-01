@@ -134,24 +134,24 @@ AbandonedShip_HiddenFloorCorridors_EventScript_TheDoorIsOpen::
 	end
 
 AbandonedShip_HiddenFloorCorridors_Text_Rm1DoorIsLocked:
-	.string "The door is locked.\p"
-	.string "“RM. 1” is painted on the door.$"
+	.string "La porte est verrouillée.\p"
+	.string "« CH. 1 » est écrit sur la porte.$"
 
 AbandonedShip_HiddenFloorCorridors_Text_Rm2DoorIsLocked:
-	.string "The door is locked.\p"
-	.string "“RM. 2” is painted on the door.$"
+	.string "La porte est verrouillée.\p"
+	.string "« CH. 2 » est écrit sur la porte.$"
 
 AbandonedShip_HiddenFloorCorridors_Text_Rm4DoorIsLocked:
-	.string "The door is locked.\p"
-	.string "“RM. 4” is painted on the door.$"
+	.string "La porte est verrouillée.\p"
+	.string "« CH. 4 » est écrit sur la porte.$"
 
 AbandonedShip_HiddenFloorCorridors_Text_Rm6DoorIsLocked:
-	.string "The door is locked.\p"
-	.string "“RM. 6” is painted on the door.$"
+	.string "La porte est verrouillée.\p"
+	.string "« CH. 6 » est écrit sur la porte.$"
 
 AbandonedShip_HiddenFloorCorridors_Text_InsertedKey:
-	.string "{PLAYER} inserted and turned the\n"
-	.string "KEY.\p"
-	.string "The inserted KEY stuck fast,\n"
-	.string "but the door opened.$"
+	.string "{PLAYER} insère et tourne la\n"
+	.string "CLÉ.\p"
+	.string "La clé reste coincée,\n"
+	.string "mais la porte s’ouvre.$"
 

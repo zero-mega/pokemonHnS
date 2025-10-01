@@ -312,20 +312,18 @@ WhirlIslands_1F_EventScript_KuniAfter::
 	end
 
 WhirlIslands_1F_Text_Kimono_AfterNotCaught:
-	.string "You have not only made LUGIA\n"
-	.string "appear, but you have also defeated\l"
-	.string "it...\p"
-	.string "There is nothing more for us to\n"
-	.string "say. Take care of yourself in your\l"
-	.string "journey...$"	
+	.string "Tu as non seulement fait apparaître LUGIA\n"
+	.string "mais tu l'as aussi vaincu...\p"
+	.string "Il n'y a plus rien pour nous à\n"
+	.string "dire. Prends soin de toi dans ton\l"
+	.string "voyage...$"	
 
 WhirlIslands_1F_Text_Kimono_AfterCaught:
-	.string "You have not only made LUGIA\n"
-	.string "appear, but you have also caught\l"
-	.string "it...\p"
-	.string "There is nothing more for us to\n"
-	.string "say. Take care of yourself in your\l"
-	.string "journey...$"
+	.string "Tu as non seulement fait apparaître LUGIA\n"
+	.string "mais tu l'as aussi attrapé...\p"
+	.string "Il n'y a plus rien pour nous à\n"
+	.string "dire. Prends soin de toi dans ton\l"
+	.string "voyage...$"
 
 WhirlIslands_1F_Movement_CameraPanUp:
 	walk_up
@@ -595,28 +593,28 @@ WhirlIslands_1F_Text_Kuni_Before::
 	.string "KUNI: Go, face LUGIA. $"
 
 WhirlIslands_1F_Text_Kimono_Opening::
-	.string "KIMONO GIRL: That's right.\n"
-	.string "This is where we welcome LUGIA.\p"
-	.string "When the dance we practiced many\n"
-	.string "days becomes one with the sound of the\p"
-	.string "Tidal Bell we entrusted to you, then\n"
-	.string "LUGIA shall come out from deep within\p"
-	.string "the waterfall basin once again. $"
+	.string "FILLE KIMONO: C'est exact.\n"
+	.string "C'est ici que nous accueillons LUGIA.\p"
+	.string "Quand la danse que nous avons pratiquée\n"
+	.string "pendant de nombreux jours devient une avec le son de la\p"
+	.string "Cloche Marée que nous t'avons confiée, alors\n"
+	.string "LUGIA sortira des profondeurs\p"
+	.string "du bassin de la cascade une fois de plus. $"
 
 WhirlIslands_1F_Text_Kimono_Closing1::
-	.string "That is indeed LUGIA...\n"
-	.string "The guardian of these islands from\p"
-	.string "ancient times... \p"
-	.string "So many have tried again and again,\n"
-	.string "only to fail...\p"
-	.string "{PLAYER}, your heart in complete\n"
-	.string "harmony with the Tidal Bell has finally\p"
-	.string "allowed it to appear...\n"
-	.string "{PLAYER}, don't you see?\p"
-	.string "LUGIA... It must have been waiting for\n"
-	.string "someone like you all this time.\p"
-	.string "Wouldn't you agree? $"
+	.string "C'est bien LUGIA...\n"
+	.string "Le gardien de ces îles depuis\p"
+	.string "des temps anciens... \p"
+	.string "Tant de gens ont essayé encore et encore,\n"
+	.string "pour échouer...\p"
+	.string "{PLAYER}, ton cœur en parfaite\n"
+	.string "harmonie avec la Cloche Marée a enfin\p"
+	.string "permis qu'il apparaisse...\n"
+	.string "{PLAYER}, ne vois-tu pas ?\p"
+	.string "LUGIA... Il devait attendre\n"
+	.string "quelqu'un comme toi tout ce temps.\p"
+	.string "Ne serais-tu pas d'accord ? $"
 
 WhirlIslands_1F_Text_Kimono_After::
-	.string "KIMONO GIRL: You've proven yourself\n"
-	.string "today, {PLAYER}.$"
+	.string "FILLE KIMONO: Tu t'es prouvé\n"
+	.string "aujourd'hui, {PLAYER}.$"
