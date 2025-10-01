@@ -1,0 +1,1727 @@
+key,text
+gText_ExpandedPlaceholder_Empty,
+gText_ExpandedPlaceholder_Kun,
+gText_ExpandedPlaceholder_Chan,
+gText_ExpandedPlaceholder_Sapphire,SAPHIR
+gText_ExpandedPlaceholder_Ruby,RUBIS
+gText_ExpandedPlaceholder_Emerald,EMERAUDE
+gText_ExpandedPlaceholder_Aqua,AQUA
+gText_ExpandedPlaceholder_Magma,MAGMA
+gText_ExpandedPlaceholder_Archie,ARTHUR
+gText_ExpandedPlaceholder_Maxie,MAX
+gText_ExpandedPlaceholder_Kyogre,KYOGRE
+gText_ExpandedPlaceholder_Groudon,GROUDON
+gText_ExpandedPlaceholder_Brendan,BRICE
+gText_ExpandedPlaceholder_May,FLORA
+gText_EggNickname,OEUF
+gText_Pokemon,POKéMON
+gText_ProfBirchMatchCallName,PROF. SEKO
+gText_MainMenuNewGame,NOUVELLE PARTIE
+gText_MainMenuContinue,CONTINUER
+gText_MainMenuOption,OPTIONS
+gText_MainMenuMysteryGift,CADEAU MYST.
+gText_MainMenuMysteryGift2,CADEAU MYST.
+gText_MainMenuMysteryEvents,EVENEMENTS MYSTERE
+gText_WirelessNotConnected,L'adaptateur sans fil GBA n'est\npas connecté.
+gText_MysteryGiftCantUse,Ne pas utiliser l'adaptateur sans fil\navec le CADEAU MYST.
+gText_MysteryEventsCantUse,Ne pas utiliser l'adaptateur sans fil\navec les EVENEMENTS MYSTERE.
+gText_UpdatingSaveExternalData,Updating save file using external\ndata. Please wait.
+gText_SaveFileUpdated,The save file has been updated.
+gText_SaveFileCorrupted,Fichier de sauvegarde corrompu.\nLe fichier précédent sera chargé.
+gText_SaveFileErased,The save file has been erased\ndue to corruption or damage.
+gText_BatteryRunDry,La pile interne est épuisée.\nVous pouvez continuer à jouer.\pMais les évènements dépendant de\nl'heure n'auront pas lieu.
+gText_Player,PLAYER
+gText_Pokedex,POKéDEX
+gText_Time,TIME
+gText_Badges,BADGES
+gText_AButton,A Button
+gText_BButton,B Button
+gText_RButton,R Button
+gText_LButton,L Button
+gText_Start,START
+gText_Select,SELECT
+gText_ControlPad,+ Control Pad
+gText_LButtonRButton,L Button  R Button
+gText_Controls,CONTROLS
+gText_PickOk,{DPAD_UPDOWN}PICK {A_BUTTON}OK
+gText_Next,{A_BUTTON}NEXT
+gText_NextBack,{A_BUTTON}NEXT {B_BUTTON}BACK
+gText_PickNextCancel,{DPAD_UPDOWN}CHOIX {A_BUTTON}SUIV. {B_BUTTON}ANN.
+gText_PickCancel,{DPAD_UPDOWN}CHOIX {A_BUTTON}{B_BUTTON}ANNUL.
+gText_AButtonExit,{A_BUTTON}RETOUR
+gText_BirchBoy,GARÇON
+gText_BirchGirl,FILLE
+gText_DefaultNameGold,GOLD
+gText_DefaultNameKris,KRIS
+gText_DefaultNameStu,STEF
+gText_DefaultNameMilton,MANUEL
+gText_DefaultNameTom,SEB
+gText_DefaultNameKenny,GWENN
+gText_DefaultNameReid,ARNO
+gText_DefaultNameJude,JULES
+gText_DefaultNameJaxson,JOHANN
+gText_DefaultNameEaston,THIBAUD
+gText_DefaultNameWalker,ALEC
+gText_DefaultNameTeru,GIBUS
+gText_DefaultNameJohnny,JOHNNY
+gText_DefaultNameBrett,FABRICE
+gText_DefaultNameSeth,DANIEL
+gText_DefaultNameTerry,THOMAS
+gText_DefaultNameCasey,GARY
+gText_DefaultNameDarren,RUDDY
+gText_DefaultNameLandon,THIERRY
+gText_DefaultNameCollin,COLLIN
+gText_DefaultNameStanley,STAN
+gText_DefaultNameQuincy,SEVERIN
+gText_DefaultNameKimmy,AGNES
+gText_DefaultNameTiara,ARIANE
+gText_DefaultNameBella,BELLA
+gText_DefaultNameJayla,MAEVA
+gText_DefaultNameAllie,PAULINE
+gText_DefaultNameLianna,CINDY
+gText_DefaultNameSara,SOPHIE
+gText_DefaultNameMonica,MONICA
+gText_DefaultNameCamila,CATHY
+gText_DefaultNameAubree,FANNY
+gText_DefaultNameRuthie,ROXANE
+gText_DefaultNameHazel,EDITH
+gText_DefaultNameNadine,NADINE
+gText_DefaultNameTanja,TANIA
+gText_DefaultNameYasmin,JANYCE
+gText_DefaultNameNicola,CLAIRE
+gText_DefaultNameLillie,LILLY
+gText_DefaultNameTerra,SOLENE
+gText_DefaultNameLucy,CYNTHIA
+gText_DefaultNameHalie,MAUD
+gText_ThisIsAPokemon,Voici ce qu'on appelle un «POKéMON».{PAUSE 96}\p
+gText_5MarksPokemon,????? POKéMON
+gText_UnkHeight,"{CLEAR_TO 0x0C}???,? m"
+gText_UnkWeight,"???,? kg"
+gText_EmptyPkmnCategory,                       POKéMON
+gText_EmptyHeight,{CLEAR_TO 0x0C}    '    »
+gText_EmptyWeight,        .   lbs.
+gText_EmptyPokedexInfo1,
+gText_CryOf,CRI DE
+gText_EmptyPokedexInfo2,
+gText_SizeComparedTo,TAILLE COMPAREE A 
+gText_PokedexRegistration,Enregistrement du POKéDEX terminé.
+gText_HTHeight,HAUT.
+gText_WTWeight,POIDS
+gText_SearchingPleaseWait,Recherche en cours…\nVeuillez patienter.
+gText_SearchCompleted,Recherche terminée.
+gText_NoMatchingPkmnWereFound,Aucun POKéMON correspondant trouvé.
+gText_SearchForPkmnBasedOnParameters,Recherche de POKéMON selon certains\ncritères.
+gText_SwitchPokedexListings,Changer le classement du POKéDEX.
+gText_ReturnToPokedex,Revenir au POKéDEX.
+gText_SelectPokedexMode,Choisir le mode du POKéDEX.
+gText_SelectPokedexListingMode,Choisir le mode de classement du POKéDEX.
+gText_ListByFirstLetter,Recherche par la première lettre du nom:\nPOKéMON vus.
+gText_ListByBodyColor,Recherche par la couleur:\nPOKéMON vus.
+gText_ListByType,Recherche par le type:\nPOKéMON pris uniquement.
+gText_ExecuteSearchSwitch,Exécuter recherche/changement.
+gText_DexHoennTitle,DEX HOENN
+gText_DexNatTitle,DEX NATIONAL
+gText_DexSortNumericalTitle,MODE NUMERIQUE
+gText_DexSortAtoZTitle,MODE A à Z
+gText_DexSortHeaviestTitle,MODE + - LOURD
+gText_DexSortLightestTitle,MODE + - LEGER
+gText_DexSortTallestTitle,MODE + - GRAND
+gText_DexSortSmallestTitle,MODE + - PETIT
+gText_DexSearchAlphaABC,ABC
+gText_DexSearchAlphaDEF,DEF
+gText_DexSearchAlphaGHI,GHI
+gText_DexSearchAlphaJKL,JKL
+gText_DexSearchAlphaMNO,MNO
+gText_DexSearchAlphaPQR,PQR
+gText_DexSearchAlphaSTU,STU
+gText_DexSearchAlphaVWX,VWX
+gText_DexSearchAlphaYZ,YZ
+gText_DexSearchColorRed,ROUGE
+gText_DexSearchColorBlue,BLEU
+gText_DexSearchColorYellow,JAUNE
+gText_DexSearchColorGreen,VERT
+gText_DexSearchColorBlack,NOIR
+gText_DexSearchColorBrown,MARRON
+gText_DexSearchColorPurple,VIOLET
+gText_DexSearchColorGray,GRIS
+gText_DexSearchColorWhite,BLANC
+gText_DexSearchColorPink,ROSE
+gText_DexHoennDescription,POKéDEX de la région HOENN
+gText_DexNatDescription,POKéDEX édition nationale
+gText_DexSortNumericalDescription,POKéMON classés selon leur numéro.
+gText_DexSortAtoZDescription,"POKéMON vus et pris, classés par ordre\nalphabétique."
+gText_DexSortHeaviestDescription,"POKéMON pris, classés du plus lourd au\nplus léger."
+gText_DexSortLightestDescription,"POKéMON pris, classés du plus léger au\nplus lourd."
+gText_DexSortTallestDescription,"POKéMON pris, classés du plus grand au\nplus petit."
+gText_DexSortSmallestDescription,"POKéMON pris, classés du plus petit au\nplus grand."
+gText_DexEmptyString,
+gText_DexSearchDontSpecify,INDIFFERENT
+gText_DexSearchTypeNone,AUCUN
+gText_SelectorArrow,▶
+gText_EmptySpace, 
+gText_WelcomeToHOF,Bienvenue au PANTHEON!
+gText_HOFDexRating,Spotted POKéMON: {STR_VAR_1}!\nOwned POKéMON: {STR_VAR_2}!\pPROF. BIRCH's POKéDEX rating!\pPROF. BIRCH: Let's see…\p
+gText_HOFDexSaving,SAVING…\nDON'T TURN OFF THE POWER.
+gText_HOFCorrupted,Données du PANTHEON corrompues.
+gText_HOFNumber,PANTHEON Nº {STR_VAR_1}
+gText_LeagueChamp,MAITRE DE LA LIGUE!\nFELICITATIONS!
+gText_Number,Nº
+gText_Level,N.
+gText_IdNumberSlash,IDNo. /
+gText_Name,NAME
+gText_IDNumber,IDNo.
+gText_BirchInTrouble,Le PROF. SEKO a des ennuis!\nChoisis un POKéMON et sauve-le!
+gText_ConfirmStarterChoice,Prendre ce POKéMON?
+gText_Pokemon4,POKéMON
+gText_FlyToWhere,VOLER où?
+gText_Cancel,SORTIR
+gText_Cancel2,RETOUR
+gText_EmptyString2,
+gText_Cancel7,CANCEL
+gText_Item,OBJET
+gText_Mail,LETTRE
+gText_Take,PRENDR.
+gText_Store,DEPOSER
+gText_None,AUCUN
+gText_ThreeMarks,???
+gText_FiveMarks,?????
+gText_Slash,/
+gText_OneDash,-
+gText_TwoDashes,--
+gText_ThreeDashes,---
+gText_MaleSymbol,♂
+gText_FemaleSymbol,♀
+gText_LevelSymbol,N.
+gText_NumberClear01,{NO}{CLEAR 0x01}
+gText_PlusSymbol,+
+gText_RightArrow,{RIGHT_ARROW}
+gText_IDNumber2,{NO}{ID}
+gText_Space, 
+gText_SelectorArrow2,▶
+gText_GoBackPrevMenu,Retourner au menu\nprécédent.
+gText_WhatWouldYouLike,Que voulez-vous faire?
+gText_xVar1,×{STR_VAR_1}
+gText_Berry2, BERRY
+gText_Coins,{STR_VAR_1} JETONS
+gText_CloseBag,FERMER LE SAC
+gText_Var1IsSelected,{STR_VAR_1} est\nsélectionné.
+gText_CantWriteMail,Vous ne pouvez pas\nécrire de LETTRE ici.
+gText_NoPokemon,Il n'y a pas de\nPOKéMON.
+gText_MoveVar1Where,Où voulez-vous\nplacer\n{STR_VAR_1}?
+gText_Var1CantBeHeld,Impossible de tenir {STR_VAR_1}!
+gText_Var1CantBeHeldHere,Impossible de tenir {STR_VAR_1} ici.
+gText_DepositHowManyVar1,Vous voulez en\ndéposer combien?
+gText_DepositedVar2Var1s,{STR_VAR_1}:\ndéposé {STR_VAR_2}.
+gText_NoRoomForItems,Plus de place pour\nstocker des objets.
+gText_CantStoreImportantItems,Objets importants\nimpossibles à\nstocker sur le PC!
+gText_TooImportantToToss,Cet objet est\ntrop important\npour le jeter!
+gText_TossHowManyVar1s,En jeter combien?
+gText_ThrewAwayVar2Var1s,{STR_VAR_1}:\njeté {STR_VAR_2}.
+gText_ConfirmTossItems,{STR_VAR_1}:\nen jeter {STR_VAR_2}?
+gText_RocketRadio,"... ... Ahem, we are\nTEAM ROCKET!\lAfter three years of preparation,\lwe have risen again from the ashes!\lGIOVANNI! Can you hear us?\lWe did it!\lWhere is our boss?\lIs he listening?{PAUSE_UNTIL_PRESS}"
+gText_RadioNoSignal,"There's no signal here, try\n somewhere else.{PAUSE_UNTIL_PRESS}"
+gText_UnownMessage,??????????????????????????????????\l??????????????????????????????????\l??????????????????????????????????\l??????????????????????????????????{PAUSE_UNTIL_PRESS}
+gText_RadioKantoPokeFlute,POKé FLUTE RADIO.{PAUSE_UNTIL_PRESS}
+gText_DadsAdvice,"Conseil de PAPA…\n{PLAYER}, chaque chose en son temps!{PAUSE_UNTIL_PRESS}"
+gText_CantDismountBike,Impossible de descendre de VELO ici.{PAUSE_UNTIL_PRESS}
+gText_ItemFinderNearby,Oh!\nL'appareil réagit!\pIl doit y avoir un objet enterré\npar ici!{PAUSE_UNTIL_PRESS}
+gText_ItemFinderOnTop,L'appareil indique qu'il y a\nquelque chose juste en dessous!{PAUSE_UNTIL_PRESS}
+gText_ItemFinderNothing,… … … … Non!\nPas de réaction.{PAUSE_UNTIL_PRESS}
+gText_CoinCase,JETONS:\n{STR_VAR_1}{PAUSE_UNTIL_PRESS}
+gText_BootedUpTM,CT activée.
+gText_BootedUpHM,CS activée.
+gText_TMHMContainedVar1,Elle contient\n{STR_VAR_1}.\pApprendre {STR_VAR_1}\nà un POKéMON?
+gText_PlayerUsedVar2,{PLAYER} utilise\n{STR_VAR_2}.{PAUSE_UNTIL_PRESS}
+gText_RepelEffectsLingered,Mais le REPOUSSE précédent est\ntoujours actif.{PAUSE_UNTIL_PRESS}
+gText_UsedVar2WildLured,{PLAYER} utilise\n{STR_VAR_2}.\pÇa va attirer les POKéMON sauvages.{PAUSE_UNTIL_PRESS}
+gText_UsedVar2WildRepelled,{PLAYER} utilise\n{STR_VAR_2}.\pÇa va repousser les POKéMON\nsauvages.{PAUSE_UNTIL_PRESS}
+gText_BoxFull,Les BOITES sont pleines.{PAUSE_UNTIL_PRESS}
+gText_PowderQty,QUANT. POUDRE: {STR_VAR_1}{PAUSE_UNTIL_PRESS}
+gText_TheField,au jeu
+gText_TheBattle,au combat
+gText_ThePokemonList,à la LISTE POKéMON
+gText_TheShop,au magasin
+gText_ThePC,au PC
+gText_ReturnToVar1,Retourner\n{STR_VAR_1}.
+gText_ItemsPocket,OBJETS
+gText_PokeBallsPocket,POKé BALLS
+gText_TMHMPocket,CT & CS
+gText_BerriesPocket,BAIES
+gText_KeyItemsPocket,OBJ. RARES
+gText_NumberItem_TMBerry,{NO}{STR_VAR_1}{CLEAR 0x07}{STR_VAR_2}
+gText_NumberItem_HM,{CLEAR_TO 0x11}{STR_VAR_1}{CLEAR 0x05}{STR_VAR_2}
+gText_SizeSlash,DIM.:
+gText_FirmSlash,FERM.:
+gText_Var1DotVar2,"{STR_VAR_1},{STR_VAR_2} cm"
+gText_NumberVar1Var2,{NO}{STR_VAR_1} {STR_VAR_2}
+gText_BerryTag,ETIQUETTE
+gText_RedPokeblock,{POKEBLOCK} ROUGE
+gText_BluePokeblock,{POKEBLOCK} BLEU
+gText_PinkPokeblock,{POKEBLOCK} ROSE
+gText_GreenPokeblock,{POKEBLOCK} VERT
+gText_YellowPokeblock,{POKEBLOCK} JAUNE
+gText_PurplePokeblock,{POKEBLOCK} VIOLET
+gText_IndigoPokeblock,{POKEBLOCK} INDIGO
+gText_BrownPokeblock,{POKEBLOCK} MARRON
+gText_LiteBluePokeblock,{POKEBLOCK} BLEU CIEL
+gText_OlivePokeblock,{POKEBLOCK} OLIVE
+gText_GrayPokeblock,{POKEBLOCK} GRIS
+gText_BlackPokeblock,{POKEBLOCK} NOIR
+gText_WhitePokeblock,{POKEBLOCK} BLANC
+gText_GoldPokeblock,{POKEBLOCK} OR
+gText_Spicy,EPICE
+gText_Dry,SEC
+gText_Sweet,SUCRE
+gText_Bitter,AMER
+gText_Sour,ACIDE
+gText_Tasty,GOUT
+gText_Feel,FEEL
+gText_StowCase,Ranger BOITE.
+gText_LvVar1,{LV}{STR_VAR_1}
+gText_ThrowAwayVar1,Jeter {STR_VAR_1}?
+gText_Var1ThrownAway,{STR_VAR_1} a été jeté.
+gText_Var1AteTheVar2,{STR_VAR_1} a mangé\n{STR_VAR_2}.{PAUSE_UNTIL_PRESS}
+gText_Var1HappilyAteVar2,{STR_VAR_1} a mangé\n{STR_VAR_2} joyeusement.{PAUSE_UNTIL_PRESS}
+gText_Var1DisdainfullyAteVar2,{STR_VAR_1} a mangé\n{STR_VAR_2} à contrecœur.{PAUSE_UNTIL_PRESS}
+gText_ShopBuy,ACHETER
+gText_ShopSell,VENDRE
+gText_ShopQuit,QUITTER
+gText_SoldOut,"I'm sorry, but that item is sold out.\p"
+gText_SoldOut2,SOLD OUT
+gText_InBagVar1,SAC: {STR_VAR_1}
+gText_QuitShopping,Arrêter d'acheter.
+gText_Var1CertainlyHowMany,{STR_VAR_1}? Bien sûr.\nCombien en voulez-vous?
+gText_Var1CertainlyHowMany2,{STR_VAR_2} de {STR_VAR_1}?\nBien sûr. Combien en voulez-vous?
+gText_Var1AndYouWantedVar2,{STR_VAR_1}? Vous en voulez {STR_VAR_2}?\nÇa fera {STR_VAR_3}¥.
+gText_Var1IsItThatllBeVar2,"{STR_VAR_1}, n'est-ce pas?\nÇa fera {STR_VAR_2}¥. Ça vous convient?"
+gText_YouWantedVar1ThatllBeVar2,Vous voulez {STR_VAR_1}?\nÇa fera {STR_VAR_2}¥. Ça vous convient?
+gText_HereYouGoThankYou,Tenez!\nMerci infiniment.
+gText_ThankYouIllSendItHome,Merci!\nJe l'envoie sur votre PC.
+gText_ThanksIllSendItHome,Merci!\nJe l'envoie sur votre PC à la maison.
+gText_YouDontHaveMoney,Vous n'avez pas assez d'argent.{PAUSE_UNTIL_PRESS}
+gText_NoMoreRoomForThis,Vous n'avez plus de place pour cela.{PAUSE_UNTIL_PRESS}
+gText_YouAlreadyHaveThis,You already have this item.{PAUSE_UNTIL_PRESS}
+gText_SpaceForVar1Full,La place pour {STR_VAR_1}\nest prise.{PAUSE_UNTIL_PRESS}
+gText_AnythingElseICanHelp,Je peux faire quelque chose d'autre?
+gText_CanIHelpWithAnythingElse,Vous avez besoin d'autre chose?
+gText_ThrowInPremierBall,Je mets une HONOR BALL en plus.{PAUSE_UNTIL_PRESS}
+gText_ThrowInPremierBalls,"I'll throw in some PREMIER BALLS, too.{PAUSE_UNTIL_PRESS}"
+gText_CantBuyKeyItem,"{STR_VAR_2}? Oh, non.\nJe ne peux pas acheter ça.{PAUSE_UNTIL_PRESS}"
+gText_HowManyToSell,{STR_VAR_2}?\nCombien voulez-vous en vendre?
+gText_ICanPayVar1,Je peux vous en donner {STR_VAR_1}¥.\nÇa vous va?
+gText_TurnedOverVar1ForVar2,Obtenu {STR_VAR_1}¥\npour cette vente.
+gText_PokedollarVar1,{STR_VAR_1}¥
+gText_Shift,ECHANGER
+gText_SendOut,ENVOYER
+gText_Switch2,ORDRE
+gText_Summary5,RESUME
+gText_Moves,MOVES
+gText_Enter,INSCRIRE
+gText_NoEntry,RETIRER
+gText_Take2,PRENDRE
+gText_Read2,LIRE
+gText_Trade4,ECHANGE
+gText_HP3,PV
+gText_SpAtk3,ATQ. SPE.
+gText_SpDef3,DEF. SPE.
+gText_WontHaveEffect,Ça n'aura aucun effet.{PAUSE_UNTIL_PRESS}
+gText_CantBeUsedOnPkmn,C'est inutilisable\nsur ce POKéMON.{PAUSE_UNTIL_PRESS}
+gText_PkmnCantSwitchOut,{STR_VAR_1} ne peut pas être\néchangé!{PAUSE_UNTIL_PRESS}
+gText_PkmnAlreadyInBattle,{STR_VAR_1} est déjà au\ncombat!{PAUSE_UNTIL_PRESS}
+gText_PkmnAlreadySelected,{STR_VAR_1} est déjà\nsélectionné.{PAUSE_UNTIL_PRESS}
+gText_PkmnHasNoEnergy,{STR_VAR_1} n'a plus d'énergie\npour combattre!{PAUSE_UNTIL_PRESS}
+gText_CantSwitchWithAlly,Impossible d'échanger POKéMON\nde {STR_VAR_1} avec un des vôtres!{PAUSE_UNTIL_PRESS}
+gText_EggCantBattle,"Un OEUF ne se bat pas, voyons!{PAUSE_UNTIL_PRESS}"
+gText_CantUseUntilNewBadge,Impossible de l'utiliser jusqu'à\nl'obtention du prochain BADGE.{PAUSE_UNTIL_PRESS}
+gText_NoMoreThanVar1Pkmn,Seuls {STR_VAR_1} POKéMON\npeuvent participer.{PAUSE_UNTIL_PRESS}
+gText_SendMailToPC,Envoyer la LETTRE enlevée\nsur votre PC?
+gText_MailSentToPC,La LETTRE a été envoyée\nsur votre PC.{PAUSE_UNTIL_PRESS}
+gText_PCMailboxFull,La BOITE AUX LETTRES\ndu PC est pleine.{PAUSE_UNTIL_PRESS}
+gText_MailMessageWillBeLost,"Si la LETTRE est enlevée,\nle message sera perdu. D'accord?"
+gText_RemoveMailBeforeItem,Il faut enlever la LETTRE pour \npouvoir garder un objet.{PAUSE_UNTIL_PRESS}
+gText_PkmnWasGivenItem,{STR_VAR_1} doit tenir\n{STR_VAR_2}!{PAUSE_UNTIL_PRESS}
+gText_PkmnAlreadyHoldingItemSwitch,{STR_VAR_1} tient déjà\n{STR_VAR_2}!\pEchanger les deux objets?
+gText_PkmnNotHolding,{STR_VAR_1} ne tient rien.{PAUSE_UNTIL_PRESS}
+gText_ReceivedItemFromPkmn,Reçu {STR_VAR_2} de\n{STR_VAR_1}.{PAUSE_UNTIL_PRESS}
+gText_MailTakenFromPkmn,La LETTRE a été prise\nau POKéMON.{PAUSE_UNTIL_PRESS}
+gText_SwitchedPkmnItem,{STR_VAR_1} a remplacé\n{STR_VAR_2}!{PAUSE_UNTIL_PRESS}
+gText_PkmnHoldingItemCantHoldMail,Ce POKéMON tient un objet.\nIl ne peut pas tenir une LETTRE.{PAUSE_UNTIL_PRESS}
+gText_MailTransferredFromMailbox,La LETTRE vient de la\nBOITE AUX LETTRES.
+gText_BagFullCouldNotRemoveItem,Le SAC est plein. Impossible\nd'enlever l'objet au POKéMON.{PAUSE_UNTIL_PRESS}
+gText_PkmnLearnedMove3,{STR_VAR_1} apprend\n{STR_VAR_2}!
+gText_PkmnCantLearnMove,{STR_VAR_1} et {STR_VAR_2}\nne sont pas compatibles.\pImpossible de l'enseigner.{PAUSE_UNTIL_PRESS}
+gText_PkmnNeedsToReplaceMove,{STR_VAR_1} veut apprendre\n{STR_VAR_2}.\pMais {STR_VAR_1} connaît déjà\nquatre capacités.\pRemplacer une capacité\npar {STR_VAR_2}?
+gText_StopLearningMove2,Arrêter d'enseigner\n{STR_VAR_2}?
+gText_MoveNotLearned,{STR_VAR_1} n'a pas appris la\ncapacité {STR_VAR_2}.{PAUSE_UNTIL_PRESS}
+gText_WhichMoveToForget,Oublier quelle capacité?{PAUSE_UNTIL_PRESS}
+gText_12PoofForgotMove,"1, {PAUSE 15}2, et{PAUSE 15}… {PAUSE 15}… {PAUSE 15}… {PAUSE 15}{PLAY_SE SE_BALL_BOUNCE_1}Tadaa!\p{STR_VAR_1} ne sait plus\ncomment utiliser {STR_VAR_2}.\pEt…{PAUSE_UNTIL_PRESS}"
+gText_PkmnAlreadyKnows,{STR_VAR_1} connaît déjà\n{STR_VAR_2}.{PAUSE_UNTIL_PRESS}
+gText_PkmnHPRestoredByVar2,Les PV de {STR_VAR_1} sont res-\ntaurés de {STR_VAR_2} points.{PAUSE_UNTIL_PRESS}
+gText_PkmnCuredOfPoison,{STR_VAR_1} n'est plus\nempoisonné.{PAUSE_UNTIL_PRESS}
+gText_PkmnCuredOfParalysis,{STR_VAR_1} n'est plus\nparalysé.{PAUSE_UNTIL_PRESS}
+gText_PkmnWokeUp2,{STR_VAR_1} se réveille.{PAUSE_UNTIL_PRESS}
+gText_PkmnBurnHealed,{STR_VAR_1} n'est plus brûlé.{PAUSE_UNTIL_PRESS}
+gText_PkmnThawedOut,{STR_VAR_1} est décongelé.{PAUSE_UNTIL_PRESS}
+gText_PPWasRestored,Les PP sont restaurés.{PAUSE_UNTIL_PRESS}
+gText_PkmnRegainhedHealth,{STR_VAR_1} regained health.{PAUSE_UNTIL_PRESS}
+gText_PkmnBecameHealthy,{STR_VAR_1} retrouve la forme.{PAUSE_UNTIL_PRESS}
+gText_MovesPPIncreased,Les PP de {STR_VAR_1}\naugmentent.{PAUSE_UNTIL_PRESS}
+gText_PkmnElevatedToLvVar2,{STR_VAR_1} monte au N. {STR_VAR_2}.
+gText_PkmnBaseVar2StatIncreased,{STR_VAR_2} de\n{STR_VAR_1} augmente.{PAUSE_UNTIL_PRESS}
+gText_PkmnFriendlyBaseVar2Fell,{STR_VAR_1} est devenu amical.\n{STR_VAR_2} de base en baisse!{PAUSE_UNTIL_PRESS}
+gText_PkmnAdoresBaseVar2Fell,{STR_VAR_1} vous adore!\n{STR_VAR_2} de base en baisse!{PAUSE_UNTIL_PRESS}
+gText_PkmnFriendlyBaseVar2CantFall,{STR_VAR_1} est devenu amical.\n{STR_VAR_2} de base ne peut pas baisser!{PAUSE_UNTIL_PRESS}
+gText_PkmnSnappedOutOfConfusion,{STR_VAR_1} n'est plus confus.{PAUSE_UNTIL_PRESS}
+gText_PkmnGotOverInfatuation,{STR_VAR_1} n'est plus\namoureux.{PAUSE_UNTIL_PRESS}
+gText_ThrowAwayItem,Jeter {STR_VAR_1}?
+gText_ItemThrownAway,{STR_VAR_1} a été jeté.{PAUSE_UNTIL_PRESS}
+gText_TeachWhichPokemon2,Teach which POKéMON?
+gText_ChoosePokemon,Choisir un POKéMON.
+gText_MoveToWhere,Le mettre où?
+gText_TeachWhichPokemon,Enseigner à quel POKéMON?
+gText_UseOnWhichPokemon,Utiliser sur quel POKéMON?
+gText_GiveToWhichPokemon,Donner à quel POKéMON?
+gText_DoWhatWithPokemon,Que faire avec ce PKMN?
+gText_NothingToCut,Il n'y a rien à COUPER.
+gText_CantSurfHere,On ne peut pas SURFER ici.
+gText_AlreadySurfing,Vous SURFEZ déjà.
+gText_CantUseHere,Impossible ici.
+gText_RestoreWhichMove,Laquelle restaurer?
+gText_BoostPp,Augmenter quels PP?
+gText_DoWhatWithItem,Que faire avec un objet?
+gText_NoPokemonForBattle,Aucun POKéMON utilisable!
+gText_ChoosePokemon2,Choisir un POKéMON.
+gText_NotEnoughHp,Pas assez de PV…
+gText_PokemonAreNeeded,Il faut {STR_VAR_1} POKéMON.
+gText_PokemonCantBeSame,Pas les mêmes POKéMON.
+gText_NoIdenticalHoldItems,Pas d'objets identiques.
+gText_CurrentIsTooFast,Le courant est trop rapide!
+gText_DoWhatWithMail,Que faire avec LETTRE?
+gText_ChoosePokemonCancel,Choisir un PKMN ou annuler.
+gText_ChoosePokemonConfirm,Choisir un PKMN et confirmer.
+gText_EnjoyCycling,C'est parti pour une balade!
+gText_InUseAlready_PM,Déjà en cours d'utilisation.
+gText_AlreadyHoldingOne,{STR_VAR_1} tient déjà\n{STR_VAR_2}!
+gText_NoUse,Pas utilis.
+gText_Able,APTE
+gText_First_PM,PREMIER
+gText_Second_PM,DEUXIEME
+gText_Third_PM,TROISIEME
+gText_Able2,APTE
+gText_NotAble,PAS APTE
+gText_Able3,APTE
+gText_NotAble2,PAS APTE
+gText_Learned,APPRIS
+gText_Have,PORTE
+gText_DontHave,PAS D'OBJET
+gText_Fourth,QUATRIEME
+gText_PkmnCantParticipate,Ce POKéMON ne peut pas participer.{PAUSE_UNTIL_PRESS}
+gText_CancelParticipation,Annuler la participation?
+gText_CancelBattle,Annuler le combat?
+gText_ReturnToWaitingRoom,Retourner à la SALLE D'ATTENTE?
+gText_CancelChallenge,Annuler le défi?
+gText_EscapeFromHere,Fuir d'ici et retourner à\n{STR_VAR_1}?
+gText_ReturnToHealingSpot,Retourner au dernier lieu\nde soins?
+gText_PauseUntilPress,{PAUSE_UNTIL_PRESS}
+gText_OnlyPkmnForBattle,C'est votre seul\nPOKéMON pour combattre.
+gText_PkmnCantBeTradedNow,That POKéMON can't be traded\nnow.
+gText_EggCantBeTradedNow,Un OEUF ne peut pas être\néchangé maintenant.
+gText_OtherTrainersPkmnCantBeTraded,Le POKéMON du DRESSEUR\nne peut pas être échangé.
+gText_OtherTrainerCantAcceptPkmn,L'autre DRESSEUR ne peut pas\naccepter ce POKéMON maintenant.
+gText_CantTradeWithTrainer,Impossible d'échanger avec\nce DRESSEUR maintenant.
+gText_NotPkmnOtherTrainerWants,Le DRESSEUR ne cherche\npas ce type de POKéMON.
+gText_ThatIsntAnEgg,Ce n'est pas un OEUF.
+gText_Register,ENREG.
+gText_Attack3,ATTAQUE
+gText_Defense3,DEFENSE
+gText_SpAtk4,ATQ SP
+gText_SpDef4,DEF SP
+gText_Speed2,VIT.
+gText_HP4,PV
+gText_EmptyString8,
+gText_OTSlash,DO/
+gText_RentalPkmn,POKéMON A LOUER
+gText_TypeSlash,TYPE/
+gText_Power,POUVOIR
+gText_Accuracy2,PRECIS.
+gText_Appeal,CHARME
+gText_Jam,BLOCAG.
+gText_Status,STATUT
+gText_ExpPoints,POINTS EXP.
+gText_NextLv,N. SUIVANT
+gText_RibbonsVar1,RUBANS: {STR_VAR_1}
+gText_EmptyString5,
+gText_Events,EVENTS
+gText_Switch,CHANG.
+gText_PkmnInfo,INFOS POKéMON
+gText_PkmnSkills,APTITU. POKéMON
+gText_BattleMoves,CAPACITES COMB.
+gText_ContestMoves,CAPACITES CONC.
+gText_Info,INFO
+gText_EggWillTakeALongTime,Cet OEUF va sûrement\nmettre du temps à éclore.
+gText_EggWillTakeSomeTime,Qu'est-ce qui va en sortir?\nÇa va mettre du temps.
+gText_EggWillHatchSoon,Il bouge de temps en temps.\nIl devrait bientôt éclore.
+gText_EggAboutToHatch,Il fait du bruit.\nIl va éclore!
+gText_EggReadyToHatch_Nuzlocke,"Ready to hatch, but blocked\nby Nuzlocke encounter!"
+gText_HMMovesCantBeForgotten2,Impossible d'oublier les\ncapacités CS maintenant.
+gText_XNature,{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5} de nature
+gText_OddEggFoundByCouple,Drôle d'OEUF de PKMN trouvé\npar le couple de la PENSION.
+gText_PeculiarEggNicePlace,Drôle d'OEUF de PKMN\nobtenu dans un bel endroit.
+gText_PeculiarEggTrade,Drôle d'OEUF de PKMN\nobtenu lors d'un échange.
+gText_EggFromHotSprings,Drôle d'OEUF de PKMN obtenu\naux sources chaudes.
+gText_EggFromTraveler,Drôle d'OEUF de PKMN\nreçu d'un voyageur.
+gText_ApostropheSBase,BASE DE {STR_VAR_1}
+gText_OkayToDeleteFromRegistry,Supprimer {STR_VAR_1} du\nREGISTRE?
+gText_RegisteredDataDeleted,Données enregistrées effacées.{PAUSE_UNTIL_PRESS}
+gText_NoRegistry,Il n'y a pas de REGISTRE.{PAUSE_UNTIL_PRESS}
+gText_DelRegist,EFF. REGIST.
+gText_Var3Var1SlashVar2,{STR_VAR_3}{STR_VAR_1}/{STR_VAR_2}
+gText_Decorate,DECORER
+gText_PutAway,RANGER
+gText_Toss2,JETER
+gText_Color161Shadow161,{COLOR 161}{SHADOW 161}
+gText_PutOutSelectedDecorItem,Retirer une décoration.
+gText_StoreChosenDecorInPC,Stocker une décoration dans le PC.
+gText_ThrowAwayUnwantedDecors,Jeter les décorations indésirables.
+gText_NoDecorations,Pas de décorations.{PAUSE_UNTIL_PRESS}
+gText_Desk,BUREAU
+gText_Chair,CHAISE
+gText_Plant,PLANTE
+gText_Ornament,ORNEMENT
+gText_Mat,TAPIS
+gText_Poster,POSTER
+gText_Doll,POUPEE
+gText_Cushion,COUSSIN
+gText_Gold,or
+gText_Silver,argent
+gText_PlaceItHere,Placer ici?
+gText_CantBePlacedHere,Impossible ici.
+gText_CancelDecorating,Annuler décoration?
+gText_InUseAlready,Déjà en cours d'utilisation.
+gText_NoMoreDecorations,Impossible de placer plus de\ndécorations. Le maximum est de {STR_VAR_1}.
+gText_NoMoreDecorations2,Impossible de placer plus de\ndécorations. Le maximum est de {STR_VAR_1}.
+gText_MustBePlacedOnDesk,"This can't be placed here.\nIt must be on a DESK, etc."
+gText_CantPlaceInRoom,Vous ne pouvez pas mettre\ncette décoration dans votre chambre.
+gText_CantThrowAwayInUse,Cette décoration est utilisée.\nElle ne peut pas être jetée.
+gText_DecorationWillBeDiscarded,Jeter {STR_VAR_1}.\nOK?
+gText_DecorationThrownAway,Cette décoration a été jetée.
+gText_StopPuttingAwayDecorations,Arrêter de ranger les décorations?
+gText_NoDecorationHere,Il n'y a pas de décoration ici.
+gText_ReturnDecorationToPC,Ranger cette décoration dans le PC?
+gText_DecorationReturnedToPC,Cette décoration est rangée dans le PC.
+gText_NoDecorationsInUse,Aucune décoration n'est utilisée.
+gText_Tristan,FRANCK
+gText_Philip,AYMERIC
+gText_Dennis,GILLES
+gText_Roberto,ROBERTO
+gText_TurnOff,ETEINDRE
+gText_Decoration,DECORATION
+gText_ItemStorage,STOCKAGE OBJ.
+gText_Mailbox,BOITE LETTRE
+gText_DepositItem,DEPOSER OBJET
+gText_WithdrawItem,RETIRER OBJET
+gText_TossItem,JETER OBJET
+gText_StoreItemsInPC,Déposer des objets dans le PC.
+gText_TakeOutItemsFromPC,Retirer des objets du PC.
+gText_ThrowAwayItemsInPC,Jeter des objets stockés dans le PC.
+gText_NoItems,Il n'y a pas d'objets.{PAUSE_UNTIL_PRESS}
+gText_NoRoomInBag,Il n'y a plus de\nplace dans le SAC.
+gText_WithdrawHowManyItems,Vous voulez en\nretirer combien?
+gText_WithdrawXItems,{STR_VAR_1}:\nretiré {STR_VAR_2}..
+gText_Read,LIRE
+gText_MoveToBag,METTRE DANS SAC
+gText_Give2,DONNER
+gText_NoMailHere,Pas de LETTRE ici.{PAUSE_UNTIL_PRESS}
+gText_WhatToDoWithVar1sMail,Que faire avec la\nLETTRE de {STR_VAR_1}?
+gText_MessageWillBeLost,Le message sera perdu.\nContinuer?
+gText_BagIsFull,Le SAC est plein.{PAUSE_UNTIL_PRESS}
+gText_MailToBagMessageErased,La LETTRE a été remise dans le SAC\net son message a été effacé.{PAUSE_UNTIL_PRESS}
+gText_Dad,PAPA
+gText_Mom,MAMAN
+gText_Wallace,MARC
+gText_Steven,PIERRE
+gText_Brawly,BASTIEN
+gText_Winona,ALIZEE
+gText_Phoebe,SPECTRA
+gText_Glacia,GLACIA
+gText_Petalburg,CLEMENTI-VILLE
+gText_Slateport,POIVRESSEL
+gText_Littleroot,LITTLEROOT
+gText_Lilycove,LILYCOVE
+gText_Dewford,VILLAGE MYOKARA
+gText_Enter2,INSCRI.
+gText_Info2,INFO
+gText_WhatsAContest,Le CONCOURS
+gText_TypesOfContests,Types de CONCOURS
+gText_Ranks,Catégories
+gText_Judging,Judging
+gText_CoolnessContest,SANG-FROID
+gText_BeautyContest,BEAUTE
+gText_CutenessContest,GRACE
+gText_SmartnessContest,INTELLIGENCE
+gText_ToughnessContest,ROBUSTESSE
+gText_Decoration2,DECORATION
+gText_PackUp,PLIER BAGAGE
+gText_Count,COUNT
+gText_Registry,REGISTRE
+gText_Information,INFORMATION
+gText_Mach,COURSE
+gText_Acro,CROSS
+gText_Psn,PSN
+gText_Par,PAR
+gText_Slp,SOM
+gText_Brn,BRU
+gText_Frz,GEL
+gText_Toxic,TOXIC
+gText_Ok3,OK
+gText_Quit,QUIT
+gText_SawIt,Oui
+gText_NotYet,Pas encore
+gText_Yes,OUI
+gText_No,NON
+gText_Info4,INFO
+gText_SingleBattle,COMBAT SOLO
+gText_DoubleBattle,COMBAT DUO
+gText_MultiBattle,COMBAT MULTI
+gText_MrBriney,MR. BRINEY
+gText_Challenge,RELEVER LE DEFI
+gText_Info3,INFORMATIONS
+gText_Lv50,NIVEAU 50
+gText_OpenLevel,NIVEAU LIBRE
+gText_FreshWaterAndPrice,EAU FRAICHE{CLEAR_TO 0x48}200¥
+gText_SodaPopAndPrice,SODA COOL{CLEAR_TO 0x48}300¥
+gText_LemonadeAndPrice,LIMONADE{CLEAR_TO 0x48}350¥
+gText_HowToRide,FAIRE DU VELO
+gText_HowToTurn,VIRAGES
+gText_SandySlopes,VERSANTS DE SABLE
+gText_Wheelies,ROUES ARRIERE
+gText_BunnyHops,BUNNY HOPS
+gText_Jump,SAUTS
+gText_Satisfied,Satisfait
+gText_Dissatisfied,Insatisfait
+gText_DeepSeaTooth,DENT OCEAN
+gText_DeepSeaScale,ECAILLEOCEAN
+gText_BlueFlute2,FLUTE BLEUE
+gText_YellowFlute2,FLUTE JAUNE
+gText_RedFlute2,FLUTE ROUGE
+gText_WhiteFlute2,FLUTEBLANCHE
+gText_BlackFlute2,FLUTE NOIRE
+gText_GlassChair,CHAISE VERRE
+gText_GlassDesk,BUREAU VERRE
+gText_TreeckoDollAndPrice,POUPEE ARCKO 1000 JETONS
+gText_TorchicDollAndPrice,POUP. POUSSIFEU 1000 JET.
+gText_MudkipDollAndPrice,POUPEE GOBOU   1000 JETONS
+gText_RegirockDollAndPrice,"REGIROCK DOLL   9,000 C."
+gText_RegiceDollAndPrice,"REGICE DOLL       9,000 C."
+gText_RegisteelDollAndPrice,"REGISTEEL DOLL 9,000 C."
+gText_50CoinsAndPrice,  50 COINS      ¥500
+gText_500CoinsAndPrice,500 JETONS  10000¥
+gText_Excellent2,Excellent!
+gText_NotSoGood,Bof.
+gText_RedShard,TESSON ROUGE
+gText_YellowShard,TESSON JAUNE
+gText_BlueShard,TESSON BLEU
+gText_GreenShard,TESSON VERT
+gText_BattleFrontier,ZONE DE COMBAT
+gText_Right,Droite
+gText_Left,Gauche
+gText_TM32AndPrice,CT32{CLEAR_TO 0x48}1500 JETONS
+gText_TM29AndPrice,CT29{CLEAR_TO 0x48}3500 JETONS
+gText_TM35AndPrice,CT35{CLEAR_TO 0x48}4000 JETONS
+gText_TM24AndPrice,CT24{CLEAR_TO 0x48}4000 JETONS
+gText_TM13AndPrice,CT13{CLEAR_TO 0x48}4000 JETONS
+gText_Cool,SG-FD
+gText_Beauty,BEAUTE
+gText_Cute,GRACE
+gText_Smart,INTEL.
+gText_Tough,ROBUS.
+gText_Normal,NORMAL
+gText_Super,SUPER
+gText_Hyper,HYPER
+gText_Master,MASTER
+gText_Cool2,SG-FD
+gText_Beauty2,BEAUTE
+gText_Cute2,GRACE
+gText_Smart2,INTEL.
+gText_Tough2,ROBUS.
+gText_Items,OBJETS
+gText_Key_Items,OBJ. RARES
+gText_Poke_Balls,BALLS
+gText_TMs_Hms,CT & CS
+gText_Berries2,BAIES
+gText_SomeonesPC,PC de ???
+gText_BillsPC,BILL'S PC
+gText_PlayersPC,PC de {PLAYER}
+gText_HallOfFame,PANTHEON
+gText_LogOff,DECONNEXION
+gText_Opponent,ADVERSAIRE
+gText_Tourney_Tree,TOURNEY TREE
+gText_ReadyToStart,READY TO START
+gText_NormalRank,CATEGORIE NORMAL
+gText_SuperRank,CATEGORIE SUPER
+gText_HyperRank,CATEGORIE HYPER
+gText_MasterRank,CATEGORIE MASTER
+gText_Single2,SOLO
+gText_Double2,DUO
+gText_Multi,MULTI
+gText_MultiLink,MULTI LINK
+gText_BattleBag,SAC DE COMBAT
+gText_HeldItem,OBJET TENU
+gText_LinkContest,CONCOURS EN LINK
+gText_AboutE_Mode,A PROPOS DU MODE-E
+gText_AboutG_Mode,A PROPOS DU MODE-G
+gText_E_Mode,MODE-E
+gText_G_Mode,MODE-G
+gText_MenuOptionPokedex,POKéDEX
+gText_MenuOptionPokemon,POKéMON
+gText_MenuOptionBag,SAC
+gText_MenuOptionPokenav,POKéNAV
+gText_Blank,
+gText_MenuOptionSave,SAUVER
+gText_MenuOptionOption,OPTIONS
+gText_MenuOptionExit,RETOUR
+gText_5BP,  5Pco
+gText_10BP,10Pco
+gText_15BP,15Pco
+gText_RedTent,TENTE ROUGE
+gText_BlueTent,TENTE BLEUE
+gText_SouthernIsland,ILE DU SUD
+gText_BirthIsland,ILE AURORE
+gText_FarawayIsland,ILE LOINTAINE
+gText_NavelRock,ROC NOMBRI
+gText_Vermilion,VERMILION
+gText_Olivine,OLIVINE
+gText_ClawFossil,FOSS. GRIFFE
+gText_RootFossil,FOSS. RACINE
+gText_HelixFossil,HELIX FOSSIL
+gText_DomeFossil,DOME FOSSIL
+gText_OldAmber,OLD AMBER
+gText_No4,NON
+gText_IllBattleNow,Préparation
+gText_IWon,Victoire
+gText_ILost,Défaite
+gText_IWontTell,J'dirai rien!
+gText_NormalTagMatch,MATCH NORMAL
+gText_VarietyTagMatch,MATCH VARIE
+gText_UniqueTagMatch,MATCH UNIQUE
+gText_ExpertTagMatch,MATCH EXPERT
+gText_TradeCenter,CENTRE TROC
+gText_Colosseum,COLISEE
+gText_RecordCorner,CENTRE DE DONNEES
+gText_BerryCrush3,BROYEUR DE BAIES
+gText_EmptyLinkService,
+gText_PokemonJump,SAUT POKéMON
+gText_DodrioBerryPicking,ATTRAPE-BAIES DODRIO
+gText_BecomeLeader,MENEUR
+gText_JoinGroup,JOINDRE
+gText_TwoStyles,DEUX STYLES
+gText_Lv50_3,NIVEAU 50
+gText_OpenLevel2,NIVEAU LIBRE
+gText_MonTypeAndNo,TYPE ET Nº DU PKMN
+gText_HoldItems,OBJETS TENUS
+gText_Symbols2,SYMBOLES
+gText_Record3,ENREG.
+gText_BattlePts,PTS COMBAT
+gText_TowerInfo,INFORMATIONS
+gText_BattleMon,POKéMON
+gText_BattleSalon,SALON DE COMBAT
+gText_MultiLink2,MULTI LINK
+gText_BattleRules,REGLES
+gText_JudgeMind,JUGE: MENTAL
+gText_JudgeSkill,JUGE: TECHNIQUE
+gText_JudgeBody,JUGE: PHYSIQUE
+gText_Matchup,RENCONTRES
+gText_TourneyTree,TABLEAU
+gText_DoubleKO,DOUBLE K.O.
+gText_BasicRules,REGLES DE BASE
+gText_SwapPartners,ECHANGE: POKéMON
+gText_SwapNumber,ECHANGE: NOMBRE
+gText_SwapNotes,ECHANGE: NOTES
+gText_OpenLevel3,NIVEAU LIBRE
+gText_BattleBasics,REGLES DE BASE
+gText_PokemonNature,NATURE
+gText_PokemonMoves,CAPACITES
+gText_Underpowered,POTENTIEL
+gText_WhenInDanger,EN DANGER
+gText_PyramidPokemon,POKéMON SAUVAGES
+gText_PyramidTrainers,DRESSEURS
+gText_PyramidMaze,LABYRINTHES
+gText_BattleBag2,SAC DE COMBAT
+gText_PokenavAndBag,POKéNAV ET SAC
+gText_HeldItems,OBJETS TENUS
+gText_PokemonOrder,ORDRE
+gText_BattlePokemon,POKéMON
+gText_BattleTrainers,DRESSEURS
+gText_GoOn,CONTINUER
+gText_Record2,ENREGISTRER
+gText_Rest,REPOS
+gText_Retire,PARTIR
+gText_99TimesPlus,plus de 99
+gText_1MinutePlus,plus d'1 min
+gText_SpaceSeconds, secondes
+gText_SpaceTimes,
+gText_Dot,.
+gText_BigGuy,
+gText_BigGirl,
+gText_Son,fils
+gText_Daughter,fille
+gText_BlueFlute,FLUTE BLEUE
+gText_YellowFlute,FLUTE JAUNE
+gText_RedFlute,FLUTE ROUGE
+gText_WhiteFlute,FLUTE BLANCHE
+gText_BlackFlute,FLUTE NOIRE
+gText_PrettyChair,JOLIE CHAISE
+gText_PrettyDesk,JOLI BUREAU
+gText_1F,RC
+gText_2F,1{SUPER_ER}
+gText_3F,2{SUPER_E}
+gText_4F,3{SUPER_E}
+gText_5F,4{SUPER_E}
+gText_6F,5{SUPER_E}
+gText_7F,6{SUPER_E}
+gText_8F,7{SUPER_E}
+gText_9F,8{SUPER_E}
+gText_10F,9{SUPER_E}
+gText_11F,10{SUPER_E}
+gText_B1F,1 SS
+gText_B2F,2 SS
+gText_B3F,3 SS
+gText_B4F,4 SS
+gText_Rooftop,TOIT
+gText_ElevatorNowOn,Etage:
+gText_BP,Pco
+gText_EnergyPowder50,POUDRENERGIE{CLEAR_TO 114}{FONT_SMALL}50
+gText_EnergyRoot80,RACINENERGIE{CLEAR_TO 114}{FONT_SMALL}80
+gText_HealPowder50,POUDRE SOIN{CLEAR_TO 114}{FONT_SMALL}50
+gText_RevivalHerb300,HERBE RAPPEL{CLEAR_TO 108}{FONT_SMALL}300
+gText_Protein1000,PROTEINE{CLEAR_TO 99}{FONT_SMALL}1000
+gText_Iron1000,FER{CLEAR_TO 99}{FONT_SMALL}1000
+gText_Carbos1000,CARBONE{CLEAR_TO 99}{FONT_SMALL}1000
+gText_Calcium1000,CALCIUM{CLEAR_TO 99}{FONT_SMALL}1000
+gText_Zinc1000,ZINC{CLEAR_TO 99}{FONT_SMALL}1000
+gText_HPUp1000,PV PLUS{CLEAR_TO 99}{FONT_SMALL}1000
+gText_PPUp3000,PP PLUS{CLEAR_TO 99}{FONT_SMALL}3000
+gText_RankingHall,CLASSEMENT
+gText_ExchangeService,ECHANGE
+gText_LilycoveCity,NENUCRIQUE
+gText_SlateportCity,POIVRESSEL
+gText_CaveOfOrigin,GROTTE ORIGINE
+gText_MtPyre,MONT MEMORIA
+gText_SkyPillar,PILIER CELESTE
+gText_DontRemember,Aucun souvenir
+gText_Exit,ANNULER
+gText_ExitFromBox,Sortir de la BOITE?
+gText_WhatDoYouWantToDo,Que voulez-vous faire?
+gText_PleasePickATheme,Choisissez une catégorie.
+gText_PickTheWallpaper,Choisissez un fond.
+gText_PkmnIsSelected,{DYNAMIC 0} sélectionné.
+gText_JumpToWhichBox,Aller dans quelle BOITE?
+gText_DepositInWhichBox,Déposer dans quelle BOITE?
+gText_PkmnWasDeposited,{DYNAMIC 0} a été déposé.
+gText_BoxIsFull2,BOITE pleine.
+gText_ReleaseThisPokemon,Relâcher ce POKéMON?
+gText_PkmnWasReleased,{DYNAMIC 0} a été relâché.
+gText_ByeByePkmn,"Bye-bye, {DYNAMIC 0}!"
+gText_MarkYourPkmn,Marquez votre POKéMON.
+gText_ThatsYourLastPkmn,Votre dernier POKéMON!
+gText_YourPartysFull,L'équipe est pleine!
+gText_YoureHoldingAPkmn,Vous tenez un POKéMON!
+gText_WhichOneWillYouTake,Lequel prenez-vous?
+gText_YouCantReleaseAnEgg,OEUF impossible à relâcher.
+gText_ContinueBoxOperations,Continuer gestion BOITE?
+gText_PkmnCameBack,{DYNAMIC 0} est revenu!
+gText_WasItWorriedAboutYou,Il s'est inquiété?
+gText_FourEllipsesExclamation,… … … … !
+gText_PleaseRemoveTheMail,Veuillez enlever la LETTRE.
+gText_GiveToAPkmn,DONNER à un POKéMON?
+gText_PlacedItemInBag,Objet placé dans le SAC.
+gText_BagIsFull2,Le SAC est plein.
+gText_PutItemInBag,Placer objet dans le SAC?
+gText_ItemIsNowHeld,{DYNAMIC 0} tenu.
+gText_ChangedToNewItem,Changé pour {DYNAMIC 0}.
+gText_MailCantBeStored,Impossible à ranger!
+gText_NuzlockeFainted,{PKMN} fainted in Nuzlocke!
+gText_DeadPokemon,This {PKMN} has passed away!
+gText_WhatWouldYouLikeToDo,What would you like to do?
+gText_WithdrawPokemon,RETIRER POKéMON
+gText_DepositPokemon,DEPOSER POKéMON
+gText_MovePokemon,DEPLACER POKéMON
+gText_MoveItems,DEPLACER OBJETS
+gText_SeeYa,SALUT!
+gText_WithdrawMonDescription,Intégrer dans l'équipe des POKéMON se\ntrouvant dans les BOITES.
+gText_DepositMonDescription,Déposer des POKéMON de l'équipe\ndans des BOITES.
+gText_MoveMonDescription,Organiser les POKéMON dans les BOITES\net dans l'équipe.
+gText_MoveItemsDescription,Déplacer des objets tenus\ndans une BOITE ou par l'équipe.
+gText_SeeYaDescription,Retour au menu précédent.
+gText_JustOnePkmn,Vous n'avez qu'un POKéMON avec vous.
+gText_PartyFull,L'équipe est pleine!
+gText_Box,BOITE 
+gText_CheckMapOfHoenn,Carte de la région HOENN.
+gText_CheckPokemonInDetail,Informations sur les POKéMON.
+gText_CallRegisteredTrainer,Appareil pour appeler les DRESSEURS.
+gText_CheckObtainedRadio,Tune into the RADIO.
+gText_PutAwayPokenav,Ranger le POKéNAV.
+gText_NoRibbonWinners,Personne n'a gagné de RUBAN.
+gText_NoTrainersRegistered,No TRAINERS are registered.
+gText_CheckPartyPokemonInDetail,Informations sur l'équipe POKéMON.
+gText_CheckAllPokemonInDetail,Informations sur tous les POKéMON.
+gText_ReturnToPokenavMenu,Retour au menu POKéNAV.
+gText_FindCoolPokemon,Chercher POKéMON à sang-froid.
+gText_FindBeautifulPokemon,Chercher beaux POKéMON.
+gText_FindCutePokemon,Chercher POKéMON gracieux.
+gText_FindSmartPokemon,Chercher POKéMON intelligents.
+gText_FindToughPokemon,Chercher POKéMON robustes.
+gText_ReturnToConditionMenu,Retour au menu CONDITION.
+gText_NumberRegistered,Nb dresseurs:
+gText_NumberOfBattles,Nb combats:
+gText_Detail,DETAIL
+gText_Call2,CALL
+gText_UnusedExit,EXIT
+gText_CantCallOpponentHere,Can't call opponent here.
+gText_PokenavMatchCall_Strategy,STRATEGIE
+gText_PokenavMatchCall_TrainerPokemon,POKéMON DU DRESSEUR
+gText_PokenavMatchCall_SelfIntroduction,PRESENTATION
+gText_Pokenav_ClearButtonList,{CLEAR 0x80}
+gText_PokenavMap_ZoomedOutButtons,{A_BUTTON}ZOOM + {B_BUTTON}RETOUR
+gText_PokenavMap_CancelOnly,{B_BUTTON} Cancel
+gText_PokenavMap_ZoomedInButtons,{A_BUTTON}ZOOM - {B_BUTTON}RETOUR
+gText_PokenavCondition_MonListButtons,{A_BUTTON}CONDITION {B_BUTTON}RETOUR
+gText_PokenavCondition_MonStatusButtons,{A_BUTTON}MARQUAGE {B_BUTTON}RETOUR
+gText_PokenavCondition_MarkingButtons,{A_BUTTON}CHOIX {B_BUTTON}RETOUR
+gText_PokenavMatchCall_TrainerListButtons,{A_BUTTON}MENU {B_BUTTON}RETOUR
+gText_PokenavMatchCall_CallMenuButtons,{A_BUTTON}OK {B_BUTTON}RETOUR
+gText_PokenavMatchCall_CheckTrainerButtons,{B_BUTTON}RETOUR
+gText_PokenavRibbons_MonListButtons,{A_BUTTON}RUBANS {B_BUTTON}RETOUR
+gText_PokenavRibbons_RibbonListButtons,{A_BUTTON}DETAILS {B_BUTTON}RETOUR
+gText_PokenavRibbons_RibbonCheckButtons,{B_BUTTON}RETOUR
+gText_NatureSlash,NATURE/
+gText_TrainerCloseBy,Le DRESSEUR est proche.\nParlez-lui directement.
+gText_InParty,DE L'EQUIPE
+gText_Number2,Nº 
+gText_Ribbons,RIBBONS
+gText_PokemonMaleLv,{DYNAMIC 0}{COLOR_HIGHLIGHT_SHADOW LIGHT_RED WHITE GREEN}♂{COLOR_HIGHLIGHT_SHADOW DARK_GRAY WHITE LIGHT_GRAY}/{LV}{DYNAMIC 1}
+gText_PokemonFemaleLv,{DYNAMIC 0}{COLOR_HIGHLIGHT_SHADOW LIGHT_GREEN WHITE BLUE}♀{COLOR_HIGHLIGHT_SHADOW DARK_GRAY WHITE LIGHT_GRAY}/{LV}{DYNAMIC 1}
+gText_PokemonNoGenderLv,{DYNAMIC 0}/{LV}{DYNAMIC 1}
+gText_Unknown,INCONNU
+gText_Call,APPELS
+gText_Check,DETAILS
+gText_Cancel6,RETOUR
+gText_NumberIndex,Nº {DYNAMIC 0}
+gText_RibbonsF700,RUBANS: {DYNAMIC 0}
+gText_PokemonMaleLv2,{DYNAMIC 0}{COLOR_HIGHLIGHT_SHADOW LIGHT_RED WHITE GREEN}♂{COLOR_HIGHLIGHT_SHADOW DARK_GRAY WHITE LIGHT_GRAY}/{LV}{DYNAMIC 1}{DYNAMIC 2}
+gText_PokemonFemaleLv2,{DYNAMIC 0}{COLOR_HIGHLIGHT_SHADOW LIGHT_GREEN WHITE BLUE}♀{COLOR_HIGHLIGHT_SHADOW DARK_GRAY WHITE LIGHT_GRAY}/{LV}{DYNAMIC 1}{DYNAMIC 2}
+gText_PokemonNoGenderLv2,{DYNAMIC 0}/{LV}{DYNAMIC 1}{DYNAMIC 2}
+gText_CombineFourWordsOrPhrases,Combinez 4 mots ou groupes
+gText_AndMakeYourProfile,de mots et créez votre profil.
+gText_CombineSixWordsOrPhrases,Créez un message avec six mots.
+gText_AndMakeAMessage,Max. deux (groupes de) mots/ligne.
+gText_FindWordsThatDescribeYour,Choisissez des mots qui
+gText_FeelingsRightNow,décrivent votre opinion.
+gText_WithFourPhrases,"With four phrases,"
+gText_CombineNineWordsOrPhrases,"Avec neuf (groupes de) mots,"
+gText_AndMakeAMessage2,créez un message.
+gText_ChangeJustOneWordOrPhrase,Changez un mot ou groupe de mots
+gText_AndImproveTheBardsSong,de la chanson de CAPELO.
+gText_YourProfile,Votre profil
+gText_YourFeelingAtTheBattlesStart,Votre sentiment avant le combat 
+gText_WhatYouSayIfYouWin,Ce que vous dites si vous gagnez 
+gText_WhatYouSayIfYouLose,Ce que vous dites si vous perdez 
+gText_TheAnswer,La réponse
+gText_TheMailMessage,Le message de la LETTRE 
+gText_TheMailSalutation,The MAIL salutation
+gText_TheBardsSong2,La nouvelle chanson 
+gText_CombineTwoWordsOrPhrases,"Avec deux (groupes de) mots,"
+gText_AndMakeATrendySaying,créez une expression cool.
+gText_TheTrendySaying,L'expression cool
+gText_IsAsShownOkay,est comme ceci. OK?
+gText_CombineTwoWordsOrPhrases2,"Avec deux (groupes de) mots,"
+gText_ToTeachHerAGoodSaying,apprenez-lui une expression.
+gText_FindWordsWhichFit,Trouvez des mots pour décrire
+gText_TheTrainersImage,l'image du DRESSEUR.
+gText_TheImage,L'image
+gText_OutOfTheListedChoices,"Parmi les choix proposés,"
+gText_SelectTheAnswerToTheQuiz,sélectionnez la réponse!
+gText_AndCreateAQuiz,vous devez créer un quiz!
+gText_PickAWordOrPhraseAnd,Choisissez un mot ou un groupe
+gText_SetTheQuizAnswer,de mots pour créer la réponse.
+gText_TheAnswerColon,La réponse:
+gText_TheQuizColon,The quiz:
+gText_ApprenticePhrase,L'expression de l'apprenti
+gText_QuitEditing,Quitter?
+gText_StopGivingPkmnMail,Ne plus donner LETTRE à PKMN?
+gText_AndFillOutTheQuestionnaire,de mots pour remplir le sondage.
+gText_LetsReplyToTheInterview,de mots pour répondre.
+gText_AllTextBeingEditedWill,Tout votre texte sera effacé.
+gText_BeDeletedThatOkay,D'accord?
+gText_QuitEditing2,Quit editing?
+gText_EditedTextWillNotBeSaved,The edited text will not be saved.
+gText_IsThatOkay,Is that okay?
+gText_PleaseEnterPhraseOrWord,Please enter a phrase or word.
+gText_EntireTextCantBeDeleted,The entire text can't be deleted.
+gText_OnlyOnePhrase,Un seul groupe de mots modifiable.
+gText_OriginalSongWillBeUsed,La chanson originale sera reprise.
+gText_ThatsTrendyAlready,That's trendy already!
+gText_CombineTwoWordsOrPhrases3,Combinez deux mots.
+gText_QuitGivingInfo,Quit giving information?
+gText_StopGivingPkmnMail2,Stop giving the POKéMON MAIL?
+gText_CreateAQuiz2,Create a quiz!
+gText_SetTheAnswer,Set the answer!
+gText_CancelSelection,Cancel the selection?
+gText_Profile,PROFIL
+gText_AtTheBattlesStart,Avant le combat.
+gText_UponWinningABattle,Après une victoire.
+gText_UponLosingABattle,Après une défaite.
+gText_TheBardsSong,La chanson de CAPELO
+gText_WhatsHipAndHappening,C'est quoi la dernière chose à la mode?
+gText_Interview,Interview
+gText_GoodSaying,Expression
+gText_FansQuestion,Question du fan
+gText_ApprenticesPhrase,Expression de l'apprenti
+gText_Questionnaire,SONDAGE
+gText_YouCannotQuitHere,Vous ne pouvez pas quitter ici.
+gText_SectionMustBeCompleted,Il faut terminer cette section.
+gText_F700sQuiz,Quiz de {DYNAMIC 0}
+gText_Lady,DAME QUIZ
+gText_AfterYouHaveReadTheQuiz,Après avoir lu la question
+gText_QuestionPressTheAButton,"du quiz, appuyez sur le bouton A."
+gText_TheQuizAnswerIs,La réponse est?
+gText_LikeToQuitQuiz,Voulez-vous quitter le défi
+gText_ChallengeQuestionMark,du quiz?
+gText_IsThisQuizOK,Est-ce que ce quiz est OK?
+gText_CreateAQuiz,Créez un quiz!
+gText_SelectTheAnswer,Sélectionnez la réponse!
+gText_LyricsCantBeDeleted,Impossible d'effacer les paroles.
+gText_PokemonLeague,LIGUE POKéMON
+gText_PokemonCenter,CENTRE POKéMON
+gText_GetsAPokeBlockQuestion, reçoit un {POKEBLOCK}?
+gText_Coolness,Son sang-froid 
+gText_Beauty3,Sa beauté 
+gText_Cuteness,Sa grâce 
+gText_Smartness,Son intelligence 
+gText_Toughness,Sa robustesse 
+gText_WasEnhanced,a augmenté!
+gText_NothingChanged,Rien n'a changé!
+gText_WontEatAnymore,Il ne mangera plus…
+gText_SaveFailedCheckingBackup,Echec de la sauvegarde.\nVérification de la mémoire de\nsauvegarde… Veuillez patienter.\nÇ«Durée nécessaire: 1 minute»
+gText_BackupMemoryDamaged,Mémoire de sauvegarde endommagée\nou pile interne vide. La progression\nne sera pas sauvegardée.
+gText_GamePlayCannotBeContinued,{COLOR RED}«Impossible de continuer à jouer.\nRetour à l'écran titre…»
+gText_CheckCompleted,Vérification terminée.\nSauvegarde en cours…\nVeuillez patienter.
+gText_SaveCompleteGameCannotContinue,Sauvegarde terminée.\n{COLOR RED}«Impossible de continuer à jouer.\nRetour à l'écran titre.»
+gText_SaveCompletePressA,Save completed.\n{COLOR RED}«Veuillez appuyer sur le bouton A.»
+gText_Ferry,FERRY
+gText_SecretBase,BASE SECRETE
+gText_Hideout,PLANQUE
+gText_ResetRTCConfirmCancel,"Régler l'heure?\nA: Confirmer, B: Annuler"
+gText_PresentTime,Heure actuelle du jeu
+gText_PreviousTime,Heure précédente du jeu
+gText_PleaseResetTime,Veuillez régler l'heure.
+gText_ClockHasBeenReset,L'horloge a été réglée.\nSauvegarde en cours…
+gText_SaveCompleted,Sauvegarde terminée.
+gText_SaveFailed,Echec de la sauvegarde…
+gText_NoSaveFileCantSetTime,"Il n'y a pas de fichier de sauvegarde,\ndonc l'heure ne peut pas être réglée."
+gText_InGameClockUsable,Vous pouvez maintenant régler l'heure.
+gText_Slots,MACHINE A SOUS
+gText_Roulette,ROULETTE
+gText_Good,bon
+gText_VeryGood,très bon
+gText_Excellent,excellent
+gText_SoSo,moyen
+gText_Bad,mauvais
+gText_TheWorst,immangeable
+gText_Spicy2,épicé
+gText_Dry2,sec
+gText_Sweet2,doux
+gText_Bitter2,amer
+gText_Sour2,aigre
+gText_Single,SOLO
+gText_Double,DUO
+gText_Jackpot,super prix
+gText_First,premier prix
+gText_Second,deuxième prix
+gText_Third,troisième prix
+gText_0Pts,0 pts
+gText_10Pts,10 pts
+gText_20Pts,20 pts
+gText_30Pts,30 pts
+gText_40Pts,40 pts
+gText_50Pts,50 pts
+gText_60Pts,60 pts
+gText_70Pts,70 pts
+gText_80Pts,80 pts
+gText_90Pts,90 pts
+gText_100Pts,100 pts
+gText_QuestionMark,?
+gText_KissPoster16BP,POSTER BAISER{CLEAR_TO 0x5E}16BP
+gText_KissCushion32BP,COUSSIN BAISER{CLEAR_TO 0x5E}32BP
+gText_SmoochumDoll32BP,POUPEE LIPPOUTI{CLEAR_TO 0x5E}32BP
+gText_TogepiDoll48BP,POUPEE TOGEPI{CLEAR_TO 0x5E}48BP
+gText_MeowthDoll48BP,POUPEE MIAOUSS{CLEAR_TO 0x5E}48BP
+gText_ClefairyDoll48BP,POUPEE MELOFEE{CLEAR_TO 0x5E}48BP
+gText_DittoDoll48BP,POUP. METAMORPH{CLEAR_TO 0x5E}48BP
+gText_CyndaquilDoll80BP,POUP.HERICENDRE{CLEAR_TO 0x5E}80BP
+gText_ChikoritaDoll80BP,POUP. GERMIGNON{CLEAR_TO 0x5E}80BP
+gText_TotodileDoll80BP,POUPEE KAIMINUS{CLEAR_TO 0x5E}80BP
+gText_LaprasDoll128BP,POUPEE LOKHLASS{CLEAR_TO 0x58}128BP
+gText_SnorlaxDoll128BP,POUPEE RONFLEX{CLEAR_TO 0x58}128BP
+gText_VenusaurDoll256BP,POUP.FLORIZARRE{CLEAR_TO 0x58}256BP
+gText_CharizardDoll256BP,POUP. DRACAUFEU{CLEAR_TO 0x58}256BP
+gText_BlastoiseDoll256BP,POUPEE TORTANK{CLEAR_TO 0x58}256BP
+gText_Protein1BP,PROTEINE{CLEAR_TO 0x64}1BP
+gText_Calcium1BP,CALCIUM{CLEAR_TO 0x64}1BP
+gText_Iron1BP,FER{CLEAR_TO 0x64}1BP
+gText_Zinc1BP,ZINC{CLEAR_TO 0x64}1BP
+gText_Carbos1BP,CARBONE{CLEAR_TO 0x64}1BP
+gText_HpUp1BP,PV PLUS{CLEAR_TO 0x64}1BP
+gText_Leftovers48BP,RESTES{CLEAR_TO 0x5E}48BP
+gText_WhiteHerb48BP,HERBEBLANCHE{CLEAR_TO 0x5E}48BP
+gText_QuickClaw48BP,VIVE GRIFFE{CLEAR_TO 0x5E}48BP
+gText_MentalHerb48BP,HERBE MENTAL{CLEAR_TO 0x5E}48BP
+gText_BrightPowder64BP,POUDRECLAIRE{CLEAR_TO 0x5E}64BP
+gText_ChoiceBand64BP,BAND. CHOIX{CLEAR_TO 0x5E}64BP
+gText_KingsRock64BP,ROCHE ROYALE{CLEAR_TO 0x5E}64BP
+gText_FocusBand64BP,BANDEAU{CLEAR_TO 0x5E}64BP
+gText_ScopeLens64BP,LENTILSCOPE{CLEAR_TO 0x5E}64BP
+gText_Softboiled16BP,E-COQUE{CLEAR_TO 0x4E}16BP
+gText_SeismicToss24BP,FRAPPE ATLAS{CLEAR_TO 0x4E}24BP
+gText_DreamEater24BP,DEVOREVE{CLEAR_TO 0x4E}24BP
+gText_MegaPunch24BP,ULTIMAPOING{CLEAR_TO 0x4E}24BP
+gText_MegaKick48BP,ULTIMAWASHI{CLEAR_TO 0x4E}48BP
+gText_BodySlam48BP,PLAQUAGE{CLEAR_TO 0x4E}48BP
+gText_RockSlide48BP,EBOULEMENT{CLEAR_TO 0x4E}48BP
+gText_Counter48BP,RIPOSTE{CLEAR_TO 0x4E}48BP
+gText_ThunderWave48BP,CAGE-ECLAIR{CLEAR_TO 0x4E}48BP
+gText_SwordsDance48BP,DANSE-LAMES{CLEAR_TO 0x4E}48BP
+gText_DefenseCurl16BP,BOUL'ARMURE{CLEAR_TO 0x4E}16BP
+gText_Snore24BP,RONFLEMENT{CLEAR_TO 0x4E}24BP
+gText_MudSlap24BP,COUD'BOUE{CLEAR_TO 0x4E}24BP
+gText_Swift24BP,METEORES{CLEAR_TO 0x4E}24BP
+gText_IcyWind24BP,VENT GLACE{CLEAR_TO 0x4E}24BP
+gText_Endure48BP,TENACITE{CLEAR_TO 0x4E}48BP
+gText_PsychUp48BP,BOOST{CLEAR_TO 0x4E}48BP
+gText_IcePunch48BP,POINGLACE{CLEAR_TO 0x4E}48BP
+gText_ThunderPunch48BP,POING-ECLAIR{CLEAR_TO 0x4E}48BP
+gText_FirePunch48BP,POING DE FEU{CLEAR_TO 0x4E}48BP
+gText_FrenzyPlant64BP,FRENZY PLANT{CLEAR_TO 0x4E}64BP
+gText_BlastBurn64BP,BLAST BURN{CLEAR_TO 0x4E}64BP
+gText_HydroCannon64BP,HYDRO CANNON{CLEAR_TO 0x4E}64BP
+gText_PkmnFainted_FldPsn,{STR_VAR_1} fainted…\p\n
+gText_PkmnSurvived_FldPsn,{STR_VAR_1} survived the poisoning.\nThe poison faded away!\p
+gText_Marco,MARCUS
+gText_TrainerCardName,NOM 
+gText_TrainerCardIDNo,NºID /
+gText_TrainerCardMoney,ARGENT
+gText_PokeDollar,¥
+gText_TrainerCardPokedex,POKéDEX
+gText_EmptyString6,
+gText_Colon2,:
+gText_Points, points
+gText_TrainerCardTime,DUREE JEU
+gText_Var1sTrainerCard,CARTE DE DRESSEUR de {STR_VAR_1}
+gText_HallOfFameDebut,PANTHEON Nº 1
+gText_LinkBattles,COMBATS EN LINK
+gText_LinkCableBattles,COMBATS CABLE LINK
+gText_WinsLosses,V:{COLOR RED}{SHADOW LIGHT_RED}{STR_VAR_1}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}  D:{COLOR RED}{SHADOW LIGHT_RED}{STR_VAR_2}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}
+gText_PokemonTrades,ECHANGES DE POKéMON
+gText_UnionTradesAndBattles,ECHANGE UNION & COMBATS
+gText_BerryCrush,BROYEUR DE BAIES
+gText_WaitingTrainerFinishReading,En attente… L'autre DRESSEUR doit\nfinir de lire votre CARTE DE DRESSEUR.
+gText_PokeblocksWithFriends,{POKEBLOCK}S EN LINK
+gText_NumPokeblocks,{STR_VAR_1}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}
+gText_WonContestsWFriends,CONCOURS EN LINK GAGNES
+gText_BattlePtsWon,POINT(S) DE COMBAT GAGNE(S)
+gText_NumBP,{STR_VAR_1}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Pco
+gText_BattleTower,BATTLE TOWER
+gText_WinsStraight,W/{COLOR RED}{SHADOW LIGHT_RED}{STR_VAR_1}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}  STRAIGHT/{COLOR RED}{SHADOW LIGHT_RED}{STR_VAR_2}
+gText_BattleTower2,TOUR DE COMBAT
+gText_BattleDome,DOME DE COMBAT
+gText_BattlePalace,PALACE DE COMBAT
+gText_BattleFactory,USINE DE COMBAT
+gText_BattleArena,DOJO DE COMBAT
+gText_BattlePike,REPTILE DE COMBAT
+gText_BattlePyramid,PYRAMIDE DE COMBAT
+gText_Easy,EASY
+gText_Hard,HARD
+gText_Modern,MODERN
+gText_Classic,CLASSIC
+gText_Sunday,SUNDAY
+gText_Monday,MONDAY
+gText_Tuesday,TUESDAY
+gText_Wednesday,WEDNESDAY
+gText_Thursday,THURSDAY
+gText_Friday,FRIDAY
+gText_Saturday,SATURDAY
+gText_Abra,ABRA 120 COINS
+gText_Clefairy,CLEFAIRY 500 COINS
+gText_Munchlax,MUNCHLAX 2800 COINS
+gText_Dratini,DRATINI 5500 COINS
+gText_Porygon,PORYGON 6500 COINS
+gText_Pal,Pal
+gText_Underling,Underling
+gText_Strategy,Strategy
+gText_Training,Training
+gText_Cheating,Cheating
+gText_WeakPerson,Weak person
+gText_ToughPerson,Tough person
+gText_Anybody,Anybody
+gText_Love2,Love
+gText_Violence,Violence
+gText_Knowledge,Knowledge
+gText_Tough3,Tough
+gText_Weak,Weak
+gText_Both,Both
+gText_BlueStone,BLUE STONE
+gText_GreenStone,GREEN STONE
+gText_RedStone,RED STONE
+gText_FacilitySingle,{STR_VAR_1} SOLO
+gText_FacilityDouble,{STR_VAR_1} DUO
+gText_FacilityMulti,{STR_VAR_1} MULTI
+gText_FacilityLink,{STR_VAR_1} LINK
+gText_Facility,{STR_VAR_1}
+gText_Give,Montrer
+gText_NoNeed,Pas besoin
+gText_ColorLightShadowDarkGray,{COLOR LIGHT_GRAY}{SHADOW DARK_GRAY}
+gText_ColorBlue,{COLOR BLUE}
+gText_ColorTransparent,{HIGHLIGHT TRANSPARENT}{COLOR TRANSPARENT}
+gText_CDot,C.
+gText_BDot,B.
+gText_AnnouncingResults,Annonce des résultats!
+gText_PreliminaryResults,Résultats du premier tour!
+gText_Round2Results,Résultats du second tour!
+gText_ContestantsMonWon,{STR_VAR_2} de {STR_VAR_1} a gagné!
+gText_CommunicationStandby,Connexion en cours…
+gText_ColorDarkGray,{COLOR DARK_GRAY}
+gText_ColorDynamic6WhiteDynamic5,{COLOR_HIGHLIGHT_SHADOW DYNAMIC_COLOR6 WHITE DYNAMIC_COLOR5}
+gText_HealthboxNickname,{HIGHLIGHT DARK_GRAY}
+gText_EmptySpace2, 
+gText_HealthboxGender_Male,{COLOR DYNAMIC_COLOR2}♂
+gText_HealthboxGender_Female,{COLOR DYNAMIC_COLOR1}♀
+gText_HealthboxGender_None,{COLOR DYNAMIC_COLOR2}
+gText_Upper,MAJ.
+gText_Lower,min.
+gText_Others,OTHERS
+gText_Symbols,SYMBOLES
+gText_Register2,ENREG.
+gText_Exit2,RETOUR
+gText_QuitChatting,Quitter le tchat?
+gText_RegisterTextWhere,Où enregistrer le texte?
+gText_RegisterTextHere,Enregistrer le texte ici?
+gText_InputText,Entrer le texte.
+gText_F700JoinedChat,{DYNAMIC 0} rejoint le tchat!
+gText_F700LeftChat,{DYNAMIC 0} quitte le tchat.
+gText_ExitingChat,Départ du tchat…
+gText_LeaderLeftEndingChat,"Le MENEUR, {DYNAMIC 0}, part\net met fin au tchat."
+gText_RegisteredTextChangedOKToSave,Le texte enregistré a été modifié.\nSauvegarder la partie?
+gText_AlreadySavedFile_Chat,Ecraser les données de\nsauvegarde existantes?
+gText_SavingDontTurnOff_Chat,SAUVEGARDE EN COURS…\nNE PAS ETEINDRE.
+gText_PlayerSavedGame_Chat,{DYNAMIC 0} a sauvegardé la partie.
+gText_IfLeaderLeavesChatEnds,"Si le MENEUR part, le forum\nse termine. OK?"
+gText_Hello,SALUT
+gText_Pokemon2,POKéMON
+gText_Trade,ECHANGE
+gText_Battle,COMBAT
+gText_Lets,ÇA VA?
+gText_Ok,OK!
+gText_Sorry,DESOLE
+gText_YaySmileEmoji,OUAIS{EMOJI_BIGSMILE}
+gText_ThankYou,MERCI
+gText_ByeBye,BYE-BYE!
+gText_MatchCallSteven_Strategy,Attaquer les points faibles!
+gText_MatchCallSteven_Pokemon,POKéMON ACIER ultime.
+gText_MatchCallSteven_Intro1_BeforeMeteorFallsBattle,Je franchirais des cascades
+gText_MatchCallSteven_Intro2_BeforeMeteorFallsBattle,pour des pierres rares!
+gText_MatchCallSteven_Intro1_AfterMeteorFallsBattle,Je suis le plus fort et
+gText_MatchCallSteven_Intro2_AfterMeteorFallsBattle,le plus énergique!
+gText_MatchCallBrendan_Strategy,Il faut utiliser son savoir!
+gText_MatchCallBrendan_Pokemon,J'utiliserai divers POKéMON.
+gText_MatchCallBrendan_Intro1,Je serai un meilleur prof
+gText_MatchCallBrendan_Intro2,POKéMON que mon père!
+gText_MatchCallMay_Strategy,Je ne suis pas si bonne!
+gText_MatchCallMay_Pokemon,Je t'aurai avec mes POKéMON!
+gText_MatchCallMay_Intro1,"Avec mes POKéMON, j'aide mon"
+gText_MatchCallMay_Intro2,père dans ses recherches.
+gText_HatchedFromEgg,{STR_VAR_1} vient de sortir de l'OEUF!
+gText_NicknameHatchPrompt,Voulez-vous donner un surnom\nau {STR_VAR_1} nouveau-né?
+gText_ReadyPickBerry,Sélectionnez une BAIE pour utiliser\nle BROYEUR DE BAIES.\p
+gText_WaitForAllChooseBerry,Patientez le temps que tous les\nparticipants aient choisi une BAIE.
+gText_EndedWithXUnitsPowder,{PAUSE_MUSIC}{PLAY_BGM MUS_LEVEL_UP}Vous terminez avec {STR_VAR_1} unités de\nfine POUDRE BAIE.\pVotre quantité totale de POUDRE\nBAIE est {STR_VAR_2}.\p
+gText_RecordingGameResults,Sauvegarde de vos résultas en\ncours. Veuillez patienter.
+gText_PlayBerryCrushAgain,Voulez-vous encore utiliser le\nBROYEUR DE BAIES?
+gText_YouHaveNoBerries,Vous n'avez pas de BAIES.\nLa partie est annulée.
+gText_MemberDroppedOut,Un participant est parti. Le jeu\nva se terminer.
+gText_TimesUpNoGoodPowder,Le temps est écoulé.\pVous n'avez pas pu faire une\nbonne POUDRE BAIE…\p
+gText_CommunicationStandby2,Connexion en cours…
+gText_1DotBlueF700,1. {COLOR BLUE}{SHADOW LIGHT_BLUE}{DYNAMIC 0}
+gText_1DotF700,1. {DYNAMIC 0}
+gText_SpaceTimes2, 
+gText_XDotY,"{STR_VAR_1},{STR_VAR_2}"
+gText_Var1Berry,BAIE {STR_VAR_1}
+gText_TimeColon,Temps:
+gText_PressingSpeed,Vitesse:
+gText_Silkiness,Finesse:
+gText_StrVar1,{STR_VAR_1}
+gText_SpaceMin, MIN 
+gText_XDotY2,"{STR_VAR_1},{STR_VAR_2}"
+gText_SpaceSec, secondes
+gText_XDotY3,"{STR_VAR_1},{STR_VAR_2}"
+gText_TimesPerSec, Fois/s
+gText_Var1Percent,{STR_VAR_1}%
+gText_PressesRankings,Nº de pressages
+gText_CrushingResults,Résultats
+gText_NeatnessRankings,Finesse
+gText_CoopRankings,En coopération
+gText_PressingPowerRankings,Force du pressage
+gText_BerryCrush2,BROYEUR DE BAIES
+gText_PressingSpeedRankings,Vitesse du pressage
+gText_Var1Players,{STR_VAR_1} JOUEURS
+gText_SymbolsEarned,Symboles
+gText_BattleRecord,Enregistrement
+gText_BattlePoints,Points de combat
+gText_UnusedCancel,CANCEL
+gText_EmptyString7,
+gText_CheckFrontierMap,Voir la CARTE de la ZONE DE COMBAT.
+gText_CheckTrainerCard,Voir la CARTE DE DRESSEUR.
+gText_ViewRecordedBattle,Voir le combat enregistré.
+gText_PutAwayFrontierPass,Quitter le PASSE ZONE.
+gText_CurrentBattlePoints,Vos points de combat actuels.
+gText_CollectedSymbols,Les symboles que vous avez collectés.
+gText_BattleTowerAbilitySymbol,Tour de combat - Symbole capacité
+gText_BattleDomeTacticsSymbol,Dôme de combat - Symbole tactique
+gText_BattlePalaceSpiritsSymbol,Palace de combat - Symbole esprit
+gText_BattleArenaGutsSymbol,Dojo de combat - Symbole cran
+gText_BattleFactoryKnowledgeSymbol,Usine de combat - Symbole savoir
+gText_BattlePikeLuckSymbol,Reptile de combat - Symbole chance
+gText_BattlePyramidBraveSymbol,Pyramide de combat - Symbole bravoure
+gText_ThereIsNoBattleRecord,Pas d'enregistrement.
+gText_BattleTower3,TOUR
+gText_BattleDome2,DOME
+gText_BattlePalace2,PALACE
+gText_BattleArena2,DOJO
+gText_BattleFactory2,USINE
+gText_BattlePike2,REPTILE
+gText_BattlePyramid2,PYRAMIDE
+gText_BattleTowerDesc,Eliminez vos adversaires pour aller\nau sommet et prouver votre talent.
+gText_BattleDomeDesc,Enchaînez les victoires en\nfaisant preuve de tactique.
+gText_BattlePalaceDesc,Regardez vos POKéMON se battre\net mettez votre esprit à l'épreuve.
+gText_BattleArenaDesc,Gagnez avec des équipes de POKéMON\npour prouver que vous avez du cran.
+gText_BattleFactoryDesc,Visez la victoire en louant des\nPOKéMON pour prouver votre savoir.
+gText_BattlePikeDesc,Choisissez un des trois chemins pour\ncombattre et testez votre chance.
+gText_BattlePyramidDesc,Partez à l'aventure et rendez-vous au\nsommet pour prouver votre bravoure.
+gText_ContinueMenuPlayer,JOUEUR
+gText_ContinueMenuTime,DUREE JEU
+gText_ContinueMenuPokedex,POKéDEX
+gText_ContinueMenuBadges,BADGES
+gText_Powder,POUDRE
+gText_BerryPickingRecords,RECORDS D'ATTRAPE-BAIES DODRIO
+gText_BerriesPicked,Baies attrapées:
+gText_BestScore,Meilleur score:
+gText_BerriesInRowFivePlayers,Baies attrapées à la suite\navec cinq joueurs:
+gText_BerryPickingResults,Annonce des résultats!
+gText_10P30P50P50P,{CLEAR_TO 0x03}10P{CLEAR_TO 0x2B}30P{CLEAR_TO 0x53}50P{CLEAR_TO 0x77}{EMOJI_MINUS}50P
+gText_AnnouncingRankings,Annonce du classement!
+gText_AnnouncingPrizes,Remise des prix!
+gText_1Colon,1:
+gText_2Colon,2:
+gText_3Colon,3:
+gText_4Colon,4:
+gText_5Colon,5:
+gText_FirstPlacePrize,La première place remporte\n{DYNAMIC 0}!
+gText_CantHoldAnyMore,Vous ne pouvez plus rien tenir!
+gText_FilledStorageSpace,Le prix est rangé à sa place.
+gText_WantToPlayAgain,Rejouer?
+gText_SomeoneDroppedOut,Quelqu'un est parti.\nLa connexion va se terminer.
+gText_SpacePoints, points
+gText_CommunicationStandby3,Communication standby…
+gText_SpacePoints2, points
+gText_SpaceTimes3,
+gText_PkmnJumpRecords,RECORDS DE SAUTS POKéMON
+gText_JumpsInARow,Sauts consécutifs:
+gText_BestScore2,Meilleur score:
+gText_ExcellentsInARow,EXCELLENTS consécutifs:
+gText_AwesomeWonF701F700,Score incroyable! Tu as\ngagné {DYNAMIC 1} {DYNAMIC 0}!
+gText_FilledStorageSpace2,Il n'y a plus de place.
+gText_CantHoldMore,Vous ne pouvez plus rien tenir!
+gText_WantToPlayAgain2,Rejouer?
+gText_SomeoneDroppedOut2,Quelqu'un est parti.\nLa connexion va se terminer.
+gText_CommunicationStandby4,Connexion en cours…
+gText_LinkContestResults,Résultats du concours link de {PLAYER}
+gText_1st,1{SUPER_ER}
+gText_2nd,2{SUPER_E}
+gText_3rd,3{SUPER_E}
+gText_4th,4{SUPER_E}
+gText_Friend,Friend
+gText_Pokemon3,POKeMON
+gText_Red,ROUGE
+gText_Blue,BLEU
+gText_3Dashes,---
+gText_SingleBattleRoomResults,Combats solo de {PLAYER}
+gText_DoubleBattleRoomResults,Combats duo de {PLAYER}
+gText_MultiBattleRoomResults,Combats multi de {PLAYER}
+gText_LinkMultiBattleRoomResults,Combats multi link de {PLAYER}
+gText_SingleBattleTourneyResults,Tournois de combat solo de {PLAYER}
+gText_DoubleBattleTourneyResults,Tournois de combat duo de {PLAYER}
+gText_SingleBattleHallResults,Combats solo de {PLAYER}
+gText_DoubleBattleHallResults,Combats duo de {PLAYER}
+gText_BattleChoiceResults,Combats hasard de {PLAYER}
+gText_SetKOTourneyResults,Tournoi K.O. de {PLAYER}
+gText_BattleSwapSingleResults,Combats échange solo de {PLAYER}
+gText_BattleSwapDoubleResults,Combats échange duo de {PLAYER}
+gText_BattleQuestResults,Combats quête de {PLAYER}
+gText_Lv502,N. 50
+gText_OpenLv,N. LIBRE
+gText_WinStreak,Victoires: {STR_VAR_1}
+gText_Current,ACTUEL
+gText_Record,RECORD
+gText_Prev,PRECED.
+gText_RentalSwap,Loc./Ech.
+gText_Total,Total
+gText_ClearStreak,Séries: {STR_VAR_1}
+gText_Championships,Championnats: {STR_VAR_1}
+gText_RoomsCleared,Salles: {STR_VAR_1}
+gText_TimesCleared,Réussites:{CLEAR 0x05}{STR_VAR_1}
+gText_KOsInARow,K.O.s: {STR_VAR_1}
+gText_TimesVar1,Nombre: {STR_VAR_1}
+gText_FloorsCleared,Niveaux: {STR_VAR_1}
+gText_RecordsLv50,NIVEAU 50
+gText_RecordsOpenLevel,NIVEAU LIBRE
+gText_FrontierFacilityWinStreak,Victoires: {STR_VAR_2}
+gText_FrontierFacilityClearStreak,Séries: {STR_VAR_2}
+gText_FrontierFacilityRoomsCleared,Séries: {STR_VAR_2}
+gText_FrontierFacilityKOsStreak,Salles: {STR_VAR_2}
+gText_FrontierFacilityFloorsCleared,Niveaux: {STR_VAR_2}
+gText_SavingDontTurnOff2,SAUVEGARDE EN COURS…\nNE PAS ETEINDRE.
+gText_BlenderMaxSpeedRecord,MIXEUR\nRECORDS DE VITESSE!
+gText_234Players,2 JOUEURS\n3 JOUEURS\n4 JOUEURS
+gText_YesNo,OUI\nNON
+gText_SelectorArrow3,▶
+gText_Peekaboo,PIKABOUH!
+gText_CommErrorCheckConnections,Erreur de communication…\nVeuillez vérifier toutes les connexions\npuis éteignez et rallumez les consoles.
+gText_CommErrorEllipsis,Erreur de connexion…
+gText_MoveCloserToLinkPartner,Rapprochez-vous de vos partenaires.\nEvitez tout obstacle entre vous.
+gText_ABtnRegistrationCounter,Bouton A: Comptoir d'enregistrement
+gText_ABtnTitleScreen,Bouton A: Ecran titre
+gText_Option,OPTIONS
+gText_TextSpeed,VIT. TEXTE
+gText_BattleScene,ANIMAT. COMBAT
+gText_BattleStyle,STYLE COMBAT
+gText_Autorun,AUTORUN
+gText_Sound,SON
+gText_Frame,FENETRE
+gText_OptionMenuCancel,RETOUR
+gText_FollowerEnable,{PKMN} FOLLOWER
+gText_AutorunEnable,AUTORUN
+gText_OptionMatchCalls,MATCH CALLS
+gText_OptionMenuSave,SAVE
+gText_OptionStyle,MOVE SPLIT
+gText_OptionDifficulty,DIFFICULTY
+gText_ButtonMode,MODE BOUTONS
+gText_TextSpeedSlow,{COLOR GREEN}{SHADOW LIGHT_GREEN}1
+gText_TextSpeedMid,{COLOR GREEN}{SHADOW LIGHT_GREEN}2
+gText_TextSpeedFast,{COLOR GREEN}{SHADOW LIGHT_GREEN}3
+gText_BattleSceneOn,{COLOR GREEN}{SHADOW LIGHT_GREEN}OUI
+gText_BattleSceneOff,{COLOR GREEN}{SHADOW LIGHT_GREEN}NON
+gText_BattleStyleShift,{COLOR GREEN}{SHADOW LIGHT_GREEN}CHOIX
+gText_BattleStyleSet,{COLOR GREEN}{SHADOW LIGHT_GREEN}DEFINI
+gText_SoundMono,{COLOR GREEN}{SHADOW LIGHT_GREEN}MONO
+gText_SoundStereo,{COLOR GREEN}{SHADOW LIGHT_GREEN}STEREO
+gText_FrameType,{COLOR GREEN}{SHADOW LIGHT_GREEN}TYPE 
+gText_FrameTypeNumber,{COLOR GREEN}{SHADOW LIGHT_GREEN}
+gText_ButtonTypeNormal,{COLOR GREEN}{SHADOW LIGHT_GREEN}NORMAL
+gText_ButtonTypeLR,{COLOR GREEN}{SHADOW LIGHT_GREEN}LR
+gText_ButtonTypeLEqualsA,{COLOR GREEN}{SHADOW LIGHT_GREEN}L=A
+gText_AutorunOff,{COLOR GREEN}{SHADOW LIGHT_GREEN}OFF
+gText_AutorunOn,{COLOR GREEN}{SHADOW LIGHT_GREEN}ON
+gText_NumPlayerLink,LINK {STR_VAR_1}
+gText_BronzeCard,BRONZE
+gText_CopperCard,CUIVRE
+gText_SilverCard,ARGENT
+gText_GoldCard,OR
+gText_Day,JOUR
+gText_Colon3,:
+gText_Confirm2,CONFIR.
+gText_Days,Jours
+gText_TimeColon2,Temps:
+gText_GameTime,Temps de jeu
+gText_RTCTime,Temps réel
+gText_UpdatedTime,Mise à jour
+gText_MenuPokedex,POKéDEX
+gText_MenuPokemon,POKéMON
+gText_MenuBag,SAC
+gText_MenuPokenav,POKéNAV
+gText_MenuPlayer,{PLAYER}
+gText_MenuSave,SAUVER
+gText_MenuOption,OPTIONS
+gText_MenuExit,RETOUR
+gText_MenuRetire,PARTIR
+gText_MenuRest,REPOS
+gText_SafariBallStock,SAFARI BALLS\nNb: {STR_VAR_1}
+gText_BattlePyramidFloor,Pyramide\n{STR_VAR_1}
+gText_Floor0,Floor 0
+gText_Floor1,Niveau 1
+gText_Floor2,Niveau 2
+gText_Floor3,Niveau 3
+gText_Floor4,Niveau 4
+gText_Floor5,Niveau 5
+gText_Floor6,Niveau 6
+gText_Floor7,Niveau 7
+gText_Peak,Sommet
+gText_LinkStandby2,Connexion en cours…\nBouton B: Annuler
+gText_PressAToLoadEvent,Bouton A: Charger évènement.\nBouton B: Annuler
+gText_LoadingEvent,Chargement évènement…
+gText_DontRemoveCableTurnOff,Ne pas retirer le câble Game Link.\nNe pas éteindre.
+gText_EventSafelyLoaded,Chargement de l'évènement achevé.
+gText_LoadErrorEndingSession,Erreur de chargement.\nFermeture de la session.
+gText_DexHoenn,HOENN
+gText_DexNational,NATIONAL
+gText_PokedexDiploma,Joueur: {CLEAR 0x10}{COLOR RED}{SHADOW LIGHT_RED}{PLAYER}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}\n\nPOKéDEX {STR_VAR_1}\nCe document certifie\nque vous avez complété\nvotre POKéDEX.\n\n{CLEAR_TO 0x42}{COLOR RED}{SHADOW LIGHT_RED}GAME FREAK
+gText_DiplomaEmpty,{COLOR RED}{SHADOW LIGHT_RED}
+gText_Hoenn,HOENN
+gText_OhABite,Oh! Ça mord!
+gText_PokemonOnHook,Un POKéMON a mordu à l'hameçon!{PAUSE_UNTIL_PRESS}
+gText_NotEvenANibble,Rien de rien…{PAUSE_UNTIL_PRESS}
+gText_ItGotAway,Il est reparti…{PAUSE_UNTIL_PRESS}
+gText_XWillBeSentToY,{STR_VAR_2} sera envoyé à {STR_VAR_1}.
+gText_ByeByeVar1,"Ciao, {STR_VAR_2}!"
+gText_XSentOverY,{STR_VAR_1} a envoyé {STR_VAR_3}.
+gText_TakeGoodCareOfX,Prends bien soin de {STR_VAR_3}!
+gText_ThreeQuestionMarks,???
+gText_MaxHP,PV MAX.
+gText_Attack,ATTAQUE
+gText_Defense,DEFENSE
+gText_Speed,VITESSE
+gText_SpAtk,ATQ. SPE.
+gText_SpDef,DEF. SPE.
+gText_Plus,{PLUS}
+gText_Dash,-
+gText_FromSpace,
+gText_MixingRecords,Echange de données…
+gText_RecordMixingComplete,Echange de données terminé.\nMerci d'avoir patienté.
+gText_YourName,VOTRE NOM?
+gText_BoxName,NOM BOITE?
+gText_PkmnsNickname,Surnom de {STR_VAR_1}?
+gText_TellHimTheWords,Lui dire les mots.
+gText_MoveOkBack,{DPAD_NONE}DEPL.  {A_BUTTON}OK  {B_BUTTON}RET.
+gText_CallCantBeMadeHere,Impossible d'appeler d'ici.
+gText_ContestLady_Handsome,LE SUBLIME
+gText_ContestLady_Vinny,L'ENORME
+gText_ContestLady_Moreme,L'UNIQUE
+gText_ContestLady_Ironhard,LE SOLIDE
+gText_ContestLady_Muscle,LE MUSCLE
+gText_ContestLady_Coolness,sang-froid
+gText_ContestLady_Beauty,beauté
+gText_ContestLady_Cuteness,grâce
+gText_ContestLady_Smartness,intelligence
+gText_ContestLady_Toughness,robustesse
+gText_QuizLady_Lady,moi
+gText_FavorLady_Slippery,glissant
+gText_FavorLady_Roundish,rond
+gText_FavorLady_Whamish,bruyant
+gText_FavorLady_Shiny,brillant
+gText_FavorLady_Sticky,collant
+gText_FavorLady_Pointy,pointu
+gText_RentalPkmn2,LOCATION
+gText_SelectFirstPkmn,Sélectionnez le premier.
+gText_SelectSecondPkmn,Sélectionnez le deuxième.
+gText_SelectThirdPkmn,Sélectionnez le troisième.
+gText_Rent,LOUER
+gText_Summary,RESUME
+gText_Others2,RETOUR
+gText_Deselect,ANNULER
+gText_TheseThreePkmnOkay,OK avec ces trois POKéMON?
+gText_Yes2,OUI
+gText_No2,NON
+gText_CantSelectSamePkmn,Impossible de sélec. le même.
+gText_PkmnSwap,ECHANGE
+gText_SelectPkmnToSwap,Choisir un PKMN à échanger.
+gText_SelectPkmnToAccept,Choisir un PKMN à recevoir.
+gText_Swap,ECHANGER
+gText_Summary2,RESUME
+gText_Rechoose,RETOUR
+gText_QuitSwapping,Quitter l'échange?
+gText_Yes3,OUI
+gText_No3,NON
+gText_PkmnForSwap,{PKMN} A ECHANGER
+gText_Cancel3,ANNULER
+gText_Swap2,SWAP
+gText_Accept,ACCEPT
+gText_AcceptThisPkmn,Accepter ce POKéMON?
+gText_4Spaces,    
+gText_SamePkmnInPartyAlready,Ce {PKMN} est déjà dans l'équipe.
+gText_DecimalPoint,.
+gText_SavingPlayer,JOUEUR
+gText_SavingBadges,BADGES
+gText_SavingPokedex,POKéDEX
+gText_SavingTime,DUREE JEU
+gText_WirelessCommStatus,Statut de la communication sans fil
+gText_PeopleTrading,Personnes pour échanges:
+gText_PeopleBattling,Personnes pour combats:
+gText_PeopleInUnionRoom,Personnes dans SALLE UNION:
+gText_PeopleCommunicating,Personnes en communication:
+gText_F700Players,{DYNAMIC 0} JOUEURS
+gText_F701Players,{DYNAMIC 1} JOUEURS
+gText_F702Players,{DYNAMIC 2} JOUEURS
+gText_F703Players,{DYNAMIC 3} JOUEURS
+gText_WonderCards,CARTES MIRACLE
+gText_WonderNews,INFOS MIRACLE
+gText_WirelessCommunication,COMMUNICATION SANS FIL
+gText_Friend2,AMI
+gText_Exit3,RETOUR
+gText_Receive,RECEVOIR
+gText_Send,ENVOYER
+gText_Toss,JETER
+gText_VarietyOfEventsImportedWireless,Différents évènements seront\nimportés en transmission sans fil.
+gText_WonderCardsInPossession,Lire les CARTES MIRACLE en\nvotre possession.
+gText_ReadNewsThatArrived,Lire les INFOS qui sont\narrivées.
+gText_ReturnToTitle,Retourner à l'écran titre.
+gText_DontHaveCardNewOneInput,Vous n'avez pas de CARTE MIRACLE.\nUne nouvelle carte va être ajoutée.
+gText_DontHaveNewsNewOneInput,Vous n'avez pas d'INFOS MIRACLE.\nDe nouvelles infos vont être ajoutées.
+gText_WhereShouldCardBeAccessed,D'où accéder à la CARTE MIRACLE?
+gText_WhereShouldNewsBeAccessed,D'où accéder aux INFOS MIRACLE?
+gText_CommunicationStandbyBButtonCancel,Communication standby…\nB Button: Cancel
+gText_Communicating,Transmission…
+gText_CommunicationCompleted,Fin de la connexion.
+gText_CommunicationError,Erreur de transmission…
+gText_CommunicationCanceled,La connexion a été annulée.
+gText_ThrowAwayWonderCard,Jeter la CARTE MIRACLE et\nentrer une nouvelle carte?
+gText_HaventReceivedCardsGift,Vous n'avez pas encore reçu le cadeau de la CARTE.\nEntrer une nouvelle CARTE quand même ?
+gText_WonderCardReceivedFrom,Une CARTE MIRACLE a été reçue\nde {STR_VAR_1}.
+gText_WonderNewsReceivedFrom,Une INFO MIRACLE a été reçue\nde {STR_VAR_1}.
+gText_WonderCardReceived,Une nouvelle CARTE MIRACLE a été\nreçue.
+gText_WonderNewsReceived,Une nouvelle INFO MIRACLE a été\nreçue.
+gText_NewStampReceived,Un nouveau TAMPON a été reçu.
+gText_NewTrainerReceived,Un nouveau DRESSEUR est arrivé.
+gText_AlreadyHadCard,Vous aviez déjà cette\nCARTE MIRACLE.
+gText_AlreadyHadNews,Vous aviez déjà cette\nINFO MIRACLE.
+gText_AlreadyHadStamp,Vous aviez déjà ce\nTAMPON.
+gText_NoMoreRoomForStamps,Il n'y a plus de place pour ajouter\ndes TAMPONS.
+gText_RecordUploadedViaWireless,Votre record a été envoyé via la\nCOMMUNICATION SANS FIL.
+gText_CantAcceptCardFromTrainer,Vous ne pouvez pas accepter de CARTE MIRACLE\nde ce DRESSEUR.
+gText_CantAcceptNewsFromTrainer,Vous ne pouvez pas accepter d'INFO MIRACLE\nde ce DRESSEUR.
+gText_NothingSentOver,Rien n'a été envoyé…
+gText_WhatToDoWithCards,Que voulez-vous faire\navec les CARTES MIRACLE ?
+gText_WhatToDoWithNews,Que voulez-vous faire\navec les INFOS MIRACLE ?
+gText_SendingWonderCard,Envoi de votre CARTE MIRACLE…
+gText_SendingWonderNews,Envoi de votre INFO MIRACLE…
+gText_WonderCardSentTo,Votre CARTE MIRACLE a été envoyée\nà {STR_VAR_1}.
+gText_WonderNewsSentTo,Votre INFO MIRACLE a été envoyée\nà {STR_VAR_1}.
+gText_StampSentTo,Un TAMPON a été envoyé à {STR_VAR_1}.
+gText_GiftSentTo,Un CADEAU a été envoyé à {STR_VAR_1}.
+gText_OtherTrainerHasCard,L'autre DRESSEUR a déjà la même\nCARTE MIRACLE.
+gText_OtherTrainerHasNews,L'autre DRESSEUR a déjà la même\nINFO MIRACLE.
+gText_OtherTrainerHasStamp,L'autre DRESSEUR a déjà le même\nTAMPON.
+gText_OtherTrainerCanceled,L'autre DRESSEUR a annulé\nla communication.
+gText_CantSendGiftToTrainer,Vous ne pouvez pas envoyer de CADEAU MYSTÈRE\nà ce DRESSEUR.
+gText_IfThrowAwayCardEventWontHappen,"Si vous jetez la CARTE,\nl'évènement ne se produira pas. OK ?"
+gText_OkayToDiscardNews,Êtes-vous sûr de vouloir jeter\ncette INFO ?
+gText_HaventReceivedGiftOkayToDiscard,Vous n'avez pas reçu le\nCADEAU. Voulez-vous vraiment jeter ?
+gText_DataWillBeSaved,Les données vont être sauvegardées.\nVeuillez patienter.
+gText_SaveCompletedPressA,Sauvegarde terminée.\nAppuyez sur le bouton A.
+gText_WonderCardThrownAway,La CARTE MIRACLE a été jetée.
+gText_WonderNewsThrownAway,L'INFO MIRACLE a été jetée.
+gText_MysteryGift,CADEAU MYSTÈRE
+gText_PickOKExit,{DPAD_UPDOWN}CHOIX {A_BUTTON}OK {B_BUTTON}RETOUR
+gText_PickOKCancel,{DPAD_UPDOWN}CHOIX {A_BUTTON}OK {B_BUTTON}ANNULER
+gText_PlayersBattleResults,RESULTATS DE COMBAT de {PLAYER}
+gText_TotalRecordWLD,RECORD TOTAL V:{STR_VAR_1} D:{STR_VAR_2} N:{STR_VAR_3}
+gText_WinLoseDraw,{CLEAR_TO 0x53}VICTOIRE{CLEAR_TO 0x80}DEFAITE{CLEAR_TO 0xB0}NUL
+gText_CommunicationStandby5,En attente de communication…
+gText_QuitTheGame,Quitter le jeu ?
+gText_YouveGot9999Coins,"Vous avez 9 999 JETONS."
+gText_YouveRunOutOfCoins,Vous n'avez plus de JETONS.\nPartie terminée !
+gText_YouDontHaveThreeCoins,Vous n'avez pas trois JETONS.
+gText_ReelTimeHelp,REEL TIME\nC'est votre chance de viser\net de toucher les marques !\nLe Reel Time continue pour le\nnombre de tours attribué.\nTout se termine sur un Big Bonus.
+gText_NewLine2,\n
+gText_Exit4,EXIT
+gText_Lv,{LV}
+gText_TimeBoard,TIME BOARD
+gText_TimeCleared,TIME CLEARED 
+gText_XMinYDotZSec,{STR_VAR_1} min. {STR_VAR_2}.{STR_VAR_3} sec.
+gText_TrainerHill1F,1{SUPER_ER}
+gText_TrainerHill2F,2{SUPER_E}
+gText_TrainerHill3F,3{SUPER_E}
+gText_TrainerHill4F,4{SUPER_E}
+gText_TeachWhichMoveToPkmn,Enseigner quoi à {STR_VAR_1}?
+gText_MoveRelearnerTeachMoveConfirm,Enseigner {STR_VAR_2}?
+gText_MoveRelearnerPkmnLearnedMove,{STR_VAR_1} apprend\n{STR_VAR_2}!
+gText_MoveRelearnerPkmnTryingToLearnMove,{STR_VAR_1} tente d'apprendre\n{STR_VAR_2}.\pMais {STR_VAR_1} ne peut pas ap-\nprendre plus de 4 capacités.\pEffacer une capacité \npour {STR_VAR_2}?
+gText_MoveRelearnerStopTryingToTeachMove,Arrêter d'apprendre\n{STR_VAR_2}?
+gText_MoveRelearnerAndPoof,"{PAUSE 32}1, {PAUSE 15}2, and {PAUSE 15}… {PAUSE 15}… {PAUSE 15}… {PAUSE 15}{PLAY_SE SE_BALL_BOUNCE_1}Tadaa!\p"
+gText_MoveRelearnerPkmnForgotMoveAndLearnedNew,{STR_VAR_1} oublie\n{STR_VAR_3}.\pEt…\p{STR_VAR_1}\napprend {STR_VAR_2}.
+gText_MoveRelearnedPkmnDidNotLearnMove,{STR_VAR_1} did not learn the\nmove {STR_VAR_2}.
+gText_MoveRelearnerGiveUp,Arrêter d'enseigner la nouvelle\ncapacité à {STR_VAR_1}?
+gText_MoveRelearnerWhichMoveToForget,Oublier quelle capacité?\p
+gText_MoveRelearnerBattleMoves,CAPACITES COMB.
+gText_MoveRelearnerContestMovesTitle,CAPACITES CONC.
+gText_MoveRelearnerType,TYPE/
+gText_MoveRelearnerPP,PP/
+gText_MoveRelearnerPower,POUVOIR/
+gText_MoveRelearnerAccuracy,PRECIS./
+gText_MoveRelearnerAppeal,CHARME/
+gText_MoveRelearnerJam,BLOCAG./
+gText_Kira,RITA
+gText_Amy,EVE
+gText_John,JOHN
+gText_Roy,SAM
+gText_Gabby,INES
+gText_Anna,ANNA
+gText_ClearAllSaveData,Effacer toutes les données?
+gText_ClearingData,Effacement des données en cours…\nVeuillez patienter.
+gText_IsThisTheCorrectTime,Est-ce la bonne heure?
+gText_Confirm3,CONFIR.
+gText_Cancel4,SORTIR
+gText_MrStoneMatchCallDesc,DIR. DEVON
+gText_MrStoneMatchCallName,M. ROCHARD
+gText_StevenMatchCallDesc,COMME UN ROC
+gText_StevenMatchCallName,PIERRE
+gText_MayBrendanMatchCallDesc,LE VOISIN
+gText_NormanMatchCallDesc,RELIABLE ONE
+gText_MomMatchCallDesc,CALM & KIND
+gText_BaobaMatchCallDesc,SAFARI WARDEN
+gText_WallyMatchCallDesc,{PKMN} LOVER
+gText_NormanMatchCallName,PAPA
+gText_MomMatchCallName,MAMAN
+gText_BaobaMatchCallName,BAOBA
+gText_ScottMatchCallDesc,REGARD NOIR
+gText_ScottMatchCallName,SCOTT
+gText_RoxanneMatchCallDesc,ROCKIN' WHIZ
+gText_BrawlyMatchCallDesc,THE BIG HIT
+gText_WattsonMatchCallDesc,SWELL SHOCK
+gText_FlanneryMatchCallDesc,PASSION BURN
+gText_WinonaMatchCallDesc,SKY TAMER
+gText_TateLizaMatchCallDesc,MYSTIC DUO
+gText_JuanMatchCallDesc,DANDY CHARM
+gText_EliteFourMatchCallDesc,ELITE FOUR
+gText_ChampionMatchCallDesc,CHAMPION
+gText_ProfBirchMatchCallDesc,PROF. {PKMN}
+gText_CommStandbyAwaitingOtherPlayer,Communication en attente du\nchoix d'un participant.
+gText_BattleWasRefused,Le combat a été refusé.{PAUSE 60}
+gText_RefusedBattle,A refusé le combat.{PAUSE 60}
+gText_NoWeather,NO WEATHER
+gText_Sunny,SUNNY
+gText_Sunny2,SUNNY2
+gText_Rain,RAIN
+gText_Snow,SNOW
+gText_Lightning,LIGHTNING
+gText_Fog,FOG
+gText_VolcanoAsh,VOLCANO ASH
+gText_Sandstorm,SANDSTORM
+gText_Fog2,FOG2
+gText_Seafloor,SEAFLOOR
+gText_Cloudy,CLOUDY
+gText_Sunny3,SUNNY3
+gText_HeavyRain,HEAVY RAIN
+gText_Seafloor2,SEAFLOOR2
+gText_DelAll,TOUT EF.
+gText_Cancel5,ANNULER
+gText_Ok2,OK
+gText_Quiz,QUIZ
+gText_Answer,REPONSE
+gText_PokeBalls,POKé BALLS
+gText_Berry,BAIE
+gText_Berries,BAIES
+gText_AshQty,ASH QTY:\n{STR_VAR_1}{PAUSE_UNTIL_PRESS}
+gText_ExpShareOn,Le Multi Exp. est activé.\pL'équipe gagnera désormais une partie\ndes Points d'Expérience.{PAUSE_UNTIL_PRESS}
+gText_ExpShareOff,Le Multi Exp. est désactivé.\pL'équipe ne gagnera plus de Points\nd'Expérience supplémentaires.{PAUSE_UNTIL_PRESS}
+gText_infiniteRepelOn,Repousse Infini activé.{PAUSE_UNTIL_PRESS}
+gText_infiniteRepelOff,Repousse Infini désactivé.{PAUSE_UNTIL_PRESS}
+gText_infiniteCandies,Vous avez obtenu 999 BONBONS\nRARES !{PAUSE_UNTIL_PRESS}
+gText_Stats_Minus,-

@@ -1,0 +1,83 @@
+id,description
+ABILITY_NONE,
+ABILITY_STENCH,Aide à repousser les POKéMON sauvages.
+ABILITY_DRIZZLE,Invoque la pluie au combat.
+ABILITY_SPEED_BOOST,Augmente la VITESSE peu à peu.
+ABILITY_BATTLE_ARMOR,Bloque les coups critiques.
+ABILITY_STURDY,Annule les attaques K.O. en 1 coup.
+ABILITY_DAMP,Empêche l'auto-destruction.
+ABILITY_LIMBER,Empêche la paralysie.
+ABILITY_SAND_VEIL,Monte l'Esquive dans tempête sable.
+ABILITY_STATIC,Paralyse au contact.
+ABILITY_VOLT_ABSORB,Transforme électricité en PV.
+ABILITY_WATER_ABSORB,Transforme l'eau en PV.
+ABILITY_OBLIVIOUS,Empêche l'attirance.
+ABILITY_CLOUD_NINE,Annule les effets météo.
+ABILITY_COMPOUND_EYES,Augmente la précision.
+ABILITY_INSOMNIA,Empêche le sommeil.
+ABILITY_COLOR_CHANGE,Change type selon attaque ennemie.
+ABILITY_IMMUNITY,Empêche l'empoisonnement.
+ABILITY_FLASH_FIRE,Monte en puissance si touché par feu.
+ABILITY_SHIELD_DUST,Bloque les effets additionnels.
+ABILITY_OWN_TEMPO,Empêche la confusion.
+ABILITY_SUCTION_CUPS,Ancre fermement le corps.
+ABILITY_INTIMIDATE,Baisse l'ATTAQUE ennemie.
+ABILITY_SHADOW_TAG,Empêche la fuite de l'ennemi.
+ABILITY_ROUGH_SKIN,Blesse au contact.
+ABILITY_WONDER_GUARD,Seules attaques "super efficaces".
+ABILITY_LEVITATE,Pas touché par attaques SOL.
+ABILITY_EFFECT_SPORE,Laisse des spores au contact.
+ABILITY_SYNCHRONIZE,Transmet problèmes de statut.
+ABILITY_CLEAR_BODY,Empêche baisse de capacités.
+ABILITY_NATURAL_CURE,Guérit en changeant de POKéMON.
+ABILITY_LIGHTNING_ROD,Attire les attaques électriques.
+ABILITY_SERENE_GRACE,Favorise les effets additionnels.
+ABILITY_SWIFT_SWIM,Monte la VITESSE sous la pluie.
+ABILITY_CHLOROPHYLL,Monte la VITESSE au soleil.
+ABILITY_ILLUMINATE,Augmente taux de rencontre.
+ABILITY_TRACE,Copie le talent spécial.
+ABILITY_HUGE_POWER,Augmente l'ATTAQUE.
+ABILITY_POISON_POINT,Empoisonne l'ennemi au contact.
+ABILITY_INNER_FOCUS,Empêche le recul.
+ABILITY_MAGMA_ARMOR,Empêche le gel.
+ABILITY_WATER_VEIL,Empêche les brûlures.
+ABILITY_MAGNET_PULL,Piège POKéMON type ACIER.
+ABILITY_SOUNDPROOF,Évite attaques sonores.
+ABILITY_RAIN_DISH,Léger soin de PV sous la pluie.
+ABILITY_SAND_STREAM,Invoque une tempête de sable.
+ABILITY_PRESSURE,Augmente utilisation PP ennemi.
+ABILITY_THICK_FAT,Protection chaleur et froid.
+ABILITY_EARLY_BIRD,Se réveille vite du sommeil.
+ABILITY_FLAME_BODY,Brûle l'ennemi au contact.
+ABILITY_RUN_AWAY,Facilite la fuite.
+ABILITY_KEEN_EYE,Empêche perte de précision.
+ABILITY_HYPER_CUTTER,Empêche baisse d'ATTAQUE.
+ABILITY_PICKUP,Peut ramasser des objets.
+ABILITY_TRUANT,N'agit qu'un tour sur deux.
+ABILITY_HUSTLE,Échange précision pour puissance.
+ABILITY_CUTE_CHARM,Séduit au contact.
+ABILITY_PLUS,Monte en puissance avec MINUS.
+ABILITY_MINUS,Monte en puissance avec PLUS.
+ABILITY_FORECAST,Change avec la météo.
+ABILITY_STICKY_HOLD,Empêche le vol d'objet.
+ABILITY_SHED_SKIN,Soigne le corps en muant.
+ABILITY_GUTS,Monte l'ATTAQUE si problème statut.
+ABILITY_MARVEL_SCALE,Monte la DÉFENSE si problème statut.
+ABILITY_LIQUID_OOZE,Aspirer cause des dégâts.
+ABILITY_OVERGROW,Monte capacités PLANTE si mal en point.
+ABILITY_BLAZE,Monte capacités FEU si mal en point.
+ABILITY_TORRENT,Monte capacités EAU si mal en point.
+ABILITY_SWARM,Monte capacités INSECTE si mal en point.
+ABILITY_ROCK_HEAD,Empêche dégâts de recul.
+ABILITY_DROUGHT,Invoque le soleil au combat.
+ABILITY_ARENA_TRAP,Empêche la fuite.
+ABILITY_VITAL_SPIRIT,Empêche le sommeil.
+ABILITY_WHITE_SMOKE,Empêche baisse de capacités.
+ABILITY_PURE_POWER,Augmente l'ATTAQUE.
+ABILITY_SHELL_ARMOR,Bloque les coups critiques.
+ABILITY_CACOPHONY,Booste capacités sonores.
+ABILITY_AIR_LOCK,Annule les effets météo.
+ABILITY_TRANSISTOR,Monte capacités type ÉLECTRIK.
+ABILITY_DRAGONS_MAW,Monte capacités type DRAGON.
+ABILITY_MULTITYPE,Monte capacités type avec objets.
+ABILITY_PIXILATE,Capacités NORMAL deviennent FÉE.

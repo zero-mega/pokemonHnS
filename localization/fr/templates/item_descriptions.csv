@@ -1,0 +1,787 @@
+id,description
+ITEM_NONE,
+ITEM_MASTER_BALL,La meilleure BALL. Capture le POKéMON à coup sûr.
+ITEM_ULTRA_BALL,BALL au taux de réussite supérieur à la SUPER BALL.
+ITEM_GREAT_BALL,BALL au taux de réussite supérieur à la POKé BALL.
+ITEM_POKE_BALL,Un objet qui permet d'attraper les POKéMON sauvages.
+ITEM_SAFARI_BALL,Une BALL spéciale utilisée juste au PARC SAFARI.
+ITEM_NET_BALL,Une BALL qui marche bien sur un POKéMON EAU ou INSECTE.
+ITEM_DIVE_BALL,Une BALL qui marche mieux avec les {PKMN} sous-marins.
+ITEM_NEST_BALL,Une BALL qui marche mieux avec les POKéMON faibles.
+ITEM_REPEAT_BALL,Une BALL qui marche bien sur un POKéMON déjà capturé.
+ITEM_TIMER_BALL,Plus efficace pendant les combats longs.
+ITEM_LUXURY_BALL,Une BALL confor- table qui rend les POKéMON amicaux.
+ITEM_PREMIER_BALL,Une BALL rare créée à l'occasion d'un grand évènement.
+ITEM_LOVE_BALL,
+ITEM_LURE_BALL,
+ITEM_FRIEND_BALL,
+ITEM_HEAVY_BALL,
+ITEM_MOON_BALL,
+ITEM_LEVEL_BALL,
+ITEM_FAST_BALL,
+ITEM_GS_BALL,
+ITEM_POTION,Restaure les PV d'un POKéMON de 20 points.
+ITEM_ANTIDOTE,Soigne les POKéMON empoisonnés.
+ITEM_BURN_HEAL,Soigne les POKéMON de leurs brûlures.
+ITEM_ICE_HEAL,Décongèle les POKéMON gelés.
+ITEM_AWAKENING,Réveille les POKéMON endormis.
+ITEM_PARALYZE_HEAL,Soigne les POKéMON paralysés.
+ITEM_FULL_RESTORE,Restaure tous les PV et le statut d'un POKéMON.
+ITEM_MAX_POTION,Restaure tous les PV d'un POKéMON.
+ITEM_HYPER_POTION,Restaure les PV d'un POKéMON de 200 points.
+ITEM_SUPER_POTION,Restaure les PV d'un POKéMON de 50 points.
+ITEM_FULL_HEAL,Soigne les change- ments de statut d'un POKéMON.
+ITEM_REVIVE,Réanime un POKéMON K.O. et restaure la moitié de ses PV.
+ITEM_MAX_REVIVE,Réanime un POKéMON K.O. et restaure tous ses PV.
+ITEM_FRESH_WATER,Une eau minérale qui restaure 50 PV.
+ITEM_SODA_POP,Une boisson pétillante qui restaure 60 PV.
+ITEM_LEMONADE,Une boisson très sucrée qui restaure 80 PV.
+ITEM_MOOMOO_MILK,Un lait nourrissant qui restaure les PV de 100 points.
+ITEM_ENERGY_POWDER,Une poudre amère qui restaure les PV de 50 points.
+ITEM_ENERGY_ROOT,Une racine amère qui restaure les PV de 200 points.
+ITEM_HEAL_POWDER,Une poudre amère soignant les chan- gements de statut.
+ITEM_REVIVAL_HERB,Une herbe très amère qui réanime un POKéMON K.O.
+ITEM_ETHER,Restaure 10 PP d'une attaque sélectionnée.
+ITEM_MAX_ETHER,Restaure tous les PP d'une attaque sélectionnée.
+ITEM_ELIXIR,Restaure 10 PP de toutes les attaques.
+ITEM_MAX_ELIXIR,Restaure tous les PP de toutes les attaques.
+ITEM_LAVA_COOKIE,Spécialité locale soignant les chan- gements de statut.
+ITEM_BLUE_FLUTE,Une flûte en verre qui réveille les POKéMON endormis.
+ITEM_YELLOW_FLUTE,Une flûte en verre qui sort un POKéMON de sa confusion.
+ITEM_RED_FLUTE,Une flûte en verre qui met fin à l'attirance.
+ITEM_BLACK_FLUTE,Une flûte en verre qui repousse les POKéMON sauvages.
+ITEM_WHITE_FLUTE,Une flûte en verre qui attire les POKéMON sauvages.
+ITEM_BERRY_JUICE,Une boisson 100% pur jus qui restaure 20 PV.
+ITEM_SACRED_ASH,Réanime tous les POKéMON K.O. et restaure leurs PV.
+ITEM_SHOAL_SALT,Sel obtenu dans les profondeurs de la GROTTE TREFONDS.
+ITEM_SHOAL_SHELL,Coquillage trouvé au fin fond de la GROTTE TREFONDS.
+ITEM_RED_SHARD,Fragment d'objet antique. Peut être vendu à bas prix.
+ITEM_BLUE_SHARD,Fragment d'objet antique. Peut être vendu à bas prix.
+ITEM_YELLOW_SHARD,Fragment d'objet antique. Peut être vendu à bas prix.
+ITEM_GREEN_SHARD,Fragment d'objet antique. Peut être vendu à bas prix.
+ITEM_FERTILIZER,
+ITEM_03D,?????
+ITEM_03E,?????
+ITEM_HP_UP,Monte les PV d'un POKéMON.
+ITEM_PROTEIN,Monte l'ATTAQUE d'un POKéMON.
+ITEM_IRON,Monte la DEFENSE d'un POKéMON.
+ITEM_CARBOS,Monte la VITESSE d'un POKéMON.
+ITEM_CALCIUM,Monte l'ATQ. SPE. d'un POKéMON.
+ITEM_RARE_CANDY,Fait progresser un POKéMON d'un niveau.
+ITEM_PP_UP,Monte les PP max. d'une attaque sélectionnée.
+ITEM_ZINC,Monte la DEF. SPE. d'un POKéMON.
+ITEM_PP_MAX,Monte les PP d'une attaque à son maximum.
+ITEM_048,?????
+ITEM_GUARD_SPEC,Empêche la perte de points de stats pendant un combat.
+ITEM_DIRE_HIT,Monte le taux de critiques pendant un combat.
+ITEM_X_ATTACK,Monte l'ATTAQUE pendant un combat.
+ITEM_X_DEFEND,Monte la DEFENSE pendant un combat.
+ITEM_X_SPEED,Monte la VITESSE pendant un combat.
+ITEM_X_ACCURACY,Monte la précision des attaques pendant un combat.
+ITEM_X_SPECIAL,Monte l'ATQ. SPE. pendant un combat.
+ITEM_POKE_DOLL,Pour s'enfuir d'un combat contre un POKéMON sauvage.
+ITEM_FLUFFY_TAIL,Pour s'enfuir d'un combat contre un POKéMON sauvage.
+ITEM_BIG_NUGGET,
+ITEM_SUPER_REPEL,Repousse les {PKMN} sauvages faibles durant 200 pas.
+ITEM_MAX_REPEL,Repousse les {PKMN} sauvages faibles durant 250 pas.
+ITEM_ESCAPE_ROPE,Pour sortir rapide- ment d'une grotte ou d'un souterrain.
+ITEM_REPEL,Repousse les {PKMN} sauvages faibles durant 100 pas.
+ITEM_057,?????
+ITEM_058,?????
+ITEM_059,?????
+ITEM_05A,?????
+ITEM_05B,?????
+ITEM_05C,?????
+ITEM_SUN_STONE,Fait évoluer certaines espèces de POKéMON.
+ITEM_MOON_STONE,Fait évoluer certaines espèces de POKéMON.
+ITEM_FIRE_STONE,Fait évoluer certaines espèces de POKéMON.
+ITEM_THUNDER_STONE,Fait évoluer certaines espèces de POKéMON.
+ITEM_WATER_STONE,Fait évoluer certaines espèces de POKéMON.
+ITEM_LEAF_STONE,Fait évoluer certaines espèces de POKéMON.
+ITEM_063,?????
+ITEM_064,?????
+ITEM_065,?????
+ITEM_066,?????
+ITEM_TINY_MUSHROOM,Un champignon or- dinaire. Peut être vendu à bas prix.
+ITEM_BIG_MUSHROOM,Un champignon rare. Peut être vendu à bon prix.
+ITEM_069,?????
+ITEM_PEARL,Une jolie perle. Peut être vendue à bas prix.
+ITEM_BIG_PEARL,Une perle magni- fique. Peut être vendue à bon prix.
+ITEM_STARDUST,Sable rouge très fin. Peut être vendu à bon prix.
+ITEM_STAR_PIECE,Fragment de gemme rouge. Peut se ven- dre à très bon prix.
+ITEM_NUGGET,Pépite d'or pur. Peut être vendue à bon prix.
+ITEM_HEART_SCALE,Une jolie écaille convoitée par les collectionneurs.
+ITEM_EXP_SHARE_SMALL,
+ITEM_FAIRY_GEM,
+ITEM_072,?????
+ITEM_073,?????
+ITEM_074,?????
+ITEM_075,?????
+ITEM_076,?????
+ITEM_077,?????
+ITEM_078,?????
+ITEM_ORANGE_MAIL,Papier ZIGZATON pouvant être tenu par un POKéMON.
+ITEM_HARBOR_MAIL,Papier ZIGZATON pouvant être tenu par un POKéMON.
+ITEM_GLITTER_MAIL,Papier GOELISE pouvant être tenu par un POKéMON.
+ITEM_MECH_MAIL,Papier MAGNETI pouvant être tenu par un POKéMON.
+ITEM_WOOD_MAIL,Papier PARECOOL pouvant être tenu par un POKéMON.
+ITEM_WAVE_MAIL,Papier WAILMER pouvant être tenu par un POKéMON.
+ITEM_BEAD_MAIL,Du papier avec un dessin du POKéMON qui le tient.
+ITEM_SHADOW_MAIL,Papier SKELENOX pouvant être tenu par un POKéMON.
+ITEM_TROPIC_MAIL,Papier JOLIFLOR pouvant être tenu par un POKéMON.
+ITEM_DREAM_MAIL,Du papier avec un dessin du POKéMON qui le tient.
+ITEM_FAB_MAIL,Papier magnifique pouvant être tenu par un POKéMON.
+ITEM_RETRO_MAIL,Du papier avec les dessins de trois POKéMON.
+ITEM_CHERI_BERRY,Objet tenu qui soigne la paralysie pendant un combat.
+ITEM_CHESTO_BERRY,Objet tenu qui réveille les {PKMN} dormant au combat.
+ITEM_PECHA_BERRY,Objet tenu qui soi- gne du poison pendant un combat.
+ITEM_RAWST_BERRY,Objet tenu qui soigne une brûlure pendant un combat.
+ITEM_ASPEAR_BERRY,Objet tenu qui dé- congèle les {PKMN} pendant un combat.
+ITEM_LEPPA_BERRY,Objet tenu qui restaure 10 PP pendant un combat.
+ITEM_ORAN_BERRY,Objet tenu qui restaure 10 PV pendant un combat.
+ITEM_PERSIM_BERRY,Objet tenu qui soigne la confusion pendant un combat.
+ITEM_LUM_BERRY,Objet tenu qui restaure le statut pendant un combat.
+ITEM_SITRUS_BERRY,Objet tenu qui restaure 30 PV pendant un combat.
+ITEM_FIGY_BERRY,Objet tenu qui res- taure les PV. Peut rendre confus.
+ITEM_WIKI_BERRY,Objet tenu qui res- taure les PV. Peut rendre confus.
+ITEM_MAGO_BERRY,Objet tenu qui res- taure les PV. Peut rendre confus.
+ITEM_AGUAV_BERRY,Objet tenu qui res- taure les PV. Peut rendre confus.
+ITEM_IAPAPA_BERRY,Objet tenu qui res- taure les PV. Peut rendre confus.
+ITEM_RAZZ_BERRY,Ingrédient {POKEBLOCK}. Plantez-la pour avoir un FRAMBY.
+ITEM_BLUK_BERRY,Ingrédient {POKEBLOCK}. Plantez-la pour avoir un REMU.
+ITEM_NANAB_BERRY,Ingrédient {POKEBLOCK}. Plantez-la pour avoir un NANAB.
+ITEM_WEPEAR_BERRY,Ingrédient {POKEBLOCK}. Plantez-la pour avoir un REPOI.
+ITEM_PINAP_BERRY,Ingrédient {POKEBLOCK}. Plantez-la pour avoir un NANANA.
+ITEM_POMEG_BERRY,"Rend un POKéMON amical, baisse les PV de base."
+ITEM_KELPSY_BERRY,"Rend un POKéMON amical, baisse l'ATTAQUE de base."
+ITEM_QUALOT_BERRY,"Rend un POKéMON amical, baisse la DEF. de base."
+ITEM_HONDEW_BERRY,"Rend un POKéMON amical, baisse l'ATQ. SPE. de base."
+ITEM_GREPA_BERRY,"Rend un POKéMON amical, baisse la DEF. SPE. de base."
+ITEM_TAMATO_BERRY,"Rend un POKéMON amical, baisse la VITESSE de base."
+ITEM_CORNN_BERRY,Ingrédient {POKEBLOCK}. Plantez-la pour avoir un SIAM.
+ITEM_MAGOST_BERRY,Ingrédient {POKEBLOCK}. Plantez-la pour avoir un MANGOU.
+ITEM_RABUTA_BERRY,Ingrédient {POKEBLOCK}. Plantez-la pour avoir un RABUTA.
+ITEM_NOMEL_BERRY,Ingrédient {POKEBLOCK}. Plantez-la pour avoir un TRONCI.
+ITEM_SPELON_BERRY,Ingrédient {POKEBLOCK}. Plantez-la pour avoir un KIWAN.
+ITEM_PAMTRE_BERRY,Ingrédient {POKEBLOCK}. Plantez-la pour avoir un PALMA.
+ITEM_WATMEL_BERRY,Ingrédient {POKEBLOCK}. Plantez-la pour avoir un STEKPA.
+ITEM_DURIN_BERRY,Ingrédient {POKEBLOCK}. Plantez-la pour avoir un DURIN.
+ITEM_BELUE_BERRY,Ingrédient {POKEBLOCK}. Plantez-la pour avoir un MYRTE.
+ITEM_LIECHI_BERRY,Objet tenu qui monte l'ATTAQUE si nécessaire.
+ITEM_GANLON_BERRY,Objet tenu qui monte la DEFENSE si nécessaire.
+ITEM_SALAC_BERRY,Objet tenu qui monte la VITESSE si nécessaire.
+ITEM_PETAYA_BERRY,Objet tenu qui monte l'ATQ. SPE. si nécessaire.
+ITEM_APICOT_BERRY,Objet tenu qui monte la DEF. SPE. si nécessaire.
+ITEM_LANSAT_BERRY,Objet tenu qui mon- te le taux de criti- ques si nécessaire.
+ITEM_STARF_BERRY,Objet tenu qui booste une stat si nécessaire.
+ITEM_ENIGMA_BERRY,Ingrédient {POKEBLOCK}. Plantez-la pour avoir un ENIGMA.
+ITEM_UNUSED_BERRY_1,Objet tenu qui restaure 30 PV pendant un combat.
+ITEM_UNUSED_BERRY_2,?????
+ITEM_UNUSED_BERRY_3,?????
+ITEM_BRIGHT_POWDER,Objet tenu qui éblouit et baisse la précision.
+ITEM_WHITE_HERB,Objet tenu qui restaure les stats baissées.
+ITEM_MACHO_BRACE,Objet tenu augmen- tant la croissance. Baisse la VITESSE.
+ITEM_EXP_SHARE,Objet tenu pour partager l'EXP. après un combat.
+ITEM_QUICK_CLAW,Objet tenu qui permet parfois de frapper le premier.
+ITEM_SOOTHE_BELL,Objet tenu calmant les esprits. Favorise l'amitié.
+ITEM_MENTAL_HERB,Objet tenu qui annule l'attirance d'un POKéMON.
+ITEM_CHOICE_BAND,Monte la puissance d'une attaque. Dés- active les autres.
+ITEM_KINGS_ROCK,Objet tenu pouvant apeurer l'ennemi s'il est touché.
+ITEM_SILVER_POWDER,Objet tenu montant la puissance des attaques INSECTE.
+ITEM_AMULET_COIN,Double l'argent ga- gné si le porteur se bat aussi.
+ITEM_CLEANSE_TAG,Objet tenu pour repousser les POKéMON sauvages.
+ITEM_SOUL_DEW,Objet tenu montant ATQ SP et DEF SP de LATIOS & LATIAS.
+ITEM_DEEP_SEA_TOOTH,Objet tenu montant l'ATQ. SPE. de COQUIPERL.
+ITEM_DEEP_SEA_SCALE,Objet tenu montant la DEF. SPE. de COQUIPERL.
+ITEM_SMOKE_BALL,"Objet tenu, utilisé pour fuir un POKéMON sauvage."
+ITEM_EVERSTONE,Pierre merveilleuse & objet tenu empê- chant l'évolution.
+ITEM_FOCUS_BAND,Objet tenu pouvant parfois empêcher d'être mis K.O.
+ITEM_LUCKY_EGG,Objet tenu pour augmenter l'EXP. gagnée au combat.
+ITEM_SCOPE_LENS,Objet tenu pour monter le taux de critiques.
+ITEM_METAL_COAT,Objet tenu montant la puissance des attaques ACIER.
+ITEM_LEFTOVERS,Objet tenu permet- tant de restaurer les PV au combat.
+ITEM_DRAGON_SCALE,Une étrange écaille tenue par les POKéMON DRAGON.
+ITEM_LIGHT_BALL,Objet tenu pour monter l'ATQ. SPE. de PIKACHU.
+ITEM_SOFT_SAND,Objet tenu montant la puissance des attaques SOL.
+ITEM_HARD_STONE,Objet tenu montant la puissance des attaques ROCHE.
+ITEM_MIRACLE_SEED,Objet tenu montant la puissance des attaques PLANTE.
+ITEM_BLACK_GLASSES,Objet tenu montant la puissance des attaques TENEBRES.
+ITEM_BLACK_BELT,Objet tenu montant la puissance des attaques COMBAT.
+ITEM_MAGNET,Objet tenu montant la puissance des attaques ELECTRIK.
+ITEM_MYSTIC_WATER,Objet tenu montant la puissance des attaques EAU.
+ITEM_SHARP_BEAK,Objet tenu montant la puissance des attaques VOL.
+ITEM_POISON_BARB,Objet tenu montant la puissance des attaques POISON.
+ITEM_NEVER_MELT_ICE,Objet tenu montant la puissance des attaques GLACE.
+ITEM_SPELL_TAG,Objet tenu montant la puissance des attaques SPECTRE.
+ITEM_TWISTED_SPOON,Objet tenu montant la puissance des attaques PSY.
+ITEM_CHARCOAL,Objet tenu montant la puissance des attaques FEU.
+ITEM_DRAGON_FANG,Objet tenu montant la puissance des attaques DRAGON.
+ITEM_SILK_SCARF,Objet tenu montant la puissance des attaques NORMAL.
+ITEM_UP_GRADE,Une drôle de boîte fabriquée par la SYLPHE SARL.
+ITEM_SHELL_BELL,Objet tenu qui res- taure les PV en frappant l'ennemi.
+ITEM_SEA_INCENSE,Objet tenu montant un peu la puissance des attaques EAU.
+ITEM_LAX_INCENSE,Objet tenu bais- sant un peu la pré- cision de l'ennemi.
+ITEM_LUCKY_PUNCH,Objet tenu montant le taux de criti- ques de LEVEINARD.
+ITEM_METAL_POWDER,Objet tenu montant la DEFENSE de METAMORPH.
+ITEM_THICK_CLUB,Objet tenu montant l'ATQ. d'OSSELAIT et d'OSSATUEUR.
+ITEM_STICK,Objet montant le taux de critiques de CANARTICHO.
+ITEM_INFINITE_REPEL,
+ITEM_INFINITE_RARE_CANDIES,
+ITEM_0F0,?????
+ITEM_0F0,?????
+ITEM_0F1,?????
+ITEM_0F2,?????
+ITEM_0F3,?????
+ITEM_0F4,?????
+ITEM_0F5,?????
+ITEM_0F6,?????
+ITEM_0F7,?????
+ITEM_0F8,?????
+ITEM_0F9,?????
+ITEM_0FA,?????
+ITEM_0FB,?????
+ITEM_0FC,?????
+ITEM_0FD,?????
+ITEM_RED_SCARF,Objet tenu montant la stat SANG-FROID dans les CONCOURS.
+ITEM_BLUE_SCARF,Objet tenu montant la stat BEAUTE dans les CONCOURS.
+ITEM_PINK_SCARF,Objet tenu montant la stat GRACE dans les CONCOURS.
+ITEM_GREEN_SCARF,Objet tenu montant la stat INTEL. dans les CONCOURS.
+ITEM_YELLOW_SCARF,Objet tenu montant la stat ROBUSTESSE dans les CONCOURS.
+ITEM_MACH_BIKE,Un vélo pliable pour aller 2 fois plus vite qu'à pied.
+ITEM_COIN_CASE,Une boîte qui peut contenir jusqu'à 9 999 JETONS.
+ITEM_ITEMFINDER,Un appareil qui sig- nale les objets in- visibles par un son.
+ITEM_RADIO,
+ITEM_OLD_ROD,Canne pour pêcher des POKéMON sauvages.
+ITEM_GOOD_ROD,Une bonne canne pour pêcher des POKéMON sauvages.
+ITEM_SUPER_ROD,La meilleure canne pour pêcher des POKéMON sauvages.
+ITEM_SS_TICKET,Un ticket requis pour embarquer à bord d'un ferry.
+ITEM_CONTEST_PASS,La carte requise pour participer aux CONCOURS POKéMON.
+ITEM_10B,?????
+ITEM_SQUIRT_BOTTLE,Outil utilisé pour arroser les BAIES et les plantes.
+ITEM_DEVON_GOODS,Un paquet avec des pièces détachées de chez DEVON.
+ITEM_SOOT_SACK,Un sac utilisé pour ramasser des cen- dres volcaniques.
+ITEM_BASEMENT_KEY,"La clé de NEW LAVANDIA, située sous LAVANDIA."
+ITEM_ACRO_BIKE,Un vélo pliable pour faire des sauts.
+ITEM_POKEBLOCK_CASE,
+ITEM_LETTER,Lettre pour PIERRE du PRESIDENT de la DEVON SARL.
+ITEM_EON_TICKET,"Un ticket de ferry pour une île lointaine, au sud."
+ITEM_RED_ORB,Un globe rouge censé abriter un pouvoir antique.
+ITEM_BLUE_ORB,Un globe bleu lumi- neux censé abriter un pouvoir antique.
+ITEM_SCANNER,Un appareil trouvé dans l'EPAVE.
+ITEM_GO_GOGGLES,Lunettes proté- geant les yeux des tempêtes de sable.
+ITEM_METEORITE,Météorite venant du SITE METEORE.
+ITEM_ROOM_1_KEY,Une clé pour ouvrir une des portes de l'EPAVE.
+ITEM_ROOM_2_KEY,Une clé pour ouvrir une des portes de l'EPAVE.
+ITEM_ROOM_4_KEY,Une clé pour ouvrir une des portes de l'EPAVE.
+ITEM_ROOM_6_KEY,Une clé pour ouvrir une des portes de l'EPAVE.
+ITEM_STORAGE_KEY,La clé de l'entrepôt de l'EPAVE.
+ITEM_ROOT_FOSSIL,Fossile d'un très vieux POKéMON sous-marin.
+ITEM_CLAW_FOSSIL,Fossile d'un très vieux POKéMON sous-marin.
+ITEM_DEVON_SCOPE,Un appareil DEVON qui signale les POKéMON invisibles.
+ITEM_TM_FOCUS_PUNCH,"Puissant, mais peut apeurer le lanceur s'il est touché."
+ITEM_TM_DRAGON_CLAW,Attrape l'ennemi et le lacère d'un féro- ce coup de griffe.
+ITEM_TM_WATER_PULSE,Génère des ultra- sons qui rendent confus.
+ITEM_TM_CALM_MIND,Concentration pour monter l'ATQ. SPE. et la DEF. SPE.
+ITEM_TM_ROAR,Un horrible hurle- ment. Fait fuir pour terminer le combat.
+ITEM_TM_TOXIC,Empoisonne l'ennemi avec une toxine de plus en plus forte.
+ITEM_TM_HAIL,Lance une tempête de grêle. Ne blesse pas le type GLACE.
+ITEM_TM_BULK_UP,Se gonfle pour monter l'ATTAQUE et la DEFENSE.
+ITEM_TM_BULLET_SEED,Mitraille l'ennemi avec 2 à 5 graines de suite.
+ITEM_TM_HIDDEN_POWER,La puissance de l'attaque dépend du POKéMON lanceur.
+ITEM_TM_SUNNY_DAY,Améliore les attaques FEU pendant 5 tours.
+ITEM_TM_TAUNT,Provoque l'ennemi. L'oblige à utiliser des attaques.
+ITEM_TM_ICE_BEAM,Envoie un rayon de glace pouvant geler l'ennemi.
+ITEM_TM_BLIZZARD,Violente tempête de neige pouvant geler l'ennemi.
+ITEM_TM_HYPER_BEAM,Puissant. Oblige le lanceur à rechar- ger le tour suivant.
+ITEM_TM_LIGHT_SCREEN,Crée un mur lumi- neux. Baisse les dégâts d'ATQ. SPE.
+ITEM_TM_PROTECT,"Ignore les dégâts, mais peut échouer si réutilisée."
+ITEM_TM_RAIN_DANCE,Améliore les attaques EAU pendant 5 tours.
+ITEM_TM_GIGA_DRAIN,Une attaque qui aspire la moitié des dégâts infligés.
+ITEM_TM_SAFEGUARD,Force mystique em- pêchant tout chan- gement de statut.
+ITEM_TM_FRUSTRATION,Attaque plus puis- sante si le lanceur vous déteste.
+ITEM_TM_SOLAR_BEAM,Absorbe la lumière et attaque le tour suivant.
+ITEM_TM_IRON_TAIL,Frappe l'ennemi avec sa queue. Peut baisser la DEFENSE.
+ITEM_TM_THUNDERBOLT,Forte attaque électrique pouvant paralyser l'ennemi.
+ITEM_TM_THUNDER,Une attaque fou- droyante pouvant paralyser l'ennemi.
+ITEM_TM_EARTHQUAKE,Séisme sans effet sur les adversaires volants.
+ITEM_TM_RETURN,Attaque dont la puissance dépend de l'amitié.
+ITEM_TM_DIG,Creuse sous terre au 1{SUPER_ER} tour et frappe au 2{SUPER_E}.
+ITEM_TM_PSYCHIC,Puissante attaque PSY pouvant baisser la DEF. SPE.
+ITEM_TM_SHADOW_BALL,Projette une gran- de tache qui peut baisser la DEF. SPE.
+ITEM_TM_BRICK_BREAK,Détruit les barriè- res comme MUR LUMIERE et blesse.
+ITEM_TM_DOUBLE_TEAM,Crée de fausses copies pour aug- menter l'esquive.
+ITEM_TM_REFLECT,Crée un mur lumi- neux. Affaiblit les att. physiques.
+ITEM_TM_SHOCK_WAVE,Envoie un choc électrique impos- sible à esquiver.
+ITEM_TM_FLAMETHROWER,Envoie un torrent de flammes pouvant brûler l'ennemi.
+ITEM_TM_SLUDGE_BOMB,Envoie des détri- tus pour blesser. Peut empoisonner.
+ITEM_TM_SANDSTORM,Une tempête de sable qui dure plusieurs tours.
+ITEM_TM_FIRE_BLAST,Puissante attaque enflammée pouvant brûler l'ennemi.
+ITEM_TM_ROCK_TOMB,Bloque l'ennemi avec des rocs. Peut baisser la VITESSE.
+ITEM_TM_AERIAL_ACE,Une attaque extrêmement rapide et inévitable.
+ITEM_TM_TORMENT,Empêche la réutilisation d'une attaque.
+ITEM_TM_FACADE,"Améliore l'ATTAQUE si brûlé, paralysé ou empoisonné."
+ITEM_TM_SECRET_POWER,Les effets de l'attaque dépendent du lieu.
+ITEM_TM_REST,Le lanceur dort 2 tours et regagne PV et statut.
+ITEM_TM_ATTRACT,Le genre opposé a moins de chances d'attaquer.
+ITEM_TM_THIEF,Peut voler l'objet tenu par l'ennemi pendant l'attaque.
+ITEM_TM_STEEL_WING,Frappe l'ennemi en déployant ses ailes d'acier.
+ITEM_TM_SKILL_SWAP,Le lanceur et la cible échangent leurs capacités.
+ITEM_TM_SNATCH,Vole les effets de la prochaine attaque ennemie.
+ITEM_TM_OVERHEAT,"Attaque à pleine puissance, mais baisse ATQ. SPE."
+ITEM_HM_CUT,"Coupe l'ennemi avec des lames, des griffes, etc."
+ITEM_HM_FLY,S'envole au premier tour et frappe au second.
+ITEM_HM_SURF,Crée une énorme vague qui s'écrase sur l'ennemi.
+ITEM_HM_STRENGTH,"Accumule de la puissance, puis frappe l'ennemi."
+ITEM_HM_FLASH,Explosion lumi- neuse baissant la précision.
+ITEM_HM_ROCK_SMASH,Une attaque puissante qui peut baisser la DEFENSE.
+ITEM_HM_WATERFALL,Attaque rapide qui permet de franchir des cascades.
+ITEM_HM_WHIRLPOOL,Plonge en apnée au premier tour et frappe au second.
+ITEM_15B,?????
+ITEM_15C,?????
+ITEM_OAKS_PARCEL,Un paquet pour le PROF. CHEN d'une BOUTIQUE {PKMN}.
+ITEM_POKE_FLUTE,Une flûte pouvant réveiller n'importe quel POKéMON.
+ITEM_SECRET_KEY,La clé de l'entrée de l'ARENE de CRAMOIS'ILE.
+ITEM_BIKE_VOUCHER,Bon à échanger contre un vélo aux CYCLES A GOGO.
+ITEM_GOLD_TEETH,Une dent en or du gardien du PARC SAFARI.
+ITEM_OLD_AMBER,Une pierre contenant l'ADN d'un ancien {PKMN}.
+ITEM_CARD_KEY,Carte magnétique pouvant ouvrir la SYLPHE SARL.
+ITEM_LIFT_KEY,Clé pour l'ascen- seur du REPAIRE de la TEAM ROCKET.
+ITEM_HELIX_FOSSIL,Un fossile d'un ancien POKéMON aquatique.
+ITEM_DOME_FOSSIL,Un fossile d'un ancien POKéMON aquatique.
+ITEM_SILPH_SCOPE,Un appareil de la SYLPHE pour voir les {PKMN} invisibles.
+ITEM_BICYCLE,Un vélo pour aller plus vite qu'avec les CHAUSSURES.
+ITEM_TOWN_MAP,Carte pouvant être lue partout. Montre la position.
+ITEM_VS_SEEKER,Montre ceux qui veulent se battre. Rechargeable.
+ITEM_FAME_CHECKER,Stocke les infos sur les gens importants.
+ITEM_TM_CASE,Une boîte pour ranger les CT et les CS.
+ITEM_BERRY_POUCH,Un petit sac pour transporter les BAIES.
+ITEM_TEACHY_TV,Un programme qui donne des conseils aux DRESSEURS.
+ITEM_TRI_PASS,"Un passe pour accéder aux ILES 1, 2 et 3."
+ITEM_RAINBOW_PASS,Passe pour le ferry de CARMIN SUR MER aux ILES SEVII.
+ITEM_TEA,Un thé préparé par une vieille femme. Etanche la soif.
+ITEM_MYSTIC_TICKET,Le ticket requis pour aller au ROC NOMBRI.
+ITEM_AURORA_TICKET,Le ticket requis pour aller sur l'ILE AURORE.
+ITEM_POWDER_JAR,Un pot pour conserver la POUDRE BAIE.
+ITEM_RUBY,Une pierre rouge qui symbolise la passion.
+ITEM_SAPPHIRE,Une pierre bleue qui symbolise l'honnêteté.
+ITEM_CLEAR_BELL,
+ITEM_LOST_ITEM,
+ITEM_MACHINE_PART,
+ITEM_MYSTERY_EGG,
+ITEM_PASS,
+ITEM_RAINBOW_WING,
+ITEM_RED_SCALE,
+ITEM_SECRET_POTION,
+ITEM_SILVER_WING,
+ITEM_RAGE_CANDY_BAR,
+ITEM_TIDAL_BELL,
+ITEM_MAGMA_EMBLEM,Un objet portant le sceau de la TEAM MAGMA.
+ITEM_OLD_SEA_MAP,Une vieille carte montrant la route vers une île.
+ITEM_ADAMANT_MINT,
+ITEM_BOLD_MINT,
+ITEM_BRAVE_MINT,
+ITEM_CALM_MINT,
+ITEM_CAREFUL_MINT,
+ITEM_GENTLE_MINT,
+ITEM_HASTY_MINT,
+ITEM_IMPISH_MINT,
+ITEM_JOLLY_MINT,
+ITEM_LAX_MINT,
+ITEM_LONELY_MINT,
+ITEM_MILD_MINT,
+ITEM_MODEST_MINT,
+ITEM_NAIVE_MINT,
+ITEM_NAUGHTY_MINT,
+ITEM_QUIET_MINT,
+ITEM_RASH_MINT,
+ITEM_RELAXED_MINT,
+ITEM_SASSY_MINT,
+ITEM_SERIOUS_MINT,
+ITEM_TIMID_MINT,
+ITEM_NONE,
+ITEM_MASTER_BALL,La meilleure BALL. Capture le POKéMON à coup sûr.
+ITEM_ULTRA_BALL,BALL au taux de réussite supérieur à la SUPER BALL.
+ITEM_GREAT_BALL,BALL au taux de réussite supérieur à la POKé BALL.
+ITEM_POKE_BALL,Un objet qui permet d'attraper les POKéMON sauvages.
+ITEM_SAFARI_BALL,Une BALL spéciale utilisée juste au PARC SAFARI.
+ITEM_NET_BALL,Une BALL qui marche bien sur un POKéMON EAU ou INSECTE.
+ITEM_DIVE_BALL,Une BALL qui marche mieux avec les {PKMN} sous-marins.
+ITEM_NEST_BALL,Une BALL qui marche mieux avec les POKéMON faibles.
+ITEM_REPEAT_BALL,Une BALL qui marche bien sur un POKéMON déjà capturé.
+ITEM_TIMER_BALL,Plus efficace pendant les combats longs.
+ITEM_LUXURY_BALL,Une BALL confor- table qui rend les POKéMON amicaux.
+ITEM_PREMIER_BALL,Une BALL rare créée à l'occasion d'un grand évènement.
+ITEM_LOVE_BALL,
+ITEM_LURE_BALL,
+ITEM_FRIEND_BALL,
+ITEM_HEAVY_BALL,
+ITEM_MOON_BALL,
+ITEM_LEVEL_BALL,
+ITEM_FAST_BALL,
+ITEM_GS_BALL,
+ITEM_POTION,Restaure les PV d'un POKéMON de 20 points.
+ITEM_ANTIDOTE,Soigne les POKéMON empoisonnés.
+ITEM_BURN_HEAL,Soigne les POKéMON de leurs brûlures.
+ITEM_ICE_HEAL,Décongèle les POKéMON gelés.
+ITEM_AWAKENING,Réveille les POKéMON endormis.
+ITEM_PARALYZE_HEAL,Soigne les POKéMON paralysés.
+ITEM_FULL_RESTORE,Restaure tous les PV et le statut d'un POKéMON.
+ITEM_MAX_POTION,Restaure tous les PV d'un POKéMON.
+ITEM_HYPER_POTION,Restaure les PV d'un POKéMON de 200 points.
+ITEM_SUPER_POTION,Restaure les PV d'un POKéMON de 50 points.
+ITEM_FULL_HEAL,Soigne les change- ments de statut d'un POKéMON.
+ITEM_REVIVE,Réanime un POKéMON K.O. et restaure la moitié de ses PV.
+ITEM_MAX_REVIVE,Réanime un POKéMON K.O. et restaure tous ses PV.
+ITEM_FRESH_WATER,Une eau minérale qui restaure 50 PV.
+ITEM_SODA_POP,Une boisson pétillante qui restaure 60 PV.
+ITEM_LEMONADE,Une boisson très sucrée qui restaure 80 PV.
+ITEM_MOOMOO_MILK,Un lait nourrissant qui restaure les PV de 100 points.
+ITEM_ENERGY_POWDER,Une poudre amère qui restaure les PV de 50 points.
+ITEM_ENERGY_ROOT,Une racine amère qui restaure les PV de 200 points.
+ITEM_HEAL_POWDER,Une poudre amère soignant les chan- gements de statut.
+ITEM_REVIVAL_HERB,Une herbe très amère qui réanime un POKéMON K.O.
+ITEM_ETHER,Restaure 10 PP d'une attaque sélectionnée.
+ITEM_MAX_ETHER,Restaure tous les PP d'une attaque sélectionnée.
+ITEM_ELIXIR,Restaure 10 PP de toutes les attaques.
+ITEM_MAX_ELIXIR,Restaure tous les PP de toutes les attaques.
+ITEM_LAVA_COOKIE,Spécialité locale soignant les chan- gements de statut.
+ITEM_BLUE_FLUTE,Une flûte en verre qui réveille les POKéMON endormis.
+ITEM_YELLOW_FLUTE,Une flûte en verre qui sort un POKéMON de sa confusion.
+ITEM_RED_FLUTE,Une flûte en verre qui met fin à l'attirance.
+ITEM_BLACK_FLUTE,Une flûte en verre qui repousse les POKéMON sauvages.
+ITEM_WHITE_FLUTE,Une flûte en verre qui attire les POKéMON sauvages.
+ITEM_BERRY_JUICE,Une boisson 100% pur jus qui restaure 20 PV.
+ITEM_SACRED_ASH,Réanime tous les POKéMON K.O. et restaure leurs PV.
+ITEM_SHOAL_SALT,Sel obtenu dans les profondeurs de la GROTTE TREFONDS.
+ITEM_SHOAL_SHELL,Coquillage trouvé au fin fond de la GROTTE TREFONDS.
+ITEM_RED_SHARD,Fragment d'objet antique. Peut être vendu à bas prix.
+ITEM_BLUE_SHARD,Fragment d'objet antique. Peut être vendu à bas prix.
+ITEM_YELLOW_SHARD,Fragment d'objet antique. Peut être vendu à bas prix.
+ITEM_GREEN_SHARD,Fragment d'objet antique. Peut être vendu à bas prix.
+ITEM_FERTILIZER,
+ITEM_03D,?????
+ITEM_03E,?????
+ITEM_HP_UP,Monte les PV d'un POKéMON.
+ITEM_PROTEIN,Monte l'ATTAQUE d'un POKéMON.
+ITEM_IRON,Monte la DEFENSE d'un POKéMON.
+ITEM_CARBOS,Monte la VITESSE d'un POKéMON.
+ITEM_CALCIUM,Monte l'ATQ. SPE. d'un POKéMON.
+ITEM_RARE_CANDY,Fait progresser un POKéMON d'un niveau.
+ITEM_PP_UP,Monte les PP max. d'une attaque sélectionnée.
+ITEM_ZINC,Monte la DEF. SPE. d'un POKéMON.
+ITEM_PP_MAX,Monte les PP d'une attaque à son maximum.
+ITEM_048,?????
+ITEM_GUARD_SPEC,Empêche la perte de points de stats pendant un combat.
+ITEM_DIRE_HIT,Monte le taux de critiques pendant un combat.
+ITEM_X_ATTACK,Monte l'ATTAQUE pendant un combat.
+ITEM_X_DEFEND,Monte la DEFENSE pendant un combat.
+ITEM_X_SPEED,Monte la VITESSE pendant un combat.
+ITEM_X_ACCURACY,Monte la précision des attaques pendant un combat.
+ITEM_X_SPECIAL,Monte l'ATQ. SPE. pendant un combat.
+ITEM_POKE_DOLL,Pour s'enfuir d'un combat contre un POKéMON sauvage.
+ITEM_FLUFFY_TAIL,Pour s'enfuir d'un combat contre un POKéMON sauvage.
+ITEM_BIG_NUGGET,
+ITEM_SUPER_REPEL,Repousse les {PKMN} sauvages faibles durant 200 pas.
+ITEM_MAX_REPEL,Repousse les {PKMN} sauvages faibles durant 250 pas.
+ITEM_ESCAPE_ROPE,Pour sortir rapide- ment d'une grotte ou d'un souterrain.
+ITEM_REPEL,Repousse les {PKMN} sauvages faibles durant 100 pas.
+ITEM_057,?????
+ITEM_058,?????
+ITEM_059,?????
+ITEM_05A,?????
+ITEM_05B,?????
+ITEM_05C,?????
+ITEM_SUN_STONE,Fait évoluer certaines espèces de POKéMON.
+ITEM_MOON_STONE,Fait évoluer certaines espèces de POKéMON.
+ITEM_FIRE_STONE,Fait évoluer certaines espèces de POKéMON.
+ITEM_THUNDER_STONE,Fait évoluer certaines espèces de POKéMON.
+ITEM_WATER_STONE,Fait évoluer certaines espèces de POKéMON.
+ITEM_LEAF_STONE,Fait évoluer certaines espèces de POKéMON.
+ITEM_063,?????
+ITEM_064,?????
+ITEM_065,?????
+ITEM_066,?????
+ITEM_TINY_MUSHROOM,Un champignon or- dinaire. Peut être vendu à bas prix.
+ITEM_BIG_MUSHROOM,Un champignon rare. Peut être vendu à bon prix.
+ITEM_069,?????
+ITEM_PEARL,Une jolie perle. Peut être vendue à bas prix.
+ITEM_BIG_PEARL,Une perle magni- fique. Peut être vendue à bon prix.
+ITEM_STARDUST,Sable rouge très fin. Peut être vendu à bon prix.
+ITEM_STAR_PIECE,Fragment de gemme rouge. Peut se ven- dre à très bon prix.
+ITEM_NUGGET,Pépite d'or pur. Peut être vendue à bon prix.
+ITEM_HEART_SCALE,Une jolie écaille convoitée par les collectionneurs.
+ITEM_EXP_SHARE_SMALL,
+ITEM_FAIRY_GEM,
+ITEM_072,?????
+ITEM_073,?????
+ITEM_074,?????
+ITEM_075,?????
+ITEM_076,?????
+ITEM_077,?????
+ITEM_078,?????
+ITEM_ORANGE_MAIL,Papier ZIGZATON pouvant être tenu par un POKéMON.
+ITEM_HARBOR_MAIL,Papier ZIGZATON pouvant être tenu par un POKéMON.
+ITEM_GLITTER_MAIL,Papier GOELISE pouvant être tenu par un POKéMON.
+ITEM_MECH_MAIL,Papier MAGNETI pouvant être tenu par un POKéMON.
+ITEM_WOOD_MAIL,Papier PARECOOL pouvant être tenu par un POKéMON.
+ITEM_WAVE_MAIL,Papier WAILMER pouvant être tenu par un POKéMON.
+ITEM_BEAD_MAIL,Du papier avec un dessin du POKéMON qui le tient.
+ITEM_SHADOW_MAIL,Papier SKELENOX pouvant être tenu par un POKéMON.
+ITEM_TROPIC_MAIL,Papier JOLIFLOR pouvant être tenu par un POKéMON.
+ITEM_DREAM_MAIL,Du papier avec un dessin du POKéMON qui le tient.
+ITEM_FAB_MAIL,Papier magnifique pouvant être tenu par un POKéMON.
+ITEM_RETRO_MAIL,Du papier avec les dessins de trois POKéMON.
+ITEM_CHERI_BERRY,Objet tenu qui soigne la paralysie pendant un combat.
+ITEM_CHESTO_BERRY,Objet tenu qui réveille les {PKMN} dormant au combat.
+ITEM_PECHA_BERRY,Objet tenu qui soi- gne du poison pendant un combat.
+ITEM_RAWST_BERRY,Objet tenu qui soigne une brûlure pendant un combat.
+ITEM_ASPEAR_BERRY,Objet tenu qui dé- congèle les {PKMN} pendant un combat.
+ITEM_LEPPA_BERRY,Objet tenu qui restaure 10 PP pendant un combat.
+ITEM_ORAN_BERRY,Objet tenu qui restaure 10 PV pendant un combat.
+ITEM_PERSIM_BERRY,Objet tenu qui soigne la confusion pendant un combat.
+ITEM_LUM_BERRY,Objet tenu qui restaure le statut pendant un combat.
+ITEM_SITRUS_BERRY,Objet tenu qui restaure 30 PV pendant un combat.
+ITEM_FIGY_BERRY,Objet tenu qui res- taure les PV. Peut rendre confus.
+ITEM_WIKI_BERRY,Objet tenu qui res- taure les PV. Peut rendre confus.
+ITEM_MAGO_BERRY,Objet tenu qui res- taure les PV. Peut rendre confus.
+ITEM_AGUAV_BERRY,Objet tenu qui res- taure les PV. Peut rendre confus.
+ITEM_IAPAPA_BERRY,Objet tenu qui res- taure les PV. Peut rendre confus.
+ITEM_RAZZ_BERRY,Ingrédient {POKEBLOCK}. Plantez-la pour avoir un FRAMBY.
+ITEM_BLUK_BERRY,Ingrédient {POKEBLOCK}. Plantez-la pour avoir un REMU.
+ITEM_NANAB_BERRY,Ingrédient {POKEBLOCK}. Plantez-la pour avoir un NANAB.
+ITEM_WEPEAR_BERRY,Ingrédient {POKEBLOCK}. Plantez-la pour avoir un REPOI.
+ITEM_PINAP_BERRY,Ingrédient {POKEBLOCK}. Plantez-la pour avoir un NANANA.
+ITEM_POMEG_BERRY,"Rend un POKéMON amical, baisse les PV de base."
+ITEM_KELPSY_BERRY,"Rend un POKéMON amical, baisse l'ATTAQUE de base."
+ITEM_QUALOT_BERRY,"Rend un POKéMON amical, baisse la DEF. de base."
+ITEM_HONDEW_BERRY,"Rend un POKéMON amical, baisse l'ATQ. SPE. de base."
+ITEM_GREPA_BERRY,"Rend un POKéMON amical, baisse la DEF. SPE. de base."
+ITEM_TAMATO_BERRY,"Rend un POKéMON amical, baisse la VITESSE de base."
+ITEM_CORNN_BERRY,Ingrédient {POKEBLOCK}. Plantez-la pour avoir un SIAM.
+ITEM_MAGOST_BERRY,Ingrédient {POKEBLOCK}. Plantez-la pour avoir un MANGOU.
+ITEM_RABUTA_BERRY,Ingrédient {POKEBLOCK}. Plantez-la pour avoir un RABUTA.
+ITEM_NOMEL_BERRY,Ingrédient {POKEBLOCK}. Plantez-la pour avoir un TRONCI.
+ITEM_SPELON_BERRY,Ingrédient {POKEBLOCK}. Plantez-la pour avoir un KIWAN.
+ITEM_PAMTRE_BERRY,Ingrédient {POKEBLOCK}. Plantez-la pour avoir un PALMA.
+ITEM_WATMEL_BERRY,Ingrédient {POKEBLOCK}. Plantez-la pour avoir un STEKPA.
+ITEM_DURIN_BERRY,Ingrédient {POKEBLOCK}. Plantez-la pour avoir un DURIN.
+ITEM_BELUE_BERRY,Ingrédient {POKEBLOCK}. Plantez-la pour avoir un MYRTE.
+ITEM_LIECHI_BERRY,Objet tenu qui monte l'ATTAQUE si nécessaire.
+ITEM_GANLON_BERRY,Objet tenu qui monte la DEFENSE si nécessaire.
+ITEM_SALAC_BERRY,Objet tenu qui monte la VITESSE si nécessaire.
+ITEM_PETAYA_BERRY,Objet tenu qui monte l'ATQ. SPE. si nécessaire.
+ITEM_APICOT_BERRY,Objet tenu qui monte la DEF. SPE. si nécessaire.
+ITEM_LANSAT_BERRY,Objet tenu qui mon- te le taux de criti- ques si nécessaire.
+ITEM_STARF_BERRY,Objet tenu qui booste une stat si nécessaire.
+ITEM_ENIGMA_BERRY,Ingrédient {POKEBLOCK}. Plantez-la pour avoir un ENIGMA.
+ITEM_UNUSED_BERRY_1,Objet tenu qui restaure 30 PV pendant un combat.
+ITEM_UNUSED_BERRY_2,?????
+ITEM_UNUSED_BERRY_3,?????
+ITEM_BRIGHT_POWDER,Objet tenu qui éblouit et baisse la précision.
+ITEM_WHITE_HERB,Objet tenu qui restaure les stats baissées.
+ITEM_MACHO_BRACE,Objet tenu augmen- tant la croissance. Baisse la VITESSE.
+ITEM_EXP_SHARE,Objet tenu pour partager l'EXP. après un combat.
+ITEM_QUICK_CLAW,Objet tenu qui permet parfois de frapper le premier.
+ITEM_SOOTHE_BELL,Objet tenu calmant les esprits. Favorise l'amitié.
+ITEM_MENTAL_HERB,Objet tenu qui annule l'attirance d'un POKéMON.
+ITEM_CHOICE_BAND,Monte la puissance d'une attaque. Dés- active les autres.
+ITEM_KINGS_ROCK,Objet tenu pouvant apeurer l'ennemi s'il est touché.
+ITEM_SILVER_POWDER,Objet tenu montant la puissance des attaques INSECTE.
+ITEM_AMULET_COIN,Double l'argent ga- gné si le porteur se bat aussi.
+ITEM_CLEANSE_TAG,Objet tenu pour repousser les POKéMON sauvages.
+ITEM_SOUL_DEW,Objet tenu montant ATQ SP et DEF SP de LATIOS & LATIAS.
+ITEM_DEEP_SEA_TOOTH,Objet tenu montant l'ATQ. SPE. de COQUIPERL.
+ITEM_DEEP_SEA_SCALE,Objet tenu montant la DEF. SPE. de COQUIPERL.
+ITEM_SMOKE_BALL,"Objet tenu, utilisé pour fuir un POKéMON sauvage."
+ITEM_EVERSTONE,Pierre merveilleuse & objet tenu empê- chant l'évolution.
+ITEM_FOCUS_BAND,Objet tenu pouvant parfois empêcher d'être mis K.O.
+ITEM_LUCKY_EGG,Objet tenu pour augmenter l'EXP. gagnée au combat.
+ITEM_SCOPE_LENS,Objet tenu pour monter le taux de critiques.
+ITEM_METAL_COAT,Objet tenu montant la puissance des attaques ACIER.
+ITEM_LEFTOVERS,Objet tenu permet- tant de restaurer les PV au combat.
+ITEM_DRAGON_SCALE,Une étrange écaille tenue par les POKéMON DRAGON.
+ITEM_LIGHT_BALL,Objet tenu pour monter l'ATQ. SPE. de PIKACHU.
+ITEM_SOFT_SAND,Objet tenu montant la puissance des attaques SOL.
+ITEM_HARD_STONE,Objet tenu montant la puissance des attaques ROCHE.
+ITEM_MIRACLE_SEED,Objet tenu montant la puissance des attaques PLANTE.
+ITEM_BLACK_GLASSES,Objet tenu montant la puissance des attaques TENEBRES.
+ITEM_BLACK_BELT,Objet tenu montant la puissance des attaques COMBAT.
+ITEM_MAGNET,Objet tenu montant la puissance des attaques ELECTRIK.
+ITEM_MYSTIC_WATER,Objet tenu montant la puissance des attaques EAU.
+ITEM_SHARP_BEAK,Objet tenu montant la puissance des attaques VOL.
+ITEM_POISON_BARB,Objet tenu montant la puissance des attaques POISON.
+ITEM_NEVER_MELT_ICE,Objet tenu montant la puissance des attaques GLACE.
+ITEM_SPELL_TAG,Objet tenu montant la puissance des attaques SPECTRE.
+ITEM_TWISTED_SPOON,Objet tenu montant la puissance des attaques PSY.
+ITEM_CHARCOAL,Objet tenu montant la puissance des attaques FEU.
+ITEM_DRAGON_FANG,Objet tenu montant la puissance des attaques DRAGON.
+ITEM_SILK_SCARF,Objet tenu montant la puissance des attaques NORMAL.
+ITEM_UP_GRADE,Une drôle de boîte fabriquée par la SYLPHE SARL.
+ITEM_SHELL_BELL,Objet tenu qui res- taure les PV en frappant l'ennemi.
+ITEM_SEA_INCENSE,Objet tenu montant un peu la puissance des attaques EAU.
+ITEM_LAX_INCENSE,Objet tenu bais- sant un peu la pré- cision de l'ennemi.
+ITEM_LUCKY_PUNCH,Objet tenu montant le taux de criti- ques de LEVEINARD.
+ITEM_METAL_POWDER,Objet tenu montant la DEFENSE de METAMORPH.
+ITEM_THICK_CLUB,Objet tenu montant l'ATQ. d'OSSELAIT et d'OSSATUEUR.
+ITEM_STICK,Objet montant le taux de critiques de CANARTICHO.
+ITEM_INFINITE_REPEL,
+ITEM_INFINITE_RARE_CANDIES,
+ITEM_0F0,?????
+ITEM_0F0,?????
+ITEM_0F1,?????
+ITEM_0F2,?????
+ITEM_0F3,?????
+ITEM_0F4,?????
+ITEM_0F5,?????
+ITEM_0F6,?????
+ITEM_0F7,?????
+ITEM_0F8,?????
+ITEM_0F9,?????
+ITEM_0FA,?????
+ITEM_0FB,?????
+ITEM_0FC,?????
+ITEM_0FD,?????
+ITEM_RED_SCARF,Objet tenu montant la stat SANG-FROID dans les CONCOURS.
+ITEM_BLUE_SCARF,Objet tenu montant la stat BEAUTE dans les CONCOURS.
+ITEM_PINK_SCARF,Objet tenu montant la stat GRACE dans les CONCOURS.
+ITEM_GREEN_SCARF,Objet tenu montant la stat INTEL. dans les CONCOURS.
+ITEM_YELLOW_SCARF,Objet tenu montant la stat ROBUSTESSE dans les CONCOURS.
+ITEM_MACH_BIKE,Un vélo pliable pour aller 2 fois plus vite qu'à pied.
+ITEM_COIN_CASE,Une boîte qui peut contenir jusqu'à 9 999 JETONS.
+ITEM_ITEMFINDER,Un appareil qui sig- nale les objets in- visibles par un son.
+ITEM_OLD_ROD,Canne pour pêcher des POKéMON sauvages.
+ITEM_GOOD_ROD,Une bonne canne pour pêcher des POKéMON sauvages.
+ITEM_SUPER_ROD,La meilleure canne pour pêcher des POKéMON sauvages.
+ITEM_SS_TICKET,Un ticket requis pour embarquer à bord d'un ferry.
+ITEM_CONTEST_PASS,La carte requise pour participer aux CONCOURS POKéMON.
+ITEM_10B,?????
+ITEM_SQUIRT_BOTTLE,Outil utilisé pour arroser les BAIES et les plantes.
+ITEM_DEVON_GOODS,Un paquet avec des pièces détachées de chez DEVON.
+ITEM_SOOT_SACK,Un sac utilisé pour ramasser des cen- dres volcaniques.
+ITEM_BASEMENT_KEY,"La clé de NEW LAVANDIA, située sous LAVANDIA."
+ITEM_ACRO_BIKE,Un vélo pliable pour faire des sauts.
+ITEM_POKEBLOCK_CASE,
+ITEM_LETTER,Lettre pour PIERRE du PRESIDENT de la DEVON SARL.
+ITEM_EON_TICKET,"Un ticket de ferry pour une île lointaine, au sud."
+ITEM_RED_ORB,Un globe rouge censé abriter un pouvoir antique.
+ITEM_BLUE_ORB,Un globe bleu lumi- neux censé abriter un pouvoir antique.
+ITEM_SCANNER,Un appareil trouvé dans l'EPAVE.
+ITEM_GO_GOGGLES,Lunettes proté- geant les yeux des tempêtes de sable.
+ITEM_METEORITE,Météorite venant du SITE METEORE.
+ITEM_ROOM_1_KEY,Une clé pour ouvrir une des portes de l'EPAVE.
+ITEM_ROOM_2_KEY,Une clé pour ouvrir une des portes de l'EPAVE.
+ITEM_ROOM_4_KEY,Une clé pour ouvrir une des portes de l'EPAVE.
+ITEM_ROOM_6_KEY,Une clé pour ouvrir une des portes de l'EPAVE.
+ITEM_STORAGE_KEY,La clé de l'entrepôt de l'EPAVE.
+ITEM_ROOT_FOSSIL,Fossile d'un très vieux POKéMON sous-marin.
+ITEM_CLAW_FOSSIL,Fossile d'un très vieux POKéMON sous-marin.
+ITEM_DEVON_SCOPE,Un appareil DEVON qui signale les POKéMON invisibles.
+ITEM_TM_FOCUS_PUNCH,"Puissant, mais peut apeurer le lanceur s'il est touché."
+ITEM_TM_DRAGON_CLAW,Attrape l'ennemi et le lacère d'un féro- ce coup de griffe.
+ITEM_TM_WATER_PULSE,Génère des ultra- sons qui rendent confus.
+ITEM_TM_CALM_MIND,Concentration pour monter l'ATQ. SPE. et la DEF. SPE.
+ITEM_TM_ROAR,Un horrible hurle- ment. Fait fuir pour terminer le combat.
+ITEM_TM_TOXIC,Empoisonne l'ennemi avec une toxine de plus en plus forte.
+ITEM_TM_HAIL,Lance une tempête de grêle. Ne blesse pas le type GLACE.
+ITEM_TM_BULK_UP,Se gonfle pour monter l'ATTAQUE et la DEFENSE.
+ITEM_TM_BULLET_SEED,Mitraille l'ennemi avec 2 à 5 graines de suite.
+ITEM_TM_HIDDEN_POWER,La puissance de l'attaque dépend du POKéMON lanceur.
+ITEM_TM_SUNNY_DAY,Améliore les attaques FEU pendant 5 tours.
+ITEM_TM_TAUNT,Provoque l'ennemi. L'oblige à utiliser des attaques.
+ITEM_TM_ICE_BEAM,Envoie un rayon de glace pouvant geler l'ennemi.
+ITEM_TM_BLIZZARD,Violente tempête de neige pouvant geler l'ennemi.
+ITEM_TM_HYPER_BEAM,Puissant. Oblige le lanceur à rechar- ger le tour suivant.
+ITEM_TM_LIGHT_SCREEN,Crée un mur lumi- neux. Baisse les dégâts d'ATQ. SPE.
+ITEM_TM_PROTECT,"Ignore les dégâts, mais peut échouer si réutilisée."
+ITEM_TM_RAIN_DANCE,Améliore les attaques EAU pendant 5 tours.
+ITEM_TM_GIGA_DRAIN,Une attaque qui aspire la moitié des dégâts infligés.
+ITEM_TM_SAFEGUARD,Force mystique em- pêchant tout chan- gement de statut.
+ITEM_TM_FRUSTRATION,Attaque plus puis- sante si le lanceur vous déteste.
+ITEM_TM_SOLAR_BEAM,Absorbe la lumière et attaque le tour suivant.
+ITEM_TM_IRON_TAIL,Frappe l'ennemi avec sa queue. Peut baisser la DEFENSE.
+ITEM_TM_THUNDERBOLT,Forte attaque électrique pouvant paralyser l'ennemi.
+ITEM_TM_THUNDER,Une attaque fou- droyante pouvant paralyser l'ennemi.
+ITEM_TM_EARTHQUAKE,Séisme sans effet sur les adversaires volants.
+ITEM_TM_RETURN,Attaque dont la puissance dépend de l'amitié.
+ITEM_TM_DIG,Creuse sous terre au 1{SUPER_ER} tour et frappe au 2{SUPER_E}.
+ITEM_TM_PSYCHIC,Puissante attaque PSY pouvant baisser la DEF. SPE.
+ITEM_TM_SHADOW_BALL,Projette une gran- de tache qui peut baisser la DEF. SPE.
+ITEM_TM_BRICK_BREAK,Détruit les barriè- res comme MUR LUMIERE et blesse.
+ITEM_TM_DOUBLE_TEAM,Crée de fausses copies pour aug- menter l'esquive.
+ITEM_TM_REFLECT,Crée un mur lumi- neux. Affaiblit les att. physiques.
+ITEM_TM_SHOCK_WAVE,Envoie un choc électrique impos- sible à esquiver.
+ITEM_TM_FLAMETHROWER,Envoie un torrent de flammes pouvant brûler l'ennemi.
+ITEM_TM_SLUDGE_BOMB,Envoie des détri- tus pour blesser. Peut empoisonner.
+ITEM_TM_SANDSTORM,Une tempête de sable qui dure plusieurs tours.
+ITEM_TM_FIRE_BLAST,Puissante attaque enflammée pouvant brûler l'ennemi.
+ITEM_TM_ROCK_TOMB,Bloque l'ennemi avec des rocs. Peut baisser la VITESSE.
+ITEM_TM_AERIAL_ACE,Une attaque extrêmement rapide et inévitable.
+ITEM_TM_TORMENT,Empêche la réutilisation d'une attaque.
+ITEM_TM_FACADE,"Améliore l'ATTAQUE si brûlé, paralysé ou empoisonné."
+ITEM_TM_SECRET_POWER,Les effets de l'attaque dépendent du lieu.
+ITEM_TM_REST,Le lanceur dort 2 tours et regagne PV et statut.
+ITEM_TM_ATTRACT,Le genre opposé a moins de chances d'attaquer.
+ITEM_TM_THIEF,Peut voler l'objet tenu par l'ennemi pendant l'attaque.
+ITEM_TM_STEEL_WING,Frappe l'ennemi en déployant ses ailes d'acier.
+ITEM_TM_SKILL_SWAP,Le lanceur et la cible échangent leurs capacités.
+ITEM_TM_SNATCH,Vole les effets de la prochaine attaque ennemie.
+ITEM_TM_OVERHEAT,"Attaque à pleine puissance, mais baisse ATQ. SPE."
+ITEM_HM_CUT,"Coupe l'ennemi avec des lames, des griffes, etc."
+ITEM_HM_FLY,S'envole au premier tour et frappe au second.
+ITEM_HM_SURF,Crée une énorme vague qui s'écrase sur l'ennemi.
+ITEM_HM_STRENGTH,"Accumule de la puissance, puis frappe l'ennemi."
+ITEM_HM_FLASH,Explosion lumi- neuse baissant la précision.
+ITEM_HM_ROCK_SMASH,Une attaque puissante qui peut baisser la DEFENSE.
+ITEM_HM_WATERFALL,Attaque rapide qui permet de franchir des cascades.
+ITEM_HM_WHIRLPOOL,Plonge en apnée au premier tour et frappe au second.
+ITEM_15B,?????
+ITEM_15C,?????
+ITEM_OAKS_PARCEL,Un paquet pour le PROF. CHEN d'une BOUTIQUE {PKMN}.
+ITEM_POKE_FLUTE,Une flûte pouvant réveiller n'importe quel POKéMON.
+ITEM_SECRET_KEY,La clé de l'entrée de l'ARENE de CRAMOIS'ILE.
+ITEM_BIKE_VOUCHER,Bon à échanger contre un vélo aux CYCLES A GOGO.
+ITEM_GOLD_TEETH,Une dent en or du gardien du PARC SAFARI.
+ITEM_OLD_AMBER,Une pierre contenant l'ADN d'un ancien {PKMN}.
+ITEM_CARD_KEY,Carte magnétique pouvant ouvrir la SYLPHE SARL.
+ITEM_LIFT_KEY,Clé pour l'ascen- seur du REPAIRE de la TEAM ROCKET.
+ITEM_HELIX_FOSSIL,Un fossile d'un ancien POKéMON aquatique.
+ITEM_DOME_FOSSIL,Un fossile d'un ancien POKéMON aquatique.
+ITEM_SILPH_SCOPE,Un appareil de la SYLPHE pour voir les {PKMN} invisibles.
+ITEM_BICYCLE,Un vélo pour aller plus vite qu'avec les CHAUSSURES.
+ITEM_TOWN_MAP,Carte pouvant être lue partout. Montre la position.
+ITEM_VS_SEEKER,Montre ceux qui veulent se battre. Rechargeable.
+ITEM_FAME_CHECKER,Stocke les infos sur les gens importants.
+ITEM_TM_CASE,Une boîte pour ranger les CT et les CS.
+ITEM_BERRY_POUCH,Un petit sac pour transporter les BAIES.
+ITEM_TEACHY_TV,Un programme qui donne des conseils aux DRESSEURS.
+ITEM_TRI_PASS,"Un passe pour accéder aux ILES 1, 2 et 3."
+ITEM_RAINBOW_PASS,Passe pour le ferry de CARMIN SUR MER aux ILES SEVII.
+ITEM_TEA,Un thé préparé par une vieille femme. Etanche la soif.
+ITEM_MYSTIC_TICKET,Le ticket requis pour aller au ROC NOMBRI.
+ITEM_AURORA_TICKET,Le ticket requis pour aller sur l'ILE AURORE.
+ITEM_POWDER_JAR,Un pot pour conserver la POUDRE BAIE.
+ITEM_RUBY,Une pierre rouge qui symbolise la passion.
+ITEM_SAPPHIRE,Une pierre bleue qui symbolise l'honnêteté.
+ITEM_MAGMA_EMBLEM,Un objet portant le sceau de la TEAM MAGMA.
+ITEM_OLD_SEA_MAP,Une vieille carte montrant la route vers une île.
+ITEM_ADAMANT_MINT,
+ITEM_BOLD_MINT,
+ITEM_BRAVE_MINT,
+ITEM_CALM_MINT,
+ITEM_CAREFUL_MINT,
+ITEM_GENTLE_MINT,
+ITEM_HASTY_MINT,
+ITEM_IMPISH_MINT,
+ITEM_JOLLY_MINT,
+ITEM_LAX_MINT,
+ITEM_LONELY_MINT,
+ITEM_MILD_MINT,
+ITEM_MODEST_MINT,
+ITEM_NAIVE_MINT,
+ITEM_NAUGHTY_MINT,
+ITEM_QUIET_MINT,
+ITEM_RASH_MINT,
+ITEM_RELAXED_MINT,
+ITEM_SASSY_MINT,
+ITEM_SERIOUS_MINT,
+ITEM_TIMID_MINT,

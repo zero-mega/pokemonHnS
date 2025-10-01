@@ -1,0 +1,368 @@
+id,description
+MOVE_POUND,Ecrase l'ennemi avec les\npattes avant ou la queue.
+MOVE_KARATE_CHOP,Une attaque tranchante à\ntaux de critiques élevé.
+MOVE_DOUBLE_SLAP,Gifle rapidement l'ennemi\nde 2 à 5 fois.
+MOVE_COMET_PUNCH,Frappe rapidement l'ennemi\nde 2 à 5 fois.
+MOVE_MEGA_PUNCH,Un coup de poing d'une\npuissance incroyable.
+MOVE_PAY_DAY,Lance des pièces. L'argent\nest récupéré plus tard.
+MOVE_FIRE_PUNCH,Un poing de feu pouvant\nbrûler l'ennemi.
+MOVE_ICE_PUNCH,Un poing de glace pouvant\ngeler l'ennemi.
+MOVE_THUNDER_PUNCH,Un poing électrique\npouvant paralyser l'ennemi.
+MOVE_SCRATCH,Lacère l'ennemi avec \ndes griffes acérées.
+MOVE_VICE_GRIP,Empoigne l'ennemi avec\nde puissantes pinces.
+MOVE_GUILLOTINE,Un puissant coup de pince\nqui peut mettre K.O.
+MOVE_RAZOR_WIND,Une attaque en 2 tours qui\nfrappe au 2{SUPER_E} tour.
+MOVE_SWORDS_DANCE,Une danse de combat pour\nbooster l'ATTAQUE.
+MOVE_CUT,"Coupe l'ennemi avec des\nlames, des griffes, etc."
+MOVE_GUST,Envoie une rafale de vent\nen battant des ailes.
+MOVE_WING_ATTACK,Frappe l'ennemi en \ndéployant les ailes.
+MOVE_WHIRLWIND,Envoie une rafale de vent\net met fin au combat.
+MOVE_FLY,S'envole au premier tour\net frappe au second.
+MOVE_BIND,Ligote l'ennemi et l'écrase\npendant 2 à 5 tours.
+MOVE_SLAM,"Fouette l'ennemi avec une\nqueue, une liane, etc."
+MOVE_VINE_WHIP,Fouette l'ennemi avec de\nfines lianes.
+MOVE_STOMP,Ecrase avec un énorme pied.\nPeut apeurer l'ennemi.
+MOVE_DOUBLE_KICK,Un double coup de pied qui\nfrappe l'ennemi deux fois.
+MOVE_MEGA_KICK,Un coup de pied super\npuissant et intense.
+MOVE_JUMP_KICK,Un coup de pied sauté. Peut\nblesser le lanceur si raté.
+MOVE_ROLLING_KICK,Un coup de pied tournoyant\net extrêmement rapide.
+MOVE_SAND_ATTACK,Lance du sable et baisse\nla précision de l'ennemi.
+MOVE_HEADBUTT,Une charge qui peut\napeurer l'ennemi.
+MOVE_HORN_ATTACK,Frappe l'ennemi d'un coup\nde corne pointue.
+MOVE_FURY_ATTACK,"Frappe l'ennemi 2 à 5 fois\navec des cornes, etc."
+MOVE_HORN_DRILL,Empale l'ennemi d'un coup de\ncorne. Met K.O. en un coup.
+MOVE_TACKLE,Charge l'ennemi avec un\nviolent plaquage.
+MOVE_BODY_SLAM,Charge l'ennemi et peut\nLe paralyser.
+MOVE_WRAP,Ligote l'ennemi et l'étouffe\n2 à 5 fois avec des lianes.
+MOVE_TAKE_DOWN,Une charge violente qui\nblesse aussi le lanceur.
+MOVE_THRASH,Une attaque furieuse de 2 à\n3 tours. Lanceur confus.
+MOVE_DOUBLE_EDGE,Une dangereuse charge qui\nblesse aussi le lanceur.
+MOVE_TAIL_WHIP,Remue la queue pour baisser\nla DEFENSE de l'ennemi.
+MOVE_POISON_STING,"Une attaque de dards, etc.,\npouvant empoisonner."
+MOVE_TWINEEDLE,Les dards des pattes avant\nfrappent deux fois.
+MOVE_PIN_MISSILE,Envoie des dards qui\nfrappent 2 à 5 fois.
+MOVE_LEER,Lance un regard noir\net baisse la DEFENSE.
+MOVE_BITE,Mord méchamment l'ennemi\net peut l'apeurer.
+MOVE_GROWL,Rugit gentiment et baisse\nl'ATTAQUE de l'ennemi.
+MOVE_ROAR,Fait fuir l'ennemi pour\nmettre fin au combat.
+MOVE_SING,Berceuse plongeant l'ennemi\ndans un profond sommeil.
+MOVE_SUPERSONIC,Etranges ondes sonores\npouvant rendre confus.
+MOVE_SONIC_BOOM,Envoie des ondes de choc\ninfligeant 20 PV de dégâts.
+MOVE_DISABLE,Empêche l'utilisation d'une\ndes attaques de l'ennemi.
+MOVE_ACID,Pulvérise un acide. Peut\nbaisser la DEFENSE ennemie.
+MOVE_EMBER,Une faible attaque de feu\npouvant brûler l'ennemi.
+MOVE_FLAMETHROWER,Une puissante attaque de\nfeu pouvant brûler l'ennemi.
+MOVE_MIST,Crée une brume stoppant\nla réduction des capacités.
+MOVE_WATER_GUN,Attaque l'ennemi en\nprojetant de l'eau.
+MOVE_HYDRO_PUMP,Envoie un puissant jet\nd'eau pour frapper l'ennemi.
+MOVE_SURF,Crée une énorme vague qui\ns'écrase sur l'ennemi.
+MOVE_ICE_BEAM,Envoie un rayon de glace\npouvant geler l'ennemi.
+MOVE_BLIZZARD,Déclenche une tempête\npouvant geler l'ennemi.
+MOVE_PSYBEAM,Etrange rayon pouvant\nrendre l'ennemi confus.
+MOVE_BUBBLE_BEAM,Envoie des bulles pouvant\nbaisser la VITESSE.
+MOVE_AURORA_BEAM,Envoie un rayon arc-en-ciel\npouvant baisser l'ATTAQUE.
+MOVE_HYPER_BEAM,"Puissant, mais immobilise\nle lanceur pour un tour."
+MOVE_PECK,"Attaque l'ennemi avec un\nbec pointu, etc."
+MOVE_DRILL_PECK,Une attaque utilisant le\nbec comme une perceuse.
+MOVE_SUBMISSION,Une charge violente qui\nblesse aussi le lanceur.
+MOVE_LOW_KICK,Un coup de pied faisant\nplus mal aux ennemis lourds.
+MOVE_COUNTER,Renvoie toute attaque\nphysique 2 fois plus fort.
+MOVE_SEISMIC_TOSS,Inflige des dégâts selon\nle niveau du lanceur.
+MOVE_STRENGTH,"Accumule de la puissance,\npuis frappe l'ennemi."
+MOVE_ABSORB,Une attaque absorbant la\nmoitié des dégâts infligés.
+MOVE_MEGA_DRAIN,Une attaque absorbant la\nmoitié des dégâts infligés.
+MOVE_LEECH_SEED,Plante des graines pour\nvoler des PV à chaque tour.
+MOVE_GROWTH,Développe le corps et\naugmente l'ATQ. SPE.
+MOVE_RAZOR_LEAF,Tranche avec des feuilles.\nTaux de critiques élevé.
+MOVE_SOLAR_BEAM,Absorbe la lumière et\nattaque le tour suivant.
+MOVE_POISON_POWDER,Répand une poudre toxique\npouvant empoisonner.
+MOVE_STUN_SPORE,Répand une poudre pouvant\nparalyser l'ennemi.
+MOVE_SLEEP_POWDER,Répand une poudre pouvant\nendormir l'ennemi.
+MOVE_PETAL_DANCE,Une attaque furieuse de 2 à\n3 tours. Lanceur confus.
+MOVE_STRING_SHOT,Ligote l'ennemi afin de\nréduire sa VITESSE.
+MOVE_DRAGON_RAGE,Envoie des ondes de choc\ninfligeant 40 PV de dégâts.
+MOVE_FIRE_SPIN,Encercle l'ennemi de flammes\npendant 2 à 5 tours.
+MOVE_THUNDER_SHOCK,Une attaque électrique\npouvant paralyser l'ennemi.
+MOVE_THUNDERBOLT,Forte attaque électrique\npouvant paralyser l'ennemi.
+MOVE_THUNDER_WAVE,Un faible choc électrique\nqui paralyse l'ennemi.
+MOVE_THUNDER,Une attaque foudroyante\npouvant paralyser l'ennemi.
+MOVE_ROCK_THROW,Envoie des cailloux pour\nfrapper l'ennemi.
+MOVE_EARTHQUAKE,Secousse sans effet sur\nles adversaires volants.
+MOVE_FISSURE,Fait tomber l'ennemi dans\nune crevasse et le met K.O.
+MOVE_DIG,Creuse sous terre au 1{SUPER_ER}\ntour et frappe au 2{SUPER_E}.
+MOVE_TOXIC,Empoisonne l'ennemi avec\nune puissante toxine.
+MOVE_CONFUSION,Une attaque PSY pouvant\nrendre l'ennemi confus.
+MOVE_PSYCHIC,Une puissante attaque PSY\npouvant baisser la DEF. SPE.
+MOVE_HYPNOSIS,Une attaque hypnotique\npouvant endormir l'ennemi.
+MOVE_MEDITATE,Méditation pacifique pour\naugmenter l'ATTAQUE.
+MOVE_AGILITY,Relaxation du corps pour\nbooster la VITESSE.
+MOVE_QUICK_ATTACK,Attaque fulgurante qui\npermet de frapper d'abord.
+MOVE_RAGE,Augmente l'ATTAQUE du\nlanceur à chaque coup reçu.
+MOVE_TELEPORT,Capacité PSY permettant de\nprendre aussitôt la fuite.
+MOVE_NIGHT_SHADE,Inflige des dégâts selon\nle niveau du lanceur.
+MOVE_MIMIC,Imite une des attaques\nutilisées par l'ennemi.
+MOVE_SCREECH,Cri strident qui baisse la\nDEFENSE ennemie.
+MOVE_DOUBLE_TEAM,Crée des images-miroirs\npour augmenter l'esquive.
+MOVE_RECOVER,Regagne jusqu'à la moitié\ndes PV max du lanceur.
+MOVE_HARDEN,Contracte les muscles pour\naugmenter la DEFENSE.
+MOVE_MINIMIZE,Rapetisse le lanceur pour\naugmenter l'esquive.
+MOVE_SMOKESCREEN,"Baisse la précision ennemie\nutilisant fumée, encre, etc."
+MOVE_CONFUSE_RAY,Un horrible rayon qui rend\nl'ennemi confus.
+MOVE_WITHDRAW,Se recroqueville dans sa\ncarapace. Monte la DEFENSE.
+MOVE_DEFENSE_CURL,"S'enroule, cache ses points\nfaibles. Monte la DEFENSE."
+MOVE_BARRIER,Crée une barrière pour\nbooster la DEFENSE.
+MOVE_LIGHT_SCREEN,Crée un mur lumineux et\nréduit les dégâts d'ATQ. SP.
+MOVE_HAZE,Crée un nuage noir annulant\ntout changement d'état.
+MOVE_REFLECT,Crée un mur lumineux.\nAffaiblit att. physiques.
+MOVE_FOCUS_ENERGY,Concentration permettant\nun taux de critiques élevé.
+MOVE_BIDE,Encaisse les attaques sur 2\ntours et renvoie le double.
+MOVE_METRONOME,Remue un doigt et lance une\nattaque POKéMON au hasard.
+MOVE_MIRROR_MOVE,Contre l'attaque de l'ennemi\navec la même attaque.
+MOVE_SELF_DESTRUCT,"Inflige de sérieux dégâts,\nmais met le lanceur K.O."
+MOVE_EGG_BOMB,Envoie violemment un œuf\nen direction de l'ennemi.
+MOVE_LICK,Blesse avec un long coup de\nlangue. Peut paralyser.
+MOVE_SMOG,Un gaz nocif pouvant\nempoisonner l'ennemi.
+MOVE_SLUDGE,Blesse en envoyant des\ndétritus. Peut empoisonner.
+MOVE_BONE_CLUB,Cogne l'ennemi avec un os.\nPeut apeurer.
+MOVE_FIRE_BLAST,Carbonise ce qui est touché.\nPeut brûler l'ennemi.
+MOVE_WATERFALL,Charge rapide permettant\nde franchir des cascades.
+MOVE_CLAMP,Piège l'ennemi et l'écrase\npendant 2 à 5 tours.
+MOVE_SWIFT,Envoie des rayons en forme\nd'étoile. Touche toujours.
+MOVE_SKULL_BASH,Rentre la tête et attaque\nau tour suivant.
+MOVE_SPIKE_CANNON,Lance des pointes qui\nfrappent 2 à 5 fois.
+MOVE_CONSTRICT,Etrangle pour blesser.\nPeut baisser la VITESSE.
+MOVE_AMNESIA,Oublie quelque chose et\nbooste la DEF. SPE.
+MOVE_KINESIS,Distrait l'ennemi.\nPeut baisser la précision.
+MOVE_SOFT_BOILED,Regagne jusqu'à la moitié\ndes PV max du lanceur.
+MOVE_HI_JUMP_KICK,"Coup de pied sauté. S'il est\nraté, le lanceur se blesse."
+MOVE_GLARE,Intimide l'ennemi et le\nparalyse de terreur.
+MOVE_DREAM_EATER,Aspire la moitié des dégâts\ninfligés à l'ennemi endormi.
+MOVE_POISON_GAS,Enveloppe l'ennemi d'un gaz\ntoxique. Peut empoisonner.
+MOVE_BARRAGE,Projette 2 à 5 fois des \nobjets vers l'ennemi.
+MOVE_LEECH_LIFE,Une attaque qui aspire la\nmoitié des dégâts infligés.
+MOVE_LOVELY_KISS,Demande un bisou en\ngrimaçant. Peut endormir.
+MOVE_SKY_ATTACK,Cherche les points faibles\net frappe au tour suivant.
+MOVE_TRANSFORM,Modifie ses cellules pour\ncopier l'ennemi.
+MOVE_BUBBLE,Une attaque de bulles\npouvant baisser la VITESSE.
+MOVE_DIZZY_PUNCH,Un coup de poing cadencé.\nPeut rendre confus.
+MOVE_SPORE,Répand un nuage de spores\nqui endort à tous les coups.
+MOVE_FLASH,Explosion lumineuse qui\nfait baisser la précision.
+MOVE_PSYWAVE,Envoie une onde PSY\nd'intensité variable.
+MOVE_SPLASH,Eclabousse l'ennemi...\nN'a aucun effet.
+MOVE_ACID_ARMOR,Liquéfie le corps du lanceur\net booste sa DEFENSE.
+MOVE_CRABHAMMER,Cogne avec une pince.\nTaux de critiques élevé.
+MOVE_EXPLOSION,"Inflige de sérieux dégâts,\nmais met le lanceur K.O."
+MOVE_FURY_SWIPES,"Ecorche l'ennemi avec des\ngriffes, etc., de 2 à 5 fois."
+MOVE_BONEMERANG,Lance un boomerang en os\nqui frappe deux fois.
+MOVE_REST,Le lanceur dort 2 tours\net regagne PV et statut.
+MOVE_ROCK_SLIDE,Envoie de gros rochers.\nPeut apeurer l'ennemi.
+MOVE_HYPER_FANG,Blesse d'un coup de croc.\nPeut apeurer l'ennemi.
+MOVE_SHARPEN,Réduit les polygones\net augmente l'ATTAQUE.
+MOVE_CONVERSION,Change le type du lanceur\nen celui d'une cap. connue.
+MOVE_TRI_ATTACK,Envoie trois types de\nrayons en même temps.
+MOVE_SUPER_FANG,Coup de croc qui fait\nbaisser les PV de moitié.
+MOVE_SLASH,"Coups de griffe, etc.\nTaux de critiques élevé."
+MOVE_SUBSTITUTE,Crée un leurre avec 1/4\ndes PV max du lanceur.
+MOVE_STRUGGLE,Fonctionne s'il ne reste\nplus de PP. Blesse un peu.
+MOVE_SKETCH,Copie en permanence la\ndernière attaque ennemie.
+MOVE_TRIPLE_KICK,Trois coups de pied de plus\nen plus puissants.
+MOVE_THIEF,Peut voler l'objet tenu par\nl'ennemi pendant l'attaque.
+MOVE_SPIDER_WEB,Capture l'ennemi et empêche\ntoute fuite ou changement.
+MOVE_MIND_READER,Pressent l'action pour\nréussir l'attaque suivante.
+MOVE_NIGHTMARE,Inflige 1/4 de dégâts à un\nennemi endormi chaque tour.
+MOVE_FLAME_WHEEL,Une charge enflammée qui\npeut brûler l'ennemi.
+MOVE_SNORE,Attaque sonore qui ne peut\nêtre lancée qu'endormi.
+MOVE_CURSE,Coup qui fonctionne autre-\nment pour les SPECTRES.
+MOVE_FLAIL,Inflige plus de dégâts si les\nPV du lanceur sont faibles.
+MOVE_CONVERSION_2,Permet de résister au type\nde la dernière attaque.
+MOVE_AEROBLAST,Implosion à taux de\ncoups critiques élevé.
+MOVE_COTTON_SPORE,Envoie des spores pour\nbaisser la VITESSE.
+MOVE_REVERSAL,Inflige plus de dégâts si les\nPV du lanceur sont faibles.
+MOVE_SPITE,Réduit méchamment les PP\nde la dernière att. ennemie.
+MOVE_POWDER_SNOW,Envoie une rafale de neige.\nPeut geler l'ennemi.
+MOVE_PROTECT,"Esquive l'attaque, mais\npeut échouer si réutilisé."
+MOVE_MACH_PUNCH,Coup de poing fulgurant.\nPermet de frapper le 1{SUPER_ER}.
+MOVE_SCARY_FACE,Effraie avec une grimace\npour baisser la VITESSE.
+MOVE_FAINT_ATTACK,Attire l'ennemi et frappe\nsans jamais échouer.
+MOVE_SWEET_KISS,Demande un bisou tout\nmignon. Peut rendre confus.
+MOVE_BELLY_DRUM,Améliore l'ATTAQUE en\nsacrifiant des PV.
+MOVE_SLUDGE_BOMB,Envoie des détritus pour\nblesser. Peut empoisonner.
+MOVE_MUD_SLAP,Envoie de la boue au visage\npour baisser la précision.
+MOVE_OCTAZOOKA,Jet d'encre qui blesse\net baisse la précision.
+MOVE_SPIKES,Pointes blessant lors d'un\nchangement d'adversaire.
+MOVE_ZAP_CANNON,"Puissant et paralysant, \nmais pas très précis."
+MOVE_FORESIGHT,Empêche l'ennemi\nd'améliorer son esquive.
+MOVE_DESTINY_BOND,"Si le lanceur est mis K.O.,\nl'ennemi le sera également."
+MOVE_PERISH_SONG,Un POKéMON qui entend ce\nrequiem est K.O. en 3 tours.
+MOVE_ICY_WIND,Attaque glaciale. Baisse\nla VITESSE de l'ennemi.
+MOVE_DETECT,"Esquive l'attaque, mais\npeut échouer si réutilisé."
+MOVE_BONE_RUSH,Frappe l'ennemi 2 à 5 fois\navec un os.
+MOVE_LOCK_ON,Le coup suivant sera réussi\nà coup sûr.
+MOVE_OUTRAGE,Une attaque furieuse sur 2\nà 3 tours. Lanceur confus.
+MOVE_SANDSTORM,Une tempête de sable qui\nsouffle plusieurs tours.
+MOVE_GIGA_DRAIN,Une attaque qui absorbe la\nmoitié des dégâts infligés.
+MOVE_ENDURE,Encaisse les attaques du\ntour et conserve 1 PV.
+MOVE_CHARM,Charme l'ennemi et baisse\nbrusquement son ATTAQUE.
+MOVE_ROLLOUT,"Une attaque sur 5 tours,\nde plus en plus puissante."
+MOVE_FALSE_SWIPE,Une attaque qui laisse au\nmoins 1 PV à l'ennemi.
+MOVE_SWAGGER,Rend l'ennemi confus et\nbooste l'ATTAQUE.
+MOVE_MILK_DRINK,Regagne jusqu'à la moitié\ndes PV max du lanceur.
+MOVE_SPARK,Une charge électrique qui\npeut paralyser l'ennemi.
+MOVE_FURY_CUTTER,Une attaque qui s'inten-\nsifie après chaque coup.
+MOVE_STEEL_WING,Frappe l'ennemi en \ndéployant des ailes d'acier.
+MOVE_MEAN_LOOK,Lance un regard méchant\npour empêcher la fuite.
+MOVE_ATTRACT,Le genre opposé a moins de\nchances d'attaquer.
+MOVE_SLEEP_TALK,Utilise un coup connu\nau hasard en dormant.
+MOVE_HEAL_BELL,Carillon apaisant qui soigne\ntout changement de statut.
+MOVE_RETURN,Attaque dont la puissance\ndépend de l'amitié.
+MOVE_PRESENT,Cadeau en forme de bombe.\nPeut restaurer des PV.
+MOVE_FRUSTRATION,Attaque plus puissante si\nle DRESSEUR est mal aimé.
+MOVE_SAFEGUARD,Force mystique empêchant\ntout changement de statut.
+MOVE_PAIN_SPLIT,Ajoute les PV des deux com-\nbattants et les partage.
+MOVE_SACRED_FIRE,Une attaque de feu mys-\ntique pouvant brûler.
+MOVE_MAGNITUDE,Un tremblement de terre\nd'intensité variable.
+MOVE_DYNAMIC_PUNCH,"Puissant et rend confus, \nmais pas très précis."
+MOVE_MEGAHORN,"Une charge violente,\ntoutes cornes en avant."
+MOVE_DRAGON_BREATH,Frappe l'ennemi grâce à\nun souffle super puissant.
+MOVE_BATON_PASS,"Change de lanceur, mais\ngarde les effets en cours."
+MOVE_ENCORE,Oblige l'ennemi à répéter sa\ndernière action 2 à 6 tours.
+MOVE_PURSUIT,Inflige de sérieux dégâts\nlorsque l'ennemi change.
+MOVE_RAPID_SPIN,Frappe l'ennemi en\ntournant sur soi-même.
+MOVE_SWEET_SCENT,Séduit l'ennemi pour\nbaisser son esquive.
+MOVE_IRON_TAIL,Attaque avec sa queue.\nPeut baisser la DEFENSE.
+MOVE_METAL_CLAW,Attaque avec des griffes.\nPeut augmenter l'ATTAQUE.
+MOVE_VITAL_THROW,Attaque en dernier\nmais n'échoue jamais.
+MOVE_MORNING_SUN,Restaure les PV.\nVarie suivant le temps.
+MOVE_SYNTHESIS,Restaure les PV.\nVarie suivant le temps.
+MOVE_MOONLIGHT,Restaure les PV.\nVarie suivant le temps.
+MOVE_HIDDEN_POWER,L'efficacité de l'attaque\ndépend du lanceur.
+MOVE_CROSS_CHOP,2 attaques tranchantes.\nTaux de critiques élevé.
+MOVE_TWISTER,Déclenche un terrible\nouragan blessant l'ennemi.
+MOVE_RAIN_DANCE,Améliore les attaques EAU\npendant 5 tours.
+MOVE_SUNNY_DAY,Améliore les attaques FEU\npendant 5 tours.
+MOVE_CRUNCH,Utilise des crocs pointus.\nPeut baisser la DEF. SPE.
+MOVE_MIRROR_COAT,Renvoie l'attaque spéciale\nennemie 2 fois plus fort.
+MOVE_PSYCH_UP,Copie les effets de l'ennemi\net les passe au lanceur.
+MOVE_EXTREME_SPEED,Une attaque extrêmement\nrapide et puissante.
+MOVE_ANCIENT_POWER,Une attaque pouvant aug-\nmenter toutes les stats.
+MOVE_SHADOW_BALL,Projette une grande tache\nqui peut baisser la DEF. SPE.
+MOVE_FUTURE_SIGHT,Accumule de l'énergie pour\nfrapper 2 tours plus tard.
+MOVE_ROCK_SMASH,Une attaque puissante qui\npeut baisser la DEFENSE.
+MOVE_WHIRLPOOL,Piège l'ennemi dans un tour-\nbillon pendant 2 à 5 tours.
+MOVE_BEAT_UP,Appelle un POKéMON qui\nse joint à l'attaque.
+MOVE_FAKE_OUT,Une attaque en début de\nbataille pour apeurer.
+MOVE_UPROAR,Brouhaha de 2 à 5 tours.\nEmpêche de dormir.
+MOVE_STOCKPILE,Accumule de la puissance\npendant 3 tours maximum.
+MOVE_SPIT_UP,Libère la puissance\nprécédemment accumulée.
+MOVE_SWALLOW,Absorbe la puissance accu-\nmulée et restaure les PV.
+MOVE_HEAT_WAVE,Un souffle ardent pouvant\nbrûler l'ennemi.
+MOVE_HAIL,Tempête de grêle qui\nfrappe à chaque tour.
+MOVE_TORMENT,Perturbe l'ennemi. Empêche\nla réutilisation d'une att.
+MOVE_FLATTER,"Rend l'ennemi confus, mais\naugmente son ATQ. SPE."
+MOVE_WILL_O_WISP,Inflige une douloureuse \nbrûlure à l'ennemi.
+MOVE_MEMENTO,Le lanceur est mis K.O. et\nbaisse les cap. ennemies.
+MOVE_FACADE,"Améliore l'ATTAQUE si brûlé,\nparalysé ou empoisonné."
+MOVE_FOCUS_PUNCH,Lanceur apeuré si touché.\nAttaque puissante.
+MOVE_SMELLING_SALT,"Utile contre les ennemis\nparalysés, mais les soigne."
+MOVE_FOLLOW_ME,Attire l'attention. Les adv.\nn'attaquent que le lanceur.
+MOVE_NATURE_POWER,Le type de l'attaque change\nselon le lieu du combat.
+MOVE_CHARGE,Charge de la puissance pour\nl'att. électrique suivante.
+MOVE_TAUNT,Provoque l'ennemi. L'oblige\nà utiliser ses attaques.
+MOVE_HELPING_HAND,Améliore la puissance\nd'attaque du receveur.
+MOVE_TRICK,Oblige la cible à échanger\nles objets tenus.
+MOVE_ROLE_PLAY,Imite la cible et copie\nsa capacité spéciale.
+MOVE_WISH,Un vœu qui restaure les PV.\nDemande un certain temps.
+MOVE_ASSIST,Attaque au hasard avec un\ncoup d'un des partenaires.
+MOVE_INGRAIN,"Plante des racines, regagne\nPV, ne peut plus changer."
+MOVE_SUPERPOWER,"Booste la force, mais\nbaisse les capacités."
+MOVE_MAGIC_COAT,Renvoie les effets\nspéciaux vers le lanceur.
+MOVE_RECYCLE,Recycle un objet pour\nl'utiliser une fois de plus.
+MOVE_REVENGE,Gagne en puissance quand\nblessé par l'ennemi.
+MOVE_BRICK_BREAK,Détruit les barrières comme\nPROTECTION et blesse.
+MOVE_YAWN,"Fait bâiller l'ennemi, qui\ns'endort au tour suivant."
+MOVE_KNOCK_OFF,Frappe l'objet tenu pour\nle rendre inutilisable.
+MOVE_ENDEAVOR,Gagne en puissance si PV\ninférieurs aux PV ennemis.
+MOVE_ERUPTION,Inflige plus de dégâts si PV\ndu lanceur sont élevés.
+MOVE_SKILL_SWAP,Le lanceur et la cible\néchangent leurs cap. spéc.
+MOVE_IMPRISON,Empêche les ennemis d'uti-\nliser les coups du lanceur.
+MOVE_REFRESH,"Soigne un empoisonnement,\nune paralysie, une brûlure."
+MOVE_GRUDGE,"Si mis K.O., supprime les PP\ndu dernier coup ennemi."
+MOVE_SNATCH,Vole les effets de la pro-\nchaine attaque de la cible.
+MOVE_SECRET_POWER,Les effets de l'attaque\ndépendent du lieu.
+MOVE_DIVE,Plonge en apnée au premier\ntour et frappe au second.
+MOVE_ARM_THRUST,Coups de poing arrêtés qui\nfrappent 2 à 5 fois.
+MOVE_CAMOUFLAGE,Change le type du POKéMON\nselon le lieu.
+MOVE_TAIL_GLOW,Flash lumineux qui booste\nl'ATQ. SPE.
+MOVE_LUSTER_PURGE,Envoie une lueur intense.\nPeut baisser DEF. SPE.
+MOVE_MIST_BALL,Envoie une rafale de duvet.\nPeut baisser ATQ. SPE.
+MOVE_FEATHER_DANCE,Enveloppe l'ennemi de duvet\net baisse l'ATTAQUE.
+MOVE_TEETER_DANCE,Rend tous les POKéMON\nengagés confus.
+MOVE_BLAZE_KICK,Coup de pied à taux de cri-\ntiques élevé. Peut brûler.
+MOVE_MUD_SPORT,Couvre le lanceur de boue.\nAugmente résist. électr.
+MOVE_ICE_BALL,Une attaque en 5 tours de\nplus en plus puissante.
+MOVE_NEEDLE_ARM,Attaque avec des bras\népineux. Peut apeurer.
+MOVE_SLACK_OFF,Se détend et récupère\nla moitié des PV maximum.
+MOVE_HYPER_VOICE,Attaque bruyante blessant\navec des ondes sonores.
+MOVE_POISON_FANG,Morsure pouvant sérieuse-\nment empoisonner l'ennemi.
+MOVE_CRUSH_CLAW,Lacère avec des griffes.\nPeut baisser la DEFENSE.
+MOVE_BLAST_BURN,"Puissant, mais immobilise\nle lanceur au tour suivant."
+MOVE_HYDRO_CANNON,"Puissant, mais immobilise\nle lanceur au tour suivant."
+MOVE_METEOR_MASH,Coup de poing météore.\nPeut augmenter l'ATTAQUE.
+MOVE_ASTONISH,Une attaque qui peut cho-\nquer et apeurer l'ennemi.
+MOVE_WEATHER_BALL,Type et puissance de\nl'attaque selon le climat.
+MOVE_AROMATHERAPY,Parfum apaisant soignant\nles changements de statut.
+MOVE_FAKE_TEARS,Fait semblant de pleurer\npour baisser la DEF. SPE.
+MOVE_AIR_CUTTER,Un vent tranchant.\nTaux de critiques élevé.
+MOVE_OVERHEAT,"Attaque à pleine puissance,\nmais baisse ATQ. SPE."
+MOVE_ODOR_SLEUTH,Empêche l'ennemi\nd'augmenter son esquive.
+MOVE_ROCK_TOMB,Immobilise l'ennemi avec des\nrochers. Baisse la VITESSE.
+MOVE_SILVER_WIND,Attaque poudreuse qui peut\naugmenter les capacités.
+MOVE_METAL_SOUND,Cri horrible qui baisse la\nDEF. SPE. énormément.
+MOVE_GRASS_WHISTLE,Endort l'ennemi en sifflant\nune douce mélodie.
+MOVE_TICKLE,Fait rire l'ennemi et baisse\nson ATTAQUE et sa DEFENSE.
+MOVE_COSMIC_POWER,Pouvoir mystique qui monte\nla DEFENSE et la DEF. SPE.
+MOVE_WATER_SPOUT,Inflige plus de dégâts si le\nlanceur a beaucoup de PV.
+MOVE_SIGNAL_BEAM,Un étrange rayon qui peut\nrendre l'ennemi confus.
+MOVE_SHADOW_PUNCH,Un coup de poing inévitable\nsortant de l'ombre.
+MOVE_EXTRASENSORY,Pouvoir singulier qui peut\napeurer l'ennemi.
+MOVE_SKY_UPPERCUT,Un uppercut porté en\ndirection du ciel.
+MOVE_SAND_TOMB,Piège l'ennemi dans un \ncyclone sur 2 à 5 tours.
+MOVE_SHEER_COLD,Attaque glacée qui met K.O.\nquand elle est réussie.
+MOVE_MUDDY_WATER,Attaque d'eau croupie.\nPeut baisser la précision.
+MOVE_BULLET_SEED,Mitraille l'ennemi avec 2 à\n5 graines à la suite.
+MOVE_AERIAL_ACE,Attaque extrêmement\nrapide et inévitable.
+MOVE_ICICLE_SPEAR,Mitraille l'ennemi avec 2 à\n5 glaçons à la suite.
+MOVE_IRON_DEFENSE,Endurcit le corps pour\nbooster la DEFENSE.
+MOVE_BLOCK,Bloque la route de l'ennemi\npour empêcher sa fuite.
+MOVE_HOWL,Grogne pour se rassurer\net booster l'ATTAQUE.
+MOVE_DRAGON_CLAW,Tranche l'ennemi avec\ndes griffes acérées.
+MOVE_FRENZY_PLANT,"Puissant, mais immobilise\nle lanceur au tour suivant."
+MOVE_BULK_UP,Se gonfle pour booster\nl'ATTAQUE et la DEFENSE.
+MOVE_BOUNCE,Saute et tombe le tour\nsuivant. Peut paralyser.
+MOVE_MUD_SHOT,Envoie de la boue à l'ennemi\npour réduire sa VITESSE.
+MOVE_POISON_TAIL,Haut taux de critiques.\nPeut aussi empoisonner.
+MOVE_COVET,Demande gentiment un objet\ndétenu par l'ennemi.
+MOVE_VOLT_TACKLE,Une dangereuse charge qui\nblesse aussi le lanceur.
+MOVE_MAGICAL_LEAF,Envoie des feuilles ne\npouvant être esquivées.
+MOVE_WATER_SPORT,Mouille le lanceur et aug-\nmente sa résistance au feu.
+MOVE_CALM_MIND,Méditation pour augmenter\nl'ATQ. SPE. et la DEF. SPE.
+MOVE_LEAF_BLADE,Tranche avec une feuille.\nTaux de critiques élevé.
+MOVE_DRAGON_DANCE,Danse mystique augmentant\nl'ATTAQUE et la VITESSE.
+MOVE_ROCK_BLAST,Projette des rochers sur\nl'ennemi 2 à 5 fois de suite.
+MOVE_SHOCK_WAVE,Attaque électrique rapide\net impossible à esquiver.
+MOVE_WATER_PULSE,Envoi d'ondes aquatiques.\nPeut rendre confus.
+MOVE_DOOM_DESIRE,Récupère la lumière pour\nfrapper 2 tours plus tard.
+MOVE_PSYCHO_BOOST,"Attaque à pleine puissance,\nmais baisse ATQ. SPE."
+MOVE_DARK_PULSE,"Attacks with a horrible\n    """"\n    ""    ""aura. May cause flinching."
+MOVE_PSYCHO_CUT,"Tears with psychic blades.\n    """"\n    ""    ""High critical-hit ratio."
+MOVE_FOCUS_BLAST,"Attacks at full power.\n    """"\n    ""    ""May lower Sp. Def."
+MOVE_POWER_GEM,"Attacks with rays of light\n    """"\n    ""    ""that sparkle like diamonds."
+MOVE_SHADOW_CLAW,"Strikes with a shadow claw.\n    """"\n    ""    ""High critical-hit ratio."
+MOVE_FLASH_CANNON,"Releases a blast of light\n    """"\n    ""    ""that may lower Sp. Def."
+MOVE_AIR_SLASH,"Attacks with a blade of\n    """"\n    ""    ""air. May cause flinching."
+MOVE_BUG_BUZZ,"A damaging sound wave that\n    """"\n    ""    ""may lower Sp. Def."
+MOVE_DRAGON_PULSE,"Generates a shock wave to\n    """"\n    ""    ""damage the foe."
+MOVE_EARTH_POWER,"Makes the ground erupt with\n    """"\n    ""    ""power. May lower Sp. Def."
+MOVE_PLAY_ROUGH,"Plays rough with the foe.\n    """"\n    ""    ""May lower ATTACK."
+MOVE_MOONBLAST,"Attacks with the power of\n    """"\n    ""    ""the moon. May lower Sp. Atk."
+MOVE_POISON_JAB,"A stabbing attack that\n    """"\n    ""    ""may poison the foe."
