@@ -1,10 +1,10 @@
-@ NOTE: The brailleformat macro in this file is leftover from RS.
-@       The numbers are simply skipped over. If you'd like to omit
-@       this macro you must also stop it from skipping over this
-@       section by editing ScrCmd_braillemessage.
+@ NOTE: Le macro brailleformat dans ce fichier est un vestige de RS.
+@       Les nombres sont simplement ignorés. Si vous souhaitez omettre
+@       ce macro, vous devez également empêcher le saut de cette
+@       section en modifiant ScrCmd_braillemessage.
 Underwater_SealedChamber_Braille_GoUpHere:
 	brailleformat 4, 6, 26, 13, 7, 9
-	.braille "GO UP HERE.$"
+	.braille "MONTEZ ICI.$"
 
 SealedChamber_OuterRoom_Braille_ABC:
 	brailleformat 7, 6, 21, 13, 10, 9
@@ -48,92 +48,92 @@ SealedChamber_OuterRoom_Braille_Comma:
 
 SealedChamber_OuterRoom_Braille_DigHere:
 	brailleformat 7, 4, 23, 15, 10, 7
-	.braille "SWEET SCENT\n"
-	.braille "HERE.$"
+	.braille "DOUX PARFUM\n"
+	.braille "ICI.$"
 
 SealedChamber_InnerRoom_Braille_FirstWailordLastRelicanth:
 	brailleformat 0, 0, 29, 19, 3, 3
-	.braille "FIRST COMES\n"
+	.braille "D'ABORD VIENT\n"
 	.braille "MAGNEZONE.\n"
-	.braille "LAST COMES\n"
+	.braille "EN DERNIER VIENT\n"
 	.braille "VIBRAVA.$"
 
 SealedChamber_InnerRoom_Braille_InThisCaveWeHaveLived:
 	brailleformat 2, 0, 26, 19, 5, 3
-	.braille "IN THIS\n"
-	.braille "CAVE WE\n"
-	.braille "HAVE\n"
-	.braille "LIVED.$"
+	.braille "DANS CETTE\n"
+	.braille "CAVERNE NOUS\n"
+	.braille "AVONS\n"
+	.braille "VÉCU.$"
 
 SealedChamber_InnerRoom_Braille_WeOweAllToThePokemon:
 	brailleformat 7, 2, 23, 17, 10, 5
-	.braille "WE OWE ALL\n"
-	.braille "TO THE\n"
-	.braille "POKEMON.$"
+	.braille "NOUS DEVONS TOUT\n"
+	.braille "AUX\n"
+	.braille "POKÉMON.$"
 
 SealedChamber_InnerRoom_Braille_ButWeSealedThePokemonAway:
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "BUT, WE\n"
-	.braille "SEALED THE\n"
-	.braille "POKEMON\n"
-	.braille "AWAY.$"
+	.braille "MAIS, NOUS\n"
+	.braille "AVONS SCELLÉ LES\n"
+	.braille "POKÉMON\n"
+	.braille "AU LOIN.$"
 
 SealedChamber_InnerRoom_Braille_WeFearedIt:
 	brailleformat 5, 6, 25, 13, 8, 9
-	.braille "WE FEARED IT.$"
+	.braille "NOUS EN AVIONS PEUR.$"
 
 SealedChamber_InnerRoom_Braille_ThoseWithCourageHope:
 	brailleformat 6, 0, 24, 19, 9, 3
-	.braille "THOSE WITH\n"
-	.braille "COURAGE,\n"
-	.braille "THOSE WITH\n"
-	.braille "HOPE.$"
+	.braille "CEUX QUI ONT\n"
+	.braille "DU COURAGE,\n"
+	.braille "CEUX QUI ONT\n"
+	.braille "DE L'ESPOIR.$"
 
 SealedChamber_InnerRoom_Braille_OpenDoorEternalPokemonWaits:
 	brailleformat 3, 2, 27, 17, 6, 5
-	.braille "OPEN A DOOR.\n"
-	.braille "AN ETERNAL\n"
-	.braille "POKEMON\n"
-	.braille "WAITS.$"
+	.braille "OUVREZ UNE PORTE.\n"
+	.braille "UN POKÉMON\n"
+	.braille "ÉTERNEL\n"
+	.braille "ATTEND.$"
 
 DesertRuins_Braille_UseRockSmash:
 	brailleformat 1, 0, 27, 19, 4, 3
-	.braille "LEFT, LEFT,\n"
-	.braille "DOWN, DOWN.\n"
-	.braille "THEN, USE\n"
-	.braille "ROCK SMASH.$"
+	.braille "GAUCHE, GAUCHE,\n"
+	.braille "BAS, BAS.\n"
+	.braille "PUIS, UTILISEZ\n"
+	.braille "ÉCLATROC.$"
 
 IslandCave_Braille_RunLapAroundWall:
 	brailleformat 5, 0, 25, 19, 8, 3
-	.braille "STAY CLOSE\n"
-	.braille "TO THE WALL.\n"
-	.braille "RUN AROUND\n"
-	.braille "ONE LAP.$"
+	.braille "RESTEZ PRÈS\n"
+	.braille "DU MUR.\n"
+	.braille "FAITES LE TOUR\n"
+	.braille "UNE FOIS.$"
 
 AncientTomb_Braille_ShineInTheMiddle:
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "THOSE WHO\n"
-	.braille "INHERIT OUR\n"
-	.braille "WILL, SHINE\n"
-	.braille "IN THE MIDDLE.$"
+	.braille "CEUX QUI\n"
+	.braille "HÉRITENT DE NOTRE\n"
+	.braille "VOLONTÉ, BRILLEZ\n"
+	.braille "AU CENTRE.$"
 
 Regieleki_Braille_Sapphire:
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "GET THE BLUE\n"
-	.braille "GEM WHERE IT\n"
-	.braille "RAINS. PUT IT\n"
-	.braille "IN THE MIDDLE.$"
+	.braille "PRENEZ LA GEMME\n"
+	.braille "BLEUE LÀ OÙ IL\n"
+	.braille "PLEUT. PLACEZ-LA\n"
+	.braille "AU CENTRE.$"
 
 Regidrago_Braille_Text:
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "DOWN, THREE.\n"
-	.braille "RIGHT, FIVE.\n"
-	.braille "PRESS THE\n"
-	.braille "BUTTON.$"
+	.braille "BAS, TROIS.\n"
+	.braille "DROITE, CINQ.\n"
+	.braille "APPUYEZ SUR\n"
+	.braille "LE BOUTON.$"
 
 Regigigas_Braille_Text:
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "FIVE TITANS\n"
-	.braille "DEFEATED.\n"
-	.braille "YOU ARE\n"
+	.braille "CINQ TITANS\n"
+	.braille "VAINCUS.\n"
+	.braille "VOUS ÊTES\n"
 	.braille "CHAMPION.$"

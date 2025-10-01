@@ -1,360 +1,434 @@
 CableClub_Text_WelcomeWhichCableClubService:
-	.string "Welcome to the POKéMON CABLE\n"
-	.string "CLUB.\p"
-	.string "Which of our services do you wish\n"
-	.string "to use?$"
+	.string "Bienvenue au CLUB CÂBLE POKéMON\n"
+	.string ".\p"
+	.string "Quel service souhaitez-vous utiliser\n"
+	.string "?$"
 
 CableClub_Text_WhichService:
-	.string "Which of our services do you wish\n"
-	.string "to use?$"
+	.string "Quel service souhaitez-vous utiliser\n"
+	.string "?$"
 
 CableClub_Text_TradeUsingLinkCable::
-	.string "Trade POKéMON with another player\n"
-	.string "using a GBA Game Link cable.$"
+	.string "Échangez des POKéMON avec un autre joueur\n"
+	.string "en utilisant un câble Game Link GBA.$"
 
 CableClub_Text_BattleUsingLinkCable::
-	.string "You may battle another TRAINER\n"
-	.string "using a GBA Game Link cable.$"
+	.string "Vous pouvez combattre un autre DRESSEUR\n"
+	.string "en utilisant un câble Game Link GBA.$"
 
 CableClub_Text_RecordCornerUsingLinkCable::
-	.string "You can use the RECORD CORNER with\n"
-	.string "others using a GBA Game Link cable.$"
+	.string "Vous pouvez utiliser le COIN ENREGISTREMENT avec\n"
+	.string "d'autres joueurs via un câble Game Link GBA.$"
 
 @ Unused
 CableClub_Text_CloseThisMenu:
-	.string "Close this menu.$"
+	.string "Fermer ce menu.$"
 
 CableClub_Text_NeedTwoMonsForDoubleBattle:
-	.string "For a DOUBLE BATTLE, you must\n"
-	.string "have at least two POKéMON.$"
+	.string "Pour un COMBAT DUO, vous devez\n"
+	.string "avoir au moins deux POKéMON.$"
 
 CableClub_Text_NeedTwoMonsToTrade:
-	.string "For trading, you must have at\n"
-	.string "least two POKéMON with you.$"
+	.string "Pour échanger, vous devez avoir au\n"
+	.string "moins deux POKéMON avec vous.$"
 
 CableClub_Text_CantTradeEnigmaBerry:
-	.string "A POKéMON holding the {STR_VAR_1}\n"
-	.string "BERRY can't be traded.$"
+	.string "Un POKéMON tenant la BAIE {STR_VAR_1}\n"
+	.string "ne peut pas être échangé.$"
 
 gText_PleaseWaitForLink::
-	.string "Please wait.\n"
-	.string "… … B Button: Cancel$"
+	.string "Veuillez patienter.\n"
+	.string "… … Bouton B : Annuler$"
 
 gText_ConfirmLinkWhenPlayersReady::
-	.string "When all players are ready…\n"
-	.string "A Button: Confirm\l"
-	.string "B Button: Cancel$"
+	.string "Quand tous les joueurs sont prêts…\n"
+	.string "Bouton A : Confirmer\l"
+	.string "Bouton B : Annuler$"
 
 gText_ConfirmStartLinkWithXPlayers::
-	.string "Start link with {STR_VAR_1} players.\n"
-	.string "A Button: Confirm\l"
-	.string "B Button: Cancel$"
+	.string "Commencer la connexion avec {STR_VAR_1} joueurs.\n"
+	.string "Bouton A : Confirmer\l"
+	.string "Bouton B : Annuler$"
 
 gText_AwaitingLinkup::
-	.string "Awaiting linkup…\n"
-	.string "… … B Button: Cancel$"
+	.string "En attente de connexion…\n"
+	.string "… … Bouton B : Annuler$"
 
 @ Unused
 CableClub_Text_OkayToSaveProgress::
-	.string "Your progress must be saved before\n"
-	.string "linking. Is it okay to save?$"
+	.string "Votre progression doit être sauvegardée avant\n"
+	.string "la connexion. Voulez-vous sauvegarder?$"
 
 CableClub_Text_PleaseEnter:
-	.string "Please enter.$"
+	.string "Veuillez entrer.$"
 
 CableClub_Text_DirectYouToYourRoom:
-	.string "I'll direct you to your room now.$"
+	.string "Je vais vous conduire à votre salle maintenant.$"
 
 Text_SomeoneIsNotReadyToLink:
-	.string "Someone is not ready to link.\p"
-	.string "Please come back after everyone\n"
-	.string "has made preparations.$"
+	.string "Quelqu'un n'est pas prêt à se connecter.\p"
+	.string "Veuillez revenir après que tout le monde\n"
+	.string "se soit préparé.$"
 
 Text_LinkErrorPleaseReset:
-	.string "Sorry, we have a link error…\n"
-	.string "Please reset and try again.$"
+	.string "Désolé, il y a une erreur de connexion…\n"
+	.string "Veuillez réinitialiser et réessayer.$"
 
 Text_PlayersMadeDifferentSelections:
-	.string "The link partners appear to have\n"
-	.string "made different selections.$"
+	.string "Il semble que les partenaires aient fait\n"
+	.string "des choix différents.$"
 
 CableClub_Text_PleaseVisitAgain:
-	.string "Please do visit again.$"
+	.string "Veuillez revenir nous voir.$"
 
 CableClub_Text_IncorrectNumberOfParticipants:
-	.string "The number of participants is\n"
+	.string "Le nombre de participants est\n"
 	.string "incorrect.$"
 
 CableClub_Text_CantSingleBattleWithXPlayers:
-	.string "The SINGLE BATTLE Mode can't be\n"
-	.string "played by {STR_VAR_1} players.$"
+	.string "Le mode COMBAT SOLO ne peut pas être\n"
+	.string "joué par {STR_VAR_1} joueurs.$"
 
 CableClub_Text_CantDoubleBattleWithXPlayers:
-	.string "The DOUBLE BATTLE Mode can't be\n"
-	.string "played by {STR_VAR_1} players.$"
+	.string "Le mode COMBAT DUO ne peut pas être\n"
+	.string "joué par {STR_VAR_1} joueurs.$"
 
 CableClub_Text_NeedFourPlayers:
-	.string "There must be four players to play\n"
-	.string "this Battle Mode.$"
+	.string "Il faut quatre joueurs pour jouer\n"
+	.string "à ce mode de combat.$"
 
 CableClub_Text_PleaseConfirmNumberAndRestart:
-	.string "Please confirm the number of\n"
-	.string "players and start again.$"
+	.string "Veuillez confirmer le nombre de\n"
+	.string "joueurs et recommencer.$"
 
 Text_TerminateLinkConfirmation:
-	.string "The link will be terminated if you\n"
-	.string "leave the room. Is that okay?$"
+	.string "La connexion sera terminée si vous\n"
+	.string "quittez la salle. Est-ce correct?$"
 
 Text_TerminateLinkPleaseWait:
-	.string "Terminating link…\n"
-	.string "You will be escorted out of\l"
-	.string "the room. Please wait.$"
+	.string "Fin de la connexion…\n"
+	.string "Vous allez être escorté hors de\l"
+	.string "la salle. Veuillez patienter.$"
 
 CableClub_Text_TooBusyToNotice:
-	.string "This TRAINER is too busy to\n"
-	.string "notice…$"
+	.string "Ce DRESSEUR est trop occupé pour\n"
+	.string "remarquer…$"
 
 CableClub_Text_GotToLookAtTrainerCard:
-	.string "Score! Got to look at {STR_VAR_1}'s\n"
-	.string "TRAINER CARD!$"
+	.string "Génial ! J'ai pu voir la CARTE DRESSEUR de {STR_VAR_1} !$"
 
 CableClub_Text_GotToLookAtColoredTrainerCard:
-	.string "Score! Got to look at {STR_VAR_1}'s\n"
-	.string "TRAINER CARD!\p"
-	.string "It's a {STR_VAR_2} card!$"
+	.string "Génial ! J'ai pu voir la CARTE DRESSEUR de {STR_VAR_1} !\p"
+	.string "C'est une carte {STR_VAR_2} !$"
 
 BattleColosseum_2P_Text_TakePlaceStartBattle:
-	.string "Please take your place and start\n"
-	.string "your battle.$"
+	.string "Veuillez prendre place et commencer\n"
+	.string "votre combat.$"
 
 TradeCenter_Text_TakeSeatStartTrade:
-	.string "Please take your seat and start\n"
-	.string "your trade.$"
+	.string "Veuillez vous asseoir et commencer\n"
+	.string "votre échange.$"
 
 RecordCorner_Text_ThanksForComing:
-	.string "Thanks for coming.$"
+	.string "Merci d'être venu.$"
 
 CableClub_Text_TrainerCardDataOverwritten:
-	.string "The TRAINER CARD data will\n"
-	.string "be overwritten.$"
+	.string "Les données de la CARTE DRESSEUR vont\n"
+	.string "être écrasées.$"
 
 CableClub_Text_HopeToSeeYouAgain:
-	.string "I hope to see you again!$"
+	.string "J'espère vous revoir bientôt !$"
 
 CableClub_Text_NotSetUpForFarAwayRegion:
-	.string "I'm awfully sorry.\p"
-	.string "We're not set up to conduct trades\n"
-	.string "with TRAINERS far away in another\l"
-	.string "region yet…$"
+	.string "Je suis vraiment désolé.\p"
+	.string "Nous ne sommes pas encore prêts pour les échanges\n"
+	.string "avec des DRESSEURS d'une autre région lointaine…$"
 
 CableClub_Text_OtherTrainerNotReady:
-	.string "The other TRAINER is not ready.$"
+	.string "L'autre DRESSEUR n'est pas prêt.$"
 
 CableClub_Text_YouHaveAMonThatCantBeTaken:
-	.string "You have at least one POKéMON\n"
-	.string "that can't be taken.$"
+	.string "Vous avez au moins un POKéMON\n"
+	.string "qui ne peut pas être emmené.$"
 
 RecordCorner_Text_TakeSeatAndWait:
-	.string "Please take your seat and wait.$"
+	.string "Veuillez vous asseoir et attendre.$"
 
 RecordCorner_Text_PlayerSentOverOneX:
-	.string "{STR_VAR_1} sent over one\n"
+	.string "{STR_VAR_1} a envoyé un\n"
 	.string "{STR_VAR_2}.$"
 
 CableClub_Text_CantMixWithJapaneseGame:
-	.string "Sorry, there is a transmission error.\p"
-	.string "You may not mix records with  \n"
-	.string "Japanese Ruby or Sapphire games.\p"
-	.string "Also, you can't mix records with\n"
-	.string "Japanese Emerald and overseas Ruby\l"
-	.string "or Sapphire games at the same time.$"
+	.string "Désolé, il y a une erreur de transmission.\p"
+	.string "Vous ne pouvez pas mélanger les données avec\n"
+	.string "les jeux Rubis ou Saphir japonais.\p"
+	.string "De plus, vous ne pouvez pas mélanger les données avec\n"
+	.string "Émeraude japonaise et Rubis ou Saphir étrangers en même temps.$"
 
 CableClub_Text_AdapterNotConnected:
-	.string "The Wireless Adapter is not\n"
-	.string "connected properly.$"
+	.string "L'Adaptateur Sans Fil n'est pas\n"
+	.string "connecté correctement.$"
 
 CableClub_Text_ParticipantsStepUpToCounter:
-	.string "Participants are asked to step up\n"
-	.string "to the reception counter.$"
+	.string "Les participants sont priés de s'avancer\n"
+	.string "au comptoir de réception.$"
 
 @ Unused
 CableClub_Text_Hello:
-	.string "Hello!$"
+	.string "Bonjour !$"
 
 @ Unused
 CableClub_Text_PleaseWait:
-	.string "Please wait.$"
+	.string "Veuillez patienter.$"
 
 CableClub_Text_YouMayTradeHere::
-	.string "You may trade your POKéMON here\n"
-	.string "with another TRAINER.$"
+	.string "Vous pouvez échanger vos POKéMON ici\n"
+	.string "avec un autre DRESSEUR.$"
 
 CableClub_Text_YouMayBattleHere::
-	.string "You may battle with your friends\n"
-	.string "here.$"
+	.string "Vous pouvez combattre avec vos amis\n"
+	.string "ici.$"
 
 CableClub_Text_CanMakeBerryPowder::
-	.string "Two to five TRAINERS can make\n"
-	.string "BERRY POWDER together.$"
+	.string "Deux à cinq DRESSEURS peuvent fabriquer\n"
+	.string "de la POUDRE BAIE ensemble.$"
 
 CableClub_Text_CanMixRecords::
-	.string "The records of two to four players\n"
-	.string "can be mixed together.$"
+	.string "Les données de deux à quatre joueurs\n"
+	.string "peuvent être mélangées.$"
 
 @ Unused
 CableClub_Text_GuideToVariousServices:
-	.string "A guide to the WIRELESS CLUB's\n"
-	.string "various services.$"
+	.string "Un guide des différents services du\n"
+	.string "CLUB SANS FIL.$"
 
 CableClub_Text_CancelSelectedItem::
-	.string "Cancels the selected MENU item.$"
+	.string "Annule l'élément du MENU sélectionné.$"
 
 @ Unused
 CableClub_Text_WhichBattleMode:
-	.string "Which battle mode would you like?$"
+	.string "Quel mode de combat souhaitez-vous?$"
 
 @ Unused
 CableClub_Text_ReturnsToPreviousStep:
-	.string "Returns to the previous step.$"
+	.string "Retourne à l'étape précédente.$"
 
 CableClub_Text_NeedBerryForBerryCrush:
-	.string "To use the BERRY CRUSH service,\n"
-	.string "you must have at least one BERRY.$"
+	.string "Pour utiliser le service BERRY CRUSH,\n"
+	.string "vous devez avoir au moins une BAIE.$"
 
 CableClub_Text_NeedTwoMonsForUnionRoom:
-	.string "To enter the UNION ROOM, you must\n"
-	.string "have at least two POKéMON.$"
+	.string "Pour entrer dans la SALLE UNION, vous devez\n"
+	.string "avoir au moins deux POKéMON.$"
 
 CableClub_Text_NoEnigmaBerryInUnionRoom:
-	.string "No POKéMON holding the {STR_VAR_1}\n"
-	.string "BERRY may enter the UNION ROOM.$"
+	.string "Aucun POKéMON tenant la BAIE {STR_VAR_1}\n"
+	.string "ne peut entrer dans la SALLE UNION.$"
 
 CableClub_Text_UnionRoomAdapterNotConnected:
-	.string "This is the POKéMON WIRELESS CLUB\n"
-	.string "UNION ROOM.\p"
-	.string "Unfortunately, your Wireless\n"
-	.string "Adapter is not connected properly.\p"
-	.string "Please do come again.$"
+	.string "Ceci est la SALLE UNION du CLUB SANS FIL POKéMON\n"
+	.string ".\p"
+	.string "Malheureusement, votre Adaptateur Sans Fil\n"
+	.string "n'est pas connecté correctement.\p"
+	.string "Veuillez revenir nous voir.$"
 
 @ Unused
 CableClub_Text_OhExcuseMe:
 	.string "Oh…\n"
-	.string "Excuse me!$"
+	.string "Excusez-moi !$"
 
 CableClub_Text_PlayerIsWaiting:
-	.string "It appears as if {STR_VAR_1} is playing\n"
-	.string "right now.\l"
-	.string "Go for it!$"
+	.string "Il semble que {STR_VAR_1} joue\n"
+	.string "en ce moment.\l"
+	.string "Allez-y !$"
 
 MossdeepCity_GameCorner_1F_Text_DescribeWhichGame:
-	.string "I can explain game rules to you,\n"
-	.string "if you'd like.\p"
-	.string "Which game should I describe?$"
+	.string "Je peux vous expliquer les règles du jeu,\n"
+	.string "si vous le souhaitez.\p"
+	.string "Quel jeu dois-je décrire?$"
 
 MossdeepCity_GameCorner_1F_Text_PokemonJumpInfo:
-	.string "“POKéMON JUMP”\p"
-	.string "Make your POKéMON skip the VINE WHIP\n"
-	.string "rope with the A Button.\p"
-	.string "Only mini POKéMON around 28 inches\n"
-	.string "or less may participate.\p"
-	.string "POKéMON that only swim, burrow,\n"
-	.string "or fly are not good at jumping.\p"
-	.string "As a result, those POKéMON may not\n"
-	.string "participate.\p"
-	.string "Good things happen if everyone\n"
-	.string "jumps in time.$"
+	.string "« POKéMON JUMP »\p"
+	.string "Faites sauter votre POKéMON par-dessus la corde\n"
+	.string "FOUET LIANES avec le bouton A.\p"
+	.string "Seuls les mini-POKéMON d'environ 70 cm\n"
+	.string "ou moins peuvent participer.\p"
+	.string "Les POKéMON qui ne font que nager, creuser,\n"
+	.string "ou voler ne sont pas doués pour sauter.\p"
+	.string "En conséquence, ces POKéMON ne peuvent pas\n"
+	.string "participer.\p"
+	.string "De bonnes choses arrivent si tout le monde\n"
+	.string "saute en même temps.$"
 
 MossdeepCity_GameCorner_1F_Text_DodrioBerryPickingInfo:
-	.string "“DODRIO BERRY-PICKING”\p"
-	.string "Command DODRIO's three heads to\n"
-	.string "catch falling BERRIES.\p"
-	.string "Press right, up, or left on the\n"
-	.string "{PLUS} Control Pad to move the heads.\p"
-	.string "To play this game, you must have\n"
-	.string "a DODRIO.$"
+	.string "« DODRIO RAMASSE-BAIES »\p"
+	.string "Contrôlez les trois têtes de DODRIO pour\n"
+	.string "attraper les BAIES qui tombent.\p"
+	.string "Appuyez à droite, en haut ou à gauche sur la\n"
+	.string "croix directionnelle {PLUS} pour bouger les têtes.\p"
+	.string "Pour jouer à ce jeu, vous devez avoir\n"
+	.string "un DODRIO.$"
 
 MossdeepCity_GameCorner_1F_Text_TalkToOldManToPlay:
-	.string "If you want to play a game,\n"
-	.string "please tell the old man beside me.$"
+	.string "Si vous voulez jouer à un jeu,\n"
+	.string "veuillez le dire au vieil homme à côté de moi.$"
 
 MossdeepCity_GameCorner_1F_Text_WelcomeCanYouWait:
-	.string "Hi, welcome!\n"
-	.string "Are you here to play games using\l"
-	.string "Wireless Communication?\p"
-	.string "Can you wait just a little bit?$"
+	.string "Bonjour, bienvenue !\n"
+	.string "Êtes-vous ici pour jouer à des jeux via\l"
+	.string "la Communication Sans Fil ?\p"
+	.string "Pouvez-vous patienter un petit instant ?$"
 
 MossdeepCity_GameCorner_1F_Text_ComeAgain:
-	.string "All right, come again!$"
+	.string "Très bien, revenez nous voir !$"
 
 MossdeepCity_GameCorner_1F_Text_AdapterNotConnected:
-	.string "The Wireless Adapter isn't connected.\n"
-	.string "Come back when it's hooked up!$"
+	.string "L'Adaptateur Sans Fil n'est pas connecté.\n"
+	.string "Revenez quand il sera branché !$"
 
 MossdeepCity_GameCorner_1F_Text_PlayWhichGame:
-	.string "All right, which game did you want\n"
-	.string "to play?$"
+	.string "Très bien, à quel jeu voulez-vous\n"
+	.string "jouer?$"
 
 MossdeepCity_GameCorner_1F_Text_EnterWhichPokemon:
-	.string "Which POKéMON would you like to\n"
-	.string "enter?$"
+	.string "Quel POKéMON souhaitez-vous\n"
+	.string "inscrire?$"
 
 MossdeepCity_GameCorner_1F_Text_AllGoodToGo:
-	.string "Okay, you're all good to go.\n"
-	.string "Don't let the others beat you!$"
+	.string "C'est bon, vous êtes prêt.\n"
+	.string "Ne vous laissez pas battre par les autres !$"
 
 @ Unused
 MossdeepCity_GameCorner_1F_Text_LeavingDoComeAgain:
-	.string "Are you leaving now?\n"
-	.string "Do come again!$"
+	.string "Vous partez déjà ?\n"
+	.string "Revenez nous voir !$"
 
 MossdeepCity_GameCorner_1F_Text_ExplainRequiredMon:
-	.string "It doesn't look like you have any\n"
-	.string "POKéMON that you can enter…\p"
-	.string "Would you like me to explain what\n"
-	.string "kinds of POKéMON can enter?$"
+	.string "On dirait que vous n'avez aucun\n"
+	.string "POKéMON que vous pouvez inscrire…\p"
+	.string "Voulez-vous que je vous explique quels\n"
+	.string "POKéMON peuvent participer?$"
 
 MossdeepCity_GameCorner_1F_Text_ShortJumpingPokemonAllowed:
-	.string "“POKéMON JUMP” is open to POKéMON\n"
-	.string "around 28 inches or less.\p"
-	.string "What you can't enter are those\n"
-	.string "POKéMON that can't jump.\p"
-	.string "You know, like POKéMON that only\n"
-	.string "swim, burrow, or fly.\p"
-	.string "That's all you need to know.$"
+	.string "« POKéMON JUMP » est ouvert aux POKéMON\n"
+	.string "d'environ 70 cm ou moins.\p"
+	.string "Ceux que vous ne pouvez pas inscrire sont les\n"
+	.string "POKéMON qui ne peuvent pas sauter.\p"
+	.string "Vous savez, comme les POKéMON qui ne font que\n"
+	.string "nager, creuser ou voler.\p"
+	.string "C'est tout ce que vous devez savoir.$"
 
 MossdeepCity_GameCorner_1F_Text_OnlyDodrioAllowed:
-	.string "DODRIO BERRY-PICKING is a game that \n"
-	.string "only DODRIO may enter.$"
+	.string "DODRIO RAMASSE-BAIES est un jeu auquel\n"
+	.string "seul DODRIO peut participer.$"
 
 @ Unused
 MossdeepCity_GameCorner_1F_Text_RetryPlease:
-	.string "Could you retry this from the start\n"
-	.string "again, please?$"
+	.string "Pourriez-vous recommencer depuis le début\n"
+	.string "s'il vous plaît ?$"
 
 CableClub_Text_WelcomeWhichDirectCornerRoom:
-	.string "Welcome to the POKéMON WIRELESS\n"
-	.string "CLUB DIRECT CORNER.\p"
-	.string "You may interact directly with\n"
-	.string "your friends here.\p"
-	.string "Which room would you like to\n"
-	.string "enter?$"
+	.string "Bienvenue au CLUB SANS FIL POKéMON\n"
+	.string "COIN DIRECT.\p"
+	.string "Vous pouvez interagir directement avec\n"
+	.string "vos amis ici.\p"
+	.string "Dans quelle salle souhaitez-vous\n"
+	.string "entrer ?$"
 
 CableClub_Text_TradePokemon:
-	.string "Would you like to trade POKéMON?$"
+	.string "Voulez-vous échanger des POKéMON ?$"
 
 CableClub_Text_PlayWhichBattleMode:
-	.string "Which Battle Mode would you like\n"
-	.string "to play?$"
+	.string "Quel mode de combat souhaitez-vous\n"
+	.string "jouer ?$"
 
 CableClub_Text_AccessRecordCorner:
-	.string "Would you like to access\n"
-	.string "the RECORD CORNER?$"
+	.string "Voulez-vous accéder au\n"
+	.string "COIN ENREGISTREMENT ?$"
 
 CableClub_Text_UseBerryCrush:
-	.string "Would you like to use the\n"
-	.string "BERRY CRUSH System?$"
+	.string "Voulez-vous utiliser le système\n"
+	.string "BERRY CRUSH ?$"
 
 CableClub_Text_ExplainBattleModes:
+	.string "Il y a trois modes de combat.\p"
+	.string "LE COMBAT SOLO est pour deux DRESSEURS\n"
+	.string "ayant chacun un ou plusieurs POKéMON.\p"
+	.string "Chaque DRESSEUR peut avoir un POKéMON\n"
+	.string "en combat à la fois.\p"
+	.string "LE COMBAT DUO est pour deux DRESSEURS\n"
+	.string "ayant chacun deux POKéMON ou plus.\p"
+	.string "Chaque DRESSEUR envoie deux POKéMON\n"
+	.string "en combat à la fois.\p"
+	.string "LE COMBAT MULTI est pour quatre DRESSEURS\n"
+	.string "ayant chacun un ou plusieurs POKéMON.\p"
+	.string "Chaque DRESSEUR peut avoir un POKéMON\n"
+	.string "en combat à la fois.$"
+
+CableClub_Text_ChooseGroupLeaderOfTwo:
+	.string "Veuillez décider lequel de vous deux\n"
+	.string "sera le LEADER.\p"
+	.string "L'autre joueur doit alors choisir\n"
+	.string "« REJOINDRE LE GROUPE ».$"
+
+CableClub_Text_ChooseGroupLeaderOfFour:
+	.string "Veuillez décider lequel de vous quatre\n"
+	.string "sera le LEADER DU GROUPE.\p"
+	.string "Les autres joueurs doivent alors choisir\n"
+	.string "« REJOINDRE LE GROUPE ».$"
+
+CableClub_Text_ChooseGroupLeader:
+	.string "Veuillez décider lequel d'entre vous\n"
+	.string "sera le LEADER DU GROUPE.\p"
+	.string "Les autres joueurs doivent alors choisir\n"
+	.string "« REJOINDRE LE GROUPE ».$"
+
+CableClub_Text_WelcomeUnionRoomEnter:
+	.string "Bienvenue dans la SALLE UNION du CLUB SANS FIL\n"
+	.string "POKéMON.\p"
+	.string "Vous pouvez interagir directement avec\n"
+	.string "d'autres DRESSEURS ici, certains que\l"
+	.string "vous ne connaissez peut-être même pas.\p"
+	.string "Voulez-vous entrer dans la SALLE ?$"
+
+CableClub_Text_UnionRoomInfo:
+	.string "Les DRESSEURS dans la SALLE UNION\n"
+	.string "seront les joueurs autour de vous\l"
+	.string "qui sont aussi entrés dans la SALLE.\p"
+	.string "Vous pouvez faire toutes sortes de choses\n"
+	.string "ici, comme échanger des salutations.\p"
+	.string "Vous pouvez inscrire deux POKéMON jusqu'au\n"
+	.string "Niv. 30 pour un combat en un contre un.\p"
+	.string "Vous pouvez participer à une discussion avec\n"
+	.string "deux à cinq personnes.\p"
+	.string "Ou, vous pouvez enregistrer un POKéMON pour\n"
+	.string "l'échange.\p"
+	.string "Voulez-vous entrer dans la SALLE ?$"
+
+CableClub_Text_EnjoyUnionRoom:
+	.string "J'espère que vous apprécierez votre temps dans\n"
+	.string "la SALLE UNION.$"
+
+CableClub_Text_FirstTimeRightThisWay:
+	.string "Bonjour !\n"
+	.string "Je m'appelle TEALA.\p"
+	.string "C'est sûrement votre première fois\n"
+	.string "ici.\p"
+	.string "Je vais vous montrer comment fonctionne le\n"
+	.string "Système de Communication Sans Fil.\p"
+	.string "D'abord, je dois vous montrer cet étage\n"
+	.string "de notre CENTRE POKéMON.\p"
+	.string "Par ici, s'il vous plaît.$"
+
+CableClub_Text_ExplainWirelessClubFirstTime:
+	.string "Au dernier étage, il y a deux salles\n"
+	.string "et le WONDERTRADE.\p"
+	.string "D'abord, le système WONDERTRADE.\p"
+	.string "L'homme au comptoir peut vous l'expliquer\n"
+	.string "en détail, il en sait plus que moi !\p"
+	.string "Allez lui parler.\p"
+	.string "Ensuite, la salle au centre.\n"
+	.string "C'est la SALLE UNION.\p"
 	.string "There are three Battle Modes.\p"
 	.string "SINGLE BATTLE is for two TRAINERS\n"
 	.string "with one or more POKéMON each.\p"
