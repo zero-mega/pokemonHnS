@@ -54,47 +54,46 @@ CeladonCity_House1_EventScript_Sign::
 	end
 
 CeladonCity_House1_Text_ChefEatathon:
-	.string "Hi!\p"
-	.string "We're holding an eatathon contest.\p"
-	.string "We can't serve you right now.\n"
-	.string "Sorry.$"
+	.string "Salut !\p"
+	.string "Nous organisons un concours de gloutonnerie.\p"
+	.string "Nous ne pouvons pas vous servir maintenant.\n"
+	.string "Désolé.$"
 
 CeladonCity_House1_Text_Fisher1Snarfle:
-	.string "…Snarfle, chew…$"
+	.string "…Miam, mâche…$"
 
 CeladonCity_House1_Text_Fisher1Concentration:
-	.string "Don't talk to me!\p"
-	.string "You'll break my concentration!$"
+	.string "Ne me parle pas !\p"
+	.string "Tu vas me déconcentrer !$"
 
 CeladonCity_House1_Text_Fisher2GulpChew:
-	.string "…Gulp… Chew…$"
+	.string "…Glu, mâche…$"
 
 CeladonCity_House1_Text_Fisher2Quantity:
-	.string "I take quantity over quality!\p"
-	.string "I'm happy when I'm full!$"
+	.string "Je préfère la quantité à la qualité !\p"
+	.string "Je suis content quand je suis rassasié !$"
 
 CeladonCity_House1_Text_Fisher3MunchMunch:
-	.string "Munch, munch…$"
+	.string "Miam, miam…$"
 
 CeladonCity_House1_Text_Fisher3GoldenrodIsBest:
-	.string "The food is good here, but\n"
-	.string "GOLDENROD has the best food\l"
-	.string "anywhere.$"
+	.string "La nourriture est bonne ici, mais\n"
+	.string "DOUBLONVILLE a la meilleure cuisine\l"
+	.string "de toutes.$"
 
 CeladonCity_House1_Text_TeacherCrunchCrunch:
-	.string "Crunch… Crunch…$"
+	.string "Crounch… Crounch…$"
 
 CeladonCity_House1_Text_TeacherNoCoinCase:
-	.string "Nobody here will give you a COIN\n"
-	.string "CASE. You should look in JOHTO.$"
+	.string "Personne ici ne te donnera de BOÎTE\n"
+	.string "JETONS. Tu devrais chercher à JOHTO.$"
 
 CeladonCity_House1_Text_TeacherKeepEating:
-	.string "Crunch… Crunch…\p"
-	.string "I can keep eating!\p"
-	.string "More, CHEF!$"
+	.string "Crounch… Crounch…\p"
+	.string "Je peux continuer à manger !\p"
+	.string "Encore, CHEF !$"
 
 CeladonCity_House1_Text_EatathonContestPoster:
-	.string "Eatathon Contest! No time limit!\p"
-	.string "A battle without end! The biggest\n"
-	.string "muncher gets it all for free!$"
-
+	.string "Concours de Gloutonnerie ! Pas de limite de temps !\p"
+	.string "Un festin sans fin ! Le plus gros\n"
+	.string "mangeur gagne tout gratuitement !$"

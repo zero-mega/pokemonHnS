@@ -21,37 +21,38 @@ CeladonCity_PokemonCenter_EventScript_Eusine::
 	end
 
 CeladonCity_PokemonCenter1F_Text_CooltrainerF:
-	.string "ERIKA is a master of grass\n"
-	.string "POKéMON.\p"
-	.string "She'll make you pay if you don't\n"
-	.string "watch yourself.$"
+	.string "ERIKA est une maîtresse des\n"
+	.string "POKéMON de type Plante.\p"
+	.string "Elle te fera payer si tu ne fais\n"
+	.string "pas attention.$"
 
 CeladonCity_PokemonCenter1F_Text_Pharmacist:
-	.string "TEAM ROCKET's hideout is in the\n"
-	.string "basement of the GAME CORNER.\p"
-	.string "Oh, wait. That was three years\n"
-	.string "ago.$"
+	.string "La planque de la TEAM ROCKET est\n"
+	.string "au sous-sol du CASINO.\p"
+	.string "Oh, attends. C'était il y a trois\n"
+	.string "ans.$"
 
 Celadon_Text_Eusine1:
-	.string "EUSINE: Hi!\p"
-	.string "I'm back visiting my hometown.\p"
-	.string "It's been quite a while.$"
+	.string "EUSINE : Salut !\p"
+	.string "Je suis de retour dans ma ville\n"
+	.string "natale.\p"
+	.string "Ça fait un bon moment.$"
 
 Celadon_Text_EusineLeaves:
-	.string "{PLAYER}, have you heard?\p"
-	.string "There have been fresh rumors of a\n"
-	.string "rainbow-colored POKéMON\n"
-	.string "appearing at TIN TOWER.\p"
-	.string "I've just had my party healed,\n"
-	.string "so now I'm headed to ECRUTEAK.\p"
-	.string "I'll be seeing you, {PLAYER}!$"
+	.string "{PLAYER}, tu as entendu ?\p"
+	.string "Il y a de nouvelles rumeurs sur\n"
+	.string "un POKéMON aux couleurs de l'arc-\n"
+	.string "en-ciel au TOUR CENDRÉE.\p"
+	.string "Je viens de soigner mon équipe,\n"
+	.string "je pars donc pour IRISIA.\p"
+	.string "À bientôt, {PLAYER} !$"
 
 Celadon_Text_NoBeasts:
-	.string "Oh, by the way, {PLAYER}.\p"
-	.string "Have you caught the legendary\n"
-	.string "POKéMON RAIKOU and ENTEI?\p"
+	.string "Au fait, {PLAYER}.\p"
+	.string "As-tu attrapé les légendaires\n"
+	.string "POKéMON RAIKOU et ENTEI ?\p"
 	.string "<……><……><……>\p"
-	.string "Okay…\p"
-	.string "If you catch even one, I hope\n"
-	.string "that you'll inform me.\p"
-	.string "I'm counting on you, {PLAYER}!$"
+	.string "D'accord…\p"
+	.string "Si tu en attrapes au moins un,\n"
+	.string "j'espère que tu me le diras.\p"
+	.string "Je compte sur toi, {PLAYER} !$"

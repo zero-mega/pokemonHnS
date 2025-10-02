@@ -39,30 +39,29 @@ CaveOfOrigin_UnusedRubySapphireMap1_Kirlia::
 	end
 
 CaveOfOrigin_UnusedRubySapphireMap1_Scientist1_Text:
-	.string "I have seen this kind of rock structure\n"
-	.string "in other places, like in ROUTE 132.\p"
-	.string "What is the meaning of these rock\n"
-	.string "formations?\p"
-	.string "I'm totally sure that they are man-made.\n"
-	.string "Do you have any clue?$"
+	.string "J'ai déjà vu ce genre de structure rocheuse\n"
+	.string "à d'autres endroits, comme sur la ROUTE 132.\p"
+	.string "Quelle est la signification de ces\n"
+	.string "formations rocheuses ?\p"
+	.string "Je suis absolument certain qu'elles sont\n"
+	.string "d'origine humaine. As-tu une idée ?$"
 
 CaveOfOrigin_UnusedRubySapphireMap1_Scientist2_Text:
-	.string "Every time there's a thunderstorm, some\n"
-	.string "lighting strikes end up hitting this\l"
-	.string "small island. Isn't that suspicious?\p"
-	.string "We think there's a POKéMON living\n"
-	.string "here whose only nourishment are\l"
-	.string "lightning strikes.$"
+	.string "À chaque orage, certains éclairs finissent\n"
+	.string "par frapper cette petite île. N'est-ce pas\l"
+	.string "suspect ?\p"
+	.string "Nous pensons qu'il y a un POKéMON qui vit\n"
+	.string "ici et qui ne se nourrit que de coups\l"
+	.string "de foudre.$"
 
 CaveOfOrigin_UnusedRubySapphireMap1_Scientist3_Text:
-	.string "We are researching a strange\n"
-	.string "phenomenon that has been happening\l"
-	.string "for a few months. This island is\l"
-	.string "unhabited by humans, so something\l"
-	.string "happening here is extremely myterious,\l"
-	.string "to say the least.\p"
-	.string "KIRI is also looking for clues.\n"
-	.string "We need to unravel this mystery.$"
+	.string "Nous étudions un étrange phénomène\n"
+	.string "qui se produit depuis quelques mois.\l"
+	.string "Cette île n'est habitée par aucun humain,\l"
+	.string "donc quelque chose qui s'y passe est\l"
+	.string "extrêmement mystérieux, pour le moins.\p"
+	.string "KIRI cherche aussi des indices.\n"
+	.string "Nous devons élucider ce mystère.$"
 
 CaveOfOrigin_UnusedRubySapphireMap1_Kirlia_Text:
-	.string "KIRI: Kir!$"
+	.string "KIRI : Kir !$"

@@ -129,34 +129,32 @@ DragonsDen_Cavern_Movement_ClairLeaveRight:
 	step_end
 
 DragonsDen_Cavern_Text_ClairGiveDragonclaw:
-    .string "CLAIR: WAIT!\p"
-	.string "I'm sorry about this.\n"
-    .string "Here, take this as my apology.$"
+    .string "SANDRA : ATTENDS !\p"
+    .string "Je suis désolée pour tout ça.\n"
+    .string "Tiens, prends ceci en guise d'excuse.$"
 
 DragonsDen_Cavern_Text_ClairDescribeDragonclaw:
-    .string "That contains DRAGON CLAW.\p"
-    .string "No, it doesn't have anything to\n"
-    .string "do with my nails.\p"
-    .string "If you don't want it, you don't\n"
-    .string "have to take it.$"
+    .string "Ceci contient DRACO-GRIFFE.\p"
+    .string "Non, ça n'a rien à voir avec\n"
+    .string "mes ongles.\p"
+    .string "Si tu n'en veux pas, tu n'es pas\n"
+    .string "obligé de le prendre.$"
 
 DragonsDen_Cavern_Text_ClairWhatsTheMatter:
-    .string "What's the matter? Aren't\n"
-    .string "you going on to the POKéMON\l"
-    .string "LEAGUE?\p"
-    .string "After you become CHAMPION, you\n"
-    .string "can rematch any GYM LEADER you\l"
-    .string "want.\p"
-    .string "Go to the POKéMON LEAGUE.\p"
-    .string "Do you know how to get there?\p"
-    .string "From here, go to NEW BARK TOWN.\p"
-    .string "Then SURF east to POKéMON LEAGUE.\p"
-    .string "The route there is very tough.\p"
-    .string "Don't you dare lose at the POKéMON\n"
-    .string "LEAGUE!\p"
-    .string "If you do, I'll feel even worse\n"
-    .string "about having lost to you!\p"
-    .string "Give it everything you've got.$"
+    .string "Qu'est-ce qu'il y a ? Tu ne vas\n"
+    .string "pas à la LIGUE POKéMON ?\p"
+    .string "Après être devenu CHAMPION, tu\n"
+    .string "pourras affronter à nouveau\l"
+    .string "n'importe quel CHAMPION d'ARÈNE.\p"
+    .string "Va à la LIGUE POKéMON.\p"
+    .string "Tu sais comment y aller ?\p"
+    .string "D'ici, va à BOURG GEON.\p"
+    .string "Puis SURFE vers l'est jusqu'à la LIGUE POKéMON.\p"
+    .string "La route est très difficile.\p"
+    .string "N'ose pas perdre à la LIGUE POKéMON !\p"
+    .string "Si tu perds, je me sentirai encore\n"
+    .string "plus mal d'avoir perdu contre toi !\p"
+    .string "Donne tout ce que tu as !$"
 
 DragonsDen_Cavern_EventScript_Darin::
 	trainerbattle_single TRAINER_DARIN DragonsDen_Cavern_Text_CooltrainermDarinSeen, DragonsDen_Cavern_Text_CooltrainermDarinBeaten
@@ -195,68 +193,68 @@ DragonsDen_Cavern_EventScript_Item_PP_Max::
 
 
 DragonsDen_Cavern_Text_DragonShrineSign:
-    .string "DRAGON SHRINE\p"
-    .string "A shrine honoring the dragon\n"
-    .string "POKéMON\p"
-    .string "said to have lived in DRAGON'S\n"
-    .string "DEN.$"
+    .string "SANCTUAIRE DRAGON\p"
+    .string "Un sanctuaire honorant les\n"
+    .string "POKéMON dragons\p"
+    .string "qui auraient vécu dans l'ANTRE\n"
+    .string "DU DRAGON.$"
 
 DragonsDen_Cavern_Text_SilverTraining1:
     .string "…\n"
-    .string "What? {PLAYER}?\p"
-    .string "…No, I won't battle you now…\p"
-    .string "My POKéMON aren't ready to beat\n"
-    .string "you.\p"
-    .string "I can't push them too hard now.\p"
-    .string "I have to be disciplined to become\n"
-    .string "the greatest POKéMON trainer…$"
+    .string "Quoi ? {PLAYER} ?\p"
+    .string "…Non, je ne me battrai pas contre toi maintenant…\p"
+    .string "Mes POKéMON ne sont pas prêts à te\n"
+    .string "battre.\p"
+    .string "Je ne peux pas trop les pousser maintenant.\p"
+    .string "Je dois être discipliné pour devenir\n"
+    .string "le meilleur dresseur de POKéMON…$"
 
 DragonsDen_Cavern_Text_SilverTraining2:
     .string "…\p"
-    .string "Whew…\p"
-    .string "Learn to stay out of my way…$"
+    .string "Ouf…\p"
+    .string "Apprends à rester hors de mon chemin…$"
 
 DragonsDen_Cavern_Text_CooltrainermDarinSeen:
-    .string "You! How dare you enter\n"
-    .string "uninvited!$"
+    .string "Toi ! Comment oses-tu entrer\n"
+    .string "sans invitation !$"
 
 DragonsDen_Cavern_Text_CooltrainermDarinBeaten:
-    .string "S-strong!$"
+    .string "T-tellement fort !$"
 
 DragonsDen_Cavern_Text_CooltrainermDarinAfter:
-    .string "The SHRINE ahead is home to the\n"
-    .string "MASTER of our dragon-user clan.\p"
-    .string "You're not allowed to just go in!$"
+    .string "Le SANCTUAIRE devant abrite le\n"
+    .string "MAÎTRE de notre clan de dresseurs de dragons.\p"
+    .string "Tu n'as pas le droit d'y entrer comme ça !$"
 
 DragonsDen_Cavern_Text_CooltrainerfCaraSeen:
-    .string "You shouldn't be in here!$"
+    .string "Tu ne devrais pas être ici !$"
 
 DragonsDen_Cavern_Text_CooltrainerfCaraBeaten:
-    .string "Oh yikes, I lost!$"
+    .string "Oh mince, j'ai perdu !$"
 
 DragonsDen_Cavern_Text_CooltrainerfCaraAfter:
-    .string "Soon I'm going to get permission\n"
-    .string "from our MASTER to use dragons.\p"
-    .string "When I do, I'm going to become an\n"
-    .string "admirable dragon trainer and gain\l"
-    .string "our MASTER's approval.$"
+    .string "Bientôt, j'aurai la permission de\n"
+    .string "notre MAÎTRE pour utiliser des dragons.\p"
+    .string "Quand ce sera fait, je deviendrai une\n"
+    .string "dresseuse de dragons admirable et j'aurai\l"
+    .string "l'approbation de notre MAÎTRE.$"
 
 DragonsDen_Cavern_Text_TwinsLeaandPia1Seen:
-    .string "It's a stranger we don't know.$"
+    .string "C'est un inconnu qu'on ne connaît pas.$"
 
 DragonsDen_Cavern_Text_TwinsLeaandPia1Beaten:
-    .string "Ouchies.$"
+    .string "Aïe aïe aïe.$"
 
 DragonsDen_Cavern_Text_TwinsLeaandPia1After:
-    .string "It was like having to battle\n"
-    .string "LANCE.$"
+    .string "C'était comme devoir combattre\n"
+    .string "PETER.$"
 
 DragonsDen_Cavern_Text_TwinsLeaandPia2Seen:
-    .string "Who are you?$"
+    .string "Qui es-tu ?$"
 
 DragonsDen_Cavern_Text_TwinsLeaandPia2Beaten:
-    .string "Meanie.$"
+    .string "Pas gentil.$"
 
 DragonsDen_Cavern_Text_TwinsLeaandPia2After:
-    .string "We'll tell on you.\p"
-    .string "MASTER will be angry with you.$"
+    .string "On va le dire à quelqu'un.\p"
+    .string "Le MAÎTRE sera fâché contre toi.$"

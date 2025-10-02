@@ -26,56 +26,56 @@ CeladonCity_Apartments_3F_EventScript_CharacterDesigner::
 	end
 
 GameFreak_Text_GameDesigner:
-	.string "Is that right?\p"
-	.string "I'm the GAME DESIGNER!\p"
-	.string "Filling up your POKéDEX is tough,\n"
-	.string "but don't give up!$"
+	.string "Ah bon ?\p"
+	.string "Je suis le GAME DESIGNER !\p"
+	.string "Remplir ton POKéDEX est difficile,\n"
+	.string "mais n'abandonne pas !$"
 
 GameFreak_Text_GameDesignerCompletedPokedex:
-	.string "Wow! Excellent! You completed\n"
-	.string "your POKéDEX!\p"
-	.string "Congratulations!$"
+	.string "Waouh ! Excellent ! Tu as complété\n"
+	.string "ton POKéDEX !\p"
+	.string "Félicitations !$"
 
 GameFreak_Text_GraphicArtist:
-	.string "I'm the GRAPHIC ARTIST.\p"
-	.string "I drew you!$"
+	.string "Je suis le GRAPHISTE.\p"
+	.string "C'est moi qui t'ai dessiné !$"
 
 GameFreak_Text_GraphicArtistPrintDiploma:
-	.string "I'm the GRAPHIC ARTIST.\p"
-	.string "Oh, you completed your POKéDEX?\p"
-	.string "Want me to print out your\n"
-	.string "DIPLOMA?$"
+	.string "Je suis le GRAPHISTE.\p"
+	.string "Oh, tu as complété ton POKéDEX ?\p"
+	.string "Veux-tu que j'imprime ton\n"
+	.string "DIPLÔME ?$"
 
 GameFreak_Text_GraphicArtistRefused:
-	.string "Give me a shout if you want your\n"
-	.string "DIPLOMA printed.$"
+	.string "Fais-moi signe si tu veux que\n"
+	.string "j'imprime ton DIPLÔME.$"
 
 GameFreak_Text_GraphicArtistError:
-	.string "Something's wrong. I'll have to\n"
-	.string "cancel printing.$"
+	.string "Quelque chose ne va pas. Je vais\n"
+	.string "devoir annuler l'impression.$"
 
 GameFreak_Text_Programmer:
-	.string "Who, me? I'm the PROGRAMMER.\p"
-	.string "Play the slot machines!$"
+	.string "Qui, moi ? Je suis le PROGRAMMEUR.\p"
+	.string "Joue aux machines à sous !$"
 
 GameFreak_Text_CharacterDesigner:
-	.string "Aren't the TWINS adorable?\p"
-	.string "JASMINE's pretty too.\p"
-	.string "Oh, I love them!$"
+	.string "Elles ne sont pas adorables, les JUMELLES ?\p"
+	.string "JASMINE est jolie aussi.\p"
+	.string "Oh, je les adore !$"
 
 CeladonMansion3F_Text_DevRoomSign:
-	.string "GAME FREAK DEVELOPMENT ROOM$"
+	.string "SALLE DE DÉVELOPPEMENT GAME FREAK$"
 
 CeladonMansion3F_Text_Drawing:
-	.string "It's a detailed drawing of a\n"
-	.string "pretty girl.$"
+	.string "C'est un dessin détaillé d'une\n"
+	.string "jolie fille.$"
 
 CeladonMansion3F_Text_GameProgram:
-	.string "It's the game program. Messing\n"
-	.string "with it could put a bug in the\n"
-	.string "game!$"
+	.string "C'est le programme du jeu. Y toucher\n"
+	.string "pourrait provoquer un bug dans le\n"
+	.string "jeu !$"
 
 CeladonMansion3F_Text_ReferenceMaterial:
-	.string "It's crammed with reference\n"
-	.string "materials. There's even a\n"
-	.string "POKé DOLL.$"
+	.string "C'est rempli de documents de\n"
+	.string "référence. Il y a même une\n"
+	.string "POKé POUPÉE.$"

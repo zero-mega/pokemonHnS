@@ -136,42 +136,42 @@ Route39_EventScript_BaobaIntro::
 	end
 
 Route39_Text_ChooseLegend::
-	.string "BAOBA: GOOD HEAVENS! Did that\n"
-	.string "shadow belong to a POKéMON?\p"
-	.string "Did you get a good look at it?\n"
-	.string "I can't tell what color it was...$"
+	.string "BAOBA: BON DIEU ! Cette ombre\n"
+	.string "appartenait-elle à un POKéMON ?\p"
+	.string "As-tu bien pu la voir ?\n"
+	.string "Je ne peux pas dire de quelle couleur elle était...$"
 
 Route39_Text_BaobaIntro::
-	.string "How strange...\p"
-	.string "...Ohh!\n"
-	.string "What you are holding is...\l"
-	.string "what they call... a POKéDEX!\p"
-	.string "Haven't seen one of those in ages.\p"
-	.string "My name is BAOBA!\n"
-	.string "I used to run a SAFARI ZONE in\l"
-	.string "FUCHSIA CITY, but it was becoming\l"
-	.string "out of date with new entertainment\l"
-	.string "options coming out.\p"
-	.string "I decided to go overseas to learn\n"
-	.string "the newest technology and open a\l"
-	.string "state-of-the-art SAFARI ZONE\l"
-	.string "in CIANWOOD.\p"
-	.string "It may be more than a coincidence\n"
-	.string "that we are chatting.\p"
-	.string "Why don't we register each other's\n"
-	.string "numbers in the Pokégear?\p"
-	.string "I can give you a call once the\n"
-	.string "SAFARI ZONE is open before I call\l"
-	.string "anyone else!$"
+	.string "Comme c'est étrange...\p"
+	.string "...Ohh !\n"
+	.string "Ce que tu tiens est...\l"
+	.string "ce qu'on appelle... un POKéDEX !\p"
+	.string "Je n'en ai pas vu depuis des lustres.\p"
+	.string "Mon nom est BAOBA !\n"
+	.string "Je dirigeais une ZONE SAFARI à\l"
+	.string "PARMANIE, mais elle devenait\l"
+	.string "obsolète avec les nouvelles options\l"
+	.string "de divertissement qui arrivent.\p"
+	.string "J'ai décidé d'aller à l'étranger pour apprendre\n"
+	.string "la technologie la plus récente et ouvrir une\l"
+	.string "ZONE SAFARI de pointe\l"
+	.string "à IRISIA.\p"
+	.string "Ce n'est peut-être pas une coïncidence\n"
+	.string "que nous bavardions.\p"
+	.string "Pourquoi ne pas enregistrer nos\n"
+	.string "numéros dans le POKéNAV ?\p"
+	.string "Je peux t'appeler une fois que la\n"
+	.string "ZONE SAFARI est ouverte avant d'appeler\l"
+	.string "qui que ce soit d'autre !$"
 
 Route39_Text_Registered:
-	.string "{PLAYER} registered BAOBA\n"
-	.string "in the POKéGEAR!$"
+	.string "{PLAYER} a enregistré BAOBA\n"
+	.string "dans le POKéNAV !$"
 
 
 Route39_Text_WillCall:
-	.string "BAOBA: I'll let you know\n"
-	.string "on the POKéGEAR soon!$"
+	.string "BAOBA: Je te ferai savoir\n"
+	.string "sur le POKéNAV bientôt !$"
 
 Route39_Movement_BaobaLeave:
 	walk_left
@@ -221,8 +221,8 @@ Route39_EventScript_Woman::
 	end
 
 Route39_Text_Woman:
-	.string "That shadow... Maybe it was a giant\n"
-	.string "PIDGEY?$"
+	.string "Cette ombre... Peut-être que c'était un\n"
+	.string "ROUCOUPS géant ?$"
 
 Route39_EventScript_Miltank::
 	lock
@@ -235,7 +235,7 @@ Route39_EventScript_Miltank::
 	end
 
 Route39_Text_Miltank:
-	.string "MILTANK: Mooo!$"
+	.string "ÉCRÉMEUH: Mooo !$"
 
 Route39_EventScript_Eugene::
 	trainerbattle_single TRAINER_EUGENE, Route39_Text_SailorEugeneSeen, Route39_Text_SailorEugeneBeaten
@@ -243,11 +243,11 @@ Route39_EventScript_Eugene::
 	end
 
 Route39_Text_SailorEugeneSeen:
-	.string "I just got back to OLIVINE.\p"
-	.string "So how about a POKéMON battle?$"
+	.string "Je viens de rentrer à OLIVILLE.\p"
+	.string "Alors, que dirais-tu d'un combat POKéMON ?$"
 
 Route39_Text_SailorEugeneBeaten:
-	.string "Awaaargh!$"
+	.string "Awaaargh !$"
 
 Route39_Text_SailorEugeneAfter:
 	.string "My POKéMON were caught and\n"

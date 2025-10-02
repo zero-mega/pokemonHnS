@@ -58,28 +58,28 @@ PewterCity_EventScript_Cooltrainer::
 	end
 
 PewterCity_Text_CooltrainerF:
-	.string "Have you visited PEWTER GYM?\p"
-	.string "The LEADER uses rock-type POKéMON.$"
+	.string "As-tu visité l'ARÈNE D'ARGENTA ?\p"
+	.string "Le CHAMPION utilise des POKéMON de type ROCHE.$"
 
 PewterCity_Text_BugCatcher:
-	.string "At night, CLEFAIRY come out to play at\n"
-	.string "MT.MOON.\p"
-	.string "But not every night.$"
+	.string "La nuit, les MÉLOFÉE sortent jouer au\n"
+	.string "MT. SELENITE.\p"
+	.string "Mais pas toutes les nuits.$"
 
 PewterCity_Text_Gramps:
-	.string "Ah, you came all the way out here from\n"
-	.string "JOHTO?\p"
-	.string "That brings back memories. When I was\n"
-	.string "young, I went to JOHTO to train.\p"
-	.string "You remind me so much of what I was like\n"
-	.string "as a young man.\p"
-	.string "Here. I want you to have this item I\n"
-	.string "found in JOHTO.$"
+	.string "Ah, tu es venu jusqu'ici depuis\n"
+	.string "JOHTO ?\p"
+	.string "Ça me rappelle des souvenirs. Quand j'étais\n"
+	.string "jeune, je suis allé à JOHTO pour m'entraîner.\p"
+	.string "Tu me rappelles tellement ce que j'étais\n"
+	.string "quand j'étais jeune homme.\p"
+	.string "Tiens. Je veux que tu aies cet objet que j'ai\n"
+	.string "trouvé à JOHTO.$"
 
 PewterCity_Text_Gramps_GotSilverWing:
-	.string "Going to new, unknown places and seeing\n"
-	.string "new people…\p"
-	.string "Those are the joys of travel.$"
+	.string "Aller dans de nouveaux endroits inconnus et voir\n"
+	.string "de nouvelles personnes…\p"
+	.string "Ce sont les joies du voyage.$"
 
 PewterCity_EventScript_CitySign::
 	msgbox PewterCity_Text_Sign, MSGBOX_NPC
@@ -102,23 +102,23 @@ PewterCity_EventScript_WelcomeSign::
 	end
 
 PewterCity_Text_Sign:
-	.string "PEWTER CITY\n"
-	.string "A Stone Gray City$"
+	.string "ARGENTA\n"
+	.string "Une Ville Gris Pierre$"
 
 PewterCity_Text_GymSign:
-	.string "PEWTER CITY POKéMON GYM\n"
-	.string "LEADER: BROCK\p"
-	.string "The Rock Solid POKéMON Trainer$"
+	.string "ARÈNE POKéMON D'ARGENTA\n"
+	.string "CHAMPION: PIERRE\p"
+	.string "Le Dresseur POKéMON Solide comme un Roc$"
 
 PewterCity_Text_MuseumSign:
-	.string "There's a notice here…\p"
-	.string "PEWTER MUSEUM OF SCIENCE is closed for\n"
-	.string "renovations…$"
+	.string "Il y a un avis ici…\p"
+	.string "Le MUSÉE DES SCIENCES D'ARGENTA est fermé pour\n"
+	.string "rénovations…$"
 
 PewterCity_Text_MtMoonGiftShopSign:
-	.string "There's a notice here…\p"
-	.string "MT.MOON GIFT SHOP NOW OPEN!$"
+	.string "Il y a un avis ici…\p"
+	.string "BOUTIQUE DE SOUVENIRS DU MT. SELENITE OUVERTE !$"
 
 PewterCity_Text_WelcomeSign:
-	.string "WELCOME TO PEWTER CITY!$"
+	.string "BIENVENUE À ARGENTA !$"
 

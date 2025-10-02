@@ -38,17 +38,17 @@ BlackthornCity_EventScript_Call::
 	end
 
 BlackthornCity_Text_BaobaCall:
-	.string "WARDEN BAOBA: {PLAYER}!\p"
-	.string "This is WARDEN BAOBA.\p"
-	.string "I'm calling to tell you that\n"
-	.string "the SAFARI ZONE has expanded!\p"
-	.string "Please come visit!$"
+	.string "GARDIEN BAOBA : {PLAYER} !\p"
+	.string "C'est le GARDIEN BAOBA.\p"
+	.string "Je t'appelle pour t'annoncer que\n"
+	.string "la ZONE SAFARI s'est agrandie !\p"
+	.string "Viens vite la visiter !$"
 
 BlackthornCity_Text_ElmCall:
-	.string "PROF. ELM: Hello, {PLAYER}?\p"
-	.string "I have something here for you.\n"
-	.string "Could you swing by my LAB?\p"
-	.string "See you later!$"
+	.string "PROF. ORME : Allô, {PLAYER} ?\p"
+	.string "J'ai quelque chose pour toi.\n"
+	.string "Peux-tu passer au LABO ?\p"
+	.string "À bientôt !$"
 
 BlackThornCity_EventScript_Sage::
 	lock
@@ -178,83 +178,83 @@ BlackthornCity_EventScript_SantosCompleted::
 
 
 BlackthornCity_Text_ClairNotReady:
-	.string "CLAIR, our GYM LEADER, has been\n"
-	.string "following your progress.\p"
-	.string "However, she only battles trainers\n"
-	.string "who already have 7 badges.$"
+	.string "CLAIR, notre CHAMPIONNE D'ARÈNE, a\n"
+	.string "suivi vos progrès.\p"
+	.string "Cependant, elle n'affronte que les\n"
+	.string "dresseurs ayant déjà 7 badges.$"
 
 BlackthornCity_Text_ClairIsIn:
-	.string "CLAIR, our GYM LEADER, is waiting\n"
-	.string "for you.\p"
-	.string "However, it would be impossible for\n"
-	.string "a run-of-the-mill trainer to win.$"
+	.string "CLAIR, notre CHAMPIONNE D'ARÈNE, vous\n"
+	.string "attend.\p"
+	.string "Cependant, il serait impossible pour\n"
+	.string "un dresseur ordinaire de gagner.$"
 
 BlackthornCity_Text_ClairIsBeaten:
-	.string "You defeated CLAIR?\p"
-	.string "That's amazing!\p"
-	.string "I've never heard of her losing to\n"
-	.string "anyone other than LANCE.$"
+	.string "Vous avez battu CLAIR ?\p"
+	.string "C'est incroyable !\p"
+	.string "Je n'ai jamais entendu parler d'elle\n"
+	.string "perdant contre quelqu'un d'autre que LANCE.$"
 
 BlackthornGrampsRefusesEntryText:
-	.string "No. Only chosen trainers may train\n"
-	.string "here.\p"
-	.string "Please leave.$"
+	.string "Non. Seuls les dresseurs choisis\n"
+	.string "peuvent s'entraîner ici.\p"
+	.string "Veuillez partir.$"
 
 BlackthornGrampsGrantsEntryText:
-	.string "If CLAIR allows it, her grand-\n"
-	.string "father--our MASTER--will also.\p"
-	.string "You may enter.$"
+	.string "Si CLAIR l'autorise, son grand-\n"
+	.string "père—NOTRE MAÎTRE—le fera aussi.\p"
+	.string "Vous pouvez entrer.$"
 
 BlackBeltText_VoicesInMyHead:
-	.string "Arooo! Voices in my head!\p"
-	.string "Huh? I'm listening to my radio!$"
+	.string "Arooo ! Des voix dans ma tête !\p"
+	.string "Hein ? J'écoute la radio !$"
 
 BlackthornCooltrainerF1Text:
-	.string "Are you going to make your POKéMON\n"
-	.string "remember some moves?$"
+	.string "Vas-tu faire réapprendre des attaques\n"
+	.string "à ton POKéMON ?$"
 
 BlackthornYoungsterText:
-	.string "Dragon masters all come from the city\n"
-	.string "of BLACKTHORN.$"
+	.string "Les maîtres des dragons viennent tous\n"
+	.string "de la ville de ÉBÈNE.$"
 
 BlackthornCity_MeetSantosText:
-	.string "SANTOS: …\p"
-	.string "I'm SANTOS of the weekday family.\p"
-	.string "Take a guess.$"
+	.string "SANTOS : …\p"
+	.string "Je suis SANTOS de la famille des jours.\p"
+	.string "Devine lequel.$"
 
 BlackthornCity_SantosGivesGiftText:
-	.string "You can have this…$"
+	.string "Tu peux avoir ceci…$"
 
 BlackthornCity_SantosGaveGiftText:
-	.string "SANTOS: …\p"
+	.string "SANTOS : …\p"
 	.string "SPELL TAG…\p"
-	.string "GHOST-type moves get stronger…\p"
-	.string "It will frighten you…$"
+	.string "Les attaques de type SPECTRE sont plus fortes…\p"
+	.string "Ça va te faire peur…$"
 
 BlackthornCity_SantosSaturdayText:
-	.string "SANTOS: …\p"
-	.string "See you again on another Saturday…\p"
-	.string "I won't have any more gifts…$"
+	.string "SANTOS : …\p"
+	.string "À un autre samedi…\p"
+	.string "Je n'aurai plus de cadeaux…$"
 
 BlackthornCity_SantosNopeText:
-	.string "SANTOS: No.$"
+	.string "SANTOS : Non.$"
 
 BlackthornCooltrainerF2Text:
-	.string "Wow, you came through the ICE PATH?\p"
-	.string "You must be a real hotshot trainer!$"
+	.string "Wow, tu as traversé la GROTTE GLACÉE ?\p"
+	.string "Tu dois être un super dresseur !$"
 
 BlackthornCitySignText:
-	.string "BLACKTHORN CITY\p"
-	.string "A Quiet Mountain Retreat$"
+	.string "VILLE ÉBÈNE\p"
+	.string "Un paisible refuge de montagne$"
 
 BlackthornGymSignText:
-	.string "BLACKTHORN CITY POKéMON GYM\n"
-	.string "LEADER: CLAIR\p"
-	.string "The Blessed User of Dragon POKéMON$"
+	.string "ARÈNE POKéMON DE LA VILLE ÉBÈNE\n"
+	.string "CHAMPIONNE : CLAIR\p"
+	.string "La Maîtresse des Dragons$"
 
 BlackthornCity_Text_MoveDeletersHouseSign:
-	.string "MOVE BROS' HOUSE$"
+	.string "MAISON DES FRÈRES CAPACITÉS$"
 
 BlackthornCity_Text_DragonDenSign:
-	.string "DRAGON'S DEN AHEAD$"
+	.string "ANTRE DU DRAGON PAR ICI$"
 

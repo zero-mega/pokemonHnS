@@ -279,25 +279,25 @@ GoldenrodCity_EventScript_Beauty::
 	end
 
 GoldenrodCity_Text_Beauty:
-	.string "This is the GOLDENROD GYM!\p"
-	.string "Our leader WHITNEY is not here\n"
-	.string "right now. She might be at the\l"
-	.string "RADIO TOWER.$"
+	.string "C'est l'ARÈNE DE DOUBLANE !\p"
+	.string "Notre championne BLANCHE n'est pas ici\n"
+	.string "en ce moment. Elle pourrait être à la\l"
+	.string "TOUR RADIO.$"
 
 GoldenrodCity_Text_Woman:
-	.string "I used to train in WHITNEY's GYM,\n"
-	.string "but all her crying gave me a\l"
-	.string "headache.$"
+	.string "Je m'entraînais dans l'ARÈNE de BLANCHE,\n"
+	.string "mais tous ses pleurs me donnaient\l"
+	.string "mal à la tête.$"
 
 GoldenrodCity_Text_HikerDay:
-	.string "When I went into the GAME CORNER\n"
-	.string "it was night time... How long was I\l"
-	.string "in there?!$"
+	.string "Quand je suis entré au CASINO\n"
+	.string "c'était la nuit... Combien de temps suis-je\l"
+	.string "resté là-dedans ?!$"
 
 GoldenrodCity_Text_HikerNight:
-	.string "When I went into the GAME CORNER\n"
-	.string "it was day time... How long was I\l"
-	.string "in there?!$"
+	.string "Quand je suis entré au CASINO\n"
+	.string "c'était le jour... Combien de temps suis-je\l"
+	.string "resté là-dedans ?!$"
 
 GoldenrodCity_Text_Snubbull:
 	.string "SNUBBULL: SNUUUBUUUULL!$"
@@ -306,24 +306,24 @@ GoldenrodCity_Text_MrMime:
 	.string "............................$"
 
 GoldenrodCity_Text_ElmCall:
-	.string "ELM: Hello, {PLAYER}?\n"
-	.string "Has that egg hatched yet?\p"
-	.string "Once it hatches, don't forget to\n"
-	.string "bring it by the lab! I need to\l"
-	.string "see it!$"
+	.string "ORME: Salut, {PLAYER} ?\n"
+	.string "Cet œuf a-t-il éclos ?\p"
+	.string "Une fois éclos, n'oublie pas de\n"
+	.string "l'apporter au labo ! Je dois\l"
+	.string "le voir !$"
 
 GoldenrodCity_Text_PokefanM:
-	.string "They built the new RADIO TOWER\n"
-	.string "to replace the old creaky one.$"
+	.string "Ils ont construit la nouvelle TOUR RADIO\n"
+	.string "pour remplacer l'ancienne qui grinçait.$"
 
 GoldenrodCity_Text_Youngster1:
-	.string "I know there's a new BIKE SHOP,\n"
-	.string "but I can't find it anywhere.$"
+	.string "Je sais qu'il y a une nouvelle BOUTIQUE DE VÉLOS,\n"
+	.string "mais je ne peux la trouver nulle part.$"
 
 GoldenrodCity_Text_CooltrainerF1:
-	.string "Is that man in black dressed up\n"
-	.string "like a TEAM ROCKET member?\p"
-	.string "How silly!$"
+	.string "Cet homme en noir est-il déguisé\n"
+	.string "en membre de la TEAM ROCKET ?\p"
+	.string "Comme c'est ridicule !$"
 
 GoldenrodCity_Text_CooltrainerF1_Cleared:
 	.string "Was that man in black really part\n"

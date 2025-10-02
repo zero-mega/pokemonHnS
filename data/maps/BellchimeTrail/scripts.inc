@@ -18,14 +18,14 @@ BellchimeTrail_EventScript_Morty::
 	end
 
 BellchimeTrail_Text_Morty:
-	.string "MORTY: The legendary POKéMON\n"
-	.string "did not choose me...\p"
-	.string "But that does not mean that I\n"
-	.string "have lost out on my future.\p"
-	.string "I will continue my training until I\n"
-	.string "I discover a new future for me.\p"
-	.string "If you seek another battle, find\n"
-	.string "me at the FIGHTING DOJO.$"
+	.string "MORTIMER : Le POKéMON légendaire\n"
+	.string "ne m'a pas choisi...\p"
+	.string "Mais cela ne veut pas dire que\n"
+	.string "j'ai perdu mon avenir.\p"
+	.string "Je poursuivrai mon entraînement\n"
+	.string "jusqu'à ce que je découvre un nouvel avenir.\p"
+	.string "Si tu veux un autre combat, retrouve-\n"
+	.string "moi au DOJO KARATÉ.$"
 
 EcruteakBellchimeTrail_EventScript_Item_BigMushroom::
 	finditem ITEM_BIG_MUSHROOM

@@ -27,31 +27,30 @@ DewfordTown_House2_EventScript_Boy::
 	end
 
 DewfordTown_House2_Text_WantYouToHaveSilkScarf:
-	.string "Gorge your eyes on this!\p"
-	.string "It's a SILK SCARF. It's right at the\n"
-	.string "cutting edge of fashion, yeah!\p"
-	.string "Oh, I can see your eyes twinkling!\n"
-	.string "You appreciate my dazzling style!\p"
-	.string "Oh, you're a delight!\n"
-	.string "Here you go. I want you to have it!$"
+	.string "Ouvre grand les yeux sur ça !\p"
+	.string "C'est un FOULARD SOIE. C'est le summum\n"
+	.string "de la mode, tu vois !\p"
+	.string "Oh, je vois tes yeux briller !\n"
+	.string "Tu apprécies mon style éblouissant !\p"
+	.string "Oh, tu es un vrai plaisir !\n"
+	.string "Tiens, je veux que tu l'aies !$"
 
 DewfordTown_House2_Text_NoRoom:
-	.string "Oh, you don't have room?\p"
-	.string "Now, listen tight, this SCARF is a must-\n"
-	.string "have! Why, I would sell all my items\l"
-	.string "in order to get it!$"
+	.string "Oh, tu n'as pas de place ?\p"
+	.string "Écoute bien, ce FOULARD est\n"
+	.string "indispensable ! Moi, je vendrais tous mes objets\l"
+	.string "pour l'obtenir !$"
 
 DewfordTown_House2_Text_ExplainSilkScarf:
-	.string "The SILK SCARF raises the power of\n"
-	.string "NORMAL-type moves.\p"
-	.string "It's a marvelous SCARF that will go\n"
-	.string "with almost all POKéMON!$"
+	.string "Le FOULARD SOIE augmente la puissance\n"
+	.string "des attaques de type NORMAL.\p"
+	.string "C'est un FOULARD merveilleux qui ira\n"
+	.string "à presque tous les POKéMON !$"
 
 DewfordTown_House2_Text_BrawlySoCool:
-	.string "Wow, you bothered to cross the sea\n"
-	.string "to visit DEWFORD?\p"
-	.string "Did you maybe come here because you\n"
-	.string "heard about BRAWLY?\p"
-	.string "He's so cool…\n"
-	.string "Everyone idolizes him.$"
-
+	.string "Waouh, tu as traversé la mer\n"
+	.string "pour venir à POIVRESSEL ?\p"
+	.string "Tu es peut-être venu parce que tu as\n"
+	.string "entendu parler de BASTIEN ?\p"
+	.string "Il est tellement cool…\n"
+	.string "Tout le monde l'idolâtre.$"

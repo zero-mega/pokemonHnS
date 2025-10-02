@@ -20,17 +20,17 @@ DewfordTown_House1_EventScript_Zigzagoon::
 	end
 
 DewfordTown_House1_Text_LotToBeSaidForLivingOnIsland:
-	.string "There's a lot to be said for living on\n"
-	.string "a small island like this in harmony with\l"
-	.string "POKéMON and the family.$"
+	.string "Il y a beaucoup à dire sur le fait de vivre\n"
+	.string "sur une petite île comme celle-ci, en harmonie\l"
+	.string "avec les POKéMON et la famille.$"
 
 DewfordTown_House1_Text_LifeGoesSlowlyOnIsland:
-	.string "I left the major port of SLATEPORT\n"
-	.string "CITY when I married my husband here.\p"
-	.string "Life goes by slowly on this little\n"
-	.string "island. But being surrounded by the\l"
-	.string "beautiful sea--that's happiness, too.$"
+	.string "J'ai quitté le grand port de POIVRESSEL\n"
+	.string "quand j'ai épousé mon mari ici.\p"
+	.string "La vie s'écoule lentement sur cette petite\n"
+	.string "île. Mais être entourée par la belle mer--\l"
+	.string "c'est aussi ça, le bonheur.$"
 
 DewfordTown_House1_Text_Zigzagoon:
-	.string "ZIGZAGOON: Guguuh!$"
+	.string "ZIGZAGOON : Guguuh !$"
 

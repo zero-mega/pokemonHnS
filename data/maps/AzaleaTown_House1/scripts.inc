@@ -76,45 +76,45 @@ AzaleaTown_House1_EventScript_Farfetchd::
 
 
 CharcoalKiln_Text_Boss1:
-	.string "All the SLOWPOKE have disappeared\n"
-	.string "from the town.\p"
-	.string "The forest's protector may be\n"
-	.string "angry with us…\p"
-	.string "It may be a bad omen. We should\n"
-	.string "stay in.$"
+	.string "Tous les RAMOLOSS ont disparu\n"
+	.string "de la ville…\p"
+	.string "Le protecteur de la forêt est peut-être\n"
+	.string "en colère contre nous…\p"
+	.string "C'est peut-être un mauvais présage.\n"
+	.string "On devrait rester à l'intérieur.$"
 
 CharcoalKiln_Text_Boss2:
-	.string "The SLOWPOKE have returned…$"
+	.string "Les RAMOLOSS sont revenus…$"
 
 CharcoalKiln_Text_Boss3:
-	.string "The SLOWPOKE have returned…\p"
-	.string "But my APPRENTICE hasn't come back\n"
-	.string "from ILEX FOREST.\p"
-	.string "Where in the world is that lazy guy?$"
+	.string "Les RAMOLOSS sont revenus…\p"
+	.string "Mais mon APPRENTI n'est pas encore\n"
+	.string "revenu de la FORÊT DE CHÊNE.\p"
+	.string "Où est donc passé ce fainéant ?$"
 
 CharcoalKiln_Text_Boss4:
-	.string "You chased off TEAM ROCKET and\n"
-	.string "went to ILEX FOREST alone?\p"
-	.string "That takes guts! I like that.\n"
-	.string "Come train with us.$"
+	.string "Tu as chassé la TEAM ROCKET et tu es\n"
+	.string "allé dans la FORÊT DE CHÊNE tout seul ?\p"
+	.string "Il faut du cran pour ça ! J'aime ça.\n"
+	.string "Viens t'entraîner avec nous.$"
 
 CharcoalKiln_Text_Apprentice1:
-	.string "Where have all the SLOWPOKE gone?\p"
-	.string "Are they out playing somewhere?$"
+	.string "Où sont passés tous les RAMOLOSS ?\p"
+	.string "Ils sont peut-être partis jouer quelque part ?$"
 
 CharcoalKiln_Text_Apprentice2:
-	.string "The SLOWPOKE came back!$"
+	.string "Les RAMOLOSS sont revenus !$"
 
 CharcoalKiln_Text_Apprentice3:
-	.string "I'm sorry--I forgot to thank you.\p"
-	.string "This is CHARCOAL that I made.\p"
-	.string "FIRE-type POKéMON would be happy\n"
-	.string "to hold that.$"
+	.string "Je suis désolé… J'ai oublié de te remercier.\p"
+	.string "Voici du CHARBON que j'ai fabriqué.\p"
+	.string "Les POKéMON de type FEU seraient ravis\n"
+	.string "de tenir ça.$"
 
 CharcoalKiln_Text_Apprentice4:
-	.string "The SLOWPOKE came back, and you even\n"
-	.string "found FARFETCH'D.\p"
-	.string "You're the coolest, man!$"
+	.string "Les RAMOLOSS sont revenus, et tu as même\n"
+	.string "retrouvé CANARTICHO.\p"
+	.string "Tu es le meilleur, mec !$"
 
 CharcoalKiln_Text_Farfetchd:
-	.string "FARFETCH'D: Kwaa!$"
+	.string "CANARTICHO : Kwaa !$"

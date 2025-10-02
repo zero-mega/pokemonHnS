@@ -27,15 +27,15 @@ DarkCave2_EventScript_BlackGlassesGot::
 	end
 
 DarkCave2_Text_Nerd:
-    .string "Whoa! You startled me there!\p"
-    .string "I had my BLACK-GLASSES on, so I\n"
-    .string "didn't notice you at all.\p"
-    .string "What am I doing here?\p"
-    .string "Hey, don't you worry about it.\p"
-    .string "I'll give you a pair of BLACK-\n"
-    .string "GLASSES, so forget you saw me,\n"
-    .string "OK?$"
+    .string "Ouh ! Tu m'as fait sursauter !\p"
+    .string "Je portais mes LUNETTES NOIRES, alors\n"
+    .string "je ne t'ai pas vu du tout.\p"
+    .string "Qu'est-ce que je fais ici ?\p"
+    .string "Hé, ne t'en fais pas pour ça.\p"
+    .string "Je vais te donner une paire de\n"
+    .string "LUNETTES NOIRES, alors oublie que tu\n"
+    .string "m'as vu, d'accord ?$"
 
 DarkCave2_Text_Nerd2:
-    .string "BLACK-GLASSES ups the power of\n"
-    .string "DARK-type moves.$"
+    .string "Les LUNETTES NOIRES augmentent la\n"
+    .string "puissance des attaques de type TÉNÈBRES.$"
