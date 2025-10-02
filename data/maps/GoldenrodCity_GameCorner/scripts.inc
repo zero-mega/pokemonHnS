@@ -259,78 +259,77 @@ GoldenrodCity_GameCorner_EventScript_Pharmacist::
 	end
 
 GoldenrodCity_GameCorner_PrizeRoom_Text_YouWantPrize:
-	.string "{STR_VAR_1} is what you want?$"
+	.string "{STR_VAR_1}, c'est ce que tu veux?$"
 
 GoldenrodCity_GameCorner_Text_PlayerObtainedTheMon:
-	.string "{PLAYER} got {STR_VAR_1}!$"
+	.string "{PLAYER} a reçu {STR_VAR_1} !$"
 
 GoldenrodGamecorner_Text_GiveNicknameToThisMon:
-	.string "Nickname {STR_VAR_1}?$"
+	.string "Donner un surnom à {STR_VAR_1} ?$"
 
 GoldenrodCity_GameCorner_Text_PrizeVendorIntro:
-    .string "Welcome!\p"
-    .string "We exchange your game coins for\n"
-    .string "fabulous prizes!$"
+    .string "Bienvenue !\p"
+    .string "Nous échangeons tes jetons contre\n"
+    .string "des prix fabuleux !$"
 
 GoldenrodCity_GameCorner_Text_PrizeVendorWhichPrize:
-    .string "Which prize would you like?$"
+    .string "Quel prix veux-tu ?$"
 
 GoldenrodCity_GameCorner_Text_PrizeVendorHereYouGo:
-    .string "Here you go!$"
+    .string "Voilà !$"
 
 GoldenrodCity_GameCorner_Text_PrizeVendorNeedMoreCoins:
-    .string "Sorry! You need more coins.$"
+    .string "Désolé ! Il te faut plus de jetons.$"
 
 GoldenrodCity_GameCorner_Text_PrizeVendorNoMoreRoom:
-    .string "Sorry. You can't carry any more.$"
+    .string "Désolé. Tu ne peux pas en porter plus.$"
 
 GoldenrodCity_GameCorner_Text_PrizeVendorQuit:
-    .string "OK. Please save your coins and come\n"
-    .string "again!$"
+    .string "D'accord. Garde tes jetons et reviens\n"
+    .string "nous voir !$"
 
 GoldenrodCity_GameCorner_Text_PrizeVendorNoCoinCase:
-    .string "Oh? You don't have a COIN CASE.$"
+    .string "Oh ? Tu n'as pas de BOÎTE JETONS.$"
 
 GoldenrodCity_GameCorner_Text_Pharmacist:
-    .string "I always play this slot machine.\n"
-    .string "It pays out more than others,\l"
-    .string "I think.$"
+    .string "Je joue toujours à cette machine à sous.\n"
+    .string "Je pense qu'elle paie plus que les autres.$"
 
 GoldenrodCity_GameCorner_Text_Woman:
-    .string "I can't stop winning!$"
+    .string "Je n'arrête pas de gagner !$"
 
 GoldenrodCity_GameCorner_Text_PokefanM1:
-    .string "I just love this new slot machine.\p"
-    .string "It's more of a challenge than the\n"
-    .string "ones in CELADON.$"
+    .string "J'adore cette nouvelle machine à sous.\p"
+    .string "C'est plus difficile que celles de\n"
+    .string "CELADOPOLE.$"
 
 GoldenrodCity_GameCorner_Text_CooltrainerM:
-    .string "Life is a gamble. I'm going to pull\n"
-    .string "till I drop!$"
+    .string "La vie est un pari. Je vais jouer\n"
+    .string "jusqu'à tomber !$"
 
 GoldenrodCity_GameCorner_Text_PokefanF:
-    .string "Roulette…\p"
-    .string "I prefer it over the slots because\n"
-    .string "it's easier to figure the odds.\p"
-    .string "But the payout is much lower.$"
+    .string "La roulette…\p"
+    .string "Je la préfère aux machines à sous car\n"
+    .string "c'est plus facile de calculer les chances.\p"
+    .string "Mais les gains sont bien plus faibles.$"
 
 GoldenrodCity_GameCorner_Text_CooltrainerF:
-    .string "I won't quit until I win!$"
+    .string "Je n'abandonnerai pas avant de gagner !$"
 
 GoldenrodCity_GameCorner_Text_Gentleman:
-    .string "I taught BLIZZARD to my POKéMON.\p"
-    .string "It was hard to get enough coins for\n"
-    .string "it, but it was worth it.$"
+    .string "J'ai appris BLIZZARD à mon POKéMON.\p"
+    .string "C'était dur d'avoir assez de jetons\n"
+    .string "mais ça en valait la peine.$"
 
 GoldenrodCity_GameCorner_Text_PokefanM2:
-    .string "I couldn't win at the slots, and I\n"
-    .string "blew it on roulette.\p"
-    .string "I got so furious, I tossed out my\n"
-    .string "COIN CASE in the UNDERGROUND.$"
+    .string "Je n'ai pas gagné aux machines à sous, et\n"
+    .string "j'ai tout perdu à la roulette.\p"
+    .string "J'étais tellement furieux que j'ai jeté\n"
+    .string "ma BOÎTE JETONS dans le SOUS-SOL.$"
 
 GoldenrodCity_GameCorner_Text_MoveTutorInside:
-    .string "Wahahah! The coins keep rolling in!$"
+    .string "Wahahah ! Les jetons n'arrêtent pas d'arriver !$"
 
 GoldenrodCity_GameCorner_Text_LeftTheirDrink:
-    .string "Someone left their drink.\p"
-    .string "It smells sweet.$"
+    .string "Quelqu'un a laissé sa boisson.\p"
+    .string "Ça sent sucré.$"

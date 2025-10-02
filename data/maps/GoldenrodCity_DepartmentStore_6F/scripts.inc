@@ -18,11 +18,11 @@ GoldenrodDeptStore6_EventScript_Whitney::
 	end
 
 GoldenrodDeptStore6_Text_Whitney:
-	.string "{PLAYER}! Fancy seeing you here!\p"
-	.string "I'm picking up something for\n"
-	.string "my MILTANK.\p"
-	.string "If you want another battle, come to\n"
-	.string "the FIGHTING DOJO!$"
+	.string "{PLAYER} ! Quelle surprise de te voir ici !\p"
+	.string "J'achète quelque chose pour\n"
+	.string "mon ÉCREMEUH.\p"
+	.string "Si tu veux un autre combat, viens\n"
+	.string "au DOJO DE COMBAT !$"
 
 GoldenrodCity_DepartmentStore_6F_EventScript_Jose::
 	lock
@@ -71,24 +71,24 @@ GoldenrodCity_DepartmentStore_6F_EventScript_TradeCompleted::
 	end
 
 GoldenrodCity_DepartmentStore_6F_Text_YouWillTradeWontYou:
-	.string "I collect POKéMON!\n"
-	.string "Do you have a {STR_VAR_1}?\p"
-	.string "Want to trade it for my\n"
-	.string "{STR_VAR_2}?$"
+	.string "Je collectionne les POKéMON !\n"
+	.string "As-tu un {STR_VAR_1} ?\p"
+	.string "Veux-tu l'échanger contre mon\n"
+	.string "{STR_VAR_2} ?$"
 
 GoldenrodCity_DepartmentStore_6F_Text_MonYouTakeCare:
-	.string "Yay! I got myself {STR_VAR_1}!\p"
-	.string "{STR_VAR_2}, you take care!$"
+	.string "Youpi ! J'ai eu un {STR_VAR_1} !\p"
+	.string "{STR_VAR_2}, prends-en soin !$"
 
 GoldenrodCity_DepartmentStore_6F_Text_ThisIsntAMon:
-	.string "Uh, no, I don't think so.\n"
-	.string "That isn't a {STR_VAR_1}.$"
+	.string "Euh, non, je ne crois pas.\n"
+	.string "Ce n'est pas un {STR_VAR_1}.$"
 
 GoldenrodCity_DepartmentStore_6F_Text_YouWontTradeMe:
-	.string "You don't want to trade? Aww...$"
+	.string "Tu ne veux pas échanger ? Oh...$"
 
 GoldenrodCity_DepartmentStore_6F_Text_After:
-	.string "Hi, how's my old MACHOP doing?$"
+	.string "Salut, comment va mon ancien MACHOPEUR ?$"
 
 
 GoldenrodDeptStore6_EventScript_Lass::
@@ -116,16 +116,16 @@ GoldenrodDeptStore6_EventScript_Sign::
 	end
 
 GoldenrodDeptStore_Text_6FLass:
-    .string "Do you listen to LUCKY CHANNEL?\p"
-    .string "If you want to win, trade POKéMON\n"
-    .string "with as many people as possible to\l"
-    .string "get different ID numbers.$"
+    .string "Tu écoutes le LUCKY CHANNEL ?\p"
+    .string "Si tu veux gagner, échange des POKéMON\n"
+    .string "avec un maximum de personnes pour\l"
+    .string "avoir différents numéros d'ID.$"
 
 GoldenrodDeptStore_Text_6FSuperNerd:
-    .string "If you're tired, try the vending\n"
-    .string "machine's drinks.\p"
-    .string "Your POKéMON will love them too.$"
+    .string "Si tu es fatigué, essaie les boissons\n"
+    .string "des distributeurs.\p"
+    .string "Tes POKéMON vont les adorer aussi.$"
 
 GoldenrodDeptStore_Text_6FDirectory:
-    .string "Take a Break from Shopping!\p"
-    .string "6F TRANQUIL SQUARE$"
+    .string "Fais une pause dans ton shopping !\p"
+    .string "6e ÉTAGE : COIN TRANQUILLE$"

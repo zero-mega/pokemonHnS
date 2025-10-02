@@ -39,27 +39,29 @@ GoldenrodDeptStore1_EventScript_Directory::
 	end
 
 GoldenrodDeptStor1_Text_Receptionist:
-    .string "Welcome to GOLDENROD DEPT.STORE.$"
+    .string "Bienvenue au MAGASIN DE DOUBLONVILLE.$"
 
 GoldenrodDeptStore1_Text_Gentleman:
-    .string "The DEPT.STORE has a decent\n"
-    .string "selection.\p"
-    .string "But some items are only available\n"
-    .string "as GAME CORNER prizes.$"
+    .string "Le MAGASIN a un bon choix.\n"
+    .string "Mais certains objets ne sont\p"
+    .string "disponibles qu'en tant que prix\n"
+    .string "au CASINO.$"
 
 GoldenrodDeptStore1_Text_PokefanF:
-    .string "I'm raring to shop again today!$"
+    .string "Je suis prête à faire du shopping\n"
+    .string "encore aujourd'hui !$"
 
 GoldenrodDeptStore1_Text_BugCatcher:
-    .string "Mom's good at bargain hunting.\p"
-    .string "She always buys stuff at lower\n"
-    .string "prices.$"
+    .string "Maman est douée pour dénicher\n"
+    .string "les bonnes affaires.\p"
+    .string "Elle achète toujours des choses\n"
+    .string "à des prix plus bas.$"
 
 GoldenrodDeptStore1_Text_Directory:
-    .string "<1F SERVICE COUNTER>\p"
-    .string "2F TRAINER'S MARKET\p"
-    .string "3F BATTLE COLLECTION\p"
-    .string "4F MEDICINE BOX\p"
-    .string "5F TM CORNER\p"
-    .string "6F TRANQUIL SQUARE\p"
-    .string "ROOFTOP LOOKOUT$"
+    .string "<1F COMPTOIR DE SERVICE>\p"
+    .string "2F MARCHÉ DES DRESSEURS\p"
+    .string "3F COLLECTION DE COMBAT\p"
+    .string "4F BOÎTE À MÉDICAMENTS\p"
+    .string "5F COIN CT\p"
+    .string "6F PLACE TRANQUILLE\p"
+    .string "TERRASSE PANORAMIQUE$"

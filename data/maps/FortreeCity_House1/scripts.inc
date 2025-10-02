@@ -61,39 +61,38 @@ FortreeCity_House1_EventScript_Zigzagoon::
 	end
 
 FortreeCity_House1_Text_YouWillTradeWontYou:
-	.string "Wrooooaaar! I need it!\n"
-	.string "I have to get me a {STR_VAR_1}!\l"
-	.string "I'll do anything for it!\p"
-	.string "…Uh… Did you hear that?\n"
-	.string "My shout from the bottom of my heart?\p"
-	.string "Having heard that, you will trade\n"
-	.string "your {STR_VAR_1} for my {STR_VAR_2},\p"
-	.string "won't you? It's a super rare POKéMON\n"
-	.string "from another region!$"
+	.string "Wrooooaaar ! Il me le faut !\n"
+	.string "Je dois absolument avoir un {STR_VAR_1} !\l"
+	.string "Je ferais n'importe quoi pour l'avoir !\p"
+	.string "…Euh… Tu as entendu ça ?\n"
+	.string "Mon cri du fond du cœur ?\p"
+	.string "Après avoir entendu ça, tu vas échanger\n"
+	.string "ton {STR_VAR_1} contre mon {STR_VAR_2},\p"
+	.string "n'est-ce pas ? C'est un POKéMON super rare\n"
+	.string "d'une autre région !$"
 
 FortreeCity_House1_Text_MonYouTakeCare:
-	.string "Oh, yeah, right on!\p"
-	.string "{STR_VAR_1}, welcome!\n"
-	.string "{STR_VAR_2}, you take care!$"
+	.string "Oh, oui, génial !\p"
+	.string "Bienvenue, {STR_VAR_1} !\n"
+	.string "{STR_VAR_2}, prends soin de toi !$"
 
 FortreeCity_House1_Text_ThisIsntAMon:
-	.string "Uh, no, I don't think so.\n"
-	.string "That isn't a {STR_VAR_1}.$"
+	.string "Euh, non, je ne crois pas.\n"
+	.string "Ce n'est pas un {STR_VAR_1}.$"
 
 FortreeCity_House1_Text_YouWontTradeMe:
-	.string "No? You won't trade me?\n"
-	.string "Even after I bared my heart to you?$"
+	.string "Non ? Tu ne veux pas échanger ?\n"
+	.string "Même après que je t'ai ouvert mon cœur ?$"
 
 FortreeCity_House1_Text_GoingToMakeVolbeatStrong:
-	.string "I'm going to make VOLBEAT super\n"
-	.string "strong from this moment on!\p"
-	.string "I hope you do the same with PLUSLE!$"
+	.string "Je vais rendre VOLBEAT super\n"
+	.string "fort à partir de maintenant !\p"
+	.string "J'espère que tu feras pareil avec POSIPI !$"
 
 FortreeCity_House1_Text_TradingMemoriesWithOthers:
-	.string "Trading POKéMON with others…\p"
-	.string "It's as if you're trading your own\n"
-	.string "memories with other people.$"
+	.string "Échanger des POKéMON avec les autres…\p"
+	.string "C'est comme si tu échangeais tes propres\n"
+	.string "souvenirs avec d'autres personnes.$"
 
 FortreeCity_House1_Text_Zigzagoon:
-	.string "ZIGZAGOON: Gumomoh?$"
-
+	.string "ZIGZAGOON : Gumomoh ?$"

@@ -26,16 +26,16 @@ Gate_RuinsOfAlph_Route36_EventScript_Youngster::
 	end
 
 Gate_RuinsOfAlph_Route36_Text_Officer:
-	.string "RUINS OF ALPH\p"
-	.string "A Look-and-Touch Tourist Site\p"
-	.string "Try the sliding stone panels!$"
+	.string "RUINES D'ALPH\p"
+	.string "Un site touristique à voir et à toucher\p"
+	.string "Essayez les panneaux de pierre coulissants !$"
 
 Gate_RuinsOfAlph_Route36_Text_PokefanM:
-	.string "You're studying the RUINS?\p"
-	.string "I see a scientist in the making.$"
+	.string "Tu étudies les RUINES ?\p"
+	.string "Je vois un futur scientifique en toi.$"
 
 Gate_RuinsOfAlph_Route36_Text_Youngster:
-	.string "There are drawings on stone\n"
-	.string "panels.\p"
-	.string "I tried moving them.\n"
-	.string "I wonder what they are.$"
+	.string "Il y a des dessins sur des\n"
+	.string "panneaux de pierre.\p"
+	.string "J'ai essayé de les déplacer.\n"
+	.string "Je me demande ce que c'est.$"

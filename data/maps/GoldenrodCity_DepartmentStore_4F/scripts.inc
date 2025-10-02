@@ -35,28 +35,27 @@ GoldenrodDeptStore4_EventScript_Sign::
 	end
 
 GoldenrodDeptStore_Text_4FCooltrainerM:
-    .string "Hey. I love strong POKéMON.\p"
-    .string "I feed them PROTEIN to crank up\n"
-    .string "their ATTACK.$"
+    .string "Salut. J'adore les POKéMON forts.\p"
+    .string "Je leur donne des PROTÉINES pour\n"
+    .string "augmenter leur ATTAQUE.$"
 
 GoldenrodDeptStore_Text_4FBugCatcher:
-    .string "IRON adds to your POKéMON's\n"
-    .string "DEFENSE.$"
+    .string "Le FER augmente la DÉFENSE\n"
+    .string "de tes POKéMON.$"
 
 GoldenrodDeptStore_Text_4FGameboyKid:
-    .string "There were rumours that some\n"
-    .string "POKéMON evolve only by\l"
-    .string "being traded via a Game Link\l"
-    .string "cable.\p"
-    .string "Pfft...\p"
-    .string "Such misinformation.\p"
-    .string "I know some of the rumoured\n"
-    .string "POKéMON:\l"
-    .string "MACHOKE, KADABRA, HAUNTER and,\l"
-    .string "um, GRAVELER,\l"
-    .string "but they all evolve through\l"
-    .string "level up.$"
+    .string "Il y avait des rumeurs que certains\n"
+    .string "POKéMON évoluent seulement en\l"
+    .string "étant échangés via un câble Game Link.\p"
+    .string "Pff...\p"
+    .string "Quelle désinformation.\p"
+    .string "Je connais certains des POKéMON\n"
+    .string "concernés :\l"
+    .string "MACHOPEUR, KADABRA, SPECTRE et,\l"
+    .string "euh, GRAVALANCH,\l"
+    .string "mais ils évoluent tous en montant\l"
+    .string "de niveau.$"
 
 GoldenrodDeptStore_Text_4FDirectory:
-    .string "Let Us Pump Up Your POKéMON!\p"
-    .string "4F MEDICINE BOX$"
+    .string "Faisons grandir tes POKéMON !\p"
+    .string "4e ÉTAGE BOÎTE À MÉDICAMENTS$"

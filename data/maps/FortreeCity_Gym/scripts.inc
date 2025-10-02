@@ -135,188 +135,188 @@ FortreeCity_Gym_EventScript_GymStatue::
 	end
 
 FortreeCity_Gym_Text_GymGuideAdvice:
-	.string "Yo, how's it going, CHAMPION-\n"
-	.string "bound {PLAYER}?\p"
-	.string "FORTREE GYM LEADER WINONA is\n"
-	.string "a master of FLYING-type POKéMON.\p"
-	.string "She's waiting at the back of this GYM,\n"
-	.string "behind the rotating doors.\p"
-	.string "She's waiting for new challengers\n"
-	.string "who are trying to take wing!\p"
-	.string "Okay, go for it!$"
+	.string "Yo, comment ça va, CHAMPION\n"
+	.string "en devenir {PLAYER} ?\p"
+	.string "La CHAMPIONNE de l'ARÈNE de CLEMENTI-VILLE, WINONA,\n"
+	.string "est une experte des POKéMON de type VOL.\p"
+	.string "Elle t'attend au fond de cette ARÈNE,\n"
+	.string "derrière les portes tournantes.\p"
+	.string "Elle attend de nouveaux challengers\n"
+	.string "qui veulent prendre leur envol !\p"
+	.string "Allez, fonce !$"
 
 FortreeCity_Gym_Text_GymGuidePostVictory:
-	.string "You did it!\n"
-	.string "You've achieved liftoff!$"
+	.string "Tu l'as fait !\n"
+	.string "Tu as décollé !$"
 
 FortreeCity_Gym_Text_JaredIntro:
-	.string "Behold the elegant battle style of\n"
-	.string "BIRD POKéMON!$"
+	.string "Admire le style de combat élégant\n"
+	.string "des POKéMON OISEAU !$"
 
 FortreeCity_Gym_Text_JaredDefeat:
-	.string "You…\n"
-	.string "You're strong…$"
+	.string "Toi…\n"
+	.string "Tu es fort…$"
 
 FortreeCity_Gym_Text_JaredPostBattle:
-	.string "A TRAINER has to be smart to keep\n"
-	.string "up with unexpected turns of events.\p"
-	.string "Do you have the smarts to get to\n"
-	.string "our LEADER?$"
+	.string "Un DRESSEUR doit être malin pour suivre\n"
+	.string "le rythme des imprévus.\p"
+	.string "As-tu l'intelligence pour atteindre\n"
+	.string "notre CHAMPIONNE ?$"
 
 FortreeCity_Gym_Text_EdwardoIntro:
-	.string "The lovers of BIRD POKéMON aspire\n"
-	.string "to join this GYM.\p"
-	.string "As a member of the FORTREE GYM,\n"
-	.string "I'm not allowed to lose!$"
+	.string "Les amoureux des POKéMON OISEAU rêvent\n"
+	.string "de rejoindre cette ARÈNE.\p"
+	.string "En tant que membre de l'ARÈNE de CLEMENTI-VILLE,\n"
+	.string "je n'ai pas le droit de perdre !$"
 
 FortreeCity_Gym_Text_EdwardoDefeat:
-	.string "It was too much of a load for me\n"
-	.string "to bear…$"
+	.string "C'était trop lourd à porter\n"
+	.string "pour moi…$"
 
 FortreeCity_Gym_Text_EdwardoPostBattle:
-	.string "The world is huge, and there are\n"
-	.string "countless tough TRAINERS.\p"
-	.string "I'm going to keep training and make\n"
-	.string "myself even stronger.$"
+	.string "Le monde est vaste, et il y a\n"
+	.string "d'innombrables DRESSEURS puissants.\p"
+	.string "Je vais continuer à m'entraîner et devenir\n"
+	.string "encore plus fort.$"
 
 FortreeCity_Gym_Text_FlintIntro:
-	.string "There's no need for WINONA, our GYM\n"
-	.string "LEADER, to deal with you!\p"
-	.string "I'm plenty good enough for you!$"
+	.string "Pas besoin que WINONA, notre CHAMPIONNE,\n"
+	.string "s'occupe de toi !\p"
+	.string "Je suis largement assez bon pour toi !$"
 
 FortreeCity_Gym_Text_FlintDefeat:
-	.string "WINONA, I…\n"
-	.string "I lost!$"
+	.string "WINONA, je…\n"
+	.string "J'ai perdu !$"
 
 FortreeCity_Gym_Text_FlintPostBattle:
-	.string "WINONA is cute and she's strong.\n"
-	.string "She's the ultimate LEADER!\p"
-	.string "Blush…$"
+	.string "WINONA est mignonne et elle est forte.\n"
+	.string "C'est la CHAMPIONNE ultime !\p"
+	.string "Rougit…$"
 
 FortreeCity_Gym_Text_AshleyIntro:
-	.string "WINONA taught me personally!\n"
-	.string "You can't beat me easily!$"
+	.string "WINONA m'a formée personnellement !\n"
+	.string "Tu ne me battras pas facilement !$"
 
 FortreeCity_Gym_Text_AshleyDefeat:
-	.string "I was beaten…$"
+	.string "J'ai été battue…$"
 
 FortreeCity_Gym_Text_AshleyPostBattle:
-	.string "Thanks to WINONA, the people of\n"
-	.string "FORTREE can live without fear.$"
+	.string "Grâce à WINONA, les habitants de\n"
+	.string "CLEMENTI-VILLE vivent sans crainte.$"
 
 FortreeCity_Gym_Text_HumbertoIntro:
-	.string "When WINONA takes to battle, her face\n"
-	.string "shines with beautiful determination…\p"
-	.string "I'm not letting you witness that\n"
-	.string "lovely sight!$"
+	.string "Quand WINONA se bat, son visage\n"
+	.string "brille d'une belle détermination…\p"
+	.string "Je ne te laisserai pas voir\n"
+	.string "ce magnifique spectacle !$"
 
 FortreeCity_Gym_Text_HumbertoDefeat:
-	.string "Urk!\n"
-	.string "I couldn't stop you.$"
+	.string "Argh !\n"
+	.string "Je n'ai pas pu t'arrêter.$"
 
 FortreeCity_Gym_Text_HumbertoPostBattle:
-	.string "You'd better watch it!\n"
-	.string "Don't get distracted staring at WINONA\l"
-	.string "or you'll go crashing down in a heap!$"
+	.string "Tu ferais mieux de faire attention !\n"
+	.string "Ne te laisse pas distraire à regarder WINONA\l"
+	.string "ou tu t'écraseras lamentablement !$"
 
 FortreeCity_Gym_Text_DariusIntro:
-	.string "You'd better know that there are all\n"
-	.string "sorts of FLYING-type POKéMON.\p"
-	.string "You do know that, right?$"
+	.string "Tu ferais mieux de savoir qu'il existe\n"
+	.string "toutes sortes de POKéMON de type VOL.\p"
+	.string "Tu le sais, n'est-ce pas ?$"
 
 FortreeCity_Gym_Text_DariusDefeat:
-	.string "You seem to know your stuff!$"
+	.string "On dirait que tu t'y connais !$"
 
 FortreeCity_Gym_Text_DariusPostBattle:
-	.string "Sure, you beat me all right.\n"
-	.string "But you'd better watch it! Our LEADER\l"
-	.string "WINONA's POKéMON are all business.$"
+	.string "C'est vrai, tu m'as battu.\n"
+	.string "Mais fais attention ! Les POKéMON de\l"
+	.string "notre CHAMPIONNE WINONA sont redoutables.$"
 
 FortreeCity_Gym_Text_WinonaIntro:
-	.string "I am WINONA. I am the LEADER of\n"
-	.string "the FORTREE POKéMON GYM.\p"
-	.string "I have become one with BIRD POKéMON\n"
-	.string "and have soared the skies…\p"
-	.string "However grueling the battle, we have\n"
-	.string "triumphed with grace…\p"
-	.string "Witness the elegant choreography\n"
-	.string "of BIRD POKéMON and I!$"
+	.string "Je suis WINONA. Je suis la CHAMPIONNE de\n"
+	.string "l'ARÈNE POKéMON de CLEMENTI-VILLE.\p"
+	.string "Je ne fais qu'un avec les POKéMON OISEAU\n"
+	.string "et j'ai survolé les cieux…\p"
+	.string "Aussi éprouvant que soit le combat, nous avons\n"
+	.string "triomphé avec grâce…\p"
+	.string "Assiste à la chorégraphie élégante\n"
+	.string "des POKéMON OISEAU et de moi !$"
 
 FortreeCity_Gym_Text_WinonaDefeat:
-	.string "Never before have I seen a TRAINER\n"
-	.string "command POKéMON with more grace\l"
-	.string "than I…\p"
-	.string "In recognition of your prowess,\n"
-	.string "I present to you this GYM BADGE.$"
+	.string "Jamais encore je n'avais vu un DRESSEUR\n"
+	.string "diriger ses POKéMON avec plus de grâce\l"
+	.string "que moi…\p"
+	.string "En reconnaissance de ta prouesse,\n"
+	.string "je te remets ce BADGE D'ARÈNE.$"
 
 FortreeCity_Gym_Text_ReceivedFeatherBadge:
-	.string "{PLAYER} received the FEATHER BADGE\n"
-	.string "from WINONA.$"
+	.string "{PLAYER} reçoit le BADGE PLUME\n"
+	.string "de WINONA.$"
 
 FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis:
-	.string "With the FEATHER BADGE, all POKéMON up\n"
-	.string "to LV 70, even those received through\l"
-	.string "trades, will obey your every command.\p"
-	.string "You will also be able to use\n"
-	.string "the HM move FLY outside of battle,\p"
-	.string "even if the POKéMON does not know it.\p"
-	.string "The only requirement is that the\n"
-	.string "POKéMON has to be a FLYING TYPE.\p"
-	.string "And this…\n"
-	.string "This is a gift from me.$"
+	.string "Avec le BADGE PLUME, tous les POKéMON\n"
+	.string "jusqu'au N.70, même ceux reçus par\l"
+	.string "échange, t'obéiront sans discuter.\p"
+	.string "Tu pourras aussi utiliser la CS VOL\n"
+	.string "en dehors des combats,\p"
+	.string "même si le POKéMON ne la connaît pas.\p"
+	.string "La seule condition est que le\n"
+	.string "POKéMON soit de type VOL.\p"
+	.string "Et ceci…\n"
+	.string "C'est un cadeau de ma part.$"
 
 FortreeCity_Gym_Text_ExplainAerialAce:
-	.string "TM40 contains AERIAL ACE.\p"
-	.string "Its speed…\n"
-	.string "No POKéMON should be able to avoid it.\p"
+	.string "La CT40 contient AÉRO-ACROBATIE.\p"
+	.string "Sa vitesse…\n"
+	.string "Aucun POKéMON ne devrait pouvoir l'éviter.\p"
 	.string "… … … … … …$"
 
 FortreeCity_Gym_Text_RegisteredWinona:
-	.string "Registered GYM LEADER WINONA\n"
-	.string "in the POKéNAV.$"
+	.string "CHAMPIONNE WINONA enregistrée\n"
+	.string "dans le POKéNAV.$"
 
 FortreeCity_Gym_Text_WinonaPostBattle:
-	.string "Though I fell to you, I will remain\n"
-	.string "devoted to BIRD POKéMON.$"
+	.string "Même si j'ai perdu contre toi, je resterai\n"
+	.string "dévouée aux POKéMON OISEAU.$"
 
 FortreeCity_Gym_Text_GymStatue:
-	.string "FORTREE CITY POKéMON GYM$"
+	.string "ARÈNE POKéMON DE CLEMENTI-VILLE$"
 
 FortreeCity_Gym_Text_GymStatueCertified:
-	.string "FORTREE CITY POKéMON GYM\p"
-	.string "WINONA'S CERTIFIED TRAINERS:\n"
+	.string "ARÈNE POKéMON DE CLEMENTI-VILLE\p"
+	.string "DRESSEURS CERTIFIÉS PAR WINONA :\n"
 	.string "{PLAYER}$"
 
 FortreeCity_Gym_Text_WinonaPreRematch:
-	.string "WINONA: We humans can never escape\n"
-	.string "gravity's pull on the ground.\p"
-	.string "But by striving for excellence,\n"
-	.string "we have the power to soar!\p"
-	.string "You have scaled the pinnacle as\n"
-	.string "the reigning CHAMPION.\p"
-	.string "Please, allow me to see your power\n"
-	.string "at full flight!$"
+	.string "WINONA : Nous, humains, ne pouvons jamais\n"
+	.string "échapper à l'attraction de la gravité.\p"
+	.string "Mais en visant l'excellence,\n"
+	.string "nous avons le pouvoir de nous élever !\p"
+	.string "Tu as atteint le sommet en tant que\n"
+	.string "CHAMPION en titre.\p"
+	.string "S'il te plaît, permets-moi de voir ta puissance\n"
+	.string "à son apogée !$"
 
 FortreeCity_Gym_Text_WinonaRematchDefeat:
-	.string "I failed to reach your height again…$"
+	.string "Je n'ai pas réussi à atteindre ta hauteur…$"
 
 FortreeCity_Gym_Text_WinonaPostRematch:
-	.string "WINONA: Even though I have lost,\n"
-	.string "the wings of my heart remain unbroken.\p"
-	.string "I can rise and soar again and\n"
-	.string "yet again.\p"
-	.string "I am convinced of it!$"
+	.string "WINONA : Même si j'ai perdu,\n"
+	.string "les ailes de mon cœur restent intactes.\p"
+	.string "Je peux m'élever et voler encore\n"
+	.string "et encore.\p"
+	.string "J'en suis convaincue !$"
 
 FortreeCity_Gym_Text_WinonaRematchNeedTwoMons:
-	.string "WINONA: We humans can never escape\n"
-	.string "gravity's pull on the ground.\p"
-	.string "But by striving for excellence,\n"
-	.string "we have the power to soar!\p"
-	.string "You have scaled the pinnacle as\n"
-	.string "the reigning CHAMPION.\p"
-	.string "Please, allow me to see your power\n"
-	.string "at full flight!\p"
-	.string "Oh, no… Do you have but one\n"
-	.string "POKéMON with you?\p"
-	.string "Please return with two POKéMON\n"
-	.string "at the very least.$"
+	.string "WINONA : Nous, humains, ne pouvons jamais\n"
+	.string "échapper à l'attraction de la gravité.\p"
+	.string "Mais en visant l'excellence,\n"
+	.string "nous avons le pouvoir de nous élever !\p"
+	.string "Tu as atteint le sommet en tant que\n"
+	.string "CHAMPION en titre.\p"
+	.string "S'il te plaît, permets-moi de voir ta puissance\n"
+	.string "à son apogée !\p"
+	.string "Oh, non… Tu n'as qu'un seul\n"
+	.string "POKéMON avec toi ?\p"
+	.string "Reviens avec au moins deux POKéMON\n"
+	.string "s'il te plaît.$"

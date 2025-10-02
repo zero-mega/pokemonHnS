@@ -42,37 +42,37 @@ GoldenrodCity_BikeShop_EventScript_Bike::
 	end
 
 GoldenrodCity_BikeShop_Text_Clerk2:
-	.string "Riding the bike is as simple as\n"
-	.string "pressing a button if you\l"
-	.string "REGISTER it from the BAG.$"
+	.string "Faire du vélo, c'est aussi simple que\n"
+	.string "d'appuyer sur un bouton si tu\l"
+	.string "l'ENREGISTRES depuis le SAC.$"
 
 GoldenrodCity_BikeShop_Text_ClerkIntro:
-    .string "…sigh… I moved here, but I can't\n"
-    .string "sell my BICYCLES. Why is that?\p"
-    .string "Could you ride a BICYCLE and\n"
-    .string "advertise for me?$"
+    .string "…soupir… J'ai déménagé ici, mais je\n"
+    .string "n'arrive pas à vendre mes VÉLOS. Pourquoi ?\p"
+    .string "Pourrais-tu rouler à vélo et\n"
+    .string "faire de la pub pour moi ?$"
 
 GoldenrodCity_BikeShop_Text_ClerkAgreed:
-    .string "Really? Great!\p"
-    .string "Give me your name and phone number,\n"
-    .string "and I'll loan you a BICYCLE.$"
+    .string "Vraiment ? Super !\p"
+    .string "Donne-moi ton nom et ton numéro,\n"
+    .string "et je te prête un VÉLO.$"
 
 GoldenrodCity_BikeShop_Text_BorrowedBicycle:
-    .string "{PLAYER} borrowed a BICYCLE.$"
+    .string "{PLAYER} a emprunté un VÉLO.$"
 
 GoldenrodCity_BikeShop_Text_Mainshop:
-	.string "The main shop is at CERULEAN back\n"
-	.string "in KANTO.\p"
-	.string "Say hello to the shop manager if\n"
-	.string "if you happen to go there!$"
+	.string "La boutique principale est à AZURIA,\n"
+	.string "dans le KANTO.\p"
+	.string "Salue le gérant si jamais tu\n"
+	.string "passes là-bas !$"
 
 GoldenrodCity_BikeShop_Text_Refused:
-    .string "…sigh… Oh, for the kindness of\n"
-    .string "people…$"
+    .string "…soupir… Ah, la gentillesse des\n"
+    .string "gens…$"
 
 GoldenrodCity_BikeShop_Text_JustReleasedCompact:
-    .string "Just released!\p"
-    .string "First-rate compact BICYCLES!$"
+    .string "Nouveau modèle !\p"
+    .string "VÉLOS compacts de première qualité !$"
 
 GoldenrodCity_BikeShop_Text_Bicycle:
-    .string "It's a shiny new BICYCLE!$"
+    .string "C'est un VÉLO tout neuf et brillant !$"

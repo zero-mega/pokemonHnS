@@ -67,39 +67,38 @@ EverGrandeCity_PhoebesRoom_EventScript_Defeated::
 	end
 
 EverGrandeCity_PhoebesRoom_Text_IntroSpeech:
-	.string "Ahahaha!\p"
-	.string "I'm PHOEBE of the ELITE FOUR.\n"
-	.string "I did my training on MT. PYRE.\p"
-	.string "While I trained, I gained the ability\n"
-	.string "to commune with GHOST-type POKéMON.\p"
-	.string "Yes, the bond I developed with POKéMON\n"
-	.string "is extremely tight.\p"
-	.string "So, come on, just try and see if you can\n"
-	.string "even inflict damage on my POKéMON!$"
+	.string "Ahahaha !\p"
+	.string "Je suis PHOEBE du CONSEIL 4.\n"
+	.string "Je me suis entraînée au MT. PYRE.\p"
+	.string "Pendant mon entraînement, j'ai acquis la capacité\n"
+	.string "de communiquer avec les POKéMON de type SPECTRE.\p"
+	.string "Oui, le lien que j'ai développé avec mes POKéMON\n"
+	.string "est extrêmement fort.\p"
+	.string "Alors, vas-y, essaie donc de voir si tu peux\n"
+	.string "même infliger des dégâts à mes POKéMON !$"
 
 EverGrandeCity_PhoebesRoom_Text_IntroSpeech2:
-	.string "Ahahaha! It's you again!\p"
-	.string "I'm PHOEBE of the ELITE FOUR.\n"
-	.string "The bond I developed with my POKéMON\l"
-	.string "has grown even stronger!\p"
-	.string "So just try and see if you can even\n"
-	.string "inflict damage on my POKéMON.\p"
-	.string "Because it won't be like last time!$"
+	.string "Ahahaha ! C'est encore toi !\p"
+	.string "Je suis PHOEBE du CONSEIL 4.\n"
+	.string "Le lien que j'ai développé avec mes POKéMON\l"
+	.string "est devenu encore plus fort !\p"
+	.string "Alors essaie donc de voir si tu peux\n"
+	.string "infliger des dégâts à mes POKéMON.\p"
+	.string "Parce que cette fois, ce ne sera pas comme la dernière !$"
 
 EverGrandeCity_PhoebesRoom_Text_Defeat:
-	.string "Oh, darn.\n"
-	.string "I've gone and lost.$"
+	.string "Oh, mince.\n"
+	.string "J'ai perdu.$"
 
 EverGrandeCity_PhoebesRoom_Text_Defeat2:
-	.string "Oh, darn…\n"
-	.string "It happened again.$"
+	.string "Oh, mince…\n"
+	.string "C'est encore arrivé.$"
 
 EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech:
-	.string "There's a definite bond between you\n"
-	.string "and your POKéMON, too.\p"
-	.string "I didn't recognize it, so it's only\n"
-	.string "natural that I lost.\p"
-	.string "Yup, I'd like to see how far your bond\n"
-	.string "will carry you.\p"
-	.string "Go ahead, move on to the next room.$"
-
+	.string "Il y a un lien certain entre toi\n"
+	.string "et tes POKéMON aussi.\p"
+	.string "Je ne l'avais pas reconnu, donc il est\n"
+	.string "normal que j'aie perdu.\p"
+	.string "Oui, j'aimerais voir jusqu'où ton lien\n"
+	.string "pourra t'emmener.\p"
+	.string "Vas-y, passe dans la salle suivante.$"

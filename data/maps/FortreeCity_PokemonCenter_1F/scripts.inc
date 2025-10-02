@@ -14,13 +14,13 @@ FortreeCity_PokemonCenter_1F_RhyperiorEvo::
 	end
 
 FortreeCity_PokemonCenter_1F_RhyperiorEvo_Text:
-	.string "RHYDON evolves by trading.\n"
-	.string "But only if it is traded with an object.\p"
-	.string "Which object, you might ask?\p"
-	.string "Well… My memory is not as good as it\n"
-	.string "was thirty years ago… It was a…\l"
-	.string "HARD… HARD… Ah.\p"
-	.string "I can't remember it. Sorry.$"
+	.string "RHYDON évolue par échange.\n"
+	.string "Mais seulement s'il est échangé avec un objet.\p"
+	.string "Quel objet, demandes-tu ?\p"
+	.string "Eh bien… Ma mémoire n'est plus aussi bonne\n"
+	.string "qu'il y a trente ans… C'était un…\l"
+	.string "PIERRE… PIERRE… Ah.\p"
+	.string "Je ne m'en souviens plus. Désolé.$"
 
 FortreeCity_PokemonCenter_1F_EventScript_Nurse::
 	setvar VAR_0x800B, LOCALID_NURSE
@@ -43,28 +43,28 @@ FortreeCity_PokemonCenter_1F_EventScript_Boy::
 	end
 
 FortreeCity_PokemonCenter_1F_Text_GoToSafariZone:
-	.string "Listen, kid, are you working\n"
-	.string "on a POKéDEX?\p"
-	.string "Hmm… Go to the SAFARI ZONE.\n"
-	.string "That's my suggestion.$"
+	.string "Dis-moi, gamin, tu travailles sur\n"
+	.string "un POKéDEX ?\p"
+	.string "Hmm… Va à la ZONE SAFARI.\n"
+	.string "C'est mon conseil.$"
 
 FortreeCity_PokemonCenter_1F_Text_RecordCornerIsNeat:
-	.string "Have you done anything at\n"
-	.string "the RECORD CORNER?\p"
-	.string "It's pretty neat. It mixes and matches\n"
-	.string "the records of TRAINERS.\p"
-	.string "I don't know quite how it works,\n"
-	.string "but it's cool. It's exciting, even!$"
+	.string "As-tu déjà fait quelque chose au\n"
+	.string "COIN ENREGISTREMENT ?\p"
+	.string "C'est plutôt sympa. Ça mélange et associe\n"
+	.string "les données des DRESSEURS.\p"
+	.string "Je ne sais pas trop comment ça marche,\n"
+	.string "mais c'est cool. C'est même excitant ! $"
 
 FortreeCity_PokemonCenter_1F_Text_DoYouKnowAboutPokenav:
-	.string "Oh, wow, you have a POKéNAV!\n"
-	.string "And it's just like mine!\p"
-	.string "Do you know about POKéNAV's\n"
-	.string "MATCH CALL system?\p"
-	.string "Access it, and you can chat with\n"
-	.string "registered TRAINERS anytime.\p"
-	.string "It also shows you which TRAINERS\n"
-	.string "want a rematch with you.\p"
-	.string "It's really nifty! Those DEVON guys\n"
-	.string "sure know what they're doing!$"
+	.string "Oh, waouh, tu as un POKéNAV !\n"
+	.string "Et il est comme le mien !\p"
+	.string "Tu connais le système\n"
+	.string "APPEL MATCH du POKéNAV ?\p"
+	.string "Accède-y, et tu peux discuter avec\n"
+	.string "les DRESSEURS enregistrés à tout moment.\p"
+	.string "Ça montre aussi quels DRESSEURS\n"
+	.string "veulent un nouveau combat avec toi.\p"
+	.string "C'est vraiment génial ! Ces gars de DEVON\n"
+	.string "savent ce qu'ils font !$"
 

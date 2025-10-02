@@ -76,45 +76,46 @@ Gate_GoldenrodCity_Route35_EventScript_Fisher::
 	end
 
 Route35GoldenrodGate_Text_RandyAskFavor:
-	.string "Excuse me, kid! Can you do a guy\n"
-	.string "a favor?\p"
-	.string "Can you take this POKéMON with MAIL\n"
-	.string "to my friend?\p"
-	.string "He's on ROUTE 31.$"
+	.string "Excuse-moi, gamin ! Tu peux rendre\n"
+	.string "service à un gars ?\p"
+	.string "Peux-tu emmener ce POKéMON avec une\n"
+	.string "LETTRE à mon ami ?\p"
+	.string "Il est sur la ROUTE 31.$"
 
 Route35GoldenrodGate_Text_RandyThanks:
-	.string "You will? Perfect! Thanks, kid!\p"
-	.string "My pal's a chubby guy who snoozes\n"
-	.string "all the time.\p"
-	.string "You'll recognize him right away!$"
+	.string "Tu veux bien ? Parfait ! Merci, gamin !\p"
+	.string "Mon pote est un gars bien rond qui\n"
+	.string "dort tout le temps.\p"
+	.string "Tu le reconnaîtras tout de suite !$"
 
 Route35GoldenrodGate_Text_ReceivedMonWithMail:
-	.string "{PLAYER} received a POKéMON with MAIL.$"
+	.string "{PLAYER} reçoit un POKéMON avec une LETTRE.$"
 
 Route35GoldenrodGate_Text_RandyWeirdTree:
-	.string "Make sure to put it at the front of\n"
-	.string "your team when you find my friend!\p"
-	.string "ROUTE 31!\p"
-	.string "Oh, yeah. There was a weird tree\n"
-	.string "blocking the road.\p"
-	.string "I wonder if it's been cleared?$"
+	.string "Assure-toi de le mettre en tête de\n"
+	.string "ton équipe quand tu trouveras mon ami !\p"
+	.string "ROUTE 31 !\p"
+	.string "Ah, oui. Il y avait un arbre étrange\n"
+	.string "qui bloquait la route.\p"
+	.string "Je me demande s'il a été dégagé.$"
 
 Route35GoldenrodGate_Text_CantCarryMoreMon:
-	.string "You can't carry another POKéMON…$"
+	.string "Tu ne peux pas porter un autre POKéMON…$"
 
 Route35GoldenrodGate_Text_RandyNeverMind:
-	.string "Oh… Never mind, then…$"
+	.string "Oh… Laisse tomber, alors…$"
 
 Route35GoldenrodGate_Text_ThanksForDelivery:
-	.string "Thanks, kid! You made the delivery\n"
-	.string "for me!\p"
-	.string "Here's something for your trouble!$"
+	.string "Merci, gamin ! Tu as fait la livraison\n"
+	.string "pour moi !\p"
+	.string "Tiens, c'est pour te remercier !$"
 
 Route35GoldenrodGate_Text_RandyMyPalSnoozing:
-	.string "My pal was snoozing, right? Heh,\n"
-	.string "what'd I say?$"
+	.string "Mon pote dormait, pas vrai ? Hé hé,\n"
+	.string "qu'est-ce que je t'avais dit ?$"
 
 Route35GoldenrodGate_Text_PokefanF_TreeBlocking:
+	.string "Un arbre étrange bloque la route.\p"
 	.string "A strange tree is blocking the road.\p"
 	.string "It wriggles around if you talk to it.\p"
 	.string "I heard it became wild when someone\n"

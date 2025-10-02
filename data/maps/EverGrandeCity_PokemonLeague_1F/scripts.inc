@@ -18,12 +18,12 @@ EverGrandeCity_PokemonLeague_1F_AncientPower::
 	end
 
 EverGrandeCity_PokemonLeague_1F_AncientPower_Text:
-	.string "There are three POKéMON that\n"
-	.string "evolve using a certain MOVE.\p"
-	.string "They are YANMA, PILOSWINE and TANGELA.\p"
-	.string "Now… the move… I don't remember\n"
-	.string "exactly… Something about an\l"
-	.string "ANCIENT MOVE…$"
+	.string "Il y a trois POKéMON qui évoluent\n"
+	.string "en utilisant une certaine CAPACITÉ.\p"
+	.string "Ce sont YANMA, COCHONNEIGE et SAQUEDENEU.\p"
+	.string "Maintenant… la capacité… Je ne me\n"
+	.string "rappelle plus exactement… Quelque chose\l"
+	.string "à propos d'une CAPACITÉ ANCIENNE…$"
 
 EverGrandeCity_PokemonLeague_1F_EventScript_GuardsBlockDoor::
 	setobjectxyperm LOCALID_GUARD_1, 9, 2
@@ -138,18 +138,18 @@ EverGrandeCity_PokemonLeague_1F_Movement_RightGuardOutOfWay:
 	step_end
 
 EverGrandeCity_PokemonLeague_1F_Text_MustHaveAllGymBadges:
-	.string "Beyond this point, only those TRAINERS\n"
-	.string "who have collected all the GYM BADGES\l"
-	.string "are permitted to enter.\p"
-	.string "TRAINER, let us confirm that you have\n"
-	.string "all the GYM BADGES.$"
+	.string "Au-delà de ce point, seuls les DRESSEURS\n"
+	.string "ayant collecté tous les BADGES\l"
+	.string "d'ARENE sont autorisés à entrer.\p"
+	.string "DRESSEUR, vérifions que tu possèdes\n"
+	.string "tous les BADGES d'ARENE.$"
 
 EverGrandeCity_PokemonLeague_1F_Text_HaventObtainedAllBadges:
-	.string "You haven't obtained all the BADGES.\p"
-	.string "If you're bound for the POKéMON\n"
-	.string "LEAGUE, you must return with them.$"
+	.string "Tu n'as pas obtenu tous les BADGES.\p"
+	.string "Si tu veux aller à la LIGUE POKéMON,\n"
+	.string "tu dois revenir avec eux.$"
 
 EverGrandeCity_PokemonLeague_1F_Text_GoForth:
-	.string "TRAINER! Believe in yourself and your\n"
-	.string "POKéMON, and go forth!$"
+	.string "DRESSEUR ! Crois en toi et en tes\n"
+	.string "POKéMON, et va de l'avant !$"
 

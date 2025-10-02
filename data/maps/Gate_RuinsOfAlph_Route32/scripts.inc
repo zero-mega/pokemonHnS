@@ -19,11 +19,11 @@ Gate_RuinsOfAlph_Route32_EventScript_Youngster::
 	end
 
 Gate_RuinsOfAlph_Route32_Text_PokefanM:
-	.string "You're studying the RUINS?\n"
-	.string "I see a scientist in the making.$"
+	.string "Tu étudies les RUINES ?\n"
+	.string "Je vois un futur scientifique.$"
 
 Gate_RuinsOfAlph_Route32_Text_Youngster:
-	.string "There are drawings on stone\n"
-	.string "panels.\p"
-	.string "I tried moving them.\n"
-	.string "I wonder what they are.$"
+	.string "Il y a des dessins sur des\n"
+	.string "panneaux de pierre.\p"
+	.string "J'ai essayé de les déplacer.\n"
+	.string "Je me demande ce que c'est.$"

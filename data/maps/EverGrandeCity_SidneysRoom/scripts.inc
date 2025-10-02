@@ -73,37 +73,37 @@ EverGrandeCity_SidneysRoom_EventScript_Defeated::
 	end
 
 EverGrandeCity_SidneysRoom_Text_IntroSpeech:
-	.string "Welcome, challenger!\n"
-	.string "I'm SIDNEY of the ELITE FOUR.\p"
-	.string "I like that look you're giving me.\n"
-	.string "I guess you'll give me a good match.\l"
-	.string "That's good! Looking real good!\p"
-	.string "All right! You and me, let's enjoy\n"
-	.string "a battle that can only be staged\l"
-	.string "here in the POKéMON LEAGUE!$"
+	.string "Bienvenue, challenger !\n"
+	.string "Je suis SIDNEY du CONSEIL 4.\p"
+	.string "J'aime ce regard que tu me lances.\n"
+	.string "Je pense que tu vas bien te battre.\l"
+	.string "C'est bien ! Tu as l'air en forme !\p"
+	.string "Très bien ! Toi et moi, profitons\n"
+	.string "d'un combat qui ne peut avoir lieu\l"
+	.string "qu'ici, à la LIGUE POKéMON !$"
 
 EverGrandeCity_SidneysRoom_Text_IntroSpeech2:
-	.string "Welcome back, challenger!\n"
-	.string "I'm SIDNEY of the ELITE FOUR.\p"
-	.string "But you already know me!\n"
-	.string "I guess you'll give me a good match\l"
-	.string "again. Looking real good!\p"
-	.string "All right! You and me, let's enjoy\n"
-	.string "a battle that can only be staged\l"
-	.string "here in the POKéMON LEAGUE!\p"
-	.string "This time, I won't lose.$"
+	.string "Te revoilà, challenger !\n"
+	.string "Je suis SIDNEY du CONSEIL 4.\p"
+	.string "Mais tu me connais déjà !\n"
+	.string "Je pense que tu vas encore bien te battre.\l"
+	.string "Tu as l'air en forme !\p"
+	.string "Très bien ! Toi et moi, profitons\n"
+	.string "d'un combat qui ne peut avoir lieu\l"
+	.string "qu'ici, à la LIGUE POKéMON !\p"
+	.string "Cette fois, je ne perdrai pas.$"
 
 EverGrandeCity_SidneysRoom_Text_Defeat:
-	.string "Well, how do you like that? I lost!\n"
-	.string "Eh, it was fun, so it doesn't matter.$"
+	.string "Alors, qu'en dis-tu ? J'ai perdu !\n"
+	.string "Bah, c'était amusant, donc ce n'est pas grave.$"
 
 EverGrandeCity_SidneysRoom_Text_Defeat2:
-	.string "Well, how do you like that? I lost!\n"
-	.string "Again! It doesn't matter. It was fun.$"
+	.string "Alors, qu'en dis-tu ? J'ai perdu !\n"
+	.string "Encore ! Ce n'est pas grave. C'était amusant.$"
 
 EverGrandeCity_SidneysRoom_Text_PostBattleSpeech:
-	.string "Well, listen to what this loser has\n"
-	.string "to say.\p"
-	.string "You've got what it takes to go far.\n"
-	.string "Now, go on to the next room and enjoy\l"
-	.string "your next battle!$"
+	.string "Bon, écoute ce que ce perdant a\n"
+	.string "à dire.\p"
+	.string "Tu as ce qu'il faut pour aller loin.\n"
+	.string "Maintenant, va dans la pièce suivante et\l"
+	.string "profite de ton prochain combat !$"

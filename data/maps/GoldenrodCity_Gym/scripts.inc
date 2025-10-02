@@ -117,133 +117,131 @@ GoldenrodCity_Gym_EventScript_Statue2::
 	end
 
 GoldenrodCity_Gym_Text_GymStatue:
-	.string "GOLDENROD POKéMON GYM$"
+	.string "ARÈNE POKéMON DE DOUBLONVILLE$"
 
 GoldenrodCity_Gym_Text_GymStatueCertified:
-	.string "GOLDENROD TOWN POKéMON GYM\p"
-	.string "WHITNEY'S CERTIFIED TRAINERS:\n"
+	.string "ARÈNE POKéMON DE DOUBLONVILLE\p"
+	.string "DRESSEURS CERTIFIÉS PAR BLANCHE :\n"
 	.string "{PLAYER}$"
 
 GoldenrodCity_Gym_Text_WhitneyBefore:
-    .string "Hi! I'm WHITNEY!\p"
-    .string "Everyone was into POKéMON, so I got\n"
-    .string "into it too!\p"
-    .string "POKéMON are super-cute!\p"
-    .string "You want to battle? I'm warning\n"
-    .string "you- I'm good!$"
+    .string "Salut ! Je suis BLANCHE !\p"
+    .string "Tout le monde aimait les POKéMON, alors\n"
+    .string "je m'y suis mise aussi !\p"
+    .string "Les POKéMON sont trop mignons !\p"
+    .string "Tu veux te battre ? Je te préviens,\n"
+    .string "je suis forte !$"
 
 GoldenrodCity_Gym_Text_WhitneyShouldntBeSoSerious:
-    .string "Sob…\p"
-    .string "…Waaaaaaah! You're mean!\p"
-    .string "You shouldn't be so serious! You…\n"
-    .string "you child, you!$"
+    .string "Snif…\p"
+    .string "…Ouaaah ! Tu es méchant !\p"
+    .string "Tu ne devrais pas être si sérieux !\n"
+    .string "Tu es qu'un enfant !$"
 
 GoldenrodCity_Gym_Text_WhitneyYouMeanie:
-    .string "Waaaaah!\p"
-    .string "Waaaaah!\p"
-    .string "…Snivel, hic… …You meanie!$"
+    .string "Ouaaah !\p"
+    .string "Ouaaah !\p"
+    .string "…Snif, hic… …Tu es méchant !$"
 
 GoldenrodCity_Gym_Text_WhitneyWhatDoYouWant:
-    .string "…Sniff…\p"
-    .string "What? What do you want? A BADGE?\p"
-    .string "Oh, right. I forgot. Here's\n"
-    .string "PLAINBADGE.$"
+    .string "…Snif…\p"
+    .string "Quoi ? Que veux-tu ? Un BADGE ?\p"
+    .string "Ah, oui. J'avais oublié. Voici\n"
+    .string "le BADGE PLAINE.$"
 
 GoldenrodCity_Gym_Text_PlayerReceivedPlainBadge:
-    .string "{PLAYER} received PLAINBADGE.$"
+    .string "{PLAYER} reçoit le BADGE PLAINE.$"
 
 GoldenrodCity_Gym_Text_WhitneyPlainBadge:
-    .string "PLAINBADGE lets your POKéMON use\n"
-    .string "STRENGTH outside of battle.\p"
-    .string "It also boosts your POKéMON's\n"
-	.string "DEFENSE.\p"
-    .string "Oh, you can have this too!$"
+    .string "Le BADGE PLAINE permet à tes POKéMON\n"
+    .string "d'utiliser FORCE hors combat.\p"
+    .string "Il augmente aussi la DÉFENSE de tes\n"
+	.string "POKéMON.\p"
+    .string "Oh, tu peux aussi avoir ça !$"
 
 GoldenrodCity_Gym_Text_WhitneyAttract:
-    .string "It's ATTRACT! It makes full use of a\n"
-    .string "POKéMON's charm.\p"
-    .string "Isn't it just perfect for a cutie\n"
-    .string "like me?$"
+    .string "C'est ATTRACTION ! Ça utilise tout le\n"
+    .string "charme d'un POKéMON.\p"
+    .string "N'est-ce pas parfait pour une\n"
+    .string "mignonne comme moi ?$"
 
 GoldenrodCity_Gym_Text_WhitneyGoodCry:
-    .string "Ah, that was a good cry!$"
+    .string "Ah, ça fait du bien de pleurer !$"
 
 GoldenrodCity_Gym_Text_WhitneyRematch:
-    .string "Hi! It's you!\p"
-    .string "Wow, JOHTO CHAMPION now?\p"
-    .string "You really are amazing!\p"
-    .string "I want to see how strong you are.\p"
-    .string "Want to have a rematch with me?$"
+    .string "Salut ! C'est toi !\p"
+    .string "Wow, CHAMPION DE JOHTO maintenant ?\p"
+    .string "Tu es vraiment incroyable !\p"
+    .string "Je veux voir à quel point tu es fort.\p"
+    .string "Tu veux refaire un combat contre moi ?$"
 
 GoldenrodCity_Gym_Text_WhitneyRematchDefeat:
-    .string "Waaaaah!\p"
-    .string "Waaaaah!\p"
-    .string "…Snivel, hic… …You meanie!$"
+    .string "Ouaaah !\p"
+    .string "Ouaaah !\p"
+    .string "…Snif, hic… …Tu es méchant !$"
 
 GoldenrodCity_Gym_Text_LassCarrieSeen:
-    .string "Don't let my POKéMON's cute looks\n"
-    .string "fool you.\p"
-    .string "They can whip you!$"
+    .string "Ne te laisse pas tromper par la mignonnerie\n"
+    .string "de mes POKéMON.\p"
+    .string "Ils peuvent te battre !$"
 
 GoldenrodCity_Gym_Text_LassCarrieBeaten:
-    .string "Darn… I thought you were weak…$"
+    .string "Zut… Je pensais que tu étais faible…$"
 
 GoldenrodCity_Gym_Text_LassCarrieAfter:
-    .string "Do my POKéMON think I'm cute?$"
+    .string "Mes POKéMON me trouvent-ils mignonne ?$"
 
 GoldenrodCity_Gym_Text_LassBridgetSeen:
-    .string "I like cute POKéMON better than\n"
-    .string "strong POKéMON.\p"
-    .string "But I have strong and cute POKéMON!$"
+    .string "Je préfère les POKéMON mignons aux\n"
+    .string "POKéMON forts.\p"
+    .string "Mais j'ai des POKéMON forts et mignons !$"
 
 GoldenrodCity_Gym_Text_LassBridgetBeaten:
-    .string "Oh, no, no, no!$"
+    .string "Oh, non, non, non !$"
 
 GoldenrodCity_Gym_Text_LassBridgetAfter:
-    .string "I'm trying to beat WHITNEY, but…\n"
-    .string "It's depressing.\p"
-    .string "I'm okay! If I lose, I'll just try\n"
-    .string "harder next time!$"
+    .string "J'essaie de battre BLANCHE, mais…\n"
+    .string "C'est déprimant.\p"
+    .string "Ça va ! Si je perds, j'essaierai\n"
+    .string "plus fort la prochaine fois !$"
 
 GoldenrodCity_Gym_Text_BridgetWhitneyCries:
-    .string "Oh, no. You made WHITNEY cry.\p"
-    .string "It's OK. She'll stop soon. She\n"
-    .string "always cries when she loses.$"
+    .string "Oh, non. Tu as fait pleurer BLANCHE.\p"
+    .string "Ce n'est rien. Elle va s'arrêter bientôt.\n"
+    .string "Elle pleure toujours quand elle perd.$"
 
 GoldenrodCity_Gym_Text_BeautyVictoriaSeen:
-    .string "Oh, you are a cute little trainer!\p"
-    .string "I like you, but I won't hold back!$"
+    .string "Oh, tu es un(e) dresseur(se) trop mignon(ne) !\p"
+    .string "Je t'aime bien, mais je ne retiendrai pas mes coups !$"
 
 GoldenrodCity_Gym_Text_BeautyVictoriaBeaten:
-    .string "Let's see… Oops, it's over?$"
+    .string "Voyons voir… Oups, c'est fini ?$"
 
 GoldenrodCity_Gym_Text_BeautyVictoriaAfter:
-    .string "Wow, you must be good to beat me!\n"
-    .string "Keep it up!$"
+    .string "Waouh, tu dois être fort(e) pour me battre !\n"
+    .string "Continue comme ça !$"
 
 GoldenrodCity_Gym_Text_BeautySamanthaSeen:
-    .string "Give it your best shot, or I'll take\n"
-    .string "you down!$"
+    .string "Donne tout ce que tu as, ou je vais\n"
+    .string "t'écraser !$"
 
 GoldenrodCity_Gym_Text_BeautySamanthaBeaten:
-    .string "No! Oh, MEOWTH, I'm so sorry!$"
+    .string "Non ! Oh, MIAOUSS, je suis désolée !$"
 
 GoldenrodCity_Gym_Text_BeautySamanthaAfter:
-    .string "I taught MEOWTH moves for taking on\n"
-    .string "any type…$"
+    .string "J'ai appris à MIAOUSS des attaques pour\n"
+    .string "affronter tous les types…$"
 
 GoldenrodCity_Gym_Text_GymGuide:
-    .string "Yo! CHAMP in making!\p"
-    .string "This GYM is home to WHITNEY, the\n"
-    .string "master of NORMAL-type POKéMON.\p"
-    .string "Be cautious of her cute team.\p"
-    .string "Some of the POKéMON in this gym\n"
-    .string "have the newly discovered FAIRY\l"
-    .string "type as well.\p"
-    .string "Check ROUTE 34 if you need a\n"
-    .string "FIGHTING-type or POISON-type.$"
+    .string "Yo ! CHAMPION en herbe !\p"
+    .string "Cette ARÈNE est dirigée par BLANCHE,\n"
+    .string "la spécialiste des POKéMON de type NORMAL.\p"
+    .string "Méfie-toi de son équipe trop mignonne.\p"
+    .string "Certains POKéMON ici ont aussi le tout\n"
+    .string "nouveau type FÉE.\p"
+    .string "Va sur la ROUTE 34 si tu as besoin d'un\n"
+    .string "POKéMON de type COMBAT ou POISON.$"
 
 GoldenrodCity_Gym_Text_GymGuideWin:
-    .string "You won? Great! I was busy admiring\n"
-    .string "the ladies here.$"
-
+    .string "Tu as gagné ? Génial ! J'étais occupé à\n"
+    .string "admirer les dames ici.$"

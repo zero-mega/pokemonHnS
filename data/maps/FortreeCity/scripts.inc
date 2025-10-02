@@ -88,68 +88,68 @@ FortreeCity_Movement_KecleonFlee:
 	step_end
 
 FortreeCity_Text_SawGiganticPokemonInSky:
-	.string "No one believes me, but I saw this\n"
-	.string "gigantic POKéMON in the sky.\p"
-	.string "It seemed to squirm as it flew toward\n"
-	.string "ROUTE 131.\p"
-	.string "By the way… Sniff…\n"
-	.string "Um… You, uh…smell singed.\p"
-	.string "Were you at a volcano or something?$"
+	.string "Personne ne me croit, mais j’ai vu un\n"
+	.string "POKéMON gigantesque dans le ciel.\p"
+	.string "Il semblait se tortiller en volant vers\n"
+	.string "la ROUTE 131.\p"
+	.string "Au fait… Snif…\n"
+	.string "Euh… Tu sens un peu le brûlé…\p"
+	.string "Tu étais près d’un volcan ou quoi?$"
 
 FortreeCity_Text_SomethingBlockingGym:
-	.string "I want to go to the POKéMON GYM,\n"
-	.string "but something's blocking the way.\p"
-	.string "After all the bother I went through\n"
-	.string "training on ROUTE 120…$"
+	.string "Je veux aller à l’ARÈNE POKéMON,\n"
+	.string "mais quelque chose bloque le passage.\p"
+	.string "Après tous les efforts que j’ai faits\n"
+	.string "en m’entraînant sur la ROUTE 120…$"
 
 FortreeCity_Text_ThisTimeIllBeatWinona:
-	.string "I've got my pride-and-joy POKéMON\n"
-	.string "with me. This time, I'll beat WINONA.$"
+	.string "J’ai mon POKéMON préféré avec moi.\n"
+	.string "Cette fois, je vais battre ALIZÉE.$"
 
 FortreeCity_Text_TreesGrowByDrinkingRainwater:
-	.string "The ground absorbs rainwater, and\n"
-	.string "trees grow by drinking that water…\p"
-	.string "Our FORTREE CITY exists because\n"
-	.string "there's both water and soil.$"
+	.string "Le sol absorbe l’eau de pluie, et\n"
+	.string "les arbres grandissent en la buvant…\p"
+	.string "Notre CLEMENTI-VILLE existe parce\n"
+	.string "qu’il y a à la fois de l’eau et de la terre.$"
 
 FortreeCity_Text_EveryoneHealthyAndLively:
-	.string "The CITY consists of homes built on\n"
-	.string "trees.\p"
-	.string "Perhaps because of that lifestyle,\n"
-	.string "everyone is healthy and lively.\p"
-	.string "Why, even myself--I feel as if I've\n"
-	.string "grown thirty years younger.$"
+	.string "La VILLE est composée de maisons\n"
+	.string "construites sur les arbres.\p"
+	.string "Peut-être que ce mode de vie fait que\n"
+	.string "tout le monde est en pleine forme.\p"
+	.string "Même moi—j’ai l’impression d’avoir\n"
+	.string "rajeuni de trente ans.$"
 
 FortreeCity_Text_BugPokemonComeThroughWindow:
-	.string "Living on top of trees is okay.\p"
-	.string "But sometimes BUG POKéMON come in\n"
-	.string "through windows.\l"
-	.string "It can be really startling.$"
+	.string "Vivre au sommet des arbres, c’est bien.\p"
+	.string "Mais parfois, des POKéMON INSECTE\n"
+	.string "rentrent par les fenêtres.\l"
+	.string "Ça peut vraiment surprendre.$"
 
 FortreeCity_Text_PokemonThatEvolveWhenTraded:
-	.string "There are POKéMON that evolve when\n"
-	.string "you trade them! That's what I heard.$"
+	.string "Il y a des POKéMON qui évoluent quand\n"
+	.string "on les échange ! C’est ce qu’on m’a dit.$"
 
 FortreeCity_Text_SomethingUnseeable:
-	.string "Something unseeable is in the way.$"
+	.string "Quelque chose d’invisible bloque le passage.$"
 
 FortreeCity_Text_UnseeableUseDevonScope:
-	.string "Something unseeable is in the way.\p"
-	.string "Want to use the DEVON SCOPE?$"
+	.string "Quelque chose d’invisible bloque le passage.\p"
+	.string "Voulez-vous utiliser le DEVON SCOPE?$"
 
 FortreeCity_Text_UsedDevonScopePokemonFled:
-	.string "{PLAYER} used the DEVON SCOPE.\p"
-	.string "An invisible POKéMON became completely\n"
-	.string "visible!\p"
-	.string "The startled POKéMON fled!$"
+	.string "{PLAYER} utilise le DEVON SCOPE.\p"
+	.string "Un POKéMON invisible devient\n"
+	.string "complètement visible !\p"
+	.string "Le POKéMON effrayé s’enfuit !$"
 
 FortreeCity_Text_CitySign:
-	.string "FORTREE CITY\n"
-	.string "“The treetop city that frolics with\l"
-	.string "nature.”$"
+	.string "CLEMENTI-VILLE\n"
+	.string "« La ville perchée qui s’amuse avec\l"
+	.string "la nature. »$"
 
 FortreeCity_Text_GymSign:
-	.string "FORTREE CITY POKéMON GYM\n"
-	.string "LEADER: WINONA\p"
-	.string "“The bird user taking flight into\n"
-	.string "the world.”$"
+	.string "ARÈNE POKéMON DE CLEMENTI-VILLE\n"
+	.string "CHAMPIONNE : ALIZÉE\p"
+	.string "« La dresseuse d’oiseaux qui prend\n"
+	.string "son envol vers le monde. »$"
