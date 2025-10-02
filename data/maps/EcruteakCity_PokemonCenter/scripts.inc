@@ -100,46 +100,44 @@ EcruteakCity_PokemonCenter_Movement_BillBot:
 
 
 EcruteakCity_PokemonCenter1F_Text_Bill1:
-	.string "Hi, I'm BILL. And who are you?\p"
-	.string "Hmm, {PLAYER}, huh?\n"
-	.string "You've come at the right time.$"
+	.string "Salut, je suis BILL. Et toi, qui es-tu ?\p"
+	.string "Hmm, {PLAYER}, hein ?\n"
+	.string "Tu arrives au bon moment.$"
 
 EcruteakCity_PokemonCenter1F_Text_Bill2:
-	.string "I just finished adjustments on my\n"
-	.string "POKéMON STORAGE SYSTEM.\p"
-	.string "You know that PC you use to store\n"
-	.string "all your POKéMON?\p"
-	.string "I developed that myself!\p"
-	.string "Now that I've installed this one,\n"
-	.string "my PC is running at all\l"
-	.string "POKéMON CENTERS in JOHTO and KANTO.\p"
-	.string "I have to hurry on back to\n"
-	.string "GOLDENROD and see my folks. Feel\l"
-	.string "free to visit anytime!\p"
-	.string "Buh-bye!$"
+	.string "Je viens juste de terminer les réglages\n"
+	.string "de mon SYSTÈME DE STOCKAGE POKéMON.\p"
+	.string "Tu sais, ce PC que tu utilises pour\n"
+	.string "stocker tous tes POKéMON ?\p"
+	.string "C'est moi qui l'ai développé !\p"
+	.string "Maintenant que j'ai installé celui-ci,\n"
+	.string "mon PC fonctionne dans tous les\l"
+	.string "CENTRES POKéMON de JOHTO et KANTO.\p"
+	.string "Je dois vite retourner à DOUBLONVILLE\n"
+	.string "voir ma famille. N'hésite pas à venir\l"
+	.string "me rendre visite quand tu veux !\p"
+	.string "Salut !$"
 
 EcruteakCity_PokemonCenter1F_Text_PokefanM:
-	.string "The way the KIMONO GIRLS dance is\n"
-	.string "marvelous.\p"
-	.string "Just like the way they use their\n"
-	.string "POKéMON.$"
+	.string "La façon dont dansent les KIMONO GIRLS\n"
+	.string "est merveilleuse.\p"
+	.string "Tout comme la façon dont elles utilisent\n"
+	.string "leurs POKéMON.$"
 
 EcruteakCity_PokemonCenter1F_Text_PokefanM_Mobile:
-	.string "You must be hoping to battle more\n"
-	.string "people, right?\p"
-	.string "There's apparently some place where\n"
-	.string "trainers gather.\p"
-	.string "Where, you ask?\p"
-	.string "It's a little past OLIVINE CITY.$"
+	.string "Tu veux sûrement affronter plus de\n"
+	.string "personnes, n'est-ce pas ?\p"
+	.string "Il paraît qu'il existe un endroit où\n"
+	.string "les dresseurs se rassemblent.\p"
+	.string "Où, demandes-tu ?\p"
+	.string "C'est un peu après IRISIA.$"
 
 EcruteakCity_PokemonCenter1F_Text_CooltrainerF:
-	.string "MORTY, the GYM LEADER, is soooo\n"
-	.string "cool.\p"
-	.string "His POKéMON are really tough too.$"
+	.string "MORTIMER, le CHAMPION d'ARÈNE, est\n"
+	.string "tellement cool.\p"
+	.string "Ses POKéMON sont vraiment forts aussi.$"
 
 EcruteakCity_PokemonCenter1F_Text_GymGuide:
-	.string "LAKE OF RAGE…\p"
-	.string "The appearance of a GYARADOS\n"
-	.string "swarm…\p"
-	.string "I smell a conspiracy. I know it!$"
-
+	.string "LAC COLÈRE…\p"
+	.string "L'apparition d'une nuée de LÉVIATOR…\p"
+	.string "Je sens un complot. J'en suis sûr !$"

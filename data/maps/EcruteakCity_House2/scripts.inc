@@ -2,29 +2,29 @@ EcruteakCity_House2_MapScripts::
 	.byte 0
 
 Ecruteak_Text_ItemfinderAdventure:
-	.string "Ah. You're on an adventure with\n"
-	.string "your POKéMON?\p"
-	.string "Well, what's an adventure without\n"
-	.string "treasure hunting?\p"
-	.string "Am I right, or am I right?$"
+	.string "Ah. Tu es en aventure avec\n"
+	.string "tes POKéMON ?\p"
+	.string "Eh bien, qu'est-ce qu'une aventure\n"
+	.string "sans chasse au trésor ?\p"
+	.string "N'est-ce pas ? Je me trompe ?$"
 
 Ecruteak_Text_ItemfinderTrueSpirit:
-	.string "Good! You understand the true\n"
-	.string "spirit of adventure.\p"
-	.string "I like that! Take this with you.$"
+	.string "Bien ! Tu comprends le vrai\n"
+	.string "esprit d'aventure.\p"
+	.string "J'aime ça ! Prends ceci avec toi.$"
 
 Ecruteak_Text_ItemfinderExplanation:
-	.string "There are many items lying about\n"
-	.string "that aren't obvious.\p"
-	.string "Use ITEMFINDER to check if there\n"
-	.string "is an item on the ground near you.\p"
-	.string "It doesn't show the exact spot,\n"
-	.string "so you'll have to look yourself.\p"
-	.string "Oh yeah--I heard there are items\n"
-	.string "in ECRUTEAK's BURNED TOWER.$"
+	.string "Il y a beaucoup d'objets cachés\n"
+	.string "qui ne sont pas évidents.\p"
+	.string "Utilise l'ITEMFINDER pour vérifier\n"
+	.string "s'il y a un objet près de toi.\p"
+	.string "Il ne montre pas l'endroit exact,\n"
+	.string "alors il faudra chercher toi-même.\p"
+	.string "Ah oui—j'ai entendu dire qu'il y a\n"
+	.string "des objets dans la TOUR BRÛLÉE d'ECRUTEAK.$"
 
 Ecruteak_Text_ItemfinderToEachHisOwn:
-	.string "Oh… To each his own, I suppose…$"
+	.string "Oh… Chacun ses goûts, je suppose…$"
 
 EcruteakCity_House2_EventScript_ItemFinderMan::
 	lock
@@ -55,30 +55,30 @@ EcruteakCity_House2_EventScript_Book3::
 	end
 
 Ecruteak_Text_ItemFinderMan::
-	.string "ECRUTEAK is a very old city.\n"
-	.string "Many generations passed down\l"
-	.string "their history in books like these.$"
+	.string "IRISIA est une ville très ancienne.\n"
+	.string "De nombreuses générations ont\l"
+	.string "transmis leur histoire dans des livres comme ceux-ci.$"
 
 Ecruteak_Text_HistoryBook:
-	.string "HISTORY OF ECRUTEAK\p"
-	.string "Want to read it?$"
+	.string "HISTOIRE D'IRISIA\p"
+	.string "Veux-tu la lire?$"
 
 Ecruteak_Text_TwoTowers:
-	.string "In ECRUTEAK, there were two towers.\p"
-	.string "Each tower was the roost of\n"
-	.string "powerful flying POKéMON.\p"
-	.string "But one of the towers burned to\n"
-	.string "the ground.\p"
-	.string "The two POKéMON haven't been seen\n"
-	.string "since…\p"
-	.string "Keep reading?$"
+	.string "À IRISIA, il y avait deux tours.\p"
+	.string "Chaque tour était le perchoir de\n"
+	.string "puissants POKéMON volants.\p"
+	.string "Mais l'une des tours a brûlé\n"
+	.string "jusqu'au sol.\p"
+	.string "Les deux POKéMON n'ont plus été vus\n"
+	.string "depuis…\p"
+	.string "Continuer la lecture?$"
 
 Ecruteak_Text_ThreeMon:
-	.string "ECRUTEAK was also home to three\n"
-	.string "POKéMON that raced around the town.\p"
-	.string "They were said to have been born\n"
-	.string "of water, lightning and fire.\p"
-	.string "But they could not contain their\n"
-	.string "excessive power.\p"
-	.string "So they say the three ran like the\n"
-	.string "wind off into the grassland.$"
+	.string "IRISIA abritait aussi trois POKéMON\n"
+	.string "qui couraient autour de la ville.\p"
+	.string "On disait qu'ils étaient nés de\n"
+	.string "l'eau, de la foudre et du feu.\p"
+	.string "Mais ils ne pouvaient contenir leur\n"
+	.string "puissance excessive.\p"
+	.string "On raconte que les trois se sont\n"
+	.string "enfuis comme le vent dans la plaine.$"

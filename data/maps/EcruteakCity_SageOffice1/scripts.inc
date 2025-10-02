@@ -17,8 +17,8 @@ EcruteakCity_SageOffice1_EventScript_Sign::
 	end
 
 EcruteakCity_SageOffice1_Text_Sign:
-	.string "The bell of tin rings clearly for\n"
-	.string "those under the tower's wing.$"
+	.string "La cloche d'étain sonne clairement pour\n"
+	.string "ceux sous l'aile de la tour.$"
 
 EcruteakCity_SageOffice2_EventScript_SageA::
 	lock
@@ -90,63 +90,64 @@ EcruteakCity_SageOffice2_Movement_StandAside:
 	step_end
 
 EcruteakTinTowerEntrance_Text_SageNoBadge:
-	.string "TIN TOWER is off limits to the\n"
-	.string "unworthy. Sorry but you'll have\l"
-	.string "to leave.$"
+	.string "La TOUR FER est interdite aux\n"
+	.string "indignes. Désolé, mais vous devez\l"
+	.string "partir.$"
 
 EcruteakTinTowerEntrance_Text_SageWithBadge:
-	.string "TIN TOWER is off limits to anyone\n"
-	.string "without ECRUTEAK GYM's BADGE.\p"
-	.string "Ah!\p"
-	.string "ECRUTEAK's GYM BADGE! Please, go\n"
-	.string "right through.$"
+	.string "La TOUR FER est interdite à toute\n"
+	.string "personne sans le BADGE de l'ARÈNE\p"
+	.string "d'IRISIA.\p"
+	.string "Ah !\p"
+	.string "Le BADGE de l'ARÈNE d'IRISIA !\n"
+	.string "Veuillez passer, je vous en prie.$"
 
 EcruteakTinTowerEntrance_Text_SageNoClearBell:
-	.string "A momentous event has occurred.\p"
-	.string "I beg your pardon, but I must ask\n"
-	.string "you to leave.\p"
-	.string "…What soothes the soul…\p"
-	.string "The WISE TRIO say things that are\n"
-	.string "so very difficult to understand…$"
+	.string "Un événement important s'est produit.\p"
+	.string "Je vous prie de m'excuser, mais je\n"
+	.string "dois vous demander de partir.\p"
+	.string "…Ce qui apaise l'âme…\p"
+	.string "Le TRIO SAGE dit des choses si\n"
+	.string "difficiles à comprendre…$"
 
 EcruteakTinTowerEntrance_Text_SageHearsClearBell1:
-	.string "A momentous event has occurred.\p"
-	.string "I beg your pardon, but I must ask\n"
-	.string "you to leave.\p"
+	.string "Un événement important s'est produit.\p"
+	.string "Je vous prie de m'excuser, mais je\n"
+	.string "dois vous demander de partir.\p"
 	.string "..............................$"
 EcruteakTinTowerEntrance_Text_SageHearsClearBell2:
-	.string "Ah!\p"
-	.string "The sound of that CLEAR BELL!\p"
-	.string "It… It's sublime!\p"
-	.string "I've never heard so beautiful a\n"
-	.string "sound before!\p"
-	.string "That bell's chime is indicative of\n"
-	.string "the bearer's soul.\p"
-	.string "You…\p"
-	.string "You may be able to make it through\n"
-	.string "TIN TOWER.\p"
-	.string "Please, do go on.$"
+	.string "Ah !\p"
+	.string "Le son de cette CLOCHETTE TRANSPARENTE !\p"
+	.string "C'est… C'est sublime !\p"
+	.string "Je n'ai jamais entendu un son aussi\n"
+	.string "beau !\p"
+	.string "Le tintement de cette clochette\n"
+	.string "reflète l'âme de celui qui la porte.\p"
+	.string "Vous…\p"
+	.string "Vous pourriez être capable de traverser\n"
+	.string "la TOUR FER.\p"
+	.string "Allez-y, je vous en prie.$"
 
 EcruteakTinTowerEntrance_Text_SagePleaseDoGoOn:
-	.string "Please, do go on.$"
+	.string "Allez-y, je vous en prie.$"
 
 EcruteakTinTowerEntrance_Text_SageDone:
-	.string "That bell's chime is indicative of\n"
-	.string "the bearer's soul.\p"
-	.string "You…\n"
-	.string "Truly are worthy.$"
+	.string "Le tintement de cette clochette\n"
+	.string "reflète l'âme de celui qui la porte.\p"
+	.string "Vous…\n"
+	.string "Vous êtes vraiment digne.$"
 
 EcruteakTinTowerEntrance_Text_WanderingSage:
-	.string "The TIN TOWER ahead is a nine-\n"
-	.string "tier tower of divine beauty.\p"
-	.string "It soothes the soul of all who\n"
-	.string "see it.$"
+	.string "La TOUR FER devant est une tour de\n"
+	.string "neuf étages d'une beauté divine.\p"
+	.string "Elle apaise l'âme de tous ceux qui\n"
+	.string "la contemplent.$"
 
 EcruteakTinTowerEntrance_Text_WanderingSageClearBell:
-	.string "The TIN TOWER shook! A POKéMON must\n"
-	.string "have returned to the top!$"
+	.string "La TOUR FER a tremblé ! Un POKéMON a\n"
+	.string "dû revenir au sommet !$"
 
 EcruteakTinTowerEntrance_Text_Gramps:
-	.string "Two towers… Two POKéMON…\p"
-	.string "But when one burned down, both\n"
-	.string "POKéMON flew away, never to return.$"
+	.string "Deux tours… Deux POKéMON…\p"
+	.string "Mais quand l'une a brûlé, les deux\n"
+	.string "POKéMON se sont envolés, sans jamais revenir.$"
