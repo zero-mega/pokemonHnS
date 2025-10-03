@@ -10,14 +10,14 @@ LavenderTown_Mart_EventScript_Rocker::
 	end
 
 LavenderMart_Text_PokefanM:
-	.string "REPEL is a necessity if you are\n"
-	.string "going to explore a cave.\p"
-	.string "Even though I like exploring,\n"
-	.string "I still haven't made it to all\l"
-	.string "the caves.$"
+	.string "Le REPOUSSE est indispensable si tu\n"
+	.string "veux explorer une grotte.\p"
+	.string "Même si j'aime explorer,\n"
+	.string "je n'ai pas encore visité toutes\l"
+	.string "les grottes.$"
 
 LavenderMart_Text_Rocker:
-	.string "I heard about a craftsman who\n"
-	.string "makes custom BALLS in the JOHTO\l"
-	.string "town of AZALEA.\p"
-	.string "I wish I had some.$"
+	.string "J'ai entendu parler d'un artisan qui\n"
+	.string "fabrique des BALLS sur mesure dans la\l"
+	.string "ville d'ÉCORCIA à JOHTO.\p"
+	.string "J'aimerais en avoir quelques-unes.$"

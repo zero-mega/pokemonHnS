@@ -22,19 +22,19 @@ LavenderTown_House1_EventScript_Marowak::
 	end
 
 LavenderTown_House1_Text_Girl:
-	.string "Can you believe it?\p"
-	.string "Some people get bored with taking\n"
-	.string "care of POKéMON.\p"
-	.string "GRANPDA takes in such poor homeless\n"
-	.string "POKéMON and takes care of them.$"
+	.string "Tu peux le croire ?\p"
+	.string "Certaines personnes se lassent de\n"
+	.string "s'occuper des POKéMON.\p"
+	.string "GRAND-PÈRE recueille ces pauvres\n"
+	.string "POKéMON sans abri et s'en occupe.$"
 LavenderTown_House1_Text_Guy:
-	.string "MR. FUJI does live here but he's\n"
-	.string "away now. He should be at the\l"
-	.string "SOUL HOUSE.$"
+	.string "MR. FUJI vit bien ici mais il est\n"
+	.string "parti en ce moment. Il doit être à la\l"
+	.string "MAISON DES ÂMES.$"
 LavenderTown_House1_Text_Marowak:
 	.string ".............................$"
 
 LavenderTown_House1_Text_Marowak2:
-	.string "The MAROWAK is quiet, though it\n"
-	.string "appears quite happy.$"
+	.string "Le OSSELAIT est silencieux, mais il\n"
+	.string "semble plutôt heureux.$"
 

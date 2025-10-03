@@ -273,40 +273,40 @@ PlayersHouse_2F_EventScript_GameCube::
 	end
 
 PlayersHouse_2F_Text_ClockIsStopped:
-	.string "The clock is stopped…\p"
-	.string "Better set it and start it before\n"
-	.string "heading downstairs!$"
+	.string "L'horloge est arrêtée…\p"
+	.string "Mieux vaut la régler avant de\n"
+	.string "descendre !$"
 
 PlayersHouse_2F_Text_HowDoYouLikeYourRoom:
-	.string "MOM: {PLAYER}, how do you like your\n"
-	.string "new room?\p"
-	.string "Good! Everything's put away neatly!\p"
-	.string "They finished moving everything in\n"
-	.string "downstairs, too.\p"
-	.string "POKéMON movers are so convenient!\p"
-	.string "Oh, you should make sure that\n"
-	.string "everything's all there on your desk.$"
+	.string "MAMAN : {PLAYER}, comment trouves-tu\n"
+	.string "ta nouvelle chambre ?\p"
+	.string "Bien ! Tout est bien rangé !\p"
+	.string "Ils ont aussi fini de tout installer\n"
+	.string "en bas.\p"
+	.string "Les POKéMON déménageurs sont si pratiques !\p"
+	.string "Oh, tu devrais vérifier que tout est\n"
+	.string "sur ton bureau.$"
 
 PlayersHouse_2F_Text_Notebook:
-	.string "{PLAYER} flipped open the notebook.\p"
-	.string "ADVENTURE RULE NO. 1\n"
-	.string "Open the MENU with START.\p"
-	.string "ADVENTURE RULE NO. 2\n"
-	.string "Record your progress with SAVE.\p"
-	.string "The remaining pages are blank…$"
+	.string "{PLAYER} ouvre le carnet.\p"
+	.string "RÈGLE D'AVENTURE N°1\n"
+	.string "Ouvre le MENU avec START.\p"
+	.string "RÈGLE D'AVENTURE N°2\n"
+	.string "Sauvegarde ta progression avec SAUVEGARDE.\p"
+	.string "Les pages restantes sont vierges…$"
 
 Common_Text_LookCloserAtMap:
-	.string "{PLAYER} took a closer look at the\n"
-	.string "Region Map.$"
+	.string "{PLAYER} regarde de plus près la\n"
+	.string "Carte de la Région.$"
 
 PlayersHouse_2F_Text_ItsAGameCube:
-	.string "It's a Nintendo GameCube.\p"
-	.string "A Game Boy Advance is connected to\n"
-	.string "serve as the Controller.$"
+	.string "C'est une Nintendo GameCube.\p"
+	.string "Une Game Boy Advance est connectée\n"
+	.string "et sert de manette.$"
 
 Common_Text_ReceivedMon:
-	.string "{PLAYER} received {STR_VAR_1}!$"
+	.string "{PLAYER} a reçu {STR_VAR_1} !$"
 
 Common_Text_PartyIsFull:
-	.string "Whoa, wait. You can't carry any\n"
-	.string "more POKéMON.$"	
+	.string "Oh, attends. Tu ne peux pas porter\n"
+	.string "plus de POKéMON.$"	

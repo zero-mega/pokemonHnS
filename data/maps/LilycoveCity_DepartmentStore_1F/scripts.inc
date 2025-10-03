@@ -207,89 +207,88 @@ SCRIPT_SelfTrade_DeclineTrade::
 	end
 
 SCRIPT_SelfTrade_Text_IllTradeIfYouWant:
-	.string "Welcome to the DEVON CORPORATION\n"
-	.string "SELF-TRADER app.\p"
-	.string "One of your POKéMON will be self-traded.\n"
-	.string "A single operation costs 10.000¥.\p"
-	.string "Do you want to continue to\n"
-	.string "the POKéMON selection?$"
+	.string "Bienvenue dans l'application\n"
+	.string "SELF-TRADER de la DEVON CORPORATION.\p"
+	.string "Un de vos POKéMON sera auto-échangé.\n"
+	.string "Une opération coûte 10 000¥.\p"
+	.string "Voulez-vous continuer vers\n"
+	.string "la sélection du POKéMON ?$"
 
 SCRIPT_SelfTrade_Text_ComeBack:
-	.string "Thank you using\n"
-	.string "DEVON CORP. products.$"
+	.string "Merci d'utiliser les produits\n"
+	.string "de DEVON CORP.$"
 
 SCRIPT_SelfTrade_Text_YouDontWantToThatsOkay:
-	.string "Thank you for using\n"
-	.string "DEVON CORP. products.$"
+	.string "Merci d'utiliser les produits\n"
+	.string "de DEVON CORP.$"
 
 LilycoveCity_DepartmentStore_1F_Machine_NoMoney_Text:
-	.string "Sorry, you don't have enough money.\n"
-	.string "10.000¥ are required for one use.\p"
-	.string "Thank you for using\n"
-	.string "DEVON CORP. products.$"
+	.string "Désolé, vous n'avez pas assez d'argent.\n"
+	.string "10 000¥ sont nécessaires pour une utilisation.\p"
+	.string "Merci d'utiliser les produits\n"
+	.string "de DEVON CORP.$"
 
 LilycoveCity_DepartmentStore_1F_TraderWoman_Text:
-	.string "Welcome to LILYCOVE DEPARTMENT STORE!\p"
-	.string "Would you like to know about the new\n"
-	.string "technology developed by DEVON CORP.?\p"
-	.string "It's a SELF-TRADER app!\p"
-	.string "With the help of a simple computer\n"
-	.string "program, you can send one POKéMON to\l"
-	.string "a DEVON CORP. server and get it back\l"
-	.string "in just a few seconds!\p"
-	.string "This can trigger the EVOLUTION\n"
-	.string "conditions of certain species.\p"
-	.string "However, maintaining such a complex\n"
-	.string "system can be expensive.\p"
-	.string "You have the option to pay for a\n"
-	.string "lifetime license for 1.000.000¥,\l"
-	.string "or you can use it by paying every\l"
-	.string "usage, which costs 10.000¥.\p"
-	.string "If you want to try it out, just use\n"
-	.string "the computer on your right!\p"
-	.string "Thank you for using DEVON\n"
-	.string "CORP. products!$"
+	.string "Bienvenue au GRAND MAGASIN de NENUCRIQUE !\p"
+	.string "Voulez-vous en savoir plus sur la nouvelle\n"
+	.string "technologie développée par DEVON CORP. ?\p"
+	.string "C'est une application SELF-TRADER !\p"
+	.string "Grâce à un simple programme informatique,\n"
+	.string "vous pouvez envoyer un POKéMON sur un\l"
+	.string "serveur DEVON CORP. et le récupérer\l"
+	.string "en quelques secondes seulement !\p"
+	.string "Cela peut déclencher les conditions\n"
+	.string "d'ÉVOLUTION de certaines espèces.\p"
+	.string "Cependant, maintenir un système aussi\n"
+	.string "complexe peut être coûteux.\p"
+	.string "Vous pouvez payer une licence à vie pour\n"
+	.string "1 000 000¥,\l"
+	.string "ou payer à chaque utilisation, ce qui coûte\l"
+	.string "10 000¥.\p"
+	.string "Si vous voulez essayer, utilisez simplement\n"
+	.string "l'ordinateur à votre droite !\p"
+	.string "Merci d'utiliser les produits\n"
+	.string "de DEVON CORP. !$"
 
 LilycoveCity_DepartmentStore_1F_Text_WelcomeToDeptStore:
-	.string "Welcome to LILYCOVE DEPARTMENT STORE.$"
+	.string "Bienvenue au GRAND MAGASIN de NENUCRIQUE.$"
 
 LilycoveCity_DepartmentStore_1F_Text_IBuyAllSortsOfThings:
-	.string "Whenever I come to the DEPARTMENT\n"
-	.string "STORE, I always end up buying all sorts\l"
-	.string "of things because it's so fun.$"
+	.string "Chaque fois que je viens au GRAND MAGASIN,\n"
+	.string "je finis toujours par acheter toutes sortes\l"
+	.string "de choses parce que c'est tellement amusant.$"
 
 LilycoveCity_DepartmentStore_1F_Text_MomBuyingMeFurniture:
-	.string "Today, my mom is going to buy me some\n"
-	.string "nice furniture.$"
+	.string "Aujourd'hui, ma maman va m'acheter\n"
+	.string "de jolis meubles.$"
 
 LilycoveCity_DepartmentStore_1F_Text_BuyingSomethingForAzumarill:
-	.string "I'm buying something for my AZUMARILL\n"
-	.string "as a reward for winning a CONTEST.$"
+	.string "J'achète quelque chose pour mon AZUMARILL\n"
+	.string "en récompense pour avoir gagné un CONCOURS.$"
 
 LilycoveCity_DepartmentStore_1F_Text_Azumarill:
-	.string "AZUMARILL: Maririroo!$"
+	.string "AZUMARILL : Maririroo !$"
 
 LilycoveCity_DepartmentStore_1F_Text_FloorNamesSign:
-	.string "1F: SERVICE COUNTER\n"
-	.string "    LOTTERY CORNER\p"
-	.string "2F: TRAINER'S ZONE\p"
-	.string "3F: BATTLE COLLECTION\p"
-	.string "4F: TM CORNER\p"
-	.string "5F: POKé DOLL FLOOR\p"
-	.string "ROOFTOP: ROOFTOP PLAZA$"
+	.string "1F : COMPTOIR DE SERVICE\n"
+	.string "     COIN LOTERIE\p"
+	.string "2F : ZONE DES DRESSEURS\p"
+	.string "3F : COLLECTION DE COMBAT\p"
+	.string "4F : COIN CT\p"
+	.string "5F : ÉTAGE DES POUPÉES POKé\p"
+	.string "TOIT : PLAZA DU TOIT$"
 
 @ Unused
 LilycoveCity_DepartmentStore_1F_Text_WirelessCommIsFun:
-	.string "Wireless Communication is a\n"
-	.string "lot of fun, isn't it?\p"
-	.string "I think it lets you do things that\n"
-	.string "weren't possible before.\p"
-	.string "For instance, you can now trade\n"
-	.string "with people you couldn't before.\p"
-	.string "I think it's going to be exciting!$"
+	.string "La communication sans fil, c'est\n"
+	.string "vraiment amusant, non ?\p"
+	.string "Je pense que ça permet de faire des choses\n"
+	.string "qui n'étaient pas possibles avant.\p"
+	.string "Par exemple, vous pouvez maintenant échanger\n"
+	.string "avec des personnes avec qui ce n'était pas possible.\p"
+	.string "Je pense que ça va être passionnant !$"
 
 @ Unused
 LilycoveCity_DepartmentStore_1F_Text_SpreadWordAboutWirelessComm:
-	.string "I want to spread the word about how\n"
-	.string "fun Wireless Communication can be.$"
-
+	.string "Je veux faire connaître à quel point\n"
+	.string "la communication sans fil peut être amusante.$"

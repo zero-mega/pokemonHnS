@@ -248,72 +248,69 @@ MahoganyTown_Movement_PlayerMerchant2:
 	step_end
 
 MahoganyTown_Text_RageCandyBarMerchantTryOne:
-	.string "Hiya, kid!\p"
-	.string "I see you're new in MAHOGANY TOWN.\p"
-	.string "Since you're new, you should try a\n"
-	.string "yummy RAGECANDYBAR!\p"
-	.string "Right now, it can be yours for just\n"
-	.string "¥300! Want one?$"
+	.string "Salut, gamin !\p"
+	.string "Je vois que tu es nouveau à ACAJOU.\p"
+	.string "Puisque tu es nouveau, tu devrais goûter\n"
+	.string "un délicieux BONBON RAGE !\p"
+	.string "En ce moment, il est à toi pour seulement\n"
+	.string "¥300 ! Tu en veux un ?$"
 
 MahoganyTown_Text_RageCandyBarMerchantSavorIt:
-    .string "Good! Savor it!$"
+    .string "Bien ! Savoure-le !$"
 
 MahoganyTown_Text_RageCandyBarMerchantNotEnoughMoney:
-    .string "You don't have enough money.$"
+    .string "Tu n'as pas assez d'argent.$"
 
 MahoganyTown_Text_RageCandyBarMerchantRefused:
-    .string "Oh, fine then…$"
+    .string "Oh, tant pis alors…$"
 
 MahoganyTown_Text_RageCandyBarMerchantSoldOut:
-    .string "RAGECANDYBAR's sold out.\p"
-    .string "I'm packing up. Don't bother me,\n"
-    .string "kiddo.$"
+    .string "Il n'y a plus de BONBON RAGE.\p"
+    .string "Je remballe. Ne m'embête pas,\n"
+    .string "gamin.$"
 
 MahoganyTown_Text_Gramps:
-    .string "Are you off to see the GYARADOS\n"
-    .string "rampage at the LAKE?$"
+    .string "Tu vas voir le GYARADOS furieux\n"
+    .string "au LAC ?$"
 
 MahoganyTown_Text_GrampsClearedRocketHideout:
-    .string "MAGIKARP have returned to LAKE\n"
-    .string "OF RAGE.\p"
-    .string "That should be good news for the\n"
-    .string "anglers there.$"
+    .string "Les MAGIKARP sont revenus au LAC\n"
+    .string "COLÈRE.\p"
+    .string "C'est une bonne nouvelle pour les\n"
+    .string "pêcheurs là-bas.$"
 
 MahoganyTown_Text_Fisher:
-    .string "Since you came this far, take the\n"
-    .string "time to do some sightseeing.\p"
-    .string "You should head north and check\n"
-    .string "out LAKE OF RAGE right now.$"
+    .string "Puisque tu es venu jusqu'ici, prends le\n"
+    .string "temps de faire un peu de tourisme.\p"
+    .string "Tu devrais aller au nord et voir le\n"
+    .string "LAC COLÈRE dès maintenant.$"
 
 MahoganyTown_Text_Lass:
-    .string "Visit Grandma's shop. She sells\n"
-    .string "stuff that nobody else has.$"
+    .string "Va voir la boutique de Mamie. Elle vend\n"
+    .string "des choses qu'on ne trouve nulle part ailleurs.$"
 
 MahoganyTown_Text_Sign:
-    .string "MAHOGANY TOWN\p"
-    .string "Welcome to the Home of the Ninja$"
+    .string "ACAJOU\p"
+    .string "Bienvenue dans la Ville des Ninjas$"
 
 MahoganyTown_Text_RagecandybarSign:
-    .string "While visiting MAHOGANY TOWN, try\n"
-    .string "a RAGECANDYBAR!$"
+    .string "En visitant ACAJOU, goûtez un\n"
+    .string "RAGECANDYBAR !$"
 
 MahoganyTown_Text_GymSign:
-    .string "MAHOGANY TOWN POKéMON GYM\p"
-    .string "LEADER: PRYCE\p"
-    .string "The Teacher of Winter's Harshness$"
+    .string "ARÈNE POKéMON D'ACAJOU\p"
+    .string "CHAMPION : PRYCE\p"
+    .string "Le Maître de la Rigueur de l'Hiver$"
 
 ElmPhoneRadioTowerRocketTakeoverText:
-	.string "PROF.ELM: {PLAYER}, how are\n"
-	.string "things going?\p"
-	.string "I called because something weird\n"
-	.string "is happening with the radio\l"
-	.string "broadcasts.\p"
-	.string "They were talking about TEAM\n"
-	.string "ROCKET.\p"
-	.string "{PLAYER}, do you know anything\n"
-	.string "about it?\p"
-	.string "Maybe TEAM ROCKET has returned.\n"
-	.string "No, that just can't be true.\p"
-	.string "Sorry to bug you.\n"
-	.string "Take care!$"
-
+	.string "PROF.ORME : {PLAYER}, comment ça\n"
+	.string "va ?\p"
+	.string "Je t'appelle car il se passe quelque chose\n"
+	.string "d'étrange avec les émissions radio.\p"
+	.string "Ils parlaient de la TEAM ROCKET.\p"
+	.string "{PLAYER}, tu es au courant de quelque\n"
+	.string "chose ?\p"
+	.string "Peut-être que la TEAM ROCKET est de retour.\n"
+	.string "Non, ce n'est pas possible…\p"
+	.string "Désolé de t'avoir dérangé.\n"
+	.string "Prends soin de toi !$"
