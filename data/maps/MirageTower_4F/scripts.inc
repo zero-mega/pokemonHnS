@@ -63,20 +63,19 @@ MirageTower_4F_EventScript_CollapseMirageTower::
 	end
 
 MirageTower_4F_Text_TakeRootFossil:
-	.string "You found the ROOT FOSSIL.\p"
-	.string "If this FOSSIL is taken, the ground\n"
-	.string "around it will likely crumble away…\p"
-	.string "Take the ROOT FOSSIL anyway?$"
+	.string "Vous avez trouvé le FOSSILE RACINE.\p"
+	.string "Si ce FOSSILE est pris, le sol autour\n"
+	.string "risque de s'effondrer…\p"
+	.string "Prendre le FOSSILE RACINE quand même?$"
 
 MirageTower_4F_Text_LeftRootFossilAlone:
-	.string "{PLAYER} left the ROOT FOSSIL alone.$"
+	.string "{PLAYER} a laissé le FOSSILE RACINE.$"
 
 MirageTower_4F_Text_TakeClawFossil:
-	.string "You found the CLAW FOSSIL.\p"
-	.string "If this FOSSIL is taken, the ground\n"
-	.string "around it will likely crumble away…\p"
-	.string "Take the CLAW FOSSIL anyway?$"
+	.string "Vous avez trouvé le FOSSILE GRIFFE.\p"
+	.string "Si ce FOSSILE est pris, le sol autour\n"
+	.string "risque de s'effondrer…\p"
+	.string "Prendre le FOSSILE GRIFFE quand même?$"
 
 MirageTower_4F_Text_LeaveClawFossilAlone:
-	.string "{PLAYER} left the CLAW FOSSIL alone.$"
-
+	.string "{PLAYER} a laissé le FOSSILE GRIFFE.$"

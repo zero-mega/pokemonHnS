@@ -36,21 +36,21 @@ MauvilleCity_PokemonCenter_1F_EventScript_Youngster::
 	end
 
 MauvilleCity_PokemonCenter_1F_Text_ManOverThereSaysWeirdThings:
-	.string "That man over there, he says weird\n"
-	.string "things!\p"
-	.string "He's funny in a weird way.\n"
-	.string "I doubt I'll forget about him!$"
+	.string "Cet homme là-bas, il dit des choses\n"
+	.string "bizarres !\p"
+	.string "Il est drôle, mais d'une façon étrange.\n"
+	.string "Je doute de l'oublier un jour !$"
 
 MauvilleCity_PokemonCenter_1F_Text_MyDataUpdatedFromRecordCorner:
-	.string "When I accessed the RECORD CORNER,\n"
-	.string "the data for what's hot in DEWFORD\l"
-	.string "got updated.\p"
-	.string "Now that bit of data is the same\n"
-	.string "as my friend's!$"
+	.string "Quand j'ai accédé au COIN RECORD,\n"
+	.string "les données sur ce qui est tendance à DEWFORD\l"
+	.string "ont été mises à jour.\p"
+	.string "Maintenant, ces données sont les mêmes\n"
+	.string "que celles de mon ami !$"
 
 MauvilleCity_PokemonCenter_1F_Text_RecordCornerSoundsFun:
-	.string "A RECORD CORNER opened upstairs in\n"
-	.string "the POKéMON CENTER.\p"
-	.string "I don't know what it's about, but it\n"
-	.string "sounds fun. I'll go check it out!$"
+	.string "Un COIN RECORD a ouvert à l'étage du\n"
+	.string "CENTRE POKéMON.\p"
+	.string "Je ne sais pas à quoi ça sert, mais ça\n"
+	.string "a l'air amusant. Je vais aller voir !$"
 

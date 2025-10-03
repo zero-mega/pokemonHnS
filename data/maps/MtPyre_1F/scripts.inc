@@ -6,11 +6,11 @@ MtPyre_1F_DusknoirMisdreavusEvo::
 	end
 
 MtPyre_1F_DusknoirMisdreavusEvo_Text:
-	.string "Wild DUSKULL sometimes hold a SPELL TAG.\n"
-	.string "I wonder why? What do they do with it?\l"
-	.string "Maybe they use it to evolve?\p"
-	.string "What I do know is that MISDREAVUS\n"
-	.string "evolves if it holds it during the night.$"
+	.string "Les DUSKULL sauvages tiennent parfois une SPELL TAG.\n"
+	.string "Je me demande pourquoi. Que font-ils avec ?\l"
+	.string "Peut-être s'en servent-ils pour évoluer ?\p"
+	.string "Ce que je sais, c'est que MISDREAVUS\n"
+	.string "évolue s'il la tient pendant la nuit.$"
 
 MtPyre_1F_EventScript_CleanseTagWoman::
 	lock
@@ -37,22 +37,20 @@ MtPyre_1F_EventScript_Man::
 	end
 
 MtPyre_1F_Text_TakeThisForYourOwnGood:
-	.string "All sorts of beings wander the slopes\n"
-	.string "of MT. PYRE…\p"
-	.string "There is no telling what may happen.\n"
-	.string "Take this. It's for your own good.$"
+	.string "Toutes sortes d'êtres errent sur les pentes\n"
+	.string "du MT. PYRÉE…\p"
+	.string "On ne sait jamais ce qui peut arriver.\n"
+	.string "Prends ceci. C'est pour ton bien.$"
 
 MtPyre_1F_Text_ExplainCleanseTag:
-	.string "Have a POKéMON hold that\n"
-	.string "CLEANSE TAG.\p"
-	.string "It will help ward off wild POKéMON.$"
+	.string "Fais tenir ce TALISMAN PUR à un POKéMON.\p"
+	.string "Cela aidera à repousser les POKéMON sauvages.$"
 
 MtPyre_1F_Text_ComeToPayRespects:
-	.string "Did you come to pay your respect\n"
-	.string "to the spirits of departed POKéMON?\p"
-	.string "You must care for your POKéMON a lot.$"
+	.string "Es-tu venu rendre hommage aux esprits\n"
+	.string "des POKéMON disparus ?\p"
+	.string "Tu dois beaucoup tenir à tes POKéMON.$"
 
 MtPyre_1F_Text_RestingPlaceOfZigzagoon:
-	.string "This is the final resting place of my\n"
-	.string "ZIGZAGOON. I cherished it…$"
-
+	.string "Ici repose mon ZIGZAGOON.\n"
+	.string "Je l'aimais beaucoup…$"

@@ -77,33 +77,32 @@ MtMoon_Cave_Movement_SilverLeave:
 
 MtMoon_Cave_Text_Rival_Before:
 	.string "..................................\p"
-	.string "It's been a while, {PLAYER}.\p"
-	.string "…Since I lost to you, I thought about\n"
-	.string "what I was lacking with my POKéMON…\p"
-	.string "And we came up with an answer.\p"
-	.string "{PLAYER}, now we'll show you!$"
+	.string "Ça fait un moment, {PLAYER}.\p"
+	.string "…Depuis que j'ai perdu contre toi, j'ai réfléchi à\n"
+	.string "ce qui manquait à mes POKéMON…\p"
+	.string "Et nous avons trouvé une réponse.\p"
+	.string "{PLAYER}, maintenant nous allons te la montrer !$"
 
 MtMoon_Cave_Text_Rival_Win:
 	.string "..................................\p"
-	.string "I thought I raised my POKéMON to be the\n"
-	.string "best they could be…\p"
-	.string "…But it still wasn't enough…$"
+	.string "Je pensais avoir élevé mes POKéMON pour qu'ils\n"
+	.string "soient les meilleurs possibles…\p"
+	.string "…Mais ce n'était toujours pas suffisant…$"
 
 MtMoon_Cave_Text_Rival_After:
 	.string "..................................\p"
-	.string "…You won, fair and square.\p"
-	.string "I admit it. But this isn't the end.\p"
-	.string "I'm going to be the greatest POKéMON\n"
-	.string "trainer ever.\p"
-	.string "Because these guys are behind me.\p"
-	.string "…Listen, {PLAYER}.\p"
-	.string "One of these days I'm going to prove\n"
-	.string "how good I am by beating you.$"
+	.string "…Tu as gagné, à la loyale.\p"
+	.string "Je l'admets. Mais ce n'est pas la fin.\p"
+	.string "Je vais devenir le plus grand dresseur de\n"
+	.string "POKéMON de tous les temps.\p"
+	.string "Parce que ces gars-là sont avec moi.\p"
+	.string "…Écoute, {PLAYER}.\p"
+	.string "Un de ces jours, je te prouverai à quel point\n"
+	.string "je suis fort en te battant.$"
 
 MtMoon_Cave_Text_Rival_Loss:
 	.string "..................................\p"
-	.string "I've repaid my debt to you.\p"
-	.string "With my POKéMON, I'm going to beat the\n"
-	.string "CHAMPION and become the world's greatest\n"
-	.string "trainer.$"
-
+	.string "Je t'ai remboursé ma dette.\p"
+	.string "Avec mes POKéMON, je vais battre le\n"
+	.string "CHAMPION et devenir le plus grand dresseur\n"
+	.string "du monde.$"

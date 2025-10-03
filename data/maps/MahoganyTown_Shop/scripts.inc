@@ -216,36 +216,36 @@ MahoganyTown_Pokemart:
 	end
 
 MahoganyTown_Shop_Text_Granny:
-	.string "Please come back another time.\n"
-	.string "The store is... closed\l"
-	.string "right now.$"
+	.string "Revenez une autre fois, s'il vous plaît.\n"
+	.string "Le magasin est... fermé\l"
+	.string "pour le moment.$"
 
 MahoganyMart1F_Text_Pharmacist_Lance:
-    .string "ROCKETS have hijacked my basement!$"
+    .string "La TEAM ROCKET a pris mon sous-sol en otage !$"
 
 MahoganyMart1F_Text_BlackBelt:
-    .string "Heheh! The experi- ment worked like\n"
-    .string "a charm.\p"
-    .string "MAGIKARP are just worthless, but\n"
-    .string "GYARADOS are big moneymakers.$"
+    .string "Héhé ! L'expérience a marché comme\n"
+    .string "sur des roulettes.\p"
+    .string "MAGICARPE ne vaut rien, mais\n"
+    .string "LEVIATOR rapporte gros !$"
 
 MahoganyMart1F_Text_BlackBelt_Lance:
-    .string "Urrgh…\p"
-    .string "That guy's POKéMON are tough…$"
+    .string "Ouuuh…\p"
+    .string "Les POKéMON de ce type sont coriaces…$"
 
 MahoganyMart1F_Text_Lance_HyperBeam:
-    .string "LANCE: DRAGONITE, HYPER BEAM.$"
+    .string "LANCE : DRACOLOSSE, ULTRALASER.$"
 
 MahoganyMart1F_Text_Lance_Radio:
-    .string "What took you, {PLAYER}?\p"
-    .string "Just as we thought, that strange\n"
-    .string "radio signal is coming from here.$"
+    .string "Qu'est-ce qui t'a retenu, {PLAYER} ?\p"
+    .string "Comme on le pensait, ce signal radio\n"
+    .string "bizarre vient d'ici.$"
 
 MahoganyMart1F_Text_Lance_Stairs:
-    .string "Excellent work finding the stairs,\n"
-	.string "DRAGONITE!$"
+    .string "Excellent travail pour avoir trouvé\n"
+	.string "l'escalier, DRACOLOSSE !$"
 
 MahoganyMart1F_Text_Lance_SplitUp:
-    .string "LANCE: {PLAYER}, we should split up\n"
-    .string "to check this place.\p"
-    .string "I'll go first.$"
+    .string "LANCE : {PLAYER}, on devrait se séparer\n"
+    .string "pour fouiller cet endroit.\p"
+    .string "Je passe devant.$"
