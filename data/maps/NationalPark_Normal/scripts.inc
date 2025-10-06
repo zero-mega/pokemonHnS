@@ -67,44 +67,44 @@ NationalPark_Normal_EventScript_Persian::
 
 
 NationalPark_Normal_Text_Lass:
-	.string "Look! Check out my bag!\p"
-	.string "I printed out my favorites from my\n"
-	.string "POKéDEX and stuck them on my bag.$"
+	.string "Regarde ! Jette un œil à mon sac !\p"
+	.string "J'ai imprimé mes favoris de mon\n"
+	.string "POKéDEX et je les ai collés sur mon sac.$"
 
 NationalPark_Normal_Text_PokefanF:
-	.string "This is MAIL I got from my daughter.\n"
-	.string "It cheers me up.$"
+	.string "Ceci est un COURRIER que j'ai reçu de ma fille.\n"
+	.string "Ça me remonte le moral.$"
 
 NationalPark_Normal_Text_Teacher1:
-	.string "Pay attention, please!\p"
-	.string "…Oops, I have to quit thinking like\n"
-	.string "a teacher all the time.\p"
-	.string "You must be a POKéMON trainer.\p"
-	.string "Since you're working so hard, I\n"
-	.string "want you to have this.$"
+	.string "Attention, s'il vous plaît !\p"
+	.string "…Oups, je dois arrêter de penser\n"
+	.string "comme une enseignante tout le temps.\p"
+	.string "Tu dois être un DRESSEUR de POKéMON.\p"
+	.string "Puisque tu travailles si dur, je\n"
+	.string "veux que tu prennes ceci.$"
 
 NationalPark_Normal_Text_Teacher1_QuickClaw:
-	.string "Let a POKéMON hold that QUICK CLAW.\p"
-	.string "Sometimes it will strike first\n"
-	.string "during battle.$"
+	.string "Fais tenir la GRIFFE RAPIDE à un POKéMON.\p"
+	.string "Parfois, il attaquera en premier\n"
+	.string "pendant le combat.$"
 
 NationalPark_Normal_Text_Youngster1:
-	.string "I'm playing with stickers I printed\n"
-	.string "from my POKéDEX.$"
+	.string "Je joue avec des autocollants que j'ai imprimés\n"
+	.string "depuis mon POKéDEX.$"
 
 NationalPark_Normal_Text_Youngster2:
-	.string "I get the other guy's POKéDEX sticker\n"
-	.string "if I win.$"
+	.string "Je prends l'autocollant POKéDEX de l'autre\n"
+	.string "si je gagne.$"
 
 NationalPark_Normal_Text_Teacher2:
-	.string "I take walks in the PARK, but I\n"
-	.string "never go into the grass.\p"
-	.string "Trainers always want to battle…\p"
-	.string "You must have been in many battles.\n"
-	.string "Let me heal your POKéMON for you.$"
+	.string "Je me promène dans le PARC, mais je\n"
+	.string "ne vais jamais dans l'herbe.\p"
+	.string "Les dresseurs veulent toujours se battre…\p"
+	.string "Tu as dû faire beaucoup de combats.\n"
+	.string "Laisse-moi soigner tes POKéMON.$"
 
 NationalPark_Normal_Text_Persian:
-	.string "PERSIAN: Fufushaa!$"
+	.string "PERSIAN : Fufushaa !$"
 
 NationalPark_Normal_EventScript_Jack::
 	trainerbattle_single TRAINER_JACK NationalPark_Normal_Text_SchoolboyJack1_Seen, NationalPark_Normal_Text_SchoolboyJack1_Beaten
@@ -135,65 +135,65 @@ NationalPark_Normal_EventScript_Item_Soothe_Bell::
 	end
 
 NationalPark_Normal_Text_SchoolboyJack1_Seen:
-	.string "The world of POKéMON is deep.\p"
-	.string "There are still lots of things we\n"
-	.string "don't know.\p"
-	.string "But I know more than you do!$"
+	.string "Le monde des POKéMON est profond.\p"
+	.string "Il y a encore beaucoup de choses\n"
+	.string "que nous ne savons pas.\p"
+	.string "Mais j'en sais plus que toi !$"
 
 NationalPark_Normal_Text_SchoolboyJack1_Beaten:
-	.string "Wha-wha-what?$"
+	.string "Qu-quoi ?$"
 
 NationalPark_Normal_Text_SchoolboyJack_After:
-	.string "There is a lot to learn.\p"
-	.string "For example…\p"
-	.string "There are 50 kinds of TMs.\p"
-	.string "Traded POKéMON level up faster.$"
+	.string "Il y a beaucoup à apprendre.\p"
+	.string "Par exemple…\p"
+	.string "Il existe 50 types de CT.\p"
+	.string "Les POKéMON échangés montent de niveau plus vite.$"
 
 NationalPark_Normal_Text_PokefanFBeverly1_Seen:
-	.string "My POKéMON are simply darling.\p"
-	.string "Let me tell you how proud my\n"
-	.string "darlings make me.$"
+	.string "Mes POKéMON sont tout simplement adorables.\p"
+	.string "Laisse-moi te dire à quel point\n"
+	.string "je suis fière de mes chéris.$"
 
 NationalPark_Normal_Text_PokefanFBeverly1_Beaten:
-	.string "I can beat you in pride, but…$"
+	.string "Je peux te battre en fierté, mais…$"
 
 NationalPark_Normal_Text_PokefanFBeverly_After:
-	.string "I must say, your POKéMON are quite\n"
-	.string "cute, too.$"
+	.string "Je dois dire, tes POKéMON sont aussi\n"
+	.string "très mignons.$"
 
 NationalPark_Normal_Text_PokefanmWilliam_Seen:
-	.string "We adore our POKéMON, even if they\n"
-	.string "dislike us.\p"
-	.string "That's what being a FAN is about.$"
+	.string "Nous adorons nos POKéMON, même s'ils\n"
+	.string "ne nous aiment pas.\p"
+	.string "C'est ça, être un FAN.$"
 
 NationalPark_Normal_Text_PokefanmWilliam_Beaten:
-	.string "M-my POKéMON!$"
+	.string "M-mes POKéMON !$"
 
 NationalPark_Normal_Text_PokefanmWilliam_After:
-	.string "I lost the battle, but my POKéMON win\n"
-	.string "the prize for being most lovely.$"
+	.string "J'ai perdu le combat, mais mes POKéMON\n"
+	.string "gagnent le prix des plus adorables.$"
 
 NationalPark_Normal_Text_LassKrise_Seen:
-	.string "Hello? Why are you staring at me?\p"
-	.string "Oh, a battle?$"
+	.string "Allô ? Pourquoi tu me regardes comme ça ?\p"
+	.string "Oh, un combat ?$"
 
 NationalPark_Normal_Text_LassKrise_Beaten:
 	.string "…Hmmm…$"
 
 NationalPark_Normal_Text_LassKrise_After:
-	.string "I thought you were staring at me\n"
-	.string "because I'm cute!$"
+	.string "Je croyais que tu me regardais\n"
+	.string "parce que je suis mignonne !$"
 
 NationalPark_Normal_Text_Sign_RelaxationSquare:
-	.string "RELAXATION SQUARE\n"
-	.string "NATIONAL PARK$"
+	.string "ESPACE DÉTENTE\n"
+	.string "PARC NATIONAL$"
 
 NationalPark_Normal_Text_Sign_BattleNotice:
-	.string "What is this notice?\p"
-	.string "Please battle only in the grass.\p"
-	.string "NATIONAL PARK WARDEN'S OFFICE$"
+	.string "Qu'est-ce que cet avis ?\p"
+	.string "Merci de combattre uniquement dans l'herbe.\p"
+	.string "BUREAU DU GARDIEN DU PARC NATIONAL$"
 
 NationalPark_Normal_Text_TrainerTips:
-	.string "TRAINER TIPS\p"
-	.string "Print out MAIL by opening it then\n"
-	.string "pressing START.$"
+	.string "ASTUCES DRESSEUR\p"
+	.string "Imprimez un COURRIEL en l'ouvrant puis\n"
+	.string "en appuyant sur START.$"

@@ -28,42 +28,40 @@ MtPyre_6F_EventScript_Cedric::
 	end
 
 MtPyre_6F_Text_ValerieIntro:
-	.string "When I'm here…\n"
-	.string "A curious power flows into me…$"
+	.string "Quand je suis ici…\n"
+	.string "Une étrange énergie m'envahit…$"
 
 MtPyre_6F_Text_ValerieDefeat:
-	.string "The power is ebbing away…$"
+	.string "L'énergie s'estompe…$"
 
 MtPyre_6F_Text_ValeriePostBattle:
-	.string "Perhaps the power is from the spirits\n"
-	.string "of POKéMON in fitful sleep here…$"
+	.string "Peut-être que cette énergie vient des esprits\n"
+	.string "des POKéMON qui dorment ici…$"
 
 MtPyre_6F_Text_ValerieRegister:
-	.string "Fufufu… I lost the match, but…\n"
-	.string "I have this little ability…\p"
-	.string "Without ever laying my hands on\n"
-	.string "your POKéNAV… Hiyah!$"
+	.string "Fufufu… J'ai perdu le combat, mais…\n"
+	.string "J'ai ce petit don…\p"
+	.string "Sans jamais toucher à ton POKéNAV… Hiyah!$"
 
 MtPyre_6F_Text_ValerieRematchIntro:
-	.string "Behind you…\n"
-	.string "What is it…$"
+	.string "Derrière toi…\n"
+	.string "Qu'est-ce que c'est…$"
 
 MtPyre_6F_Text_ValerieRematchDefeat:
-	.string "Something faded away…$"
+	.string "Quelque chose s'est dissipé…$"
 
 MtPyre_6F_Text_ValeriePostRematch:
-	.string "The POKéMON at rest here…\n"
-	.string "Sometimes, they play…$"
+	.string "Les POKéMON qui reposent ici…\n"
+	.string "Parfois, ils jouent…$"
 
 MtPyre_6F_Text_CedricIntro:
-	.string "Have you lost your bearings?\n"
-	.string "Have no fear for I am here!$"
+	.string "Tu t'es perdu ?\n"
+	.string "N'aie pas peur, je suis là !$"
 
 MtPyre_6F_Text_CedricDefeat:
-	.string "Weren't you lost?$"
+	.string "Tu n'étais pas perdu ?$"
 
 MtPyre_6F_Text_CedricPostBattle:
-	.string "I had this feeling that a lost TRAINER\n"
-	.string "would be panicked and easy to beat.\p"
-	.string "It's dirty and I won't try it again…$"
-
+	.string "Je pensais qu'un DRESSEUR perdu\n"
+	.string "serait paniqué et facile à battre.\p"
+	.string "C'est malhonnête, je ne le referai plus…$"
