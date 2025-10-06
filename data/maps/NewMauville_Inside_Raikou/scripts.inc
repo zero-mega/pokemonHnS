@@ -80,7 +80,7 @@ NewMauville_Inside_Raikou_RaikouBattle_1_Movement:
 	step_end
 
 NewMauville_Inside_Raikou_RaikouBattle_1_Text:
-	.string "It ran away faster than light!$"
+	.string "Il s'est enfui plus vite que la lumière !$"
 
 @@Second encounter with Raikou. Level 70, 400 speed, 300hp
 
@@ -131,7 +131,7 @@ NewMauville_Inside_Raikou_RaikouBattle_2_Movement:
 	step_end
 
 NewMauville_Inside_Raikou_RaikouBattle_2_Text:
-	.string "It ran away even faster than before!$"
+	.string "Il s'est enfui encore plus vite qu'avant !$"
 
 @@ Final battle with Raikou, has 600hp and 400 speed, with magnet
 NewMauville_Inside_Raikou_RaikouBattle::
@@ -166,8 +166,8 @@ NewMauville_Inside_Raikou_RaikouBattle_3_Stats::
 	return
 
 NewMauville_Inside_Raikou_RaikouBattle_Text::
-	.string "RAIKOU stopped running away.\n"
-	.string "Can it be captured now?$"
+	.string "RAIKOU a arrêté de s'enfuir.\n"
+	.string "Peut-il être capturé maintenant ?$"
 
 NewMauville_Inside_Raikou_Won::
 	setflag FLAG_DEFEATED_RAIKOU

@@ -20,21 +20,21 @@ PacifidlogTown_House5_EventScript_Gentleman::
 	end
 
 PacifidlogTown_House5_Text_CantSeeMirageIslandToday:
-	.string "I can't see MIRAGE ISLAND today…$"
+	.string "Je ne peux pas voir l’ÎLE MIRAGE aujourd’hui…$"
 
 PacifidlogTown_House5_Text_CanSeeMirageIslandToday:
-	.string "Oh! Oh my!\n"
-	.string "I can see MIRAGE ISLAND today!$"
+	.string "Oh ! Oh là là !\n"
+	.string "Je peux voir l’ÎLE MIRAGE aujourd’hui !$"
 
 PacifidlogTown_House5_Text_MirageIslandAppearDependingOnWeather:
-	.string "MIRAGE ISLAND…\p"
-	.string "It must become visible and invisible\n"
-	.string "depending on the weather conditions\l"
-	.string "that make mirages appear.\p"
-	.string "Or is it really appearing and\n"
-	.string "disappearing?\p"
+	.string "L’ÎLE MIRAGE…\p"
+	.string "Elle doit devenir visible et invisible\n"
+	.string "selon les conditions météo\l"
+	.string "qui font apparaître des mirages.\p"
+	.string "Ou est-ce qu’elle apparaît et disparaît\n"
+	.string "vraiment ?\p"
 	.string ". . .\p"
-	.string "What if it's a POKéMON the one who\n"
-	.string "is making the island appear and\l"
-	.string "dissapear?\p"
-	.string "I'm sure it's a MYTHICAL POKéMON.$"
+	.string "Et si c’était un POKéMON qui faisait\n"
+	.string "apparaître et\l"
+	.string "disparaître l’île ?\p"
+	.string "Je suis sûr que c’est un POKéMON MYTHIQUE.$"

@@ -10,17 +10,17 @@ PacifidlogTown_House1_EventScript_Woman::
 	end
 
 PacifidlogTown_House1_Text_RegiStory:
-	.string "In the HOENN region, there are five\n"
-	.string "POKéMON that represent the power of\l"
-	.string "rock, ice, steel, electricity,\l"
-	.string "and dragon energy.\p"
-	.string "Each of them is said to hide away deep\n"
-	.string "inside caves.\p"
-	.string "That's the story I heard when I was\n"
-	.string "just a little kid.$"
+	.string "Dans la région de HOENN, il y a cinq\n"
+	.string "POKéMON qui représentent la puissance\l"
+	.string "de la roche, de la glace, de l'acier,\l"
+	.string "de l'électricité et de l'énergie\l"
+	.string "draconique.\p"
+	.string "On dit que chacun d'eux se cache\n"
+	.string "au fond de grottes.\p"
+	.string "C'est l'histoire que j'ai entendue\n"
+	.string "quand j'étais petit.$"
 
 PacifidlogTown_House1_Text_SixDotsOpenThreeDoors:
-	.string "“Six dots open five doors.”\p"
-	.string "Grandpa used to say that, but I don't\n"
-	.string "know what he meant.$"
-
+	.string "« Six points ouvrent cinq portes. »\p"
+	.string "Grand-père disait ça, mais je ne sais\n"
+	.string "pas ce qu'il voulait dire.$"

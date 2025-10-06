@@ -28,27 +28,27 @@ PacifidlogTown_EventScript_TownSign::
 	end
 
 PacifidlogTown_Text_FastRunningCurrent:
-	.string "The sea between PACIFIDLOG and\n"
-	.string "SLATEPORT has a fast-running tide.\p"
-	.string "If you decide to SURF, you could end\n"
-	.string "up swept away somewhere else.$"
+	.string "La mer entre PACIFIDLOG et\n"
+	.string "POIVRESSEL a un courant rapide.\p"
+	.string "Si tu décides d'utiliser SURF, tu\n"
+	.string "pourrais te retrouver emporté ailleurs.$"
 
 PacifidlogTown_Text_NeatHousesOnWater:
-	.string "See, isn't it neat?\n"
-	.string "These houses are on water!\p"
-	.string "I was born here!$"
+	.string "Tu vois, c'est chouette, non ?\n"
+	.string "Ces maisons sont sur l'eau !\p"
+	.string "Je suis né ici !$"
 
 PacifidlogTown_Text_SkyPillarTooScary:
-	.string "The SKY PILLAR?\p"
-	.string "…Oh, you must mean that tall, tall\n"
-	.string "tower a little further out.\p"
-	.string "If you asked me, I wouldn't climb it.\n"
-	.string "It's too scary to get up that high.\p"
-	.string "Life at sea level in PACIFIDLOG,\n"
-	.string "that suits me fine.$"
+	.string "La PILIER CELESTE ?\p"
+	.string "…Oh, tu dois parler de cette tour\n"
+	.string "très haute un peu plus loin.\p"
+	.string "Si tu me demandais, je ne la gravirais pas.\n"
+	.string "C'est trop effrayant d'aller si haut.\p"
+	.string "La vie au niveau de la mer à PACIFIDLOG,\n"
+	.string "ça me va très bien.$"
 
 PacifidlogTown_Text_TownSign:
-	.string "PACIFIDLOG TOWN\p"
-	.string "“Where the morning sun smiles upon\n"
-	.string "the waters.”$"
+	.string "PACIFIVILLE\p"
+	.string "« Là où le soleil du matin sourit\n"
+	.string "aux eaux. »$"
 

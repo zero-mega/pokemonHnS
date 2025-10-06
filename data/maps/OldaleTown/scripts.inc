@@ -382,80 +382,80 @@ OldaleTown_Movement_ReturnToOriginalPosition:
 	step_end
 
 OldaleTown_Text_SavingMyProgress:
-	.string "I want to take a rest, so I'm saving my\n"
-	.string "progress.$"
+	.string "Je veux me reposer, alors je sauvegarde\n"
+	.string "ma progression.$"
 
 OldaleTown_Text_IWorkAtPokemonMart:
-	.string "Hi!\n"
-	.string "I work at a POKéMON MART.\p"
-	.string "Can I get you to come with me?$"
+	.string "Salut !\n"
+	.string "Je travaille au MARCHÉ POKéMON.\p"
+	.string "Tu veux bien venir avec moi ?$"
 
 OldaleTown_Text_ThisIsAPokemonMart:
-	.string "This is a POKéMON MART.\n"
-	.string "Just look for our blue roof.\p"
-	.string "We sell a variety of goods including\n"
-	.string "POKé BALLS for catching POKéMON.\p"
-	.string "Here, I'd like you to have this as\n"
-	.string "a promotional item.$"
+	.string "Ceci est un MARCHÉ POKéMON.\n"
+	.string "Repère notre toit bleu.\p"
+	.string "Nous vendons toutes sortes d’objets, y\n"
+	.string "compris des POKé BALLS pour attraper des POKéMON.\p"
+	.string "Tiens, je voudrais t’offrir ceci comme\n"
+	.string "article promotionnel.$"
 
 OldaleTown_Text_PotionExplanation:
-	.string "A POTION can be used anytime, so it's\n"
-	.string "even more useful than a POKéMON CENTER\l"
-	.string "in certain situations.$"
+	.string "Une POTION peut être utilisée à tout moment, donc\n"
+	.string "c’est parfois encore plus utile qu’un CENTRE POKéMON\l"
+	.string "dans certaines situations.$"
 
 OldaleTown_Text_WaitDontComeInHere:
-	.string "Aaaaah! Wait!\n"
-	.string "Please don't come in here.\p"
-	.string "I just discovered the footprints of\n"
-	.string "a rare POKéMON!\p"
-	.string "Wait until I finish sketching\n"
-	.string "them, okay?$"
+	.string "Aaaaah ! Attends !\n"
+	.string "S’il te plaît, n’entre pas ici.\p"
+	.string "Je viens de découvrir les empreintes d’un\n"
+	.string "POKéMON rare !\p"
+	.string "Attends que j’aie fini de les dessiner,\n"
+	.string "d’accord ?$"
 
 OldaleTown_Text_DiscoveredFootprints:
-	.string "I just discovered the footprints of\n"
-	.string "a rare POKéMON!\p"
-	.string "Wait until I finish sketching\n"
-	.string "them, okay?$"
+	.string "Je viens de découvrir les empreintes d’un\n"
+	.string "POKéMON rare !\p"
+	.string "Attends que j’aie fini de les dessiner,\n"
+	.string "d’accord ?$"
 
 OldaleTown_Text_FinishedSketchingFootprints:
-	.string "I finished sketching the footprints of\n"
-	.string "a rare POKéMON.\p"
-	.string "But it turns out they were only my\n"
-	.string "own footprints…$"
+	.string "J’ai fini de dessiner les empreintes d’un\n"
+	.string "POKéMON rare.\p"
+	.string "Mais il s’avère que ce n’étaient que\n"
+	.string "mes propres empreintes…$"
 
 OldaleTown_Text_MayLetsGoBack:
-	.string "MAY: {PLAYER}{KUN}!\n"
-	.string "Over here!\l"
-	.string "Let's hurry home!$"
+	.string "FLORA : {PLAYER}{KUN} !\n"
+	.string "Par ici !\l"
+	.string "Rentrons vite à la maison !$"
 
 OldaleTown_Text_BrendanLetsGoBack:
-	.string "BRENDAN: I'm heading back to my dad's\n"
-	.string "LAB now.\l"
-	.string "{PLAYER}, you should hustle back, too.$"
+	.string "BRICE : Je retourne au LABO de mon père\n"
+	.string "maintenant.\l"
+	.string "{PLAYER}, tu devrais te dépêcher aussi.$"
 
 OldaleTown_Text_TownSign:
-	.string "OLDALE TOWN\n"
-	.string "“Where things start off scarce.”$"
+	.string "BOURG-EN-VOL\n"
+	.string "« Là où tout commence modestement. »$"
 
 OldaleTown_Text_InfiniteItems1:
-	.string "Hey! I got some really good items from\n"
-	.string "a strange guy. They are…\p"
-	.string "An INFINITE REPEL and a BOX filled with\n"
-	.string "RARE CANDIES! Cool, right?\p"
-	.string "Are you interested in them?$"
+	.string "Hé ! J’ai eu des objets super auprès\n"
+	.string "d’un type bizarre. Ce sont…\p"
+	.string "Un REPOUSSE INFINI et une BOÎTE remplie de\n"
+	.string "BONBONS RARES ! Génial, non ?\p"
+	.string "Ça t’intéresse ?$"
 
 OldaleTown_Text_InfiniteItems2:
-	.string "Hmm… Obtaining and using these items\n"
-	.string "is considered cheating…\p"
-	.string "Are you sure you want them?$"
+	.string "Hmm… Obtenir et utiliser ces objets\n"
+	.string "est considéré comme de la triche…\p"
+	.string "Tu es sûr de les vouloir ?$"
 
 OldaleTown_Text_InfiniteItems3:
-	.string "Do you really want them?\n"
-	.string "Just making sure…\p"
-	.string "You can not throw them away.$"
+	.string "Tu les veux vraiment ?\n"
+	.string "Je vérifie juste…\p"
+	.string "Tu ne pourras pas les jeter.$"
 
 OldaleTown_Text_InfiniteItems4:
-	.string "Cheat at your own responsibility!$"
+	.string "Triche à tes risques et périls !$"
 
 OldaleTown_Text_InfiniteItemsNo:
-	.string "Okay!$"
+	.string "D’accord !$"
