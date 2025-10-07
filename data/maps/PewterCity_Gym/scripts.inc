@@ -37,65 +37,66 @@ PewterCity_Gym_EventScript_Brock_Defeated::
 
 
 PewterCity_Gym_Text_Brock_Intro:
-	.string "BROCK: Wow, it's not often that we get a\n"
-	.string "challenger from JOHTO.\p"
-	.string "I'm BROCK, the PEWTER GYM LEADER.\p"
-	.string "I'm an expert on rock-type POKéMON.\p"
-	.string "My POKéMON are impervious to most\n"
-	.string "physical attacks. You'll have a hard\l"
-	.string "time inflicting any damage.\p"
-	.string "Come on!$"
+	.string "PIERRE : Eh bien, ce n'est pas souvent que\n"
+	.string "nous recevons un challenger de JOHTO.\p"
+	.string "Je suis PIERRE, le CHAMPION de l'ARENE\n"
+	.string "d'ARGENTA.\p"
+	.string "Je suis un expert des POKéMON de type\n"
+	.string "Roche.\p"
+	.string "Mes POKéMON sont insensibles à la plupart\n"
+	.string "des attaques physiques. Tu auras du mal\l"
+	.string "à leur infliger des dégâts.\p"
+	.string "Allez, viens !$"
 
 PewterCity_Gym_Text_Brock_WinLoss:
-	.string "BROCK: Your POKéMON's powerful attacks\n"
-	.string "overcame my rock-hard defense…\p"
-	.string "You're stronger than I expected…\p"
-	.string "Go ahead--take this BADGE.$"
+	.string "PIERRE : Les attaques puissantes de tes\n"
+	.string "POKéMON ont surmonté ma défense solide…\p"
+	.string "Tu es plus fort que je ne le pensais…\p"
+	.string "Vas-y, prends ce BADGE.$"
 
 PewterCity_Gym_Text_ReceivedBoulderBadge:
-	.string "{PLAYER} received BOULDERBADGE.$"
+	.string "{PLAYER} reçoit le BADGE ROCHE.$"
 
 PewterCity_Gym_Text_Brock_BoulderBadge:
-	.string "BROCK: {PLAYER}, thanks. I enjoyed\n"
-	.string "battling you, even though I am a bit\l"
-	.string "upset.\p"
-	.string "That BOULDERBADGE will make your\n"
-	.string "POKéMON even more powerful.$"
+	.string "PIERRE : Merci, {PLAYER}. J'ai apprécié\n"
+	.string "ce combat, même si je suis un peu déçu.\p"
+	.string "Ce BADGE ROCHE rendra tes POKéMON encore\n"
+	.string "plus puissants.$"
 
 PewterCity_Gym_Text_Brock_FightDone:
-	.string "BROCK: The world is huge. There are\n"
-	.string "still many strong trainers like you.\p"
-	.string "Just wait and see. I'm going to become\n"
-	.string "a lot stronger too.$"
+	.string "PIERRE : Le monde est vaste. Il y a encore\n"
+	.string "beaucoup de dresseurs forts comme toi.\p"
+	.string "Attends un peu. Je vais devenir beaucoup\n"
+	.string "plus fort moi aussi.$"
 
 PewterCity_Gym_Text_CamperJerry_Seen:
-	.string "The trainers of this GYM use rock-type\n"
-	.string "POKéMON.\p"
-	.string "The rock-type has high DEFENSE.\p"
-	.string "Battles could end up going a long time.\n"
-	.string "Are you ready for this?$"
+	.string "Les dresseurs de cette ARENE utilisent des\n"
+	.string "POKéMON de type Roche.\p"
+	.string "Le type Roche a une DEFENSE élevée.\p"
+	.string "Les combats pourraient durer longtemps.\n"
+	.string "Es-tu prêt pour ça ?$"
 
 PewterCity_Gym_Text_CamperJerry_Beaten:
-	.string "I have to win these battles…$"
+	.string "Je dois gagner ces combats…$"
 
 PewterCity_Gym_Text_CamperJerry_AfterBattle:
-	.string "Hey, you! Trainer from JOHTO! BROCK is\n"
-	.string "tough. He'll punish you if you don't\l"
-	.string "take him seriously.$"
+	.string "Hé, toi ! Dresseur de JOHTO ! PIERRE est\n"
+	.string "costaud. Il te punira si tu ne le prends\l"
+	.string "pas au sérieux.$"
 
 PewterCity_Gym_Text_Guide:
-	.string "Yo! CHAMP in making! You're really\n"
-	.string "rocking.\p"
-	.string "Are you battling the GYM LEADERS of\n"
-	.string "KANTO?\p"
-	.string "They're strong and dedicated people,\n"
-	.string "just like JOHTO's GYM LEADERS.$"
+	.string "Yo ! CHAMPION en devenir ! Tu assures\n"
+	.string "vraiment.\p"
+	.string "Tu affrontes les CHAMPIONS d'ARENE de\n"
+	.string "KANTO ?\p"
+	.string "Ils sont forts et dévoués, tout comme\n"
+	.string "ceux de JOHTO.$"
 
 PewterCity_Gym_Text_Guide_Win:
-	.string "Yo! CHAMP in making! That GYM didn't\n"
-	.string "give you much trouble.\p"
-	.string "The way you took charge was really\n"
-	.string "inspiring. I mean that seriously.$"
+	.string "Yo ! CHAMPION en devenir ! Cette ARENE ne\n"
+	.string "t'a pas posé de problème.\p"
+	.string "La façon dont tu as mené le combat était\n"
+	.string "vraiment inspirante. Je le pense vraiment.$"
 
 PewterCity_Gym_EventScript_GymGuy::
 	goto_if_set FLAG_DEFEATED_PEWTER_GYM, PewterCity_Gym_EventScript_GymGuyAfter
@@ -120,15 +121,15 @@ PewterCity_Gym_EventScript_GymStatuePostVictory::
 	end
 
 PewterCity_Gym_Text_GymStatue::
-    .string "PEWTER POKéMON GYM\n"
-    .string "LEADER: BROCK\p"
-	.string "WINNING TRAINERS:\n"
-	.string "BLUE, RED$"
+    .string "ARENE POKéMON D'ARGENTA\n"
+    .string "CHAMPION : PIERRE\p"
+    .string "DRESSEURS VAINQUEURS :\n"
+    .string "BLUE, RED$"
 
 PewterCity_Gym_Text_GymStatuePlayerWon::
-    .string "PEWTER POKéMON GYM\n"
-    .string "LEADER: BROCK\p"
-    .string "WINNING TRAINERS:\n"
-	.string "BLUE, RED, {PLAYER}$"
+    .string "ARENE POKéMON D'ARGENTA\n"
+    .string "CHAMPION : PIERRE\p"
+    .string "DRESSEURS VAINQUEURS :\n"
+    .string "BLUE, RED, {PLAYER}$"
 
 

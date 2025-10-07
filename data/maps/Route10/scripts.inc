@@ -24,11 +24,11 @@ Route10_EventScript_Surge::
     end
 
 Route10_Text_Surge:
-    .string "Hey, kid!\p"
-	.string "Keep your guard up out here,\n"
-	.string "this place is cracklin' with power!\p"
-	.string "If you want a rematch, report to\n"
-	.string "the FIGHTING DOJO!$"
+    .string "Hé, gamin !\p"
+    .string "Reste sur tes gardes ici,\n"
+    .string "cet endroit crépite d'énergie !\p"
+    .string "Si tu veux une revanche, rends-toi\n"
+    .string "au DOJO DE COMBAT !$"
 
 Route10_EventScript_UltraBall::
 	finditem ITEM_ULTRA_BALL
@@ -80,26 +80,26 @@ Route10_Text_HikerJimSeen:
 	.string "Hahahah!$"
 
 Route10_Text_HikerJimBeaten:
-	.string "Hahaha-hachoo!$"
+	.string "Hahaha-atchoum!$"
 
 Route10_Text_HikerJimAfter:
-	.string "Hay fever is making me sneeze!\n"
-	.string "Ahahah-CHOO!$"
+	.string "Le rhume des foins me fait éternuer !\n"
+	.string "Ahahah-ATCHOUM !$"
 
 Route10_Text_PokefanmRobertSeen:
-	.string "You like POKéMON, don't you?\p"
-	.string "Me too!$"
+	.string "Tu aimes les POKéMON, n'est-ce pas ?\p"
+	.string "Moi aussi !$"
 
 Route10_Text_PokefanmRobertBeaten:
-	.string "I'd have to say that's my loss.$"
+	.string "Je dois admettre que j'ai perdu.$"
 
 Route10_Text_PokefanmRobertAfter:
-	.string "Look what you did to my POKéMON…\p"
-	.string "I won't forget this…$"
+	.string "Regarde ce que tu as fait à mes POKéMON…\p"
+	.string "Je n'oublierai pas ça…$"
 
 Route10_Text_PowerPlant:
-	.string "POWER PLANT$"
+	.string "CENTRALE$"
 
 Route10_Text_Sign:
 	.string "ROUTE 10\p"
-	.string "CERULEAN CITY - LAVENDER TOWN$"
+	.string "AZURIA - LAVANVILLE$"

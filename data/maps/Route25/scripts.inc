@@ -32,12 +32,12 @@ Route25_EventScript_MistyRematch::
     end
 
 Route25_Text_Misty:
-    .string "MISTY: I love the sunset here!\n"
-	.string "It gives me the courage to go on,\l"
-	.string "you know?\p"
-	.string "Right!\p"
-	.string "If you're ready for a real splash,\n"
-	.string "meet me at the FIGHTING DOJO!$"
+    .string "ONDINE : J'adore le coucher de soleil ici !\n"
+    .string "Ça me donne le courage de continuer,\l"
+    .string "tu sais ?\p"
+    .string "Oui !\p"
+    .string "Si tu es prêt pour une vraie éclaboussure,\n"
+    .string "retrouve-moi au DOJO DE KARATÉ !$"
 
 Route25_EventScript_Dudley::
 	trainerbattle_single TRAINER_DUDLEY Route25_Text_SchoolboyDudleySeen, Route25_Text_SchoolboyDudleyBeaten
@@ -184,31 +184,31 @@ Route25_EventScript_SuicuneMerge::
 	end
 	
 Route25_Text_Eusine1:
-	.string "EUSINE: Puff, puff...\n"
-	.string "I am... no match for you.\p"
-	.string "...As I predicted.\n"
+	.string "EUSINE : Ouf, ouf...\n"
+	.string "Je ne suis... pas de taille face à toi.\p"
+	.string "...Comme je l'avais prédit.\n"
 	.string "..........................\l"
-	.string "... Go ahead.\p"
-	.string "Since I met you in the BURNED TOWER\n"
-	.string "at ECRUTEAK CITY, I've sort of\l"
-	.string "known that SUICUNE would choose\l"
-	.string "you.$"
+	.string "... Vas-y.\p"
+	.string "Depuis que je t'ai rencontré à la TOUR BRÛLÉE\n"
+	.string "à IRISIA, j'ai en quelque sorte\l"
+	.string "su que SUICUNE te choisirait.\l"
+	.string "Toi.$"
 
 Route25_Text_Eusine2:
-	.string "Take a look at it!\p"
-	.string "SUICUNE is waiting for you!\n"
-	.string "It has been waiting for a battle\l"
-	.string "with a worthy trainer to whom it\l"
-	.string "can entrust itself.$"
+	.string "Regarde-le bien !\p"
+	.string "SUICUNE t'attend !\n"
+	.string "Il attend un combat\l"
+	.string "avec un Dresseur digne de confiance\l"
+	.string "à qui il pourra se confier.$"
 
 Route25_Text_Eusine3:
 	.string "{PLAYER}...\n"
-	.string "You two are truly amazing...\p"
-	.string "I have never seen a battle this\n"
-	.string "intense!\l"
-	.string "I have no regrets...\p"
-	.string "Farewell, SUICUNE!\n"
-	.string "Farewell... {PLAYER}!$"
+	.string "Vous deux êtes vraiment incroyables...\p"
+	.string "Je n'ai jamais vu un combat aussi\n"
+	.string "intense !\l"
+	.string "Je n'ai aucun regret...\p"
+	.string "Adieu, SUICUNE !\n"
+	.string "Adieu... {PLAYER} !$"
 
 Route25_EventScript_Eusine::
 	msgbox Route25_Text_Eusine2, MSGBOX_NPC
@@ -372,91 +372,93 @@ Route25_Movement_MistyWalkToPlayerLeft:
 	step_end
 
 Route25_Text_MistyDate:
-	.string "MISTY: Aww! Why did you have to\n"
-	.string "show up and bug us now?\p"
-	.string "Do you know what they call\n"
-	.string "people like you?\p"
-	.string "Pests! You heard me right,\n"
-	.string "pest!\p"
+	.string "ONDINE : Oh non ! Pourquoi tu dois\n"
+	.string "venir nous déranger maintenant ?\p"
+	.string "Tu sais comment on appelle\n"
+	.string "les gens comme toi ?\p"
+	.string "Des casse-pieds ! Oui, tu as bien\n"
+	.string "entendu, un casse-pieds !\p"
 	.string "…\p"
-	.string "…Oh? Those BADGES you have…\n"
-	.string "Are they JOHTO GYM BADGES?\p"
-	.string "If you have eight, you must be\n"
-	.string "good.\p"
-	.string "OK, then. Come to CERULEAN GYM.\p"
-	.string "I'll be happy to take you on.\p"
-	.string "I'm MISTY, the GYM LEADER in\n"
-	.string "CERULEAN.$"
+	.string "…Oh ? Ces BADGES que tu as…\n"
+	.string "Ce sont des BADGES d'ARENE de JOHTO ?\p"
+	.string "Si tu en as huit, tu dois être\n"
+	.string "fort.\p"
+	.string "D'accord alors. Viens à l'ARÈNE de CELADOPOLE.\p"
+	.string "Je serai ravie de t'affronter.\p"
+	.string "Je suis ONDINE, la CHAMPIONNE de\n"
+	.string "l'ARÈNE de CELADOPOLE.$"
 
 Route25_Text_SchoolboyDudleySeen:
-	.string "Beat the six of us trainers to\n"
-	.string "win a fabulous prize!\p"
-	.string "Think you've got what it takes?$"
+	.string "Bats les six dresseurs que nous\n"
+	.string "sommes pour gagner un prix fabuleux !\p"
+	.string "Tu penses être à la hauteur ?$"
 
 Route25_Text_SchoolboyDudleyBeaten:
-	.string "Whoo! Good stuff.$"
+	.string "Ouah ! Bien joué.$"
 
 Route25_Text_SchoolboyDudleyAfter:
-	.string "I did my best.\n"
-	.string "I have no regrets.$"
+	.string "J'ai fait de mon mieux.\n"
+	.string "Je n'ai aucun regret.$"
 
 Route25_Text_LassEllenSeen:
-	.string "I'm second.\n"
-	.string "Now it's serious!$"
+	.string "Je suis la deuxième.\n"
+	.string "Maintenant, ça devient sérieux !$"
 
 Route25_Text_LassEllenBeaten:
-	.string "How could I lose?$"
+	.string "Comment ai-je pu perdre ?$"
 
 Route25_Text_LassEllenAfter:
-	.string "I did my best.\n"
-	.string "I have no regrets.$"
+	.string "J'ai fait de mon mieux.\n"
+	.string "Je n'ai aucun regret.$"
 
 Route25_Text_SchoolboyJoeSeen:
-	.string "Here's No. 3!\n"
-	.string "I won't be easy.$"
+	.string "Voici le numéro 3 !\n"
+	.string "Je ne serai pas facile à battre.$"
 
 Route25_Text_SchoolboyJoeBeaten:
-	.string "Ow! Stomped flat!$"
+	.string "Aïe ! Écrasé !$"
 
 Route25_Text_SchoolboyJoeAfter:
-	.string "I did my best.\n"
-	.string "I have no regrets.$"
+	.string "J'ai fait de mon mieux.\n"
+	.string "Je n'ai aucun regret.$"
 
 Route25_Text_LassLauraSeen:
-	.string "I'm No. 4!\n"
-	.string "Getting tired?$"
+	.string "Je suis la numéro 4 !\n"
+	.string "Tu commences à fatiguer ?$"
 
 Route25_Text_LassLauraBeaten:
-	.string "I lost too…$"
+	.string "J'ai perdu aussi…$"
 
 Route25_Text_LassLauraAfter:
-	.string "I did my best.\n"
-	.string "I have no regrets.$"
+	.string "J'ai fait de mon mieux.\n"
+	.string "Je n'ai aucun regret.$"
 
 Route25_Text_CamperLloydSeen:
-	.string "OK! I'm No. 5.\n"
-	.string "I'll stomp you!$"
+	.string "OK ! Je suis le numéro 5.\n"
+	.string "Je vais t'écraser !$"
 
 Route25_Text_CamperLloydBeaten:
-	.string "Whoa! Too much.$"
+	.string "Ouh là ! C'était trop.$"
 
 Route25_Text_CamperLloydAfter:
-	.string "I did my best.\n"
-	.string "I have no regrets.$"
+	.string "J'ai fait de mon mieux.\n"
+	.string "Je n'ai aucun regret.$"
 
 Route25_Text_LassShannonSeen:
-	.string "I'm the last in line, but I tell\n"
-	.string "you, I'm tough!$"
+	.string "Je suis la dernière, mais je te\n"
+	.string "préviens, je suis coriace !$"
 
 Route25_Text_LassShannonBeaten:
-	.string "You're kidding.$"
+	.string "Tu plaisantes.$"
 
 Route25_Text_LassShannonAfter:
-	.string "I did my best.\n"
-	.string "I have no regrets.$"
+	.string "J'ai fait de mon mieux.\n"
+	.string "Je n'ai aucun regret.$"
 
 Route25_Text_SupernerdPatSeen:
 	.string "Mufufufu…\p"
+	.string "Je n'ai rien à voir avec les\n"
+	.string "six dresseurs alignés.\p"
 	.string "I have nothing to do with the\n"
 	.string "six-pack trainers.\p"
 	.string "I waited here to beat you when\n"
@@ -464,34 +466,32 @@ Route25_Text_SupernerdPatSeen:
 	.string "battles.$"
 
 Route25_Text_SupernerdPatBeaten:
-	.string "Aren't you tired at all?$"
+	.string "Tu n'es même pas fatigué ?$"
 
 Route25_Text_SupernerdPatAfter:
-	.string "I'm sorry… I won't cheat\n"
-	.string "anymore…$"
+	.string "Je suis désolé… Je ne tricherai\n"
+	.string "plus jamais…$"
 
 Route25_Text_CooltrainerKevinNugget:
-	.string "You took on one more battle than\n"
-	.string "you expected, but you won\l"
-	.string "anyway.\p"
-	.string "As promised, you win a prize.$"
+	.string "Tu as affronté un combat de plus\n"
+	.string "que prévu, mais tu as gagné\l"
+	.string "quand même.\p"
+	.string "Comme promis, tu gagnes un prix.$"
 
 Route25_Text_CooltrainerKevinSeen:
-	.string "But after seeing how you battle,\n"
-	.string "I want to see how I'll fare.\p"
-	.string "How about it? Let me take you\n"
-	.string "on.$"
+	.string "Après avoir vu comment tu te bats,\n"
+	.string "j'ai envie de voir ce que je vaux.\p"
+	.string "Qu'en dis-tu ? Laisse-moi t'affronter.$"
 
 Route25_Text_CooltrainerKevinBeaten:
-	.string "I've never had a battle this\n"
-	.string "good!$"
+	.string "Je n'ai jamais eu un combat aussi\n"
+	.string "bon !$"
 
 Route25_Text_CooltrainerKevinAfter:
-	.string "That was a great battle!\p"
-	.string "You and your POKéMON are truly\n"
-	.string "outstanding!$"
+	.string "C'était un super combat !\p"
+	.string "Toi et tes POKéMON êtes vraiment\n"
+	.string "remarquables !$"
 
 Route25_Text_BillsHouseSign:
-	.string "SEA COTTAGE\n"
-	.string "BILL'S HOUSE$"
-
+	.string "CHALET MARIN\n"
+	.string "MAISON DE LÉO$"

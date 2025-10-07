@@ -50,59 +50,59 @@ Route12_EventScript_Tentacruel::
 	end
 
 Route12_Text_NewFisher:
-	.string "Careful, something vicious lives in\n"
-	.string "these waters.$"
+	.string "Attention, quelque chose de dangereux vit\n"
+	.string "dans ces eaux.$"
 
 Route12_Text_FisherMartinSeen:
-	.string "Patience is the key to both\n"
-	.string "fishing and POKéMON.$"
+	.string "La patience est la clé pour la pêche\n"
+	.string "et les POKéMON.$"
 
 Route12_Text_FisherMartinBeaten:
-	.string "Gwaaah!$"
+	.string "Gwaaah !$"
 
 Route12_Text_FisherMartinAfterBattle:
-	.string "I'm too impatient for fishing…$"
+	.string "Je suis trop impatient pour pêcher…$"
 
 Route12_Text_FisherStephenSeen:
-	.string "I feel so content, fishing while\n"
-	.string "listening to some tunes on my\l"
+	.string "Je me sens tellement bien, à pêcher tout en\n"
+	.string "écoutant de la musique sur ma\l"
 	.string "radio.$"
 
 Route12_Text_FisherStephenBeaten:
-	.string "My stupid radio distracted me!$"
+	.string "Ma stupide radio m'a distrait !$"
 
 Route12_Text_FisherStephenAfterBattle:
-	.string "Have you checked out KANTO's radio\n"
-	.string "programs? We get a good variety\l"
-	.string "here.$"
+	.string "As-tu écouté les programmes radio de KANTO ?\n"
+	.string "On a beaucoup de choix\l"
+	.string "ici.$"
 
 Route12_Text_FisherBarneySeen:
-	.string "What's most important in our\n"
-	.string "everyday lives?$"
+	.string "Qu'est-ce qui est le plus important dans\n"
+	.string "notre vie quotidienne ?$"
 
 Route12_Text_FisherBarneyBeaten:
-	.string "The answer is coming up next!$"
+	.string "La réponse arrive tout de suite !$"
 
 Route12_Text_FisherBarneyAfterBattle:
-	.string "I think electricity is the most\n"
-	.string "important thing in our daily\l"
-	.string "lives.\p"
-	.string "If it weren't, people wouldn't\n"
-	.string "have made such a fuss when the\l"
-	.string "POWER PLANT went out of\l"
-	.string "commission.$"
+	.string "Je pense que l'électricité est la chose la plus\n"
+	.string "importante dans notre vie\l"
+	.string "quotidienne.\p"
+	.string "Sinon, les gens n'auraient pas fait\n"
+	.string "autant d'histoires quand la\l"
+	.string "CENTRALE ÉLECTRIQUE est tombée\l"
+	.string "en panne.$"
 
 Route12_Text_FisherKyleSeen:
-	.string "Do you remember?$"
+	.string "Tu t'en souviens ?$"
 
 Route12_Text_FisherKyleBeaten:
-	.string "You do remember?$"
+	.string "Tu t'en souviens vraiment ?$"
 
 Route12_Text_FisherKyleAfterBattle:
-	.string "The tug you feel on the ROD when\n"
-	.string "you hook a POKéMON…\p"
-	.string "That's the best feeling ever for\n"
-	.string "an angler like me.$"
+	.string "La secousse que tu ressens sur la CANNE quand\n"
+	.string "un POKéMON mord à l'hameçon…\p"
+	.string "C'est la meilleure sensation pour\n"
+	.string "un pêcheur comme moi.$"
 
 Route12_EventScript_Sign::
 	msgbox Route12_Text_Sign, MSGBOX_SIGN
@@ -114,8 +114,7 @@ Route12_EventScript_FishingSign::
 
 Route12_Text_Sign:
 	.string "ROUTE 12\p"
-	.string "NORTH TO LAVENDER TOWN$"
+	.string "NORD VERS LAVANVILLE$"
 
 Route12_Text_FishingSpotSign:
-	.string "FISHING SPOT$"
-
+	.string "COIN DE PÊCHE$"

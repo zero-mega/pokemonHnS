@@ -292,91 +292,90 @@ Route113_GlassWorkshop_EventScript_NinjaBoy::
 	end
 
 Route113_GlassWorkshop_Text_GoCollectAshWithThis:
-	.string "This area is covered in volcanic ash,\n"
-	.string "huff-puff!\p"
-	.string "I'm specially gifted, huff-puff.\p"
-	.string "I make glass out of volcanic ash\n"
-	.string "and make items, huff-puff.\p"
-	.string "Go collect ashes with this, huff-puff.$"
+	.string "Cette zone est couverte de cendres volcaniques,\n"
+	.string "houf-pouf !\p"
+	.string "J'ai un don spécial, houf-pouf.\p"
+	.string "Je fabrique du verre à partir de cendres volcaniques\n"
+	.string "et je crée des objets, houf-pouf.\p"
+	.string "Va collecter des cendres avec ceci, houf-pouf.$"
 
 Route113_GlassWorkshop_Text_ExplainSootSack:
-	.string "Just take that SOOT SACK and walk\n"
-	.string "through piles of ash, huff-puff.\p"
-	.string "And it will fill up with the volcanic ash,\n"
-	.string "huff-puff.\p"
-	.string "You can check how much ash it\n"
-	.string "has from your BAG.\p"
-	.string "Once you you've collected a good\n"
-	.string "amount, come see me, huff-puff.$"
+	.string "Prends ce SAC À CENDRES et marche\n"
+	.string "dans les tas de cendres, houf-pouf.\p"
+	.string "Il se remplira de cendres volcaniques,\n"
+	.string "houf-pouf.\p"
+	.string "Tu peux vérifier la quantité de cendres\n"
+	.string "dans ton SAC.\p"
+	.string "Une fois que tu en as récolté assez,\n"
+	.string "viens me voir, houf-pouf.$"
 
 Route113_GlassWorkshop_Text_LetsSeeCollectedAshes:
-	.string "Have you collected ashes, huff-puff?\n"
-	.string "Let me see, huff-puff.$"
+	.string "As-tu collecté des cendres, houf-pouf ?\n"
+	.string "Laisse-moi voir, houf-pouf.$"
 
 Route113_GlassWorkshop_Text_NotEnoughAshNeedX:
 	.string "Hmmm…\n"
-	.string "There's not enough ash here, huff-puff.\l"
-	.string "I can't make glass with this, huff-puff.\p"
-	.string "Let's see… {STR_VAR_1} is the number of steps\n"
-	.string "you'll need to walk for me to make you\l"
-	.string "a BLUE FLUTE, huff-puff.$"
+	.string "Il n'y a pas assez de cendres ici, houf-pouf.\l"
+	.string "Je ne peux pas faire de verre avec ça, houf-pouf.\p"
+	.string "Voyons voir… {STR_VAR_1} est le nombre de pas\n"
+	.string "qu'il te faudra faire pour que je te fabrique\l"
+	.string "une FLÛTE BLEUE, houf-pouf.$"
 
 Route113_GlassWorkshop_Text_WhichGlassItemWoudYouLike:
-	.string "Oh!\n"
-	.string "You've got a lot of ashes, huff-puff!\p"
-	.string "I'll make you a glass item, huff-puff!\n"
-	.string "Which one would you like, huff-puff?$"
+	.string "Oh !\n"
+	.string "Tu as beaucoup de cendres, houf-pouf !\p"
+	.string "Je vais te fabriquer un objet en verre, houf-pouf !\n"
+	.string "Lequel veux-tu, houf-pouf ?$"
 
 Route113_GlassWorkshop_Text_IsThatTheItemForYou:
-	.string "A {STR_VAR_1}, huff-puff?\n"
-	.string "Is that the one for you, huff-puff?$"
+	.string "Un(e) {STR_VAR_1}, houf-pouf ?\n"
+	.string "C'est bien celui-là que tu veux, houf-pouf ?$"
 
 Route113_GlassWorkshop_Text_WhichWouldYouLike:
-	.string "Which one would you like, huff-puff?$"
+	.string "Lequel veux-tu, houf-pouf ?$"
 
 Route113_GlassWorkshop_Text_IllMakeItemForYou:
-	.string "A {STR_VAR_1} it is, then, huff-puff!\p"
-	.string "Okay! I'll make it for you, huff-puff.\n"
-	.string "Just wait a little while, huff-puff.$"
+	.string "Un(e) {STR_VAR_1}, alors, houf-pouf !\p"
+	.string "D'accord ! Je vais te le fabriquer, houf-pouf.\n"
+	.string "Attends un petit moment, houf-pouf.$"
 
 Route113_GlassWorkshop_Text_NotEnoughAshToMakeItem:
-	.string "A {STR_VAR_1}, huff-puff?\p"
-	.string "There's not enough ash here to make\n"
-	.string "that, though, huff-puff.\p"
-	.string "Let's see… {STR_VAR_2} is the number of steps\n"
-	.string "you'll need to walk through volcanic ash\l"
-	.string "for me to make that item, huff-puff.\p"
-	.string "Which item would you rather have me\n"
-	.string "make instead, huff-puff?$"
+	.string "Un(e) {STR_VAR_1}, houf-pouf ?\p"
+	.string "Il n'y a pas assez de cendres ici pour\n"
+	.string "fabriquer ça, houf-pouf.\p"
+	.string "Voyons voir… {STR_VAR_2} est le nombre de pas\n"
+	.string "qu'il te faudra faire dans les cendres volcaniques\l"
+	.string "pour que je fabrique cet objet, houf-pouf.\p"
+	.string "Quel objet préfères-tu que je fabrique\n"
+	.string "à la place, houf-pouf ?$"
 
 Route113_GlassWorkshop_Text_AllThatAshButDontWantAnything:
-	.string "You've collected all that ash, but you\n"
-	.string "don't want anything, huff-puff?$"
+	.string "Tu as collecté toutes ces cendres, mais tu\n"
+	.string "ne veux rien, houf-pouf ?$"
 
 Route113_GlassWorkshop_Text_IveFinishedGlassItem:
-	.string "Ah, I've finished your {STR_VAR_1}.\n"
-	.string "Take it, huff-puff.$"
+	.string "Ah, j'ai terminé ton/ta {STR_VAR_1}.\n"
+	.string "Prends-le/la, houf-pouf.$"
 
 Route113_GlassWorkshop_Text_NoRoomInBag:
-	.string "Oh?\n"
-	.string "You've no room in your BAG, huff-puff.\p"
-	.string "I'll hold on to it, so come back later,\n"
-	.string "huff-puff.$"
+	.string "Oh ?\n"
+	.string "Tu n'as plus de place dans ton SAC, houf-pouf.\p"
+	.string "Je vais le garder, alors reviens plus tard,\n"
+	.string "houf-pouf.$"
 
 Route113_GlassWorkshop_Text_NoRoomInPC:
-	.string "Oh?\n"
-	.string "You've no room in your PC, huff-puff?\p"
-	.string "I'll hold on to it, so come back later,\n"
-	.string "huff-puff.$"
+	.string "Oh ?\n"
+	.string "Tu n'as plus de place dans ton PC, houf-pouf ?\p"
+	.string "Je vais le garder, alors reviens plus tard,\n"
+	.string "houf-pouf.$"
 
 Route113_GlassWorkshop_Text_HaventGotYourSootSack:
-	.string "Hah? You haven't got your SOOT SACK\n"
-	.string "with you, huff-puff.\p"
-	.string "You have to keep it with you to collect\n"
-	.string "volcanic ash, huff-puff.$"
+	.string "Hein ? Tu n'as pas ton SAC À CENDRES\n"
+	.string "avec toi, houf-pouf.\p"
+	.string "Tu dois l'avoir sur toi pour collecter\n"
+	.string "des cendres volcaniques, houf-pouf.$"
 
 Route113_GlassWorkshop_Text_FunToBlowGlassFlute:
-	.string "It's fun to blow a glass flute while\n"
-	.string "my boss is talking.\p"
-	.string "Huff-huff! Puff-puff!$"
-
+	.string "C'est amusant de souffler dans une flûte en verre\n"
+	.string "pendant que mon patron parle.\p"
+	.string "Houf-houf ! Pouf-pouf !$"

@@ -179,26 +179,26 @@ Route114_EventScript_Kai::
 	end
 
 Route114_Text_AllMyMonDoesIsRoarTakeThis:
-	.string "All my POKéMON does is ROAR…\n"
-	.string "No one dares to come near me…\p"
-	.string "Sigh… If you would, please take\n"
-	.string "this TM away…$"
+	.string "Tout ce que fait mon POKéMON, c'est RUGIR…\n"
+	.string "Personne n'ose s'approcher de moi…\p"
+	.string "Soupir… S'il te plaît, prends\n"
+	.string "cette CT…$"
 
 Route114_Text_ExplainRoar:
-	.string "TM05 contains ROAR.\n"
-	.string "A ROAR sends POKéMON scurrying.$"
+	.string "CT05 contient RUGISSEMENT.\n"
+	.string "Un RUGISSEMENT fait fuir les POKéMON.$"
 
 Route114_Text_Poochyena:
-	.string "Bow! Bowwow!$"
+	.string "Ouaf ! Ouaf ouaf !$"
 
 Route114_Text_MeteorFallsSign:
-	.string "METEOR FALLS\n"
-	.string "RUSTBORO CITY THROUGH HERE$"
+	.string "CHUTES MÉTÉORE\n"
+	.string "VILLE MÉTÉORITE PAR ICI$"
 
 Route114_Text_FossilManiacsHouseSign:
-	.string "FOSSIL MANIAC'S HOUSE\n"
-	.string "“Fossils gratefully accepted!”$"
+	.string "MAISON DU MANIAQUE DES FOSSILES\n"
+	.string "« Fossiles acceptés avec plaisir ! »$"
 
 Route114_Text_BillsHouse:
-	.string "BILL'S HOUSE$"
+	.string "MAISON DE LÉO$"
 

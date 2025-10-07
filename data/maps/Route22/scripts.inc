@@ -284,63 +284,60 @@ Route22_Movement_CelebiPush:
 	walk_in_place_down
 	step_end
 
-
 Route22_Text_Silver1:
-	.string "SILVER: You told me...\n"
-	.string "you were the number one in the whole\l"
-	.string "world!\p"
-	.string "Are you gonna quit?\p"
-	.string "What are you going to do now?$"
+	.string "SILVER : Tu m'as dit...\n"
+	.string "que tu étais le numéro un dans le\l"
+	.string "monde entier !\p"
+	.string "Tu vas abandonner ?\p"
+	.string "Qu'est-ce que tu vas faire maintenant ?$"
 
 Route22_Text_Giovanni1:
 	.string "....................\p"
-	.string "GIOVANNI: One must acknowledge one's\n"
-	.string "defeat before he can move on...\p"
-	.string "I will go solo... for now...\p"
-	.string "So that one day I will form a\n"
-	.string "stronger organization!$"
+	.string "GIOVANNI : Il faut reconnaître sa\n"
+	.string "défaite avant de pouvoir avancer...\p"
+	.string "Je vais partir seul... pour l'instant...\p"
+	.string "Pour qu'un jour je puisse former une\n"
+	.string "organisation encore plus forte !$"
 
 Route22_Text_Silver2:
-	.string "SILVER: What aspect of you was\n"
-	.string "number one?\p"
-	.string "Gathering so many only to be\n"
-	.string "defeated by a mere child!$"
+	.string "SILVER : En quoi étais-tu\n"
+	.string "le numéro un ?\p"
+	.string "Rassembler autant de monde pour être\n"
+	.string "battu par un simple enfant !$"
 
 Route22_Text_Giovanni2:
-	.string "GIOVANNI: Putting together the\n"
-	.string "potential of many is how you\l"
-	.string "produce a huge power...\l"
-	.string "That's what an organization is...\l"
-	.string "That's the strength of organizatoin\p"
-	.string "I failed... to make the best use of\n"
-	.string "my subordinates' potential...!\p"
-	.string "But you shall witness one day the\n"
-	.string "revival of me and my TEAM ROCKET!$"
+	.string "GIOVANNI : Réunir le potentiel de\n"
+	.string "plusieurs, c'est ainsi qu'on\l"
+	.string "crée une grande puissance...\l"
+	.string "C'est ça, une organisation...\l"
+	.string "C'est la force d'une organisation\p"
+	.string "J'ai échoué... à tirer le meilleur de\n"
+	.string "mes subordonnés... !\p"
+	.string "Mais tu verras un jour le retour de\n"
+	.string "moi et de ma TEAM ROCKET !$"
 
 Route22_Text_Silver3:
-	.string "SILVER: I don't understand you!\p"
-	.string "You don't make any sense!$"
+	.string "SILVER : Je ne te comprends pas !\p"
+	.string "Tu ne veux rien dire pour moi !$"
 
 Route22_Text_Giovanni3:
 	.string ".......................\p"
-	.string "GIOVANNI: One day you will\n"
-	.string "understand.$"
+	.string "GIOVANNI : Un jour, tu\n"
+	.string "comprendras.$"
 
 Route22_Text_Silver4:
-	.string "SILVER: I don't want to\n"
-	.string "Understand you!\p"
-	.string "I will never become someone like\n"
-	.string "you.\p"
-	.string "A coward when you're alone and\n"
-	.string "acting like a tyrant when you're\l"
-	.string "in front of other cowards!\p"
-	.string "I will become strong!\p"
-	.string "I will become a stronger man all\n"
-	.string "by myself!$"
+	.string "SILVER : Je ne veux pas\n"
+	.string "te comprendre !\p"
+	.string "Je ne deviendrai jamais quelqu'un\n"
+	.string "comme toi.\p"
+	.string "Un lâche quand tu es seul et\n"
+	.string "un tyran devant d'autres lâches !\p"
+	.string "Je deviendrai fort !\p"
+	.string "Je deviendrai un homme plus fort\n"
+	.string "par moi-même !$"
 
 Route22_Text_Silver5:
-	.string "ALL BY MYSELF!$"
+	.string "PAR MOI-MÊME !$"
 
 Route22_Text_Silver6:
-	.string "SILVER: ... What are you staring at?$"
-
+	.string "SILVER : ... Qu'est-ce que tu regardes ?$"

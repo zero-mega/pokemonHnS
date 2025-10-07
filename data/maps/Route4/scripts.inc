@@ -35,40 +35,40 @@ Route4_EventScript_Sign::
 	end
 
 Route4_Text_BirdKeeperHank_Seen:
-	.string "I'm raising my POKéMON. Want to battle\n"
-	.string "with me?$"
+	.string "J'élève mes POKéMON. Veux-tu te battre\n"
+	.string "avec moi ?$"
 
 Route4_Text_BirdKeeperHank_Beaten:
-	.string "Ack! I lost that one…$"
+	.string "Aïe ! J'ai perdu celui-là…$"
 
 Route4_Text_BirdKeeperHank_AfterBattle:
-	.string "If you have a specific POKéMON that you\n"
-	.string "want to raise, put it out first, then\n"
-	.string "switch it right away.\p"
-	.string "That's how to do it.$"
+	.string "Si tu veux entraîner un POKéMON en\n"
+	.string "particulier, mets-le en premier, puis\n"
+	.string "change-le tout de suite.\p"
+	.string "C'est comme ça qu'il faut faire.$"
 
 Route4_Text_PicnickerHope_Seen:
-	.string "I have a feeling that I can win.\p"
-	.string "Let's see if I'm right!$"
+	.string "J'ai le sentiment que je peux gagner.\p"
+	.string "Voyons si j'ai raison !$"
 
 Route4_Text_PicnickerHope_Beaten:
-	.string "Aww, you are too strong.$"
+	.string "Oh, tu es trop fort.$"
 
 Route4_Text_PicnickerHope_AfterBattle:
-	.string "I heard CLEFAIRY appear at MT.MOON.\p"
-	.string "But where could they be?$"
+	.string "J'ai entendu dire que des MÉLOFÉE\n"
+	.string "apparaissent au MT.SELENITE.\p"
+	.string "Mais où peuvent-ils être ?$"
 
 Route4_Text_PicnickerSharon_Seen:
-	.string "Um…\n"
-	.string "I…$"
+	.string "Euh…\n"
+	.string "Je…$"
 
 Route4_Text_PicnickerSharon_Beaten:
 	.string "…$"
 
 Route4_Text_PicnickerSharon_AfterBattle:
-	.string "……I'll go train some more…$"
+	.string "……Je vais m'entraîner encore…$"
 
 Route4_Text_MtMoonSquareSign:
-	.string "MT.MOON SQUARE\p"
-	.string "Just go up the stairs.$"
-
+	.string "PLACE MT.SELENITE\p"
+	.string "Montez simplement les escaliers.$"

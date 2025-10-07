@@ -20,46 +20,46 @@ Route34_DayCare_Bookshelf4::
 	end
 
 Route34_DayCare_Text_Bookshelf1:
-	.string "A dictionary!\p"
-	.string "{PLAYER} opened the dictionary to\n"
-	.string "a random page.\p"
-	.string "'BABE'\n"
-	.string "A noun, meaning infant or baby.\p"
-	.string "{PLAYER} put away the dictionary.$"
+	.string "Un dictionnaire !\p"
+	.string "{PLAYER} ouvre le dictionnaire à\n"
+	.string "une page au hasard.\p"
+	.string "'BÉBÉ'\n"
+	.string "Nom, signifiant nourrisson ou bébé.\p"
+	.string "{PLAYER} range le dictionnaire.$"
 
 Route34_DayCare_Text_Bookshelf2:
-	.string "A book about POKéMON!\p"
-	.string "{PLAYER} flipped through\n"
-	.string "the book.\p"
-	.string "It must have the word\n"
-	.string "POKéMON written on every page.\p"
-	.string "{PLAYER} put away the book.$"
+	.string "Un livre sur les POKéMON !\p"
+	.string "{PLAYER} feuillette\n"
+	.string "le livre.\p"
+	.string "Il doit y avoir le mot\n"
+	.string "POKéMON écrit sur chaque page.\p"
+	.string "{PLAYER} range le livre.$"
 
 Route34_DayCare_Text_Bookshelf3:
-	.string "A book of word assocations!\p"
-	.string "{PLAYER} flipped through\n"
-	.string "the book.\p"
-	.string "PICHU -> CUTE\l"
-	.string "CLEFFA -> CUTE\l"
-	.string "IGGLYBUFF -> SONG\l"
-	.string "TYROGUE -> FIGHTING\l"
-	.string "SMOOCHUM -> ICE\l"
-	.string "ELEKID -> ELECTRIC\l"
-	.string "MAGBY -> FIRE\p"
-	.string "{PLAYER} put away the book.$"
+	.string "Un livre d'associations de mots !\p"
+	.string "{PLAYER} feuillette\n"
+	.string "le livre.\p"
+	.string "PICHU -> MIGNON\l"
+	.string "CLEFFA -> MIGNON\l"
+	.string "IGGLYBUFF -> CHANSON\l"
+	.string "TYROGUE -> COMBAT\l"
+	.string "SMOOCHUM -> GLACE\l"
+	.string "ELEKID -> ÉLECTRIQUE\l"
+	.string "MAGBY -> FEU\p"
+	.string "{PLAYER} range le livre.$"
 
 Route34_DayCare_Text_Bookshelf4:
-	.string "A book of POKéMON natures!\p"
-	.string "{PLAYER} flipped through\n"
-	.string "the book.\p"
-	.string "PICHU -> STATIC\l"
-	.string "CLEFFA -> CUTE CHARM\l"
-	.string "IGGLYBUFF -> CUTE CHARM\l"
-	.string "TYROGUE -> GUTS\l"
-	.string "SMOOCHUM -> OBLIVIOUS\l"
-	.string "ELEKID -> STATIC\l"
-	.string "MAGBY -> FLAME BODY\p"
-	.string "{PLAYER} put away the book.$"
+	.string "Un livre sur les natures des POKéMON !\p"
+	.string "{PLAYER} feuillette\n"
+	.string "le livre.\p"
+	.string "PICHU -> STATIK\l"
+	.string "CLEFFA -> JOLI SOURIRE\l"
+	.string "IGGLYBUFF -> JOLI SOURIRE\l"
+	.string "TYROGUE -> CRAN\l"
+	.string "SMOOCHUM -> BENÊT\l"
+	.string "ELEKID -> STATIK\l"
+	.string "MAGBY -> CORPS ARDENT\p"
+	.string "{PLAYER} range le livre.$"
 
 Route34_DayCare_EventScript_Clerk::
 	lock
@@ -146,36 +146,35 @@ Route34_DayCare_EventScript_ClerkAfter::
 	end
 
 Route34_DayCare_Text_ClerkBefore:
-	.string "I'm the DAYCARE couple's son.\p"
-	.string "An ODD EGG was found with a trainer's\n"
-	.string "POKéMON, but they didn't want it...\p"
-	.string "I'd offer it to you...\n"
-	.string "But how can I know you'll take good\l"
-	.string "care of it?$"
+	.string "Je suis le fils du couple de la PENSION.\p"
+	.string "Un ŒUF ÉTRANGE a été trouvé avec le\n"
+	.string "POKéMON d'un dresseur, mais il n'en voulait pas...\p"
+	.string "Je pourrais te l'offrir...\n"
+	.string "Mais comment savoir si tu t'en occuperas\l"
+	.string "bien ?$"
 
 Route34_DayCare_Text_ClerkNoRoom:
-	.string "It looks like you can't carry another\n"
-	.string "POKéMON anyway.$"
+	.string "On dirait que tu ne peux pas porter\n"
+	.string "un autre POKéMON de toute façon.$"
 
 Route34_DayCare_Text_ClerkQuestion:
-	.string "Answer this question for me.\n"
-	.string "How do you feel about this ODD EGG?$"
+	.string "Réponds à cette question pour moi.\n"
+	.string "Que penses-tu de cet ŒUF ÉTRANGE ?$"
 
 Route34_DayCare_Text_Rejection:
-	.string "Hmm, I think this egg isn't for you.$"
+	.string "Hmm, je pense que cet œuf n'est pas pour toi.$"
 
 Route34_DayCare_Text_ReceivedOddEgg:
-	.string "{PLAYER} Received the ODD EGG.$"
+	.string "{PLAYER} a reçu l'ŒUF ÉTRANGE.$"
 
 Route34_DayCare_Text_TakeCare:
-	.string "I knew you were the right trainer\n"
-	.string "for the job. Take good care of it!$"
+	.string "Je savais que tu étais le bon dresseur\n"
+	.string "pour ça. Prends-en bien soin !$"
 
 Route34_DayCare_Text_ClerkAfter:
-	.string "We see a lot of those eggs around\n"
-	.string "here.\p"
-	.string "Something was different about that\n"
-	.string "one, though.$"
+	.string "On voit beaucoup de ces œufs par ici.\n"
+	.string "\p"
+	.string "Mais celui-là était différent des autres.$"
 
 Route34_DayCare_EventScript_Ditto::
 	lock
@@ -446,141 +445,140 @@ Route34_DayCare_EventScript_TwoMonsInDaycare::
 	end
 
 Route34_Text_SeeWifeIfYoudLikeMeToRaiseMon:
-	.string "I'm the DAY-CARE MAN.\p"
-	.string "I help take care of the precious\n"
-	.string "POKéMON of TRAINERS.\p"
-	.string "If you'd like me to raise your POKéMON,\n"
-	.string "have a word with my wife.$"
+	.string "Je suis le PENSIONNAIRE.\p"
+	.string "J’aide à prendre soin des précieux\n"
+	.string "POKéMON des DRESSEURS.\p"
+	.string "Si tu veux que je m’occupe de ton POKéMON,\n"
+	.string "parle à ma femme.$"
 
 Route34_Text_DoYouWantEgg:
-	.string "Ah, it's you!\p"
-	.string "We were raising your POKéMON,\n"
-	.string "and my goodness, were we surprised!\p"
-	.string "Your POKéMON had an EGG!\p"
-	.string "We don't know how it got there,\n"
-	.string "but your POKéMON had it.\p"
-	.string "You do want it, yes?$"
+	.string "Ah, c’est toi !\p"
+	.string "Nous élevions ton POKéMON,\n"
+	.string "et quelle surprise nous avons eue !\p"
+	.string "Ton POKéMON a pondu un ŒUF !\p"
+	.string "Nous ne savons pas comment c’est arrivé,\n"
+	.string "mais ton POKéMON l’a eu.\p"
+	.string "Tu le veux, n’est-ce pas ?$"
 
 Route34_Text_YourMonIsDoingFine:
-	.string "Ah, it's you! Good to see you.\n"
-	.string "Your {STR_VAR_1}'s doing fine.$"
+	.string "Ah, c’est toi ! Content de te voir.\n"
+	.string "Ton {STR_VAR_1} se porte bien.$"
 
 Route34_Text_IllKeepIt:
-	.string "Well then, I'll keep it.\n"
-	.string "Thanks!$"
+	.string "Très bien, je vais le garder.\n"
+	.string "Merci !$"
 
 Route34_Text_YouHaveNoRoomForIt:
-	.string "You have no room for it…\n"
-	.string "Come back when you've made room.$"
+	.string "Tu n’as pas de place pour lui…\n"
+	.string "Reviens quand tu auras fait de la place.$"
 
 Route34_Text_ReceivedEgg:
-	.string "{PLAYER} received the EGG from\n"
-	.string "the DAY-CARE MAN.$"
+	.string "{PLAYER} a reçu l’ŒUF de la part\n"
+	.string "du PENSIONNAIRE.$"
 
 Route34_Text_TakeGoodCareOfIt:
-	.string "Take good care of it.$"
+	.string "Prends-en bien soin.$"
 
 Route34_Text_FriendlyWithOtherTrainersMon:
-	.string "By the way, about your {STR_VAR_1},\n"
-	.string "it seemed to be friendly with\l"
-	.string "{STR_VAR_2}'s {STR_VAR_3}.\p"
-	.string "I may even have seen it receiving\n"
-	.string "a piece of MAIL.$"
+	.string "Au fait, à propos de ton {STR_VAR_1},\n"
+	.string "il semblait être ami avec\l"
+	.string "le {STR_VAR_3} de {STR_VAR_2}.\p"
+	.string "Je l’ai même vu recevoir\n"
+	.string "un morceau de COURRIER.$"
 
 @ Unused
 Route34_Text_SeeWifeIfYouWantToPickUpMon:
-	.string "If you want to pick up your POKéMON,\n"
-	.string "have a word with my wife.$"
+	.string "Si tu veux récupérer ton POKéMON,\n"
+	.string "parle à ma femme.$"
 
 Route34_Text_YourMonsAreDoingFine:
-	.string "Ah, it's you! Your {STR_VAR_1} and\n"
-	.string "{STR_VAR_2} are doing fine.$"
+	.string "Ah, c’est toi ! Tes {STR_VAR_1} et\n"
+	.string "{STR_VAR_2} se portent bien.$"
 
 Route34_Text_IWillKeepDoYouWantIt:
-	.string "I really will keep it.\n"
-	.string "You do want this, yes?$"
+	.string "Je vais vraiment le garder.\n"
+	.string "Tu le veux, n’est-ce pas ?$"
 
 Route34_DayCare_Text_WouldYouLikeUsToRaiseAMon:
-	.string "I'm the DAY-CARE LADY.\p"
-	.string "We can raise POKéMON for you.\p"
-	.string "Would you like us to raise one?$"
+	.string "Je suis la PENSIONNAIRE.\p"
+	.string "Nous pouvons élever un POKéMON pour toi.\p"
+	.string "Veux-tu que nous en élevions un ?$"
 
 Route34_DayCare_Text_WhichMonShouldWeRaise:
-	.string "Which POKéMON should we raise for\n"
-	.string "you?$"
+	.string "Quel POKéMON veux-tu que nous élevions\n"
+	.string "pour toi ?$"
 
 Route34_DayCare_Text_WellRaiseYourMon:
-	.string "Fine, we'll raise your {STR_VAR_1}\n"
-	.string "for a while.\p"
-	.string "Come back for it later.$"
+	.string "Très bien, nous allons élever ton {STR_VAR_1}\n"
+	.string "pendant un moment.\p"
+	.string "Reviens le chercher plus tard.$"
 
 Route34_DayCare_Text_WeCanRaiseOneMore:
-	.string "We can raise two of your POKéMON.\n"
-	.string "Would you like us to raise one more?$"
+	.string "Nous pouvons élever deux de tes POKéMON.\n"
+	.string "Veux-tu que nous en élevions un autre ?$"
 
 Route34_DayCare_Text_HusbandWasLookingForYou:
-	.string "My husband was looking for you.$"
+	.string "Mon mari te cherchait.$"
 
 Route34_DayCare_Text_FineThenComeAgain:
-	.string "Oh, fine, then.\n"
-	.string "Come again.$"
+	.string "Bon, d’accord alors.\n"
+	.string "Reviens nous voir.$"
 
 Route34_DayCare_Text_NotEnoughMoney:
-	.string "You don't have enough money…$"
+	.string "Tu n’as pas assez d’argent…$"
 
 Route34_DayCare_Text_TakeOtherOneBackToo:
-	.string "Will you take back the other one,\n"
-	.string "too?$"
+	.string "Veux-tu aussi récupérer l’autre ?$"
 
 Route34_DayCare_Text_ComeAgain:
-	.string "Fine.\n"
-	.string "Come again.$"
+	.string "Très bien.\n"
+	.string "Reviens nous voir.$"
 
 Route34_DayCare_Text_GoodToSeeYou:
-	.string "Ah, it's you! Good to see you.\n"
-	.string "Your POKéMON can only be doing good!$"
+	.string "Ah, c’est toi ! Content de te voir.\n"
+	.string "Tes POKéMON ne peuvent qu’aller bien !$"
 
 Route34_DayCare_Text_YourMonHasGrownXLevels:
-	.string "By level, your {STR_VAR_1} has\n"
-	.string "grown by {STR_VAR_2}.$"
+	.string "Ton {STR_VAR_1} a gagné\n"
+	.string "{STR_VAR_2} niveaux.$"
 
 Route34_DayCare_Text_YourTeamIsFull:
-	.string "Your POKéMON team is full.\n"
-	.string "Make room, then come see me.$"
+	.string "Ton équipe de POKéMON est pleine.\n"
+	.string "Fais de la place, puis reviens me voir.$"
 
 @ Unused
 Route34_DayCare_Text_TakeBackWhichMon:
-	.string "Which POKéMON will you take back?$"
+	.string "Quel POKéMON veux-tu récupérer ?$"
 
 Route34_DayCare_Text_ItWillCostX:
-	.string "If you want your {STR_VAR_1} back,\n"
-	.string "it will cost ¥{STR_VAR_2}.$"
+	.string "Si tu veux récupérer ton {STR_VAR_1},\n"
+	.string "cela coûtera ¥{STR_VAR_2}.$"
 
 Route34_DayCare_Text_HeresYourMon:
-	.string "Perfect!\n"
-	.string "Here's your POKéMON.$"
+	.string "Parfait !\n"
+	.string "Voici ton POKéMON.$"
 
 Route34_DayCare_Text_TookBackMon:
-	.string "{PLAYER} took back {STR_VAR_1} from\n"
-	.string "the DAY-CARE LADY.$"
+	.string "{PLAYER} a récupéré {STR_VAR_1} auprès\n"
+	.string "de la PENSIONNAIRE.$"
 
 Route34_DayCare_Text_YouHaveJustOneMon:
-	.string "Oh? But you have just one\n"
+	.string "Oh ? Mais tu n’as qu’un seul\n"
 	.string "POKéMON.\p"
-	.string "Come back another time.$"
+	.string "Reviens une autre fois.$"
 
 Route34_DayCare_Text_TakeYourMonBack:
-	.string "Will you take your POKéMON back?$"
+	.string "Veux-tu récupérer ton POKéMON ?$"
 
 Route34_DayCare_Text_WhatWillYouBattleWith:
-	.string "If you leave me that POKéMON,\n"
-	.string "what will you battle with?\p"
-	.string "Come back another time.$"
+	.string "Si tu me laisses ce POKéMON,\n"
+	.string "avec quoi vas-tu combattre ?\p"
+	.string "Reviens une autre fois.$"
 
 Route34_DayCare_Text_YoullBeLeftWithJustOne:
-	.string "Huh?\n"
-	.string "Now, now.\p"
-	.string "If you leave that POKéMON with\n"
-	.string "me, you'll be left with just one.\p"
-	.string "You will be better off if you catch\n"
-	.string "some more, I dare say.$"
+	.string "Hein ?\n"
+	.string "Allons, allons.\p"
+	.string "Si tu me laisses ce POKéMON,\n"
+	.string "il ne t’en restera qu’un.\p"
+	.string "Tu ferais mieux d’en attraper d’autres,\n"
+	.string "je pense.$"

@@ -39,42 +39,42 @@ Route2_EventScript_Nugget::
     end
 
 Route2_Text_BugCatcherRob_Seen:
-	.string "My bug POKéMON are tough. Prepare to\n"
-	.string "lose!$"
+	.string "Mes POKéMON Insecte sont forts. Prépare-\n"
+	.string "toi à perdre !$"
 
 Route2_Text_BugCatcherRob_Beaten:
-	.string "I was whipped…$"
+	.string "J'ai été battu…$"
 
 Route2_Text_BugCatcherRob_AfterBattle:
-	.string "I'm going to look for stronger bug\n"
-	.string "POKéMON.$"
+	.string "Je vais chercher des POKéMON Insecte\n"
+	.string "plus puissants.$"
 
 Route2_Text_BugCatcherEd_Seen:
-	.string "If you walk in tall grass wearing\n"
-	.string "shorts, do you get nicks and cuts?$"
+	.string "Si tu marches dans les hautes herbes\n"
+	.string "en short, tu te fais des égratignures ?$"
 
 Route2_Text_BugCatcherEd_Beaten:
-	.string "Ouch, ouch, ouch!$"
+	.string "Aïe, aïe, aïe !$"
 
 Route2_Text_BugCatcherEd_AfterBattle:
-	.string "They'll really sting when you take a\n"
-	.string "bath.$"
+	.string "Ça va vraiment piquer quand tu prendras\n"
+	.string "un bain.$"
 
 Route2_Text_BugCatcherDoug_Seen:
-	.string "Why don't girls like bug POKéMON?$"
+	.string "Pourquoi les filles n'aiment pas les\n"
+	.string "POKéMON Insecte ?$"
 
 Route2_Text_BugCatcherDoug_Beaten:
-	.string "No good!$"
+	.string "Pas bon !$"
 
 Route2_Text_BugCatcherDoug_AfterBattle:
-	.string "Bug POKéMON squish like plush toys\n"
-	.string "when you squeeze their bellies.\p"
-	.string "I love how they feel!$"
+	.string "Les POKéMON Insecte sont tout mous comme\n"
+	.string "des peluches quand on leur presse le ventre.\p"
+	.string "J'adore cette sensation !$"
 
 Route2_Text_Sign:
 	.string "ROUTE 2\p"
-	.string "VIRIDIAN CITY - PEWTER CITY$"
+	.string "JADIELLE - ARGENTA$"
 
 Route2_Text_DiglettsCaveSign:
-	.string "DIGLETT'S CAVE$"
-
+	.string "LA CAVERNE TAUPIQUEUR$"

@@ -42,34 +42,34 @@ PewterCity_Museum_1F_EventScript_Bones::
 	end
 
 PewterCity_Museum_1F_Text_Recptionist:
-	.string "Welcome!\p"
-	.string "Just to let you know, all the large\n"
-	.string "specimens have been taken to the\l"
-	.string "other museums for display.\p"
-	.string "So for now, admission is free of\n"
-	.string "charge!\p"
-	.string "Please go ahead.$"
+	.string "Bienvenue !\p"
+	.string "Juste pour vous prévenir, tous les\n"
+	.string "grands spécimens ont été envoyés\l"
+	.string "dans d'autres musées pour exposition.\p"
+	.string "Donc, pour l'instant, l'entrée est\n"
+	.string "gratuite !\p"
+	.string "Veuillez entrer, je vous en prie.$"
 
 PewterCity_Museum_1F_Text_FossilWoman:
-	.string "You must be a strong trainer.\p"
-	.string "We don't have much use for the\n"
-	.string "fossils on the counter over there.\p"
-	.string "A strange man with silver hair\n"
-	.string "dropped a ton of them off here.\p"
-	.string "Go ahead and take them if you like.$"
+	.string "Tu dois être un dresseur fort.\p"
+	.string "Nous n'avons plus vraiment besoin\n"
+	.string "des fossiles sur le comptoir là-bas.\p"
+	.string "Un homme étrange aux cheveux\n"
+	.string "argentés en a déposé plein ici.\p"
+	.string "Vas-y, prends-les si tu veux.$"
 
 PewterCity_Museum_1F_Text_FossilWomanAfter:
-	.string "We often share research with the\n"
-	.string "RUINS OF ALPH researchers.\p"
-	.string "We even share fossils with them\n"
-	.string "through the PC!$"
+	.string "Nous partageons souvent nos recherches\n"
+	.string "avec les chercheurs des RUINES D'ALPH.\p"
+	.string "Nous partageons même des fossiles\n"
+	.string "avec eux via le PC !$"
 
 PewterCity_Museum_1F_Text_Oldman:
-	.string "I should be grateful for my long\n"
-	.string "life.\p"
-	.string "Never did I think I would get to\n"
-	.string "see the bones of a dragon!$"
+	.string "Je devrais être reconnaissant pour ma\n"
+	.string "longue vie.\p"
+	.string "Je n'aurais jamais cru voir un jour\n"
+	.string "les os d'un dragon !$"
 
 PewterCity_Museum_1F_Text_Bones:
-	.string "Bones of an ancient dragon\n"
-	.string "POKéMON.$"
+	.string "Os d'un ancien POKéMON\n"
+	.string "dragon.$"

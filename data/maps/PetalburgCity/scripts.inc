@@ -35,30 +35,29 @@ PetalburgCity_GalladeEvo3:
 	end
 
 PetalburgCity_GalladeEvo_Text:
-	.string "PROF. BIRCH might be the most famous\n"
-	.string "PROFESSOR of HOENN, but I am also a\l"
-	.string "reliable PROFESSOR.\p"
-	.string "To prove it, I can give you a piece of\n"
-	.string "information that he might not know\l"
-	.string "about. Do you want to listen to it?$"
+	.string "Le PROF. SÉKO est peut-être le plus célèbre\n"
+	.string "PROFESSEUR de HOENN, mais je suis aussi un\l"
+	.string "PROFESSEUR fiable.\p"
+	.string "Pour te le prouver, je peux te donner une\n"
+	.string "information qu'il ne connaît peut-être pas.\l"
+	.string "Veux-tu l'entendre?$"
 
 PetalburgCity_GalladeEvo_Text2:
-	.string "Choosing between a MALE or FEMALE RALTS\n"
-	.string "is quite important.\p"
-	.string "Depending on what you capture, the last\n"
-	.string "evolution of RALTS will be different.\p"
-	.string "If RALTS is MALE, he will naturally\n"
-	.string "evolve into GALLADE but only if it\l"
-	.string "happens during the morning, which is\l"
-	.string "from 6AM to 9AM.\p"
-	.string "RALTS will evolve into GARDEVOIR if he\n"
-	.string "doesn't evolve during morning, or if\l"
-	.string "said RALTS is FEMALE.\p"
-	.string "I believe this information might be\n"
-	.string "useful for a new trainer like you.$"
+	.string "Choisir entre un TARSAL MÂLE ou FEMELLE\n"
+	.string "est très important.\p"
+	.string "Selon ce que tu captures, la dernière\n"
+	.string "évolution de TARSAL sera différente.\p"
+	.string "Si TARSAL est MÂLE, il évoluera\n"
+	.string "naturellement en GALAM, mais seulement si\l"
+	.string "cela se produit le matin, c'est-à-dire\l"
+	.string "entre 6h et 9h.\p"
+	.string "TARSAL évoluera en GARDEVOIR s'il n'évolue\n"
+	.string "pas le matin, ou si ce TARSAL est FEMELLE.\p"
+	.string "Je pense que cette information pourrait\n"
+	.string "être utile à un nouveau DRESSEUR comme toi.$"
 
 PetalburgCity_GalladeEvo_Text3:
-	.string "Oh… Okay…$"
+	.string "Oh… D'accord…$"
 
 PetalburgCity_EventScript_MoveGymBoyToWestEntrance::
 	setobjectxyperm LOCALID_GYM_BOY, 5, 11
@@ -748,63 +747,63 @@ PetalburgCity_EventScript_GymBoy::
 	end
 
 PetalburgCity_Text_WhereIsWally:
-	.string "Where has our WALLY gone?\p"
-	.string "We have to leave for VERDANTURF TOWN\n"
-	.string "very soon…$"
+	.string "Où est passé notre TIMMY ?\p"
+	.string "Nous devons partir pour VERGAZON\n"
+	.string "très bientôt…$"
 
 PetalburgCity_Text_AreYouRookieTrainer:
-	.string "Hiya! Are you maybe…\n"
-	.string "A rookie TRAINER?\p"
-	.string "Do you know what POKéMON TRAINERS\n"
-	.string "do when they reach a new town?\p"
-	.string "They first check what kind of GYM\n"
-	.string "is in the town.$"
+	.string "Salut ! Tu es peut-être…\n"
+	.string "Un DRESSEUR débutant ?\p"
+	.string "Sais-tu ce que font les DRESSEURS\n"
+	.string "POKéMON quand ils arrivent en ville ?\p"
+	.string "Ils vérifient d'abord quel type\n"
+	.string "d'ARÈNE se trouve dans la ville.$"
 
 PetalburgCity_Text_ThisIsPetalburgGym:
-	.string "See? This is PETALBURG CITY's GYM.$"
+	.string "Tu vois ? Voici l'ARÈNE de CLÉMENTI-VILLE.$"
 
 PetalburgCity_Text_ThisIsGymSign:
-	.string "This is the GYM's sign. Look for it\n"
-	.string "whenever you're looking for a GYM.$"
+	.string "Ceci est le panneau de l'ARÈNE. Cherche-le\n"
+	.string "chaque fois que tu cherches une ARÈNE.$"
 
 PetalburgCity_Text_WaterReflection:
-	.string "My face is reflected in the water.\p"
-	.string "It's a shining grin full of hope…\p"
-	.string "Or it could be a look of somber silence\n"
-	.string "struggling with fear…\p"
-	.string "What do you see reflected in your face?$"
+	.string "Mon visage se reflète dans l'eau.\p"
+	.string "C'est un sourire éclatant plein d'espoir…\p"
+	.string "Ou bien un regard silencieux et sombre\n"
+	.string "luttant contre la peur…\p"
+	.string "Que vois-tu reflété sur ton visage ?$"
 
 PetalburgCity_Text_FullPartyExplanation:
-	.string "Let's say you have six POKéMON.\n"
-	.string "If you catch another one…\p"
-	.string "It is automatically sent to a STORAGE\n"
-	.string "BOX over a PC connection.$"
+	.string "Disons que tu as six POKéMON.\n"
+	.string "Si tu en attrapes un autre…\p"
+	.string "Il est automatiquement envoyé dans une BOÎTE\n"
+	.string "de STOCKAGE via une connexion PC.$"
 
 PetalburgCity_Text_GymSign:
-	.string "PETALBURG CITY POKéMON GYM\n"
-	.string "LEADER: NORMAN\l"
-	.string "“A man in pursuit of power!”$"
+	.string "ARÈNE POKéMON DE CLÉMENTI-VILLE\n"
+	.string "CHAMPION : NORMAN\l"
+	.string "« Un homme en quête de puissance ! »$"
 
 PetalburgCity_Text_CitySign:
-	.string "PETALBURG CITY\n"
-	.string "“Where people mingle with nature.”$"
+	.string "CLÉMENTI-VILLE\n"
+	.string "« Là où les gens se mêlent à la nature. »$"
 
 PetalburgCity_Text_WallyHouseSign:
-	.string "WALLY'S HOUSE$"
+	.string "MAISON DE TIMMY$"
 
 PetalburgCity_Text_AreYouATrainer:
-	.string "Excuse me!\p"
-	.string "Let me guess, from the way you're\n"
-	.string "dressed, are you a POKéMON TRAINER?$"
+	.string "Excuse-moi !\p"
+	.string "Laisse-moi deviner, à ta façon de t'habiller,\n"
+	.string "tu es un DRESSEUR POKéMON ?$"
 
 PetalburgCity_Text_WellMaybeNot:
 	.string "… … … … … …\p"
-	.string "Well, maybe not.\n"
-	.string "Your clothes aren't all that dirty.\p"
-	.string "You're either a rookie TRAINER,\n"
-	.string "or maybe you're just an ordinary kid.$"
+	.string "Eh bien, peut-être pas.\n"
+	.string "Tes vêtements ne sont pas si sales.\p"
+	.string "Tu es soit un DRESSEUR débutant,\n"
+	.string "soit juste un enfant ordinaire.$"
 
 PetalburgCity_Text_ImLookingForTalentedTrainers:
-	.string "I'm roaming the land in search of\n"
-	.string "talented TRAINERS.\p"
-	.string "I'm sorry to have taken your time.$"
+	.string "Je parcours la région à la recherche de\n"
+	.string "DRESSEURS talentueux.\p"
+	.string "Désolé de t'avoir fait perdre ton temps.$"

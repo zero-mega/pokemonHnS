@@ -59,56 +59,55 @@ Route20_EventScript_Headlocker::
 	end
 
 Route20_Text_Headlocker:
-	.string "There's a rare POKéMON on this\n"
+	.string "Il y a un POKéMON rare sur cette\n"
 	.string "route.\p"
-	.string "And sometimes it carries a rare\n"
-	.string "evolution item.\p"
-	.string "That's double rare!\p"
-	.string "I need to finish my POKéDEX, so\n"
-	.string "I've been fishing here for hours!$"
+	.string "Et parfois, il porte un objet\n"
+	.string "d'évolution rare.\p"
+	.string "C'est doublement rare !\p"
+	.string "Je dois finir mon POKéDEX, alors\n"
+	.string "je pêche ici depuis des heures !$"
 
 Route20_Text_Seel:
-	.string "SEEL: Seel seel!$"
+	.string "OTARIA : Otaria otaria !$"
 
 Route20_Text_Dewgong:
-	.string "DEWGONG: Goooong!$"
+	.string "LAMANTINE : Gooooong !$"
 
 Route20_Text_SeafoamSign:
-	.string "SEAFOAM ISLANDS$"
+	.string "ÎLES ÉCUME$"
 
 Route20_Text_SwimmerfNicoleSeen:
-	.string "I feel so much lighter in water.$"
+	.string "Je me sens tellement plus légère dans l'eau.$"
 
 Route20_Text_SwimmerfNicoleBeaten:
-	.string "Oh, no!$"
+	.string "Oh, non !$"
 
 Route20_Text_SwimmerfNicoleAfterBattle:
-	.string "Swimming exercises your full body.\p"
-	.string "It's really good for you.$"
+	.string "Nager fait travailler tout le corps.\p"
+	.string "C'est vraiment bon pour la santé.$"
 
 Route20_Text_SwimmerfLoriSeen:
-	.string "What an impressive collection of\n"
-	.string "GYM BADGES. We should battle!$"
+	.string "Quelle impressionnante collection de\n"
+	.string "BADGES ! On devrait se battre !$"
 
 Route20_Text_SwimmerfLoriBeaten:
-	.string "No!$"
+	.string "Non !$"
 
 Route20_Text_SwimmerfLoriAfterBattle:
-	.string "SURF is no longer the only HM move\n"
-	.string "you use in water.$"
+	.string "SURF n'est plus la seule CS\n"
+	.string "que tu utilises dans l'eau.$"
 
 Route20_Text_SwimmermCameronSeen:
-	.string "I guess it's impossible to swim\n"
-	.string "all the way to JOHTO.$"
+	.string "Je suppose qu'il est impossible de nager\n"
+	.string "jusqu'à JOHTO.$"
 
 Route20_Text_SwimmermCameronBeaten:
-	.string "Aiyah!$"
+	.string "Aïe !$"
 
 Route20_Text_SwimmermCameronAfterBattle:
-	.string "Besides the sea, I can also swim\n"
-	.string "in ponds and rivers.$"
+	.string "En plus de la mer, je peux aussi nager\n"
+	.string "dans les étangs et les rivières.$"
 
 Route20_Text_CinnabarIsland_GymUnusedSign:
-	.string "What does this sign say?\p"
-	.string "CINNABAR GYM LEADER: BLAINE$"
-
+	.string "Que dit ce panneau ?\p"
+	.string "CHAMPION DE L'ARÈNE DE CRAMOIS'ÎLE : AUGUSTE$"

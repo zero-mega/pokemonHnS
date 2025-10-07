@@ -21,27 +21,29 @@ Route33_EventScript_Lass::
 	end
 
 Route33_Text_HikerAnthony2Seen:
-	.string "I came through the tunnel,\n"
-	.string "but I still have plenty\l"
-	.string "of energy left.$"
+	.string "Je suis passé par le tunnel,\n"
+	.string "mais il me reste encore\l"
+	.string "beaucoup d'énergie.$"
 
 Route33_Text_HikerAnthony2Beaten:
-	.string "Whoa! You've got more zip\n"
-	.string "than me!$"
+	.string "Ouah ! Tu as plus de peps\n"
+	.string "que moi !$"
 
 Route33_Text_HikerAnthony2After:
-	.string "We HIKERS are at our best\n"
-	.string "in the mountains.$"
+	.string "Nous, les Randonneurs, sommes\n"
+	.string "au meilleur de notre forme\n"
+	.string "dans les montagnes.$"
 
 Route33_Text_HikerAnthonyDunsparce:
-	.string "Hey, did you get a DUNSPARCE?\p"
-	.string "I caught one too.\p"
-	.string "Take a look at it in the light.\n"
-	.string "It's got a funny face!$"
+	.string "Hé, tu as eu un DUNSPARCE ?\p"
+	.string "J'en ai attrapé un aussi.\p"
+	.string "Regarde-le à la lumière.\n"
+	.string "Il a une drôle de tête !$"
 
 Route33_Text_Lass:
-	.string "Pant, pant…\p"
-	.string "That cave was bigger than\n"
-	.string "I'd expected.\p"
-	.string "I got too tired exploring\n"
-	.string "for MARILL, so I came outside.$"
+	.string "Huff, huff…\p"
+	.string "Cette grotte était plus grande\n"
+	.string "que ce que je pensais.\p"
+	.string "Je me suis trop fatiguée à\n"
+	.string "chercher un MARILL, alors je\n"
+	.string "suis sortie.$"

@@ -26,37 +26,36 @@ Route6_EventScript_Sign::
 	end
 
 Route6_Text_PokefanM:
-	.string "The road is closed until the\n"
-	.string "problem at the POWER PLANT is\l"
-	.string "solved.$"
+	.string "La route est fermée jusqu'à ce que\n"
+	.string "le problème à la CENTRALE soit\l"
+	.string "résolu.$"
 
 Route6_Text_UndergroundPathSign:
-	.string "UNDERGROUND PATH\p"
-	.string "CERULEAN CITY - VERMILION CITY$"
+	.string "PASSAGE SOUTERRAIN\p"
+	.string "AZURIA - CARAMELARIVILLE$"
 
 PokefanM_Text_RexSeen:
-	.string "My STANTLER is the cutest in the\n"
-	.string "world.$"
+	.string "Mon GIRAFARIG est le plus mignon\n"
+	.string "du monde.$"
 
 PokefanM_Text_RexBeaten:
-	.string "My STANTLER!$"
+	.string "Mon GIRAFARIG !$"
 
 PokefanM_Text_RexAfter:
-	.string "Look how adorable my STANTLER\n"
-	.string "acts!\p"
-	.string "Isn't it cute enough to make\n"
-	.string "your heart melt?$"
+	.string "Regarde comme mon GIRAFARIG agit\n"
+	.string "de façon adorable !\p"
+	.string "N'est-il pas assez mignon pour\n"
+	.string "te faire fondre le cœur ?$"
 
 PokefanM_Text_AllanSeen:
-	.string "My GRANBULL is the cutest in the\n"
-	.string "world.$"
+	.string "Mon GRANBULL est le plus mignon\n"
+	.string "du monde.$"
 
 PokefanM_Text_AllanBeaten:
-	.string "My GRANBULL!$"
+	.string "Mon GRANBULL !$"
 
 PokefanM_Text_AllanAfter:
-	.string "Look how adorable my GRANBULL\n"
-	.string "acts!\p"
-	.string "Isn't it cute enough to make\n"
-	.string "your heart melt?$"
-
+	.string "Regarde comme mon GRANBULL agit\n"
+	.string "de façon adorable !\p"
+	.string "N'est-il pas assez mignon pour\n"
+	.string "te faire fondre le cœur ?$"

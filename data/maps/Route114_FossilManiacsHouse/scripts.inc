@@ -31,24 +31,23 @@ Route114_FossilManiacsHouse_EventScript_Bookshelf::
 	end
 
 Route114_FossilManiacsHouse_Text_HaveThisToDigLikeMyBrother:
-	.string "My big brother's the FOSSIL MANIAC…\n"
-	.string "He's a nice guy who loves FOSSILS…\p"
-	.string "He loves digging holes, too…\n"
-	.string "He dug this hole by himself…\p"
-	.string "You can have this, so you can DIG\n"
-	.string "holes just like my big brother…$"
+	.string "Mon grand frère est le MANIAQUE DES FOSSILES…\n"
+	.string "C'est un gars sympa qui adore les FOSSILES…\p"
+	.string "Il adore aussi creuser des trous…\n"
+	.string "Il a creusé ce trou tout seul…\p"
+	.string "Tu peux prendre ça, comme ça tu pourras CREUSER\n"
+	.string "des trous comme mon grand frère…$"
 
 Route114_FossilManiacsHouse_Text_DigReturnsYouToEntrance:
-	.string "If you make a POKéMON DIG inside a\n"
-	.string "cave, you're returned to the entrance…$"
+	.string "Si tu fais CREUSER un POKéMON dans une\n"
+	.string "grotte, tu seras ramené à l'entrée…$"
 
 Route114_FossilManiacsHouse_Text_RocksFillDisplayCase:
-	.string "Rocks in peculiar shapes fill\n"
-	.string "the display case…$"
+	.string "Des roches aux formes étranges remplissent\n"
+	.string "la vitrine…$"
 
 Route114_FossilManiacsHouse_Text_CrammedWithBooks:
-	.string "THE COMPOSITION OF STRATA…\n"
-	.string "HOW RAIN SHAPES THE LAND…\l"
-	.string "STONES, SOIL, AND ROCK…\p"
-	.string "It's crammed with books.$"
-
+	.string "LA COMPOSITION DES COUCHES…\n"
+	.string "COMMENT LA PLUIE FORME LE PAYSAGE…\l"
+	.string "PIERRES, SOL ET ROCHE…\p"
+	.string "C'est rempli de livres.$"

@@ -21,13 +21,13 @@ Route2_House_EventScript_ManAfter::
 	end
 
 Route2_House_Text_Fisher:
-	.string "Hi! Wow, I'm glad to see you.\p"
-	.string "You're the first visitor I've had in a\n"
-	.string "long time.\p"
-	.string "I'm super-happy! Let me give you a\n"
-	.string "little present.$"
+	.string "Salut ! Waouh, je suis content de te voir.\p"
+	.string "Tu es le premier visiteur que j'ai eu\n"
+	.string "depuis longtemps.\p"
+	.string "Je suis super heureux ! Laisse-moi te donner\n"
+	.string "un petit cadeau.$"
 
 Route2_House_Text_Fisher_GotNugget:
-	.string "That's a NUGGET.\p"
-	.string "I can't give you any nuggets of\n"
-	.string "wisdom, so that'll have to do!$"
+	.string "C'est un MORCEAU D'OR.\p"
+	.string "Je ne peux pas te donner de pépites de\n"
+	.string "sagesse, alors ça devra suffire !$"

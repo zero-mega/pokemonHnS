@@ -100,42 +100,41 @@ Route110_TrickHousePuzzle2_EventScript_Georgia::
 	end
 
 Route110_TrickHousePuzzle2_Text_WroteSecretCodeLockOpened:
-	.string "{PLAYER} wrote down the secret code\n"
-	.string "on the door.\p"
-	.string "“TRICK MASTER is smart.”\n"
+	.string "{PLAYER} a écrit le code secret\n"
+	.string "sur la porte.\p"
+	.string "« MAÎTRE DES PIÈGES est intelligent. »\n"
 	.string "… … … … … … … …\p"
-	.string "The lock clicked open!$"
+	.string "La serrure s'est ouverte !$"
 
 Route110_TrickHousePuzzle2_Text_TedIntro:
-	.string "Which switch closes which hole?$"
+	.string "Quel interrupteur ferme quel trou ?$"
 
 Route110_TrickHousePuzzle2_Text_TedDefeat:
-	.string "After that battle, I'm even more\n"
-	.string "confused!$"
+	.string "Après ce combat, je suis encore plus\n"
+	.string "perdu !$"
 
 Route110_TrickHousePuzzle2_Text_TedPostBattle:
-	.string "Can I get you to push all the buttons\n"
-	.string "for me?$"
+	.string "Tu peux appuyer sur tous les boutons\n"
+	.string "pour moi ?$"
 
 Route110_TrickHousePuzzle2_Text_PaulIntro:
-	.string "Oh! You're on your second TRICK HOUSE\n"
-	.string "challenge!$"
+	.string "Oh ! Tu en es à ton deuxième défi\n"
+	.string "de la MAISON DES PIÈGES !$"
 
 Route110_TrickHousePuzzle2_Text_PaulDefeat:
-	.string "You're good at battling too?$"
+	.string "Tu es aussi doué pour les combats ?$"
 
 Route110_TrickHousePuzzle2_Text_PaulPostBattle:
-	.string "The TRICK MASTER rigged all the tricks\n"
-	.string "in this house all by himself.$"
+	.string "Le MAÎTRE DES PIÈGES a préparé tous\n"
+	.string "les pièges de cette maison tout seul.$"
 
 Route110_TrickHousePuzzle2_Text_GeorgiaIntro:
-	.string "I want to make my own GYM one day.\n"
-	.string "So, I'm studying how to set traps.$"
+	.string "Je veux créer ma propre ARÈNE un jour.\n"
+	.string "Alors j'étudie comment poser des pièges.$"
 
 Route110_TrickHousePuzzle2_Text_GeorgiaDefeat:
-	.string "I didn't study battling enough!$"
+	.string "Je n'ai pas assez étudié les combats !$"
 
 Route110_TrickHousePuzzle2_Text_GeorgiaPostBattle:
-	.string "You're strong, aren't you?\n"
-	.string "Maybe even enough to be a GYM LEADER!$"
-
+	.string "Tu es fort, n'est-ce pas ?\n"
+	.string "Peut-être assez pour être un CHAMPION D'ARÈNE !$"

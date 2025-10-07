@@ -175,20 +175,20 @@ Route121_EventScript_RematchCristin::
 	end
 
 Route121_Text_OkayMoveOutToMtPyre:
-	.string "Okay!\n"
-	.string "We're to move out to MT. PYRE!$"
+	.string "D'accord !\n"
+	.string "En route pour le MT. PYRÉE !$"
 
 Route121_Text_AheadLoomsMtPyre:
-	.string "Ahead looms MT. PYRE…\p"
-	.string "It is a natural monument to the spirits \n"
-	.string "of departed POKéMON…$"
+	.string "Devant nous se dresse le MT. PYRÉE…\p"
+	.string "C'est un monument naturel aux esprits \n"
+	.string "des POKéMON disparus…$"
 
 Route121_Text_MtPyrePierSign:
-	.string "MT. PYRE PIER\p"
-	.string "…The sign is old and worn out.\n"
-	.string "The words are barely legible…$"
+	.string "JETÉE DU MT. PYRÉE\p"
+	.string "…Le panneau est vieux et usé.\n"
+	.string "Les mots sont à peine lisibles…$"
 
 Route121_Text_SafariZoneSign:
-	.string "“Filled with rare POKéMON!”\n"
-	.string "SAFARI ZONE$"
+	.string "« Rempli de POKéMON rares ! »\n"
+	.string "ZONE SAFARI$"
 

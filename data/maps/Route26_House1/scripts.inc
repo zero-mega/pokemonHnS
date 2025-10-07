@@ -13,10 +13,10 @@ Route26_House1_EventScript_HealWoman::
 
 
 Route26_Text_HealHouseRest:
-    .string "Your POKéMON look a little tired.\p"
-    .string "You should rest them a while.$"
+    .string "Tes POKéMON ont l'air un peu fatigués.\p"
+    .string "Tu devrais les laisser se reposer un moment.$"
 
 Route26_Text_HealHouseKeepAtIt:
-    .string "There!\p"
-    .string "Your POKéMON are looking good!\p"
-    .string "Keep at it!$"
+    .string "Voilà !\p"
+    .string "Tes POKéMON sont en pleine forme !\p"
+    .string "Continue comme ça !$"

@@ -36,26 +36,25 @@ Route111_OldLadysRestStop_EventScript_DeclineRest::
 	end
 
 Route111_OldLadysRestStop_Text_PokecenterChallenge:
-	.string "Sorry, you are playing\n"
-	.string "with the POKéCENTER challenge!$"
+	.string "Désolé, vous jouez avec\n"
+	.string "le défi POKéCENTER !$"
 	
 Route111_OldLadysRestStop_Text_RestUpHere:
-	.string "Oh, dear, dear.\n"
-	.string "Aren't your POKéMON exhausted?\p"
-	.string "If you'd like, rest up here.\n"
-	.string "That's a fine idea! You should do that.$"
+	.string "Oh là là.\n"
+	.string "Tes POKéMON ne sont-ils pas épuisés ?\p"
+	.string "Si tu veux, repose-toi ici.\n"
+	.string "C'est une bonne idée ! Tu devrais le faire.$"
 
 Route111_OldLadysRestStop_Text_TakeYourTimeRestUp:
-	.string "That's right.\n"
-	.string "Take your time and rest up!$"
+	.string "Voilà, c'est ça.\n"
+	.string "Prends ton temps et repose-toi !$"
 
 Route111_OldLadysRestStop_Text_StillTiredTakeAnotherRest:
-	.string "Oh, dear, dear.\n"
-	.string "Are your POKéMON still tired?\p"
-	.string "You should take another rest here.\n"
-	.string "That's a fine idea. You should do that.$"
+	.string "Oh là là.\n"
+	.string "Tes POKéMON sont-ils encore fatigués ?\p"
+	.string "Tu devrais te reposer encore ici.\n"
+	.string "C'est une bonne idée. Tu devrais le faire.$"
 
 Route111_OldLadysRestStop_Text_DontNeedToBeShy:
-	.string "Is that so?\n"
-	.string "You don't need to be shy about it.$"
-
+	.string "Ah bon ?\n"
+	.string "Tu n'as pas à être timide pour ça.$"

@@ -291,67 +291,66 @@ Route103_EventScript_Isabelle::
 	end
 
 Route103_Text_MayRoute103Pokemon:
-	.string "MAY: Let's see… The POKéMON found\n"
-	.string "on ROUTE 103 include…$"
+	.string "FLORA : Voyons voir… Les POKéMON\n"
+	.string "que l'on trouve sur la ROUTE 103 sont…$"
 
 Route103_Text_MayLetsBattle:
-	.string "Oh, hi, {PLAYER}{KUN}!\p"
-	.string "…Oh, I see, my dad gave you\n"
-	.string "a POKéMON as a gift.\p"
-	.string "Since we're here, let's have a quick\n"
-	.string "battle!\p"
-	.string "I'll give you a taste of what being\n"
-	.string "a TRAINER is like.$"
+	.string "Oh, salut, {PLAYER}{KUN} !\p"
+	.string "…Ah, je vois, mon père t'a offert\n"
+	.string "un POKéMON en cadeau.\p"
+	.string "Puisqu'on est là, faisons un petit\n"
+	.string "combat !\p"
+	.string "Je vais te montrer ce que c'est\n"
+	.string "d'être un DRESSEUR.$"
 
 Route103_Text_MayDefeated:
-	.string "Wow! That's great!\n"
-	.string "{PLAYER}{KUN}, you're pretty good!$"
+	.string "Waouh ! C'est super !\n"
+	.string "{PLAYER}{KUN}, tu es vraiment doué !$"
 
 Route103_Text_MayTimeToHeadBack:
-	.string "MAY: I think I know why my dad has\n"
-	.string "an eye out for you now.\p"
-	.string "I mean, you just got that POKéMON,\n"
-	.string "but it already likes you.\p"
-	.string "You might be able to befriend any\n"
-	.string "kind of POKéMON easily.\p"
-	.string "Well, it's time to head back to\n"
-	.string "the LAB.$"
+	.string "FLORA : Je crois que je comprends\n"
+	.string "pourquoi mon père s'intéresse à toi.\p"
+	.string "Tu viens juste d'avoir ce POKéMON,\n"
+	.string "et il t'aime déjà.\p"
+	.string "Tu pourrais sûrement te lier d'amitié\n"
+	.string "avec n'importe quel POKéMON facilement.\p"
+	.string "Bon, il est temps de retourner\n"
+	.string "au LABO.$"
 
 Route103_Text_BrendanRoute103Pokemon:
-	.string "BRENDAN: Okay, so it's this one and\n"
-	.string "that one that live on ROUTE 103…$"
+	.string "BRICE : Alors, il y a celui-ci et\n"
+	.string "celui-là qui vivent sur la ROUTE 103…$"
 
 Route103_Text_BrendanLetsBattle:
-	.string "Hey, it's {PLAYER}!\p"
-	.string "…Oh, yeah, Dad gave you a POKéMON.\p"
-	.string "Since we're here, how about a little\n"
-	.string "battle?\p"
-	.string "I'll teach you what being a TRAINER's\n"
-	.string "about!$"
+	.string "Hé, c'est {PLAYER} !\p"
+	.string "…Ah oui, Papa t'a donné un POKéMON.\p"
+	.string "Puisqu'on est là, on fait un petit\n"
+	.string "combat ?\p"
+	.string "Je vais t'apprendre ce que c'est\n"
+	.string "d'être un DRESSEUR !$"
 
 Route103_Text_BrendanDefeated:
-	.string "Huh, {PLAYER}, you're not too shabby.$"
+	.string "Eh bien, {PLAYER}, tu te débrouilles pas mal.$"
 
 Route103_Text_BrendanTimeToHeadBack:
-	.string "BRENDAN: I think I get it.\n"
-	.string "I think I know why my dad has his eye\l"
-	.string "out for you now.\p"
-	.string "Look, your POKéMON already likes you,\n"
-	.string "even though you just got it.\p"
-	.string "{PLAYER}, I get the feeling that you\n"
-	.string "could befriend any POKéMON with ease.\p"
-	.string "We should head back to the LAB.$"
+	.string "BRICE : Je crois que je comprends.\n"
+	.string "Je vois pourquoi mon père te surveille.\l"
+	.string "\p"
+	.string "Regarde, ton POKéMON t'aime déjà,\n"
+	.string "alors que tu viens de l'avoir.\p"
+	.string "{PLAYER}, j'ai l'impression que tu\n"
+	.string "pourrais te lier d'amitié avec n'importe quel POKéMON.\p"
+	.string "On devrait retourner au LABO.$"
 
 Route103_Text_ShouldHaveBroughtPotion:
-	.string "My POKéMON is staggeringly tired…\n"
-	.string "I should have brought a POTION…$"
+	.string "Mon POKéMON est épuisé…\n"
+	.string "J'aurais dû prendre une POTION…$"
 
 Route103_Text_ShortcutToOldale:
-	.string "If you cross the sea from here,\n"
-	.string "it'll be a shortcut to OLDALE TOWN.\p"
-	.string "Fufufu, that's useful, isn't it?$"
+	.string "Si tu traverses la mer d'ici,\n"
+	.string "ce sera un raccourci vers VILLAGE MYOKARA.\p"
+	.string "Fufufu, c'est pratique, non ?$"
 
 Route103_Text_RouteSign:
 	.string "ROUTE 103\n"
-	.string "{DOWN_ARROW} OLDALE TOWN$"
-
+	.string "{DOWN_ARROW} VILLAGE MYOKARA$"

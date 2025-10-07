@@ -56,102 +56,101 @@ Route38_EventScript_Item_LaxIncense::
 	end
 
 Route38_Text_BirdKeeperTobySeen:
-	.string "Fly high into the sky,\n"
-	.string "my beloved bird POKéMON!$"
+	.string "Envole-toi haut dans le ciel,\n"
+	.string "mes chers POKéMON oiseaux !$"
 
 Route38_Text_BirdKeeperTobyBeaten:
-	.string "I feel like just flying\n"
-	.string "away now.$"
+	.string "J'ai envie de m'envoler\n"
+	.string "loin maintenant.$"
 
 Route38_Text_BirdKeeperTobyAfter:
-	.string "I plan to train in CIANWOOD CITY\n"
-	.string "to teach my POKéMON how to FLY.$"
+	.string "Je compte m'entraîner à IRISIA\n"
+	.string "pour apprendre VOL à mes POKéMON.$"
 
 Route38_Text_SchoolboyChad1Seen:
-	.string "Let me try something\n"
-	.string "I learned today.$"
+	.string "Laisse-moi essayer quelque chose\n"
+	.string "que j'ai appris aujourd'hui.$"
 
 Route38_Text_SchoolboyChad1Beaten:
-	.string "I didn't study enough,\n"
-	.string "I guess.$"
+	.string "Je n'ai pas assez étudié,\n"
+	.string "on dirait.$"
 
 Route38_Text_SchoolboyChadAfter:
-	.string "I have to take so many\n"
-	.string "tests, I don't have much\l"
-	.string "time for POKéMON.\p"
-	.string "So when I do get to play,\n"
-	.string "I really concentrate.$"
+	.string "J'ai tellement de contrôles à passer\n"
+	.string "que je n'ai pas beaucoup\l"
+	.string "de temps pour les POKéMON.\p"
+	.string "Alors quand je peux jouer,\n"
+	.string "je me concentre vraiment.$"
 
 Route38_Text_LassDana1Seen:
-	.string "You seem to be good at\n"
+	.string "Tu sembles être doué(e) en\n"
 	.string "POKéMON.\p"
-	.string "If you are, how about\n"
-	.string "giving me some advice?$"
+	.string "Si c'est le cas, tu pourrais\n"
+	.string "me donner des conseils ?$"
 
 Route38_Text_LassDana1Beaten:
-	.string "I see. So you can battle\n"
-	.string "that way.$"
+	.string "Je vois. Donc on peut se battre\n"
+	.string "de cette façon.$"
 
 Route38_Text_LassDanaAfter:
-	.string "I know something good!\p"
-	.string "MOOMOO FARM's milk is\n"
-	.string "famous for its flavor.$"
+	.string "Je connais un bon truc !\p"
+	.string "Le lait de la FERME MEUMEUMEU\n"
+	.string "est célèbre pour sa saveur.$"
 
 Route38_Text_BeautyValerieSeen:
-	.string "Hi! Aren't you a cute\n"
-	.string "trainer!\p"
-	.string "May I see your POKéMON?$"
+	.string "Salut ! Tu n'es pas un(e) dresseur(se)\n"
+	.string "mignon(ne) ?\p"
+	.string "Je peux voir tes POKéMON ?$"
 
 Route38_Text_BeautyValerieBeaten:
-	.string "I'm glad I got to see\n"
-	.string "your POKéMON!$"
+	.string "Je suis contente d'avoir vu\n"
+	.string "tes POKéMON !$"
 
 Route38_Text_BeautyValerieAfter:
-	.string "When I see POKéMON, it\n"
-	.string "seems to soothe my nerves.$"
+	.string "Quand je vois des POKéMON, ça\n"
+	.string "apaise mes nerfs.$"
 
 Route38_Text_SailorHarrySeen:
-	.string "I've been overseas, so I\n"
-	.string "know about all sorts of\l"
-	.string "POKéMON!$"
+	.string "J'ai voyagé à l'étranger, alors je\n"
+	.string "connais toutes sortes de\l"
+	.string "POKéMON !$"
 
 Route38_Text_SailorHarryBeaten:
-	.string "Your skill is world class!$"
+	.string "Ton talent est de classe mondiale !$"
 
 Route38_Text_SailorHarryAfter:
-	.string "All kinds of people around\n"
-	.string "the world live happily with\l"
-	.string "POKéMON.$"
+	.string "Toutes sortes de gens dans le monde\n"
+	.string "vivent heureux avec\l"
+	.string "des POKéMON.$"
 
 Route38_Text_BeautyOliviaSeen:
-	.string "Don't you think my POKéMON\n"
-	.string "and I are beautiful?$"
+	.string "Tu ne trouves pas que mes POKéMON\n"
+	.string "et moi sommes magnifiques ?$"
 
 Route38_Text_BeautyOliviaBeaten:
-	.string "We drink MOOMOO MILK every\n"
-	.string "day.$"
+	.string "On boit du LAIT MEUMEUMEU\n"
+	.string "tous les jours.$"
 
 Route38_Text_BeautyOliviaAfter:
-	.string "MOOMOO MILK is good for\n"
-	.string "beauty and health,\p"
-	.string "but inconveniently, they\n"
-	.string "only sell one bottle at a time.$"
+	.string "Le LAIT MEUMEUMEU est bon pour\n"
+	.string "la beauté et la santé,\p"
+	.string "mais malheureusement, ils\n"
+	.string "ne vendent qu'une bouteille à la fois.$"
 
 Route38_Text_Sign:
 	.string "ROUTE 38\p"
-	.string "OLIVINE CITY - ECRUTEAK CITY$"
+	.string "OLIVILLE - ROSALIA$"
 
 Route38_Text_TrainerTips:
-	.string "TRAINER TIPS\p"
-	.string "If a POKéMON is trying to\n"
-	.string "evolve, you can stop it.\p"
-	.string "Press the B Button during\n"
-	.string "evolution to cancel it.\p"
-	.string "That startles the POKéMON\n"
-	.string "and stops its evolution.$"
-
+	.string "ASTUCES DRESSEUR\p"
+	.string "Si un POKéMON essaie d'évoluer,\n"
+	.string "tu peux l'en empêcher.\p"
+	.string "Appuie sur le bouton B pendant\n"
+	.string "l'évolution pour l'annuler.\p"
+	.string "Cela surprend le POKéMON\n"
+	.string "et arrête son évolution.$"
 
 Route38_Text_WaterSign:
-	.string "NO SWIMMING OR FISHING.\n"
-	.string "WATER FOR FARMING ONLY.\p"
-	.string "-ECRUTEAK COUNCIL$"
+	.string "BAIGNADE ET PÊCHE INTERDITES.\n"
+	.string "EAU RÉSERVÉE À L'AGRICULTURE.\p"
+	.string "-CONSEIL DE ROSALIA$"

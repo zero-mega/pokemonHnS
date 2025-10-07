@@ -479,88 +479,88 @@ Route109_EventScript_Elijah::
 	end
 
 DewfordTown_Text_BrineyLandedInSlateportDeliverGoods:
-	.string "MR. BRINEY: Ahoy!\n"
-	.string "We've made land in SLATEPORT!\p"
-	.string "I suppose you're going to visit CAPT.\n"
-	.string "STERN and deliver the DEVON GOODS?$"
+	.string "MR. BRINEY : Ohé !\n"
+	.string "Nous avons accosté à POIVRESSEL !\p"
+	.string "Je suppose que tu vas rendre visite au CAPT.\n"
+	.string "STERN et livrer les MARCHANDISES DEVON ?$"
 
 Route109_Text_BrineySailToDewfordQuestion:
-	.string "MR. BRINEY: I thought you're supposed\n"
-	.string "to deliver the DEVON GOODS.\p"
-	.string "Would you like to sail back to\n"
-	.string "DEWFORD, then?$"
+	.string "MR. BRINEY : Je croyais que tu devais\n"
+	.string "livrer les MARCHANDISES DEVON.\p"
+	.string "Veux-tu retourner à\n"
+	.string "MYOKARA, alors ?$"
 
 Route109_Text_BrineyDewfordItIs:
-	.string "MR. BRINEY: DEWFORD it is, then!\p"
-	.string "Anchors aweigh!\n"
-	.string "PEEKO, we're setting sail, my darling!$"
+	.string "MR. BRINEY : MYOKARA, ce sera donc !\p"
+	.string "Levez l’ancre !\n"
+	.string "PEEKO, on met les voiles, ma chérie !$"
 
 Route109_Text_BrineyDeliverDevonGoods:
-	.string "MR. BRINEY: Then you go on and deliver\n"
-	.string "the DEVON GOODS. I'll be waiting.$"
+	.string "MR. BRINEY : Alors va livrer\n"
+	.string "les MARCHANDISES DEVON. Je t’attendrai.$"
 
 DewfordTown_Text_BrineyLandedInSlateport:
-	.string "MR. BRINEY: Ahoy! We've made land in\n"
-	.string "SLATEPORT!\p"
-	.string "You just go on and tell me whenever\n"
-	.string "you want to set sail again!$"
+	.string "MR. BRINEY : Ohé ! Nous avons accosté à\n"
+	.string "POIVRESSEL !\p"
+	.string "Tu n’as qu’à me dire quand tu veux\n"
+	.string "reprendre la mer !$"
 
 Route109_Text_BrineyWhereAreWeBound:
-	.string "MR. BRINEY: Ahoy!\n"
-	.string "For you, I'll go out to sea anytime!\p"
-	.string "Now, my friend, where are we bound?$"
+	.string "MR. BRINEY : Ohé !\n"
+	.string "Pour toi, je prends la mer quand tu veux !\p"
+	.string "Alors, mon ami, où allons-nous ?$"
 
 Route109_Text_BrineyTellMeWhenYouNeedToSail:
-	.string "MR. BRINEY: You just tell me whenever\n"
-	.string "you need to set sail again!$"
+	.string "MR. BRINEY : Tu n’as qu’à me dire quand\n"
+	.string "tu as besoin de reprendre la mer !$"
 
 Route109_Text_ChillAtMyPapasSpot:
-	.string "Yo, TRAINERS!\n"
-	.string "Whether you're hot to trot,\l"
-	.string "or cool cat not,\l"
-	.string "chill at my papa's spot!$"
+	.string "Yo, DRESSEURS !\n"
+	.string "Que vous soyez chauds pour l’aventure,\l"
+	.string "ou plutôt cools et tranquilles,\l"
+	.string "venez vous détendre chez mon papa !$"
 
 Route109_Text_LittleKidsDartAround:
-	.string "Little kids can dart around so quickly…\p"
-	.string "You don't dare take your eyes off them\n"
-	.string "for an instant. It's very taxing.\p"
-	.string "Mine are with my POKéMON, so they\n"
-	.string "should be okay, but…$"
+	.string "Les petits courent partout si vite…\p"
+	.string "On n’ose pas les quitter des yeux\n"
+	.string "une seconde. C’est épuisant.\p"
+	.string "Les miens sont avec mes POKéMON, donc\n"
+	.string "ça devrait aller, mais…$"
 
 Route109_Text_SandCastleTakingLongTime:
-	.string "Our sand castle's taking a long time\n"
-	.string "to make.$"
+	.string "Notre château de sable prend beaucoup\n"
+	.string "de temps à construire.$"
 
 Route109_Text_YouCanHaveThis:
-	.string "You can have this!$"
+	.string "Tu peux prendre ça !$"
 
 Route109_Text_WereGoingToMakeBigCastle:
-	.string "We're going to get all the sand from\n"
-	.string "the beach and make a big castle!\p"
-	.string "And then we're going to be a king and\n"
-	.string "queen.\p"
-	.string "We'll let you be a servant.$"
+	.string "On va prendre tout le sable de\n"
+	.string "la plage et faire un grand château !\p"
+	.string "Ensuite, on sera roi et reine.\n"
+	.string "\p"
+	.string "On te laissera être le serviteur.$"
 
 Route109_Text_ZigzagoonPicksUpLitter:
-	.string "The water around these parts is clean.\p"
-	.string "But, I get my ZIGZAGOON to pick up\n"
-	.string "litter from the shoreline at times.\p"
-	.string "Dirty water becomes rain and joins our\n"
-	.string "rivers, which we drink from…\p"
-	.string "If we pollute the sea, it all comes\n"
-	.string "back to haunt us eventually.$"
+	.string "L’eau par ici est propre.\p"
+	.string "Mais, je demande à mon ZIGZAGOON de\n"
+	.string "ramasser les déchets sur le rivage parfois.\p"
+	.string "L’eau sale devient de la pluie et rejoint\n"
+	.string "nos rivières, dont on boit l’eau…\p"
+	.string "Si on pollue la mer, ça finit toujours\n"
+	.string "par nous revenir !$"
 
 Route109_Text_ZigzagoonCry:
-	.string "ZIGZAGOON: Guguu?$"
+	.string "ZIGZAGOON : Guguu ?$"
 
 Route109_Text_SeashoreHouseSign:
-	.string "SEASHORE HOUSE\p"
-	.string "“May hot battles rage on hot sands!\n"
-	.string "The place for hot TRAINERS!”$"
+	.string "MAISON DU BORD DE MER\p"
+	.string "« Que des combats brûlants fassent rage sur le sable chaud !\n"
+	.string "L’endroit pour les DRESSEURS passionnés ! »$"
 
 Route109_Text_TrainerTipsSign:
-	.string "TRAINER TIPS\p"
-	.string "POKéMON at the same level may not\n"
-	.string "always have identical stats.\p"
-	.string "POKéMON raised by TRAINERS are said\n"
-	.string "to grow stronger than wild POKéMON.$"
+	.string "ASTUCES DRESSEUR\p"
+	.string "Les POKéMON du même niveau n’ont pas\n"
+	.string "toujours les mêmes stats.\p"
+	.string "On dit que les POKéMON élevés par des DRESSEURS\n"
+	.string "deviennent plus forts que les sauvages.$"

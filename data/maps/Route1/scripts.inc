@@ -22,27 +22,26 @@ Route1_EventScript_Sign::
 	end
 
 Route1_Text_SchoolboyDanny_Seen:
-	.string "If trainers meet, the first\n"
-	.string "thing to do is battle.$"
+	.string "Quand des dresseurs se croisent,\n"
+	.string "la première chose à faire, c'est combattre.$"
 
 Route1_Text_SchoolboyDanny_Beaten:
-	.string "Awww… I've got a losing record…$"
+	.string "Oh non… J'ai encore perdu…$"
 
 Route1_Text_SchoolboyDanny_AfterBattle:
-	.string "For trainers, it's a given that\n"
-	.string "we'll battle whenever we meet.$"
+	.string "Pour les dresseurs, c'est normal de\n"
+	.string "se battre à chaque rencontre.$"
 
 Route1_Text_CooltrainerFQuinn_Seen:
-	.string "You there! Want to battle?$"
+	.string "Toi là-bas ! Tu veux te battre ?$"
 
 Route1_Text_CooltrainerFQuinn_Beaten:
-	.string "Down and out…$"
+	.string "Je suis K.O.…$"
 
 Route1_Text_CooltrainerFQuinn_AfterBattle:
-	.string "You're strong.\p"
-	.string "You obviously must have trained\n"
-	.string "hard.$"
+	.string "Tu es fort.\p"
+	.string "Tu as dû t'entraîner dur.$"
 
 Route1_Text_Sign:
 	.string "ROUTE 1\p"
-	.string "PALLET TOWN - VIRIDIAN CITY$"
+	.string "BOURG PALETTE - JADIELLE$"

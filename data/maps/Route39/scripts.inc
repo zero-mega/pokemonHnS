@@ -136,42 +136,40 @@ Route39_EventScript_BaobaIntro::
 	end
 
 Route39_Text_ChooseLegend::
-	.string "BAOBA: BON DIEU ! Cette ombre\n"
-	.string "appartenait-elle à un POKéMON ?\p"
-	.string "As-tu bien pu la voir ?\n"
-	.string "Je ne peux pas dire de quelle couleur elle était...$"
+	.string "BAOBA : BON SANG ! Cette ombre,\n"
+	.string "c'était un POKéMON ?\p"
+	.string "Tu as bien pu la voir ?\n"
+	.string "Je n'arrive pas à distinguer sa couleur...$"
 
 Route39_Text_BaobaIntro::
 	.string "Comme c'est étrange...\p"
 	.string "...Ohh !\n"
-	.string "Ce que tu tiens est...\l"
+	.string "Ce que tu tiens, c'est...\l"
 	.string "ce qu'on appelle... un POKéDEX !\p"
 	.string "Je n'en ai pas vu depuis des lustres.\p"
-	.string "Mon nom est BAOBA !\n"
-	.string "Je dirigeais une ZONE SAFARI à\l"
-	.string "PARMANIE, mais elle devenait\l"
-	.string "obsolète avec les nouvelles options\l"
-	.string "de divertissement qui arrivent.\p"
-	.string "J'ai décidé d'aller à l'étranger pour apprendre\n"
-	.string "la technologie la plus récente et ouvrir une\l"
-	.string "ZONE SAFARI de pointe\l"
+	.string "Je m'appelle BAOBA !\n"
+	.string "Je dirigeais autrefois le PARC SAFARI\l"
+	.string "à PARMANIE, mais il est devenu\l"
+	.string "obsolète avec toutes les nouvelles\l"
+	.string "distractions qui sortent.\p"
+	.string "J'ai décidé de partir à l'étranger pour\n"
+	.string "apprendre les dernières technologies et\l"
+	.string "ouvrir un PARC SAFARI ultra-moderne\l"
 	.string "à IRISIA.\p"
-	.string "Ce n'est peut-être pas une coïncidence\n"
-	.string "que nous bavardions.\p"
-	.string "Pourquoi ne pas enregistrer nos\n"
-	.string "numéros dans le POKéNAV ?\p"
-	.string "Je peux t'appeler une fois que la\n"
-	.string "ZONE SAFARI est ouverte avant d'appeler\l"
-	.string "qui que ce soit d'autre !$"
+	.string "Peut-être que ce n'est pas un hasard\n"
+	.string "si nous discutons.\p"
+	.string "Et si on enregistrait nos numéros\n"
+	.string "dans le POKéNAV ?\p"
+	.string "Je pourrai t'appeler dès que le\n"
+	.string "PARC SAFARI ouvrira, avant tout le monde !$"
 
 Route39_Text_Registered:
 	.string "{PLAYER} a enregistré BAOBA\n"
 	.string "dans le POKéNAV !$"
 
-
 Route39_Text_WillCall:
-	.string "BAOBA: Je te ferai savoir\n"
-	.string "sur le POKéNAV bientôt !$"
+	.string "BAOBA : Je te préviendrai\n"
+	.string "bientôt sur le POKéNAV !$"
 
 Route39_Movement_BaobaLeave:
 	walk_left
@@ -250,10 +248,10 @@ Route39_Text_SailorEugeneBeaten:
 	.string "Awaaargh !$"
 
 Route39_Text_SailorEugeneAfter:
-	.string "My POKéMON were caught and\n"
-	.string "raised overseas.\p"
-	.string "They're my companions on\n"
-	.string "those long voyages.$"
+	.string "Mes POKéMON ont été attrapés et\n"
+	.string "élevés à l'étranger.\p"
+	.string "Ce sont mes compagnons lors de\n"
+	.string "ces longs voyages.$"
 
 Route39_EventScript_Derek::
 	trainerbattle_single TRAINER_DEREK, Route39_Text_PokefanMDerekSeen, Route39_Text_PokefanMDerekBeaten
@@ -261,18 +259,18 @@ Route39_EventScript_Derek::
 	end
 
 Route39_Text_PokefanMDerekSeen:
-	.string "This is a good time to brag\n"
-	.string "about my PIKACHU!$"
+	.string "C'est le bon moment pour me vanter\n"
+	.string "de mon PIKACHU !$"
 
 Route39_Text_PokefanMDerekBeaten:
-	.string "I had no time to show off\n"
-	.string "PIKACHU…$"
+	.string "Je n'ai même pas eu le temps de\n"
+	.string "montrer PIKACHU…$"
 
 Route39_Text_PokefanMDerekAfter:
-	.string "I'm not listening to your\n"
-	.string "bragging!\p"
-	.string "We POKé FANS have a policy\n"
-	.string "of not listening to bragging!$"
+	.string "Je n'écoute pas tes vantardises !\p"
+	.string "Nous, les FANS de POKéMON, avons\n"
+	.string "pour règle de ne pas écouter les\n"
+	.string "vantardises !$"
 
 Route39_EventScript_Ruth::
 	trainerbattle_single TRAINER_RUTH, Route39_Text_PokefanFRuthSeen, Route39_Text_PokefanFRuthBeaten
@@ -280,17 +278,17 @@ Route39_EventScript_Ruth::
 	end
 
 Route39_Text_PokefanFRuthSeen:
-	.string "Such darling POKéMON.\p"
-	.string "Let's show our POKéMON\n"
-	.string "together at the same time.$"
+	.string "Quels adorables POKéMON.\p"
+	.string "Montrons nos POKéMON\n"
+	.string "ensemble en même temps !$"
 
 Route39_Text_PokefanFRuthBeaten:
-	.string "I don't mind losing.$"
+	.string "Ça ne me dérange pas de perdre.$"
 
 Route39_Text_PokefanFRuthAfter:
-	.string "Do you know about baby\n"
-	.string "POKéMON?\p"
-	.string "I bet they're just adorable!$"
+	.string "Tu connais les bébés\n"
+	.string "POKéMON ?\p"
+	.string "Je parie qu'ils sont adorables !$"
 
 Route39_EventScript_Norman::
 	trainerbattle_single TRAINER_NORMAN, Route39_Text_PsychicNormanSeen, Route39_Text_PsychicNormanBeaten
@@ -298,19 +296,19 @@ Route39_EventScript_Norman::
 	end
 
 Route39_Text_PsychicNormanSeen:
-	.string "Let me see what your\n"
-	.string "POKéMON are capable of.$"
+	.string "Laisse-moi voir de quoi\n"
+	.string "tes POKéMON sont capables.$"
 
 Route39_Text_PsychicNormanBeaten:
-	.string "Ooh, your POKéMON have\n"
-	.string "potential.$"
+	.string "Oh, tes POKéMON ont\n"
+	.string "du potentiel.$"
 
 Route39_Text_PsychicNormanAfter:
-	.string "You know how POKéMON have\n"
-	.string "different abilities?\p"
-	.string "People are like that too.\n"
-	.string "Everyone has different\l"
-	.string "potential.$"
+	.string "Tu sais que les POKéMON ont\n"
+	.string "des capacités différentes ?\p"
+	.string "Les gens aussi sont comme ça.\n"
+	.string "Chacun a un potentiel\l"
+	.string "différent.$"
 
 Route39_EventScript_Jamie::
 	trainerbattle_single TRAINER_JAMIE, Route39_Text_PokefanFJaimeSeen, Route39_Text_PokefanFJaimeBeaten
@@ -318,22 +316,20 @@ Route39_EventScript_Jamie::
 	end
 
 Route39_Text_PokefanFJaimeSeen:
-	.string "You came at just the right\n"
-	.string "time.\p"
-	.string "Let's battle.$"
+	.string "Tu arrives au bon moment.\p"
+	.string "Allons nous battre !$"
 
 Route39_Text_PokefanFJaimeBeaten:
-	.string "Oh, how disappointing…$"
+	.string "Oh, quelle déception…$"
 
 Route39_Text_PokefanFJaimeAfter:
-	.string "I met UMBREON at night right\n"
-	.string "here on ROUTE 39.\p"
-	.string "I'm not sure why, but it\n"
-	.string "seems to like it when I\l"
-	.string "train here.\p"
-	.string "It seems to become friendlier\n"
-	.string "by training here than\l"
-	.string "anywhere else.$"
+	.string "J'ai rencontré NOCTALI la nuit\n"
+	.string "ici même sur la ROUTE 39.\p"
+	.string "Je ne sais pas pourquoi, mais\n"
+	.string "il semble aimer quand je\l"
+	.string "m'entraîne ici.\p"
+	.string "Il devient plus amical en\n"
+	.string "s'entraînant ici qu'ailleurs.$"
 
 Route39_EventScript_Sign1::
 	lock
@@ -344,7 +340,7 @@ Route39_EventScript_Sign1::
 
 Route39_Text_Sign:
 	.string "ROUTE 39\p"
-	.string "OLIVINE CITY - ECRUTEAK CITY$"
+	.string "OLIVILLE - ROSALIA$"
 
 Route39_EventScript_Sign2::
 	lock
@@ -354,8 +350,8 @@ Route39_EventScript_Sign2::
 	end
 
 Route39_Text_MoomooFarmSign:
-	.string "MOOMOO FARM\p"
-	.string "Enjoy Our Fresh and Tasty Milk$"
+	.string "FERME MEUMEUH\p"
+	.string "Savourez notre lait frais et délicieux$"
 
 Route39_EventScript_Sign3::
 	lock
@@ -365,10 +361,10 @@ Route39_EventScript_Sign3::
 	end
 
 Route39_Text_TrainerTips:
-	.string "TRAINER TIPS\p"
-	.string "Use HEADBUTT on trees to shake\n"
-	.string "POKéMON out.\p"
-	.string "Different kinds of POKéMON\n"
-	.string "drop out of trees.\p"
-	.string "Use HEADBUTT on any tree\n"
-	.string "you see!$"
+	.string "ASTUCES DRESSEUR\p"
+	.string "Utilisez COUP D'Boule sur les arbres\n"
+	.string "pour en faire tomber des POKéMON.\p"
+	.string "Différents types de POKéMON\n"
+	.string "peuvent tomber des arbres.\p"
+	.string "Essayez COUP D'Boule sur tous\n"
+	.string "les arbres que vous voyez !$"
