@@ -240,43 +240,41 @@ SSAqua_1F_Movement_GrandpaLeave:
 	step_end
 
 SSAqua_1F_Text_Sailor1_ToVermilion:
-    .string "FAST SHIP S.S.AQUA is en route to\n"
-    .string "VERMILION CITY.\p"
-    .string "We will make an announcement when\n"
-    .string "we arrive.$"
+    .string "Le BATEAU EXPRESS S.S.AQUA est en route\n"
+    .string "vers CARMIN SUR MER.\p"
+    .string "Nous ferons une annonce à l'arrivée.$"
 
 SSAqua_1F_Text_Sailor1_ToOlivine:
-    .string "FAST SHIP S.S.AQUA is en route to\n"
-    .string "OLIVINE CITY.\p"
-    .string "We will make an announcement when\n"
-    .string "we arrive.$"
+    .string "Le BATEAU EXPRESS S.S.AQUA est en route\n"
+    .string "vers OLIVILLE.\p"
+    .string "Nous ferons une annonce à l'arrivée.$"
 
 SSAqua_1F_Text_Sailor2_FirstTime:
-    .string "Here's your cabin.\p"
-    .string "If your POKéMON are hurt, take a\n"
-    .string "nap in the bed.\p"
-    .string "That will heal them.$"
+    .string "Voici votre cabine.\p"
+    .string "Si vos POKéMON sont blessés, faites une\n"
+    .string "sieste dans le lit.\p"
+    .string "Ils seront ainsi soignés.$"
 
 SSAqua_1F_Text_Sailor3:
-    .string "The passengers are all trainers.\p"
-    .string "They're all itching to battle in\n"
-    .string "their cabins.$"
+    .string "Tous les passagers sont des Dresseurs.\p"
+    .string "Ils ont tous hâte de combattre dans\n"
+    .string "leurs cabines.$"
 
 SSAqua_1F_Text_Grandpa:
-    .string "Whoa! Excuse me. I was in a hurry!\p"
-    .string "My granddaughter is missing!\p"
-    .string "She's just a wee girl. If you see\n"
-    .string "her, please let me know!$"
+    .string "Oh! Excusez-moi. J'étais pressé!\p"
+    .string "Ma petite-fille a disparu!\p"
+    .string "C'est une toute petite fille. Si vous la\n"
+    .string "voyez, prévenez-moi s'il vous plaît!$"
 
 SSAqua_1F_Text_Sailor1_InOlivine:
-    .string "FAST SHIP S.S.AQUA has arrived in\n"
-    .string "OLIVINE CITY.$"
+    .string "Le BATEAU EXPRESS S.S.AQUA est arrivé à\n"
+    .string "OLIVILLE.$"
 
 SSAqua_1F_Text_Sailor1_InVermilion:
-    .string "FAST SHIP S.S.AQUA has arrived in\n"
-    .string "VERMILION CITY.$"
+    .string "Le BATEAU EXPRESS S.S.AQUA est arrivé à\n"
+    .string "CARMIN SUR MER.$"
 
 
 SSAqua_1F_Text_SailorDoorArrived:
-    .string "We have arrived in VERMILION CITY.\n"
-    .string "Would you like to disembark?$"
+    .string "Nous sommes arrivés à CARMIN SUR MER.\n"
+    .string "Voulez-vous débarquer?$"

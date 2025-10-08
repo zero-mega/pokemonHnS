@@ -291,20 +291,18 @@ TinTower_RoofDay_EventScript_KuniAfter::
 	end
 
 TinTower_RoofDay_Text_Kimono_AfterNotCaught:
-	.string "You have not only made HO-OH\n"
-	.string "appear, but you have also defeated\l"
-	.string "it...\p"
-	.string "There is nothing more for us to\n"
-	.string "say. Take care of yourself in your\l"
-	.string "journey...$"
+	.string "Non seulement tu as fait apparaître\n"
+	.string "HO-OH, mais tu l'as aussi vaincu...\p"
+	.string "Nous n'avons plus rien à dire.\n"
+	.string "Prends soin de toi durant ton\l"
+	.string "voyage...$"
 
 TinTower_RoofDay_Text_Kimono_AfterCaught:
-	.string "You have not only made HO-OH\n"
-	.string "appear, but you have also caught\l"
-	.string "it...\p"
-	.string "There is nothing more for us to\n"
-	.string "say. Take care of yourself in your\l"
-	.string "journey...$"
+	.string "Non seulement tu as fait apparaître\n"
+	.string "HO-OH, mais tu l'as aussi capturé...\p"
+	.string "Nous n'avons plus rien à dire.\n"
+	.string "Prends soin de toi durant ton\l"
+	.string "voyage...$"
 
 TinTower_RoofDay_Movement_CameraPanUp:
 	walk_up
@@ -559,39 +557,39 @@ TinTower_RoofDay_Movement_Kimono_Dance_Shift_Right2:
 	step_end
 
 TinTower_RoofDay_Text_Zuki_Before::
-	.string "ZUKI: Go, face HO-OH. $"
+	.string "ZUKI : Vas-y, fais face à HO-OH. $"
 TinTower_RoofDay_Text_Naoko_Before::
-	.string "NAOKO: Go, face HO-OH. $"
+	.string "NAOKO : Vas-y, fais face à HO-OH. $"
 TinTower_RoofDay_Text_Miki_Before::
-	.string "MIKI: Go, face HO-OH. $"
+	.string "MIKI : Vas-y, fais face à HO-OH. $"
 TinTower_RoofDay_Text_Sayo_Before::
-	.string "SAYO: Go, face HO-OH. $"
+	.string "SAYO : Vas-y, fais face à HO-OH. $"
 TinTower_RoofDay_Text_Kuni_Before::
-	.string "KUNI: Go, face HO-OH. $"
+	.string "KUNI : Vas-y, fais face à HO-OH. $"
 
 TinTower_RoofDay_Text_Kimono_Opening::
-	.string "KIMONO GIRL: That's right.\n"
-	.string "This is where we welcome HO-OH.\p"
-	.string "When the dance we practiced many\n"
-	.string "days becomes one with the sound of the\p"
-	.string "Clear Bell we entrusted to you, then\n"
-	.string "HO-OH shall come down from the great\l"
-	.string "arch of the sky once again. $"
+	.string "FILLE KIMONO : C'est exact.\n"
+	.string "C'est ici que nous accueillons HO-OH.\p"
+	.string "Lorsque la danse que nous avons tant\n"
+	.string "de fois répétée s'accordera avec le son\p"
+	.string "de la Clochette que nous t'avons confiée,\n"
+	.string "alors HO-OH descendra à nouveau\l"
+	.string "de la grande arche du ciel. $"
 
 TinTower_RoofDay_Text_Kimono_Closing1::
-	.string "That is indeed HO-OH...\n"
-	.string "The guardian of the sky from\p"
-	.string "ancient times... \p"
-	.string "So many have tried again and again,\n"
-	.string "only to fail...\p"
-	.string "{PLAYER}, your heart in complete\n"
-	.string "harmony with the Clear Bell has finally\p"
-	.string "allowed it to appear...\n"
-	.string "{PLAYER}, don't you see?\p"
-	.string "HO-OH... It must have been waiting for\n"
-	.string "someone like you all this time.\p"
-	.string "Wouldn't you agree? $"
+	.string "C'est bien HO-OH...\n"
+	.string "Le gardien du ciel depuis\p"
+	.string "des temps anciens... \p"
+	.string "Tant de personnes ont essayé encore et encore,\n"
+	.string "en vain...\p"
+	.string "{PLAYER}, ton cœur en parfaite\n"
+	.string "harmonie avec la Clochette a enfin\p"
+	.string "permis son apparition...\n"
+	.string "{PLAYER}, tu comprends ?\p"
+	.string "HO-OH... Il devait attendre\n"
+	.string "quelqu'un comme toi depuis tout ce temps.\p"
+	.string "N'est-ce pas ? $"
 
 TinTower_RoofDay_Text_Kimono_After::
-	.string "You have done a great job.\n"
-	.string "Say hello to PROF. ELM for us.$"
+	.string "Tu as fait un excellent travail.\n"
+	.string "Passe le bonjour au PROF. ORME pour nous.$"
