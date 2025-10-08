@@ -20,10 +20,10 @@ MrPsychic_Text_1:
 	.string "…\p"
 	.string "…\p"
 	.string "…\p"
-	.string "…I got it!\p"
-	.string "You wanted this!$"
+	.string "…J'ai compris !\p"
+	.string "Tu voulais ceci !$"
 
 MrPsychic_Text_2:
-	.string "TM29 is PSYCHIC.\p"
-	.string "It may lower the target's\n"
-	.string "SPCL.DEF.$"
+	.string "CT29, c'est PSYKO.\p"
+	.string "Cela peut baisser la\n"
+	.string "DEF.SPEC. de la cible.$"

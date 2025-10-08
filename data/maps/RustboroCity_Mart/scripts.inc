@@ -65,20 +65,20 @@ RustboroCity_Mart_EventScript_BugCatcher::
 	end
 
 RustboroCity_Mart_Text_BuyingHealsInCaseOfShroomish:
-	.string "I'm buying some PARLYZ HEALS and\n"
+	.string "J'achète des ANTI-PARA et des\n"
 	.string "ANTIDOTES.\p"
-	.string "Just in case I run into SHROOMISH\n"
-	.string "in PETALBURG WOODS.$"
+	.string "Au cas où je croiserais un BALINÉA\n"
+	.string "dans la FORÊT DE CLÉMENTI.$"
 
 RustboroCity_Mart_Text_ShouldBuySuperPotionsInstead:
-	.string "My POKéMON evolved.\n"
-	.string "It has a lot of HP now.\p"
-	.string "I should buy SUPER POTIONS for it\n"
-	.string "instead of ordinary POTIONS.$"
+	.string "Mon POKéMON a évolué.\n"
+	.string "Il a beaucoup de PV maintenant.\p"
+	.string "Je devrais lui acheter des SUPER POTIONS\n"
+	.string "au lieu de simples POTIONS.$"
 
 RustboroCity_Mart_Text_GettingEscapeRopeJustInCase:
-	.string "I'm getting an ESCAPE ROPE just in\n"
-	.string "case I get lost in a cave.\p"
-	.string "I just need to use it to get back to\n"
-	.string "the entrance.$"
+	.string "Je prends une CORDE SORTIE au cas où\n"
+	.string "je me perdrais dans une grotte.\p"
+	.string "Je n'ai qu'à l'utiliser pour revenir\n"
+	.string "à l'entrée.$"
 

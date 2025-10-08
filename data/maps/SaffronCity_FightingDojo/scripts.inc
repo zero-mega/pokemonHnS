@@ -210,19 +210,19 @@ SaffronCity_FightingDojo_Text_Speed:
 	.string "SPD$"
 
 SaffronCity_FightingDojo_Text_WouldYouLikeToBattle:
-	.string "Battle {STR_VAR_1} for 3 {STR_VAR_2} EVs?$"
+	.string "Combattre {STR_VAR_1} pour 3 EV {STR_VAR_2} ?$"
 
 SaffronCity_FightingDojo_Text_BlackBelt:
-	.string "You enter the FIGHTING DOJO!\p"
-	.string "Here, you may hone the stats of\n"
-	.string "of your POKéMON by battle!$"
+	.string "Bienvenue au DOJO KARATÉ !\p"
+	.string "Ici, tu peux améliorer les stats\n"
+	.string "de tes POKéMON par le combat !$"
 
 SaffronCity_FightingDojo_Text_Sign1:
-	.string "Left: HP, DEF, SDEF$"
+	.string "Gauche : PV, DEF, DEF.SP$"
 
 SaffronCity_FightingDojo_Text_Sign2:
-	.string "RIGHT: ATK, SPATK, SPD$"
+	.string "Droite : ATQ, ATQ.SP, VIT$"
 
 SaffronCity_FightingDojo_Text_Cooltrainer::
-	.string "Only trainers with all KANTO badges\n"
-	.string "may enter the VIP lounge.$"
+	.string "Seuls les Dresseurs avec tous les\n"
+	.string "Badges de KANTO peuvent entrer au salon VIP.$"

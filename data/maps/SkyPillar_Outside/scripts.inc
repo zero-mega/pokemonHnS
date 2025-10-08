@@ -140,33 +140,33 @@ SkyPillar_Outside_EventScript_ClosedDoor::
 	end
 
 SkyPillar_Outside_Text_DoorIsClosed:
-	.string "The door is closed.$"
+	.string "La porte est fermée.$"
 
 SkyPillar_Outside_Text_OpenedDoorToSkyPillar:
-	.string "WALLACE: Oh, my, I'm terribly sorry!\p"
-	.string "In my haste, I didn't notice that\n"
-	.string "I'd left you behind!\p"
-	.string "I've opened the locked door of\n"
-	.string "the SKY PILLAR.\p"
-	.string "{PLAYER}{KUN}, let's be on our way!$"
+	.string "MARCUS : Oh, pardon, je suis vraiment désolé !\p"
+	.string "Dans ma précipitation, je n'ai pas vu\n"
+	.string "que je t'avais laissé derrière !\p"
+	.string "J'ai ouvert la porte verrouillée de\n"
+	.string "la PILIER CÉLESTE.\p"
+	.string "{PLAYER}{KUN}, allons-y !$"
 
 SkyPillar_Outside_Text_EarthquakeNotMomentToWaste:
-	.string "WALLACE: It's an earthquake!\p"
-	.string "There's not a moment to waste!\n"
-	.string "We've got to hurry!$"
+	.string "MARCUS : Un tremblement de terre !\p"
+	.string "Nous n'avons pas une seconde à perdre !\n"
+	.string "Dépêchons-nous !$"
 
 SkyPillar_Outside_Text_SituationGettingWorse:
-	.string "WALLACE: Hmm…\n"
-	.string "The situation is getting worse…$"
+	.string "MARCUS : Hmm…\n"
+	.string "La situation empire…$"
 
 SkyPillar_Outside_Text_GotToGoBackForSootopolis:
-	.string "WALLACE: This isn't good…\p"
-	.string "The weather distortion is spreading\n"
-	.string "even here…\p"
+	.string "MARCUS : Ce n'est pas bon…\p"
+	.string "La distorsion climatique s'étend\n"
+	.string "même jusqu'ici…\p"
 	.string "{PLAYER}{KUN}.\p"
-	.string "RAYQUAZA should be farther up\n"
-	.string "from here.\p"
-	.string "I'm worried about SOOTOPOLIS.\n"
-	.string "I've got to go back.\p"
-	.string "Everything is in your hands now.\n"
-	.string "Don't fail us!$"
+	.string "RAYQUAZA doit se trouver plus haut\n"
+	.string "dans la tour.\p"
+	.string "Je m'inquiète pour ATALANOPOLIS.\n"
+	.string "Je dois y retourner.\p"
+	.string "Tout repose sur toi maintenant.\n"
+	.string "Ne nous déçois pas !$"

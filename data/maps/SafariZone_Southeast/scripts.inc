@@ -10,11 +10,11 @@ SafariZone_Southeast_GliscorEvo::
 	end
 
 SafariZone_Southeast_GliscorEvo_Text:
-	.string "I love SINNOH POKéMON!\p"
-	.string "I need to catch a GLIGAR, so then\n"
-	.string "I can get a GLISCOR!\p"
-	.string "They evolve only at night,\n"
-	.string "just like SNEASEL and MURKROW.$"
+	.string "J'adore les POKéMON de SINNOH !\p"
+	.string "Je dois attraper un SCORPLANE, comme ça\n"
+	.string "je pourrai avoir un SCORVOL !\p"
+	.string "Ils évoluent seulement la nuit,\n"
+	.string "comme FARFURET et CORBOSS.$"
 
 SafariZone_Southeast_MantykeEvo::
 	msgbox SafariZone_Southeast_MantykeEvo_Text, MSGBOX_SIGN
@@ -32,9 +32,9 @@ SafariZone_Southeast_MantykeEvo_Text:
 	.string "OH!$"
 
 SafariZone_Southeast_MantykeEvo_Text2:
-	.string "HAVE YOU SEEN THAT?\p"
-	.string "That MANTYKE was trying to evolve,\n"
-	.string "so it was using WATER PULSE!\l"
-	.string "Nature is beautiful!$"
+	.string "TU AS VU ÇA ?\p"
+	.string "Ce BABIMANTA essayait d'évoluer,\n"
+	.string "alors il utilisait VIBRAQUA !\l"
+	.string "La nature est magnifique !$"
 
 @ Event scripts for SafariZone_Southeast are in SafariZone_South/scripts.inc

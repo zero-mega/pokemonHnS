@@ -25,20 +25,20 @@ SaffronCity_CopyCatsHouse_1F_EventScript_Blissey::
 	end
 
 CopycatsHouse1F_Text_PokefanM:
-	.string "My daughter likes to mimic people.\p"
-	.string "Her mimicry has earned her the\n"
-	.string "nickname COPYCAT around here.$"
+	.string "Ma fille adore imiter les gens.\p"
+	.string "Son talent pour l'imitation lui a\n"
+	.string "valu le surnom de COPIEUSE ici.$"
 
 CopycatsHouse1F_Text_PokefanF:
-	.string "My daughter is so self-centered…\p"
-	.string "She only has a few friends.$"
+	.string "Ma fille est tellement égocentrique…\p"
+	.string "Elle n'a que quelques amis.$"
 
 CopycatsHouse1F_Text_PokefanF_ReturnedPart:
-	.string "She recently lost the POKé DOLL\n"
-	.string "that a boy gave her three years\l"
-	.string "ago.\p"
-	.string "Ever since then, she's gotten even\n"
-	.string "better at mimicry…$"
+	.string "Elle a récemment perdu la POUPEE\n"
+	.string "POKéMON qu'un garçon lui avait\l"
+	.string "offerte il y a trois ans.\p"
+	.string "Depuis, elle est devenue encore\n"
+	.string "meilleure en imitation…$"
 
 CopycatsHouse1F_Text_Blissey:
-	.string "BLISSEY: Bliisii!$"
+	.string "LEUPHORIE : Leuphooo!$"
